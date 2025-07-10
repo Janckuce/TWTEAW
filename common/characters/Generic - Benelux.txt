@@ -1,0 +1,436 @@
+characters={
+    ### Netherlands ###
+	HOL_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = HOL_Field_Marshal
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	HOL_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = HOL_General_1
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	HOL_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = HOL_General_2
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	HOL_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = HOL_Advisor_1
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	HOL_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = HOL_Advisor_2
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	HOL_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = HOL_Advisor_3
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### BELGIUM ###
+	BEL_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BEL_Field_Marshal
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	BEL_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BEL_General_1
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	BEL_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BEL_General_2
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	BEL_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_Advisor_1
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	BEL_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_Advisor_2
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	BEL_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = BEL_Advisor_3
+			allowed = {
+				original_tag = BEL
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### LUXEMBOURG ###
+	LUX_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = LUX_Field_Marshal
+			allowed = {
+				original_tag = LUX
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	LUX_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = LUX_General_1
+			allowed = {
+				original_tag = LUX
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	LUX_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = LUX_General_2
+			allowed = {
+				original_tag = LUX
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	LUX_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_Advisor_1
+			allowed = {
+				original_tag = LUX
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	LUX_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_Advisor_2
+			allowed = {
+				original_tag = LUX
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	LUX_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_Advisor_3
+			allowed = {
+				original_tag = LUX
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

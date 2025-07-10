@@ -1,0 +1,998 @@
+﻿add_namespace = ww1_news
+
+#Agadir Crisis
+news_event = {
+	id = ww1_news.1
+	title = ww1_news.1.t
+	desc = ww1_news_desc.1
+	picture = GFX_news_event_agadir_crisis
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.1.a
+	}
+}
+
+#Germany sends battleship
+news_event = {
+	id = ww1_news.2
+	title = ww1_news.2.t
+	desc = ww1_news_desc.2
+	picture = GFX_news_event_german_dreadnought
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.2.a
+	}
+}
+
+#Uk sends battleship
+news_event = {
+	id = ww1_news.3
+	title = ww1_news.3.t
+	desc = ww1_news_desc.3
+	picture = GFX_news_event_british_dreadnought
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.3.a
+	}
+}
+
+#Economic Collapse in Germany during Agadir Crisis
+news_event = {
+	id = ww1_news.4
+	title = ww1_news.4.t
+	desc = ww1_news_desc.4
+	picture = GFX_news_event_generic_strike
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.4.a
+		
+		if = {
+		    limit = {
+			    original_tag = GER
+			}
+			GER = {
+				add_timed_idea = {
+					idea = GER_economic_collapse
+					days = 120
+				}
+			}
+		}
+	}
+}
+
+#Franz Ferdinand Dead
+news_event = {
+	id = ww1_news.5
+	title = ww1_news.5.t
+	desc = ww1_news_desc.5
+	picture = GFX_news_event_franz_ferdinand_dead
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.5.a
+	}
+}
+
+#Austria Sends Ultimatum
+news_event = {
+	id = ww1_news.6
+	title = ww1_news.6.t
+	desc = ww1_news_desc.6
+	picture = GFX_news_event_ultimatum
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.6.a
+	}
+}
+
+#Mobilization accros europe
+news_event = {
+	id = ww1_news.7
+	title = ww1_news.7.t
+	desc = ww1_news_desc.7
+	picture = GFX_news_event_generic_german_occupation
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.7.a
+		
+		if = {
+		    limit = {
+			    OR = {
+			        original_tag = GER
+					original_tag = AUS
+					original_tag = RUS
+					original_tag = FRA
+					original_tag = ITA
+					original_tag = TUR
+				}
+			}
+			add_manpower = 250000
+		}
+	}
+}
+
+#Serbia Refuse Ultimatum
+news_event = {
+	id = ww1_news.8
+	title = ww1_news.8.t
+	desc = ww1_news_desc.8
+	picture = GFX_news_event_ultimatum
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.8.a
+		
+		if = {
+		    limit = {
+			    OR = {
+			        original_tag = GER
+					original_tag = AUS
+					original_tag = RUS
+					original_tag = FRA
+					original_tag = ENG
+					original_tag = ITA
+					original_tag = TUR
+				}
+			}
+			add_manpower = 500000
+		}
+	}
+}
+
+#Germany Back Austria (Blank Cheque)
+news_event = {
+	id = ww1_news.9
+	title = ww1_news.9.t
+	desc = ww1_news_desc.9
+	picture = GFX_news_event_blank_cheque
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.9.a
+	}
+}
+
+#The Great War
+news_event = {
+	id = ww1_news.10
+	title = ww1_news.10.t
+	desc = ww1_news_desc.10
+	picture = GFX_news_event_austria_war
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.10.a
+	}
+}
+
+#Germany attack belgium
+news_event = {
+	id = ww1_news.11
+	title = ww1_news.11.t
+	desc = ww1_news_desc.11
+	picture = GFX_news_event_germany_attacks_belgium
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.11.a
+	}
+}
+
+#February Revolution
+news_event = {
+	id = ww1_news.12
+	title = ww1_news.12.t
+	desc = ww1_news_desc.12
+	picture = GFX_news_event_RUS_tsar_abdicates
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.12.a
+	}
+}
+
+#Winter Palace Stormed
+news_event = {
+	id = ww1_news.13
+	title = ww1_news.13.t
+	desc = ww1_news_desc.13
+	picture = GFX_news_event_russian_revolution
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.13.a
+	}
+}
+
+#Treaty of Brest Litovsk
+news_event = {
+	id = ww1_news.14
+	title = ww1_news.14.t
+	desc = ww1_news_desc.14
+	picture = GFX_news_event_treaty_of_brest_litovsk
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.14.a
+	}
+}
+
+#Negotiations German-Russian
+news_event = {
+	id = ww1_news.15
+	title = ww1_news.15.t
+	desc = ww1_news_desc.15
+	picture = GFX_news_event_generic_german_occupation
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.15.a
+	}
+}
+
+#Mona Lisa Stolen
+news_event = {
+	id = ww1_news.16
+	title = ww1_news.16.t
+	desc = ww1_news_desc.16
+	picture = GFX_news_event_mona_lisa_stolen
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.16.a
+	}
+}
+
+#Italy Invaded Libya
+news_event = {
+	id = ww1_news.17
+	title = ww1_news.17.t
+	desc = ww1_news_desc.17
+	picture = GFX_news_event_italians_in_libya
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.17.a
+	}
+}
+
+#Peter Stolypin assassinated
+news_event = {
+	id = ww1_news.18
+	title = ww1_news.18.t
+	desc = ww1_news_desc.18
+	picture = GFX_news_event_peter_stolypin_assassinated
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.18.a
+	}
+}
+
+#Sinking of Titanic
+news_event = {
+	id = ww1_news.19
+	title = ww1_news.19.t
+	desc = ww1_news_desc.19
+	picture = GFX_news_event_sinking_of_the_titanic
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.19.a
+	}
+}
+
+#1912 Stockholm Olympics
+news_event = {
+	id = ww1_news.20
+	title = ww1_news.20.t
+	desc = ww1_news_desc.20
+	picture = GFX_news_event_stockhold_olympics
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.20.a
+	}
+}
+
+#U.S. Occupies Nicaragua
+news_event = {
+	id = ww1_news.21
+	title = ww1_news.21.t
+	desc = ww1_news_desc.21
+	picture = GFX_news_event_US_in_nicaragua
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.21.a
+	}
+}
+
+#Roosevelt Survives Assassination Attempt
+news_event = {
+	id = ww1_news.22
+	title = ww1_news.22.t
+	desc = ww1_news_desc.22
+	picture = GFX_news_event_roosevelt_assassination
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.22.a
+	}
+}
+
+# The Fall of Warsaw (Germany)
+news_event = {
+	id = ww1_news.23
+	title = ww1_news.23.t
+	desc = ww1_news_desc.23
+	picture = GFX_news_event_fall_of_warsaw
+	
+	major = yes
+	
+	trigger = {
+	    OR = {
+		    10 = { is_controlled_by = GER }
+			10 = { is_controlled_by = AUS }
+		}
+		OR = {
+		    GER = { has_war_with = RUS }
+			AUS = { has_war_with = RUS }
+		}
+		10 = { is_owned_by = RUS }
+		NOT = { has_global_flag = ww1_fall_of_warsaw }
+	}
+	immediate = {
+		set_global_flag = ww1_fall_of_warsaw
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ww1_news.23.a
+		trigger = { 
+			has_war_with = RUS 
+		}
+	}
+	option = {
+		name = ww1_news.23.b
+		trigger = {
+		    NOT = {
+				has_war_with = RUS
+			}
+		}
+	}
+}
+
+# The Fall of Brussels (Germany)
+news_event = {
+	id = ww1_news.24
+	title = ww1_news.24.t
+	desc = ww1_news_desc.24
+	picture = GFX_news_event_fall_of_brussels
+	
+	major = yes
+	
+	trigger = {
+		6 = { is_controlled_by = GER }
+		6 = { is_owned_by = BEL }
+		GER = { has_war_with = BEL }
+		NOT = { has_global_flag = ww1_fall_of_brussels }
+	}
+	immediate = {
+		set_global_flag = ww1_fall_of_brussels
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ww1_news.24.a
+		trigger = { 
+			has_war_with = BEL 
+		}
+	}
+	option = {
+		name = ww1_news.24.b
+		trigger = {
+		    NOT = {
+				has_war_with = BEL
+			}
+		}
+	}
+}
+
+# The Fall of Paris (Germany)
+news_event = {
+	id = ww1_news.25
+	title = ww1_news.25.t
+	desc = ww1_news_desc.25
+	picture = GFX_news_event_fall_of_paris_ww1
+	
+	major = yes
+	
+	trigger = {
+		16 = { is_controlled_by = GER }
+		16 = { is_owned_by = FRA }
+		GER = { has_war_with = FRA }
+		NOT = { has_global_flag = ww1_fall_of_paris }
+	}
+	immediate = {
+		set_global_flag = ww1_fall_of_paris
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ww1_news.25.a
+	}
+}
+
+# The Fall of Belgrade (Austria)
+news_event = {
+	id = ww1_news.26
+	title = ww1_news.26.t
+	desc = ww1_news_desc.26
+	picture = GFX_news_event_austrian_troops
+	
+	major = yes
+	
+	trigger = {
+	    OR = {
+			107 = { is_controlled_by = GER }
+			107 = { is_controlled_by = AUS }
+			107 = { is_controlled_by = BUL }
+		}
+		107 = { is_owned_by = SER }
+		AUS = { has_war_with = SER }
+		NOT = { has_global_flag = ww1_fall_of_belgrade }
+	}
+	immediate = {
+		set_global_flag = ww1_fall_of_belgrade
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ww1_news.26.a
+	}
+}
+
+#St. Petersburg Renamed
+news_event = {
+	id = ww1_news.27
+	title = ww1_news.27.t
+	desc = ww1_news_desc.27
+	picture = GFX_news_event_RUS_renamed_petrograd
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.27.a
+	}
+}
+
+#Death of Franz Joseph I (RIP)
+news_event = {
+	id = ww1_news.28
+	title = ww1_news.28.t
+	desc = ww1_news_desc.28
+	picture = GFX_news_event_franz_joseph_dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.28.a
+	}
+}
+
+#EVENT NOT IN USE#
+news_event = {
+	id = ww1_news.29
+	title = ww1_news.29.t
+	desc = ww1_news_desc.29
+	picture = GFX_news_event_carol_I_dead
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.29.a
+	}
+}
+
+#Balkan League Formed
+news_event = {
+	id = ww1_news.30
+	title = ww1_news.30.t
+	desc = ww1_news_desc.30
+	picture = GFX_news_event_balkan_league
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.30.a
+	}
+}
+
+#Germany Begins Unrestricted Submarine Warfare
+news_event = {
+	id = ww1_news.31
+	title = ww1_news.31.t
+	desc = ww1_news_desc.31
+	picture = GFX_news_event_unrestricted_sub_warfare
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.31.a
+		
+		if = {
+		    limit = {
+			    original_tag = GER
+			}
+			add_war_support = 0.1
+		}
+		if = {
+		    limit = {
+			    original_tag = ENG
+			}
+			add_war_support = -0.05
+		}
+	}
+}
+
+#US occupies veracruz
+news_event = {
+	id = ww1_news.32
+	title = ww1_news.32.t
+	desc = ww1_news_desc.32
+	picture = GFX_news_us_occupies_veracruz
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.32.a
+	}
+}
+
+#US leaves veracruz
+news_event = {
+	id = ww1_news.33
+	title = ww1_news.33.t
+	desc = ww1_news_desc.33
+	picture = GFX_news_us_leaves_veracruz
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.33.a
+	}
+}
+
+#Fall of Konigsbeg
+news_event = {
+	id = ww1_news.34
+	title = ww1_news.34.t
+	desc = ww1_news_desc.34
+	picture = GFX_news_event_generic_russian_occupation
+	
+	major = yes
+	
+	trigger = {
+	    OR = {
+			753 = { is_controlled_by = RUS }
+			753 = { is_controlled_by = ENG }
+			753 = { is_controlled_by = FRA }
+		}
+		753 = { is_owned_by = GER }
+		RUS = { has_war_with = GER }
+		NOT = { has_global_flag = ww1_fall_of_konigsberg }
+	}
+	immediate = {
+		set_global_flag = ww1_fall_of_konigsberg
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ww1_news.34.a
+		
+		add_political_power = -1
+		
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = ww1_news.34.b
+		
+		add_political_power = -2
+		
+		trigger = {
+		    NOT = {
+			    has_war_with = GER
+			}
+		}
+	}
+	option = {
+		name = ww1_news.34.c
+		
+		add_political_power = 1
+		
+		trigger = {
+		    OR = {
+			    has_war_with = RUS
+				has_war_with = FRA
+				has_war_with = ENG
+			}
+		}
+	}
+}
+
+#Womens Suffrage in Washington DC
+news_event = {
+	id = ww1_news.35
+	title = ww1_news.35.t
+	desc = ww1_news_desc.35
+	picture = GFX_news_event_womens_suffrage
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.35.a
+	}
+}
+
+#1916 Berlin Olympics
+news_event = {
+	id = ww1_news.36
+	title = ww1_news.36.t
+	desc = ww1_news_desc.36
+	picture = GFX_news_event_1916_olympics
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.36.a
+	}
+}
+
+#South Pole Reached
+news_event = {
+	id = ww1_news.37
+	title = ww1_news.37.t
+	desc = ww1_news_desc.37
+	picture = GFX_news_event_antarctica
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.37.a
+	}
+}
+
+#Russian daddy shows force
+news_event = {
+	id = ww1_news.38
+	title = ww1_news.38.t
+	desc = ww1_news_desc.38
+	picture = GFX_news_event_russia_dreadnought
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.38.a
+	}
+}
+
+#First Balkan War
+news_event = {
+	id = ww1_news.39
+	title = ww1_news.39.t
+	desc = ww1_news_desc.39
+	picture = GFX_news_event_first_balkan_war
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.39.a
+	}
+}
+
+#1913 Treaty of London
+news_event = {
+	id = ww1_news.40
+	title = ww1_news.40.t
+	desc = ww1_news_desc.40
+	picture = GFX_news_event_1913_treaty_of_london
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.40.a
+
+		BUL = {
+			leave_faction = yes
+		}
+		GRE = {
+			leave_faction = yes
+		} 
+		MNT = {
+			leave_faction = yes
+		}
+		SER = {
+			country_event = { id = ww1_serbia.15 days = 30 }
+		}
+		
+	}
+}
+
+#Kiel Mutiny
+news_event = {
+	id = ww1_news.41
+	title = ww1_news.41.t
+	desc = ww1_news_desc.41
+	picture = GFX_news_event_kiel_mutiny
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.41.a
+	}
+}
+
+#Collapse of Austria-Hungary
+news_event = {
+	id = ww1_news.42
+	title = ww1_news.42.t
+	desc = ww1_news_desc.42
+	picture = GFX_news_event_collapse_of_austria
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.42.a
+	}
+}
+
+#Ludendorff Offensive
+news_event = {
+	id = ww1_news.43
+	title = ww1_news.43.t
+	desc = ww1_news_desc.43
+	picture = GFX_news_event_ludendorff_offensive
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.43.a
+	}
+}
+
+#Goebel and Breslau
+news_event = {
+	id = ww1_news.44
+	title = ww1_news.44.t
+	desc = ww1_news_desc.44
+	picture = GFX_news_event_goeben_and_breslau
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.44.a
+		
+	}
+}
+
+#Goebel and Breslau
+news_event = {
+	id = ww1_news.45
+	title = ww1_news.45.t
+	desc = ww1_news_desc.45
+	picture = GFX_news_event_generic_train
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.45.a
+	}
+}
+
+#Death of Carol I (RIP)
+news_event = {
+	id = ww1_news.46
+	title = ww1_news.46.t
+	desc = ww1_news_desc.46
+	picture = GFX_news_event_carol_I_dead
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.46.a
+	}
+}
+
+#Armistice of Compiegne
+news_event = {
+	id = ww1_news.47
+	title = ww1_news.47.t
+	desc = ww1_news_desc.47
+	picture = GFX_news_event_armistice_of_compiegne
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.47.a
+	}
+}
+
+#Erich Ludendorff Takes Power
+news_event = {
+	id = ww1_news.48
+	title = ww1_news.48.t
+	desc = ww1_news_desc.48
+	picture = GFX_news_event_OHL_takes_power
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.48.a
+	}
+}
+
+#Treaty of Versailles
+news_event = {
+	id = ww1_news.49
+	title = ww1_news.49.t
+	desc = ww1_news_desc.49
+	picture = GFX_news_event_treaty_of_versailles
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.49.a
+	}
+}
+
+#Second Balkan Pact
+news_event = {
+	id = ww1_news.50
+	title = ww1_news.50.t
+	desc = ww1_news_desc.50
+	picture = GFX_news_event_treaty_of_versailles
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.50.a
+
+		country_event = { id = ww1_serbia.16 days = 7 }
+	}
+}

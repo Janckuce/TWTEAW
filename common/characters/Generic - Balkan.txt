@@ -1,0 +1,584 @@
+characters={
+    ### ROMANIA ###
+	ROM_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = ROM_Field_Marshal
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	ROM_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = ROM_General_1
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	ROM_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = ROM_General_2
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	ROM_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Advisor_1
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ROM_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Advisor_2
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ROM_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Advisor_3
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### SERBIA ###
+	SER_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SER_Field_Marshal
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SER_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_General_1
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SER_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_General_2
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SER_Advisor_1_ww1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = SER_Advisor_1
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SER_Advisor_2_ww1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = SER_Advisor_2
+			allowed = {
+				original_tag = SER
+			}
+			available = {
+				#
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SER_Advisor_3_ww1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = SER_Advisor_3
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### BULGARIA ###
+	BUL_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_Field_Marshal
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	BUL_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_General_1
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	BUL_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_General_2
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	BUL_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_Advisor_1
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	BUL_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_Advisor_2
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	BUL_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_Advisor_3
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### GREECE ###
+	GRE_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = GRE_Field_Marshal
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	GRE_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GRE_General_1
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	GRE_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GRE_General_2
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	GRE_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_Advisor_1
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GRE_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_Advisor_2
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GRE_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = GRE_Advisor_3
+			allowed = {
+				original_tag = GRE
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

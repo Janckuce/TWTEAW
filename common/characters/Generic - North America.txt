@@ -1,0 +1,633 @@
+characters={
+    ### United States of America ###
+	USA_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = USA_Advisor_1
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	USA_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = USA_Advisor_2
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	USA_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = USA_Advisor_3
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### Canada ###
+	CAN_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = CAN_Field_Marshal
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CAN_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = CAN_General_1
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CAN_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = CAN_General_2
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CAN_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CAN_Advisor_1
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CAN_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CAN_Advisor_2
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CAN_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CAN_Advisor_3
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### United States of Mexico ###
+	MEX_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = MEX_Field_Marshal
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	MEX_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = MEX_General_1
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	MEX_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = MEX_General_2
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	MEX_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_Advisor_1
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	MEX_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_Advisor_2
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	MEX_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = MEX_Advisor_3
+			allowed = {
+				original_tag = MEX
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### Free Mexican States ###
+	MXF_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = MXF_Field_Marshal
+			allowed = {
+				original_tag = MXF
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	MXF_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = MXF_General_1
+			allowed = {
+				original_tag = MXF
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	MXF_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = MXF_General_2
+			allowed = {
+				original_tag = MXF
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	MXF_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = MXF_Advisor_1
+			allowed = {
+				original_tag = MXF
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	MXF_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = MXF_Advisor_2
+			allowed = {
+				original_tag = MXF
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	MXF_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = MXF_Advisor_3
+			allowed = {
+				original_tag = MXF
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### Cuba ###
+	CUB_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = CUB_Field_Marshal
+			allowed = {
+				original_tag = CUB
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CUB_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = CUB_General_1
+			allowed = {
+				original_tag = CUB
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CUB_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = CUB_General_2
+			allowed = {
+				original_tag = CUB
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CUB_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CUB_Advisor_1
+			allowed = {
+				original_tag = CUB
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CUB_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CUB_Advisor_2
+			allowed = {
+				original_tag = CUB
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CUB_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CUB_Advisor_3
+			allowed = {
+				original_tag = CUB
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

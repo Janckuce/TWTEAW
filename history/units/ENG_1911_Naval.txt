@@ -1,0 +1,606 @@
+﻿units= {
+    ### NAVY ###
+	fleet = {
+	    name = "Royal Navy"
+		naval_base = 3501 #Dover
+		task_force = {
+		    name = "Grand Fleet"
+			location = 3501 #Dover
+			
+			#Dreadnoughts
+			ship = { name = "HMS Bellerophon" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Superb" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Temeraire" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS St Vincent" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Collingwood" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Vanguard" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Dreadnought" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Lord Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Agamemnon" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS King Edward VII" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Commonwealth" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Dominion" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hindustan" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Britania" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS New Zealand" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Africa" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hibernia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Albemarle" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Bulwark" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Albion" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Vengeance" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Majestic" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Caesar" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hannibal" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Illustrious" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Jupiter" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Magnificent" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Mars" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Prince George" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Victorious" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Empress of India" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Repulse" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hood" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Ramillies" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Resolution" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Royal Oak" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+			
+			#Light Cruisers
+			ship = { name = "HMS Hyacinth" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Proserpine" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Perseus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Philomel" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Fox" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hermione" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Bristol" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Forte" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS St George" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Gibraltar" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pegasus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pelorus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hermes" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Cambrian" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Grafton" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Pioneer" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Psyche" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Encounter" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS ChallenENG" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
+			
+			#Heavy Cruisers
+			ship = { name = "HMS Minotaur" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Shannon" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Defence" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Warrior" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Cochrane" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Achilles" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Natal" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hampshire" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Roxburgh" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Cumberland" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Cressy" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Sutlej" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Hogue" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "HMS Euryalus" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+			
+			#Destroyers
+			ship = { name = "Destroyer 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 4" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 5" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 6" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 7" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 8" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 9" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 10" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 14" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 15" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 17" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 18" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 20" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 21" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 22" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 23" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 24" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 25" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 26" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 27" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 28" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 29" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 30" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 31" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 32" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 33" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 34" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 35" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 36" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 37" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 38" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 39" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 40" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 41" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 42" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 43" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 44" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 45" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 46" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 47" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 48" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 49" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 50" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 51" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 52" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 53" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 54" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 55" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 56" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 57" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 58" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 59" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 60" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 61" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 62" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 63" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 64" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 65" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 66" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 67" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 68" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 69" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 70" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 71" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 72" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 73" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 74" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 75" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 76" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 77" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 78" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 79" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 80" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 81" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 82" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 83" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 84" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 85" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 86" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 87" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 88" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 89" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 90" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 91" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 92" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 93" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 94" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 95" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 96" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 97" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 98" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 99" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 100" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 101" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 102" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 103" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 104" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 105" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 106" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 107" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 108" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 109" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 110" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 111" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 112" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 113" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 114" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 115" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 116" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 117" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 118" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 119" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 120" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 121" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 122" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 123" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 124" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 125" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 126" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 127" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 128" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 129" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 130" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 131" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 132" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 133" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 134" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 135" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 136" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 137" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 138" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 139" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 140" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 141" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 142" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 143" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 144" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 145" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 146" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 147" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 148" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 149" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 150" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 151" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 152" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 153" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 154" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 155" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 156" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 157" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 158" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 159" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 160" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 161" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 162" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 163" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 164" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 165" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 166" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 167" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 168" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 169" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 170" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 171" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 172" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 173" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 174" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 175" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 176" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 177" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 178" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 179" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 180" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 181" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 182" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 183" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 184" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 185" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 186" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 187" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 188" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 189" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 190" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 191" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 192" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 193" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 194" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 195" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 196" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 197" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 198" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 199" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 200" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 201" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 202" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 203" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 204" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 205" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 206" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 207" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 208" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 209" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 210" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 211" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 212" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 213" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 214" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 215" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 216" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 217" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 218" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 219" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 220" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 221" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 222" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 223" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 224" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 225" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 226" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 227" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 228" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 229" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 230" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 231" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 232" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 233" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 234" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 235" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 236" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 237" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 238" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 239" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 240" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 241" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 242" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 243" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 244" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 245" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 246" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 247" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 248" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 249" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 250" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 251" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 252" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 253" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 254" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 255" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 256" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 257" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 258" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 259" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 260" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 261" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 262" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 263" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 264" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 265" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 266" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 267" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 268" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 269" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 270" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 271" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 272" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 273" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 274" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 275" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 276" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 277" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 278" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 279" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 280" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 281" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 282" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 283" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 284" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 285" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 286" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 287" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 288" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 289" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 290" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 291" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 292" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 293" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 294" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 295" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 296" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 297" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 298" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+			ship = { name = "Destroyer 299" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}
+
+instant_effect = {
+    #Dreadnoughts
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	
+	#Destroyers
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.55
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.45
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+    
+	#Light Cruisers
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+		industrial_manufacturer = mio:ENG_cammell_laird_organization
+	}
+}

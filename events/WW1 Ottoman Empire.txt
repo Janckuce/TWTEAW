@@ -1,0 +1,234 @@
+add_namespace = ww1_ottoman
+
+#Italy wins (accept/decline surrender)
+country_event = {
+	id = ww1_ottoman.1
+	title = ww1_ottoman.1.t
+	desc = ww1_ottoman_desc.1
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.1.a
+		
+		ITA = {
+		    transfer_state = 448
+			transfer_state = 449
+			transfer_state = 450
+			transfer_state = 451
+			transfer_state = 661
+			transfer_state = 662
+			transfer_state = 663
+			transfer_state = 273
+		}
+		
+		every_country = {
+			limit = {
+				OR = {
+					is_subject_of = ITA
+					is_in_faction_with = ITA
+				}
+			}
+			white_peace = ROOT
+		}
+		
+		ROOT = {
+		    white_peace = ITA
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_ottoman.1.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Ottoman Empire wins (send surrender event to italy)
+country_event = {
+	id = ww1_ottoman.2
+	title = ww1_ottoman.2.t
+	desc = ww1_ottoman_desc.2
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.2.a
+		
+		ITA = {
+		    country_event = ww1_italy.3
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_ottoman.2.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Lost in balkans (in the sauce)
+country_event = {
+	id = ww1_ottoman.3
+	title = ww1_ottoman.3.t
+	desc = ww1_ottoman_desc.3
+	picture = GFX_report_event_ottoman_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.3.a
+		
+		TUR = {
+		    set_country_flag = TUR_balkan_war_lost_1
+			news_event = ww1_news.40
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_subject_of = SER
+					is_in_faction_with = SER
+				}
+			}
+			white_peace = TUR
+		}
+		SER = {
+		    transfer_state = 817
+			transfer_state = 802
+			transfer_state = 909
+			transfer_state = 106
+		}
+		BUL = {
+		    transfer_state = 924
+			transfer_state = 819
+			transfer_state = 919
+			transfer_state = 731
+			transfer_state = 341
+			transfer_state = 184
+		}
+		GRE = {
+		    transfer_state = 837
+			transfer_state = 838
+			transfer_state = 805
+			transfer_state = 187
+		}
+		MNT = {
+		    transfer_state = 910
+		}
+		ALB = {
+		    transfer_state = 44
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_ottoman.3.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Berlin-Baghdad Railway
+country_event = {
+	id = ww1_ottoman.4
+	title = ww1_ottoman.4.t
+	desc = ww1_ottoman_desc.4
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.4.a
+
+		GER = {
+			country_event = { id = ww1_germany.11 days = 5 }
+			news_event = { id = ww1_news.45 days = 3 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_ottoman.4.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Ottomans join WW1
+country_event = {
+	id = ww1_ottoman.5
+	title = ww1_ottoman.5.t
+	desc = ww1_ottoman_desc.5
+	picture = GFX_news_event_goeben_and_breslau
+
+	mean_time_to_happen = { days = 7 }
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.5.a
+
+		RUS = {
+			declare_war_on = {
+				type = take_claimed_state
+				target = TUR
+			}
+		}
+	}
+}
+
+#Ultimatum to Bulgaria
+country_event = {
+	id = ww1_ottoman.6
+	title = ww1_ottoman.6.t
+	desc = ww1_ottoman_desc.6
+	picture = GFX_news_event_goeben_and_breslau
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.6.a
+		TUR = {
+		target = BUL
+		transfer_state = 341	
+		} 
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = ww1_ottoman.6.b
+		ai_chance = {
+			factor = 0
+		}
+		TUR = {
+			declare_war_on = {
+				type = take_claimed_state
+				target = BUL
+			}
+		}
+	}
+}

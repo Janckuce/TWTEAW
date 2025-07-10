@@ -1,0 +1,291 @@
+characters={
+    ### Spain ###
+	SPR_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SPR_Field_Marshal
+			allowed = {
+				original_tag = SPR
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SPR_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SPR_General_1
+			allowed = {
+				original_tag = SPR
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SPR_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SPR_General_2
+			allowed = {
+				original_tag = SPR
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SPR_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_Advisor_1
+			allowed = {
+				original_tag = SPR
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SPR_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_Advisor_2
+			allowed = {
+				original_tag = SPR
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	SPR_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = SPR_Advisor_3
+			allowed = {
+				original_tag = SPR
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### Portugal ###
+	POR_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = POR_Field_Marshal
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	POR_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = POR_General_1
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	POR_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = POR_General_2
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	POR_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = POR_Advisor_1
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	POR_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = POR_Advisor_2
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	POR_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = POR_Advisor_3
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

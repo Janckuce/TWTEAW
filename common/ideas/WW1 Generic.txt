@@ -1,0 +1,161 @@
+ideas = {
+    country = {
+        GEN_Mass_Mobilization_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
+		GEN_Fortification_Effort_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				production_speed_bunker_factor = 0.25
+			}
+		}
+		
+		GEN_Equal_Rights_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.05
+			}
+		}
+		
+		GEN_Militarism_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.05
+				conscription = 0.03
+				stability_factor = -0.1
+			}
+		}
+		
+		GEN_Stand_Alone_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+			    guarantee_cost = 2
+				guarantee_tension = 0.5
+				join_faction_tension = 0.1
+			}
+		}
+		
+		GEN_Volunteer_Corps_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+			    send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
+				political_power_cost = 0.1
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		
+		GEN_Military_Training_Act_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+		GEN_Deterrence_Spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+	}
+}

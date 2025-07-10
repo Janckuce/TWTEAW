@@ -1,0 +1,417 @@
+characters={
+	RUS_nicholas_II = {
+		name = RUS_character_nicholas_II
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_nicholas_II"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	RUS_provisional_government = {
+		name = RUS_character_provisional_government
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_provisional_government"
+			}
+		}
+	}
+	
+	RUS_vladimir_lenin = { #For a Short Period of time
+		name = RUS_character_vladimir_lenin
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_vladimir_lenin"
+			}
+		}
+	}
+	
+	RUS_various_leaders = {
+		name = RUS_character_various_leaders
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_various_leaders"
+			}
+		}
+	}
+	
+	RUS_nikolai_ruzsky = {
+		name = RUS_character_nikolai_ruzsky
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_nikolai_ruzsky"
+			}
+			army = {
+				small = "GFX_RUS_nikolai_ruzsky_frame"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RUS_nikolai_ruzsky
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	RUS_nikolai_nikolaevich = {
+		name = RUS_character_nikolai_nikolaevich
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_nikolai_nikolaevich"
+			}
+			army = {
+				small = "GFX_RUS_nikolai_nikolaevich_frame"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RUS_nikolai_nikolaevich
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_chief_defensive_2 #Inf Defense +10%
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	RUS_aleksei_brusilov = {
+		name = RUS_character_aleksei_brusilov
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_aleksei_brusilov"
+			}
+			army = {
+				small = "GFX_RUS_aleksei_brusilov_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_aleksei_brusilov
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	RUS_aleksei_kaledin = {
+		name = RUS_character_aleksei_kaledin
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_aleksei_kaledin"
+			}
+			army = {
+				small = "GFX_RUS_aleksei_kaledin_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_aleksei_kaledin
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	RUS_anton_denikin = {
+		name = RUS_character_anton_denikin
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_anton_denikin"
+			}
+			army = {
+				small = "GFX_RUS_anton_denikin_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_anton_denikin
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_concealment_2 #Enemy Air Support -10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	RUS_lavr_kornilov = {
+		name = RUS_character_lavr_kornilov
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_lavr_kornilov"
+			}
+			army = {
+				small = "GFX_RUS_lavr_kornilov_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = RUS_aleksei_kaledin
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	
+	RUS_nikolai_yudenich = {
+		name = RUS_character_nikolai_yudenich
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_nikolai_yudenich"
+			}
+			army = {
+				small = "GFX_RUS_nikolai_yudenich_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_nikolai_yudenich
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_logistics_2 #Division Attrition -8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	RUS_pyotr_krasnov = {
+		name = RUS_character_pyotr_krasnov
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_pyotr_krasnov"
+			}
+			army = {
+				small = "GFX_RUS_pyotr_krasnov_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RUS_pyotr_krasnov
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				army_artillery_2 #Artillery attack 10% Artillery Defense 15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	RUS_sergey_markov = {
+		name = RUS_character_sergey_markov
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_sergey_markov"
+			}
+			army = {
+				small = "GFX_RUS_sergey_markov_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	RUS_vladimir_sakharov = {
+		name = RUS_character_vladimir_sakharov
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_vladimir_sakharov"
+			}
+			army = {
+				small = "GFX_RUS_vladimir_sakharov_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	
+	########## Political Advisor ##########
+	
+	RUS_boris_savinkov = {
+		name = RUS_character_boris_savinkov
+		portraits = {
+			army = {
+				small = "GFX_RUS_boris_savinkov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_boris_savinkov
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RUS_aleksei_putilov = {
+		name = RUS_character_aleksei_putilov
+		portraits = {
+			army = {
+				small = "GFX_RUS_aleksei_putilov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_aleksei_putilov
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RUS_vladimir_sukhomlinov = {
+		name = RUS_character_vladimir_sukhomlinov
+		portraits = {
+			army = {
+				small = "GFX_RUS_vladimir_sukhomlinov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_vladimir_sukhomlinov
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

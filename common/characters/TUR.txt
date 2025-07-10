@@ -1,0 +1,254 @@
+characters={
+	TUR_besinci_mehmet = {
+		name = TUR_character_besinci_mehmet
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_besinci_mehmet"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+	TUR_sehzade_yusuf_izzeddin = {
+		name = TUR_character_sehzade_yusuf_izzeddin
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_sehzade_yusuf_izzeddin"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = TUR_sehzade_yusuf_izzeddin
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	TUR_omer_fahrettin_pasha = {
+		name = TUR_character_omer_fahrettin_pasha
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_omer_fahrettin_pasha"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_omer_fahrettin_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TUR_mustafa_kemal_ataturk = {
+		name = TUR_character_mustafa_kemal_ataturk
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_mustafa_kemal_ataturk"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_omer_fahrettin_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TUR_mustafa_fevzi_pasha = {
+		name = TUR_character_mustafa_fevzi_pasha
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_mustafa_fevzi_pasha"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = TUR_omer_fahrettin_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	TUR_mehmed_esad_pasha = {
+		name = TUR_character_mehmed_esad_pasha
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_mehmed_esad_pasha"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	TUR_ahmet_cemal_pasha = {
+		name = TUR_character_ahmet_cemal_pasha
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_ahmet_cemal_pasha"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	# Political Advisers #
+	
+	TUR_Guy1 = {
+		portraits = {
+			army = {
+				small = "GFX_TUR_Guy1_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_Guy1
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				economist #5% Production Efficiency Cap
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	TUR_Guy2 = {
+		portraits = {
+			army = {
+				small = "GFX_TUR_Guy2_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_Guy2
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	TUR_Guy3 = {
+		portraits = {
+			army = {
+				small = "GFX_TUR_Guy3_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_Guy3
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	TUR_Guy4 = {
+		portraits = {
+			army = {
+				small = "GFX_TUR_Guy4_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_Guy3
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

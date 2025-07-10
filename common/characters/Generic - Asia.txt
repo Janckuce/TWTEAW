@@ -1,0 +1,726 @@
+characters={
+    ### Japan ###
+	JAP_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = JAP_Field_Marshal
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	JAP_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = JAP_General_1
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	JAP_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = JAP_General_2
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	JAP_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_Advisor_1
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	JAP_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_Advisor_2
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	JAP_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_Advisor_3
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### Qing Dinasty ###
+	CHI_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = CHI_Field_Marshal
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CHI_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = CHI_General_1
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CHI_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = CHI_General_2
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	CHI_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_Advisor_1
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CHI_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_Advisor_2
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CHI_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_Advisor_3
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### China (PRC) ###
+	PRC_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = PRC_Field_Marshal
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	PRC_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = PRC_General_1
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	PRC_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = PRC_General_2
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	PRC_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Advisor_1
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PRC_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Advisor_2
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PRC_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_Advisor_3
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### India ###
+	RAJ_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = RAJ_Field_Marshal
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	RAJ_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = RAJ_General_1
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	RAJ_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = RAJ_General_2
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	RAJ_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Advisor_1
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RAJ_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Advisor_2
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	RAJ_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = RAJ_Advisor_3
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	### Korea ###
+	KOR_Field_Marshal = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_1"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = KOR_Field_Marshal
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	KOR_General_1 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_2"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = KOR_General_1
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	KOR_General_2 = {
+		portraits = {
+			civilian = {
+				large = "GFX_Generic_3"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = KOR_General_2
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	KOR_Advisor_1 = {
+		advisor={
+			slot = political_advisor
+			idea_token = KOR_Advisor_1
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	KOR_Advisor_2 = {
+		advisor={
+			slot = political_advisor
+			idea_token = KOR_Advisor_2
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	KOR_Advisor_3 = {
+		advisor={
+			slot = political_advisor
+			idea_token = KOR_Advisor_3
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

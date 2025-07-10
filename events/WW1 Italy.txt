@@ -1,0 +1,247 @@
+add_namespace = ww1_italy
+
+#War over libya
+country_event = {
+	id = ww1_italy.1
+	title = ww1_italy.1.t
+	desc = ww1_italy_desc.1
+	picture = GFX_report_event_italy_in_libya
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_italy.1.a
+		
+		ITA = {
+		    declare_war_on = {
+				type = take_claimed_state
+				target = 448.OWNER
+			}
+			#Tripoli
+			set_province_controller = 1149
+			set_province_controller = 4194
+			set_province_controller = 1189		
+			#Tobruk
+			set_province_controller = 1130
+			set_province_controller = 4136
+			set_province_controller = 9992
+			
+			division_template = {
+				name = "Divisione Coloniale"
+				division_names_group = ITA_INF_01
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 2
+					}
+				}
+				support = {
+					engineer = {
+						x = 0
+						y = 0
+					}
+				}
+			}
+			
+			#Tripoli
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1149
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1189
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4194
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1149
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1189
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4194
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			
+			#Tobruk
+			451 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1130
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4136
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 9992
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1130
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4136
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 9992
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+}
+
+#Italy Win (Send Option to turkey to surrender or not)
+country_event = {
+	id = ww1_italy.2
+	title = ww1_italy.2.t
+	desc = ww1_italy_desc.2
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_italy.2.a
+		
+		TUR = {
+			country_event = { id = ww1_ottoman.1 days = 5 }
+	    }
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_italy.2.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Italy Lose
+country_event = {
+	id = ww1_italy.3
+	title = ww1_italy.3.t
+	desc = ww1_italy_desc.3
+	picture = GFX_report_event_italy_in_libya
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_italy.3.a
+		
+		every_country = {
+			limit = {
+				OR = {
+					is_subject_of = TUR
+					is_in_faction_with = TUR
+				}
+			}
+			white_peace = ITA
+		}
+		
+		TUR = { white_peace = ITA }
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_italy.3.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

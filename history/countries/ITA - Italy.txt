@@ -1,0 +1,79 @@
+﻿capital = 2
+
+starting_train_buffer = 1.5
+
+set_oob = "ITA_1911"
+
+set_naval_oob = "ITA_1911_Naval"
+
+recruit_character = ITA_vittorio_emanuele_III
+recruit_character = ITA_benito_mussolini_K
+recruit_character = ITA_luigi_cadorna
+recruit_character = ITA_alberico_albricci
+recruit_character = ITA_alberto_cavaciocchi
+recruit_character = ITA_emanuele_filiberto_di_savoia-aosta
+recruit_character = ITA_giorgio_emo_di_capodilista
+recruit_character = ITA_gaetano_giardino
+recruit_character = ITA_pietro_badoglio
+recruit_character = ITA_armando_diaz
+recruit_character = ITA_Guy1
+recruit_character = ITA_Guy2
+recruit_character = ITA_Guy3
+recruit_character = ITA_Guy4
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+### Naval Tech ### - ONLY FOR MAJORS
+	set_technology = {
+		ww1_destroyer_1 = 1
+		ww1_light_cruiser_1 = 1
+		ww1_heavy_cruiser_1 = 1
+		ww1_dreadnought_1 = 1
+	}
+
+add_ideas = {
+	ITA_italian_unification
+	ITA_italian_colonies
+	ITA_central_powers
+	ITA_weak_economy
+	ITA_incompetent_military
+	ITA_incompetent_navy
+}
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+set_convoys = 300
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.2
+
+# End of Party Popularity, Stability, War Support and other ##

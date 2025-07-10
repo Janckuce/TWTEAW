@@ -1,0 +1,547 @@
+characters={
+	FRA_joseph_caillaux = {
+		name = FRA_character_joseph_caillaux
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_joseph_caillaux"
+			}
+			army = {
+				small = "GFX_FRA_joseph_caillaux_frame"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	FRA_raymond_poincare = {
+		name = FRA_character_raymond_poincare
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_raymond_poincare"
+			}
+		}
+	}
+	
+	FRA_aristide_briand = {
+		name = FRA_character_aristide_briand
+		portraits = {
+		    civilian = {
+				large = "GFX_FRA_aristide_briand"
+			}
+			army = {
+				small = "GFX_FRA_aristide_briand_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_aristide_briand
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_hire_a_captain_of_industry
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	FRA_louis_barthou = {
+		name = FRA_character_louis_barthou
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_louis_barthou"
+			}
+		}
+	}
+	
+	FRA_gaston_doumergue = {
+		name = FRA_character_gaston_doumergue
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_gaston_doumergue"
+			}
+		}
+	}
+	
+	FRA_alexandre_ribot = {
+		name = FRA_character_alexandre_ribot
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_alexandre_ribot"
+			}
+		}
+	}
+	
+	FRA_rene_viviani = {
+		name = FRA_character_rene_viviani
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_rene_viviani"
+			}
+		}
+	}
+	
+	FRA_paul_painleve = {
+		name = FRA_character_paul_painleve
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_paul_painleve"
+			}
+		}
+	}
+	
+	FRA_georges_clemenceau = {
+		name = FRA_character_georges_clemenceau
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_georges_clemenceau"
+			}
+		}
+	}
+	
+	FRA_ferdinand_foch = {
+		name = FRA_character_ferdinand_foch
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_ferdinand_foch"
+			}
+			army = {
+				small = "GFX_FRA_ferdinand_foch_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = FRA_ferdinand_foch
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_offensive_focus
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	FRA_joseph_joffre = {
+		name = FRA_character_joseph_joffre
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_joseph_joffre"
+			}
+			army = {
+				small = "GFX_FRA_joseph_joffre_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = FRA_joseph_joffre
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_defensive_focus
+			}
+			traits = {
+				army_chief_defensive_2 #Inf Defense +10%
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	
+	FRA_robert_nivelle = {
+		name = FRA_character_FRA_robert_nivelle
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_robert_nivelle"
+			}
+			army = {
+				small = "GFX_FRA_robert_nivelle_frame"
+			}
+		}
+		
+		field_marshal = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	FRA_adolphe_guillaumat = {
+		name = FRA_character_adolphe_guillaumat
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_adolphe_guillaumat"
+			}
+			army = {
+				small = "GFX_FRA_adolphe_guillaumat_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FRA_adolphe_guillaumat
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	
+	FRA_denis_auguste_duchene = {
+		name = FRA_character_denis_auguste_duchene
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_denis_auguste_duchene"
+			}
+			army = {
+				small = "GFX_FRA_denis_auguste_duchene_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FRA_denis_auguste_duchene
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				army_concealment_2 #Enemy Air Support -10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	
+	FRA_emile_fayolle = {
+		name = FRA_character_emile_fayolle
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_emile_fayolle"
+			}
+			army = {
+				small = "GFX_FRA_emile_fayolle_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = FRA_emile_fayolle
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	FRA_jean_degoutte = {
+		name = FRA_character_jean_degoutte
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_jean_degoutte"
+			}
+			army = {
+				small = "GFX_FRA_jean_degoutte_frame"
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	FRA_louis_franche_t_d_esperey = {
+		name = FRA_character_louis_franche_t_d_esperey
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_louis_franche_t_d_esperey"
+			}
+			army = {
+				small = "GFX_FRA_louis_franche_t_d_esperey_frame"
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	FRA_maurice_sarrail = {
+		name = FRA_character_maurice_sarrail
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_maurice_sarrail"
+			}
+			army = {
+				small = "GFX_FRA_maurice_sarrail_frame"
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	FRA_noel_edouard_de_castelnau = {
+		name = FRA_character_noel_edouard_de_castelnau
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_noel_edouard_de_castelnau"
+			}
+			army = {
+				small = "GFX_FRA_noel_edouard_de_castelnau_frame"
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	
+	FRA_paul_maistre = {
+		name = FRA_character_paul_maistre
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_paul_maistre"
+			}
+			army = {
+				small = "GFX_FRA_paul_maistre_frame"
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	
+	FRA_philippe_petain = {
+		name = FRA_character_philippe_petain
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_philippe_petain"
+			}
+			army = {
+				small = "GFX_FRA_philippe_petain_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = FRA_philippe_petain
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	
+	########## Political Advisor ##########
+	
+	FRA_charles_dumont = {
+		name = FRA_character_charles_dumont
+		portraits = {
+			army = {
+				small = "GFX_FRA_charles_dumont_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_charles_dumont
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	FRA_gaston_calmette = {
+		name = FRA_character_gaston_calmette
+		portraits = {
+			army = {
+				small = "GFX_FRA_gaston_calmette_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_gaston_calmette
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_head_of_directorate_of_buildings
+			}
+			traits = {
+				head_directorate_of_new_buildings #Construction Speed 10% Factory Output 5% Dockyard Output 5%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	FRA_georges_valois = {
+		name = FRA_character_georges_valois
+		portraits = {
+			army = {
+				small = "GFX_FRA_georges_valois_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_georges_valois
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	FRA_jean_jaures = {
+		name = FRA_character_jean_jaures
+		portraits = {
+			army = {
+				small = "GFX_FRA_jean_jaures_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_jean_jaures
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				economist #5% Production Efficiency Cap
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

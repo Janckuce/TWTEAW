@@ -1,0 +1,194 @@
+﻿division_template = {
+	name = "Divisione di Fanteria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+		name = "Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11773
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9772
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9772
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 10074
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11837
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 6606
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 11773
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9772
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9772
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 8043
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 12991
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 13250
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+
+### Air oob in its own file
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = ww1_infantry_equipment_2
+			creator = "ITA"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ww1_artillery_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}
+
+#####################

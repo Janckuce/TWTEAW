@@ -1,0 +1,189 @@
+characters={
+	USA_william_howard_taft = {
+		name = USA_character_william_howard_taft
+		portraits = {
+			civilian = {
+				large = "GFX_USA_william_howard_taft"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	USA_hunter_liggett = {
+		name = USA_character_hunter_liggett
+		portraits = {
+			civilian = {
+				large = "GFX_USA_hunter_liggett"
+			}
+			army = {
+				small = "GFX_USA_hunter_liggett_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = USA_hunter_liggett
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	
+	USA_john_pershing = {
+		name = USA_character_john_pershing
+		portraits = {
+			civilian = {
+				large = "GFX_USA_john_pershing"
+			}
+			army = {
+				small = "GFX_USA_john_pershing_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = USA_john_pershing
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	USA_frederick_funston = {
+		name = USA_character_frederick_funston
+		portraits = {
+			civilian = {
+				large = "GFX_USA_frederick_funston"
+			}
+			army = {
+				small = "GFX_USA_frederick_funston_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = USA_frederick_funston
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	USA_hubert_allison_allen = {
+		name = USA_character_hubert_allison_allen
+		portraits = {
+			civilian = {
+				large = "GFX_USA_hubert_allison_allen"
+			}
+			army = {
+				small = "GFX_USA_hubert_allison_allen_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = USA_hubert_allison_allen
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				army_concealment_2 #Enemy Air Support -10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	USA_james_aleshire = {
+		name = USA_character_james_aleshire
+		portraits = {
+			civilian = {
+				large = "GFX_USA_james_aleshire"
+			}
+			army = {
+				small = "GFX_USA_james_aleshire_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = USA_james_aleshire
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+}

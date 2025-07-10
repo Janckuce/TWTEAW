@@ -1,0 +1,986 @@
+characters={
+	GER_wilhelm_II = {
+		name = GER_character_wilhelm_II
+		portraits = {
+			civilian = {
+				large = "GFX_GER_wilhelm_II"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	GER_adolf_hitler_k = {
+		name = GER_character_adolf_hitler_k
+		portraits = {
+			civilian = {
+				large = "GFX_GER_adolf_hitler_k"
+			}
+			army = {
+				small = "GFX_GER_adolf_hitler_k_frame"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	GER_friedrich_erbert = {
+		name = GER_character_friedrich_erbert
+		portraits = {
+			civilian = {
+				large = "GFX_GER_friedrich_erbert"
+			}
+		}
+        country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	GER_paul_von_hindenburg = {
+		name = GER_character_paul_von_hindenburg
+		portraits = {
+			civilian = {
+				large = "GFX_GER_paul_von_hindenburg"
+			}
+			army = {
+				small = "GFX_GER_paul_von_hindenburg_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = GER_paul_von_hindenburg
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	GER_erich_ludendorff = {
+		name = GER_character_erich_ludendorff
+		portraits = {
+			army = {
+				large = "GFX_GER_erich_ludendorff"
+				small = "GFX_GER_erich_ludendorff_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = GER_erich_ludendorff
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = GER_erich_ludendorff_chief
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_chief_maneuver_2 #Division Speed +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=6
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+		}
+	}
+	
+	GER_leopold_von_bayern = {
+		name = GER_character_leopold_von_bayern
+		portraits = {
+			army = {
+				large = "GFX_GER_leopold_von_bayern"
+				small = "GFX_GER_leopold_von_bayern_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = GER_leopold_von_bayern
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_chief_defensive_2 #Inf Defense +10%
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	
+	GER_august_von_mackensen = {
+		name = GER_character_august_von_mackensen
+		portraits = {
+			army = {
+				large = "GFX_GER_august_von_mackensen"
+				small = "GFX_GER_august_von_mackensen_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GER_august_von_mackensen
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	
+	GER_alexander_von_kluck = {
+		name = GER_character_alexander_von_kluck
+		portraits = {
+			army = {
+				large = "GFX_GER_alexander_von_kluck"
+				small = "GFX_GER_alexander_von_kluck_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GER_alexander_von_kluck
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	GER_bruno_von_mudra = {
+		name = GER_character_bruno_von_mudra
+		portraits = {
+			army = {
+				large = "GFX_GER_bruno_von_mudra"
+				small = "GFX_GER_bruno_von_mudra_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GER_bruno_von_mudra
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_concealment_2 #Enemy Air Support -10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_erich_von_falkenhayn = {
+		name = GER_character_erich_von_falkenhayn
+		portraits = {
+			army = {
+				large = "GFX_GER_erich_von_falkenhayn"
+				small = "GFX_GER_erich_von_falkenhayn_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	
+	GER_felix_von_bothmer = {
+		name = GER_character_felix_von_bothmer
+		portraits = {
+			army = {
+				large = "GFX_GER_felix_von_bothmer"
+				small = "GFX_GER_felix_von_bothmer_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+	
+	GER_helmuth_von_moltke = {
+		name = GER_character_helmuth_von_moltke
+		portraits = {
+			army = {
+				large = "GFX_GER_helmuth_von_moltke"
+				small = "GFX_GER_helmuth_von_moltke_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+	
+	GER_hermann_von_francois = {
+		name = GER_character_hermann_von_francois
+		portraits = {
+			army = {
+				large = "GFX_GER_hermann_von_francois"
+				small = "GFX_GER_hermann_von_francois_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	
+	GER_max_von_gallwitz = {
+		name = GER_character_max_von_gallwitz
+		portraits = {
+			army = {
+				large = "GFX_GER_max_von_gallwitz"
+				small = "GFX_GER_max_von_gallwitz_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+	
+	GER_otto_von_below = {
+		name = GER_character_otto_von_below
+		portraits = {
+			army = {
+				large = "GFX_GER_otto_von_below"
+				small = "GFX_GER_otto_von_below_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	
+	GER_paul_von_lettow_vorbeck = {
+		name = GER_character_paul_von_lettow_vorbeck
+		portraits = {
+			army = {
+				large = "GFX_GER_paul_von_lettow_vorbeck"
+				small = "GFX_GER_paul_von_lettow_vorbeck_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GER_paul_von_lettow_vorbeck
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_entrenchment_2 #Entrenchment Speed +16%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=4
+		}
+	}
+	
+	GER_max_von_fabeck = {
+		name = GER_character_max_von_fabeck
+		portraits = {
+			army = {
+				large = "GFX_GER_max_von_fabeck"
+				small = "GFX_GER_max_von_fabeck_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GER_max_von_fabeck
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_artillery_2 #Artillery attack 10% Artillery Defense 15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	GER_karl_von_bulow = {
+		name = GER_character_karl_von_bulow
+		portraits = {
+			army = {
+				large = "GFX_GER_karl_von_bulow"
+				small = "GFX_GER_karl_von_bulow_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = GER_karl_von_bulow
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				army_logistics_2 #Division Attrition -8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	GER_curt_von_morgen = {
+		name = GER_character_curt_von_morgen
+		portraits = {
+			army = {
+				large = "GFX_GER_curt_von_morgen"
+				small = "GFX_GER_curt_von_morgen_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=4
+		}
+	}
+	
+	GER_eitel_friedrich = {
+		name = GER_character_eitel_friedrich
+		portraits = {
+			army = {
+				large = "GFX_GER_eitel_friedrich"
+				small = "GFX_GER_eitel_friedrich_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	
+	GER_georg_freiherr_von_gayl = {
+		name = GER_character_georg_freiherr_von_gayl
+		portraits = {
+			army = {
+				large = "GFX_GER_georg_freiherr_von_gayl"
+				small = "GFX_GER_georg_freiherr_von_gayl_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_gustav_von_kessel = {
+		name = GER_character_gustav_von_kessel
+		portraits = {
+			army = {
+				large = "GFX_GER_gustav_von_kessel"
+				small = "GFX_GER_gustav_von_kessel_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_hans_gaede = {
+		name = GER_character_hans_gaede
+		portraits = {
+			army = {
+				large = "GFX_GER_hans_gaede"
+				small = "GFX_GER_hans_gaede_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_hermann_von_eichhorn = {
+		name = GER_character_hermann_von_eichhorn
+		portraits = {
+			army = {
+				large = "GFX_GER_hermann_von_eichhorn"
+				small = "GFX_GER_hermann_von_eichhorn_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_josias_von_heeringen = {
+		name = GER_character_josias_von_heeringen
+		portraits = {
+			army = {
+				large = "GFX_GER_josias_von_heeringen"
+				small = "GFX_GER_josias_von_heeringen_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_karl_litzmann = {
+		name = GER_character_karl_litzmann
+		portraits = {
+			army = {
+				large = "GFX_GER_karl_litzmann"
+				small = "GFX_GER_karl_litzmann_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_karl_ludwig_d_elsa = {
+		name = GER_character_karl_ludwig_d_elsa
+		portraits = {
+			army = {
+				large = "GFX_GER_karl_ludwig_d_elsa"
+				small = "GFX_GER_karl_ludwig_d_elsa_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_karl_von_einem = {
+		name = GER_character_karl_von_einem
+		portraits = {
+			army = {
+				large = "GFX_GER_karl_von_einem"
+				small = "GFX_GER_karl_von_einem_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_Ludwig_von_falkenhausen = {
+		name = GER_character_Ludwig_von_falkenhausen
+		portraits = {
+			army = {
+				large = "GFX_GER_Ludwig_von_falkenhausen"
+				small = "GFX_GER_Ludwig_von_falkenhausen_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_martin_chales_de_beaulieu = {
+		name = GER_character_martin_chales_de_beaulieu
+		portraits = {
+			army = {
+				large = "GFX_GER_martin_chales_de_beaulieu"
+				small = "GFX_GER_martin_chales_de_beaulieu_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_max_von_hausen = {
+		name = GER_character_max_von_hausen
+		portraits = {
+			army = {
+				large = "GFX_GER_max_von_hausen"
+				small = "GFX_GER_max_von_hausen_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_moritz_von_bissing = {
+		name = GER_character_moritz_von_bissing
+		portraits = {
+			army = {
+				large = "GFX_GER_moritz_von_bissing"
+				small = "GFX_GER_moritz_von_bissing_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_otto_von_garnier = {
+		name = GER_character_otto_von_garnier
+		portraits = {
+			army = {
+				large = "GFX_GER_otto_von_garnier"
+				small = "GFX_GER_otto_von_garnier_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_otto_von_marchtaler = {
+		name = GER_character_otto_von_marchtaler
+		portraits = {
+			army = {
+				large = "GFX_GER_otto_von_marchtaler"
+				small = "GFX_GER_otto_von_marchtaler_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_paul_von_kneussl = {
+		name = GER_character_paul_von_kneussl
+		portraits = {
+			army = {
+				large = "GFX_GER_paul_von_kneussl"
+				small = "GFX_GER_paul_von_kneussl_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_robert_kosch = {
+		name = GER_character_robert_kosch
+		portraits = {
+			army = {
+				large = "GFX_GER_robert_kosch"
+				small = "GFX_GER_robert_kosch_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	GER_rudiger_von_der_goltz = {
+		name = GER_character_rudiger_von_der_goltz
+		portraits = {
+			army = {
+				large = "GFX_GER_rudiger_von_der_goltz"
+				small = "GFX_GER_rudiger_von_der_goltz_frame"
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	
+	########## Political Advisors ##########
+	
+	GER_johannes_kaempf = {
+		name = GER_character_johannes_kaempf
+		portraits = {
+			army = {
+				small = "GFX_GER_johannes_kaempf_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_johannes_kaempf
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				#
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_rudolf_havenstein = {
+		name = GER_character_rudolf_havenstein
+		portraits = {
+			army = {
+				small = "GFX_GER_rudolf_havenstein_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_rudolf_havenstein
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_max_wallraf = {
+		name = GER_character_max_wallraf
+		portraits = {
+			army = {
+				small = "GFX_GER_max_wallraf_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_max_wallraf
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_paul_metternich = {
+		name = GER_character_paul_metternich
+		portraits = {
+			army = {
+				small = "GFX_GER_paul_metternich_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_paul_metternich
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				economist #5% Production Efficiency Cap
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_johann_von_dallwitz = {
+		name = GER_character_johann_von_dallwitz
+		portraits = {
+			army = {
+				small = "GFX_GER_johann_von_dallwitz_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_johann_von_dallwitz
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_government = communism 
+			}
+			traits = {
+				red_suffragette #2% Recruitable Pop -10% Stability
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_karl_von_luxburg = {
+		name = GER_character_karl_von_luxburg
+		portraits = {
+			army = {
+				small = "GFX_GER_karl_von_luxburg_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_karl_von_luxburg
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				economic_reformer #-15% Consumer Goods Trade Laws Cost -33% Economy Laws -33%
+			}
+			cost = 175
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	GER_gottlieb_von_jagow = {
+		name = GER_character_gottlieb_von_jagow
+		portraits = {
+			army = {
+				small = "GFX_GER_gottlieb_von_jagow_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = GER_gottlieb_von_jagow
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				#
+			}
+			traits = {
+				head_directorate_of_new_buildings #Construction Speed 10% Factory Output 5% Dockyard Output 5%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

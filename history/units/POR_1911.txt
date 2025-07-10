@@ -1,0 +1,81 @@
+﻿division_template = {
+	name = "Divisão de Infantaria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+		name = "Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+}
+
+### Air oob in its own file
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = ww1_infantry_equipment_2
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ww1_artillery_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}
+
+#####################

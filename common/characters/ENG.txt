@@ -1,0 +1,437 @@
+characters={
+	ENG_george_V = {
+		name = ENG_character_george_V
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_george_V"
+			}
+			army = {
+				small = "GFX_ENG_george_V_frame"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	ENG_herbert_kitchener = {
+		name = ENG_character_herbert_kitchener
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_herbert_kitchener"
+			}
+			army = {
+				small = "GFX_ENG_herbert_kitchener_frame"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ENG_herbert_kitchener
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	ENG_prince_arthur = {
+		name = ENG_character_prince_arthur
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_prince_arthur"
+			}
+			army = {
+				small = "GFX_ENG_prince_arthur_frame"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ENG_prince_arthur
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_chief_defensive_2 #Inf Defense +10%
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	ENG_douglas_haig = {
+		name = ENG_character_douglas_haig
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_douglas_haig"
+			}
+			army = {
+				small = "GFX_ENG_douglas_haig_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ENG_douglas_haig
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	
+	ENG_edmund_allenby = {
+		name = ENG_character_edmund_allenby
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_edmund_allenby"
+			}
+			army = {
+				small = "GFX_ENG_edmund_allenby_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ENG_edmund_allenby
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_concealment_2 #Enemy Air Support -10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	
+	ENG_henry_rawlinson = {
+		name = ENG_character_henry_rawlinson
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_henry_rawlinson"
+			}
+			army = {
+				small = "GFX_ENG_henry_rawlinson_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ENG_henry_rawlinson
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ENG_herbert_plumer = {
+		name = ENG_character_herbert_plumer
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_herbert_plumer"
+			}
+			army = {
+				small = "GFX_ENG_herbert_plumer_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = ENG_herbert_plumer
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	ENG_horace_smith_dorrien = {
+		name = ENG_character_horace_smith_dorrien
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_horace_smith_dorrien"
+			}
+			army = {
+				small = "GFX_ENG_horace_smith_dorrien_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	ENG_ian_hamilton = {
+		name = ENG_character_ian_hamilton
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_ian_hamilton"
+			}
+			army = {
+				small = "GFX_ENG_ian_hamilton_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	ENG_julian_byng = {
+		name = ENG_character_julian_byng
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_julian_byng"
+			}
+			army = {
+				small = "GFX_ENG_julian_byng_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ENG_william_robertson = {
+		name = ENG_character_william_robertson
+		portraits = {
+			civilian = {
+				large = "GFX_ENG_william_robertson"
+			}
+			army = {
+				small = "GFX_ENG_william_robertson_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	########## Political Advisor ##########
+	
+	ENG_andrew_bonar_law = {
+		name = ENG_character_andrew_bonar_law
+		portraits = {
+			army = {
+				small = "GFX_ENG_andrew_bonar_law_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_andrew_bonar_law
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_captain_of_industry
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ENG_arthur_balfour = {
+		name = ENG_character_arthur_balfour
+		portraits = {
+			army = {
+				small = "GFX_ENG_arthur_balfour_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_arthur_balfour
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				has_completed_focus = ENG_silent_workhorse
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ENG_herbert_mullaly = {
+		name = ENG_character_herbert_mullaly
+		portraits = {
+			army = {
+				small = "GFX_ENG_herbert_mullaly_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_herbert_mullaly
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ENG_herbert_samuel = {
+		name = ENG_character_herbert_samuel
+		portraits = {
+			army = {
+				small = "GFX_ENG_herbert_samuel_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_herbert_samuel
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				economist #5% Production Efficiency Cap
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ENG_hiram_maxim = {
+		name = ENG_character_hiram_maxim
+		portraits = {
+			army = {
+				small = "GFX_ENG_hiram_maxim_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_hiram_maxim
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				economic_reformer #-15% Consumer Goods Trade Laws Cost -33% Economy Laws -33%
+			}
+			cost = 275
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ENG_reginald_mckenna = {
+		name = ENG_character_reginald_mckenna
+		portraits = {
+			army = {
+				small = "GFX_ENG_reginald_mckenna_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_reginald_mckenna
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				head_directorate_of_new_buildings #Construction Speed 10% Factory Output 5% Dockyard Output 5%
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

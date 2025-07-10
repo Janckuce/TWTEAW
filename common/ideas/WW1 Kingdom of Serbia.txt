@@ -1,0 +1,104 @@
+ideas = {
+
+	country = {
+		SER_trade_with_france = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = ENG_trade_with_france
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		SER_austrian_sanctions = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = chi_hyper_inflation2
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = -0.4
+				production_speed_infrastructure_factor = -0.4
+				stability_factor = -0.2
+			}
+		}
+		
+		SER_russia_with_us = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+			targeted_modifier = {
+				tag = AUS
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		SER_slavic_spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_slavic_spirit
+
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		
+		SER_prepared_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = chi_army_corruption3
+
+			targeted_modifier = {
+				tag = TUR
+				army_attack_factor = 0.25
+			}
+		}
+	}
+}

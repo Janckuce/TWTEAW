@@ -1,0 +1,45 @@
+
+state={
+	id=477
+	name="STATE_477"
+	manpower = 1951460
+	
+	state_category = town
+	
+	resources={
+		oil=9
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			12810 = {
+				naval_base = 3
+			}
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = MEX
+		add_core_of = MXF
+		victory_points = {
+			12810 5
+		}
+		victory_points = {
+			8089 10
+		}
+		MXF = {
+			set_province_controller = 8079
+			set_province_controller = 10732
+			set_province_controller = 12810
+		}
+	}
+
+	provinces={
+		8079 8089 10732 12810 
+	}
+	
+
+	local_supplies=0.0 
+}

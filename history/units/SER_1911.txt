@@ -1,0 +1,115 @@
+﻿division_template = {
+	name = "Pešadijske Divizije"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+		name = "Pešadijske Divizije"
+		location = 11586
+		division_template = "Pešadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Pešadijske Divizije"
+		location = 11586
+		division_template = "Pešadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Pešadijske Divizije"
+		location = 11586
+		division_template = "Pešadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Pešadijske Divizije"
+		location = 11586
+		division_template = "Pešadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Pešadijske Divizije"
+		location = 11586
+		division_template = "Pešadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Pešadijske Divizije"
+		location = 11586
+		division_template = "Pešadijske Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+
+### Air oob in its own file
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+    add_manpower = 100000
+	
+	add_equipment_production = {
+		equipment = {
+			type = ww1_infantry_equipment_2
+			creator = "SER"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SER" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ww1_artillery_equipment_1
+			creator = "SER"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}
+
+#####################

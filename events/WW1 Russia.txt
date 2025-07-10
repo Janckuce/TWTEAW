@@ -1,0 +1,362 @@
+add_namespace = ww1_russia
+
+#Russian Civil War Decision (Not the actual civil war )
+#!!!!!!!!!!!!!BUGGED!!!!!!!!!!! GAME CRASHES
+country_event = {
+	id = ww1_russia.1
+	title = ww1_russia.1.t
+	desc = ww1_russia_desc.1
+	picture = GFX_report_event_germany_form_ukraine
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.1.a
+	}
+}
+
+#Tsar Abdicated
+country_event = {
+	id = ww1_russia.2
+	title = ww1_russia.2.t
+	desc = ww1_russia_desc.2
+	picture = GFX_report_event_february_revolution
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.2.a
+		
+		add_country_leader_role = {
+			character = RUS_provisional_government
+			promote_leader = yes
+			country_leader = {
+				ideology = centrism
+				traits = {}
+			}
+		}
+		set_country_flag = RUS_provisional_government_flag
+		set_cosmetic_tag = RUS_provisional
+		news_event = ww1_news.12
+	}
+}
+
+#October Revolution
+country_event = {
+	id = ww1_russia.3
+	title = ww1_russia.3.t
+	desc = ww1_russia_desc.3
+	picture = GFX_report_event_RUS_winter_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.3.a
+		
+		set_cosmetic_tag = RUS_october_revolution
+		
+		add_popularity = {
+			ideology = communism
+			popularity = 0.7
+		}
+		set_politics = {
+	        ruling_party = communism
+		}
+		news_event = ww1_news.13
+		
+		add_country_leader_role = { #Lenin Becomes Leader
+			character = RUS_vladimir_lenin
+			promote_leader = yes
+			country_leader = {
+				ideology = leninism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Start Peace Negotiations
+country_event = {
+	id = ww1_russia.4
+	title = ww1_russia.4.t
+	desc = ww1_russia_desc.4
+	picture = GFX_report_event_RUS_winter_palace
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.4.a
+		
+		hidden_effect = {
+		    GER = {
+				country_event = { id = ww1_germany.7 days = 10 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_russia.4.b
+		
+		add_stability = -0.5
+		add_war_support = -0.5
+		add_political_power = -100
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Germany Pushes for East Europe
+country_event = {
+	id = ww1_russia.5
+	title = ww1_russia.5.t
+	desc = ww1_russia_desc.5
+	picture = GFX_report_event_treat_of_brest_litovsk
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.5.a
+		
+		hidden_effect = {
+		    GER = {
+				country_event = { id = ww1_germany.9 days = 10 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_russia.5.b
+		
+		hidden_effect = {
+		    country_event = { id = ww1_germany.8 days = 10 }
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Germany Pushes for Poland
+country_event = {
+	id = ww1_russia.6
+	title = ww1_russia.6.t
+	desc = ww1_russia_desc.6
+	picture = GFX_report_event_germany_form_poland
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.6.a
+		
+		hidden_effect = {
+		    GER = {
+				country_event = { id = ww1_germany.10 days = 10 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_russia.6.b
+		
+		hidden_effect = {
+		    GER = {
+				country_event = { id = ww1_germany.8 days = 10 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Finland Gains Independence
+country_event = {
+	id = ww1_russia.7
+	title = ww1_russia.7.t
+	desc = ww1_russia_desc.7
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.7.a
+		
+		FIN = { 
+		    transfer_state = 145
+			transfer_state = 111
+			transfer_state = 146
+			transfer_state = 150
+			transfer_state = 149
+			transfer_state = 148
+			transfer_state = 147
+			transfer_state = 722
+			inherit_technology = RUS
+			
+		}
+		RUS = {
+		    remove_state_core = 145
+			remove_state_core = 111
+			remove_state_core = 146
+			remove_state_core = 150
+			remove_state_core = 149
+			remove_state_core = 148
+			remove_state_core = 147
+			remove_state_core = 722
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = { id = ww1_russia.8 days = 10 }
+			}
+		}
+	}
+}
+
+#Caucasus Gains Independence
+country_event = {
+	id = ww1_russia.8
+	title = ww1_russia.8.t
+	desc = ww1_russia_desc.8
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.8.a
+		
+		GEO = { 
+		    transfer_state = 231
+			transfer_state = 826
+			inherit_technology = RUS
+		}
+		AZR = { 
+		    transfer_state = 229
+			inherit_technology = RUS
+		}
+		ARM	 = { 
+		    transfer_state = 230
+			inherit_technology = RUS
+		}
+		RUS = {
+		    remove_state_core = 231
+			remove_state_core = 826
+			remove_state_core = 229
+			remove_state_core = 230
+		}
+		TUR = {
+		    transfer_state = 928
+		}
+		if = {
+		    limit = {
+			    RUS = {
+				    controls_state = 419
+					controls_state = 420
+					controls_state = 266
+					controls_state = 416
+				}
+			}
+			PER = {
+			    transfer_state = 419
+				transfer_state = 420
+				transfer_state = 266
+				transfer_state = 416
+			}
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = { id = ww1_russia.9 days = 10 }
+			}
+		}
+	}
+}
+
+#Delete Troops
+country_event = {
+	id = ww1_russia.9
+	title = ww1_russia.9.t
+	desc = ww1_russia_desc.9
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.9.a
+		
+		RUS = {
+		    every_state = {
+				PREV = {
+					delete_unit = {						
+						state = PREV
+						disband = yes
+					}
+				}
+			}
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -500000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -500000
+			}
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = { id = ww1_russia.10 days = 10 }
+			}
+		}
+	}
+}
+
+#Delete Industry
+country_event = {
+	id = ww1_russia.10
+	title = ww1_russia.10.t
+	desc = ww1_russia_desc.10
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_russia.10.a
+		
+		every_owned_state = {
+	        limit = { industrial_complex > 0 }
+	        remove_building = { type = industrial_complex level = 25 }				
+        }
+		every_owned_state = {
+	        limit = { arms_factory > 0 }
+	        remove_building = { type = arms_factory level = 25 }				
+        }
+		every_owned_state = {
+	        limit = { dockyard > 0 }
+	        remove_building = { type = dockyard level = 25 }				
+        }
+		
+		hidden_effect = {
+			RUS = {
+				country_event = { id = ww1_sov_rus.1 days = 10 }
+			}
+		}
+	}
+}

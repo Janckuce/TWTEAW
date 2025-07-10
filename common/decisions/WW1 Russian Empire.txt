@@ -1,0 +1,61 @@
+RUS_uprising_category = {
+
+	RUS_uprising = {
+		priority = 2
+		allowed = {
+			original_tag = RUS
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+		    has_completed_focus = RUS_deal_with_the_communists
+		}
+		
+		highlight_states = {
+		    highlight_state_targets = { state = 195 } 
+	    }
+		
+		is_good = no
+		
+		days_mission_timeout = 100
+		
+		cancel_trigger = {
+		    #
+		}
+		
+		timeout_effect = {
+		}
+		
+		fire_only_once = yes
+	}
+	
+	RUS_delay_uprising_1 = {
+		priority = 1
+		allowed = {
+			original_tag = RUS
+		}
+		visible = {
+			has_active_mission = RUS_uprising
+		}
+		available = {
+		    always = yes
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+		    add_days_mission_timeout = {
+				mission = RUS_uprising
+				days = 100
+			}
+			add_political_power = -50
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+}

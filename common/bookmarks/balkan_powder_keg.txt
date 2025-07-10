@@ -1,0 +1,76 @@
+bookmarks = {
+	bookmark = {
+		name = "balkan_powder_keg_name"
+		desc = "balkan_powder_keg_desc"
+		date = 1911.1.1.12
+		picture = "GFX_select_date_1911"
+		default_country = "GER"
+		default = yes
+	
+		FRA = {
+			history = FRA_balkan_powder_keg_desc
+			ideology = democratic
+		}
+		TUR = {
+			history = TUR_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		ENG = {
+			history = ENG_balkan_powder_keg_desc
+			ideology = democratic
+			
+		}
+		GER = {
+			history = GER_balkan_powder_keg_desc
+			ideology = neutrality
+			ideas = {
+                #
+			}
+			focuses = {
+				#
+			}
+		}
+		ITA = {
+			history = ITA_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		AUS = {
+			history = AUS_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		RUS = {
+			history = RUS_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+
+		"---"={
+			history = "OTHER_balkan_powder_keg_desc"
+		}
+
+		# minors from DLC ####
+		"SER"={
+			minor = yes
+			history = SER_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		"USA"={
+			minor = yes
+			history = USA_balkan_powder_keg_desc
+			ideology = democratic
+		}
+		"CHI"={
+			minor = yes
+			history = CHI_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		"SPR"={
+			minor = yes
+			history = SPR_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

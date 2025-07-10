@@ -1,0 +1,32 @@
+ideas = {
+
+	country = {
+
+		MEX_civil_war = {
+
+			allowed = {
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_war_preparation
+			
+			available = {
+				ROOT = { has_war = yes }
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.75
+				army_org_factor = 0.2
+				army_speed_factor = -0.1
+				conscription_factor = 0.1
+				training_time_army_factor = 0.3
+			}
+		}
+	}
+}

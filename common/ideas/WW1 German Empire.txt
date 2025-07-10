@@ -1,0 +1,374 @@
+ideas = {
+
+	country = {
+		GER_training_with_aus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		GER_neglected_military = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_army_problems
+
+			modifier = {
+				training_time_army_factor = 0.3
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.15
+			}
+		}
+		
+		GER_won_1970_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_political_violence
+
+			modifier = {
+				conscription = -0.015
+			}
+		}
+		
+		GER_naval_arms_race = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_naval_race
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_dockyard = 0.5
+			}
+		}
+		
+		GER_naval_arms_race_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_naval_race
+
+			modifier = {
+				consumer_goods_factor = 0.45
+				industrial_capacity_dockyard = 0.8
+			}
+		}
+		
+		GER_alliance_with_austria = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				command_power_gain = 0.1
+			}
+		}
+		
+		GER_prussian_tradition = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				conscription = 0.005
+			}
+		}
+		
+		GER_ukrainian_wheat = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		
+		GER_economic_collapse = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = usa_great_depression_2
+
+			modifier = {
+				political_power_gain = -0.4
+				production_speed_industrial_complex_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
+				industrial_capacity_factory = -0.6
+			}
+		}
+		
+		GER_schlieffen_moltke_plan_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GER_schlieffen_moltke_plan
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.6
+			}
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.6
+			}
+			modifier = {
+				army_speed_factor = 0.75
+			}
+		}
+		
+		#Reworked Ideas
+		
+		GER_OHL_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GER_OHL
+
+			modifier = {
+				training_time_army_factor = -0.15
+				army_org_factor = 0.06
+				political_power_gain = -0.15
+			}
+		}
+		
+		GER_trade_with_aus_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GER_trade_with_aus
+
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		GER_unrestricted_submarine_warfare_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GER_submarine
+
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.3
+				experience_gain_navy = 0.1
+			}
+		}
+		
+		GER_ludendorff_offensive_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_ludendorff_offensive
+
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.6
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.6
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.6
+			}
+		}
+		
+		GER_quality_gun_control = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_infantry_equipment_manufacturer_2
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.4 instant = yes
+					soft_attack = 0.05 instant = yes
+					reliability = 0.05 instant = yes
+				}
+			}
+		}
+		
+		GER_quality_gun_control_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_infantry_equipment_manufacturer_2
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1 instant = yes
+					soft_attack = 0.01 instant = yes
+					reliability = 0.01 instant = yes
+				}
+			}
+		}
+		
+		GER_home_by_christmas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				date < 1914.12.24
+			}
+			
+			removal_cost = -1
+			
+            picture = ger_revive_the_kaiserreich
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				stability_factor = 1
+				war_support_factor = 1
+			}
+		}
+	}
+}

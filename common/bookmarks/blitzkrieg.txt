@@ -1,0 +1,69 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1914.6.28.12
+		picture = "GFX_select_date_1914"
+		default_country = "GER"
+	
+		FRA = {
+			history = FRA_balkan_powder_keg_desc
+			ideology = democratic
+		}
+		TUR = {
+			history = TUR_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		ENG = {
+			history = ENG_balkan_powder_keg_desc
+			ideology = democratic
+			
+		}
+		GER = {
+			history = GER_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		ITA = {
+			history = ITA_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		AUS = {
+			history = AUS_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		SOV = {
+			history = SOV_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+
+		"---"={
+			history = "OTHER_balkan_powder_keg_desc"
+		}
+
+		# minors from DLC ####
+		"SER"={
+			minor = yes
+			history = SER_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		"USA"={
+			minor = yes
+			history = USA_balkan_powder_keg_desc
+			ideology = democratic
+		}
+		"CHI"={
+			minor = yes
+			history = CHI_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		"SPR"={
+			minor = yes
+			history = SPR_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

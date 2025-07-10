@@ -1,0 +1,65 @@
+﻿capital = 797
+
+set_oob = "TUR_1911"
+
+set_naval_oob = "TUR_1911_Naval"
+
+starting_train_buffer = 1
+
+recruit_character = TUR_besinci_mehmet
+recruit_character = TUR_sehzade_yusuf_izzeddin
+recruit_character = TUR_omer_fahrettin_pasha
+recruit_character = TUR_mustafa_kemal_ataturk
+recruit_character = TUR_mustafa_fevzi_pasha
+recruit_character = TUR_mehmed_esad_pasha
+recruit_character = TUR_ahmet_cemal_pasha
+recruit_character = TUR_Guy1
+recruit_character = TUR_Guy2
+recruit_character = TUR_Guy3
+recruit_character = TUR_Guy4
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+### Naval Tech ### - ONLY FOR MAJORS
+	set_technology = {
+		ww1_destroyer_1 = 1
+		ww1_light_cruiser_1 = 1
+		ww1_heavy_cruiser_1 = 1
+		ww1_dreadnought_1 = 1
+	}
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+set_convoys = 300
+
+set_research_slots = 3
+set_stability = 0.3
+set_war_support = 0.1

@@ -1,0 +1,32 @@
+add_namespace = ww1_spain
+
+#France annexes Morocco, do we take the north?
+country_event = {
+	id = ww1_spain.1
+	title = ww1_spain.1.t
+	desc = ww1_spain_desc.1
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_spain.1.a
+		
+		SPR = {
+		    transfer_state = 290
+		}
+		add_named_threat = { threat = 1 name = SPR_annex_morocco }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_spain.1.b
+		
+		custom_effect_tooltip = FRA_agadir_crisis_back_down
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

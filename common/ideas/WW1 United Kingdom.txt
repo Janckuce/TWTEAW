@@ -1,0 +1,299 @@
+ideas = {
+
+	country = {
+
+		ENG_naval_arms_race = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_navy_bonus
+
+			modifier = {
+			    political_power_gain = -0.40
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.3
+				production_speed_arms_factory_factor = -0.2
+				experience_gain_navy_factor	= 0.05
+				production_speed_dockyard_factor = 0.2
+				experience_gain_navy = 0.1
+				industrial_capacity_dockyard = 0.5
+			}
+		}
+		
+		ENG_british_colonies = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_goods_red_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				local_resources_factor = 0.13
+			}
+		}
+		
+		ENG_volunteer_only_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = chi_forced_conscription
+
+			modifier = {
+			    training_time_army_factor = 1.0
+			}
+		}
+		
+		ENG_irish_resistence = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = chi_war_of_resistance2
+
+			modifier = {
+			    stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+		
+		ENG_trade_with_usa = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = ENG_trade_with_us
+
+			modifier = {
+			    stability_factor = 0.03
+				political_power_gain = 0.06
+				consumer_goods_factor = -0.07
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		ENG_trade_with_usa_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = ENG_trade_with_us
+
+			modifier = {
+			    stability_factor = 0.04
+				political_power_gain = 0.04
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		ENG_trade_with_france = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = ENG_trade_with_france
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		ENG_increased_research_funds_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_research_bonus
+
+			modifier = {
+			    research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		ENG_commonwealth_ties_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = eng_the_sun_never_sets
+
+			modifier = {
+			    research_speed_factor = 0.04
+			}
+		}
+		
+		ENG_weak_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_cost = 0.5
+
+			}
+		}
+		
+		ENG_weak_government_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_cost = 0.3
+
+			}
+		}
+		
+		ENG_prepare_for_the_inevitable_idea_ww1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_production_bonus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		ENG_entente = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+			modifier = {
+				war_support_factor = 0.05
+				training_time_army_factor = -0.1
+				army_org_factor = 0.05
+			}
+		}
+		
+		ENG_ger_naval_blockade_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_coastal_navy
+
+			modifier = {
+				war_support_factor = -0.05
+				training_time_army_factor = 0.05
+				army_org_factor = -0.05
+				surrender_limit = -0.1
+				political_power_cost = 0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+	}
+}

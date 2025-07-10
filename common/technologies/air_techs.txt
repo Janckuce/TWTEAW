@@ -1,0 +1,1242 @@
+technologies = {
+
+    #WW1
+	ww1_plane_testing = {
+		start_year = 1910
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 11 y = 2 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_engine_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_engine_1 = {
+		start_year = 1911
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 11 y = 4 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_machine_guns_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_machine_guns_1 = {
+		start_year = 1912
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 11 y = 6 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_airframe_design_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_plane_airframe_design_1 = {
+		start_year = 1913
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 9 y = 8 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_wings_design_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_plane_wings_design_1 = {
+		start_year = 1913
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 13 y = 8 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_bomb_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_radio_transimtter_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_radio_transimtter_1 = {
+		start_year = 1914
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_machine_guns_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_engine_2 = {
+		start_year = 1914
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 8 y = 10 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_fighter_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_machine_guns_2 = {
+		start_year = 1914
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_engine_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_fighter_1 = {
+		start_year = 1915
+		
+		enable_equipments = {
+			ww1_plane_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_airframe_design_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = 12 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_plane_airframe_design_2 = {
+		start_year = 1916
+		
+		air_superiority_efficiency = 0.1
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_wings_design_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_plane_wings_design_2 = {
+		start_year = 1916
+		
+		category_fighter = {
+			air_agility = 0.1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_fighter_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_fighter_2 = {
+		start_year = 1917
+		
+		enable_equipments = {
+			ww1_plane_equipment_2
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 4 y = 16 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 7
+				is_major = yes
+			}
+			
+			modifier = { #Big Airforce England
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Big Airforce Germany
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #Big Airforce France
+				factor = 7
+				tag = FRA
+			}
+			
+			modifier = { #Big Airforce US
+				factor = 7
+				tag = USA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_plane_bomb_1 = {
+		start_year = 1914
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 17 y = 10 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_cas_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_nav_bomber_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_strat_bomber_1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #We have to bomb Germany
+				factor = 20
+				tag = ENG
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = GER
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_cas_1 = {
+		start_year = 1915
+		
+		enable_equipments = {
+			ww1_cas_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_bomb_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 13 y = 12 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #We are looking for Strat Bombers but this is good too
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = GER
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_nav_bomber_1 = {
+		start_year = 1915
+		
+		enable_equipments = {
+			ww1_naval_bomber_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_bomb_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 21 y = 12 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Bomb the Deutsch Fleet NOW!
+				factor = 15
+				tag = ENG
+			}
+			
+			modifier = { #Bomb the Royal Navy Fleet NOW!
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #We do not care
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_strat_bomber_1 = {
+		start_year = 1915
+		
+		enable_equipments = {
+			ww1_strategic_bomber_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_bomb_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 17 y = 12 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Bomb Germany NOW!
+				factor = 30
+				tag = ENG
+			}
+			
+			modifier = { #We do not care
+				factor = 0.1
+				tag = GER
+			}
+			
+			modifier = { #We do not care
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_plane_bomb_2 = {
+		start_year = 1916
+		
+		air_cas_present_factor = 0.15
+		air_nav_efficiency = 0.1
+		tac_bomber = {
+			air_bombing = 0.10
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 17 y = 14 }
+		}
+		
+		path = {
+			leads_to_tech = ww1_cas_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_strat_bomber_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_nav_bomber_2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #We have to bomb Germany
+				factor = 20
+				tag = ENG
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = GER
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_cas_2 = {
+		start_year = 1917
+		
+		enable_equipments = {
+			ww1_cas_equipment_2
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 13 y = 16 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #We are looking for Strat Bombers but this is good too
+				factor = 7
+				tag = ENG
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = GER
+			}
+			
+			modifier = { #Lets get CAS
+				factor = 20
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_strat_bomber_2 = {
+		start_year = 1917
+		
+		enable_equipments = {
+			ww1_strategic_bomber_2
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_bomb_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 17 y = 16 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Bomb Germany NOW!
+				factor = 30
+				tag = ENG
+			}
+			
+			modifier = { #We do not care
+				factor = 0.1
+				tag = GER
+			}
+			
+			modifier = { #We do not care
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+	
+	ww1_nav_bomber_2 = {
+		start_year = 1917
+		
+		enable_equipments = {
+			ww1_naval_bomber_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = ww1_plane_bomb_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 21 y = 16 }
+		}
+
+		categories = {
+			light_air
+			light_fighter
+			cas_bomber
+			naval_air
+			naval_bomber
+			air_equipment
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Bomb the Deutsch Fleet NOW!
+				factor = 15
+				tag = ENG
+			}
+			
+			modifier = { #Bomb the Royal Navy Fleet NOW!
+				factor = 7
+				tag = GER
+			}
+			
+			modifier = { #We do not care
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Small Countries won't make planes
+				num_of_military_factories < 30
+				factor = 0.1
+			}
+		}
+	}
+}

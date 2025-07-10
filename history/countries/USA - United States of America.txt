@@ -1,0 +1,91 @@
+﻿capital = 361
+
+starting_train_buffer = 5
+
+set_oob = "USA_1911"
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+recruit_character = USA_frederick_funston
+recruit_character = USA_hubert_allison_allen
+recruit_character = USA_hunter_liggett
+recruit_character = USA_james_aleshire
+recruit_character = USA_john_pershing
+recruit_character = USA_william_howard_taft
+#Generic Characters
+recruit_character = USA_Advisor_1
+recruit_character = USA_Advisor_2
+recruit_character = USA_Advisor_3
+
+### Naval Tech ### - ONLY FOR MAJORS
+	set_technology = {
+		ww1_destroyer_1 = 1
+		ww1_light_cruiser_1 = 1
+		ww1_heavy_cruiser_1 = 1
+		ww1_dreadnought_1 = 1
+	}
+
+give_guarantee = CAN
+give_guarantee = CUB
+give_guarantee = HAI
+give_guarantee = DOM
+give_guarantee = GUA
+give_guarantee = HON
+give_guarantee = ELS
+give_guarantee = NIC
+give_guarantee = COS
+give_guarantee = PAN
+give_guarantee = VEN
+give_guarantee = COL
+give_guarantee = ECU
+give_guarantee = PRU
+give_guarantee = BRA
+give_guarantee = BOL
+give_guarantee = CHL
+give_guarantee = PAR
+give_guarantee = ARG
+give_guarantee = URG
+
+# DIPLOMACY
+set_autonomy = {
+	target = PHI
+	autonomous_state = autonomy_puppet
+}
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 100
+}
+
+set_convoys = 100
+
+set_research_slots = 4
+set_stability = 0.8
+set_war_support = 0.4
+
+# End of Party Popularity, Stability, War Support and other ##

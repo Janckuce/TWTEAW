@@ -1,0 +1,486 @@
+add_namespace = ww1_serbia
+
+#ultimatum accept
+country_event = {
+	id = ww1_serbia.1
+	title = ww1_serbia.1.t
+	desc = ww1_serbia_desc.1
+	picture = GFX_report_event_germany_form_ukraine
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.1.a
+		
+		hidden_effect = {
+			GER = {
+				news_event = { id = ww1_news.7 days = 15 }
+				news_event = { id = ww1_news.8 days = 2 }
+			}
+			AUS = {
+				country_event = { id = ww1_austria.3 days = 5 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_serbia.1.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Ottoman Transfer Macedonia?
+country_event = {
+	id = ww1_serbia.2
+	title = ww1_serbia.2.t
+	desc = ww1_serbia_desc.2
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.2.a
+		
+		TUR = {
+		    set_country_flag = TUR_befriend_SER
+		}
+		
+		SER = {
+		    country_event = ww1_serbia.3
+			
+		    transfer_state = 802
+			transfer_state = 817
+			transfer_state = 106
+			transfer_state = 909
+			transfer_state = 924
+			transfer_state = 819
+		}
+		MNT = {
+		    transfer_state = 910
+		}
+		
+		ai_chance = {
+			factor = 80
+		}
+	}
+	option = {
+		name = ww1_serbia.2.b
+		
+		TUR = {
+		    set_country_flag = TUR_deny_SER
+		}
+		
+		SER = {
+		    country_event = ww1_serbia.4
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Yes
+country_event = {
+	id = ww1_serbia.3
+	title = ww1_serbia.3.t
+	desc = ww1_serbia_desc.3
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.3.a
+	}
+}
+
+#No
+country_event = {
+	id = ww1_serbia.4
+	title = ww1_serbia.4.t
+	desc = ww1_serbia_desc.4
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.4.a
+	}
+}
+
+#Montenegro do we become serbia?
+country_event = {
+	id = ww1_serbia.5
+	title = ww1_serbia.5.t
+	desc = ww1_serbia_desc.5
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.5.a
+		
+		SER = {
+		    country_event = ww1_serbia.6
+		}
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = ww1_serbia.5.b
+		
+		SER = {
+		    country_event = ww1_serbia.7
+		}
+		
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#Yes
+country_event = {
+	id = ww1_serbia.6
+	title = ww1_serbia.6.t
+	desc = ww1_serbia_desc.6
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.6.a
+		
+		SER = {
+		    transfer_state = 910
+			transfer_state = 105
+			add_state_core = 910
+			add_state_core = 105
+		}
+	}
+}
+
+#No
+country_event = {
+	id = ww1_serbia.7
+	title = ww1_serbia.7.t
+	desc = ww1_serbia_desc.7
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.7.a
+		
+		SER = {
+			add_state_core = 910
+			add_state_core = 105
+			
+			create_wargoal = {
+				type = take_core_state 
+				target = MNT
+			}
+		}
+	}
+}
+
+#Bulgaria do we become serbia?
+country_event = {
+	id = ww1_serbia.8
+	title = ww1_serbia.8.t
+	desc = ww1_serbia_desc.8
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.8.a
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = ww1_serbia.5.b
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Yes
+country_event = {
+	id = ww1_serbia.9
+	title = ww1_serbia.9.t
+	desc = ww1_serbia_desc.9
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.9.a
+		
+		SER = {
+		    transfer_state = 48
+			transfer_state = 212
+			transfer_state = 801
+			transfer_state = 211
+			transfer_state = 77
+			
+			add_state_core = 48
+			add_state_core = 212
+			add_state_core = 801
+			add_state_core = 211
+			add_state_core = 77
+		}
+	}
+}
+
+#No
+country_event = {
+	id = ww1_serbia.10
+	title = ww1_serbia.10.t
+	desc = ww1_serbia_desc.10
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.10.a
+		
+		SER = {
+			add_state_core = 48
+			add_state_core = 212
+			add_state_core = 801
+			add_state_core = 211
+			add_state_core = 77
+			
+			create_wargoal = {
+				type = take_core_state 
+				target = BUL
+			}
+		}
+	}
+}
+
+#Balkan League
+country_event = {
+	id = ww1_serbia.11
+	title = ww1_serbia.11.t
+	desc = ww1_serbia_desc.11
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.11.a
+		
+		if = {
+		    limit = {
+			    original_tag = BUL
+			}
+			SER = {
+			    country_event = ww1_serbia.12
+				add_to_faction = BUL
+			}
+		}
+		
+		if = {
+		    limit = {
+			    original_tag = GRE
+			}
+			SER = {
+			    country_event = ww1_serbia.13
+				add_to_faction = GRE
+			}
+		}
+		
+		if = {
+		    limit = {
+			    original_tag = MNT
+			}
+			SER = {
+			    country_event = ww1_serbia.14
+				add_to_faction = MNT
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_serbia.11.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Bulgaria Accepts
+country_event = {
+	id = ww1_serbia.12
+	title = ww1_serbia.12.t
+	desc = ww1_serbia_desc.12
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.11.a
+	}
+}
+
+#Greece Accepts
+country_event = {
+	id = ww1_serbia.13
+	title = ww1_serbia.13.t
+	desc = ww1_serbia_desc.13
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.13.a
+	}
+}
+
+#Montenegro Accepts
+country_event = {
+	id = ww1_serbia.14
+	title = ww1_serbia.14.t
+	desc = ww1_serbia_desc.14
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.14.a
+	}
+}
+
+#Second Balkan War
+country_event = {
+	id = ww1_serbia.15
+	title = ww1_serbia.15.t
+	desc = ww1_serbia_desc.15
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ww1_serbia.15.a
+
+		SER = {
+		create_faction = "Second Balkan League"
+		add_to_faction = GRE
+		add_to_faction = MNT
+		}
+		news_event = ww1_news.50
+	}
+}
+
+country_event = {
+	id = ww1_serbia.16
+	title = ww1_serbia.16.t
+	desc = ww1_serbia_desc.16
+	picture = GFX_report_event_ottoman_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.16.a
+
+		BUL = {
+			declare_war_on = {
+				type = take_claimed_state
+				target = SER
+			}
+			declare_war_on = {
+				type = take_claimed_state
+				target = GRE
+			}
+			declare_war_on = {
+				type = take_claimed_state
+				target = MNT
+			}
+		}
+		country_event = {id = ww1_serbia.17 days = 7}
+	}
+}
+
+country_event = {
+	id = ww1_serbia.17
+	title = ww1_serbia.17.t
+	desc = ww1_serbia_desc.17
+	picture = GFX_report_event_ottoman_troops
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.17.a
+
+		ROM = {
+			declare_war_on = {
+				type = take_core_state
+				target = BUL
+			}
+		}
+				BUL = {
+					country_event = ww1_ottoman.6
+		}
+	}
+}
+
+#Bulgaria surrendering to Balkan League
+country_event = {
+	id = ww1_serbia.18
+	title = ww1_serbia.18.t
+	desc = ww1_serbia_desc.18
+	picture = GFX_report_event_ottoman_troops
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_serbia.18.a
+
+		every_country = {
+			white_peace = BUL
+		}
+		
+		SER = {
+			transfer_state = 924
+		}
+		GRE = {
+			transfer_state = 731
+			leave_faction = yes
+		}
+		ROM = {
+			transfer_state = 77
+			leave_faction = yes
+		}
+		TUR = {
+			transfer_state = 341
+			leave_faction = yes
+		}
+		MNT = {
+			leave_faction = yes
+		}
+	}
+}

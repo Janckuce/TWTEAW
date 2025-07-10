@@ -1,0 +1,548 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+AUS_kill_serbia = {
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		BUL = {
+		    has_war_with = SER
+		}
+	}
+	
+	abort = {
+	    OR = {
+		    surrender_progress > 0.10
+			casualties > 500000
+			SER = {
+				has_capitulated = yes
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = SER
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = SER
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+AUS_dont_help_TUR = {
+	allowed = {
+		original_tag = AUS
+	}
+	enable = {
+		is_in_faction_with = TUR
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TUR
+		value = 500
+	}
+}
+
+AUS_dont_help_GER = {
+	allowed = {
+		original_tag = AUS
+	}
+	enable = {
+		is_in_faction_with = GER
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GER
+		value = 500
+	}
+}
+
+AUS_defend_against_SER = { #Before War
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+		has_war = no
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = SER
+		value = 100
+	}
+}
+
+AUS_defend_against_RUS = { #Before War
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+		has_war = no
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = RUS
+		value = 500
+	}
+}
+
+AUS_defend_against_ITA = {
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+		has_war = yes
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = ITA
+		value = 50
+	}
+}
+
+AUS_defend_against_ROM = { #Before War
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		is_historical_focus_on = yes
+		has_war = no
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = ROM
+		value = 10
+	}
+}
+
+AUS_lose_lands_to_RUS = { #For Historical Effect
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		OR = {
+			date > 1914.1.1
+			RUS = { has_guaranteed = SER }
+		}
+		RUS = {
+			is_neighbor_of = ROOT
+		}
+	}
+	
+	abort = {
+		OR = {
+			is_in_faction_with = RUS
+			has_capitulated = yes
+			RUS = { has_war_with = SOV }
+			UKR = {
+				exists = yes
+			}
+			91 = {
+				NOT = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+	}
+}
+
+AUS_fight_SER = {
+	allowed = {
+		original_tag = AUS
+	}
+
+	enable = {
+		tag = AUS
+		has_war_with = SER	
+	}
+	abort = {
+		OR = {
+			is_puppet = yes
+			SER = {
+				has_capitulated = yes
+			}
+		}		
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = SER
+		value = 50
+	}
+
+}
+
+AUS_antagonize_SER = {
+	allowed = {
+		original_tag = AUS
+	}
+
+	enable = {
+		tag = AUS
+	}
+	abort = {
+		date > 1918.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = antagonize
+		id = SER		
+		value = 300 
+	}
+
+}
+
+AUS_dont_attack_rus = { # We dont like a front that looks like ww2
+    allowed = {
+		original_tag = RUS
+	}
+	
+	enable = {
+		has_war_with = RUS
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ratio = 0.5
+		priority = 1000
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = yes
+	}
+}
+
+AUS_defend_when_lacking_guns = {
+    allowed = {
+		original_tag = AUS
+	}
+	
+	enable = {
+		has_war_with = RUS
+		stockpile_ratio = {	## 5% of the armies equipment must be in reserves
+			archetype = infantry_equipment
+			ratio < 0.05
+		}
+	}
+	
+	abort = {
+		OR = {
+			stockpile_ratio = {	## 7% of the armies equipment must be in reserves
+				archetype = infantry_equipment
+				ratio > 0.07
+			}
+			surrender_progress > 0.15
+		}
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = SER
+		ratio = 0.5
+		priority = 100
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = yes
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = ITA
+		ratio = 0.5
+		priority = 300
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = yes
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ratio = 0.5
+		priority = 500
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = yes
+	}
+}
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################### Divisions Caps #############################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+
+AUS_division_cap = {
+    allowed = { 
+		original_tag = AUS
+	}
+	
+	enable = {
+		set_temp_variable = {
+			upper_limit = 99 #This Should be enough to hold the tiny front with austria
+		}
+		check_variable = {
+			num_divisions > upper_limit
+		}
+	}
+	abort = {
+		date > 1919.0.0
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = cavalry
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = garrison
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = suppression
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = paratroopers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = mountaineers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marines
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = light_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = heavy_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = medium_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = modern_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = -9999
+	}
+}
+
+# Austria Unit Production # this must stay at the bottom
+
+AUS_unit_production = {
+
+	allowed = {	original_tag = AUS }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 7
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 55
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 45
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+
+}
+
+AUS_fighter_enhanced_production = {
+	allowed = { original_tag = AUS }
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		has_equipment = { small_plane_airframe > 4000 }
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 4
+	}
+
+	ai_strategy = {
+		type = air_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 100
+	}
+
+}

@@ -1,0 +1,379 @@
+characters={
+	AUS_franz_joseph = {
+		name = AUS_character_franz_joseph
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_franz_joseph"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria = {
+		name = AUS_character_karl_franz_josef_ludwig_hubert_georg_otto_maria
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria"
+			}
+		}
+	}
+	
+	AUS_franz_conrad_von_hotzendorf = {
+		name = AUS_character_franz_conrad_von_hotzendorf
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_franz_conrad_von_hotzendorf"
+			}
+			army = {
+				small = "GFX_AUS_franz_conrad_von_hotzendorf_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = AUS_franz_conrad_von_hotzendorf
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				has_completed_focus = AUS_army_offense
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	AUS_friedrich_von_osterreich_teschen = {
+		name = AUS_character_friedrich_von_osterreich_teschen
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_friedrich_von_osterreich_teschen"
+			}
+			army = {
+				small = "GFX_AUS_friedrich_von_osterreich_teschen_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = AUS_friedrich_von_osterreich_teschen
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				army_chief_defensive_2 #Inf Defense +10%
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	
+	AUS_hermann_kovess_von_kovesshaza = {
+		name = AUS_character_hermann_kovess_von_kovesshaza
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_hermann_kovess_von_kovesshaza"
+			}
+			army = {
+				small = "GFX_AUS_hermann_kovess_von_kovesshaza_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = AUS_hermann_kovess_von_kovesshaza
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			    army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	AUS_eduard_freiherr_von_bohm-rrmolli = {
+		name = AUS_character_eduard_freiherr_von_bohm-rrmolli
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_eduard_freiherr_von_bohm-rrmolli"
+			}
+			army = {
+				small = "GFX_AUS_eduard_freiherr_von_bohm-rrmolli_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = AUS_eduard_freiherr_von_bohm-rrmolli
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			    army_concealment_2 #Enemy Air Support -10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	
+	AUS_franz_rohr_von_denta = {
+		name = AUS_character_franz_rohr_von_denta
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_franz_rohr_von_denta"
+			}
+			army = {
+				small = "GFX_AUS_franz_rohr_von_denta_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = AUS_franz_rohr_von_denta
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			   army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	AUS_liborius_von_frank = {
+		name = AUS_character_liborius_von_frank
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_liborius_von_frank"
+			}
+			army = {
+				small = "GFX_AUS_liborius_von_frank_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = AUS_liborius_von_frank
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			    military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	AUS_anton_liposcak = {
+		name = AUS_character_anton_liposcak
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_anton_liposcak"
+			}
+			army = {
+				small = "GFX_AUS_anton_liposcak_frame"
+			}
+		}
+		
+		advisor={
+			slot = air_chief
+			idea_token = AUS_anton_liposcak
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			    air_chief_reform_2 #10% Air Exp
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	AUS_wenzel_von_wurm = {
+		name = AUS_character_wenzel_von_wurm
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_wenzel_von_wurm"
+			}
+			army = {
+				small = "GFX_AUS_wenzel_von_wurm_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = AUS_wenzel_von_wurm
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			    war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	AUS_alexander_von_krobatin = {
+		name = AUS_character_alexander_von_krobatin
+		portraits = {
+			civilian = {
+				large = "GFX_AUS_alexander_von_krobatin"
+			}
+			army = {
+				small = "GFX_AUS_alexander_von_krobatin_frame"
+			}
+		}
+		
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	#Political Advisor#
+	
+	AUS_paul_gautsch_von_frankenthurn = {
+		name = AUS_character_paul_gautsch_von_frankenthurn
+		portraits = {
+			army = {
+				small = "GFX_AUS_paul_gautsch_von_frankenthurn_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = AUS_paul_gautsch_von_frankenthurn
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+			    silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	AUS_leon_von_bilinski = {
+		name = AUS_character_leon_von_bilinski
+		portraits = {
+			army = {
+				small = "GFX_AUS_leon_von_bilinski_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = AUS_leon_von_bilinski
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				has_completed_focus = AUS_hire_captain_of_industry
+			}
+			traits = {
+			    captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

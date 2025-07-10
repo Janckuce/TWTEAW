@@ -1,0 +1,27 @@
+AI_decisions = {
+	test = {
+		priority = 100
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		available = {
+		    surrender_progress > 0.1
+		}
+
+		complete_effect = {
+		    ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100000
+				}
+				add_ideas = AI_desperate_defense
+			}
+		}
+		
+	}
+}

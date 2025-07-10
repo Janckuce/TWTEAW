@@ -1,0 +1,338 @@
+ideas = {
+
+	country = {
+
+		AUS_national_resources_mobilized = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		AUS_german_goods = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		AUS_19th_century_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = usa_great_depression_2
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				political_power_gain = -0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		AUS_20th_century_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = ARG_civilian_economy_boost
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		AUS_multi_ethnic_empire_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AUS_multi_ethnic_empire
+
+			modifier = {
+				political_power_gain = -0.3
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				stability_factor = -0.3
+			}
+		}
+		
+		AUS_multi_ethnic_empire_idea_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AUS_multi_ethnic_empire
+
+			modifier = {
+				political_power_gain = -0.15
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+		
+		AUS_dealing_with_nationalists = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AUH_multi_ethnic_empire
+
+			modifier = {
+				political_power_gain = -0.5
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				industrial_capacity_factory = -0.5
+			}
+		}
+		
+		AUS_incompetent_officers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = chi_incompetent_officers
+
+			modifier = {
+				training_time_army_factor = 0.4
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+				army_org_factor = -0.2
+			}
+		}
+		
+		AUS_incompetent_officers_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = chi_incompetent_officers
+
+			modifier = {
+				training_time_army_factor = 0.2
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.1
+			}
+		}
+		
+		AUS_central_powers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    OR = {
+					NOT = { 
+						ORO = { has_country_flag = WW1_ended_spectator }
+					}
+					ROOT = { is_in_faction_with = GER }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = ITA_central_powers
+
+			modifier = {
+				war_support_factor = 0.05
+				training_time_army_factor = -0.1
+				army_org_factor = 0.05
+			}
+		}
+		
+		AUS_czech_parliment = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AUS_czech_parliment
+
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		
+		AUS_increased_hungarian_autonomy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = { 
+				    ORO = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AUS_increased_hungary_autonomy
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = 0.05
+				army_defence_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+	}
+}

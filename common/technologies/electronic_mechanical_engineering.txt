@@ -1,0 +1,363 @@
+technologies = {
+    #WW1
+	ww1_electrical_engineering_1 = {
+		path = {
+			leads_to_tech = ww1_radio_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_mechanical_computing_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_blueprints_1
+			research_cost_coeff = 1
+		}
+		
+		# small boost to research speed
+		research_speed_factor = 0.03
+		
+		research_cost = 2
+		start_year = 1911
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_radio_1 = {
+		path = {
+			leads_to_tech = ww1_radio_2 
+			research_cost_coeff = 1
+		}
+		
+		land_reinforce_rate = 0.02
+		
+		research_cost = 2
+		start_year = 1913
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_radio_2 = {
+		path = {
+			leads_to_tech = ww1_radio_3
+			research_cost_coeff = 1
+		}
+		
+		land_reinforce_rate = 0.01
+		
+		research_cost = 2
+		start_year = 1915
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_radio_3 = {
+	    path = {
+			leads_to_tech = ww1_engineer_demobilization
+			research_cost_coeff = 1
+		}
+		
+		land_reinforce_rate = 0.02
+		
+		research_cost = 2
+		start_year = 1917
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_mechanical_computing_1 = {
+	
+	    path = {
+			leads_to_tech = ww1_mechanical_computing_2
+			research_cost_coeff = 1
+		}
+		
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		research_cost = 2
+		start_year = 1913
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_mechanical_computing_2 = {
+	
+	    path = {
+			leads_to_tech = ww1_mechanical_computing_3
+			research_cost_coeff = 1
+		}
+		
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		research_cost = 2
+		start_year = 1915
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_mechanical_computing_3 = {
+		
+		path = {
+			leads_to_tech = ww1_engineer_demobilization
+			research_cost_coeff = 1
+		}
+		
+		# small boost to research speed
+		research_speed_factor = 0.05
+		
+		research_cost = 2
+		start_year = 1917
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_blueprints_1 = {
+	
+		path = {
+			leads_to_tech = ww1_blueprints_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_oil_prospering
+			research_cost_coeff = 1
+		}
+		
+		coordination_bonus = 0.03
+		
+		research_cost = 2
+		start_year = 1913
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_blueprints_2 = {
+	
+		path = {
+			leads_to_tech = ww1_blueprints_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ww1_tank_tracks_1
+			research_cost_coeff = 1
+		}
+		
+		coordination_bonus = 0.03
+		
+		research_cost = 2
+		start_year = 1915
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_blueprints_3 = {
+		
+		path = {
+			leads_to_tech = ww1_engineer_demobilization
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1917
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		coordination_bonus = 0.03
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_oil_prospering = {
+		
+		fuel_gain_factor = 0.3
+		
+		research_cost = 1.5
+		start_year = 1913
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+	
+	ww1_tank_tracks_1 = {
+	
+	    category_tanks = {
+			soft_attack = 0.05
+			breakthrough = 0.1
+		}
+		
+		research_cost = 2.5
+		start_year = 1915
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = { #Tank Germany
+				factor = 2
+				tag = GER
+			}
+			
+			modifier = { #Tank France
+				factor = 2
+				tag = FRA
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+}

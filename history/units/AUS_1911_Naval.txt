@@ -1,0 +1,231 @@
+units = {
+	### NAVY ###
+	fleet = {
+		name = "Kaiserliche und Königliche"
+		naval_base = 6626 #Trieste
+		task_force = {
+			name = "Kaiserliche und Königliche"
+			location = 6626 #Trieste
+			
+			#Dreadnoughts
+			ship = { name = "SMS Habsburg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Árpád" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Babenberg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Erzherzog Karl" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Erzherzog Friedrich" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Erzherzog Ferdinand Max" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Erzherzog Franz Ferdinand" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Radetzky" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AUS } } }
+			
+			#Light Cruisers
+			ship = { name = "SMS Zara" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Spalato" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Sebenico" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Lussin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Panther" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Leopard" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Tiger" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Kaiser Franz Joseph I" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Kaiserin Elisabeth" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Zenta" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Aspern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Szigetvár" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Kaiserin und Königin Maria Theresia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AUS } } }
+			
+			#Heavy Cruisers
+			ship = { name = "SMS Admiral Spaun" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Sankt Georg" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "SMS Kaiser Karl VI" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = AUS } } }
+			
+			#Destroyers
+			ship = { name = "Destroyer 1" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 3" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 4" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 5" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 6" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 7" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 8" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 9" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 10" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 11" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 12" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 13" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 14" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 15" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 16" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 17" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 18" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 19" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+			ship = { name = "Destroyer 20" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AUS } } }
+		}
+	}
+}
+
+instant_effect = {
+    #Dreadnoughts
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		#mio
+	}
+	
+	#Destroyers
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.55
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.45
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+		#mio
+	}
+    
+	#Light Cruisers
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		#mio
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "AUS" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		#mio
+	}
+}

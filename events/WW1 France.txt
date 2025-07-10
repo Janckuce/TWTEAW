@@ -1,0 +1,484 @@
+add_namespace = ww1_france
+
+#France asks Russia for economic proposals
+country_event = {
+	id = ww1_france.1
+	title = ww1_france.1.t
+	desc = ww1_france_desc.1
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.1.a
+	    
+		RUS = {
+		    add_political_power = -50
+			
+		    if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+		FRA = { country_event = ww1_france.2 }
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_france.1.b
+		
+		RUS = {
+		    add_political_power = 20
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Russia accepted economic proposals
+country_event = {
+	id = ww1_france.2
+	title = ww1_france.2.t
+	desc = ww1_france_desc.2
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.2.a
+	    
+		FRA = {
+		    if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 8
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+#Start of Agadir Crisis
+country_event = {
+	id = ww1_france.3
+	title = ww1_france.3.t
+	desc = ww1_france_desc.3
+	picture = GFX_report_event_france_annex_morocco
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.3.a
+		
+		FRA = {
+		    transfer_state = 461
+			transfer_state = 462
+			transfer_state = 290
+            news_event = ww1_news.1
+		}
+		SPR = {
+		    country_event = ww1_spain.1
+		}
+		add_named_threat = { threat = 5 name = FRA_annex_morocco }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_france.3.b
+		
+		custom_effect_tooltip = FRA_agadir_crisis_back_down
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#France backs down
+country_event = {
+	id = ww1_france.4
+	title = ww1_france.4.t
+	desc = ww1_france_desc.4
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.4.a
+		
+		GER = {
+		    transfer_state = 818
+		}
+		FRA = {
+		    complete_national_focus = FRA_crisis_averted
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_france.4.b
+		
+		FRA = {
+		    declare_war_on = { target = GER type = annex_everything }
+		}
+		if = {
+		    limit = {
+				FRA = {
+			        has_completed_focus = FRA_eng_will_help
+			    }
+			}
+			ENG = {
+				declare_war_on = { target = GER type = annex_everything }
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Raymond Poincare Becomes Leader
+country_event = {
+	id = ww1_france.5
+	title = ww1_france.5.t
+	desc = ww1_france_desc.5
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.5.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_raymond_poincare
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Aristide Briand Becomes Leader
+country_event = {
+	id = ww1_france.6
+	title = ww1_france.6.t
+	desc = ww1_france_desc.6
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.6.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_aristide_briand
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Louis Barthou Becomes Leader
+country_event = {
+	id = ww1_france.7
+	title = ww1_france.7.t
+	desc = ww1_france_desc.7
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.7.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_louis_barthou
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Gaston Doumergue Becomes Leader
+country_event = {
+	id = ww1_france.8
+	title = ww1_france.8.t
+	desc = ww1_france_desc.8
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.8.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_gaston_doumergue
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Alexandre Ribot Becomes Leader
+country_event = {
+	id = ww1_france.9
+	title = ww1_france.9.t
+	desc = ww1_france_desc.9
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.9.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_alexandre_ribot
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Rene Viviani Becomes Leader
+country_event = {
+	id = ww1_france.10
+	title = ww1_france.10.t
+	desc = ww1_france_desc.10
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.10.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_rene_viviani
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Paul Painleve Becomes Leader
+country_event = {
+	id = ww1_france.11
+	title = ww1_france.11.t
+	desc = ww1_france_desc.11
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.11.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_paul_painleve
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Georges Clemenceau Becomes Leader
+country_event = {
+	id = ww1_france.12
+	title = ww1_france.12.t
+	desc = ww1_france_desc.12
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.12.a
+		
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = FRA_georges_clemenceau
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism
+				traits = {}
+			}
+		}
+	}
+}
+
+#Germany Asks for Peace
+country_event = {
+	id = ww1_france.13
+	title = ww1_france.13.t
+	desc = ww1_france_desc.13
+	picture = GFX_report_event_german_troops_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.13.a
+		
+		hidden_effect = {
+		    news_event = ww1_news.47
+			
+			#Subjects Become Free leave_faction = yes
+		    if = {
+				limit = {
+					POL = { is_in_faction_with = GER }
+				}
+				GER = { set_autonomy = { target = POL autonomy_state = autonomy_free } }
+				
+				POL = { leave_faction = yes }
+			if = {
+				limit = {
+					UKR = { is_in_faction_with = GER }
+				}
+				GER = { set_autonomy = { target = UKR autonomy_state = autonomy_free } }
+				
+				UKR = { leave_faction = yes }
+			}
+			if = {
+				limit = {
+					LIT = { is_in_faction_with = GER }
+				}
+				GER = { set_autonomy = { target = LIT autonomy_state = autonomy_free } }
+				
+				LIT = { leave_faction = yes }
+			}
+			if = {
+				limit = {
+					UBD = { is_in_faction_with = GER }
+				}
+				GER = { set_autonomy = { target = UBD autonomy_state = autonomy_free } }
+				
+				UBD = { leave_faction = yes }
+			}
+			#white peace Germany
+			every_country = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = GER
+				white_peace = BUL
+				white_peace = AUS
+				white_peace = POL
+				white_peace = UKR
+				white_peace = LIT
+				white_peace = UBD
+			}
+			#Free Luxembourg
+			if = {
+				limit = {
+					GER = { controls_state = 8 }
+				}
+				LUX = { transfer_state = 8 }
+			}
+			
+			#Treaty of Versailles
+			GER = {
+				country_event = { id = ww1_germany.15 days = 70 }
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_france.13.b
+		
+		ai_chance = {
+			factor = 0
+			}
+		}
+	}
+}

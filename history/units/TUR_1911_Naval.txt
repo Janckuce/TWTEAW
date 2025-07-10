@@ -1,0 +1,32 @@
+﻿units= {
+    ### NAVY ###
+	fleet = {
+	    name = "Ottoman Navy"
+		naval_base = 9833 #Constantinople
+		task_force = {
+		    name = "Ottoman Navy"
+			location = 9833 #Constantinople
+			
+			#Dreadnoughts
+			ship = { name = "Barbaros Hayreddin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Turgut Reis" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Reşadiye" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TUR } } }
+			
+			#Light Cruisers
+			ship = { name = "Light Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
+			
+			#Heavy Cruisers
+			ship = { name = "Heavy Cruiser" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TUR } } }
+			
+			#Destroyers
+			ship = { name = "Basra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Samsun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Taşoz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Yarhisar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Vataniye" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Yadigar-i Millet" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Muavenet-i Milliye" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+			ship = { name = "Nümune-i Hamiyet)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+		}
+	}
+}

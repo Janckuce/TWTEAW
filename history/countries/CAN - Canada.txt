@@ -1,0 +1,52 @@
+﻿capital = 276
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+recruit_character = CAN_sir_wilfrid_laurier
+recruit_character = CAN_Field_Marshal
+recruit_character = CAN_General_1
+recruit_character = CAN_General_2
+recruit_character = CAN_Advisor_1
+recruit_character = CAN_Advisor_2
+recruit_character = CAN_Advisor_3
+
+set_cosmetic_tag = CAN_ALY
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 10
+	democratic = 90
+}
+
+set_convoys = 100
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.1
+
+# End of Party Popularity, Stability, War Support and other ##

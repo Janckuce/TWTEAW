@@ -1,0 +1,1370 @@
+technologies = {
+	#WW1
+	ww1_destroyer_1 = {
+
+		enable_equipments = {
+			destroyer_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_destroyer_engine_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1905
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	ww1_destroyer_engine_1 = {
+	    path = {
+			leads_to_tech = ww1_destroyer_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1912
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	ww1_destroyer_2 = {
+	    enable_equipments = {
+			destroyer_2
+		}
+		
+		path = {
+			leads_to_tech = ww1_destroyer_armor_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1913
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	ww1_destroyer_armor_1 = {
+	    path = {
+			leads_to_tech = ww1_destroyer_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1914
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	ww1_destroyer_3 = {
+	    enable_equipments = {
+			destroyer_3
+		}
+		
+		path = {
+			leads_to_tech = ww1_destroyer_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1915
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	ww1_destroyer_4 = {
+	    enable_equipments = {
+			destroyer_4
+		}
+
+		research_cost = 2
+
+		start_year = 1917
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	ww1_light_cruiser_1 = {
+
+		enable_equipments = {
+			light_cruiser_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_light_cruiser_engine_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1905
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	ww1_light_cruiser_engine_1 = {
+	    path = {
+			leads_to_tech = ww1_light_cruiser_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1912
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	ww1_light_cruiser_2 = {
+	    enable_equipments = {
+			light_cruiser_2
+		}
+		
+		path = {
+			leads_to_tech = ww1_light_cruiser_armor_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1913
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	ww1_light_cruiser_armor_1 = {
+	    path = {
+			leads_to_tech = ww1_light_cruiser_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1914
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	ww1_light_cruiser_3 = {
+	    enable_equipments = {
+			light_cruiser_3
+		}
+		
+		path = {
+			leads_to_tech = ww1_light_cruiser_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1915
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	ww1_light_cruiser_4 = {
+	    enable_equipments = {
+			light_cruiser_4
+		}
+
+		research_cost = 2
+
+		start_year = 1917
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+		}
+	}
+	
+	ww1_heavy_cruiser_1 = {
+
+		enable_equipments = {
+			heavy_cruiser_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_heavy_cruiser_engine_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1905
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	ww1_heavy_cruiser_engine_1 = {
+	    path = {
+			leads_to_tech = ww1_heavy_cruiser_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1912
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	ww1_heavy_cruiser_2 = {
+	    enable_equipments = {
+			heavy_cruiser_2
+		}
+		
+		path = {
+			leads_to_tech = ww1_heavy_cruiser_armor_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1913
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	ww1_heavy_cruiser_armor_1 = {
+	    path = {
+			leads_to_tech = ww1_heavy_cruiser_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1914
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	ww1_heavy_cruiser_3 = {
+	    enable_equipments = {
+			heavy_cruiser_3
+		}
+		
+		path = {
+			leads_to_tech = ww1_heavy_cruiser_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1915
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	ww1_heavy_cruiser_4 = {
+	    enable_equipments = {
+			heavy_cruiser_4
+		}
+
+		research_cost = 2
+
+		start_year = 1917
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ca_tech
+		}
+	}
+	
+	ww1_dreadnought_1 = {
+
+		enable_equipments = {
+			battleship_1
+		}
+		
+		path = {
+			leads_to_tech = ww1_dreadnought_engine_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1905
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	ww1_dreadnought_engine_1 = {
+	    path = {
+			leads_to_tech = ww1_dreadnought_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1912
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	ww1_dreadnought_2 = {
+	    enable_equipments = {
+			battleship_2
+		}
+		
+		path = {
+			leads_to_tech = ww1_dreadnought_armor_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1913
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	ww1_dreadnought_armor_1 = {
+	    path = {
+			leads_to_tech = ww1_dreadnought_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1914
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	ww1_dreadnought_3 = {
+	    enable_equipments = {
+			battleship_3
+		}
+		
+		path = {
+			leads_to_tech = ww1_dreadnought_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1915
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+	
+	ww1_dreadnought_4 = {
+	    enable_equipments = {
+			battleship_4
+		}
+
+		research_cost = 2
+
+		start_year = 1917
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = ENG
+			}
+			
+			modifier = { #Naval Arms Race
+				factor = 5
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = FRA
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = RUS
+			}
+			
+			modifier = { #Dont Waste Research
+				factor = 0.1
+				tag = AUS
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+		}
+	}
+}

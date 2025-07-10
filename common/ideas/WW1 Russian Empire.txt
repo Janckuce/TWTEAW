@@ -1,0 +1,441 @@
+ideas = {
+
+	country = {
+		RUS_war_of_1905 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.5
+				army_attack_factor = -0.6
+				army_defence_factor = -0.6
+				army_org_factor = -0.35
+			}
+		}
+		
+		RUS_war_of_1905_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.25
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_org_factor = -0.2
+			}
+		}
+		
+		RUS_war_of_1905_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.2
+			}
+		}
+		
+		RUS_agrarian_society = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_agrarian_society
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_infrastructure_factor = -0.3
+				research_speed_factor = -0.3
+				global_building_slots_factor = -0.75
+			}
+		}
+		
+		RUS_agrarian_society_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_agrarian_society
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_infrastructure_factor = -0.15
+				research_speed_factor = -0.15
+				global_building_slots_factor = -0.50
+			}
+		}
+		
+		RUS_entente = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = ARG_british_influences
+			
+			available = {
+				ROOT = { is_in_faction_with = FRA }
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				training_time_army_factor = -0.1
+				army_org_factor = 0.05
+			}
+		}
+		
+		RUS_communist_threat = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_communism_drift_bonus
+
+			modifier = {
+			    stability_factor = -0.2
+			}
+		}
+		
+		RUS_communist_threat_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_communism_drift_bonus
+
+			modifier = {
+			    stability_factor = -0.05
+			}
+		}
+		
+		RUS_brusilov_offensive_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_brusilov_offensive
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+		}
+		
+		RUS_austrian_offensive_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_austrian_offensive
+			
+			targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		
+		RUS_trade_with_france = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = ENG_trade_with_france
+
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+		
+		RUS_grigori_rasputin_popular = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_rasputin
+
+			modifier = {
+				stability_factor = 0.2
+			}
+		}
+		
+		RUS_grigori_rasputin_unpopular = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_rasputin
+
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		
+		RUS_okhranka_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_secret_police
+
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = 0.15
+			}
+		}
+		
+		RUS_increased_grain_tax_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = chi_hyper_inflation2
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				stability_factor = -0.05
+			}
+		}
+	}
+}

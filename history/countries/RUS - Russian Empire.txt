@@ -1,0 +1,81 @@
+﻿capital = 195
+
+set_oob = "RUS_1911"
+
+set_naval_oob = "RUS_1911_Naval"
+
+recruit_character = RUS_nicholas_II
+recruit_character = RUS_provisional_government
+recruit_character = RUS_vladimir_lenin
+recruit_character = RUS_various_leaders
+recruit_character = RUS_nikolai_ruzsky
+recruit_character = RUS_nikolai_nikolaevich
+recruit_character = RUS_aleksei_brusilov
+recruit_character = RUS_aleksei_kaledin
+recruit_character = RUS_anton_denikin
+recruit_character = RUS_lavr_kornilov
+recruit_character = RUS_nikolai_yudenich
+recruit_character = RUS_pyotr_krasnov
+recruit_character = RUS_sergey_markov
+recruit_character = RUS_vladimir_sakharov
+recruit_character = RUS_boris_savinkov
+recruit_character = RUS_aleksei_putilov
+recruit_character = RUS_vladimir_sukhomlinov
+
+starting_train_buffer = 3.0
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+### Naval Tech ### - ONLY FOR MAJORS
+	set_technology = {
+		ww1_destroyer_1 = 1
+		ww1_light_cruiser_1 = 1
+		ww1_heavy_cruiser_1 = 1
+		ww1_dreadnought_1 = 1
+	}
+
+add_ideas = {
+	RUS_agrarian_society
+	RUS_war_of_1905
+	RUS_entente
+	RUS_communist_threat
+}
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 80
+	communism = 20
+}
+
+set_convoys = 300
+
+set_research_slots = 2
+set_stability = 0.5
+set_war_support = 0.1
+
+# End of Party Popularity, Stability, War Support and other ##

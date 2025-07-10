@@ -1,0 +1,332 @@
+characters={
+	ITA_vittorio_emanuele_III = {
+		name = ITA_character_vittorio_emanuele_III
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_vittorio_emanuele_III"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	ITA_benito_mussolini_K = {
+		name = ITA_character_benito_mussolini_K
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_benito_mussolini_K"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1965.1.1.1"
+		}
+	}
+	
+	ITA_luigi_cadorna = {
+		name = ITA_character_luigi_cadorna
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_luigi_cadorna"
+			}
+			army = {
+				small = "GFX_ITA_luigi_cadorna_frame"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ITA_luigi_cadorna
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	
+	ITA_alberico_albricci = {
+		name = ITA_character_alberico_albricci
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_alberico_albricci"
+			}
+			army = {
+				small = "GFX_ITA_alberico_albricci_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ITA_alberico_albricci
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	ITA_alberto_cavaciocchi = {
+		name = ITA_character_alberto_cavaciocchi
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_alberto_cavaciocchi"
+			}
+			army = {
+				small = "GFX_ITA_alberto_cavaciocchi_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ITA_alberto_cavaciocchi
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_regrouping_2 #Army Regrouping +8%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	
+	ITA_emanuele_filiberto_di_savoia-aosta = {
+		name = ITA_character_emanuele_filiberto_di_savoia-aosta
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_emanuele_filiberto_di_savoia-aosta"
+			}
+			army = {
+				small = "GFX_ITA_emanuele_filiberto_di_savoia-aosta_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = ITA_emanuele_filiberto_di_savoia-aosta
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				military_theorist #10% Off Doctrine
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	
+	ITA_giorgio_emo_di_capodilista = {
+		name = ITA_character_giorgio_emo_di_capodilista
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_giorgio_emo_di_capodilista"
+			}
+			army = {
+				small = "GFX_ITA_giorgio_emo_di_capodilista_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	ITA_gaetano_giardino = {
+		name = ITA_character_gaetano_giardino
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_gaetano_giardino"
+			}
+			army = {
+				small = "GFX_ITA_gaetano_giardino_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	
+	ITA_pietro_badoglio = {
+		name = ITA_character_pietro_badoglio
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_pietro_badoglio"
+			}
+			army = {
+				small = "GFX_ITA_pietro_badoglio_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	ITA_armando_diaz = {
+		name = ITA_character_pietro_badoglio
+		portraits = {
+			civilian = {
+				large = "GFX_ITA_armando_diaz"
+			}
+			army = {
+				small = "GFX_ITA_armando_diaz_frame"
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	# Political Advisers #
+	
+	ITA_Guy1 = {
+		portraits = {
+			army = {
+				small = "GFX_ITA_Guy1_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy1
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				economist #5% Production Efficiency Cap
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ITA_Guy2 = {
+		portraits = {
+			army = {
+				small = "GFX_ITA_Guy2_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy2
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ITA_Guy3 = {
+		portraits = {
+			army = {
+				small = "GFX_ITA_Guy3_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy3
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ITA_Guy4 = {
+		portraits = {
+			army = {
+				small = "GFX_ITA_Guy4_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy3
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+				has_completed_focus = ITA_hire_captain_of_industry
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

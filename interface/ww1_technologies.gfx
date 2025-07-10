@@ -1,0 +1,750 @@
+spriteTypes = {	
+    #Machine Tools
+	SpriteType = {
+		name = "GFX_machine_tools_1_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_1.png"
+	}
+	SpriteType = {
+		name = "GFX_machine_tools_2_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_2.png"
+	}
+	SpriteType = {
+		name = "GFX_machine_tools_3_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_3.png"
+	}
+	SpriteType = {
+		name = "GFX_machine_tools_4_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_4.png"
+	}
+	SpriteType = {
+		name = "GFX_machine_tools_5_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_5.png"
+	}
+	SpriteType = {
+		name = "GFX_machine_tools_6_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_6.png"
+	}
+	SpriteType = {
+		name = "GFX_machine_tools_7_demobilization_medium"
+		texturefile = "gfx/interface/technologies/machine_tools_7_demobilization.png"
+	}
+	
+	#Industry
+	SpriteType = {
+		name = "GFX_industry_1_medium"
+		texturefile = "gfx/interface/technologies/industry_1.png"
+	}
+	SpriteType = {
+		name = "GFX_industry_2_medium"
+		texturefile = "gfx/interface/technologies/industry_2.png"
+	}
+	SpriteType = {
+		name = "GFX_industry_3_medium"
+		texturefile = "gfx/interface/technologies/industry_3.png"
+	}
+	SpriteType = {
+		name = "GFX_industry_4_medium"
+		texturefile = "gfx/interface/technologies/industry_4.png"
+	}
+	SpriteType = {
+		name = "GFX_industry_5_medium"
+		texturefile = "gfx/interface/technologies/industry_5.png"
+	}
+	SpriteType = {
+		name = "GFX_industry_6_demobilization_medium"
+		texturefile = "gfx/interface/technologies/industry_6_demobilization.png"
+	}
+	
+	#Construction
+	SpriteType = {
+		name = "GFX_ww1_construction1_medium"
+		texturefile = "gfx/interface/technologies/ww1_construction1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_construction2_medium"
+		texturefile = "gfx/interface/technologies/ww1_construction2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_construction3_medium"
+		texturefile = "gfx/interface/technologies/ww1_construction3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_construction4_medium"
+		texturefile = "gfx/interface/technologies/ww1_construction4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_construction5_medium"
+		texturefile = "gfx/interface/technologies/ww1_construction5.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_construction6_demobilization_medium"
+		texturefile = "gfx/interface/technologies/ww1_construction6_demobilization.png"
+	}
+	
+	#Excavation
+	SpriteType = {
+		name = "GFX_ww1_excavation1_medium"
+		texturefile = "gfx/interface/technologies/ww1_excavation1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_excavation2_medium"
+		texturefile = "gfx/interface/technologies/ww1_excavation2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_excavation3_medium"
+		texturefile = "gfx/interface/technologies/ww1_excavation3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_excavation4_demobilization_medium"
+		texturefile = "gfx/interface/technologies/ww1_excavation4_demobilization.png"
+	}
+	
+	#Oil Processing
+	SpriteType = {
+		name = "GFX_ww1_fuel_storage_medium"
+		texturefile = "gfx/interface/technologies/ww1_fuel_storage.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_synthetic_oil_experiments_medium"
+		texturefile = "gfx/interface/technologies/ww1_synthetic_oil_experiments.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_oil_processing1_medium"
+		texturefile = "gfx/interface/technologies/ww1_oil_processing1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_oil_processing2_medium"
+		texturefile = "gfx/interface/technologies/ww1_oil_processing2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_oil_processing3_medium"
+		texturefile = "gfx/interface/technologies/ww1_oil_processing3.png"
+	}
+	
+	#Rubber Processing
+	SpriteType = {
+		name = "GFX_ww1_rubber_processing1_medium"
+		texturefile = "gfx/interface/technologies/ww1_rubber_processing1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_rubber_processing2_medium"
+		texturefile = "gfx/interface/technologies/ww1_rubber_processing2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_rubber_processing3_medium"
+		texturefile = "gfx/interface/technologies/ww1_rubber_processing3.png"
+	}
+	
+	#Fuel Refining
+	SpriteType = {
+		name = "GFX_ww1_fuel_refining1_medium"
+		texturefile = "gfx/interface/technologies/ww1_fuel_refining1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_fuel_refining2_medium"
+		texturefile = "gfx/interface/technologies/ww1_fuel_refining2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_fuel_refining3_medium"
+		texturefile = "gfx/interface/technologies/ww1_fuel_refining3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_fuel_refining4_medium"
+		texturefile = "gfx/interface/technologies/ww1_fuel_refining4.png"
+	}
+	SpriteType = {
+		name = "GFX_synthetic_demobilization_medium"
+		texturefile = "gfx/interface/technologies/synthetic_demobilization.png"
+	}
+	
+	#Infantry
+	SpriteType = {
+		name = "GFX_ww1_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ww1_infantry_weapons1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/ww1_infantry_weapons2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/ww1_infantry_weapons3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/ww1_infantry_weapons4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_machine_guns1_medium"
+		texturefile = "gfx/interface/technologies/ww1_machine_guns1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_machine_guns2_medium"
+		texturefile = "gfx/interface/technologies/ww1_machine_guns2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_machine_guns3_medium"
+		texturefile = "gfx/interface/technologies/ww1_machine_guns3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_infantry_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_hand_grenade1_medium"
+		texturefile = "gfx/interface/technologies/ww1_hand_grenade1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_hand_grenade2_medium"
+		texturefile = "gfx/interface/technologies/ww1_hand_grenade2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_gas_mask_1_medium"
+		texturefile = "gfx/interface/technologies/ww1_gas_mask_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_gas_mask_2_medium"
+		texturefile = "gfx/interface/technologies/ww1_gas_mask_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_gas_mask_3_medium"
+		texturefile = "gfx/interface/technologies/ww1_gas_mask_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_infantry_equipment3_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_infantry_equipment3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_infantry_equipment2_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_infantry_equipment2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_infantry_demobilization_medium"
+		texturefile = "gfx/interface/technologies/ww1_infantry_demobilization.png"
+	}
+	
+	#Special Forces
+	SpriteType = {
+		name = "GFX_marines4_medium"
+		texturefile = "gfx/interface/technologies/marines4.png"
+	}
+	SpriteType = {
+		name = "GFX_marines5_medium"
+		texturefile = "gfx/interface/technologies/marines5.png"
+	}
+	SpriteType = {
+		name = "GFX_marines6_medium"
+		texturefile = "gfx/interface/technologies/marines6.png"
+	}
+	SpriteType = {
+		name = "GFX_marines7_medium"
+		texturefile = "gfx/interface/technologies/marines7.png"
+	}
+	SpriteType = {
+		name = "GFX_marines8_medium"
+		texturefile = "gfx/interface/technologies/marines8.png"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers4_medium"
+		texturefile = "gfx/interface/technologies/paratroopers4.png"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers5_medium"
+		texturefile = "gfx/interface/technologies/paratroopers5.png"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers6_medium"
+		texturefile = "gfx/interface/technologies/paratroopers6.png"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers7_medium"
+		texturefile = "gfx/interface/technologies/paratroopers7.png"
+	}
+	SpriteType = {
+		name = "GFX_paratroopers8_medium"
+		texturefile = "gfx/interface/technologies/paratroopers8.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers4_medium"
+		texturefile = "gfx/interface/technologies/tech_mountaineers4.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers5_medium"
+		texturefile = "gfx/interface/technologies/tech_mountaineers5.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers6_medium"
+		texturefile = "gfx/interface/technologies/tech_mountaineers6.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers7_medium"
+		texturefile = "gfx/interface/technologies/tech_mountaineers7.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_mountaineers8_medium"
+		texturefile = "gfx/interface/technologies/tech_mountaineers8.png"
+	}
+	
+	#Artillery
+	SpriteType = {
+		name = "GFX_ww1_artillery_equipment1_medium"
+		texturefile = "gfx/interface/technologies/ww1_artillery_equipment1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_artillery_equipment2_medium"
+		texturefile = "gfx/interface/technologies/ww1_artillery_equipment2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_artillery_equipment3_medium"
+		texturefile = "gfx/interface/technologies/ww1_artillery_equipment3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_artillery_equipment4_medium"
+		texturefile = "gfx/interface/technologies/ww1_artillery_equipment4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_howitzer_artillery_upgrade1_medium"
+		texturefile = "gfx/interface/technologies/ww1_howitzer_artillery_upgrade1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_howitzer_artillery_upgrade2_medium"
+		texturefile = "gfx/interface/technologies/ww1_howitzer_artillery_upgrade2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_howitzer_artillery_upgrade3_medium"
+		texturefile = "gfx/interface/technologies/ww1_howitzer_artillery_upgrade3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_artillery_equipment1_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_artillery_equipment1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_artillery_equipment2_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_artillery_equipment2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_artillery_equipment3_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_artillery_equipment3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_antiair_equipment1_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_antiair_equipment1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_improved_antiair_equipment2_medium"
+		texturefile = "gfx/interface/technologies/ww1_improved_antiair_equipment2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_antiair_equipment1_medium"
+		texturefile = "gfx/interface/technologies/ww1_antiair_equipment1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_antiair_equipment2_medium"
+		texturefile = "gfx/interface/technologies/ww1_antiair_equipment2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_artillery_equipment5_demobilization_medium"
+		texturefile = "gfx/interface/technologies/ww1_artillery_equipment5_demobilization.png"
+	}
+	
+	#Plane Stuff
+	SpriteType = {
+		name = "GFX_ww1_plane_testing_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_testing.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_engine_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_engine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_engine_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_engine_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_machine_guns_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_machine_guns_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_machine_guns_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_machine_guns_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_plane_airframe_design_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_airframe_design_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_plane_airframe_design_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_airframe_design_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_plane_wings_design_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_wings_design_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_plane_wings_design_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_wings_design_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_radio_transimtter_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_radio_transimtter_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_fighter_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_fighter_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_fighter_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_fighter_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_plane_bomb_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_bomb_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_plane_bomb_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_plane_bomb_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_strat_bomber_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_strat_bomber_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_strat_bomber_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_strat_bomber_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_nav_bomber_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_nav_bomber_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_nav_bomber_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_nav_bomber_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_cas_1_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_cas_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_cas_2_medium"
+		texturefile = "gfx/interface/technologies/planes/ww1_cas_2.png"
+	}
+	
+	#Navy
+	SpriteType = {
+		name = "GFX_ww1_destroyer_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_destroyer_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_destroyer_2_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_destroyer_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_destroyer_3_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_destroyer_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_destroyer_4_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_destroyer_4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_cruiser_4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_dreadnought_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_dreadnought_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_dreadnought_2_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_dreadnought_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_dreadnought_3_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_dreadnought_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_dreadnought_4_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_dreadnought_4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_submarine_1_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_submarine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_submarine_2_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_submarine_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_submarine_3_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_submarine_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_submarine_4_medium"
+		texturefile = "gfx/interface/technologies/ships/ww1_submarine_4.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_destroyer_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_engine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_cruiser_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_engine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_cruiser_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_engine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_dreadnought_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_engine_1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_destroyer_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_armor_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_cruiser_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_armor_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_cruiser_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_armor_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_dreadnought_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_armor_1.png"
+	}
+	
+	#Land Doctrine
+	SpriteType = {
+		name = "GFX_gw_doctrine_bg"
+		texturefile = "gfx/interface/gw_doctrine_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_1_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_2_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_3_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_4_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_4.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_5_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_5.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_6_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_6.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_7_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_7.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_8_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_8.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_9_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_9.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_10_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_10.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_11_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_11.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_12_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_12.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_13_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_13.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_14_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_14.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_land_doctrine_15_medium"
+		texturefile = "gfx/interface/technologies/doctrines/ww1_land_doctrine_15.png"
+	}
+	
+	#Tanks
+	SpriteType = {
+		name = "GFX_ww1_tank_engine_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_engine_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_tank_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_tank_armor_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_tank_turret_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_light_tank_turret.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_medium_tank_turret_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_medium_tank_turret.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_tank_turret_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_heavy_tank_turret.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_tank_frame_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_light_tank_frame.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_medium_tank_frame_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_medium_tank_frame.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_tank_frame_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_heavy_tank_frame.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_tank_prototype_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_light_tank_prototype.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_medium_tank_prototype_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_medium_tank_prototype.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_tank_prototype_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_heavy_tank_prototype.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_tank_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_heavy_tank_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_heavy_tank_2_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_heavy_tank_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_tank_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_light_tank_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_light_tank_2_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_light_tank_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_medium_tank_1_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_medium_tank_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ww1_medium_tank_2_medium"
+		texturefile = "gfx/interface/technologies/tanks/ww1_medium_tank_2.png"
+	}
+	
+	#Electronical Engineering
+	SpriteType = {
+		name = "GFX_ww1_electrical_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_electrical_engineering_1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_radio_1_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_radio_1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_radio_2_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_radio_2.png"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_ww1_radio_3_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_radio_3.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_mechanical_computing_1_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_mechanical_computing_1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_mechanical_computing_2_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_mechanical_computing_2.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_mechanical_computing_3_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_mechanical_computing_3.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_blueprints_1_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_blueprints_1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_blueprints_2_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_blueprints_2.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_blueprints_3_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_blueprints_3.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_oil_prospering_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_oil_prospering.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_tank_tracks_1_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_tank_tracks_1.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_ww1_engineer_demobilization_medium"
+		texturefile = "gfx/interface/technologies/engineering/ww1_engineer_demobilization.png"
+	}
+}

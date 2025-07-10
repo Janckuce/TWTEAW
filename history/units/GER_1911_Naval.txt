@@ -1,0 +1,385 @@
+﻿units = {
+	### NAVY ###
+	fleet = {
+		name = "Kaiserliche Marine"
+		naval_base = 6389 #Kiel
+		task_force = {
+			name = "Kaiserliche Marine"
+			location = 6389 #Kiel
+			
+			#Dreadnoughts
+			ship = { name = "SMS Brandenburg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Wörth" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Kaiser Friedrich III" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Kaiser Wilhelm II" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Kaiser Wilhelm der Grosse" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Kaiser Karl der Grosse" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Kaiser Barbarossa" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Wittelsbach" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Wettin" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Zähringen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Schwaben" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Mecklenburg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Braunschweig" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Elsass" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Hessen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Preussen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Lothringen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Deutschland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Hannover" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Pommern" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Nassau" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Westfalen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Rheinland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			ship = { name = "SMS Posen" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
+			
+			#Light Cruisers
+			ship = { name = "Gazelle" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Undine" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Bremen" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Hamburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Berlin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Lübeck" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "München" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Danzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Stuttgart" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Stettin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Dresden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Kolberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Mainz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Augsburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+			
+			#Heavy Cruisers
+			ship = { name = "Niobe" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Nymphe" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Thetis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Ariadne" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Amazone" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Medusa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Frauenlob" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			ship = { name = "Arcona" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER } } }
+			
+			#Destroyers
+			ship = { name = "S90" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S91" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S92" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S93" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S94" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S95" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S96" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S97" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S98" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S99" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S100" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S101" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S102" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S103" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S104" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S105" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S106" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S107" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S108" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S109" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S110" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S111" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S112" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S113" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S114" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S115" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S116" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S117" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S118" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S119" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S120" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S121" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S122" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S123" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S124" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S125" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S126" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S127" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S128" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S129" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S130" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S131" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S132" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S133" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S134" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S135" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S136" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S137" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S138" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S139" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S140" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S141" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S142" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S143" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S144" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S145" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S146" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S147" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S148" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S149" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V150" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V151" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V152" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V153" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V154" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V155" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V156" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V157" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V158" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V159" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V160" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V161" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V162" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V163" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V164" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S165(i)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S166(i)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S167(i)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S168(i)" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G169" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G170" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G171" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G172" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G173" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G174" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "G175" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S176" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S177" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S178" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "S179" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V180" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V181" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V182" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V183" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V184" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+			ship = { name = "V185" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+	    }
+	}
+}
+
+instant_effect = {
+    #Dreadnoughts
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	
+	#Destroyers
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.55
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.45
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+    
+	#Light Cruisers
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+		industrial_manufacturer = mio:GER_blohm_und_voss_organization
+	}
+}

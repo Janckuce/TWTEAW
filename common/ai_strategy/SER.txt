@@ -1,0 +1,389 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+SER_ignore_austria = { #At Least for now
+	allowed = {
+		original_tag = SER
+	}
+
+	enable = {
+	    NOT = {
+		    has_war_with = AUS
+		}
+	}
+	
+	abort = {
+		date > 1914.0.0
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = AUS
+		value = -1
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AUS
+		value = -25
+	}
+}
+
+SER_front_with_TUR = {
+	allowed = {
+		original_tag = SER
+	}
+
+	enable = {
+	    NOT = {
+		    has_war_with = AUS
+		}
+	}
+	
+	abort = {
+		date > 1914.0.0
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = TUR
+		value = 1
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TUR
+		value = 25
+	}
+}
+
+SER_front_with_SER = {
+	allowed = {
+		original_tag = SER
+	}
+
+	enable = {
+	    date > 1914.0.0
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = AUS
+		value = 1
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AUS
+		value = 25
+	}
+}
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################### Divisions Caps #############################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+
+SER_division_cap = {
+    allowed = { 
+		original_tag = SER
+	}
+	
+	enable = {
+		set_temp_variable = {
+			upper_limit = 25 #This should be enough to die
+		}
+		check_variable = {
+			num_divisions > upper_limit
+		}
+	}
+	abort = {
+		date > 1919.0.0
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = cavalry
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = garrison
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = suppression
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = paratroopers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = mountaineers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marines
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = light_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = heavy_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = medium_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = modern_armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = -9999
+	}
+}
+
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+############################################################################################################################
+
+SER_unit_production = {
+	allowed = {
+		original_tag = SER
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 0 #because doctrine this = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = -5 #because doctrine this = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -7 #because doctrine this = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 75 #88 to 70
+	}
+	
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 50 # From 70 to 75
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = scout_plane
+		value = 0
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 55
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 5 #30 to 50
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 100 #20 to 40
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories #Build these up over time, don't stall
+		id = anti_air
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 4
+	}
+
+	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
+
+}

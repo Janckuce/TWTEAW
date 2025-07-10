@@ -1,0 +1,98 @@
+﻿capital = 16
+
+set_oob = "FRA_1911"
+
+set_naval_oob = "FRA_1911_Naval"
+
+#faction Entente
+
+create_faction = ENTENTE
+add_to_faction = FRA
+add_to_faction = RUS
+
+starting_train_buffer = 2
+
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+### Naval Tech ### - ONLY FOR MAJORS
+	set_technology = {
+		ww1_destroyer_1 = 1
+		ww1_light_cruiser_1 = 1
+		ww1_heavy_cruiser_1 = 1
+		ww1_dreadnought_1 = 1
+	}
+
+add_ideas = {
+	FRA_disjointed_government_ww1
+	FRA_stagnant_economy
+	FRA_champagne_riots
+	FRA_french_colonies
+	FRA_sour_losers
+	FRA_fortificate_german_border
+	FRA_entente
+}
+
+recruit_character = FRA_joseph_caillaux
+recruit_character = FRA_ferdinand_foch
+recruit_character = FRA_joseph_joffre
+recruit_character = FRA_robert_nivelle
+recruit_character = FRA_adolphe_guillaumat
+recruit_character = FRA_denis_auguste_duchene
+recruit_character = FRA_emile_fayolle
+recruit_character = FRA_jean_degoutte
+recruit_character = FRA_louis_franche_t_d_esperey
+recruit_character = FRA_maurice_sarrail
+recruit_character = FRA_noel_edouard_de_castelnau
+recruit_character = FRA_paul_maistre
+recruit_character = FRA_philippe_petain
+recruit_character = FRA_aristide_briand
+recruit_character = FRA_charles_dumont
+recruit_character = FRA_gaston_calmette
+recruit_character = FRA_georges_valois
+recruit_character = FRA_jean_jaures
+recruit_character = FRA_louis_barthou
+recruit_character = FRA_gaston_doumergue
+recruit_character = FRA_alexandre_ribot
+recruit_character = FRA_rene_viviani
+recruit_character = FRA_paul_painleve
+recruit_character = FRA_georges_clemenceau
+recruit_character = FRA_raymond_poincare
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 100
+}
+
+set_convoys = 300
+
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.2
+
+# End of Party Popularity, Stability, War Support and other ##

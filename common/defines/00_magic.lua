@@ -1,0 +1,2 @@
+NDefines.NGraphics.GRADIENT_BORDERS_THICKNESS_STATE = 10.0
+NDefines.NGraphics.BORDER_WIDTH = 0.8

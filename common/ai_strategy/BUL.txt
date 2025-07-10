@@ -1,0 +1,178 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+BUL_front_with_TUR = {
+	allowed = {
+		original_tag = BUL
+	}
+
+	enable = {
+	    NOT = {
+		    has_war_with = SER
+		}
+	}
+	
+	abort = {
+		date > 1914.0.0
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = TUR
+		value = 1
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TUR
+		value = 25
+	}
+}
+
+BUL_kill_serbia = {
+    allowed = {
+		original_tag = BUL
+	}
+	
+	enable = {
+		has_war_with = SER
+	}
+	
+	abort = {
+	    OR = {
+		    surrender_progress > 0.10
+			casualties > 100000
+			SER = {
+				has_capitulated = yes
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = SER
+		value = 10000
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = SER
+		priority = 2000
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+# Bulgaria Unit Production # this must stay at the bottom
+
+BUL_unit_production = {
+
+	allowed = {	original_tag = BUL }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 7
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 55
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 45
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+
+}
