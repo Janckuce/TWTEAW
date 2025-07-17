@@ -10,5 +10,90 @@ characters={
 			ideology = centrism
 			expire = "1965.1.1.1"
 		}
+
+			country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+
+			country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+		}
+
+			country_leader = {
+			ideology = rexism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		SER_radomir_putnik = {
+		name = SER_radomir_putnik
+		portraits = {
+			civilian = {
+				large = "GFX_SER_radomir_putnik"
+			}
+			army = {
+				small = "GFX_SER_radomir_putnik_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SER_radomir_putnik
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_ser_radomir_putnik
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=4
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+		SER_zivijon_misic = {
+		name = SER_zivijon_misic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_zivijon_misic"
+			}
+			army = {
+				small = "GFX_SER_zivijon_misic_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SER_zivijon_misic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_zivijon_misic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
 	}
 }

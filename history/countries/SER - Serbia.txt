@@ -3,12 +3,8 @@
 set_oob = "SER_1911"
 
 recruit_character = SER_peter_I
-recruit_character = SER_Field_Marshal
-recruit_character = SER_General_1
-recruit_character = SER_General_2
-recruit_character = SER_Advisor_1_ww1
-recruit_character = SER_Advisor_2_ww1
-recruit_character = SER_Advisor_3_ww1
+recruit_character = SER_radomir_putnik
+recruit_character = SER_zivijon_misic
 
 # Starting tech
 set_technology = {
@@ -29,21 +25,27 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
+add_ideas = {
+	SER_slavic_spirit
+}
+
 
 ##### Party Popularity, Stability, War Support and other #####
 
 starting_train_buffer = 1
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1910.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 90
-	democratic = 10
+	neutrality = 31
+	democratic = 43
+	fascism = 24
+	communism = 2
 }
 
 set_convoys = 0
