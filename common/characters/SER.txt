@@ -82,7 +82,7 @@ characters={
 			traits = {
 				army_SER_zivijon_misic
 			}
-			cost = 150
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -94,6 +94,138 @@ characters={
 			defense_skill=1
 			planning_skill=3
 			logistics_skill=1
+		}
+	}
+
+		SER_stepa_stepanovic = {
+		name = SER_stepa_stepanovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_stepa_stepanovic"
+			}
+			army = {
+				small = "GFX_SER_stepa_stepanovic"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_stepa_stepanovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_stepa_stepanovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+		SER_petar_bojovic = {
+		name = SER_petar_bojovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_petar_bojovic"
+			}
+			army = {
+				small = "GFX_SER_petar_bojovic"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_petar_bojovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_petar_bojovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		SER_vojislav_zivanovic = {
+		name = SER_vojislav_zivanovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_vojislav_zivanovic"
+			}
+			army = {
+				small = "GFX_SER_vojislav_zivanovic"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_vojislav_zivanovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_vojislav_zivanovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		SER_kosta_vojinovic = {
+		name = SER_kosta_vojinovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_kosta_vojinovic"
+			}
+			army = {
+				small = "GFX_SER_kosta_vojinovic"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_kosta_vojinovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_kosta_vojinovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }
