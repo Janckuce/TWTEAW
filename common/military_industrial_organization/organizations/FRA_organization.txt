@@ -16,6 +16,7 @@ FRA_renault_organization = {
 		OR = {
 			tag = FRA 
 			tag = BEL
+			tag = SER
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
@@ -364,6 +365,7 @@ FRA_schneider_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_schneider
 	allowed = {	
-		tag = FRA 
+		tag = FRA
+		tag = SER
 	}
 }

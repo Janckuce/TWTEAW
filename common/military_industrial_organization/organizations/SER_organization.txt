@@ -1,0 +1,68 @@
+
+SER_zastava_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_vojno_tehnicki
+	
+	allowed = {	 
+		OR = {
+			tag = SER
+			AND = {
+				tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SER } }
+			}
+			FROM = { NOT = { has_war_with = SER } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+			}
+		}
+	}
+}
+
+SER_zastava_organizationn = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_renault
+	
+	allowed = {	 
+		OR = {
+			tag = SER
+			AND = {
+				tag = ETH
+				has_dlc = "By Blood Alone"
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SER } }
+			}
+			FROM = { NOT = { has_war_with = SER } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = ETH }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_invited_mio_tt
+			}
+		}
+	}
+}

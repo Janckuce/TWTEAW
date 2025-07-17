@@ -104,7 +104,7 @@ characters={
 				large = "GFX_SER_stepa_stepanovic"
 			}
 			army = {
-				small = "GFX_SER_stepa_stepanovic"
+				small = "GFX_SER_stepa_stepanovic_frame"
 			}
 		}
 		
@@ -139,7 +139,7 @@ characters={
 				large = "GFX_SER_petar_bojovic"
 			}
 			army = {
-				small = "GFX_SER_petar_bojovic"
+				small = "GFX_SER_petar_bojovic_frame"
 			}
 		}
 		
@@ -174,7 +174,7 @@ characters={
 				large = "GFX_SER_vojislav_zivanovic"
 			}
 			army = {
-				small = "GFX_SER_vojislav_zivanovic"
+				small = "GFX_SER_vojislav_zivanovic_frame"
 			}
 		}
 		
@@ -209,7 +209,7 @@ characters={
 				large = "GFX_SER_kosta_vojinovic"
 			}
 			army = {
-				small = "GFX_SER_kosta_vojinovic"
+				small = "GFX_SER_kosta_vojinovic_frame"
 			}
 		}
 		
@@ -226,6 +226,41 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
+		}
+	}
+
+		SER_mihailo_zivkovic = {
+		name = SER_mihailo_zivkovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_mihailo_zivkovic"
+			}
+			army = {
+				small = "GFX_SER_mihailo_zivkovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = SER_mihailo_zivkovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_mihailo_zivkovic
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
 		}
 	}
 }

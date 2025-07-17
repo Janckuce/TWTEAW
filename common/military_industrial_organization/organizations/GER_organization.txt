@@ -421,7 +421,9 @@ GER_rheinmetall_organization = {
 			tag = GER 
 			AND = {
 				tag = GRE
-				has_dlc = "Battle for the Bosporus"
+			}
+				AND = {
+				tag = SER
 			}
 		}
 	}
@@ -431,7 +433,6 @@ GER_rheinmetall_organization = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
 			}
-			FROM = { NOT = { has_war_with = GER } }
 		}
 	}
 }
