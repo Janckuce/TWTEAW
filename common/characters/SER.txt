@@ -27,6 +27,138 @@ characters={
 		}
 	}
 
+		SER_nikolas_pasic = {
+		name = SER_nikolas_pasic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_nikolas_pasic"
+			}
+			army = {
+				small = "GFX_SER_nikolas_pasic_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_nikolas_pasic
+			allowed = {
+				has_government = democratic
+				has_government = fascist
+			}
+			traits = {
+				advisor_SER_nikolas_pasic
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_dorde_vajfert = {
+		name = SER_dorde_vajfert
+		portraits = {
+			civilian = {
+				large = "GFX_SER_dorde_vajfert"
+			}
+			army = {
+				small = "GFX_SER_dorde_vajfert_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_dorde_vajfert
+			allowed = {
+			}
+			traits = {
+				advisor_SER_dorde_vajfert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_mihailo_petrovic = {
+		name = SER_mihailo_petrovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_mihailo_petrovic"
+			}
+			army = {
+				small = "GFX_SER_mihailo_petrovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_mihailo_petrovic
+			allowed = {
+			}
+			traits = {
+				advisor_SER_mihailo_petrovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_generalstaff_army = {
+		name = SER_generalstaff_army
+		portraits = {
+			civilian = {
+				large = "GFX_SER_generalstaff_army"
+			}
+			army = {
+				small = "GFX_SER_generalstaff_army_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_generalstaff_army
+			allowed = {
+			}
+			traits = {
+				advisor_SER_generalstaff_army
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_slobodan_jovanovic = {
+		name = SER_slobodan_jovanovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_slobodan_jovanovic_army"
+			}
+			army = {
+				small = "GFX_SER_slobodan_jovanovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_slobodan_jovanovic
+			allowed = {
+			}
+			traits = {
+				advisor_SER_slobodan_jovanovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 		SER_radomir_putnik = {
 		name = SER_radomir_putnik
 		portraits = {
