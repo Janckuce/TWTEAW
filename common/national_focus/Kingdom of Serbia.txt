@@ -1,0 +1,80 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = serbian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	
+	continuous_focus_position = { x = 245 y = 800 }
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = SER_time_of_decisions
+		icon = GFX_focus_befriend_serbia
+		x = 4
+		y = 1
+		cost = 5
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =	{
+			SER_slavic_spirit
+		}
+	}
+}
+
+	focus = {
+		id = SER_liberalism_shall_lead
+		icon = GFX_focus_befriend_serbia
+		x = 2
+		y = 2
+		cost = 5
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =
+			SER_liberal_serbia	{
+		}
+	}
+}
+
+continuous_focus_position = { x = 245 y = 999 }
+
+}
