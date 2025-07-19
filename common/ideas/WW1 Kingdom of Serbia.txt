@@ -204,6 +204,105 @@ ideas = {
             picture = ser_king_active
 		}
 
+			SER_grasp_of_crna_ruka = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.1
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
+			SER_grasp_of_crna_ruka_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.15
+           		stability_weekly = -0.005
+				war_support_weekly = 0.005
+				weekly_casualties_war_support = 0.001
+				army_core_defence_factor = 0.075
+				army_core_attack_factor = 0.075 
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
+			SER_grasp_of_crna_ruka_best = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.25
+           		stability_weekly = -0.005
+				war_support_weekly = 0.005
+				weekly_casualties_war_support = 0.002
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1 
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
+			SER_grasp_of_crna_ruka_best_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.25
+           		stability_weekly = -0.005
+				war_support_weekly = 0.005
+				weekly_casualties_war_support = 0.002
+				army_core_defence_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
 			SER_our_way_of_life_active_more_better = {
 
 			allowed = {
