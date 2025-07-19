@@ -62,7 +62,17 @@ focus_tree = {
 			#
 		}
 		available = {
-		}
+        NOT = { has_idea = SER_our_way_of_life_active }
+    	}
+		available = {
+        NOT = { has_idea = SER_our_way_of_life_active_more }
+    	}
+		available = {
+        NOT = { has_idea = SER_our_way_of_life_active_more_better }
+    	}
+		available = {
+        NOT = { has_idea = SER_government_of_crna_ruka }
+    	}
 		
 		search_filters = {}
 		
@@ -90,13 +100,213 @@ focus_tree = {
 			#
 		}
 		available = {
-		}
+        NOT = { has_idea = SER_liberal_serbia }
+    	}
+		available = {
+        NOT = { has_idea = SER_liberal_serbia_better }
+    	}
 		
 		search_filters = {}
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			add_ideas = {
+			SER_our_way_of_life_active
+		}
+	}
+}
+
+	focus = {
+		id = SER_award_loyal_aristocracy
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		x = 7
+		y = 3
+		cost = 8
+
+		prerequisite = {
+		focus = SER_for_king_and_country
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = SER_hype_censorship
+		icon = GFX_focus_YUG_dissolve_serbia
+		x = 9
+		y = 3
+		cost = 8
+
+		prerequisite = {
+		focus = SER_for_king_and_country
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_state_core = 104
+		add_state_core = 804
+		add_state_core = 912
+		add_state_core = 109
+		add_state_core = 103
+		add_state_core = 163
+		add_state_core = 859
+		add_state_core = 104
+		add_state_core = 852
+		add_state_core = 841
+		add_state_core = 736
+		add_state_core = 102
+		add_state_core = 911
+
+	}
+}
+
+	focus = {
+		id = SER_king_on_the_political_frontline
+		icon = GFX_focus_ser_king_leader
+		x = 8
+		y = 4
+		cost = 8
+
+		prerequisite = {
+		focus = SER_for_king_and_country
+		}
+
+		prerequisite = {
+		focus = SER_award_loyal_aristocracy
+		}
+
+		prerequisite = {
+		focus = SER_hype_censorship
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_our_way_of_life_active
+  			add_idea = SER_our_way_of_life_active_more 				
+  		} 
+	}
+}
+
+	focus = {
+		id = SER_belgrade_fort_ring
+		icon = GFX_focus_ser_anti_habsburg_line
+		x = 7
+		y = 5
+		cost = 8
+
+		prerequisite = {
+		focus = SER_king_on_the_political_frontline
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		107 = {
+ 			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 797       
+            instant_build = yes    
+        }
+			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 3609    
+            instant_build = yes    
+        }
+		add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 3956 
+            instant_build = yes    
+        }
+		}
+	}
+}
+
+	focus = {
+		id = SER_claims_of_montenegro
+		icon = GFX_focus_generic_monarchy_2
+		x = 9
+		y = 5
+		cost = 8
+
+		prerequisite = {
+		focus = SER_king_on_the_political_frontline
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			annex_country = {
+            target = MNT  # Replace TAG with the country tag of the target
+        }
+		add_state_core = 105
+		add_state_core = 910
 	}
 }
 
@@ -171,7 +381,7 @@ focus_tree = {
 		icon = GFX_focus_generic_modernize_industry
 		x = 2
 		y = 3
-		cost = 9
+		cost = 8
 
 		prerequisite = {
 		focus = SER_liberalism_shall_lead
@@ -238,7 +448,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			country_event = ww1_serbia.19
+			add_ideas = {
+			SER_our_way_of_life_passive
+		}
 	}
 }
 
@@ -318,6 +530,47 @@ focus_tree = {
   			remove_idea = SER_liberal_serbia
   			add_idea = SER_liberal_serbia_better 				
   		} 				
+	}
+}
+
+	focus = {
+		id = SER_crown_the_hat_of_leaders
+		icon = GFX_focus_eng_god_save_the_king
+		x = 8
+		y = 6
+		cost = 8
+
+		prerequisite = {
+		focus = SER_belgrade_fort_ring
+		}
+
+		prerequisite = {
+		focus = SER_claims_of_montenegro
+		}
+
+		prerequisite = {
+		focus = SER_king_on_the_political_frontline
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_our_way_of_life_active_more
+  			add_idea = SER_our_way_of_life_active_more_better			
+  		} 	
+		    set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+        }			
 	}
 }
 
