@@ -49,7 +49,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_serbian_general_staff_focus
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_general_staff
 		x = 20
 		y = 2
 		cost = 10
@@ -67,15 +67,42 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas =
-			SER_slavic_spirit_better	{
+			swap_ideas = {
+  			remove_idea = SER_slavic_spirit
+  			add_idea = SER_slavic_spirit_better		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_formal_Army
+		icon = GFX_focus_SER_focus_militia_mob_i
+		x = 16
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_focus
 		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =	{
+			SER_general_Staff_posiv_i
+		}	
 	}
 }
 
 	focus = {
 		id = SER_serbian_general_staff_posiv_i
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_focus_militia_mob_i
 		x = 18
 		y = 3
 		cost = 10
@@ -93,16 +120,48 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			swap_ideas = {
-  			remove_idea = SER_general_Staff
-  			add_idea = SER_general_Staff_posiv_i			
-  		}
+			add_ideas =	{
+			SER_general_Staff_posiv_i
+		}
+
+			division_template = {
+				name = "Srbska Narodna Odbrana"
+				priority = 0
+				division_names_group = bruh
+				template_counter = 42
+				is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+				regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 2 y = 3 }
+				militia = { x = 3 y = 4 }
+				militia = { x = 4 y = 5 }
+					
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 2 y = 2 }
+			}
+			support = {
+			engineer = { x = 0 y = 1 }
+			}
+		}
+
+			107 = {
+					create_unit = {
+					division = "division_template =\"Srbska Narodna Odbrana\" start_experience_factor = 0.3 start_equipment_factor = 0.8"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
 	}
-}
 
 	focus = {
 		id = SER_serbian_general_staff_posiv_ii
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_focus_militia_mob_ii
 		x = 18
 		y = 4
 		cost = 10
@@ -129,7 +188,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_serbian_general_staff_posiv_iii
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_focus_militia_mob_iii
 		x = 18
 		y = 5
 		cost = 10
@@ -151,12 +210,20 @@ focus_tree = {
   			remove_idea = SER_general_Staff_posiv_ii
   			add_idea = SER_general_Staff_posiv_iii		
   		}
+
+					108 = {
+					create_unit = {
+					division = "division_template =\"Srbska Narodna Odbrana\" start_experience_factor = 0.2 start_equipment_factor = 0.6"
+					owner = ROOT
+					count = 3
+				}
+			}
 	}
 }
 
 	focus = {
 		id = SER_serbian_general_staff_posiv_iv
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_focus_militia_mob_iv
 		x = 18
 		y = 6
 		cost = 10
@@ -183,7 +250,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_serbian_general_staff_posiv_v
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_focus_militia_mob_v
 		x = 18
 		y = 7
 		cost = 10
@@ -205,18 +272,29 @@ focus_tree = {
   			remove_idea = SER_general_Staff_posiv_iv
   			add_idea = SER_general_Staff_posiv_v		
   		}
+					803 = {
+					create_unit = {
+					division = "division_template =\"Srbska Narodna Odbrana\" start_experience_factor = 0.4 start_equipment_factor = 0.4"
+					owner = ROOT
+					count = 3
+				}
+			}
 	}
 }
 
 	focus = {
 		id = SER_serbian_general_staff_posiv_vi
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SER_focus_militia_mob_vi
 		x = 18
 		y = 8
 		cost = 10
 
 		prerequisite = {
 		focus = SER_serbian_general_staff_posiv_v
+		}
+
+		prerequisite = {
+		focus = SER_example_of_germans
 		}
 
 		bypass = {
@@ -237,13 +315,13 @@ focus_tree = {
 
 	focus = {
 		id = SER_empty_the_stocks
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_AFG_against_kabul
 		x = 20
 		y = 3
 		cost = 10
 
 		prerequisite = {
-		focus = SER_time_of_decisions
+		focus = SER_serbian_general_staff_focus
 		}
 
 		bypass = {
@@ -268,13 +346,13 @@ focus_tree = {
 
 	focus = {
 		id = SER_take_inspiration_from_italy
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_SMB_a_land_of_mountains
 		x = 20
 		y = 4
 		cost = 10
 
 		prerequisite = {
-		focus = SER_time_of_decisions
+		focus = SER_empty_the_stocks
 		}
 
 		bypass = {
@@ -296,13 +374,13 @@ focus_tree = {
 
 	focus = {
 		id = SER_counter_evidenzbureau
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_vatican_agents
 		x = 20
 		y = 5
 		cost = 10
 
 		prerequisite = {
-		focus = SER_time_of_decisions
+		focus = SER_take_inspiration_from_italy
 		}
 
 		bypass = {
@@ -320,13 +398,13 @@ focus_tree = {
 
 	focus = {
 		id = SER_we_know_who_you_are
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_generic_mountain_fortification
 		x = 20
 		y = 6
 		cost = 10
 
 		prerequisite = {
-		focus = SER_time_of_decisions
+		focus = SER_counter_evidenzbureau
 		}
 
 		bypass = {
@@ -363,13 +441,13 @@ focus_tree = {
 
 	focus = {
 		id = SER_example_of_germans
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 20
 		y = 7
 		cost = 10
 
 		prerequisite = {
-		focus = SER_time_of_decisions
+		focus = SER_we_know_who_you_are
 		}
 
 		bypass = {
