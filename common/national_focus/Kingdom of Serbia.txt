@@ -28,7 +28,7 @@ focus_tree = {
 		icon = GFX_focus_befriend_serbia
 		x = 5
 		y = 1
-		cost = 9
+		cost = 10
 
 		bypass = {
 			#
@@ -48,11 +48,37 @@ focus_tree = {
 }
 
 	focus = {
+		id = SER_serbian_general_staff
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 2
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =
+			SER_general_Staff	{
+		}
+	}
+}
+
+	focus = {
 		id = SER_liberalism_shall_lead
 		icon = GFX_goal_support_democracy
 		x = 3
 		y = 2
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_time_of_decisions
@@ -71,7 +97,16 @@ focus_tree = {
         NOT = { has_idea = SER_our_way_of_life_active_more_better }
     	}
 		available = {
-        NOT = { has_idea = SER_government_of_crna_ruka }
+        NOT = { has_idea = SER_grasp_of_crna_ruka }
+    	}
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka_better }
+    	}
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka_best }
+    	}
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka_best_better }
     	}
 		
 		search_filters = {}
@@ -90,7 +125,7 @@ focus_tree = {
 		icon = GFX_focus_generic_monarchy_1
 		x = 8
 		y = 2
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_time_of_decisions
@@ -105,7 +140,18 @@ focus_tree = {
 		available = {
         NOT = { has_idea = SER_liberal_serbia_better }
     	}
-		
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka }
+    	}
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka_better }
+    	}
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka_best }
+    	}
+		available = {
+        NOT = { has_idea = SER_grasp_of_crna_ruka_best_better }
+		}
 		search_filters = {}
 		
 		available_if_capitulated = yes
@@ -122,7 +168,7 @@ focus_tree = {
 		icon = GFX_focus_CHL_invite_french_aristocracy
 		x = 7
 		y = 3
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_for_king_and_country
@@ -164,7 +210,7 @@ focus_tree = {
 		icon = GFX_focus_YUG_dissolve_serbia
 		x = 9
 		y = 3
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_for_king_and_country
@@ -203,7 +249,7 @@ focus_tree = {
 		icon = GFX_focus_ser_king_leader
 		x = 8
 		y = 4
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_for_king_and_country
@@ -240,7 +286,7 @@ focus_tree = {
 		icon = GFX_focus_ser_anti_habsburg_line
 		x = 7
 		y = 5
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_king_on_the_political_frontline
@@ -285,7 +331,7 @@ focus_tree = {
 		icon = GFX_focus_generic_monarchy_2
 		x = 9
 		y = 5
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_king_on_the_political_frontline
@@ -312,10 +358,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_help_fund_crna_ruka
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_ser_crna_ruka
 		x = 13
 		y = 2
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_time_of_decisions
@@ -325,7 +371,20 @@ focus_tree = {
 			#
 		}
 		available = {
-		}
+        NOT = { has_idea = SER_our_way_of_life_active }
+    	}
+		available = {
+        NOT = { has_idea = SER_our_way_of_life_active_more }
+    	}
+		available = {
+        NOT = { has_idea = SER_our_way_of_life_active_more_better }
+    	}
+		available = {
+        NOT = { has_idea = SER_liberal_serbia }
+    	}
+		available = {
+        NOT = { has_idea = SER_liberal_serbia_better }
+    	}
 		
 		search_filters = {}
 		
@@ -340,10 +399,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_give_seats_in_the_government
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_AFG_parliamentary_democracy
 		x = 12
 		y = 3
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_help_fund_crna_ruka
@@ -371,10 +430,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_from_sokol_to_army
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_generic_advanced_military_studies
 		x = 14
 		y = 3
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_help_fund_crna_ruka
@@ -397,10 +456,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_crna_ruka_in_government
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_ARG_keep_it_in_the_party
 		x = 13
 		y = 4
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_give_seats_in_the_government
@@ -434,10 +493,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_idea_of_even_greater_serbia
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_RAJ_war_taxes
 		x = 12
 		y = 5
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_crna_ruka_in_government
@@ -466,10 +525,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_nationalist_constitution
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		icon = GFX_focus_PER_constitutional_monarchy
 		x = 14
 		y = 5
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_crna_ruka_in_government
@@ -495,10 +554,10 @@ focus_tree = {
 
 	focus = {
 		id = SER_crna_ruka_absolute_takeover
-		icon = GFX_focus_eng_god_save_the_king
+		icon = GFX_focus_BEL_government_resigns
 		x = 13
 		y = 6
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_idea_of_even_greater_serbia
@@ -539,7 +598,7 @@ focus_tree = {
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		x = 4
 		y = 3
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_liberalism_shall_lead
@@ -580,7 +639,7 @@ focus_tree = {
 		icon = GFX_focus_generic_modernize_industry
 		x = 2
 		y = 3
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_liberalism_shall_lead
@@ -622,7 +681,7 @@ focus_tree = {
 		icon = GFX_focus_ser_question_of_the_king
 		x = 3
 		y = 4
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_liberalism_shall_lead
@@ -658,7 +717,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 2
 		y = 5
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_question_of_the_king
@@ -708,7 +767,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_industry
 		x = 4
 		y = 5
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_question_of_the_king
@@ -737,7 +796,7 @@ focus_tree = {
 		icon = GFX_focus_eng_god_save_the_king
 		x = 8
 		y = 6
-		cost = 9
+		cost = 10
 
 		prerequisite = {
 		focus = SER_belgrade_fort_ring
