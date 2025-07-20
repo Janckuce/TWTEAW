@@ -48,7 +48,7 @@ focus_tree = {
 }
 
 	focus = {
-		id = SER_serbian_general_staff
+		id = SER_serbian_general_staff_focus
 		icon = GFX_goal_support_democracy
 		x = 20
 		y = 2
@@ -68,8 +68,323 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas =
-			SER_general_Staff	{
+			SER_slavic_spirit_better	{
 		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_i
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_focus
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff
+  			add_idea = SER_general_Staff_posiv_i			
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_ii
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_i
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_i
+  			add_idea = SER_general_Staff_posiv_ii		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_iii
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_ii
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_ii
+  			add_idea = SER_general_Staff_posiv_iii		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_iv
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 6
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_iii
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_iii
+  			add_idea = SER_general_Staff_posiv_iv		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_v
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 7
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_iv
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_iv
+  			add_idea = SER_general_Staff_posiv_v		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_vi
+		icon = GFX_goal_support_democracy
+		x = 18
+		y = 8
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_v
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_v
+  			add_idea = SER_general_Staff_posiv_vi	
+  		}
+	}
+}
+
+	focus = {
+		id = SER_empty_the_stocks
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1432
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 872
+        }
+    }
+}
+
+	focus = {
+		id = SER_take_inspiration_from_italy
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.5
+        uses = 2
+        category = mountaineers_tech
+    }
+    }
+}
+
+	focus = {
+		id = SER_counter_evidenzbureau
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+        create_intelligence_agency = yes
+    }
+}
+
+	focus = {
+		id = SER_we_know_who_you_are
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 6
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		803 = {
+ 			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 11868    
+            instant_build = yes    
+        }
+			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 11857
+            instant_build = yes    
+        }
+		add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 11832
+            instant_build = yes    
+        }
+    }
+}
+}
+
+	focus = {
+		id = SER_example_of_germans
+		icon = GFX_goal_support_democracy
+		x = 20
+		y = 7
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_slavic_spirit_better
+  			add_idea = SER_slavic_spirit_better_better			
+  		}
 	}
 }
 

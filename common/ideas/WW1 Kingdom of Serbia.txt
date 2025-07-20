@@ -62,7 +62,7 @@ ideas = {
 			}
 		}
 
-			SER_general_Staff = {
+			SER_slavic_spirit_better = {
 
 			allowed = {
 				always = no
@@ -77,7 +77,169 @@ ideas = {
             picture = FRA_entente
 
 				modifier = {
-				army_org = 0.5
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+			}
+		}
+
+			SER_general_Staff_posiv_i = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 5
+				modifier_army_sub_unit_militia_max_org_factor = 0.025
+				modifier_army_sub_unit_militia_defence_factor = 0.015
+				modifier_army_sub_unit_militia_attack_factor = 0.015
+
+			}
+		}
+
+			SER_general_Staff_posiv_ii = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 5
+				modifier_army_sub_unit_militia_max_org_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.03
+				modifier_army_sub_unit_militia_attack_factor = 0.03
+
+			}
+		}
+
+			SER_general_Staff_posiv_iii = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 5
+				modifier_army_sub_unit_militia_max_org_factor = 0.065
+				modifier_army_sub_unit_militia_defence_factor = 0.045
+				modifier_army_sub_unit_militia_attack_factor = 0.055
+
+			}
+		}
+
+			SER_general_Staff_posiv_iv = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 5
+				modifier_army_sub_unit_militia_max_org_factor = 0.08
+				modifier_army_sub_unit_militia_defence_factor = 0.06
+				modifier_army_sub_unit_militia_attack_factor = 0.07
+
+			}
+		}
+
+			SER_general_Staff_posiv_v = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 5
+				modifier_army_sub_unit_militia_max_org_factor = 0.095
+				modifier_army_sub_unit_militia_defence_factor = 0.075
+				modifier_army_sub_unit_militia_attack_factor = 0.085
+
+			}
+		}
+
+			SER_general_Staff_posiv_vi = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 5
+				modifier_army_sub_unit_militia_max_org_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+
+			}
+		}
+
+			SER_slavic_spirit_better_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = FRA_entente
+
+				modifier = {
+				army_org = 10
+				army_org_regain = 0.05
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
 			}
 		}
 
