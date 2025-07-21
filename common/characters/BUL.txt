@@ -11,4 +11,121 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+
+		BUL_ferdinand_I_dem = {
+		name = BUL_character_ferdinand_I
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		BUL_ferdinand_I_soc= {
+		name = BUL_character_ferdinand_I
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		BUL_ferdinand_I_fas= {
+		name = BUL_character_ferdinand_I
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		BUL_aleksander_malinov = {
+		name = BUL_aleksander_malinov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_aleksander_malinov"
+			}
+			army = {
+				small = "GFX_BUL_aleksander_malinov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_aleksander_malinov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_aleksander_malinov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_vasil_radoslavov = {
+		name = BUL_vasil_radoslavov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_vasil_radoslavov"
+			}
+			army = {
+				small = "BUL_vasil_radoslavov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_vasil_radoslavov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_vasil_radoslavov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_ivan_evstratiev_geshov = {
+		name = BUL_ivan_evstratiev_geshov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_evstratiev_geshov"
+			}
+			army = {
+				small = "GFX_BUL_ivan_evstratiev_geshov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_ivan_evstratiev_geshov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_ivan_evstratiev_geshov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }
