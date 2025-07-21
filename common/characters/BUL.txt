@@ -103,6 +103,110 @@ characters={
 		}
 	}
 
+		BUL_lyubomir_miletich = {
+		name = BUL_lyubomir_miletich
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_lyubomir_miletich"
+			}
+			army = {
+				small = "BUL_lyubomir_miletich_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_lyubomir_miletichv
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_lyubomir_miletich
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_ivan_vazov = {
+		name = BUL_ivan_vazov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_vazov"
+			}
+			army = {
+				small = "BUL_ivan_vazov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_ivan_vazov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_ivan_vazov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_nikola_zhekov = {
+		name = BUL_nikola_zhekov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_nikola_zhekov"
+			}
+			army = {
+				small = "BUL_nikola_zhekov_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = BUL_nikola_zhekov
+			allowed = {
+			}
+			traits = {
+				bul_military_teacher_infantry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_ivan_shishmanov = {
+		name = BUL_ivan_shishmanov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_shishmanov"
+			}
+			army = {
+				small = "BUL_ivan_shishmanov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_ivan_shishmanov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_ivan_shishmanov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 		BUL_ivan_evstratiev_geshov = {
 		name = BUL_ivan_evstratiev_geshov
 		portraits = {
