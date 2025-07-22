@@ -12200,6 +12200,13 @@ leader_traits = {
 		army_core_defence_factor = 0.015
 	}
 
+		advisor_BUL_ivan_vazov = {
+		random = no
+		sprite = 13
+		army_core_attack_factor = 0.075
+		army_core_defence_factor = 0.075
+	}
+
 		advisor_BUL_aleksander_tanev = {
 		random = no
 		sprite = 13
@@ -12280,6 +12287,15 @@ leader_traits = {
 		army_org_factor = 0.025
 		dig_in_speed_factor = 0.025
 		max_dig_in = 5
+	}
+
+		army_BUL_nikola_ivanov = {
+		random = no
+		sprite = 9
+		coastal_bunker_effectiveness_factor = 0.1
+		land_bunker_effectiveness_factor = 0.1 
+		production_speed_bunker_factor = 0.05
+		production_speed_coastal_bunker_factor = 0.05
 	}
 
 		army_BUL_stefan_tasev = {

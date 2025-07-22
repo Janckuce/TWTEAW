@@ -225,6 +225,41 @@ characters={
 		}
 	}
 
+		BUL_nikola_ivanov = {
+		name = BUL_nikola_ivanov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_nikola_ivanov"
+			}
+			army = {
+				small = "GFX_BUL_nikola_ivanov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_nikola_ivanov
+			allowed = {
+			}
+			traits = {
+				army_BUL_nikola_ivanov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {   }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 		BUL_vladimir_vazov = {
 		name = BUL_vladimir_vazov
 		portraits = {
