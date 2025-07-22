@@ -225,6 +225,76 @@ characters={
 		}
 	}
 
+		BUL_vladimir_vazov = {
+		name = BUL_vladimir_vazov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_vladimir_vazov"
+			}
+			army = {
+				small = "GFX_BUL_vladimir_vazov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_vladimir_vazov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_vladimir_vazov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+		BUL_aleksander_tanev = {
+		name = BUL_aleksander_tanev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_aleksander_tanev"
+			}
+			army = {
+				small = "GFX_BUL_aleksander_tanev_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_aleksander_tanev
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_aleksander_tanev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {  }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 		BUL_kliment_boyadzhiev = {
 		name = BUL_kliment_boyadzhiev
 		portraits = {
@@ -261,6 +331,33 @@ characters={
 		}
 	}
 
+		BUL_stefan_toshev = {
+		name = BUL_stefan_toshev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_stefan_toshev"
+			}
+			army = {
+				small = "GFX_BUL_stefan_toshev_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_stefan_toshev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_stefan_toshev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 		BUL_georgi_todorov = {
 		name = BUL_georgi_todorov
 		portraits = {
@@ -294,6 +391,39 @@ characters={
 			defense_skill=4
 			planning_skill=1
 			logistics_skill=1
+		}
+	}
+
+		BUL_georgi_kupov={
+		name=BUL_georgi_kupov
+		portraits={
+			army={
+				large="GFX_BUL_georgi_kupov"
+				small="GFX_bul_georgi_krupov_frame"
+			}
+		}
+		navy_leader={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = BUL_georgi_kupov
+			allowed = {
+					original_tag = BUL
+				}
+				traits = {
+					navy_chief_decisive_battle_1
+				}
+				cost =  50
+				ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
