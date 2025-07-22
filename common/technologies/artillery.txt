@@ -80,7 +80,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_small_cannon_2
 			tank_close_support_gun
-			secondary_turret_close_support_gun
 		}
 
 		path = {
@@ -390,13 +389,6 @@ technologies = {
 
 	rocket_artillery = {
 
-		enable_equipments = {
-			rocket_artillery_equipment_1
-		}
-#		enable_subunits = {
-#			rocket_artillery_brigade
-#		}
-
 		enable_equipment_modules = {
 			tank_rocket_launcher
 			rocket_rails
@@ -521,9 +513,7 @@ technologies = {
 
 	rocket_artillery4 = {
 
-		enable_equipments = {
-			rocket_artillery_equipment_2
-		}
+		
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
 		}
@@ -1232,12 +1222,15 @@ technologies = {
 		
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 
 		research_cost = 2
@@ -1270,12 +1263,15 @@ technologies = {
 		
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 
 		folder = {
@@ -1321,9 +1317,12 @@ technologies = {
 			leads_to_tech = ww1_antiair_equipment1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = heavy_artillery_equipment1
+			research_cost_coeff = 1
+		}
 		
 		path = {
-			leads_to_tech = ww1_antitank_equipment1
 			research_cost_coeff = 1
 		}
 
@@ -1399,12 +1398,15 @@ technologies = {
 		
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		
 		research_cost = 2.0
@@ -1434,7 +1436,6 @@ technologies = {
 	ww1_artillery_equipment4 = {
 	
 	    path = {
-			leads_to_tech = ww1_artillery_equipment5_demobilization
 			research_cost_coeff = 1
 		}
 
@@ -1470,12 +1471,19 @@ technologies = {
 	    
 		artillery = {
 			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 		artillery_brigade = {
 			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.25
+			breakthrough = 0.25
+		}
+		heavy_artillery_brigade = {
+			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 	    
 		path = {
@@ -1511,12 +1519,19 @@ technologies = {
 	    
 		artillery = {
 			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 		artillery_brigade = {
 			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.25
+			breakthrough = 0.25
+		}
+		heavy_artillery_brigade = {
+			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 	    
 		path = {
@@ -1552,12 +1567,19 @@ technologies = {
 	    
 		artillery = {
 			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 		artillery_brigade = {
 			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.25
+			breakthrough = 0.25
+		}
+		heavy_artillery_brigade = {
+			soft_attack = 0.25
+			breakthrough = 0.25
 		}
 
 		research_cost = 2.0
@@ -1729,6 +1751,102 @@ technologies = {
 			modifier = {
 				factor = 1.5
 				date > "1918.1.1"
+			}
+		}
+	}
+	heavy_artillery_equipment1 = {
+
+		enable_equipments = {
+			heavy_artillery_equipment_1
+		}
+
+		path = {
+			leads_to_tech = heavy_artillery_improvement1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1916
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 12 }
+		}
+
+		categories = {
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1910.1.1"
+			}
+		}
+	}
+	heavy_artillery_equipment2 = {
+
+		enable_equipments = {
+			heavy_artillery_equipment_2
+		}
+
+		research_cost = 2.5
+
+		start_year = 1918
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 16 }
+		}
+
+		categories = { 
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1915.1.1"
+			}
+		}
+	}
+	heavy_artillery_improvement1 = {
+
+		heavy_artillery_brigade = {
+			soft_attack = 0.1
+			breakthrough = 0.1
+		}
+
+		path = {
+			leads_to_tech = heavy_artillery_equipment2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1917
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 14 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1912.1.1"
 			}
 		}
 	}

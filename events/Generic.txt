@@ -870,5 +870,25 @@ country_event = {
 			}
 		}
 	}
+}
 
+# Generic request to join Central Powers Alliance
+country_event = {
+	id = generic.8
+	title = generic.8.t
+
+	is_triggered_only = yes
+	
+	desc = {
+		text = generic.8.d.a
+		}
+		option = {
+			ai_chance = {
+				base = 100
+			}
+			add_to_faction = ROOT
+		}
+		option = {
+			
+		}
 }

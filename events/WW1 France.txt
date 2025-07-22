@@ -405,10 +405,38 @@ country_event = {
 
 	option = {
 		name = ww1_france.13.a
+		ai_chance = {
+			factor = 100
+		}
+		#white peace Germany
+			every_country = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = GER
+				white_peace = BUL
+				white_peace = AUS
+				white_peace = POL
+				white_peace = UKR
+				white_peace = LIT
+				white_peace = UBD
+			}
+
+			#Free Luxembourg
+			if = {
+				limit = {
+					GER = { controls_state = 8 }
+				}
+				LUX = { transfer_state = 8 }
+			}
+
+			#Treaty of Versailles
+			GER = {
+				country_event = { id = ww1_germany.15 days = 70 }
+			}
+
+			news_event = ww1_news.47
 		
-		hidden_effect = {
-		    news_event = ww1_news.47
-			
 			#Subjects Become Free leave_faction = yes
 		    if = {
 				limit = {
@@ -441,44 +469,13 @@ country_event = {
 				
 				UBD = { leave_faction = yes }
 			}
-			#white peace Germany
-			every_country = {
-				limit = {
-					has_war_with = GER
-				}
-				white_peace = GER
-				white_peace = BUL
-				white_peace = AUS
-				white_peace = POL
-				white_peace = UKR
-				white_peace = LIT
-				white_peace = UBD
-			}
-			#Free Luxembourg
-			if = {
-				limit = {
-					GER = { controls_state = 8 }
-				}
-				LUX = { transfer_state = 8 }
-			}
-			
-			#Treaty of Versailles
-			GER = {
-				country_event = { id = ww1_germany.15 days = 70 }
-			}
-		}
-		
-		ai_chance = {
-			factor = 100
 		}
 	}
-	
 	option = {
 		name = ww1_france.13.b
 		
 		ai_chance = {
-			factor = 0
-			}
+			base = 0
 		}
 	}
 }

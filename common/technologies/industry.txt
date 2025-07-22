@@ -163,11 +163,6 @@ technologies = {
 	machine_tools_6 = {
 	
 		production_factory_max_efficiency_factor = 0.1
-
-		path = {
-			research_cost_coeff = 1
-			leads_to_tech = machine_tools_7_demobilization
-		}
 		
 		research_cost = 1.5
 		start_year = 1918
@@ -350,11 +345,6 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.15
 		global_building_slots_factor = 0.2
-
-		path = {
-		    leads_to_tech = industry_6_demobilization
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1918
@@ -527,11 +517,7 @@ technologies = {
 		    leads_to_tech = ww1_excavation3
 			research_cost_coeff = 1
 		}
-		path = {
-		    leads_to_tech = ww1_construction6_demobilization
-			research_cost_coeff = 1
-		}
-		
+
 		research_cost = 2
 		start_year = 1918
 		categories = {
@@ -968,12 +954,7 @@ technologies = {
 	ww1_oil_processing3 = {
 		
 		fuel_gain_factor_from_states = 0.5
-		
-		path = {
-		    leads_to_tech = synthetic_demobilization
-			research_cost_coeff = 1
-		}
-		
+
 		research_cost = 3
 		start_year = 1918
 		categories = {
@@ -1114,12 +1095,7 @@ technologies = {
 				amount = 1
 			}
 		}
-		
-		path = {
-		    leads_to_tech = synthetic_demobilization
-			research_cost_coeff = 1
-		}
-		
+
 		research_cost = 3
 		start_year = 1918
 		categories = {
@@ -1338,12 +1314,7 @@ technologies = {
 		
 		fuel_gain_factor = 0.2
 		fuel_gain_factor_from_states = 0.1
-		
-		path = {
-		    leads_to_tech = synthetic_demobilization
-			research_cost_coeff = 1
-		}
-		
+
 		research_cost = 3
 		start_year = 1918
 		categories = {
@@ -1447,11 +1418,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = improved_equipment_conversion
-			research_cost_coeff = 1
-		}
-		
 		research_cost = 1.5
 		start_year = 1923
 		
