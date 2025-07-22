@@ -162,7 +162,7 @@ characters={
 				large = "GFX_BUL_nikola_zhekov"
 			}
 			army = {
-				small = "BUL_nikola_zhekov_frame"
+				small = "GFX_BUL_nikola_zhekov_frame"
 			}
 		}
 		
@@ -173,6 +173,149 @@ characters={
 			}
 			traits = {
 				bul_military_teacher_infantry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			field_marshal={
+			traits = {   }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+		BUL_ivan_kolev = {
+		name = BUL_ivan_kolev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_kolev"
+			}
+			army = {
+				small = "GFX_BUL_ivan_kolev_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = BUL_ivan_kolev
+			allowed = {
+			}
+			traits = {
+				bul_military_teacher_cavalry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {   }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		BUL_kliment_boyadzhiev = {
+		name = BUL_kliment_boyadzhiev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_kliment_boyadzhiev"
+			}
+			army = {
+				small = "GFX_bul_kliment_boyadzhiev_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_kliment_boyadzhiev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_kliment_boyadzhiev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = {   }
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		BUL_georgi_todorov = {
+		name = BUL_georgi_todorov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_georgi_todorov"
+			}
+			army = {
+				small = "GFX_BUL_georgi_todorov_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_georgi_todorov
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_georgi_todorov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = {   }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		BUL_stefan_tasev = {
+		name = BUL_stefan_tasev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_stefan_tasev"
+			}
+			army = {
+				small = "GFX_BUL_stefan_tasev_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_stefan_tasev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_stefan_tasev
 			}
 			cost = 150
 			ai_will_do = {

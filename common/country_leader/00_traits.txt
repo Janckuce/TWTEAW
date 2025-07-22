@@ -8511,7 +8511,6 @@ leader_traits = {
 		bnb_company = {
 		random = no
 		sprite = 999
-		research_speed_factor = 0.025
 		consumer_goods_factor = -0.025
 		production_speed_arms_factory_factor = 0.025
 		production_speed_industrial_complex_factor = 0.025
@@ -8523,19 +8522,66 @@ leader_traits = {
 		bul_military_teacher_infantry = {
 		random = no
 		sprite = 13
-		land_doctrine_cost_factor = -0.075
+		land_doctrine_cost_factor = -0.05
 		coordination_bonus = 0.05
 		command_power_gain = 0.1
+		army_speed_factor = 0.05
 		experience_gain_army = 0.05
 		mobilization_laws_cost_factor = -0.1
+
+	}
+
+		army_BUL_kliment_boyadzhiev = {
+		random = no
+		sprite = 7
+		army_attack_factor = 0.075
+		army_org_regain = 0.05
+		army_speed_factor = 0.05
+		experience_gain_army = 0.2
+
+	}
+
+		army_BUL_georgi_todorov = {
+		random = no
+		sprite = 9
+		army_defence_factor = 0.1
+		experience_gain_army = 0.2
+		army_org_factor = 0.025
+		dig_in_speed_factor = 0.025
+		max_dig_in = 5
+	}
+
+		army_BUL_stefan_tasev = {
+		random = no
+		sprite = 6
+		experience_gain_army = 0.15
+		army_org_factor = 0.05
+		army_org_regain = 0.075
+		planning_speed = 0.1
+		max_planning = 0.05
+	}
+
+
+
+		bul_military_teacher_cavalry = {
+		random = no
+		sprite = 13
+		land_doctrine_cost_factor = -0.1
+		cavalry_attack_factor = 0.025
+		cavalry_defence_factor = 0.025
+		army_speed_factor = 0.05
+		initiative_factor = 0.05
+
+
+
 
 	}
 
 		advisor_BUL_vasil_radoslavov = {
 		random = no
 		sprite = 13
-		industrial_capacity_factory = 0.075
-		consumer_goods_factor = 0.05
+		industrial_capacity_factory = 0.05
+		consumer_goods_factor = 0.075
 		production_speed_arms_factory_factor = 0.075
 		production_speed_industrial_complex_factor = -0.025
 			equipment_bonus = {
