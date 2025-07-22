@@ -75,6 +75,32 @@ focus_tree = {
 }
 
 	focus = {
+		id = SER_serbian_general_staff_formal_Army
+		icon = GFX_focus_SER_focus_militia_mob_i
+		x = 16
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_focus
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =	{
+			SER_general_Staff_posiv_i
+		}	
+	}
+}
+
+	focus = {
 		id = SER_serbian_general_staff_posiv_i
 		icon = GFX_focus_SER_focus_militia_mob_i
 		x = 18

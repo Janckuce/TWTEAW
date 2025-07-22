@@ -15,6 +15,18 @@ ENG_vickers_armstrong_eng_organization = {
 		OR = {
 			tag = ENG
 			tag = BEL
+			AND = {
+				tag = GRE
+				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				tag = BUL
+				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				tag = ETH 
+				has_dlc = "By Blood Alone"
+			}
 		}
 	}
 	
@@ -108,6 +120,21 @@ ENG_vauxhall_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG
+			AND = {
+				tag = POL # If Poland sets up a local one
+				OR = {
+					has_dlc = "Poland: United and Ready"
+					has_dlc = "No Step Back"
+				}
+			}
+			AND = {
+				tag = BUL
+				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				tag = ETH 
+				has_dlc = "By Blood Alone"
+			}
 		}
 	}
 
