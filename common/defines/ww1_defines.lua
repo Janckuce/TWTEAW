@@ -12,3 +12,5 @@ NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field ma
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.5		-- Speed at which militaryfactories produce equipment
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0		-- Cost of changing a brigade in a division
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
