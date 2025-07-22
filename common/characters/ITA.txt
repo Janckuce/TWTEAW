@@ -186,6 +186,20 @@ characters={
 				small = "GFX_ITA_gaetano_giardino_frame"
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = ITA_gaetano_giardino
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				army_artillery_1 #Artillery attack 10% Artillery Defense 5%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		corps_commander={
 			skill = 2
 			attack_skill = 2
@@ -238,7 +252,7 @@ characters={
 	ITA_Guy1 = {
 		portraits = {
 			army = {
-				small = "GFX_ITA_Guy1_frame"
+				small = "GFX_ITA_GUY1_FRAME"
 			}
 		}
 		

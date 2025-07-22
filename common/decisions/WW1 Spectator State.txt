@@ -2042,6 +2042,7 @@ ORO_balkan_wars = {
 		    TUR = { has_war_with = SER }
 		    OR = {
 				date > 1913.5.30
+				casualties > 150000
 				NOT = {
 				    TUR = { controls_state = 797 }
 				}

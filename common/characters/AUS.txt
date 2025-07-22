@@ -314,6 +314,20 @@ characters={
 				small = "GFX_AUS_alexander_von_krobatin_frame"
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = AUS_alexander_von_krobatin
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				army_artillery_1 #Artillery attack 10% Artillery Defense 5%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 		
 		corps_commander={
 			skill = 2

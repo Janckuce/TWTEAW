@@ -10,7 +10,7 @@ technologies = {
 		xor = { superior_firepower trench_warfare mass_assault }
 		
 		dependencies = {
-			ww1_land_doctrine_15 = 1
+			ww1_land_doctrine_10 = 1
 		}
 
 		path = {
@@ -925,7 +925,7 @@ technologies = {
 		xor = { mobile_warfare trench_warfare mass_assault } 
 		
 		dependencies = {
-			ww1_land_doctrine_15 = 1
+			ww1_land_doctrine_10 = 1
 		}	
 
 		path = {
@@ -1774,7 +1774,7 @@ technologies = {
 		xor = { mobile_warfare superior_firepower mass_assault } 
 		
 		dependencies = {
-			ww1_land_doctrine_15 = 1
+			ww1_land_doctrine_10 = 1
 		}
 	
 		max_dig_in = 10
@@ -2627,7 +2627,7 @@ technologies = {
 		xor = { mobile_warfare superior_firepower trench_warfare }
 		
 		dependencies = {
-			ww1_land_doctrine_15 = 1
+			ww1_land_doctrine_10 = 1
 		}
 
 		path = {
@@ -3244,7 +3244,7 @@ technologies = {
 		infantry = {
 			default_morale = 0.30
 		}
-		land_reinforce_rate = 0.05		
+		land_reinforce_rate = 0.02		
 		
 		path = {
 			leads_to_tech = large_front_offensive
@@ -3284,7 +3284,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 		}
 		category_tanks = {
 			max_organisation = 2
@@ -3330,14 +3330,11 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.05
+		conscription = 0.02
 		xp_research_type = army
 		xp_unlock_cost = 100
-		infantry = {
-			combat_width = -0.4
-		}
 
-		land_reinforce_rate = 0.15		
+		land_reinforce_rate = 0.03		
 		
 		path = {
 			leads_to_tech = guerilla_warfare

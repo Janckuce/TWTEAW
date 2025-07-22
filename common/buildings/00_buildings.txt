@@ -348,103 +348,6 @@ buildings = {
 			exclusive_with = mega_gun_emplacement
 		}
 	}
-	
-	nuclear_reactor = {
-		hide_if_missing_tech = yes
-		missing_tech_loc = { 
-			localization_key = SP_BUILDING_MISSING_PROJECT
-			PROJECT = sp_nuclear_reactor
-		}
-		spawn_point = nuclear_reactor_spawn
-		show_on_map = 1
-		base_cost = 30000
-		icon_frame = 13
-		nuclear_reactor = yes
-		value = 10
-		tags = { specialization_nuclear }
-		infrastructure_construction_effect = yes
-
-		country_modifiers = {
-			modifiers = {
-				nuclear_production_factor = 3
-				sp_nuclear_bomb_speed_factor = 0.05
-				sp_thermo_nuclear_bomb_speed_factor = 0.05
-				thermonuclear_production_factor = 2
-			}
-		}
-
-		level_cap = {
-			state_max = 1
-			shares_slots = yes
-			group_by = reactors
-		}
-	}
-
-	nuclear_reactor_heavy_water = {
-		hide_if_missing_tech = yes
-		missing_tech_loc = { 
-			localization_key = SP_BUILDING_MISSING_PROJECT
-			PROJECT = sp_nuclear_reactor
-		}
-		spawn_point = nuclear_reactor_spawn
-		show_on_map = 1
-		base_cost = 25000
-		icon_frame = 13
-		nuclear_reactor = yes
-		value = 10
-		infrastructure_construction_effect = yes
-
-		country_modifiers = {
-			modifiers = {
-				nuclear_production_factor = 2
-				sp_nuclear_bomb_speed_factor = 0.03
-				sp_thermo_nuclear_bomb_speed_factor = 0.03
-				thermonuclear_production_factor = 1
-			}
-		}
-
-		level_cap = {
-			state_max = 1
-			shares_slots = yes
-			group_by = reactors
-		}
-	}
-
-	commercial_nuclear_reactor = {
-		dlc_allowed = { has_dlc = Gotterdammerung }
-		hide_if_missing_tech = yes
-		missing_tech_loc = { 
-			localization_key = SP_BUILDING_MISSING_PROJECT
-			PROJECT = sp_commercial_nuclear_reactor
-		}
-		spawn_point = nuclear_reactor_spawn
-		show_on_map = 1
-		base_cost = 35000
-		icon_frame = 27
-		#nuclear_reactor = yes
-		value = 10
-		infrastructure_construction_effect = yes
-		
-		country_modifiers = {
-			modifiers = {
-				nuclear_production_factor = 3
-				thermonuclear_production_factor = 2
-				#consumer_goods_factor = -0.05
-			}
-		}
-
-		state_modifiers = {
-			state_production_speed_buildings_factor = 0.15
-			local_building_slots_factor = 0.15
-			state_resources_factor = 0.1			
-		}
-
-		level_cap = {
-			state_max = 1
-			shares_slots = yes
-			group_by = reactors
-		}
-	}
 
 	nuclear_facility = {
 		show_on_map = 1
@@ -625,11 +528,6 @@ buildings = {
 }
 
 spawn_points = {
-	nuclear_reactor_spawn = {
-		type = state
-		max = 1
-	}
-
 	special_project_facility_spawn = {
 		type = province
 		max = 1

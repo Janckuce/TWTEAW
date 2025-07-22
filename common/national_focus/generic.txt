@@ -2334,87 +2334,86 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = GEN_Join_Entente
-		icon = GFX_focus_chi_reach_out_to_france
-		relative_position_id = GEN_Political_Focus
-		prerequisite = {
-			focus = GEN_Entente_Investment
-		}
-		x = -6
-		y = 3
-		cost = 10
-
-		bypass = {
-			OR = {
-				is_in_faction_with = GER
-				has_war_with = FRA
-			}
-		}
-		available = {
-		    NOT = {
-			    has_war_with = FRA
-				is_in_faction_with = GER
-				is_puppet = yes
-			}
-		    FRA = {
-			    has_war = yes
-				is_faction_leader = yes 
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			FRA = { 
-			    country_event = {
-				    id = ww1_generic.1
-				}
-			}
-		}
-	}
+	#focus = {
+	#	id = GEN_Join_Entente
+	#	icon = GFX_focus_chi_reach_out_to_france
+	#	relative_position_id = GEN_Political_Focus
+	#	prerequisite = {
+	#		focus = GEN_Entente_Investment
+	#	}
+	#	x = -6
+	#	y = 3
+	#	cost = 10
+#
+	#	bypass = {
+	#		OR = {
+	#			is_in_faction_with = GER
+	#			has_war_with = FRA
+	#		}
+	#	}
+	#	available = {
+	#	    NOT = {
+	#		    has_war_with = FRA
+	#			is_in_faction_with = GER
+	#			is_puppet = yes
+	#		}
+	#	    FRA = {
+	#		    has_war = yes
+	#			is_faction_leader = yes 
+	#		}
+	#	}
+	#	
+	#	search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+	#	
+	#	available_if_capitulated = yes
+	#	
+	#	completion_reward = {
+	#		FRA = { 
+	#		    country_event = {
+	#			    id = ww1_generic.1
+	#			}
+	#		}
+	#	}
+	#}
 	
-	focus = {
-		id = GEN_Join_Central_Powers #NEVER SAY CP INSTEAD OF CETRAL POWERS!!!!
-		icon = GFX_focus_befriend_german_empire
-		relative_position_id = GEN_Political_Focus
-		prerequisite = {
-			focus = GEN_Central_Powers_Investment
-		}
-		x = -4
-		y = 3
-		cost = 10
-
-		bypass = {
-			OR = {
-				is_in_faction_with = FRA
-				has_war_with = GER
-			}
-		}
-		available = {
-		    NOT = {
-			    has_war_with = GER
-				is_in_faction_with = FRA
-				is_puppet = yes
-			}
-		    GER = {
-			    has_war = yes
-				is_faction_leader = yes 
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			GER = { 
-			    country_event = {
-				    id = ww1_generic.1
-				}
-			}
-		}
-	}
+	#focus = {
+	#	id = GEN_Join_Central_Powers #NEVER SAY CP INSTEAD OF CETRAL POWERS!!!!
+	#	icon = GFX_focus_befriend_german_empire
+	#	relative_position_id = GEN_Political_Focus
+	#	prerequisite = {
+	#		focus = GEN_Central_Powers_Investment
+	#	}
+	#	x = -4
+	#	y = 3
+	#	cost = 10
+	#	bypass = {
+	#		OR = {
+	#			is_in_faction_with = FRA
+	#			has_war_with = GER
+	#		}
+	#	}
+	#	available = {
+	#	    NOT = {
+	#		    has_war_with = GER
+	#			is_in_faction_with = FRA
+	#			is_puppet = yes
+	#		}
+	#	    GER = {
+	#		    has_war = yes
+	#			is_faction_leader = yes
+	#		}
+	#	}
+	#
+	#	search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+	#
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		GER = { 
+	#			country_event = {
+	#				id = generic.8
+	#			}
+	#		}
+	#	}
+	#}
 }
