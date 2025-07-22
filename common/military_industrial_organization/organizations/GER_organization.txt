@@ -48,14 +48,6 @@ GER_henschel_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
-			}
 		}
 	}
 
@@ -205,12 +197,17 @@ GER_daimler_benz_organization = {
  
 #####################
 
-GER_germaniawerft_organization = {
+GER_ag_vulcan_stettin = {
 	include = generic_battle_line_ship_organization
-	icon = GFX_idea_germaniawerft
+	icon = GFX_idea_ag_vulcan_stettin
 	
 	allowed = {	
-		tag = GER 
+		OR = {
+			tag = GER 
+			AND = {
+				tag = BUL
+			}
+		}
 	}
 }
 

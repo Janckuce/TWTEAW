@@ -489,13 +489,15 @@ country_event = {
 country_event = {
 	id = ww1_serbia.19
 	title = ww1_serbia.19.t
-	desc = ww1_serbia_desc.19
+	desc = ww1_serbia.19.d
 	picture = GFX_report_event_ottoman_troops
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = {
-		name = ww1_serbia.19.a
+		option = {
+		name = ww1_serbia.19.b
+		set_country_leader_trait = war_propagandist
+		add_ideas = SER_our_way_of_life_passive
 	}
 }
