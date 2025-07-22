@@ -260,6 +260,76 @@ characters={
 		}
 	}
 
+		BUL_stefan_nerezov = {
+		name = BUL_stefan_nerezov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_stefan_nerezov"
+			}
+			army = {
+				small = "GFX_BUL_stefan_nerezov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_stefan_nerezov
+			allowed = {
+			}
+			traits = {
+				army_BUL_stefan_nerezov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {   }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=1
+		}
+	}
+
+		BUL_aleksandar_protogerov = {
+		name = BUL_aleksandar_protogerov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_aleksandar_protogerov"
+			}
+			army = {
+				small = "GFX_BUL_aleksandar_protogerov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_aleksandar_protogerov
+			allowed = {
+			}
+			traits = {
+				army_BUL_aleksandar_protogerov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {   }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
 		BUL_vladimir_vazov = {
 		name = BUL_vladimir_vazov
 		portraits = {
