@@ -469,6 +469,10 @@ focus_tree = {
 	focus = {
 		id = SER_liberalism_shall_lead
 		icon = GFX_goal_support_democracy
+		mutually_exclusive = {
+		    focus = SER_for_king_and_country
+			focus = SER_help_fund_crna_ruka
+		}
 		x = 3
 		y = 2
 		cost = 10
@@ -481,25 +485,6 @@ focus_tree = {
 			#
 		}
 		available = {
-        NOT = { has_idea = SER_our_way_of_life_active }
-    	}
-		available = {
-        NOT = { has_idea = SER_our_way_of_life_active_more }
-    	}
-		available = {
-        NOT = { has_idea = SER_our_way_of_life_active_more_better }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka_better }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka_best }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka_best_better }
     	}
 		
 		search_filters = {}
@@ -516,6 +501,10 @@ focus_tree = {
 	focus = {
 		id = SER_for_king_and_country
 		icon = GFX_focus_generic_monarchy_1
+		mutually_exclusive = {
+		    focus = SER_liberalism_shall_lead
+			focus = SER_help_fund_crna_ruka
+		}
 		x = 8
 		y = 2
 		cost = 10
@@ -528,22 +517,6 @@ focus_tree = {
 			#
 		}
 		available = {
-        NOT = { has_idea = SER_liberal_serbia }
-    	}
-		available = {
-        NOT = { has_idea = SER_liberal_serbia_better }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka_better }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka_best }
-    	}
-		available = {
-        NOT = { has_idea = SER_grasp_of_crna_ruka_best_better }
 		}
 		search_filters = {}
 		
@@ -752,6 +725,10 @@ focus_tree = {
 	focus = {
 		id = SER_help_fund_crna_ruka
 		icon = GFX_focus_ser_crna_ruka
+		mutually_exclusive = {
+		    focus = SER_for_king_and_country
+			focus = SER_liberalism_shall_lead
+		}
 		x = 13
 		y = 2
 		cost = 10
@@ -764,19 +741,6 @@ focus_tree = {
 			#
 		}
 		available = {
-        NOT = { has_idea = SER_our_way_of_life_active }
-    	}
-		available = {
-        NOT = { has_idea = SER_our_way_of_life_active_more }
-    	}
-		available = {
-        NOT = { has_idea = SER_our_way_of_life_active_more_better }
-    	}
-		available = {
-        NOT = { has_idea = SER_liberal_serbia }
-    	}
-		available = {
-        NOT = { has_idea = SER_liberal_serbia_better }
     	}
 		
 		search_filters = {}
