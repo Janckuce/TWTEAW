@@ -1,0 +1,114 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = bulgarian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+
+		focus = {
+		id = BUL_give_them_the_boot
+		icon = GFX_focus_BUL_kick_the_ottoman
+		x = 16
+		y = 1
+		cost = 5
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = BUL_spirit_give_them_the_boot
+				days = 125
+			}
+	}
+}
+
+		focus = {
+		id = BUL_all_parties_serve_the_state
+		icon = GFX_focus_usa_voter_registration_act
+		x = 20
+		y = 1
+		cost = 5
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_stability = -0.075
+		add_war_support = -0.075
+		add_political_power = -50
+		    add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+
+			add_popularity = {
+            ideology = communism
+            popularity = 0.05
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_elections_of_1911
+		icon = GFX_focus_usa_voter_registration_act
+		x = 18
+		y = 2
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_all_parties_serve_the_state
+		}
+
+		prerequisite = {
+		focus = BUL_give_them_the_boot
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		country_event = { id = ww1_bulgaria.1 }
+		
+	}
+}
+	
+	default = no
+	continuous_focus_position = { x = 8000 y = 999 }
+
+}

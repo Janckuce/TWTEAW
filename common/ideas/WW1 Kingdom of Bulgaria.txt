@@ -1,7 +1,7 @@
 ideas = {
 
-industrial_concern = {
-		designer = no 
+		industrial_concern = {
+			designer = no 
 
 			bruh = {
 			allowed = { original_tag = BUL }
@@ -11,16 +11,118 @@ industrial_concern = {
 			}
 			traits = {
 				railway_company
+				}
+			}
+
+				bnb = {
+				allowed = { original_tag = BUL }
+				research_bonus = {
+				}
+				traits = {
+					bnb_company
+				}
 			}
 		}
 
-			bnb = {
-			allowed = { original_tag = BUL }
-			research_bonus = {
+	country = {
+
+		BUL_spirit_give_them_the_boot = {
+
+			allowed = {
+				always = no
 			}
-			traits = {
-				bnb_company
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+			political_power_factor = -0.25
+			research_speed_factor = -0.15
+			political_advisor_cost_factor = 0.25
+			army_advisor_cost_factor = 0.25
+			navy_advisor_cost_factor = 0.25
 			}
 		}
+
+			bul_victory_of_brsp = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+       		communism_drift = 0.10
+    	}
+	}
+
+		bul_victory_of_bzns = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+       		democratic_drift = 0.10
+    	}
+	}
+
+		bul_victory_of_np = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+       		fascism_drift = 0.10
+    	}
+	}
+
+		bul_victory_of_hscag = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+       		neutrality_drift = 0.10
+    	}
+	}
 	}
 }
