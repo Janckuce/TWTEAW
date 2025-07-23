@@ -323,6 +323,49 @@ ideas = {
     	}
 	}
 
+			bul_victory_of_bzns_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+
+    	}
+	}
+
+			bul_victory_of_bzns_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+			consumer_goods_factor = 0.05
+
+    	}
+	}
+
 		bul_victory_of_np = {
 
 			allowed = {
