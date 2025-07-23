@@ -500,25 +500,10 @@ focus_tree = {
             ideology = democratic
             popularity = 0.05
         }
-		add_ideas = bul_victory_of_bzns_2
-
-			801 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-
-				77 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns
+  			add_idea = bul_victory_of_bzns_2				
+  		}
 		
 	}
 }
@@ -538,7 +523,6 @@ focus_tree = {
 			#
 		}
 		available = {
-		has_idea = bul_victory_of_bzns
 		}
 		
 		search_filters = {}
@@ -550,7 +534,27 @@ focus_tree = {
             ideology = democratic
             popularity = 0.05
         }
-		
+			801 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+			77 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns_2
+  			add_idea = bul_victory_of_bzns_3				
+  		}	
 	}
 }
 
@@ -570,7 +574,6 @@ focus_tree = {
 			#
 		}
 		available = {
-		has_idea = bul_victory_of_bzns
 		}
 		
 		search_filters = {}
@@ -582,6 +585,8 @@ focus_tree = {
             ideology = democratic
             popularity = 0.05
         }
+		add_stability = 0.05
+		add_war_support = -0.075
 		
 	}
 }
@@ -591,7 +596,7 @@ focus_tree = {
 		icon = GFX_focus_usa_voter_registration_act
 		x = 22
 		y = 5
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_help_fund_the_rurals
@@ -615,6 +620,11 @@ focus_tree = {
             ideology = democratic
             popularity = 0.05
         }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns_3
+  			add_idea = bul_victory_of_bzns_4				
+  		}
 		
 	}
 }
@@ -641,10 +651,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.05
-        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns_4
+  			add_idea = bul_victory_of_bzns_5				
+  		}
 		
 	}
 }
@@ -664,6 +675,7 @@ focus_tree = {
 			#
 		}
 		available = {
+		has_idea = bul_victory_of_bzns_5
 		}
 		
 		search_filters = {}
@@ -671,10 +683,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.05
-        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns_5
+  			add_idea = bul_victory_of_bzns_6				
+  		}
+		add_war_support = -0.05
 		
 	}
 }
@@ -684,7 +698,7 @@ focus_tree = {
 		icon = GFX_focus_usa_voter_registration_act
 		x = 22
 		y = 7
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_open_up_parliament
@@ -709,6 +723,13 @@ focus_tree = {
             ideology = democratic
             popularity = 0.05
         }
+		add_political_power = 100
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns_6
+  			add_idea = bul_victory_of_bzns_7			
+  		}
+
 		
 	}
 }
@@ -735,10 +756,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.05
-        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_bzns_7
+  			add_idea = bul_victory_of_bzns_8			
+  		}
 		
 	}
 }
@@ -765,10 +787,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.05
-        }
+		add_ideas = free_trade
 		
 	}
 }
@@ -778,7 +797,7 @@ focus_tree = {
 		icon = GFX_focus_usa_voter_registration_act
 		x = 22
 		y = 9
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_religous_freedom
@@ -802,6 +821,11 @@ focus_tree = {
 			add_popularity = {
             ideology = democratic
             popularity = 0.05
+        }
+
+			 set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
         }
 		
 	}
