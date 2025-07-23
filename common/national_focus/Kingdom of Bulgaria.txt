@@ -113,7 +113,7 @@ focus_tree = {
 		icon = GFX_focus_generic_red_flags
 		x = 18
 		y = 3
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_elections_of_1911
@@ -209,7 +209,7 @@ focus_tree = {
 		icon = GFX_focus_generic_social_democracy
 		x = 18
 		y = 5
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_limit_the_rights_of_aristocracy
@@ -313,7 +313,7 @@ focus_tree = {
 		icon = GFX_focus_GER_liberate_exploited_colonial_workers
 		x = 18
 		y = 7
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_sideline_religious_affairs
@@ -439,7 +439,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		x = 18
 		y = 9
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_ubranisation_is_a_must
@@ -478,10 +478,107 @@ focus_tree = {
 		icon = GFX_focus_usa_voter_registration_act
 		x = 22
 		y = 3
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_elections_of_1911
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		has_idea = bul_victory_of_bzns
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_help_fund_the_rurals
+		icon = GFX_focus_usa_voter_registration_act
+		x = 21
+		y = 4
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_victory_of_four_leaf
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		has_idea = bul_victory_of_bzns
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+		
+	}
+}
+
+
+		focus = {
+		id = BUL_remove_any_censorship_from_papers
+		icon = GFX_focus_usa_voter_registration_act
+		x = 23
+		y = 4
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_victory_of_four_leaf
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		has_idea = bul_victory_of_bzns
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_money_talks
+		icon = GFX_focus_usa_voter_registration_act
+		x = 22
+		y = 5
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_help_fund_the_rurals
+		}
+		prerequisite = {
+		focus = BUL_remove_any_censorship_from_papers
 		}
 
 		bypass = {
