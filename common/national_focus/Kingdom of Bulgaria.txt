@@ -827,19 +827,63 @@ focus_tree = {
             ruling_party = democratic
             elections_allowed = no
         }
+
+				48 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
 		
 	}
 }
 
 		focus = {
 		id = BUL_victory_of_patriots
-		icon = GFX_focus_usa_voter_registration_act
+		icon = GFX_focus_bul_national_victory
 		x = 26
 		y = 3
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 		focus = BUL_elections_of_1911
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+			has_idea = bul_victory_of_np
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np
+  			add_idea = bul_victory_of_np_2			
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_where_it_all_began
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		x = 25
+		y = 4
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_victory_of_patriots
 		}
 
 		bypass = {
@@ -857,6 +901,386 @@ focus_tree = {
             ideology = fascism
             popularity = 0.05
         }
+
+				801 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+				77 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_finance_arms_industry
+		icon = GFX_focus_generic_economic_recovery
+		x = 27
+		y = 4
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_victory_of_patriots
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+				48 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+				212 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np_2
+  			add_idea = bul_victory_of_np_3			
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_we_are_all_orthodox
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		x = 26
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = BUL_finance_arms_industry
+		}
+
+		prerequisite = {
+		focus = BUL_where_it_all_began
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np_3
+  			add_idea = bul_victory_of_np_4			
+  		}
+
+		add_war_support = 0.1
+
+			803 = { 
+            add_core_of = BUL 
+        }
+
+			758 = { 
+            add_claim_by = BUL 
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_fight_against_corrupcy
+		icon = GFX_focus_ARG_anti_corruption_policies
+		x = 25
+		y = 6
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_we_are_all_orthodox
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np_4
+  			add_idea = bul_victory_of_np_5			
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_finance_plovdiv_mines
+		icon = GFX_focus_GER_factories_for_resources
+		x = 27
+		y = 6
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_we_are_all_orthodox
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+				212 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+
+			 add_resource = {
+            state = 212  # Replace with the actual state ID
+            type = tungsten  # Resource type: oil, steel, aluminum, etc.
+            amount = 3   # Amount of the resource
+        }
+
+			 add_resource = {
+            state = 212  # Replace with the actual state ID
+            type = steel  # Resource type: oil, steel, aluminum, etc.
+            amount = 6   # Amount of the resource
+        }
+
+		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_fight_against_the_parliament
+		icon = GFX_focus_bul_tsar_fas_g
+		x = 26
+		y = 7
+		cost = 10
+
+		prerequisite = {
+		focus = BUL_finance_plovdiv_mines
+		}
+		prerequisite = {
+		focus = BUL_fight_against_corrupcy
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np_5
+  			add_idea = bul_victory_of_np_6			
+  		}
+
+		 set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_we_should_rule_balkan
+		icon = GFX_focus_BUL_bulgaria_on_the_three_seas
+		x = 25
+		y = 8
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_fight_against_the_parliament
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+		add_war_support = 0.05
+		add_stability = 0.025
+		    
+			838 = { 
+            add_claim_by = BUL 
+        }
+
+			797 = { 
+            add_claim_by = BUL 
+        }
+
+			909 = { 
+            add_claim_by = BUL 
+        }
+
+			758 = { 
+            add_claim_by = BUL 
+        }
+
+			920 = { 
+            add_core_of = BUL 
+        }
+
+			106 = { 
+            add_core_of = BUL 
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_tax_reform
+		icon = GFX_focus_ETH_reform_the_currency
+		x = 27
+		y = 8
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_fight_against_the_parliament
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np_6
+  			add_idea = bul_victory_of_np_7	
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_greater_bulgaria_for_bulgarians
+		icon = GFX_focus_BUL_the_third_bulgarian_empire
+		x = 26
+		y = 9
+		cost = 10
+
+		prerequisite = {
+		focus = BUL_tax_reform
+		}
+		prerequisite = {
+		focus = BUL_we_should_rule_balkan
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_np_7
+  			add_idea = bul_victory_of_np_8
+  		}
 		
 	}
 }
@@ -876,6 +1300,7 @@ focus_tree = {
 			#
 		}
 		available = {
+			has_idea = bul_victory_of_hscag
 		}
 		
 		search_filters = {}
@@ -887,6 +1312,345 @@ focus_tree = {
             ideology = neutrality
             popularity = 0.05
         }
+		add_political_power = -150
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag
+  			add_idea = bul_victory_of_hscag_2 				
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_push_back_extremism
+		icon = GFX_focus_usa_voter_registration_act
+		x = 29
+		y = 4
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_victory_of_tsars_wish
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			add_popularity = {
+            ideology = communism
+            popularity = -0.075
+        }
+
+			add_popularity = {
+            ideology = fascism
+            popularity = -0.075
+        }
+
+		add_war_support = -0.05
+		add_stability = 0.075
+		
+	}
+}
+
+		focus = {
+		id = BUL_favour_for_nobels
+		icon = GFX_focus_usa_voter_registration_act
+		x = 31
+		y = 4
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_victory_of_tsars_wish
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag_2
+  			add_idea = bul_victory_of_hscag_3				
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_middle_ground_for_everyone
+		icon = GFX_focus_usa_voter_registration_act
+		x = 30
+		y = 5
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_favour_for_nobels
+		}
+		prerequisite = {
+		focus = BUL_push_back_extremism
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag_3
+  			add_idea = bul_victory_of_hscag_4			
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_invest_in_to_resources
+		icon = GFX_focus_usa_voter_registration_act
+		x = 29
+		y = 6
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_middle_ground_for_everyone
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag_4
+  			add_idea = bul_victory_of_hscag_5			
+  		}
+
+			add_resource = {
+            state = 212  # Replace with the actual state ID
+            type = steel  # Resource type: oil, steel, aluminum, etc.
+            amount = 4   # Amount of the resource
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_orthodox_bulgaria
+		icon = GFX_focus_usa_voter_registration_act
+		x = 31
+		y = 6
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_middle_ground_for_everyone
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+		add_war_support = 0.05
+		
+	}
+}
+
+		focus = {
+		id = BUL_reject_modernity_embrace_tradition
+		icon = GFX_focus_usa_voter_registration_act
+		x = 30
+		y = 7
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_orthodox_bulgaria
+		}
+
+		prerequisite = {
+		focus = BUL_invest_in_to_resources
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag_5
+  			add_idea = bul_victory_of_hscag_6	
+  		}
+
+		add_stability = -0.1
+		
+	}
+}
+
+		focus = {
+		id = BUL_tsars_young_men
+		icon = GFX_focus_usa_voter_registration_act
+		x = 29
+		y = 8
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_reject_modernity_embrace_tradition
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+		
+	}
+}
+
+		focus = {
+		id = BUL_spare_money_for_poor
+		icon = GFX_focus_usa_voter_registration_act
+		x = 31
+		y = 8
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_reject_modernity_embrace_tradition
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag_6
+  			add_idea = bul_victory_of_hscag_7
+  		}
+		
+	}
+}
+
+		focus = {
+		id = BUL_tsardom_to_be_proud_of
+		icon = GFX_focus_usa_voter_registration_act
+		x = 30
+		y = 9
+		cost = 5
+
+		prerequisite = {
+		focus = BUL_spare_money_for_poor
+		}
+		prerequisite = {
+		focus = BUL_tsars_young_men
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+        }
+
+			swap_ideas = {
+  			remove_idea = bul_victory_of_hscag_7
+  			add_idea = bul_victory_of_hscag_8
+  		}
 		
 	}
 }
