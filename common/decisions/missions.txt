@@ -1,0 +1,472 @@
+missions = {
+Capture_Brussels = {
+	icon = "brussels_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = GER
+		}
+		days_mission_timeout = 80
+	activation = {
+		AND = {
+			GER = { has_war_with = FRA }
+			GER = { has_war_with = BEL }
+		}
+		}
+		available = {
+			6 = { is_controlled_by = GER } # Brussels 
+		}
+		
+	complete_effect = {
+		GER = { 
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+			}
+		}
+	timeout_effect = {
+		GER = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+		}
+	}
+Capture_Warsaw = {
+	icon = "warsaw_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = GER
+		}
+		days_mission_timeout = 80
+	activation = {
+		AND = {
+			GER = { has_war_with = RUS }
+			GER = { has_war_with = FRA }
+		}
+	}
+	available = {
+		10 = { is_controlled_by = GER } # Warsaw
+	}
+	complete_effect = {
+		GER = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		RUS = {
+			add_political_power = -50
+			add_stability = -0.25
+			add_war_support = -0.25
+		}
+	}
+	timeout_effect = {
+		GER = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		RUS = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+}
+Capture_Paris = {
+	icon = "paris_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = GER
+		}
+		days_mission_timeout = 140
+	activation = {
+		AND = {
+			GER = { has_war_with = FRA }
+			GER = { has_war_with = RUS }
+		}
+	}
+	available = {
+		16 = { is_controlled_by = GER } # Paris
+	}
+	complete_effect = {
+		GER = {
+			add_political_power = 100
+			add_stability = 0.25
+			add_war_support = 0.25
+		}
+		FRA = {
+			add_political_power = -50
+			add_stability = -0.25
+			add_war_support = -0.25
+		}
+	}
+	timeout_effect = {
+		GER = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		FRA = {
+			add_political_power = 50
+			add_stability = 0.5
+			add_war_support = 0.5
+		}
+	}
+}
+Capture_Koningsberg = {
+	icon = "konigsberg_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = RUS
+		}
+		days_mission_timeout = 80
+	activation = {
+		AND = {
+			GER = { has_war_with = RUS }
+			GER = { has_war_with = POL }
+		}
+	}
+	available = {
+		763 = { is_controlled_by = GER } # Königsberg
+	}
+	complete_effect = {
+		RUS = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		GER = {
+			add_political_power = -50
+			add_stability = -0.25
+			add_war_support = -0.25
+		}
+	}
+	timeout_effect = {
+		RUS = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		GER = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+}
+Capture_Krakow = {
+	icon = "krakow_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = RUS
+		}
+		days_mission_timeout = 80
+	activation = {
+		AND = {
+			RUS = { has_war_with = AUS }
+			RUS = { has_war_with = GER }
+		}
+	}
+	available = {
+		8 = { is_controlled_by = RUS } # Krakow
+	}
+	complete_effect = {
+		RUS = {
+			add_political_power = 100
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+		AUS = {
+			add_political_power = -50
+			add_stability = -0.25
+			add_war_support = -0.25
+		}
+	}
+	timeout_effect = {
+		RUS = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		AUS = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+}
+Capture_Lwow = {
+	icon = "lvov_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = RUS
+		}
+		days_mission_timeout = 80
+	activation = {
+		AND = {
+			RUS = { has_war_with = AUS }
+			RUS = { has_war_with = GER }
+		}
+	}
+	available = {
+		91 = { is_controlled_by = RUS } # Lwow
+	}
+	complete_effect = {
+		RUS = {
+			add_political_power = 100
+			add_stability = 0.15
+			add_war_support = 0.15
+		}
+		AUS = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+	timeout_effect = {
+		RUS = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		AUS = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+}
+Capture_Metz = {
+	icon = "metz_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = FRA
+		}
+		days_mission_timeout = 80
+	activation = {
+			FRA = { has_war_with = GER }
+	}
+	available = {
+		17 = { is_controlled_by = FRA } # Metz
+	}
+	complete_effect = {
+		FRA = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		GER = {
+			add_political_power = -50
+			add_stability = -0.15
+			add_war_support = -0.15
+		}
+	}
+	timeout_effect = {
+		FRA = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		GER = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+Capture_Edirne = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	allowed = {
+			original_tag = BUL
+		}
+		days_mission_timeout = 30
+	activation = {
+		AND = {
+			BUL = { is_in_faction_with = SER }
+			BUL = { has_war_with = TUR }
+		}
+		}
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
+		BUL = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+			48 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	timeout_effect = {
+		BUL = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+			}
+		}
+	}
+	Hold_Edirne = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	allowed = {
+			original_tag = TUR
+		}
+		days_mission_timeout = 30
+	activation = {
+		AND = {
+			TUR = { has_war_with = BUL }
+			TUR = { has_war_with = SER }
+			TUR = { has_war_with = GRE }
+			}
+		}
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
+		TUR = {
+			add_political_power = -100
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		797 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+	timeout_effect = {
+		TUR = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	take_sofia = {
+		icon = "sofia_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+			original_tag = SER
+			original_tag = GRE
+			original_tag = MON
+			original_tag = ROM
+			original_tag = TUR
+			}
+		}
+		days_mission_timeout = 30
+		activation = {
+			AND = {
+				BUL = { has_war_with = SER }
+				BUL = { has_war_with = GRE }
+				SER = { is_in_faction_with = GRE }
+			}
+		}
+		available = {
+			or = {
+				341 = { is_controlled_by = SER } # Sofia
+				341 = { is_controlled_by = GRE } # Sofia
+				341 = { is_controlled_by = MON } # Sofia
+				341 = { is_controlled_by = ROM } # Sofia
+				if = {
+					limit = { 
+						original_tag = TUR
+						TUR = { has_war_with = BUL }
+					}
+					341 = { is_controlled_by = TUR } # Sofia
+				}
+			}
+		}
+		complete_effect = {
+			SER = {
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			GRE = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			MON = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			ROM = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			if = {
+				limit = { 
+					original_tag = TUR
+					TUR = { has_war_with = BUL }
+				}
+				TUR = {
+					add_political_power = 50
+					add_stability = 0.05
+					add_war_support = 0.05
+				}
+			}
+		}
+		timeout_effect = {
+			SER = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			GRE = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			MON = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			ROM = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			if = {
+				limit = { 
+					original_tag = TUR
+					TUR = { has_war_with = BUL }
+				}
+				TUR = {
+					add_political_power = -50
+					add_stability = -0.05
+					add_war_support = -0.05
+				}
+			}
+		}
+	}
+}
