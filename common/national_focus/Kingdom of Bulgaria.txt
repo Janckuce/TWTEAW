@@ -2255,7 +2255,7 @@ focus_tree = {
 		focus = BUL_formalize_general_Staff
 		}
 
-			mutually_exclusive = {;
+			mutually_exclusive = {
 		    focus = BUL_cavalry_doctrine
 		}
 
@@ -2279,7 +2279,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_infantry_our_might
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_AUS_frontmiliz_focus
 		x = 21
 		y = 15
 		cost = 10
@@ -2317,6 +2317,9 @@ focus_tree = {
 		prerequisite = {
 		focus = BUL_cavalry_doctrine
 		}
+			mutually_exclusive = {
+		    focus = BUL_infantry_doctrine
+		}
 
 		bypass = {
 			#
@@ -2339,7 +2342,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_improve_stationing_of_horses
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_AFG_establish_darulaman
 		x = 28
 		y = 16
 		cost = 10
@@ -2375,7 +2378,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_horses_for_future
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_motor_cycle
 		x = 29
 		y = 17
 		cost = 10
@@ -2413,7 +2416,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_salvaged_we_use
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_FIN_weapon_caches
 		x = 30
 		y = 18
 		cost = 10
@@ -2449,7 +2452,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_future_not_wait
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_tank_assault
 		x = 31
 		y = 19
 		cost = 10
@@ -2478,7 +2481,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_project_of_field_medicine
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_bad_medical
 		x = 20
 		y = 16
 		cost = 10
@@ -2515,7 +2518,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_give_in_to_vazovs_ideas
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_goal_generic_army_artillery
 		x = 17
 		y = 19
 		cost = 10
@@ -2545,7 +2548,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_type_of_two_line_trenches
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_goal_generic_military_sphere
 		x = 18
 		y = 18
 		cost = 10
@@ -2582,7 +2585,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_for_the_stip_highlands
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_SMB_a_land_of_mountains
 		x = 19
 		y = 17
 		cost = 10
@@ -2612,7 +2615,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_new_recon_tactics
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 24
 		y = 16
 		cost = 10
@@ -2644,7 +2647,7 @@ focus_tree = {
 
 	focus = {
 		id = BUL_empty_out_stockpiles
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_supply_line
 		x = 24
 		y = 18
 		cost = 10
@@ -2684,7 +2687,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_soldiers_patriots
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_CHL_incorporate_machi_into_the_army
 		x = 24
 		y = 20
 		cost = 10
@@ -2717,7 +2720,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_infantry_art_combined_forces
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_NORDIC_com_selector_army
 		x = 22
 		y = 22
 		cost = 10
@@ -2751,7 +2754,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_cavalry_tonk_combined_forces
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_tank_air_support
 		x = 26
 		y = 22
 		cost = 10
