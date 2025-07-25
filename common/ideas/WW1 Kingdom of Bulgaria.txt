@@ -49,6 +49,469 @@ ideas = {
 			}
 		}
 
+			BUL_military_checkout = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.1
+				org_loss_when_moving = 0.1
+				army_org = -10
+				army_org_factor = -0.1
+				army_org_regain = -0.1
+				army_morale = -10
+				army_morale_factor = -0.1
+				army_defence_factor = -0.05
+			}
+		}
+
+			BUL_military_checkout_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.1
+				org_loss_when_moving = 0.1
+				army_org = -10
+				army_org_factor = -0.1
+				army_org_regain = -0.1
+				army_morale = -10
+				army_morale_factor = -0.1
+				army_defence_factor = -0.05
+				recruitable_population = 0.005
+			}
+		}
+
+			BUL_military_checkout_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.05
+				org_loss_when_moving = 0.05
+				army_org = -5
+				army_org_factor = -0.05
+				army_org_regain = -0.05
+				army_morale = -5
+				army_morale_factor = -0.05
+				recruitable_population = 0.005
+			}
+		}
+
+			BUL_military_checkout_4_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.025
+				org_loss_when_moving = 0.025
+				army_org_factor = -0.025
+				army_org_regain = -0.025
+				army_morale_factor = -0.025
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.015
+				army_infantry_defence_factor = 0.015
+			}
+		}
+
+			BUL_military_checkout_4_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.025
+				org_loss_when_moving = 0.025
+				army_org_factor = -0.025
+				army_org_regain = -0.025
+				army_morale_factor = -0.025
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.015
+				cavalry_defence_factor = 0.015
+			}
+		}
+
+			BUL_military_checkout_5_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.03
+				cavalry_defence_factor = 0.03
+			}
+		}
+
+			BUL_military_checkout_5_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+			}
+		}
+
+			BUL_military_checkout_6_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				experience_loss_factor = -0.1
+
+			}
+		}
+
+			BUL_military_checkout_6_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.045
+				cavalry_defence_factor = 0.045
+				breakthrough_factor = 0.1
+
+			}
+		}
+
+			BUL_military_checkout_7_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.06
+				cavalry_defence_factor = 0.06
+				breakthrough_factor = 0.1
+				motorized_attack_factor = 0.025
+				motorized_defence_factor = 0.025
+				motorized_speed_factor = 0.05
+				motorized_max_org_factor = 0.025
+				motorized_reliability_factor = 0.01
+
+			}
+		}
+
+			BUL_military_checkout_8_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.01
+				cavalry_attack_factor = 0.075
+				cavalry_defence_factor = 0.075
+				breakthrough_factor = 0.1
+				motorized_attack_factor = 0.025
+				motorized_defence_factor = 0.025
+				motorized_speed_factor = 0.05
+				motorized_max_org_factor = 0.025
+				motorized_reliability_factor = 0.01
+
+			}
+		}
+
+			BUL_military_checkout_9_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.015
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				breakthrough_factor = 0.125
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+				motorized_speed_factor = 0.075
+				motorized_max_org_factor = 0.05
+				motorized_reliability_factor = 0.02
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+
+			}
+		}
+
+			BUL_military_checkout_10_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.015
+				cavalry_attack_factor = 0.125
+				cavalry_defence_factor = 0.125
+				breakthrough_factor = 0.15
+				motorized_attack_factor = 0.075
+				motorized_defence_factor = 0.075
+				motorized_speed_factor = 0.1
+				motorized_max_org_factor = 0.075
+				motorized_reliability_factor = 0.025
+				army_armor_attack_factor = 0.075
+				army_armor_defence_factor = 0.075
+
+				equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+					soft_attack = 0.025 instant = yes
+				}
+
+				light_tank_equipment_production_cost = {
+					build_cost_ic = -0.2 instant = yes
+					soft_attack = 0.025 instant = yes
+				}
+			}
+
+			}
+		}
+
+			BUL_military_checkout_7_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				experience_loss_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				terrain_trait_xp_gain_factor = 0.1
+				
+			}
+		}
+
+			BUL_military_checkout_8_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				experience_loss_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				terrain_trait_xp_gain_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in = 5
+
+
+				
+			}
+		}
+
+			BUL_military_checkout_9_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.045
+				army_infantry_defence_factor = 0.045
+				experience_loss_factor = -0.15
+				terrain_penalty_reduction = 0.1
+				army_artillery_attack_factor = 0.03
+				army_artillery_defence_factor = 0.03
+				terrain_trait_xp_gain_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in = 5
+				
+
+				
+			}
+		}
+
+			BUL_military_checkout_10_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+				recruitable_population = 0.01
+				army_infantry_attack_factor = 0.06
+				army_infantry_defence_factor = 0.06
+				experience_loss_factor = -0.15
+				terrain_penalty_reduction = 0.1
+				army_artillery_attack_factor = 0.045
+				army_artillery_defence_factor = 0.045
+				terrain_trait_xp_gain_factor = 0.15
+				dig_in_speed_factor = 0.2
+				max_dig_in = 5
+				
+
+				
+			}
+		}
+
 			bul_victory_of_brsp = {
 
 			allowed = {

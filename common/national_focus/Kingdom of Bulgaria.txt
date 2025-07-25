@@ -1934,7 +1934,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_our_economy_reasured
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_BEL_engine_of_the_economy
 		x = 40
 		y = 8
 		cost = 10
@@ -2130,7 +2130,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_question_of_our_military
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_chi_army_reform
 		x = 24
 		y = 11
 		cost = 10
@@ -2146,14 +2146,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+		add_ideas = BUL_military_checkout
 		
 	}
 }
 
 		focus = {
 		id = BUL_reform_conscription_system
-		icon = GFX_focus_BUL_prussia_of_the_balkans
-		x = 23
+		icon = GFX_focus_bul_arming_again
+		x = 24
 		y = 12
 		cost = 10
 
@@ -2172,39 +2173,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout
+  			add_idea = BUL_military_checkout_2				
+  		}
 		
 	}
 }
 
-		focus = {
-		id = BUL_pass_new_uniform_mandate
-		icon = GFX_focus_BUL_prussia_of_the_balkans
-		x = 25
-		y = 12
-		cost = 10
-
-		prerequisite = {
-		focus = BUL_question_of_our_military
-		}
-
-		bypass = {
-			#
-		}
-		available = {
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		
-	}
-}
-
-		focus = {
+	focus = {
 		id = BUL_formalize_general_Staff
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_military_dictatorship
 		x = 24
 		y = 13
 		cost = 10
@@ -2227,13 +2206,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_2
+  			add_idea = BUL_military_checkout_3			
+  		}
 		
 	}
 }
 
 		focus = {
 		id = BUL_cavalry_doctrine
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_goal_generic_cavalry
 		x = 26
 		y = 14
 		cost = 10
@@ -2253,13 +2236,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_3
+  			add_idea = BUL_military_checkout_4_cav		
+  		}
 		
 	}
 }
 
 		focus = {
 		id = BUL_infantry_doctrine
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_AFG_adopt_nufus
 		x = 22
 		y = 14
 		cost = 10
@@ -2283,7 +2270,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_3
+  			add_idea = BUL_military_checkout_4_inf		
+  		}
 	}
 }
 
@@ -2309,13 +2299,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_4_inf
+  			add_idea = BUL_military_checkout_5_inf		
+  		}
 		
 	}
 }
 
 		focus = {
 		id = BUL_cavalry_our_might
-		icon = GFX_focus_BUL_prussia_of_the_balkans
+		icon = GFX_focus_generic_horse_studs
 		x = 27
 		y = 15
 		cost = 10
@@ -2335,6 +2329,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_4_cav
+  			add_idea = BUL_military_checkout_5_cav		
+  		}
 		
 	}
 }
@@ -2361,7 +2359,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_5_cav
+  			add_idea = BUL_military_checkout_6_cav		
+  		}
+
+			add_tech_bonus = {
+			name = UKR_french_technical_expertise
+			bonus = 2
+			uses = 1
+			category = motorized_equipment
+		}
 	}
 }
 
@@ -2388,6 +2396,18 @@ focus_tree = {
 		
 		completion_reward = {
 		
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_6_cav
+  			add_idea = BUL_military_checkout_7_cav		
+  		}
+
+			add_tech_bonus = {
+			name = UKR_french_technical_expertise
+			bonus = 1
+			uses = 1
+			category = armor
+		}
+
 	}
 }
 
@@ -2413,7 +2433,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = RUS_Military_Infrastructure
+				bonus = 1
+				uses = 1
+				category = maintenance_company_tech
+			}
+
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_7_cav
+  			add_idea = BUL_military_checkout_8_cav		
+  		}
 	}
 }
 
@@ -2439,7 +2469,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_8_cav
+  			add_idea = BUL_military_checkout_9_cav		
+  		}
 	}
 }
 
@@ -2465,6 +2498,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_5_inf
+  			add_idea = BUL_military_checkout_6_inf		
+  		}
+
+			add_tech_bonus = {
+				name = CRM_Crimean_Health_Resort
+				bonus = 0.5
+				uses = 1
+				category = hospital_tech
+			}
 		
 	}
 }
@@ -2491,6 +2535,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_8_inf
+  			add_idea = BUL_military_checkout_9_inf		
+  		}
 		
 	}
 }
@@ -2517,6 +2565,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_7_inf
+  			add_idea = BUL_military_checkout_8_inf		
+  		}
+
+				add_tech_bonus = {
+				name = CRM_Crimean_Health_Resort
+				bonus = 1
+				uses = 1
+				category = engineers_tech
+			}
 		
 	}
 }
@@ -2543,6 +2602,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_6_inf
+  			add_idea = BUL_military_checkout_7_inf		
+  		}
 		
 	}
 }
@@ -2570,12 +2633,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		
+			add_tech_bonus = {
+			name = CRM_Crimean_Health_Resort
+			bonus = 0.5
+			uses = 1
+			category = recon_tech
+		}
 	}
 }
 
-		focus = {
-		id = BUL_focused_planning
+	focus = {
+		id = BUL_empty_out_stockpiles
 		icon = GFX_focus_BUL_prussia_of_the_balkans
 		x = 24
 		y = 18
@@ -2601,6 +2669,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+
+			add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1500
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 750
+        }
 		
 	}
 }
@@ -2618,7 +2695,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-		focus = BUL_focused_planning
+		focus = BUL_empty_out_stockpiles
 		}
 
 		bypass = {
@@ -2632,6 +2709,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+		add_war_support = 0.075
+		add_manpower = 50000
 		
 	}
 }
@@ -2662,6 +2741,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_9_inf
+  			add_idea = BUL_military_checkout_10_inf		
+  		}
 		
 	}
 }
@@ -2692,7 +2775,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		
+			swap_ideas = {
+  			remove_idea = BUL_military_checkout_9_cav
+  			add_idea = BUL_military_checkout_10_cav		
+  		}
 	}
 }
 	
