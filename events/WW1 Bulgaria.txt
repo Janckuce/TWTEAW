@@ -1,0 +1,38 @@
+add_namespace = ww1_bulgaria
+
+country_event = {
+	id = ww1_bulgaria.1
+	title = ww1_bulgaria.1.t
+	desc = ww1_bulgaria.1.de
+	picture = GFX_report_bulgar_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_bulgaria.1.a
+			add_ideas = {
+			bul_victory_of_brsp
+		}
+	}
+
+		option = {
+		name = ww1_bulgaria.1.b
+			add_ideas = {
+			bul_victory_of_bzns
+		}
+	}
+
+		option = {
+		name = ww1_bulgaria.1.c
+			add_ideas = {
+			bul_victory_of_np
+		}
+	}
+
+		option = {
+		name = ww1_bulgaria.1.d
+			add_ideas = {
+			bul_victory_of_hscag
+		}
+	}
+}
