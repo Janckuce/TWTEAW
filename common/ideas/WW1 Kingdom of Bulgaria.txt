@@ -1011,5 +1011,52 @@ ideas = {
 			research_speed_factor = -0.075
     		}
 		}
+
+			bul_industrial_work = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_national_industry
+
+			modifier = {
+			production_speed_industrial_complex_factor = 0.025
+			consumer_goods_factor = 0.025
+    		}
+		}
+
+			bul_industrial_work_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_national_industry
+
+			modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			consumer_goods_factor = -0.025
+			production_factory_efficiency_gain_factor = 0.015
+			production_factory_max_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.015
+			line_change_production_efficiency_factor = 0.015
+			production_lack_of_resource_penalty_factor = -0.02
+			production_speed_arms_factory_factor = 0.015
+			industrial_capacity_factory = 0.015
+    		}
+		}
 	}
 }
