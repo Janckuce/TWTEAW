@@ -1690,18 +1690,17 @@ focus_tree = {
 		available = {
 		}
 		
-		search_filters = {}
+		search_filters = {
+		}
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas =
-			bul_industrial_work	{
+			add_ideas = {
+				bul_industrial_work
 		}
-		
 	}
 }
-
 		focus = {
 		id = BUL_bulgarian_sofia_electrification
 		icon = GFX_focus_generic_energy
@@ -2220,7 +2219,9 @@ focus_tree = {
 		x = 26
 		y = 14
 		cost = 10
-
+		mutually_exclusive = {
+		focus = BUL_infantry_doctrine
+		}
 		prerequisite = {
 		focus = BUL_formalize_general_Staff
 		}
@@ -2250,14 +2251,14 @@ focus_tree = {
 		x = 22
 		y = 14
 		cost = 10
-
+		mutually_exclusive = {
+		    focus = BUL_cavalry_doctrine
+		}
 		prerequisite = {
 		focus = BUL_formalize_general_Staff
 		}
 
-			mutually_exclusive = {
-		    focus = BUL_cavalry_doctrine
-		}
+			
 
 		bypass = {
 			#
@@ -2313,13 +2314,10 @@ focus_tree = {
 		x = 27
 		y = 15
 		cost = 10
-
 		prerequisite = {
 		focus = BUL_cavalry_doctrine
 		}
-			mutually_exclusive = {
-		    focus = BUL_infantry_doctrine
-		}
+			
 
 		bypass = {
 			#
