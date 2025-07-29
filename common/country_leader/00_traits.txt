@@ -12241,6 +12241,18 @@ leader_traits = {
 		production_speed_rail_way_factor = 0.025
 	}
 
+		weiss_comp = {
+		random = no
+		consumer_goods_factor = -0.075
+		production_factory_max_efficiency_factor = 0.075
+		production_lack_of_resource_penalty_factor = -0.1
+		production_speed_buildings_factor = 0.075
+		line_change_production_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		production_factory_start_efficiency_factor = 0.075
+		production_factory_efficiency_gain_factor = 0.05
+	}
+
 		bul_military_teacher_infantry = {
 		random = no
 		sprite = 13

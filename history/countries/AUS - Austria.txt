@@ -4,19 +4,70 @@ set_oob = "AUS_1911"
 
 set_naval_oob = "AUS_1911_Naval"
 
-recruit_character = AUS_franz_joseph
-recruit_character = AUS_franz_conrad_von_hotzendorf
-recruit_character = AUS_friedrich_von_osterreich_teschen
-recruit_character = AUS_hermann_kovess_von_kovesshaza
-recruit_character = AUS_eduard_freiherr_von_bohm-rrmolli
-recruit_character = AUS_franz_rohr_von_denta
-recruit_character = AUS_liborius_von_frank
-recruit_character = AUS_anton_liposcak
-recruit_character = AUS_wenzel_von_wurm
-recruit_character = AUS_alexander_von_krobatin
-recruit_character = AUS_paul_gautsch_von_frankenthurn
-recruit_character = AUS_leon_von_bilinski
-recruit_character = AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria
+recruit_character = auh_ernest_von_koerber
+recruit_character = AUH_Richard_von_bienerth_schmerling
+recruit_character = AUH_franzjosef
+recruit_character = AUH_friedrich_habsburg
+recruit_character = AUH_erzherzog_franz_habsburg
+recruit_character = AUH_stefan_burian
+recruit_character = AUH_rudolf_brudermann
+recruit_character = AUH_viktor_krasnik
+recruit_character = AUH_arz_straussenburg
+recruit_character = auh_burstyn
+recruit_character = AUH_claudius_czibulka
+recruit_character = AUH_kovesz_koveshaza
+recruit_character = AUH_karl_huyn
+recruit_character = AUH_anton_haus
+recruit_character = AUH_georgy_reny
+recruit_character = AUH_pflanzer_baltin
+recruit_character = AUH_leon_blinski
+recruit_character = auh_adolf_von_brudermann
+recruit_character = AUH_friedrich_von_georgi
+recruit_character = AUH_teraszszky
+recruit_character = AUH_karli
+recruit_character = AUH_alois_lexa_von_aehrenthal
+recruit_character = AUH_leopold_berchtold
+recruit_character = AUH_joseph_schumpeter
+recruit_character = AUH_eugen_von_bohm_bawerk
+recruit_character = AUH_viktor_adler
+recruit_character = AUH_viktor_adlerr
+recruit_character = AUH_viktor_adlerrrr
+recruit_character = AUH_goglia_zlota
+recruit_character = AUH_leopold_bauer
+recruit_character = AUH_otto_bauer
+recruit_character = AUH_adolf_loos
+recruit_character = AUH_karl_wittgenstein
+recruit_character = AUH_otto_wagner
+recruit_character = AUH_vaclav_klement
+recruit_character = auh_morritz_auffenberg
+recruit_character = auh_alexander_von_krobatin
+recruit_character = auh_samuel_von_hazai
+activate_advisor = AUH_stefan_burian
+activate_advisor = Auh_morritz_auffenberg
+recruit_character = auh_svetozar_bojna
+recruit_character = AUH_ignaz_trollmann
+recruit_character = AUH_leopold_von_hauer
+recruit_character = AUH_eugen_habsburg
+recruit_character = auh_emil_uzelac
+recruit_character = AUH_eduard_bohm
+recruit_character = auh_conrad_hotzendorff
+recruit_character = auh_arthur_giesling
+recruit_character = AUH_otto_ellison_nidlef
+recruit_character = auh_rudolf_stoger_steinstatten
+activate_advisor = AUH_friedrich_von_georgi
+activate_advisor = AUH_alois_lexa_von_aehrenthal
+
+set_variable = { X_AUH_propaganda_3_cost = 90 }
+set_variable = { X_AUH_propaganda_4_cost = 90 }
+set_variable = { X_AUH_propaganda_5_cost = 90 }
+set_variable = { X_AUH_propaganda_6_cost = 90 }
+set_variable = { X_AUH_propaganda_7_cost = 90 }
+set_variable = { X_AUH_propaganda_8_cost = 90 }
+set_variable = { X_AUH_propaganda_9_cost = 90 }
+set_variable = { X_AUH_propaganda_10_cost = 90 }
+set_variable = { X_AUH_propaganda_11_cost = 90 }
+set_variable = { X_AUH_propaganda_12_cost = 90 }
+set_variable = { X_AUH_propaganda_13_cost = 90 }
 
 # Starting tech
 set_technology = {
@@ -47,10 +98,10 @@ set_technology = {
 	}
 
 add_ideas = {
-    AUS_multi_ethnic_empire_idea
-	AUS_19th_century_economy
-	AUS_czech_parliment
-	AUS_incompetent_officers
+	auh_underfunded_army
+	auh_Multiethnicity
+	auh_ghostofthepast
+	AUH_landtags_in_active_revolt
 }
 
 ##### Party Popularity, Stability, War Support and other #####

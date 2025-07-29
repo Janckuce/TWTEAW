@@ -1,0 +1,83 @@
+ideas = {
+
+	country = {
+		gre_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = gre_martyrs_of_the_anatolian_catastrophe
+
+			modifier = {
+			army_org = 2.5
+			army_org_regain = 0.025
+			army_morale = 0.025
+			army_defence_factor = 0.025
+			army_attack_factor = 0.025
+			recruitable_population = 0.005
+			
+			}
+		}
+
+			gre_army2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = gre_martyrs_of_the_anatolian_catastrophe
+
+			modifier = {
+			army_org = 5
+			army_org_regain = 0.05
+			army_defence_factor = 0.05
+			army_attack_factor = 0.05
+			army_morale = 0.025
+			recruitable_population = 0.01
+			experience_loss_factor = -0.025
+			terrain_penalty_reduction = 0.025
+			
+			}
+		}
+
+			gre_army3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = gre_martyrs_of_the_anatolian_catastrophe
+
+			modifier = {
+			army_org = 10
+			army_org_factor = 0.065
+			army_org_regain = 0.065
+			army_defence_factor = 0.065
+			army_attack_factor = 0.065
+			recruitable_population = 0.015
+			experience_loss_factor = -0.05
+			terrain_penalty_reduction = 0.05
+			
+			}
+		}
+	}
+}
