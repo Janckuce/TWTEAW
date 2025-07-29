@@ -490,29 +490,43 @@ ideas = {
 			picture = empire_of_old_habsburg
 			modifier = {
 			resistance_growth = 0.15
-			stability_weekly = -0.001
-			war_support_factor = -0.3
-			stability_factor = -0.15
-			compliance_gain = -0.05
+			political_power_gain = -0.8
 			root_out_resistance_effectiveness_factor = -0.25
-			resistance_damage_to_garrison = 0.15
-			resistance_growth = 0.15
-			research_speed_factor = -0.15
-			political_advisor_cost_factor = 0.1
+			resistance_damage_to_garrison = 0.1
+			required_garrison_factor = 0.25
+			resistance_target = 0.1
+			agency_upgrade_time = 0.5
+			decryption_factor = -0.25
+			encryption_factor = -0.25
+			intel_network_gain_factor = -0.15
+			intelligence_agency_defense = -0.25
+			conscription_factor = -0.1
+			training_time_factor = 0.3
+			minimum_training_level = 0.25
+			max_training = -0.35
+			land_reinforce_rate = -0.15
 			}
 		}
 
 			auh_Multiethnicity_scientific = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			resistance_growth = 0.15
-			stability_weekly = -0.001
-			war_support_factor = -0.3
-			stability_factor = -0.15
-			root_out_resistance_effectiveness_factor = -0.25
-			resistance_damage_to_garrison = 0.15
-			resistance_growth = 0.10
-			political_advisor_cost_factor = 0.1
+			resistance_growth = 0.1
+			root_out_resistance_effectiveness_factor = -0.2
+			resistance_damage_to_garrison = 0.05
+			required_garrison_factor = 0.2
+			political_power_gain = -0.8
+			resistance_target = 0.05
+			agency_upgrade_time = 0.4
+			decryption_factor = -0.2
+			encryption_factor = -0.2
+			intel_network_gain_factor = -0.1
+			intelligence_agency_defense = -0.2
+			conscription_factor = -0.05
+			training_time_factor = 0.25
+			minimum_training_level = 0.2
+			max_training = -0.3
+			land_reinforce_rate = -0.1
 			}
 		}
 
@@ -1330,52 +1344,69 @@ ideas = {
 			auh_Multiethnicity_political_party = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			resistance_growth = 0.15
-			war_support_factor = -0.25
-			stability_factor = -0.10
-			root_out_resistance_effectiveness_factor = -0.25
-			resistance_damage_to_garrison = 0.1
 			resistance_growth = 0.05
+			root_out_resistance_effectiveness_factor = -0.15
+			required_garrison_factor = 0.15
+			political_power_gain = -0.8
+			agency_upgrade_time = 0.35
+			decryption_factor = -0.15
+			encryption_factor = -0.15
+			intel_network_gain_factor = -0.05
+			intelligence_agency_defense = -0.15
+			training_time_factor = 0.2
+			minimum_training_level = 0.15
+			max_training = -0.25
+			land_reinforce_rate = -0.05
 			}
 		}
 
 			auh_Multiethnicity_second_language = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			resistance_growth = 0.10
-			war_support_factor = -0.20
-			stability_factor = -0.05
 			root_out_resistance_effectiveness_factor = -0.10
-			resistance_damage_to_garrison = 0.1
-			resistance_growth = 0.05
+			required_garrison_factor = 0.1
+			agency_upgrade_time = 0.3
+			political_power_gain = -0.4
+			decryption_factor = -0.1
+			encryption_factor = -0.1
+			intelligence_agency_defense = -0.1
+			training_time_factor = 0.15
+			minimum_training_level = 0.10
+			max_training = -0.2
 			}
 		}
 
 			auh_Multiethnicity_evidenzburo = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			war_support_factor = -0.15
 			root_out_resistance_effectiveness_factor = -0.05
-			resistance_damage_to_garrison = 0.05
-			resistance_growth = 0.05
+			required_garrison_factor = 0.05
+			agency_upgrade_time = 0.25
+			decryption_factor = -0.05
+			political_power_gain = -0.4
+			encryption_factor = -0.05
+			intelligence_agency_defense = -0.05
+			training_time_factor = 0.1
+			minimum_training_level = 0.05
+			max_training = -0.15
 			}
 		}
 
 			auh_Multiethnicity_bolster_youth = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			war_support_factor = -0.05
-			root_out_resistance_effectiveness_factor = -0.05
-			resistance_damage_to_garrison = 0.05
+			agency_upgrade_time = 0.2
+			training_time_factor = 0.02
+			political_power_gain = -0.1
+			max_training = -0.1
 			}
 		}
 
 			auh_Multiethnicity_amnesty_gunowners = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			war_support_factor = -0.05
-			root_out_resistance_effectiveness_factor = -0.05
-			resistance_damage_to_garrison = 0.05
+			agency_upgrade_time = 0.15
+			max_training = -0.05
 			}
 		}
 
@@ -1396,14 +1427,27 @@ ideas = {
 			auh_ghostofthepast = {
 			picture = ghost_of_the_past
 			modifier = {
-			industrial_capacity_factory = -0.2
-			production_factory_efficiency_gain_factor = -0.1
+			consumer_goods_factor = 0.1
+			conversion_cost_civ_to_mil_factor = 0.5
+			conversion_cost_mil_to_civ_factor = 0.5
+			industrial_capacity_dockyard = -0.25
+			industrial_capacity_factory = -0.25
+			industry_air_damage_factor = 0.3
+			industry_free_repair_factor = -0.5
+			production_oil_factor = -0.25
+			repair_speed_arms_factory_factor = -0.25
+			supply_node_range = -0.25
+			land_bunker_effectiveness_factor = -0.25
+			coastal_bunker_effectiveness_factor = -0.25
+			production_factory_efficiency_gain_factor = -0.2
 			production_factory_max_efficiency_factor = -0.2
-			production_factory_start_efficiency_factor = -0.1
-			production_speed_buildings_factor = -0.2
-			line_change_production_efficiency_factor = -0.1
+			production_factory_start_efficiency_factor = -0.15
+			production_speed_buildings_factor = -0.25
+			line_change_production_efficiency_factor = -0.2
 			research_speed_factor = -0.2
 			trade_laws_cost_factor = 0.3
+			production_lack_of_resource_penalty_factor = 0.3
+
 			}
 		}
 
