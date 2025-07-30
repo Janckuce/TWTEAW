@@ -1,0 +1,40 @@
+AUS_power_balance = {
+	initial_value = 0.1
+	left_side = AUS_left_side
+	right_side = AUS_right_side 
+	decision_category = AUS_balance_of_power_category # Category for the power balance decision
+
+	range = {
+		id = AUS_power_centre_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			# Adds a modifier when balance of power is in the center
+		}
+		on_activate = {
+			# Whatever is here will execute when the power balance is at the center
+		}
+		on_deactivate = {
+			# Whatever is here will execute when the power balance is not at the center
+		}
+	}
+
+	side = { # This is the left side of the power balance
+		id = AUS_left_side
+		icon = GFX_surrender_tiny_flag
+		range = {
+			id = AUS_left_side_range # This puts a pointer on the left side of the power balance
+			min = -1
+			max = 0
+		}
+	}
+	side = { # This is the right side of the power balance
+		id = AUS_right_side
+		icon = GFX_surrender_tiny_flag
+		range = {
+			id = AUS_right_side_range # This puts a pointer on the right side of the power balance
+			min = 0
+			max = 1
+		}
+	}
+}

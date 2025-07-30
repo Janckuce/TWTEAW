@@ -1,0 +1,33 @@
+
+AUS_balance_of_power_category = {
+	DEBUG_AUS_deactivate_BOP = {
+		priority = 91 # Appears at the top (unless one has a higher priority)
+		visible = { # Only visible in debug mode
+			is_debug = yes
+		}
+		available = {
+			original_tag = AUS
+		}
+		complete_effect = {
+			remove_power_balance = { id = AUS_power_balance }
+		}
+	}
+	AUS_support_left_side = {
+		icon = GFX_surrender_tiny_flag # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			always = yes
+		}
+		available = {
+			power_balance_value = { # Checks if the power of balance is currently on the right side
+				id = AUS_power_balance
+				value > 0 
+			}
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = AUS_power_balance
+				value = -0.1 # Increases the power balance towards the left side
+			}
+		}
+	}
+}
