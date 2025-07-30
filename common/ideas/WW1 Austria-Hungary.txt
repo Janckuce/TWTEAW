@@ -187,7 +187,7 @@ ideas = {
 		}
 
 			auh_construction_funds = {
-			picture = bad_funding_army
+			picture = aus_investments
 			modifier = {
 			consumer_goods_factor = -0.15
 			production_speed_buildings_factor = 0.1
@@ -276,15 +276,15 @@ ideas = {
 			AUH_victory_of_the_css = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.04
-			war_support_factor = 0.04
-			drift_defence_factor = 0.025
-			political_power_factor = 0.01
+			war_support_factor = 0.015
+			drift_defence_factor = 0.015
 			trade_laws_cost_factor = -0.1
 			political_advisor_cost_factor = -0.05
-			non_core_manpower = -0.1
-			consumer_goods_factor = -0.015
+			non_core_manpower = -0.05
 			production_speed_arms_factory_factor = 0.015
+			production_speed_industrial_complex_factor = -0.05
+			democratic_drift = -0.1
+			communism_drift = -0.1
 
 			}
 		}
@@ -292,89 +292,74 @@ ideas = {
 			AUH_victory_of_the_css2 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.05
-			war_support_factor = 0.05
-			drift_defence_factor = 0.025
-			political_power_factor = 0.02
-			trade_laws_cost_factor = -0.15
-			political_advisor_cost_factor = -0.1
-			non_core_manpower = -0.12
-			consumer_goods_factor = -0.03
-			democratic_drift = -0.02
-			communism_drift = -0.02
-			production_speed_industrial_complex_factor = 0.015
-			production_speed_arms_factory_factor = 0.015
+			war_support_factor = 0.03
+			drift_defence_factor = 0.03
+			trade_laws_cost_factor = -0.125
+			political_advisor_cost_factor = -0.075
+			non_core_manpower = -0.075
+			production_speed_arms_factory_factor = 0.03
+			production_speed_industrial_complex_factor = -0.035
+			democratic_drift = -0.15
+			communism_drift = -0.15
 			}
 		}
 
 			AUH_victory_of_the_css3 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.06
-			war_support_factor = 0.06
-			drift_defence_factor = 0.02
-			trade_laws_cost_factor = -0.30
-			political_power_factor = 0.03
-			non_core_manpower = -0.14
-			political_advisor_cost_factor = -0.15
-			consumer_goods_factor = -0.045
-			democratic_drift = -0.02
-			communism_drift = -0.02
-			political_power_gain = 0.05
-			production_speed_arms_factory_factor = 0.03
-			production_speed_industrial_complex_factor = 0.015
-
+			war_support_factor = 0.045
+			drift_defence_factor = 0.045
+			trade_laws_cost_factor = -0.15
+			political_advisor_cost_factor = -0.09
+			non_core_manpower = -0.09
+			production_speed_arms_factory_factor = 0.045
+			production_speed_industrial_complex_factor = -0.02
+			democratic_drift = -0.2
+			communism_drift = -0.2
 			}
 		}
 
 			AUH_victory_of_the_css4 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.08
-			war_support_factor = 0.08
-			drift_defence_factor = 0.04
-			trade_laws_cost_factor = -0.35
-			political_power_factor = 0.04
-			political_advisor_cost_factor = -0.2
-			non_core_manpower = -0.16
-			consumer_goods_factor = -0.05
-			democratic_drift = -0.03
-			communism_drift = -0.03
-			political_power_gain = 0.06
-			production_speed_industrial_complex_factor = 0.03
-			production_speed_arms_factory_factor = 0.03
+			war_support_factor = 0.06
+			drift_defence_factor = 0.06
+			trade_laws_cost_factor = -0.175
+			political_advisor_cost_factor = -0.115
+			non_core_manpower = -0.115
+			production_speed_arms_factory_factor = 0.06
+			production_speed_industrial_complex_factor = -0.005
+			democratic_drift = -0.25
+			communism_drift = -0.25
 			}
 		}
 
 			AUH_victory_of_the_css5 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.1
-			war_support_factor = 0.1
-			trade_laws_cost_factor = -0.4
-			drift_defence_factor = 0.06
-			political_power_factor = 0.05
-			political_advisor_cost_factor = -0.25
-			non_core_manpower = -0.18
-			consumer_goods_factor = -0.065
-			democratic_drift = -0.04
-			communism_drift = -0.04
-			political_power_gain = 0.07
-			production_speed_arms_factory_factor = 0.045
-			production_speed_industrial_complex_factor = 0.03
+			war_support_factor = 0.075
+			drift_defence_factor = 0.075
+			trade_laws_cost_factor = -0.2
+			political_advisor_cost_factor = -0.13
+			non_core_manpower = -0.13
+			production_speed_arms_factory_factor = 0.075
+			democratic_drift = -0.3
+			communism_drift = -0.3
 			}
 		}
 
 			AUH_victory_of_the_sdap = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.1
-			drift_defence_factor = -0.025
-			political_power_factor = 0.1
-			democratic_drift = 0.05
-			communism_drift = 0.01
+			stability_factor = 0.015
+			political_power_factor = 0.025
+			democratic_drift = 0.02
+			communism_drift = 0.02
+			compliance_gain = 0.025
+			monthly_population = 0.05
 			war_support_factor = -0.2
-			production_speed_arms_factory_factor = -0.01
+			production_speed_arms_factory_factor = -0.1
+			production_speed_industrial_complex_factor = 0.015
 
 			}
 		}
@@ -382,73 +367,59 @@ ideas = {
 			AUH_victory_of_the_sdap2 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.1
-			drift_defence_factor = -0.025
-			political_power_factor = 0.1
-			democratic_drift = 0.05
-			communism_drift = 0.01
-			war_support_factor = -0.2
+			stability_factor = 0.03
+			political_power_factor = 0.03
+			democratic_drift = 0.04
+			communism_drift = 0.04
 			compliance_gain = 0.05
-			line_change_production_efficiency_factor = 0.03
-			industrial_capacity_factory = 0.03
-			production_speed_arms_factory_factor = -0.02
-
+			monthly_population = 0.075
+			war_support_factor = -0.175
+			production_speed_arms_factory_factor = -0.075
+			production_speed_industrial_complex_factor = 0.03
 			}
 		}
 
 			AUH_victory_of_the_sdap3 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.12
-			drift_defence_factor = -0.025
-			political_power_factor = 0.1
-			democratic_drift = 0.05
-			communism_drift = 0.01
-			war_support_factor = -0.2
-			compliance_gain = 0.05
-			line_change_production_efficiency_factor = 0.03
-			industrial_capacity_factory = 0.03
-			monthly_population = 0.05
-			extra_trade_to_target_factor = 0.25
-			production_speed_arms_factory_factor = -0.03
-
+			stability_factor = 0.045
+			political_power_factor = 0.035
+			democratic_drift = 0.06
+			communism_drift = 0.06
+			compliance_gain = 0.075
+			monthly_population = 0.1
+			war_support_factor = -0.15
+			production_speed_arms_factory_factor = -0.05
+			production_speed_industrial_complex_factor = 0.045
 			}
 		}
 
 			AUH_victory_of_the_sdap4 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.12
-			drift_defence_factor = -0.025
-			political_power_factor = 0.12
-			democratic_drift = 0.075
-			communism_drift = 0.025
-			war_support_factor = -0.25
-			compliance_gain = 0.075
-			line_change_production_efficiency_factor = 0.06
-			monthly_population = 0.1
-			extra_trade_to_target_factor = 0.25
-			production_speed_arms_factory_factor = -0.04
-
-
+			stability_factor = 0.06
+			political_power_factor = 0.04
+			democratic_drift = 0.08
+			communism_drift = 0.08
+			compliance_gain = 0.09
+			monthly_population = 0.125
+			war_support_factor = -0.125
+			production_speed_arms_factory_factor = -0.025
+			production_speed_industrial_complex_factor = 0.06
 			}
 		}
 
 			AUH_victory_of_the_sdap5 = {
 			picture = celebration_of_international_christendom
 			modifier = {
-			stability_factor = 0.12
-			drift_defence_factor = -0.025
-			political_power_factor = 0.12
-			democratic_drift = 0.075
-			communism_drift = 0.025
-			war_support_factor = -0.25
-			compliance_gain = 0.075
-			line_change_production_efficiency_factor = 0.08
+			stability_factor = 0.075
+			political_power_factor = 0.045
+			democratic_drift = 0.1
+			communism_drift = 0.1
+			compliance_gain = 0.115
 			monthly_population = 0.15
-			extra_trade_to_target_factor = 0.25
-			resistance_activity = -0.05
-			production_speed_arms_factory_factor = -0.05
+			war_support_factor = -0.1
+			production_speed_industrial_complex_factor = 0.075
 			}
 		}
 

@@ -42,7 +42,7 @@ focus_tree = {
 		focus = {
 		id = AUH_allow_regional_languages
 		icon = GFX_goal_AUH_allow_regional_languages
-		x = 22
+		x = 23
 		y = 2
 
 		cost = 10
@@ -69,7 +69,7 @@ focus_tree = {
 		focus = {
 		id = AUH_problems_with_translatheinia
 		icon = GFX_goal_AUH_problems_with_translatheinia
-		x = 26
+		x = 25
 		y = 2
 
 		cost = 5
@@ -280,16 +280,17 @@ focus_tree = {
 
 		focus = {
 		id = AUH_elections_1911
-		icon = GFX_goal_crown_head
-		x = 2
+		icon = GFX_focus_generic_election
+		x = 3
 		y = 2
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}
 
 		available = {
 		date > 1911.6.20
+		date < 1912.6.20
 		}
 
 		completion_reward = {
@@ -303,14 +304,14 @@ focus_tree = {
 		focus = {
 		id = AUH_victory_of_cs
 		icon = GFX_goal_crown_head
-		x = 0
+		x = 2
 		y = 3
 
 			available = {
 			always = no
 		}
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_elections_1911}
 
@@ -322,10 +323,10 @@ focus_tree = {
 		focus = {
 		id = AUH_safeguard_traditions_cs
 		icon = GFX_goal_crown_head
-		x = 0
+		x = 2
 		y = 4
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_victory_of_cs}
 
@@ -340,10 +341,10 @@ focus_tree = {
 		focus = {
 		id = AUH_award_new_titles_cs
 		icon = GFX_goal_crown_head
-		x = 0
+		x = 2
 		y = 5
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_safeguard_traditions_cs}
 
@@ -358,10 +359,10 @@ focus_tree = {
 		focus = {
 		id = AUH_limit_the_socialists_parties_cs
 		icon = GFX_goal_crown_head
-		x = 0
+		x = 2
 		y = 6
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_award_new_titles_cs}
 
@@ -376,10 +377,10 @@ focus_tree = {
 		focus = {
 		id = AUH_tradition_lives_on_cs
 		icon = GFX_goal_crown_head
-		x = 1
+		x = 2
 		y = 7
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_the_socialists_parties_cs}
 
@@ -401,7 +402,7 @@ focus_tree = {
 			always = no
 		}
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_elections_1911}
 
@@ -417,7 +418,7 @@ focus_tree = {
 		x = 4
 		y = 4
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_victory_of_sdap}
 
@@ -435,7 +436,7 @@ focus_tree = {
 		x = 4
 		y = 5
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_improve_the_workers_rights_sdap}
 
@@ -453,7 +454,7 @@ focus_tree = {
 		x = 4
 		y = 6
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_naturfreunde_sdap}
 
@@ -468,10 +469,10 @@ focus_tree = {
 		focus = {
 		id = AUH_dream_of_austromarxists_sdap
 		icon = GFX_goal_crown_head
-		x = 3
+		x = 4
 		y = 7
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_implement_women_universal_suffrage_sdap}
 
@@ -662,7 +663,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_pilsen_military_odrders
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 10
 		y = 6
 
@@ -687,7 +688,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_oweg_in_vienna
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_AUS_steyr_arms_investment
 		x = 8
 		y = 6
 
@@ -712,7 +713,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_buda_military_works
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 9
 		y = 5
 
@@ -737,7 +738,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_bielitz_works
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_AFG_a_modern_economy
 		x = 8
 		y = 4
 
@@ -1687,7 +1688,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_build_of_danubian_dam
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_BEL_dam_the_consequences
 		x = 11
 		y = 3
 
@@ -1719,7 +1720,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_improve_the_tyrol_mines
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_uranium_extraction
 		x = 13
 		y = 3
 
@@ -1772,7 +1773,7 @@ focus_tree = {
 
 	focus = {
 		id = AUH_the_silesian_resources
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_aus_silesian_mines
 		x = 9
 		y = 3
 
@@ -1834,7 +1835,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_german_sudetenland_expansion
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_aus_sudeten_workers
 		x = 11
 		y = 5
 
@@ -1886,7 +1887,7 @@ focus_tree = {
 				
 	focus = {
 		id = AUH_transylvanian_mines
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_public_works
 		x = 10
 		y = 4
 
@@ -1949,7 +1950,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_upper_hungarian_development
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_generic_construction
 		x = 12
 		y = 4
 
@@ -1997,7 +1998,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_core_land_of_austria
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_AUS_the_matzen_oil_fields
 		x = 13
 		y = 5
 
@@ -2037,7 +2038,7 @@ focus_tree = {
 
 	focus = {
 		id = AUH_austrian_development_twice
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_AUS_devalue_the_schilling
 		x = 13
 		y = 7
 
@@ -2094,7 +2095,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_development_of_kingdom_of_bohemia
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_befriend_bohemia
 		x = 11
 		y = 7
 
@@ -2146,7 +2147,7 @@ focus_tree = {
 
 		focus = {
 		id = AUH_expansion_of_vienna_school
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_ARG_develop_the_electricity_sector
 		x = 12
 		y = 8
 
@@ -2161,7 +2162,7 @@ focus_tree = {
 
 	focus = {
 			id = AUH_vienna_of_the_east
-			icon = GFX_goal_equal_court
+			icon = GFX_focus_SWE_landsverk
 			x = 12
 			y = 6
 
