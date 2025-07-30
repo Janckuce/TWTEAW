@@ -109,19 +109,15 @@ focus_tree = {
 		x = 24
 		y = 4
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_give_jobs_to_regionals}
 		prerequisite = {focus = AUH_give_rights_to_no_hungarian_minorities}    
 
 		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = AUH_landtags_in_active_revolt
-    	add_idea = AUH_landtags_in_active_revolt_better
-    }
 			add_tech_bonus = {
 				name = DEN_expand_haerens_tekniske_korps
-				bonus = 4
+				bonus = 1
 				uses = 2
 				category = military_police_tech
 		}
@@ -134,7 +130,7 @@ focus_tree = {
 		x = 22
 		y = 5
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
@@ -161,23 +157,16 @@ focus_tree = {
 		x = 24
 		y = 5
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
 		completion_reward = {
 		109 = {
+		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
 		type = industrial_complex
-		level = 1
-		instant_build = yes
-		}
-	}
-
-		1023 = {
-		add_building_construction = {
-		type = industrial_complex
-		level = 1
+		level = 2
 		instant_build = yes
 		}
 	}
@@ -190,7 +179,7 @@ focus_tree = {
 		x = 26
 		y = 5
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
 
@@ -200,6 +189,7 @@ focus_tree = {
 					days = 1
 				}
 		804 = {
+		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
 		type = industrial_complex
 		level = 1
@@ -215,17 +205,16 @@ focus_tree = {
 		x = 23
 		y = 6
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
 		prerequisite = {focus = AUH_purge_of_unloyal_hungarians} 
 
 		completion_reward = {
 			add_state_core = 736
-			add_state_core = 853
+			add_state_core = 841
 			add_state_core = 852
-			add_state_core = 1169
-			add_state_core = 1025
+			add_state_core = 859
 		}
 	}
 
@@ -235,7 +224,7 @@ focus_tree = {
 		x = 25
 		y = 6
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
 		prerequisite = {focus = AUH_serbians_on_their_own} 
@@ -261,19 +250,15 @@ focus_tree = {
 		x = 24
 		y = 7
 
-		cost = 7
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_austrian_sud_tirol}  
 		prerequisite = {focus = AUH_slovenian_debate} 
 
 		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = AUH_landtags_in_active_revolt_better
-		
-    	add_idea = AUH_well_oiled_machine
+    	add_ideas = AUH_well_oiled_machine
     }
 		}
-	}
 
 		focus = {
 		id = AUH_many_crowns_many_problems
@@ -504,7 +489,7 @@ focus_tree = {
 		x = 16
 		y = 3
 
-		cost = 11
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
@@ -525,7 +510,7 @@ focus_tree = {
 		x = 18
 		y = 3
 
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
@@ -543,7 +528,7 @@ focus_tree = {
 		x = 16
 		y = 5
 
-		cost = 7
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_integrate_party_political}
 
@@ -580,7 +565,7 @@ focus_tree = {
 		x = 16
 		y = 4
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_celebration_of_international_christendom}
 
@@ -596,7 +581,7 @@ focus_tree = {
 		x = 16
 		y = 6
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_propagate_loyal_culture }
 
@@ -614,7 +599,7 @@ focus_tree = {
 		x = 18
 		y = 4
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
 
@@ -634,7 +619,7 @@ focus_tree = {
 		x = 18
 		y = 6
 
-		cost = 6
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_second_language_german}
 
@@ -662,7 +647,7 @@ focus_tree = {
 		x = 17
 		y = 7
 
-		cost = 8
+		cost = 10
 		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
 		prerequisite = {focus = AUH_propagate_loyal_culture2}
 
@@ -681,7 +666,7 @@ focus_tree = {
 		x = 10
 		y = 6
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_german_sudetenland_expansion }
 		prerequisite = { focus = AUH_buda_military_works }
 
@@ -690,7 +675,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 					province = {
 						id = 11666
@@ -706,7 +691,7 @@ focus_tree = {
 		x = 8
 		y = 6
 
-		cost = 7
+		cost = 10
 		prerequisite = { focus = AUH_construction_bruh }
 		prerequisite = { focus = AUH_buda_military_works }
 
@@ -715,7 +700,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 					instant_build = yes
 					province = {
 						id = 11666
@@ -731,7 +716,7 @@ focus_tree = {
 		x = 9
 		y = 5
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_transylvanian_mines }
 		prerequisite = { focus = AUH_bielitz_works }
 
@@ -740,7 +725,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 					province = {
 						id = 11666
@@ -756,12 +741,12 @@ focus_tree = {
 		x = 8
 		y = 4
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_construction_mils }
 		prerequisite = { focus = AUH_the_silesian_resources }
 
 		completion_reward = {
-				1145 = {
+				72 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -781,7 +766,7 @@ focus_tree = {
 		x = 33
 		y = 2
 
-		cost = 8
+		cost = 10
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -1203,7 +1188,7 @@ focus_tree = {
 		x = 33
 		y = 3
 
-		cost = 9
+		cost = 10
 		prerequisite = { focus = AUH_finish_1908_armeereform }
 
 		completion_reward = {
@@ -1237,7 +1222,7 @@ focus_tree = {
 		x = 33
 		y = 5
 
-		cost = 11
+		cost = 10
 		prerequisite = { focus = AUH_prove_to_investors }
 
 		completion_reward = {
@@ -1706,7 +1691,7 @@ focus_tree = {
 		x = 11
 		y = 3
 
-		cost = 7
+		cost = 10
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1729,14 +1714,6 @@ focus_tree = {
 			instant_build = yes
 				}	
 			}
-			1007 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1746,7 +1723,7 @@ focus_tree = {
 		x = 13
 		y = 3
 
-		cost = 8
+		cost = 10
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1799,7 +1776,7 @@ focus_tree = {
 		x = 9
 		y = 3
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1815,7 +1792,7 @@ focus_tree = {
 					}
 				}
 
-				1145 = {
+				88 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -1827,18 +1804,7 @@ focus_tree = {
 					}
 				}
 
-				1144 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-						province = {
-							id = 11666
-						}
-					}
-				}
-			1144 = {
+			88 = {
 				add_resource = {
 					type = oil
 					amount = 3
@@ -1850,10 +1816,17 @@ focus_tree = {
 					amount = 6
 				}
 			}
-			72 = {
+			88 = {
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 4
+				}
+			}
+
+				72 = {
+				add_resource = {
+					type = aluminium
+					amount = 4
 				}
 			}
 		}
@@ -1865,30 +1838,11 @@ focus_tree = {
 		x = 11
 		y = 5
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_transylvanian_mines }
 		prerequisite = { focus = AUH_upper_hungarian_development }
 
 		completion_reward = {
-					1010 = {
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-							province = {
-							id = 11666
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-						province = {
-						id = 11666
-						}
-					}
-				}
 				69 = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
@@ -1936,7 +1890,7 @@ focus_tree = {
 		x = 10
 		y = 4
 
-		cost = 7
+		cost = 10
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_the_silesian_resources }
 
@@ -1945,7 +1899,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 			add_resource = {
 				type = steel
-				amount = 7
+				amount = 1
 			}
 			}
 				add_building_construction = {
@@ -1956,11 +1910,11 @@ focus_tree = {
 					id = 11666
 				}
 			}
-			1479 = {
+			76 = {
 			add_extra_state_shared_building_slots = 2
 			add_resource = {
 				type = aluminium
-				amount = 9
+				amount = 2
 			}
 			}
 				add_building_construction = {
@@ -1971,7 +1925,7 @@ focus_tree = {
 					id = 11666
 				}
 			}
-			1039 = {
+			83 = {
 			add_extra_state_shared_building_slots = 2
 			add_resource = {
 				type = aluminium
@@ -1981,14 +1935,14 @@ focus_tree = {
 			type = steel
 			amount = 5
 				}
-			}
-				add_building_construction = {
+					add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 					province = {
 					id = 11666
 				}
+			}
 			}
 		}
 	}
@@ -1999,19 +1953,14 @@ focus_tree = {
 		x = 12
 		y = 4
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_improve_the_tyrol_mines }
 
 		completion_reward = {
 			664 = {
 			add_extra_state_shared_building_slots = 1
-			add_resource = {
-				type = chromium
-				amount = 4
-			}
-			}
-				add_building_construction = {
+					add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -2019,14 +1968,10 @@ focus_tree = {
 					id = 11666
 				}
 			}
-			1014 = {
+			}
+			73= {
 			add_extra_state_shared_building_slots = 1
-			add_resource = {
-				type = chromium
-				amount = 6
-			}
-				}
-				add_building_construction = {
+					add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
@@ -2034,7 +1979,8 @@ focus_tree = {
 					id = 11666
 				}
 			}
-			1385 = {
+				}
+			71 = {
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
 				type = oil
@@ -2055,7 +2001,7 @@ focus_tree = {
 		x = 13
 		y = 5
 
-		cost = 8
+		cost = 10
 		prerequisite = { focus = AUH_upper_hungarian_development }
 		prerequisite = { focus = AUH_improve_the_tyrol_mines }
 
@@ -2123,28 +2069,25 @@ focus_tree = {
 						}	
 					}
 				}
-					983 = {
+					926 = {
 						add_extra_state_shared_building_slots = 2
 						add_building_construction = {
-						type = infrastructure
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 						province = {
 						id = 11666
 					}
 				}
-			}
 
-				1144 = {
-				add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-						province = {
-						id = 11666
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+					id = 11666
+						}	
 					}
-				}
 			}
 		}
 	}
@@ -2155,7 +2098,7 @@ focus_tree = {
 		x = 11
 		y = 7
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_vienna_of_the_east }
 		prerequisite = { focus = AUH_german_sudetenland_expansion }
 
@@ -2207,7 +2150,7 @@ focus_tree = {
 		x = 12
 		y = 8
 
-		cost = 13
+		cost = 10
 		prerequisite = { focus = AUH_austrian_development_twice }
 		prerequisite = { focus = AUH_development_of_kingdom_of_bohemia }
 
@@ -2222,7 +2165,7 @@ focus_tree = {
 			x = 12
 			y = 6
 
-			cost = 6
+			cost = 10
 			prerequisite = { focus = AUH_german_sudetenland_expansion }
 			prerequisite = { focus = AUH_core_land_of_austria }
 
@@ -2252,9 +2195,6 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}
-			986 = {
-			add_extra_state_shared_building_slots = 2
 		}
 	}
 }
