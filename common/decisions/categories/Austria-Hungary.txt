@@ -1,13 +1,20 @@
-hun_trust = {
-    allowed = {
-        tag = AUS
-    }
-	visible = {
+DEN_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		original_tag = AUS
 	}
-    priority = 100
-    picture = GFX_decision_category_picture
-    icon = POL_category
-    visible_when_empty = yes
+
+	available = {
+		has_civil_war = no
+	}
+	
+	priority = 100
+	
+	visible = {
+		is_subject = no
+		
+	}
 }
 
 AUH_propaganda_campaigns = {
@@ -18,7 +25,7 @@ AUH_propaganda_campaigns = {
 	scripted_gui = SOV_propaganda_campaigns_ui
 
 	allowed = {
-		original_tag = AUH
+		original_tag = AUS
 	}
 
 	visible = {

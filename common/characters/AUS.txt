@@ -1429,6 +1429,12 @@ AUH_franzjosef = {
         expire = 1910.1.3
         ideology = centrism
     }
+	    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = { kaiser_franz_josef }
+        expire = 1910.1.3
+        ideology = rexism
+    }
     portraits = {
         civilian = {
             large = "gfx/leaders/AUS/AUH_franz_josef_kaiser.png"
@@ -1444,9 +1450,30 @@ AUH_karli = {
         expire = "1930.1.1"
         ideology = centrism
     }
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_franz_josef }
+        expire = "1930.1.1"
+        ideology = rexism
+    }
     portraits = {
         civilian = {
             large = "gfx/leaders/AUH/AUH_karl_habsburg_gigachad_early.png"
+        }
+    }
+}
+
+AUH_viktorr_adlerrr = {
+    name = "Viktor Adler"
+    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = { }
+        expire = "1995.1.1"
+        ideology = stalinism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
         }
     }
 }
@@ -1457,22 +1484,7 @@ AUH_viktor_adlerr = {
         desc = "AUH_franzjosef_desc"
 		traits = { }
         expire = "1995.1.1"
-        ideology = socialism
-    }
-    portraits = {
-        civilian = {
-            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
-        }
-    }
-}
-
-AUH_viktor_adlerrr = {
-    name = "Viktor Adler"
-    country_leader = {
-        desc = ""
-		traits = { }
-        expire = "1972.1.1"
-        ideology = marxism
+        ideology = liberalism
     }
     portraits = {
         civilian = {

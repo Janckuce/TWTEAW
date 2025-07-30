@@ -32,6 +32,7 @@ recruit_character = AUH_eugen_von_bohm_bawerk
 recruit_character = AUH_viktor_adler
 recruit_character = AUH_viktor_adlerr
 recruit_character = AUH_viktor_adlerrrr
+recruit_character = AUH_viktorr_adlerrr
 recruit_character = AUH_goglia_zlota
 recruit_character = AUH_leopold_bauer
 recruit_character = AUH_otto_bauer
@@ -102,7 +103,6 @@ add_ideas = {
 	auh_Multiethnicity
 	auh_ghostofthepast
 }
-
 ##### Party Popularity, Stability, War Support and other #####
 
 starting_train_buffer = 2
@@ -115,7 +115,10 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 51
+	democratic = 29
+	fascism = 5
+	communism = 15
 }
 
 set_convoys = 300
@@ -123,5 +126,187 @@ set_convoys = 300
 set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.1
+
+43 = {
+	start_resistance = yes
+	set_compliance = 75
+	set_resistance = 5
+}
+
+155 = {
+	start_resistance = yes
+	set_compliance = 50
+}
+
+842 = {
+	start_resistance = yes
+	set_compliance = 50
+}
+
+154 = {
+	start_resistance = yes
+	set_compliance = 50
+}
+
+664 = {
+	start_resistance = yes
+	set_compliance = 50
+}
+
+70 = {
+	start_resistance = yes
+	set_compliance = 40
+}
+
+71 = {
+	start_resistance = yes
+	set_compliance = 40
+}
+
+73 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 5
+}
+
+76 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 10
+}
+
+84 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 10
+}
+
+82 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 10
+}
+
+83 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 5
+}
+
+764 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 5
+}
+
+45 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 15
+}
+
+912 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 10
+}
+
+109 = {
+	start_resistance = yes
+	set_compliance = 75
+	set_resistance = 5
+}
+
+103 = {
+	start_resistance = yes
+	set_compliance = 65
+}
+
+104 = {
+	start_resistance = yes
+	set_compliance = 80
+}
+
+804 = {
+	start_resistance = yes
+	set_compliance = 85
+}
+
+859 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+}
+
+852 = {
+	start_resistance = yes
+	set_compliance = 65
+	set_resistance = 10
+}
+
+841 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 5
+}
+
+736 = {
+	start_resistance = yes
+	set_compliance = 55
+	set_resistance = 10
+}
+
+88 = {
+	start_resistance = yes
+	set_compliance = 75
+	set_resistance = 10
+}
+
+91 = {
+	start_resistance = yes
+	set_compliance = 75
+	set_resistance = 15
+}
+
+91 = {
+	start_resistance = yes
+	set_compliance = 65
+	set_resistance = 5
+}
+
+80 = {
+	start_resistance = yes
+	set_compliance = 65
+}
+
+890 = {
+	start_resistance = yes
+	set_compliance = 55
+	set_resistance = 5
+}
+
+890 = {
+	start_resistance = yes
+	set_compliance = 45
+	set_resistance = 10
+}
+
+850 = {
+	start_resistance = yes
+	set_compliance = 55
+	set_resistance = 25
+}
+
+9 = {
+	start_resistance = yes
+	set_compliance = 70
+	set_resistance = 20
+}
+
+75 = {
+	start_resistance = yes
+	set_compliance = 65
+	set_resistance = 10
+}
 
 # End of Party Popularity, Stability, War Support and other ##

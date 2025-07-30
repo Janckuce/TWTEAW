@@ -40,30 +40,12 @@ focus_tree = {
 	}
 
 		focus = {
-		id = AUH_solution_of_the_landtag
-		icon = GFX_goal_AUH_solution_of_the_landtag
+		id = AUH_allow_regional_languages
+		icon = GFX_goal_AUH_allow_regional_languages
 		x = 22
 		y = 2
 
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_empire_of_franz_josef}  
-
-		completion_reward = {
-						country_event = {
-					id = austria_hungary.1
-					days = 1
-				}
-		}
-	}
-
-		focus = {
-		id = AUH_allow_regional_languages
-		icon = GFX_goal_AUH_allow_regional_languages
-		x = 24
-		y = 2
-
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}  
 
@@ -105,26 +87,7 @@ focus_tree = {
 		focus = {
 		id = AUH_give_jobs_to_regionals
 		icon = GFX_goal_AUH_give_jobs_to_regionals
-		x = 23
-		y = 3
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_solution_of_the_landtag}
-		prerequisite = {focus = AUH_allow_regional_languages}    
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.4
-					days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_give_rights_to_no_hungarian_minorities
-		icon = GFX_goal_AUH_eas_up_bureacoracy
-		x = 25
+		x = 24
 		y = 3
 
 		cost = 5
@@ -133,9 +96,9 @@ focus_tree = {
 		prerequisite = {focus = AUH_allow_regional_languages}    
 
 		completion_reward = {
-				add_timed_idea = {
-				days = 90
-				idea = auh_burden_for_now_better
+					country_event = {
+					id = austria_hungary.4
+					days = 1
 			}
 		}
 	}
