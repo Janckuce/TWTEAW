@@ -178,7 +178,7 @@ Capture_Krakow = {
 		}
 	}
 	available = {
-		8 = { is_controlled_by = RUS } # Krakow
+		88 = { is_controlled_by = RUS } # Krakow
 	}
 	complete_effect = {
 		RUS = {
@@ -261,7 +261,7 @@ Capture_Metz = {
 			FRA = { has_war_with = GER }
 	}
 	available = {
-		17 = { is_controlled_by = FRA } # Metz
+		28 = { is_controlled_by = FRA } # Metz
 	}
 	complete_effect = {
 		FRA = {
@@ -363,10 +363,7 @@ Capture_Edirne = {
 			add_political_power = 50
 			add_stability = 0.05
 			add_war_support = 0.05
-<<<<<<< Updated upstream
-=======
 			}
->>>>>>> Stashed changes
 		}
 	}
 	take_sofia = {
@@ -393,16 +390,16 @@ Capture_Edirne = {
 		}
 		available = {
 			or = {
-				341 = { is_controlled_by = SER } # Sofia
-				341 = { is_controlled_by = GRE } # Sofia
-				341 = { is_controlled_by = MON } # Sofia
-				341 = { is_controlled_by = ROM } # Sofia
+				48 = { is_controlled_by = SER } # Sofia
+				48 = { is_controlled_by = GRE } # Sofia
+				48 = { is_controlled_by = MON } # Sofia
+				48 = { is_controlled_by = ROM } # Sofia
 				if = {
 					limit = { 
 						original_tag = TUR
 						TUR = { has_war_with = BUL }
 					}
-					341 = { is_controlled_by = TUR } # Sofia
+					48 = { is_controlled_by = TUR } # Sofia
 				}
 			}
 		}
