@@ -6,7 +6,7 @@
 X_AUH_propaganda_campaigns = {
 	X_AUH_propaganda_3 = { # ID = 3
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_kaiser
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
@@ -15,11 +15,11 @@ X_AUH_propaganda_campaigns = {
 		}
 		days_remove = 90
 		days_re_enable = 30
-		cost = X_AUH_propaganda_3_cost
+		cost = 60
 		modifier = {
-			stability_weekly = 0.001
-			war_support_weekly = 0.001
-			political_power_factor = 0.1
+			stability_weekly = 0.002
+			war_support_weekly = 0.002
+			political_power_factor = 0.2
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 3 }
@@ -32,7 +32,7 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_4 = { # ID = 4
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_russia_ser
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
@@ -41,10 +41,10 @@ X_AUH_propaganda_campaigns = {
 		}
 		days_remove = 90
 		days_re_enable = 30
-		cost = X_AUH_propaganda_4_cost
+		cost = 60
 		modifier = {
-			army_core_attack_factor = 0.025
-			army_core_defence_factor = 0.05
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.075
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 4 }
@@ -57,7 +57,7 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_6 = { # ID = 6
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_decision_twice_gar
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
@@ -66,11 +66,11 @@ X_AUH_propaganda_campaigns = {
 		}
 		days_remove = 90
 		days_re_enable = 30
-		cost = X_AUH_propaganda_6_cost
+		cost = 60
 		modifier = {
-			compliance_gain = 0.1
-			resistance_damage_to_garrison = -0.10
-			resistance_growth = -0.05
+			compliance_gain = 0.15
+			resistance_damage_to_garrison = -0.15
+			resistance_growth = -0.1
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 6 }
@@ -83,7 +83,7 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_7 = { # ID = 7
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_cav
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
@@ -92,11 +92,10 @@ X_AUH_propaganda_campaigns = {
 		}
 		days_remove = 90
 		days_re_enable = 30
-		cost = X_AUH_propaganda_7_cost
+		cost = 60
 		modifier = {
-			cavalry_attack_factor = 0.025
-			cavalry_defence_factor = 0.05
-			army_infantry_defence_factor = -0.05
+			cavalry_attack_factor = 0.05
+			cavalry_defence_factor = 0.075
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 7 }
@@ -109,7 +108,7 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_8 = { # ID = 8
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_art
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
@@ -118,11 +117,10 @@ X_AUH_propaganda_campaigns = {
 		}
 		days_remove = 90
 		days_re_enable = 30
-		cost = X_AUH_propaganda_8_cost
+		cost = 60
 		modifier = {
-			army_artillery_attack_factor = 0.025
-			army_artillery_defence_factor = 0.05
-			army_infantry_defence_factor = -0.05
+			army_artillery_attack_factor = 0.1
+			army_artillery_defence_factor = 0.15
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 8 }
@@ -135,21 +133,19 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_9 = { # ID = 9
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_edelweiss
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
 		visible = {
 			not = { has_government = communism } 
 		}
-		days_remove = 180
-		days_re_enable = 100
-		cost = X_AUH_propaganda_9_cost
+		days_remove = 90
+		days_re_enable = 30
+		cost = 60
 		modifier = {
-			special_forces_attack_factor = 0.025
-			special_forces_defence_factor = 0.05
-			army_infantry_defence_factor = -0.1
-			army_infantry_defence_factor = -0.05
+			special_forces_attack_factor = 0.05
+			special_forces_defence_factor = 0.075
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 9 }
@@ -163,7 +159,7 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_11 = { # ID = 11
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_investment
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
@@ -171,15 +167,14 @@ X_AUH_propaganda_campaigns = {
 			not = { has_government = communism } 
 		}
 		days_remove = 90
-		days_re_enable = 60
-		cost = X_AUH_propaganda_11_cost
+		days_re_enable = 30
+		cost = 60
 		modifier = {
-		line_change_production_efficiency_factor = 0.085
-		production_speed_buildings_factor = 0.035
-		production_factory_max_efficiency_factor = 0.085
-		industrial_capacity_factory = 0.085
-		research_speed_factor = 0.05
-		democratic_drift = 0.2
+		line_change_production_efficiency_factor = 0.1
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.08
+		industrial_capacity_factory = 0.08
+		research_speed_factor = 0.06
 
 		}
 		complete_effect = {
@@ -193,18 +188,18 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_12 = { # ID = 12
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_queen
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
 		visible = {
 			not = { has_government = communism } 
 		}
-		days_remove = 180
-		days_re_enable = 100
-		cost = X_AUH_propaganda_12_cost
+		days_remove = 90
+		days_re_enable = 30
+		cost = 60
 		modifier = {
-			army_infantry_attack_factor = 0.05
+			army_infantry_attack_factor = 0.075
 			army_infantry_defence_factor = 0.1
 		}
 		complete_effect = {
@@ -218,19 +213,19 @@ X_AUH_propaganda_campaigns = {
 	}
 	X_AUH_propaganda_13 = { # ID = 13
 		priority = 2
-		icon = eng_propaganda_campaigns
+		icon = aus_dig
 		ai_will_do = { base = 0 }
 		allowed = { original_tag = AUS }
 		available = { X_AUH_propaganda_poster_slot_available = yes }
 		visible = {
 			not = { has_government = communism } 
 		}
-		days_remove = 180
-		days_re_enable = 100
-		cost = X_AUH_propaganda_13_cost
+		days_remove = 90
+		days_re_enable = 30
+		cost = 60
 		modifier = {
 			max_dig_in = 2.5
-			dig_in_speed_factor = 0.1
+			dig_in_speed_factor = 0.15
 		}
 		complete_effect = {
 			set_variable = { X_AUH_new_propaganda_campaign = 13 }
