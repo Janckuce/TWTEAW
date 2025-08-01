@@ -17,29 +17,63 @@ AUS_balance_of_power_category = {
 		visible = { # Always visible (might not be needed)
 			always = yes
 		}
-		 days_remove = 25
+		 days_remove = 35
+		 cost = 20
 		available = {
 		}
-		complete_effect = {
+		remove_effect = {
+			add_power_balance_value = {
+				id = AUS_power_balance
+				value = -0.1 # Increases the power balance towards the left side
+			}
+		}
+			
+		}
+		AUS_support_left_side_two = {
+		icon = GFX_surrender_tiny_flag # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			always = yes
+		}
+		 days_remove = 35
+		 cost = 30
+		available = {
+		}
+		remove_effect = {
 			add_power_balance_value = {
 				id = AUS_power_balance
 				value = -0.15 # Increases the power balance towards the left side
 			}
 		}
 	}
-		AUS_support_left_side_two = {
+	AUS_support_left_side_three = {
 		icon = GFX_surrender_tiny_flag # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
 			always = yes
 		}
-		 days_remove = 25
-		
+		 days_remove = 35
+		 cost = 40
 		available = {
 		}
-		complete_effect = {
+		remove_effect = {
 			add_power_balance_value = {
 				id = AUS_power_balance
-				value = 0.5 # Increases the power balance towards the left side
+				value = -0.2 # Increases the power balance towards the left side
+			}
+		}
+	}
+	AUS_support_left_side_four = {
+		icon = GFX_surrender_tiny_flag # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			always = yes
+		}
+		 days_remove = 35
+		 cost = 50
+		available = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = AUS_power_balance
+				value = -0.25 # Increases the power balance towards the left side
 			}
 		}
 	}
