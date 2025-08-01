@@ -28,7 +28,7 @@ ROM_ignore_austria = { #At Least for now
 	ai_strategy = {
 		type = prepare_for_war
 		id = BUL
-		value = -1
+		value = 1
 	}
 	ai_strategy = {
 		type = front_unit_request
@@ -56,7 +56,7 @@ ROM_division_cap = {
 	enable = {
 		always = yes
 		set_temp_variable = {
-			upper_limit = 50 
+			upper_limit = 1000 
 		}
 		check_variable = {
 			num_divisions > upper_limit
@@ -78,7 +78,7 @@ ROM_division_cap = {
 	ai_strategy = {
 		type = build_army
 		id = garrison
-		value = 0
+		value = 100
 	}
 
 	ai_strategy = {
@@ -210,7 +210,7 @@ ROM_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 75 #88 to 70
+		value = 100 #88 to 70
 	}
 	
 	#Air unit factors

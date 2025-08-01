@@ -1418,7 +1418,9 @@ ideas = {
 			research_speed_factor = -0.2
 			trade_laws_cost_factor = 0.3
 			production_lack_of_resource_penalty_factor = 0.3
-
+			hidden_modifier = {
+				power_balance_daily = 0.0025
+			}
 			}
 		}
 
@@ -1433,6 +1435,9 @@ ideas = {
 			line_change_production_efficiency_factor = -0.075
 			research_speed_factor = -0.15
 			trade_laws_cost_factor = 0.25
+			hidden_modifier = {
+				power_balance_weekly = 0.0025
+			}
 			}
 		}
 
@@ -1447,6 +1452,9 @@ ideas = {
 			line_change_production_efficiency_factor = -0.05
 			research_speed_factor = -0.1
 			trade_laws_cost_factor = 0.2
+			hidden_modifier = {
+				power_balance_weekly = 0.0025
+			}
 			}
 		}
 	}
