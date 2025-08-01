@@ -6,6 +6,19 @@ technologies = {
 
 		research_cost = 1.5
 
+		fighter = {
+			reliability = 0.05
+		}
+		cas = {
+			reliability = 0.05
+		}
+		strat_bomber = {
+			reliability = 0.05
+		}
+		nav_bomber = {
+			reliability = 0.05
+		}
+
 		folder = {
 			name = air_techs_folder
 			position = { x = 11 y = 2 }
@@ -68,6 +81,19 @@ technologies = {
 		start_year = 1911
 
 		research_cost = 1.5
+
+		fighter = {
+			maximum_speed  = 0.05
+		}
+		cas = {
+			maximum_speed  = 0.05
+		}
+		strat_bomber = {
+			maximum_speed  = 0.05
+		}
+		nav_bomber = {
+			maximum_speed  = 0.05
+		}
 
 		folder = {
 			name = air_techs_folder
@@ -132,6 +158,19 @@ technologies = {
 
 		research_cost = 1.5
 
+		fighter = {
+			air_attack = 0.05
+		}
+		cas = {
+			air_attack = 0.05
+		}
+		strat_bomber = {
+			air_attack = 0.05
+		}
+		nav_bomber = {
+			air_attack = 0.05
+		}
+
 		folder = {
 			name = air_techs_folder
 			position = { x = 11 y = 6 }
@@ -195,6 +234,19 @@ technologies = {
 
 		research_cost = 1.5
 
+		fighter = {
+			build_cost_ic = -0.02
+		}
+		cas = {
+			build_cost_ic = -0.02
+		}
+		strat_bomber = {
+			build_cost_ic = -0.02
+		}
+		nav_bomber = {
+			build_cost_ic = -0.02
+		}
+
 		folder = {
 			name = air_techs_folder
 			position = { x = 9 y = 8 }
@@ -257,6 +309,19 @@ technologies = {
 		start_year = 1913
 
 		research_cost = 1.5
+
+		fighter = {
+			air_agility = 0.05
+		}
+		cas = {
+			air_agility = 0.05
+		}
+		strat_bomber = {
+			air_agility = 0.05
+		}
+		nav_bomber = {
+			air_agility = 0.05
+		}
 
 		folder = {
 			name = air_techs_folder
@@ -326,6 +391,9 @@ technologies = {
 
 		research_cost = 1.5
 
+			air_superiority_efficiency = 0.05
+		
+
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 10 }
@@ -389,6 +457,10 @@ technologies = {
 
 		research_cost = 1.5
 
+		fighter = {
+			maximum_speed = 0.05
+		}
+
 		folder = {
 			name = air_techs_folder
 			position = { x = 8 y = 10 }
@@ -451,6 +523,10 @@ technologies = {
 		start_year = 1914
 
 		research_cost = 1.5
+
+		fighter = {
+			air_attack = 0.05
+		}
 
 		folder = {
 			name = air_techs_folder
@@ -775,6 +851,12 @@ technologies = {
 		start_year = 1914
 
 		research_cost = 1.5
+
+		air_cas_present_factor = 0.07
+		air_nav_efficiency = 0.05
+		tac_bomber = {
+			air_bombing = 0.05
+		}
 
 		folder = {
 			name = air_techs_folder

@@ -577,27 +577,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    random_owned_controlled_state = { 
-	            limit = { industrial_complex > 0 }
-	            remove_building = { type = industrial_complex level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { industrial_complex > 0 }
-	            remove_building = { type = industrial_complex level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { industrial_complex > 0 }
-	            remove_building = { type = industrial_complex level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { industrial_complex > 0 }
-	            remove_building = { type = industrial_complex level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { industrial_complex > 0 }
-	            remove_building = { type = industrial_complex level = 1 }				
-            }
-			
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -760,26 +739,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    random_owned_controlled_state = { 
-	            limit = { arms_factory > 0 }
-	            remove_building = { type = arms_factory level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { arms_factory > 0 }
-	            remove_building = { type = arms_factory level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { arms_factory > 0 }
-	            remove_building = { type = arms_factory level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { arms_factory > 0 }
-	            remove_building = { type = arms_factory level = 1 }				
-            }
-			random_owned_controlled_state = { 
-	            limit = { arms_factory > 0 }
-	            remove_building = { type = arms_factory level = 1 }				
-            }
 			
 			random_owned_controlled_state = {
 				limit = {
