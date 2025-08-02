@@ -21,36 +21,96 @@ AUS_power_balance = {
 
 side = { # This is the left side of the power balance
 	id = AUS_left_side
-	icon = GFX_surrender_tiny_flag
+	icon = GFX_idea_aus_huns_mad
 
 	range = { # First range marker
 		id = AUS_left_half_side_range
 		min = -1
 		max = -0.5
+				modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				research_speed_factor = 0.1
+				economy_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
+
+				mobilization_laws_cost_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				training_time_factor = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
 	}
 
 	range = { # Second range marker
 		id = AUS_left_side_range
 		min = -0.5
 		max = 0
+				modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				research_speed_factor = 0.05
+				economy_cost_factor = -0.05
+				trade_laws_cost_factor = -0.05
+
+				mobilization_laws_cost_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+				training_time_factor = -0.05
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_start_efficiency_factor = 0.025
+			}
 	}
 }
 
 
 side = {
 	id = AUS_right_side
-	icon = GFX_surrender_tiny_flag
+	icon = GFX_idea_aus_huns_stronk
 
 	range = {
 		id = AUS_right_side_range
 		min = 0.0
 		max = 0.5
+				modifier = {
+				production_speed_infrastructure_factor = -0.05
+				production_speed_rail_way_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				research_speed_factor = -0.05
+				economy_cost_factor = 0.05
+				trade_laws_cost_factor = 0.05
+
+				mobilization_laws_cost_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				training_time_factor = 0.05
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				production_factory_start_efficiency_factor = -0.025
+			}
 	}
 
 	range = {
 		id = AUS_right_half_side_range
 		min = 0.5
 		max = 1.0
+				modifier = {
+				production_speed_infrastructure_factor = -0.1
+				production_speed_rail_way_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				research_speed_factor = -0.1
+				economy_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+
+				mobilization_laws_cost_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+				training_time_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+			}
 	}
 }
 
