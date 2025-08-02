@@ -780,11 +780,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_creation_of_kuk_luftfahrtruppen
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_ICE_hrafninn_flygur
 		x = 45
 		y = 2
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -794,11 +794,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppens_training_ground
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_air_bases
 		x = 45
 		y = 3
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_creation_of_kuk_luftfahrtruppen }
 
 		completion_reward = {
@@ -815,11 +815,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_give_allow_uzelac_free_space
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_aus_emil_uzelac
 		x = 45
 		y = 5
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
 
@@ -833,11 +833,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_detached_working_center
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_aircraft_production
 		x = 44
 		y = 4
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
 		completion_reward = {
@@ -863,11 +863,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_hungarian_training_center
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_HUN_establish_the_mavag_aircraft_factory
 		x = 46
 		y = 4
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
 		completion_reward = {
@@ -885,11 +885,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_dedicated_organisation
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_SOV_organize_wreckers
 		x = 44
 		y = 6
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 
 		completion_reward = {
@@ -902,18 +902,18 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_divert_money_towards
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_RAJ_institutional_money_laundering
 		x = 46
 		y = 6
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 
 		completion_reward = {
 				add_tech_bonus = {
 				name = GER_aeronautical_research_institute
 				bonus = 2
-				uses = 1
+				uses = 2
 				category = light_fighter
 			}
 		add_political_power = -250
@@ -922,11 +922,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_creation_of_first_fliks
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_aus_airforce_focus_wtf
 		x = 45
 		y = 7
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 		prerequisite = { focus = AUH_luftfahrtruppen_divert_money_towards }
 		prerequisite = { focus = AUH_luftfahrtruppen_dedicated_organisation }
@@ -941,11 +941,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_importance_of_recon
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_aus_recon
 		x = 44
 		y = 8
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
 
 		completion_reward = {
@@ -963,11 +963,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_in_need_of_engines
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_PER_feat_of_engineering
 		x = 46
 		y = 8
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
 		    available = {
       		has_tech = engines_1
@@ -982,11 +982,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_implement_basic_arms
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_SWE_let_fly_all_guns
 		x = 47
 		y = 9
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
 			available = {
       		has_tech = aa_hmg
@@ -1001,11 +1001,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_experiment_designs_shall_lead
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_copy_plane_designs
 		x = 43
 		y = 9
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
 
 		completion_reward = {
@@ -1020,11 +1020,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_luftfahrtruppen_zelacs_dream_reafirmed
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_AUS_osterreichische_luftstreitkrafte
 		x = 45
 		y = 10
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_luftfahrtruppen_experiment_designs_shall_lead }
 		prerequisite = { focus = AUH_luftfahrtruppen_implement_basic_arms }
 		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
@@ -1040,16 +1040,16 @@ focus_tree = {
 
 		focus = {
 		id = AUH_naval_rearnamnet
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_naval_discipline
 		x = 39
 		y = 2
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
 		add_ideas = auh_kuk_kriegsmarine
-		1025 = {
+		841 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
 		type = dockyard
@@ -1058,7 +1058,7 @@ focus_tree = {
 		}
 	}
 
-		1388 = {
+		852 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
 		type = dockyard
@@ -1067,7 +1067,7 @@ focus_tree = {
 		}
 	}
 
-		1043 = {
+		163 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
 		type = dockyard
@@ -1076,7 +1076,7 @@ focus_tree = {
 		}
 	}
 
-		1045 = {
+		103 = {
 		add_extra_state_shared_building_slots = 2
 		add_building_construction = {
 		type = dockyard
@@ -1089,11 +1089,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_study_of_submarines
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_generic_navy_submarine
 		x = 38
 		y = 3
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_naval_rearnamnet }
 		mutually_exclusive = {focus = AUH_focus_on_bigger_ships}
 
@@ -1108,11 +1108,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_give_uboots_greenlight
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_generic_navy_anti_submarine
 		x = 38
 		y = 4
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_study_of_submarines }
 
 		completion_reward = {
@@ -1126,11 +1126,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_focus_on_bigger_ships
-		icon = GFX_goal_equal_court
+		icon = GFX_goal_generic_navy_battleship
 		x = 40
 		y = 3
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_naval_rearnamnet }
 		mutually_exclusive = {focus = AUH_study_of_submarines}
 
@@ -1147,11 +1147,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_hotzendorf_doctrine_on_ships
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_generic_navy_battleship2
 		x = 40
 		y = 4
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_focus_on_bigger_ships }
 
 		completion_reward = {
@@ -1165,11 +1165,11 @@ focus_tree = {
 
 		focus = {
 		id = AUH_kuk_navy_support
-		icon = GFX_goal_equal_court
+		icon = GFX_focus_AUS_reestablish_austrian_navy
 		x = 39
 		y = 5
 
-		cost = 6
+		cost = 10
 		prerequisite = { focus = AUH_hotzendorf_doctrine_on_ships focus = AUH_give_uboots_greenlight }
 
 		completion_reward = {
