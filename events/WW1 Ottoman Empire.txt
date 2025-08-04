@@ -20,7 +20,7 @@ country_event = {
 			transfer_state = 661
 			transfer_state = 662
 			transfer_state = 663
-			transfer_state = 273
+
 		}
 		
 		every_country = {
@@ -96,7 +96,14 @@ country_event = {
 		TUR = {
 		    set_country_flag = TUR_balkan_war_lost_1
 			news_event = ww1_news.40
-		}
+				TUR = {
+					remove_ideas = {
+						 TUR_Lose_Balkan_War_Hurry1
+						 TUR_Lose_Balkan_War_Hurry2
+						 TUR_Lose_Balkan_War_Hurry3
+					}
+				}
+			}
 		every_country = {
 			limit = {
 				OR = {
@@ -230,7 +237,6 @@ country_event = {
 	option = {
 		name = ww1_ottoman.6.a
 		TUR = {
-		target = BUL
 		transfer_state = 341	
 		} 
 		ai_chance = {
@@ -248,5 +254,33 @@ country_event = {
 				target = BUL
 			}
 		}
+	}
+}
+country_event = {
+	id = ww1_ottoman.7
+	title = ww1_ottoman.7.t
+	desc = ww1_ottoman.7.t
+	picture = GFX_report_bulgar_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_turkey.7.a
+			complete_national_focus = TUR_Stay_With_Sultan
+	}
+
+		option = {
+		name = ww1_turkey.7.b
+			complete_national_focus = TUR_Young_Turk_Parti
+		}
+
+		option = {
+		name = ww1_turkey.7.c
+			complete_national_focus = TUR_Socialist_Parti
+	}
+
+		option = {
+		name = ww1_turkey.7.d
+			complete_national_focus = TUR_Federalists
 	}
 }
