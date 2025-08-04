@@ -246,6 +246,17 @@ ideas = {
 			}
 		}
 
+			AUH_never_shall_we_fall = {
+			picture = AUS_empire_restored
+			modifier = {
+			army_defence_against_major_factor = 0.05
+			army_attack_against_major_factor = 0.05
+			stability_weekly = 0.001
+			drift_defence_factor = 0.15
+			industrial_capacity_factory = 0.1
+			}
+		}
+
 			AUH_landtags_in_active_revolt_better = {
 			picture = landtags_in_revolt
 			modifier = {
@@ -442,6 +453,17 @@ ideas = {
 			army_defence_against_major_factor = 0.025
 			army_attack_against_major_factor = 0.025
 			weekly_casualties_war_support = 0.05
+			custom_modifier_tooltip = FIN_lotta_svard_support_battalions_bonus_tt
+			}
+		}
+
+			AUH_deutsche_ritter_ordnung_better = {
+			picture = auh_teutonic
+			modifier = {
+			war_support_factor = 0.075
+			army_defence_against_major_factor = 0.05
+			army_attack_against_major_factor = 0.05
+			weekly_casualties_war_support = 0.075
 			custom_modifier_tooltip = FIN_lotta_svard_support_battalions_bonus_tt
 			}
 		}
@@ -1213,7 +1235,62 @@ ideas = {
 			}
 			}
 		}
-	}
+			auh_kukindustries = {
+			picture = ghost_of_the_past
+			modifier = {
+			industrial_capacity_factory = 0.05
+			production_factory_efficiency_gain_factor = 0.075
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.075
+			production_speed_buildings_factor = 0.05
+			line_change_production_efficiency_factor = 0.075
+			research_speed_factor = 0.05
+			hidden_modifier = {
+					power_balance_weekly = 0.0025
+				}
+			}
+		}
+
+			auh_constitution = {
+			picture = HUN_old_hungary_reclaimed
+			modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+			political_advisor_cost_factor = -0.45
+			non_core_manpower = -0.1
+			hidden_modifier = {
+					power_balance_weekly = 0.001
+				}
+			}
+		}
+
+			auh_socialists = {
+			picture = FIN_finnish_federation_of_trade_unions
+			modifier = {
+			industrial_capacity_factory = 0.025
+			production_factory_efficiency_gain_factor = 0.025
+			production_factory_max_efficiency_factor = 0.025
+			production_factory_start_efficiency_factor = 0.025
+			production_speed_buildings_factor = 0.05
+			line_change_production_efficiency_factor = 0.025
+			consumer_goods_factor = 0.1
+
+			}
+		}
+
+			auh_socialists_better = {
+			picture = FIN_finnish_federation_of_trade_unions
+			modifier = {
+			industrial_capacity_factory = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			consumer_goods_factor = 0.125
+
+			}
+		}
 
 		industrial_concern = {
 
@@ -1228,6 +1305,5 @@ ideas = {
 			}
 		}
 	}
-
-	
+}
 }

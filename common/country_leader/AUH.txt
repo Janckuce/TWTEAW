@@ -26,6 +26,50 @@ leader_traits = {
 		political_power_factor = 0.05
 	}
 
+		kaiser_no_bitches = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.075
+		aus_push_power_balance_right = yes
+		political_power_factor = -0.1
+		non_core_manpower = -0.1
+		army_attack_factor = -0.025
+		army_defence_factor = -0.025
+		army_org_factor = -0.025
+
+	}
+
+		kaiser_socialist = {
+		random = no
+			consumer_goods_factor = -0.15
+			production_speed_buildings_factor = 0.05
+			political_advisor_cost_factor = -0.15
+			non_core_manpower = 0.25
+			stability_weekly = 0.001
+
+	}
+
+		kaiser_imperial = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		non_core_manpower = -0.2
+		army_attack_factor = 0.05
+		army_defence_factor = 0.025
+
+	}
+
+		kaiser_dual = {
+		random = no
+		political_power_factor = 0.05
+		attrition = -0.045
+		stability_weekly = 0.0015
+		industry_repair_factor = 0.2
+		research_speed_factor = 0.1
+
+
+	}
+
 		samuel_hazai = {
 		random = no
 		land_doctrine_cost_factor = -0.1

@@ -1,5 +1,7 @@
 add_namespace = austria_hungary
 add_namespace = ww1_austria
+add_namespace = AUS_monarchist
+
 
 country_event = {
 	id = austria_hungary.11
@@ -109,15 +111,9 @@ country_event = {
 		complete_national_focus = AUH_ohoh_hotzendorf_doctrine
 		activate_advisor =  auh_conrad_hotzendorff
 	}
-
 		option = {
 		name = "Leopold von Hauer"
 		complete_national_focus = AUH_hauer_cav_doctrine
-	}
-
-		option = {
-		name = "Actually, none, we believe in superiority of men"
-		complete_national_focus = AUH_mass_assault_doctrine
 	}
 }
 
@@ -125,7 +121,7 @@ country_event = {
 	id = austria_hungary.99
 	title = "Elections of 1911"
 	desc = austria_hungary.9.d
-	picture = GFX_winged_hussar
+	picture = GFX_aus_elections
 	is_triggered_only = yes
 
 	option = {
@@ -161,7 +157,7 @@ country_event = {
 	id = austria_hungary.111
 	title = "Death of our Father"
 	desc = austria_hungary.10.d
-	picture = GFX_winged_hussar
+	picture = GFX_karl_kaiser_ded
 	fire_only_once = yes
 
 		trigger = {
@@ -185,23 +181,28 @@ country_event = {
 country_event = {
 	id = austria_hungary.144
 	title = "Direction of our Future"
-	desc = austria_hungary.10.d
+	desc = austria_hungary.11.d
 	picture = GFX_winged_hussar
 	fire_only_once = yes
 
+		trigger = {
+		has_completed_focus = AUH_we_must_do
+	}
+
 	option = {
 		name = "For equality and socialism under Kaisers Watch!"
+		set_country_flag = karl_soc
+		set_cosmetic_tag = AUS_federation
 	}
 	option = {
 		name = "We Must not make the Hungarians mad, Keep the Quo!"
-	}
-
-		option = {
-		name = "Let's Federalize the Same way like USA did!"
+		set_country_flag = karl_dual
 	}
 
 		option = {
 		name = "Return to Tradition, Reject Modernity"
+		set_cosmetic_tag = AUS_monarchist
+		set_country_flag = karl_imper
 	}
 }
 
@@ -209,7 +210,7 @@ country_event = {
 	id = austria_hungary.155
 	title = "Very Important Decision"
 	desc = austria_hungary.10.d
-	picture = GFX_winged_hussar
+	picture = GFX_karl_kaiser_new
 	fire_only_once = yes
 
 		trigger = {
@@ -217,12 +218,62 @@ country_event = {
 	}
 
 	option = {
-		name = "Fuck the Mongoloids"
+		name = "Act Now, and Fast, no More Dualism!"
 		complete_national_focus = AUH_crowning_of_karl_in_vienna
+		add_political_power = -500
 	}
 	option = {
 		name = "Austria and Hungary, just like two brothers!"
 		complete_national_focus = AUH_crowning_of_karl_in_budapest
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = austria_hungary.166
+	title = "Talks with the Reichsrat"
+	desc = austria_hungary.166.d
+	picture = GFX_aus_reichsrat
+	fire_only_once = yes
+
+		trigger = {
+		has_completed_focus = AUH_test_of_the_reichsrat
+	}
+
+	option = {
+		name = "Well, that was something"
+	}
+}
+
+country_event = {
+	id = austria_hungary.177
+	title = "Evening with the Nobility"
+	desc = austria_hungary.177.d
+	picture = GFX_aus_high_class_support
+	fire_only_once = yes
+
+	option = {
+		name = "For Profits and Stability"
+	}
+
+		trigger = {
+		has_completed_focus = AUH_meeting_with_nobility
+	}
+}
+
+country_event = {
+	id = austria_hungary.188
+	title = "Army Does it's Moves"
+	desc = austria_hungary.188.d
+	picture = GFX_aus_karl_get_army
+	fire_only_once = yes
+
+		trigger = {
+		has_completed_focus = AUH_talks_with_the_army
+	}
+
+	option = {
+		name = "Neutrality is Welcomed"
 	}
 }
 
@@ -248,13 +299,6 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {
-		name = ww1_austria.2.b
-		
-		ai_chance = {
-			factor = 0
-		}
-	}
 }
 
 #WAR??!??
@@ -275,13 +319,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 100
-		}
-	}
-	option = {
-		name = ww1_austria.3.b
-		
-		ai_chance = {
-			factor = 0
 		}
 	}
 }

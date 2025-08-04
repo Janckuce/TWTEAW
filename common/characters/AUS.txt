@@ -1446,49 +1446,69 @@ AUH_karli = {
     name = "Karl I"
     country_leader = {
         desc = "AUH_Karl I_desc"
-		traits = { kaiser_franz_josef }
+		traits = { kaiser_no_bitches }
         expire = "1930.1.1"
         ideology = centrism
     }
 	    country_leader = {
         desc = "AUH_Karl I_desc"
-		traits = { kaiser_franz_josef }
+		traits = { kaiser_no_bitches }
         expire = "1930.1.1"
         ideology = rexism
     }
     portraits = {
         civilian = {
-            large = "gfx/leaders/AUH/AUH_karl_habsburg_gigachad_early.png"
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
         }
     }
 }
-
-AUH_viktorr_adlerrr = {
-    name = "Viktor Adler"
+AUH_karlii = {
+    name = "Karl I"
     country_leader = {
-        desc = "AUH_franzjosef_desc"
-		traits = { }
-        expire = "1995.1.1"
-        ideology = stalinism
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_imperial }
+        expire = "1930.1.1"
+        ideology = centrism
+    }
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_imperial }
+        expire = "1930.1.1"
+        ideology = rexism
     }
     portraits = {
         civilian = {
-            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
         }
     }
 }
 
-AUH_viktor_adlerr = {
-    name = "Viktor Adler"
-    country_leader = {
-        desc = "AUH_franzjosef_desc"
-		traits = { }
-        expire = "1995.1.1"
+AUH_karlii_dual = {
+    name = "Karl I"
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_dual }
+        expire = "1930.1.1"
         ideology = liberalism
     }
     portraits = {
         civilian = {
-            large = "gfx/leaders/AUH/AUH_franz_josef_kaiser.png"
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
+        }
+    }
+}
+
+AUH_karlii_soc = {
+    name = "Karl I"
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_socialist }
+        expire = "1930.1.1"
+        ideology = stalinism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
         }
     }
 }

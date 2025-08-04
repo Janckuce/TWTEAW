@@ -2106,7 +2106,7 @@ focus_tree = {
 
 	focus = {
 		id = AUH_son_of_the_empire
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_focus_aus_karl_leader
 		x = 20
 		y = 9
 
@@ -2129,7 +2129,7 @@ focus_tree = {
 }
 	focus = {
 		id = AUH_crowning_of_karl_in_vienna
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_focus_aus_crown_habsurg
 		x = 19
 		y = 10
 		prerequisite = { focus = AUH_son_of_the_empire }
@@ -2141,12 +2141,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
 		focus = {
 		id = AUH_crowning_of_karl_in_budapest
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_focus_aus_crown_hungarian
 		x = 21
 		y = 10
 		prerequisite = { focus = AUH_son_of_the_empire }
@@ -2158,12 +2159,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
 		focus = {
 		id = AUH_karls_dream_becoming_a_reality
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_focus_aus_start_changing_maps
 		x = 20
 		y = 11
 		prerequisite = { focus = AUH_son_of_the_empire }
@@ -2173,148 +2175,89 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-				country_event = {
-				id = austria_hungary.144
-				days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_question_of_our_way
-		icon = GFX_goal_empire_of_franz_josef
-		x = 20
-		y = 14
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
-		prerequisite = { focus = AUH_improve_life_in_gg }
-		prerequisite = { focus = AUH_open_up_imperial_industries }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.10
 		}
 	}
 
 		focus = {
 		id = AUH_test_of_the_reichsrat
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_focus_BEL_government_resigns
 		x = 18
 		y = 15
-		prerequisite = { focus = AUH_question_of_our_way }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_meeting_with_nobility
-		icon = GFX_goal_empire_of_franz_josef
-		x = 20
-		y = 15
-		prerequisite = { focus = AUH_question_of_our_way }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_talks_with_the_army
-		icon = GFX_goal_empire_of_franz_josef
-		x = 22
-		y = 15
-		prerequisite = { focus = AUH_question_of_our_way }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_we_must_do
-		icon = GFX_goal_empire_of_franz_josef
-		x = 20
-		y = 16
-		prerequisite = { focus = AUH_test_of_the_reichsrat }
-		prerequisite = { focus = AUH_meeting_with_nobility }
-		prerequisite = { focus = AUH_talks_with_the_army }
-		AUH_talks_with_the_army
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_support_eugens_group
-		icon = GFX_goal_empire_of_franz_josef
-		x = 21
-		y = 12
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_improve_life_in_gg
-		icon = GFX_goal_empire_of_franz_josef
-		x = 21
-		y = 13
-		prerequisite = { focus = AUH_support_eugens_group }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_give_out_titles
-		icon = GFX_goal_empire_of_franz_josef
-		x = 24
-		y = 12
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		}
-	}
-
-		focus = {
-		id = AUH_karls_reform_of_soldatenhausen
-		icon = GFX_goal_empire_of_franz_josef
-		x = 24
-		y = 13
 		prerequisite = { focus = AUH_give_out_titles }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+					country_event = {
+					id = austria_hungary.166
+					days = 1
+					}
 		}
 	}
 
 		focus = {
-		id = AUH_open_up_imperial_mines
-		icon = GFX_goal_empire_of_franz_josef
-		x = 19
+		id = AUH_meeting_with_nobility
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		x = 20
+		y = 15
+		prerequisite = { focus = AUH_give_out_titles }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			id = austria_hungary.177
+			days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_talks_with_the_army
+		icon = GFX_focus_AUS_bring_generals_out_of_retirement
+		x = 22
+		y = 15
+		prerequisite = { focus = AUH_give_out_titles }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			country_event = {
+			id = austria_hungary.188
+			days = 1
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_we_must_do
+		icon = GFX_focus_AUS_strengthen_legitimistische_corps
+		x = 20
+		y = 16
+		prerequisite = { focus = AUH_test_of_the_reichsrat }
+		prerequisite = { focus = AUH_meeting_with_nobility }
+		prerequisite = { focus = AUH_talks_with_the_army }
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+					country_event = {
+					id = austria_hungary.144
+					days = 1
+					}
+		}
+	}
+
+		focus = {
+		id = AUH_support_eugens_group
+		icon = GFX_focus_aus_eugen_group_better
+		x = 21
 		y = 12
 		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
 
@@ -2322,48 +2265,648 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = AUH_deutsche_ritter_ordnung
+				add_idea = AUH_deutsche_ritter_ordnung_better
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_improve_life_in_gg
+		icon = GFX_focus_AUS_an_improved_german_state
+		x = 21
+		y = 13
+		prerequisite = { focus = AUH_support_eugens_group }
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		available = {
+				107 = {
+				is_controlled_by = AUS
+			}
+		}
+
+		completion_reward = {
+				107 = {
+				add_compliance = 10
+			}
+				817 = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				add_compliance = 10
+			}
+				105 = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				add_compliance = 10
+			}
+				910 = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				add_compliance = 10
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_give_out_titles
+		icon = GFX_focus_generic_monarchist_workers
+		x = 20
+		y = 14
+		prerequisite = { focus = AUH_improve_life_in_gg }
+		prerequisite = { focus = AUH_open_up_imperial_industries }
+		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		add_political_power = 50
+		army_experience = 25
+		navy_experience = 25
+		air_experience = 25
+		add_war_support = 0.05
+		add_popularity = {
+   		ideology = fascism
+   		popularity = 0.025
+	}
+		add_popularity = {
+   		ideology = neutrality
+   		popularity = 0.075
+	}
+
+		}
+	}
+
+		focus = {
+		id = AUH_open_up_imperial_mines5
+		icon = GFX_focus_aus_bergwerke
+		x = 19
+		y = 12
+		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		available = {
+		has_idea = auh_ghostofthepast3
+		}
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = auh_ghostofthepast3
+				add_idea = auh_kukindustries
+			}
 		}
 	}
 
 		focus = {
 		id = AUH_open_up_imperial_industries
-		icon = GFX_goal_empire_of_franz_josef
+		icon = GFX_focus_generic_military_industry
 		x = 19
 		y = 13
-		prerequisite = { focus = AUH_open_up_imperial_mines }
+		prerequisite = { focus = AUH_open_up_imperial_mines5 }
 
-		cost = 5
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+				4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+				4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
 		}
 	}
 
 		focus = {
-		id = AUH_the_isonzo_defense_line
-		icon = GFX_goal_empire_of_franz_josef
-		x = 26
-		y = 12
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
+		id = AUH_dualism_stays
+		icon = GFX_focus_HUN_hungarian_tradition
+		x = 17
+		y = 17
+		prerequisite = { focus =  }
 
-		cost = 5
+			available = {
+			has_completed_focus = AUH_crowning_of_karl_in_budapest
+			has_country_flag = karl_dual
+		}
+
+		cost = 10
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_stability = 0.2
+			 set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
 		}
 	}
 
 		focus = {
-		id = AUH_more_humane_use_of_war_prisoners
-		icon = GFX_goal_empire_of_franz_josef
-		x = 26
-		y = 13
-		prerequisite = { focus = AUH_the_isonzo_defense_line }
+		id = AUH_return_to_tradition
+		icon = GFX_focus_AUS_proclaim_austrian_empire
+		x = 22
+		y = 17
+		prerequisite = { }
+
+		available = {
+			has_completed_focus = AUH_crowning_of_karl_in_vienna
+			has_country_flag = karl_imper
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		set_country_leader = AUH_karlii
+		kill_country_leader = yes
+		remove_power_balance = {
+    	id = AUS_power_balance
+		}
+		}
+	}
+
+		focus = {
+		id = AUH_idea_of_federation
+		icon = GFX_focus_AUS_the_right_to_self_determination
+		x = 28
+		y = 17
+		prerequisite = { }
+
+		available = {
+			has_completed_focus = AUH_crowning_of_karl_in_vienna
+			has_country_flag = karl_soc
+		}
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		set_country_leader = AUH_karlii
+		kill_country_leader = yes
+		remove_power_balance = {
+    	id = AUS_power_balance
+		}
+			add_popularity = {
+            ideology = communism
+            popularity = 0.1
+        }
+			set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_fight_against_the_clergy
+		icon = GFX_focus_AUS_austromarxism
+		x = 27
+		y = 18
+		prerequisite = { focus = AUH_idea_of_federation  }
 
 		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.05
+			add_popularity = {
+            ideology = communism
+            popularity = 0.25
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_reform_court_system
+		icon = GFX_focus_generic_court
+		x = 27
+		y = 19
+		prerequisite = { focus = AUH_fight_against_the_clergy  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_ideas = auh_socialists
+		}
+	}
+
+		focus = {
+		id = AUH_take_power_of_huns
+		icon = GFX_focus_generic_attack_hungary
+		x = 29
+		y = 18
+		prerequisite = { focus = AUH_idea_of_federation  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+
+		43 = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+		type = industrial_complex
+		level = 3
+		instant_build = yes
+		}
+	}
+		43 = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+		type = arms_factory
+		level = 1
+		instant_build = yes
+		}
+	}
+	add_stability = -0.075
+		}
+	}
+
+		focus = {
+		id = AUH_focus_on_peoples_needs
+		icon = GFX_focus_GER_the_peoples_victory
+		x = 29
+		y = 19
+		prerequisite = { focus = AUH_take_power_of_huns  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+				109 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+				853 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+
+				841 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+
+				88 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+				91 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_peoples_empire
+		icon = GFX_focus_AUS_bring_back_the_habsburg_rule
+		x = 28
+		y = 20
+		prerequisite = { focus = AUH_focus_on_peoples_needs  }
+		prerequisite = { focus = AUH_reform_court_system  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+				swap_ideas = {
+				remove_idea = auh_socialists
+				add_idea = auh_socialists_better
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_fight_against_austromarxism
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		x = 21
+		y = 18
+		prerequisite = { focus = AUH_return_to_tradition  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_popularity = {
+            ideology = democratic
+            popularity = -0.1
+        }
+			add_popularity = {
+            ideology = communism
+            popularity = -0.25
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_kaiserhaus_investments
+		icon = GFX_focus_generic_road_investment
+		x = 21
+		y = 19
+		prerequisite = { focus = AUH_fight_against_austromarxism  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+
+		4 = {
+		add_extra_state_shared_building_slots = 4
+		add_building_construction = {
+		type = arms_factory
+		level = 4
+		instant_build = yes
+		}
+	}
+		}
+	}
+
+		focus = {
+		id = AUH_no_germans_austrians
+		icon = GFX_focus_AUS_defence_of_the_homeland
+		x = 23
+		y = 18
+		prerequisite = { focus = AUH_return_to_tradition  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		add_stability = 0.025  
+		add_War_support = 0.05
+		9 = { 
+            add_core_of = AUS
+        }
+			75 = { 
+            add_core_of = AUS
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_no_minorities
+		icon = GFX_focus_generic_population_growth
+		x = 23
+		y = 19
+		prerequisite = { focus = AUH_no_germans_austrians  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		add_manpower = -95000
+
+		    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = -25000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = -10000
+        }
+			88 = { 
+            add_core_of = AUS
+        }
+					91 = { 
+            add_core_of = AUS
+        }
+					89 = { 
+            add_core_of = AUS
+        }
+			80 = { 
+            add_core_of = AUS
+        }
+					890 = { 
+            add_core_of = AUS
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_everyone_a_loyal_catholic
+		icon = GFX_focus_AUS_beyond_our_old_lands
+		x = 22
+		y = 20
+		prerequisite = { focus = AUH_kaiserhaus_investments  }
+		prerequisite = { focus = AUH_no_minorities  }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		add_ideas = AUH_never_shall_we_fall
+			92 = { 
+            add_claim_by = AUS
+        }
+					90 = { 
+            add_claim_by = AUS
+        }
+					10 = { 
+            add_claim_by = AUS
+        }
+					87 = { 
+            add_claim_by = AUS
+        }
+							98 = { 
+            add_claim_by = AUS
+        }
+							87 = { 
+            add_claim_by = AUS
+        }
+			159 = { 
+            add_claim_by = AUS
+        }
+			160 = { 
+            add_core_of = AUS
+        }
+			105 = { 
+            add_core_of = AUS
+        }
+			913 = { 
+            add_core_of = AUS
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_support_hungarian_parliament
+		icon = GFX_focus_HUN_establish_the_second_republic
+		x = 16
+		y = 18
+		prerequisite = { focus = AUH_dualism_stays }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+		add_political_power = 100
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.1
+        }
+		}
+	}
+
+		focus = {
+		id = AUH_blind_eye_on_hun_isue
+		icon = GFX_focus_HUN_carrying_on_arpads_legacy
+		x = 16
+		y = 19
+		prerequisite = { focus = AUH_support_hungarian_parliament }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_stability = -0.15
+				43 = {
+				add_compliance = 20
+			}
+				842 = {
+				add_compliance = 10
+			}
+				155 = {
+				add_compliance = 10
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_hun_stuff
+		icon = GFX_focus_HUN_szent_laszlo_infantry_division
+		x = 18
+		y = 18
+		prerequisite = { focus = AUH_dualism_stays }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+				70 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+
+				71 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					province = {
+						id = 11666
+					}
+				}
+			}
+		}
+	}
+	
+		focus = {
+		id = AUH_award_with_more_land
+		icon = GFX_focus_HUN_proclaim_greater_hungary
+		x = 18
+		y = 19
+		prerequisite = { focus = AUH_hun_stuff }
+
+		cost = 5
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+				109 = {
+				add_compliance = 10
+			}
+			912 = {
+				add_compliance = 10
+			}
+			103 = {
+				add_compliance = 10
+			}
+			104 = {
+				add_compliance = 10
+			}
+				804 = {
+				add_compliance = 10
+			}
+		}
+	}
+
+		focus = {
+		id = AUH_king_and_constitution
+		icon = GFX_focus_HUN_the_lands_of_the_crown_of_saint_stephen
+		x = 17
+		y = 20
+		prerequisite = { focus = AUH_award_with_more_land }
+		prerequisite = { focus = AUH_blind_eye_on_hun_isue }
+
+		cost = 10
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			add_ideas = auh_constitution
 		}
 	}
 }
