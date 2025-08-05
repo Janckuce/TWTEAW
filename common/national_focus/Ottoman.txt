@@ -537,7 +537,7 @@ focus_tree = {
 		id = TUR_Stay_With_Sultan
 		icon = GFX_focus_TUR_pivot_to_the_past
 		cost = 100000
-		x = 18
+		x = 17
 		y = 1
 		prerequisite = {
 			focus = TUR_Leadership_Issue
@@ -834,7 +834,6 @@ focus_tree = {
 				remove_idea = TUR_Sultan_coup4
 				add_idea = TUR_Sultan_Complete_Power
 			}
-			add_ideas = TUR_Meek_Sultan
 			add_ideas = TUR_People_Demand_Reform
 		 }
 	}
@@ -856,7 +855,7 @@ focus_tree = {
 		 }
 	}
 	focus = {
-		id = TUR_Gain_Confidence
+		id = TUR_Drill_Oil
 		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 7.2
 		relative_position_id = TUR_Stay_With_Sultan
@@ -866,9 +865,21 @@ focus_tree = {
 			focus = TUR_Sultan_Coup_Finish
 		}		
 		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_Meek_Sultan
-				add_idea = TUR_Proper_Sultan
+			add_ideas = TUR_Rich_Sultan
+			add_resource = {
+				type = oil
+				amount = 19
+				state = 291
+			}
+			add_resource = {
+				type = oil
+				amount = 16
+				state = 676
+			}
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 680
 			}
 		}
 	}
@@ -894,7 +905,7 @@ focus_tree = {
 		x = 1
 		y = 5
 		prerequisite = {
-			focus = TUR_Gain_Confidence
+			focus = TUR_Drill_Oil
 		}
 		prerequisite = {
 			focus = TUR_Sultan_Liberty
@@ -1001,7 +1012,7 @@ focus_tree = {
 			focus = TUR_Give_People_Want
 		}
 		prerequisite = {
-			focus = TUR_Gain_Confidence
+			focus = TUR_Drill_Oil
 		}
 		prerequisite = {
 			focus = TUR_Sultan_Liberty
