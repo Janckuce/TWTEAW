@@ -550,9 +550,10 @@ focus_tree = {
 		}
 	}
 	focus = {
+		#	Remembering The Revolution / Refrences Young Turk Revolution
 		id = TUR_Young_Turk_Parti
 		icon = GFX_focus_GER_anschluss
-		cost = 9999999999
+		cost = 6009.9
 		x = 22
 		y = 1
 		prerequisite = {
@@ -561,8 +562,185 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR_Stay_With_Sultan
 		}
-		completion_reward = { 
-			# Bookman said this was fine
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+    			popularity = 0.05
+			}
+			add_ideas = TUR_Remember_The_Revolution
+		}
+	}
+	focus = {
+		#	Young Turks Party Was Criticised For Pro-Turkish Ideology
+		id = TUR_Ignore_Criticism
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Remember_The_Revolution
+				add_idea = TUR_Remember_The_Revolution1
+			}
+		}
+	}
+	focus = {
+		#	Simple Build Up As Filler / Will Probably Replace
+		id = TUR_Arms_Factory
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+			add_ideas = TUR_Military_Empowerment
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		#	
+		id = TUR_Final_Preperation
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_Ignore_Criticism
+		}
+		prerequisite = {
+			focus = TUR_Arms_Factory
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Remember_The_Revolution1
+				add_idea = TUR_Remember_The_Revolution2
+			}
+		}
+	}
+	focus = {
+		#	1913 Ottoman coup d'état
+		id = TUR_Coup_D'etat
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Final_Preperation
+		x = 0
+		y = 1
+		available = {
+			date > 1913.1.1
+		}
+		prerequisite = {
+			focus = TUR_Final_Preperation
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_political_power = 50
+			army_experience = 20
+		}
+	}
+	focus = {
+		#	Enver Pasha Consolidates Power / Iron Man Enver Pasha Meme Reference
+		id = TUR_Consolidate_Power
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Coup_D'etat
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Coup_D'etat
+		}
+		completion_reward = {
+			remove_ideas = TUR_Remember_The_Revolution2
+			add_ideas = TUR_Iron_Pasha
+		}
+	}
+	focus = {
+		#	Army Bonus
+		id = TUR_Iron_Marshal
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Pilot
+			focus = TUR_Iron_Admiral
+		}
+		completion_reward = {
+			army_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Marshal
+			}
+		}
+	}
+	focus = {
+		#	Air Force Bonus
+		id = TUR_Iron_Pilot
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Admiral
+		}
+		completion_reward = {
+			air_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Pilot
+			}
+		}
+	}
+	focus = {
+		#	Navy Bonus / Meme
+		id = TUR_Iron_Admiral
+		icon = GFX_focus_GER_anschluss
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Pilot
+		}
+		completion_reward = {
+			navy_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Admiral
+			}
 		}
 	}
 }
