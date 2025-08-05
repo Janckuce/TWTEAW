@@ -141,9 +141,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_Military_academy
 		}
-		mutually_exclusive = {
-			focus = GER_Pick_Up_The_Pace
-		}
 		completion_reward = { 
 		add_tech_bonus = {
 				name = GER_artillery_research_1
@@ -157,9 +154,12 @@ focus_tree = {
 		id = GER_appease_Britain
 		icon = x
 		x = 6
-		y = 2.5
+		y = 2
 		prerequisite = {
 			focus = GER_address_military_situation
+		}
+		mutually_exclusive = {
+			focus = GER_Pick_Up_The_Pace
 		}
 		completion_reward = {
 			remove_ideas = GER_naval_arms_race
@@ -186,7 +186,7 @@ focus_tree = {
 			focus = GER_Naval_Race
 		}
 		mutually_exclusive = {
-			focus = GER_Appease_Britain
+			focus = GER_appease_Britain
 		}
 		completion_reward = {
 			
