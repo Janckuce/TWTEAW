@@ -80,4 +80,73 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_Naval_Race
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 8
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GER_Pick_Up_The_Pace
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Naval_Race
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Naval_Race
+		}
+		mutually_exclusive = {
+			focus = GER_Appease_Britain
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_No_Slacking_Off
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Pick_Up_The_Pace
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Pick_Up_The_Pace
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_Shortcut
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_No_Slacking_Off
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_No_Slacking_Off
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_Finish_Line
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Shortcut
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Shortcut
+		}
+		completion_reward = {
+			
+		}
+	}
 }
