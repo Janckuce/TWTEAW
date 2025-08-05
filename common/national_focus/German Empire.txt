@@ -24,6 +24,16 @@ focus_tree = {
 	reset_on_civilwar = no
 	
 	focus = {
+		id = GER_Our_Kaiser
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 15
+		y = 0
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
 		id = GER_Choose_Military_Strategy
 		icon = GFX_surrender_tiny_flag
 		cost = 10
@@ -76,6 +86,9 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = GER_neglected_military
@@ -127,9 +140,20 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_appease_Britain
 		}
-		completion_reward = { 
-			add_research_slot = 1
-			
+		completion_reward = {
+			add_ideas = GER_Prussian_Militarism
+			add_trait = {
+				character = GER_paul_von_hindenburg
+				trait = brilliant_strategist
+			}
+			add_trait = {
+				character = GER_erich_ludendorff
+				trait = brilliant_strategist
+			}
+			add_trait = {
+				character = GER_leopold_von_bayern
+				trait = brilliant_strategist
+			}
 		}
 	}
 	focus = {
@@ -171,6 +195,9 @@ focus_tree = {
 		cost = 10
 		x = 8
 		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -318,7 +345,7 @@ focus_tree = {
 			focus = GER_No_Slacking_Off
 		}
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = GER_Prussian_Naval_Combat
 		}
 	}
 	focus = {
@@ -344,8 +371,11 @@ focus_tree = {
 		id = GER_Newspaper_Propaganda
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		x = 24
+		x = 23
 		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		completion_reward = {
 			add_ideas = GER_Propaganda
 		}
@@ -448,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = GER_Aid_Austria
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 10
 		relative_position_id = GER_Trade_With_Our_Allies
 		x = 0
 		y = 1
@@ -456,8 +486,9 @@ focus_tree = {
 			focus = GER_Trade_With_Our_Allies
 		}
 		completion_reward = {
+			add_ideas = GER_Aid_For_Austria
 			AUS = {
-				add_political_power = 100
+				add_ideas = AUS_Aid_From_Germany
 			}
 		}
 	}
@@ -469,6 +500,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		bypass = {
 			#
 		}
@@ -869,10 +903,13 @@ focus_tree = {
 	focus = {
 		id = GER_heavy_armament_production
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 20
+		x = 19
 		y = 1
 		cost = 10
 
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		bypass = {
 			#
 		}
@@ -1061,7 +1098,7 @@ focus_tree = {
 		}
 		available = {
 		    has_war_with = FRA
-			date > 1917.1.1
+			date > 17.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}

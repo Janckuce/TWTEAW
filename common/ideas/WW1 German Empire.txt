@@ -535,5 +535,23 @@ ideas = {
 				trade_cost_for_target_factor = -0.1
 			}
 		}
+		GER_Aid_For_Austria = {
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		GER_Prussian_Militarism = {
+			modifier = {
+				army_org_factor = 0.05
+				experience_gain_army_unit_factor = 0.025
+			}
+		}
+		GER_Prussian_Naval_Combat = {
+			modifier = {
+				experience_gain_navy_unit_factor = 0.025
+				naval_critical_effect_factor = -0.05
+				naval_morale_factor = 0.05
+			}
+		}
 	}
 }
