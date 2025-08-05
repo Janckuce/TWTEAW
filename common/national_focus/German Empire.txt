@@ -448,7 +448,7 @@ focus_tree = {
 	focus = {
 		id = GER_Aid_Austria
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 10
 		relative_position_id = GER_Trade_With_Our_Allies
 		x = 0
 		y = 1
@@ -456,8 +456,9 @@ focus_tree = {
 			focus = GER_Trade_With_Our_Allies
 		}
 		completion_reward = {
+			add_ideas = GER_Aid_For_Austria
 			AUS = {
-				add_political_power = 100
+				add_ideas = AUS_Aid_From_Germany
 			}
 		}
 	}
