@@ -535,7 +535,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Stay_With_Sultan
-		icon = GFX_focus_generic_befriend_turkey
+		icon = GFX_focus_TUR_pivot_to_the_past
 		cost = 100000
 		x = 18
 		y = 1
@@ -552,7 +552,7 @@ focus_tree = {
 	focus = {
 		#	Remembering The Revolution / Refrences Young Turk Revolution
 		id = TUR_Young_Turk_Parti
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_tur_enver_pasha
 		cost = 6009.9
 		x = 24
 		y = 1
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {
 		#	Young Turks Party Was Criticised For Pro-Turkish Ideology
 		id = TUR_Ignore_Criticism
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_RAJ_just_good_business
 		cost = 10
 		relative_position_id = TUR_Young_Turk_Parti
 		x = 1
@@ -591,7 +591,7 @@ focus_tree = {
 	focus = {
 		#	Simple Build Up As Filler / Will Probably Replace
 		id = TUR_Arms_Factory
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_goal_generic_small_arms
 		cost = 10
 		relative_position_id = TUR_Young_Turk_Parti
 		x = -1
@@ -617,7 +617,7 @@ focus_tree = {
 	focus = {
 		#	
 		id = TUR_Final_Preperation
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_TUR_turanist_ambition
 		cost = 10
 		relative_position_id = TUR_Young_Turk_Parti
 		x = 0
@@ -638,7 +638,7 @@ focus_tree = {
 	focus = {
 		#	1913 Ottoman coup d'état
 		id = TUR_Coup_D_etat
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_POL_complete_april_constitution
 		cost = 10
 		relative_position_id = TUR_Final_Preperation
 		x = 0
@@ -661,7 +661,7 @@ focus_tree = {
 	focus = {
 		#	Enver Pasha Consolidates Power / Iron Man Enver Pasha Meme Reference
 		id = TUR_Consolidate_Power
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_generic_befriend_turkey
 		cost = 10
 		relative_position_id = TUR_Coup_D_etat
 		x = 0
@@ -677,7 +677,7 @@ focus_tree = {
 	focus = {
 		#	Army Bonus
 		id = TUR_Iron_Marshal
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_generic_full_social_mobilization
 		cost = 10
 		relative_position_id = TUR_Consolidate_Power
 		x = -2
@@ -700,7 +700,7 @@ focus_tree = {
 	focus = {
 		#	Air Force Bonus
 		id = TUR_Iron_Pilot
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_FIN_expand_air_force_academy
 		cost = 10
 		relative_position_id = TUR_Consolidate_Power
 		x = 2
@@ -723,7 +723,7 @@ focus_tree = {
 	focus = {
 		#	Navy Bonus / Meme
 		id = TUR_Iron_Admiral
-		icon = GFX_focus_GER_anschluss
+		icon = GFX_focus_PER_establish_the_navy
 		cost = 10
 		relative_position_id = TUR_Consolidate_Power
 		x = 0
@@ -745,7 +745,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Sultan_coup1
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_goal_generic_attack_allies
 		cost = 10
 		relative_position_id = TUR_Stay_With_Sultan
 		x = -1
@@ -773,7 +773,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Sultan_coup2
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_RAJ_a_policy_of_silence
 		cost = 10
 		relative_position_id = TUR_Stay_With_Sultan
 		x = 1
@@ -801,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Sultan_coup3
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_RAJ_the_legacy_of_babur
 		cost = 10
 		relative_position_id = TUR_Stay_With_Sultan
 		x = 0
@@ -821,7 +821,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Sultan_Coup_Finish
-		icon = GFX_focus_TUR_pivot_to_the_past
+		icon = GFX_focus_RAJ_seven_shackles
 		cost = 10
 		relative_position_id = TUR_Stay_With_Sultan
 		x = 0
@@ -857,7 +857,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Gain_Confidence
-		icon = GFX_focus_generic_workers
+		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 7.2
 		relative_position_id = TUR_Stay_With_Sultan
 		x = 0
@@ -874,7 +874,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Sultan_Liberty
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_positive_trade_relations
 		cost = 7.2
 		relative_position_id = TUR_Stay_With_Sultan
 		x = 2
@@ -888,7 +888,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_New_Caliph
-		icon = GFX_focus_TUR_turanist_ambition
+		icon = GFX_focus_PER_islamic_solidarity
 		cost = 7.2
 		relative_position_id = TUR_Stay_With_Sultan
 		x = 1
@@ -992,7 +992,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Defend_Against_Colonisers
-		icon = GFX_focus_generic_anti_tank_guns
+		icon = GFX_focus_generic_islamic_propaganda
 		cost = 5.8
 		relative_position_id = TUR_Stay_With_Sultan
 		x = -1
@@ -1012,7 +1012,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Naval_Reform1
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.2
 		x = -3
 		y = 1
@@ -1037,7 +1037,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Naval_Reform2
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.2
 		x = -1
 		y = 1
@@ -1062,7 +1062,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Overture
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_goal_continuous_naval_production
 		cost = 7.2
 		relative_position_id = TUR_Naval_Reform1
 		x = 1
@@ -1080,7 +1080,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_Purchase_Ships
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
 		relative_position_id = TUR_Overture
 		x = 0
