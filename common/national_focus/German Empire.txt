@@ -28,7 +28,7 @@ focus_tree = {
 		icon = GFX_surrender_tiny_flag
 		cost = 10
 		x = 4
-		y = 1
+		y = 4
 		completion_reward = { 
 			country_event = ww1_germany.19
 		}
@@ -66,5 +66,18 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GER_Defensive_idea
 		 }
+	}
+	focus = {
+		id = GER_address_military_situation
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 4
+		y = 1
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = GER_neglected_military
+				add_idea = GER_improving_military
+			}
+		}
 	}
 }
