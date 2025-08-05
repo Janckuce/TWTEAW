@@ -1172,6 +1172,22 @@ focus_tree = {
 	}
 }
 
+focus = {
+	id = SER_Exiled_Divisions
+	icon = GFX_focus_generic_military_industry
+	x = 13
+	y = 8
+	cost = 10
+	available = {
+		has_capitulated = yes
+		is_ally_with = ENG
+	}
+	search_filters = {}
+
+	completion_reward = {
+	}
+}
+
 continuous_focus_position = { x = 245 y = 999 }
 
 }

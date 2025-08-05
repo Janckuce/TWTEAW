@@ -1,0 +1,15 @@
+on_actions = {
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SER
+                    SER = {
+                        has_war_with = AUS
+                    }
+                }
+                load_oob = SER_Exile
+            }
+        }
+    }
+}
