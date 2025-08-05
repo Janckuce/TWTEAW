@@ -40,6 +40,24 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
+
+		GER_improving_military = {
+			modifier = {
+				training_time_army_factor = 0.2
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				army_org_factor = -0.1
+			}
+		}
+
+		GER_improving_military2 = {
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = -0.01
+				army_defence_factor = -0.01
+				army_org_factor = -0.05
+			}
+		}
 		
 		GER_won_1970_war = {
 
@@ -373,6 +391,34 @@ ideas = {
 		GER_Purchased_Ships = {
 			modifier = {
 				consumer_goods_factor = -0.15
+				}
+			}
+		GER_Fear_Of_Russia_Potential = {
+			allowed = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_war_with = RUS
+				}
+			}
+			modifier = {
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+		GER_offensive_idea = {
+			modifier = {
+				army_attack_factor = 0.025
+				army_attack_speed_factor = 0.05
+			}
+		}
+		GER_Defensive_idea = {
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.025
+				pocket_penalty = -0.2
 			}
 		}
 	}
