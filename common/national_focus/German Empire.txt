@@ -24,6 +24,16 @@ focus_tree = {
 	reset_on_civilwar = no
 	
 	focus = {
+		id = GER_Our_Kaiser
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 15
+		y = 0
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
 		id = GER_Choose_Military_Strategy
 		icon = GFX_surrender_tiny_flag
 		cost = 10
@@ -76,6 +86,9 @@ focus_tree = {
 		cost = 10
 		x = 4
 		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = GER_neglected_military
@@ -171,6 +184,9 @@ focus_tree = {
 		cost = 10
 		x = 8
 		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		completion_reward = {
 			random_owned_state = {
 				limit = {
@@ -344,8 +360,11 @@ focus_tree = {
 		id = GER_Newspaper_Propaganda
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		x = 24
+		x = 23
 		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		completion_reward = {
 			add_ideas = GER_Propaganda
 		}
@@ -470,6 +489,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		bypass = {
 			#
 		}
@@ -870,10 +892,13 @@ focus_tree = {
 	focus = {
 		id = GER_heavy_armament_production
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 20
+		x = 19
 		y = 1
 		cost = 10
 
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
 		bypass = {
 			#
 		}
@@ -1062,7 +1087,7 @@ focus_tree = {
 		}
 		available = {
 		    has_war_with = FRA
-			date > 1917.1.1
+			date > 17.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
