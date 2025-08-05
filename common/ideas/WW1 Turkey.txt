@@ -101,7 +101,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = GFX_goal_generic_army_doctrines
+			picture = tur_our_past
 
 			modifier = {
 				political_power_factor = -0.15
@@ -114,7 +114,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = GFX_goal_generic_army_doctrines
+			picture = tur_our_past
 			modifier = {
 				political_power_factor = -0.1
 				consumer_goods_expected_value = 0.05
@@ -126,7 +126,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = GFX_goal_generic_army_doctrines
+			picture = tur_our_past
 			modifier = {
 				political_power_factor = -0.1
 				consumer_goods_expected_value = 0.05
@@ -139,7 +139,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = GFX_goal_generic_army_doctrines
+			picture = tur_our_past
 			modifier = {
 				political_power_factor = -0.05
 				stability_factor = -0.1
@@ -151,7 +151,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = TUR_Extremely_Low_Literacy
+			picture = tur_cant_read
 			modifier = {
 				stability_factor = 0.3
 				research_speed_factor = -0.5
@@ -163,7 +163,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = TUR_Extremely_Low_Literacy
+			picture = tur_cant_read
 			modifier = {
 				stability_factor = 0.2
 				research_speed_factor = -0.25
@@ -175,7 +175,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = TUR_Low_Literacy
+			picture = tur_cant_read
 			modifier = {
 				industrial_capacity_factory = 0.05
 				research_speed_factor = -0.1
@@ -186,7 +186,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = TUR_Educated_Population
+			picture = tur_cant_read
 			modifier = {
 				industrial_capacity_factory = 0.1
 				research_speed_factor = 0.1
@@ -380,6 +380,7 @@ ideas = {
 				neutrality_drift = 0.1
 				political_power_cost = 0.05
 			}
+			picture = tur_sulat_coup
 		}
 		TUR_Sultan_coup1 = {
 			modifier = {
@@ -388,6 +389,7 @@ ideas = {
 				political_power_cost = 0.1
 				resistance_activity = 0.05
 			}
+			picture = tur_sulat_coup
 		}
 		TUR_Sultan_coup2 = {
 			modifier = {
@@ -397,6 +399,7 @@ ideas = {
 				drift_defence_factor = 0.1
 				war_support_factor = -0.05
 			}
+			picture = tur_sulat_coup
 		}
 		TUR_Sultan_coup3 = {
 			modifier = {
@@ -407,6 +410,7 @@ ideas = {
 				drift_defence_factor = 0.1
 				war_support_factor = -0.05
 			}
+			picture = tur_sulat_coup
 		}
 		TUR_Sultan_coup4 = {
 			modifier = {
@@ -417,6 +421,7 @@ ideas = {
 				drift_defence_factor = 0.15
 				war_support_factor = -0.1
 			}
+			picture = tur_sulat_coup
 		}
 		TUR_Sultan_Complete_Power = {
 			modifier = {
@@ -424,6 +429,7 @@ ideas = {
 				drift_defence_factor = 0.2
 				neutrality_drift = 0.25
 			}
+			picture = tur_sulat_coup
 		}
 		TUR_Meek_Sultan = {
 			modifier = {

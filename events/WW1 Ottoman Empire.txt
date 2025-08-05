@@ -259,18 +259,18 @@ country_event = {
 country_event = {
 	id = ww1_ottoman.7
 	title = ww1_ottoman.7.t
-	desc = ww1_ottoman.7.t
-	picture = GFX_report_bulgar_elections
+	desc = ww1_ottoman.7.d
+	picture = GFX_report_tur_enver
 
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_turkey.7.a
+		name = ww1_ottoman.7.a
 			complete_national_focus = TUR_Stay_With_Sultan
 	}
 
 		option = {
-		name = ww1_turkey.7.b
+		name = ww1_ottoman.7.b
 			complete_national_focus = TUR_Young_Turk_Parti
 		}
 }
