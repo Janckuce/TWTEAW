@@ -172,7 +172,18 @@ focus_tree = {
 		x = 8
 		y = 1
 		completion_reward = {
-
+			random_owned_state = {
+				limit = {
+					is_core_of = GER
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -291,6 +302,127 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 				category = ship_modules_tech
+			}
+		}
+	}
+	focus = {
+		id = GER_Newspaper_Propaganda
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 24
+		y = 1
+		completion_reward = {
+			add_ideas = GER_Propaganda
+		}
+	}
+	focus = {
+		id = GER_Media_Propaganda
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Newspaper_Propaganda
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Newspaper_Propaganda
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Propaganda
+				add_idea = GER_Propaganda1
+			}
+		}
+	}
+	focus = {
+		id = GER_Political_Gain
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Media_Propaganda
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GER_Media_Propaganda
+		}
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = GER_Command_Power_Addon
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Media_Propaganda
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GER_Media_Propaganda
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Propaganda1
+				add_idea = GER_Propaganda2
+			}
+		}
+	}
+	focus = {
+		id = GER_Prepare1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Media_Propaganda
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = GER_Political_Gain
+			focus = GER_Command_Power_Addon
+		}
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = GER_Prepare2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Media_Propaganda
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = GER_Political_Gain
+			focus = GER_Command_Power_Addon
+		}
+		completion_reward = {
+			add_ideas = GER_Prepare
+		}
+	}
+	focus = {
+		id = GER_Trade_With_Our_Allies
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Media_Propaganda
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = GER_Prepare1
+		}
+		prerequisite = {
+			focus = GER_Prepare2
+		}
+		completion_reward = {
+			add_ideas = GER_Trade_Treaty
+		}
+	}
+	focus = {
+		id = GER_Aid_Austria
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Trade_With_Our_Allies
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Trade_With_Our_Allies
+		}
+		completion_reward = {
+			AUS = {
+				add_political_power = 100
 			}
 		}
 	}
