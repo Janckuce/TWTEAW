@@ -274,3 +274,107 @@ country_event = {
 			complete_national_focus = TUR_Young_Turk_Parti
 		}
 }
+
+# Purchase British Battleships
+country_event = {
+	id = ww1_ottoman.8
+	title = ww1_ottoman.8.t
+	desc = ww1_ottoman.8.t
+	picture = GFX_report_bulgar_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.8.a
+		ai_chance = {
+			factor = 0
+		}
+		TUR = {
+			add_timed_idea = {
+				idea = TUR_Purchased_Ships
+				days = 360
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+					creator = "ENG" 
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+					creator = "ENG" 
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		ENG = {
+			add_timed_idea = {
+				idea = ENG_Purchased_Ships
+				days = 360
+			}
+		}
+	}
+
+	option = {
+		name = ww1_ottoman.8.b
+		ai_chance = {
+			factor = 0
+		}
+		GER = {
+			country_event = ww1_ottoman.9
+		}
+	}
+}
+
+# Purchase German Battleships
+country_event = {
+	id = ww1_ottoman.9
+	title = ww1_ottoman.9.t
+	desc = ww1_ottoman.9.t
+	picture = GFX_report_bulgar_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_ottoman.9.a
+		ai_chance = {
+			factor = 0
+		}
+		TUR = {
+			add_timed_idea = {
+				idea = TUR_Purchased_Ships
+				days = 360
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+					creator = "GER" 
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+					creator = "GER" 
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		GER = {
+			add_timed_idea = {
+				idea = GER_Purchased_Ships
+				days = 360
+			}
+		}
+	}
+}
