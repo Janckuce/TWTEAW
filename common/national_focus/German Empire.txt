@@ -206,6 +206,41 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_unrestricted_submarine_warfare
+		icon = GFX_focus_german_submarine
+		prerequisite = {
+			focus = GER_No_Slacking_Off
+		}
+		x = 12
+		y = 4
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_war_with = ENG 
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    hidden_effect = {
+			    news_event = ww1_news.31
+			}
+			add_timed_idea = {
+				idea = GER_unrestricted_submarine_warfare_idea
+				days = 365
+			}
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+	
 	focus = {
 		id = GER_Shortcut
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -294,4 +329,623 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_rhineland_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    840 = { #Ruhr
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			51 = { #Rhineland
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_chromium_mines
+		icon = GFX_focus_generic_mining_industry
+		relative_position_id = GER_rhineland_plan
+		prerequisite = {
+			focus = GER_rhineland_plan
+		}
+		x = -1
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			857 = { #Saarland
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_tungsten_exploitation
+		icon = GFX_focus_generic_tungsten
+		relative_position_id = GER_rhineland_plan
+		prerequisite = {
+			focus = GER_chromium_mines
+		}
+		x = -2
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = ROOT
+				}
+				add_resource = {
+					type = tungsten
+					amount = 15
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_infrastructure_construction
+		icon = GFX_goal_generic_production2
+		relative_position_id = GER_rhineland_plan
+		prerequisite = {
+			focus = GER_rhineland_plan
+		}
+		x = 1
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			51 = { #Rhineland
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_railway_innovations
+		icon = GFX_focus_generic_railroad
+		prerequisite = {
+			focus = GER_infrastructure_construction
+		}
+		x = 16
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_political_power = 50
+			
+			54 = { #Franken
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			60 = { #Thuringen
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			59 = { #Hannover
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			927 = { #Brandenburg
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			64 = { #Berlin
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_east_prussia_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = {
+			focus = GER_chromium_mines
+		}
+		prerequisite = {
+			focus = GER_infrastructure_construction
+		}
+		x = 0
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 7
+		}
+		relative_position_id = GER_rhineland_plan
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    763 = { #Ostpreußen
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_research_slot_2
+		icon = GFX_focus_research
+		relative_position_id = GER_railway_innovations
+		prerequisite = {
+			focus = GER_east_prussia_plan
+		}
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	
+	focus = {
+		id = GER_reorganize_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		relative_position_id = GER_east_prussia_plan
+		prerequisite = {
+			focus = GER_research_slot_2
+		}
+		x = 0
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 7
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    188 = { #Memel
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_koln_airport
+		icon = GFX_goal_generic_air_fighter
+		relative_position_id = GER_rhineland_plan
+		prerequisite = {
+			focus = GER_reorganize_civilian_industry
+		}
+		x = 0
+		y = 5
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 8
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			51 = { #Rhineland
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_heavy_armament_production
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 20
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+			ai_will_do = {
+			factor = 6
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    5 = { #Ermland-Masuren
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_invest_in_military
+		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = GER_heavy_armament_production
+		prerequisite = {
+			focus = GER_heavy_armament_production
+		}
+		x = 0
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    65 = { #Sachsen
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_ruhr_factories
+		icon = GFX_focus_generic_reorient_production
+		relative_position_id = GER_heavy_armament_production
+		prerequisite = {
+			focus = GER_invest_in_military
+		}
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    840 = { #Ruhr
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_hindenburg_programme
+		icon = GFX_goal_generic_production
+		relative_position_id = GER_heavy_armament_production
+		prerequisite = {
+			focus = GER_ruhr_factories
+		}
+		prerequisite = {
+			focus = GER_berlin_small_arms_industry
+		}
+		x = -0
+		y = 3
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_war = yes
+		}
+		ai_will_do = {
+			factor = 4
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = GER_quality_gun_control
+				add_idea = GER_quality_gun_control_2
+			}
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = GER_berlin_small_arms_industry
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = GER_heavy_armament_production
+		prerequisite = {
+			focus = GER_invest_in_military
+		}
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    64 = { #Berlin
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_ludendorff_offensive
+		icon = GFX_focus_germany_prosper
+		x = 1
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = GER_finish_military_reforms
+		}
+		bypass = {
+			#
+		}
+		available = {
+		    has_war_with = FRA
+			date > 1917.1.1
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    hidden_effect = {
+			    news_event = ww1_news.43
+			}
+			add_timed_idea = {
+				idea = GER_ludendorff_offensive_idea
+				days = 60
+			}
+			add_war_support = 0.1
+		}
+	}
+	
 }
