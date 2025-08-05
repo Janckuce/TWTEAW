@@ -370,9 +370,37 @@ ideas = {
 				war_support_factor = 1
 			}
 		}
+<<<<<<< Updated upstream
 		GER_Purchased_Ships = {
 			modifier = {
 				consumer_goods_factor = -0.15
+=======
+		GER_Fear_Of_Russia_Potential = {
+			allowed = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_war_with = RUS
+				}
+			}
+			modifier = {
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		GER_offensive_idea = {
+			modifier = {
+				army_attack_factor = 0.025
+				army_attack_speed_factor = 0.05
+			}
+		}
+		GER_Defensive_idea = {
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.025
+				pocket_penalty = -0.2
+>>>>>>> Stashed changes
 			}
 		}
 	}
