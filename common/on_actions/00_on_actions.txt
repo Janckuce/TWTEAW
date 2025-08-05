@@ -81,26 +81,35 @@ on_actions = {
             if = {
                 limit = {
                     GER = {
+                        AND = {
                         has_war_with = FRA
                         has_war_with = BEL
                         has_war_with = ENG
                         has_completed_focus = GER_schlieffen_moltke_plan_idea
+                        }
                     }
                 }
-            }
-            GER = {
-                add_ideas =  GER_schlieffen_moltke_plan_idea
+                GER = {
+                    add_ideas = GER_schlieffen_moltke_plan_idea
+                }
             }
         }
+    }
+    on_war = {
         effect = {
             if = {
                 limit = {
                     GER = {
+                        AND = {
                         has_war_with = FRA
                         has_war_with = BEL
                         has_war_with = ENG
                         has_completed_focus = GER_Helmuth_von_Moltke
+                        }
                     }
+                }
+                GER = {
+                    add_ideas = GER_Helmuth_Plan
                 }
             }
         }

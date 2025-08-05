@@ -159,7 +159,7 @@ focus_tree = {
 			focus = GER_address_military_situation
 		}
 		mutually_exclusive = {
-			focus = GER_Pick_Up_The_Pace
+			focus = GER_Commit_To_The_Race
 		}
 		completion_reward = {
 			remove_ideas = GER_naval_arms_race
@@ -180,16 +180,13 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = GER_Naval_Race
-		x = 0
+		x = 2
 		y = 1
 		prerequisite = {
 			focus = GER_Naval_Race
 		}
-		mutually_exclusive = {
-			focus = GER_appease_Britain
-		}
 		completion_reward = {
-			
+			add_ideas = GER_Speed_Up
 		}
 	}
 	focus = {
@@ -203,7 +200,10 @@ focus_tree = {
 			focus = GER_Pick_Up_The_Pace
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = GER_Speed_Up
+				add_idea = GER_Speed_Up1
+			}
 		}
 	}
 	focus = {
@@ -217,7 +217,10 @@ focus_tree = {
 			focus = GER_No_Slacking_Off
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = GER_Speed_Up1
+				add_idea = GER_Speed_Up2
+			}
 		}
 	}
 	focus = {
@@ -231,6 +234,64 @@ focus_tree = {
 			focus = GER_Shortcut
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Speed_Up2
+				add_idea = GER_Speed_Up3
+			}
+		}
+	}
+	focus = {
+		id = GER_Commit_To_The_Race
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Naval_Race
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Naval_Race
+		}
+		mutually_exclusive = {
+			focus = GER_appease_Britain
+		}
+		completion_reward = {
+			remove_ideas = GER_naval_arms_race
+			add_ideas = GER_naval_arms_race_2
+		}
+	}
+	focus = {
+		id = GER_Naval_Academy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Commit_To_The_Race
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = GER_Commit_To_The_Race
+		}
+		prerequisite = {
+			focus = GER_No_Slacking_Off
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = GER_Naval_Research
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Naval_Academy
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Naval_Academy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_Naval_Research_1
+				bonus = 1
+				uses = 2
+				category = ship_modules_tech
+			}
 		}
 	}
 }
