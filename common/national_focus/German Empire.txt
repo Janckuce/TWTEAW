@@ -27,8 +27,11 @@ focus_tree = {
 		id = GER_Choose_Military_Strategy
 		icon = GFX_surrender_tiny_flag
 		cost = 10
-		x = 4
+		x = 3
 		y = 4
+		prerequisite = {
+			focus = GER_finish_military_reforms
+		}
 		completion_reward = { 
 			country_event = ww1_germany.19
 		}
@@ -81,6 +84,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+<<<<<<< Updated upstream
 		id = GER_Naval_Race
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
@@ -147,6 +151,87 @@ focus_tree = {
 		}
 		completion_reward = {
 			
+=======
+		id = GER_Start_Military_Reforms
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = GER_address_military_situation
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_improving_military
+				add_idea = GER_improving_military2
+			}
+		 }
+	}
+	focus = {
+		id = GER_finish_military_reforms
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = GER_Start_Military_Reforms
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_improving_military2
+				add_idea = GER_improving_military3
+			}
+		 }
+	}
+	focus = {
+		id = GER_Military_academy
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = GER_finish_military_reforms
+		}
+		prerequisite = {
+			focus = GER_appease_Britain
+		}
+		completion_reward = { 
+			add_research_slot = 1
+			
+		}
+	}
+	focus = {
+		id = GER_Infantry_research
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = GER_Military_academy
+		}
+		mutually_exclusive = {
+			focus = GER_Pick_Up_The_Pace
+		}
+		completion_reward = { 
+		add_tech_bonus = {
+				name = GER_artillery_research_1
+				bonus = 1
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = GER_appease_Britain
+		icon = x
+		x = 6
+		y = 2.5
+		prerequisite = {
+			focus = GER_address_military_situation
+		}
+		completion_reward = {
+			remove_ideas = GER_naval_arms_race
+>>>>>>> Stashed changes
 		}
 	}
 }
