@@ -653,8 +653,23 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			add_political_power = 50
-			army_experience = 20
+			army_experience = 80
+		}
+	}
+	focus = {
+		#	Armenian Genocide
+		id = TUR_Wash_Our_Lands
+		icon = GFX_focus_POL_complete_april_constitution
+		cost = 10
+		relative_position_id = TUR_Coup_D_etat
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = TUR_Coup_D_etat
+		}
+		completion_reward = {
+			add_manpower = -100000
+			add_war_support = 0.35
 		}
 	}
 	focus = {
