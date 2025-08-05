@@ -191,7 +191,7 @@ focus_tree = {
 			focus = TUR_Sick_man_europe_3
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		x = 6
+		x = 5
 		y = 3
 		completion_reward = {
 			random_owned_state = {
@@ -208,11 +208,28 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = TUR_Economic_Alliance_Bulgaria
+		icon = GFX_focus_generic_befriend_bulgaria
+		cost = 10
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = TUR_Sick_man_europe_2
+			focus = TUR_Sick_man_europe_3
+		}
+		completion_reward = {
+			BUL = {
+				country_event = ww1_ottoman.10
+			}
+		 }
+	}
+	focus = {
 		id = TUR_Forced_Nationalisation
 		icon = GFX_focus_generic_industrialists
 		cost = 7.2
 		prerequisite = {
 			focus = TUR_give_mills_pls
+			focus = TUR_Economic_Alliance_Bulgaria
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		mutually_exclusive = {
@@ -245,6 +262,7 @@ focus_tree = {
 		cost = 7.2
 		prerequisite = {
 			focus = TUR_give_mills_pls
+			focus = TUR_Economic_Alliance_Bulgaria
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		mutually_exclusive = {
