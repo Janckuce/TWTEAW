@@ -140,9 +140,20 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_appease_Britain
 		}
-		completion_reward = { 
-			add_research_slot = 1
-			
+		completion_reward = {
+			add_ideas = GER_Prussian_Militarism
+			add_trait = {
+				character = GER_paul_von_hindenburg
+				trait = brilliant_strategist
+			}
+			add_trait = {
+				character = GER_erich_ludendorff
+				trait = brilliant_strategist
+			}
+			add_trait = {
+				character = GER_leopold_von_bayern
+				trait = brilliant_strategist
+			}
 		}
 	}
 	focus = {
@@ -334,7 +345,7 @@ focus_tree = {
 			focus = GER_No_Slacking_Off
 		}
 		completion_reward = {
-			add_research_slot = 1
+			add_ideas = GER_Prussian_Naval_Combat
 		}
 	}
 	focus = {
