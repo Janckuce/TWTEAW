@@ -375,5 +375,106 @@ ideas = {
 				army_org_regain = -0.08
 			}
 		}
+		TUR_Sultan_coup_start = {
+			modifier = {
+				stability_factor = -0.05
+				neutrality_drift = 0.1
+				political_power_cost = 0.05
+			}
+		}
+		TUR_Sultan_coup1 = {
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = 0.2
+				political_power_cost = 0.1
+				resistance_activity = 0.05
+			}
+		}
+		TUR_Sultan_coup2 = {
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = 0.1
+				political_power_cost = 0.05
+				drift_defence_factor = 0.1
+				war_support_factor = -0.05
+			}
+		}
+		TUR_Sultan_coup3 = {
+			modifier = {
+				stability_factor = -0.15
+				neutrality_drift = 0.2
+				political_power_cost = 0.1
+				resistance_activity = 0.05
+				drift_defence_factor = 0.1
+				war_support_factor = -0.05
+			}
+		}
+		TUR_Sultan_coup4 = {
+			modifier = {
+				stability_factor = -0.25
+				neutrality_drift = 0.25
+				political_power_cost = 0.15
+				resistance_activity = 0.1
+				drift_defence_factor = 0.15
+				war_support_factor = -0.1
+			}
+		}
+		TUR_Sultan_Complete_Power = {
+			modifier = {
+				political_power_factor = 0.15
+				drift_defence_factor = 0.2
+				neutrality_drift = 0.25
+			}
+		}
+		TUR_Meek_Sultan = {
+			modifier = {
+				political_power_cost = 0.05
+				war_support_factor = -0.05
+				resistance_activity = 0.05
+			}
+		}
+		TUR_People_Demand_Reform = {
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				resistance_activity = 0.2
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		TUR_People_Satified = {
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				resistance_activity = -0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		TUR_Proper_Sultan = {
+			modifier = {
+				industrial_capacity_factory = 0.15
+				resistance_activity = -0.2
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		TUR_Give_Liberties = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		TUR_Muslim_Unity = {
+			modifier = {
+				resistance_activity = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		TUR_Defend_Against_Colonisers = {
+			modifier = {
+				army_core_defence_factor = 0.15
+			}
+		}
 	}
 }

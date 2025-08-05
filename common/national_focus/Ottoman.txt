@@ -546,7 +546,7 @@ focus_tree = {
 			focus = TUR_Young_Turk_Parti
 		}
 		completion_reward = {
-		#	screw you no
+		add_ideas = TUR_Sultan_coup_start
 		}
 	}
 	focus = {
@@ -554,7 +554,7 @@ focus_tree = {
 		id = TUR_Young_Turk_Parti
 		icon = GFX_focus_GER_anschluss
 		cost = 6009.9
-		x = 22
+		x = 24
 		y = 1
 		prerequisite = {
 			focus = TUR_Leadership_Issue
@@ -637,7 +637,7 @@ focus_tree = {
 	}
 	focus = {
 		#	1913 Ottoman coup d'état
-		id = TUR_Coup_D'etat
+		id = TUR_Coup_D_etat
 		icon = GFX_focus_GER_anschluss
 		cost = 10
 		relative_position_id = TUR_Final_Preperation
@@ -663,11 +663,11 @@ focus_tree = {
 		id = TUR_Consolidate_Power
 		icon = GFX_focus_GER_anschluss
 		cost = 10
-		relative_position_id = TUR_Coup_D'etat
+		relative_position_id = TUR_Coup_D_etat
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = TUR_Coup_D'etat
+			focus = TUR_Coup_D_etat
 		}
 		completion_reward = {
 			remove_ideas = TUR_Remember_The_Revolution2
@@ -742,5 +742,272 @@ focus_tree = {
 				add_idea = TUR_Iron_Admiral
 			}
 		}
+	}
+	focus = {
+		id = TUR_Sultan_coup1
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TUR_Stay_With_Sultan
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = TUR_Sultan_coup2
+				} 
+				swap_ideas = {
+					remove_idea = TUR_Sultan_coup2
+					add_idea = TUR_Sultan_coup3
+				}
+			}
+			else = {
+				swap_ideas = {
+				remove_idea = TUR_Sultan_coup_start
+				add_idea = TUR_Sultan_coup1
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_coup2
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TUR_Stay_With_Sultan
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = TUR_Sultan_coup1
+				} 
+				swap_ideas = {
+					remove_idea = TUR_Sultan_coup1
+					add_idea = TUR_Sultan_coup3
+				}
+			}
+			else = {
+				swap_ideas = {
+				remove_idea = TUR_Sultan_coup_start
+				add_idea = TUR_Sultan_coup2
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_coup3
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_Sultan_coup1
+		}
+		prerequisite = {
+			focus = TUR_Sultan_coup2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sultan_coup3
+				add_idea = TUR_Sultan_coup4
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_Coup_Finish
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = TUR_Sultan_coup3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sultan_coup4
+				add_idea = TUR_Sultan_Complete_Power
+			}
+			add_ideas = TUR_Meek_Sultan
+			add_ideas = TUR_People_Demand_Reform
+		 }
+	}
+	focus = {
+		id = TUR_Give_People_Want
+		icon = GFX_focus_generic_court
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -2
+		y = 4
+		prerequisite = {
+			focus = TUR_Sultan_Coup_Finish
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_People_Demand_Reform
+				add_idea = TUR_People_Satified
+			}
+		 }
+	}
+	focus = {
+		id = TUR_Gain_Confidence
+		icon = GFX_focus_generic_workers
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = TUR_Sultan_Coup_Finish
+		}		
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = TUR_Meek_Sultan
+				add_idea = TUR_Proper_Sultan
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_Liberty
+		icon = GFX_goal_support_democracy
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = TUR_Sultan_Coup_Finish
+		}
+		completion_reward = {
+			add_ideas = TUR_Give_Liberties
+		}
+	}
+	focus = {
+		id = TUR_New_Caliph
+		icon = GFX_focus_TUR_turanist_ambition
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 1
+		y = 5
+		prerequisite = {
+			focus = TUR_Gain_Confidence
+		}
+		prerequisite = {
+			focus = TUR_Sultan_Liberty
+		}
+		prerequisite = {
+			focus = TUR_Give_People_Want
+		}
+		completion_reward = {
+			add_ideas = TUR_Muslim_Unity
+			677 = {
+				add_core_of = TUR
+			}
+			680 = {
+				add_core_of = TUR
+			}
+			676 = {
+				add_core_of = TUR
+			}
+			291 = {
+				add_core_of = TUR
+			}
+			554 = {
+				add_core_of = TUR
+			}
+			553 = {
+				add_core_of = TUR
+			}
+			454 = {
+				add_core_of = TUR
+			}
+			455 = {
+				add_core_of = TUR
+			}
+			922 = {
+				add_core_of = TUR
+			}
+			293 = {
+				add_core_of = TUR
+			}
+			659 = {
+				add_core_of = TUR
+			}
+			294 = {
+				add_core_of = TUR
+			}
+			658 = {
+				add_core_of = TUR
+			}
+			765 = {
+				add_core_of = TUR
+			}
+			656 = {
+				add_core_of = TUR
+			}
+			675 = {
+				add_core_of = TUR
+			}
+			921 = {
+				add_core_of = TUR
+			}
+			679 = {
+				add_core_of = TUR
+			}
+			292 = {
+				add_core_of = TUR
+			}
+			678 = {
+				add_core_of = TUR
+			}
+			453 = {
+				add_core_of = TUR
+			}
+			446 = {
+				add_core_of = TUR
+			}
+			907 = {
+				add_core_of = TUR
+			}
+			447 = {
+				add_core_of = TUR
+			}
+			452 = {
+				add_core_of = TUR
+			}
+			457 = {
+				add_core_of = TUR
+			}
+			456 = {
+				add_core_of = TUR
+			}
+			44 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUR_Defend_Against_Colonisers
+		icon = GFX_focus_generic_anti_tank_guns
+		cost = 5.8
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -1
+		y = 5
+		prerequisite = {
+			focus = TUR_Give_People_Want
+		}
+		prerequisite = {
+			focus = TUR_Gain_Confidence
+		}
+		prerequisite = {
+			focus = TUR_Sultan_Liberty
+		}
+		completion_reward = {
+			add_ideas = TUR_Defend_Against_Colonisers
+		 }
 	}
 }
