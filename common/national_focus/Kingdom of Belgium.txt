@@ -19,4 +19,501 @@ focus_tree = {
 	}
 
 	default = no
+
+	focus = {
+		id = BEL_The_King's_Nation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 10
+		y = 0
+		completion_reward = {
+			add_ideas = BEL_Outrage_Over_Congolese_Treatment
+		}
+	}
+	focus = {
+		id = BEL_Industrial1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_The_King's_Nation
+		x = -8
+		y = 1
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			34 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Industrial2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Industrial1
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			6 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Industrial1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Industrial1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Industrial1
+			focus = BEL_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Industrial2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Industrial1
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = BEL_Industrial1
+			focus = BEL_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Iron_Mines
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Congo_Industrial1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Congo_Industrial1
+		}
+		prerequisite = {
+			focus = BEL_Congo_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_resource = {
+					type = steel
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Rubber_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Congo_Industrial1
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = BEL_Congo_Industrial1
+		}
+		prerequisite = {
+			focus = BEL_Congo_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_resource = {
+					type = rubber
+					amount = 7
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Infrastructure
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = BEL_Congo_Iron_Mines
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BEL_Congo_Iron_Mines
+		}
+		prerequisite = {
+			focus = BEL_Congo_Rubber_Production
+		}
+		completion_reward = {
+			295 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Research_Slot
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Congo_Infrastructure
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Congo_Infrastructure
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BEL_Belgium_Military
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_The_King's_Nation
+		x = -4
+		y = 1
+		mutually_exclusive = {
+			focus = BEL_Congo_Military
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			34 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Belgium_Defense1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Belgium_Military
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Belgium_Military
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = land_doctrine
+				uses = 2
+			}
+			34 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Belgium_Defense2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Belgium_Defense1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Belgium_Defense1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_tech
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Military
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Belgium_Military
+		x = 2
+		y = 0
+		mutually_exclusive = {
+			focus = BEL_Belgium_Military
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			295 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Defense1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Congo_Military
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Congo_Military
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = cat_mountaineers_doctrine
+				uses = 2
+			}
+			295 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Defense2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Congo_Defense1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Congo_Defense1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mountaineers_tech
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Military_Defense
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Belgium_Defense2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BEL_Belgium_Defense2
+		}
+		prerequisite = {
+			focus = BEL_Congo_Defense2
+		}
+		completion_reward = {
+			add_ideas = BEL_Military_Investment
+		}
+	}
+	focus = {
+		id = BEL_Loyal_To_The_King
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = BEL_The_King's_Nation
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			add_trait = {
+				trait = BEL_Honourable_King
+				character = BEL_albert_I
+			}
+		}
+	}
+	focus = {
+		id = BEL_French_Language
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Loyal_To_The_King
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = BEL_Dutch_Language
+		}
+		prerequisite = {
+			focus = BEL_Loyal_To_The_King
+		}
+		completion_reward = {
+			add_ideas = BEL_French_Primacy
+		}
+	}
+	focus = {
+		id = BEL_Dutch_Language
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Loyal_To_The_King
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = BEL_French_Language
+		}
+		prerequisite = {
+			focus = BEL_Loyal_To_The_King
+		}
+		completion_reward = {
+			add_ideas = BEL_Dutch_Primacy
+		}
+	}
+	focus = {
+		id = BEL_Address_Colonial_Issues
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Loyal_To_The_King
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = BEL_French_Language
+			focus = BEL_Dutch_Language
+		}
+		completion_reward = {
+			remove_ideas = BEL_Outrage_Over_Congolese_Treatment
+		}
+	}
+	focus = {
+		id = BEL_United_Through_The_Crown
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Address_Colonial_Issues
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_Address_Colonial_Issues
+		}
+		completion_reward = {
+			remove_ideas = BEL_Divided_Nation
+		}
+	}
+	focus = {
+		id = BEL_Armoured_Car_Race
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_United_Through_The_Crown
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BEL_United_Through_The_Crown
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_armored_cars
+				bonus = 1
+			}
+			add_ideas = BEL_Armoured_Car_Supremacy
+		}
+	}
+	focus = {
+		id = BEL_Knight_King
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 10
+		y = 6
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status
+				add_idea = BEL_King_Status1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Soldier_King
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Knight_King
+		x = 0
+		y = 1
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = BEL_Knight_King
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status1
+				add_idea = BEL_King_Status2
+			}
+		}
+	}
+	focus = {
+		id = BEL_King_Of_Belgium
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Soldier_King
+		x = 0
+		y = 1
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = BEL_Soldier_King
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status2
+				add_idea = BEL_King_Status3
+			}
+		}
+	}
+	focus = {
+		id = BEL_Hero_Of_Belgium
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_King_Of_Belgium
+		x = 0
+		y = 1
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = BEL_King_Of_Belgium
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status3
+				add_idea = BEL_King_Status4
+			}
+		}
+	}
 }

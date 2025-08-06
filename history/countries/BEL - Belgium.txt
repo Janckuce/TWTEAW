@@ -7,6 +7,7 @@ set_technology = {
     #Infantry
 	ww1_infantry_weapons1 = 1
 	ww1_infantry_weapons2 = 1
+	ww1_hand_grenade1 = 1
 	tech_trucks = 1
 	
 	#Artillery
@@ -45,11 +46,23 @@ set_popularities = {
 	neutrality = 40
 }
 
+add_ideas = {
+	BEL_King_Status
+	BEL_Neutral_State
+	BEL_Divided_Nation
+	BEL_Limited_Naval_Force
+}
+
 set_convoys = 40
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.8
 set_war_support = 0.1
+
+295 = {
+	set_resistance = 0.1
+	set_compliance = 0.3
+}
 
 # End of Party Popularity, Stability, War Support and other ##
 
