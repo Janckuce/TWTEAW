@@ -1,0 +1,22 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = belgian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = BEL
+		}
+	}
+
+	default = no
+}
