@@ -28,6 +28,10 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			add_ideas = BEL_Outrage_Over_Congolese_Treatment
+			country_event = {
+				id = ww1_belgium.1
+				days = 30
+			}
 		}
 	}
 	focus = {
@@ -348,6 +352,9 @@ focus_tree = {
 		relative_position_id = BEL_The_King's_Nation
 		x = 1
 		y = 1
+		mutually_exclusive = {
+			focus = BEL_Commune
+		}
 		prerequisite = {
 			focus = BEL_The_King's_Nation
 		}
@@ -440,11 +447,97 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BEL_Commune
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10000
+		relative_position_id = BEL_The_King's_Nation
+		x = 5
+		y = 1
+		mutually_exclusive = {
+			focus = BEL_Loyal_To_The_King
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			custom_effect_tooltip = BEL_Commune_Tooltip
+			add_ideas = BEL_Socialist_Rise
+		}
+	}
+	focus = {
+		id = BEL_Frame_Our_Opponents1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Commune
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = BEL_Commune
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			6 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Frame_Our_Opponents2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Commune
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BEL_Commune
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			6 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Enter_The_Stage
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = BEL_Commune
+		x = 0
+		y = 2
+		available = {
+			communism > 0.5
+		}
+		prerequisite = {
+			focus = BEL_Frame_Our_Opponents1
+		}
+		prerequisite = {
+			focus = BEL_Frame_Our_Opponents2
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+	focus = {
 		id = BEL_Knight_King
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 10
-		y = 6
+		x = 11
+		y = 7
 		available = {
 			has_war = yes
 			date > 1914.7.28
