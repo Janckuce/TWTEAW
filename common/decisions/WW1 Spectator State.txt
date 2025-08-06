@@ -1162,35 +1162,14 @@ ORO_spectator_state = {
 		    RUS = {
 			    has_country_flag = RUS_provisional_government_flag
 			}
-		    OR = {
-			    AND = {
-					date > 1917.10.25
-					RUS = {
-						has_war_with = GER
-					}
-					NOT = {
-						RUS = {
-							controls_state = 10 #Warsaw
-						}
-					}
+			AND = {
+				RUS = {
+					has_war_with = GER
 				}
-				AND = {
-				    OR = {
-						NOT = {
-							RUS = {
-								controls_state = 195 #Leningrad
-							}
-						}
-					}
-				}
-			}
-			NOT = {
-			    OR = {
+				NOT ={
 					RUS = {
-						has_war = no
-					}
-					RUS = {
-					    controls_state = 763 #Kaliningrad
+						controls_state = 206
+						controls_state = 202
 					}
 				}
 			}
