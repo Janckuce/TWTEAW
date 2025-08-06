@@ -553,5 +553,32 @@ ideas = {
 				naval_morale_factor = 0.05
 			}
 		}
+		GER_Wilhelm_Our_Kaiser = {
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		GER_Wilhelm_Our_Kaiser1 = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GER_Wilhelm_Our_Kaiser2 = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_oil_factor = 0.1
+			}
+		}
+		GER_Wilhelm_Our_Kaiser3 = {
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_oil_factor = 0.1
+				production_speed_buildings_factor = 0.025
+			}
+		}
 	}
 }

@@ -1116,4 +1116,256 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
+	focus = {
+		id = GER_Kaiser_Path1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 30
+		y = 1
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Path2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Path1
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Political
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Path1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Path1
+		}
+		prerequisite = {
+			focus = GER_Kaiser_Path2
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Leader_Event
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Political
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Political
+		}
+		completion_reward = {
+			country_event = ww1_germany.20
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Leader1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1000
+		relative_position_id = GER_Kaiser_Leader_Event
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Leader_Event
+		}
+		mutually_exclusive = {
+			focus = GER_Kaiser_Leader2
+			focus = GER_Kaiser_Leader3
+		}
+		completion_reward = {
+			add_ideas = GER_Wilhelm_Our_Kaiser
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Leader2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1000
+		relative_position_id = GER_Kaiser_Leader_Event
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Leader_Event
+		}
+		mutually_exclusive = {
+			focus = GER_Kaiser_Leader1
+			focus = GER_Kaiser_Leader3
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Leader3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1000
+		relative_position_id = GER_Kaiser_Leader_Event
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Leader_Event
+		}
+		mutually_exclusive = {
+			focus = GER_Kaiser_Leader1
+			focus = GER_Kaiser_Leader2
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Continue1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Leader1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Leader1
+		}
+		completion_reward = {
+			60 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			66 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Continue2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Leader1
+		x = 1
+		y = 1
+		available = {
+			has_tech = synth_oil_experiments
+		}
+		prerequisite = {
+			focus = GER_Kaiser_Leader1
+		}
+		completion_reward = {
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Leader1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Leader1
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = GER_Wilhelm_Continue1
+			focus = GER_Wilhelm_Continue2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Wilhelm_Our_Kaiser
+				add_idea = GER_Wilhelm_Our_Kaiser1
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Leader2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Wilhelm_Leader1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Wilhelm_Leader1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Wilhelm_Our_Kaiser1
+				add_idea = GER_Wilhelm_Our_Kaiser2
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Leader3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Wilhelm_Leader2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Wilhelm_Leader2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Wilhelm_Our_Kaiser2
+				add_idea = GER_Wilhelm_Our_Kaiser3
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Oil
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Wilhelm_Leader3
+		x = 1
+		y = 1
+		available = {
+			has_tech = synth_oil_experiments
+		}
+		prerequisite = {
+			focus = GER_Wilhelm_Leader3
+		}
+		completion_reward = {
+			59 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Kaiser_Of_Germany
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Wilhelm_Leader3
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GER_Wilhelm_Leader3
+		}
+		completion_reward = {
+			add_trait = {
+				character = GER_wilhelm_II
+				trait = By_Grace_Of_God_Kaiser_Of_Germany
+			}
+		}
+	}
 }
