@@ -11,4 +11,603 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+
+		BUL_ferdinand_I_dem = {
+		name = BUL_character_ferdinand_I
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		BUL_ferdinand_I_soc= {
+		name = BUL_character_ferdinand_I
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		BUL_ferdinand_I_fas= {
+		name = BUL_character_ferdinand_I
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		BUL_aleksander_malinov = {
+		name = BUL_aleksander_malinov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_aleksander_malinov"
+			}
+			army = {
+				small = "GFX_BUL_aleksander_malinov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_aleksander_malinov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_aleksander_malinov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_vasil_radoslavov = {
+		name = BUL_vasil_radoslavov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_vasil_radoslavov"
+			}
+			army = {
+				small = "BUL_vasil_radoslavov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_vasil_radoslavov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_vasil_radoslavov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_lyubomir_miletich = {
+		name = BUL_lyubomir_miletich
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_lyubomir_miletich"
+			}
+			army = {
+				small = "BUL_lyubomir_miletich_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_lyubomir_miletichv
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_lyubomir_miletich
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_ivan_vazov = {
+		name = BUL_ivan_vazov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_vazov"
+			}
+			army = {
+				small = "BUL_ivan_vazov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_ivan_vazov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_ivan_vazov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_nikola_zhekov = {
+		name = BUL_nikola_zhekov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_nikola_zhekov"
+			}
+			army = {
+				small = "GFX_BUL_nikola_zhekov_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = BUL_nikola_zhekov
+			allowed = {
+			}
+			traits = {
+				bul_military_teacher_infantry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			field_marshal={
+			traits = {  organizer skilled_staffer expert_delegator }
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+		BUL_ivan_kolev = {
+		name = BUL_ivan_kolev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_kolev"
+			}
+			army = {
+				small = "GFX_BUL_ivan_kolev_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = BUL_ivan_kolev
+			allowed = {
+			}
+			traits = {
+				bul_military_teacher_cavalry
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = { cavalry_officer cavalry_leader cavalry_expert commando }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		BUL_nikola_ivanov = {
+		name = BUL_nikola_ivanov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_nikola_ivanov"
+			}
+			army = {
+				small = "GFX_BUL_nikola_ivanov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_nikola_ivanov
+			allowed = {
+			}
+			traits = {
+				army_BUL_nikola_ivanov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {  fortress_buster urban_assault_specialist }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		BUL_stefan_nerezov = {
+		name = BUL_stefan_nerezov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_stefan_nerezov"
+			}
+			army = {
+				small = "GFX_BUL_stefan_nerezov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_stefan_nerezov
+			allowed = {
+			}
+			traits = {
+				army_BUL_stefan_nerezov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = { cautious hill_fighter  }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=1
+		}
+	}
+
+		BUL_aleksandar_protogerov = {
+		name = BUL_aleksandar_protogerov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_aleksandar_protogerov"
+			}
+			army = {
+				small = "GFX_BUL_aleksandar_protogerov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_aleksandar_protogerov
+			allowed = {
+			}
+			traits = {
+				army_BUL_aleksandar_protogerov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = {  mountaineer ranger politically_connected trait_reckless commando }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+		BUL_vladimir_vazov = {
+		name = BUL_vladimir_vazov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_vladimir_vazov"
+			}
+			army = {
+				small = "GFX_BUL_vladimir_vazov_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_vladimir_vazov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_vladimir_vazov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = { bearer_of_artillery infantry_officer inflexible_strategist }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+		BUL_aleksander_tanev = {
+		name = BUL_aleksander_tanev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_aleksander_tanev"
+			}
+			army = {
+				small = "GFX_BUL_aleksander_tanev_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_aleksander_tanev
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_aleksander_tanev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+			corps_commander={
+			traits = { cavalry_leader cavalry_officer }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		BUL_kliment_boyadzhiev = {
+		name = BUL_kliment_boyadzhiev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_kliment_boyadzhiev"
+			}
+			army = {
+				small = "GFX_bul_kliment_boyadzhiev_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_kliment_boyadzhiev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_kliment_boyadzhiev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = { trickster   }
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		BUL_stefan_toshev = {
+		name = BUL_stefan_toshev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_stefan_toshev"
+			}
+			army = {
+				small = "GFX_BUL_stefan_toshev_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = BUL_stefan_toshev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_stefan_toshev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_georgi_todorov = {
+		name = BUL_georgi_todorov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_georgi_todorov"
+			}
+			army = {
+				small = "GFX_BUL_georgi_todorov_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_georgi_todorov
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_georgi_todorov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = { infantry_leader  }
+			skill=4
+			attack_skill=1
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		BUL_georgi_kupov={
+		name=BUL_georgi_kupov
+		portraits={
+			army={
+				large="GFX_BUL_georgi_kupov"
+				small="GFX_bul_georgi_krupov_frame"
+			}
+		}
+		navy_leader={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = BUL_georgi_kupov
+			allowed = {
+					original_tag = BUL
+				}
+				traits = {
+					navy_chief_decisive_battle_1
+				}
+				cost =  50
+				ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_stefan_tasev = {
+		name = BUL_stefan_tasev
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_stefan_tasev"
+			}
+			army = {
+				small = "GFX_BUL_stefan_tasev_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = BUL_stefan_tasev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				army_BUL_stefan_tasev
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_ivan_shishmanov = {
+		name = BUL_ivan_shishmanov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_shishmanov"
+			}
+			army = {
+				small = "BUL_ivan_shishmanov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_ivan_shishmanov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_ivan_shishmanov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		BUL_ivan_evstratiev_geshov = {
+		name = BUL_ivan_evstratiev_geshov
+		portraits = {
+			civilian = {
+				large = "GFX_BUL_ivan_evstratiev_geshov"
+			}
+			army = {
+				small = "GFX_BUL_ivan_evstratiev_geshov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = BUL_ivan_evstratiev_geshov
+			allowed = {
+			}
+			traits = {
+				advisor_BUL_ivan_evstratiev_geshov
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }

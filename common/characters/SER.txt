@@ -6,9 +6,403 @@ characters={
 				large = "GFX_SER_peter_I"
 			}
 		}
+			country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		SER_peter_I_mon = {
+		name = SER_character_peter_I
+		portraits = {
+			civilian = {
+				large = "GFX_SER_peter_I_mon"
+			}
+		}
 		country_leader = {
 			ideology = centrism
 			expire = "1965.1.1.1"
+		}
+
+	}
+
+		SER_peter_I_fas = {
+		name = SER_character_peter_I
+		portraits = {
+			civilian = {
+				large = "GFX_SER_peter_I_fas"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1965.1.1.1"
+		}
+
+	}
+
+		SER_nikolas_pasic = {
+		name = SER_nikolas_pasic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_nikolas_pasic"
+			}
+			army = {
+				small = "GFX_SER_nikolas_pasic_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_nikolas_pasic
+			allowed = {
+				has_government = democratic
+				has_government = fascist
+			}
+			traits = {
+				advisor_SER_nikolas_pasic
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_dorde_vajfert = {
+		name = SER_dorde_vajfert
+		portraits = {
+			civilian = {
+				large = "GFX_SER_dorde_vajfert"
+			}
+			army = {
+				small = "GFX_SER_dorde_vajfert_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_dorde_vajfert
+			allowed = {
+			}
+			traits = {
+				advisor_SER_dorde_vajfert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_mihailo_petrovic = {
+		name = SER_mihailo_petrovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_mihailo_petrovic_frame"
+			}
+			army = {
+				small = "GFX_SER_mihailo_petrovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_mihailo_petrovic
+			allowed = {
+			}
+			traits = {
+				advisor_SER_mihailo_petrovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_generalstaff_army = {
+		name = SER_generalstaff_army
+		portraits = {
+			civilian = {
+				large = "GFX_SER_generalstaff_army"
+			}
+			army = {
+				small = "GFX_SER_generalstaff_army_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_generalstaff_army
+			allowed = {
+			}
+			traits = {
+				advisor_SER_generalstaff_army
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_slobodan_jovanovic = {
+		name = SER_slobodan_jovanovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_slobodan_jovanovic_army"
+			}
+			army = {
+				small = "GFX_SER_slobodan_jovanovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SER_slobodan_jovanovic
+			allowed = {
+			}
+			traits = {
+				advisor_SER_slobodan_jovanovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_radomir_putnik = {
+		name = SER_radomir_putnik
+		portraits = {
+			civilian = {
+				large = "GFX_SER_radomir_putnik"
+			}
+			army = {
+				small = "GFX_SER_radomir_putnik_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SER_radomir_putnik
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_ser_radomir_putnik
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = { war_hero trickster  }
+			skill=4
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+		SER_zivijon_misic = {
+		name = SER_zivijon_misic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_zivijon_misic"
+			}
+			army = {
+				small = "GFX_SER_zivijon_misic_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SER_zivijon_misic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_zivijon_misic
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = {   media_personality trait_reckless ranger  }
+			skill=4
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		SER_stepa_stepanovic = {
+		name = SER_stepa_stepanovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_stepa_stepanovic"
+			}
+			army = {
+				small = "GFX_SER_stepa_stepanovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_stepa_stepanovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_stepa_stepanovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = {   Organizer urban_assault_specialist war_hero career_officer  }
+			skill=3
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+		SER_petar_bojovic = {
+		name = SER_petar_bojovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_petar_bojovic"
+			}
+			army = {
+				small = "GFX_SER_petar_bojovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_petar_bojovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_petar_bojovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = {   Organizer infantry_leader  }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		SER_vojislav_zivanovic = {
+		name = SER_vojislav_zivanovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_vojislav_zivanovic"
+			}
+			army = {
+				small = "GFX_SER_vojislav_zivanovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_vojislav_zivanovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_vojislav_zivanovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = { militias_officer bearer_of_artillery  }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		SER_kosta_vojinovic = {
+		name = SER_kosta_vojinovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_kosta_vojinovic"
+			}
+			army = {
+				small = "GFX_SER_kosta_vojinovic_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SER_kosta_vojinovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_kosta_vojinovic
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		SER_mihailo_zivkovic = {
+		name = SER_mihailo_zivkovic
+		portraits = {
+			civilian = {
+				large = "GFX_SER_mihailo_zivkovic"
+			}
+			army = {
+				small = "GFX_ser_leonid_solarevic_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = SER_mihailo_zivkovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				army_SER_mihailo_zivkovic
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

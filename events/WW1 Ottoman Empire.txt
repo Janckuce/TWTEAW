@@ -111,6 +111,7 @@ country_event = {
 			transfer_state = 802
 			transfer_state = 909
 			transfer_state = 106
+
 		}
 		BUL = {
 		    transfer_state = 924
@@ -127,10 +128,26 @@ country_event = {
 			transfer_state = 805
 			transfer_state = 187
 		}
-		MNT = {
-		    transfer_state = 910
-		}
-		ALB = {
+
+if = {
+    limit = {
+        country_exists = MNT
+    }
+    MNT = {
+        transfer_state = 910
+    }
+}
+
+if = {
+    limit = {
+        NOT = { country_exists = MNT }
+    }
+    SER = {
+        transfer_state = 910
+    }
+}
+
+	ALB = {
 		    transfer_state = 44
 		}
 		

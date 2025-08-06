@@ -19,7 +19,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
-		
+
 		SER_austrian_sanctions = {
 
 			allowed = {
@@ -61,6 +61,467 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
+
+			SER_slavic_spirit_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_slavic_spirit
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+			}
+		}
+
+			SER_general_Staff_posiv_i = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_general_staff
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				modifier_army_sub_unit_militia_max_org_factor = 0.025
+				modifier_army_sub_unit_militia_defence_factor = 0.015
+				modifier_army_sub_unit_militia_attack_factor = 0.015
+
+			}
+		}
+
+			SER_general_Staff_posiv_ii = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_general_staff
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				modifier_army_sub_unit_militia_max_org_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.03
+				modifier_army_sub_unit_militia_attack_factor = 0.03
+
+			}
+		}
+
+			SER_general_Staff_posiv_iii = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_general_staff
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				modifier_army_sub_unit_militia_max_org_factor = 0.065
+				modifier_army_sub_unit_militia_defence_factor = 0.045
+				modifier_army_sub_unit_militia_attack_factor = 0.055
+
+			}
+		}
+
+			SER_general_Staff_posiv_iv = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_general_staff
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				modifier_army_sub_unit_militia_max_org_factor = 0.08
+				modifier_army_sub_unit_militia_defence_factor = 0.06
+				modifier_army_sub_unit_militia_attack_factor = 0.07
+
+			}
+		}
+
+			SER_general_Staff_posiv_v = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_general_staff
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				modifier_army_sub_unit_militia_max_org_factor = 0.095
+				modifier_army_sub_unit_militia_defence_factor = 0.075
+				modifier_army_sub_unit_militia_attack_factor = 0.085
+
+			}
+		}
+
+			SER_general_Staff_posiv_vi = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_general_staff
+
+				modifier = {
+				army_org = 5
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+				modifier_army_sub_unit_militia_max_org_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+
+			}
+		}
+
+			SER_slavic_spirit_better_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = SER_slavic_spirit
+
+				modifier = {
+				army_org = 10
+				army_org_regain = 0.05
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
+			}
+		}
+
+			SER_liberal_serbia = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.025
+				production_speed_arms_factory_factor = 0.025
+				democratic_drift = 0.05
+			}
+			
+			removal_cost = -1
+
+            picture = CHL_liberal_party_in_power
+		}
+
+			SER_liberal_serbia_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_industrial_complex_factor = 0.075
+				production_speed_infrastructure_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+
+				democratic_drift = 0.1
+			}
+			
+			removal_cost = -1
+
+            picture = CHL_liberal_party_in_power
+		}
+
+			SER_our_way_of_life_passive = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.25
+				democratic_drift = 0.1
+				stability_factor = 0.1
+
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_passive
+		}
+
+			SER_our_way_of_life_active = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = 0.025
+				army_core_defence_factor = 0.025
+				army_core_attack_factor = 0.025
+				production_speed_arms_factory_factor = 0.05
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
+			SER_our_way_of_life_active = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = 0.025
+				army_core_defence_factor = 0.025
+				army_core_attack_factor = 0.025
+				production_speed_arms_factory_factor = 0.05
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
+			SER_our_way_of_life_active_more = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				production_speed_arms_factory_factor = 0.075
+				resistance_target_on_our_occupied_states = 0.2
+    			resistance_growth_on_our_occupied_states = 0.05     
+   			 	damage_to_buildings_on_our_occupied_states = 0.1     
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
+
+			SER_grasp_of_crna_ruka = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.1
+			}
+			
+			removal_cost = -1
+
+            picture = ser_crna_ruka
+		}
+
+			SER_grasp_of_crna_ruka_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.15
+           		stability_weekly = -0.005
+				war_support_weekly = 0.005
+				weekly_casualties_war_support = 0.001
+				army_core_defence_factor = 0.075
+				army_core_attack_factor = 0.075 
+			}
+			
+			removal_cost = -1
+
+            picture = ser_crna_ruka
+		}
+
+			SER_grasp_of_crna_ruka_best = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.25
+           		stability_weekly = -0.005
+				war_support_weekly = 0.005
+				weekly_casualties_war_support = 0.002
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1 
+			}
+			
+			removal_cost = -1
+
+            picture = ser_crna_ruka
+		}
+
+			SER_grasp_of_crna_ruka_best_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05 
+				fascism_drift = 0.25
+           		stability_weekly = -0.005
+				war_support_weekly = 0.005
+				weekly_casualties_war_support = 0.002
+				army_core_defence_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+			
+			removal_cost = -1
+
+            picture = ser_crna_ruka
+		}
+
+			SER_our_way_of_life_active_more_better = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+				modifier = {
+				consumer_goods_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				production_speed_arms_factory_factor = 0.075
+				resistance_target_on_our_occupied_states = 0.2
+    			resistance_growth_on_our_occupied_states = 0.05     
+   			 	damage_to_buildings_on_our_occupied_states = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+
+			}
+			
+			removal_cost = -1
+
+            picture = ser_king_active
+		}
 		
 		SER_slavic_spirit = {
 
@@ -77,7 +538,8 @@ ideas = {
             picture = SER_slavic_spirit
 
 			modifier = {
-				army_attack_factor = 0.1
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
 			}
 		}
 		

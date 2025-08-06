@@ -11,50 +11,13 @@
 
 GER_porsche_organization = {
 	include = generic_heavy_tank_organization
-	icon = GFX_idea_porsche
-	
-	allowed = {	
-		OR = {
-			tag = GER 
-			AND = {
-				tag = MEX 
-				has_dlc = "Man the Guns"
-			}
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { tag = MEX }
-			}
-			FROM = { is_in_faction_with = GER }
-		}
-	}
-}
-
-GER_henschel_organization = {
-	include = generic_mobile_tank_organization
-	icon = GFX_idea_henschel
+	icon = GFX_idea_krupp
 	
 	allowed = {	
 		OR = {
 			tag = GER 
 			AND = {
 				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
 			}
 		}
 	}
@@ -66,32 +29,6 @@ GER_henschel_organization = {
 				FROM = { NOT = { original_tag = GER } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = { 
-				OR = { 
-					FROM = { original_tag = BUL }
-					FROM = { original_tag = ETH } 
-				} 
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_henschel_mio_flag
-				}
-			}
-			
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				#is_in_faction_with = GER
-			}
 		}
 	}
 }
@@ -104,8 +41,7 @@ GER_man_organization = {
 		OR = {
 			tag = GER 
 			AND = {
-				tag = GRE
-				has_dlc = "Battle for the Bosporus"
+				tag = BUL
 			}
 		}
 	}
@@ -205,12 +141,17 @@ GER_daimler_benz_organization = {
  
 #####################
 
-GER_germaniawerft_organization = {
+GER_ag_vulcan_stettin = {
 	include = generic_battle_line_ship_organization
-	icon = GFX_idea_germaniawerft
+	icon = GFX_idea_ag_vulcan_stettin
 	
 	allowed = {	
-		tag = GER 
+		OR = {
+			tag = GER 
+			AND = {
+				tag = BUL
+			}
+		}
 	}
 }
 
@@ -361,10 +302,6 @@ GER_heinkel_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
 		}
 	}
 
@@ -421,7 +358,9 @@ GER_rheinmetall_organization = {
 			tag = GER 
 			AND = {
 				tag = GRE
-				has_dlc = "Battle for the Bosporus"
+			}
+				AND = {
+				tag = SER
 			}
 		}
 	}
@@ -431,7 +370,6 @@ GER_rheinmetall_organization = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
 			}
-			FROM = { NOT = { has_war_with = GER } }
 		}
 	}
 }
@@ -480,14 +418,6 @@ GER_opel_organization = {
 	allowed = {	
 		OR = {
 			tag = GER
-			AND = {
-				tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			AND = {
-				tag = BUL
-				has_dlc = "Battle for the Bosporus"
-			}
 		}
 	}
 	
@@ -501,24 +431,14 @@ GER_opel_organization = {
 		}
 
 		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_opel_mio_flag
-				}
+
 			}
 			FROM = { 
 				OR = {
 					is_subject = no
 					is_subject_of = GER
 				}
-				#is_in_faction_with = GER
-			}
+			#is_in_faction_with = GER
 		}
-		IF = {
-			limit = { FROM = { original_tag = ROM } }
-			FROM = { has_country_flag = GER_mot_chosen }
-		}	
 	}
 }

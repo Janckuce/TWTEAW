@@ -1,0 +1,1525 @@
+ideas = {
+
+		industrial_concern = {
+			designer = no 
+
+			bruh = {
+			allowed = { original_tag = BUL }
+			research_bonus = {
+				industry = 0.05
+				train_tech = 0.15
+			}
+			traits = {
+				railway_company
+				}
+			}
+
+				bnb = {
+				allowed = { original_tag = BUL }
+				research_bonus = {
+				}
+				traits = {
+					bnb_company
+				}
+			}
+		}
+
+	country = {
+
+		BUL_spirit_give_them_the_boot = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_give_them_the_boot
+
+			modifier = {
+			political_power_factor = -0.25
+			research_speed_factor = -0.15
+			political_advisor_cost_factor = 0.25
+			army_advisor_cost_factor = 0.25
+			navy_advisor_cost_factor = 0.25
+			}
+		}
+
+			BUL_military_checkout = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.1
+				org_loss_when_moving = 0.1
+				army_org = -10
+				army_org_factor = -0.1
+				army_org_regain = -0.1
+				army_morale = -10
+				army_morale_factor = -0.1
+				army_defence_factor = -0.05
+			}
+		}
+
+			BUL_military_checkout_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.1
+				org_loss_when_moving = 0.1
+				army_org = -10
+				army_org_factor = -0.1
+				army_org_regain = -0.1
+				army_morale = -10
+				army_morale_factor = -0.1
+				army_defence_factor = -0.05
+				recruitable_population = 0.005
+			}
+		}
+
+			BUL_military_checkout_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.05
+				org_loss_when_moving = 0.05
+				army_org = -5
+				army_org_factor = -0.05
+				army_org_regain = -0.05
+				army_morale = -5
+				army_morale_factor = -0.05
+				recruitable_population = 0.005
+			}
+		}
+
+			BUL_military_checkout_4_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.025
+				org_loss_when_moving = 0.025
+				army_org_factor = -0.025
+				army_org_regain = -0.025
+				army_morale_factor = -0.025
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.015
+				army_infantry_defence_factor = 0.015
+			}
+		}
+
+			BUL_military_checkout_4_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				org_loss_at_low_org_factor = 0.025
+				org_loss_when_moving = 0.025
+				army_org_factor = -0.025
+				army_org_regain = -0.025
+				army_morale_factor = -0.025
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.015
+				cavalry_defence_factor = 0.015
+			}
+		}
+
+			BUL_military_checkout_5_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.03
+				cavalry_defence_factor = 0.03
+			}
+		}
+
+			BUL_military_checkout_5_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+			}
+		}
+
+			BUL_military_checkout_6_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				experience_loss_factor = -0.1
+
+			}
+		}
+
+			BUL_military_checkout_6_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.045
+				cavalry_defence_factor = 0.045
+				breakthrough_factor = 0.1
+
+			}
+		}
+
+			BUL_military_checkout_7_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				cavalry_attack_factor = 0.06
+				cavalry_defence_factor = 0.06
+				breakthrough_factor = 0.1
+				motorized_attack_factor = 0.025
+				motorized_defence_factor = 0.025
+				motorized_speed_factor = 0.05
+				motorized_max_org_factor = 0.025
+				motorized_reliability_factor = 0.01
+
+			}
+		}
+
+			BUL_military_checkout_8_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.01
+				cavalry_attack_factor = 0.075
+				cavalry_defence_factor = 0.075
+				breakthrough_factor = 0.1
+				motorized_attack_factor = 0.025
+				motorized_defence_factor = 0.025
+				motorized_speed_factor = 0.05
+				motorized_max_org_factor = 0.025
+				motorized_reliability_factor = 0.01
+
+			}
+		}
+
+			BUL_military_checkout_9_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.015
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				breakthrough_factor = 0.125
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+				motorized_speed_factor = 0.075
+				motorized_max_org_factor = 0.05
+				motorized_reliability_factor = 0.02
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+
+			}
+		}
+
+			BUL_military_checkout_10_cav = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.015
+				cavalry_attack_factor = 0.125
+				cavalry_defence_factor = 0.125
+				breakthrough_factor = 0.15
+				motorized_attack_factor = 0.075
+				motorized_defence_factor = 0.075
+				motorized_speed_factor = 0.1
+				motorized_max_org_factor = 0.075
+				motorized_reliability_factor = 0.025
+				army_armor_attack_factor = 0.075
+				army_armor_defence_factor = 0.075
+
+				equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.15 instant = yes
+					soft_attack = 0.025 instant = yes
+				}
+
+				light_tank_equipment_production_cost = {
+					build_cost_ic = -0.2 instant = yes
+					soft_attack = 0.025 instant = yes
+				}
+			}
+
+			}
+		}
+
+			BUL_military_checkout_7_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				experience_loss_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				terrain_trait_xp_gain_factor = 0.1
+				
+			}
+		}
+
+			BUL_military_checkout_8_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.03
+				army_infantry_defence_factor = 0.03
+				experience_loss_factor = -0.1
+				terrain_penalty_reduction = 0.1
+				terrain_trait_xp_gain_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in = 5
+
+
+				
+			}
+		}
+
+			BUL_military_checkout_9_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.005
+				army_infantry_attack_factor = 0.045
+				army_infantry_defence_factor = 0.045
+				experience_loss_factor = -0.15
+				terrain_penalty_reduction = 0.1
+				army_artillery_attack_factor = 0.03
+				army_artillery_defence_factor = 0.03
+				terrain_trait_xp_gain_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in = 5
+				
+
+				
+			}
+		}
+
+			BUL_military_checkout_10_inf = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_hat
+
+			modifier = {
+				recruitable_population = 0.01
+				army_infantry_attack_factor = 0.06
+				army_infantry_defence_factor = 0.06
+				experience_loss_factor = -0.15
+				terrain_penalty_reduction = 0.1
+				army_artillery_attack_factor = 0.045
+				army_artillery_defence_factor = 0.045
+				terrain_trait_xp_gain_factor = 0.15
+				dig_in_speed_factor = 0.2
+				max_dig_in = 5
+				
+
+				
+			}
+		}
+
+			bul_victory_of_brsp = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.10
+			production_factory_start_efficiency_factor = -0.15
+    	}
+	}
+
+			bul_victory_of_brsp_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.15
+			production_factory_start_efficiency_factor = -0.1
+
+    	}
+	}
+
+			bul_victory_of_brsp_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.15
+			industrial_capacity_factory = -0.025
+			production_factory_efficiency_gain_factor = -0.025
+			production_speed_buildings_factor = -0.025
+			consumer_goods_factor = 0.025
+			production_factory_start_efficiency_factor = -0.05
+
+			
+    	}
+	}
+
+			bul_victory_of_brsp_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.2
+			industrial_capacity_factory = -0.025
+			production_factory_efficiency_gain_factor = -0.025
+			production_speed_buildings_factor = -0.025
+			consumer_goods_factor = -0.025
+			industry_free_repair_factor = 0.2
+			conversion_cost_civ_to_mil_factor = -0.1
+			conversion_cost_mil_to_civ_factor = -0.15
+			production_factory_start_efficiency_factor = -0.025
+    	}
+	}
+
+			bul_victory_of_brsp_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.2
+			production_factory_efficiency_gain_factor = -0.025
+			production_speed_buildings_factor = -0.025
+			consumer_goods_factor = -0.05
+			industry_free_repair_factor = 0.2
+			conversion_cost_civ_to_mil_factor = -0.1
+			conversion_cost_mil_to_civ_factor = -0.15
+			political_advisor_cost_factor = -0.25
+			compliance_growth = 0.05
+			resistance_growth = -0.075
+
+
+    	}
+	}
+
+			bul_victory_of_brsp_6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.2
+			industrial_capacity_factory = 0.025
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = -0.075
+			industry_free_repair_factor = 0.25
+			conversion_cost_civ_to_mil_factor = -0.1
+			conversion_cost_mil_to_civ_factor = -0.15
+			political_advisor_cost_factor = -0.4
+			compliance_growth = 0.075
+			resistance_growth = -0.1
+			conscription = 0.01
+			army_breakthrough_against_minor_factor = 0.1
+				infantry_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+
+				support_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+
+
+
+    	}
+	}
+
+			bul_victory_of_brsp_7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.2
+			industrial_capacity_factory = 0.05
+			production_factory_efficiency_gain_factor = 0.025
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = -0.05
+			industry_free_repair_factor = 0.2
+			conversion_cost_civ_to_mil_factor = -0.1
+			conversion_cost_mil_to_civ_factor = -0.15
+			political_advisor_cost_factor = -0.4
+			compliance_growth = 0.075
+			resistance_growth = -0.1
+			conscription = 0.01
+			army_breakthrough_against_minor_factor = 0.1
+			line_change_production_efficiency_factor = 0.025
+			production_factory_start_efficiency_factor = 0.025
+				infantry_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+
+				support_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+
+
+
+    	}
+	}
+
+			bul_victory_of_brsp_8 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_brsdp
+
+			modifier = {
+       		communism_drift = 0.2
+			industrial_capacity_factory = 0.075
+			consumer_goods_factor = -0.05
+			industry_free_repair_factor = 0.2
+			conversion_cost_civ_to_mil_factor = -0.1
+			conversion_cost_mil_to_civ_factor = -0.15
+			political_advisor_cost_factor = -0.4
+			compliance_growth = 0.1
+			resistance_growth = -0.1
+			production_factory_efficiency_gain_factor = 0.05
+			conscription = 0.015
+			army_breakthrough_against_minor_factor = 0.15
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+				infantry_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+
+				support_equipment = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+
+
+
+    	}
+	}
+
+		bul_victory_of_bzns = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.10
+    	}
+	}
+
+			bul_victory_of_bzns_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+
+    	}
+	}
+
+			bul_victory_of_bzns_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+			consumer_goods_factor = 0.05
+
+    	}
+	}
+
+			bul_victory_of_bzns_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+			consumer_goods_factor = 0.025
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+
+
+    	}
+	}
+
+			bul_victory_of_bzns_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+			consumer_goods_factor = 0.025
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = 0.025
+			industrial_capacity_factory = 0.05
+			recruitable_population_factor = 0.05
+    	}
+	}
+
+			bul_victory_of_bzns_6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.1
+			consumer_goods_factor = 0.025
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = 0.025
+			industrial_capacity_factory = 0.05
+			recruitable_population_factor = 0.05
+			political_advisor_cost_factor = -0.15
+			army_advisor_cost_factor = -0.15
+			navy_advisor_cost_factor = -0.15
+    	}
+	}
+
+			bul_victory_of_bzns_7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.15
+			consumer_goods_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			industrial_capacity_factory = 0.075
+			recruitable_population_factor = 0.05
+			political_advisor_cost_factor = -0.15
+			army_advisor_cost_factor = -0.15
+			navy_advisor_cost_factor = -0.15
+			resistance_activity = -0.1
+			resistance_growth = -0.15
+    	}
+	}
+
+			bul_victory_of_bzns_8 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.15
+			consumer_goods_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			industrial_capacity_factory = 0.075
+			recruitable_population_factor = 0.05
+			political_advisor_cost_factor = -0.15
+			army_advisor_cost_factor = -0.15
+			navy_advisor_cost_factor = -0.15
+			resistance_activity = -0.1
+			resistance_growth = -0.15
+			research_speed_factor = 0.075
+    	}
+	}
+
+			bul_victory_of_bzns_9 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_bzns
+
+			modifier = {
+       		democratic_drift = 0.15
+			political_power_factor = 0.15
+			consumer_goods_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.05
+			production_speed_buildings_factor = 0.075
+			industrial_capacity_factory = 0.1
+			recruitable_population_factor = 0.05
+			political_advisor_cost_factor = -0.2
+			army_advisor_cost_factor = -0.2
+			navy_advisor_cost_factor = -0.2
+			resistance_activity = -0.1
+			resistance_growth = -0.15
+			research_speed_factor = 0.075
+    	}
+	}
+
+		bul_victory_of_np = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.10
+    	}
+	}
+
+			bul_victory_of_np_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+    	}
+	}
+
+			bul_victory_of_np_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+			consumer_goods_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.025
+			production_factory_max_efficiency_factor = 0.025
+			industrial_capacity_factory = 0.05
+			production_speed_industrial_complex_factor = -0.015
+			line_change_production_efficiency_factor = 0.025
+			production_lack_of_resource_penalty_factor = -0.025
+			
+    	}
+	}
+
+			bul_victory_of_np_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+			consumer_goods_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.025
+			production_factory_max_efficiency_factor = 0.025
+			industrial_capacity_factory = 0.05
+			production_speed_industrial_complex_factor = -0.015
+			weekly_casualties_war_support = 0.002
+			required_garrison_factor = 0.2
+			resistance_activity = 0.15
+			resistance_growth_on_our_occupied_states = 0.05
+			research_speed_factor = -0.075
+			compliance_growth = -0.075
+			line_change_production_efficiency_factor = 0.025
+			production_lack_of_resource_penalty_factor = -0.05
+    	}
+	}
+
+			bul_victory_of_np_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+			consumer_goods_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			industrial_capacity_factory = 0.075
+			production_speed_industrial_complex_factor = -0.015
+			weekly_casualties_war_support = 0.002
+			required_garrison_factor = 0.2
+			resistance_activity = 0.15
+			resistance_growth_on_our_occupied_states = 0.05
+			research_speed_factor = -0.05
+			political_advisor_cost_factor = 0.15
+			navy_chief_cost_factor = 0.25
+			high_command_cost_factor = 0.2
+			trade_laws_cost_factor = 0.25
+			mobilization_laws_cost_factor = 0.25
+			line_change_production_efficiency_factor = 0.05
+			production_lack_of_resource_penalty_factor = -0.075
+
+
+    	}
+	}
+
+			bul_victory_of_np_6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+			consumer_goods_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+			production_factory_max_efficiency_factor = 0.05
+			industrial_capacity_factory = 0.075
+			production_speed_industrial_complex_factor = -0.03
+			weekly_casualties_war_support = 0.002
+			required_garrison_factor = 0.25
+			resistance_activity = 0.2
+			resistance_growth_on_our_occupied_states = 0.075
+			research_speed_factor = -0.05
+			political_advisor_cost_factor = 0.2
+			navy_chief_cost_factor = 0.3
+			high_command_cost_factor = 0.25
+			trade_laws_cost_factor = 0.3
+			mobilization_laws_cost_factor = 0.3
+			line_change_production_efficiency_factor = 0.05
+			production_lack_of_resource_penalty_factor = -0.075
+    	}
+	}
+
+			bul_victory_of_np_7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+			consumer_goods_factor = 0.075
+			production_factory_efficiency_gain_factor = 0.075
+			production_factory_max_efficiency_factor = 0.075
+			production_factory_start_efficiency_factor = 0.075
+			line_change_production_efficiency_factor = 0.075
+			production_lack_of_resource_penalty_factor = -0.1
+
+			industrial_capacity_factory = 0.075
+			production_speed_industrial_complex_factor = -0.065
+			weekly_casualties_war_support = 0.002
+			required_garrison_factor = 0.25
+			resistance_activity = 0.2
+			resistance_growth_on_our_occupied_states = 0.075
+			research_speed_factor = -0.05
+			political_advisor_cost_factor = 0.2
+			navy_chief_cost_factor = 0.3
+			high_command_cost_factor = 0.25
+			trade_laws_cost_factor = 0.3
+			mobilization_laws_cost_factor = 0.3
+    	}
+	}
+
+			bul_victory_of_np_8 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_np
+
+			modifier = {
+       		fascism_drift = 0.15
+			consumer_goods_factor = 0.075
+			production_factory_efficiency_gain_factor = 0.075
+			production_factory_max_efficiency_factor = 0.075
+			production_factory_start_efficiency_factor = 0.075
+			line_change_production_efficiency_factor = 0.075
+			production_lack_of_resource_penalty_factor = -0.1
+
+			industrial_capacity_factory = 0.075
+			production_speed_industrial_complex_factor = -0.04
+			weekly_casualties_war_support = 0.002
+			required_garrison_factor = 0.15
+			resistance_activity = 0.1
+			resistance_growth_on_our_occupied_states = 0.05
+			political_advisor_cost_factor = 0.1
+			navy_chief_cost_factor = 0.15
+			high_command_cost_factor = 0.145
+			trade_laws_cost_factor = 0.15
+			mobilization_laws_cost_factor = 0.15
+    	}
+	}
+
+		bul_victory_of_hscag = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		neutrality_drift = 0.10
+    	}
+	}
+
+			bul_victory_of_hscag_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		neutrality_drift = 0.15
+    	}
+	}
+
+			bul_victory_of_hscag_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		production_factory_efficiency_gain_factor = 0.015
+			production_factory_max_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.015
+			line_change_production_efficiency_factor = 0.015
+			production_lack_of_resource_penalty_factor = -0.025
+			industrial_capacity_factory = 0.015
+			neutrality_drift = 0.15
+			production_speed_industrial_complex_factor = 0.015
+    	}
+	}
+
+			bul_victory_of_hscag_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		production_factory_efficiency_gain_factor = 0.015
+			production_factory_max_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.015
+			line_change_production_efficiency_factor = 0.015
+			production_lack_of_resource_penalty_factor = -0.025
+			industrial_capacity_factory = 0.015
+			production_speed_industrial_complex_factor = 0.015
+			neutrality_drift = 0.15
+			political_advisor_cost_factor = -0.15
+			army_advisor_cost_factor = -0.15
+			navy_advisor_cost_factor = -0.15
+
+    		}
+		}
+
+			bul_victory_of_hscag_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		production_factory_efficiency_gain_factor = 0.03
+			production_factory_max_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.03
+			line_change_production_efficiency_factor = 0.015
+			production_lack_of_resource_penalty_factor = -0.05
+			industrial_capacity_factory = 0.015
+			neutrality_drift = 0.15
+			production_speed_industrial_complex_factor = 0.03
+			production_speed_arms_factory_factor = 0.015
+			political_advisor_cost_factor = -0.15
+			army_advisor_cost_factor = -0.15
+			navy_advisor_cost_factor = -0.15
+			consumer_goods_factor = 0.05
+
+    		}
+		}
+
+			bul_victory_of_hscag_6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		production_factory_efficiency_gain_factor = 0.03
+			production_factory_max_efficiency_factor = 0.03
+			production_factory_start_efficiency_factor = 0.03
+			line_change_production_efficiency_factor = 0.03
+			production_lack_of_resource_penalty_factor = -0.05
+			industrial_capacity_factory = 0.015
+			neutrality_drift = 0.15
+			production_speed_industrial_complex_factor = 0.03
+			production_speed_arms_factory_factor = 0.03
+			political_advisor_cost_factor = -0.2
+			army_advisor_cost_factor = -0.2
+			navy_advisor_cost_factor = -0.2
+			consumer_goods_factor = 0.05
+			research_speed_factor = -0.1
+
+
+
+    		}
+		}
+
+			bul_victory_of_hscag_7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		production_factory_efficiency_gain_factor = 0.03
+			production_factory_max_efficiency_factor = 0.035
+			production_factory_start_efficiency_factor = 0.03
+			line_change_production_efficiency_factor = 0.03
+			production_lack_of_resource_penalty_factor = -0.05
+			industrial_capacity_factory = 0.02
+			neutrality_drift = 0.15
+			production_speed_industrial_complex_factor = 0.03
+			production_speed_arms_factory_factor = 0.03
+			political_advisor_cost_factor = -0.2
+			army_advisor_cost_factor = -0.2
+			navy_advisor_cost_factor = -0.2
+			consumer_goods_factor = 0.055
+			research_speed_factor = -0.1
+    		}
+		}
+
+			bul_victory_of_hscag_8 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_victory_of_tsar
+
+			modifier = {
+       		production_factory_efficiency_gain_factor = 0.045
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_start_efficiency_factor = 0.045
+			line_change_production_efficiency_factor = 0.045
+			production_lack_of_resource_penalty_factor = -0.065
+			industrial_capacity_factory = 0.035
+			neutrality_drift = 0.2
+			production_speed_industrial_complex_factor = 0.045
+			production_speed_arms_factory_factor = 0.045
+			political_advisor_cost_factor = -0.25
+			army_advisor_cost_factor = -0.25
+			navy_advisor_cost_factor = -0.25
+			consumer_goods_factor = 0.06
+			research_speed_factor = -0.075
+    		}
+		}
+
+			bul_industrial_work = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_national_industry
+
+			modifier = {
+			production_speed_industrial_complex_factor = 0.025
+			consumer_goods_factor = 0.025
+    		}
+		}
+
+			bul_industrial_work_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = bul_national_industry
+
+			modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			consumer_goods_factor = -0.025
+			production_factory_efficiency_gain_factor = 0.015
+			production_factory_max_efficiency_factor = 0.015
+			production_factory_start_efficiency_factor = 0.015
+			line_change_production_efficiency_factor = 0.015
+			production_lack_of_resource_penalty_factor = -0.02
+			production_speed_arms_factory_factor = 0.015
+			industrial_capacity_factory = 0.015
+    		}
+		}
+	}
+}

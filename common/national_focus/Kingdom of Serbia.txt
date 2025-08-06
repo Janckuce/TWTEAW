@@ -1,0 +1,1177 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = serbian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	
+	continuous_focus_position = { x = 245 y = 800 }
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = SER_time_of_decisions
+		icon = GFX_focus_befriend_serbia
+		x = 5
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =	{
+			SER_slavic_spirit
+		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_focus
+		icon = GFX_focus_SER_general_staff
+		x = 20
+		y = 2
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_slavic_spirit
+  			add_idea = SER_slavic_spirit_better		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_i
+		icon = GFX_focus_SER_focus_militia_mob_i
+		x = 18
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_focus
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =	{
+			SER_general_Staff_posiv_i
+		}
+
+			division_template = {
+				name = "Srbska Narodna Odbrana"
+				priority = 0
+				division_names_group = bruh
+				template_counter = 42
+				is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+				regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 2 y = 3 }
+				militia = { x = 3 y = 4 }
+				militia = { x = 4 y = 5 }
+					
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				militia = { x = 2 y = 2 }
+			}
+			support = {
+			engineer = { x = 0 y = 1 }
+			}
+		}
+
+			107 = {
+					create_unit = {
+					division = "division_template =\"Srbska Narodna Odbrana\" start_experience_factor = 0.3 start_equipment_factor = 0.8"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_ii
+		icon = GFX_focus_SER_focus_militia_mob_ii
+		x = 18
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_i
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_i
+  			add_idea = SER_general_Staff_posiv_ii		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_iii
+		icon = GFX_focus_SER_focus_militia_mob_iii
+		x = 18
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_ii
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_ii
+  			add_idea = SER_general_Staff_posiv_iii		
+  		}
+
+					108 = {
+					create_unit = {
+					division = "division_template =\"Srbska Narodna Odbrana\" start_experience_factor = 0.2 start_equipment_factor = 0.6"
+					owner = ROOT
+					count = 3
+				}
+			}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_iv
+		icon = GFX_focus_SER_focus_militia_mob_iv
+		x = 18
+		y = 6
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_iii
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_iii
+  			add_idea = SER_general_Staff_posiv_iv		
+  		}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_v
+		icon = GFX_focus_SER_focus_militia_mob_v
+		x = 18
+		y = 7
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_iv
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_iv
+  			add_idea = SER_general_Staff_posiv_v		
+  		}
+					803 = {
+					create_unit = {
+					division = "division_template =\"Srbska Narodna Odbrana\" start_experience_factor = 0.4 start_equipment_factor = 0.4"
+					owner = ROOT
+					count = 3
+				}
+			}
+	}
+}
+
+	focus = {
+		id = SER_serbian_general_staff_posiv_vi
+		icon = GFX_focus_SER_focus_militia_mob_vi
+		x = 18
+		y = 8
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_posiv_v
+		}
+
+		prerequisite = {
+		focus = SER_example_of_germans
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_general_Staff_posiv_v
+  			add_idea = SER_general_Staff_posiv_vi	
+  		}
+	}
+}
+
+	focus = {
+		id = SER_empty_the_stocks
+		icon = GFX_focus_AFG_against_kabul
+		x = 20
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_serbian_general_staff_focus
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 1432
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 872
+        }
+    }
+}
+
+	focus = {
+		id = SER_take_inspiration_from_italy
+		icon = GFX_focus_SMB_a_land_of_mountains
+		x = 20
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_empty_the_stocks
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.5
+        uses = 2
+        category = mountaineers_tech
+    }
+    }
+}
+
+	focus = {
+		id = SER_counter_evidenzbureau
+		icon = GFX_focus_generic_vatican_agents
+		x = 20
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_take_inspiration_from_italy
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+        create_intelligence_agency = yes
+    }
+}
+
+	focus = {
+		id = SER_we_know_who_you_are
+		icon = GFX_focus_generic_mountain_fortification
+		x = 20
+		y = 6
+		cost = 10
+
+		prerequisite = {
+		focus = SER_counter_evidenzbureau
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		803 = {
+ 			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 11868    
+            instant_build = yes    
+        }
+			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 11857
+            instant_build = yes    
+        }
+		add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 11832
+            instant_build = yes    
+        }
+    }
+}
+}
+
+	focus = {
+		id = SER_example_of_germans
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 20
+		y = 7
+		cost = 10
+
+		prerequisite = {
+		focus = SER_we_know_who_you_are
+		}
+
+		bypass = {
+			#
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_slavic_spirit_better
+  			add_idea = SER_slavic_spirit_better_better			
+  		}
+	}
+}
+
+	focus = {
+		id = SER_liberalism_shall_lead
+		icon = GFX_goal_support_democracy
+		mutually_exclusive = {
+		    focus = SER_for_king_and_country
+			focus = SER_help_fund_crna_ruka
+		}
+		x = 3
+		y = 2
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =
+			SER_liberal_serbia	{
+		}
+	}
+}
+
+	focus = {
+		id = SER_for_king_and_country
+		icon = GFX_focus_generic_monarchy_1
+		mutually_exclusive = {
+		    focus = SER_liberalism_shall_lead
+			focus = SER_help_fund_crna_ruka
+		}
+		x = 8
+		y = 2
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = {
+			SER_our_way_of_life_active
+		}
+	}
+}
+
+	focus = {
+		id = SER_award_loyal_aristocracy
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		x = 7
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_for_king_and_country
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = SER_hype_censorship
+		icon = GFX_focus_YUG_dissolve_serbia
+		x = 9
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_for_king_and_country
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_state_core = 104
+		add_state_core = 804
+		add_state_core = 912
+		add_state_core = 109
+		add_state_core = 103
+		add_state_core = 163
+		add_state_core = 859
+		add_state_core = 104
+		add_state_core = 852
+		add_state_core = 841
+		add_state_core = 736
+		add_state_core = 102
+		add_state_core = 911
+
+	}
+}
+
+	focus = {
+		id = SER_king_on_the_political_frontline
+		icon = GFX_focus_ser_king_leader
+		x = 8
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_for_king_and_country
+		}
+
+		prerequisite = {
+		focus = SER_award_loyal_aristocracy
+		}
+
+		prerequisite = {
+		focus = SER_hype_censorship
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_our_way_of_life_active
+  			add_idea = SER_our_way_of_life_active_more 				
+  		} 
+	}
+}
+
+	focus = {
+		id = SER_belgrade_fort_ring
+		icon = GFX_focus_ser_anti_habsburg_line
+		x = 7
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_king_on_the_political_frontline
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		107 = {
+ 			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 797       
+            instant_build = yes    
+        }
+			add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 3609    
+            instant_build = yes    
+        }
+		add_building_construction = {
+            type = bunker               
+            level = 1                 
+            province = 3956 
+            instant_build = yes    
+        }
+		}
+	}
+}
+
+	focus = {
+		id = SER_claims_of_montenegro
+		icon = GFX_focus_generic_monarchy_2
+		x = 9
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_king_on_the_political_frontline
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			annex_country = {
+            target = MNT  # Replace TAG with the country tag of the target
+        }
+		add_state_core = 105
+		add_state_core = 910
+	}
+}
+
+	focus = {
+		id = SER_help_fund_crna_ruka
+		icon = GFX_focus_ser_crna_ruka
+		mutually_exclusive = {
+		    focus = SER_for_king_and_country
+			focus = SER_liberalism_shall_lead
+		}
+		x = 13
+		y = 2
+		cost = 10
+
+		prerequisite = {
+		focus = SER_time_of_decisions
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+    	}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = {
+			SER_grasp_of_crna_ruka
+		}
+	}
+}
+
+	focus = {
+		id = SER_give_seats_in_the_government
+		icon = GFX_focus_AFG_parliamentary_democracy
+		x = 12
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_help_fund_crna_ruka
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_popularity = {
+        ideology = fascism
+        popularity = 0.1
+	}
+		add_war_support = 0.05
+		add_stability = -0.025
+	}
+}
+
+	focus = {
+		id = SER_from_sokol_to_army
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 14
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_help_fund_crna_ruka
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		add_ideas = extensive_conscription
+	}
+}
+
+	focus = {
+		id = SER_crna_ruka_in_government
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		x = 13
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_give_seats_in_the_government
+		}
+
+		prerequisite = {
+		focus = SER_from_sokol_to_army
+		}
+
+		prerequisite = {
+		focus = SER_help_fund_crna_ruka
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_grasp_of_crna_ruka
+  			add_idea = SER_grasp_of_crna_ruka_better				
+  		}
+	}
+}
+
+	focus = {
+		id = SER_idea_of_even_greater_serbia
+		icon = GFX_focus_RAJ_war_taxes
+		x = 12
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_crna_ruka_in_government
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ALB
+				expire = 0
+			}
+				create_wargoal = {
+				type = annex_everything
+				target = MNT
+				expire = 0
+			}
+			add_state_claim = 44
+			add_state_claim = 105
+			add_state_claim = 104
+			add_state_claim = 804
+			add_state_claim = 912
+			add_state_claim = 805
+	}
+}
+
+	focus = {
+		id = SER_nationalist_constitution
+		icon = GFX_focus_PER_constitutional_monarchy
+		x = 14
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_crna_ruka_in_government
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_grasp_of_crna_ruka_better
+  			add_idea = SER_grasp_of_crna_ruka_best			
+  		}
+	}
+}
+
+	focus = {
+		id = SER_crna_ruka_absolute_takeover
+		icon = GFX_focus_BEL_government_resigns
+		x = 13
+		y = 6
+		cost = 10
+
+		prerequisite = {
+		focus = SER_idea_of_even_greater_serbia
+		}
+
+		prerequisite = {
+		focus = SER_nationalist_constitution
+		}
+
+		prerequisite = {
+		focus = SER_crna_ruka_in_government
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_grasp_of_crna_ruka_best
+  			add_idea = SER_grasp_of_crna_ruka_best_better		
+  		} 	
+		    set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }			
+	}
+}
+
+	focus = {
+		id = SER_remove_all_censorship
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_liberalism_shall_lead
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.05     # = +10% instantly
+        }
+
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.1     # = +10% instantly
+        }
+
+			add_popularity = {
+            ideology = communism
+            popularity = 0.025     # = +10% instantly
+        }
+			add_war_support = -0.075
+			add_stability = 0.05
+	}
+}
+
+	focus = {
+		id = SER_industrialization_of_cities
+		icon = GFX_focus_generic_modernize_industry
+		x = 2
+		y = 3
+		cost = 10
+
+		prerequisite = {
+		focus = SER_liberalism_shall_lead
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+				107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+				803 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = SER_question_of_the_king
+		icon = GFX_focus_ser_question_of_the_king
+		x = 3
+		y = 4
+		cost = 10
+
+		prerequisite = {
+		focus = SER_liberalism_shall_lead
+		}
+
+		prerequisite = {
+		focus = SER_industrialization_of_cities
+		}
+
+		prerequisite = {
+		focus = SER_remove_all_censorship
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = {
+			SER_our_way_of_life_passive
+		}
+	}
+}
+
+	focus = {
+		id = SER_investment_in_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_question_of_the_king
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+				107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+				108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+				803 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+	focus = {
+		id = SER_limit_factory_retooling
+		icon = GFX_focus_generic_military_industry
+		x = 4
+		y = 5
+		cost = 10
+
+		prerequisite = {
+		focus = SER_question_of_the_king
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_liberal_serbia
+  			add_idea = SER_liberal_serbia_better 				
+  		} 				
+	}
+}
+
+	focus = {
+		id = SER_crown_the_hat_of_leaders
+		icon = GFX_focus_eng_god_save_the_king
+		x = 8
+		y = 6
+		cost = 10
+
+		prerequisite = {
+		focus = SER_belgrade_fort_ring
+		}
+
+		prerequisite = {
+		focus = SER_claims_of_montenegro
+		}
+
+		prerequisite = {
+		focus = SER_king_on_the_political_frontline
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = SER_our_way_of_life_active_more
+  			add_idea = SER_our_way_of_life_active_more_better			
+  		} 	
+		    set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+        }			
+	}
+}
+
+continuous_focus_position = { x = 245 y = 999 }
+
+}

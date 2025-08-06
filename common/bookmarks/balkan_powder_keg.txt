@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "balkan_powder_keg_desc"
 		date = 1911.1.1.12
 		picture = "GFX_select_date_1911"
-		default_country = "GER"
+		default_country = "SER"
 		default = yes
 	
 		FRA = {
@@ -38,6 +38,16 @@ bookmarks = {
 			history = AUS_balkan_powder_keg_desc
 			ideology = neutrality
 		}
+			BUL = {
+			minor = yes
+			history = BUL_balkan_powder_keg_desc
+			ideology = neutrality
+				focuses = {
+				BUL_reform_conscription_system
+				BUL_give_them_the_boot
+				BUL_free_and_fair_bulgarian
+			}
+		}
 		RUS = {
 			history = RUS_balkan_powder_keg_desc
 			ideology = neutrality
@@ -52,6 +62,11 @@ bookmarks = {
 			minor = yes
 			history = SER_balkan_powder_keg_desc
 			ideology = neutrality
+			focuses = {
+			SER_serbian_general_staff_focus
+			SER_belgrade_fort_ring
+			SER_king_on_the_political_frontline
+			}
 		}
 		"USA"={
 			minor = yes
