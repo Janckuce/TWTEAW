@@ -24,6 +24,216 @@ characters={
 		}
 	}
 
+		TUR_ali_kemal = {
+		name = TUR_ali_kemal
+		portraits = {
+			army = {
+				small = "GFX_advisor_TUR_ali_kemal"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = TUR_ali_kemal
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Stay_With_Sultan
+			}
+			traits = {
+				army_tur_ali_kemal
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		tur_mehmed_adil = {
+		name = tur_mehmed_adil
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_mehmed_adil"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_mehmed_adil
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		tur_mehmed_said = {
+		name = tur_mehmed_said
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_mehmed_said"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_mehmed_said
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Young_Turk_Parti
+			}
+			traits = {
+				army_tur_said_halim
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		tur_halil_mentese = {
+		name = tur_halil_mentese
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_halil_mentese"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_halil_mentese
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Young_Turk_Parti
+			}
+			traits = {
+				army_tur_halil_mentese
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		tur_nazim_bey = {
+		name = tur_nazim_bey
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_nazim_bey"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_nazim_bey
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Young_Turk_Parti
+			}
+			traits = {
+				army_tur_nazim_bey
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		tur_talaat = {
+		name = tur_talaat
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_talaat"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_talaat
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Young_Turk_Parti
+			}
+			traits = {
+				army_tur_taalat
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		tur_gabriel_noradoungian = {
+		name = tur_gabriel_noradoungian
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_gabriel_noradoungian"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_gabriel_noradoungian
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Stay_With_Sultan
+			}
+			traits = {
+				army_tur_gabriel_noradoungian
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		tur_emmanuel_carasso = {
+		name = tur_emmanuel_carasso
+		portraits = {
+			army = {
+				small = "GFX_advisor_tur_emanuel_carasso"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = tur_emmanuel_carasso
+			allowed = {
+				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Stay_With_Sultan
+			}
+			traits = {
+				army_tur_emmanuel_carasso
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 	TUR_sehzade_yusuf_izzeddin = {
 		name = TUR_character_sehzade_yusuf_izzeddin
 		portraits = {
@@ -46,10 +256,41 @@ characters={
 			}
 		}
 		field_marshal={
+			traits = { inflexible_strategist politically_connected }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+		tur_ahmed_muhtar_pasha = {
+		name = tur_ahmed_muhtar_pasha
+		portraits = {
+			civilian = {
+				large = "GFX_tur_ahmed_muhtar_pasha"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = tur_ahmed_muhtar_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits = {harsh_leader politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 4
 		}
 	}
@@ -75,6 +316,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = {media_personality brilliant_strategist desert_fox }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -104,11 +346,60 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { mountaineer hill_fighter swamp_fox ranger }
 			skill = 2
 			attack_skill = 5
 			defense_skill = 2
 			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+		TUR_halil_kut = {
+		name = TUR_halil_kut
+		portraits = {
+			civilian = {
+				large = "GFX_tur_halil_kut"
+			}
+		}
+		corps_commander={
+			traits = {hill_fighter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
 			logistics_skill = 3
+		}
+	}
+		TUR_wehib_pasha = {
+		name = TUR_wehib_pasha
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_wehib_pasha"
+			}
+		}
+		corps_commander={
+			traits = {  urban_assault_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+		tur_mahmud_muhtar = {
+		name = tur_mahmud_muhtar
+		portraits = {
+			civilian = {
+				large = "GFX_tur_mahmud_muhtar"
+			}
+		}
+		corps_commander={
+			traits = {  politically_connected trait_reckless }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 	TUR_mustafa_fevzi_pasha = {
@@ -133,11 +424,12 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { desert_fox trickster }
 			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 4
-			logistics_skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 		TUR_enver_pasha = {
@@ -164,6 +456,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { commando organizer infantry_leader }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -179,6 +472,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { politically_connected media_personality }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
