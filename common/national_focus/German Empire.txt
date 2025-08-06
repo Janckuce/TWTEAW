@@ -27,10 +27,14 @@ focus_tree = {
 		id = GER_Our_Kaiser
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		x = 15
+		x = 14
 		y = 0
 		completion_reward = {
 			add_political_power = 80
+			swap_ideas = {
+				remove_idea = GER_Disloyal_Nation
+				add_idea = GER_Disloyal_Nation1
+			}
 		}
 	}
 	focus = {
@@ -1120,7 +1124,7 @@ focus_tree = {
 		id = GER_Kaiser_Path1
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 30
+		x = 25
 		y = 1
 		prerequisite = {
 			focus = GER_Our_Kaiser
@@ -1139,6 +1143,10 @@ focus_tree = {
 			focus = GER_Our_Kaiser
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Disloyal_Nation1
+				add_idea = GER_Disloyal_Nation2
+			}
 		}
 	}
 	focus = {
@@ -1155,6 +1163,10 @@ focus_tree = {
 			focus = GER_Kaiser_Path2
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Disloyal_Nation2
+				add_idea = GER_Disloyal_Nation3
+			}
 		}
 	}
 	focus = {
@@ -1168,29 +1180,12 @@ focus_tree = {
 			focus = GER_Kaiser_Political
 		}
 		completion_reward = {
-			country_event = ww1_germany.20
+			#country_event = ww1_germany.20
+			remove_ideas = GER_Disloyal_Nation3
 		}
 	}
 	focus = {
 		id = GER_Kaiser_Leader1
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1000
-		relative_position_id = GER_Kaiser_Leader_Event
-		x = -3
-		y = 1
-		prerequisite = {
-			focus = GER_Kaiser_Leader_Event
-		}
-		mutually_exclusive = {
-			focus = GER_Kaiser_Leader2
-			focus = GER_Kaiser_Leader3
-		}
-		completion_reward = {
-			add_ideas = GER_Wilhelm_Our_Kaiser
-		}
-	}
-	focus = {
-		id = GER_Kaiser_Leader2
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 1000
 		relative_position_id = GER_Kaiser_Leader_Event
@@ -1200,29 +1195,47 @@ focus_tree = {
 			focus = GER_Kaiser_Leader_Event
 		}
 		mutually_exclusive = {
-			focus = GER_Kaiser_Leader1
-			focus = GER_Kaiser_Leader3
+			#focus = GER_Kaiser_Leader2
+			#focus = GER_Kaiser_Leader3
 		}
 		completion_reward = {
+			add_ideas = GER_Wilhelm_Our_Kaiser
 		}
 	}
-	focus = {
-		id = GER_Kaiser_Leader3
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1000
-		relative_position_id = GER_Kaiser_Leader_Event
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = GER_Kaiser_Leader_Event
-		}
-		mutually_exclusive = {
-			focus = GER_Kaiser_Leader1
-			focus = GER_Kaiser_Leader2
-		}
-		completion_reward = {
-		}
-	}
+	#focus = {
+	#	id = GER_Kaiser_Leader2
+	#	icon = GFX_unit_guided_missile_icon_small_texticon
+	#	cost = 1000
+	#	relative_position_id = GER_Kaiser_Leader_Event
+	#	x = 0
+	#	y = 1
+	#	prerequisite = {
+	#		focus = GER_Kaiser_Leader_Event
+	#	}
+	#	mutually_exclusive = {
+	#		focus = GER_Kaiser_Leader1
+	#		focus = GER_Kaiser_Leader3
+	#	}
+	#	completion_reward = {
+	#	}
+	#}
+	#focus = {
+	#	id = GER_Kaiser_Leader3
+	#	icon = GFX_unit_guided_missile_icon_small_texticon
+	#	cost = 1000
+	#	relative_position_id = GER_Kaiser_Leader_Event
+	#	x = 3
+	#	y = 1
+	#	prerequisite = {
+	#		focus = GER_Kaiser_Leader_Event
+	#	}
+	#	mutually_exclusive = {
+	#		focus = GER_Kaiser_Leader1
+	#		focus = GER_Kaiser_Leader2
+	#	}
+	#	completion_reward = {
+	#	}
+	#}
 	focus = {
 		id = GER_Wilhelm_Continue1
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -1342,10 +1355,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			59 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1365,6 +1378,26 @@ focus_tree = {
 			add_trait = {
 				character = GER_wilhelm_II
 				trait = By_Grace_Of_God_Kaiser_Of_Germany
+			}
+		}
+	}
+	focus = {
+		id = GER_Wilhelm_Tanks
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Wilhelm_Leader3
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = GER_Wilhelm_Kaiser_Of_Germany
+		}
+		prerequisite = {
+			focus = GER_Wilhelm_Oil
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Wilhelm_Our_Kaiser3
+				add_idea = GER_Wilhelm_Our_Kaiser4
 			}
 		}
 	}
