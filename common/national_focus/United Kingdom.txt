@@ -693,6 +693,7 @@ focus_tree = {
 			}
 		}
 		available = {
+			date > 1914.1.1
 		    has_idea = isolation
 		}
 		
@@ -720,7 +721,6 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_war = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -728,6 +728,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			add_ideas = ENG_mass_mobilization
+
 		    random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes

@@ -10,7 +10,12 @@ NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40  		-- how many divisions a
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.5		-- Speed at which militaryfactories produce equipment
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which militaryfactories produce equipment
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0		-- Cost of changing a brigade in a division
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
+NDefines.NMilitary.BASE_STRENGTH_LOSS_FACTOR = 0.05		-- Base strength loss factor for attrition
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12        -- Modifier for land combat strength damage
+NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 20        -- Chance for land combat to damage fortifications
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.01        -- Collateral damage to fortifications in land combat
+NDefines.NMilitary.BASE_FORT_PENALTY = 0			-- Base fort penalty for land combat
