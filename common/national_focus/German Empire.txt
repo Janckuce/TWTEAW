@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Choose_Military_Strategy
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_GER_party_chancellor_bormann
 		cost = 7.2
 		x = 3
 		y = 4
@@ -52,7 +52,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_schlieffen_moltke_plan_idea
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_ger_moltke-schliefen_plan
 		cost = 7.2
 		available = {
 			always = no
@@ -69,7 +69,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Helmuth_von_Moltke
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_ger_moltke_plan
 		cost = 7.2
 		available = {
 			always = no
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_address_military_situation
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_GER_glory_to_the_imperial_army
 		cost = 7.2
 		x = 4
 		y = 1
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Start_Military_Reforms
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_GER_prussian_legacy
 		cost = 7.2
 		x = 4
 		y = 2
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_finish_military_reforms
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_GER_all_for_the_front
 		cost = 7.2
 		x = 4
 		y = 3
@@ -134,7 +134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Military_academy
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_chi_army_reform
 		cost = 7.2
 		x = 6
 		y = 4
@@ -162,7 +162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Infantry_research
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		cost = 7.2
 		x = 6
 		y = 5
@@ -180,7 +180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_appease_Britain
-		icon = x
+		icon = GFX_focus_generic_naval_discipline
 		x = 6
 		y = 2
 		cost = 7.2
@@ -374,7 +374,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Newspaper_Propaganda
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ger_propaganda_1
 		cost = 5
 		x = 23
 		y = 1
@@ -387,7 +387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Media_Propaganda
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ger_wilhelm_kaiser
 		cost = 5
 		relative_position_id = GER_Newspaper_Propaganda
 		x = 0
