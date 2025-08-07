@@ -198,7 +198,7 @@ focus_tree = {
 		id = GER_Naval_Race
 		icon = GFX_goal_generic_navy_battleship
 		cost = 7.2
-		x = 8
+		x = 10
 		y = 1
 		prerequisite = {
 			focus = GER_Our_Kaiser
@@ -223,7 +223,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.2
 		relative_position_id = GER_Naval_Race
-		x = 2
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = GER_Naval_Race
@@ -323,7 +323,7 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
 		relative_position_id = GER_Naval_Race
-		x = 0
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = GER_Naval_Race
@@ -368,7 +368,7 @@ focus_tree = {
 				name = GER_Naval_Research_1
 				bonus = 1
 				uses = 2
-				category = ship_modules_tech
+				category = naval_equipment
 			}
 		}
 	}
