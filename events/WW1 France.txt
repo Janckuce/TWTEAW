@@ -553,8 +553,29 @@ country_event = {
 		destroy_ships = { type = light_cruiser count = 1000 }
 		destroy_ships = { type = ship_hull_heavy count = 1000 }
 		
+
 		hidden_effect = {
-		    FRA = {
+			every_country = {
+				Limit = {
+				OR = {
+				has_war_with = GER
+				has_war_with = AUS
+				has_war_with = TUR
+				has_war_with = BUL
+				}
+				}
+				white_peace = GER
+				white_peace = AUS
+				white_peace = BUL
+				white_peace = TUR
+				white_peace = POL
+				white_peace = LIT
+				white_peace = BEL
+				white_peace = UKR
+				white_peace = UBD	
+			}
+
+				FRA = {
 			    news_event = ww1_news.51
 				
 				add_popularity = {
@@ -677,9 +698,11 @@ country_event = {
 					transfer_state = 923
 					transfer_state = 268
 				}
+			}
 					if = {
 						limit = { 
 							check_variable = {
+								Ottoman_join_war = 1
 								Italy_in_war = 1
 							}
 						}
@@ -695,7 +718,6 @@ country_event = {
 					transfer_state = 550
 					}
 				}
-			}
 			if = {
 				limit = { 
 					check_variable = {

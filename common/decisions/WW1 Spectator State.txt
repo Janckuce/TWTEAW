@@ -2192,9 +2192,12 @@ ORO_end_WW1_german_loss = {
 		visible = {
 			always = yes
 		}
-		
+		ai_will_do = {
+			factor = 10000
+		}
 		available = {
 		    GER = { has_war_with = FRA }
+			AND = {
 				FRA = {
 						NOT = {
 							OR = {
@@ -2217,8 +2220,26 @@ ORO_end_WW1_german_loss = {
 					}
 				}
 				NOT = { has_country_flag = WW1_ended_spectator }
+				}
 			}
 		complete_effect = {
+			every_country = {
+				limit = {
+					has_war_with = GER
+					has_war_with = AUS
+					has_war_with = TUR
+					has_war_with = BUL
+				}
+				white_peace = GER
+				white_peace = AUS
+				white_peace = BUL
+				white_peace = TUR
+				white_peace = POL
+				white_peace = LIT
+				white_peace = BEL
+				white_peace = UKR
+				white_peace = UBD
+			}
 			FRA = {
 			    country_event = ww1_france.16
 			}
@@ -2307,13 +2328,18 @@ ORO_death_news = {
 		visible = {
 			always = yes
 		}
-
+		ai_will_do = {
+			factor = 10000
+		}
 		available = {
 			date > 1915.10.14
 		}
 		fire_only_once = yes
 		complete_effect = {
 			BUL = {
+				set_variable = {
+					Bulgaria_in_war = 1
+				}
 				country_event = ww1_germany.16 
 			}
 		}
@@ -2328,8 +2354,14 @@ ORO_death_news = {
 		available = {
 			date > 1914.10.29
 		}
+		ai_will_do = {
+			factor = 10000
+		}
 		fire_only_once = yes
 		complete_effect = {
+			set_variable = {
+				Ottoman_join_war = 1
+			}
 			country_event = ww1_ottoman.5
 		}
 	}

@@ -230,7 +230,9 @@ country_event = {
 		}
 		
 		news_event = ww1_news.15
-		
+		set_variable = {
+			Russia_surrender = 1
+		}
 		every_country = {
 			limit = {
 				OR = {
@@ -326,9 +328,6 @@ country_event = {
 		name = ww1_germany.9.a
 		
 		news_event = ww1_news.14
-		set_variable = {
-			Russia_surrender = 1
-		}
 		GER = { 
 		    transfer_state = 815  
 		    transfer_state = 96
@@ -418,9 +417,6 @@ country_event = {
 		name = ww1_germany.10.a
 		
 		news_event = ww1_news.14
-		set_variable = {
-			Russia_surrender = 1
-		}
 		GER = { 
 			transfer_state = 92
 			transfer_state = 90
