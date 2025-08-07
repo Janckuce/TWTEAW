@@ -1105,11 +1105,21 @@ leader_traits = {
 	GER_freikorps_commander = {
 		random = no
 		sprite = 5
-		conscription_factor = 0.03
+		conscription_factor = 0.05
 		modifier_army_sub_unit_militia_defence_factor = 0.05
 		modifier_army_sub_unit_militia_attack_factor = 0.05
 		modifier_army_sub_unit_militia_max_org_factor = 0.05
 		drift_defence_factor = 0.15
+	}
+
+		TUR_paramilitariess_commander = {
+		random = no
+		sprite = 5
+		conscription_factor = 0.03
+		modifier_army_sub_unit_militia_defence_factor = 0.2
+		modifier_army_sub_unit_militia_attack_factor = 0.2
+		modifier_army_sub_unit_militia_max_org_factor = 0.25
+		ETH_army_modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
 	}
 
 	champion_of_peace_1 = {

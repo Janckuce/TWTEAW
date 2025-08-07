@@ -525,6 +525,23 @@ characters={
 			civilian = {
 				large = "GFX_TUR_enver_pasha"
 			}
+				army = {
+				small = "GFX_tur_enver_pasha_frame"
+			}
+		}
+			advisor={
+			slot = high_command
+			idea_token = TUR_enver_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				TUR_paramilitariess_commander
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 		corps_commander={
 			traits = { politically_connected media_personality trait_reckless war_hero }
