@@ -184,7 +184,7 @@ ideas = {
             picture = generic_research_bonus
 
 			modifier = {
-			    research_speed_factor = 0.05
+			    research_speed_factor = 0.25
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -312,6 +312,42 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = -0.05
 				industrial_capacity_factory = -0.05
+			}
+		}
+		ENG_Underequiped_Military = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GFX_goal_generic_amphibious_assault
+
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
+		ENG_Send_Equipment_To_Frontline = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GFX_goal_generic_amphibious_assault
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
 			}
 		}
 	}

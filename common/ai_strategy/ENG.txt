@@ -55,9 +55,13 @@ ENG_DO_NOT_NAVAL_INVADE = { #Do not delete this
 		original_tag = ENG
 	}
 	enable = {
-		date < 1920.1.1
+		NOT = {
+			FRA = {
+				has_capitulated = yes
+			}
+		}
 	}
-	abort_when_not_enabled = yes
+	abort_when_not_enabled = no
 
 	ai_strategy = {
 		type = naval_invasion_focus
@@ -170,45 +174,45 @@ ENG_do_not_protect_allies = { #I know UK protected france but I don't want 600 d
 
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "RUS"
+		id = RUS
 		value = 10000
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "FRA"
+		id = USA
 		value = 10000
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "ITA"
+		id = SER
 		value = 10000
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "USA"
-		value = 10000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "SER"
-		value = 10000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "MNT"
-		value = 10000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "BEL"
-		value = 10000
-	}
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "GRE"
+		id = MNT
 		value = 10000
 	}
 	#I copied the long ass code from the great war redux mod, sorry
+}
+
+ENG_Fight_Germany = {
+	allowed = {
+		tag = ENG
+	}
+
+	enable = {
+		is_in_faction_with = FRA
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER
+		value = 1
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = 100
+	}
 }
 
 ############################################################################################################################
