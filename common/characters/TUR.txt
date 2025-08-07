@@ -240,12 +240,18 @@ characters={
 			civilian = {
 				large = "GFX_TUR_sehzade_yusuf_izzeddin"
 			}
+				army = {
+				small = "GFX_advisor_tur_yazzif"
+			}
 		}
 		advisor={
 			slot = army_chief
 			idea_token = TUR_sehzade_yusuf_izzeddin
 			allowed = {
 				original_tag = TUR
+			}
+				available = {
+				has_completed_focus = TUR_Stay_With_Sultan
 			}
 			traits = {
 				army_chief_offensive_2 #Inf Attack +10%
@@ -270,6 +276,9 @@ characters={
 			civilian = {
 				large = "GFX_tur_ahmed_muhtar_pasha"
 			}
+				army = {
+				small = "GFX_advisor_tur_ahmed_muhtar"
+			}
 		}
 		advisor={
 			slot = army_chief
@@ -278,7 +287,7 @@ characters={
 				original_tag = TUR
 			}
 			traits = {
-				army_chief_defensive_2
+				army_chief_defensive_3
 			}
 			cost = 150
 			ai_will_do = {
@@ -294,11 +303,83 @@ characters={
 			logistics_skill = 4
 		}
 	}
+
+		tur_rauf_orbay = {
+		name = tur_rauf_orbay
+		portraits = {
+			civilian = {
+				large = "GFX_tur_rauf_bey"
+			}
+				army = {
+				small = "GFX_tur_rauf_bey_frame"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = tur_rauf_orbay
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { cuts_corners crisis_magician blockade_runner }
+			skill = 4
+			attack_skill = 6
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+
+		tur_wilhelm_souchon = {
+		name = tur_wilhelm_souchon
+		portraits = {
+			civilian = {
+				large = "GFX_tur_wilhelm_souchon"
+			}
+				army = {
+				small = "GFX_tur_wilhelm_souchon_frame"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = tur_wilhelm_souchon
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				navy_chief_reform_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { big_guns_expert }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 2
+		}
+	}
+
 	TUR_omer_fahrettin_pasha = {
 		name = TUR_character_omer_fahrettin_pasha
 		portraits = {
 			civilian = {
 				large = "GFX_TUR_omer_fahrettin_pasha"
+			}
+				army = {
+				small = "GFX_tur_fahrettin_frame"
 			}
 		}
 		advisor={
@@ -329,6 +410,9 @@ characters={
 		portraits = {
 			civilian = {
 				large = "GFX_TUR_mustafa_kemal_ataturk"
+			}
+				army = {
+				small = "GFX_tur_attaturk_frame"
 			}
 		}
 		advisor={
@@ -408,6 +492,9 @@ characters={
 			civilian = {
 				large = "GFX_TUR_mustafa_fevzi_pasha"
 			}
+				army = {
+				small = "GFX_tur_vevzi_cakmakaak"
+			}
 		}
 		advisor={
 			slot = theorist
@@ -453,6 +540,23 @@ characters={
 		portraits = {
 			civilian = {
 				large = "GFX_TUR_mehmed_esad_pasha"
+			}
+				army = {
+				small = "GFX_TUR_mehmed_esad_pasha_frame"
+			}
+		}
+			advisor={
+			slot = high_command
+			idea_token = TUR_mehmed_esad_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+			fortification_engineer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander={

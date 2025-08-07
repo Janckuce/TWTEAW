@@ -1,4 +1,23 @@
 ideas = {
+
+		industrial_concern = {
+			designer = no 
+
+			anatolian_train = {
+			allowed = { original_tag =TUR }
+			traits = {
+				railway_company
+				}
+			}
+
+				apikoglu = {
+				allowed = { original_tag = TUR }
+				traits = {
+				apikoglu_spirit
+			}
+		}
+	}
+
 	country = {
 		TUR_Army_Of_Bygon_Era = {
 			allowed = {
@@ -537,25 +556,4 @@ ideas = {
 			icture = generic_navy_bonus
 		}
 	}
-
-		industrial_concern = {
-
-			anatolian_train = {
-			allowed = { original_tag = TUR }
-			traits = {
-				railway_company = {
-				}
-			}
-		}
-
-
-		apikoglu = {
-			allowed = { original_tag = TUR }
-			traits = {
-				Apikoglu = {
-				}
-			}
-		}
-	}
-
 }
