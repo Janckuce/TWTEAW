@@ -17,7 +17,7 @@ focus_tree = {
 	focus = {
 		id = Tur_state_of_army
 		icon = GFX_goal_generic_army_doctrines
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 
@@ -47,7 +47,7 @@ focus_tree = {
 		id = TUR_Army_Reform
 		icon = GFX_focus_focus_fra_maquis
 		cost = 5
-		x = 2
+		x = 1
 		y = 2
 		prerequisite = {
 			focus = Tur_state_of_army
@@ -75,7 +75,7 @@ focus_tree = {
 			has_army_experience > 150
 		}
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		x = 2
+		x = 1
 		y = 3
 		completion_reward = {
 			remove_ideas = TUR_Army_Of_Bygon_Era_3
@@ -86,7 +86,7 @@ focus_tree = {
 		id = TUR_Military_Research
 		icon = GFX_focus_generic_advanced_military_studies
 		cost = 10
-		x = 1
+		x = 0
 		y = 4
 		prerequisite = {
 			focus = TUR_Reformed_Army
@@ -115,7 +115,7 @@ focus_tree = {
 			has_completed_focus = TUR_Stay_With_Sultan
 		}
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		x = 3
+		x = 2
 		y = 4
 		completion_reward = {
 			add_ideas = TUR_Army_Fit_Sultan
@@ -163,6 +163,26 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = TUR_Industrialising2
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = TUR_Sick_man_europe_2
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = TUR_Sick_man_europe_3
 		icon = GFX_goal_generic_production2
 		cost = 10
@@ -179,6 +199,26 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = TUR_Sick_man_europe
 				add_idea = TUR_Sick_man_europe_3
+			}
+		}
+	}
+	focus = {
+		id = TUR_Industrialising3
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		x = 9
+		y = 3
+		prerequisite = {
+			focus = TUR_Sick_man_europe_3
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -374,7 +414,7 @@ focus_tree = {
 		id = TUR_State_of_nation
 		icon = GFX_focus_AFG_education_reform
 		cost = 5.8
-		x = 10
+		x = 11
 		y = 1
 		prerequisite = {
 			focus = TUR_Leadership_Issue
@@ -391,7 +431,7 @@ focus_tree = {
 		id = TUR_Speak_To_People
 		icon = GFX_focus_ARG_keep_it_in_the_party
 		cost = 7.2
-		x = 10
+		x = 11
 		y = 2
 		prerequisite = {
 			focus = TUR_State_of_nation
@@ -409,7 +449,7 @@ focus_tree = {
 		id = TUR_restore_peoples_trust
 		icon = GFX_focus_TUR_misak_i_milli
 		cost = 7.2
-		x = 10
+		x = 11
 		y = 3
 		prerequisite = {
 			focus = TUR_Speak_To_People
@@ -429,7 +469,7 @@ focus_tree = {
 		available = {
 			date > 1913.1.1
 		}
-		x = 10
+		x = 11
 		y = 4
 		prerequisite = {
 			focus = TUR_restore_peoples_trust
@@ -446,7 +486,7 @@ focus_tree = {
 		id = TUR_Focus_On_Britain
 		icon = GFX_focus_ARG_cut_ties_with_britain
 		cost = 0
-		x = 9
+		x = 10
 		y = 5
 		mutually_exclusive = {
 			focus = TUR_Focus_On_Russia
@@ -469,7 +509,7 @@ focus_tree = {
 		id = TUR_Focus_On_Russia
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		cost = 0
-		x = 11
+		x = 12
 		y = 5
 		mutually_exclusive = {
 			focus = TUR_Focus_On_Britain

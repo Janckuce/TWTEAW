@@ -632,12 +632,12 @@ country_event = {
 
 				puppet = SER
 				}
-				if = {
-					limit = { 
-						check_variable = {
-							Italy_in_war = 1
-						}
+			if = {
+				limit = { 
+					check_variable = {
+					Italy_in_war = 1
 					}
+				}
 					AUS = {
 					transfer_state = 913
 					transfer_state = 160
