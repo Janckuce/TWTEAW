@@ -214,7 +214,9 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.5.a
-
+		set_variable = {
+			Ottoman_join_war = 1
+		}
 		RUS = {
 			declare_war_on = {
 				type = take_claimed_state

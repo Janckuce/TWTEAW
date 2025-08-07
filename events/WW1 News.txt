@@ -947,6 +947,22 @@ news_event = {
 	}
 }
 
+#Armistice of Stuttgard
+news_event = {
+	id = ww1_news.51
+	title = ww1_news.51t
+	desc = ww1_news_desc.51
+	picture = GFX_news_event_armistice_of_compiegne
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.51.a
+	}
+}
+
 #Erich Ludendorff Takes Power
 news_event = {
 	id = ww1_news.48
