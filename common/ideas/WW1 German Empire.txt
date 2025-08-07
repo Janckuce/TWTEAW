@@ -591,27 +591,11 @@ ideas = {
 
 			equipment_bonus = {
 				gw_tank_equipment = {
-					build_cost_ic = -0.2
+					build_cost_ic = -0.05
 				}
 			}
 		}
 		GER_Disloyal_Nation = {
-			modifier = {
-				stability_factor = -0.2
-				war_support_factor = -0.2
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
-			}
-		}
-		GER_Disloyal_Nation1 = {
-			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.15
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
-			}
-		}
-		GER_Disloyal_Nation2 = {
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
@@ -619,12 +603,28 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 			}
 		}
-		GER_Disloyal_Nation3 = {
+		GER_Disloyal_Nation1 = {
+			modifier = {
+				stability_factor = -0.075
+				war_support_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+		GER_Disloyal_Nation2 = {
 			modifier = {
 				stability_factor = -0.05
 				war_support_factor = -0.05
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
+			}
+		}
+		GER_Disloyal_Nation3 = {
+			modifier = {
+				stability_factor = -0.025
+				war_support_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
 			}
 		}
 	}

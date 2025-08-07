@@ -1133,6 +1133,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			set_variable = {
+				Italy_in_war = 1
+			}
 			remove_ideas = ITA_central_powers_2
 			declare_war_on = {
 				type = take_claimed_state
