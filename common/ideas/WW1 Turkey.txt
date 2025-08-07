@@ -250,7 +250,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic_production_bonus
+			picture = HUN_turul_association_idea
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
@@ -263,7 +263,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic
+			picture = chi_war_of_resistance2
 
 			modifier = {
 				political_power_factor = 0.10
@@ -272,7 +272,8 @@ ideas = {
 				war_support_weekly_factor = 0.004
 			}
 		}
-		TUR_Focus_On_Britain = {
+		TUR_Focus_On_Britain ={
+			picture = ARG_anti_british_sentiment
 			targeted_modifier = {
 				tag = ENG
 				attack_bonus_against = 0.15
@@ -283,6 +284,7 @@ ideas = {
 			}
 		}
 		TUR_Focus_On_Russia = {
+			picture = SOV_opiate_of_the_masses
 			targeted_modifier = {
 				tag = RUS
 				attack_bonus_against = 0.15
@@ -550,6 +552,7 @@ ideas = {
 			picture = generic_navy_bonus
 		}
 		TUR_Purchased_Ships = {
+			picture = generic_navy_bonus
 			modifier = {
 				consumer_goods_factor = 0.15
 			}
