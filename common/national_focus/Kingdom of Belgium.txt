@@ -26,6 +26,7 @@ focus_tree = {
 		cost = 5
 		x = 10
 		y = 0
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
 			add_ideas = BEL_Outrage_Over_Congolese_Treatment
@@ -170,7 +171,7 @@ focus_tree = {
 	focus = {
 		id = BEL_Congo_Infrastructure
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 10
 		relative_position_id = BEL_Congo_Iron_Mines
 		x = 1
 		y = 1
@@ -185,7 +186,7 @@ focus_tree = {
 			295 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 				}
 			}
 		}
@@ -270,7 +271,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				category = infantry_tech
+				category = infantry_weapons
 				bonus = 0.5
 				uses = 1
 			}
@@ -428,7 +429,7 @@ focus_tree = {
 	focus = {
 		id = BEL_Loyal_To_The_King
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 10
 		relative_position_id = BEL_The_King's_Nation
 		x = 3
 		y = 1
@@ -752,9 +753,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		available = {
-			has_war = yes
-		}
 		prerequisite = {
 			focus = BEL_Knight_King
 		}
@@ -766,19 +764,33 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BEL_King_Of_Belgium
+		id = BEL_King_Of_The_Congo
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = BEL_Soldier_King
 		x = 0
 		y = 1
-		search_filters = {FOCUS_FILTER_STABILITY}
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-		available = {
-			has_war = yes
-		}
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		prerequisite = {
 			focus = BEL_Soldier_King
+		}
+		completion_reward = {
+			295 = {
+				add_core_of = BEL
+			}
+		}
+	}
+	focus = {
+		id = BEL_King_Of_Belgium
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_King_Of_The_Congo
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		prerequisite = {
+			focus = BEL_King_Of_The_Congo
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -797,9 +809,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		available = {
-			has_war = yes
-		}
 		prerequisite = {
 			focus = BEL_King_Of_Belgium
 		}
