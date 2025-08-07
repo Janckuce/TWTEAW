@@ -1,0 +1,59 @@
+BEL_War_Support_Category = {
+	BEL_War_Support_Increase1 = {
+		priority = 1
+		cost = 60
+		days_remove = 40
+		fire_only_once = yes
+		allowed = {
+			tag = BEL
+		}
+		visible = {
+			always = yes
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = BEL_Consumer_Good_Factories
+				days = 120
+			}
+		}
+	}
+	BEL_War_Support_Increase2 = {
+		priority = 1
+		cost = 60
+		days_remove = 40
+		fire_only_once = yes
+		allowed = {
+			tag = BEL
+		}
+		visible = {
+			always = yes
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = BEL_Consumer_Good_Factories
+				days = 120
+			}
+		}
+	}
+	BEL_War_Support_Increase3 = {
+		priority = 1
+		cost = 60
+		days_remove = 40
+		fire_only_once = yes
+		allowed = {
+			tag = BEL
+		}
+		visible = {
+			always = yes
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = BEL_Consumer_Good_Factories
+				days = 120
+			}
+		}
+	}
+}

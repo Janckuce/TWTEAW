@@ -4,7 +4,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
-				war_support_weekly_factor = 0.001
 			}
 		}
 		BEL_King_Status1 = {
@@ -165,6 +164,11 @@ ideas = {
 		BEL_Science_Power2 = {
 			modifier = {
 				research_speed_factor = 0.075
+			}
+		}
+		BEL_Consumer_Good_Factories = {
+			modifier = {
+				consumer_goods_factor = 0.15
 			}
 		}
 	}
