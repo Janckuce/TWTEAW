@@ -26,6 +26,7 @@ focus_tree = {
 		cost = 5
 		x = 10
 		y = 0
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
 			add_ideas = BEL_Outrage_Over_Congolese_Treatment
 			country_event = {
@@ -41,6 +42,7 @@ focus_tree = {
 		relative_position_id = BEL_The_King's_Nation
 		x = -8
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_The_King's_Nation
 		}
@@ -61,6 +63,7 @@ focus_tree = {
 		relative_position_id = BEL_Industrial1
 		x = 2
 		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_The_King's_Nation
 		}
@@ -81,6 +84,7 @@ focus_tree = {
 		relative_position_id = BEL_Industrial1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_Industrial1
 			focus = BEL_Industrial2
@@ -102,6 +106,7 @@ focus_tree = {
 		relative_position_id = BEL_Industrial1
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_Industrial1
 			focus = BEL_Industrial2
@@ -123,6 +128,7 @@ focus_tree = {
 		relative_position_id = BEL_Congo_Industrial1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_Congo_Industrial1
 		}
@@ -145,6 +151,7 @@ focus_tree = {
 		relative_position_id = BEL_Congo_Industrial1
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_Congo_Industrial1
 		}
@@ -167,6 +174,7 @@ focus_tree = {
 		relative_position_id = BEL_Congo_Iron_Mines
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_Congo_Iron_Mines
 		}
@@ -189,6 +197,7 @@ focus_tree = {
 		relative_position_id = BEL_Congo_Infrastructure
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = BEL_Congo_Infrastructure
 		}
@@ -203,6 +212,7 @@ focus_tree = {
 		relative_position_id = BEL_The_King's_Nation
 		x = -4
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		mutually_exclusive = {
 			focus = BEL_Congo_Military
 		}
@@ -226,6 +236,8 @@ focus_tree = {
 		relative_position_id = BEL_Belgium_Military
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Belgium_Military
 		}
@@ -251,6 +263,8 @@ focus_tree = {
 		relative_position_id = BEL_Belgium_Defense1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Belgium_Defense1
 		}
@@ -269,6 +283,7 @@ focus_tree = {
 		relative_position_id = BEL_Belgium_Military
 		x = 2
 		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		mutually_exclusive = {
 			focus = BEL_Belgium_Military
 		}
@@ -292,6 +307,8 @@ focus_tree = {
 		relative_position_id = BEL_Congo_Military
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Congo_Military
 		}
@@ -317,6 +334,8 @@ focus_tree = {
 		relative_position_id = BEL_Congo_Defense1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Congo_Defense1
 		}
@@ -335,6 +354,7 @@ focus_tree = {
 		relative_position_id = BEL_Belgium_Defense2
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = BEL_Belgium_Defense2
 		}
@@ -346,12 +366,75 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BEL_Science1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = BEL_The_King's_Nation
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_tech = ww1_mechanical_computing_1
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			add_ideas = BEL_Science_Power
+		}
+	}
+	focus = {
+		id = BEL_Science2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = BEL_Science1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_tech = ww1_mechanical_computing_2
+		}
+		prerequisite = {
+			focus = BEL_Science1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Science_Power
+				add_idea = BEL_Science_Power1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Science3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = BEL_Science2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_tech = ww1_mechanical_computing_3
+		}
+		prerequisite = {
+			focus = BEL_Science2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Science_Power1
+				add_idea = BEL_Science_Power2
+			}
+		}
+	}
+	focus = {
 		id = BEL_Loyal_To_The_King
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
 		relative_position_id = BEL_The_King's_Nation
-		x = 1
+		x = 3
 		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		mutually_exclusive = {
 			focus = BEL_Commune
 		}
@@ -372,6 +455,9 @@ focus_tree = {
 		relative_position_id = BEL_Loyal_To_The_King
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		mutually_exclusive = {
 			focus = BEL_Dutch_Language
 		}
@@ -389,6 +475,8 @@ focus_tree = {
 		relative_position_id = BEL_Loyal_To_The_King
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		mutually_exclusive = {
 			focus = BEL_French_Language
 		}
@@ -406,6 +494,8 @@ focus_tree = {
 		relative_position_id = BEL_Loyal_To_The_King
 		x = 0
 		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = BEL_French_Language
 			focus = BEL_Dutch_Language
@@ -421,6 +511,7 @@ focus_tree = {
 		relative_position_id = BEL_Address_Colonial_Issues
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = BEL_Address_Colonial_Issues
 		}
@@ -435,6 +526,9 @@ focus_tree = {
 		relative_position_id = BEL_United_Through_The_Crown
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = BEL_United_Through_The_Crown
 		}
@@ -451,8 +545,10 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10000
 		relative_position_id = BEL_The_King's_Nation
-		x = 5
+		x = 7
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		mutually_exclusive = {
 			focus = BEL_Loyal_To_The_King
 		}
@@ -461,7 +557,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = BEL_Commune_Tooltip
-			add_ideas = BEL_Socialist_Rise
+			add_ideas = BEL_Socialist_Power
 		}
 	}
 	focus = {
@@ -471,6 +567,7 @@ focus_tree = {
 		relative_position_id = BEL_Commune
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = BEL_Commune
 		}
@@ -494,6 +591,7 @@ focus_tree = {
 		relative_position_id = BEL_Commune
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = BEL_Commune
 		}
@@ -517,6 +615,8 @@ focus_tree = {
 		relative_position_id = BEL_Commune
 		x = 0
 		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		available = {
 			communism > 0.5
 		}
@@ -530,14 +630,112 @@ focus_tree = {
 			set_politics = {
 				ruling_party = communism
 			}
+			remove_ideas = BEL_Outrage_Over_Congolese_Treatment
+		}
+	}
+	focus = {
+		id = BEL_Socialist_Consolidation1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Enter_The_Stage
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			has_idea = BEL_Socialist_Power
+		}
+		prerequisite = {
+			focus = BEL_Enter_The_Stage
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Socialist_Power
+				add_idea = BEL_Socialist_Power1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Socialist_Consolidation2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Enter_The_Stage
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			has_idea = BEL_Socialist_Power1
+		}
+		prerequisite = {
+			focus = BEL_Enter_The_Stage
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Socialist_Power1
+				add_idea = BEL_Socialist_Power2
+			}
+		}
+	}
+	focus = {
+		id = BEL_The_King_Stays
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Socialist_Consolidation1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Socialist_Consolidation1
+		}
+		completion_reward = {
+			add_ideas = BEL_The_King
+		}
+	}
+	focus = {
+		id = BEL_The_Workers_Stay
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = BEL_Socialist_Consolidation2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Socialist_Consolidation2
+		}
+		completion_reward = {
+			add_ideas = BEL_The_People
+		}
+	}
+	focus = {
+		id = BEL_The_People's_Nation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = BEL_Enter_The_Stage
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_The_King_Stays
+		}
+		prerequisite = {
+			focus = BEL_The_Workers_Stay
+		}
+		completion_reward = {
+			remove_ideas = BEL_Divided_Nation
 		}
 	}
 	focus = {
 		id = BEL_Knight_King
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 11
-		y = 7
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		available = {
 			has_war = yes
 			date > 1914.7.28
@@ -556,6 +754,7 @@ focus_tree = {
 		relative_position_id = BEL_Knight_King
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		available = {
 			has_war = yes
 		}
@@ -576,6 +775,8 @@ focus_tree = {
 		relative_position_id = BEL_Soldier_King
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		available = {
 			has_war = yes
 		}
@@ -596,6 +797,9 @@ focus_tree = {
 		relative_position_id = BEL_King_Of_Belgium
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		available = {
 			has_war = yes
 		}

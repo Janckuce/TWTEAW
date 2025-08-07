@@ -11,17 +11,23 @@ country_event = {
 	trigger = {
 		tag = BEL
 		has_completed_focus = BEL_The_King's_Nation
-		not = {
-			has_completed_focus = BEL_Loyal_To_The_King
-		}
 	}
 
 	option = {
 		name = ww1_belgium.1.a
 		complete_national_focus = BEL_Commune
+		trigger = {
+			not = {
+				has_completed_focus = BEL_Loyal_To_The_King
+			}
+		}
 	}
 
 	option = {
 		name = ww1_belgium.1.b
+		add_timed_idea = {
+			idea = BEL_Worker's_Strike
+			days = 120
+		}
 	}
 }

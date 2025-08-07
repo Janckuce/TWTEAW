@@ -4,19 +4,20 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
+				war_support_weekly_factor = 0.001
 			}
 		}
 		BEL_King_Status1 = {
 			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
+				stability_factor = 0.15
+				war_support_factor = 0.15
 				army_org_regain = 0.05
 			}
 		}
 		BEL_King_Status2 = {
 			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
+				stability_factor = 0.15
+				war_support_factor = 0.15
 				army_org_regain = 0.05
 				army_morale_factor = 0.08
 				army_org_factor = 0.08
@@ -25,8 +26,8 @@ ideas = {
 		}
 		BEL_King_Status3 = {
 			modifier = {
-				stability_factor = 0.2
-				war_support_factor = 0.2
+				stability_factor = 0.25
+				war_support_factor = 0.25
 				army_org_regain = 0.05
 				army_morale_factor = 0.08
 				army_org_factor = 0.08
@@ -35,8 +36,8 @@ ideas = {
 		}
 		BEL_King_Status4 = {
 			modifier = {
-				stability_factor = 0.2
-				war_support_factor = 0.2
+				stability_factor = 0.3
+				war_support_factor = 0.3
 				army_org_regain = 0.05
 				army_morale_factor = 0.08
 				army_org_factor = 0.08
@@ -112,9 +113,58 @@ ideas = {
 				}
 			}
 		}
-		BEL_Socialist_Rise = {
+		BEL_Socialist_Power = {
 			modifier = {
 				communism_drift = 0.2
+				industry_repair_factor = 0.05
+			}
+		}
+		BEL_Socialist_Power1 = {
+			modifier = {
+				communism_drift = 0.3
+				industry_repair_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		BEL_Socialist_Power2 = {
+			modifier = {
+				communism_drift = 0.3
+				industry_repair_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		BEL_Worker's_Strike = {
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+		BEL_The_King = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				party_popularity_stability_factor = 0.1
+			}
+		}
+		BEL_The_People = {
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				party_popularity_stability_factor = 0.1
+			}
+		}
+		BEL_Science_Power = {
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+		BEL_Science_Power1 = {
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		BEL_Science_Power2 = {
+			modifier = {
+				research_speed_factor = 0.075
 			}
 		}
 	}
