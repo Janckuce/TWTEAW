@@ -389,7 +389,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Newspaper_Propaganda
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ger_propaganda_1
 		cost = 2.9
 		x = 23
 		y = 1
@@ -402,7 +402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Media_Propaganda
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ger_wilhelm_kaiser
 		cost = 2.9
 		relative_position_id = GER_Newspaper_Propaganda
 		x = 0
@@ -433,7 +433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Command_Power_Addon
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ger_prussian_soldier
 		cost = 2.9
 		relative_position_id = GER_Media_Propaganda
 		x = 1
@@ -449,26 +449,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_Prepare1
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 2.9
-		relative_position_id = GER_Media_Propaganda
-		x = -1
-		y = 2
-		prerequisite = {
-			focus = GER_Political_Gain
-			focus = GER_Command_Power_Addon
-		}
-		completion_reward = {
-			add_political_power = 80
-		}
-	}
-	focus = {
 		id = GER_Prepare2
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 2.9
 		relative_position_id = GER_Media_Propaganda
-		x = 1
+		x = 0
 		y = 2
 		prerequisite = {
 			focus = GER_Political_Gain
@@ -515,7 +500,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_rhineland_plan
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_DEN_civilian_preparations
 		x = 14
 		y = 1
 		cost = 10
@@ -773,7 +758,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_east_prussia_plan
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_NORDIC_com_capstone_civilian
 		prerequisite = {
 			focus = GER_chromium_mines
 		}
@@ -958,7 +943,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_invest_in_military
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_generic_military_industry
 		relative_position_id = GER_heavy_armament_production
 		prerequisite = {
 			focus = GER_heavy_armament_production
