@@ -24,87 +24,10 @@ focus_tree = {
 	reset_on_civilwar = no
 	
 	focus = {
-		id = ENG_civ_factory_1
-		icon = GFX_goal_generic_construct_civ_factory
+		id = ENG_focus_protect_belgium
+		icon = GFX_focus_befriend_belgium
 		x = 5
 		y = 0
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_completed_focus = ENG_focus_protect_belgium
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_infrastructure_effort
-		icon = GFX_focus_generic_modernize_industry
-		relative_position_id = ENG_civ_factory_1
-		x = -2
-		y = 0
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_completed_focus = ENG_focus_protect_belgium
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    127 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_political_power_effort
-		icon = GFX_focus_generic_treaty
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_civ_factory_1
-		}
-		prerequisite = {
-			focus = ENG_infrastructure_effort
-		}
-		x = -1
-		y = 1
 		cost = 5.8
 
 		bypass = {
@@ -114,27 +37,128 @@ focus_tree = {
 		    #
 		}
 		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    add_political_power = 100
+		    ENG = {give_guarantee = BEL}
+			add_political_power = 50
 		}
 	}
-	
+	focus = {
+		id = ENG_Interfere_In_Agadir
+		icon = GFX_surrender_tiny_flag
+		cost = 100000
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = ENG_focus_protect_belgium
+		}
+		completion_reward = { 
+			ENG = {
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = ENG_government_reform
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = {
+			focus = ENG_Interfere_In_Agadir
+		}
+		x = -4
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_weak_government
+				add_idea = ENG_weak_government_2
+			}
+		}
+	}
+	focus = {
+		id = ENG_reafirm_the_triple_entente
+		icon = GFX_focus_befriend_russia
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = {
+			focus = ENG_Interfere_In_Agadir
+		}
+		x = -2
+		y = 2
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    FRA = {
+			    is_in_faction_with = RUS
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = ENG_entente
+		}
+	}
+	focus = {
+		id = ENG_root_out_corruption
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = {
+			focus = ENG_government_reform
+		}
+		prerequisite = {
+			focus = ENG_reafirm_the_triple_entente
+		}
+		x = -3
+		y = 3
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    remove_ideas = ENG_weak_government_2
+		}
+	}
 	focus = {
 		id = ENG_silent_workhorse
 		icon = GFX_focus_SWE_refuge_from_war
-		relative_position_id = ENG_civ_factory_1
+		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
-			focus = ENG_political_power_effort
+			focus = ENG_root_out_corruption
 		}
 		mutually_exclusive = {
 		    focus = ENG_captain_of_industry
 		}
-		x = 5
-		y = 2
+		x = -4
+		y = 4
 		cost = 5.8
 
 		bypass = {
@@ -149,23 +173,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    add_political_power = 100
-			custom_effect_tooltip = ENG_silent_workhorse_cet
+			activate_advisor = ENG_arthur_balfour
 		}
 	}
 	
 	focus = {
 		id = ENG_captain_of_industry
 		icon = GFX_focus_generic_low_cost_housing
-		relative_position_id = ENG_civ_factory_1
+		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
-			focus = ENG_political_power_effort
+			focus = ENG_root_out_corruption
 		}
 		mutually_exclusive = {
 		    focus = ENG_silent_workhorse
 		}
-		x = 3
-		y = 2
+		x = -2
+		y = 4
 		cost = 5.8
 
 		bypass = {
@@ -180,8 +203,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    add_political_power = 50
-			custom_effect_tooltip = ENG_captain_of_industry_cet
+			activate_advisor = ENG_andrew_bonar_law
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -196,101 +218,16 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = ENG_development_of_scotland
-		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_captain_of_industry
-			focus = ENG_silent_workhorse
-		}
-		x = 3
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_stability = 0.03
-		    121 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_development_of_wales
-		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_captain_of_industry
-			focus = ENG_silent_workhorse
-		}
-		x = 5
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_stability = 0.03
-		    122 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-				    type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
 	focus = {
 		id = ENG_research_slot
 		icon = GFX_focus_research
-		relative_position_id = ENG_civ_factory_1
+		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
-			focus = ENG_development_of_scotland
+			focus = ENG_silent_workhorse
+			focus = ENG_captain_of_industry
 		}
-		prerequisite = {
-			focus = ENG_development_of_wales
-		}
-		x = 4
-		y = 4
+		x = -4
+		y = 5
 		cost = 5.8
 
 		bypass = {
@@ -308,458 +245,14 @@ focus_tree = {
 		    add_research_slot = 1
 		}
 	}
-	
-	focus = {
-		id = ENG_improve_railway_network
-		icon = GFX_goal_generic_production2
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_political_power_effort
-		}
-		x = -1
-		y = 2
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    129 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			130 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			131 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			133 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			120 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			135 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			113 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_mil_factory_1
-		icon = GFX_goal_generic_construct_mil_factory
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_improve_railway_network
-		}
-		mutually_exclusive = {
-		    focus = ENG_civ_factory_2
-		}
-		x = 1
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-            random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_civ_factory_2
-		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_improve_railway_network
-		}
-		mutually_exclusive = {
-		    focus = ENG_mil_factory_1
-		}
-		x = -3
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_steel_casting_industry
-		icon = GFX_focus_generic_steel
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_civ_factory_2
-			focus = ENG_mil_factory_1
-		}
-		x = -1
-		y = 4
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_resource = {
-					type = steel
-					amount = 12
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_synthetic_rubber
-		icon = GFX_focus_generic_rubber
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_steel_casting_industry
-		}
-		x = -2
-		y = 5
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-				    is_core_of = ROOT
-				}
-				add_resource = {
-					type = rubber
-					amount = 12
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_tungsten_exploit
-		icon = GFX_focus_generic_tungsten
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_steel_casting_industry
-		}
-		x = 0
-		y = 5
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_resource = {
-					type = tungsten
-					amount = 12
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_mil_factory_2
-		icon = GFX_goal_generic_construct_mil_factory
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_mil_factory_1
-		}
-		x = 1
-		y = 6
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_civ_factory_3
-		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_civ_factory_2
-		}
-		x = -3
-		y = 6
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_end_the_isolation
-		icon = GFX_goal_generic_consumer_goods
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_civ_factory_3
-			focus = ENG_mil_factory_2
-		}
-		x = -1
-		y = 7
-		cost = 5.8
-
-		bypass = {
-			NOT = {
-			    has_idea = isolation
-			}
-		}
-		available = {
-			date > 1914.1.1
-		    has_idea = isolation
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_ideas = civilian_economy
-		}
-	}
-	
-	focus = {
-		id = ENG_wartime_industry
-		icon = GFX_focus_focus_fra_maquis
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_end_the_isolation
-		}
-		x = -1
-		y = 8
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_ideas = ENG_mass_mobilization
-
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = arms_factory
-					level = 6
-					instant_build = yes
-				}
-			}
-
-			add_tech_bonus = {
-				name = ENG_research_bonus_1
-				bonus = 0.75
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-	}
-	
 	focus = {
 		id = ENG_increased_research_funds
 		icon = GFX_focus_research2
-		relative_position_id = ENG_civ_factory_1
+		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
 			focus = ENG_research_slot
 		}
-		x = 4
+		x = -5
 		y = 6
 		cost = 5.8
 
@@ -780,93 +273,37 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_increased_trade_with_usa
-		icon = GFX_focus_generic_befriend_usa
-		relative_position_id = ENG_civ_factory_1
+		id = ENG_end_the_isolation
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
-			focus = ENG_development_of_scotland
-		}
-		prerequisite = {
-			focus = ENG_development_of_wales
+			focus = ENG_trade_with_france_focus
 		}
 		prerequisite = {
-			focus = ENG_mil_factory_1
-			focus = ENG_civ_factory_2
-		}
-		x = 2
-		y = 4
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_idea = ENG_trade_with_usa
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    swap_ideas = {
-				remove_idea = ENG_trade_with_usa
-				add_idea = ENG_trade_with_usa_2
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_trade_with_france_focus
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_civ_factory_1
-		prerequisite = {
-			focus = ENG_political_power_effort
+			focus = ENG_research_slot
 		}
 		x = -3
-		y = 2
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_ideas = ENG_trade_with_france
-		}
-	}
-	
-	focus = {
-		id = ENG_focus_protect_belgium
-		icon = GFX_focus_befriend_belgium
-		x = 15
-		y = 0
+		y = 6
 		cost = 5.8
 
 		bypass = {
-			#
+			NOT = {
+			    has_idea = isolation
+			}
 		}
 		available = {
-		    #
+			date > 1914.1.1
+		    has_idea = isolation
 		}
 		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    ENG = {give_guarantee = BEL}
-			add_political_power = 50
+		    add_ideas = civilian_economy
 		}
 	}
-	
 	focus = {
 		id = ENG_commonwealth_ties
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -909,41 +346,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ENG_war_with_dervish_state
-		icon = GFX_focus_ETH_protector_of_the_somalis
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_commonwealth_ties
-		}
-		x = 4
-		y = 2
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-			#
-		}
-		
-		search_filters = {FOCUS_FILTER_WAR_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    ENG = { country_event = ww1_uk.1 }
-		}
-	}
-	
-	focus = {
 		id = ENG_develop_canada
 		icon = GFX_focus_develop_canada
 		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
 			focus = ENG_commonwealth_ties
 		}
-		x = 5
-		y = 3
+		x = 3
+		y = 2
 		cost = 7.2
 
 		bypass = {
@@ -986,8 +396,8 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_commonwealth_ties
 		}
-		x = 6
-		y = 2
+		x = 4
+		y = 3
 		cost = 7.2
 
 		bypass = {
@@ -1030,8 +440,8 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_commonwealth_ties
 		}
-		x = 8
-		y = 2
+		x = 6
+		y = 3
 		cost = 7.2
 
 		bypass = {
@@ -1074,8 +484,8 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_commonwealth_ties
 		}
-		x = 7
-		y = 3
+		x = 5
+		y = 2
 		cost = 7.2
 
 		bypass = {
@@ -1118,7 +528,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_commonwealth_ties
 		}
-		x = 10
+		x = 7
 		y = 2
 		cost = 7.2
 
@@ -1158,10 +568,22 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
-			focus = ENG_commonwealth_ties
+			focus = ENG_develop_canada
 		}
-		x = 12
-		y = 2
+		prerequisite = {
+			focus = ENG_develop_australia
+		}
+		prerequisite = {
+			focus = ENG_develop_south_africa
+		}
+		prerequisite = {
+			focus = ENG_develop_india
+		}
+		prerequisite = {
+			focus = ENG_develop_malaya
+		}
+		x = 5
+		y = 4
 		cost = 7.2
 
 		bypass = {
@@ -1180,11 +602,6 @@ focus_tree = {
 			MAL = {
 			    is_puppet_of = ENG
 			}
-			has_completed_focus = ENG_develop_canada
-			has_completed_focus = ENG_develop_india
-			has_completed_focus = ENG_develop_australia
-			has_completed_focus = ENG_develop_south_africa
-			has_completed_focus = ENG_develop_malaya
 		}
 		
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -1206,12 +623,57 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = ENG_Develop_France
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		cost = 7.2
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = ENG_reafirm_the_triple_entente
+		}
+		available = {
+			has_completed_focus = ENG_trade_with_france_focus
+		}
+		completion_reward = {
+			15 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		 }
+	}
+	focus = {
+		id = ENG_Develop_Russia
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		cost = 7.2
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = ENG_reafirm_the_triple_entente
+		}
+		completion_reward = {
+			219 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		 }
+	}
 	
 	focus = {
 		id = ENG_naval_power_projection
 		icon = GFX_goal_generic_navy_cruiser
-		x = 23
-		y = 4
+		x = 16
+		y = 0
 		cost = 5.8
 
 		bypass = {
@@ -1236,6 +698,63 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = ENG_increased_trade_with_usa
+		icon = GFX_focus_generic_befriend_usa
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = {
+			focus = ENG_trade_with_france_focus
+		}
+		x = -1
+		y = 6
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_idea = ENG_trade_with_usa
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = ENG_trade_with_usa
+				add_idea = ENG_trade_with_usa_2
+			}
+		}
+	}
+	focus = {
+		id = ENG_trade_with_france_focus
+		icon = GFX_focus_befriend_france
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = {
+			focus = ENG_captain_of_industry
+			focus = ENG_silent_workhorse
+		}
+		x = -2
+		y = 5
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_ideas = ENG_trade_with_france
+		}
+	}
+	
 	
 	focus = {
 		id = ENG_expand_naval_facilities
@@ -1450,7 +969,7 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_tech = synth_oil_experiments
+		    has_tech = ww1_synthetic_oil_experiments
 		}
 		
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
@@ -1651,6 +1170,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_tech = marines
+				}
 		    division_template = {
 				name = "Royal Marines"
 				division_names_group = ENG_MAR_01
@@ -1699,6 +1222,11 @@ focus_tree = {
 					owner = ROOT
 					prioritize_location = 11374
 					allow_spawning_on_enemy_provs = yes
+					}
+				}
+			} else = {
+				set_technology = {
+				marines = 1
 				}
 			}
 		}
@@ -1865,535 +1393,61 @@ focus_tree = {
 		    remove_ideas = ENG_naval_arms_race
 		}
 	}
-	
 	focus = {
-		id = ENG_Air_focus
-		icon = GFX_goal_generic_build_airforce
-		x = 18
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_completed_focus = ENG_focus_protect_belgium
-		}
-		
-		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			air_experience = 100
-
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = FRA_air_focus_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = FRA_air_focus_2air
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_Fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		relative_position_id = ENG_Air_focus
-		prerequisite = {
-			focus = ENG_Air_focus
-		}
-		x = -1
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_tech_bonus = {
-				name = ENG_fighter_focus
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_Cas_focus
-		icon = GFX_goal_generic_air_fighter2
-		relative_position_id = ENG_Air_focus
-		prerequisite = {
-			focus = ENG_Air_focus
-		}
-		x = 1
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_tech_bonus = {
-				name = ENG_fighter_focus
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_Air_Doctrine
-		icon = GFX_goal_generic_air_doctrine
-		relative_position_id = ENG_Air_focus
-		prerequisite = {
-			focus = ENG_Air_focus
-		}
-		x = 0
-		y = 2
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = ENG_air_doc_bonus_1
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_home_defense
-		icon = GFX_focus_generic_home_defense
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_focus_protect_belgium
-		}
-		x = 0
-		y = 1
+		id = ENG_War_With_Germany
+		icon = GFX_surrender_tiny_flag
 		cost = 10
-
-		bypass = {
-			#
-		}
+		x = 22
+		y = 0
 		available = {
-		    threat > 0.05
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-		}
-	}
-	
-	focus = {
-		id = ENG_prepare_for_the_inevitable_focus
-		icon = GFX_goal_generic_demand_territory
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_home_defense
-		}
-		x = 2
-		y = 2
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_ideas = ENG_prepare_for_the_inevitable_idea_ww1
-		}
-	}
-	
-	focus = {
-		id = ENG_government_reform
-		icon = GFX_goal_generic_intelligence_exchange
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_home_defense
-		}
-		x = 0
-		y = 2
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_weak_government
-				add_idea = ENG_weak_government_2
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_reafirm_the_triple_entente
-		icon = GFX_focus_befriend_russia
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_home_defense
-		}
-		x = -2
-		y = 2
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    FRA = {
-			    is_in_faction_with = RUS
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_ideas = ENG_entente
-		}
-	}
-	
-	focus = {
-		id = ENG_naval_blockade
-		icon = GFX_focus_attack_german_empire
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_home_defense
-		}
-		prerequisite = {
-			focus = ENG_government_reform
-		}
-		prerequisite = {
-			focus = ENG_reafirm_the_triple_entente
-		}
-		x = -1
-		y = 3
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_war_with = GER
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			GER = {
-			    add_ideas = ENG_ger_naval_blockade_1
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_support_france
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_reafirm_the_triple_entente
-		}
-		x = -3
-		y = 3
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    FRA = {
-			    has_war = yes
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_war_support = 0.05
-			FRA = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 5000
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_call_portugal_in
-		icon = GFX_focus_generic_befriend_portugal
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_naval_blockade
-		}
-		prerequisite = {
-			focus = ENG_support_france
-		}
-		x = -2
-		y = 4
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_war_with = GER
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    POR = { country_event = ww1_uk.10 }
-		}
-	}
-	
-	focus = {
-		id = ENG_root_out_corruption
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_government_reform
-		}
-		prerequisite = {
-			focus = ENG_prepare_for_the_inevitable_focus
-		}
-		x = 1
-		y = 3
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    remove_ideas = ENG_weak_government_2
-		}
-	}
-	
-	focus = {
-		id = ENG_conscription
-		icon = GFX_focus_generic_manpower
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_root_out_corruption
-		}
-		prerequisite = {
-			focus = ENG_naval_blockade
-		}
-		x = 0
-		y = 4
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_war_with = GER
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    remove_ideas = ENG_volunteer_only_army
-		}
-	}
-	
-	focus = {
-		id = ENG_zimmermann_telegram
-		icon = GFX_focus_ARG_the_american_push
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_call_portugal_in
-		}
-		prerequisite = {
-			focus = ENG_conscription
-		}
-		x = -1
-		y = 5
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    date > 1917.3.1
 			has_war_with = GER
 		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
 		completion_reward = {
-		    USA = { country_event = ww1_uk.11 }
+			add_ideas = limited_conscription
+			add_ideas = ENG_Underequiped_Military
+			remove_ideas = ENG_volunteer_only_army
+		 }
+	}
+	focus = {
+		id = ENG_Send_Equipment_To_Frontline
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		prerequisite = {
+			focus = ENG_War_With_Germany
+		}
+		x = 22
+		y = 1
+		available = {
+			has_war_with = GER
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_Underequiped_Military
+				add_idea = ENG_Send_Equipment_To_Frontline
+			}
 		}
 	}
-	
 	focus = {
-		id = ENG_defense_focus
-		icon = GFX_goal_generic_defence
-		mutually_exclusive = {
-		    focus = ENG_offense_focus
+		id = ENG_Prepared_Military
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		prerequisite = {
+			focus = ENG_Send_Equipment_To_Frontline
 		}
-		x = 9
-		y = 0
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_completed_focus = ENG_focus_protect_belgium
-		}
-		
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_political_power = 100
-		    custom_effect_tooltip = ENG_army_defense_cet
-		}
-	}
-	
-	focus = {
-		id = ENG_offense_focus
-		icon = GFX_goal_generic_major_war
-		relative_position_id = ENG_defense_focus
-		mutually_exclusive = {
-		    focus = ENG_defense_focus
-		}
-		x = 2
-		y = 0
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_completed_focus = ENG_focus_protect_belgium
-		}
-		
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_political_power = 100
-		    custom_effect_tooltip = ENG_army_offense_cet
+		relative_position_id = ENG_War_With_Germany
+		x = 0
+		y = 2
+		completion_reward = { 
+			remove_ideas = ENG_Send_Equipment_To_Frontline
 		}
 	}
 	
 	focus = {
 		id = ENG_infantry_equipment_research
 		icon = GFX_goal_generic_small_arms
-		relative_position_id = ENG_defense_focus
+		relative_position_id = ENG_War_With_Germany
 		prerequisite = {
-		    focus = ENG_defense_focus
-			focus = ENG_offense_focus
+			focus = ENG_War_With_Germany
 		}
 		x = 2
 		y = 1
@@ -2419,16 +1473,14 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = ENG_doctrine_effort
 		icon = GFX_goal_generic_secret_weapon
-		relative_position_id = ENG_defense_focus
+		relative_position_id = ENG_War_With_Germany
 		prerequisite = {
-		    focus = ENG_defense_focus
-			focus = ENG_offense_focus
+		    focus = ENG_War_With_Germany
 		}
-		x = 0
+		x = -2
 		y = 1
 		cost = 5.8
 
@@ -2449,6 +1501,68 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ENG_naval_blockade
+		icon = GFX_focus_attack_german_empire
+		relative_position_id = ENG_War_With_Germany
+		prerequisite = {
+			focus = ENG_Send_Equipment_To_Frontline
+		}
+		x = -2
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_war_with = GER
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			GER = {
+			    add_ideas = ENG_ger_naval_blockade_1
+			}
+		}
+	}
+	focus = {
+		id = ENG_support_france
+		icon = GFX_focus_befriend_france
+		relative_position_id = ENG_War_With_Germany 
+		prerequisite = {
+			focus = ENG_Send_Equipment_To_Frontline
+		}
+		x = 2
+		y = 2
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    FRA = {
+			    has_war = yes
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_war_support = 0.05
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+				}
 			}
 		}
 	}
