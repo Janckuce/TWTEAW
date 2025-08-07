@@ -328,7 +328,7 @@ ideas = {
 		}
 		TUR_Remember_The_Revolution = {
 			modifier = {
-				war_support_factor = 0.05
+				war_support_factor = 0.1
 			}
 			picture = tur_remember_coup
 		}
@@ -337,7 +337,7 @@ ideas = {
 				stability_factor = -0.1
 				war_support_factor = 0.1
 				fascism_drift = 0.03
-				research_speed_factor = 0.05
+				research_speed_factor = 0.1
 			}
 			picture = tur_remember_coup
 		}
@@ -346,13 +346,13 @@ ideas = {
 				stability_factor = -0.15
 				war_support_factor = 0.15
 				fascism_drift = 0.04
-				research_speed_factor = 0.1
+				research_speed_factor = 0.15
 			}
 			picture = tur_remember_coup
 		}
 		TUR_Military_Empowerment= {
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
 			}
 			picture = tur_kemalist_army_officers_limited_powers_effect
 		}
@@ -367,6 +367,8 @@ ideas = {
 				army_attack_speed_factor = 0.1
 				conscription_factor = 0.15
 				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
 			}
 			picture = tur_enver_pasha
 		}
@@ -381,6 +383,8 @@ ideas = {
 				army_attack_speed_factor = 0.15
 				conscription_factor = 0.15
 				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
 
 				army_morale_factor = 0.08
 				acclimatization_hot_climate_gain_factor = 0.05
@@ -401,6 +405,8 @@ ideas = {
 				army_attack_speed_factor = 0.1
 				conscription_factor = 0.15
 				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
 
 				air_bombing_targetting = 0.1
 				air_cas_efficiency = 0.1
@@ -422,6 +428,8 @@ ideas = {
 				army_attack_speed_factor = 0.1
 				conscription_factor = 0.15
 				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
 
 				transport_capacity = -0.3
 				naval_night_attack = 0.1
