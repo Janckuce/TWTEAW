@@ -25,7 +25,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_Our_Kaiser
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ger_revive_kaiserreich
 		cost = 5
 		x = 14
 		y = 0
@@ -196,7 +196,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Naval_Race
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_battleship
 		cost = 7.2
 		x = 8
 		y = 1
@@ -220,7 +220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Pick_Up_The_Pace
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.2
 		relative_position_id = GER_Naval_Race
 		x = 2
@@ -234,7 +234,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_No_Slacking_Off
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_continuous_naval_production
 		cost = 7.2
 		relative_position_id = GER_Pick_Up_The_Pace
 		x = 0
@@ -286,7 +286,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_Shortcut
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 7.2
 		relative_position_id = GER_No_Slacking_Off
 		x = 0
@@ -303,7 +303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Finish_Line
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
 		relative_position_id = GER_Shortcut
 		x = 0
@@ -320,7 +320,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Commit_To_The_Race
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
 		relative_position_id = GER_Naval_Race
 		x = 0
@@ -338,7 +338,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Naval_Academy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_navy
 		cost = 7.2
 		relative_position_id = GER_Commit_To_The_Race
 		x = 0
@@ -355,7 +355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_Naval_Research
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_navy_research_bonus
 		cost = 7.2
 		relative_position_id = GER_Naval_Academy
 		x = 0

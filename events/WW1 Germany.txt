@@ -82,6 +82,7 @@ country_event = {
 			transfer_state = 812
 			transfer_state = 813
 			transfer_state = 811
+			transfer_state = 810
 			
 			inherit_technology = GER
 		}
@@ -325,7 +326,9 @@ country_event = {
 		name = ww1_germany.9.a
 		
 		news_event = ww1_news.14
-		
+		set_variable = {
+			Russia_surrender = 1
+		}
 		GER = { 
 		    transfer_state = 815  
 		    transfer_state = 96
@@ -415,7 +418,9 @@ country_event = {
 		name = ww1_germany.10.a
 		
 		news_event = ww1_news.14
-		
+		set_variable = {
+			Russia_surrender = 1
+		}
 		GER = { 
 			transfer_state = 92
 			transfer_state = 90
@@ -564,7 +569,7 @@ country_event = {
 		name = ww1_germany.14.a
 		
 		FRA = {
-		    country_event = ww1_france.13
+		    country_event = ww1_france.15
 		}
 		ai_chance = {
 			factor = 100
@@ -810,6 +815,9 @@ country_event = {
 	    GER = {
 		    add_to_faction = BUL
 		}
+		set_variable = {
+			Bulgaria_in_war = 1
+		}
 		name = ww1_germany.17.a
 	}
 }
@@ -873,5 +881,51 @@ country_event = {
 		name = ww1_germany.20.c
 
 		complete_national_focus = GER_Kaiser_Leader3
+	}
+}
+country_event = {
+	id = ww1_germany.21
+	title = ww1_germany.13.t
+	desc = ww1_germany_desc.13
+	picture = GFX_report_event_german_troops_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.21.a
+		ai_chance = {
+			factor = 100
+		}
+		#white peace Germany
+			every_country = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = GER
+				white_peace = BUL
+				white_peace = AUS
+				white_peace = POL
+				white_peace = UKR
+				white_peace = LIT
+				white_peace = UBD
+			}
+
+			#Free Luxembourg
+
+
+			#Treaty of Versailles
+			GER = {
+				country_event = { id = ww1_germany.15 days = 70 }
+			}
+
+			news_event = ww1_news.51
+
+	}
+	option = {
+		name = ww1_france.21.b
+		
+		ai_chance = {
+			base = 0
+		}
 	}
 }

@@ -2185,7 +2185,52 @@ ORO_end_WW1_german_loss = {
 			factor = 10000
 		}
 	}
+	Entente_surrender_event = {
+	    allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		
+		available = {
+		    GER = { has_war_with = FRA }
+				FRA = {
+						NOT = {
+							OR = {
+							controls_state = 16
+							controls_state = 19
+							controls_state = 21
+							}
+						}
+					}
+					OR = {
+						NOT = {
+						RUS = {
+						controls_state = 195
+							}
+						}
+						NOT = {
+						RUS = {
+						has_war_with = GER
+						}
+					}
+				}
+				NOT = { has_country_flag = WW1_ended_spectator }
+			}
+		complete_effect = {
+			FRA = {
+			    country_event = ww1_france.16
+			}
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
 }
+
 
 ORO_death_news = {
     ROM_death_of_carol_I = {
@@ -2253,6 +2298,39 @@ ORO_death_news = {
 		
 		ai_will_do = {
 			factor = 10000
+		}
+	}
+	Bulgaria_Joins_Central = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			date > 1915.10.14
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL = {
+				country_event = ww1_germany.16 
+			}
+		}
+	}
+	Turkey_Gets_Raped = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			date > 1914.10.29
+		}
+		fire_only_once = yes
+		complete_effect = {
+			country_event = ww1_ottoman.5
 		}
 	}
 }
