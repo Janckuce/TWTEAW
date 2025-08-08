@@ -287,7 +287,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_Naval1
+		id = AST_Naval_Warfare
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AST_Royal_Australian_Marines
@@ -304,11 +304,25 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AST_Academy_Of_Science
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Naval_Warfare
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Naval_Warfare
+		}
+		completion_reward = {
+			add_ideas = AST_Academy
+		}
+	}
+	focus = {
 		id = AST_Hold_Elections
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
-		x = 5
+		x = 7
 		y = 1
 		prerequisite = {
 			focus = AST_Status_Of_Nation
@@ -331,6 +345,19 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AST_Address_The_White_Policy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Hold_Elections
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = AST_Higher_Wages
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = AST_Labour_Victory
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10000
@@ -345,6 +372,189 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
+		}
+	}
+	focus = {
+		id = AST_Economy_Spending
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Labour_Victory
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Labour_Victory
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Labour_Party
+				add_idea = AST_Labour_Party1
+			}
+		}
+	}
+	focus = {
+		id = AST_Higher_Wages
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Economy_Spending
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Economy_Spending
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AST_Increased_Worker_Wages
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_More_Worker_Rights
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Higher_Wages
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Higher_Wages
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AST_Increased_Worker_Rights
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_Fruits_Of_Our_Labour
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_More_Worker_Rights
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_More_Worker_Rights
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Labour_Party1
+				add_idea = AST_Labour_Party2
+			}
+		}
+	}
+	focus = {
+		id = AST_Equal_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Labour_Victory
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = AST_Labour_Victory
+		}
+		completion_reward = {
+			522 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			871 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			870 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			519 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Spread_Our_Wealth
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Equal_Investments
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Equal_Investments
+		}
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			871 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			870 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			519 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Bless_The_Land
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Spread_Our_Wealth
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Spread_Our_Wealth
+		}
+		completion_reward = {
+			522 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			871 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			870 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			519 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
 		}
 	}
 	focus = {

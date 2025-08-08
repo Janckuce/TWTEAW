@@ -7,6 +7,20 @@ ideas = {
 				production_speed_infrastructure_factor = 0.05
 			}
 		}
+		AST_Labour_Party1 = {
+			modifier = {
+				industry_repair_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		AST_Labour_Party2 = {
+			modifier = {
+				industry_repair_factor = 0.2
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
 		AST_Liberal_Party = {
 			modifier = {
 				industry_repair_factor = 0.1
@@ -20,6 +34,19 @@ ideas = {
 				monthly_population = -0.5
 				conscription_factor = -0.3
 				recruitable_population_factor = -0.3
+			}
+		}
+		AST_Black_Policy = {
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = 0.1
+				conscription_factor = 0.1
+				recruitable_population_factor = 0.1
+			}
+		}
+		AST_Grey_Policy = {
+			modifier = {
+				stability_factor = 0.05
 			}
 		}
 		AST_Small_Defence_Spending = {
@@ -64,6 +91,23 @@ ideas = {
 		AST_Stability_Reduction = {
 			modifier = {
 				stability_factor = -0.5
+			}
+		}
+		AST_Academy = {
+			modifier = {
+				research_speed_factor = 0.5
+			}
+		}
+		AST_Increased_Worker_Wages = {
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		AST_Increased_Worker_Rights = {
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 	}
