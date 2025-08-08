@@ -1,0 +1,128 @@
+AST_Parliament_Category = {
+	#	Labour Party Decisions
+	AUS_Labour_Day = {
+		priority = 1
+		days_re_enable = 30
+		allowed = {
+			tag = AST
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = AST_Stability_Reduction
+				days = 120
+			}
+			add_to_variable = {AST.Labour_Support = 1}
+			custom_effect_tooltip = AST_Labour1
+		}
+	}
+	AUS_Shorter_Work_Week = {
+		priority = 1
+		days_re_enable = 30
+		allowed = {
+			tag = AST
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			not = {
+				has_idea = AST_Consumer_Reduction
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = AST_Consumer_Reduction
+				days = 120
+			}
+			add_to_variable = {AST.Labour_Support = 1}
+			custom_effect_tooltip = AST_Labour1
+		}
+	}
+	AUS_Military_To_Civilian = {
+		priority = 1
+		days_re_enable = 30
+		allowed = {
+			tag = AST
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_to_variable = {AST.Labour_Support = 1}
+			custom_effect_tooltip = AST_Labour1
+		}
+	}
+
+	#	Liberal Party Decisions
+	AUS_Liberties = {
+		priority = 1
+		days_re_enable = 30
+		allowed = {
+			tag = AST
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = AST_Stability_Reduction
+				days = 120
+			}
+			add_to_variable = {AST.Liberal_Support = 1}
+			custom_effect_tooltip = AST_Liberal1
+		}
+	}
+	AUS_Freedoms = {
+		priority = 1
+		days_re_enable = 30
+		allowed = {
+			tag = AST
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = AST_Stability_Reduction
+				days = 120
+			}
+			add_to_variable = {AST.Liberal_Support = 1}
+			custom_effect_tooltip = AST_Liberal1
+		}
+	}
+	AUS_Riot = {
+		priority = 1
+		days_re_enable = 30
+		allowed = {
+			tag = AST
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			has_idea = AST_Labour_Party
+		}
+		complete_effect = {
+			285 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			add_to_variable = {AST.Liberal_Support = 3}
+			custom_effect_tooltip = AST_Liberal2
+		}
+	}
+}

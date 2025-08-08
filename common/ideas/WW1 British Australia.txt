@@ -1,7 +1,58 @@
 ideas = {
 	country = {
+		AST_Labour_Party = {
+			modifier = {
+				industry_repair_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		AST_Liberal_Party = {
+			modifier = {
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
 		AST_White_Policy = {
 			modifier = {
+				stability_factor = 0.1
+				monthly_population = -0.5
+				conscription_factor = -0.3
+				recruitable_population_factor = -0.3
+			}
+		}
+		AST_Small_Defence_Spending = {
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				training_time_army_factor = -0.15
+				army_speed_factor = -0.1
+				army_attack_speed_factor = -0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		AST_Royal_Navy = {
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+				repair_speed_factor = 0.03
+				production_speed_dockyard_factor = 0.025
+				positioning = 0.025
+				screening_efficiency = 0.025
+				navy_weather_penalty = -0.025
+				naval_speed_factor = 0.025
+			}
+		}
+		AST_Consumer_Reduction = {
+			modifier = {
+				consumer_goods_expected_value = 0.5
+			}
+		}
+		AST_Stability_Reduction = {
+			modifier = {
+				stability_factor = -0.5
 			}
 		}
 	}

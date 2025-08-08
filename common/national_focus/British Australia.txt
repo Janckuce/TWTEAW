@@ -21,4 +21,76 @@ focus_tree = {
 	default = no
 
 	shared_focus = BCS_Focus
+
+	focus = {
+		id = AST_Status_Of_Nation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 5
+		y = 0
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = AST_Hold_Elections
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Status_Of_Nation
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		completion_reward = {
+			custom_effect_tooltip = AST_Elections_Tooltip
+			if = {
+				limit = {
+					check_variable = {
+						var = Labour_Support
+						value = Liberal_Support
+						compare = greater_than_or_equals
+					}
+				}
+				complete_national_focus = AST_Labour_Victory
+			}
+			else = {
+				complete_national_focus = AST_Liberal_Victory
+			}
+		}
+	}
+	focus = {
+		id = AST_Labour_Victory
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10000
+		relative_position_id = AST_Hold_Elections
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = AST_Liberal_Victory
+		}
+		prerequisite = {
+			focus = AST_Hold_Elections
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = AST_Liberal_Victory
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10000
+		relative_position_id = AST_Hold_Elections
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = AST_Labour_Victory
+		}
+		prerequisite = {
+			focus = AST_Hold_Elections
+		}
+		completion_reward = {
+			remove_ideas = AST_Labour_Party
+			add_ideas = AST_Liberal_Party
+		}
+	}
 }
