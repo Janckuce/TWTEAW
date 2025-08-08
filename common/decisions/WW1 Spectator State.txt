@@ -157,28 +157,27 @@ ORO_spectator_state = {
 						days = 30
 					}
 				}
+			}
 				if = {
                 limit = {
                     GER = {
                         has_completed_focus = GER_schlieffen_moltke_plan_idea
                         }
                     }
-                }
                 GER = {
                     add_ideas = GER_schlieffen_moltke_plan_idea
-                }
-            }
+                	}
+				}
 			if = {
                 limit = {
                     GER = {
                         has_completed_focus = GER_Helmuth_von_Moltke
                         }
                     }
-                }
                 GER = {
                     add_ideas = GER_Helmuth_Plan
+					}
                 }
-			}
 			if = {
 				limit = {
 					GER = {
@@ -1698,7 +1697,6 @@ ORO_spectator_state = {
 		available = {
 			date > 1916.1.1
 		    GER = {
-			    has_completed_focus = GER_oberste_heeresleitung
 				has_war = yes
 				has_government = neutrality
 			}

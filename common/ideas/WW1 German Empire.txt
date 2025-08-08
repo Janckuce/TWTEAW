@@ -666,4 +666,123 @@ ideas = {
 			}
 		}
 	}
+	
+	industrial_concern = {
+		
+				GER_ig_faben_improved = {
+			name = ig_faben
+			picture = ig_faben
+			allowed = {
+				original_tag = GER
+			}
+
+
+			visible = {
+
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		krupp = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.15
+			}
+
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		siemens = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+
+		GER_vereinigte_stahlwerke = {
+
+			picture = GER_vereinigte_stahlwerke
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 150
+
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+			
+			traits = { mining_company }
+		}
+
+		GER_deutsche_reichsbahn = {
+
+			picture = GER_deutsche_reichsbahn
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			visible = {
+
+			}
+			
+			cost = 150
+
+			research_bonus = {
+				train_tech = 0.15
+			}
+			
+			traits = { railway_company }
+		}
+
+		GER_rwe = {
+
+			picture = generic_energy_concern
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 150
+			
+			traits = { energy_supply_company }
+		}
+	}
 }
