@@ -29,6 +29,8 @@ focus_tree = {
 		x = 5
 		y = 0
 		completion_reward = {
+			activate_mission = AUS_Better_Industry
+			activate_mission = AUS_Better_Streets
 		}
 	}
 	focus = {
@@ -355,6 +357,7 @@ focus_tree = {
 			focus = AST_Higher_Wages
 		}
 		completion_reward = {
+			country_event = ww1_australia.1
 		}
 	}
 	focus = {
@@ -383,6 +386,32 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = AST_Labour_Victory
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Labour_Support
+					value = 50
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip
+					always = no
+				}
+			}
+			check_variable = {
+				var = Labour_Support
+				value = 50
+				compare = greater_than_or_equals
+			}
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -434,6 +463,32 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = AST_More_Worker_Rights
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Labour_Support
+					value = 60
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip1
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip1
+					always = no
+				}
+			}
+			check_variable = {
+				var = Labour_Support
+				value = 60
+				compare = greater_than_or_equals
+			}
 		}
 		completion_reward = {
 			swap_ideas = {

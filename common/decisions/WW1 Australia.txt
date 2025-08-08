@@ -1,128 +1,62 @@
 AST_Parliament_Category = {
-	#	Labour Party Decisions
-	AUS_Labour_Day = {
-		priority = 1
-		days_re_enable = 30
+	#	Labour Missions
+	AST_Better_Industry = {
+		is_good = no
+		days_mission_timeout = 120
 		allowed = {
-			tag = AST
+			always = no
 		}
-		visible = {
-			always = yes
+		available = {
+			industrial_complex > 5
 		}
 		complete_effect = {
-			add_timed_idea = {
-				idea = AST_Stability_Reduction
-				days = 120
-			}
-			add_to_variable = {AST.Labour_Support = 1}
+			add_to_variable = {AST.Labour_Support = 3}
 			custom_effect_tooltip = AST_Labour1
 		}
 	}
-	AUS_Shorter_Work_Week = {
-		priority = 1
-		days_re_enable = 30
+	AST_Better_Naval_Power = {
+		is_good = no
+		days_mission_timeout = 120
 		allowed = {
-			tag = AST
-		}
-		visible = {
-			always = yes
+			always = no
 		}
 		available = {
-			not = {
-				has_idea = AST_Consumer_Reduction
-			}
+			dockyard > 3
 		}
 		complete_effect = {
-			add_timed_idea = {
-				idea = AST_Consumer_Reduction
-				days = 120
-			}
-			add_to_variable = {AST.Labour_Support = 1}
+			add_to_variable = {AST.Labour_Support = 3}
 			custom_effect_tooltip = AST_Labour1
 		}
 	}
-	AUS_Military_To_Civilian = {
-		priority = 1
-		days_re_enable = 30
+	#	Liberty Missions
+	AST_Better_Streets = {
+		is_good = no
+		days_mission_timeout = 120
 		allowed = {
-			tag = AST
-		}
-		visible = {
-			always = yes
+			always = no
 		}
 		available = {
-			has_equipment = {
-				infantry_equipment > 999
-			}
-		}
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -1000
-			}
-			add_to_variable = {AST.Labour_Support = 1}
-			custom_effect_tooltip = AST_Labour1
-		}
-	}
-
-	#	Liberal Party Decisions
-	AUS_Liberties = {
-		priority = 1
-		days_re_enable = 30
-		allowed = {
-			tag = AST
-		}
-		visible = {
-			always = yes
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = AST_Stability_Reduction
-				days = 120
-			}
-			add_to_variable = {AST.Liberal_Support = 1}
-			custom_effect_tooltip = AST_Liberal1
-		}
-	}
-	AUS_Freedoms = {
-		priority = 1
-		days_re_enable = 30
-		allowed = {
-			tag = AST
-		}
-		visible = {
-			always = yes
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = AST_Stability_Reduction
-				days = 120
-			}
-			add_to_variable = {AST.Liberal_Support = 1}
-			custom_effect_tooltip = AST_Liberal1
-		}
-	}
-	AUS_Riot = {
-		priority = 1
-		days_re_enable = 30
-		allowed = {
-			tag = AST
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-			has_idea = AST_Labour_Party
-		}
-		complete_effect = {
 			285 = {
-				damage_building = {
-					type = infrastructure
-					damage = 2
-				}
+				infrastructure > 4
 			}
-			add_to_variable = {AST.Liberal_Support = 3}
-			custom_effect_tooltip = AST_Liberal2
+		}
+		complete_effect = {
+			add_to_variable = {AST.Liberal_Support = 8}
+			custom_effect_tooltip = AST_Liberal1
+		}
+	}
+	AST_Better_Land_Power = {
+		is_good = no
+		days_mission_timeout = 120
+		allowed = {
+			always = no
+		}
+		available = {
+			arms_factory > 4
+		}
+		complete_effect = {
+			add_to_variable = {AST.Liberal_Support = 8}
+			custom_effect_tooltip = AST_Liberal1
 		}
 	}
 }

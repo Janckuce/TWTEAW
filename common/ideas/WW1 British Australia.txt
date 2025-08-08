@@ -39,14 +39,21 @@ ideas = {
 		AST_Black_Policy = {
 			modifier = {
 				stability_factor = -0.1
-				monthly_population = 0.1
-				conscription_factor = 0.1
-				recruitable_population_factor = 0.1
+				monthly_population = 0.2
+				conscription_factor = 0.2
+				recruitable_population_factor = 0.2
 			}
 		}
 		AST_Grey_Policy = {
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = -0.1
+				monthly_population = -0.1
+				conscription_factor = -0.1
+				recruitable_population_factor = -0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
 			}
 		}
 		AST_Small_Defence_Spending = {

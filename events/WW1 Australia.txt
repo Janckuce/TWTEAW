@@ -8,11 +8,20 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		tag = AST
+		has_idea = AST_White_Policy
+	}
+
 	option = {
 		name = ww1_australia.1.a
+		remove_ideas = AST_White_Policy
+		add_ideas = AST_Black_Policy
 	}
 
 	option = {
 		name = ww1_australia.1.b
+		remove_ideas = AST_White_Policy
+		add_ideas = AST_Grey_Policy
 	}
 }
