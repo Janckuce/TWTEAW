@@ -1166,11 +1166,11 @@ ORO_spectator_state = {
 				RUS = {
 					has_war_with = GER
 				}
-				NOT ={
-					RUS = {
-						AND = {
-						controls_state = 206
-						controls_state = 202
+				RUS = {
+					AND = {
+						NOT ={
+							controls_state = 206
+							controls_state = 202
 						}
 					}
 				}

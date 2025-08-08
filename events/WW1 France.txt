@@ -484,8 +484,7 @@ country_event = {
 	id = ww1_france.16
 	title = ww1_france.16.t
 	desc = ww1_france_desc.16
-	picture = GFX_report_event_german_troops_ww1
-
+	picture = GFX_report_event_treaty_of_versailles
 	is_triggered_only = yes
 
 	option = {
@@ -513,12 +512,12 @@ country_event = {
 	id = ww1_france.14
 	title = ww1_france.14.t
 	desc = ww1_france_desc.14
-	picture = GFX_report_event_german_troops_ww1
+	picture = GFX_report_event_generic_meeting 
 
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_france.13.a
+		name = ww1_france.14.a
 		
 		GER = {
 		    country_event = ww1_france.15
@@ -529,7 +528,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ww1_germany.14.b
+		name = ww1_france.14.b
 		
 		ai_chance = {
 			factor = 0
