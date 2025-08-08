@@ -418,25 +418,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_Political_Gain
-		icon = GFX_focus_generic_monarchy_1
-		cost = 2.9
-		relative_position_id = GER_Media_Propaganda
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = GER_Media_Propaganda
-		}
-		completion_reward = {
-			add_political_power = 80
-		}
-	}
-	focus = {
 		id = GER_Command_Power_Addon
 		icon = GFX_focus_ger_prussian_soldier
 		cost = 2.9
 		relative_position_id = GER_Media_Propaganda
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = GER_Media_Propaganda
@@ -460,7 +446,10 @@ focus_tree = {
 			focus = GER_Command_Power_Addon
 		}
 		completion_reward = {
-			add_ideas = GER_Prepare
+				swap_ideas = {
+				remove_idea = GER_Propaganda2
+				add_idea = GER_Propaganda3
+			}
 		}
 	}
 	focus = {
@@ -477,7 +466,10 @@ focus_tree = {
 			focus = GER_Prepare2
 		}
 		completion_reward = {
-			add_ideas = GER_Trade_Treaty
+				swap_ideas = {
+				remove_idea = GER_Propaganda3
+				add_idea = GER_Propaganda4
+			}
 		}
 	}
 	focus = {
