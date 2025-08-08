@@ -1,5 +1,9 @@
 ﻿capital = 285
 
+set_oob = "AST_1911"
+
+set_naval_oob = "AST_1911_Naval"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -18,6 +22,14 @@ set_technology = {
 	#Industry
 	ww1_fuel_storage = 1
 }
+
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+}
 ##### Party Popularity, Stability, War Support and other #####
 
 starting_train_buffer = 1
@@ -30,8 +42,7 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 10
-	democratic = 90
+	democratic = 100
 }
 
 add_ideas = {
@@ -41,10 +52,10 @@ add_ideas = {
 	AST_Royal_Navy
 }
 
-set_convoys = 300
+set_convoys = 50
 
 set_research_slots = 2
-set_stability = 0.8
-set_war_support = 0.5
+set_stability = 0.7
+set_war_support = 0.4
 
 # End of Party Popularity, Stability, War Support and other ##

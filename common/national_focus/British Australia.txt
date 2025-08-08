@@ -32,6 +32,278 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AST_Industrial_Expansion
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Status_Of_Nation
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Road_Expansion
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Industrial_Expansion
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Industrial_Expansion
+		}
+		completion_reward = {
+			285 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			517 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			521 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			518 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Harbour_Expansion1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = AST_Road_Expansion
+		}
+		completion_reward = {
+			518 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Harbour_Expansion2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AST_Road_Expansion
+		}
+		completion_reward = {
+			517 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Industry1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = AST_Harbour_Expansion1
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Industry2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = AST_Harbour_Expansion2
+		}
+		completion_reward = {
+			521 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Finish_Industrialization
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = AST_Industry1
+		}
+		prerequisite = {
+			focus = AST_Industry2
+		}
+		available = {
+			has_tech = ww1_synthetic_oil_experiments
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Naval_Research
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Status_Of_Nation
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		available = {
+			has_tech = ww1_electrical_engineering_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = AST_Destroyer_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Naval_Research
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = AST_Naval_Research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = ww1_destroyer_2
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = AST_Light_Cruiser_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Naval_Research
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AST_Naval_Research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = ww1_light_cruiser_2
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = AST_Royal_Australian_Marines
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Naval_Research
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = AST_Destroyer_Primacy
+		}
+		prerequisite = {
+			focus = AST_Light_Cruiser_Primacy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = marines
+				technology = marines2
+				technology = marines3
+				bonus = 2
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = AST_Naval1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Royal_Australian_Marines
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Royal_Australian_Marines
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Royal_Navy
+				add_idea = AST_Royal_Navy1
+			}
+		}
+	}
+	focus = {
 		id = AST_Hold_Elections
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
