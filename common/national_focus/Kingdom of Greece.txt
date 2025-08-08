@@ -166,9 +166,12 @@ focus_tree = {
 				target = BUL
 				expire = 0
 			}
-		set_variable = {
+			GER = {
+			set_variable = {
 			gre_in_war = 1
 		}
+			}
+		
 		give_military_access = USA
 		give_military_access = FRA
 		give_military_access = RUS

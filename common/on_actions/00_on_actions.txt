@@ -32,15 +32,12 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    ROOT = BUL
+                    ROOT = SER
+                    FROM = BUL
                     BUL = {
                         has_war_with = SER
                         has_war_with = GRE
-                        has_war_with = MNT
                         has_war_with = ROM
-                    or = {
-                    has_war_with = TUR
-                        }
                     }
                 }
                 SER = {

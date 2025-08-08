@@ -230,9 +230,12 @@ country_event = {
 		}
 		
 		news_event = ww1_news.15
+		GER = {
 		set_variable = {
 			Russia_surrender = 1
+			}
 		}
+
 		every_country = {
 			limit = {
 				OR = {
@@ -565,7 +568,7 @@ country_event = {
 		name = ww1_germany.14.a
 		
 		FRA = {
-		    country_event = ww1_france.15
+		    country_event = ww1_france.13
 		}
 		ai_chance = {
 			factor = 100
