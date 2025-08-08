@@ -32,8 +32,8 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    ROOT = SER
-                    FROM = BUL
+                    ROOT = { tag = SER}
+                    FROM = { tag = BUL}
                     BUL = {
                         has_war_with = SER
                         has_war_with = GRE
