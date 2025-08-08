@@ -320,11 +320,89 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = AST_Military_Adjustments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Status_Of_Nation
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending
+				add_idea = AST_Small_Defence_Spending1
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Investment
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Military_Adjustments
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = AST_Major_Military_Investment
+		}
+		prerequisite = {
+			focus = AST_Military_Adjustments
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending1
+				add_idea = AST_Small_Defence_Spending_Minor
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Investment
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Military_Adjustments
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = AST_Minor_Military_Investment
+		}
+		prerequisite = {
+			focus = AST_Military_Adjustments
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending1
+				add_idea = AST_Small_Defence_Spending_Major
+			}
+		}
+	}
+	focus = {
+		id = AST_Military_Investment
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Military_Adjustments
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = AST_Minor_Military_Investment
+		}
+		prerequisite = {
+			focus = AST_Major_Military_Investment
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
 		id = AST_Hold_Elections
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
-		x = 7
+		x = 10
 		y = 1
 		prerequisite = {
 			focus = AST_Status_Of_Nation

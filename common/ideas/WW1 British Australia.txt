@@ -68,6 +68,42 @@ ideas = {
 				army_defence_factor = -0.1
 			}
 		}
+		AST_Small_Defence_Spending1 = {
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				training_time_army_factor = -0.15
+				army_speed_factor = -0.08
+				army_attack_speed_factor = -0.08
+				army_org_factor = -0.08
+				army_morale_factor = -0.08
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+			}
+		}
+		AST_Small_Defence_Spending_Minor = {
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+				army_speed_factor = -0.05
+				army_attack_speed_factor = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		AST_Small_Defence_Spending_Major = {
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				training_time_army_factor = -0.05
+				army_speed_factor = -0.03
+				army_attack_speed_factor = -0.03
+				army_org_factor = -0.03
+				army_morale_factor = -0.03
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+			}
+		}
 		AST_Royal_Navy = {
 			modifier = {
 				industrial_capacity_dockyard = 0.025
