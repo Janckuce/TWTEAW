@@ -209,18 +209,19 @@ country_event = {
 	desc = ww1_ottoman_desc.5
 	picture = GFX_news_event_goeben_and_breslau
 
-	mean_time_to_happen = { days = 7 }
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_ottoman.5.a
-		set_variable = {
-			Ottoman_join_war = 1
-		}
 		RUS = {
 			declare_war_on = {
 				type = take_claimed_state
 				target = TUR
+			}
+		}
+		GER = { 
+			set_variable = {
+			ottoman_in_war = 1
 			}
 		}
 	}

@@ -484,8 +484,7 @@ country_event = {
 	id = ww1_france.16
 	title = ww1_france.16.t
 	desc = ww1_france_desc.16
-	picture = GFX_report_event_german_troops_ww1
-
+	picture = GFX_report_event_treaty_of_versailles
 	is_triggered_only = yes
 
 	option = {
@@ -513,12 +512,12 @@ country_event = {
 	id = ww1_france.14
 	title = ww1_france.14.t
 	desc = ww1_france_desc.14
-	picture = GFX_report_event_german_troops_ww1
+	picture = GFX_report_event_generic_meeting 
 
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_france.13.a
+		name = ww1_france.14.a
 		
 		GER = {
 		    country_event = ww1_france.15
@@ -529,7 +528,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ww1_germany.14.b
+		name = ww1_france.14.b
 		
 		ai_chance = {
 			factor = 0
@@ -537,7 +536,7 @@ country_event = {
 	}
 }
 
-#Treaty of Stuttgard
+#Treaty of Stuttgart
 country_event = {
 	id = ww1_france.15
 	title = ww1_france.15.t
@@ -577,19 +576,15 @@ country_event = {
 
 				FRA = {
 			    news_event = ww1_news.51
-				
 				add_popularity = {
-					ideology = democratic
-					popularity = 0.3
+					ideology = communism
+					popularity = 0.2
 				}
 				set_politics = {
 					ruling_party = democratic
 				}
 				
 				dismantle_faction = yes
-				
-				remove_state_core = 28 #Alsace
-				remove_state_core = 918 #Nancy
 				
 				every_state = {
 					PREV = {
@@ -681,7 +676,7 @@ country_event = {
 			if = {
 				limit = { 
 					check_variable = {
-						Ottoman_join_war = 1
+						ottoman_in_war = 1
 					}
 				}
 				ENG = {
@@ -702,7 +697,7 @@ country_event = {
 					if = {
 						limit = { 
 							check_variable = {
-								Ottoman_join_war = 1
+								ottoman_in_war = 1
 								Italy_in_war = 1
 							}
 						}
