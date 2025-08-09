@@ -29,6 +29,7 @@ on_actions = {
         }
     }
     on_before_peace_conference_start = {
+        on_capitulation_immediate = {
         effect = {
             if = {
                 limit = {
