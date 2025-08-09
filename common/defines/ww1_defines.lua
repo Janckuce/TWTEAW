@@ -14,7 +14,6 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which militaryfac
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0		-- Cost of changing a brigade in a division
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
-Central-Powers-Final-Update-Branch-Please-No-More
 NDefines.NOperatives.NTEL_NETWORK_STATE_MODIFIER_STRENGTH_THRESHOLD = 500
 NDefines.NOperatives.OPERATIVE_BASE_INTEL_NETWORK_GAIN = 0.1
 NDefines.NMilitary.BASE_STRENGTH_LOSS_FACTOR = 0.05		-- Base strength loss factor for attrition
