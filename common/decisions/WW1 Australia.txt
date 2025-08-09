@@ -1,5 +1,5 @@
 AST_Parliament_Category = {
-	#	Labour Missions
+	#	Labour Missions 1
 	AST_Better_Industry = {
 		is_good = no
 		days_mission_timeout = 120
@@ -28,7 +28,7 @@ AST_Parliament_Category = {
 			custom_effect_tooltip = AST_Labour1
 		}
 	}
-	#	Liberty Missions
+	#	Liberty Missions 1
 	AST_Better_Streets = {
 		is_good = no
 		days_mission_timeout = 120
@@ -37,7 +37,7 @@ AST_Parliament_Category = {
 		}
 		available = {
 			285 = {
-				infrastructure > 4
+				infrastructure > 3
 			}
 		}
 		complete_effect = {
@@ -47,7 +47,7 @@ AST_Parliament_Category = {
 	}
 	AST_Better_Land_Power = {
 		is_good = no
-		days_mission_timeout = 120
+		days_mission_timeout = 365
 		allowed = {
 			always = no
 		}

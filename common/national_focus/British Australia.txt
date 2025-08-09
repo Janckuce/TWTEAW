@@ -29,8 +29,11 @@ focus_tree = {
 		x = 5
 		y = 0
 		completion_reward = {
-			activate_mission = AUS_Better_Industry
-			activate_mission = AUS_Better_Streets
+			activate_mission = AST_Better_Industry
+			activate_mission = AST_Better_Naval_Power
+
+			activate_mission = AST_Better_Streets
+			activate_mission = AST_Better_Land_Power
 		}
 	}
 	focus = {
@@ -49,10 +52,12 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = dockyard
 					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -72,24 +77,28 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 			517 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 			521 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 			518 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -110,6 +119,7 @@ focus_tree = {
 				add_building_construction = {
 					type = dockyard
 					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -130,6 +140,7 @@ focus_tree = {
 				add_building_construction = {
 					type = dockyard
 					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -150,10 +161,12 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
 					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -174,10 +187,12 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
 					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -204,6 +219,7 @@ focus_tree = {
 				add_building_construction = {
 					type = synthetic_refinery
 					level = 5
+					instant_build = yes
 				}
 			}
 		}
@@ -322,7 +338,7 @@ focus_tree = {
 	focus = {
 		id = AST_Military_Adjustments
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 5
 		relative_position_id = AST_Status_Of_Nation
 		x = 4
 		y = 1
@@ -339,7 +355,7 @@ focus_tree = {
 	focus = {
 		id = AST_Minor_Military_Investment
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = AST_Military_Adjustments
 		x = -1
 		y = 1
@@ -357,9 +373,60 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_Major_Military_Investment
+		id = AST_Minor_Military_Training1
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
+		relative_position_id = AST_Minor_Military_Investment
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Minor_Military_Investment
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Minor
+				add_idea = AST_Small_Defence_Spending_Minor1
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Training2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Minor_Military_Training1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Minor_Military_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Minor1
+				add_idea = AST_Small_Defence_Spending_Minor2
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Training3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Minor_Military_Training2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Minor_Military_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Minor2
+				add_idea = AST_Small_Defence_Spending_Minor3
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Investment
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
 		relative_position_id = AST_Military_Adjustments
 		x = 1
 		y = 1
@@ -377,23 +444,53 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AST_Military_Investment
+		id = AST_Major_Military_Training1
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		relative_position_id = AST_Military_Adjustments
+		relative_position_id = AST_Major_Military_Investment
 		x = 0
-		y = 2
-		prerequisite = {
-			focus = AST_Minor_Military_Investment
-		}
+		y = 1
 		prerequisite = {
 			focus = AST_Major_Military_Investment
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				category = infantry_weapons
-				bonus = 1
-				uses = 2
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Major
+				add_idea = AST_Small_Defence_Spending_Major1
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Training2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Major_Military_Training1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Major_Military_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Major1
+				add_idea = AST_Small_Defence_Spending_Major2
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Training3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Major_Military_Training2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Major_Military_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Major2
+				add_idea = AST_Small_Defence_Spending_Major3
 			}
 		}
 	}
@@ -402,7 +499,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
-		x = 10
+		x = 11
 		y = 1
 		prerequisite = {
 			focus = AST_Status_Of_Nation
@@ -433,6 +530,7 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = AST_Higher_Wages
+			focus = AST_Reduced_Polution
 		}
 		completion_reward = {
 			country_event = ww1_australia.1
@@ -590,24 +688,28 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 			871 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 			870 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 			519 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -628,6 +730,7 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
+					instant_build = yes
 				}
 			}
 			871 = {
@@ -635,6 +738,7 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
+					instant_build = yes
 				}
 			}
 			870 = {
@@ -642,6 +746,7 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
+					instant_build = yes
 				}
 			}
 			519 = {
@@ -649,6 +754,7 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -706,6 +812,305 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = AST_Labour_Party
 			add_ideas = AST_Liberal_Party
+		}
+	}
+	focus = {
+		id = AST_Environmentalist_Movement
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Liberal_Victory
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Liberal_Victory
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Liberal_Support
+					value = 50
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip
+					always = no
+				}
+			}
+			check_variable = {
+				var = Liberal_Support
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Liberal_Party
+				add_idea = AST_Liberal_Party1
+			}
+			285 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			518 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Reduced_Polution
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Environmentalist_Movement
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Environmentalist_Movement
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AST_Decreased_Pollution
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_Grant_Liberties
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Reduced_Polution
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Reduced_Polution
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AST_Extra_Liberties
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_Heart_Of_Australia
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Grant_Liberties
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Grant_Liberties
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Liberal_Support
+					value = 60
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip1
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip1
+					always = no
+				}
+			}
+			check_variable = {
+				var = Liberal_Support
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Liberal_Party1
+				add_idea = AST_Liberal_Party2
+			}
+		}
+	}
+	focus = {
+		id = AST_Concecrated_Industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Liberal_Victory
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = AST_Liberal_Victory
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			518 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Arms_Industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Concecrated_Industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Concecrated_Industry
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			518 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Naval_Industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AST_Arms_Industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AST_Arms_Industry
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 7
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = rubber
+					amount = 6
+				}
+			}
+			518 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 9
+				}
+			}
 		}
 	}
 }

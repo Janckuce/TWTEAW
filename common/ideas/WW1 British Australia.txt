@@ -24,8 +24,24 @@ ideas = {
 		AST_Liberal_Party = {
 			modifier = {
 				industry_repair_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.025
-				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		AST_Liberal_Party1 = {
+			modifier = {
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		AST_Liberal_Party2 = {
+			modifier = {
+				stability_factor = 0.1
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
 			}
 		}
 		AST_White_Policy = {
@@ -84,24 +100,76 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = -0.1
 				training_time_army_factor = -0.1
-				army_speed_factor = -0.05
-				army_attack_speed_factor = -0.05
-				army_org_factor = -0.05
-				army_morale_factor = -0.05
-				army_attack_factor = -0.05
-				army_defence_factor = -0.05
+				army_speed_factor = -0.04
+				army_attack_speed_factor = -0.04
+				army_org_factor = -0.04
+				army_morale_factor = -0.04
+				army_attack_factor = -0.04
+				army_defence_factor = -0.04
+			}
+		}
+		AST_Small_Defence_Spending_Minor1 = {
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+				army_speed_factor = -0.02
+				army_attack_speed_factor = -0.02
+				army_org_factor = -0.02
+				army_morale_factor = -0.02
+				army_attack_factor = -0.02
+				army_defence_factor = -0.02
+			}
+		}
+		AST_Small_Defence_Spending_Minor2 = {
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+			}
+		}
+		AST_Small_Defence_Spending_Minor3 = {
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+				army_speed_factor = 0.03
+				army_attack_speed_factor = 0.03
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
 			}
 		}
 		AST_Small_Defence_Spending_Major = {
 			modifier = {
-				consumer_goods_expected_value = -0.05
-				training_time_army_factor = -0.05
 				army_speed_factor = -0.03
 				army_attack_speed_factor = -0.03
 				army_org_factor = -0.03
 				army_morale_factor = -0.03
 				army_attack_factor = -0.03
 				army_defence_factor = -0.03
+			}
+		}
+		AST_Small_Defence_Spending_Major1 = {
+			modifier = {
+			}
+		}
+		AST_Small_Defence_Spending_Major2 = {
+			modifier = {
+				army_speed_factor = 0.03
+				army_attack_speed_factor = 0.03
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+		AST_Small_Defence_Spending_Major3 = {
+			modifier = {
+				army_speed_factor = 0.06
+				army_attack_speed_factor = 0.06
+				army_org_factor = 0.06
+				army_morale_factor = 0.06
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
 			}
 		}
 		AST_Royal_Navy = {
@@ -150,6 +218,19 @@ ideas = {
 		AST_Increased_Worker_Rights = {
 			modifier = {
 				consumer_goods_expected_value = 0.15
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		AST_Decreased_Pollution = {
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		AST_Extra_Liberties = {
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
 		}
