@@ -35,7 +35,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 250
 		}
 	}
 
@@ -266,7 +266,7 @@ focus_tree = {
 		x = 17
 		y = 2
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_empire_of_franz_josef}
 
@@ -325,7 +325,7 @@ focus_tree = {
 		x = 2
 		y = 4
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_victory_of_cs}
 
@@ -379,7 +379,7 @@ focus_tree = {
 		x = 2
 		y = 7
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_limit_the_socialists_parties_cs}
 
@@ -435,7 +435,7 @@ focus_tree = {
 		x = 4
 		y = 5
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_improve_the_workers_rights_sdap}
 
@@ -471,7 +471,7 @@ focus_tree = {
 		x = 4
 		y = 7
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_implement_women_universal_suffrage_sdap}
 
@@ -510,7 +510,7 @@ focus_tree = {
 		x = 18
 		y = 3
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_many_crowns_many_problems}
 
@@ -619,7 +619,7 @@ focus_tree = {
 		x = 18
 		y = 6
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		prerequisite = {focus = AUH_second_language_german}
 
@@ -647,7 +647,7 @@ focus_tree = {
 		x = 17
 		y = 7
 
-		cost = 10
+		cost = 5
 		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
 		prerequisite = {focus = AUH_propagate_loyal_culture2}
 
@@ -716,7 +716,7 @@ focus_tree = {
 		x = 9
 		y = 5
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_transylvanian_mines }
 		prerequisite = { focus = AUH_bielitz_works }
 
@@ -741,7 +741,7 @@ focus_tree = {
 		x = 8
 		y = 4
 
-		cost = 5
+		cost = 2.9
 		prerequisite = { focus = AUH_construction_mils }
 		prerequisite = { focus = AUH_the_silesian_resources }
 
@@ -784,7 +784,7 @@ focus_tree = {
 		x = 45
 		y = 2
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_empire_of_franz_josef }
 
 		completion_reward = {
@@ -798,7 +798,7 @@ focus_tree = {
 		x = 45
 		y = 3
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_creation_of_kuk_luftfahrtruppen }
 
 		completion_reward = {
@@ -819,7 +819,7 @@ focus_tree = {
 		x = 45
 		y = 5
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
 
 
@@ -889,7 +889,7 @@ focus_tree = {
 		x = 44
 		y = 6
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 
 		completion_reward = {
@@ -906,7 +906,7 @@ focus_tree = {
 		x = 46
 		y = 6
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 
 		completion_reward = {
@@ -926,7 +926,7 @@ focus_tree = {
 		x = 45
 		y = 7
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
 		prerequisite = { focus = AUH_luftfahrtruppen_divert_money_towards }
 		prerequisite = { focus = AUH_luftfahrtruppen_dedicated_organisation }
@@ -945,7 +945,7 @@ focus_tree = {
 		x = 44
 		y = 8
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
 
 		completion_reward = {
@@ -967,16 +967,11 @@ focus_tree = {
 		x = 46
 		y = 8
 
-		cost = 6
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
-		    available = {
-      		has_tech = engines_1
-    	}
 
 		completion_reward = {
-		set_technology = {
-		engines_2 = 1
-		}
+		air_experience = 150
 	}
 }
 
@@ -986,15 +981,15 @@ focus_tree = {
 		x = 47
 		y = 9
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
-			available = {
-      		has_tech = aa_hmg
-    	}
 
 		completion_reward = {
-				set_technology = {
-				aa_cannon_1 = 1
+		    add_tech_bonus = {
+				name = RUS_fighter_focus
+				bonus = 1.5
+				uses = 1
+				category = light_fighter
 			}
     	}
 	}
@@ -1005,7 +1000,7 @@ focus_tree = {
 		x = 43
 		y = 9
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
 
 		completion_reward = {
@@ -1024,7 +1019,7 @@ focus_tree = {
 		x = 45
 		y = 10
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_luftfahrtruppen_experiment_designs_shall_lead }
 		prerequisite = { focus = AUH_luftfahrtruppen_implement_basic_arms }
 		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
@@ -1584,7 +1579,7 @@ focus_tree = {
 
 		completion_reward = {
 				add_timed_idea = {
-				days = 240
+				days = 360
 				idea = auh_construction_funds
 			}
 		}
@@ -1752,7 +1747,7 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = industrial_complex
-							level = 1
+							level = 2
 							instant_build = yes
 							province = {
 							id = 11666
@@ -1770,7 +1765,7 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 						province = {
 						id = 11666
@@ -1804,7 +1799,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 			add_resource = {
 				type = steel
-				amount = 1
+				amount = 3
 			}
 			}
 				add_building_construction = {
@@ -1819,7 +1814,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 			add_resource = {
 				type = aluminium
-				amount = 2
+				amount = 4
 			}
 			}
 				add_building_construction = {
@@ -1834,11 +1829,11 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 			add_resource = {
 				type = aluminium
-				amount = 2
+				amount = 4
 			}
 			add_resource = {
 			type = steel
-			amount = 5
+			amount = 8
 				}
 					add_building_construction = {
 					type = infrastructure
@@ -2187,7 +2182,7 @@ focus_tree = {
 		y = 15
 		prerequisite = { focus = AUH_give_out_titles }
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2205,7 +2200,7 @@ focus_tree = {
 		y = 15
 		prerequisite = { focus = AUH_give_out_titles }
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2223,7 +2218,7 @@ focus_tree = {
 		y = 15
 		prerequisite = { focus = AUH_give_out_titles }
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2243,7 +2238,7 @@ focus_tree = {
 		prerequisite = { focus = AUH_meeting_with_nobility }
 		prerequisite = { focus = AUH_talks_with_the_army }
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2261,7 +2256,7 @@ focus_tree = {
 		y = 12
 		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2279,7 +2274,7 @@ focus_tree = {
 		y = 13
 		prerequisite = { focus = AUH_support_eugens_group }
 
-		cost = 10
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		available = {
@@ -2350,7 +2345,7 @@ focus_tree = {
 		y = 12
 		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
 
-		cost = 5
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		available = {
@@ -2372,7 +2367,7 @@ focus_tree = {
 		y = 13
 		prerequisite = { focus = AUH_open_up_imperial_mines5 }
 
-		cost = 10
+		cost = 2.9
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2715,11 +2710,11 @@ focus_tree = {
 
 		    add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = -25000
+            amount = -20000
         }
         add_equipment_to_stockpile = {
             type = support_equipment
-            amount = -10000
+            amount = -6500
         }
 			88 = { 
             add_core_of = AUS
