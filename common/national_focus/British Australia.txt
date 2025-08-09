@@ -20,7 +20,7 @@ focus_tree = {
 
 	default = no
 
-	shared_focus = BCS_Focus
+	shared_focus = BCS_Focus1
 
 	focus = {
 		id = AST_Status_Of_Nation
@@ -499,7 +499,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
-		x = 11
+		x = 12
 		y = 1
 		prerequisite = {
 			focus = AST_Status_Of_Nation
@@ -541,7 +541,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10000
 		relative_position_id = AST_Hold_Elections
-		x = -2
+		x = -3
 		y = 1
 		mutually_exclusive = {
 			focus = AST_Liberal_Victory
@@ -801,7 +801,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10000
 		relative_position_id = AST_Hold_Elections
-		x = 2
+		x = 3
 		y = 1
 		mutually_exclusive = {
 			focus = AST_Labour_Victory
