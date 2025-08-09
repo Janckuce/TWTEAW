@@ -188,8 +188,8 @@ Capture_Krakow = {
 		}
 		AUS = {
 			add_political_power = -50
-			add_stability = -0.25
-			add_war_support = -0.25
+			add_stability = -0.05
+			add_war_support = -0.05
 		}
 	}
 	timeout_effect = {
@@ -308,25 +308,71 @@ Capture_Edirne = {
 		}
 	complete_effect = {
 		BUL = {
-			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
 			48 = {
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = arms_factory
+					level = 5
 				}
 			}
 		}
 	}
 	timeout_effect = {
 		BUL = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
+			activate_mission = Capture_Edirne_2
 			}
 		}
 	}
+	Capture_Edirne_2 = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	activation = {
+		always = no
+	}
+		days_mission_timeout = 30
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
+		BUL = {
+			48 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+	timeout_effect = {
+		BUL = {
+			activate_mission = Capture_Edirne_3
+			}
+		}
+	}
+	Capture_Edirne_3 = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	is_good = no
+	activation = {
+		always = no
+	}
+		days_mission_timeout = 30
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
+		BUL = {
+			48 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+}
 	Hold_Edirne = {
 	icon = "edirne_icon.png"
 	priority = 1
@@ -351,18 +397,118 @@ Capture_Edirne = {
 			add_stability = -0.05
 			add_war_support = -0.05
 		}
+	}
+	timeout_effect = {
+		TUR = { add_ideas = TUR_Lose_Balkan_War_Hurry1 }
 		797 = {
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
+				activate_mission = Hold_Edirne2
 			}
+		}
+	Hold_Edirne2 = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	allowed = {
+			original_tag = TUR
+		}
+		days_mission_timeout = 30
+	activation = {
+		always = no
+		}
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
+		TUR = {
+			add_political_power = -75
+			add_stability = -0.025
+			add_war_support = -0.025
 		}
 	}
 	timeout_effect = {
+		TUR = { swap_ideas = {
+			remove_idea = TUR_Lose_Balkan_War_Hurry1
+			add_idea = TUR_Lose_Balkan_War_Hurry2
+		}   
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
+				activate_mission = Hold_Edirne3
+			}
+		}
+	}
+		Hold_Edirne3 = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	allowed = {
+			original_tag = TUR
+		}
+		days_mission_timeout = 30
+	activation = {
+		always = no
+		}
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
 		TUR = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_political_power = -25
+			add_stability = -0.01
+			add_war_support = -0.01
+		}
+	}
+	timeout_effect = {
+		TUR = { swap_ideas = {
+			remove_idea = TUR_Lose_Balkan_War_Hurry2
+			add_idea = TUR_Lose_Balkan_War_Hurry3
+		}   
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
+				activate_mission = Hold_Edirne4
+			}
+		}
+	}
+	Hold_Edirne4 = {
+	icon = "edirne_icon.png"
+	priority = 1
+	fire_only_once = yes
+	allowed = {
+			original_tag = TUR
+		}
+		days_mission_timeout = 30
+	activation = {
+		always = no
+		}
+		available = {
+			341 = { is_controlled_by = BUL } # Edirne
+		}
+	complete_effect = {
+		TUR = {
+			    country_event = ww1_ottoman.3
+			}
+	}
+	timeout_effect = {
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
+				TUR = {
+			    country_event = ww1_ottoman.3
 			}
 		}
 	}
@@ -469,5 +615,30 @@ Capture_Edirne = {
 				}
 			}
 		}
+	}
+	Take_Suez = {
+		icon = "Suez_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		activation = {
+			TUR = {
+				AND = {
+				has_war_with = ENG
+				has_completed_focus = TUR_Focus_On_Britain
+				}
+			}
+		}
+		available = {
+			446 = {
+				is_controlled_by = TUR
+			}
+		}
+		complete_effect = {
+			TUR = {
+			add_timed_idea = { idea = TUR_Took_Suez days = 180 }
+			}
+		}
+		days_mission_timeout = 60
 	}
 }

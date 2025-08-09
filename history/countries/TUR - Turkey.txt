@@ -6,6 +6,13 @@ set_naval_oob = "TUR_1911_Naval"
 
 starting_train_buffer = 1
 
+add_ideas = {
+	TUR_Army_Of_Bygon_Era
+	TUR_Sick_man_europe
+	TUR_Our_lost_glory
+	TUR_Extremely_Low_Literacy
+}
+
 recruit_character = TUR_besinci_mehmet
 recruit_character = TUR_sehzade_yusuf_izzeddin
 recruit_character = TUR_omer_fahrettin_pasha
@@ -13,16 +20,26 @@ recruit_character = TUR_mustafa_kemal_ataturk
 recruit_character = TUR_mustafa_fevzi_pasha
 recruit_character = TUR_mehmed_esad_pasha
 recruit_character = TUR_ahmet_cemal_pasha
-recruit_character = TUR_Guy1
-recruit_character = TUR_Guy2
-recruit_character = TUR_Guy3
-recruit_character = TUR_Guy4
+recruit_character = TUR_enver_pasha
+recruit_character = TUR_halil_kut
+recruit_character = TUR_wehib_pasha
+recruit_character = tur_mahmud_muhtar
+recruit_character = tur_talaat
+recruit_character = tur_ahmed_muhtar_pasha
+recruit_character = TUR_ali_kemal
+recruit_character = tur_mehmed_adil
+recruit_character = tur_mehmed_said
+recruit_character = tur_nazim_bey
+recruit_character = tur_emmanuel_carasso
+recruit_character = tur_halil_mentese
+recruit_character = tur_gabriel_noradoungian
+recruit_character = tur_wilhelm_souchon
+recruit_character = tur_rauf_orbay
 
 # Starting tech
 set_technology = {
     #Infantry
 	ww1_infantry_weapons1 = 1
-	ww1_infantry_weapons2 = 1
 	tech_trucks = 1
 	
 	#Artillery
@@ -56,11 +73,14 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 46
+	democratic = 4
+	fascism = 44
+	communism = 6
 }
 
 set_convoys = 300
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.3
 set_war_support = 0.1

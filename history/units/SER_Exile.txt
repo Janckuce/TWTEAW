@@ -1,0 +1,73 @@
+﻿division_template = {
+	name = "Srpska Prognana Divizija"
+	template_counter = 3
+	is_locked = yes
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+		name = "Srpska Prognana Divizija"
+		location = 6103
+		division_template = "Srpska Prognana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Srpska Prognana Divizija"
+		location = 6103
+		division_template = "Srpska Prognana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Srpska Prognana Divizija"
+		location = 6103
+		division_template = "Srpska Prognana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Srpska Prognana Divizija"
+		location = 6103
+		division_template = "Srpska Prognana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Srpska Prognana Divizija"
+		location = 6103
+		division_template = "Srpska Prognana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		name = "Srpska Prognana Divizija"
+		location = 6103
+		division_template = "Srpska Prognana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+}

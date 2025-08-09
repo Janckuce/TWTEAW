@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "balkan_powder_keg_desc"
 		date = 1911.1.1.12
 		picture = "GFX_select_date_1911"
-		default_country = "SER"
+		default_country = "GER"
 		default = yes
 	
 		FRA = {
@@ -14,6 +14,16 @@ bookmarks = {
 		TUR = {
 			history = TUR_balkan_powder_keg_desc
 			ideology = neutrality
+				focuses = {
+				TUR_Army_Fit_Sultan
+				TUR_Leadership_Issue
+				TUR_Young_Turk_Parti
+			}
+				ideas = {
+				tur_army_of_bygon_era
+				TUR_Extremely_Low_Literacy
+				TUR_Sick_man_europe
+			}
 		}
 		ENG = {
 			history = ENG_balkan_powder_keg_desc
@@ -24,10 +34,14 @@ bookmarks = {
 			history = GER_balkan_powder_keg_desc
 			ideology = neutrality
 			ideas = {
-                #
+            GER_quality_gun_control
+			GER_naval_arms_race
+			GER_neglected_military
 			}
 			focuses = {
-				#
+				GER_Wilhelm_Leader3
+				GER_Wilhelm_Tanks
+				GER_Media_Propaganda
 			}
 		}
 		ITA = {
@@ -37,6 +51,16 @@ bookmarks = {
 		AUS = {
 			history = AUS_balkan_powder_keg_desc
 			ideology = neutrality
+				focuses = {
+				AUH_empire_of_franz_josef
+				AUH_finish_1908_armeereform
+				AUH_son_of_the_empire
+			}
+				ideas = {
+				auh_underfunded_army
+				auh_ghostofthepast
+				auh_Multiethnicity
+			}
 		}
 			BUL = {
 			minor = yes

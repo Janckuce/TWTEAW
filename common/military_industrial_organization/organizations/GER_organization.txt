@@ -19,6 +19,9 @@ GER_porsche_organization = {
 			AND = {
 				tag = BUL
 			}
+				AND = {
+				tag = TUR
+			}
 		}
 	}
 
@@ -151,6 +154,9 @@ GER_ag_vulcan_stettin = {
 			AND = {
 				tag = BUL
 			}
+				AND = {
+				tag = TUR
+			}
 		}
 	}
 }
@@ -161,6 +167,9 @@ GER_blohm_und_voss_organization = {
 	
 	allowed = {	
 		tag = GER 
+			AND = {
+			tag = TUR
+		}
 	}
 }
 
@@ -362,6 +371,9 @@ GER_rheinmetall_organization = {
 				AND = {
 				tag = SER
 			}
+				AND = {
+				tag = TUR
+			}
 		}
 	}
 	available = {
@@ -385,6 +397,9 @@ GER_mauser_organization = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
 			}
+				AND = {
+				tag = TUR
+			}
 		}
 	}
 	
@@ -400,12 +415,6 @@ GER_mauser_organization = {
 		IF = {
 			limit = {
 				FROM = { NOT  = { original_tag = GER } }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_GER_mauser_organization_flag
-				}
 			}
 		}
 	}

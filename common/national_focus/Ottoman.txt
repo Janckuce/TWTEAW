@@ -1,0 +1,1227 @@
+focus_tree = {
+	id = Tur_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+	continuous_focus_position = { x = 245 y = 1000 }
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = Tur_state_of_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 1
+		cost = 10
+
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Army_Of_Bygon_Era
+				add_idea = TUR_Army_Of_Bygon_Era_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_Army_Reform
+		icon = GFX_focus_focus_fra_maquis
+		cost = 5
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = Tur_state_of_army
+		}
+		available = {
+			has_army_experience > 100
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Army_Of_Bygon_Era_2
+				add_idea = TUR_Army_Of_Bygon_Era_3
+			}
+			army_experience = -100
+		}
+	}
+	focus = {
+		id = TUR_Reformed_Army
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		prerequisite = {
+			focus = TUR_Army_Reform
+		}
+		available = {
+			has_army_experience > 150
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		x = 1
+		y = 3
+		completion_reward = {
+			remove_ideas = TUR_Army_Of_Bygon_Era_3
+			army_experience = -150
+		}
+	}
+	focus = {
+		id = TUR_Military_Research
+		icon = GFX_focus_generic_advanced_military_studies
+		cost = 10
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = TUR_Reformed_Army
+		}
+		available = {
+			num_of_factories > 30
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = TUR_artillery_research_1
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = TUR_Army_Fit_Sultan
+		icon = GFX_focus_tur_sultan_men
+		cost = 5
+		prerequisite = {
+			focus = TUR_Reformed_Army
+		}
+		available = {
+			has_completed_focus = TUR_Stay_With_Sultan
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		x = 2
+		y = 4
+		completion_reward = {
+			add_ideas = TUR_Army_Fit_Sultan
+		}
+	}
+	focus = {
+		id = TUR_give_civs_pls
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7.2
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sick_man_europe_2
+		icon = GFX_goal_generic_production
+		cost = 10
+		mutually_exclusive = {
+			focus = TUR_Sick_man_europe_3
+		}
+		prerequisite = {
+			focus = TUR_give_civs_pls
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		x = 5
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sick_man_europe
+				add_idea = TUR_Sick_man_europe_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_Industrialising2
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		cost = 10
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = TUR_Sick_man_europe_2
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sick_man_europe_3
+		icon = GFX_goal_generic_production2
+		cost = 10
+		mutually_exclusive = {
+			focus = TUR_Sick_man_europe_2
+		}
+		prerequisite = {
+			focus = TUR_give_civs_pls
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		x = 7
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sick_man_europe
+				add_idea = TUR_Sick_man_europe_3
+			}
+		}
+	}
+	focus = {
+		id = TUR_Industrialising3
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		cost = 10
+		x = 9
+		y = 3
+		prerequisite = {
+			focus = TUR_Sick_man_europe_3
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_give_mills_pls
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7.2
+		prerequisite = {
+			focus = TUR_Sick_man_europe_2
+			focus = TUR_Sick_man_europe_3
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		x = 5
+		y = 3
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Economic_Alliance_Bulgaria
+		icon = GFX_focus_generic_befriend_bulgaria
+		cost = 10
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = TUR_Sick_man_europe_2
+			focus = TUR_Sick_man_europe_3
+		}
+		completion_reward = {
+			BUL = {
+				country_event = ww1_ottoman.10
+			}
+		 }
+	}
+	focus = {
+		id = TUR_Forced_Nationalisation
+		icon = GFX_focus_generic_industrialists
+		cost = 7.2
+		prerequisite = {
+			focus = TUR_give_mills_pls
+			focus = TUR_Economic_Alliance_Bulgaria
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = TUR_Improve_Roads
+		}
+		x = 5
+		y = 4
+		completion_reward = { 
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Improve_Roads
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.2
+		prerequisite = {
+			focus = TUR_give_mills_pls
+			focus = TUR_Economic_Alliance_Bulgaria
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = TUR_Forced_Nationalisation
+		}
+		x = 7
+		y = 4
+		completion_reward = { 
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+	id = TUR_Industrialising
+	icon = GFX_focus_tur_guns_produce
+	cost = 10
+	x = 5
+	y = 5
+	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+	prerequisite = {
+		focus = TUR_Forced_Nationalisation
+	}
+	completion_reward = {
+		add_ideas = TUR_Mass_Militerisation
+		}
+	}
+	focus = {
+		id = TUR_Healthy_Growth
+		icon = GFX_focus_tur_lamps
+		cost = 10
+		x = 7
+		y = 5
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = TUR_Improve_Roads
+		}
+		completion_reward = {
+			add_ideas = TUR_Healthy_Industralisation
+		 }
+	}
+	focus = {
+		id = TUR_Total_War
+		icon = GFX_focus_TUR_the_sun_language_theory
+		cost = 5
+		x = 6
+		y = 6
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		available = {
+			has_war = yes
+			casualties > 100000
+		}
+		prerequisite = {
+			focus = TUR_Industrialising
+			focus = TUR_Healthy_Growth
+		}
+		completion_reward = {
+			add_ideas = TUR_Total_war
+		}
+	}
+	focus = {
+		id = TUR_State_of_nation
+		icon = GFX_focus_AFG_education_reform
+		cost = 5.8
+		x = 11
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Our_lost_glory
+				add_idea = TUR_Our_lost_glory2
+			}
+		}
+	}
+	focus = {
+		id = TUR_Speak_To_People
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		cost = 7.2
+		x = 11
+		y = 2
+		prerequisite = {
+			focus = TUR_State_of_nation
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Our_lost_glory2
+				add_idea = TUR_Our_lost_glory3
+			}
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = TUR_restore_peoples_trust
+		icon = GFX_focus_TUR_misak_i_milli
+		cost = 7.2
+		x = 11
+		y = 3
+		prerequisite = {
+			focus = TUR_Speak_To_People
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Our_lost_glory3
+				add_idea = TUR_Our_lost_glory4
+			}
+		}
+	}
+	focus = {
+		id = TUR_Chosing_Our_Destiny
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		available = {
+			date > 1913.1.1
+		}
+		x = 11
+		y = 4
+		prerequisite = {
+			focus = TUR_restore_peoples_trust
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Our_lost_glory4
+				add_idea = TUR_Chosing_Our_Destiny
+			}
+		}
+	}
+	focus = {
+		id = TUR_Focus_On_Britain
+		icon = GFX_focus_ARG_cut_ties_with_britain
+		cost = 0
+		x = 10
+		y = 5
+		mutually_exclusive = {
+			focus = TUR_Focus_On_Russia
+		}
+		prerequisite = {
+			focus = TUR_Chosing_Our_Destiny
+		}
+		available = {
+			has_war_with = ENG
+			has_completed_focus = TUR_Stay_With_Sultan
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = { 
+			add_timed_idea = {
+				idea = TUR_Focus_On_Britain days = 180
+			}
+		}
+	}
+	focus = {
+		id = TUR_Focus_On_Russia
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 0
+		x = 12
+		y = 5
+		mutually_exclusive = {
+			focus = TUR_Focus_On_Britain
+		}
+		prerequisite = {
+			focus = TUR_Chosing_Our_Destiny
+		}
+		available = {
+			has_war_with = RUS
+			has_completed_focus = TUR_Young_Turk_Parti
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = { 
+			add_timed_idea = {
+				idea = TUR_Focus_On_Russia days = 180
+			}
+		}
+	}
+	focus = {
+		id = TUR_Ecucation_issues
+		icon = GFX_focus_generic_bad_medical
+		cost = 10
+		x = 14
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Extremely_Low_Literacy
+				add_idea = TUR_Low_Literacy
+			}
+		 }
+	}
+	focus = {
+		id = TUR_Reform_curriculum
+		icon = GFX_focus_generic_court
+		cost = 10
+		prerequisite = {
+			focus = TUR_Ecucation_issues
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		x = 14
+		y = 2
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = TUR_Low_Literacy
+				add_idea = TUR_Average_Literacy
+			}
+		}
+	}
+	focus = {
+		id = TUR_Build_Universities
+		icon = GFX_focus_research2
+		cost = 10
+		prerequisite = {
+			focus = TUR_Reform_curriculum
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		x = 14
+		y = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Average_Literacy
+				add_idea = TUR_Educated_Population
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = TUR_Leadership_Issue
+		icon = GFX_focus_tur_sultan_lead
+		cost = 10
+		x = 14
+		y = 0
+		completion_reward = {
+		country_event = { id = ww1_ottoman.7 }
+		}
+	}
+	focus = {
+		id = TUR_Stay_With_Sultan
+		icon = GFX_focus_TUR_pivot_to_the_past
+		cost = 100000
+		x = 17
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		mutually_exclusive = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+		add_ideas = TUR_Sultan_coup_start
+		}
+	}
+	focus = {
+		#	Remembering The Revolution / Refrences Young Turk Revolution
+		id = TUR_Young_Turk_Parti
+		icon = GFX_focus_tur_enver_pasha
+		cost = 6009.9
+		x = 24
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		mutually_exclusive = {
+			focus = TUR_Stay_With_Sultan
+		}
+		completion_reward = {
+			add_ideas = TUR_Remember_The_Revolution
+		}
+	}
+	focus = {
+		#	Young Turks Party Was Criticised For Pro-Turkish Ideology
+		id = TUR_Ignore_Criticism
+		icon = GFX_focus_RAJ_just_good_business
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Remember_The_Revolution
+				add_idea = TUR_Remember_The_Revolution1
+			}
+		}
+	}
+	focus = {
+		#	Simple Build Up As Filler
+		id = TUR_Arms_Factory
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+						add_popularity = {
+				ideology = fascism
+    			popularity = 0.05
+			}
+				division_template = {
+				name = "Teşkilât-ı Mahsusa"
+				priority = 0
+				division_names_group = TUR_INF_01
+				template_counter = 56
+				is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+				regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 0 y = 3 }
+				militia = { x = 2 y = 3 }
+				irregular_infantry = { x = 3 y = 4 }
+				irregular_infantry = { x = 4 y = 5 }
+					
+				irregular_infantry = { x = 1 y = 1 }
+				irregular_infantry = { x = 1 y = 1 }
+				irregular_infantry = { x = 1 y = 2 }
+				irregular_infantry = { x = 2 y = 2 }
+			}
+			support = {
+			engineer = { x = 0 y = 1 }
+			}
+		}
+
+				49 = {
+					create_unit = {
+					division = "division_template =\"Teşkilât-ı Mahsusa\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+					count = 5
+				}
+			}
+			add_ideas = TUR_Military_Empowerment
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		#	
+		id = TUR_Final_Preperation
+		icon = GFX_focus_TUR_turanist_ambition
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_Ignore_Criticism
+		}
+		prerequisite = {
+			focus = TUR_Arms_Factory
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Remember_The_Revolution1
+				add_idea = TUR_Remember_The_Revolution2
+			}
+		}
+	}
+	focus = {
+		#	1913 Ottoman coup d'état
+		id = TUR_Coup_D_etat
+		icon = GFX_focus_POL_complete_april_constitution
+		cost = 10
+		relative_position_id = TUR_Final_Preperation
+		x = 0
+		y = 1
+		available = {
+			date > 1913.1.1
+		}
+		prerequisite = {
+			focus = TUR_Final_Preperation
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			army_experience = 150
+			navy_experience = 150
+			air_experience = 150
+		}
+	}
+	focus = {
+		#	Enver Pasha Consolidates Power / Iron Man Enver Pasha Meme Reference
+		id = TUR_Consolidate_Power
+		icon = GFX_focus_generic_befriend_turkey
+		cost = 10
+		relative_position_id = TUR_Coup_D_etat
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Coup_D_etat
+		}
+		completion_reward = {
+			remove_ideas = TUR_Remember_The_Revolution2
+			add_ideas = TUR_Iron_Pasha
+					354 = {
+					create_unit = {
+					division = "division_template =\"Teşkilât-ı Mahsusa\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+					count = 5
+				}
+			}
+		}
+	}
+	focus = {
+		#	Army Bonus
+		id = TUR_Iron_Marshal
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Pilot
+			focus = TUR_Iron_Admiral
+		}
+		completion_reward = {
+			army_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Marshal
+			}
+		}
+	}
+	focus = {
+		#	Air Force Bonus
+		id = TUR_Iron_Pilot
+		icon = GFX_focus_FIN_expand_air_force_academy
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Admiral
+		}
+		completion_reward = {
+			air_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Pilot
+			}
+		}
+	}
+	focus = {
+		#	Navy Bonus / Meme
+		id = TUR_Iron_Admiral
+		icon = GFX_focus_PER_establish_the_navy
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Pilot
+		}
+		completion_reward = {
+			navy_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Admiral
+			}
+		}
+	}
+	focus = {
+		#	Armenian Genocide
+		id = TUR_Wash_Our_Lands
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Admiral
+			focus = TUR_Iron_Pilot
+		}
+		completion_reward = {
+			add_manpower = -100000
+			add_stability = 0.3
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = TUR_Sultan_coup1
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TUR_Stay_With_Sultan
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = TUR_Sultan_coup2
+				} 
+				swap_ideas = {
+					remove_idea = TUR_Sultan_coup2
+					add_idea = TUR_Sultan_coup3
+				}
+			}
+			else = {
+				swap_ideas = {
+				remove_idea = TUR_Sultan_coup_start
+				add_idea = TUR_Sultan_coup1
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_coup2
+		icon = GFX_focus_RAJ_a_policy_of_silence
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TUR_Stay_With_Sultan
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = TUR_Sultan_coup1
+				} 
+				swap_ideas = {
+					remove_idea = TUR_Sultan_coup1
+					add_idea = TUR_Sultan_coup3
+				}
+			}
+			else = {
+				swap_ideas = {
+				remove_idea = TUR_Sultan_coup_start
+				add_idea = TUR_Sultan_coup2
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_coup3
+		icon = GFX_focus_RAJ_the_legacy_of_babur
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_Sultan_coup1
+		}
+		prerequisite = {
+			focus = TUR_Sultan_coup2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sultan_coup3
+				add_idea = TUR_Sultan_coup4
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_Coup_Finish
+		icon = GFX_focus_RAJ_seven_shackles
+		cost = 10
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = TUR_Sultan_coup3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sultan_coup4
+				add_idea = TUR_Sultan_Complete_Power
+			}
+			add_ideas = TUR_People_Demand_Reform
+		 }
+	}
+	focus = {
+		id = TUR_Give_People_Want
+		icon = GFX_focus_generic_court
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -2
+		y = 4
+		prerequisite = {
+			focus = TUR_Sultan_Coup_Finish
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_People_Demand_Reform
+				add_idea = TUR_People_Satified
+			}
+		 }
+	}
+	focus = {
+		id = TUR_Drill_Oil
+		icon = GFX_focus_RAJ_trickle_down_economics
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = TUR_Sultan_Coup_Finish
+		}		
+		completion_reward = { 
+			add_ideas = TUR_Rich_Sultan
+			add_resource = {
+				type = oil
+				amount = 19
+				state = 291
+			}
+			add_resource = {
+				type = oil
+				amount = 16
+				state = 676
+			}
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 680
+			}
+		}
+	}
+	focus = {
+		id = TUR_Sultan_Liberty
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = TUR_Sultan_Coup_Finish
+		}
+		completion_reward = {
+			add_ideas = TUR_Give_Liberties
+		}
+	}
+	focus = {
+		id = TUR_New_Caliph
+		icon = GFX_focus_PER_islamic_solidarity
+		cost = 7.2
+		relative_position_id = TUR_Stay_With_Sultan
+		x = 1
+		y = 5
+		prerequisite = {
+			focus = TUR_Drill_Oil
+		}
+		prerequisite = {
+			focus = TUR_Sultan_Liberty
+		}
+		prerequisite = {
+			focus = TUR_Give_People_Want
+		}
+		completion_reward = {
+			add_ideas = TUR_Muslim_Unity
+			677 = {
+				add_core_of = TUR
+			}
+			680 = {
+				add_core_of = TUR
+			}
+			676 = {
+				add_core_of = TUR
+			}
+			291 = {
+				add_core_of = TUR
+			}
+			554 = {
+				add_core_of = TUR
+			}
+			553 = {
+				add_core_of = TUR
+			}
+			454 = {
+				add_core_of = TUR
+			}
+			455 = {
+				add_core_of = TUR
+			}
+			922 = {
+				add_core_of = TUR
+			}
+			293 = {
+				add_core_of = TUR
+			}
+			659 = {
+				add_core_of = TUR
+			}
+			294 = {
+				add_core_of = TUR
+			}
+			658 = {
+				add_core_of = TUR
+			}
+			765 = {
+				add_core_of = TUR
+			}
+			656 = {
+				add_core_of = TUR
+			}
+			675 = {
+				add_core_of = TUR
+			}
+			921 = {
+				add_core_of = TUR
+			}
+			679 = {
+				add_core_of = TUR
+			}
+			292 = {
+				add_core_of = TUR
+			}
+			678 = {
+				add_core_of = TUR
+			}
+			453 = {
+				add_core_of = TUR
+			}
+			446 = {
+				add_core_of = TUR
+			}
+			907 = {
+				add_core_of = TUR
+			}
+			447 = {
+				add_core_of = TUR
+			}
+			452 = {
+				add_core_of = TUR
+			}
+			457 = {
+				add_core_of = TUR
+			}
+			456 = {
+				add_core_of = TUR
+			}
+			44 = {
+				add_core_of = TUR
+			}
+		}
+	}
+	focus = {
+		id = TUR_Defend_Against_Colonisers
+		icon = GFX_focus_generic_islamic_propaganda
+		cost = 5.8
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -1
+		y = 5
+		prerequisite = {
+			focus = TUR_Give_People_Want
+		}
+		prerequisite = {
+			focus = TUR_Drill_Oil
+		}
+		prerequisite = {
+			focus = TUR_Sultan_Liberty
+		}
+		completion_reward = {
+			add_ideas = TUR_Defend_Against_Colonisers
+		 }
+	}
+	focus = {
+		id = TUR_Naval_Reform1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7.2
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Naval_Reform2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7.2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TUR_Leadership_Issue
+		}
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = TUR
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_Overture
+		icon = GFX_goal_continuous_naval_production
+		cost = 7.2
+		relative_position_id = TUR_Naval_Reform1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TUR_Naval_Reform1
+		}
+		prerequisite = {
+			focus = TUR_Naval_Reform2
+		}
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		completion_reward = {
+			add_ideas = TUR_Naval_Overture
+		}
+	}
+	focus = {
+		id = TUR_Purchase_Ships
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 7.2
+		relative_position_id = TUR_Overture
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Overture
+		}
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		completion_reward = {
+			ENG = {
+				country_event = {
+					id = ww1_ottoman.8
+				}
+			}
+		}
+	}
+}

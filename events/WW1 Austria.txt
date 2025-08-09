@@ -1,506 +1,279 @@
+add_namespace = austria_hungary
 add_namespace = ww1_austria
+add_namespace = AUS_monarchist
 
-#Revolts
+
 country_event = {
-	id = ww1_austria.1
-	title = ww1_austria.1.t
-	desc = ww1_austria_desc.1
-	picture = GFX_report_event_england_in_somalia
-
+	id = austria_hungary.11
+	title = "What are our Options"
+	desc = austria_hungary.1.d
+	picture = GFX_franz_josef_meeting_fezs
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_austria.1.a
-		
-		AUS = {
-		    leave_faction = yes
-		}
-		
-		CZE = {
-		    transfer_state = 69
-			transfer_state = 9
-			transfer_state = 75
-			transfer_state = 74
-			transfer_state = 72
-			transfer_state = 70
-			transfer_state = 71
-			transfer_state = 664
-			
-			inherit_technology = AUS
-			
-			declare_war_on = {
-				target = AUS
-				type = annex_everything
-			}
-			
-			division_template = {
-				name = "Infantry Division"
-				division_names_group = CZE_INF_01
-				regiments = {
-					infantry = {
-						x = 0
-						y = 0
-					}
-					infantry = {
-						x = 0
-						y = 1
-					}
-					infantry = {
-						x = 0
-						y = 2
-					}
-					infantry = {
-						x = 1
-						y = 0
-					}
-					infantry = {
-						x = 1
-						y = 1
-					}
-					infantry = {
-						x = 1
-						y = 2
-					}
-				}
-				support = {
-					engineer = {
-						x = 0
-						y = 0
-					}
-				}
-			}
-			
-			9 = {
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CZE
-					prioritize_location = 11542
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-		}
-		
-		CRO = {
-		    transfer_state = 109
-			transfer_state = 912
-			transfer_state = 104
-			transfer_state = 804
-			transfer_state = 103
-			transfer_state = 163
-			transfer_state = 859
-			transfer_state = 852
-			
-			add_state_core = 104
-			add_state_core = 804
-			
-			inherit_technology = AUS
-			
-			declare_war_on = {
-				target = AUS
-				type = annex_everything
-			}
-			
-			division_template = {
-				name = "Infantry Division"
-				division_names_group = CRO_INF_01
-				regiments = {
-					infantry = {
-						x = 0
-						y = 0
-					}
-					infantry = {
-						x = 0
-						y = 1
-					}
-					infantry = {
-						x = 0
-						y = 2
-					}
-					infantry = {
-						x = 1
-						y = 0
-					}
-					infantry = {
-						x = 1
-						y = 1
-					}
-					infantry = {
-						x = 1
-						y = 2
-					}
-				}
-				support = {
-					engineer = {
-						x = 0
-						y = 0
-					}
-				}
-			}
-			
-			109 = {
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = CRO
-					prioritize_location = 11581
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-		}
-		
-		HUN = {
-		    transfer_state = 43
-			transfer_state = 155
-			transfer_state = 842
-			transfer_state = 154
-			transfer_state = 76
-			transfer_state = 73
-			
-			inherit_technology = AUS
-			
-			declare_war_on = {
-				target = AUS
-				type = annex_everything
-			}
-			
-			division_template = {
-				name = "Infantry Division"
-				division_names_group = HUN_INF_01
-				regiments = {
-					infantry = {
-						x = 0
-						y = 0
-					}
-					infantry = {
-						x = 0
-						y = 1
-					}
-					infantry = {
-						x = 0
-						y = 2
-					}
-					infantry = {
-						x = 1
-						y = 0
-					}
-					infantry = {
-						x = 1
-						y = 1
-					}
-					infantry = {
-						x = 1
-						y = 2
-					}
-				}
-				support = {
-					engineer = {
-						x = 0
-						y = 0
-					}
-				}
-			}
-			
-			43 = {
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
-					owner = HUN
-					prioritize_location = 9660
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-		}
-		
-		POL = {
-		    transfer_state = 88
-			
-			inherit_technology = AUS
-		}
-		UKR = {
-		    transfer_state = 89
-			transfer_state = 91
-			transfer_state = 80
-			
-			inherit_technology = AUS
-		}
-		ROM = {
-		    transfer_state = 84
-			transfer_state = 82
-			transfer_state = 83
-			transfer_state = 890
-		}
-		SER = {
-		    transfer_state = 45
-			transfer_state = 764
-		}
+		name = "Let's see what we can do"
+	}
+}
+
+country_event = {
+	id = austria_hungary.22
+	title = "Languages aren't simple"
+	desc = austria_hungary.2.d
+	picture = GFX_school_lesson_girls
+	is_triggered_only = yes
+
+	option = {
+		name = "Ahoj, Hallo, Pasta"
+	}
+}
+
+country_event = {
+	id = austria_hungary.33
+	title = "Whispers across the Danube"
+	desc = austria_hungary.3.d
+	picture = GFX_translethania_postcard
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's pray for them"
+	}
+}
+
+country_event = {
+	id = austria_hungary.44
+	title = "Maybe, Not All is so Bad"
+	desc = austria_hungary.4.d
+	picture = GFX_office_meeting_maybe_giving
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's get something to Drink"
+	}
+}
+
+country_event = {
+	id = austria_hungary.55
+	title = "Iron and Blood, Even in Bosnia"
+	desc = austria_hungary.5.d
+	picture = GFX_little_girl_in_work_kids
+	is_triggered_only = yes
+
+	option = {
+		name = "Let them starve, or, whatever"
+	}
+}
+
+country_event = {
+	id = austria_hungary.66
+	title = "Many Crowns, Many Issues"
+	desc = austria_hungary.6.d
+	picture = GFX_many_crowns
+	is_triggered_only = yes
+
+	option = {
+		name = "Emperor and King will never be stopped"
+	}
+}
+
+country_event = {
+	id = austria_hungary.77
+	title = "Loyalty is what we Count with"
+	desc = austria_hungary.7.d
+	picture = GFX_winged_hussar
+	is_triggered_only = yes
+
+	option = {
+		name = "Unsere Waffenbrüder"
+	}
+}
+
+country_event = {
+	id = austria_hungary.88
+	title = "New leadership of AOK"
+	desc = austria_hungary.8.d
+	picture = GFX_winged_hussar
+	is_triggered_only = yes
+
+	option = {
+		name = "Svetozar Boroević von Bojna"
+		complete_national_focus = AUH_bojna_doctrine
+		activate_advisor = auh_svetozar_bojna
+	}
+
+		option = {
+		name = "Friedrich Habsburg-Teschen"
+		complete_national_focus = AUH_friedrich_doctrine
+		activate_advisor = AUH_friedrich_habsburg
+	}
+
+		option = {
+		name = "Franz Conrad von Hötzendorf"
+		complete_national_focus = AUH_ohoh_hotzendorf_doctrine
+		activate_advisor =  auh_conrad_hotzendorff
+	}
+		option = {
+		name = "Leopold von Hauer"
+		complete_national_focus = AUH_hauer_cav_doctrine
+	}
+}
+
+country_event = {
+	id = austria_hungary.99
+	title = "Elections of 1911"
+	desc = austria_hungary.9.d
+	picture = GFX_aus_elections
+	is_triggered_only = yes
+
+	option = {
+		name = "Christlichsoziale Partei"
+		complete_national_focus = AUH_victory_of_cs
+	}
+
+		option = {
+		name = "Sozialdemokratische Arbaiter Partei"
+		complete_national_focus = AUH_victory_of_sdap
+	}
+}
+
+country_event = {
+	id = austria_hungary.100
+	title = "Byzantic System back in Place"
+	desc = austria_hungary.10.d
+	picture = GFX_winged_hussar
+	is_triggered_only = no 
+	fire_only_once = yes
+
+	trigger = {
+		has_completed_focus = AUH_construction_funds
+	}
+
+	option = {
+		name = "Back to normal I guess..."
+		remove_ideas = AUH_well_oiled_machine
+	}
+}
+
+country_event = {
+	id = austria_hungary.111
+	title = "Death of our Father"
+	desc = austria_hungary.10.d
+	picture = GFX_karl_kaiser_ded
+	fire_only_once = yes
+
+		trigger = {
+		original_tag = AUH
+		has_government = neutrality
+		date > 1916.11.21
+		has_country_leader = { ruling_only = yes character = AUH_franzjosef }
+	}
+
+	mean_time_to_happen = {
+		days = 2517	# Died in 1941
+	}
+
+	option = {
+		name = "Rühe in Frieden"
+		set_country_leader = AUH_karli
+		kill_country_leader = yes
+	}
+}
+
+country_event = {
+	id = austria_hungary.144
+	title = "Direction of our Future"
+	desc = austria_hungary.11.d
+	picture = GFX_winged_hussar
+	fire_only_once = yes
+
+		trigger = {
+		has_completed_focus = AUH_we_must_do
+	}
+
+	option = {
+		name = "For equality and socialism under Kaisers Watch!"
+		set_country_flag = karl_soc
+		set_cosmetic_tag = AUS_federation
+	}
+	option = {
+		name = "We Must not make the Hungarians mad, Keep the Quo!"
+		set_country_flag = karl_dual
+	}
+
+		option = {
+		name = "Return to Tradition, Reject Modernity"
+		set_cosmetic_tag = AUS_monarchist
+		set_country_flag = karl_imper
+	}
+}
+
+country_event = {
+	id = austria_hungary.155
+	title = "Very Important Decision"
+	desc = austria_hungary.10.d
+	picture = GFX_karl_kaiser_new
+	fire_only_once = yes
+
+		trigger = {
+		has_completed_focus = AUH_son_of_the_empire
+	}
+
+	option = {
+		name = "Act Now, and Fast, no More Dualism!"
+		complete_national_focus = AUH_crowning_of_karl_in_vienna
+		add_political_power = -500
+	}
+	option = {
+		name = "Austria and Hungary, just like two brothers!"
+		complete_national_focus = AUH_crowning_of_karl_in_budapest
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = austria_hungary.166
+	title = "Talks with the Reichsrat"
+	desc = austria_hungary.166.d
+	picture = GFX_aus_reichsrat
+	fire_only_once = yes
+
+		trigger = {
+		has_completed_focus = AUH_test_of_the_reichsrat
+	}
+
+	option = {
+		name = "Well, that was something"
+	}
+}
+
+country_event = {
+	id = austria_hungary.177
+	title = "Evening with the Nobility"
+	desc = austria_hungary.177.d
+	picture = GFX_aus_high_class_support
+	fire_only_once = yes
+
+	option = {
+		name = "For Profits and Stability"
+	}
+
+		trigger = {
+		has_completed_focus = AUH_meeting_with_nobility
+	}
+}
+
+country_event = {
+	id = austria_hungary.188
+	title = "Army Does it's Moves"
+	desc = austria_hungary.188.d
+	picture = GFX_aus_karl_get_army
+	fire_only_once = yes
+
+		trigger = {
+		has_completed_focus = AUH_talks_with_the_army
+	}
+
+	option = {
+		name = "Neutrality is Welcomed"
 	}
 }
 
@@ -526,13 +299,6 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {
-		name = ww1_austria.2.b
-		
-		ai_chance = {
-			factor = 0
-		}
-	}
 }
 
 #WAR??!??
@@ -553,13 +319,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 100
-		}
-	}
-	option = {
-		name = ww1_austria.3.b
-		
-		ai_chance = {
-			factor = 0
 		}
 	}
 }

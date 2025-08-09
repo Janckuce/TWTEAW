@@ -1,0 +1,80 @@
+on_actions = {
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SER
+                    SER = {
+                        has_war_with = AUS
+                    }
+                }
+                load_oob = SER_Exile
+            }
+        }
+    }
+    on_monthly = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SER
+                    SER = {
+                        has_war_with = AUS
+                        has_capitulated = yes
+                    }
+                }
+
+                # No Focus
+                if = {
+                    limit = {
+                        tag = SER
+                        SER = {
+                            NOT = {
+                                has_completed_focus = SER_Exiled_Buff
+                            }
+                        }
+                    }
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 150
+                        producer = FRA
+                    }
+                    add_equipment_to_stockpile = {
+                        type = support_equipment
+                        amount = 25
+                        producer = FRA
+                    }
+                    add_equipment_to_stockpile = {
+                        type = artillery_equipment
+                        amount = 10
+                        producer = FRA
+                    }
+                }
+                
+                # Focus
+                if = {
+                    limit = {
+                        tag = SER
+                        SER = {
+                            has_completed_focus = SER_Exiled_Buff
+                        }
+                    }
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 300
+                        producer = FRA
+                    }
+                    add_equipment_to_stockpile = {
+                        type = support_equipment
+                        amount = 50
+                        producer = FRA
+                    }
+                    add_equipment_to_stockpile = {
+                        type = artillery_equipment
+                        amount = 20
+                        producer = FRA
+                    }
+                }
+            }
+        }
+    }
+}

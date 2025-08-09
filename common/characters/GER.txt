@@ -27,6 +27,124 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+
+		ger_tirpitz = {
+		name = ger_tirpitz
+		portraits = {
+			civilian = {
+				large = "GFX_ger_tirpitz"
+			}
+				army = {
+				small = "GFX_GER_tirpitz_frame"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ger_tirpitz
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { ironside cruiser_Capitan}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+
+		ger_richtoffen = {
+		name = ger_richtoffen
+		portraits = {
+			civilian = {
+				large = "GFX_ger_richtoffen"
+			}
+				army = {
+				small = "GFX_ger_richtoffen_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ger_richtoffen
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				air_air_combat_training_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		ger_boelcke = {
+		name = ger_boelcke
+		portraits = {
+			civilian = {
+				large = "GFX_ger_boelcke"
+			}
+				army = {
+				small = "GFX_ger_boelcke_frame"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = ger_boelcke
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		ger_schneer = {
+		name = ger_schneer
+		portraits = {
+			civilian = {
+				large = "GFX_ger_reinhard_scheer"
+			}
+				army = {
+				small = "GFX_ger_reinhard_scheer_frame"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ger_schneer
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { marksman concealment_expert destroyer_leader}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 5
+		}
+	}
 	
 	GER_friedrich_erbert = {
 		name = GER_character_friedrich_erbert
@@ -68,11 +186,12 @@ characters={
 		}
 		
 		field_marshal={
-			skill=2
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
+			traits = { fast_planner charismatic expert_delegator }
+			skill=4
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
 		}
 	}
 	
@@ -116,11 +235,12 @@ characters={
 		}
 		
 		field_marshal={
-			skill=2
+			traits = { media_personality politically_connected scavenger charismatic }
+			skill=3
 			attack_skill=6
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
 		}
 	}
 	
@@ -149,6 +269,7 @@ characters={
 		}
 		
 		field_marshal={
+			traits = { old_guard politically_connected hill_fighter }
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -182,11 +303,12 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { cavalry_leader cavalry_expert infantry_leader trickster }
 			skill=2
-			attack_skill=5
-			defense_skill=4
+			attack_skill=4
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=1
 		}
 	}
 	
@@ -215,9 +337,10 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { engineer_officer }
 			skill=2
-			attack_skill=3
-			defense_skill=2
+			attack_skill=2
+			defense_skill=1
 			planning_skill=1
 			logistics_skill=2
 		}
@@ -248,6 +371,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { bearer_of_artillery infantry_leader }
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -266,6 +390,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { ambusher adaptable skirmisher }
 			skill=2
 			attack_skill=4
 			defense_skill=2
@@ -284,11 +409,12 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {  }
 			skill=2
-			attack_skill=3
-			defense_skill=1
+			attack_skill=1
+			defense_skill=2
 			planning_skill=2
-			logistics_skill=4
+			logistics_skill=3
 		}
 	}
 	
@@ -302,11 +428,12 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { ranger  }
 			skill=2
-			attack_skill=4
+			attack_skill=3
 			defense_skill=3
 			planning_skill=3
-			logistics_skill=1
+			logistics_skill=3
 		}
 	}
 	
@@ -320,6 +447,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { infantry_leader infantry_expert urban_assault_specialist  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -338,6 +466,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { ranger engineer  }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -356,6 +485,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { trickster organizer  }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -389,8 +519,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { commmando desert_fox swamp_fox jungle_rat trickster  }
 			skill=2
-			attack_skill=2
+			attack_skill=3
 			defense_skill=6
 			planning_skill=1
 			logistics_skill=4
@@ -422,6 +553,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { fortress_buster  }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -455,6 +587,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { fortress_buster urban_assault_specialist  }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -563,6 +696,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { organizer skilled_staffer trickster  }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -707,6 +841,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { urban_assault_specialist improvisation_expert }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -725,6 +860,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { cavalry_leader cavalry_expert trickster }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -797,6 +933,7 @@ characters={
 		}
 		
 		corps_commander={
+			traits = { politically_connected media_personality old_guard scavenger ranger }
 			skill=2
 			attack_skill=1
 			defense_skill=1

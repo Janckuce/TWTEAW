@@ -28,19 +28,21 @@ on_actions = {
             }
         }
     }
+    on_before_peace_conference_start = {
         on_capitulation_immediate = {
         effect = {
             if = {
                 limit = {
-                    tag = SER
-                    from = { tag = BUL }
+                    ROOT = { tag = SER}
+                    FROM = { tag = BUL}
                     BUL = {
                         has_war_with = SER
                         has_war_with = GRE
-                        has_war_with = MNT
                         has_war_with = ROM
-                    or = {
-                    has_war_with = TUR
+                        Not = {
+                        has_war_with = FRA
+                        has_war_with = RUS
+                        has_war_with = ENG
                         }
                     }
                 }

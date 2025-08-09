@@ -82,6 +82,7 @@ country_event = {
 			transfer_state = 812
 			transfer_state = 813
 			transfer_state = 811
+			transfer_state = 810
 			
 			inherit_technology = GER
 		}
@@ -207,11 +208,6 @@ country_event = {
 			}
 			remove_ideas = GER_naval_arms_race_2
 		}
-			
-		add_timed_idea = {
-			idea = GER_schlieffen_moltke_plan_idea
-			days = 40
-		}
 	}
 }
 
@@ -234,7 +230,12 @@ country_event = {
 		}
 		
 		news_event = ww1_news.15
-		
+		GER = {
+		set_variable = {
+			Russia_surrender = 1
+			}
+		}
+
 		every_country = {
 			limit = {
 				OR = {
@@ -330,7 +331,6 @@ country_event = {
 		name = ww1_germany.9.a
 		
 		news_event = ww1_news.14
-		
 		GER = { 
 		    transfer_state = 815  
 		    transfer_state = 96
@@ -420,7 +420,6 @@ country_event = {
 		name = ww1_germany.10.a
 		
 		news_event = ww1_news.14
-		
 		GER = { 
 			transfer_state = 92
 			transfer_state = 90
@@ -815,6 +814,9 @@ country_event = {
 	    GER = {
 		    add_to_faction = BUL
 		}
+		set_variable = {
+			Bulgaria_in_war = 1
+		}
 		name = ww1_germany.17.a
 	}
 }
@@ -830,5 +832,99 @@ country_event = {
 
 	option = {
 		name = ww1_germany.18.a
+	}
+}
+
+country_event = {
+	id = ww1_germany.19
+	title = ww1_germany.19.t
+	desc = ww1_germany_desc.19
+	picture = GFX_report_event_german_officers
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.19.a
+
+		complete_national_focus = GER_schlieffen_moltke_plan_idea
+	}
+	option = {
+		name = ww1_germany.19.b
+
+		complete_national_focus = GER_Helmuth_von_Moltke
+	}
+}
+
+#	Kaiser Leader Event
+country_event = {
+	id = ww1_germany.20
+	title = ww1_germany.20.t
+	desc = ww1_germany_desc.20
+	picture = GFX_report_event_german_officers
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.20.a
+
+		complete_national_focus = GER_Kaiser_Leader1
+	}
+
+	option = {
+		name = ww1_germany.20.b
+
+		complete_national_focus = GER_Kaiser_Leader2
+	}
+
+	option = {
+		name = ww1_germany.20.c
+
+		complete_national_focus = GER_Kaiser_Leader3
+	}
+}
+country_event = {
+	id = ww1_germany.21
+	title = ww1_germany.13.t
+	desc = ww1_germany_desc.13
+	picture = GFX_report_event_german_troops_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.21.a
+		ai_chance = {
+			factor = 100
+		}
+		#white peace Germany
+			every_country = {
+				limit = {
+					has_war_with = GER
+				}
+				white_peace = GER
+				white_peace = BUL
+				white_peace = AUS
+				white_peace = POL
+				white_peace = UKR
+				white_peace = LIT
+				white_peace = UBD
+			}
+
+			#Free Luxembourg
+
+
+			#Treaty of Versailles
+			GER = {
+				country_event = { id = ww1_germany.15 days = 70 }
+			}
+
+			news_event = ww1_news.51
+
+	}
+	option = {
+		name = ww1_france.21.b
+		
+		ai_chance = {
+			base = 0
+		}
 	}
 }

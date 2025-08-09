@@ -1724,10 +1724,17 @@ focus_tree = {
 		
 		completion_reward = {
 				48 = {
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
 				level = 1
+				instant_build = yes
+			}
+		}
+		48 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1740,7 +1747,7 @@ focus_tree = {
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		x = 37
 		y = 5
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 		focus = BUL_bulgarian_industrial_works
@@ -1765,7 +1772,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1811,8 +1818,30 @@ focus_tree = {
 				type = supply_node
 				level = 1
 				instant_build = yes
+				}
 			}
-		}
+			48 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			801 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			77 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
 		}
 		
 	}
@@ -1822,7 +1851,7 @@ focus_tree = {
 		icon = GFX_focus_generic_air_bases
 		x = 39
 		y = 7
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 		focus = BUL_improve_on_our_railways
@@ -1886,7 +1915,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -1923,7 +1952,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -1936,7 +1965,7 @@ focus_tree = {
 		icon = GFX_focus_BEL_engine_of_the_economy
 		x = 40
 		y = 8
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 		focus = BUL_sofia_airport
@@ -1994,6 +2023,16 @@ focus_tree = {
 				211 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
 				type = dockyard
 				level = 2
 				instant_build = yes
@@ -2033,7 +2072,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -2046,7 +2085,7 @@ focus_tree = {
 		icon = GFX_focus_generic_hydroelectric_energy
 		x = 42
 		y = 4
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 		focus = BUL_bulgarian_industrial_works
@@ -2064,14 +2103,19 @@ focus_tree = {
 		
 		completion_reward = {
 				212 = {
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
 				level = 1
 				instant_build = yes
 			}
 		}
-		
+			212 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 	}
 }
 
@@ -2106,12 +2150,16 @@ focus_tree = {
 				184 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+				add_building_construction = {
 				type = infrastructure
 				level = 1
 				instant_build = yes
 			}
 		}
-
 			 add_resource = {
             state = 184  # Replace with the actual state ID
             type = steel  # Resource type: oil, steel, aluminum, etc.
@@ -2130,8 +2178,8 @@ focus_tree = {
 		focus = {
 		id = BUL_question_of_our_military
 		icon = GFX_focus_chi_army_reform
-		x = 24
-		y = 11
+		x = 8
+		y = 1
 		cost = 10
 
 		bypass = {
@@ -2153,8 +2201,8 @@ focus_tree = {
 		focus = {
 		id = BUL_reform_conscription_system
 		icon = GFX_focus_bul_arming_again
-		x = 24
-		y = 12
+		x = 8
+		y = 2
 		cost = 10
 
 		prerequisite = {
@@ -2183,8 +2231,8 @@ focus_tree = {
 	focus = {
 		id = BUL_formalize_general_Staff
 		icon = GFX_focus_generic_military_dictatorship
-		x = 24
-		y = 13
+		x = 8
+		y = 3
 		cost = 10
 
 		prerequisite = {
@@ -2216,8 +2264,8 @@ focus_tree = {
 		focus = {
 		id = BUL_cavalry_doctrine
 		icon = GFX_goal_generic_cavalry
-		x = 26
-		y = 14
+		x = 9
+		y = 4
 		cost = 10
 		mutually_exclusive = {
 		focus = BUL_infantry_doctrine
@@ -2248,8 +2296,8 @@ focus_tree = {
 		focus = {
 		id = BUL_infantry_doctrine
 		icon = GFX_focus_AFG_adopt_nufus
-		x = 22
-		y = 14
+		x = 7
+		y = 4
 		cost = 10
 		mutually_exclusive = {
 		    focus = BUL_cavalry_doctrine
@@ -2281,8 +2329,8 @@ focus_tree = {
 		focus = {
 		id = BUL_infantry_our_might
 		icon = GFX_focus_AUS_frontmiliz_focus
-		x = 21
-		y = 15
+		x = 6
+		y = 5
 		cost = 10
 
 		prerequisite = {
@@ -2311,8 +2359,8 @@ focus_tree = {
 		focus = {
 		id = BUL_cavalry_our_might
 		icon = GFX_focus_generic_horse_studs
-		x = 27
-		y = 15
+		x = 10
+		y = 5
 		cost = 10
 		prerequisite = {
 		focus = BUL_cavalry_doctrine
@@ -2341,8 +2389,8 @@ focus_tree = {
 		focus = {
 		id = BUL_improve_stationing_of_horses
 		icon = GFX_focus_AFG_establish_darulaman
-		x = 28
-		y = 16
+		x = 11
+		y = 6
 		cost = 10
 
 		prerequisite = {
@@ -2377,8 +2425,8 @@ focus_tree = {
 		focus = {
 		id = BUL_horses_for_future
 		icon = GFX_focus_generic_motor_cycle
-		x = 29
-		y = 17
+		x = 12
+		y = 7
 		cost = 10
 
 		prerequisite = {
@@ -2415,8 +2463,8 @@ focus_tree = {
 		focus = {
 		id = BUL_salvaged_we_use
 		icon = GFX_focus_FIN_weapon_caches
-		x = 30
-		y = 18
+		x = 13
+		y = 8
 		cost = 10
 
 		prerequisite = {
@@ -2451,8 +2499,8 @@ focus_tree = {
 		focus = {
 		id = BUL_future_not_wait
 		icon = GFX_focus_generic_tank_assault
-		x = 31
-		y = 19
+		x = 14
+		y = 9
 		cost = 10
 
 		prerequisite = {
@@ -2480,8 +2528,8 @@ focus_tree = {
 		focus = {
 		id = BUL_project_of_field_medicine
 		icon = GFX_focus_generic_bad_medical
-		x = 20
-		y = 16
+		x = 5
+		y = 6
 		cost = 10
 
 		prerequisite = {
@@ -2517,8 +2565,8 @@ focus_tree = {
 		focus = {
 		id = BUL_give_in_to_vazovs_ideas
 		icon = GFX_goal_generic_army_artillery
-		x = 17
-		y = 19
+		x = 2
+		y = 9
 		cost = 10
 
 		prerequisite = {
@@ -2547,8 +2595,8 @@ focus_tree = {
 		focus = {
 		id = BUL_type_of_two_line_trenches
 		icon = GFX_goal_generic_military_sphere
-		x = 18
-		y = 18
+		x = 3
+		y = 8
 		cost = 10
 
 		prerequisite = {
@@ -2584,8 +2632,8 @@ focus_tree = {
 		focus = {
 		id = BUL_for_the_stip_highlands
 		icon = GFX_focus_SMB_a_land_of_mountains
-		x = 19
-		y = 17
+		x = 4
+		y = 7
 		cost = 10
 
 		prerequisite = {
@@ -2614,8 +2662,8 @@ focus_tree = {
 		focus = {
 		id = BUL_new_recon_tactics
 		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 24
-		y = 16
+		x = 8
+		y = 6
 		cost = 10
 
 		prerequisite = {
@@ -2646,8 +2694,8 @@ focus_tree = {
 	focus = {
 		id = BUL_empty_out_stockpiles
 		icon = GFX_focus_generic_supply_line
-		x = 24
-		y = 18
+		x = 8
+		y = 8
 		cost = 10
 
 		prerequisite = {
@@ -2686,8 +2734,8 @@ focus_tree = {
 		focus = {
 		id = BUL_soldiers_patriots
 		icon = GFX_focus_CHL_incorporate_machi_into_the_army
-		x = 24
-		y = 20
+		x = 8
+		y = 10
 		cost = 10
 
 		prerequisite = {
@@ -2719,8 +2767,8 @@ focus_tree = {
 		focus = {
 		id = BUL_infantry_art_combined_forces
 		icon = GFX_focus_NORDIC_com_selector_army
-		x = 22
-		y = 22
+		x = 6
+		y = 11
 		cost = 10
 
 		prerequisite = {
@@ -2753,8 +2801,8 @@ focus_tree = {
 		focus = {
 		id = BUL_cavalry_tonk_combined_forces
 		icon = GFX_focus_generic_tank_air_support
-		x = 26
-		y = 22
+		x = 10
+		y = 11
 		cost = 10
 
 		prerequisite = {
