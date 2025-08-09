@@ -288,31 +288,20 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.8.a
-		ai_chance = {
-			factor = 0
+		if = {
+			limit = {
+				ENG = {
+					has_navy_size = {
+						size > 1
+						type = battleship
+					}
+				}
+			}
 		}
 		TUR = {
 			add_timed_idea = {
 				idea = TUR_Purchased_Ships
 				days = 360
-			}
-			add_equipment_production = {
-				equipment = {
-					type = battleship_1
-					creator = "ENG" 
-				}
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = battleship_1
-					creator = "ENG" 
-				}
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
 			}
 		}
 		ENG = {
@@ -320,14 +309,19 @@ country_event = {
 				idea = ENG_Purchased_Ships
 				days = 360
 			}
+			transfer_ship = {
+				type = battleship
+				target = TUR
+			}
+			transfer_ship = {
+				type = battleship
+				target = TUR
+			}
 		}
 	}
 
 	option = {
 		name = ww1_ottoman.8.b
-		ai_chance = {
-			factor = 0
-		}
 		GER = {
 			country_event = ww1_ottoman.9
 		}
@@ -344,31 +338,20 @@ country_event = {
 
 	option = {
 		name = ww1_ottoman.9.a
-		ai_chance = {
-			factor = 0
+		if = {
+			limit = {
+				GER = {
+					has_navy_size = {
+						size > 1
+						type = battleship
+					}
+				}
+			}
 		}
 		TUR = {
 			add_timed_idea = {
 				idea = TUR_Purchased_Ships
 				days = 360
-			}
-			add_equipment_production = {
-				equipment = {
-					type = battleship_1
-					creator = "GER" 
-				}
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = battleship_1
-					creator = "GER" 
-				}
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
 			}
 		}
 		GER = {
@@ -376,7 +359,19 @@ country_event = {
 				idea = GER_Purchased_Ships
 				days = 360
 			}
+			transfer_ship = {
+				type = battleship
+				target = TUR
+			}
+			transfer_ship = {
+				type = battleship
+				target = TUR
+			}
 		}
+	}
+
+	option = {
+		name = ww1_ottoman.9.b
 	}
 }
 country_event = {
