@@ -1105,11 +1105,21 @@ leader_traits = {
 	GER_freikorps_commander = {
 		random = no
 		sprite = 5
-		conscription_factor = 0.03
+		conscription_factor = 0.05
 		modifier_army_sub_unit_militia_defence_factor = 0.05
 		modifier_army_sub_unit_militia_attack_factor = 0.05
 		modifier_army_sub_unit_militia_max_org_factor = 0.05
 		drift_defence_factor = 0.15
+	}
+
+		TUR_paramilitariess_commander = {
+		random = no
+		sprite = 5
+		conscription_factor = 0.03
+		modifier_army_sub_unit_militia_defence_factor = 0.2
+		modifier_army_sub_unit_militia_attack_factor = 0.2
+		modifier_army_sub_unit_militia_max_org_factor = 0.25
+		ETH_army_modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
 	}
 
 	champion_of_peace_1 = {
@@ -12241,6 +12251,25 @@ leader_traits = {
 		production_speed_rail_way_factor = 0.025
 	}
 
+		weiss_comp = {
+		random = no
+		consumer_goods_factor = -0.075
+		production_factory_max_efficiency_factor = 0.075
+		production_lack_of_resource_penalty_factor = -0.1
+		production_speed_buildings_factor = 0.075
+		line_change_production_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		production_factory_start_efficiency_factor = 0.075
+		production_factory_efficiency_gain_factor = 0.05
+	}
+
+		apikoglu_spirit = {
+		random = no
+		consumer_goods_factor = -0.1
+		production_lack_of_resource_penalty_factor = -0.075
+		line_change_production_efficiency_factor = 0.025
+	}
+
 		bul_military_teacher_infantry = {
 		random = no
 		sprite = 13
@@ -12340,10 +12369,84 @@ leader_traits = {
 		cavalry_defence_factor = 0.025
 		army_speed_factor = 0.05
 		initiative_factor = 0.05
+	}
+		army_tur_ali_kemal = {
+		random = no
+		sprite = 9
+		stability_weekly = 0.001
+		research_speed_factor = 0.075
+	}
 
+		army_tur_nazim_bey = {
+		random = no
+		sprite = 9
+		weekly_casualties_war_support = 0.001
+		weekly_bombing_war_support = 0.001
+		weekly_convoys_war_support = 0.001
+		war_support_weekly_factor = 0.05
+		production_speed_arms_factory_factor = 0.075
+	}
 
+		army_tur_said_halim = {
+		random = no
+		sprite = 9
+			equipment_bonus = {
+			infantry_equipment = {
+			build_cost_ic = -0.075
+			instant = yes
+		}
+	}
 
+		equipment_bonus = {
+		support_equipment = {
+		build_cost_ic = -0.075
+		instant = yes
+		}
+	}
+	weekly_manpower = 75
 
+	}
+
+		army_tur_halil_mentese = {
+		random = no
+		sprite = 9
+		compliance_gain = 0.075
+		high_command_cost_factor = -0.15
+		air_chief_cost_factor = -0.15
+		army_chief_cost_factor = -0.15
+		navy_chief_cost_factor = -0.15
+		required_garrison_factor = -0.15
+		resistance_damage_to_garrison = -0.15
+	}
+
+		army_tur_gabriel_noradoungian = {
+		random = no
+		sprite = 9
+		industrial_capacity_factory = 0.125
+		consumer_goods_factor = -0.05
+		economy_cost_factor = -0.1
+		high_command_cost_factor = -0.1
+		trade_laws_cost_factor = -0.1
+		mobilization_laws_cost_factor = 0.1
+	}
+
+		army_tur_emmanuel_carasso = {
+		random = no
+		sprite = 9
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		non_core_manpower = 0.05
+
+	}
+
+		army_tur_taalat = {
+		random = no
+		sprite = 9
+		political_advisor_cost_factor = -0.25
+	political_power_factor = 0.25
+	mobilization_speed = 0.05
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
 	}
 
 		advisor_BUL_vasil_radoslavov = {

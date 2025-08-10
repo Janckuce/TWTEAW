@@ -1,0 +1,13 @@
+
+X_AUH_propaganda_campaigns = {
+	priority = 100
+	icon = cat_generic_austria_hungary_icon
+	scripted_gui = SOV_propaganda_campaigns_ui
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		has_completed_focus = AUH_propagate_loyal_culture2
+	}
+}

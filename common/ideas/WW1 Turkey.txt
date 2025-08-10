@@ -1,0 +1,574 @@
+ideas = {
+
+		industrial_concern = {
+			designer = no 
+
+			anatolian_train = {
+			allowed = { original_tag =TUR }
+			traits = {
+				railway_company
+				}
+			}
+
+				apikoglu = {
+				allowed = { original_tag = TUR }
+				traits = {
+				apikoglu_spirit
+			}
+		}
+	}
+
+	country = {
+		TUR_Army_Of_Bygon_Era = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_army_spirit
+
+			modifier = {
+				training_time_army_factor = 0.25
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_org_factor = -0.20
+				supply_consumption_factor = 0.15
+			}
+		}
+		TUR_Army_Of_Bygon_Era_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_army_spirit
+
+			modifier = {
+				training_time_army_factor = 0.2
+				army_attack_factor = -0.12
+				army_defence_factor = -0.12
+				army_org_factor = -0.15
+				supply_consumption_factor = 0.10
+			}
+		}
+		TUR_Army_Of_Bygon_Era_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_army_spirit
+
+			modifier = {
+				training_time_army_factor = 0.05
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+			}
+		}
+		TUR_Army_Fit_Sultan = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_army_spirit
+
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		TUR_Sick_man_europe = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_sick_man
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.15
+				resistance_activity = 0.2
+				industrial_capacity_factory = -0.15
+			}
+		}
+		TUR_Sick_man_europe_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_sick_man
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				resistance_activity = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		TUR_Sick_man_europe_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_sick_man
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.15
+				resistance_activity = 0.15
+			}
+		}
+		TUR_Our_lost_glory = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_our_past
+
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_expected_value = 0.05
+				stability_factor = -0.15
+			}
+		}
+		TUR_Our_lost_glory2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_our_past
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_expected_value = 0.05
+				stability_factor = -0.15
+			}
+		}
+		TUR_Our_lost_glory3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_our_past
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_expected_value = 0.05
+				stability_factor = -0.15
+				war_support_factor = 0.05
+			}
+		}
+		TUR_Our_lost_glory4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_our_past
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.1
+				war_support_factor = 0.05
+			}
+		}
+		TUR_Extremely_Low_Literacy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_cant_read
+			modifier = {
+				stability_factor = 0.3
+				research_speed_factor = -0.5
+				recruitable_population = 0.25
+			}
+		}
+		TUR_Low_Literacy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_cant_read
+			modifier = {
+				stability_factor = 0.2
+				research_speed_factor = -0.25
+				recruitable_population = 0.15
+			}
+		}
+		TUR_Average_Literacy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_cant_read
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = -0.1
+			}
+		}
+		TUR_Educated_Population = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = tur_cant_read
+			modifier = {
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+		TUR_Europe_last_stand = {
+			picture = mex_politicised_army_2
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = goal_generic_army_doctrines
+
+			modifier = {
+				army_defence_factor = 0.15
+			}
+		}
+		TUR_Mass_Militerisation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = por_colonial_army
+		modifier = {
+		production_speed_arms_factory_factor = 0.2
+			}
+		}
+		TUR_Healthy_Industralisation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+		TUR_Total_war = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = HUN_turul_association_idea
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.5
+				manpower = 50000
+			}
+		}
+		TUR_Chosing_Our_Destiny = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				political_power_factor = 0.10
+				mobilization_speed = 0.07
+				war_support_factor = 0.05
+				war_support_weekly_factor = 0.004
+			}
+		}
+		TUR_Focus_On_Britain ={
+			picture = ARG_anti_british_sentiment
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				army_org_factor = 0.2
+			}
+		}
+		TUR_Focus_On_Russia = {
+			picture = SOV_opiate_of_the_masses
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				supply_consumption_factor = -0.15
+			}
+		}
+		TUR_Took_Suez = {
+			modifier = {
+				war_support_factor = 0.2
+				resistance_activity = -0.25
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		TUR_Lose_Balkan_War_Hurry1 = {
+			picture = tur_kemalist_army_officers_powerful_disloyal
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		TUR_Lose_Balkan_War_Hurry2 = {
+			picture = tur_kemalist_army_officers_powerful_disloyal
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_org_factor = -0.3
+			}
+		}
+		TUR_Lose_Balkan_War_Hurry3 = {
+			picture = tur_kemalist_army_officers_powerful_disloyal
+			modifier = {
+				army_attack_factor = -0.7
+				army_defence_factor = -0.7
+				army_org_factor = -0.7
+			}
+		}
+		TUR_Remember_The_Revolution = {
+			modifier = {
+				war_support_factor = 0.1
+			}
+			picture = tur_remember_coup
+		}
+		TUR_Remember_The_Revolution1 = {
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				fascism_drift = 0.03
+				research_speed_factor = 0.1
+			}
+			picture = tur_remember_coup
+		}
+		TUR_Remember_The_Revolution2 = {
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = 0.15
+				fascism_drift = 0.04
+				research_speed_factor = 0.15
+			}
+			picture = tur_remember_coup
+		}
+		TUR_Military_Empowerment= {
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+			picture = tur_kemalist_army_officers_limited_powers_effect
+		}
+		TUR_Iron_Pasha = {
+			modifier = {
+				war_support_factor = 0.25
+				fascism_drift = 0.05
+				command_power_gain = 0.01
+				research_speed_factor = 0.1
+				pocket_penalty = 0.2
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				conscription_factor = 0.15
+				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
+			}
+			picture = tur_enver_pasha
+		}
+		TUR_Iron_Marshal = {
+			modifier = {
+				war_support_factor = 0.25
+				fascism_drift = 0.05
+				command_power_gain = 0.01
+				research_speed_factor = 0.1
+				pocket_penalty = 0.2
+				army_speed_factor = 0.15
+				army_attack_speed_factor = 0.15
+				conscription_factor = 0.15
+				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
+
+				army_morale_factor = 0.08
+				acclimatization_hot_climate_gain_factor = 0.05
+				equipment_capture_factor = 0.1
+				coordination_bonus = 0.08
+				training_time_army_factor = -0.1
+			}
+			picture = tur_enver_pasha
+		}
+		TUR_Iron_Pilot = {
+			modifier = {
+				war_support_factor = 0.25
+				fascism_drift = 0.05
+				command_power_gain = 0.01
+				research_speed_factor = 0.1
+				pocket_penalty = 0.2
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				conscription_factor = 0.15
+				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
+
+				air_bombing_targetting = 0.1
+				air_cas_efficiency = 0.1
+				air_defence_factor = 0.08
+				air_attack_factor = 0.08
+				air_agility_factor = 0.1
+				air_range_factor = 0.05
+			}
+			picture = tur_enver_pasha
+		}
+		TUR_Iron_Admiral = {
+			modifier = {
+				war_support_factor = 0.25
+				fascism_drift = 0.05
+				command_power_gain = 0.01
+				research_speed_factor = 0.1
+				pocket_penalty = 0.2
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				conscription_factor = 0.15
+				acclimatization_cold_climate_gain_factor = -0.1
+				supply_consumption_factor = -0.15
+				war_stability_factor = 0.4
+
+				transport_capacity = -0.3
+				naval_night_attack = 0.1
+				spotting_chance = 0.1
+				naval_speed_factor = 0.15
+				navy_org_factor = 0.08
+				naval_coordination = 0.08
+			}
+			picture = tur_enver_pasha-
+		}
+		TUR_Sultan_coup_start = {
+			modifier = {
+				stability_factor = -0.05
+				neutrality_drift = 0.1
+				political_power_cost = 0.05
+			}
+			picture = tur_sulat_coup
+		}
+		TUR_Sultan_coup1 = {
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = 0.2
+				political_power_cost = 0.1
+				resistance_activity = 0.05
+			}
+			picture = tur_sulat_coup
+		}
+		TUR_Sultan_coup2 = {
+			modifier = {
+				stability_factor = -0.1
+				neutrality_drift = 0.1
+				political_power_cost = 0.05
+				drift_defence_factor = 0.1
+				war_support_factor = -0.05
+			}
+			picture = tur_sulat_coup
+		}
+		TUR_Sultan_coup3 = {
+			modifier = {
+				stability_factor = -0.15
+				neutrality_drift = 0.2
+				political_power_cost = 0.1
+				resistance_activity = 0.05
+				drift_defence_factor = 0.1
+				war_support_factor = -0.05
+			}
+			picture = tur_sulat_coup
+		}
+		TUR_Sultan_coup4 = {
+			modifier = {
+				stability_factor = -0.25
+				neutrality_drift = 0.25
+				political_power_cost = 0.15
+				resistance_activity = 0.1
+				drift_defence_factor = 0.15
+				war_support_factor = -0.1
+			}
+			picture = tur_sulat_coup
+		}
+		TUR_Sultan_Complete_Power = {
+			modifier = {
+				political_power_factor = 0.15
+				drift_defence_factor = 0.2
+				neutrality_drift = 0.25
+			}
+			picture = tur_sulat_coup
+		}
+		TUR_Meek_Sultan = {
+			modifier = {
+				political_power_cost = 0.05
+				war_support_factor = -0.05
+				resistance_activity = 0.05
+			}
+		}
+		TUR_People_Demand_Reform = {
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				resistance_activity = 0.2
+				production_speed_buildings_factor = -0.05
+			}
+			picture = ARG_social_welfare_fund_ns
+		}
+		TUR_People_Satified = {
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				resistance_activity = -0.15
+				production_speed_buildings_factor = 0.15
+			}
+			picture = ARG_social_welfare_fund_ns
+		}
+		TUR_Rich_Sultan = {
+			modifier = {
+				industrial_capacity_factory = 0.15
+				resistance_activity = -0.2
+				production_factory_max_efficiency_factor = 0.05
+			}
+			picture = tur_varlik_vergisi
+		}
+		TUR_Give_Liberties = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			picture = can_wartime_prices_and_trade_board
+		}
+		TUR_Muslim_Unity = {
+			modifier = {
+				resistance_activity = 0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+			picture = tur_kemalist_army_officers_powerful_neutral
+		}
+		TUR_Defend_Against_Colonisers = {
+			modifier = {
+				army_core_defence_factor = 0.15
+			}
+			picture = tur_golden_age_of_the_wolf
+		}
+		TUR_Naval_Overture = {
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+			}
+			picture = generic_navy_bonus
+		}
+		TUR_Purchased_Ships = {
+			picture = generic_navy_bonus
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+			icture = generic_navy_bonus
+		}
+	}
+}

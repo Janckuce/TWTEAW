@@ -1,0 +1,18 @@
+add_namespace = ww1_greece
+
+#France annexes Morocco, do we take the north?
+country_event = {
+	id = ww1_greece.1
+	title = ww1_greece.1.t
+	desc = ww1_greece.1.d
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_greece.1.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
