@@ -1260,6 +1260,16 @@ leader_traits = {
 		navy_chief_cost_factor = -0.34
 	}
 
+		cyriaque_gillain_trait = {
+		sprite = 7
+		random = no
+		army_attack_factor = 0.075
+		experience_loss_factor = -0.025
+		cavalry_attack_factor = 0.025
+		cavalry_defence_factor = 0.025
+		experience_gain_army = @chief_experience_gain_medium
+	}
+
 	empire_builder = {
 		random = no
 		war_support_factor = 0.05
