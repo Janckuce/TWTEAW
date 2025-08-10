@@ -9,10 +9,21 @@ RUS_Peasant's_Land_Bank_Category = {
 	
 	visible = {
 		has_completed_focus = RUS_Peasant's_Land_Bank
-		or = {
-			has_idea = RUS_Agrarian_Industry3
-			has_idea = RUS_Agrarian_Industry4
-			has_idea = RUS_Agrarian_Industry5
-		}
+	}
+}
+
+RUS_Laboratories_Category = {
+	icon = military_operation
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = RUS
+	}
+
+	visible = {
+		has_completed_focus = RUS_Establish_Laboratories
 	}
 }

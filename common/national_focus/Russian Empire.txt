@@ -260,6 +260,9 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_New_Exports
 		}
+		prerequisite = {
+			focus = RUS_Science_Expansion4
+		}
 		completion_reward = {
 			add_timed_idea = {
 				idea = RUS_Cotton
@@ -506,6 +509,7 @@ focus_tree = {
 		}
 	}
 	focus = {
+		#	Will Unlock An MIO
 		id = RUS_Science_Expansion_Main
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
@@ -530,6 +534,213 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = RUS_Construction_Efforts
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists
+				add_idea = RUS_Lack_Of_Scientists1
+			}
+		}
+	}
+	focus = {
+		id = RUS_Science_Expansion2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.25
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = RUS_Science_Expansion3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				bonus = 0.25
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = RUS_Science_Expansion4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion2
+		}
+		prerequisite = {
+			focus = RUS_Science_Expansion3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 0.25
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = RUS_Science_Expansion5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion2
+		}
+		prerequisite = {
+			focus = RUS_Science_Expansion3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				bonus = 0.25
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = RUS_Scientific_Breakthrough
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion5
+		}
+		prerequisite = {
+			focus = RUS_New_Exports
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists1
+				add_idea = RUS_Lack_Of_Scientists2
+			}
+		}
+	}
+	focus = {
+		id = RUS_Science_Expansion6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Scientific_Breakthrough
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Scientific_Breakthrough
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = air_equipment
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = RUS_Science_Expansion7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion6
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion6
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = RUS_Establish_Laboratories
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Science_Expansion7
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists2
+				add_idea = RUS_Lack_Of_Scientists3
+			}
+			unlock_decision_category_tooltip = RUS_Laboratories_Category
+		}
+	}
+	focus = {
+		id = RUS_Organised_Warfare_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_The_Tsar's_Ideas
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = RUS_Assault_Warfare_Main
+		}
+		available = {
+			has_idea = RUS_Tsar's_Organised_Plan
+		}
+		prerequisite = {
+			focus = RUS_The_Tsar's_Ideas
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Organised_Warfare1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Organised_Warfare_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Organised_Warfare_Main
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_The_Tsar's_Ideas
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = RUS_Organised_Warfare_Main
+		}
+		available = {
+			has_idea = RUS_Tsar's_Assault_Plan
+		}
+		prerequisite = {
+			focus = RUS_The_Tsar's_Ideas
 		}
 		completion_reward = {
 		}
