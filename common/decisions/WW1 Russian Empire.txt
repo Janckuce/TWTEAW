@@ -67,7 +67,7 @@ RUS_Peasant's_Land_Bank_Category = {
 	}
 }
 
-RUS_Laboratories = {
+RUS_Laboratories_Category = {
 	RUS_Use_What_We've_Learnt = {
 		priority = 1
 		cost = 50
@@ -206,6 +206,70 @@ RUS_Laboratories = {
 				category = air_equipment
 				bonus = 1
 				uses = 1
+			}
+		}
+	}
+}
+
+RUS_Military_Academy_Category = {
+	RUS_Army_Modernisation = {
+		priority = 1
+		cost = 50
+		allowed = {
+			tag = RUS
+			or = {
+				has_idea = RUS_Dated_Warfare1
+				has_idea = RUS_Dated_Warfare2
+				has_idea = RUS_Dated_Warfare3
+				has_idea = RUS_Dated_Warfare4
+				has_idea = RUS_Dated_Warfare5
+			}
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Military_Academy
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare1
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare1
+					add_idea = RUS_Dated_Warfare2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare2
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare2
+					add_idea = RUS_Dated_Warfare3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare3
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare3
+					add_idea = RUS_Dated_Warfare4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare4
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare4
+					add_idea = RUS_Dated_Warfare5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare5
+				}
+				remove_ideas = RUS_Dated_Warfare5
 			}
 		}
 	}
