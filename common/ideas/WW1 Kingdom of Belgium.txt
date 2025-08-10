@@ -1,6 +1,84 @@
 ideas = {
+
+	industrial_concern = {
+
+		BEL_societe_generale_de_belgique_industrial = {
+
+			picture = BEL_societe_generale_de_belgique
+			
+			allowed = {
+				original_tag = BEL
+			}
+
+			available = { 
+			}
+
+			cost = 150
+	
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+
+			traits = { banking_magnate_trait } 
+		}
+
+		BEL_distrigaz = {
+
+			picture = BEL_distrigaz
+			
+			allowed = {
+				original_tag = BEL
+			}
+
+			cost = 150
+	
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			traits = { energy_company_trait } 
+			
+		}
+
+		BEL_colonial_maritime_company = { 
+
+			picture = COG_colonial_maritime_company
+
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = {
+			}
+
+			visible = {
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		
+			traits = { merchant_marine_manufacturer } 
+
+			modifier = {
+				
+			}
+		}
+	}
+
 	country = {
+
+
 		BEL_King_Status = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+			picture = bel_king_spirit
+		}
+			BEL_King_Status_fixed = {
 			picture = bel_king_spirit
 			modifier = {
 				stability_factor = 0.05
@@ -157,6 +235,7 @@ ideas = {
 			}
 		}
 		BEL_The_King = {
+			picture = bel_king_spirit
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				party_popularity_stability_factor = 0.1
