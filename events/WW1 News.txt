@@ -814,6 +814,7 @@ news_event = {
 	major = yes
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = {
 		name = ww1_news.40.a
@@ -944,6 +945,22 @@ news_event = {
 
 	option = {
 		name = ww1_news.47.a
+	}
+}
+
+#Armistice of Stuttgart
+news_event = {
+	id = ww1_news.51
+	title = ww1_news.51t
+	desc = ww1_news_desc.51
+	picture = GFX_news_event_armistice_of_compiegne
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.51.a
 	}
 }
 

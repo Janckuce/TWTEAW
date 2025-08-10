@@ -1,0 +1,249 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = romania_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = ROM_first_balkan_war
+		icon = GFX_focus_rom_preserve_romania
+		x = 5
+		y = 1
+		cost = 1
+
+		bypass = {
+			#
+		}
+		available = {
+		date > 1912.10.6
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas =	{
+			ROM_army
+		}
+
+		    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 10000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 7500
+        }
+		    add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 2500
+        }
+	}
+}
+
+	focus = {
+		id = ROM_second_balkan_war
+		icon = GFX_focus_rom_preserve_romania
+		x = 7
+		y = 1
+		cost = 1
+
+		bypass = {
+			#
+		}
+		available = {
+		 date > 1913.6.27
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = ROM_army
+  			add_idea = ROM_army2	
+  		}
+
+		    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 10000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 8000
+        }
+		    add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 2000
+        }
+	}
+}
+
+	focus = {
+		id = ROM_prepare_for_conflict
+		icon = GFX_focus_rom_preserve_romania
+		x = 9
+		y = 1
+		cost = 1
+
+		bypass = {
+			#
+		}
+		available = {
+		 date > 1914.7.26
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+
+			swap_ideas = {
+  			remove_idea = ROM_army2
+  			add_idea = ROM_army3	
+  		}
+
+		    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 12000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 9000
+        }
+		    add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 3000
+        }
+	}
+}
+
+	focus = {
+		id = ROM_now_we_can_join 
+		icon = GFX_focus_rom_preserve_romania
+		x = 13
+		y = 1
+		cost = 5
+
+		bypass = {
+			#
+		}
+		available = {
+		 date > 1916.7.29
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    create_wargoal = {
+				type = annex_everything
+				target = BUL
+				expire = 0
+			}
+			GER = {
+			set_variable = {
+			rom_in_war = 1
+		}
+			}
+
+		give_military_access = USA
+		give_military_access = FRA
+		give_military_access = RUS
+		give_military_access = ENG
+	}
+}
+
+	focus = {
+		id = ROM_war_supplies
+		icon = GFX_focus_rom_preserve_romania
+		x = 15
+		y = 1
+		cost = 1
+
+		bypass = {
+			#
+		}
+		available = {
+		 date > 1917.8.1
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 12000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 9000
+        }
+		    add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 3000
+        }
+	}
+}
+
+	focus = {
+		id = ROM_even_more_war_supplies
+		icon = GFX_focus_rom_preserve_romania
+		x = 17
+		y = 1
+		cost = 1
+
+		bypass = {
+			#
+		}
+		available = {
+		 date > 1918.2.11
+		}
+		
+		search_filters = {}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 12000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 9000
+        }
+		    add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 3000
+        }
+	}
+}
+
+
+continuous_focus_position = { x = 245 y = 999 }
+
+}

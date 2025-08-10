@@ -1172,6 +1172,117 @@ focus_tree = {
 	}
 }
 
+focus = {
+	id = SER_Exiled1
+	icon = GFX_focus_invite_yugoslavia
+	cost = 10
+	x = 13
+	y = 8
+	available_if_capitulated = yes
+	available = {
+		has_capitulated = yes
+	}
+	completion_reward = {
+		division_template = {
+			name = "Srpska Prognana Divizija"
+			template_counter = 3
+			is_locked = yes
+
+			regiments = {
+				mountaineers = { x = 0 y = 0 }
+				mountaineers = { x = 0 y = 1 }
+				mountaineers = { x = 0 y = 2 }
+       			mountaineers = { x = 1 y = 0 }
+				mountaineers = { x = 1 y = 1 }
+				mountaineers = { x = 1 y = 2 }
+        		mountaineers = { x = 2 y = 0 }
+				mountaineers = { x = 2 y = 1 }
+				mountaineers = { x = 2 y = 2 }
+			}
+	
+			support = {
+        		engineer = { x = 0 y = 0 }
+        		artillery = { x = 0 y = 1 }
+			}
+		}
+
+		126 = {
+			create_unit = {
+				division = "name = \"Srpska Prognana Divizija\" division_template = \"Srpska Prognana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 6103"
+				owner = SER
+				count = 2
+			}
+		}
+	}
+}
+focus = {
+	id = SER_Exiled2
+	icon = GFX_focus_YUG_dissolve_serbia
+	cost = 10
+	relative_position_id = SER_Exiled1
+	x = 0
+	y = 1
+	available_if_capitulated = yes
+	available = {
+		has_capitulated = yes
+	}
+	prerequisite = {
+		focus = SER_Exiled1
+	}
+	completion_reward = {
+		126 = {
+			create_unit = {
+				division = "name = \"Srpska Prognana Divizija\" division_template = \"Srpska Prognana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 6103"
+				owner = SER
+				count = 2
+			}
+		}
+	}
+}
+focus = {
+	id = SER_Exiled3
+	icon = GFX_focus_YUG_dissolve_serbia
+	cost = 10
+	relative_position_id = SER_Exiled2
+	x = 0
+	y = 1
+	available_if_capitulated = yes
+	available = {
+		has_capitulated = yes
+	}
+	prerequisite = {
+		focus = SER_Exiled2
+	}
+	completion_reward = {
+		126 = {
+			create_unit = {
+				division = "name = \"Srpska Prognana Divizija\" division_template = \"Srpska Prognana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 6103"
+				owner = SER
+				count = 2
+			}
+		}
+	}
+}
+focus = {
+	#Gives Extra Monthly Exiled Equipment
+	id = SER_Exiled_Buff
+	icon = GFX_focus_YUG_dissolve_serbia
+	cost = 10
+	relative_position_id = SER_Exiled3
+	x = 0
+	y = 1
+	available_if_capitulated = yes
+	available = {
+		has_capitulated = yes
+	}
+	prerequisite = {
+		focus = SER_Exiled3
+	}
+	completion_reward = {
+		custom_effect_tooltip = SER_Exile_Text
+	}
+}
+
 continuous_focus_position = { x = 245 y = 999 }
 
 }

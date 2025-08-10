@@ -154,6 +154,26 @@ ORO_spectator_state = {
 					}
 				}
 			}
+				if = {
+                limit = {
+                    GER = {
+                        has_completed_focus = GER_schlieffen_moltke_plan_idea
+                        }
+                    }
+                GER = {
+                    add_ideas = GER_schlieffen_moltke_plan_idea
+                	}
+				}
+			if = {
+                limit = {
+                    GER = {
+                        has_completed_focus = GER_Helmuth_von_Moltke
+                        }
+                    }
+                GER = {
+                    add_ideas = GER_Helmuth_Plan
+					}
+                }
 			if = {
 				limit = {
 					GER = {
@@ -1158,35 +1178,16 @@ ORO_spectator_state = {
 		    RUS = {
 			    has_country_flag = RUS_provisional_government_flag
 			}
-		    OR = {
-			    AND = {
-					date > 1917.10.25
-					RUS = {
-						has_war_with = GER
-					}
-					NOT = {
-						RUS = {
-							controls_state = 10 #Warsaw
-						}
-					}
+			AND = {
+				RUS = {
+					has_war_with = GER
 				}
-				AND = {
-				    OR = {
-						NOT = {
-							RUS = {
-								controls_state = 195 #Leningrad
-							}
+				RUS = {
+					AND = {
+						NOT ={
+							controls_state = 206
+							controls_state = 202
 						}
-					}
-				}
-			}
-			NOT = {
-			    OR = {
-					RUS = {
-						has_war = no
-					}
-					RUS = {
-					    controls_state = 763 #Kaliningrad
 					}
 				}
 			}
@@ -1692,7 +1693,6 @@ ORO_spectator_state = {
 		available = {
 			date > 1916.1.1
 		    GER = {
-			    has_completed_focus = GER_oberste_heeresleitung
 				has_war = yes
 				has_government = neutrality
 			}
@@ -1995,6 +1995,11 @@ ORO_balkan_wars = {
 				}
 				declare_war_on = { target = TUR type = annex_everything }
 			}
+			TUR = {
+				add_timed_idea = {
+					idea = TUR_Europe_last_stand days = 70
+				}
+			}
 		}
 		fire_only_once = yes
 		
@@ -2195,7 +2200,56 @@ ORO_end_WW1_german_loss = {
 			factor = 10000
 		}
 	}
+	Entente_surrender_event = {
+	    allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		available = {
+		    GER = { has_war_with = FRA }
+			AND = {
+				FRA = {
+						NOT = {
+							OR = {
+							controls_state = 16
+							controls_state = 19
+							controls_state = 21
+							}
+						}
+					}
+					OR = {
+						NOT = {
+						RUS = {
+						controls_state = 195
+							}
+						}
+						NOT = {
+						RUS = {
+						has_war_with = GER
+						}
+					}
+				}
+				NOT = { has_country_flag = WW1_ended_spectator }
+				}
+			}
+		complete_effect = {
+			FRA = {
+			    country_event = ww1_france.16
+			}
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
 }
+
 
 ORO_death_news = {
     ROM_death_of_carol_I = {
@@ -2205,7 +2259,7 @@ ORO_death_news = {
 		visible = {
 			always = yes
 		}
-		
+		 
 		available = {
 			date > 1914.10.10
 		}
@@ -2263,6 +2317,52 @@ ORO_death_news = {
 		
 		ai_will_do = {
 			factor = 10000
+		}
+	}
+	Bulgaria_Joins_Central = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		available = {
+			date > 1915.10.14
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
+				set_variable = {
+					Bulgaria_in_war = 1
+				}
+				country_event = ww1_germany.16 
+			}
+		}
+	}
+	Turkey_Gets_Destroyed = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			date > 1914.10.29
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
+			set_variable = {
+			ottoman_in_war = 1
+				}
+			} 
+			country_event = ww1_ottoman.5
 		}
 	}
 }

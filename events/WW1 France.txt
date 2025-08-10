@@ -479,3 +479,281 @@ country_event = {
 		}
 	}
 }
+#Surrender in Great War
+country_event = {
+	id = ww1_france.16
+	title = ww1_france.16.t
+	desc = ww1_france_desc.16
+	picture = GFX_report_event_treaty_of_versailles
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.14.a
+		
+		GER = {
+		    country_event = ww1_france.14
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_germany.14.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#france asks for peace
+country_event = {
+	id = ww1_france.14
+	title = ww1_france.14.t
+	desc = ww1_france_desc.14
+	picture = GFX_report_event_generic_meeting 
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.14.a
+		
+		GER = {
+		    country_event = ww1_france.15
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = ww1_france.14.b
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Treaty of Stuttgart
+country_event = {
+	id = ww1_france.15
+	title = ww1_france.15.t
+	desc = ww1_france_desc.15
+	picture = GFX_report_event_treaty_of_versailles
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.15.a
+		
+		destroy_ships = { type = destroyer count = 1000 }
+		destroy_ships = { type = light_cruiser count = 1000 }
+		destroy_ships = { type = ship_hull_heavy count = 1000 }
+		
+
+		hidden_effect = {
+			every_country = {
+				Limit = {
+				OR = {
+				has_war_with = GER
+				has_war_with = AUS
+				has_war_with = TUR
+				has_war_with = BUL
+				}
+				}
+				white_peace = GER
+				white_peace = AUS
+				white_peace = BUL
+				white_peace = TUR
+				white_peace = POL
+				white_peace = LIT
+				white_peace = BEL
+				white_peace = UKR
+				white_peace = UBD	
+			}
+
+				FRA = {
+			    news_event = ww1_news.51
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+				
+				dismantle_faction = yes
+				
+				every_state = {
+					PREV = {
+						delete_unit = {						
+							state = PREV
+							disband = yes
+						}
+					}
+				}
+				
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500000
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -500000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -500000
+				}
+			}
+			GER = {
+				transfer_state = 918
+				transfer_state = 908
+				transfer_state = 835
+				transfer_state = 295
+				transfer_state = 772
+				transfer_state = 539
+				transfer_state = 818
+				transfer_state = 523
+				transfer_state = 634
+
+				puppet = BEL
+			}
+			AUS = {
+				transfer_state = 105
+				transfer_state = 910
+
+				puppet = SER
+				}
+			if = {
+				limit = { 
+					check_variable = {
+					Italy_in_war = 1
+					}
+				}
+					AUS = {
+					transfer_state = 913
+					transfer_state = 160
+					}
+				}
+			if = {
+				limit = {
+					check_variable = {
+						Bulgaria_in_war = 1
+					}
+				}
+				BUL = {
+				transfer_state = 803
+				transfer_state = 924
+				transfer_state = 106
+				transfer_state = 909
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						gre_in_war = 1
+					}
+				}
+				BUL = {
+				transfer_state = 838
+				transfer_state = 731
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						rom_in_war = 1
+					}
+				}
+				BUL = {
+					transfer_state = 77
+					transfer_state = 920
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						ottoman_in_war = 1
+					}
+				}
+				ENG = {
+				release = EGY
+				}
+				TUR = {
+					puppet = EGY
+					transfer_state = 659
+					transfer_state = 294
+					transfer_state = 658
+					transfer_state = 765
+					transfer_state = 656
+					transfer_state = 889
+					transfer_state = 923
+					transfer_state = 268
+				}
+			}
+					if = {
+						limit = { 
+							check_variable = {
+								ottoman_in_war = 1
+								Italy_in_war = 1
+							}
+						}
+						TUR = {
+					transfer_state = 451
+					transfer_state = 450
+					transfer_state = 449
+					transfer_state = 448
+					transfer_state = 661
+					transfer_state = 662
+					transfer_state = 663
+					transfer_state = 273
+					transfer_state = 550
+					}
+				}
+			if = {
+				limit = { 
+					check_variable = {
+						Russia_surrender = 0
+					}
+				}
+				RUS = {
+					release = LIT
+					release = UBD
+					release = BLR
+					release = UKR
+					release = POL
+					release = MOL
+					release = FIN
+				}
+				GER = {
+					puppet = LIT
+					puppet = UBD
+					puppet = BLR
+					puppet = UKR
+					puppet = POL
+				}	
+				UBD = {
+				transfer_state = 190
+				transfer_state = 809
+				transfer_state = 808
+				transfer_state = 12
+				transfer_state = 191 
+				transfer_state = 13
+				transfer_state = 812
+				transfer_state = 813
+				transfer_state = 811
+				transfer_state = 810
+			
+				inherit_technology = GER
+				}
+				GER = {
+				add_to_faction = UBD
+				puppet = UBD
+				}
+			}
+		}
+	}
+}

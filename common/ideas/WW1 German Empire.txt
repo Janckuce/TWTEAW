@@ -40,6 +40,35 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
+
+		GER_improving_military = {
+			picture = generic_army_problems
+			modifier = {
+				training_time_army_factor = 0.2
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				army_org_factor = -0.1
+			}
+		}
+
+		GER_improving_military2 = {
+			picture = generic_army_problems
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = -0.01
+				army_defence_factor = -0.01
+				army_org_factor = -0.05
+			}
+		}
+
+		GER_improving_military3 = {
+			picture = GER_fan_prussian_militarism
+			modifier = {
+				training_time_army_factor = 0.05
+				army_attack_factor = 0.015
+				army_defence_factor = 0.015
+			}
+		}
 		
 		GER_won_1970_war = {
 
@@ -75,8 +104,8 @@ ideas = {
             picture = GER_naval_race
 
 			modifier = {
-				consumer_goods_factor = 0.4
-				industrial_capacity_dockyard = 0.5
+				consumer_goods_factor = 0.2
+				industrial_capacity_dockyard = 0.3
 			}
 		}
 		
@@ -95,8 +124,10 @@ ideas = {
             picture = GER_naval_race
 
 			modifier = {
-				consumer_goods_factor = 0.45
-				industrial_capacity_dockyard = 0.8
+				consumer_goods_factor = 0.3
+				industrial_capacity_dockyard = 0.5
+				navy_capital_ship_attack_factor = 0.05
+				navy_fuel_consumption_factor = -0.1
 			}
 		}
 		
@@ -187,6 +218,10 @@ ideas = {
 				always = no
 			}
 
+			available = {
+				date < 1915.1.1	
+			}
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -203,8 +238,40 @@ ideas = {
 				tag = BEL
 				attack_bonus_against = 0.6
 			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.6
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
 			modifier = {
 				army_speed_factor = 0.75
+			}
+		}
+		GER_Helmuth_Plan = {
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				date < 1915.1.1	
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = GER_schlieffen_moltke_plan
+
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
 			}
 		}
 		
@@ -369,6 +436,355 @@ ideas = {
 				stability_factor = 1
 				war_support_factor = 1
 			}
+		}
+		GER_Purchased_Ships = {
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				consumer_goods_factor = -0.15
+				}
+			}
+			
+		GER_Fear_Of_Russia_Potential = {
+			picture = SOV_the_true_tsars
+			allowed = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_war_with = RUS
+				}
+			}
+			modifier = {
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+		GER_offensive_idea = {
+			picture = ger_schlieffen_plan_idea
+			modifier = {
+				army_attack_factor = 0.025
+				army_attack_speed_factor = 0.05
+			}
+		}
+		GER_Defensive_idea = {
+			picture = ger_moltke_plan_idea
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.025
+				pocket_penalty = -0.2
+			}
+		}
+		GER_Speed_Up = {
+			picture = GER_navy
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		GER_Speed_Up1 = {
+			picture = GER_navy
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		GER_Speed_Up2 = {
+			picture = GER_navy
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				navy_org_factor = -0.05
+				repair_speed_factor = 0.1
+			}
+		}
+		GER_Speed_Up3 = {
+			picture = GER_navy
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				navy_org_factor = -0.05
+				repair_speed_factor = 0.1
+				screening_efficiency = 0.05
+			}
+		}
+		GER_Propaganda = {
+			picture = ger_kreuzzeitung
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		GER_Propaganda1 = {
+			picture = ger_kreuzzeitung
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		GER_Propaganda2 = {
+			picture = ger_kreuzzeitung
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				command_power_gain = 0.1
+			}
+		}
+			GER_Propaganda3 = {
+				picture = ger_kreuzzeitung
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				command_power_gain = 0.1
+				offensive_war_stability_factor = 0.1
+				min_export = -0.1
+			}
+		}
+			GER_Propaganda4 = {
+				picture = ger_kreuzzeitung
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				command_power_gain = 0.1
+				offensive_war_stability_factor = 0.15
+				min_export = -0.15
+				trade_laws_cost_factor = -0.1
+				resource_trade_cost_bonus_per_factory = 1
+			}
+				targeted_modifier = {
+				tag = AUS
+				trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = TUR
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		GER_Aid_For_Austria = {
+			picture = GER_german_trade
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		GER_Prussian_Militarism = {
+			picture = ger_prussian_militarism
+			modifier = {
+				army_org_factor = 0.075
+				experience_gain_army_unit_factor = 0.05
+			}
+		}
+		GER_Prussian_Naval_Combat = {
+			picture = GER_seeherrschaft
+			modifier = {
+				experience_gain_navy_unit_factor = 0.025
+				naval_critical_effect_factor = -0.05
+				naval_morale_factor = 0.05
+			}
+		}
+		GER_Wilhelm_Our_Kaiser = {
+			picture = ger_rebuild_the_nation
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		GER_Wilhelm_Our_Kaiser1 = {
+			picture = ger_rebuild_the_nation
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GER_Wilhelm_Our_Kaiser2 = {
+			picture = ger_rebuild_the_nation
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_oil_factor = 0.05
+			}
+		}
+		GER_Wilhelm_Our_Kaiser3 = {
+			picture = ger_rebuild_the_nation
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_oil_factor = 0.05
+				production_speed_buildings_factor = 0.025
+			}
+		}
+		GER_Wilhelm_Our_Kaiser4 = {
+			picture = ger_rebuild_the_nation
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_oil_factor = 0.05
+				production_speed_buildings_factor = 0.025
+			}
+
+			equipment_bonus = {
+				gw_tank_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		GER_Disloyal_Nation = {
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		GER_Disloyal_Nation1 = {
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				stability_factor = -0.075
+				war_support_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
+			}
+		}
+		GER_Disloyal_Nation2 = {
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		GER_Disloyal_Nation3 = {
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				stability_factor = -0.025
+				war_support_factor = -0.025
+				industrial_capacity_factory = -0.025
+				industrial_capacity_dockyard = -0.025
+			}
+		}
+	}
+	
+	industrial_concern = {
+		
+				GER_ig_faben_improved = {
+			name = ig_faben
+			picture = ig_faben
+			allowed = {
+				original_tag = GER
+			}
+
+
+			visible = {
+
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		krupp = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.15
+			}
+
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		siemens = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+
+		GER_vereinigte_stahlwerke = {
+
+			picture = GER_vereinigte_stahlwerke
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 150
+
+			research_bonus = {
+				excavation_tech = 0.15
+			}
+			
+			traits = { mining_company }
+		}
+
+		GER_deutsche_reichsbahn = {
+
+			picture = GER_deutsche_reichsbahn
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			visible = {
+
+			}
+			
+			cost = 150
+
+			research_bonus = {
+				train_tech = 0.15
+			}
+			
+			traits = { railway_company }
+		}
+
+		GER_rwe = {
+
+			picture = generic_energy_concern
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			cost = 150
+			
+			traits = { energy_supply_company }
 		}
 	}
 }
