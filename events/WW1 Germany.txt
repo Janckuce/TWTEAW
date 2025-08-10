@@ -201,13 +201,6 @@ country_event = {
 			declare_war_on = { target = LUX type = annex_everything }
 			news_event = { id = ww1_news.11 days = 1 }
 		}
-		
-		if = {
-			limit = {
-				ROOT = { has_idea = GER_naval_arms_race_2 }
-			}
-			remove_ideas = GER_naval_arms_race_2
-		}
 	}
 }
 
