@@ -880,7 +880,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = RUS_The_Tsar's_Ideas
-		x = 1
+		x = 2
 		y = 1
 		mutually_exclusive = {
 			focus = RUS_Organised_Warfare_Main
@@ -892,6 +892,194 @@ focus_tree = {
 			focus = RUS_The_Tsar's_Ideas
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Tsar's_Assault_Plan
+				add_idea = RUS_Tsar's_Assault_Plan1
+			}
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare_Main
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Tsar's_Assault_Plan1
+				add_idea = RUS_Tsar's_Assault_Plan2
+			}
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare2
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare2
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare3
+			focus = RUS_Assault_Warfare4
+		}
+		completion_reward = {
+			army_experience = 25
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare3
+			focus = RUS_Assault_Warfare4
+		}
+		completion_reward = {
+			army_experience = 25
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = RUS_Assault_Warfare7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare2
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = RUS_Assault_Warfare5
+		}
+		prerequisite = {
+			focus = RUS_Assault_Warfare6
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Tsar's_Assault_Plan2
+				add_idea = RUS_Tsar's_Assault_Plan3
+			}
+		}
+	}
+	focus = {
+		id = RUS_Empower_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Assault_Warfare7
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Assault_Warfare7
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Dated_Warfare
+				add_idea = RUS_Dated_Warfare1
+			}
+		}
+	}
+	focus = {
+		id = RUS_Mass_Mobilise
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Empower_Army
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RUS_Empower_Army
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = RUS_Military_Academy_Category
+		}
+	}
+	focus = {
+		id = RUS_Complete_Modernity
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Organised_Warfare_Main
+		x = 2
+		y = 7
+		available = {
+			not = {
+				or = {
+					has_idea = RUS_Agrarian_Industry
+					has_idea = RUS_Agrarian_Industry1
+					has_idea = RUS_Agrarian_Industry2
+					has_idea = RUS_Agrarian_Industry3
+					has_idea = RUS_Agrarian_Industry4
+					has_idea = RUS_Agrarian_Industry5
+
+					has_idea = RUS_Lack_Of_Scientists
+					has_idea = RUS_Lack_Of_Scientists1
+					has_idea = RUS_Lack_Of_Scientists2
+					has_idea = RUS_Lack_Of_Scientists3
+
+					has_idea = RUS_Dated_Warfare
+					has_idea = RUS_Dated_Warfare1
+					has_idea = RUS_Dated_Warfare2
+					has_idea = RUS_Dated_Warfare3
+					has_idea = RUS_Dated_Warfare4
+					has_idea = RUS_Dated_Warfare5
+				}
+			}
+		}
+		prerequisite = {
+			focus = RUS_Begin_Modernisation
+			focus = RUS_Empower_Army
+		}
+		completion_reward = {
+			add_ideas = RUS_Modern_Warfare
 		}
 	}
 }
