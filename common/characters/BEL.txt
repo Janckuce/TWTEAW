@@ -10,12 +10,37 @@ characters={
 			ideology = liberalism
 			expire = "1965.1.1.1"
 		}
+		advisor = {
+        slot = army_chief
+        traits = { army_chief_defensive_2 }
+        cost = 150
+        can_be_fired = yes
+        idea_token = BEL_character_albert_I
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+		field_marshal = {
+			traits = {   }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
 	}
 	bel_alexandre_galopin = {
     name = "Alexandre Galopin"
             portraits = {
 			civilian = {
-				large = "GFX_advisor_auh_ernest_von_koerber"
+				large = "GFX_bel_alexandre_galopin"
                 small = "GFX_bel_alexandre_galopin_frame"
 		    }
 		}
@@ -25,6 +50,40 @@ characters={
         cost = 150
         can_be_fired = yes
         idea_token = bel_alexandre_galopin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+			corps_commander = {
+			traits = {   }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+}
+	bel_louis_ruquoy = {
+    name = "Louis Ruquoy"
+            portraits = {
+			civilian = {
+				large = "GFX_bel_louis_ruquoy"
+                small = "GFX_bel_louis_ruquoy_frame"
+		    }
+		}
+    advisor = {
+        slot = theorist
+        traits = { military_theorist }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_louis_ruquoy
 
         allowed = {
             OR = {
