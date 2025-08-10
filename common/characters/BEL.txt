@@ -11,4 +11,173 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	bel_alexandre_galopin = {
+    name = "Alexandre Galopin"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_bel_alexandre_galopin_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { bel_military_companist }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_alexandre_galopin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+	bel_edouard_empain = {
+    name = "Édouard Empain"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_bel_edouard_empain_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { bel_industrialist_companist }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_alexandre_galopin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+	bel_frans_schollaert = {
+    name = "Frans Schollaert"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_bel_frans_schollaert_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { bel_royalist_judge }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_alexandre_galopin
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
+}
+	bel_henri_jaspar = {
+    name = "Henri Jaspar"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_bel_henri_jaspar_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { bel_henri_jaspar }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_henri_jaspar
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
+}
+	bel_charles_de_broqueville = {
+    name = "Charles de Broqueville"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_bel_charles_de_broqueville_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { bel_charles_de_broqueville }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_charles_de_broqueville
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    BEL_cyriaque_gillain = {
+		instance = {
+			allowed = {
+			}
+			advisor = {	
+				slot = army_chief
+				idea_token =  BEL_cyriaque_gillain
+				ledger = army
+				allowed = {
+					original_tag = BEL
+				}
+				traits = {
+					cyriaque_gillain_trait
+				}
+				cost = 150
+				ai_will_do = {
+					base = 1
+				}
+			}
+
+			field_marshal = {
+				traits = { bearer_of_artillery cavalry_leader cavalry_expert  }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			name =  BEL_cyriaque_gillain
+			portraits = {
+				army = {
+				large = "GFX_BEL_cyriaque_gillain"
+				small = "GFX_BEL_cyriaque_gillain_frame"
+			}
+		}
+	}
 }
