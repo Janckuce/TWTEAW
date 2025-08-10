@@ -14,18 +14,10 @@ ideas = {
 				mobilization_speed = -0.15
 				experience_gain_army_factor = -0.1
 				experience_gain_army_unit_factor = -0.15
-				army_speed_factor = -0.2
 				dig_in_speed_factor = -0.2
 				max_planning_factor = -0.25
 				planning_speed = -0.4
-				army_chief_cost_factor = 0.25
-				navy_chief_cost_factor = 0.25
-				air_chief_cost_factor = 0.45
-				high_command_cost_factor = 0.25
-				theorist_cost_factor = 0.4
 				command_power_gain_mult = -0.2
-				air_training_xp_gain_factor = -0.15
-				recon_factor = -0.35
 			}
 		}
 
@@ -144,26 +136,18 @@ ideas = {
 			auh_underfunded_army_two = {
 			picture = bad_funding_army
 			modifier = {
-				war_support_factor = -0.1
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
-				army_org_factor = -0.1
-				army_morale_factor = -0.1
-				mobilization_speed = -0.1
+				war_support_factor = -0.05
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.05
+				army_morale_factor = -0.075
 				experience_gain_army_factor = -0.1
-				experience_gain_army_unit_factor = -0.1
-				army_speed_factor = -0.1
-				dig_in_speed_factor = -0.1
-				max_planning_factor = -0.15
-				planning_speed = -0.2
-				army_chief_cost_factor = 0.1
-				navy_chief_cost_factor = 0.1
-				air_chief_cost_factor = 0.2
-				high_command_cost_factor = 0.1
-				theorist_cost_factor = 0.2
-				command_power_gain_mult = -0.1
-				air_training_xp_gain_factor = -0.1
-				recon_factor = -0.2
+				experience_gain_army_unit_factor = -0.15
+				dig_in_speed_factor = -0.05
+				max_planning_factor = -0.25
+				planning_speed = -0.4
+				command_power_gain_mult = -0.2
+				mobilization_speed = -0.15
 			}
 		}
 
@@ -178,11 +162,9 @@ ideas = {
 				mobilization_speed = -0.05
 				experience_gain_army_factor = -0.05
 				experience_gain_army_unit_factor = -0.05
-				army_speed_factor = -0.05
 				dig_in_speed_factor = -0.05
 				max_planning_factor = -0.1
 				planning_speed = -0.1
-				recon_factor = -0.1
 			}
 		}
 
@@ -363,10 +345,10 @@ ideas = {
 			picture = AUS_farr
 			modifier = {
 			stability_factor = 0.015
-			political_power_factor = 0.025
+			political_power_gain = 0.05
 			democratic_drift = 0.02
 			communism_drift = 0.02
-			compliance_gain = 0.025
+			compliance_gain = 0.001
 			monthly_population = 0.05
 			war_support_factor = -0.2
 			production_speed_arms_factory_factor = -0.1
@@ -379,10 +361,10 @@ ideas = {
 			picture = AUS_farr
 			modifier = {
 			stability_factor = 0.03
-			political_power_factor = 0.03
+			political_power_gain = 0.1
 			democratic_drift = 0.04
 			communism_drift = 0.04
-			compliance_gain = 0.05
+			compliance_gain = 0.002
 			monthly_population = 0.075
 			war_support_factor = -0.175
 			production_speed_arms_factory_factor = -0.075
@@ -394,10 +376,10 @@ ideas = {
 			picture = AUS_farr
 			modifier = {
 			stability_factor = 0.045
-			political_power_factor = 0.035
+			political_power_gain = 0.15
 			democratic_drift = 0.06
 			communism_drift = 0.06
-			compliance_gain = 0.075
+			compliance_gain = 0.003
 			monthly_population = 0.1
 			war_support_factor = -0.15
 			production_speed_arms_factory_factor = -0.05
@@ -409,10 +391,10 @@ ideas = {
 			picture = AUS_farr
 			modifier = {
 			stability_factor = 0.06
-			political_power_factor = 0.04
+			political_power_gain = 0.2
 			democratic_drift = 0.08
 			communism_drift = 0.08
-			compliance_gain = 0.09
+			compliance_gain = 0.04
 			monthly_population = 0.125
 			war_support_factor = -0.125
 			production_speed_arms_factory_factor = -0.025
@@ -424,10 +406,10 @@ ideas = {
 			picture = AUS_farr
 			modifier = {
 			stability_factor = 0.075
-			political_power_factor = 0.045
+			political_power_gain = 0.25
 			democratic_drift = 0.1
 			communism_drift = 0.1
-			compliance_gain = 0.115
+			compliance_gain = 0.005
 			monthly_population = 0.15
 			war_support_factor = -0.1
 			production_speed_industrial_complex_factor = 0.075
@@ -504,22 +486,17 @@ ideas = {
 			auh_Multiethnicity_scientific = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			resistance_growth = 0.1
-			root_out_resistance_effectiveness_factor = -0.2
-			resistance_damage_to_garrison = 0.05
+			resistance_growth = 0.15
+			root_out_resistance_effectiveness_factor = -0.25
+			resistance_damage_to_garrison = 0.1
 			required_garrison_factor = 0.2
 			political_power_gain = -0.8
-			resistance_target = 0.05
-			agency_upgrade_time = 0.4
-			decryption_factor = -0.2
-			encryption_factor = -0.2
-			intel_network_gain_factor = -0.1
-			intelligence_agency_defense = -0.2
-			conscription_factor = -0.05
-			training_time_factor = 0.25
-			minimum_training_level = 0.2
-			max_training = -0.3
-			land_reinforce_rate = -0.1
+			resistance_target = 0.1
+			agency_upgrade_time = 0.5
+			conscription_factor = -0.1
+			training_time_factor = 0.3
+			max_training = -0.35
+			land_reinforce_rate = -0.15
 			}
 		}
 
@@ -576,7 +553,6 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
-			army_speed_factor = 0.025
 			}
 
 		}
@@ -597,14 +573,9 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
-			army_speed_factor = 0.025
-			army_defence_factor = 0.025
-			dig_in_speed_factor = 0.025
-			max_dig_in = 5
-			production_speed_bunker_factor = 0.05
-			production_speed_coastal_bunker_factor = 0.05
+			army_defence_factor = 0.1
+			max_dig_in = 10
 			consumer_goods_factor = 0.05
-			planning_speed = 0.15
 
 			}
 
@@ -626,15 +597,14 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
-			army_speed_factor = 0.025
-			army_defence_factor = 0.05
-			dig_in_speed_factor = 0.05
-			max_dig_in = 5
-			production_speed_bunker_factor = 0.075
-			production_speed_coastal_bunker_factor = 0.075
+			army_defence_factor = 0.1
+			dig_in_speed_factor = 0.1
+			max_dig_in = 10
+			production_speed_bunker_factor = 0.15
+			production_speed_coastal_bunker_factor = 0.15
 			consumer_goods_factor = 0.1
-			planning_speed = 0.2
-			mobilization_speed = 0.05
+			planning_speed = 0.3
+			mobilization_speed = 0.1
 			}
 
 		}
@@ -653,20 +623,18 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_regain = 0.05
-			army_org_factor = 0.05
-			army_speed_factor = 0.05
-			army_defence_factor = 0.075
-			dig_in_speed_factor = 0.075
-			max_dig_in = 7
-			production_speed_bunker_factor = 0.1
-			production_speed_coastal_bunker_factor = 0.1
+			army_org_regain = 0.075
+			army_org_factor = 0.075
+			army_defence_factor = 0.1
+			dig_in_speed_factor = 0.1
+			max_dig_in = 10
+			production_speed_bunker_factor = 0.15
+			production_speed_coastal_bunker_factor = 0.15
 			consumer_goods_factor = 0.15
-			planning_speed = 0.25
-			mobilization_speed = 0.075
-			terrain_penalty_reduction = 0.1
-			army_morale_factor = 0.05
-			recon_factor = 0.05
+			planning_speed = 0.3
+			mobilization_speed = 0.1
+			army_morale_factor = 0.075
+			recon_factor = 0.075
 
 			}
 		}
@@ -688,14 +656,12 @@ ideas = {
 			army_org_regain = 0.075
 			army_org_factor = 0.075
 			recon_factor = 0.075
-			terrain_penalty_reduction = 0.15
-			army_speed_factor = 0.075
 			army_defence_factor = 0.1
 			dig_in_speed_factor = 0.1
 			max_dig_in = 10
 			production_speed_bunker_factor = 0.15
 			production_speed_coastal_bunker_factor = 0.15
-			consumer_goods_factor = 0.2
+			consumer_goods_factor = 0.175
 			planning_speed = 0.3
 			mobilization_speed = 0.1
 			army_morale_factor = 0.075
@@ -718,15 +684,11 @@ ideas = {
 			}
 			modifier = {
 			army_org_regain = 0.025
-			army_org_factor = 0.05
-			army_speed_factor = 0.075
-			cavalry_defence_factor = 0.05
-			cavalry_attack_factor = 0.05
-			experience_gain_army_unit_factor = 0.05
-			recon_factor = 0.05
-			coordination_bonus = 0.025
-			army_strength_factor = 0.025
-			army_defence_against_major_factor = 0.05
+			army_org_factor = 0.025
+			cavalry_defence_factor = 0.125
+			cavalry_attack_factor = 0.125
+			army_strength_factor = 0.1
+			army_defence_against_major_factor = 0.125
 			}
 
 		}
@@ -745,16 +707,14 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_regain = 0.05
-			army_org_factor = 0.075
-			army_speed_factor = 0.1
-			cavalry_defence_factor = 0.075
-			cavalry_attack_factor = 0.075
-			experience_gain_army_unit_factor = 0.075
+			army_org_regain = 0.1
+			army_org_factor = 0.125
+			cavalry_defence_factor = 0.125
+			cavalry_attack_factor = 0.125
 			recon_factor = 0.075
-			coordination_bonus = 0.05
-			army_strength_factor = 0.05
-			army_defence_against_major_factor = 0.075
+			coordination_bonus = 0.1
+			army_strength_factor = 0.1
+			army_defence_against_major_factor = 0.125
 			}
 
 		}
@@ -773,16 +733,16 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_regain = 0.075
-			army_org_factor = 0.1
-			army_speed_factor = 0.125
-			cavalry_defence_factor = 0.1
-			cavalry_attack_factor = 0.1
-			experience_gain_army_unit_factor = 0.1
-			recon_factor = 0.1
-			coordination_bonus = 0.075
-			army_strength_factor = 0.075
-			army_defence_against_major_factor = 0.1
+			army_org_regain = 0.1
+			army_org_factor = 0.125
+			cavalry_defence_factor = 0.125
+			cavalry_attack_factor = 0.125
+			experience_gain_army_unit_factor = 0.125
+			recon_factor = 0.125
+			coordination_bonus = 0.1
+			army_strength_factor = 0.1
+			supply_consumption_factor = -0.05
+			army_defence_against_major_factor = 0.125
 			}
 
 		}
@@ -803,13 +763,13 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.1
 			army_org_factor = 0.125
-			army_speed_factor = 0.15
 			cavalry_defence_factor = 0.125
 			cavalry_attack_factor = 0.125
 			experience_gain_army_unit_factor = 0.125
 			recon_factor = 0.125
 			coordination_bonus = 0.1
 			army_strength_factor = 0.1
+			supply_consumption_factor = -0.05
 			army_defence_against_major_factor = 0.125
 			}
 
@@ -830,21 +790,11 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.025
 			army_org_factor = 0.025
-			army_speed_factor = 0.025
-			army_infantry_attack_factor = 0.01
-			army_infantry_defence_factor = 0.01
-			cavalry_defence_factor = 0.01
-			cavalry_attack_factor = 0.01
+			army_infantry_attack_factor = 0.04
+			army_infantry_defence_factor = 0.04
+			cavalry_defence_factor = 0.04
+			cavalry_attack_factor = 0.04
 			consumer_goods_factor = 0.05
-			experience_gain_army_factor = 0.025
-			experience_gain_army_unit_factor = 0.025
-			planning_speed = 0.05
-			coordination_bonus = 0.05
-			land_reinforce_rate = 0.05
-			training_time_factor = -0.025
-			minimum_training_level = -0.03
-			army_morale_factor = 0.025
-			experience_loss_factor = -0.025
 			}
 
 		}
@@ -863,23 +813,18 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_regain = 0.05
-			army_org_factor = 0.05
-			army_speed_factor = 0.05
-			army_infantry_attack_factor = 0.02
-			army_infantry_defence_factor = 0.02
-			cavalry_defence_factor = 0.02
-			cavalry_attack_factor = 0.02
+			army_org_regain = 0.025
+			army_org_factor = 0.025
+			army_infantry_attack_factor = 0.04
+			army_infantry_defence_factor = 0.04
+			cavalry_defence_factor = 0.04
+			cavalry_attack_factor = 0.04
 			consumer_goods_factor = 0.1
-			experience_gain_army_factor = 0.05
-			experience_gain_army_unit_factor = 0.05
-			planning_speed = 0.075
-			coordination_bonus = 0.075
-			land_reinforce_rate = 0.075
-			training_time_factor = -0.05
-			minimum_training_level = -0.06
-			army_morale_factor = 0.05
-			experience_loss_factor = -0.05
+			experience_gain_army_factor = 0.1
+			experience_gain_army_unit_factor = 0.1
+			planning_speed = 0.125
+			minimum_training_level = -0.12
+			experience_loss_factor = -0.1
 			}
 
 		}
@@ -898,23 +843,22 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_regain = 0.075
-			army_org_factor = 0.075
-			army_speed_factor = 0.075
-			army_infantry_attack_factor = 0.03
-			army_infantry_defence_factor = 0.03
-			cavalry_defence_factor = 0.03
-			cavalry_attack_factor = 0.03
-			consumer_goods_factor = 0.15
-			experience_gain_army_factor = 0.075
-			experience_gain_army_unit_factor = 0.075
-			planning_speed = 0.1
-			coordination_bonus = 0.09
-			land_reinforce_rate = 0.1
-			training_time_factor = -0.075
-			minimum_training_level = -0.09
-			army_morale_factor = 0.075
-			experience_loss_factor = -0.075
+			army_org_regain = 0.1
+			army_org_factor = 0.1
+			army_infantry_attack_factor = 0.04
+			army_infantry_defence_factor = 0.04
+			cavalry_defence_factor = 0.04
+			cavalry_attack_factor = 0.04
+			consumer_goods_factor = 0.2
+			experience_gain_army_factor = 0.1
+			experience_gain_army_unit_factor = 0.1
+			planning_speed = 0.125
+			coordination_bonus = 0.1
+			land_reinforce_rate = 0.05
+			training_time_factor = -0.1
+			minimum_training_level = -0.12
+			army_morale_factor = 0.1
+			experience_loss_factor = -0.1
 			}
 
 		}
@@ -935,7 +879,6 @@ ideas = {
 			modifier = {
 			army_org_regain = 0.1
 			army_org_factor = 0.1
-			army_speed_factor = 0.1
 			army_infantry_attack_factor = 0.04
 			army_infantry_defence_factor = 0.04
 			cavalry_defence_factor = 0.04
@@ -944,8 +887,8 @@ ideas = {
 			experience_gain_army_factor = 0.1
 			experience_gain_army_unit_factor = 0.1
 			planning_speed = 0.125
-			coordination_bonus = 0.115
-			land_reinforce_rate = 0.125
+			coordination_bonus = 0.1
+			land_reinforce_rate = 0.05
 			training_time_factor = -0.1
 			minimum_training_level = -0.12
 			army_morale_factor = 0.1
@@ -972,18 +915,11 @@ ideas = {
 			}
 			modifier = {
 			army_org_factor = 0.025
+			army_org_regain = 0.025
 			army_infantry_attack_factor = 0.05
 			army_artillery_attack_factor = 0.05
 			consumer_goods_factor = 0.05
-			special_forces_cap = 0.025
-			max_planning_factor = 0.05
-			experience_gain_army_unit_factor = 0.05
-			recon_factor = 0.05
-			minimum_training_level = -0.05
-			army_morale_factor = 0.025
-			coordination_bonus = 0.02
 			breakthrough_factor = 0.05
-			terrain_penalty_reduction = 0.05
 			}
 
 		}
@@ -1005,19 +941,17 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_factor = 0.05
-			army_infantry_attack_factor = 0.075
-			army_artillery_attack_factor = 0.075
+			army_org_factor = 0.1
+			army_org_regain = 0.025
+			army_infantry_attack_factor = 0.05
+			army_artillery_attack_factor = 0.05
 			consumer_goods_factor = 0.1
-			special_forces_cap = 0.05
-			max_planning_factor = 0.075
-			experience_gain_army_unit_factor = 0.075
-			recon_factor = 0.075
-			minimum_training_level = -0.075
+			special_forces_cap = 0.1
+			experience_gain_army_unit_factor = 0.125
+			recon_factor = 0.125
+			minimum_training_level = -0.125
 			army_morale_factor = 0.05
-			coordination_bonus = 0.04
-			breakthrough_factor = 0.075
-			terrain_penalty_reduction = 0.075
+			breakthrough_factor = 0.05
 			}
 
 		}
@@ -1039,19 +973,18 @@ ideas = {
 				}
 			}
 			modifier = {
-			army_org_factor = 0.075
-			army_infantry_attack_factor = 0.1
-			army_artillery_attack_factor = 0.1
-			consumer_goods_factor = 0.15
-			special_forces_cap = 0.075
-			max_planning_factor = 0.1
-			experience_gain_army_unit_factor = 0.1
-			recon_factor = 0.1
-			minimum_training_level = -0.1
-			army_morale_factor = 0.075
-			coordination_bonus = 0.06
-			breakthrough_factor = 0.1
-			terrain_penalty_reduction = 0.1
+			army_org_factor = 0.1
+			army_org_regain = 0.025
+			army_infantry_attack_factor = 0.125
+			army_artillery_attack_factor = 0.125
+			consumer_goods_factor = 0.2
+			special_forces_cap = 0.1
+			max_planning_factor = 0.125
+			experience_gain_army_unit_factor = 0.125
+			recon_factor = 0.125
+			minimum_training_level = -0.125
+			army_morale_factor = 0.1
+			breakthrough_factor = 0.125
 			}
 
 		}
@@ -1074,6 +1007,7 @@ ideas = {
 			}
 			modifier = {
 			army_org_factor = 0.1
+			army_org_regain = 0.025
 			army_infantry_attack_factor = 0.125
 			army_artillery_attack_factor = 0.125
 			consumer_goods_factor = 0.2
@@ -1083,9 +1017,7 @@ ideas = {
 			recon_factor = 0.125
 			minimum_training_level = -0.125
 			army_morale_factor = 0.1
-			coordination_bonus = 0.08
 			breakthrough_factor = 0.125
-			terrain_penalty_reduction = 0.125
 			}
 
 		}
@@ -1093,51 +1025,42 @@ ideas = {
 			auh_Multiethnicity_political_party = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			resistance_growth = 0.05
-			root_out_resistance_effectiveness_factor = -0.15
+			resistance_growth = 0.1
+			root_out_resistance_effectiveness_factor = -0.2
+			resistance_damage_to_garrison = 0.05
 			required_garrison_factor = 0.15
-			political_power_gain = -0.8
-			agency_upgrade_time = 0.35
-			decryption_factor = -0.15
-			encryption_factor = -0.15
-			intel_network_gain_factor = -0.05
-			intelligence_agency_defense = -0.15
-			training_time_factor = 0.2
-			minimum_training_level = 0.15
-			max_training = -0.25
-			land_reinforce_rate = -0.05
+			resistance_target = 0.05
+			agency_upgrade_time = 0.5
+			conscription_factor = -0.1
+			training_time_factor = 0.3
+			max_training = -0.35
+			land_reinforce_rate = -0.15
 			}
 		}
 
 			auh_Multiethnicity_second_language = {
 			picture = empire_of_old_habsburg
 			modifier = {
-			root_out_resistance_effectiveness_factor = -0.10
+			resistance_growth = 0.05
+			root_out_resistance_effectiveness_factor = -0.1
+			resistance_damage_to_garrison = 0.025
 			required_garrison_factor = 0.1
-			agency_upgrade_time = 0.3
-			political_power_gain = -0.4
-			decryption_factor = -0.1
-			encryption_factor = -0.1
-			intelligence_agency_defense = -0.1
-			training_time_factor = 0.15
-			minimum_training_level = 0.10
+			resistance_target = 0.025
+			training_time_factor = 0.1
 			max_training = -0.2
+			land_reinforce_rate = -0.15
 			}
 		}
 
 			auh_Multiethnicity_evidenzburo = {
 			picture = empire_of_old_habsburg
 			modifier = {
+			resistance_growth = 0.025
 			root_out_resistance_effectiveness_factor = -0.05
+			resistance_damage_to_garrison = 0.025
 			required_garrison_factor = 0.05
-			agency_upgrade_time = 0.25
-			decryption_factor = -0.05
-			political_power_gain = -0.4
-			encryption_factor = -0.05
-			intelligence_agency_defense = -0.05
-			training_time_factor = 0.1
-			minimum_training_level = 0.05
-			max_training = -0.15
+			training_time_factor = 0.05
+			max_training = -0.1
 			}
 		}
 
@@ -1177,25 +1100,16 @@ ideas = {
 			picture = ghost_of_the_past
 			modifier = {
 			consumer_goods_factor = 0.1
-			conversion_cost_civ_to_mil_factor = 0.5
-			conversion_cost_mil_to_civ_factor = 0.5
-			industrial_capacity_dockyard = -0.25
 			industrial_capacity_factory = -0.25
-			industry_air_damage_factor = 0.3
-			industry_free_repair_factor = -0.5
-			production_oil_factor = -0.25
-			repair_speed_arms_factory_factor = -0.25
-			supply_node_range = -0.25
-			land_bunker_effectiveness_factor = -0.25
-			coastal_bunker_effectiveness_factor = -0.25
+			industry_free_repair_factor = -0.05
+			production_oil_factor = -0.1
 			production_factory_efficiency_gain_factor = -0.2
 			production_factory_max_efficiency_factor = -0.2
 			production_factory_start_efficiency_factor = -0.15
 			production_speed_buildings_factor = -0.25
 			line_change_production_efficiency_factor = -0.2
 			research_speed_factor = -0.2
-			trade_laws_cost_factor = 0.3
-			production_lack_of_resource_penalty_factor = 0.3
+			production_lack_of_resource_penalty_factor = 0.1
 			hidden_modifier = {
 				power_balance_daily = 0.0025
 			}
@@ -1205,16 +1119,15 @@ ideas = {
 			auh_ghostofthepast2 = {
 			picture = ghost_of_the_past
 			modifier = {
-			industrial_capacity_factory = -0.15
-			production_factory_efficiency_gain_factor = -0.075
-			production_factory_max_efficiency_factor = -0.15
-			production_factory_start_efficiency_factor = -0.075
-			production_speed_buildings_factor = -0.15
-			line_change_production_efficiency_factor = -0.075
-			research_speed_factor = -0.15
-			trade_laws_cost_factor = 0.25
+			industrial_capacity_factory = -0.25
+			production_factory_efficiency_gain_factor = -0.2
+			production_factory_max_efficiency_factor = -0.2
+			production_factory_start_efficiency_factor = -0.15
+			production_speed_buildings_factor = -0.2
+			line_change_production_efficiency_factor = -0.2
+			research_speed_factor = -0.2
 			hidden_modifier = {
-				power_balance_weekly = 0.0025
+				power_balance_daily = 0.0025
 			}
 			}
 		}
@@ -1229,9 +1142,17 @@ ideas = {
 			production_speed_buildings_factor = -0.1
 			line_change_production_efficiency_factor = -0.05
 			research_speed_factor = -0.1
-			trade_laws_cost_factor = 0.2
 			hidden_modifier = {
-				power_balance_weekly = 0.0025
+				power_balance_daily = 0.0025
+			}
+			}
+		}
+		auh_ghostofthepast4 = {
+			picture = ghost_of_the_past
+			modifier = {
+			research_speed_factor = -0.05
+			hidden_modifier = {
+				power_balance_daily = 0.0025
 			}
 			}
 		}
@@ -1246,7 +1167,7 @@ ideas = {
 			line_change_production_efficiency_factor = 0.075
 			research_speed_factor = 0.05
 			hidden_modifier = {
-					power_balance_weekly = 0.0025
+					power_balance_daily = 0.0025
 				}
 			}
 		}
@@ -1258,9 +1179,7 @@ ideas = {
 			production_speed_buildings_factor = 0.1
 			political_advisor_cost_factor = -0.45
 			non_core_manpower = -0.1
-			hidden_modifier = {
-					power_balance_weekly = 0.001
-				}
+					power_balance_daily = 0.001
 			}
 		}
 
@@ -1308,8 +1227,7 @@ ideas = {
 				industry = 0.05
 			}
 			traits = {
-				manfred_weiss_comp = {
-				}
+				manfred_weiss_comp
 			}
 		}
 	}
