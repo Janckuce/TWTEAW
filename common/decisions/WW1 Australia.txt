@@ -1,4 +1,5 @@
 AST_Parliament_Category = {
+
 	#	Labour Missions 1
 	AST_Better_Industry = {
 		is_good = no
@@ -28,6 +29,37 @@ AST_Parliament_Category = {
 			custom_effect_tooltip = AST_Labour1
 		}
 	}
+	#	Labour Missions 2
+	AST_Major_Military_Expansion = {
+		is_good = no
+		days_mission_timeout = 365
+		allowed = {
+			always = no
+		}
+		available = {
+			arms_factory > 8
+		}
+		complete_effect = {
+			add_to_variable = {AST.Labour_Support = 7}
+			custom_effect_tooltip = AST_Labour1
+		}
+	}
+	#	Labour Missions 3
+	AST_Industrial_Expansion = {
+		is_good = no
+		days_mission_timeout = 365
+		allowed = {
+			always = no
+		}
+		available = {
+			arms_factory > 12
+		}
+		complete_effect = {
+			add_to_variable = {AST.Labour_Support = 5}
+			custom_effect_tooltip = AST_Labour1
+		}
+	}
+
 	#	Liberty Missions 1
 	AST_Better_Streets = {
 		is_good = no
@@ -56,6 +88,36 @@ AST_Parliament_Category = {
 		}
 		complete_effect = {
 			add_to_variable = {AST.Liberal_Support = 8}
+			custom_effect_tooltip = AST_Liberal1
+		}
+	}
+	#	Liberty Missions 2
+	AST_Major_Naval_Expansion = {
+		is_good = no
+		days_mission_timeout = 365
+		allowed = {
+			always = no
+		}
+		available = {
+			dockyard > 6
+		}
+		complete_effect = {
+			add_to_variable = {AST.Liberal_Support = 8}
+			custom_effect_tooltip = AST_Liberal1
+		}
+	}
+	#	Liberty Missions 3
+	AST_Industrial_Investment = {
+		is_good = no
+		days_mission_timeout = 365
+		allowed = {
+			always = no
+		}
+		available = {
+			industrial_complex > 10
+		}
+		complete_effect = {
+			add_to_variable = {AST.Liberal_Support = 5}
 			custom_effect_tooltip = AST_Liberal1
 		}
 	}

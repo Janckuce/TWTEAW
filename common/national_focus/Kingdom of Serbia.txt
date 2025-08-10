@@ -1264,7 +1264,6 @@ focus = {
 	}
 }
 focus = {
-	#Gives Extra Monthly Exiled Equipment
 	id = SER_Exiled_Buff
 	icon = GFX_focus_YUG_dissolve_serbia
 	cost = 10
@@ -1279,7 +1278,10 @@ focus = {
 		focus = SER_Exiled3
 	}
 	completion_reward = {
-		custom_effect_tooltip = SER_Exile_Text
+		add_offsite_building = {
+			type = arms_factory
+			level = 3
+		}
 	}
 }
 
