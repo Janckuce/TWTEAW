@@ -1,12 +1,14 @@
 ideas = {
 	country = {
 		BEL_King_Status = {
+			picture = bel_king_spirit
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
 			}
 		}
 		BEL_King_Status1 = {
+			picture = bel_king_spirit
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.15
@@ -14,6 +16,7 @@ ideas = {
 			}
 		}
 		BEL_King_Status2 = {
+			picture = bel_king_spirit
 			modifier = {
 				stability_factor = 0.15
 				war_support_factor = 0.15
@@ -24,6 +27,7 @@ ideas = {
 			}
 		}
 		BEL_King_Status3 = {
+			picture = bel_king_spirit
 			modifier = {
 				stability_factor = 0.25
 				war_support_factor = 0.25
@@ -34,6 +38,7 @@ ideas = {
 			}
 		}
 		BEL_King_Status4 = {
+			picture = bel_king_spirit
 			modifier = {
 				stability_factor = 0.3
 				war_support_factor = 0.3
@@ -47,6 +52,7 @@ ideas = {
 			}
 		}
 		BEL_Neutral_State = {
+			picture = BEL_defensive_neutrality
 			modifier = {
 				defensive_war_stability_factor = 0.2
 				lend_lease_tension = 1
@@ -58,6 +64,7 @@ ideas = {
 			}
 		}
 		BEL_Divided_Nation = {
+			picture = BEL_language_barriers
 			modifier = {
 				army_org_factor = -0.08
 				coordination_bonus = -0.08
@@ -70,6 +77,7 @@ ideas = {
 			}
 		}
 		BEL_Limited_Naval_Force = {
+			picture = jap_interservice_rivalry_navy_strengthened
 			modifier = {
 				consumer_goods_factor = -0.15
 				industrial_capacity_dockyard = -0.5
@@ -77,12 +85,14 @@ ideas = {
 			}
 		}
 		BEL_Outrage_Over_Congolese_Treatment = {
+			picture = COG_force_publique
 			modifier = {
 				stability_factor = -0.1
 				industrial_capacity_factory = -0.05
 			}
 		}
 		BEL_Military_Investment = {
+			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.2
@@ -90,6 +100,7 @@ ideas = {
 			}
 		}
 		BEL_French_Primacy = {
+			picture = BEL_language_barriers_fas_fr
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = 0.1
@@ -98,6 +109,7 @@ ideas = {
 			}
 		}
 		BEL_Dutch_Primacy = {
+			picture = BEL_language_barriers_fas_nl
 			modifier = {
 				stability_factor = -0.1
 				research_speed_factor = 0.15
@@ -106,6 +118,7 @@ ideas = {
 			}
 		}
 		BEL_Armoured_Car_Supremacy = {
+			picture = BEL_minerva_imperia_motorized_organization
 			equipment_bonus = {
 				armored_car_equipment = {
 					build_cost_ic = -0.15
@@ -113,12 +126,14 @@ ideas = {
 			}
 		}
 		BEL_Socialist_Power = {
+			picture = socialist_science_focus
 			modifier = {
 				communism_drift = 0.2
 				industry_repair_factor = 0.05
 			}
 		}
 		BEL_Socialist_Power1 = {
+			picture = socialist_science_focus
 			modifier = {
 				communism_drift = 0.3
 				industry_repair_factor = 0.05
@@ -127,6 +142,7 @@ ideas = {
 			}
 		}
 		BEL_Socialist_Power2 = {
+			picture = socialist_science_focus
 			modifier = {
 				communism_drift = 0.3
 				industry_repair_factor = 0.075
@@ -135,6 +151,7 @@ ideas = {
 			}
 		}
 		BEL_Worker's_Strike = {
+			picture = FIN_socialist_welfare
 			modifier = {
 				industrial_capacity_factory = -0.05
 			}
@@ -146,37 +163,44 @@ ideas = {
 			}
 		}
 		BEL_The_People = {
+			picture = ARG_social_welfare_fund_ns
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
 				party_popularity_stability_factor = 0.1
 			}
 		}
 		BEL_Science_Power = {
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.025
 			}
 		}
 		BEL_Science_Power1 = {
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.05
 			}
 		}
 		BEL_Science_Power2 = {
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.075
 			}
 		}
 		BEL_Support_Idea = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
 			modifier = {
 				industrial_capacity_factory = -0.1
 			}
 		}
 		BEL_Support_Idea1 = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
 			modifier = {
 				industrial_capacity_factory = -0.1
 			}
 		}
 		BEL_Support_Idea2 = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
 			modifier = {
 				industrial_capacity_factory = -0.1
 			}
