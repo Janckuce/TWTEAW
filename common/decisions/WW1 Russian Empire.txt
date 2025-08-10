@@ -1,61 +1,36 @@
-RUS_uprising_category = {
-
-	RUS_uprising = {
-		priority = 2
-		allowed = {
-			original_tag = RUS
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-		    has_completed_focus = RUS_deal_with_the_communists
-		}
-		
-		highlight_states = {
-		    highlight_state_targets = { state = 195 } 
-	    }
-		
-		is_good = no
-		
-		days_mission_timeout = 100
-		
-		cancel_trigger = {
-		    #
-		}
-		
-		timeout_effect = {
-		}
-		
-		fire_only_once = yes
-	}
-	
-	RUS_delay_uprising_1 = {
+RUS_Peasant's_Land_Bank_Category = {
+	RUS_Sieze_Land = {
 		priority = 1
+		days_re_enable = 90
+		cost = 30
 		allowed = {
-			original_tag = RUS
+			tag = RUS
 		}
-		visible = {
-			has_active_mission = RUS_uprising
-		}
-		available = {
-		    always = yes
-		}
-		
-		cost = 0
-		
 		complete_effect = {
-		    add_days_mission_timeout = {
-				mission = RUS_uprising
-				days = 100
+			if = {
+				limit = {
+					has_idea = RUS_Agrarian_Industry3
+				}
+				swap_ideas = {
+					remove_idea = RUS_Agrarian_Industry3
+					add_idea = RUS_Agrarian_Industry4
+				}
 			}
-			add_political_power = -50
-		}
-		
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 10000
+			else_if = {
+				limit = {
+					has_idea = RUS_Agrarian_Industry4
+				}
+				swap_ideas = {
+					remove_idea = RUS_Agrarian_Industry4
+					add_idea = RUS_Agrarian_Industry5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Agrarian_Industry5
+				}
+				remove_ideas = RUS_Agrarian_Industry5
+			}
 		}
 	}
 }
