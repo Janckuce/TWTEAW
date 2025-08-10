@@ -509,7 +509,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#	Will Unlock An MIO
 		id = RUS_Science_Expansion_Main
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
@@ -520,6 +519,24 @@ focus_tree = {
 			focus = RUS_The_Tsar's_Ideas
 		}
 		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = RUS_Extra_Research
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RUS_Science_Expansion_Main
+		x = 2
+		y = 1
+		available = {
+			num_of_factories > 80
+		}
+		prerequisite = {
+			focus = RUS_Science_Expansion_Main
+		}
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
