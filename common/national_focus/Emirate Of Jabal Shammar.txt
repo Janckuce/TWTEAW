@@ -269,7 +269,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-			industrial_complex > 9
+			industrial_complex > 19
 		}
 		prerequisite = {
 			focus = YEM_Industrial_Expansion
@@ -400,25 +400,154 @@ focus_tree = {
 	focus = {
 		id = YEM_Onwards_Emirate
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 1
 		relative_position_id = YEM_Deciding_Our_Fate
 		x = 4
 		y = 1
+		mutually_exclusive = {
+			focus = YEM_Us_And_The_Ottomans
+		}
+		available = {
+			TUR = {
+				num_of_factories > 30
+			}
+		}
 		prerequisite = {
 			focus = YEM_Deciding_Our_Fate
 		}
-		completion_reward = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = YEM_Ottoman_Trade
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Onwards_Emirate
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Onwards_Emirate
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Ottoman_Dependency
+				add_idea = YEM_Ottoman_Dependency_Royalist
+			}
+		}
+	}
+	focus = {
+		id = YEM_Strong_As_Steel
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Ottoman_Trade
+		x = -1
+		y = 1
+		available = {
+			TUR = {
+				num_of_factories > 40
+			}
+			has_idea = YEM_Declining_Power
+		}
+		prerequisite = {
+			focus = YEM_Ottoman_Trade
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Declining_Power
+				add_idea = YEM_Declining_Power1
+			}
+		}
+	}
+	focus = {
+		id = YEM_Smooth_As_Silk
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Ottoman_Trade
+		x = 1
+		y = 1
+		available = {
+			TUR = {
+				num_of_factories > 40
+			}
+			has_idea = YEM_Declining_Power1
+		}
+		prerequisite = {
+			focus = YEM_Ottoman_Trade
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Declining_Power1
+				add_idea = YEM_Declining_Power2
+			}
+		}
+	}
+	focus = {
+		id = YEM_Strength_With_Us
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Ottoman_Trade
+		x = 0
+		y = 2
+		available = {
+			not = {
+				has_idea = YEM_Relevant_Capital
+			}
+		}
+		prerequisite = {
+			focus = YEM_Strong_As_Steel
+			focus = YEM_Smooth_As_Silk
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Ottoman_Dependency_Royalist
+				add_idea = YEM_Ottoman_Dependency_Royalist1
+			}
+		}
 	}
 	focus = {
 		id = YEM_Us_And_The_Ottomans
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 1
 		relative_position_id = YEM_Deciding_Our_Fate
 		x = 8
 		y = 1
+		mutually_exclusive = {
+			focus = YEM_Onwards_Emirate
+		}
+		available = {
+			TUR = {
+				num_of_factories > 30
+			}
+		}
 		prerequisite = {
 			focus = YEM_Deciding_Our_Fate
 		}
-		completion_reward = {}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = YEM_Ottoman_March
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Us_And_The_Ottomans
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Us_And_The_Ottomans
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Ottoman_Dependency
+				add_idea = YEM_Ottoman_Dependency_Fascist
+			}
+		}
 	}
 }
