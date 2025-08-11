@@ -22,7 +22,7 @@ focus_tree = {
 
 	focus = {
 		id = BEL_The_King's_Nation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
 		cost = 5
 		x = 10
 		y = 0
@@ -725,7 +725,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Knight_King
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_consitutional_crisis
 		cost = 10
 		x = 0
 		y = 1
@@ -744,12 +744,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BEL_Soldier_King
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = BEL_Soldier_King_two
+		icon = GFX_focus_chi_army_reform
 		cost = 10
-		relative_position_id = BEL_Knight_King
+		relative_position_id = BEL_Knight_King_two
 		x = 0
-		y = 1
+		y = 2
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Knight_King
@@ -763,14 +763,14 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_King_Of_The_Congo
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_COG_the_nyim_of_kuba
 		cost = 10
 		relative_position_id = BEL_Soldier_King
 		x = 0
-		y = 1
+		y = 3
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		prerequisite = {
-			focus = BEL_Soldier_King
+			focus = BEL_Soldier_King_two
 		}
 		completion_reward = {
 			295 = {
@@ -780,7 +780,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_King_Of_Belgium
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_the_lost_tribe
 		cost = 10
 		relative_position_id = BEL_King_Of_The_Congo
 		x = 0
@@ -799,7 +799,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Hero_Of_Belgium
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_burgundy_rising
 		cost = 10
 		relative_position_id = BEL_King_Of_Belgium
 		x = 0

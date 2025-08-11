@@ -4,10 +4,15 @@ characters={
 		portraits = {
 			civilian = {
 				large = "GFX_BEL_albert_I"
+				small = "GFX_BEL_albert_I_frame"
 			}
 		}
 		country_leader = {
 			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+			country_leader = {
+			ideology = stalinism
 			expire = "1965.1.1.1"
 		}
 		advisor = {
@@ -31,6 +36,74 @@ characters={
 			traits = {   }
 			skill = 3
 			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+		bel_armand_de_ceuninck = {
+		name = BEL_Armand_De_Ceuninck
+		portraits = {
+			civilian = {
+				large = "GFX_bel_armand_de_ceuninck"
+				small = "GFX_bel_armand_de_ceuninck_frame"
+			}
+		}
+		advisor = {
+        slot = high_Command
+        traits = {  bel_general_loved }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_armand_de_ceuninck
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+		corps_commander = {
+			traits = { cavalry_leader bearer_of_artillery ranger fortress_buster  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+		BEL_gerard_leman = {
+		name = BEL_gerard_leman
+		portraits = {
+			civilian = {
+				large = "GFX_BEL_gerard_leman"
+				small = "GFX_BEL_gerard_leman_frame"
+			}
+		}
+		advisor = {
+        slot = high_Command
+        traits = {  bel_fotress_man }
+        cost = 150
+        can_be_fired = yes
+        idea_token = BEL_gerard_leman
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+		corps_commander = {
+			traits = { ambusher engineer fortress_buster urban_assault_specialist }
+			skill = 2
+			attack_skill = 5
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 1
@@ -61,20 +134,12 @@ characters={
             always = yes
         }
     }
-			corps_commander = {
-			traits = {   }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 1
-		}
 }
 	bel_louis_ruquoy = {
     name = "Louis Ruquoy"
             portraits = {
 			civilian = {
-				large = "GFX_bel_louis_ruquoy"
+				large = "GFX_bel_louis_ruquoy_fix"
                 small = "GFX_bel_louis_ruquoy_frame"
 		    }
 		}
@@ -95,6 +160,31 @@ characters={
             always = yes
         }
     }
+		advisor = {
+        slot = high_Command
+        traits = {  bel_organizator }
+        cost = 150
+        can_be_fired = yes
+        idea_token = bel_louis_ruquoy
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+		crops_commander = {
+		traits = { cavalry_leader Organizer }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 1
+	}
 }
 	bel_edouard_empain = {
     name = "Édouard Empain"
@@ -109,7 +199,7 @@ characters={
         traits = { bel_industrialist_companist }
         cost = 150
         can_be_fired = yes
-        idea_token = bel_alexandre_galopin
+        idea_token = bel_edouard_empain
 
         allowed = {
             OR = {
@@ -239,4 +329,5 @@ characters={
 			}
 		}
 	}
+}
 }
