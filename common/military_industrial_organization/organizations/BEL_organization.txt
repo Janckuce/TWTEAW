@@ -78,7 +78,7 @@ BEL_vickers_armstrong_bel_organization = {
 
         available = {
             owner = {
-                has_completed_focus = BEL_fonderie_royale_de_canons_liege
+                has_completed_focus = BEL_Science2
             }
         }	
 
@@ -113,7 +113,7 @@ BEL_renault_organization = {
 
         available = {
             owner = {
-                has_completed_focus = BEL_fonderie_royale_de_canons_liege
+                has_completed_focus = BEL_Science2
             }
         }			
 
@@ -233,7 +233,7 @@ BEL_fn_herstal_organization = {
 
         available = {
             owner = {
-                has_completed_focus = BEL_fn_herstal
+                has_completed_focus = BEL_Science2
             }
         }	
 
@@ -347,7 +347,7 @@ BEL_fonderie_royale_de_canons_liege_organization = {
 
         available = {
             owner = {
-                has_completed_focus = BEL_cockerill
+                has_completed_focus = BEL_The_People's_Nation
             }
         }	
 
@@ -397,12 +397,9 @@ BEL_minerva_imperia_armored_car_organization = {
 		special_trait_background = yes
 
         available = {
-            owner = {
-            	OR = {
-            		has_completed_focus = BEL_minerva_imperia
-            		has_completed_focus = COG_standardize_military_production
-            	}
-            }
+			owner = {
+				has_completed_focus = BEL_Armoured_Car_Race
+			}
         }	
 
 		position = { x=8 y=0 }  

@@ -29,6 +29,7 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 0
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		completion_reward = {
 			country_event = ww1_russia.11
 		}
@@ -40,6 +41,7 @@ focus_tree = {
 		relative_position_id = RUS_The_Tsar's_Ideas
 		x = -10
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_The_Tsar's_Ideas
 		}
@@ -58,6 +60,7 @@ focus_tree = {
 		relative_position_id = RUS_Construction_Efforts
 		x = -2
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Construction_Efforts
 		}
@@ -90,6 +93,7 @@ focus_tree = {
 		relative_position_id = RUS_Construction_Efforts
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Construction_Efforts
 		}
@@ -115,6 +119,7 @@ focus_tree = {
 		relative_position_id = RUS_Construction_Efforts
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Construction_Efforts
 		}
@@ -140,6 +145,7 @@ focus_tree = {
 		relative_position_id = RUS_Construction_Efforts
 		x = -1
 		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Construction_Efforts
 		}
@@ -175,6 +181,7 @@ focus_tree = {
 		relative_position_id = RUS_Construction_Efforts
 		x = 1
 		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Construction_Efforts
 		}
@@ -195,6 +202,7 @@ focus_tree = {
 		relative_position_id = RUS_Construction_Efforts
 		x = 0
 		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Industry1
 		}
@@ -248,6 +256,7 @@ focus_tree = {
 		relative_position_id = RUS_New_Exports
 		x = 3
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		available = {
 			not = {
 				or = {
@@ -277,6 +286,7 @@ focus_tree = {
 		relative_position_id = RUS_Export_Cotton
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		available = {
 			not = {
 				or = {
@@ -303,6 +313,7 @@ focus_tree = {
 		relative_position_id = RUS_Export_Sugar_Beets
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		available = {
 			not = {
 				or = {
@@ -329,6 +340,7 @@ focus_tree = {
 		relative_position_id = RUS_Export_Soybeans
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		available = {
 			not = {
 				or = {
@@ -355,6 +367,7 @@ focus_tree = {
 		relative_position_id = RUS_New_Exports
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_New_Exports
 		}
@@ -393,6 +406,7 @@ focus_tree = {
 		relative_position_id = RUS_Continue_Main
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Continue_Main
 		}
@@ -418,6 +432,7 @@ focus_tree = {
 		relative_position_id = RUS_Continue_Main
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Continue_Main
 		}
@@ -443,6 +458,7 @@ focus_tree = {
 		relative_position_id = RUS_Continue_Industry1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Continue_Industry1
 			focus = RUS_Continue_Industry2
@@ -469,6 +485,7 @@ focus_tree = {
 		relative_position_id = RUS_Continue_Industry2
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Continue_Industry1
 			focus = RUS_Continue_Industry2
@@ -494,6 +511,7 @@ focus_tree = {
 		relative_position_id = RUS_Continue_Main
 		x = 0
 		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_Continue_Industry3
 		}
@@ -515,6 +533,7 @@ focus_tree = {
 		relative_position_id = RUS_The_Tsar's_Ideas
 		x = -6
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_The_Tsar's_Ideas
 		}
@@ -529,6 +548,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion_Main
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		available = {
 			num_of_factories > 80
 		}
@@ -546,6 +566,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion_Main
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion_Main
 		}
@@ -566,6 +587,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion1
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion1
 		}
@@ -584,6 +606,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion1
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion1
 		}
@@ -602,6 +625,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion2
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion2
 		}
@@ -623,6 +647,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion2
 		}
@@ -644,6 +669,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion5
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion5
 		}
@@ -664,6 +690,7 @@ focus_tree = {
 		relative_position_id = RUS_Scientific_Breakthrough
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Scientific_Breakthrough
 		}
@@ -682,6 +709,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion6
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion6
 		}
@@ -700,6 +728,7 @@ focus_tree = {
 		relative_position_id = RUS_Science_Expansion7
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_Science_Expansion7
 		}
@@ -718,6 +747,7 @@ focus_tree = {
 		relative_position_id = RUS_The_Tsar's_Ideas
 		x = -2
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		mutually_exclusive = {
 			focus = RUS_Assault_Warfare_Main
 		}
@@ -741,6 +771,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare_Main
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Organised_Warfare_Main
 		}
@@ -758,6 +789,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Organised_Warfare1
 		}
@@ -775,6 +807,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Organised_Warfare1
 		}
@@ -792,6 +825,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare2
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD FOCUS_FILTER_WAR_SUPPORT}
 		prerequisite = {
 			focus = RUS_Organised_Warfare2
 		}
@@ -806,6 +840,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare2
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD FOCUS_FILTER_WAR_SUPPORT}
 		prerequisite = {
 			focus = RUS_Organised_Warfare2
 		}
@@ -820,6 +855,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD FOCUS_FILTER_ARMY_XP}
 		prerequisite = {
 			focus = RUS_Organised_Warfare3
 			focus = RUS_Organised_Warfare4
@@ -835,6 +871,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare4
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD FOCUS_FILTER_ARMY_XP}
 		prerequisite = {
 			focus = RUS_Organised_Warfare3
 			focus = RUS_Organised_Warfare4
@@ -850,6 +887,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare2
 		x = 0
 		y = 3
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Organised_Warfare5
 			focus = RUS_Organised_Warfare6
@@ -868,6 +906,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare7
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Organised_Warfare7
 		}
@@ -885,6 +924,7 @@ focus_tree = {
 		relative_position_id = RUS_Begin_Modernisation
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Begin_Modernisation
 		}
@@ -899,6 +939,7 @@ focus_tree = {
 		relative_position_id = RUS_The_Tsar's_Ideas
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		mutually_exclusive = {
 			focus = RUS_Organised_Warfare_Main
 		}
@@ -922,6 +963,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare_Main
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare_Main
 		}
@@ -939,6 +981,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare1
 		}
@@ -956,6 +999,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare2
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare2
 		}
@@ -970,6 +1014,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare2
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare2
 		}
@@ -984,6 +1029,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare3
 			focus = RUS_Assault_Warfare4
@@ -1000,6 +1046,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare4
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare3
 			focus = RUS_Assault_Warfare4
@@ -1016,6 +1063,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare2
 		x = 0
 		y = 3
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare5
 		}
@@ -1036,6 +1084,7 @@ focus_tree = {
 		relative_position_id = RUS_Assault_Warfare7
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Assault_Warfare7
 		}
@@ -1053,6 +1102,7 @@ focus_tree = {
 		relative_position_id = RUS_Empower_Army
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = RUS_Empower_Army
 		}
@@ -1067,6 +1117,7 @@ focus_tree = {
 		relative_position_id = RUS_Organised_Warfare_Main
 		x = 2
 		y = 7
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		available = {
 			not = {
 				or = {

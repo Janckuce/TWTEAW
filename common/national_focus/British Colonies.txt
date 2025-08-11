@@ -12,6 +12,7 @@ shared_focus = {
 	cost = 5
 	x = 17
 	y = 3
+	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 	prerequisite = {
 	}
 	completion_reward = {
@@ -32,6 +33,7 @@ joint_focus = {
 	relative_position_id = BCS_Focus1
 	x = -1
 	y = 1
+	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 	joint_trigger = {
 		is_puppet_of = ENG
 	}
@@ -73,6 +75,7 @@ joint_focus = {
 	relative_position_id = BCS_Focus1
 	x = 1
 	y = 1
+	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 	joint_trigger = {
 		is_puppet_of = ENG
 	}
