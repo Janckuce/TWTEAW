@@ -33,11 +33,18 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 90
-	democratic = 10
+	neutrality = 85
+	fascism = 15
 }
 
-set_research_slots = 3
+add_ideas = {
+	YEM_Relevant_Capital
+	YEM_Ottoman_Dependency
+	YEM_Declining_Power
+	YEM_Poorly_Prepared
+}
+
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.3
 
