@@ -1,21 +1,36 @@
 ideas = {
 	country = {
 		YEM_Relevant_Capital = {
+			picture = BEL_fonderie_royale_de_canons_liege
 			modifier = {
 				political_power_gain = 0.25
 			}
 		}
 		YEM_Famous_Capital = {
+			picture = BEL_fonderie_royale_de_canons_liege
 			modifier = {
 				political_power_gain = 0.5
 			}
 		}
 		YEM_Wonder_Capital = {
+			picture = BEL_fonderie_royale_de_canons_liege
 			modifier = {
 				political_power_gain = 1
 			}
 		}
+		YEM_Jabal_Forces = {
+			picture = ast_volunteer_defence_corps
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteers_tension = -1
+				send_volunteer_factor = 0.3
+			}
+		}
 		YEM_Ottoman_Dependency = {
+			picture = tur_kemalist_army_officers_limited_power_disloyal
 			targeted_modifier = {
 				tag = TUR
 				cic_to_target_factor = 0.25
@@ -23,6 +38,7 @@ ideas = {
 			}
 		}
 		YEM_Ottoman_Dependency_Royalist = {
+			picture = tur_kemalist_army_officers_powerful_neutral
 			modifier = {
 			}
 			targeted_modifier = {
@@ -33,6 +49,7 @@ ideas = {
 			}
 		}
 		YEM_Ottoman_Dependency_Royalist1 = {
+			picture = tur_kemalist_army_officers_powerful_neutral
 			modifier = {
 			}
 			targeted_modifier = {
@@ -43,6 +60,7 @@ ideas = {
 			}
 		}
 		YEM_Ottoman_Dependency_Fascist = {
+			picture = tur_kemalist_officers_loyalty_effect
 			modifier = {
 			}
 			targeted_modifier = {
@@ -55,6 +73,7 @@ ideas = {
 			}
 		}
 		YEM_Declining_Power = {
+			picture = usa_great_depression_3
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.2
 				production_speed_arms_factory_factor = -0.2
@@ -63,6 +82,7 @@ ideas = {
 			}
 		}
 		YEM_Declining_Power1 = {
+			picture = usa_great_depression_2
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.15
 				production_speed_arms_factory_factor = -0.15
@@ -71,6 +91,7 @@ ideas = {
 			}
 		}
 		YEM_Declining_Power2 = {
+			picture = usa_great_depression
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
@@ -79,30 +100,35 @@ ideas = {
 			}
 		}
 		YEM_Poorly_Prepared = {
+			picture = chi_incompetent_officers
 			modifier = {
 				heat_attrition_factor = 0.5
 				supply_consumption_factor = 0.5
 			}
 		}
 		YEM_Poorly_Prepared1 = {
+			picture = chi_incompetent_officers
 			modifier = {
 				heat_attrition_factor = 0.4
 				supply_consumption_factor = 0.4
 			}
 		}
 		YEM_Poorly_Prepared2 = {
+			picture = chi_incompetent_officers
 			modifier = {
 				heat_attrition_factor = 0.3
 				supply_consumption_factor = 0.3
 			}
 		}
 		YEM_Rodent_Army = {
+			picture = CHL_ligas_patrioticas
 			modifier = {
 				equipment_capture_factor = 0.4
 				org_loss_when_moving = -0.15
 			}
 		}
 		YEM_Combat_Ready = {
+			picture = RAJ_private_military_complex
 			modifier = {
 				acclimatization_hot_climate_gain_factor = 0.15
 				recon_factor = 0.15
