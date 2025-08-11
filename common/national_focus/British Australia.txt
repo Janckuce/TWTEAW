@@ -28,6 +28,7 @@ focus_tree = {
 		cost = 10
 		x = 5
 		y = 0
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
 			activate_mission = AST_Better_Industry
 			activate_mission = AST_Better_Naval_Power
@@ -43,6 +44,7 @@ focus_tree = {
 		relative_position_id = AST_Status_Of_Nation
 		x = -4
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Status_Of_Nation
 		}
@@ -69,6 +71,7 @@ focus_tree = {
 		relative_position_id = AST_Industrial_Expansion
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Industrial_Expansion
 		}
@@ -110,6 +113,7 @@ focus_tree = {
 		relative_position_id = AST_Road_Expansion
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Road_Expansion
 		}
@@ -131,6 +135,7 @@ focus_tree = {
 		relative_position_id = AST_Road_Expansion
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Road_Expansion
 		}
@@ -152,6 +157,7 @@ focus_tree = {
 		relative_position_id = AST_Road_Expansion
 		x = -1
 		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Harbour_Expansion1
 		}
@@ -178,6 +184,7 @@ focus_tree = {
 		relative_position_id = AST_Road_Expansion
 		x = 1
 		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Harbour_Expansion2
 		}
@@ -204,6 +211,7 @@ focus_tree = {
 		relative_position_id = AST_Road_Expansion
 		x = 0
 		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Industry1
 		}
@@ -231,6 +239,7 @@ focus_tree = {
 		relative_position_id = AST_Status_Of_Nation
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		prerequisite = {
 			focus = AST_Status_Of_Nation
 		}
@@ -252,6 +261,7 @@ focus_tree = {
 		relative_position_id = AST_Naval_Research
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		prerequisite = {
 			focus = AST_Naval_Research
 		}
@@ -270,6 +280,7 @@ focus_tree = {
 		relative_position_id = AST_Naval_Research
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		prerequisite = {
 			focus = AST_Naval_Research
 		}
@@ -288,6 +299,7 @@ focus_tree = {
 		relative_position_id = AST_Naval_Research
 		x = 0
 		y = 2
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		prerequisite = {
 			focus = AST_Destroyer_Primacy
 		}
@@ -311,6 +323,7 @@ focus_tree = {
 		relative_position_id = AST_Royal_Australian_Marines
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		prerequisite = {
 			focus = AST_Royal_Australian_Marines
 		}
@@ -328,6 +341,7 @@ focus_tree = {
 		relative_position_id = AST_Naval_Warfare
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = AST_Naval_Warfare
 		}
@@ -342,6 +356,7 @@ focus_tree = {
 		relative_position_id = AST_Status_Of_Nation
 		x = 4
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Status_Of_Nation
 		}
@@ -359,6 +374,7 @@ focus_tree = {
 		relative_position_id = AST_Military_Adjustments
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		mutually_exclusive = {
 			focus = AST_Major_Military_Investment
 		}
@@ -379,6 +395,7 @@ focus_tree = {
 		relative_position_id = AST_Minor_Military_Investment
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Minor_Military_Investment
 		}
@@ -396,6 +413,7 @@ focus_tree = {
 		relative_position_id = AST_Minor_Military_Training1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Minor_Military_Training1
 		}
@@ -413,6 +431,7 @@ focus_tree = {
 		relative_position_id = AST_Minor_Military_Training2
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Minor_Military_Training2
 		}
@@ -430,6 +449,7 @@ focus_tree = {
 		relative_position_id = AST_Military_Adjustments
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		mutually_exclusive = {
 			focus = AST_Minor_Military_Investment
 		}
@@ -450,6 +470,7 @@ focus_tree = {
 		relative_position_id = AST_Major_Military_Investment
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Major_Military_Investment
 		}
@@ -467,6 +488,7 @@ focus_tree = {
 		relative_position_id = AST_Major_Military_Training1
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Major_Military_Training1
 		}
@@ -484,6 +506,7 @@ focus_tree = {
 		relative_position_id = AST_Major_Military_Training2
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = AST_Major_Military_Training2
 		}
@@ -501,6 +524,7 @@ focus_tree = {
 		relative_position_id = AST_Status_Of_Nation
 		x = 12
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = AST_Status_Of_Nation
 		}
@@ -528,6 +552,7 @@ focus_tree = {
 		relative_position_id = AST_Hold_Elections
 		x = 0
 		y = 4
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = AST_Higher_Wages
 			focus = AST_Reduced_Polution
@@ -543,6 +568,7 @@ focus_tree = {
 		relative_position_id = AST_Hold_Elections
 		x = -3
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		mutually_exclusive = {
 			focus = AST_Liberal_Victory
 		}
@@ -560,6 +586,7 @@ focus_tree = {
 		relative_position_id = AST_Labour_Victory
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Labour_Victory
 		}
@@ -603,6 +630,7 @@ focus_tree = {
 		relative_position_id = AST_Economy_Spending
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Economy_Spending
 		}
@@ -620,6 +648,7 @@ focus_tree = {
 		relative_position_id = AST_Higher_Wages
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Higher_Wages
 		}
@@ -638,6 +667,7 @@ focus_tree = {
 		relative_position_id = AST_More_Worker_Rights
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_More_Worker_Rights
 		}
@@ -681,6 +711,7 @@ focus_tree = {
 		relative_position_id = AST_Labour_Victory
 		x = -2
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Labour_Victory
 		}
@@ -723,6 +754,7 @@ focus_tree = {
 		relative_position_id = AST_Equal_Investments
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Equal_Investments
 		}
@@ -768,6 +800,7 @@ focus_tree = {
 		relative_position_id = AST_Spread_Our_Wealth
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Spread_Our_Wealth
 		}
@@ -805,6 +838,7 @@ focus_tree = {
 		relative_position_id = AST_Hold_Elections
 		x = 3
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
 		mutually_exclusive = {
 			focus = AST_Labour_Victory
 		}
@@ -823,6 +857,7 @@ focus_tree = {
 		relative_position_id = AST_Liberal_Victory
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Liberal_Victory
 		}
@@ -894,6 +929,7 @@ focus_tree = {
 		relative_position_id = AST_Environmentalist_Movement
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Environmentalist_Movement
 		}
@@ -911,6 +947,7 @@ focus_tree = {
 		relative_position_id = AST_Reduced_Polution
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Reduced_Polution
 		}
@@ -929,6 +966,7 @@ focus_tree = {
 		relative_position_id = AST_Grant_Liberties
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Grant_Liberties
 		}
@@ -972,6 +1010,7 @@ focus_tree = {
 		relative_position_id = AST_Liberal_Victory
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Liberal_Victory
 		}
@@ -1018,6 +1057,7 @@ focus_tree = {
 		relative_position_id = AST_Concecrated_Industry
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Concecrated_Industry
 		}
@@ -1063,6 +1103,7 @@ focus_tree = {
 		relative_position_id = AST_Arms_Industry
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = AST_Arms_Industry
 		}
