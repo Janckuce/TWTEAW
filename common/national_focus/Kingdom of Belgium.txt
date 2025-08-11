@@ -38,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Industrial1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_belgian_renaissance
 		cost = 7.2
 		relative_position_id = BEL_The_King's_Nation
 		x = -8
@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Industrial2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_christian_corporatism
 		cost = 7.2
 		relative_position_id = BEL_Industrial1
 		x = 2
@@ -80,7 +80,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Industrial1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 7.2
 		relative_position_id = BEL_Industrial1
 		x = 0
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Industrial2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CONGO_congo_investments
 		cost = 7.2
 		relative_position_id = BEL_Industrial1
 		x = 2
@@ -124,7 +124,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Iron_Mines
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CONGO_congo_free_state
 		cost = 10
 		relative_position_id = BEL_Congo_Industrial1
 		x = 0
@@ -147,7 +147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Rubber_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BRA_rubber_war
 		cost = 10
 		relative_position_id = BEL_Congo_Industrial1
 		x = 2
@@ -170,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Infrastructure
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10
 		relative_position_id = BEL_Congo_Iron_Mines
 		x = 1
@@ -193,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Research_Slot
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_africa_factory
 		cost = 10
 		relative_position_id = BEL_Congo_Infrastructure
 		x = 0
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Belgium_Military
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_defensive_neutrality
 		cost = 10
 		relative_position_id = BEL_The_King's_Nation
 		x = -4
@@ -232,7 +232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Belgium_Defense1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_national_redoubt_at_antwerp
 		cost = 10
 		relative_position_id = BEL_Belgium_Military
 		x = 0
@@ -259,7 +259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Belgium_Defense2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		cost = 7.2
 		relative_position_id = BEL_Belgium_Defense1
 		x = 0
@@ -279,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Military
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CONGO_force_publique
 		cost = 10
 		relative_position_id = BEL_Belgium_Military
 		x = 2
@@ -303,7 +303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Defense1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_COG_force_publique_mutiny
 		cost = 10
 		relative_position_id = BEL_Congo_Military
 		x = 0
@@ -330,7 +330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Congo_Defense2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_COG_force_aerienne_congolaise
 		cost = 7.2
 		relative_position_id = BEL_Congo_Defense1
 		x = 0
@@ -350,7 +350,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Military_Defense
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CONGO_copper_cartridges
 		cost = 10
 		relative_position_id = BEL_Belgium_Defense2
 		x = 1
@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Science1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research
 		cost = 5
 		relative_position_id = BEL_The_King's_Nation
 		x = 0
@@ -384,7 +384,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Science2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_continuous_research
 		cost = 5
 		relative_position_id = BEL_Science1
 		x = 0
@@ -405,7 +405,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Science3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research2
 		cost = 5
 		relative_position_id = BEL_Science2
 		x = 0
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Loyal_To_The_King
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_king_of_the_belgians
 		cost = 10
 		relative_position_id = BEL_The_King's_Nation
 		x = 3
@@ -446,7 +446,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_French_Language
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_fra_french_union
 		cost = 10
 		relative_position_id = BEL_Loyal_To_The_King
 		x = -1
@@ -466,7 +466,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Dutch_Language
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_hol_oranje_boven
 		cost = 10
 		relative_position_id = BEL_Loyal_To_The_King
 		x = 1
@@ -485,7 +485,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Address_Colonial_Issues
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BRA_amazon_colonization
 		cost = 10
 		relative_position_id = BEL_Loyal_To_The_King
 		x = 0
@@ -502,7 +502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_United_Through_The_Crown
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_the_walloon_legion
 		cost = 10
 		relative_position_id = BEL_Address_Colonial_Issues
 		x = 0
@@ -517,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Armoured_Car_Race
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_lynx_armored_car
 		cost = 10
 		relative_position_id = BEL_United_Through_The_Crown
 		x = 0
@@ -538,7 +538,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Commune
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_the_grand_place
 		cost = 10000
 		relative_position_id = BEL_The_King's_Nation
 		x = 7
@@ -558,7 +558,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Frame_Our_Opponents1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_government_resigns
 		cost = 7.2
 		relative_position_id = BEL_Commune
 		x = -1
@@ -582,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Frame_Our_Opponents2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_la_dame_blanche
 		cost = 7.2
 		relative_position_id = BEL_Commune
 		x = 1
@@ -606,7 +606,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Enter_The_Stage
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_unfit_to_reign
 		cost = 5
 		relative_position_id = BEL_Commune
 		x = 0
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Socialist_Consolidation1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_mex_restore_the_army_of_christ
 		cost = 10
 		relative_position_id = BEL_Enter_The_Stage
 		x = -1
@@ -653,7 +653,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_Socialist_Consolidation2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_price_controls
 		cost = 10
 		relative_position_id = BEL_Enter_The_Stage
 		x = 1
@@ -675,7 +675,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_The_King_Stays
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_telegraph
 		cost = 7.2
 		relative_position_id = BEL_Socialist_Consolidation1
 		x = 0
@@ -691,7 +691,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_The_Workers_Stay
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_communist
 		cost = 7.2
 		relative_position_id = BEL_Socialist_Consolidation2
 		x = 0
@@ -707,7 +707,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BEL_The_People's_Nation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10
 		relative_position_id = BEL_Enter_The_Stage
 		x = 0
