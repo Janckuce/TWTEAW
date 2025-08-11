@@ -39,9 +39,13 @@ AST_Parliament_Category = {
 		available = {
 			arms_factory > 8
 		}
+		timeout_effect = {
+			set_variable = {AST.Labour_Support = 55}
+			custom_effect_tooltip = AST_Labour2
+		}
 		complete_effect = {
-			add_to_variable = {AST.Labour_Support = 7}
-			custom_effect_tooltip = AST_Labour1
+			set_variable = {AST.Labour_Support = 55}
+			custom_effect_tooltip = AST_Labour2
 		}
 	}
 	#	Labour Missions 3
@@ -54,16 +58,20 @@ AST_Parliament_Category = {
 		available = {
 			arms_factory > 12
 		}
+		timeout_effect = {
+			set_variable = {AST.Labour_Support = 60}
+			custom_effect_tooltip = AST_Labour3
+		}
 		complete_effect = {
-			add_to_variable = {AST.Labour_Support = 5}
-			custom_effect_tooltip = AST_Labour1
+			set_variable = {AST.Labour_Support = 60}
+			custom_effect_tooltip = AST_Labour3
 		}
 	}
 
 	#	Liberty Missions 1
 	AST_Better_Streets = {
 		is_good = no
-		days_mission_timeout = 120
+		days_mission_timeout = 365
 		allowed = {
 			always = no
 		}
@@ -101,9 +109,13 @@ AST_Parliament_Category = {
 		available = {
 			dockyard > 6
 		}
+		timeout_effect = {
+			set_variable = {AST.Liberal_Support = 55}
+			custom_effect_tooltip = AST_Liberal2
+		}
 		complete_effect = {
-			add_to_variable = {AST.Liberal_Support = 8}
-			custom_effect_tooltip = AST_Liberal1
+			set_variable = {AST.Liberal_Support = 55}
+			custom_effect_tooltip = AST_Liberal2
 		}
 	}
 	#	Liberty Missions 3
@@ -116,9 +128,13 @@ AST_Parliament_Category = {
 		available = {
 			industrial_complex > 10
 		}
+		timeout_effect = {
+			set_variable = {AST.Liberal_Support = 60}
+			custom_effect_tooltip = AST_Liberal3
+		}
 		complete_effect = {
-			add_to_variable = {AST.Liberal_Support = 5}
-			custom_effect_tooltip = AST_Liberal1
+			set_variable = {AST.Liberal_Support = 60}
+			custom_effect_tooltip = AST_Liberal3
 		}
 	}
 }
