@@ -321,18 +321,68 @@ focus_tree = {
 		y = 1
 		available = {
 			has_equipment = {
-				infantry_equipment > 4999
+				infantry_equipment > 5999
 			}
 		}
 		prerequisite = {
 			focus = YEM_Military_Main
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				category = land_doctrine
-				cost_reduction = 0.1
-				uses = 2
+			swap_ideas = {
+				remove_idea = YEM_Poorly_Prepared1
+				add_idea = YEM_Poorly_Prepared2
 			}
+		}
+	}
+	focus = {
+		id = YEM_Military_Logistics
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Military_Enhancement
+		x = 0
+		y = 1
+		available = {
+			has_equipment = {
+				artillery_equipment > 999
+			}
+		}
+		prerequisite = {
+			focus = YEM_Military_Enhancement
+		}
+		completion_reward = {
+			remove_ideas = YEM_Poorly_Prepared2
+		}
+	}
+	focus = {
+		id = YEM_Rodent_Tactics
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Military_Logistics
+		x = -1
+		y = 1
+		available = {
+		}
+		prerequisite = {
+			focus = YEM_Military_Logistics
+		}
+		completion_reward = {
+			add_ideas = YEM_Rodent_Army
+		}
+	}
+	focus = {
+		id = YEM_War_Time_Readiness
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Military_Logistics
+		x = 1
+		y = 1
+		available = {
+		}
+		prerequisite = {
+			focus = YEM_Military_Logistics
+		}
+		completion_reward = {
+			add_ideas = YEM_Combat_Ready
 		}
 	}
 	focus = {

@@ -67,14 +67,20 @@ ideas = {
 		}
 		YEM_Poorly_Prepared2 = {
 			modifier = {
-				heat_attrition_factor = 0.5
-				supply_consumption_factor = 0.5
+				heat_attrition_factor = 0.3
+				supply_consumption_factor = 0.3
 			}
 		}
-		YEM_Poorly_Prepared3 = {
+		YEM_Rodent_Army = {
 			modifier = {
-				heat_attrition_factor = 0.5
-				supply_consumption_factor = 0.5
+				equipment_capture_factor = 0.4
+				org_loss_when_moving = -0.15
+			}
+		}
+		YEM_Combat_Ready = {
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.15
+				recon_factor = 0.15
 			}
 		}
 		YEM_Industrialisation_Efforts = {
