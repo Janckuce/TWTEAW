@@ -533,9 +533,11 @@ focus_tree = {
 			focus = YEM_Ottoman_Trade
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Declining_Power
-				add_idea = YEM_Declining_Power1
+			679 = {
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
 			}
 		}
 	}
@@ -551,15 +553,16 @@ focus_tree = {
 			TUR = {
 				num_of_factories > 60
 			}
-			has_idea = YEM_Declining_Power1
 		}
 		prerequisite = {
 			focus = YEM_Ottoman_Trade
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Declining_Power1
-				add_idea = YEM_Declining_Power2
+			679 = {
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
 			}
 		}
 	}
