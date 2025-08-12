@@ -687,7 +687,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 1
 		relative_position_id = YEM_Deciding_Our_Fate
-		x = 8
+		x = 10
 		y = 1
 		continue_if_invalid = yes
 		mutually_exclusive = {
@@ -709,7 +709,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YEM_Ottoman_March
+		id = YEM_Purchase_Licences
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = YEM_Us_And_The_Ottomans
@@ -723,6 +723,146 @@ focus_tree = {
 				remove_idea = YEM_Ottoman_Dependency
 				add_idea = YEM_Ottoman_Dependency_Fascist
 			}
+		}
+	}
+	focus = {
+		id = YEM_Conscription_Efforts
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Purchase_Licences
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Purchase_Licences
+		}
+		completion_reward = {
+			add_ideas = YEM_Extreme_Conscription
+		}
+	}
+	focus = {
+		id = YEM_Minimise_Oil_Consumption
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Conscription_Efforts
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Conscription_Efforts
+		}
+		completion_reward = {
+			add_ideas = YEM_Maximise_Oil_Production
+		}
+	}
+	focus = {
+		id = YEM_Closer_Ties
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Minimise_Oil_Consumption
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Minimise_Oil_Consumption
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Ottoman_Dependency_Fascist
+				add_idea = YEM_Ottoman_Dependency_Fascist1
+			}
+		}
+	}
+	focus = {
+		id = YEM_Our_Southern_Enemy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Closer_Ties
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Closer_Ties
+		}
+		completion_reward = {
+			292 = {
+				add_core_of = YEM
+				add_claim_by = YEM
+			}
+			678 = {
+				add_core_of = YEM
+				add_claim_by = YEM
+			}
+			OMA = {
+				country_event = ww1_oman.1
+			}
+		}
+	}
+	focus = {
+		#	Will Unlock Industrial Concern That Reduces Aircraft Production Cost
+		id = YEM_Aircraft_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Us_And_The_Ottomans
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = YEM_Us_And_The_Ottomans
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts
+		}
+	}
+	focus = {
+		id = YEM_Fighter_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Aircraft_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Aircraft_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Fighter
+		}
+	}
+	focus = {
+		id = YEM_Air_Support_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Fighter_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Fighter_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Air_Support
+		}
+	}
+	focus = {
+		id = YEM_Bomber_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Air_Support_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Air_Support_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Bombing
+		}
+	}
+	focus = {
+		id = YEM_Naval_Bomber_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Bomber_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Bomber_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Naval_Bombing
 		}
 	}
 }

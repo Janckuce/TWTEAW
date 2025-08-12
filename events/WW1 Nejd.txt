@@ -1,0 +1,24 @@
+country_event = {
+	id = ww1_oman.1
+	title = ww1_oman.1.t
+	desc = ww1_oman_desc.1
+	picture = GFX_report_event_tur_industry
+	is_triggered_only = yes
+	option = {
+		name = ww1_oman.1.a
+		ai_chance = {
+			factor = 100
+		}
+		YEM = {
+			annex_country = {
+				target = OMA
+			}
+		}
+	}
+	option = {
+		name = ww1_oman.1.a
+		YEM = {
+			country_event = ww1_yemen.1
+		}
+	}
+}
