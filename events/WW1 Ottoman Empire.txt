@@ -422,6 +422,34 @@ country_event = {
 	}
 	option = {
 		name = ww1_ottoman.10.b
-		
+	}
+}
+
+# Aid Yemen
+country_event = {
+	id = ww1_ottoman.11
+	title = ww1_ottoman.11.t
+	desc = ww1_ottoman_desc.11
+	picture = GFX_report_event_tur_industry
+	is_triggered_only = yes
+	option = {
+		name = ww1_ottoman.11.a
+		679 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	option = {
+		name = ww1_ottoman.11.b
+		679 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
 	}
 }
