@@ -1,0 +1,16 @@
+country_event = {
+	id = ww1_yemen.1
+	title = ww1_yemen.1.t
+	desc = ww1_yemen_desc.1
+	picture = GFX_report_event_tur_industry
+	is_triggered_only = yes
+	option = {
+		name = ww1_yemen.1.a
+		declare_war_on = {
+			target = OMA
+		}
+	}
+	option = {
+		name = ww1_yemen.1.a
+	}
+}
