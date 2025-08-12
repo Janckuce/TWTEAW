@@ -453,3 +453,41 @@ country_event = {
 		}
 	}
 }
+
+# Yemen Gains Territories
+country_event = {
+	id = ww1_ottoman.12
+	title = ww1_ottoman.12.t
+	desc = ww1_ottoman_desc.12
+	picture = GFX_report_event_tur_industry
+	is_triggered_only = yes
+	option = {
+		name = ww1_ottoman.12.a
+		ai_chance = {
+			factor = 100
+		}
+		656 = {
+			set_state_owner_to = YEM
+			set_state_controller_to = YEM
+			remove_claim_by = YEM
+		}
+		294 = {
+			set_state_owner_to = YEM
+			set_state_controller_to = YEM
+			remove_claim_by = YEM
+		}
+		658 = {
+			set_state_owner_to = YEM
+			set_state_controller_to = YEM
+			remove_claim_by = YEM
+		}
+		765 = {
+			set_state_owner_to = YEM
+			set_state_controller_to = YEM
+			remove_claim_by = YEM
+		}
+	}
+	option = {
+		name = ww1_ottoman.12.b
+	}
+}
