@@ -1,5 +1,21 @@
 ideas = {
 	country = {
+		YEM_Jabal_Forces = {
+			picture = ast_volunteer_defence_corps
+			available = {
+				tag = YEM
+				date > 1914.7.28
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteers_tension = -1
+				send_volunteer_factor = 0.3
+				weekly_manpower = 300
+			}
+		}
 		YEM_Relevant_Capital = {
 			picture = BEL_fonderie_royale_de_canons_liege
 			modifier = {
@@ -18,67 +34,45 @@ ideas = {
 				political_power_gain = 1
 			}
 		}
-		YEM_Jabal_Forces = {
-			picture = ast_volunteer_defence_corps
-			rule = {
-				can_send_volunteers = yes
-			}
-			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
-				send_volunteer_factor = 0.3
-			}
-		}
 		YEM_Ottoman_Dependency = {
 			picture = tur_kemalist_army_officers_limited_power_disloyal
 			targeted_modifier = {
 				tag = TUR
 				cic_to_target_factor = 0.25
-				mic_to_target_factor = 0.25
 			}
 		}
 		YEM_Ottoman_Dependency_Royalist = {
 			picture = tur_kemalist_army_officers_powerful_neutral
-			modifier = {
-			}
 			targeted_modifier = {
 				tag = TUR
 				cic_to_target_factor = 0.25
-				mic_to_target_factor = 0.25
 				trade_cost_for_target_factor = -0.125
 			}
 		}
 		YEM_Ottoman_Dependency_Royalist1 = {
 			picture = tur_kemalist_army_officers_powerful_neutral
-			modifier = {
-			}
 			targeted_modifier = {
 				tag = TUR
 				cic_to_target_factor = 0.25
-				mic_to_target_factor = 0.25
 				trade_cost_for_target_factor = -0.25
 			}
 		}
 		YEM_Ottoman_Dependency_Royalist2 = {
 			picture = tur_kemalist_army_officers_powerful_neutral
 			modifier = {
+				production_speed_industrial_complex_factor = 0.15
 			}
 			targeted_modifier = {
 				tag = TUR
 				cic_to_target_factor = 0.25
-				mic_to_target_factor = 0.25
 				trade_cost_for_target_factor = -0.25
-				production_speed_industrial_complex_factor = 0.15
 			}
 		}
 		YEM_Ottoman_Dependency_Fascist = {
 			picture = tur_kemalist_officers_loyalty_effect
-			modifier = {
-			}
 			targeted_modifier = {
 				tag = TUR
 				cic_to_target_factor = 0.25
-				mic_to_target_factor = 0.25
 				license_purchase_cost = -0.125
 				license_production_speed = 0.125
 				license_tech_difference_speed = 0.125

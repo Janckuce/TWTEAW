@@ -29,7 +29,12 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 0
-		completion_reward = {}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
 	}
 	focus = {
 		id = YEM_Industry_Main
@@ -105,11 +110,9 @@ focus_tree = {
 			focus = YEM_Industry_Main
 		}
 		completion_reward = {
-			675 = {
-				add_resource = {
-					type = oil
-					amount = 10
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -143,9 +146,11 @@ focus_tree = {
 			focus = YEM_Industry2
 		}
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
+			675 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
 			}
 		}
 	}
@@ -162,7 +167,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 1
 			}
 		}
 	}
@@ -318,7 +323,7 @@ focus_tree = {
 		y = 1
 		available = {
 			has_equipment = {
-				infantry_equipment > 5999
+				infantry_equipment > 3999
 			}
 		}
 		prerequisite = {
@@ -340,7 +345,7 @@ focus_tree = {
 		y = 1
 		available = {
 			has_equipment = {
-				artillery_equipment > 999
+				artillery_equipment > 399
 			}
 		}
 		prerequisite = {
@@ -357,7 +362,8 @@ focus_tree = {
 		relative_position_id = YEM_Military_Logistics
 		x = -1
 		y = 1
-		available = {
+		mutually_exclusive = {
+			focus = YEM_War_Time_Readiness
 		}
 		prerequisite = {
 			focus = YEM_Military_Logistics
@@ -373,7 +379,8 @@ focus_tree = {
 		relative_position_id = YEM_Military_Logistics
 		x = 1
 		y = 1
-		available = {
+		mutually_exclusive = {
+			focus = YEM_Rodent_Tactics
 		}
 		prerequisite = {
 			focus = YEM_Military_Logistics
@@ -392,7 +399,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 30
+				num_of_factories > 50
 			}
 		}
 		prerequisite = {
@@ -415,7 +422,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 40
+				num_of_factories > 60
 			}
 		}
 		prerequisite = {
@@ -441,10 +448,10 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 50
+				num_of_factories > 70
 			}
 			YEM = {
-				num_of_factories > 20
+				num_of_factories > 10
 			}
 		}
 		prerequisite = {
@@ -478,7 +485,7 @@ focus_tree = {
 		}
 		available = {
 			TUR = {
-				num_of_factories > 30
+				num_of_factories > 50
 			}
 		}
 		prerequisite = {
@@ -518,7 +525,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 40
+				num_of_factories > 60
 			}
 			has_idea = YEM_Declining_Power
 		}
@@ -542,7 +549,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 40
+				num_of_factories > 60
 			}
 			has_idea = YEM_Declining_Power1
 		}
@@ -688,7 +695,7 @@ focus_tree = {
 		}
 		available = {
 			TUR = {
-				num_of_factories > 30
+				num_of_factories > 50
 			}
 		}
 		prerequisite = {
