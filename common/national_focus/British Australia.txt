@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = AST_Status_Of_Nation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ast_our_nation
 		cost = 10
 		x = 5
 		y = 0
@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Industrial_Expansion
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_1
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
 		x = -4
@@ -66,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Road_Expansion
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10
 		relative_position_id = AST_Industrial_Expansion
 		x = 0
@@ -108,7 +108,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Harbour_Expansion1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		relative_position_id = AST_Road_Expansion
 		x = -1
@@ -130,7 +130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Harbour_Expansion2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_continuous_naval_production
 		cost = 10
 		relative_position_id = AST_Road_Expansion
 		x = 1
@@ -152,7 +152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Industry1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_2
 		cost = 10
 		relative_position_id = AST_Road_Expansion
 		x = -1
@@ -179,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Industry2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_3
 		cost = 10
 		relative_position_id = AST_Road_Expansion
 		x = 1
@@ -206,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Finish_Industrialization
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 10
 		relative_position_id = AST_Road_Expansion
 		x = 0
@@ -234,7 +234,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Naval_Research
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BRA_navy
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
 		x = 0
@@ -256,7 +256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Destroyer_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 10
 		relative_position_id = AST_Naval_Research
 		x = -1
@@ -278,7 +278,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Light_Cruiser_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_battleship
 		cost = 10
 		relative_position_id = AST_Naval_Research
 		x = 1
@@ -300,7 +300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Royal_Australian_Marines
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ast_marines
 		cost = 10
 		relative_position_id = AST_Naval_Research
 		x = 0
@@ -324,7 +324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Naval_Warfare
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10
 		relative_position_id = AST_Royal_Australian_Marines
 		x = 0
@@ -342,7 +342,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Academy_Of_Science
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_africa_naval
 		cost = 10
 		relative_position_id = AST_Naval_Warfare
 		x = 0
@@ -357,7 +357,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Military_Adjustments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 5
 		relative_position_id = AST_Status_Of_Nation
 		x = 4
@@ -375,7 +375,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Minor_Military_Investment
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ast_army_bad
 		cost = 7.2
 		relative_position_id = AST_Military_Adjustments
 		x = -1
@@ -396,7 +396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Minor_Military_Training1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_manpower
 		cost = 10
 		relative_position_id = AST_Minor_Military_Investment
 		x = 0
@@ -414,7 +414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Minor_Military_Training2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_army_doctrines_2
 		cost = 10
 		relative_position_id = AST_Minor_Military_Training1
 		x = 0
@@ -432,7 +432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Minor_Military_Training3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
 		cost = 10
 		relative_position_id = AST_Minor_Military_Training2
 		x = 0
@@ -450,7 +450,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Major_Military_Investment
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ast_army_good
 		cost = 7.2
 		relative_position_id = AST_Military_Adjustments
 		x = 1
@@ -471,7 +471,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Major_Military_Training1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_artillery
 		cost = 10
 		relative_position_id = AST_Major_Military_Investment
 		x = 0
@@ -489,7 +489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Major_Military_Training2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 10
 		relative_position_id = AST_Major_Military_Training1
 		x = 0
@@ -507,7 +507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Major_Military_Training3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_little_entente
 		cost = 10
 		relative_position_id = AST_Major_Military_Training2
 		x = 0
@@ -525,7 +525,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Hold_Elections
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_election
 		cost = 10
 		relative_position_id = AST_Status_Of_Nation
 		x = 12
@@ -569,7 +569,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Labour_Victory
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_red_flags
 		cost = 10000
 		relative_position_id = AST_Hold_Elections
 		x = -3
@@ -587,7 +587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Economy_Spending
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_a_modern_economy
 		cost = 10
 		relative_position_id = AST_Labour_Victory
 		x = 0
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Higher_Wages
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_economic_recovery
 		cost = 10
 		relative_position_id = AST_Economy_Spending
 		x = 0
@@ -649,7 +649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_More_Worker_Rights
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		cost = 10
 		relative_position_id = AST_Higher_Wages
 		x = 0
@@ -668,7 +668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Fruits_Of_Our_Labour
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
 		cost = 10
 		relative_position_id = AST_More_Worker_Rights
 		x = 0
@@ -712,7 +712,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Equal_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_work_on_the_panamerican_highway
 		cost = 10
 		relative_position_id = AST_Labour_Victory
 		x = -2
@@ -755,7 +755,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Spread_Our_Wealth
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_road_investment
 		cost = 10
 		relative_position_id = AST_Equal_Investments
 		x = 0
@@ -801,7 +801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Bless_The_Land
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_coal_mining
 		cost = 10
 		relative_position_id = AST_Spread_Our_Wealth
 		x = 0
@@ -839,7 +839,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Liberal_Victory
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ARG_defense_and_democracy
 		cost = 10000
 		relative_position_id = AST_Hold_Elections
 		x = 3
@@ -858,7 +858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Environmentalist_Movement
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 10
 		relative_position_id = AST_Liberal_Victory
 		x = 0
@@ -930,7 +930,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Reduced_Polution
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		cost = 10
 		relative_position_id = AST_Environmentalist_Movement
 		x = 0
@@ -948,7 +948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Grant_Liberties
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_continuous_boost_freedom
 		cost = 10
 		relative_position_id = AST_Reduced_Polution
 		x = 0
@@ -1011,7 +1011,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Concecrated_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		cost = 10
 		relative_position_id = AST_Liberal_Victory
 		x = 2
@@ -1050,7 +1050,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Arms_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_industry
 		cost = 10
 		relative_position_id = AST_Concecrated_Industry
 		x = 0
@@ -1088,7 +1088,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_Naval_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 10
 		relative_position_id = AST_Arms_Industry
 		x = 0
