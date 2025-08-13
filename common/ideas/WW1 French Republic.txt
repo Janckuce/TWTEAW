@@ -1,206 +1,113 @@
 ideas = {
-    country = {
-
-		FRA_disjointed_government_ww1 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = generic_disjointed_gov
-
+	country = {
+		FRA_Sour_Loser = {
 			modifier = {
-				political_power_cost = 0.4
-				war_support_factor = -0.20
-				stability_factor = -0.40
-				surrender_limit = -0.1
+				conscription = 0.025
 			}
 		}
-		
-		FRA_entente = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = FRA_entente
-			
-			available = {
-				ROOT = { is_in_faction_with = RUS }
-			}
-
+		FRA_Carry_On = {
 			modifier = {
-				war_support_factor = 0.05
-				training_time_army_factor = -0.1
-				army_org_factor = 0.05
+				party_popularity_stability_factor = 0.15
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
-		
-		FRA_stagnant_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = usa_great_depression_2
-
+		FRA_Fragmented_Government = {
 			modifier = {
-				political_power_gain = -0.05
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.3
-				industrial_capacity_factory = -0.2
+				political_advisor_cost_factor = 0.15
+				stability_factor = -0.4
+				war_support_factor = -0.4
 			}
 		}
-		
-		FRA_sour_losers = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = FRA_scw_intervention_nationalists_focus
-
+		FRA_Fragmented_Government1 = {
 			modifier = {
-				political_power_gain = 0.1
-				conscription = 0.02
-			}
-		}
-		
-		FRA_french_colonies = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = generic_goods_red_bonus
-
-			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				local_resources_factor = 0.1
-			}
-		}
-		
-		FRA_fortificate_german_border = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = FRA_fortification_focus
-
-			modifier = {
-				production_speed_bunker_factor = 0.2
-				production_speed_industrial_complex_factor = -0.1
-			}
-		}
-		FRA_champagne_riots = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = FRA_political_violence
-
-			modifier = {
+				political_advisor_cost_factor = 0.1
 				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+		FRA_Fragmented_Government2 = {
+			modifier = {
+				political_advisor_cost_factor = 0.05
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+		}
+		FRA_Fragmented_Government3 = {
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		FRA_Halted_Industrial_Power = {
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				production_speed_industrial_complex_factor = -0.3
+			}
+		}
+		FRA_Halted_Industrial_Power1 = {
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+		FRA_Halted_Industrial_Power2 = {
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
 				production_speed_industrial_complex_factor = -0.1
-				political_power_gain = -0.1
 			}
 		}
-		FRA_british_goods_idea = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = eng_the_sun_never_sets
-
+		FRA_War_Readiness = {
 			modifier = {
-			    consumer_goods_factor = -0.15
+				coordination_bonus = 0.08
+				army_org_factor = 0.08
 			}
 		}
-		FRA_they_shall_not_pass = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = FRA_undividable
-
+		FRA_War_Readiness1 = {
 			modifier = {
-			    army_core_defence_factor = 0.1
+				coordination_bonus = 0.08
+				army_org_factor = 0.08
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+				}
 			}
 		}
-		FRA_african_conscription = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = generic_org_of_african_unity
-
+		FRA_War_Readiness2 = {
 			modifier = {
-			    conscription_factor = 0.1
+				coordination_bonus = 0.08
+				army_org_factor = 0.08
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+				}
+			}
+		}
+		FRA_Increased_Production_Max = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		FRA_Increased_Production_Gain = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		FRA_Military_Construction_Efforts = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 	}

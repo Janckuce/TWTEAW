@@ -110,17 +110,19 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.40
+		progress = 0.6
 		amount = 1
 		industrial_manufacturer = mio:FRA_acf_organization
 	}
+
+	#Light Cruisers
 	add_equipment_production = {
 		equipment = {
-			type = battleship_1
+			type = light_cruiser_1
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.20
+		progress = 0.8
 		amount = 1
 		industrial_manufacturer = mio:FRA_acf_organization
 	}
@@ -132,7 +134,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.80
+		progress = 0.8
 		amount = 1
 		industrial_manufacturer = mio:FRA_acf_organization
 	}
@@ -142,7 +144,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.60
+		progress = 0.6
 		amount = 1
 		industrial_manufacturer = mio:FRA_acf_organization
 	}
@@ -162,7 +164,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.50
+		progress = 0.5
 		amount = 1
 		industrial_manufacturer = mio:FRA_acf_organization
 	}
@@ -182,89 +184,7 @@ instant_effect = {
 			creator = "FRA" 
 		}
 		requested_factories = 1
-		progress = 0.40
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.35
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.30
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.20
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.10
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-    
-	#Light Cruisers
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-		industrial_manufacturer = mio:FRA_acf_organization
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.20
+		progress = 0.4
 		amount = 1
 		industrial_manufacturer = mio:FRA_acf_organization
 	}

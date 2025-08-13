@@ -1,0 +1,67 @@
+FRA_power_balance = {
+	initial_value = 0
+	left_side = FRA_left_side
+	right_side = FRA_right_side
+	decision_category = FRA_balance_of_power_category # Category for the power balance decision
+
+	range = {
+		id = FRA_power_centre_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			political_power_factor = 0.15 # Adds a modifier when balance of power is in the center
+		}
+		on_activate = {
+			# Whatever is here will execute when the power balance is at the center
+		}
+		on_deactivate = {
+			# Whatever is here will execute when the power balance is not at the center
+		}
+	}
+
+	side = { # This is the left side of the power balance
+		id = FRA_left_side
+		icon = GFX_idea_aus_huns_mad
+
+		range = { # First range marker
+			id = FRA_left_half_side_range
+			min = -1
+			max = -0.5
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		range = { # Second range marker
+			id = FRA_left_side_range
+			min = -0.5
+			max = 0
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+	}
+
+	side = {
+		id = FRA_right_side
+		icon = GFX_idea_aus_huns_stronk
+
+		range = {
+			id = FRA_right_side_range
+			min = 0.0
+			max = 0.5
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		range = {
+			id = FRA_right_half_side_range
+			min = 0.5
+			max = 1.0
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	}
+}
