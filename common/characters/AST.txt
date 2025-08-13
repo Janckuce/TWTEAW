@@ -12,4 +12,88 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	ast_billy_hughes = {
+    name = "William Morris Billy Hughes"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_advisor_auh_ernest_von_koerber"
+		    }
+		}
+			country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { AST_joker_australia }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_billy_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+	ast_joseph_cook = {
+    name = "Joseph Cook"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_advisor_auh_ernest_von_koerber"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_joseph_cook }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_billy_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+	ast_george_pearce = {
+    name = "George Pearce"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_advisor_auh_ernest_von_koerber"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_george_pearce }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_george_pearce
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
 }
