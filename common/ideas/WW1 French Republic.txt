@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		FRA_Sour_Loser = {
 			modifier = {
-				conscription = 0.025
+				conscription = 0.015
 			}
 		}
 		FRA_Carry_On = {
@@ -10,6 +10,35 @@ ideas = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		FRA_Carry_On_Nation1 = {
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.1
+				}
+			}
+		}
+		FRA_Carry_On_Nation2 = {
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			equipment_bonus = {
+				heavy_artillery_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+		FRA_Commune_Ideals = {
+			modifier = {
+				conscription = 0.03
 			}
 		}
 		FRA_Fragmented_Government = {
@@ -95,6 +124,31 @@ ideas = {
 				}
 			}
 		}
+		FRA_Red_Army = {
+			modifier = {
+				non_core_manpower = 0.15
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.05
+			}
+		}
+		FRA_Red_Army_Shorten = {
+			modifier = {
+				non_core_manpower = 0.15
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.05
+				training_time_army_factor = -0.1
+				coordination_bonus = -0.05
+			}
+		}
+		FRA_Red_Army_Lengthen = {
+			modifier = {
+				non_core_manpower = 0.15
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.05
+				training_time_army_factor = 0.1
+				coordination_bonus = 0.05
+			}
+		}
 		FRA_Increased_Production_Max = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
@@ -102,7 +156,7 @@ ideas = {
 		}
 		FRA_Increased_Production_Gain = {
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 		FRA_Military_Construction_Efforts = {

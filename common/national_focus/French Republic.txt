@@ -33,6 +33,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FRA_Sabre_Of_Honour
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Morocco_Conundrum
+		x = 0
+		y = 1
+		available = {
+			has_war = yes
+			BEL = {
+				has_war = yes
+			}
+			date > 1914.7.28
+		}
+		prerequisite = {
+			focus = FRA_Morocco_Conundrum
+		}
+		completion_reward = {
+			BEL = {
+				add_timed_idea = {
+					idea = BEL_Sabre_From_France
+					days = 365
+				}
+			}
+		}
+	}
+	focus = {
 		id = FRA_Industry_Main
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
@@ -364,13 +390,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		available = {
-			not = {
-				or = {
-					has_idea = FRA_Halted_Industrial_Power
-					has_idea = FRA_Halted_Industrial_Power1
-					has_idea = FRA_Halted_Industrial_Power2
-				}
-			}
+			has_completed_focus = FRA_Finalise_Industrial_Capacity
 		}
 		prerequisite = {
 			focus = FRA_Morocco_Conundrum
@@ -437,17 +457,13 @@ focus_tree = {
 		id = FRA_Republique
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 20
+		x = 18
 		y = 0
+		mutually_exclusive = {
+			focus = FRA_Commune
+		}
 		available = {
-			not = {
-				or = {
-					has_idea = FRA_Fragmented_Government
-					has_idea = FRA_Fragmented_Government1
-					has_idea = FRA_Fragmented_Government2
-					has_idea = FRA_Fragmented_Government3
-				}
-			}
+			has_completed_focus = FRA_Look_Towards_The_Future
 		}
 		completion_reward = {
 			remove_ideas = FRA_Sour_Loser
@@ -455,7 +471,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_In_The_Name_Of_Democracy
+		id = FRA_Democratie
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = FRA_Republique
@@ -465,6 +481,226 @@ focus_tree = {
 			focus = FRA_Republique
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 16
+				}
+				16 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			custom_effect_tooltip = FRA_Economist_Tooltip
+		}
+	}
+	focus = {
+		id = FRA_Liberte
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Democratie
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Democratie
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.1
+				uses = 2
+			}
+			ENG = {
+				add_doctrine_cost_reduction = {
+					category = land_doctrine
+					cost_reduction = 0.1
+					uses = 2
+				}
+			}
+			RUS = {
+				add_doctrine_cost_reduction = {
+					category = land_doctrine
+					cost_reduction = 0.1
+					uses = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Parti
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Liberte
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Liberte
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = FRA_Entente_Sharing_Group
+			ENG = {
+				add_to_tech_sharing_group = FRA_Entente_Sharing_Group
+			}
+			RUS = {
+				add_to_tech_sharing_group = FRA_Entente_Sharing_Group
+			}
+		}
+	}
+	focus = {
+		id = FRA_Nation1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Parti
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Nation2
+		}
+		prerequisite = {
+			focus = FRA_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Carry_On
+				add_idea = FRA_Carry_On_Nation1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Nation2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Parti
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Nation1
+		}
+		prerequisite = {
+			focus = FRA_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Carry_On
+				add_idea = FRA_Carry_On_Nation2
+			}
+		}
+	}
+
+	#	Commune Path
+
+	focus = {
+		id = FRA_Commune
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 22
+		y = 0
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		mutually_exclusive = {
+			focus = FRA_Republique
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Sour_Loser
+				add_idea = FRA_Commune_Ideals
+			}
+		}
+	}
+	focus = {
+		id = FRA_French_Red_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Commune
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Commune
+		}
+		completion_reward = {
+			add_ideas = FRA_Red_Army
+		}
+	}
+	focus = {
+		id = FRA_Army_Expertise
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_French_Red_Army
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_French_Red_Army
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.2
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Reserves
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Army_Expertise
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Army_Expertise
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 600
+			}
+		}
+	}
+	focus = {
+		id = FRA_Shorten_Training
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Reserves
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Lengthen_Training
+		}
+		prerequisite = {
+			focus = FRA_Reserves
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Red_Army
+				add_idea = FRA_Red_Army_Shorten
+			}
+		}
+	}
+	focus = {
+		id = FRA_Lengthen_Training
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Reserves
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Shorten_Training
+		}
+		prerequisite = {
+			focus = FRA_Reserves
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Red_Army
+				add_idea = FRA_Red_Army_Lengthen
+			}
 		}
 	}
 }
