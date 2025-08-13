@@ -10737,7 +10737,7 @@ leader_traits = {
 		production_speed_industrial_complex_factor = 0.045
 		production_speed_dockyard_factor = 0.075
 		war_support_factor = 0.05
-		industrial_capacity_dockyard = 0.075
+		industrial_capacity_dockyard = 0.05
 
 	}	
 
@@ -10749,6 +10749,42 @@ leader_traits = {
 		production_speed_infrastructure_factor = 0.075
 		consumer_goods_factor = -0.125
 
+	}
+
+		ast_george_pearce = { 
+		sprite = 10
+		random = no
+		production_speed_arms_factory_factor = 0.065
+		war_support_factor = 0.075
+		political_power_gain = 0.25
+		conversion_cost_civ_to_mil_factor = -0.25
+		production_speed_bunker_factor = 0.15
+		production_speed_coastal_bunker_factor = 0.15
+
+	}
+
+		ast_denison_miller = { 
+		sprite = 10
+		random = no
+		war_support_factor = 0.025
+		production_speed_arms_factory_factor = 0.25
+		production_speed_industrial_complex_factor = 0.1
+		industrial_capacity_dockyard = 0.05
+		consumer_goods_factor = -0.075
+	}
+
+		ast_henry_bournes_higgins = { 
+		sprite = 10
+		random = no
+		resource_trade_cost_bonus_per_factory = 1
+		political_advisor_cost_factor = -0.15
+		political_power_factor = 0.1
+		army_advisor_cost_factor = -0.15
+		navy_advisor_cost_factor = -0.15
+		command_power_gain_mult = 0.15
+		experience_gain_army_factor = 0.15
+		experience_gain_navy_factor = 0.15
+		party_popularity_stability_factor = 0.15
 	}
 
 	### Belgian Country Leaders ###

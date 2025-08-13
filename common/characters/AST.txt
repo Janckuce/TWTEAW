@@ -70,8 +70,8 @@ characters={
     }
 }
 
-	ast_george_pearce = {
-    name = "George Pearce"
+	ast_denison_miller = {
+    name = "Denison Miller"
             portraits = {
 			civilian = {
 				large = "GFX_advisor_auh_ernest_von_koerber"
@@ -80,10 +80,38 @@ characters={
 		}
     advisor = {
         slot = political_advisor
-        traits = { ast_george_pearce }
+        traits = { ast_denison_miller }
         cost = 150
         can_be_fired = yes
-        idea_token = ast_george_pearce
+        idea_token = ast_denison_miller
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
+}
+
+	ast_henry_bournes_higgins = {
+    name = "Henry Bournes Higgins"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_billy_hughes"
+                small = "GFX_ast_billy_hughes_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_henry_bournes_higgins }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_henry_bournes_higgins
 
         allowed = {
             OR = {
