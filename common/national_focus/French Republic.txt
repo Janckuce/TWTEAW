@@ -461,6 +461,7 @@ focus_tree = {
 		y = 0
 		mutually_exclusive = {
 			focus = FRA_Commune
+			focus = FRA_House_Of_Bourbon
 		}
 		available = {
 			has_completed_focus = FRA_Look_Towards_The_Future
@@ -549,14 +550,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_Nation1
+		id = FRA_Towed_Artillery_Primacy
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = FRA_Parti
 		x = -1
 		y = 1
 		mutually_exclusive = {
-			focus = FRA_Nation2
+			focus = FRA_Heavy_Artillery_Primacy
 		}
 		prerequisite = {
 			focus = FRA_Parti
@@ -564,19 +565,19 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = FRA_Carry_On
-				add_idea = FRA_Carry_On_Nation1
+				add_idea = FRA_Carry_On_Artillery
 			}
 		}
 	}
 	focus = {
-		id = FRA_Nation2
+		id = FRA_Heavy_Artillery_Primacy
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = FRA_Parti
 		x = 1
 		y = 1
 		mutually_exclusive = {
-			focus = FRA_Nation1
+			focus = FRA_Towed_Artillery_Primacy
 		}
 		prerequisite = {
 			focus = FRA_Parti
@@ -584,7 +585,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = FRA_Carry_On
-				add_idea = FRA_Carry_On_Nation2
+				add_idea = FRA_Carry_On_Heavy_Artillery
 			}
 		}
 	}
@@ -602,11 +603,15 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_Republique
+			focus = FRA_House_Of_Bourbon
 		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = FRA_Sour_Loser
 				add_idea = FRA_Commune_Ideals
+			}
+			set_politics = {
+				ruling_party = communism
 			}
 		}
 	}
@@ -700,6 +705,461 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = FRA_Red_Army
 				add_idea = FRA_Red_Army_Lengthen
+			}
+		}
+	}
+
+	#	Bourbon Path
+
+	focus = {
+		id = FRA_House_Of_Bourbon
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 26
+		y = 0
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		mutually_exclusive = {
+			focus = FRA_Republique
+			focus = FRA_Commune
+		}
+		completion_reward = {
+			remove_ideas = FRA_Sour_Loser
+			add_ideas = FRA_Bourbon
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = "Maison De Bourbon"
+				name = "Bourbon"
+			}
+		}
+	}
+	focus = {
+		id = FRA_Naval_Advancements
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_House_Of_Bourbon
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_House_Of_Bourbon
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Naval_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Naval_Advancements
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Naval_Advancements
+		}
+		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+			15 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Napoleon_Class_Ship
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Naval_Investments
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Screens_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Naval_Investments
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+				}
+				name = "Napoleon I"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+	focus = {
+		id = FRA_Screens_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Napoleon_Class_Ship
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Capital_Ships_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Napoleon_Class_Ship
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Louis XIX"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Henry V"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Louis Philippe II"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+	focus = {
+		id = FRA_Capital_Ships_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Napoleon_Class_Ship
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FRA_Napoleon_Class_Ship
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Louis XVIII"
+				requested_factories = 1
+				progress = 0.4
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Charles X"
+				requested_factories = 1
+				progress = 0.4
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Louis Philippe I"
+				requested_factories = 1
+				progress = 0.4
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+
+	# Main Military Focus
+
+	focus = {
+		id = FRA_Superior_Warfare
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 15
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Combat
+		}
+	}
+	focus = {
+		id = FRA_Expert_Combatants
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Strength_In_Numbers
+		}
+		prerequisite = {
+			focus = FRA_Superior_Warfare
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Combat
+				add_idea = FRA_Expert_Combat
+			}
+		}
+	}
+	focus = {
+		id = FRA_Strength_In_Numbers
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Expert_Combatants
+		}
+		prerequisite = {
+			focus = FRA_Superior_Warfare
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Combat
+				add_idea = FRA_Numbers_Combat
+			}
+		}
+	}
+	focus = {
+		id = FRA_Defensive_Nation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Expert_Combatants
+			focus = FRA_Strength_In_Numbers
+		}
+		completion_reward = {
+			add_ideas = FRA_Defensive_Experts
+		}
+	}
+	focus = {
+		id = FRA_Military_Industrial_Power2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Defensive_Nation
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Defensive_Nation
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Defensive_Experts
+				add_idea = FRA_Defensive_Experts1
+			}
+		}
+	}
+
+	#	Main Air Focus
+
+	focus = {
+		id = FRA_Superior_Air_Force
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 19
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Air_Combat
+		}
+	}
+	focus = {
+		id = FRA_Expert_Air_Aces
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Air_Force
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Superior_Air_Force
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat
+				add_idea = FRA_Superior_Air_Combat1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Fighter_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Air_Support_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Expert_Air_Aces
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat1
+				add_idea = FRA_Superior_Air_Combat_Fighter
+			}
+		}
+	}
+	focus = {
+		id = FRA_Air_Support_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Fighter_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Expert_Air_Aces
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat1
+				add_idea = FRA_Superior_Air_Combat_Air_Support
+			}
+		}
+	}
+	focus = {
+		id = FRA_Air_Exercises
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Fighter_Primacy
+			focus = FRA_Air_Support_Primacy
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Air_Exercise
+		}
+	}
+
+	#	Main Naval Focus
+
+	focus = {
+		id = FRA_Superior_Naval_Power
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 23
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Naval_Combat
+		}
+	}
+	focus = {
+		id = FRA_Faster_Repairing
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Naval_Power
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Superior_Naval_Power
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat
+				add_idea = FRA_Superior_Naval_Combat1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Iron_Admirals
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Faster_Repairing
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Faster_Repairing
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat1
+				add_idea = FRA_Superior_Naval_Combat2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Destroyer_Expertise
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Iron_Admirals
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Capital_Ship_Expertise
+		}
+		prerequisite = {
+			focus = FRA_Iron_Admirals
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat2
+				add_idea = FRA_Superior_Naval_Combat_Destroyer
+			}
+		}
+	}
+	focus = {
+		id = FRA_Capital_Ship_Expertise
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Iron_Admirals
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Destroyer_Expertise
+		}
+		prerequisite = {
+			focus = FRA_Iron_Admirals
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat2
+				add_idea = FRA_Superior_Naval_Combat_Capital_Ship
 			}
 		}
 	}

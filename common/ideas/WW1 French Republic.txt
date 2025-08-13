@@ -12,7 +12,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
-		FRA_Carry_On_Nation1 = {
+		FRA_Carry_On_Artillery = {
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
@@ -24,7 +24,7 @@ ideas = {
 				}
 			}
 		}
-		FRA_Carry_On_Nation2 = {
+		FRA_Carry_On_Heavy_Artillery = {
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
@@ -39,6 +39,12 @@ ideas = {
 		FRA_Commune_Ideals = {
 			modifier = {
 				conscription = 0.03
+			}
+		}
+		FRA_Bourbon = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 		FRA_Fragmented_Government = {
@@ -162,6 +168,115 @@ ideas = {
 		FRA_Military_Construction_Efforts = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		FRA_Superior_Combat = {
+			modifier = {
+				dig_in_speed_factor = 0.05
+			}
+		}
+		FRA_Expert_Combat = {
+			modifier = {
+				dig_in_speed_factor = 0.05
+				org_loss_at_low_org_factor = -0.05
+			}
+		}
+		FRA_Numbers_Combat = {
+			modifier = {
+				dig_in_speed_factor = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+		FRA_Defensive_Experts = {
+			modifier = {
+				recon_factor_while_entrenched = 0.05
+			}
+		}
+		FRA_Defensive_Experts1 = {
+			modifier = {
+				recon_factor_while_entrenched = 0.05
+				max_dig_in_factor = 0.05
+			}
+		}
+		FRA_Superior_Air_Combat = {
+			modifier = {
+				air_ace_generation_chance_factor = 0.075
+			}
+		}
+		FRA_Superior_Air_Combat1 = {
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+			}
+		}
+		FRA_Superior_Air_Combat_Fighter = {
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		FRA_Superior_Air_Combat_Air_Support = {
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		FRA_Superior_Air_Exercise = {
+			modifier = {
+				air_wing_xp_loss_when_killed_factor = -0.2
+			}
+		}
+		FRA_Superior_Naval_Combat = {
+			modifier = {
+				screening_efficiency = 0.05
+			}
+		}
+		FRA_Superior_Naval_Combat1 = {
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+			}
+		}
+		FRA_Superior_Naval_Combat2 = {
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+				trait_ironside_xp_gain_factor = 0.1
+			}
+		}
+		FRA_Superior_Naval_Combat_Destroyer = {
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+				trait_ironside_xp_gain_factor = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		FRA_Superior_Naval_Combat_Capital_Ship = {
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+				trait_ironside_xp_gain_factor = 0.1
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					build_cost_ic = -0.1
+				}
 			}
 		}
 	}
