@@ -216,6 +216,14 @@ focus_tree = {
 		completion_reward = {
 			679 = {
 				add_extra_state_shared_building_slots = 6
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
 			}
 			swap_ideas = {
 				remove_idea = YEM_Relevant_Capital
@@ -271,30 +279,29 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-			industrial_complex > 14
+			industrial_complex > 19
 		}
 		prerequisite = {
 			focus = YEM_Industrial_Expansion
-		}
-		prerequisite = {
 			focus = YEM_Agricultural_Expansion
 		}
 		completion_reward = {
-			679 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
 			swap_ideas = {
 				remove_idea = YEM_Famous_Capital
 				add_idea = YEM_Wonder_Capital
 			}
+			679 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -529,7 +536,6 @@ focus_tree = {
 			TUR = {
 				num_of_factories > 55
 			}
-			has_idea = YEM_Declining_Power
 		}
 		prerequisite = {
 			focus = YEM_Ottoman_Trade
@@ -707,10 +713,6 @@ focus_tree = {
 			focus = YEM_Emir_Power3
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Ottoman_Dependency_Royalist1
-				add_idea = YEM_Ottoman_Dependency_Royalist2
-			}
 			656 = {
 				add_core_of = YEM
 				add_claim_by = YEM
@@ -755,6 +757,9 @@ focus_tree = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = fascism
 			}
 		}
 	}
@@ -845,7 +850,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#	Will Unlock Industrial Concern That Reduces Aircraft Production Cost
 		id = YEM_Aircraft_Production
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
@@ -857,6 +861,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = YEM_Plane_Experts
+			679 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_resource = {
+					type = rubber
+					amount = 16
+				}
+			}
 		}
 	}
 	focus = {

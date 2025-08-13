@@ -96,4 +96,99 @@ YEM_Desert_Expertise_Category = {
 			}
 		}
 	}
+	YEM_Irregular_Exercise4 = {
+		priority = 100
+		cost = 100
+		fire_only_once = yes
+		allowed = {
+			tag = YEM
+		}
+		visible = {
+			check_variable = {
+				YEM_Desert_Value = 4
+			}
+		}
+		complete_effect = {
+			add_units_to_division_template = {
+				template_name = "Muqatilu Alsahra'"
+				regiments = {
+					artillery_brigade = 3
+				}
+			}
+			add_to_variable = {
+				YEM_Desert_Value = 1
+			}
+		}
+	}
+	YEM_Irregular_Exercise5 = {
+		priority = 100
+		cost = 100
+		fire_only_once = yes
+		allowed = {
+			tag = YEM
+		}
+		visible = {
+			check_variable = {
+				YEM_Desert_Value = 5
+			}
+		}
+		complete_effect = {
+			add_units_to_division_template = {
+				template_name = "Muqatilu Alsahra'"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+			add_to_variable = {
+				YEM_Desert_Value = 1
+			}
+		}
+	}
+	YEM_Irregular_Exercise6 = {
+		priority = 100
+		cost = 100
+		fire_only_once = yes
+		allowed = {
+			tag = YEM
+		}
+		visible = {
+			check_variable = {
+				YEM_Desert_Value = 6
+			}
+		}
+		complete_effect = {
+			add_units_to_division_template = {
+				template_name = "Muqatilu Alsahra'"
+				regiments = {
+					artillery_brigade = 4
+				}
+			}
+			add_to_variable = {
+				YEM_Desert_Value = 1
+			}
+		}
+	}
+	YEM_Irregular_Exercise7 = {
+		priority = 100
+		cost = 100
+		fire_only_once = yes
+		allowed = {
+			tag = YEM
+		}
+		visible = {
+			check_variable = {
+				YEM_Desert_Value = 7
+			}
+		}
+		complete_effect = {
+			add_units_to_division_template = {
+				template_name = "Muqatilu Alsahra'"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
 }
