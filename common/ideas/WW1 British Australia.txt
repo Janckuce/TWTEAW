@@ -60,6 +60,7 @@ ideas = {
 			}
 		}
 		AST_Black_Policy = {
+			picture = ETH_scavenging_tactics
 			modifier = {
 				stability_factor = -0.1
 				monthly_population = 0.5
@@ -68,6 +69,7 @@ ideas = {
 			}
 		}
 		AST_Grey_Policy = {
+			picture = COG_the_invisible_roof
 			modifier = {
 				stability_factor = -0.1
 				monthly_population = -0.1
@@ -229,7 +231,7 @@ ideas = {
 		AST_Academy = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.075
+				research_speed_factor = 0.25
 			}
 		}
 		AST_Increased_Worker_Wages = {
