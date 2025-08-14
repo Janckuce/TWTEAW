@@ -616,6 +616,7 @@ ideas = {
 				air_mission_efficiency = -0.3
 				ground_attack_factor = -0.4
 				air_ace_bonuses_factor = -0.4
+				air_range_factor = -0.25
 			}
 		}
 		ENG_Air2 = {
@@ -624,7 +625,8 @@ ideas = {
 			modifier = {
 				air_mission_efficiency = -0.2
 				ground_attack_factor = -0.25
-				air_ace_bonuses_factor = -0.3
+				air_ace_bonuses_factor = -0.25
+				air_range_factor = -0.15
 			}
 		}
 		ENG_Air3 = {
@@ -633,7 +635,8 @@ ideas = {
 			modifier = {
 				air_mission_efficiency = -0.1
 				ground_attack_factor = -0.125
-				air_ace_bonuses_factor = -0.15
+				air_ace_bonuses_factor = -0.1
+				air_range_factor = -0.05
 			}
 		}
 		ENG_air_Britain_rules_air = {
@@ -681,6 +684,33 @@ ideas = {
 				army_org_factor = 0.05
 				army_org_regain = 0.05
 				breakthrough_factor = 0.05
+			}
+		}
+		ENG_Military_Investment = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		ENG_Peoples_trust = {
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		ENG_Kings_Party = {
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ENG_Kings_Investments = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		ENG_Kings_People = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
 			}
 		}
 	}

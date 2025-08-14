@@ -282,11 +282,37 @@ focus_tree = {
 			focus = ENG_democratic2
 			focus = ENG_democratic4
 		}
-		cost = 5
+		cost = 5.8
 		x = 1
 		y = 2
 		completion_reward = { 
-			
+			FRA = {
+				add_ideas = ENG_Military_Investment
+			}
+			RUS = {
+				add_ideas = ENG_Military_Investment
+			}
+		}
+	}
+	focus = {
+		id = ENG_democratic6
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_democratic1
+		mutually_exclusive = {
+			focus = Britain_exploit_empire
+		}
+		prerequisite = {
+			focus = ENG_democratic3
+			focus = ENG_democratic2
+			focus = ENG_democratic4
+		}
+		cost = 5.8
+		x = -1
+		y = 2
+		completion_reward = { 
+			ENG = {
+				add_ideas = ENG_Peoples_trust
+			}
 		}
 	}
 }
