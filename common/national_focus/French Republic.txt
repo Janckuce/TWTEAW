@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Morocco_Conundrum
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_africa_liberation
 		cost = 10
 		x = 10
 		y = 0
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Sabre_Of_Honour
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_consitutional_crisis
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 0
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_1
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = -6
@@ -103,7 +103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Kickstart_Our_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industrialists
 		cost = 10
 		relative_position_id = FRA_Industry_Main
 		x = 0
@@ -120,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_First
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_economic_recovery
 		cost = 10
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = -1
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_Second
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 10
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = 1
@@ -154,14 +154,11 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_Continue
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_2
 		cost = 10
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = 0
 		y = 2
-		available = {
-			num_of_factories > 60
-		}
 		prerequisite = {
 			focus = FRA_Industry_First
 			focus = FRA_Industry_Second
@@ -196,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_industry
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = -2
@@ -230,7 +227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Home_Materials
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_mining_industry
 		cost = 10
 		relative_position_id = FRA_Military_Industry
 		x = 0
@@ -249,7 +246,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Factories_First
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_military
 		cost = 10
 		relative_position_id = FRA_Home_Materials
 		x = -1
@@ -272,7 +269,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Factories_Second
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_military_sphere
 		cost = 10
 		relative_position_id = FRA_Home_Materials
 		x = 1
@@ -295,7 +292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Factories_Continue
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_academy
 		cost = 10
 		relative_position_id = FRA_Home_Materials
 		x = 0
@@ -310,11 +307,14 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Finalise_Industrial_Capacity
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_a_modern_economy
 		cost = 10
 		relative_position_id = FRA_Industry_Continue
 		x = 2
 		y = 1
+		available = {
+			num_of_factories > 60
+		}
 		prerequisite = {
 			focus = FRA_Industry_Continue
 		}
@@ -327,11 +327,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_War_Preparations
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_war_taxes
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 2
 		y = 1
+		cancel_if_invalid = no
 		available = {
 			has_war_support > 0.25
 		}
@@ -344,11 +345,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Instruments_Of_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWI_issue_war_bonds
 		cost = 10
 		relative_position_id = FRA_War_Preparations
 		x = 0
 		y = 1
+		cancel_if_invalid = no
 		available = {
 			has_war_support > 0.4
 		}
@@ -364,11 +366,12 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_War_Is_Our_Profession
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_german_army_invincible
 		cost = 10
 		relative_position_id = FRA_Instruments_Of_War
 		x = 0
 		y = 1
+		cancel_if_invalid = no
 		available = {
 			has_war_support > 0.6
 		}
@@ -384,7 +387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Spirit_Of_The_Republic
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_fra_le_deluge
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 4
@@ -404,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Carry_The_Torch
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_divide_and_conquer
 		cost = 10
 		relative_position_id = FRA_Spirit_Of_The_Republic
 		x = 0
@@ -421,7 +424,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Only_Forwards
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_to_shake_the_world
 		cost = 10
 		relative_position_id = FRA_Carry_The_Torch
 		x = 0
@@ -438,7 +441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Look_Towards_The_Future
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_european_confederation
 		cost = 10
 		relative_position_id = FRA_Only_Forwards
 		x = 0
@@ -455,12 +458,13 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Republique
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_democratic_europe
 		cost = 10
 		x = 18
 		y = 0
 		mutually_exclusive = {
 			focus = FRA_Commune
+			focus = FRA_Nation_Francaise
 		}
 		available = {
 			has_completed_focus = FRA_Look_Towards_The_Future
@@ -472,7 +476,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Democratie
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 10
 		relative_position_id = FRA_Republique
 		x = 0
@@ -498,7 +502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Liberte
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_social_democratic_womens_association
 		cost = 10
 		relative_position_id = FRA_Democratie
 		x = 0
@@ -530,7 +534,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Parti
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_parliamentary_democracy
 		cost = 10
 		relative_position_id = FRA_Liberte
 		x = 0
@@ -549,14 +553,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_Nation1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = FRA_Towed_Artillery_Primacy
+		icon = GFX_goal_generic_army_artillery2
 		cost = 10
 		relative_position_id = FRA_Parti
 		x = -1
 		y = 1
 		mutually_exclusive = {
-			focus = FRA_Nation2
+			focus = FRA_Heavy_Artillery_Primacy
 		}
 		prerequisite = {
 			focus = FRA_Parti
@@ -564,19 +568,19 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = FRA_Carry_On
-				add_idea = FRA_Carry_On_Nation1
+				add_idea = FRA_Carry_On_Artillery
 			}
 		}
 	}
 	focus = {
-		id = FRA_Nation2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = FRA_Heavy_Artillery_Primacy
+		icon = GFX_goal_generic_army_artillery
 		cost = 10
 		relative_position_id = FRA_Parti
 		x = 1
 		y = 1
 		mutually_exclusive = {
-			focus = FRA_Nation1
+			focus = FRA_Towed_Artillery_Primacy
 		}
 		prerequisite = {
 			focus = FRA_Parti
@@ -584,7 +588,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = FRA_Carry_On
-				add_idea = FRA_Carry_On_Nation2
+				add_idea = FRA_Carry_On_Heavy_Artillery
 			}
 		}
 	}
@@ -593,7 +597,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Commune
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		cost = 10
 		x = 22
 		y = 0
@@ -602,17 +606,21 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_Republique
+			focus = FRA_Nation_Francaise
 		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = FRA_Sour_Loser
 				add_idea = FRA_Commune_Ideals
 			}
+			set_politics = {
+				ruling_party = communism
+			}
 		}
 	}
 	focus = {
 		id = FRA_French_Red_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 10
 		relative_position_id = FRA_Commune
 		x = 0
@@ -644,7 +652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Reserves
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AUS_raid_military_storages
 		cost = 10
 		relative_position_id = FRA_Army_Expertise
 		x = 0
@@ -655,11 +663,11 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 6000
+				amount = 5000
 			}
 			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 600
+				type = artillery_equipment
+				amount = 500
 			}
 		}
 	}
@@ -700,6 +708,456 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = FRA_Red_Army
 				add_idea = FRA_Red_Army_Lengthen
+			}
+		}
+	}
+
+	#	Fascist Path
+
+	focus = {
+		id = FRA_Nation_Francaise
+		icon = GFX_focus_generic_spread_fascism
+		cost = 10
+		x = 26
+		y = 0
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		mutually_exclusive = {
+			focus = FRA_Republique
+			focus = FRA_Commune
+		}
+		completion_reward = {
+			remove_ideas = FRA_Sour_Loser
+			add_ideas = FRA_Ideaux
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+	}
+	focus = {
+		id = FRA_Naval_Advancements
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Nation_Francaise
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Nation_Francaise
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Naval_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Naval_Advancements
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Naval_Advancements
+		}
+		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+			15 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Napoleon_Class_Ship
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Naval_Investments
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Screens_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Naval_Investments
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+				}
+				name = "Napoleon I"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+	focus = {
+		id = FRA_Screens_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Napoleon_Class_Ship
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Capital_Ships_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Napoleon_Class_Ship
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Louis XIX"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Henry V"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Louis Philippe II"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+	focus = {
+		id = FRA_Capital_Ships_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Napoleon_Class_Ship
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FRA_Napoleon_Class_Ship
+		}
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Louis XVIII"
+				requested_factories = 1
+				progress = 0.4
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Charles X"
+				requested_factories = 1
+				progress = 0.4
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Louis Philippe I"
+				requested_factories = 1
+				progress = 0.4
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+
+	# Main Military Focus
+
+	focus = {
+		id = FRA_Superior_Warfare
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 15
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Combat
+		}
+	}
+	focus = {
+		id = FRA_Expert_Combatants
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Strength_In_Numbers
+		}
+		prerequisite = {
+			focus = FRA_Superior_Warfare
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Combat
+				add_idea = FRA_Expert_Combat
+			}
+		}
+	}
+	focus = {
+		id = FRA_Strength_In_Numbers
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Expert_Combatants
+		}
+		prerequisite = {
+			focus = FRA_Superior_Warfare
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Combat
+				add_idea = FRA_Numbers_Combat
+			}
+		}
+	}
+	focus = {
+		id = FRA_Defensive_Nation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Expert_Combatants
+			focus = FRA_Strength_In_Numbers
+		}
+		completion_reward = {
+			add_ideas = FRA_Defensive_Experts
+		}
+	}
+	focus = {
+		id = FRA_Military_Industrial_Power2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Defensive_Nation
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Defensive_Nation
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Defensive_Experts
+				add_idea = FRA_Defensive_Experts1
+			}
+		}
+	}
+
+	#	Main Air Focus
+
+	focus = {
+		id = FRA_Superior_Air_Force
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 19
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Air_Combat
+		}
+	}
+	focus = {
+		id = FRA_Expert_Air_Aces
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Air_Force
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Superior_Air_Force
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat
+				add_idea = FRA_Superior_Air_Combat1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Fighter_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Air_Support_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Expert_Air_Aces
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat1
+				add_idea = FRA_Superior_Air_Combat_Fighter
+			}
+		}
+	}
+	focus = {
+		id = FRA_Air_Support_Primacy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Fighter_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Expert_Air_Aces
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat1
+				add_idea = FRA_Superior_Air_Combat_Air_Support
+			}
+		}
+	}
+	focus = {
+		id = FRA_Air_Exercises
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Fighter_Primacy
+			focus = FRA_Air_Support_Primacy
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Air_Exercise
+		}
+	}
+
+	#	Main Naval Focus
+
+	focus = {
+		id = FRA_Superior_Naval_Power
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 23
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Naval_Combat
+		}
+	}
+	focus = {
+		id = FRA_Faster_Repairing
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Superior_Naval_Power
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Superior_Naval_Power
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat
+				add_idea = FRA_Superior_Naval_Combat1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Iron_Admirals
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Faster_Repairing
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Faster_Repairing
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat1
+				add_idea = FRA_Superior_Naval_Combat2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Destroyer_Expertise
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Iron_Admirals
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Capital_Ship_Expertise
+		}
+		prerequisite = {
+			focus = FRA_Iron_Admirals
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat2
+				add_idea = FRA_Superior_Naval_Combat_Destroyer
+			}
+		}
+	}
+	focus = {
+		id = FRA_Capital_Ship_Expertise
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Iron_Admirals
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Destroyer_Expertise
+		}
+		prerequisite = {
+			focus = FRA_Iron_Admirals
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat2
+				add_idea = FRA_Superior_Naval_Combat_Capital_Ship
 			}
 		}
 	}

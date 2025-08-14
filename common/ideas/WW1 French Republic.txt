@@ -1,22 +1,27 @@
 ideas = {
 	country = {
 		FRA_Sour_Loser = {
+			picture = FRA_political_violence
 			modifier = {
 				conscription = 0.015
 			}
 		}
 		FRA_Carry_On = {
+			picture = FRA_undividable
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				democratic_drift = 0.03
 			}
 		}
-		FRA_Carry_On_Nation1 = {
+		FRA_Carry_On_Artillery = {
+			picture = FRA_undividable
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				democratic_drift = 0.03
 			}
 			equipment_bonus = {
 				artillery_equipment = {
@@ -24,11 +29,13 @@ ideas = {
 				}
 			}
 		}
-		FRA_Carry_On_Nation2 = {
+		FRA_Carry_On_Heavy_Artillery = {
+			picture = FRA_undividable
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				democratic_drift = 0.03
 			}
 			equipment_bonus = {
 				heavy_artillery_equipment = {
@@ -37,11 +44,22 @@ ideas = {
 			}
 		}
 		FRA_Commune_Ideals = {
+			picture = GER_limited_democratic_principles
 			modifier = {
 				conscription = 0.03
+				communism_drift = 0.03
+			}
+		}
+		FRA_Ideaux = {
+			picture = FRA_national_resistance_council
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				fascism_drift = 0.03
 			}
 		}
 		FRA_Fragmented_Government = {
+			picture = generic_disjointed_gov
 			modifier = {
 				political_advisor_cost_factor = 0.15
 				stability_factor = -0.4
@@ -49,6 +67,7 @@ ideas = {
 			}
 		}
 		FRA_Fragmented_Government1 = {
+			picture = generic_disjointed_gov
 			modifier = {
 				political_advisor_cost_factor = 0.1
 				stability_factor = -0.3
@@ -56,6 +75,7 @@ ideas = {
 			}
 		}
 		FRA_Fragmented_Government2 = {
+			picture = generic_disjointed_gov
 			modifier = {
 				political_advisor_cost_factor = 0.05
 				stability_factor = -0.2
@@ -63,12 +83,14 @@ ideas = {
 			}
 		}
 		FRA_Fragmented_Government3 = {
+			picture = generic_disjointed_gov
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
 			}
 		}
 		FRA_Halted_Industrial_Power = {
+			picture = POL_disjointed_industry
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
@@ -76,6 +98,7 @@ ideas = {
 			}
 		}
 		FRA_Halted_Industrial_Power1 = {
+			picture = POL_disjointed_industry
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.2
 				production_speed_arms_factory_factor = -0.2
@@ -83,6 +106,7 @@ ideas = {
 			}
 		}
 		FRA_Halted_Industrial_Power2 = {
+			picture = POL_disjointed_industry
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
@@ -90,12 +114,14 @@ ideas = {
 			}
 		}
 		FRA_War_Readiness = {
+			picture = MEX_politicised_army
 			modifier = {
 				coordination_bonus = 0.08
 				army_org_factor = 0.08
 			}
 		}
 		FRA_War_Readiness1 = {
+			picture = MEX_politicised_army
 			modifier = {
 				coordination_bonus = 0.08
 				army_org_factor = 0.08
@@ -108,6 +134,7 @@ ideas = {
 			}
 		}
 		FRA_War_Readiness2 = {
+			picture = MEX_politicised_army
 			modifier = {
 				coordination_bonus = 0.08
 				army_org_factor = 0.08
@@ -125,43 +152,173 @@ ideas = {
 			}
 		}
 		FRA_Red_Army = {
+			picture = GER_aufrustung
 			modifier = {
-				non_core_manpower = 0.15
-				supply_consumption_factor = -0.1
+				non_core_manpower = 0.1
+				supply_consumption_factor = -0.05
 				land_reinforce_rate = 0.05
 			}
 		}
 		FRA_Red_Army_Shorten = {
+			picture = GER_aufrustung
 			modifier = {
-				non_core_manpower = 0.15
+				non_core_manpower = 0.1
 				supply_consumption_factor = -0.1
 				land_reinforce_rate = 0.05
 				training_time_army_factor = -0.1
-				coordination_bonus = -0.05
 			}
 		}
 		FRA_Red_Army_Lengthen = {
+			picture = GER_aufrustung
 			modifier = {
-				non_core_manpower = 0.15
-				supply_consumption_factor = -0.1
+				non_core_manpower = 0.1
+				supply_consumption_factor = -0.05
 				land_reinforce_rate = 0.05
 				training_time_army_factor = 0.1
-				coordination_bonus = 0.05
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
 			}
 		}
 		FRA_Increased_Production_Max = {
+			picture = RAJ_special_economic_zones
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		FRA_Increased_Production_Gain = {
+			picture = generic_economic_increase
 			modifier = {
 				industrial_capacity_factory = 0.05
 			}
 		}
 		FRA_Military_Construction_Efforts = {
+			picture = ARG_construction_guilds
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		FRA_Superior_Combat = {
+			picture = chi_army_corruption3
+			modifier = {
+				dig_in_speed_factor = 0.05
+			}
+		}
+		FRA_Expert_Combat = {
+			picture = NORDIC_army_democratic
+			modifier = {
+				dig_in_speed_factor = 0.05
+				org_loss_at_low_org_factor = -0.05
+			}
+		}
+		FRA_Numbers_Combat = {
+			picture = NORDIC_army_communist
+			modifier = {
+				dig_in_speed_factor = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+		FRA_Defensive_Experts = {
+			picture = SWE_hedgehog_defense
+			modifier = {
+				recon_factor_while_entrenched = 0.05
+			}
+		}
+		FRA_Defensive_Experts1 = {
+			picture = SWE_hedgehog_defense
+			modifier = {
+				recon_factor_while_entrenched = 0.05
+				max_dig_in_factor = 0.05
+			}
+		}
+		FRA_Superior_Air_Combat = {
+			picture = air_war_plans_division_focus
+			modifier = {
+				air_ace_generation_chance_factor = 0.075
+			}
+		}
+		FRA_Superior_Air_Combat1 = {
+			picture = air_war_plans_division_focus
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+			}
+		}
+		FRA_Superior_Air_Combat_Fighter = {
+			picture = NORDIC_airforce_democratic
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		FRA_Superior_Air_Combat_Air_Support = {
+			picture = NORDIC_airforce_communist
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		FRA_Superior_Air_Exercise = {
+			picture = ENG_special_air_service
+			modifier = {
+				air_wing_xp_loss_when_killed_factor = -0.2
+			}
+		}
+		FRA_Superior_Naval_Combat = {
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				screening_efficiency = 0.05
+			}
+		}
+		FRA_Superior_Naval_Combat1 = {
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+			}
+		}
+		FRA_Superior_Naval_Combat2 = {
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+				trait_ironside_xp_gain_factor = 0.1
+			}
+		}
+		FRA_Superior_Naval_Combat_Destroyer = {
+			picture = NORDIC_navy_democratic
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+				trait_ironside_xp_gain_factor = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		FRA_Superior_Naval_Combat_Capital_Ship = {
+			picture = NORDIC_navy_communist
+			modifier = {
+				screening_efficiency = 0.05
+				repair_speed_factor = 0.05
+				trait_ironside_xp_gain_factor = 0.1
+			}
+			equipment_bonus = {
+				light_cruiser = {
+					build_cost_ic = -0.1
+				}
 			}
 		}
 	}

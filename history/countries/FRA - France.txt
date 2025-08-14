@@ -43,7 +43,7 @@ set_technology = {
 
 set_power_balance = {
 	id = FRA_power_balance
-	set_value = 0.1
+	set_value = 0
 }
 add_ideas = {
 	FRA_Sour_Loser
@@ -87,7 +87,9 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 100
+	democratic = 75
+	communism = 10
+	fascism = 5
 }
 
 set_convoys = 200
