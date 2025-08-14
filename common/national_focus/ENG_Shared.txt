@@ -1,0 +1,1355 @@
+
+
+	shared_focus = {
+		id = ENG_Interfere_In_Agadir
+		icon = GFX_surrender_tiny_flag
+		cost = 100000
+		x = 1
+		y = 0
+		completion_reward = { 
+			ENG = {
+				add_war_support = 0.05
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_government_reform
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {
+			focus = ENG_Interfere_In_Agadir
+		}
+		relative_position_id = ENG_Interfere_In_Agadir
+		x = -1
+		y = 1
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_weak_government
+				add_idea = ENG_weak_government_2
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_reafirm_the_triple_entente
+		icon = GFX_focus_befriend_russia
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_Interfere_In_Agadir
+		}
+		x = 1
+		y = 1
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    FRA = {
+			    is_in_faction_with = RUS
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_ideas = ENG_entente
+		}
+	}
+	shared_focus = {
+		id = ENG_root_out_corruption
+		icon = GFX_focus_hol_the_foundations_of_defense
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_government_reform
+		}
+		prerequisite = {
+			focus = ENG_reafirm_the_triple_entente
+		}
+		x = 0
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    remove_ideas = ENG_weak_government_2
+		}
+	}
+	shared_focus = {
+		id = ENG_silent_workhorse
+		icon = GFX_focus_SWE_refuge_from_war
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_root_out_corruption
+		}
+		mutually_exclusive = {
+		    focus = ENG_captain_of_industry
+		}
+		x = -1
+		y = 3
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			activate_advisor = ENG_arthur_balfour
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_captain_of_industry
+		icon = GFX_focus_generic_low_cost_housing
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_root_out_corruption
+		}
+		mutually_exclusive = {
+		    focus = ENG_silent_workhorse
+		}
+		x = 1
+		y = 3
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			activate_advisor = ENG_andrew_bonar_law
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_research_slot
+		icon = GFX_focus_research
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_silent_workhorse
+			focus = ENG_captain_of_industry
+		}
+		x = -1
+		y = 4
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    num_of_factories > 90
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	shared_focus = {
+		id = ENG_increased_research_funds
+		icon = GFX_focus_research2
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_research_slot
+		}
+		x = -2
+		y = 5
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    num_of_factories > 120
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_ideas = ENG_increased_research_funds_idea
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_end_the_isolation
+		icon = GFX_goal_generic_consumer_goods
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_trade_with_france_focus
+		}
+		prerequisite = {
+			focus = ENG_research_slot
+		}
+		x = 0
+		y = 5
+		cost = 5.8
+
+		bypass = {
+			NOT = {
+			    has_idea = isolation
+			}
+		}
+		available = {
+			date > 1914.1.1
+		    has_idea = isolation
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_ideas = civilian_economy
+		}
+	}
+	shared_focus = {
+		id = ENG_Develop_France
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_Interfere_In_Agadir
+		cost = 7.2
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = ENG_government_reform
+		}
+		available = {
+			has_completed_focus = ENG_trade_with_france_focus
+		}
+		completion_reward = {
+			15 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		 }
+	}
+	shared_focus = {
+		id = ENG_Develop_Russia
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_Interfere_In_Agadir
+		cost = 7.2
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = ENG_reafirm_the_triple_entente
+		}
+		completion_reward = {
+			219 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		 }
+	}
+	
+	shared_focus = {
+		id = ENG_naval_power_projection
+		icon = GFX_goal_generic_navy_cruiser
+		x = 16
+		y = 0
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+			NOT = {
+				check_variable = {
+				ENG_funding = 2
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    navy_experience = 25
+			
+			add_doctrine_cost_reduction = {
+				name = ENG_air_doc_bonus_1
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_to_variable = {
+				ENG_funding = 1
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_increased_trade_with_usa
+		icon = GFX_focus_generic_befriend_usa
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_trade_with_france_focus
+		}
+		x = 2
+		y = 5
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_idea = ENG_trade_with_usa
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = ENG_trade_with_usa
+				add_idea = ENG_trade_with_usa_2
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_trade_with_france_focus
+		icon = GFX_focus_befriend_france
+		relative_position_id = ENG_Interfere_In_Agadir
+		prerequisite = {
+			focus = ENG_captain_of_industry
+			focus = ENG_silent_workhorse
+		}
+		x = 1
+		y = 4
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_ideas = ENG_trade_with_france
+		}
+	}
+	
+	
+	shared_focus = {
+		id = ENG_expand_naval_facilities
+		icon = GFX_goal_generic_construct_naval_dockyard
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_naval_power_projection
+		}
+		x = 0
+		y = 1
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    navy_experience = 125
+			
+			if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = dockyard
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = dockyard
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_stockpile_fuel
+		icon = GFX_goal_generic_oil_refinery
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_expand_naval_facilities
+		}
+		x = -2
+		y = 2
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_tech = ww1_synthetic_oil_experiments
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = fuel_silo
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = fuel_silo
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = fuel_silo
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = fuel_silo
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_HMS_Erin
+		icon = GFX_focus_generic_cruiser2
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_expand_naval_facilities
+		}
+		x = 0
+		y = 2
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_navy1
+				add_idea = ENG_navy2
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_call_back_the_marines
+		icon = GFX_goal_generic_amphibious_assault
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_expand_naval_facilities
+		}
+		x = 2
+		y = 2
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = marines
+				}
+		    division_template = {
+				name = "Royal Marines"
+				division_names_group = ENG_MAR_01
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 3 y = 0 }
+					marine = { x = 3 y = 1 }
+					marine = { x = 3 y = 2 }
+					marine = { x = 4 y = 0 }
+					marine = { x = 4 y = 1 }
+					marine = { x = 4 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+				}	
+				priority = 1
+			}
+			126 = {
+				create_unit = {
+					division = "name = \"Royal Marines\" division_template = \"Royal Marines\" start_experience_factor = 1"
+					owner = ROOT
+					prioritize_location = 11374
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			126 = {
+				create_unit = {
+					division = "name = \"Royal Marines\" division_template = \"Royal Marines\" start_experience_factor = 1"
+					owner = ROOT
+					prioritize_location = 11374
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			126 = {
+				create_unit = {
+					division = "name = \"Royal Marines\" division_template = \"Royal Marines\" start_experience_factor = 1"
+					owner = ROOT
+					prioritize_location = 11374
+					allow_spawning_on_enemy_provs = yes
+					}
+				}
+			} else = {
+				set_technology = {
+				marines = 1
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_HMS_Agincourt
+		icon = GFX_goal_generic_navy_battleship
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_HMS_Erin
+		}
+		x = 1
+		y = 3
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = ENG_navy3
+				}
+				remove_ideas = ENG_navy3
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ENG_Navy2
+					add_idea = ENG_navy3
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_improve_the_destroyers
+		icon = GFX_focus_generic_destroyer
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_HMS_Erin
+		}
+		x = -1
+		y = 3
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    if = {
+				limit = {
+					has_idea = ENG_navy3
+				}
+				remove_ideas = ENG_navy3
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ENG_Navy2
+					add_idea = ENG_navy3
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_the_race_shall_end
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_improve_the_destroyers
+		}
+		prerequisite = {
+			focus = ENG_HMS_Agincourt
+		}
+		x = -2
+		y = 4
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    NOT = {
+				check_variable = {
+					ENG_Specialised = 1
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_to_variable = {
+				ENG_Specialised = 1
+			}
+		    remove_ideas = ENG_naval_arms_race
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_the_race_will_expand
+		icon = GFX_focus_chi_british_cooperation
+		relative_position_id = ENG_naval_power_projection
+		prerequisite = {
+			focus = ENG_improve_the_destroyers
+		}
+		prerequisite = {
+			focus = ENG_HMS_Agincourt
+		}
+		x = 2
+		y = 4
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+			NOT = {
+				check_variable = {
+					ENG_Specialised = 1
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_to_variable = {
+				ENG_Specialised = 1
+			}
+			add_ideas = ENG_Britania_Rules_Waves
+		    swap_ideas = {
+				remove_idea = ENG_naval_arms_race
+				add_idea = ENG_naval_arms_race_expanded
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_War_With_Germany
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		x = 16
+		y = 6
+		available = {
+			has_war_with = GER
+		}
+		completion_reward = {
+			add_ideas = limited_conscription
+			add_ideas = ENG_Underequiped_Military
+			remove_ideas = ENG_volunteer_only_army
+		 }
+	}
+	shared_focus = {
+		id = ENG_Send_Equipment_To_Frontline
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		prerequisite = {
+			focus = ENG_War_With_Germany
+		}
+		x = 16
+		y = 7
+		available = {
+			has_war_with = GER
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_Underequiped_Military
+				add_idea = ENG_Send_Equipment_To_Frontline
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_Prepared_Military
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		prerequisite = {
+			focus = ENG_Send_Equipment_To_Frontline
+		}
+		relative_position_id = ENG_War_With_Germany
+		x = 0
+		y = 2
+		completion_reward = { 
+			remove_ideas = ENG_Send_Equipment_To_Frontline
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_infantry_equipment_research
+		icon = GFX_goal_generic_small_arms
+		relative_position_id = ENG_War_With_Germany
+		prerequisite = {
+			focus = ENG_War_With_Germany
+		}
+		x = 2
+		y = 1
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_tech_bonus = {
+				name = ENG_infantry_research_1
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_doctrine_effort
+		icon = GFX_goal_generic_secret_weapon
+		relative_position_id = ENG_War_With_Germany
+		prerequisite = {
+		    focus = ENG_War_With_Germany
+		}
+		x = -2
+		y = 1
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = FRA_land_doc_bonus_1
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_naval_blockade
+		icon = GFX_focus_attack_german_empire
+		relative_position_id = ENG_War_With_Germany
+		prerequisite = {
+			focus = ENG_Send_Equipment_To_Frontline
+		}
+		x = -2
+		y = 2
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_war_with = GER
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			GER = {
+			    add_ideas = ENG_ger_naval_blockade_1
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_support_france
+		icon = GFX_focus_befriend_france
+		relative_position_id = ENG_War_With_Germany 
+		prerequisite = {
+			focus = ENG_Send_Equipment_To_Frontline
+		}
+		x = 2
+		y = 2
+		cost = 7.2
+
+		bypass = {
+			#
+		}
+		available = {
+		    FRA = {
+			    has_war = yes
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_war_support = 0.05
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_Air
+		icon = GFX_focus_generic_air_bases
+		cost = 5.8
+		x = 24
+		y = 0
+		available = {
+			NOT = {
+				check_variable = {
+				ENG_funding = 2
+				}
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_Air1
+				add_idea = ENG_Air2
+			}
+			add_to_variable = {
+				ENG_funding = 1
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_stockpile_fuel2
+		icon = GFX_goal_generic_oil_refinery
+		relative_position_id = ENG_Air
+		prerequisite = {
+			focus = ENG_Air
+		}
+		x = -2
+		y = 1
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    has_tech = ww1_synthetic_oil_experiments
+		}
+		
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = fuel_silo
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = fuel_silo
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = fuel_silo
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = {
+						type = fuel_silo
+						level = 6
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_air_research_1
+		icon = GFX_focus_generic_air_bases
+		cost = 5.8
+		x = 26
+		y = 1
+		prerequisite = {
+			focus = ENG_Air
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_air_research_1
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_Air2
+		icon = GFX_focus_generic_air_bases
+		cost = 5.8
+		x = 0
+		y = 1
+		relative_position_id = ENG_Air
+		prerequisite = {
+			focus = ENG_Air
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_Air2
+				add_idea = ENG_Air3
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_Air3
+		icon = GFX_focus_generic_air_bases
+		cost = 5.8
+		x = 0
+		y = 2
+		relative_position_id = ENG_Air
+		prerequisite = {
+			focus = ENG_Air2
+		}
+		completion_reward = {
+			remove_ideas = ENG_Air3
+		}
+	}
+	shared_focus = {
+		id = ENG_air_Britain_rules_air
+		icon = GFX_focus_generic_air_bases
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = ENG_Air
+		prerequisite = {
+			focus = ENG_Air3
+		}
+		available = {
+			NOT = {
+				check_variable = {
+					ENG_Specialised = 1
+				}
+			}
+		}
+		completion_reward = {
+			add_to_variable = {
+				ENG_Specialised = 1
+			}
+			add_ideas = ENG_air_Britain_rules_air
+		}
+	}
+	shared_focus = {
+		id = ENG_Army
+		icon = GFX_focus_generic_military_mission
+		cost = 5.8
+		x = 32
+		y = 0
+		available = {
+			NOT = {
+				check_variable = {
+				ENG_funding = 2
+				}
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_Army1
+				add_idea = ENG_Army2
+			}
+			add_to_variable = {
+				ENG_funding = 1
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_Army_research
+		icon = GFX_focus_generic_military_mission
+		cost = 5.8
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = ENG_Army
+		}
+		relative_position_id = ENG_Army
+		available = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_artillery_research_1
+				bonus = 1
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+	
+	shared_focus = {
+		id = ENG_doctrine_effort
+		icon = GFX_goal_generic_secret_weapon
+		relative_position_id = ENG_Army
+		prerequisite = {
+		    focus = ENG_Army_research
+		}
+		x = -2
+		y = 2
+		cost = 5.8
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = ENG_land_doc_bonus_1
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_Army2
+		icon = GFX_focus_generic_military_mission
+		cost = 5.8
+		x = 0
+		y = 1
+		relative_position_id = ENG_Army
+		prerequisite = {
+			focus = ENG_Army
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_Army2
+				add_idea = ENG_Army3
+			}
+		}
+	}
+	shared_focus = {
+		id = ENG_Army3
+		icon = GFX_focus_generic_military_mission
+		cost = 5.8
+		x = 0
+		y = 2
+		relative_position_id = ENG_Army
+		prerequisite = {
+			focus = ENG_Army2
+		}
+		completion_reward = {
+			remove_ideas = ENG_Army3
+		}
+	}
+	shared_focus = {
+		id = ENG_Army_Britain_rules_army
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		x = 0
+		y = 3
+		relative_position_id = ENG_Army
+		prerequisite = {
+			focus = ENG_Army3
+		}
+		available = {
+			NOT = {
+				check_variable = {
+					ENG_Specialised = 1
+				}
+			}
+		}
+		completion_reward = {
+			add_to_variable = {
+				ENG_Specialised = 1
+			}
+			add_ideas = ENG_Modern_Army
+		}
+	}

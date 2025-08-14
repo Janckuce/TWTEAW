@@ -17,16 +17,20 @@ focus_tree = {
 			tag = ENG
 		}
 	}
+	shared_focus = ENG_Interfere_In_Agadir
+	shared_focus = ENG_naval_power_projection
+	shared_focus = ENG_War_With_Germany
+	shared_focus = ENG_Air
+	shared_focus = ENG_Army
 	
 	continuous_focus_position = { x = 245 y = 1200 }
 	
 	default = no
 	reset_on_civilwar = no
-	
 	focus = {
 		id = ENG_focus_protect_belgium
 		icon = GFX_focus_befriend_belgium
-		x = 5
+		x = 8
 		y = 0
 		cost = 5.8
 
@@ -42,1527 +46,1830 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			set_variable = {
+				Britain_democracy = 0
+				Britain_monarchy = 0
+			}
 		    ENG = {give_guarantee = BEL}
 			add_political_power = 50
 		}
 	}
 	focus = {
-		id = ENG_Interfere_In_Agadir
+		id = Britain_invests_in_colonies
 		icon = GFX_surrender_tiny_flag
-		cost = 100000
-		x = 2
-		y = 1
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_exploit_empire
+		}
 		prerequisite = {
 			focus = ENG_focus_protect_belgium
 		}
+		cost = 5
+		x = -1
+		y = 1
 		completion_reward = { 
-			ENG = {
-				add_war_support = 0.05
+			add_to_variable = {
+				Britain_democracy = 1
 			}
-		}
-	}
-	focus = {
-		id = ENG_government_reform
-		icon = GFX_goal_generic_intelligence_exchange
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_Interfere_In_Agadir
-		}
-		x = -4
-		y = 2
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_weak_government
-				add_idea = ENG_weak_government_2
-			}
-		}
-	}
-	focus = {
-		id = ENG_reafirm_the_triple_entente
-		icon = GFX_focus_befriend_russia
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_Interfere_In_Agadir
-		}
-		x = -2
-		y = 2
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    FRA = {
-			    is_in_faction_with = RUS
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_ideas = ENG_entente
-		}
-	}
-	focus = {
-		id = ENG_root_out_corruption
-		icon = GFX_focus_hol_the_foundations_of_defense
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_government_reform
-		}
-		prerequisite = {
-			focus = ENG_reafirm_the_triple_entente
-		}
-		x = -3
-		y = 3
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    remove_ideas = ENG_weak_government_2
-		}
-	}
-	focus = {
-		id = ENG_silent_workhorse
-		icon = GFX_focus_SWE_refuge_from_war
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_root_out_corruption
-		}
-		mutually_exclusive = {
-		    focus = ENG_captain_of_industry
-		}
-		x = -4
-		y = 4
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			activate_advisor = ENG_arthur_balfour
-		}
-	}
-	
-	focus = {
-		id = ENG_captain_of_industry
-		icon = GFX_focus_generic_low_cost_housing
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_root_out_corruption
-		}
-		mutually_exclusive = {
-		    focus = ENG_silent_workhorse
-		}
-		x = -2
-		y = 4
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			activate_advisor = ENG_andrew_bonar_law
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
+				276 = {
+					add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+				681 = {
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+				439 = {
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+				285 = {
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+				284 = {
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 	}
 	focus = {
-		id = ENG_research_slot
-		icon = GFX_focus_research
+		id = Britain_exploit_empire
+		icon = GFX_surrender_tiny_flag
 		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_silent_workhorse
-			focus = ENG_captain_of_industry
+		mutually_exclusive = {
+			focus = Britain_invests_in_colonies
 		}
-		x = -4
-		y = 5
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    num_of_factories > 90
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_research_slot = 1
-		}
-	}
-	focus = {
-		id = ENG_increased_research_funds
-		icon = GFX_focus_research2
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_research_slot
-		}
-		x = -5
-		y = 6
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    num_of_factories > 120
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_ideas = ENG_increased_research_funds_idea
-		}
-	}
-	
-	focus = {
-		id = ENG_end_the_isolation
-		icon = GFX_goal_generic_consumer_goods
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_trade_with_france_focus
-		}
-		prerequisite = {
-			focus = ENG_research_slot
-		}
-		x = -3
-		y = 6
-		cost = 5.8
-
-		bypass = {
-			NOT = {
-			    has_idea = isolation
-			}
-		}
-		available = {
-			date > 1914.1.1
-		    has_idea = isolation
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_ideas = civilian_economy
-		}
-	}
-	focus = {
-		id = ENG_commonwealth_ties
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
 			focus = ENG_focus_protect_belgium
 		}
-		x = 5
+		cost = 5
+		x = 1
 		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
+		completion_reward = { 
+			add_to_variable = {
+				Britain_monarchy = 1
+			}
+			swap_ideas = {
+				remove_idea = ENG_Investing_Colonies1
+				add_idea = ENG_Investing_Colonies-1
+			}
+			CAN = {
+				swap_ideas = {
+				remove_idea = ENG_Receiving_investments1
+				add_idea = ENG_Receiving_investments-1
+				}
+			}
+			SAF = {
+				swap_ideas = {
+				remove_idea = ENG_Receiving_investments1
+				add_idea = ENG_Receiving_investments-1
+				}
+			}
 			RAJ = {
-			    is_puppet_of = ENG
+				swap_ideas = {
+				remove_idea = ENG_Receiving_investments1
+				add_idea = ENG_Receiving_investments-1
+				}
+			}
+			AUS = {
+				swap_ideas = {
+				remove_idea = ENG_Receiving_investments1
+				add_idea = ENG_Receiving_investments-1
+				}
 			}
 			NZL = {
-			    is_puppet_of = ENG
-			}
-			AST = {
-			    is_puppet_of = ENG
-			}
-			CAN = {
-			    is_puppet_of = ENG
-			}
-			MAL = {
-			    is_puppet_of = ENG
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_ideas = ENG_commonwealth_ties_idea
-		}
-	}
-	
-	focus = {
-		id = ENG_develop_canada
-		icon = GFX_focus_develop_canada
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_commonwealth_ties
-		}
-		x = 3
-		y = 2
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-			CAN = {
-			    is_puppet_of = ENG
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			276 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			468 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
+				swap_ideas = {
+				remove_idea = ENG_Receiving_investments1
+				add_idea = ENG_Receiving_investments-1
 				}
 			}
 		}
 	}
-	
 	focus = {
-		id = ENG_develop_australia
-		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_commonwealth_ties
-		}
-		x = 4
-		y = 3
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-			AST = {
-			    is_puppet_of = ENG
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			517 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			522 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_develop_india
-		icon = GFX_focus_befriend_raj
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_commonwealth_ties
-		}
-		x = 6
-		y = 3
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-			RAJ = {
-			    is_puppet_of = ENG
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			439 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			438 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_develop_south_africa
-		icon = GFX_focus_generic_africa_factory
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_commonwealth_ties
-		}
-		x = 5
-		y = 2
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-			SAF = {
-			    is_puppet_of = ENG
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			275 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			681 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_develop_malaya
-		icon = GFX_goal_generic_construct_civ_factory
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_commonwealth_ties
-		}
-		x = 7
-		y = 2
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-			#
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			336 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			333 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_imperial_conference_focus_ww1
-		icon = GFX_goal_generic_national_unity
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_develop_canada
-		}
-		prerequisite = {
-			focus = ENG_develop_australia
-		}
-		prerequisite = {
-			focus = ENG_develop_south_africa
-		}
-		prerequisite = {
-			focus = ENG_develop_india
-		}
-		prerequisite = {
-			focus = ENG_develop_malaya
-		}
-		x = 5
-		y = 4
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-			RAJ = {
-			    is_puppet_of = ENG
-			}
-			AST = {
-			    is_puppet_of = ENG
-			}
-			CAN = {
-			    is_puppet_of = ENG
-			}
-			MAL = {
-			    is_puppet_of = ENG
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			AST = {
-			    country_event = ww1_uk.2
-			}
-			CAN = {
-			    country_event = ww1_uk.3
-			}
-			RAJ = {
-			    country_event = ww1_uk.4
-			}
-			SAF = {
-			    country_event = ww1_uk.5
-			}
-		}
-	}
-	focus = {
-		id = ENG_Develop_France
+		id = Britain_invests_in_colonies2
 		icon = GFX_surrender_tiny_flag
 		relative_position_id = ENG_focus_protect_belgium
-		cost = 7.2
+		mutually_exclusive = {
+			focus = Britain_exploit_empire2
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies
+			focus = Britain_exploit_empire
+		}
+		cost = 5
 		x = -1
-		y = 3
-		prerequisite = {
-			focus = ENG_reafirm_the_triple_entente
-		}
-		available = {
-			has_completed_focus = ENG_trade_with_france_focus
-		}
-		completion_reward = {
-			15 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-		 }
-	}
-	focus = {
-		id = ENG_Develop_Russia
-		icon = GFX_surrender_tiny_flag
-		relative_position_id = ENG_focus_protect_belgium
-		cost = 7.2
-		x = 1
-		y = 3
-		prerequisite = {
-			focus = ENG_reafirm_the_triple_entente
-		}
-		completion_reward = {
-			219 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-		 }
-	}
-	
-	focus = {
-		id = ENG_naval_power_projection
-		icon = GFX_goal_generic_navy_cruiser
-		x = 16
-		y = 0
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_completed_focus = ENG_focus_protect_belgium
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    navy_experience = 25
-			
-			add_doctrine_cost_reduction = {
-				name = ENG_air_doc_bonus_1
-				cost_reduction = 0.5
-				uses = 1
-				category = naval_doctrine
-			}
-		}
-	}
-	focus = {
-		id = ENG_increased_trade_with_usa
-		icon = GFX_focus_generic_befriend_usa
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_trade_with_france_focus
-		}
-		x = -1
-		y = 6
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_idea = ENG_trade_with_usa
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    swap_ideas = {
-				remove_idea = ENG_trade_with_usa
-				add_idea = ENG_trade_with_usa_2
-			}
-		}
-	}
-	focus = {
-		id = ENG_trade_with_france_focus
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = {
-			focus = ENG_captain_of_industry
-			focus = ENG_silent_workhorse
-		}
-		x = -2
-		y = 5
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_ideas = ENG_trade_with_france
-		}
-	}
-	
-	
-	focus = {
-		id = ENG_expand_naval_facilities
-		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_naval_power_projection
-		}
-		x = 0
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    navy_experience = 125
-			
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-						is_coastal = yes
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-						is_coastal = yes
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-						is_coastal = yes
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = dockyard
-						level = 6
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-						is_coastal = yes
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = dockyard
-						level = 6
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_flak_naval_guns
-		icon = GFX_goal_generic_occupy_states_coastal
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_naval_power_projection
-		}
-		x = 2
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    if = {
-				limit = { has_dlc = "Man the Guns" }
-				add_tech_bonus = {
-					name = ENG_flak_naval_guns
-					bonus = 1.0
-					uses = 2
-					category = cat_ship_medium_battery
-					category = cat_ship_heavy_battery
-				}
-			}
-			else = {
-				navy_experience = 200
-				
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-						is_coastal = yes
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_intensify_torpedo_manufacturing
-		icon = GFX_focus_generic_torpedo_production
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_naval_power_projection
-		}
-		x = -2
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_tech_bonus = {
-					name = ENG_intensify_torpedo_manufacturing
-					bonus = 1.0
-					uses = 2
-					category = cat_torpedoes
-				}
-			}
-			else = {
-				add_doctrine_cost_reduction = {
-					name = ENG_intensify_torpedo_manufacturing
-					cost_reduction = 0.75
-					uses = 2
-					category = cat_trade_interdiction
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_stockpile_fuel
-		icon = GFX_goal_generic_oil_refinery
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_expand_naval_facilities
-		}
-		x = -2
-		y = 2
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_tech = ww1_synthetic_oil_experiments
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = fuel_silo
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = fuel_silo
-						level = 6
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = no
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = fuel_silo
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_in_home_area = yes
-						is_core_of = ROOT
-					}
-					add_extra_state_shared_building_slots = 6
-					add_building_construction = {
-						type = fuel_silo
-						level = 6
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_HMS_Erin
-		icon = GFX_focus_generic_cruiser2
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_expand_naval_facilities
-		}
-		x = 0
-		y = 2
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_1
-						NOT = {
-						    has_tech = ww1_dreadnought_2
-						}
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_1
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_2
-						NOT = {
-						    has_tech = ww1_dreadnought_3
-						}
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_2
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_3
-						NOT = {
-						    has_tech = ww1_dreadnought_4
-						}
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_3
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_4
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_4
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_call_back_the_marines
-		icon = GFX_goal_generic_amphibious_assault
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_expand_naval_facilities
-		}
-		x = 2
-		y = 2
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			if = {
-				limit = {
-					has_tech = marines
-				}
-		    division_template = {
-				name = "Royal Marines"
-				division_names_group = ENG_MAR_01
-				regiments = {
-					marine = { x = 0 y = 0 }
-					marine = { x = 0 y = 1 }
-					marine = { x = 0 y = 2 }
-					marine = { x = 1 y = 0 }
-					marine = { x = 1 y = 1 }
-					marine = { x = 1 y = 2 }
-					marine = { x = 2 y = 0 }
-					marine = { x = 2 y = 1 }
-					marine = { x = 2 y = 2 }
-					marine = { x = 3 y = 0 }
-					marine = { x = 3 y = 1 }
-					marine = { x = 3 y = 2 }
-					marine = { x = 4 y = 0 }
-					marine = { x = 4 y = 1 }
-					marine = { x = 4 y = 2 }
-				}
-				support = {
-					artillery = { x = 0 y = 0 }
-					engineer = { x = 0 y = 1 }
-				}	
-				priority = 1
-			}
-			126 = {
-				create_unit = {
-					division = "name = \"Royal Marines\" division_template = \"Royal Marines\" start_experience_factor = 1"
-					owner = ROOT
-					prioritize_location = 11374
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-			126 = {
-				create_unit = {
-					division = "name = \"Royal Marines\" division_template = \"Royal Marines\" start_experience_factor = 1"
-					owner = ROOT
-					prioritize_location = 11374
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-			126 = {
-				create_unit = {
-					division = "name = \"Royal Marines\" division_template = \"Royal Marines\" start_experience_factor = 1"
-					owner = ROOT
-					prioritize_location = 11374
-					allow_spawning_on_enemy_provs = yes
-					}
-				}
-			} else = {
-				set_technology = {
-				marines = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_HMS_Agincourt
-		icon = GFX_goal_generic_navy_battleship
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_HMS_Erin
-		}
-		x = 1
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_1
-						NOT = {
-						    has_tech = ww1_dreadnought_2
-						}
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_1
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_2
-						NOT = {
-						    has_tech = ww1_dreadnought_3
-						}
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_2
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_3
-						NOT = {
-						    has_tech = ww1_dreadnought_4
-						}
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_3
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-			if = {
-			    limit = {
-				    ROOT = {
-					    has_tech = ww1_dreadnought_4
-					}
-				}
-				add_equipment_production = {
-					equipment = {
-						type = battleship_4
-						creator = "ENG" 
-					}
-					requested_factories = 1
-					progress = 0.65
-					amount = 1
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_improve_the_destroyers
-		icon = GFX_focus_generic_destroyer
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_HMS_Erin
-		}
-		x = -1
-		y = 3
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    navy_experience = 25
-			add_tech_bonus = {
-				name = ENG_Destroyer
-				bonus = 2.0
-				uses = 1
-				category = dd_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = ENG_the_race_shall_end
-		icon = GFX_focus_chi_british_cooperation
-		relative_position_id = ENG_naval_power_projection
-		prerequisite = {
-			focus = ENG_improve_the_destroyers
-		}
-		prerequisite = {
-			focus = ENG_HMS_Agincourt
-		}
-		x = 0
-		y = 4
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_NAVY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    remove_ideas = ENG_naval_arms_race
-		}
-	}
-	focus = {
-		id = ENG_War_With_Germany
-		icon = GFX_surrender_tiny_flag
-		cost = 10
-		x = 22
-		y = 0
-		available = {
-			has_war_with = GER
-		}
-		completion_reward = {
-			add_ideas = limited_conscription
-			add_ideas = ENG_Underequiped_Military
-			remove_ideas = ENG_volunteer_only_army
-		 }
-	}
-	focus = {
-		id = ENG_Send_Equipment_To_Frontline
-		icon = GFX_surrender_tiny_flag
-		cost = 10
-		prerequisite = {
-			focus = ENG_War_With_Germany
-		}
-		x = 22
-		y = 1
-		available = {
-			has_war_with = GER
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_Underequiped_Military
-				add_idea = ENG_Send_Equipment_To_Frontline
-			}
-		}
-	}
-	focus = {
-		id = ENG_Prepared_Military
-		icon = GFX_surrender_tiny_flag
-		cost = 10
-		prerequisite = {
-			focus = ENG_Send_Equipment_To_Frontline
-		}
-		relative_position_id = ENG_War_With_Germany
-		x = 0
 		y = 2
 		completion_reward = { 
-			remove_ideas = ENG_Send_Equipment_To_Frontline
+			add_to_variable = {
+				Britain_democracy = 1
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				} 
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies1
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = Britain_exploit_empire2
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_invests_in_colonies2
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies
+			focus = Britain_exploit_empire
+		}
+		cost = 5
+		x = 1
+		y = 2
+		completion_reward = { 
+			add_to_variable = {
+				Britain_monarchy = 1
+			}
+			if = {
+				limit = { 
+					has_completed_focus = Britain_invests_in_colonies
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies-2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				} 
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies-2
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = Britain_invests_in_colonies3
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_exploit_empire3
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies2
+			focus = Britain_exploit_empire2
+		}
+		cost = 5
+		x = -1
+		y = 3
+		completion_reward = { 
+			add_to_variable = {
+				Britain_democracy = 1
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				} 
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies-1 }
+					ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				} 
+				}
+				else_if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies2
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies2
+						add_idea = ENG_Investing_Colonies3
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				} 
+				}
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-2
+						add_idea = ENG_Investing_Colonies-1
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+						}
+					}
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = ENG_infantry_equipment_research
-		icon = GFX_goal_generic_small_arms
-		relative_position_id = ENG_War_With_Germany
+		id = Britain_invests_in_colonies4
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_exploit_empire4
+		}
 		prerequisite = {
-			focus = ENG_War_With_Germany
+			focus = Britain_invests_in_colonies3
+			focus = Britain_exploit_empire3
 		}
-		x = 2
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_tech_bonus = {
-				name = ENG_infantry_research_1
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
+		cost = 5
+		x = -1
+		y = 4
+		completion_reward = { 
+			add_to_variable = {
+				Britain_democracy = 1
 			}
-		}
-	}
-	focus = {
-		id = ENG_doctrine_effort
-		icon = GFX_goal_generic_secret_weapon
-		relative_position_id = ENG_War_With_Germany
-		prerequisite = {
-		    focus = ENG_War_With_Germany
-		}
-		x = -2
-		y = 1
-		cost = 5.8
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_doctrine_cost_reduction = {
-				name = FRA_land_doc_bonus_1
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	focus = {
-		id = ENG_naval_blockade
-		icon = GFX_focus_attack_german_empire
-		relative_position_id = ENG_War_With_Germany
-		prerequisite = {
-			focus = ENG_Send_Equipment_To_Frontline
-		}
-		x = -2
-		y = 2
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    has_war_with = GER
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			GER = {
-			    add_ideas = ENG_ger_naval_blockade_1
-			}
-		}
-	}
-	focus = {
-		id = ENG_support_france
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_War_With_Germany 
-		prerequisite = {
-			focus = ENG_Send_Equipment_To_Frontline
-		}
-		x = 2
-		y = 2
-		cost = 7.2
-
-		bypass = {
-			#
-		}
-		available = {
-		    FRA = {
-			    has_war = yes
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    add_war_support = 0.05
-			FRA = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 5000
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
 				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				} else_if = {
+					
+				limit = { 
+					has_idea = ENG_Investing_Colonies2
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies2
+						add_idea = ENG_Investing_Colonies3
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				} 
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies3 }
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies3
+							add_idea = ENG_Investing_Colonies4
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies-1 }
+				
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				} 
+				}
+				
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies-3
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies-3
+							add_idea = ENG_Investing_Colonies-2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+				}
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-2
+						add_idea = ENG_Investing_Colonies-1
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Britain_invests_in_colonies5
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_exploit_empire5
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies4
+			focus = Britain_exploit_empire4
+		}
+		cost = 5
+		x = -1
+		y = 5
+		completion_reward = { 
+			add_to_variable = {
+				Britain_democracy = 1
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments2
+					}
+				} else_if = {
+					
+				limit = { 
+					has_idea = ENG_Investing_Colonies2
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies2
+						add_idea = ENG_Investing_Colonies3
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments3
+					}
+				} 
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies3 }
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies3
+							add_idea = ENG_Investing_Colonies4
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments3
+							add_idea = ENG_Receiving_investments4
+						}
+					}
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies4 }
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies4
+							add_idea = ENG_Investing_Colonies5
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments4
+							add_idea = ENG_Receiving_investments5
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments4
+							add_idea = ENG_Receiving_investments5
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments4
+							add_idea = ENG_Receiving_investments5
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments4
+							add_idea = ENG_Receiving_investments5
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments4
+							add_idea = ENG_Receiving_investments5
+						}
+					}
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies-1 }
+				
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments1
+					}
+				} 
+				}
+				
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies-3
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies-3
+							add_idea = ENG_Investing_Colonies-2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-2
+						}
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies-4
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies-4
+							add_idea = ENG_Investing_Colonies-3
+						}
+					}
+					CAN = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-3
+						}
+					}
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-3
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-3
+						}
+					}
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-3
+						}
+					}
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-3
+						}
+					}
+				}
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-2
+						add_idea = ENG_Investing_Colonies-1
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-1
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = Britain_exploit_empire3
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_invests_in_colonies3
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies2
+			focus = Britain_exploit_empire2
+		}
+		cost = 5
+		x = 1
+		y = 3
+		completion_reward = { 
+			add_to_variable = {
+				Britain_monarchy = 1
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies-1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				} 
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies-1 }
+					ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies-2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				} 
+				}
+				else_if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies2
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies2
+						add_idea = ENG_Investing_Colonies1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				} 
+				}
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-2
+						add_idea = ENG_Investing_Colonies-3
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = Britain_exploit_empire4
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_invests_in_colonies4
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies3
+			focus = Britain_exploit_empire3
+		}
+		cost = 5
+		x = 1
+		y = 4
+		completion_reward = { 
+			add_to_variable = {
+				Britain_monarchy = 1
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies-1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				} else_if = {
+					
+				limit = { 
+					has_idea = ENG_Investing_Colonies2
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies2
+						add_idea = ENG_Investing_Colonies1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				} 
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies-1 }
+				
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies-2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				} 
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies-3
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies-3
+							add_idea = ENG_Investing_Colonies-4
+						}
+					}
+					CAN = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+				}
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-2
+						add_idea = ENG_Investing_Colonies-3
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = Britain_exploit_empire5
+		icon = GFX_surrender_tiny_flag
+		relative_position_id = ENG_focus_protect_belgium
+		mutually_exclusive = {
+			focus = Britain_invests_in_colonies5
+		}
+		prerequisite = {
+			focus = Britain_invests_in_colonies4
+			focus = Britain_exploit_empire4
+		}
+		cost = 5
+		x = 1
+		y = 5
+		completion_reward = { 
+			add_to_variable = {
+				Britain_monarchy = 1
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_Investing_Colonies1
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies1
+						add_idea = ENG_Investing_Colonies-1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments1
+					add_idea = ENG_Receiving_investments-1
+					}
+				} else_if = {
+					
+				limit = { 
+					has_idea = ENG_Investing_Colonies2
+				}
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies2
+						add_idea = ENG_Investing_Colonies1
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments2
+					add_idea = ENG_Receiving_investments1
+					}
+				} 
+				}
+				else_if = {
+					limit = { has_idea = ENG_Investing_Colonies-1 }
+				
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-1
+						add_idea = ENG_Investing_Colonies-2
+					}
+				}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-1
+					add_idea = ENG_Receiving_investments-2
+					}
+				} 
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies-3
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies-3
+							add_idea = ENG_Investing_Colonies-4
+						}
+					}
+					CAN = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-3
+						add_idea = ENG_Receiving_investments-4
+						}
+					}
+				}
+				
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies-4
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies-4
+							add_idea = ENG_Investing_Colonies-5
+						}
+					}
+					CAN = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-5
+						}
+					}
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-5
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-5
+						}
+					}
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-5
+						}
+					}
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments-4
+						add_idea = ENG_Receiving_investments-5
+						}
+					}
+				}
+				else = {
+				ENG = {
+					swap_ideas = {
+						remove_idea = ENG_Investing_Colonies-2
+						add_idea = ENG_Investing_Colonies-3
+					}
+					}
+				CAN = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				SAF = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				RAJ = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				AST = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+					}
+				}
+				NZL = {
+					swap_ideas = {
+					remove_idea = ENG_Receiving_investments-2
+					add_idea = ENG_Receiving_investments-3
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_parliments_decision
+		icon = GFX_surrender_tiny_flag
+		cost = 10
+		prerequisite = {
+			focus = Britain_invests_in_colonies5
+			focus = Britain_exploit_empire5
+		}
+		relative_position_id = ENG_focus_protect_belgium
+		x = 0
+		y = 6
+		completion_reward = { 
+			if = {
+				limit = { 
+					check_variable = {
+						Britain_democracy > 2
+					}
+				}
+				complete_national_focus = ENG_democracy
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						Britain_monarchy > 2
+					}
+				}
+				complete_national_focus = ENG_monarchy
+			}
+			
+		}
+	}
+	focus = {
+		id = ENG_democracy
+		icon = GFX_surrender_tiny_flag
+		cost = 999
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = {
+			focus = ENG_parliments_decision
+		}
+		x = -1
+		y = 7
+		completion_reward = { 
+			add_ideas = ENG_Democracy_Support
+			load_focus_tree = {
+			tree = british_focus_democracy_yippee
+			keep_completed = yes
+			}
+		}
+	}
+	focus = {
+		id = ENG_monarchy
+		icon = GFX_surrender_tiny_flag
+		cost = 999
+		relative_position_id = ENG_focus_protect_belgium
+		prerequisite = { 
+			focus = ENG_parliments_decision
+		}
+		x = 1
+		y = 7
+		completion_reward = { 
+			add_ideas = ENG_Fallen_Government
+			load_focus_tree = {
+				tree = british_focus_monarchy
+				keep_completed = yes
 			}
 		}
 	}
