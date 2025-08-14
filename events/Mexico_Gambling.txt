@@ -1,0 +1,40 @@
+add_namespace = Mexico_Gamble
+
+country_event = {
+	id = Mexico_Gamble.1
+	title = Mexico_Gamble.1.t
+	desc = Mexico_Gamble_Desc.1
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = Mexico_Gamble.1.a
+		set_variable = {
+			variable = Nation_Supported
+			value = 1
+		}
+	}
+
+	option = {
+		name = Mexico_Gamble.1.b
+		set_variable = {
+			variable = Nation_Supported
+			value = 2
+		}
+	}
+}
+
+country_event = {
+	id = Mexico_Gamble.2
+	title = Mexico_Gamble.2.t
+	desc = Mexico_Gamble_Desc.2
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = Mexico_Gamble.2.a
+		army_experience = 100
+	}
+}

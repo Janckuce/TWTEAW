@@ -1,0 +1,60 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						not = {
+							or = {
+								tag = MEX
+								tag = MXF
+							}
+						}
+					}
+				country_event = Mexico_Gamble.1
+			}
+			}
+		}
+	}
+
+	on_peace = {
+		effect = {
+			if = {
+				limit = {
+					or = {
+						tag = MEX
+					}
+				}
+				every_country = {
+					if = {
+						limit = {
+							check_variable = {
+								variable = Nation_Supported
+								value = 1
+							}
+						}
+						country_event = Mexico_Gamble.2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					or = {
+						tag = MXF
+					}
+				}
+				every_country = {
+					if = {
+						limit = {
+							check_variable = {
+								variable = Nation_Supported
+								value = 2
+							}
+						}
+						country_event = Mexico_Gamble.2
+					}
+				}
+			}
+		}
+	}
+}
