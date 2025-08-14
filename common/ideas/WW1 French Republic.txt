@@ -151,6 +151,35 @@ ideas = {
 				}
 			}
 		}
+		FRA_Research_Funding_Left = {
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+		FRA_Research_Funding_Right = {
+			modifier = {
+				military_industrial_organization_research_bonus = 0.05
+			}
+		}
+		FRA_Research_Funding = {
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		FRA_Research_Funding1 = {
+			modifier = {
+				research_speed_factor = 0.05
+				military_industrial_organization_research_bonus = 0.05
+			}
+		}
+		FRA_Paris_Scientists = {
+			available = {
+				controls_province = 11506
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
 		FRA_Red_Army = {
 			picture = GER_aufrustung
 			modifier = {

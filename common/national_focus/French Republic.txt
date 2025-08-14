@@ -896,13 +896,100 @@ focus_tree = {
 		}
 	}
 
+	#	Main Research Focus
+
+	focus = {
+		id = FRA_Research_Investments1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 10
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		mutually_exclusive = {
+			focus = FRA_Research_Investments2
+		}
+		completion_reward = {
+			add_ideas = FRA_Research_Funding_Left
+		}
+	}
+	focus = {
+		id = FRA_Research_Investments2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 12
+		y = 6
+		available = {
+			has_completed_focus = FRA_Look_Towards_The_Future
+		}
+		mutually_exclusive = {
+			focus = FRA_Research_Investments1
+		}
+		completion_reward = {
+			add_ideas = FRA_Research_Funding_Right
+		}
+	}
+	focus = {
+		id = FRA_Extreme_Research
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Research_Investments1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FRA_Research_Investments1
+			focus = FRA_Research_Investments2
+		}
+		completion_reward = {
+			add_ideas = FRA_Research_Funding
+		}
+	}
+	focus = {
+		id = FRA_Organisation_Funding
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Extreme_Research
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Extreme_Research
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Research_Funding
+				add_idea = FRA_Research_Funding1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Paris_Academy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Organisation_Funding
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Organisation_Funding
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					controls_province = 11506
+				}
+				add_ideas = FRA_Paris_Scientists
+			}
+			add_research_slot = 1
+		}
+	}
+
 	# Main Military Focus
 
 	focus = {
 		id = FRA_Superior_Warfare
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 15
+		x = 14
 		y = 6
 		available = {
 			has_completed_focus = FRA_Look_Towards_The_Future
@@ -967,7 +1054,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = FRA_Military_Industrial_Power2
+		id = FRA_Defensive_People
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = FRA_Defensive_Nation
@@ -990,7 +1077,7 @@ focus_tree = {
 		id = FRA_Superior_Air_Force
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 19
+		x = 17
 		y = 6
 		available = {
 			has_completed_focus = FRA_Look_Towards_The_Future
@@ -1078,7 +1165,7 @@ focus_tree = {
 		id = FRA_Superior_Naval_Power
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 23
+		x = 20
 		y = 6
 		available = {
 			has_completed_focus = FRA_Look_Towards_The_Future
