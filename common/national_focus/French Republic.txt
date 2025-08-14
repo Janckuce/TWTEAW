@@ -332,6 +332,7 @@ focus_tree = {
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 2
 		y = 1
+		cancel_if_invalid = no
 		available = {
 			has_war_support > 0.25
 		}
@@ -349,6 +350,7 @@ focus_tree = {
 		relative_position_id = FRA_War_Preparations
 		x = 0
 		y = 1
+		cancel_if_invalid = no
 		available = {
 			has_war_support > 0.4
 		}
@@ -369,6 +371,7 @@ focus_tree = {
 		relative_position_id = FRA_Instruments_Of_War
 		x = 0
 		y = 1
+		cancel_if_invalid = no
 		available = {
 			has_war_support > 0.6
 		}
@@ -660,11 +663,11 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 6000
+				amount = 5000
 			}
 			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 600
+				type = artillery_equipment
+				amount = 500
 			}
 		}
 	}
