@@ -159,9 +159,6 @@ focus_tree = {
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = 0
 		y = 2
-		available = {
-			num_of_factories > 60
-		}
 		prerequisite = {
 			focus = FRA_Industry_First
 			focus = FRA_Industry_Second
@@ -315,6 +312,9 @@ focus_tree = {
 		relative_position_id = FRA_Industry_Continue
 		x = 2
 		y = 1
+		available = {
+			num_of_factories > 60
+		}
 		prerequisite = {
 			focus = FRA_Industry_Continue
 		}
@@ -461,7 +461,7 @@ focus_tree = {
 		y = 0
 		mutually_exclusive = {
 			focus = FRA_Commune
-			focus = FRA_House_Of_Bourbon
+			focus = FRA_Nation_Francaise
 		}
 		available = {
 			has_completed_focus = FRA_Look_Towards_The_Future
@@ -603,7 +603,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_Republique
-			focus = FRA_House_Of_Bourbon
+			focus = FRA_Nation_Francaise
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -709,10 +709,10 @@ focus_tree = {
 		}
 	}
 
-	#	Bourbon Path
+	#	Fascist Path
 
 	focus = {
-		id = FRA_House_Of_Bourbon
+		id = FRA_Nation_Francaise
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		x = 26
@@ -726,14 +726,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = FRA_Sour_Loser
-			add_ideas = FRA_Bourbon
+			add_ideas = FRA_Ideaux
 			set_politics = {
-				ruling_party = neutrality
-			}
-			set_party_name = {
-				ideology = neutrality
-				long_name = "Maison De Bourbon"
-				name = "Bourbon"
+				ruling_party = fascism
 			}
 		}
 	}
@@ -741,11 +736,11 @@ focus_tree = {
 		id = FRA_Naval_Advancements
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		relative_position_id = FRA_House_Of_Bourbon
+		relative_position_id = FRA_Nation_Francaise
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = FRA_House_Of_Bourbon
+			focus = FRA_Nation_Francaise
 		}
 		completion_reward = {
 			add_tech_bonus = {

@@ -10,6 +10,7 @@ ideas = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				democratic_drift = 0.03
 			}
 		}
 		FRA_Carry_On_Artillery = {
@@ -17,6 +18,7 @@ ideas = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				democratic_drift = 0.03
 			}
 			equipment_bonus = {
 				artillery_equipment = {
@@ -29,6 +31,7 @@ ideas = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				democratic_drift = 0.03
 			}
 			equipment_bonus = {
 				heavy_artillery_equipment = {
@@ -39,12 +42,14 @@ ideas = {
 		FRA_Commune_Ideals = {
 			modifier = {
 				conscription = 0.03
+				communism_drift = 0.03
 			}
 		}
-		FRA_Bourbon = {
+		FRA_Ideaux = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
+				fascism_drift = 0.03
 			}
 		}
 		FRA_Fragmented_Government = {
