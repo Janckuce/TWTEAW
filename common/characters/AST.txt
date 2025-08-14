@@ -12,4 +12,116 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	ast_billy_hughes = {
+    name = "William Morris Billy Hughes"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_billy_hughes_frame"
+		    }
+		}
+			country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { AST_joker_australia }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_billy_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+	ast_joseph_cook = {
+    name = "Joseph Cook"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_josef_cook_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_joseph_cook_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_billy_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+	ast_denison_miller = {
+    name = "Denison Miller"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_dennis_miller_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_denison_miller_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_denison_miller
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
+}
+
+	ast_henry_bournes_higgins = {
+    name = "Henry Bournes Higgins"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_billy_hughes"
+                small = "GFX_ast_higgins_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_henry_bournes_higgins_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_henry_bournes_higgins
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
 }

@@ -29,7 +29,12 @@ focus_tree = {
 		cost = 10
 		x = 10
 		y = 0
-		completion_reward = {}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
 	}
 	focus = {
 		id = YEM_Industry_Main
@@ -77,18 +82,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			679 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			921 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -105,11 +110,9 @@ focus_tree = {
 			focus = YEM_Industry_Main
 		}
 		completion_reward = {
-			675 = {
-				add_resource = {
-					type = oil
-					amount = 10
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 	}
@@ -143,9 +146,11 @@ focus_tree = {
 			focus = YEM_Industry2
 		}
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
+			675 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
 			}
 		}
 	}
@@ -178,18 +183,18 @@ focus_tree = {
 		}
 		completion_reward = {
 			679 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			921 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -210,7 +215,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			679 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 6
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
 			}
 			swap_ideas = {
 				remove_idea = YEM_Relevant_Capital
@@ -270,26 +283,25 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = YEM_Industrial_Expansion
-		}
-		prerequisite = {
 			focus = YEM_Agricultural_Expansion
 		}
 		completion_reward = {
-			679 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
 			swap_ideas = {
 				remove_idea = YEM_Famous_Capital
 				add_idea = YEM_Wonder_Capital
 			}
+			679 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -316,9 +328,10 @@ focus_tree = {
 		relative_position_id = YEM_Military_Main
 		x = 0
 		y = 1
+		continue_if_invalid = yes
 		available = {
 			has_equipment = {
-				infantry_equipment > 5999
+				infantry_equipment > 3999
 			}
 		}
 		prerequisite = {
@@ -338,9 +351,10 @@ focus_tree = {
 		relative_position_id = YEM_Military_Enhancement
 		x = 0
 		y = 1
+		continue_if_invalid = yes
 		available = {
 			has_equipment = {
-				artillery_equipment > 999
+				artillery_equipment > 299
 			}
 		}
 		prerequisite = {
@@ -357,7 +371,8 @@ focus_tree = {
 		relative_position_id = YEM_Military_Logistics
 		x = -1
 		y = 1
-		available = {
+		mutually_exclusive = {
+			focus = YEM_War_Time_Readiness
 		}
 		prerequisite = {
 			focus = YEM_Military_Logistics
@@ -373,7 +388,8 @@ focus_tree = {
 		relative_position_id = YEM_Military_Logistics
 		x = 1
 		y = 1
-		available = {
+		mutually_exclusive = {
+			focus = YEM_Rodent_Tactics
 		}
 		prerequisite = {
 			focus = YEM_Military_Logistics
@@ -392,7 +408,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 30
+				num_of_factories > 50
 			}
 		}
 		prerequisite = {
@@ -415,7 +431,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 40
+				num_of_factories > 55
 			}
 		}
 		prerequisite = {
@@ -441,7 +457,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 50
+				num_of_factories > 60
 			}
 			YEM = {
 				num_of_factories > 20
@@ -453,14 +469,14 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = YEM_Declining_Power2
 			679 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 5
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 5
 				}
 			}
 		}
@@ -478,7 +494,7 @@ focus_tree = {
 		}
 		available = {
 			TUR = {
-				num_of_factories > 30
+				num_of_factories > 50
 			}
 		}
 		prerequisite = {
@@ -518,17 +534,18 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 40
+				num_of_factories > 55
 			}
-			has_idea = YEM_Declining_Power
 		}
 		prerequisite = {
 			focus = YEM_Ottoman_Trade
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Declining_Power
-				add_idea = YEM_Declining_Power1
+			679 = {
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
 			}
 		}
 	}
@@ -542,17 +559,18 @@ focus_tree = {
 		continue_if_invalid = yes
 		available = {
 			TUR = {
-				num_of_factories > 40
+				num_of_factories > 55
 			}
-			has_idea = YEM_Declining_Power1
 		}
 		prerequisite = {
 			focus = YEM_Ottoman_Trade
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Declining_Power1
-				add_idea = YEM_Declining_Power2
+			679 = {
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
 			}
 		}
 	}
@@ -643,6 +661,48 @@ focus_tree = {
 		relative_position_id = YEM_Strength_With_Us
 		x = 0
 		y = 2
+		available = {
+			656 = {
+				controller = {
+					or = {
+						tag = TUR
+						tag = GER
+						tag = AUS
+						tag = BUL
+					}
+				}
+			}
+			294 = {
+				controller = {
+					or = {
+						tag = TUR
+						tag = GER
+						tag = AUS
+						tag = BUL
+					}
+				}
+			}
+			658 = {
+				controller = {
+					or = {
+						tag = TUR
+						tag = GER
+						tag = AUS
+						tag = BUL
+					}
+				}
+			}
+			765 = {
+				controller = {
+					or = {
+						tag = TUR
+						tag = GER
+						tag = AUS
+						tag = BUL
+					}
+				}
+			}
+		}
 		prerequisite = {
 			focus = YEM_Emir_Power1
 		}
@@ -653,10 +713,6 @@ focus_tree = {
 			focus = YEM_Emir_Power3
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Ottoman_Dependency_Royalist1
-				add_idea = YEM_Ottoman_Dependency_Royalist2
-			}
 			656 = {
 				add_core_of = YEM
 				add_claim_by = YEM
@@ -673,6 +729,9 @@ focus_tree = {
 				add_core_of = YEM
 				add_claim_by = YEM
 			}
+			TUR = {
+				country_event = ww1_ottoman.12
+			}
 		}
 	}
 	focus = {
@@ -680,7 +739,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 1
 		relative_position_id = YEM_Deciding_Our_Fate
-		x = 8
+		x = 10
 		y = 1
 		continue_if_invalid = yes
 		mutually_exclusive = {
@@ -688,7 +747,7 @@ focus_tree = {
 		}
 		available = {
 			TUR = {
-				num_of_factories > 30
+				num_of_factories > 50
 			}
 		}
 		prerequisite = {
@@ -699,10 +758,13 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.1
 			}
+			set_politics = {
+				ruling_party = fascism
+			}
 		}
 	}
 	focus = {
-		id = YEM_Ottoman_March
+		id = YEM_Purchase_Licences
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = YEM_Us_And_The_Ottomans
@@ -716,6 +778,174 @@ focus_tree = {
 				remove_idea = YEM_Ottoman_Dependency
 				add_idea = YEM_Ottoman_Dependency_Fascist
 			}
+		}
+	}
+	focus = {
+		id = YEM_Conscription_Efforts
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Purchase_Licences
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Purchase_Licences
+		}
+		completion_reward = {
+			add_ideas = YEM_Extreme_Conscription
+		}
+	}
+	focus = {
+		id = YEM_Minimise_Oil_Consumption
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Conscription_Efforts
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Conscription_Efforts
+		}
+		completion_reward = {
+			add_ideas = YEM_Maximise_Oil_Production
+		}
+	}
+	focus = {
+		id = YEM_Closer_Ties
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Minimise_Oil_Consumption
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Minimise_Oil_Consumption
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = YEM_Ottoman_Dependency_Fascist
+				add_idea = YEM_Ottoman_Dependency_Fascist1
+			}
+		}
+	}
+	focus = {
+		id = YEM_Our_Southern_Enemy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Closer_Ties
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Closer_Ties
+		}
+		completion_reward = {
+			292 = {
+				add_core_of = YEM
+				add_claim_by = YEM
+			}
+			678 = {
+				add_core_of = YEM
+				add_claim_by = YEM
+			}
+			OMA = {
+				country_event = ww1_oman.1
+			}
+		}
+	}
+	focus = {
+		id = YEM_Aircraft_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Us_And_The_Ottomans
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = YEM_Us_And_The_Ottomans
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts
+			679 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_resource = {
+					type = rubber
+					amount = 16
+				}
+			}
+		}
+	}
+	focus = {
+		id = YEM_Fighter_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Aircraft_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Aircraft_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Fighter
+		}
+	}
+	focus = {
+		id = YEM_Air_Support_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Fighter_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Fighter_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Air_Support
+		}
+	}
+	focus = {
+		id = YEM_Bomber_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Air_Support_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Air_Support_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Bombing
+		}
+	}
+	focus = {
+		id = YEM_Naval_Bomber_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = YEM_Bomber_Production
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Bomber_Production
+		}
+		completion_reward = {
+			add_ideas = YEM_Plane_Experts_Naval_Bombing
+		}
+	}
+	focus = {
+		id = YEM_Peace_Keepers
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1
+		relative_position_id = YEM_Military_Logistics
+		x = 0
+		y = 2
+		available = {
+			date > 1914.7.28
+		}
+		prerequisite = {
+			focus = YEM_Rodent_Tactics
+			focus = YEM_War_Time_Readiness
+		}
+		completion_reward = {
+			add_ideas = YEM_Jabal_Forces
 		}
 	}
 }

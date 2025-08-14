@@ -41,9 +41,6 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_hire_a_captain_of_industry
-			}
 			traits = {
 				captain_of_industry #10% Civ Construction Speed
 			}
@@ -125,9 +122,6 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_offensive_focus
-			}
 			traits = {
 				army_chief_offensive_2 #Inf Attack +10%
 			}
@@ -139,10 +133,15 @@ characters={
 		
 		field_marshal = {
 			skill = 2
-			attack_skill = 3
-			defense_skill = 1
+			attack_skill = 2
+			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 4
+			traits = {
+				inflexible_strategist
+				infantry_officer
+				trickster
+			}
 		}
 	}
 	
@@ -163,9 +162,6 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_defensive_focus
-			}
 			traits = {
 				army_chief_defensive_2 #Inf Defense +10%
 			}
@@ -177,10 +173,14 @@ characters={
 		
 		field_marshal = {
 			skill = 2
-			attack_skill = 4
+			attack_skill = 2
 			defense_skill = 3
-			planning_skill = 5
+			planning_skill = 6
 			logistics_skill = 5
+			traits = {
+				inflexible_strategist
+				trait_reckless
+			}
 		}
 	}
 	
@@ -213,9 +213,14 @@ characters={
 		field_marshal = {
 			skill = 2
 			attack_skill = 3
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+			traits = {
+				politically_connected
+				trait_reckless
+				harsh_leader
+			}
 		}
 	}
 	
@@ -272,7 +277,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				army_concealment_2 #Enemy Air Support -10%
+				army_entrenchment_2 #Entrenchment Speed +16%
 			}
 			cost = 150
 			ai_will_do = {
@@ -286,6 +291,9 @@ characters={
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 5
+			traits = {
+				old_guard
+			}
 		}
 	}
 	
@@ -441,6 +449,9 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			available = {
+				has_completed_focus = FRA_Nation_Francaise
+			}
 			traits = {
 				army_infantry_2 #Inf Attack +10% Inf Defense +15%
 			}
@@ -500,7 +511,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_head_of_directorate_of_buildings
+				has_completed_focus = FRA_Nation_Francaise
 			}
 			traits = {
 				head_directorate_of_new_buildings #Construction Speed 10% Factory Output 5% Dockyard Output 5%
@@ -549,6 +560,9 @@ characters={
 			idea_token = FRA_jean_jaures
 			allowed = {
 				original_tag = FRA
+			}
+			available = {
+				has_completed_focus = FRA_Democratie
 			}
 			traits = {
 				economist #5% Production Efficiency Cap

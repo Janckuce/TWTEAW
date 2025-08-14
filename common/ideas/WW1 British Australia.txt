@@ -152,7 +152,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major = {
-			picture = chi_army_corruption2
+			picture = mex_politicised_army
 			
 			modifier = {
 				army_speed_factor = -0.03
@@ -164,12 +164,12 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major1 = {
-			picture = chi_army_corruption2
+			picture = mex_politicised_army
 			modifier = {
 			}
 		}
 		AST_Small_Defence_Spending_Major2 = {
-			picture = army_corruption2
+			picture = mex_politicised_army
 			modifier = {
 				army_speed_factor = 0.03
 				army_attack_speed_factor = 0.03
@@ -180,7 +180,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major3 = {
-			picture = chi_army_corruption2
+			picture = mex_politicised_army
 			modifier = {
 				army_speed_factor = 0.06
 				army_attack_speed_factor = 0.06
@@ -191,6 +191,7 @@ ideas = {
 			}
 		}
 		AST_Royal_Navy = {
+			picture = ast_naval_spirit
 			modifier = {
 				industrial_capacity_dockyard = 0.025
 				repair_speed_factor = 0.03
@@ -202,6 +203,7 @@ ideas = {
 			}
 		}
 		AST_Royal_Navy1 = {
+			picture = ast_naval_spirit
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 				repair_speed_factor = 0.06
@@ -213,42 +215,83 @@ ideas = {
 			}
 		}
 		AST_Consumer_Reduction = {
+			picture = generic_goods_red_bonus
 			modifier = {
 				consumer_goods_expected_value = 0.5
 			}
 		}
 		AST_Stability_Reduction = {
+			picture = generic_goods_red_bonus
 			modifier = {
 				stability_factor = -0.5
 			}
 		}
 		AST_Academy = {
+			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.5
+				research_speed_factor = 0.075
 			}
 		}
 		AST_Increased_Worker_Wages = {
+			picture = NOR_printing_money
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				industrial_capacity_factory = 0.05
 			}
 		}
 		AST_Increased_Worker_Rights = {
+			picture = NOR_printing_money
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				industrial_capacity_dockyard = 0.05
 			}
 		}
 		AST_Decreased_Pollution = {
+			picture = RAJ_contamination_cleanup_crew
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				production_speed_buildings_factor = 0.1
 			}
 		}
 		AST_Extra_Liberties = {
+			picture = generic_free_trade
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+		industrial_concern = {
+		
+			ast_cement = {
+			name = ast_cement
+			picture = ast_cement
+			allowed = {
+				original_tag = AST
+			}
+
+			visible = {
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.025
+				industry_repair_factor = 0.1
+				production_speed_industrial_complex_factor = 0.065
+				production_speed_dockyard_factor = 0.05
+
+			}
+			
+			traits = { construction_company }
+			
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}
