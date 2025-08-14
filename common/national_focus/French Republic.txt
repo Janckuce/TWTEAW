@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Morocco_Conundrum
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_africa_liberation
 		cost = 10
 		x = 10
 		y = 0
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Sabre_Of_Honour
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_consitutional_crisis
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 0
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_1
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = -6
@@ -103,7 +103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Kickstart_Our_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industrialists
 		cost = 10
 		relative_position_id = FRA_Industry_Main
 		x = 0
@@ -120,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_First
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_economic_recovery
 		cost = 10
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = -1
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_Second
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 10
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = 1
@@ -154,7 +154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Industry_Continue
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_2
 		cost = 10
 		relative_position_id = FRA_Kickstart_Our_Industry
 		x = 0
@@ -193,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_industry
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = -2
@@ -227,7 +227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Home_Materials
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_mining_industry
 		cost = 10
 		relative_position_id = FRA_Military_Industry
 		x = 0
@@ -246,7 +246,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Factories_First
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_military
 		cost = 10
 		relative_position_id = FRA_Home_Materials
 		x = -1
@@ -269,7 +269,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Factories_Second
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_military_sphere
 		cost = 10
 		relative_position_id = FRA_Home_Materials
 		x = 1
@@ -292,7 +292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Military_Factories_Continue
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_academy
 		cost = 10
 		relative_position_id = FRA_Home_Materials
 		x = 0
@@ -307,7 +307,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Finalise_Industrial_Capacity
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_a_modern_economy
 		cost = 10
 		relative_position_id = FRA_Industry_Continue
 		x = 2
@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_War_Preparations
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_war_taxes
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 2
@@ -345,7 +345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Instruments_Of_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWI_issue_war_bonds
 		cost = 10
 		relative_position_id = FRA_War_Preparations
 		x = 0
@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_War_Is_Our_Profession
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_german_army_invincible
 		cost = 10
 		relative_position_id = FRA_Instruments_Of_War
 		x = 0
@@ -387,7 +387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Spirit_Of_The_Republic
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_fra_le_deluge
 		cost = 10
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 4
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Carry_The_Torch
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_divide_and_conquer
 		cost = 10
 		relative_position_id = FRA_Spirit_Of_The_Republic
 		x = 0
@@ -424,7 +424,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Only_Forwards
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_to_shake_the_world
 		cost = 10
 		relative_position_id = FRA_Carry_The_Torch
 		x = 0
@@ -441,7 +441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Look_Towards_The_Future
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_european_confederation
 		cost = 10
 		relative_position_id = FRA_Only_Forwards
 		x = 0
@@ -458,7 +458,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Republique
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_democratic_europe
 		cost = 10
 		x = 18
 		y = 0
@@ -476,7 +476,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Democratie
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 10
 		relative_position_id = FRA_Republique
 		x = 0
@@ -502,7 +502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Liberte
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_social_democratic_womens_association
 		cost = 10
 		relative_position_id = FRA_Democratie
 		x = 0
@@ -534,7 +534,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Parti
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_parliamentary_democracy
 		cost = 10
 		relative_position_id = FRA_Liberte
 		x = 0
@@ -554,7 +554,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Towed_Artillery_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_artillery2
 		cost = 10
 		relative_position_id = FRA_Parti
 		x = -1
@@ -574,7 +574,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Heavy_Artillery_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_artillery
 		cost = 10
 		relative_position_id = FRA_Parti
 		x = 1
@@ -597,7 +597,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Commune
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		cost = 10
 		x = 22
 		y = 0
@@ -620,7 +620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_French_Red_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 10
 		relative_position_id = FRA_Commune
 		x = 0
@@ -652,7 +652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Reserves
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AUS_raid_military_storages
 		cost = 10
 		relative_position_id = FRA_Army_Expertise
 		x = 0
@@ -716,7 +716,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Nation_Francaise
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_spread_fascism
 		cost = 10
 		x = 26
 		y = 0
@@ -913,7 +913,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Expert_Combatants
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_a_private_military
 		cost = 10
 		relative_position_id = FRA_Superior_Warfare
 		x = -1
