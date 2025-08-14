@@ -17,7 +17,7 @@ characters={
             portraits = {
 			civilian = {
 				large = "GFX_advisor_auh_ernest_von_koerber"
-                small = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_billy_hughes_frame"
 		    }
 		}
 			country_leader = {
@@ -48,12 +48,12 @@ characters={
             portraits = {
 			civilian = {
 				large = "GFX_advisor_auh_ernest_von_koerber"
-                small = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_josef_cook_frame"
 		    }
 		}
     advisor = {
         slot = political_advisor
-        traits = { ast_joseph_cook }
+        traits = { ast_joseph_cook_trait }
         cost = 150
         can_be_fired = yes
         idea_token = ast_billy_hughes
@@ -75,12 +75,12 @@ characters={
             portraits = {
 			civilian = {
 				large = "GFX_advisor_auh_ernest_von_koerber"
-                small = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_dennis_miller_frame"
 		    }
 		}
     advisor = {
         slot = political_advisor
-        traits = { ast_denison_miller }
+        traits = { ast_denison_miller_trait }
         cost = 150
         can_be_fired = yes
         idea_token = ast_denison_miller
@@ -103,12 +103,12 @@ characters={
             portraits = {
 			civilian = {
 				large = "GFX_ast_billy_hughes"
-                small = "GFX_ast_billy_hughes_frame"
+                small = "GFX_ast_higgins_frame"
 		    }
 		}
     advisor = {
         slot = political_advisor
-        traits = { ast_henry_bournes_higgins }
+        traits = { ast_henry_bournes_higgins_trait }
         cost = 150
         can_be_fired = yes
         idea_token = ast_henry_bournes_higgins
