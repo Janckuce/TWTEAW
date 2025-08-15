@@ -1,0 +1,382 @@
+focus_tree = {
+	id = portuguese_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 1000 }
+
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = POR_Constitution_Of_1911
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 10
+		y = 0
+		completion_reward = {
+			country_event = ww1_portugal.1
+		}
+	}
+	focus = {
+		id = POR_Industry_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = -8
+		y = 1
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = POR_Industry_Main
+		}
+		completion_reward = {
+			112 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			179 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			795 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			181 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			180 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = POR_Industry1
+		}
+		completion_reward = {
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Industry2
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			795 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Industry3
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			795 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			181 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry_Middle1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = POR_Industry1
+			focus = POR_Open_Trade
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry_Middle2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry_Middle1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Industry_Middle1
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry_Middle3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry_Middle2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Industry_Middle2
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			179 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Open_Trade
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = 1
+		y = 1
+		bypass = {
+			has_idea = free_trade
+		}
+		prerequisite = {
+			focus = POR_Industry_Main
+		}
+		completion_reward = {
+			add_ideas = free_trade
+		}
+	}
+	focus = {
+		id = POR_Tungsten_Mines
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Open_Trade
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = POR_Open_Trade
+		}
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = tungsten
+					amount = 33
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Chromium_Mines
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Tungsten_Mines
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Tungsten_Mines
+		}
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = chromium
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Iron_Mines
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Chromium_Mines
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Chromium_Mines
+		}
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = steel
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Modern_Industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Industry_Middle3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Industry4
+		}
+		prerequisite = {
+			focus = POR_Industry_Middle3
+		}
+		prerequisite = {
+			focus = POR_Iron_Mines
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+	}
+}

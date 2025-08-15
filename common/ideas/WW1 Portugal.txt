@@ -1,0 +1,61 @@
+ideas = {
+	country = {
+		POR_Disaster_Of_1807 = {
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		POR_Inadequate_African_Territories = {
+			modifier = {
+				local_resources_factor = -0.5
+				transport_capacity = 100
+				non_core_manpower = -0.5
+				command_power_gain_mult = -0.2
+				required_garrison_factor = 0.5
+			}
+		}
+		POR_Declining_Economy = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.3
+				production_factory_start_efficiency_factor = -0.3
+			}
+		}
+		POR_Declining_Economy1 = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_start_efficiency_factor = -0.2
+			}
+		}
+		POR_Declining_Economy2 = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+		}
+		POR_Bankrupcy_Declared = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_start_efficiency_factor = -0.5
+			}
+		}
+		POR_Passed_Constitution = {
+			modifier = {
+				democratic_drift = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		POR_Failed_Constitution = {
+			modifier = {
+				democratic_drift = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

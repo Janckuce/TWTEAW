@@ -1,0 +1,28 @@
+POR_Economic_Management_Category = {
+	POR_s = {
+		priority = 1
+		days_re_enable = 90
+		days_remove = 30
+		allowed = {
+			tag = POR
+		}
+		available = {
+			num_of_available_civilian_factories = 3
+			check_variable = {
+				POR.GDP < 4
+			}
+			custom_trigger_tooltip = {
+				tooltip = POR_GDP_Limit
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			add_to_variable = {
+				POR.GDP = 1
+			}
+			custom_effect_tooltip = POR_GDP_Add
+		}
+	}
+}
