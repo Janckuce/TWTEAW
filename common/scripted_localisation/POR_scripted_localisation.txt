@@ -4,10 +4,19 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				POR.GDP = 4
+				POR.GDP = 5
 			}
 		}
 		localization_key = POR_GDP_Status_View
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 4
+			}
+		}
+		localization_key = POR_GDP_Status_View0
 	}
 
 	text = {

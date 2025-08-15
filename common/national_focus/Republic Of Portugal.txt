@@ -352,6 +352,14 @@ focus_tree = {
 		relative_position_id = POR_Industry_Middle3
 		x = 0
 		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = POR_GDP_Tooltip
+				check_variable = {
+					POR.GDP = 5
+				}
+			}
+		}
 		prerequisite = {
 			focus = POR_Industry4
 		}
@@ -362,21 +370,417 @@ focus_tree = {
 			focus = POR_Iron_Mines
 		}
 		completion_reward = {
-			112 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
+			add_ideas = POR_Modern_Economy
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = POR_Brigadas_De_Reacao_Rapida
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = POR_Comandos
+			focus = POR_Cacadores
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			division_template = {
+				name = "Brigada De Reacção Rápida"
+				template_counter = 2
+				is_locked = yes
+				division_cap = 6
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+        			militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+        			militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					militia = { x = 2 y = 2 }
 				}
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-				}
-				add_resource = {
-					type = steel
-					amount = 10
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
 				}
 			}
+			112 = {
+				create_unit = {
+					division = "name = \"Brigada De Reacção Rápida\" division_template = \"Brigada De Reacção Rápida\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					owner = POR
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Brigadas_De_Reacao_Rapida
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Brigadas_De_Reacao_Rapida
+		}
+		completion_reward = {
+			add_ideas = POR_Rapid_Reaction
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Rapid_Reaction_Training1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Rapid_Reaction
+				add_idea = POR_Rapid_Reaction1
+			}
+			add_units_to_division_template = {
+				template_name = "Brigada De Reacção Rápida"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Rapid_Reaction_Training2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Rapid_Reaction1
+				add_idea = POR_Rapid_Reaction2
+			}
+			add_units_to_division_template = {
+				template_name = "Brigada De Reacção Rápida"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Rapid_Reaction_Training3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Rapid_Reaction2
+				add_idea = POR_Rapid_Reaction3
+			}
+			add_units_to_division_template = {
+				template_name = "Brigada De Reacção Rápida"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Comandos
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = POR_Brigadas_De_Reacao_Rapida
+			focus = POR_Cacadores
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			division_template = {
+				name = "Comandos"
+				template_counter = 12
+				is_locked = yes
+				division_cap = 6
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+        			mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+        			mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			112 = {
+				create_unit = {
+					division = "name = \"Comandos\" division_template = \"Comandos\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					owner = POR
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Comandos
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Comandos
+		}
+		completion_reward = {
+			add_ideas = POR_Commandos
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Commandos_Training1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Commandos_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Commandos
+				add_idea = POR_Commandos1
+			}
+			add_units_to_division_template = {
+				template_name = "Comandos"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Commandos_Training2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Commandos_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Commandos1
+				add_idea = POR_Commandos2
+			}
+			add_units_to_division_template = {
+				template_name = "Comandos"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Commandos_Training3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Commandos_Training3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Commandos2
+				add_idea = POR_Commandos3
+			}
+			add_units_to_division_template = {
+				template_name = "Comandos"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Cacadores
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = 3
+		y = 1
+		mutually_exclusive = {
+			focus = POR_Brigadas_De_Reacao_Rapida
+			focus = POR_Comandos
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			division_template = {
+				name = "Caçadores"
+				template_counter = 3
+				is_locked = yes
+				division_cap = 6
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+        			irregular_infantry = { x = 1 y = 0 }
+					irregular_infantry = { x = 1 y = 1 }
+					irregular_infantry = { x = 1 y = 2 }
+        			irregular_infantry = { x = 2 y = 0 }
+					irregular_infantry = { x = 2 y = 1 }
+					irregular_infantry = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			112 = {
+				create_unit = {
+					division = "name = \"Caçadores\" division_template = \"Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					owner = POR
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Cacadores
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Cacadores
+		}
+		completion_reward = {
+			add_ideas = POR_Hunters
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Hunters_Training1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Hunters_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Hunters
+				add_idea = POR_Hunters1
+			}
+			add_units_to_division_template = {
+				template_name = "Caçadores"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Hunters_Training2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Hunters_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Hunters1
+				add_idea = POR_Hunters2
+			}
+			add_units_to_division_template = {
+				template_name = "Caçadores"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Hunters_Training3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Hunters_Training3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Hunters2
+				add_idea = POR_Hunters3
+			}
+			add_units_to_division_template = {
+				template_name = "Caçadores"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Military_Order_Of_Christ
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = POR_Commandos_Training4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training4
+			focus = POR_Commandos_Training4
+			focus = POR_Hunters_Training4
+		}
+		completion_reward = {
+			add_ideas = POR_Order_Of_Christ
 		}
 	}
 }
