@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_Constitution_Of_1911
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_POL_complete_april_constitution
 		cost = 10
 		x = 10
 		y = 0
@@ -35,7 +35,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		relative_position_id = POR_Constitution_Of_1911
 		x = -8
@@ -56,7 +56,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civilian
 		cost = 10
 		relative_position_id = POR_Industry_Main
 		x = -1
@@ -99,8 +99,26 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = POR_Open_Trade
+		icon = GFX_focus_GER_factories_for_resources
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		bypass = {
+			has_idea = free_trade
+		}
+		prerequisite = {
+			focus = POR_Industry_Main
+		}
+		completion_reward = {
+			add_ideas = free_trade
+		}
+	}
+	focus = {
 		id = POR_Industry2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_1
 		cost = 10
 		relative_position_id = POR_Industry1
 		x = -1
@@ -128,7 +146,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_2
 		cost = 10
 		relative_position_id = POR_Industry2
 		x = 0
@@ -156,7 +174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_3
 		cost = 10
 		relative_position_id = POR_Industry3
 		x = 0
@@ -205,7 +223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry_Middle1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
 		relative_position_id = POR_Industry_Main
 		x = 0
@@ -227,7 +245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry_Middle2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_industry
 		cost = 10
 		relative_position_id = POR_Industry_Middle1
 		x = 0
@@ -262,7 +280,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Industry_Middle3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_military
 		cost = 10
 		relative_position_id = POR_Industry_Middle2
 		x = 0
@@ -289,26 +307,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = POR_Open_Trade
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = POR_Industry_Main
-		x = 1
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		bypass = {
-			has_idea = free_trade
-		}
-		prerequisite = {
-			focus = POR_Industry_Main
-		}
-		completion_reward = {
-			add_ideas = free_trade
-		}
-	}
-	focus = {
 		id = POR_Tungsten_Mines
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_tungsten
 		cost = 10
 		relative_position_id = POR_Open_Trade
 		x = 1
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Chromium_Mines
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_chromium
 		cost = 10
 		relative_position_id = POR_Tungsten_Mines
 		x = 0
@@ -348,7 +348,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Iron_Mines
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_steel
 		cost = 10
 		relative_position_id = POR_Chromium_Mines
 		x = 0
@@ -368,7 +368,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Modern_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 10
 		relative_position_id = POR_Industry_Middle3
 		x = 0
@@ -462,7 +462,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Brigadas_De_Reacao_Rapida
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BRA_air_force
 		cost = 10
 		relative_position_id = POR_Constitution_Of_1911
 		x = -3
@@ -509,7 +509,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Rapid_Reaction_Training1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_urban_training
 		cost = 10
 		relative_position_id = POR_Brigadas_De_Reacao_Rapida
 		x = 0
@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Rapid_Reaction_Training2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_little_entente
 		cost = 10
 		relative_position_id = POR_Rapid_Reaction_Training1
 		x = 0
@@ -549,7 +549,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Rapid_Reaction_Training3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_manpower
 		cost = 10
 		relative_position_id = POR_Rapid_Reaction_Training2
 		x = 0
@@ -574,7 +574,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Rapid_Reaction_Training4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_academy
 		cost = 10
 		relative_position_id = POR_Rapid_Reaction_Training3
 		x = 0
@@ -599,7 +599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Comandos
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GRE_hellenic_armed_forces
 		cost = 10
 		relative_position_id = POR_Constitution_Of_1911
 		x = 0
@@ -646,7 +646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Commandos_Training1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_mountain_training
 		cost = 10
 		relative_position_id = POR_Comandos
 		x = 0
@@ -661,7 +661,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Commandos_Training2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_army_doctrines_2
 		cost = 10
 		relative_position_id = POR_Commandos_Training1
 		x = 0
@@ -686,7 +686,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Commandos_Training3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_chi_army_reform
 		cost = 10
 		relative_position_id = POR_Commandos_Training2
 		x = 0
@@ -711,7 +711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Commandos_Training4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
 		cost = 10
 		relative_position_id = POR_Commandos_Training3
 		x = 0
@@ -736,7 +736,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Cacadores
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_contact_amanullah_loyalists_alt
 		cost = 10
 		relative_position_id = POR_Constitution_Of_1911
 		x = 3
@@ -783,7 +783,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Hunters_Training1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_desert_training
 		cost = 10
 		relative_position_id = POR_Cacadores
 		x = 0
@@ -798,7 +798,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Hunters_Training2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_keep_the_chitet
 		cost = 10
 		relative_position_id = POR_Hunters_Training1
 		x = 0
@@ -823,7 +823,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Hunters_Training3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_HUN_the_turul_association
 		cost = 10
 		relative_position_id = POR_Hunters_Training2
 		x = 0
@@ -848,7 +848,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Hunters_Training4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
 		cost = 10
 		relative_position_id = POR_Hunters_Training3
 		x = 0
@@ -873,7 +873,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Military_Order_Of_Christ
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_mex_restore_the_army_of_christ
 		cost = 10
 		relative_position_id = POR_Commandos_Training4
 		x = 0
@@ -893,7 +893,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_Power_To_The_Republic
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 10
 		relative_position_id = POR_Constitution_Of_1911
 		x = 7
@@ -918,7 +918,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Economic_Reforms
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_currency_reforms
 		cost = 10
 		relative_position_id = POR_Power_To_The_Republic
 		x = 0
@@ -936,7 +936,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Rebuild_The_Nation1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construction
 		cost = 10
 		relative_position_id = POR_Economic_Reforms
 		x = -1
@@ -954,7 +954,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Rebuild_The_Nation2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construction2
 		cost = 10
 		relative_position_id = POR_Rebuild_The_Nation1
 		x = 0
@@ -969,7 +969,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Satisfy_The_Population1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_population_growth
 		cost = 10
 		relative_position_id = POR_Economic_Reforms
 		x = 1
@@ -987,7 +987,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Satisfy_The_Population2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_national_unity
 		cost = 10
 		relative_position_id = POR_Satisfy_The_Population1
 		x = 0
@@ -1002,7 +1002,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Nation_Of_Science
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_NORDIC_mon_research
 		cost = 10
 		relative_position_id = POR_Economic_Reforms
 		x = 0
@@ -1028,7 +1028,7 @@ focus_tree = {
 
 	focus = {
 		id = POR_Power_To_The_King
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_por_the_kingdom_reunited
 		cost = 10
 		relative_position_id = POR_Constitution_Of_1911
 		x = 11
@@ -1055,7 +1055,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Police_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_mission
 		cost = 10
 		relative_position_id = POR_Power_To_The_King
 		x = -1
@@ -1072,7 +1072,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Agency_Expertise
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_secret_service_agency
 		cost = 10
 		relative_position_id = POR_Power_To_The_King
 		x = 1
@@ -1086,7 +1086,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Together_In_Strength
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ARG_strengthening_the_concordancia
 		cost = 10
 		relative_position_id = POR_Power_To_The_King
 		x = 0
@@ -1106,7 +1106,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_King_And_Nation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_the_crown_and_the_world
 		cost = 10
 		relative_position_id = POR_Together_In_Strength
 		x = 0
@@ -1127,7 +1127,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Print_Money
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_printing_press
 		cost = 10
 		relative_position_id = POR_King_And_Nation
 		x = 0
@@ -1182,7 +1182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Addressing_The_Issues
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_addressing_the_league_of_nations
 		cost = 10
 		relative_position_id = POR_Print_Money
 		x = 0
@@ -1197,16 +1197,16 @@ focus_tree = {
 	}
 	focus = {
 		id = POR_Nation_Of_Military
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_royal_iraqi_army
 		cost = 10
-		relative_position_id = POR_Print_Money
+		relative_position_id = POR_Addressing_The_Issues
 		x = 0
 		y = 1
 		available = {
 			neutrality > 0.9
 		}
 		prerequisite = {
-			focus = POR_Print_Money
+			focus = POR_Addressing_The_Issues
 		}
 		completion_reward = {
 			add_ideas = POR_Military_Construction
