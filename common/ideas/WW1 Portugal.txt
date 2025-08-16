@@ -8,6 +8,14 @@ ideas = {
 				production_speed_arms_factory_factor = -0.3
 			}
 		}
+		POR_Disaster_Of_1807_1 = {
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
 		POR_Inadequate_African_Territories = {
 			modifier = {
 				local_resources_factor = -0.5
@@ -17,8 +25,18 @@ ideas = {
 				required_garrison_factor = 0.5
 			}
 		}
+		POR_Inadequate_African_Territories1 = {
+			modifier = {
+				local_resources_factor = -0.25
+				transport_capacity = 100
+				non_core_manpower = -0.25
+				command_power_gain_mult = -0.1
+				required_garrison_factor = 0.25
+			}
+		}
 		POR_Declining_Economy = {
 			modifier = {
+				production_speed_buildings_factor = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_start_efficiency_factor = -0.05
@@ -26,6 +44,7 @@ ideas = {
 		}
 		POR_Declining_Economy1 = {
 			modifier = {
+				production_speed_buildings_factor = -0.025
 				production_factory_max_efficiency_factor = -0.025
 				production_factory_efficiency_gain_factor = -0.025
 				production_factory_start_efficiency_factor = -0.025
@@ -33,6 +52,7 @@ ideas = {
 		}
 		POR_Declining_Economy2 = {
 			modifier = {
+				production_speed_buildings_factor = 0.025
 				production_factory_max_efficiency_factor = 0.025
 				production_factory_efficiency_gain_factor = 0.025
 				production_factory_start_efficiency_factor = 0.025
@@ -40,6 +60,7 @@ ideas = {
 		}
 		POR_Crisis = {
 			modifier = {
+				production_speed_buildings_factor = -0.075
 				production_factory_max_efficiency_factor = -0.075
 				production_factory_efficiency_gain_factor = -0.075
 				production_factory_start_efficiency_factor = -0.075
@@ -47,6 +68,7 @@ ideas = {
 		}
 		POR_Bankrupcy_Declared = {
 			modifier = {
+				production_speed_buildings_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				production_factory_start_efficiency_factor = -0.1
@@ -54,6 +76,7 @@ ideas = {
 		}
 		POR_Rising_Economy = {
 			modifier = {
+				production_speed_buildings_factor = 0.025
 				production_factory_max_efficiency_factor = 0.025
 				production_factory_efficiency_gain_factor = 0.025
 				production_factory_start_efficiency_factor = 0.025
@@ -61,6 +84,7 @@ ideas = {
 		}
 		POR_Rising_Economy1 = {
 			modifier = {
+				production_speed_buildings_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_start_efficiency_factor = 0.05
@@ -68,6 +92,7 @@ ideas = {
 		}
 		POR_Rising_Economy2 = {
 			modifier = {
+				production_speed_buildings_factor = 0.075
 				production_factory_max_efficiency_factor = 0.075
 				production_factory_efficiency_gain_factor = 0.075
 				production_factory_start_efficiency_factor = 0.075
@@ -75,6 +100,7 @@ ideas = {
 		}
 		POR_Rising_Economy3 = {
 			modifier = {
+				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
@@ -82,6 +108,7 @@ ideas = {
 		}
 		POR_Rising_Crisis = {
 			modifier = {
+				production_speed_buildings_factor = -0.025
 				production_factory_max_efficiency_factor = -0.025
 				production_factory_efficiency_gain_factor = -0.025
 				production_factory_start_efficiency_factor = -0.025
@@ -89,6 +116,7 @@ ideas = {
 		}
 		POR_Rising_Bankrupcy_Declared = {
 			modifier = {
+				production_speed_buildings_factor = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_start_efficiency_factor = -0.05
@@ -97,6 +125,7 @@ ideas = {
 		POR_Passed_Constitution = {
 			modifier = {
 				democratic_drift = 0.1
+				political_power_factor = 0.15
 				production_speed_buildings_factor = -0.05
 			}
 		}
@@ -104,6 +133,53 @@ ideas = {
 			modifier = {
 				democratic_drift = -0.1
 				production_speed_buildings_factor = 0.05
+			}
+		}
+		POR_Republic_Of_Portugal = {
+			modifier = {
+				democratic_drift = 0.1
+				political_power_factor = 0.15
+				party_popularity_stability_factor = 0.2
+			}
+		}
+		POR_Republic_Of_Portugal1 = {
+			modifier = {
+				democratic_drift = 0.1
+				political_power_factor = 0.15
+				party_popularity_stability_factor = 0.2
+				production_speed_arms_factory_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		POR_Portuguese_Scientists = {
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		POR_Kingdom_Of_Portugal = {
+			modifier = {
+				neutrality_drift = 0.1
+				democratic_drift = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		POR_Kingdom_Of_Portugal1 = {
+			modifier = {
+				neutrality_drift = 0.1
+				democratic_drift = -0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		POR_Portuguese_Agents = {
+			modifier = {
+				compliance_growth = 0.1
+			}
+		}
+		POR_Military_Construction = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
 			}
 		}
 		POR_Modern_Economy = {
