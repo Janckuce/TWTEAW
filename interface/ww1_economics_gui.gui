@@ -1,0 +1,33 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Economics_Window"
+		orientation = CENTER
+		origo = center
+		position = {
+			x = 0
+			y = 0
+		}
+
+		size = {
+			width = 500
+			height = 20
+		}
+
+		instantTextBoxType = {
+			name = "Economics_Status"
+			position = {
+				x = 50
+				y = -7
+			}
+			text = "POR_GDP_Status_Viewer"
+		}
+		instantTextBoxType = {
+			name = "Economics_GDP"
+			position = {
+				x = 300
+				y = -7
+			}
+			text = "POR_GDP_View"
+		}
+	}
+}

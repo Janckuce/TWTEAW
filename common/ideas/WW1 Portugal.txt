@@ -1,0 +1,198 @@
+ideas = {
+	country = {
+		POR_Disaster_Of_1807 = {
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		POR_Inadequate_African_Territories = {
+			modifier = {
+				local_resources_factor = -0.5
+				transport_capacity = 100
+				non_core_manpower = -0.5
+				command_power_gain_mult = -0.2
+				required_garrison_factor = 0.5
+			}
+		}
+		POR_Declining_Economy = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+			}
+		}
+		POR_Declining_Economy1 = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				production_factory_start_efficiency_factor = -0.025
+			}
+		}
+		POR_Declining_Economy2 = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_start_efficiency_factor = 0.025
+			}
+		}
+		POR_Crisis = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.075
+				production_factory_efficiency_gain_factor = -0.075
+				production_factory_start_efficiency_factor = -0.075
+			}
+		}
+		POR_Bankrupcy_Declared = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+		}
+		POR_Rising_Economy = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_start_efficiency_factor = 0.025
+			}
+		}
+		POR_Rising_Economy1 = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		POR_Rising_Economy2 = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_start_efficiency_factor = 0.075
+			}
+		}
+		POR_Rising_Economy3 = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		POR_Rising_Crisis = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				production_factory_start_efficiency_factor = -0.025
+			}
+		}
+		POR_Rising_Bankrupcy_Declared = {
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+			}
+		}
+		POR_Passed_Constitution = {
+			modifier = {
+				democratic_drift = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		POR_Failed_Constitution = {
+			modifier = {
+				democratic_drift = -0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		POR_Modern_Economy = {
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		POR_Rapid_Reaction = {
+			modifier = {
+				modifier_army_sub_unit_militia_attack_factor = 0.025
+				modifier_army_sub_unit_militia_defence_factor = 0.025
+			}
+		}
+		POR_Rapid_Reaction1 = {
+			modifier = {
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+			}
+		}
+		POR_Rapid_Reaction2 = {
+			modifier = {
+				modifier_army_sub_unit_militia_speed_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.075
+				modifier_army_sub_unit_militia_defence_factor = 0.075
+			}
+		}
+		POR_Rapid_Reaction3 = {
+			modifier = {
+				modifier_army_sub_unit_militia_speed_factor = 0.1
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+			}
+		}
+		POR_Commandos = {
+			modifier = {
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.025
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.025
+			}
+		}
+		POR_Commandos1 = {
+			modifier = {
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
+			}
+		}
+		POR_Commandos2 = {
+			modifier = {
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
+				modifier_army_sub_unit_mountaineers_max_org_factor = 0.025
+			}
+		}
+		POR_Commandos3 = {
+			modifier = {
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
+				modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
+			}
+		}
+		POR_Hunters = {
+			modifier = {
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.025
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.025
+			}
+		}
+		POR_Hunters1 = {
+			modifier = {
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+			}
+		}
+		POR_Hunters2 = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+			}
+		}
+		POR_Hunters3 = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+			}
+		}
+		POR_Order_Of_Christ = {
+			modifier = {
+				land_doctrine_cost_factor = -0.1
+			}
+		}
+	}
+}

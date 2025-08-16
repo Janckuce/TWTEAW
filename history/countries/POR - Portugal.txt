@@ -1,5 +1,7 @@
 ﻿capital = 112
 
+set_oob = "POR_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -42,9 +44,15 @@ set_popularities = {
 	neutrality = 10
 }
 
+add_ideas = {
+	POR_Disaster_Of_1807
+	POR_Inadequate_African_Territories
+	POR_Declining_Economy1
+}
+
 set_convoys = 80
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.1
 
