@@ -39,7 +39,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas = ENG_Kings_Party
+			swap_ideas = {
+				remove_idea = ENG_Fallen_Government
+				add_idea = ENG_Kings_Party
+			}
 		}
 	}
 	focus = {
