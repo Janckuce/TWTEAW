@@ -1,0 +1,13 @@
+FRA_Political_Stability_Category = {
+	icon = CHL_nacista_decisions
+
+	scripted_gui = Stability_Scripted_Gui
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = FRA
+	}
+}

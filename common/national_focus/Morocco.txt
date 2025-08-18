@@ -1,0 +1,147 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = moroccan_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MOR
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = MOR_Industry1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 5
+		y = 0
+		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = MOR_Industry2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = MOR_Industry1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MOR_Industry1
+		}
+		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = MOR_Industry3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = MOR_Industry2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MOR_Industry2
+		}
+		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = MOR_Industry4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = MOR_Industry3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MOR_Industry3
+		}
+		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = MOR_Industry5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = MOR_Industry4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MOR_Industry4
+		}
+		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = MOR_Industry6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = MOR_Industry5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MOR_Industry5
+		}
+		completion_reward = {
+			461 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 4
+				}
+			}
+		}
+	}
+}

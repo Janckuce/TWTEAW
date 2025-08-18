@@ -122,6 +122,14 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
+			available = {
+				check_variable = {
+					FRA.Annexed_Morocco = 1
+				}
+				custom_trigger_tooltip = {
+					tooltip = FRA_Foch_Trigger
+				}
+			}
 			traits = {
 				army_chief_offensive_2 #Inf Attack +10%
 			}
@@ -135,7 +143,7 @@ characters={
 			skill = 2
 			attack_skill = 2
 			defense_skill = 4
-			planning_skill = 3
+			planning_skill = 4
 			logistics_skill = 4
 			traits = {
 				inflexible_strategist
@@ -179,6 +187,7 @@ characters={
 			logistics_skill = 5
 			traits = {
 				inflexible_strategist
+				infantry_officer
 				trait_reckless
 			}
 		}
@@ -220,6 +229,7 @@ characters={
 				politically_connected
 				trait_reckless
 				harsh_leader
+				bearer_of_artillery
 			}
 		}
 	}
@@ -449,9 +459,6 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_Nation_Francaise
-			}
 			traits = {
 				army_infantry_2 #Inf Attack +10% Inf Defense +15%
 			}
@@ -562,7 +569,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_Democratie
+				has_completed_focus = FRA_Republique
 			}
 			traits = {
 				economist #5% Production Efficiency Cap

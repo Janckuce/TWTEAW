@@ -11,7 +11,7 @@ ideas = {
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				democratic_drift = 0.03
 			}
 		}
@@ -20,7 +20,7 @@ ideas = {
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				democratic_drift = 0.03
 			}
 			equipment_bonus = {
@@ -34,7 +34,7 @@ ideas = {
 			modifier = {
 				party_popularity_stability_factor = 0.15
 				line_change_production_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 				democratic_drift = 0.03
 			}
 			equipment_bonus = {
@@ -111,6 +111,13 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 				production_speed_industrial_complex_factor = -0.1
+			}
+		}
+		FRA_Political_Instability = {
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.2
+				war_support_factor = 0.2
 			}
 		}
 		FRA_War_Readiness = {
@@ -208,6 +215,16 @@ ideas = {
 				army_infantry_defence_factor = 0.05
 			}
 		}
+		FRA_Screening_Primacy = {
+			modifier = {
+				screening_efficiency = 0.05
+			}
+		}
+		FRA_Capitals_Primacy = {
+			modifier = {
+				navy_capital_ship_defence_factor = 0.1
+			}
+		}
 		FRA_Increased_Production_Max = {
 			picture = RAJ_special_economic_zones
 			modifier = {
@@ -217,7 +234,7 @@ ideas = {
 		FRA_Increased_Production_Gain = {
 			picture = generic_economic_increase
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.15
 			}
 		}
 		FRA_Military_Construction_Efforts = {
@@ -321,7 +338,7 @@ ideas = {
 			modifier = {
 				screening_efficiency = 0.05
 				repair_speed_factor = 0.05
-				trait_ironside_xp_gain_factor = 0.1
+				trait_ironside_xp_gain_factor = 0.2
 			}
 		}
 		FRA_Superior_Naval_Combat_Destroyer = {
@@ -329,7 +346,7 @@ ideas = {
 			modifier = {
 				screening_efficiency = 0.05
 				repair_speed_factor = 0.05
-				trait_ironside_xp_gain_factor = 0.1
+				trait_ironside_xp_gain_factor = 0.2
 			}
 			equipment_bonus = {
 				destroyer = {
@@ -342,12 +359,48 @@ ideas = {
 			modifier = {
 				screening_efficiency = 0.05
 				repair_speed_factor = 0.05
-				trait_ironside_xp_gain_factor = 0.1
+				trait_ironside_xp_gain_factor = 0.2
 			}
 			equipment_bonus = {
 				light_cruiser = {
 					build_cost_ic = -0.1
 				}
+			}
+		}
+		FRA_French_Warfare = {
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				army_core_defence_factor = 0.05
+			}
+		}
+		FRA_French_Warfare1 = {
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				army_core_defence_factor = 0.1
+			}
+		}
+		FRA_French_Warfare2 = {
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				army_core_defence_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.05
+			}
+		}
+		FRA_100_Days_Offensive = {
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.1
+			}
+		}
+		FRA_Stability_Lower = {
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.3
 			}
 		}
 	}
