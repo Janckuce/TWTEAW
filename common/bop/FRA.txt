@@ -25,7 +25,7 @@ FRA_power_balance = {
 			min = -1
 			max = -0.9
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.25
 				production_speed_arms_factory_factor = 0.15
 			}
 		}
@@ -35,7 +35,7 @@ FRA_power_balance = {
 			min = -0.9
 			max = -0.5
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.2
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
@@ -43,9 +43,9 @@ FRA_power_balance = {
 		range = {
 			id = FRA_left_side_range
 			min = -0.5
-			max = 0
+			max = -0.1
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.15
 				production_speed_arms_factory_factor = 0.05
 			}
 		}
@@ -57,7 +57,7 @@ FRA_power_balance = {
 
 		range = {
 			id = FRA_right_side_range
-			min = 0.0
+			min = 0.1
 			max = 0.5
 			modifier = {
 				line_change_production_efficiency_factor = 0.05

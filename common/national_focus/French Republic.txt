@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Morocco_Conundrum
 		icon = GFX_focus_generic_africa_liberation
-		cost = 10
+		cost = 5
 		x = 10
 		y = 0
 		completion_reward = {
@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Sabre_Of_Honour
 		icon = GFX_focus_BEL_consitutional_crisis
-		cost = 10
+		cost = 2
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 0
 		y = 1
@@ -70,30 +70,35 @@ focus_tree = {
 		}
 		completion_reward = {
 			16 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
 			15 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
 			785 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
 			18 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
 			29 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -282,10 +287,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			31 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 				}
 			}
 		}
@@ -328,7 +333,7 @@ focus_tree = {
 	focus = {
 		id = FRA_War_Preparations
 		icon = GFX_focus_RAJ_war_taxes
-		cost = 10
+		cost = 2
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 2
 		y = 1
@@ -346,7 +351,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Instruments_Of_War
 		icon = GFX_focus_SWI_issue_war_bonds
-		cost = 10
+		cost = 2
 		relative_position_id = FRA_War_Preparations
 		x = 0
 		y = 1
@@ -367,7 +372,7 @@ focus_tree = {
 	focus = {
 		id = FRA_War_Is_Our_Profession
 		icon = GFX_focus_GER_german_army_invincible
-		cost = 10
+		cost = 2
 		relative_position_id = FRA_Instruments_Of_War
 		x = 0
 		y = 1
@@ -388,7 +393,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Spirit_Of_The_Republic
 		icon = GFX_focus_fra_le_deluge
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_Morocco_Conundrum
 		x = 4
 		y = 1
@@ -408,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Carry_The_Torch
 		icon = GFX_focus_GER_divide_and_conquer
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_Spirit_Of_The_Republic
 		x = 0
 		y = 1
@@ -425,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Only_Forwards
 		icon = GFX_focus_RAJ_to_shake_the_world
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_Carry_The_Torch
 		x = 0
 		y = 1
@@ -442,7 +447,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Look_Towards_The_Future
 		icon = GFX_focus_GER_european_confederation
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_Only_Forwards
 		x = 0
 		y = 1
@@ -459,7 +464,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Republique
 		icon = GFX_focus_generic_democratic_europe
-		cost = 10
+		cost = 5
 		x = 18
 		y = 0
 		mutually_exclusive = {
@@ -472,6 +477,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = FRA_Sour_Loser
 			add_ideas = FRA_Carry_On
+			custom_effect_tooltip = FRA_Economist_Tooltip
 		}
 	}
 	focus = {
@@ -497,7 +503,30 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = FRA_Economist_Tooltip
+			if = {
+				limit = {
+					controls_state = 15
+				}
+				15 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 24
+				}
+				24 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -513,20 +542,20 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				category = land_doctrine
-				cost_reduction = 0.1
+				cost_reduction = 0.25
 				uses = 2
 			}
 			ENG = {
 				add_doctrine_cost_reduction = {
 					category = land_doctrine
-					cost_reduction = 0.1
+					cost_reduction = 0.25
 					uses = 2
 				}
 			}
 			RUS = {
 				add_doctrine_cost_reduction = {
 					category = land_doctrine
-					cost_reduction = 0.1
+					cost_reduction = 0.25
 					uses = 2
 				}
 			}
@@ -598,7 +627,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Commune
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		cost = 10
+		cost = 5
 		x = 22
 		y = 0
 		available = {
@@ -645,7 +674,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				category = land_doctrine
-				cost_reduction = 0.2
+				cost_reduction = 0.5
 				uses = 2
 			}
 		}
@@ -717,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Nation_Francaise
 		icon = GFX_focus_generic_spread_fascism
-		cost = 10
+		cost = 5
 		x = 26
 		y = 0
 		available = {
@@ -733,6 +762,7 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 			}
+			custom_effect_tooltip = FRA_Head_Of_Directorate_Of_New_Buildings_Tooltip
 		}
 	}
 	focus = {
@@ -751,6 +781,11 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 			}
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
@@ -765,17 +800,29 @@ focus_tree = {
 		}
 		completion_reward = {
 			14 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
 					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 			15 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
 					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -794,6 +841,14 @@ focus_tree = {
 			focus = FRA_Naval_Investments
 		}
 		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_equipment_production = {
 				equipment = {
 					type = battleship_1
@@ -820,6 +875,14 @@ focus_tree = {
 			focus = FRA_Napoleon_Class_Ship
 		}
 		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_equipment_production = {
 				equipment = {
 					type = destroyer_1
@@ -850,6 +913,7 @@ focus_tree = {
 				amount = 1
 				industrial_manufacturer = mio:FRA_acl_organization
 			}
+			add_ideas = FRA_Screening_Primacy
 		}
 	}
 	focus = {
@@ -863,13 +927,21 @@ focus_tree = {
 			focus = FRA_Napoleon_Class_Ship
 		}
 		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_equipment_production = {
 				equipment = {
 					type = light_cruiser_1
 				}
 				name = "Louis XVIII"
 				requested_factories = 1
-				progress = 0.4
+				progress = 0.6
 				amount = 1
 				industrial_manufacturer = mio:FRA_acl_organization
 			}
@@ -879,7 +951,7 @@ focus_tree = {
 				}
 				name = "Charles X"
 				requested_factories = 1
-				progress = 0.4
+				progress = 0.6
 				amount = 1
 				industrial_manufacturer = mio:FRA_acl_organization
 			}
@@ -889,10 +961,11 @@ focus_tree = {
 				}
 				name = "Louis Philippe I"
 				requested_factories = 1
-				progress = 0.4
+				progress = 0.6
 				amount = 1
 				industrial_manufacturer = mio:FRA_acl_organization
 			}
+			add_ideas = FRA_Capitals_Primacy
 		}
 	}
 
@@ -1245,6 +1318,135 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = FRA_Superior_Naval_Combat2
 				add_idea = FRA_Superior_Naval_Combat_Capital_Ship
+			}
+		}
+	}
+
+	#	Main War Focus
+	focus = {
+		id = FRA_War_Has_Begun
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 23
+		y = 5
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+		completion_reward = {
+			add_ideas = FRA_French_Warfare
+		}
+	}
+	focus = {
+		id = FRA_Migrate_Industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_War_Has_Begun
+		x = 0
+		y = 1
+		bypass = {
+		}
+		prerequisite = {
+			focus = FRA_War_Has_Begun
+		}
+		completion_reward = {
+			16 = {
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			15 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			24 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			27 = {
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			31 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Masters_Of_The_Craft
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Migrate_Industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Migrate_Industry
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_French_Warfare
+				add_idea = FRA_French_Warfare1
+			}
+		}
+	}
+	focus = {
+		id = FRA_They_Shall_Not_Pass
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = FRA_Masters_Of_The_Craft
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Masters_Of_The_Craft
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_French_Warfare1
+				add_idea = FRA_French_Warfare2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Counter_Attack
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 2
+		relative_position_id = FRA_They_Shall_Not_Pass
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_They_Shall_Not_Pass
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_100_Days_Offensive
+				days = 100
 			}
 		}
 	}

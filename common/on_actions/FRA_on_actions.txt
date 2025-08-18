@@ -1,0 +1,72 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FRA = {
+				set_variable = {
+					var = Political_Stability
+					value = 100
+				}
+			}
+		}
+	}
+	on_daily_FRA = {
+		effect = {
+			if = {
+				limit = {
+					num_of_factories > 50
+					not = {
+						check_variable = {
+							Mission1 = 1
+						}
+					}
+				}
+				activate_mission = FRA_Stability_Mission1
+				set_variable = {
+					Mission1 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					num_of_factories > 60
+					not = {
+						check_variable = {
+							Mission2 = 1
+						}
+					}
+				}
+				activate_mission = FRA_Stability_Mission2
+				set_variable = {
+					Mission2 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					num_of_factories > 70
+					not = {
+						check_variable = {
+							Mission3 = 1
+						}
+					}
+				}
+				activate_mission = FRA_Stability_Mission3
+				set_variable = {
+					Mission3 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					num_of_factories > 80
+					not = {
+						check_variable = {
+							Mission4 = 1
+						}
+					}
+				}
+				activate_mission = FRA_Stability_Mission4
+				set_variable = {
+					Mission4 = 1
+				}
+			}
+		}
+	}
+}
