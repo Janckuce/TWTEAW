@@ -26,7 +26,7 @@ focus_tree = {
 		id = FRA_Morocco_Conundrum
 		icon = GFX_focus_generic_africa_liberation
 		cost = 5
-		x = 10
+		x = 9
 		y = 0
 		completion_reward = {
 			country_event = ww1_france.3
@@ -663,7 +663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Army_Expertise
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_the_french_horse_and_the_red_rider
 		cost = 10
 		relative_position_id = FRA_French_Red_Army
 		x = 0
@@ -692,17 +692,17 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 10000
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 500
+				amount = 1000
 			}
 		}
 	}
 	focus = {
 		id = FRA_Shorten_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		cost = 10
 		relative_position_id = FRA_Reserves
 		x = -1
@@ -722,7 +722,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Lengthen_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_defender_of_central_asia
 		cost = 10
 		relative_position_id = FRA_Reserves
 		x = 1
@@ -767,7 +767,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Naval_Advancements
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_navy_research_bonus
 		cost = 10
 		relative_position_id = FRA_Nation_Francaise
 		x = 0
@@ -790,7 +790,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Naval_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_naval_discipline
 		cost = 10
 		relative_position_id = FRA_Naval_Advancements
 		x = 0
@@ -829,7 +829,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Napoleon_Class_Ship
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 10
 		relative_position_id = FRA_Naval_Investments
 		x = 0
@@ -863,7 +863,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Screens_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 10
 		relative_position_id = FRA_Napoleon_Class_Ship
 		x = -1
@@ -918,7 +918,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Capital_Ships_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_battleship
 		cost = 10
 		relative_position_id = FRA_Napoleon_Class_Ship
 		x = 1
@@ -973,7 +973,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Research_Investments1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research
 		cost = 10
 		x = 10
 		y = 6
@@ -989,7 +989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Research_Investments2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research2
 		cost = 10
 		x = 12
 		y = 6
@@ -1005,7 +1005,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Extreme_Research
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 10
 		relative_position_id = FRA_Research_Investments1
 		x = 1
@@ -1020,7 +1020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Organisation_Funding
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_copy_plane_designs
 		cost = 10
 		relative_position_id = FRA_Extreme_Research
 		x = 0
@@ -1037,7 +1037,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Paris_Academy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_NORDIC_mon_research
 		cost = 10
 		relative_position_id = FRA_Organisation_Funding
 		x = 0
@@ -1060,7 +1060,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Superior_Warfare
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_modern_cataphract
 		cost = 10
 		x = 14
 		y = 6
@@ -1093,7 +1093,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Strength_In_Numbers
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ITA_banda_carita
 		cost = 10
 		relative_position_id = FRA_Superior_Warfare
 		x = 1
@@ -1113,7 +1113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Defensive_Nation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_varnplikt
 		cost = 10
 		relative_position_id = FRA_Superior_Warfare
 		x = 0
@@ -1128,7 +1128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Defensive_People
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_lottakoren
 		cost = 10
 		relative_position_id = FRA_Defensive_Nation
 		x = 0
@@ -1148,7 +1148,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Superior_Air_Force
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_aircraft_production
 		cost = 10
 		x = 17
 		y = 6
@@ -1161,7 +1161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Expert_Air_Aces
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_expand_air_force_academy
 		cost = 10
 		relative_position_id = FRA_Superior_Air_Force
 		x = 0
@@ -1178,7 +1178,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Fighter_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_air_fighter
 		cost = 10
 		relative_position_id = FRA_Expert_Air_Aces
 		x = -1
@@ -1198,7 +1198,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Air_Support_Primacy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_cas_aircraft
 		cost = 10
 		relative_position_id = FRA_Expert_Air_Aces
 		x = 1
@@ -1218,7 +1218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Air_Exercises
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_air_partners
 		cost = 10
 		relative_position_id = FRA_Expert_Air_Aces
 		x = 0
@@ -1236,7 +1236,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_Superior_Naval_Power
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10
 		x = 20
 		y = 6
@@ -1249,7 +1249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Faster_Repairing
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		relative_position_id = FRA_Superior_Naval_Power
 		x = 0
@@ -1266,7 +1266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Iron_Admirals
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_naval_invasion_tank
 		cost = 10
 		relative_position_id = FRA_Faster_Repairing
 		x = 0
@@ -1283,7 +1283,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Destroyer_Expertise
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_naval_invasion
 		cost = 10
 		relative_position_id = FRA_Iron_Admirals
 		x = -1
@@ -1303,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Capital_Ship_Expertise
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_cruiser_submarines
 		cost = 10
 		relative_position_id = FRA_Iron_Admirals
 		x = 1
@@ -1325,10 +1325,10 @@ focus_tree = {
 	#	Main War Focus
 	focus = {
 		id = FRA_War_Has_Begun
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_total_war
 		cost = 10
-		x = 23
-		y = 5
+		x = 15
+		y = 0
 		available = {
 			has_war = yes
 			date > 1914.7.28
@@ -1339,7 +1339,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Migrate_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWI_neutrality_on_the_move
 		cost = 10
 		relative_position_id = FRA_War_Has_Begun
 		x = 0
@@ -1401,7 +1401,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Masters_Of_The_Craft
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_defense_act
 		cost = 10
 		relative_position_id = FRA_Migrate_Industry
 		x = 0
@@ -1418,7 +1418,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_They_Shall_Not_Pass
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_fra_milice
 		cost = 10
 		relative_position_id = FRA_Masters_Of_The_Craft
 		x = 0
@@ -1435,7 +1435,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Counter_Attack
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
 		cost = 2
 		relative_position_id = FRA_They_Shall_Not_Pass
 		x = 0

@@ -14,6 +14,26 @@ FRA_Political_Stability_Category = {
 						level > 1
 						province = {
 							id = 11506
+							id = 9534
+							id = 11518
+						}
+					}
+				}
+				18 = {
+					any_province_building_level = {
+						building = bunker
+						level > 1
+						province = {
+							id = 3546
+						}
+					}
+				}
+				29 = {
+					any_province_building_level = {
+						building = bunker
+						level > 1
+						province = {
+							id = 575
 						}
 					}
 				}
@@ -28,6 +48,46 @@ FRA_Political_Stability_Category = {
 								level > 1
 								province = {
 									id = 11506
+								}
+							}
+						}
+						always = yes
+					}
+				}
+				else = {
+					always = no
+				}
+			}
+			custom_override_tooltip = {
+				tooltip = FRA_Mission_Trigger2
+				if = {
+					limit = {
+						18 = {
+							any_province_building_level = {
+								building = bunker
+								level > 1
+								province = {
+									id = 3546
+								}
+							}
+						}
+						always = yes
+					}
+				}
+				else = {
+					always = no
+				}
+			}
+			custom_override_tooltip = {
+				tooltip = FRA_Mission_Trigger3
+				if = {
+					limit = {
+						29 = {
+							any_province_building_level = {
+								building = bunker
+								level > 1
+								province = {
+									id = 575
 								}
 							}
 						}
