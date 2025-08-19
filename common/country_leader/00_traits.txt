@@ -4525,6 +4525,12 @@ leader_traits = {
 		naval_doctrine_cost_factor = -0.1
 		experience_gain_navy_factor = 0.2
 	}
+		AST_leadership_of_aef = {
+		random = no
+		naval_doctrine_cost_factor = -0.15
+		experience_gain_navy_factor = 0.1
+		land_doctrine_cost_factor = -0.15
+	}
 
 	ICE_transportation_enthusiast = {
 		equipment_bonus = {
@@ -12357,6 +12363,13 @@ leader_traits = {
 		army_speed_factor = 0.05
 		experience_gain_army = 0.2
 
+	}
+		ast_birdwood_trait = {
+		random = no
+		sprite = 7
+		army_attack_factor = 0.065
+		naval_invasion_prep_speed = 0.05
+		amphibious_invasion = 0.05
 	}
 
 		army_BUL_stefan_toshev = {

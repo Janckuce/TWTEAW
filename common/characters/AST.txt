@@ -43,6 +43,102 @@ characters={
     }
 }
 
+    AST_leadership_of_aef = {
+    name = "Australian Naval and Military Expeditionary Force"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_ast_comittee"
+                small = "GFX_advisor_ast_comittee"
+		    }
+		}
+    advisor = {
+        slot = theorist
+        traits = { AST_leadership_of_aef }
+        cost = 150
+        can_be_fired = yes
+        idea_token = AST_leadership_of_aef
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    ast_birdwood = {
+    name = "William Riddell Birdwoode"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_birdwood"
+                small = "GFX_ast_birdwood_frame"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { ast_birdwood_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_birdwood
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+    field_marshal = {
+	    traits = { desert_fox media_personality war_hero naval_invader }
+			skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+	}
+}
+    ast_harry_chauve = {
+    name = "Henry George Chauvel"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_harry_chauve"
+                small = "GFX_ast_birdwood_frame"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { ast_harry_chauve_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_harry_chauve
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+    corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+	}
+}
+
 	ast_joseph_cook = {
     name = "Joseph Cook"
             portraits = {
