@@ -21,12 +21,12 @@
 }
 
 division_template = {
-	name = "Division Coloniale"
+	name = "Division De Garnison"
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 	}
 	priority = 0
 }
@@ -177,33 +177,33 @@ units = {
 
 	}
 	division = {
-		name = "Division Coloniale"
+		name = "Division D'Infanterie"
 		location = 5222
-		division_template = "Division Coloniale"
+		division_template = "Division D'Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Division Coloniale"
+		name = "Division D'Infanterie"
 		location = 2165
-		division_template = "Division Coloniale"
+		division_template = "Division D'Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Division Coloniale"
+		name = "Division D'Infanterie"
 		location = 4268
-		division_template = "Division Coloniale"
+		division_template = "Division D'Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Division Coloniale"
+		name = "Division D'Infanterie"
 		location = 12885
-		division_template = "Division Coloniale"
+		division_template = "Division D'Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 

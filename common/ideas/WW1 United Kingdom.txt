@@ -714,4 +714,42 @@ ideas = {
 			}
 		}
 	}
+	industrial_concern = {
+		designer = yes
+		armstrong_whitworth = {
+			allowed = {
+				original_tag = ENG
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			traits = {
+				industrial_concern
+			}
+		}
+		english_electric = {
+			allowed = {
+				original_tag = ENG
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = {
+				electronics_concern
+			}
+		}
+		marconi = {
+			allowed = {
+				original_tag = ENG
+			}
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.05
+			}
+			traits = {
+				electronics_concern
+			}
+			picture = generic_tank_manufacturer_1
+		}
+	}
 }
