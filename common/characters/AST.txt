@@ -42,6 +42,58 @@ characters={
         }
     }
 }
+	ast_throsby_bridges = {
+    name = "William Throsby Bridges"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_throsby_bridges"
+                small = "GFX_ast_throsby_bridges_frame"
+		    }
+		}
+        corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+		planning_skill = 3
+	logistics_skill = 2
+	}
+    advisor = {
+        slot = high_command
+        traits = { ast_throsby_bridges }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_throsby_bridges
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    ast_john_monash = {
+    name = "John Monash"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_john_monash"
+                small = "GFX_ast_throsby_bridges_frame"
+		    }
+		}
+        corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+		planning_skill = 3
+	logistics_skill = 2
+	}
+}
 
     AST_leadership_of_aef = {
     name = "Australian Naval and Military Expeditionary Force"
@@ -109,12 +161,47 @@ characters={
             portraits = {
 			civilian = {
 				large = "GFX_ast_harry_chauve"
-                small = "GFX_ast_birdwood_frame"
+                small = "GFX_ast_harry_chauve_frame"
 		    }
 		}
     advisor = {
-        slot = army_chief
-        traits = { ast_harry_chauve_trait }
+        slot = high_command
+        traits = { ast_henry_george }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_harry_chauve
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+    corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+	}
+}
+
+    ast_john_gellibrand = {
+    name = "John Gellibrand"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_john_gellibrand"
+                small = "GFX_ast_william_bridges_frame"
+		    }
+		}
+    advisor = {
+        slot = high_command
+        traits = { ast_john_gellibrand }
         cost = 150
         can_be_fired = yes
         idea_token = ast_harry_chauve

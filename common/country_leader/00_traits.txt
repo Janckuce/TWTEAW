@@ -4527,9 +4527,10 @@ leader_traits = {
 	}
 		AST_leadership_of_aef = {
 		random = no
-		naval_doctrine_cost_factor = -0.15
-		experience_gain_navy_factor = 0.1
-		land_doctrine_cost_factor = -0.15
+		naval_doctrine_cost_factor = -0.1
+		experience_gain_navy_factor = 0.075
+		experience_gain_army_factor = 0.075
+		land_doctrine_cost_factor = -0.1
 	}
 
 	ICE_transportation_enthusiast = {
@@ -12370,6 +12371,32 @@ leader_traits = {
 		army_attack_factor = 0.065
 		naval_invasion_prep_speed = 0.05
 		amphibious_invasion = 0.05
+	}
+		ast_henry_george = {
+		random = no
+		sprite = 7
+		army_infantry_attack_factor = 0.025
+		army_infantry_defence_factor = 0.05
+		army_breakthrough_against_minor_factor = 0.025	
+	}
+		ast_william_bridges = {
+		random = no
+		sprite = 7
+	}
+		ast_john_gellibrand = {
+		random = no
+		sprite = 7
+		naval_invasion_prep_speed = 0.065
+		amphibious_invasion = 0.05
+		experience_loss_factor = -0.045
+	}
+		ast_throsby_bridges = {
+		random = no
+		sprite = 7
+		army_org_factor = 0.025
+		army_org_regain = 0.075
+		planning_speed = 0.05
+		max_planning = 0.025
 	}
 
 		army_BUL_stefan_toshev = {
