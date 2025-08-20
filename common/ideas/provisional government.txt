@@ -1,0 +1,60 @@
+A_DIVIDED_RUSSIA = {
+    allowed = { tag = RUS }
+
+    # Effects (example)
+    political_power_gain_factor = -0.10   
+    stability = -0.05                     
+    # Optional: icon
+    icon = GFX_goal_generic_political_reform
+}
+
+
+land_question = {
+    allowed = {
+        tag = RUS
+    }
+
+    # General modifiers for the national spirit
+    modifier = {
+        stability = -0.05       
+        political_power_gain = -0.10  
+    }
+
+    picture = GFX_idea_land_question
+}
+
+ideas = {
+    RUS_desperate_offensive = {
+        picture = generic_offensive
+        allowed = {
+            original_tag = RUS
+        }
+        modifier = {
+            army_attack_factor = 0.1          
+            war_support_factor = 0.1          
+            stability_factor = -0.1           
+            
+        }
+    }
+}
+
+
+##should be replaced a few months later by "exhausted army, exhausted people" which is worse
+
+
+
+
+ideas = {
+    RUS_exhausted_army_people = {
+        picture = generic_army_disorganized
+        allowed = {
+            original_tag = RUS
+        }
+        modifier = {
+            army_attack_factor = -0.15       
+            army_org_factor = -0.20           
+            stability_factor = -0.10          
+            war_support_factor = -0.15        
+        }
+    }
+}

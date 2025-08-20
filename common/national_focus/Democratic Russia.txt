@@ -80,6 +80,23 @@ focus_tree = {
         prerequisite = { focus = RUS_democratisation_army }
         completion_reward = {
             add_stability = 0.05
+	}
+     }
+     ### 3a. Main land Committee
+    focus = {
+        id = RUS_Main_land_committee
+        icon = generic_political
+        x = -1
+        y = 3
+        cost = 10
+        prerequisite = { focus = RUS_democratisation_army }
+        completion_reward = {
+            add_stability = 0.05
+	    trigger_event ={
+		id
+	
+
+	   }
         }
     }
 
@@ -88,7 +105,7 @@ focus_tree = {
         id = RUS_establish_economic_council
         icon = generic_economic
         x = 1
-        y = 3
+        y = 4
         cost = 10
         prerequisite = { focus = RUS_democratisation_army }
         completion_reward = {
