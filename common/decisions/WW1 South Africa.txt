@@ -1,0 +1,17 @@
+SAF_Maritz_Category = {
+	SAF_Maritz_Rebellion = {
+		days_mission_timeout = 365
+		is_good = no
+		allowed = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+	}
+}
