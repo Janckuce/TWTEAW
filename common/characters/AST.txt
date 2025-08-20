@@ -4,7 +4,7 @@ characters={
 		portraits = {
 			civilian = {
 				large = "GFX_AST_andrew_fisher"
-				small = "GFX_AST_andrew_fisher_frame"
+				small = "GFX_AST_andrew_fisher"
 			}
 		}
 		country_leader = {
@@ -202,6 +202,8 @@ characters={
     advisor = {
         slot = high_command
         traits = { ast_john_gellibrand }
+        slot = army_chief
+        traits = { }
         cost = 150
         can_be_fired = yes
         idea_token = ast_harry_chauve
@@ -304,7 +306,7 @@ characters={
 
         available = {
             always = yes
+            }
         }
     }
-
 }
