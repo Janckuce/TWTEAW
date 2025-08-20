@@ -221,7 +221,6 @@ armored_ITA = {
 					has_tech = improved_medium_tank
 					has_tech = improved_medium_tank_chassis
 				}
-				has_tech = mechanised_infantry
 			}
 		}
 
@@ -255,7 +254,6 @@ armored_ITA = {
 					has_tech = main_battle_tank
 					has_tech = main_battle_tank_chassis
 				}
-				has_tech = mechanised_infantry
 			}
 		}
 
@@ -476,51 +474,6 @@ marines_ITA = {
 			
 			regiments = {
 				marine = 9
-			}
-		}
-	}
-}
-
-
-paratroopers_ITA = {
-
-	available_for = {
-		ITA
-	}
-	
-	role = paratroopers
-	
-	upgrade_prio = {
-		base = 2
-
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = paratroopers
-			}
-		}
-	}
-
-	paratrooper_default_ITA = {
-	
-		upgrade_prio = {
-			base = 2
-
-			modifier = {
-				factor = 1
-			}
-		}
-
-		target_template = {
-			
-			support = {
-				engineer = 1
-				artillery = 1
-				anti_tank = 1
-			}
-			
-			regiments = {
-				paratrooper= 5 
 			}
 		}
 	}

@@ -150,9 +150,6 @@ BEL_renault_organization = {
 		special_trait_background = yes
 		
 		position = { x=1 y=1 }  
-		relative_position_id = generic_mio_trait_single_engine
-		
-		any_parent = { generic_mio_trait_single_engine generic_mio_trait_dual_engine_redundancy }
 		
 		limit_to_equipment_type = { heavy_tank_chassis }
 		
@@ -523,7 +520,6 @@ BEL_minerva_imperia_motorized_organization = {
 }
 
 BEL_laboratoire_aerotechnique_de_belgique_organization = {
-	include = generic_helicopter_organization
 	icon = GFX_idea_generic_helicopter_1
 	
 	allowed = {	

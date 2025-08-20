@@ -177,43 +177,6 @@ JAP_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-JAP_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { JAP }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Seikikubo %d -go"	
-
-	unique = {
-			"Akagi" "Soryu" "Hiryu" "Shokaku" "Zuikaku" "Junyo" "Hiyo" "Taiho" "Unryu" "Amagi" "Katsuragi" "Shinano" "Kasagi" "Aso" "Ikoma" 
-			"Kurama" "Kaga" 
-	}
-}
-
-### LIGHT CARRIER NAMES ###
-JAP_CVL_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CVL
-
-	for_countries = { JAP }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Keikubo %d -go"	
-
-	unique = {
-		# CVL Names
-		"Zuiho" "Shoho" "Ryuho" "Chitose" "Chiyoda" "Ibuki" "Taiyo" "Unyo" "Chuyo" "Shinyo" 
-		"Hosho" "Ryujo" "Kaiyo"
-		# CVE Names
-		"Yamashiro Maru" "Chigusa Maru" "Shimane Maru" "Otakisan Maru"
-	}
-}
-
 ### SUBMARINES ###
 JAP_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

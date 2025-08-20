@@ -85,23 +85,6 @@ LIB_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-LIB_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { LIB }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "LRS "							
-	fallback_name = "Carrier %d"		
-
-	unique = {
-		"Republic of Liberia" "Promised Land" 
-	}
-}
-
 
 ### SUBMARINES ###
 LIB_SS_HISTORICAL = {

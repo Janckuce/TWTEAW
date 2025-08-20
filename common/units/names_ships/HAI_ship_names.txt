@@ -80,22 +80,6 @@ HAI_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-HAI_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { HAI }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Porte-Avions %d"	
-
-	unique = {
-		"Republique de Haiti" "Napoleon" 
-	}
-}
-
 ### SUBMARINES ###
 HAI_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

@@ -85,23 +85,6 @@ PAN_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-PAN_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { PAN }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARP "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República de Panamá" "El Destructor" 
-	}
-}
-
 ### SUBMARINES ###
 PAN_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

@@ -407,6 +407,7 @@ focus_tree = {
 			focus = TUR_Healthy_Growth
 		}
 		completion_reward = {
+			add_manpower = 50000
 			add_ideas = TUR_Total_war
 		}
 	}
@@ -667,18 +668,18 @@ focus_tree = {
 				militia = { x = 0 y = 0 }
 				militia = { x = 0 y = 1 }
 				militia = { x = 0 y = 2 }
-				militia = { x = 0 y = 3 }
-				militia = { x = 2 y = 3 }
-				irregular_infantry = { x = 3 y = 4 }
-				irregular_infantry = { x = 4 y = 5 }
-					
-				irregular_infantry = { x = 1 y = 1 }
-				irregular_infantry = { x = 1 y = 1 }
-				irregular_infantry = { x = 1 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				irregular_infantry = { x = 2 y = 0 }
+				irregular_infantry = { x = 2 y = 1 }
 				irregular_infantry = { x = 2 y = 2 }
+				irregular_infantry = { x = 3 y = 0 }
+				irregular_infantry = { x = 3 y = 1 }
+				irregular_infantry = { x = 3 y = 2 }
 			}
 			support = {
-			engineer = { x = 0 y = 1 }
+			engineer = { x = 0 y = 0 }
 			}
 		}
 

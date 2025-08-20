@@ -85,23 +85,6 @@ ECU_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-ECU_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { ECU }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "BAE "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"Quito" "Guayaquil" 
-	}
-}
-
 ### SUBMARINES ###
 ECU_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

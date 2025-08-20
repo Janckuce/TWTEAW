@@ -90,24 +90,6 @@ INS_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-INS_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { INS }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "KRI "							
-	fallback_name = "Carrier %d"		
-
-	unique = {
-		"Sumatra" "Java" "Kalimantan" "Sulawesi" "Nusa Tenggara" "Papua" "Maluku" "Aceh"
-	}
-}
-
-
 ### SUBMARINES ###
 INS_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

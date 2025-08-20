@@ -90,23 +90,6 @@ MEX_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-MEX_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { MEX }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARM "
-	fallback_name = "Portaaviones No.%d"	
-
-	unique = {
-		"República de México" "Independencia" "Libertad" "Demócrata" "18 de Mayo" "Xochichapal" "Cuauhtémoc" "Moctezuma" "Cuitláhuac" "Nezahualcoyotl" 
-	}
-}
-
 ### SUBMARINES ###
 MEX_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

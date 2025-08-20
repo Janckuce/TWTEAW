@@ -1030,15 +1030,6 @@ peace_ai_desires = {
         ai_desire = -200
     }
 
-    dont_take_state_if_already_puppeted_by_us = { ###Too messy
-        peace_action_type = { take_state }
-
-        enable = {
-            ROOT.FROM = { pc_is_puppeted_by = ROOT }
-        }
-        ai_desire = -200
-    }
-
     puppet_their_puppets = {
         peace_action_type = { puppet }
 

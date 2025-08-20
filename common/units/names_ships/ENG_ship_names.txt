@@ -250,55 +250,6 @@ ENG_BC_HISTORICAL = {
  	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-ENG_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { ENG }
-
-	can_use = { 
-		not = { has_government = communism }
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HMS "							
-	fallback_name = "Carrier %s"		
-
-	unique = {
-		"Ark Royal" "Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" 
-		"Audacious" "Malta" "New Zealand" "Gibraltar" "Africa" 
-		"Glorious" "Courageous" "Furious" "Eagle" 
-		"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus" 
-	}
-}
-
-### LIGHT CARRIER NAMES ###
-ENG_CVL_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CVL
-
-	for_countries = { ENG }
-
-	can_use = { 
-		not = { has_government = communism }
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HMS "							
-	fallback_name = "Carrier %s"	
-
-	unique = {
-		# CVL Names
-		"Unicorn" "Colossus" "Venerable" "Vengeance" "Glory" "Pioneer" "Ocean" "Perseus" "Theseus" "Triumph" "Warrior" 
-		"Magnificent" "Powerful" "Terrible" "Majestic" "Hercules" "Leviathan"  "Argus" "Hermes" 
-		"Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Europa" "Andromeda" 
-		# CVE Names
-	}
-}
-
 ### SUBMARINES ###
 ENG_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
@@ -757,55 +708,6 @@ ENG_BC_COMMUNISM = {
            "Anson" "Howe" "Jellicoe" "Beatty" "Resistance" "Incomparable" "Invincible" "Inflexible" "Indomitable" "Indefatigable" "Tiger"
             "Renown" "Repulse" "Courageous" "Glorious" "Furious" "Hood" "Rodney"
  	}
-}
-
-### AIRCRAFT CARRIER NAMES ###
-ENG_CV_COMMUNISM = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { ENG }
-
-	can_use = { 
-		has_government = communism
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "WLNS "							
-	fallback_name = "Carrier %s"		
-
-	unique = {
-		"Illustrious" "Formidable" "Victorious" "Indomitable" "Implacable" "Indefatigable" "Inevitable"
-		"Audacious" "Malta" "New Zealand" "Gibraltar" "Africa" 
-		"Glorious" "Courageous" "Furious" "Eagle" 
-		"Europa" "Andromeda" "Centaur" "Albion" "Bulwark" "Elephant" "Leviathan" "Arrogant" "Monmouth" "Polyphemus" 
-	}
-}
-
-### LIGHT CARRIER NAMES ###
-ENG_CVL_COMMUNISM = {
-	name = NAME_THEME_HISTORICAL_CVL
-
-	for_countries = { ENG }
-
-	can_use = { 
-		has_government = communism
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "WLNS "							
-	fallback_name = "Carrier %s"	
-
-	unique = {
-		# CVL Names
-		"Unicorn" "Colossus" "Venerable" "Vengeance" "Glory" "Pioneer" "Ocean" "Perseus" "Theseus" "Triumph" "Warrior" 
-		"Magnificent" "Powerful" "Terrible" "Hercules" "Leviathan"  "Argus" "Hermes" 
-		"Centaur" "Albion" "Bulwark" "Elephant" "Arrogant" "Monmouth" "Polyphemus" "Europa" "Andromeda" 
-		# CVE Names
-	}
 }
 
 ### SUBMARINES ###

@@ -154,31 +154,6 @@ country_event = {
 }
 
 country_event = {
-	id = austria_hungary.111
-	title = "Death of our Father"
-	desc = austria_hungary.10.d
-	picture = GFX_karl_kaiser_ded
-	fire_only_once = yes
-
-		trigger = {
-		original_tag = AUH
-		has_government = neutrality
-		date > 1916.11.21
-		has_country_leader = { ruling_only = yes character = AUH_franzjosef }
-	}
-
-	mean_time_to_happen = {
-		days = 2517	# Died in 1941
-	}
-
-	option = {
-		name = "Rühe in Frieden"
-		set_country_leader = AUH_karli
-		kill_country_leader = yes
-	}
-}
-
-country_event = {
 	id = austria_hungary.144
 	title = "Direction of our Future"
 	desc = austria_hungary.11.d

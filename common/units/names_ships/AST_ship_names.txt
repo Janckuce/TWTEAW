@@ -135,26 +135,6 @@ AST_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-AST_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { AST }
-
-	can_use = { 
-		not = { has_government = communism }
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HMAS "							
-	fallback_name = "Carrier %s"		
-
-	unique = {
-		"Captain Cook" "Captain Bligh" "Shark Bay" "Geographe Bay" "Carpentaria" "King Sound" "Sydney" "Vengeance" "Melbourne" 
-	}
-}
 
 
 ### SUBMARINES ###
@@ -412,28 +392,6 @@ AST_BC_COMMUNIST = {
  		"New South Wales" "Queensland" "South Australia" "Tasmania" "Victoria" "Western Australia" 
 	}
 }
-
-### AIRCRAFT CARRIER NAMES ###
-AST_CV_COMMUNIST = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { AST }
-
-	can_use = { 
-		has_government = communism
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "RNS "							
-	fallback_name = "Carrier %s"		
-
-	unique = {
-		"Captain Cook" "Captain Bligh" "Shark Bay" "Geographe Bay" "Carpentaria" "King Sound" "Sydney" "Vengeance" "Melbourne" 
-	}
-}
-
 
 ### SUBMARINES ###
 AST_SS_COMMUNIST = {

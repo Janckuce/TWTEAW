@@ -198,30 +198,6 @@ RUS_BB_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-RUS_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { RUS }
-
-	can_use = { 
-		OR = { 
-			has_government = fascism
-			has_government = neutrality
-		}
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "" #The Imperial Russian Navy didn't have prefixes								
-	fallback_name = "Avianosets %s"		
-
-	unique = {
-		"Imperator Nikolay I" "Imperatritsa Aleksandra" "Imperator Aleksandr I" "Dakiya" "Imperator Troyan" "Rumyniya" "Korol Karl" "Kiyev" "Minsk" "Novorossysk" "Baku" "Ulyanovsk"
-	}
-}
-
 ### SUBMARINES ###
 RUS_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

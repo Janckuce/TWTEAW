@@ -801,24 +801,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Organised_Warfare2
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
-		relative_position_id = RUS_Organised_Warfare1
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Organised_Warfare1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Tsars_Organised_Plan1
-				add_idea = RUS_Tsars_Organised_Plan2
-			}
-		}
-	}
-	focus = {
 		id = RUS_Organised_Warfare3
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5

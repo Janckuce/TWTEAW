@@ -88,23 +88,6 @@ HOL_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-HOL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { HOL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HrMs "
-	fallback_name = "Vliegdekschip %d"	
-
-	unique = {
-		"Karel Doorman" "De Zeven Provinciën" "De Ruyter" "Tromp" "Piet Hein" 
-	}
-}
-
 ### SUBMARINES ###
 HOL_SS_OCLASS = {
 	name = NAME_THEME_HISTORICAL_SUBS_OCLASS

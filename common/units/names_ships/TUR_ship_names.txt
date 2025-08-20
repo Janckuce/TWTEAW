@@ -89,23 +89,6 @@ TUR_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-TUR_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { TUR }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "TCG "
-	fallback_name = "%d. Ucak Gemisi"	
-
-	unique = {
-		"Tekirdag" "Bandirma" 
-	}
-}
-
 ### SUBMARINES ###
 TUR_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

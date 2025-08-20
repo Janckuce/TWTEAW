@@ -83,22 +83,6 @@ CHI_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-CHI_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { CHI PRC GXC XSM SIK MAN YUN SHX }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "%d Hangmu"	
-
-	unique = {
-		"Nanshen" "Paonin" "Yingjing" "Tuanji" "Hairong" "Zhaohe" "Haiqi" "Yingrui" "Ninghai" "Pinghai" "Zhongeng" "Haizhao" "Haizhen"	"Feihong" 
-	}
-}
-
 ### SUBMARINES ###
 CHI_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

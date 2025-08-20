@@ -86,23 +86,6 @@ PHI_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-PHI_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { PHI }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "RPS "							
-	fallback_name = "Carrier %d"		
-
-	unique = {
-		"Manila" "Luzon" "Pilipinas Republic" "General Manchatas" "Cabanatuan" "San Pablo" "Batangas" "Bacolod" "Cadiz" "San Carlos" "Davao" 
-	}
-}
-
 
 ### SUBMARINES ###
 PHI_SS_HISTORICAL = {

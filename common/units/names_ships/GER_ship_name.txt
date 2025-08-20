@@ -395,34 +395,6 @@ GER_DD_HISTORICAL = {
 	}
 }
 
-GER_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { GER }
-
-	can_use = { 
-		always = yes
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Träger %d"
-
-	
-	ordered = {
-		1 = {"Graf Zeppelin"}
-		2 = {"Peter Strasser"}
-		3 = {"Seydlitz"}
-		4 = {"Europa"}
-		5 = {"Potsdam"}
-		6 = {"Otto Lilienthal"}
-		7 = {"Aurora"}
-		10 = {"Manfred von Richthofen"}
-		11 = {"Max Immelman"}
-	}
-}
-
 GER_THEME_FISH = {
 	name = NAME_THEME_FISH
 
@@ -994,33 +966,6 @@ GER_DD_IMPERIAL = {
 	}
 }
 
-GER_CV_IMPERIAL = {
-	name = NAME_THEME_IMPERIAL_CARRIERS
-
-	for_countries = { GER }
-
-	can_use = { 
-		always = yes
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	prefix = "SMS "
-	fallback_name = "Träger %d"
-
-	
-	ordered = {
-		1 = {"Graf Zeppelin"}
-		2 = {"Peter Strasser"}
-		3 = {"Seydlitz"}
-		4 = {"Europa"}
-		5 = {"Potsdam"}
-		6 = {"Otto Lilienthal"}
-		7 = {"Aurora"}
-		10 = {"Manfred von Richthofen"}
-		11 = {"Max Immelman"}
-	}
-}
 GER_THEME_GERMANIC_IMPERIAL = {
 	name = NAME_THEME_GERMANIC_MYTHOLOGY
 

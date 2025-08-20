@@ -392,12 +392,6 @@ technologies = {
 	
 	modern_small_airframe = {
 
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
-
 		is_special_project_tech = yes
 
 		enable_equipments = {
@@ -689,12 +683,6 @@ technologies = {
 	
 	modern_medium_airframe = {
 
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
-
 		is_special_project_tech = yes
 
 		enable_equipments = {
@@ -922,12 +910,6 @@ technologies = {
 	}
 	
 	modern_large_airframe = {
-
-		allow = { 	 		
-			ROOT = {
-				is_special_project_completed = sp:sp_air_axial_jet_engine
-			} 
-		}
 
 		is_special_project_tech = yes
 
@@ -1968,12 +1950,6 @@ technologies = {
 		allow_branch = {
 			has_dlc = "Gotterdammerung"
 		}
-		
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_jet_engine
-			} 
-		}
 
 		is_special_project_tech = yes
 
@@ -2018,12 +1994,6 @@ technologies = {
 			 has_dlc = "Gotterdammerung"
 		}	
 
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_mothership_aircraft
-			}
-		}
-
 		is_special_project_tech = yes
 				
 		path = {
@@ -2059,11 +2029,6 @@ technologies = {
 	}
 
 	miniature_fighters = {
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_mothership_aircraft
-			}
-		}
 
 		is_special_project_tech = yes
 
@@ -2104,11 +2069,6 @@ technologies = {
 	}
 
 	aerial_hangars = {
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_air_mothership_aircraft
-			}
-		}
 
 		is_special_project_tech = yes
 

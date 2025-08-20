@@ -130,13 +130,6 @@ POR_Economic_Management_Category = {
 					else_if = {
 						limit = {
 							check_variable = {
-								POR.GDP = 4
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							check_variable = {
 								POR.GDP = 5
 							}
 						}
@@ -274,13 +267,6 @@ POR_Economic_Management_Category = {
 							}
 						}
 						add_ideas = POR_Declining_Economy1
-					}
-					else_if = {
-						limit = {
-							check_variable = {
-								POR.GDP = 4
-							}
-						}
 					}
 					else_if = {
 						limit = {

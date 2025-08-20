@@ -834,9 +834,6 @@ focus_tree = {
 		relative_position_id = FRA_Naval_Investments
 		x = 0
 		y = 1
-		mutually_exclusive = {
-			focus = FRA_Screens_Primacy
-		}
 		prerequisite = {
 			focus = FRA_Naval_Investments
 		}
@@ -925,6 +922,9 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = FRA_Napoleon_Class_Ship
+		}
+		mutually_exclusive = {
+			focus = FRA_Screens_Primacy
 		}
 		completion_reward = {
 			16 = {

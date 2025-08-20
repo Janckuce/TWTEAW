@@ -842,7 +842,6 @@ technologies = {
 		pioneer_support = {
 			battalion_mult = {
 				category = category_amphibious_tanks
-				armor = 0.15
 				breakthrough = 0.15
 			}
 		}
@@ -986,12 +985,6 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		allow = { 
-			AND = {
-				has_tech = paratroopers 
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
 		
 		path = {
 			leads_to_tech = paras_dispersed_drop

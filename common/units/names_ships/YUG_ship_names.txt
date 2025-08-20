@@ -89,23 +89,6 @@ YUG_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-YUG_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { YUG }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "KB "
-	fallback_name = "Nosac Aviona %d"	
-
-	unique = {
-		"Zmaj" "Smederovo" "Manasija" "Vrsac" "Ljubljana" "Brus" "Belgrade" "Zagreb" "Novi Sad" "Budva" 
-	}
-}
-
 ### SUBMARINES ###
 YUG_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

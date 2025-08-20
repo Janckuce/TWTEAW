@@ -85,23 +85,6 @@ COL_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-COL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { COL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARC "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República de Colombia" "La Gloriosa" "Magdalena" "Bogotá" "Pamplonita" "Rio Negro" "Arauca" 
-	}
-}
-
 ### SUBMARINES ###
 COL_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

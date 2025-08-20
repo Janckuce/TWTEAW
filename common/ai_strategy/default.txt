@@ -6,7 +6,6 @@ default_unit_production = {
 	enable = {
 		always = yes
 		NOT = {
-			OR = {
 				original_tag = AUS
 				original_tag = BUL
 				original_tag = ENG
@@ -17,7 +16,6 @@ default_unit_production = {
 				original_tag = USA
 				original_tag = SER
 				original_tag = ROM
-			}
 		}
 	}
 	abort_when_not_enabled = yes
@@ -245,18 +243,6 @@ default_role_ratios = {
 		id = naval_cruiser_heavy
 		value = 20
 	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 15
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = 20
-	}
 }
 
 default_surplus_management = {
@@ -448,12 +434,6 @@ convoy_voy_voy_voy = {
 		id = naval_escort
 		value = 25
 	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
-	}
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
@@ -487,18 +467,6 @@ ill_show_you_mine = {
 		id = naval_cruiser_heavy
 		value = -20
 	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
-	}
 }
 
 ill_show_you_mine_2 = {
@@ -514,18 +482,6 @@ ill_show_you_mine_2 = {
 		type = role_ratio
 		id = naval_cruiser_light
 		value = -20
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_sweeper
-		value = 25
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
 	}
 }
 

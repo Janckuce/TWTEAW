@@ -88,23 +88,6 @@ MAL_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-MAL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { MAL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "KD "							
-	fallback_name = "Carrier %d"		
-
-	unique = {
-		"Malaya" "Singapore" "Malacca" "Borneo" "Brunai" "Segamat" "Penang" "Sabah" "Sarawak"
-	}
-}
-
 
 ### SUBMARINES ###
 MAL_SS_HISTORICAL = {

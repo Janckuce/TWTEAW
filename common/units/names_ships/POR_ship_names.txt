@@ -87,23 +87,6 @@ POR_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-POR_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { POR }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "NRP "
-	fallback_name = "Porta-Aviões %d"	
-
-	unique = {
-		"Amadora" "Estoril" "Principe Real" "Rainha de Portugal" "Afonso de Albuquerque" "Infante de Pedro" "Medusa" "Maria Primeira" "St Sebastiao" 
-	}
-}
-
 ### SUBMARINES ###
 POR_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
