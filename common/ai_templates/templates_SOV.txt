@@ -107,7 +107,6 @@ armored_SOV = {
 				medium_armor = 2
 				light_armor = 4
 				motorized = 4
-				mot_artillery_brigade = 1
 			}
 		}
 	}
@@ -140,7 +139,6 @@ armored_SOV = {
 				medium_armor = 4
 				light_armor = 1
 				motorized = 4
-				mot_artillery_brigade = 1
 			}
 		}
 	}
@@ -171,7 +169,6 @@ armored_SOV = {
 			regiments = {
 				medium_armor = 4
 				motorized = 4
-				mot_artillery_brigade = 1
 			}
 		}
 	}
@@ -682,50 +679,6 @@ marines_SOV = {
 	}
 }
 
-paratroopers_SOV = {
-
-	available_for = {
-		SOV
-	}
-
-	role = paratroopers
-
-	upgrade_prio = {
-		base = 1
-
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = paratroopers
-			}
-		}
-	}
-
-	paratrooper_default_SOV = {
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 1
-			}
-		}
-
-		target_template = {
-
-			support = {
-				engineer = 1
-				artillery = 1
-				anti_tank = 1
-			}
-
-			regiments = {
-				paratrooper = 5
-			}
-		}
-	}
-}
-
 
 anti_armor_SOV = {
 	# This is relatively similar to the anti_armor_GER in Germany's file
@@ -791,7 +744,6 @@ anti_armor_SOV = {
 
 			regiments = {
 				motorized = 6
-				mot_artillery_brigade = 1
 				mot_anti_tank_brigade = 1
 			}
 		}
@@ -838,7 +790,6 @@ anti_armor_SOV = {
 			regiments = {
 				light_tank_destroyer_brigade = 1
 				motorized = 6
-				mot_artillery_brigade = 1
 			}
 		}
 	}
@@ -885,7 +836,6 @@ anti_armor_SOV = {
 				medium_tank_destroyer_brigade = 1
 				mechanized = 4
 				motorized = 2
-				mot_artillery_brigade = 1
 			}
 		}
 	}

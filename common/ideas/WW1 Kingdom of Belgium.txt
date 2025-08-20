@@ -237,14 +237,14 @@ ideas = {
 		BEL_The_King = {
 			picture = bel_king_spirit
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 				party_popularity_stability_factor = 0.1
 			}
 		}
 		BEL_The_People = {
 			picture = ARG_social_welfare_fund_ns
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
 				party_popularity_stability_factor = 0.1
 			}
 		}
@@ -282,6 +282,12 @@ ideas = {
 			picture = SWI_spirit_of_helvetia_aggressive_war
 			modifier = {
 				industrial_capacity_factory = -0.1
+			}
+		}
+		BEL_Sabre_From_France = {
+			modifier = {
+				org_loss_at_low_org_factor = -0.15
+				war_support_factor = 0.1
 			}
 		}
 	}

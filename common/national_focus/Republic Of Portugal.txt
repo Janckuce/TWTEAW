@@ -1,0 +1,1215 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = portuguese_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 1000 }
+
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = POR_Constitution_Of_1911
+		icon = GFX_focus_POL_complete_april_constitution
+		cost = 10
+		x = 10
+		y = 0
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		completion_reward = {
+			country_event = ww1_portugal.1
+		}
+	}
+	focus = {
+		id = POR_Industry_Main
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = -8
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry1
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry_Main
+		}
+		completion_reward = {
+			112 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			179 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			795 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			181 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			180 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Open_Trade
+		icon = GFX_focus_GER_factories_for_resources
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		bypass = {
+			has_idea = free_trade
+		}
+		prerequisite = {
+			focus = POR_Industry_Main
+		}
+		completion_reward = {
+			add_ideas = free_trade
+		}
+	}
+	focus = {
+		id = POR_Industry2
+		icon = GFX_focus_generic_industry_1
+		cost = 10
+		relative_position_id = POR_Industry1
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry1
+		}
+		completion_reward = {
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry3
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		relative_position_id = POR_Industry2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry2
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			795 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry4
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		relative_position_id = POR_Industry3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry3
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			795 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			181 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry_Middle1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		relative_position_id = POR_Industry_Main
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry1
+			focus = POR_Open_Trade
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry_Middle2
+		icon = GFX_focus_generic_military_industry
+		cost = 10
+		relative_position_id = POR_Industry_Middle1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry_Middle1
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Industry_Middle3
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		relative_position_id = POR_Industry_Middle2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Industry_Middle2
+		}
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			179 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Tungsten_Mines
+		icon = GFX_focus_generic_tungsten
+		cost = 10
+		relative_position_id = POR_Open_Trade
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Open_Trade
+		}
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = tungsten
+					amount = 33
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Chromium_Mines
+		icon = GFX_focus_generic_chromium
+		cost = 10
+		relative_position_id = POR_Tungsten_Mines
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Tungsten_Mines
+		}
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = chromium
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Iron_Mines
+		icon = GFX_focus_generic_steel
+		cost = 10
+		relative_position_id = POR_Chromium_Mines
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = POR_Chromium_Mines
+		}
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = steel
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Modern_Industry
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 10
+		relative_position_id = POR_Industry_Middle3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = POR_GDP_Tooltip
+				check_variable = {
+					POR.GDP = 5
+				}
+			}
+		}
+		prerequisite = {
+			focus = POR_Industry4
+		}
+		prerequisite = {
+			focus = POR_Industry_Middle3
+		}
+		prerequisite = {
+			focus = POR_Iron_Mines
+		}
+		completion_reward = {
+			custom_effect_tooltip = POR_Modern_Tooltip
+			add_ideas = POR_Modern_Economy
+			add_research_slot = 1
+			hidden_effect = {
+				remove_ideas = {
+					POR_Rising_Economy
+					POR_Rising_Economy1
+					POR_Rising_Economy2
+					POR_Rising_Crisis
+					POR_Rising_Bankrupcy_Declared
+					POR_Declining_Economy
+					POR_Declining_Economy1
+					POR_Declining_Economy2
+					POR_Crisis
+					POR_Bankrupcy_Declared
+				}
+				if = {
+					limit = {
+						check_variable = {
+							POR.GDP = 0
+						}
+					}
+					add_ideas = POR_Rising_Bankrupcy_Declared
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							POR.GDP = 1
+						}
+					}
+					add_ideas = POR_Rising_Crisis
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							POR.GDP = 2
+						}
+					}
+					add_ideas = POR_Rising_Economy
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							POR.GDP = 3
+						}
+					}
+					add_ideas = POR_Rising_Economy1
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							POR.GDP = 4
+						}
+					}
+					add_ideas = POR_Rising_Economy2
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							POR.GDP = 5
+						}
+					}
+					add_ideas = POR_Rising_Economy3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Brigadas_De_Reacao_Rapida
+		icon = GFX_focus_BRA_air_force
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = -3
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		mutually_exclusive = {
+			focus = POR_Comandos
+			focus = POR_Cacadores
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			division_template = {
+				name = "Brigada De Reacção Rápida"
+				template_counter = 2
+				is_locked = yes
+				division_cap = 6
+				force_allow_recruiting = yes
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+        			militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+        			militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					militia = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			112 = {
+				create_unit = {
+					division = "name = \"Brigada De Reacção Rápida\" division_template = \"Brigada De Reacção Rápida\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					owner = POR
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training1
+		icon = GFX_focus_generic_urban_training
+		cost = 10
+		relative_position_id = POR_Brigadas_De_Reacao_Rapida
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Brigadas_De_Reacao_Rapida
+		}
+		completion_reward = {
+			add_ideas = POR_Rapid_Reaction
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training2
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		relative_position_id = POR_Rapid_Reaction_Training1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Rapid_Reaction
+				add_idea = POR_Rapid_Reaction1
+			}
+			add_units_to_division_template = {
+				template_name = "Brigada De Reacção Rápida"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training3
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		relative_position_id = POR_Rapid_Reaction_Training2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Rapid_Reaction1
+				add_idea = POR_Rapid_Reaction2
+			}
+			add_units_to_division_template = {
+				template_name = "Brigada De Reacção Rápida"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Rapid_Reaction_Training4
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		relative_position_id = POR_Rapid_Reaction_Training3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Rapid_Reaction2
+				add_idea = POR_Rapid_Reaction3
+			}
+			add_units_to_division_template = {
+				template_name = "Brigada De Reacção Rápida"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Comandos
+		icon = GFX_focus_GRE_hellenic_armed_forces
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		mutually_exclusive = {
+			focus = POR_Brigadas_De_Reacao_Rapida
+			focus = POR_Cacadores
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			division_template = {
+				name = "Comandos"
+				template_counter = 12
+				is_locked = yes
+				division_cap = 6
+				force_allow_recruiting = yes
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+        			mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+        			mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			112 = {
+				create_unit = {
+					division = "name = \"Comandos\" division_template = \"Comandos\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					owner = POR
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training1
+		icon = GFX_focus_AFG_mountain_training
+		cost = 10
+		relative_position_id = POR_Comandos
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Comandos
+		}
+		completion_reward = {
+			add_ideas = POR_Commandos
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training2
+		icon = GFX_focus_generic_army_doctrines_2
+		cost = 10
+		relative_position_id = POR_Commandos_Training1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Commandos_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Commandos
+				add_idea = POR_Commandos1
+			}
+			add_units_to_division_template = {
+				template_name = "Comandos"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training3
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		relative_position_id = POR_Commandos_Training2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Commandos_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Commandos1
+				add_idea = POR_Commandos2
+			}
+			add_units_to_division_template = {
+				template_name = "Comandos"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Commandos_Training4
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
+		cost = 10
+		relative_position_id = POR_Commandos_Training3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Commandos_Training3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Commandos2
+				add_idea = POR_Commandos3
+			}
+			add_units_to_division_template = {
+				template_name = "Comandos"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Cacadores
+		icon = GFX_focus_AFG_contact_amanullah_loyalists_alt
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		mutually_exclusive = {
+			focus = POR_Brigadas_De_Reacao_Rapida
+			focus = POR_Comandos
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			division_template = {
+				name = "Caçadores"
+				template_counter = 3
+				is_locked = yes
+				division_cap = 6
+				force_allow_recruiting = yes
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+        			irregular_infantry = { x = 1 y = 0 }
+					irregular_infantry = { x = 1 y = 1 }
+					irregular_infantry = { x = 1 y = 2 }
+        			irregular_infantry = { x = 2 y = 0 }
+					irregular_infantry = { x = 2 y = 1 }
+					irregular_infantry = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			112 = {
+				create_unit = {
+					division = "name = \"Caçadores\" division_template = \"Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					owner = POR
+					count = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training1
+		icon = GFX_focus_PER_desert_training
+		cost = 10
+		relative_position_id = POR_Cacadores
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Cacadores
+		}
+		completion_reward = {
+			add_ideas = POR_Hunters
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training2
+		icon = GFX_focus_ETH_keep_the_chitet
+		cost = 10
+		relative_position_id = POR_Hunters_Training1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Hunters_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Hunters
+				add_idea = POR_Hunters1
+			}
+			add_units_to_division_template = {
+				template_name = "Caçadores"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training3
+		icon = GFX_focus_HUN_the_turul_association
+		cost = 10
+		relative_position_id = POR_Hunters_Training2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Hunters_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Hunters1
+				add_idea = POR_Hunters2
+			}
+			add_units_to_division_template = {
+				template_name = "Caçadores"
+				regiments = {
+					artillery_brigade = 3
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Hunters_Training4
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		cost = 10
+		relative_position_id = POR_Hunters_Training3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Hunters_Training3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Hunters2
+				add_idea = POR_Hunters3
+			}
+			add_units_to_division_template = {
+				template_name = "Caçadores"
+				regiments = {
+					artillery_brigade = 4
+					artillery_brigade = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = POR_Military_Order_Of_Christ
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10
+		relative_position_id = POR_Commandos_Training4
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = POR_Rapid_Reaction_Training4
+			focus = POR_Commandos_Training4
+			focus = POR_Hunters_Training4
+		}
+		completion_reward = {
+			add_ideas = POR_Order_Of_Christ
+		}
+	}
+
+	#	Republic Path
+
+	focus = {
+		id = POR_Power_To_The_Republic
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = 7
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = POR_Power_To_The_King
+		}
+		available = {
+			democratic > 0.7
+			has_idea = POR_Passed_Constitution
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Passed_Constitution
+				add_idea = POR_Republic_Of_Portugal
+			}
+		}
+	}
+	focus = {
+		id = POR_Economic_Reforms
+		icon = GFX_focus_generic_currency_reforms
+		cost = 10
+		relative_position_id = POR_Power_To_The_Republic
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = POR_Power_To_The_Republic
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Republic_Of_Portugal
+				add_idea = POR_Republic_Of_Portugal1
+			}
+		}
+	}
+	focus = {
+		id = POR_Rebuild_The_Nation1
+		icon = GFX_goal_generic_construction
+		cost = 10
+		relative_position_id = POR_Economic_Reforms
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = POR_Economic_Reforms
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Disaster_Of_1807
+				add_idea = POR_Disaster_Of_1807_1
+			}
+		}
+	}
+	focus = {
+		id = POR_Rebuild_The_Nation2
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		relative_position_id = POR_Rebuild_The_Nation1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = POR_Rebuild_The_Nation1
+		}
+		completion_reward = {
+			remove_ideas = POR_Disaster_Of_1807_1
+		}
+	}
+	focus = {
+		id = POR_Satisfy_The_Population1
+		icon = GFX_focus_generic_population_growth
+		cost = 10
+		relative_position_id = POR_Economic_Reforms
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = POR_Economic_Reforms
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Inadequate_African_Territories
+				add_idea = POR_Inadequate_African_Territories1
+			}
+		}
+	}
+	focus = {
+		id = POR_Satisfy_The_Population2
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		relative_position_id = POR_Satisfy_The_Population1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = POR_Satisfy_The_Population1
+		}
+		completion_reward = {
+			remove_ideas = POR_Inadequate_African_Territories1
+		}
+	}
+	focus = {
+		id = POR_Nation_Of_Science
+		icon = GFX_focus_NORDIC_mon_research
+		cost = 10
+		relative_position_id = POR_Economic_Reforms
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			democratic > 0.9
+		}
+		prerequisite = {
+			focus = POR_Rebuild_The_Nation2
+		}
+		prerequisite = {
+			focus = POR_Satisfy_The_Population2
+		}
+		completion_reward = {
+			add_ideas = POR_Portuguese_Scientists
+			add_research_slot = 1
+		}
+	}
+
+	#	Monarchy Path
+
+	focus = {
+		id = POR_Power_To_The_King
+		icon = GFX_focus_por_the_kingdom_reunited
+		cost = 10
+		relative_position_id = POR_Constitution_Of_1911
+		x = 11
+		y = 1
+		available = {
+			democratic < 0.5
+			has_idea = POR_Failed_Constitution
+		}
+		mutually_exclusive = {
+			focus = POR_Power_To_The_Republic
+		}
+		prerequisite = {
+			focus = POR_Constitution_Of_1911
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Failed_Constitution
+				add_idea = POR_Kingdom_Of_Portugal
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
+	focus = {
+		id = POR_Police_Training
+		icon = GFX_focus_generic_military_mission
+		cost = 10
+		relative_position_id = POR_Power_To_The_King
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = POR_Power_To_The_King
+		}
+		completion_reward = {
+			set_technology = {
+				tech_military_police = 1
+				tech_military_police2 = 1
+			}
+		}
+	}
+	focus = {
+		id = POR_Agency_Expertise
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 10
+		relative_position_id = POR_Power_To_The_King
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = POR_Power_To_The_King
+		}
+		completion_reward = {
+			add_ideas = POR_Portuguese_Agents
+		}
+	}
+	focus = {
+		id = POR_Together_In_Strength
+		icon = GFX_focus_ARG_strengthening_the_concordancia
+		cost = 10
+		relative_position_id = POR_Power_To_The_King
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = POR_Police_Training
+		}
+		prerequisite = {
+			focus = POR_Agency_Expertise
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Kingdom_Of_Portugal
+				add_idea = POR_Kingdom_Of_Portugal1
+			}
+		}
+	}
+	focus = {
+		id = POR_King_And_Nation
+		icon = GFX_focus_RAJ_the_crown_and_the_world
+		cost = 10
+		relative_position_id = POR_Together_In_Strength
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Together_In_Strength
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = POR_Disaster_Of_1807
+				add_idea = POR_Disaster_Of_1807_1
+			}
+			swap_ideas = {
+				remove_idea = POR_Inadequate_African_Territories
+				add_idea = POR_Inadequate_African_Territories1
+			}
+		}
+	}
+	focus = {
+		id = POR_Print_Money
+		icon = GFX_focus_generic_printing_press
+		cost = 10
+		relative_position_id = POR_King_And_Nation
+		x = 0
+		y = 1
+		bypass = {
+			or = {
+				not = {
+					has_idea = POR_Declining_Economy2
+					has_idea = POR_Rising_Economy3
+				}
+			}
+			check_variable = {
+				POR.GDP = 5
+			}
+		}
+		prerequisite = {
+			focus = POR_King_And_Nation
+		}
+		completion_reward = {
+			set_variable = {
+				POR.GDP = 5
+			}
+			if = {
+				limit = {
+					has_completed_focus = POR_Modern_Industry
+				}
+				hidden_effect = {
+					remove_ideas = {
+						POR_Rising_Economy
+						POR_Rising_Economy1
+						POR_Rising_Economy2
+						POR_Rising_Crisis
+						POR_Rising_Bankrupcy_Declared
+					}
+				}
+				add_ideas = POR_Rising_Economy3
+			}
+			else = {
+				hidden_effect = {
+					remove_ideas = {
+						POR_Declining_Economy
+						POR_Declining_Economy1
+						POR_Declining_Economy2
+						POR_Crisis
+						POR_Bankrupcy_Declared
+					}
+				}
+				add_ideas = POR_Declining_Economy2
+			}
+			custom_effect_tooltip = POR_GDP_Set
+		}
+	}
+	focus = {
+		id = POR_Addressing_The_Issues
+		icon = GFX_focus_ETH_addressing_the_league_of_nations
+		cost = 10
+		relative_position_id = POR_Print_Money
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = POR_Print_Money
+		}
+		completion_reward = {
+			remove_ideas = POR_Disaster_Of_1807_1
+			remove_ideas = POR_Inadequate_African_Territories1
+		}
+	}
+	focus = {
+		id = POR_Nation_Of_Military
+		icon = GFX_focus_IRQ_royal_iraqi_army
+		cost = 10
+		relative_position_id = POR_Addressing_The_Issues
+		x = 0
+		y = 1
+		available = {
+			neutrality > 0.9
+		}
+		prerequisite = {
+			focus = POR_Addressing_The_Issues
+		}
+		completion_reward = {
+			add_ideas = POR_Military_Construction
+		}
+	}
+}

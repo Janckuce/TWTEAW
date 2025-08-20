@@ -85,23 +85,6 @@ VEN_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-VEN_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { VEN }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARV "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República de Venezuela" "Simón Bolivar" "General Urdaneta" "Almirante Brión" "General Soublette" "General Salom" 
-	}
-}
-
 ### SUBMARINES ###
 VEN_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

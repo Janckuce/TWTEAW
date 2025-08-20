@@ -873,7 +873,6 @@ ideas = {
 			picture = generic_research_bonus
 	
 			modifier = {
-				production_speed_nuclear_reactor_factor = 0.2
 			}
 			research_bonus = {
 				nuclear = 0.15
@@ -896,7 +895,6 @@ ideas = {
 			picture = generic_research_bonus
 	
 			modifier = {
-				production_speed_nuclear_reactor_factor = 0.25
 				political_power_factor = -0.5
 			}
 			research_bonus = {
@@ -1591,7 +1589,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = FIN tag = AUS tag = BEL } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = FIN tag = AUS tag = BEL tag = AST } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
@@ -1648,7 +1646,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN TAG = AUS tag = BEL } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN TAG = AUS tag = BEL tag = AST } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}

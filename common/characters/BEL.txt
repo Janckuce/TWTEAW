@@ -57,9 +57,7 @@ characters={
         idea_token = bel_armand_de_ceuninck
 
         allowed = {
-            OR = {
-                always = yes
-            }
+            always = yes
         }
 
         available = {
@@ -101,7 +99,7 @@ characters={
         }
     }
 		corps_commander = {
-			traits = { ambusher engineer fortress_buster urban_assault_specialist }
+			traits = { ambusher fortress_buster urban_assault_specialist }
 			skill = 2
 			attack_skill = 5
 			defense_skill = 2
@@ -113,7 +111,7 @@ characters={
     name = "Alexandre Galopin"
             portraits = {
 			civilian = {
-				large = "GFX_bel_alexandre_galopin"
+				large = "GFX_bel_alexandre_galopin_frame"
                 small = "GFX_bel_alexandre_galopin_frame"
 		    }
 		}
@@ -177,7 +175,7 @@ characters={
             always = yes
         }
     }
-		crops_commander = {
+		corps_commander = {
 		traits = { cavalry_leader Organizer }
 		skill = 3
 		attack_skill = 2
@@ -294,40 +292,36 @@ characters={
 }
 
     BEL_cyriaque_gillain = {
-		instance = {
-			allowed = {
-			}
-			advisor = {	
-				slot = army_chief
-				idea_token =  BEL_cyriaque_gillain
-				ledger = army
-				allowed = {
-					original_tag = BEL
-				}
-				traits = {
-					cyriaque_gillain_trait
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
-			}
+        advisor = {	
+            slot = army_chief
+            idea_token =  BEL_cyriaque_gillain
+            ledger = army
+            allowed = {
+                original_tag = BEL
+            }
+            traits = {
+                cyriaque_gillain_trait
+            }
+            cost = 150
+            ai_will_do = {
+                base = 1
+            }
+        }
 
-			field_marshal = {
-				traits = { bearer_of_artillery cavalry_leader cavalry_expert  }
-				skill = 4
-				attack_skill = 3
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			name =  BEL_cyriaque_gillain
-			portraits = {
-				army = {
-				large = "GFX_BEL_cyriaque_gillain"
-				small = "GFX_BEL_cyriaque_gillain_frame"
-			}
-		}
-	}
-}
+        field_marshal = {
+            traits = { bearer_of_artillery cavalry_leader cavalry_expert  }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 2
+            logistics_skill = 2
+        }
+        name =  BEL_cyriaque_gillain
+        portraits = {
+            army = {
+                large = "GFX_BEL_cyriaque_gillain"
+                small = "GFX_BEL_cyriaque_gillain_frame"
+            }
+        }
+    }
 }

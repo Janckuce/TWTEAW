@@ -7,7 +7,6 @@ RUS_Peasant's_Land_Bank_Category = {
 			tag = RUS
 		}
 		visible = {
-			has_completed_focus = RUS_Peasant's_Land_Bank
 			or = {
 				has_idea = RUS_Agrarian_Industry3
 				has_idea = RUS_Agrarian_Industry4
@@ -49,7 +48,6 @@ RUS_Peasant's_Land_Bank_Category = {
 			tag = RUS
 		}
 		visible = {
-			has_completed_focus = RUS_Peasant's_Land_Bank
 			not = {
 				or = {
 				has_idea = RUS_Agrarian_Industry
@@ -98,6 +96,7 @@ RUS_Laboratories_Category = {
 		}
 		complete_effect = {
 			add_tech_bonus = {
+				name = "add a name"
 				category = infantry_weapons
 				bonus = 1
 				uses = 1
@@ -119,6 +118,7 @@ RUS_Laboratories_Category = {
 		}
 		complete_effect = {
 			add_tech_bonus = {
+				name = "add a name 2, electric boogaloo"
 				category = support_tech
 				bonus = 1
 				uses = 1
@@ -140,6 +140,7 @@ RUS_Laboratories_Category = {
 		}
 		complete_effect = {
 			add_tech_bonus = {
+				name = "Oh this one is armour, cool"
 				category = armor
 				bonus = 1
 				uses = 1
@@ -161,6 +162,7 @@ RUS_Laboratories_Category = {
 		}
 		complete_effect = {
 			add_tech_bonus = {
+				name = "Artillery very nice"
 				category = artillery
 				bonus = 1
 				uses = 1
@@ -182,6 +184,7 @@ RUS_Laboratories_Category = {
 		}
 		complete_effect = {
 			add_tech_bonus = {
+				name = "Why is navy here???"
 				category = naval_equipment
 				bonus = 1
 				uses = 1
@@ -203,6 +206,7 @@ RUS_Laboratories_Category = {
 		}
 		complete_effect = {
 			add_tech_bonus = {
+				name = "add a name"
 				category = air_equipment
 				bonus = 1
 				uses = 1
@@ -216,21 +220,22 @@ RUS_Military_Academy_Category = {
 		priority = 1
 		cost = 50
 		allowed = {
-			tag = RUS
-			or = {
-				has_idea = RUS_Dated_Warfare1
-				has_idea = RUS_Dated_Warfare2
-				has_idea = RUS_Dated_Warfare3
-				has_idea = RUS_Dated_Warfare4
-				has_idea = RUS_Dated_Warfare5
+				RUS = {
+					or = {
+					has_idea = RUS_Dated_Warfare1
+					has_idea = RUS_Dated_Warfare2
+					has_idea = RUS_Dated_Warfare3
+					has_idea = RUS_Dated_Warfare4
+					has_idea = RUS_Dated_Warfare5
+					}
+				}	
 			}
-		}
-		visible = {
-			or = {
-				has_completed_focus = RUS_Mass_Mobilise
-				has_completed_focus = RUS_Establish_Military_Academy
+			visible = {
+				or = {
+					has_completed_focus = RUS_Mass_Mobilise
+					has_completed_focus = RUS_Establish_Military_Academy
+				}
 			}
-		}
 		complete_effect = {
 			if = {
 				limit = {

@@ -1,6 +1,7 @@
 ideas = {
 	country = {
 		AST_Labour_Party = {
+			picture = bul_victory_of_brsdp
 			modifier = {
 				industry_repair_factor = 0.1
 				production_speed_industrial_complex_factor = 0.05
@@ -8,6 +9,7 @@ ideas = {
 			}
 		}
 		AST_Labour_Party1 = {
+			picture = bul_victory_of_brsdp
 			modifier = {
 				industry_repair_factor = 0.15
 				production_speed_industrial_complex_factor = 0.1
@@ -15,6 +17,7 @@ ideas = {
 			}
 		}
 		AST_Labour_Party2 = {
+			picture = bul_victory_of_brsdp
 			modifier = {
 				industry_repair_factor = 0.2
 				production_speed_industrial_complex_factor = 0.15
@@ -22,6 +25,7 @@ ideas = {
 			}
 		}
 		AST_Liberal_Party = {
+			picture = ast_liberal_party
 			modifier = {
 				industry_repair_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.025
@@ -29,6 +33,7 @@ ideas = {
 			}
 		}
 		AST_Liberal_Party1 = {
+			picture = ast_liberal_party
 			modifier = {
 				industry_repair_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
@@ -36,6 +41,7 @@ ideas = {
 			}
 		}
 		AST_Liberal_Party2 = {
+			picture = ast_liberal_party
 			modifier = {
 				stability_factor = 0.1
 				industry_repair_factor = 0.1
@@ -45,6 +51,7 @@ ideas = {
 			}
 		}
 		AST_White_Policy = {
+			picture = ast_whites
 			modifier = {
 				stability_factor = 0.1
 				monthly_population = -0.5
@@ -53,6 +60,7 @@ ideas = {
 			}
 		}
 		AST_Black_Policy = {
+			picture = ETH_scavenging_tactics
 			modifier = {
 				stability_factor = -0.1
 				monthly_population = 0.5
@@ -61,6 +69,7 @@ ideas = {
 			}
 		}
 		AST_Grey_Policy = {
+			picture = COG_the_invisible_roof
 			modifier = {
 				stability_factor = -0.1
 				monthly_population = -0.1
@@ -73,6 +82,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending = {
+			picture = chi_army_corruption
 			modifier = {
 				consumer_goods_expected_value = -0.15
 				training_time_army_factor = -0.15
@@ -85,6 +95,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending1 = {
+			picture = chi_army_corruption
 			modifier = {
 				consumer_goods_expected_value = -0.15
 				training_time_army_factor = -0.15
@@ -97,6 +108,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Minor = {
+			picture = chi_army_corruption
 			modifier = {
 				consumer_goods_expected_value = -0.1
 				training_time_army_factor = -0.1
@@ -109,6 +121,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Minor1 = {
+			picture = chi_army_corruption
 			modifier = {
 				consumer_goods_expected_value = -0.1
 				training_time_army_factor = -0.1
@@ -121,12 +134,14 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Minor2 = {
+			picture = chi_army_corruption
 			modifier = {
 				consumer_goods_expected_value = -0.1
 				training_time_army_factor = -0.1
 			}
 		}
 		AST_Small_Defence_Spending_Minor3 = {
+			picture = chi_army_corruption
 			modifier = {
 				consumer_goods_expected_value = -0.1
 				training_time_army_factor = -0.1
@@ -139,6 +154,8 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major = {
+			picture = mex_politicised_army_2
+			
 			modifier = {
 				army_speed_factor = -0.03
 				army_attack_speed_factor = -0.03
@@ -149,10 +166,12 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major1 = {
+			picture = mex_politicised_army_2
 			modifier = {
 			}
 		}
 		AST_Small_Defence_Spending_Major2 = {
+			picture = mex_politicised_army_2
 			modifier = {
 				army_speed_factor = 0.03
 				army_attack_speed_factor = 0.03
@@ -163,6 +182,7 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major3 = {
+			picture = mex_politicised_army_2
 			modifier = {
 				army_speed_factor = 0.06
 				army_attack_speed_factor = 0.06
@@ -173,6 +193,7 @@ ideas = {
 			}
 		}
 		AST_Royal_Navy = {
+			picture = ast_naval_spirit
 			modifier = {
 				industrial_capacity_dockyard = 0.025
 				repair_speed_factor = 0.03
@@ -184,6 +205,7 @@ ideas = {
 			}
 		}
 		AST_Royal_Navy1 = {
+			picture = ast_naval_spirit
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 				repair_speed_factor = 0.06
@@ -195,42 +217,83 @@ ideas = {
 			}
 		}
 		AST_Consumer_Reduction = {
+			picture = generic_goods_red_bonus
 			modifier = {
 				consumer_goods_expected_value = 0.5
 			}
 		}
 		AST_Stability_Reduction = {
+			picture = generic_goods_red_bonus
 			modifier = {
 				stability_factor = -0.5
 			}
 		}
 		AST_Academy = {
+			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.5
+				research_speed_factor = 0.25
 			}
 		}
 		AST_Increased_Worker_Wages = {
+			picture = NOR_printing_money
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				industrial_capacity_factory = 0.05
 			}
 		}
 		AST_Increased_Worker_Rights = {
+			picture = NOR_printing_money
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				industrial_capacity_dockyard = 0.05
 			}
 		}
 		AST_Decreased_Pollution = {
+			picture = RAJ_contamination_cleanup_crew
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				production_speed_buildings_factor = 0.1
 			}
 		}
 		AST_Extra_Liberties = {
+			picture = generic_free_trade
 			modifier = {
 				consumer_goods_expected_value = 0.15
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+		industrial_concern = {
+		
+			ast_cement = {
+			name = ast_cement
+			picture = ast_cement
+			allowed = {
+				original_tag = AST
+			}
+
+			visible = {
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.025
+				industry_repair_factor = 0.1
+				production_speed_industrial_complex_factor = 0.065
+				production_speed_dockyard_factor = 0.05
+
+			}
+			
+			traits = { construction_company }
+			
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}

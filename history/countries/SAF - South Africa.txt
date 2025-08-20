@@ -1,5 +1,7 @@
 ﻿capital = 275
 
+set_oob = "SAF_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -21,6 +23,8 @@ set_technology = {
 
 ##### Party Popularity, Stability, War Support and other #####
 
+recruit_character = SAF_Salomon_Gerhardus_Maritz
+
 starting_train_buffer = 1
 
 set_politics = {
@@ -31,11 +35,17 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 30
-	democratic = 70
+	fascism = 50
+	democratic = 50
 }
 
-set_research_slots = 3
+add_ideas = {
+	SAF_Maritz_Disruption
+	SAF_Afrikaner_British_Division
+	SAF_Inefficient_Economy
+}
+
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.3
 

@@ -29,7 +29,7 @@ ENG_vickers_armstrong_eng_organization = {
 		IF = {
 			limit = { 
 				OR = { 
-					FROM = { original_tag =  }
+					FROM = { original_tag = ENG }
 					FROM = { original_tag = ETH }
 				}  
 			}
@@ -41,7 +41,7 @@ ENG_vickers_armstrong_eng_organization = {
 			}
 		}
 		IF = {
-			limit = { FROM = { original_tag =  } } 
+			limit = { FROM = { original_tag = ENG } } 
 			FROM = {
 				OR = {
 					is_subject = no
@@ -134,7 +134,7 @@ ENG_vauxhall_organization = {
 		IF = {
 			limit = { 
 				OR = { 
-					FROM = { original_tag =  }
+					FROM = { original_tag = ENG }
 					FROM = { original_tag = ETH }
 				}  
 			}
@@ -146,7 +146,7 @@ ENG_vauxhall_organization = {
 			}
 		}
 		IF = {
-			limit = { FROM = { original_tag =  } } 
+			limit = { FROM = { original_tag = ENG } } 
 			FROM = {
 				OR = {
 					is_subject = no
@@ -180,8 +180,15 @@ ENG_harland_wolff_organization = {
 	icon = GFX_idea_harland_wolff
 	
 	allowed = {	
-		tag = ENG
-		has_dlc = "Arms Against Tyranny"
+		OR = {
+			tag = ENG
+			AND = {
+				tag = AST
+			}
+				AND = {
+				tag = PER
+			}
+		}
 	}
 
 	override_trait = {
@@ -230,8 +237,15 @@ ENG_cammell_laird_organization = {
 	icon = GFX_idea_cammell_laird
 	
 	allowed = {	
-		tag = ENG
-		has_dlc = "Arms Against Tyranny"
+		OR = {
+			tag = ENG
+			AND = {
+				tag = AST
+			}
+				AND = {
+				tag = PER
+			}
+		}
 	}
 
 	override_trait = {
@@ -536,14 +550,11 @@ ENG_vauxhall_automotive_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG
-			tag = POL # If Poland sets up a local one
 			AND = {
-				tag = ROM
-				has_dlc = "Death or Dishonor"
+				tag = AST
 			}
-			AND = {
-				tag = ETH 
-				has_dlc = "By Blood Alone"
+				AND = {
+				tag = PER
 			}
 		}
 	}
@@ -574,7 +585,7 @@ ENG_vauxhall_automotive_organization = {
 		IF = {
 			limit = {
 				OR = { 
-					FROM = { original_tag = }
+					FROM = { original_tag = ENG }
 					FROM = { original_tag = ETH }
 				}  
 			}
@@ -586,7 +597,7 @@ ENG_vauxhall_automotive_organization = {
 			}
 		}
 		IF = {
-			limit = { FROM = { original_tag = } }
+			limit = { FROM = { original_tag = ENG } }
 			FROM = {
 				OR = {
 					is_subject = no
@@ -611,16 +622,14 @@ ENG_vauxhall_automotive_organization = {
 ENG_royal_arsenal_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_royal_arsenal
-	allowed = {
+	allowed = {	
 		OR = {
 			tag = ENG
 			AND = {
-				OR = {
-					original_TAG = LAT
-					original_TAG = LIT
-					original_TAG = EST
-				}
-				has_dlc = "No Step Back"
+				tag = AST
+			}
+				AND = {
+				tag = PER
 			}
 		}
 	}

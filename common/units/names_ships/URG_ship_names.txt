@@ -85,23 +85,6 @@ URG_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-URG_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { URG }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ROU "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República Oriental" "Montevideo" 
-	}
-}
-
 ### SUBMARINES ###
 URG_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

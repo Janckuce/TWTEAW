@@ -972,14 +972,6 @@ ORO_spectator_state = {
 			}
 			RUS = {
 			    has_war_with = PER
-			    has_country_flag = {
-					flag = RUS_attack_persia_1
-					days > 10
-				}
-				has_country_flag = {
-					flag = RUS_attack_persia_1
-					days < 365 #The war shouldn't last this only, this is to prevent the decision from triggering later
-				}
 			}
 		}
 		
@@ -1023,14 +1015,6 @@ ORO_spectator_state = {
 			}
 			RUS = {
 			    has_war_with = PER
-			    has_country_flag = {
-					flag = RUS_attack_persia_1
-					days > 60
-				}
-				has_country_flag = {
-					flag = RUS_attack_persia_1
-					days < 365 #The war shouldn't last this only, this is to prevent the decision from triggering later
-				}
 			}
 		}
 		
@@ -1707,7 +1691,6 @@ ORO_spectator_state = {
 					promote_leader = yes
 					country_leader = {
 						ideology = centrism
-						traits = {}
 					}
 				}
 				news_event = ww1_news.48
@@ -2273,7 +2256,6 @@ ORO_death_news = {
 					promote_leader = yes
 					country_leader = {
 						ideology = centrism
-						traits = {}
 					}
 				}
 				news_event = ww1_news.46
@@ -2307,7 +2289,6 @@ ORO_death_news = {
 					promote_leader = yes
 					country_leader = {
 						ideology = centrism
-						traits = {}
 					}
 				}
 				news_event = ww1_news.28

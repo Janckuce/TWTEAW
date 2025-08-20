@@ -840,11 +840,23 @@ country_event = {
 		name = ww1_germany.19.a
 
 		complete_national_focus = GER_schlieffen_moltke_plan_idea
+
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
 	}
 	option = {
 		name = ww1_germany.19.b
 
 		complete_national_focus = GER_Helmuth_von_Moltke
+
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -861,18 +873,6 @@ country_event = {
 		name = ww1_germany.20.a
 
 		complete_national_focus = GER_Kaiser_Leader1
-	}
-
-	option = {
-		name = ww1_germany.20.b
-
-		complete_national_focus = GER_Kaiser_Leader2
-	}
-
-	option = {
-		name = ww1_germany.20.c
-
-		complete_national_focus = GER_Kaiser_Leader3
 	}
 }
 country_event = {

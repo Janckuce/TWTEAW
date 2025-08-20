@@ -1,0 +1,25 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Stability_Window"
+		orientation = CENTER
+		origo = center
+		position = {
+			x = 0
+			y = 0
+		}
+
+		size = {
+			width = 500
+			height = 20
+		}
+
+		instantTextBoxType = {
+			name = "Stability_Viewer"
+			position = {
+				x = 200
+				y = -7
+			}
+			text = "FRA_Stability_Text"
+		}
+	}
+}

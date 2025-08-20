@@ -1,0 +1,13 @@
+POR_Economic_Management_Category = {
+	icon = military_operation
+
+	scripted_gui = Economics_Scripted_Gui
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = POR
+	}
+}

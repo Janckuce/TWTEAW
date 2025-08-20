@@ -85,23 +85,6 @@ CHL_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-CHL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { CHL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "BACH "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"Los Andes de Chile" "Excelsior" "Pacífico" "Meteoro" "Simpson" "La Fortuna"
-	}
-}
-
 ### SUBMARINES ###
 CHL_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

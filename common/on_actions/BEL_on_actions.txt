@@ -1,0 +1,17 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = BEL
+					295 = {
+						is_controlled_by = GER
+					}
+				}
+				295 = {
+					set_state_controller_to = BEL
+				}
+			}
+		}
+	}
+}

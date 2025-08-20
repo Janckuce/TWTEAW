@@ -1,0 +1,44 @@
+FRA_balance_of_power_category = {
+	DEBUG_FRA_deactivate_BOP = {
+		priority = 100
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			tag = FRA
+		}
+		complete_effect = {
+			remove_power_balance = { id = FRA_power_balance }
+		}
+	}
+	FRA_support_left_side = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 60
+		visible = {
+			always = yes
+		}
+		available = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = FRA_power_balance
+				value = -0.1
+			}
+		}	
+	}
+	FRA_support_right_side = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 60
+		visible = {
+			always = yes
+		}
+		available = {
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = FRA_power_balance
+				value = 0.1
+			}
+		}	
+	}
+}

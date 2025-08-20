@@ -1,0 +1,291 @@
+POR_Economic_Management_Category = {
+	POR_Economic_Investment = {
+		priority = 1
+		days_re_enable = 30
+		days_remove = 30
+		allowed = {
+			tag = POR
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			custom_trigger_tooltip = {
+				tooltip = POR_GDP_Limit
+				check_variable = {
+					POR.GDP < 5
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			add_to_variable = {
+				POR.GDP = 1
+			}
+			hidden_effect = {
+				remove_ideas = {
+					POR_Rising_Economy
+					POR_Rising_Economy1
+					POR_Rising_Economy2
+					POR_Rising_Crisis
+					POR_Rising_Bankrupcy_Declared
+					POR_Declining_Economy
+					POR_Declining_Economy1
+					POR_Declining_Economy2
+					POR_Crisis
+					POR_Bankrupcy_Declared
+				}
+
+				#	Rising Economy
+
+				if = {
+					limit = {
+						has_completed_focus = POR_Modern_Industry
+					}
+					if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 0
+							}
+						}
+						add_ideas = POR_Rising_Bankrupcy_Declared
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 1
+							}
+						}
+						add_ideas = POR_Rising_Crisis
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 2
+							}
+						}
+						add_ideas = POR_Rising_Economy
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 3
+							}
+						}
+						add_ideas = POR_Rising_Economy1
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 4
+							}
+						}
+						add_ideas = POR_Rising_Economy2
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 5
+							}
+						}
+						add_ideas = POR_Rising_Economy3
+					}
+				}
+
+				#	Declining Economy
+
+				else = {
+					if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 0
+							}
+						}
+						add_ideas = POR_Bankrupcy_Declared
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 1
+							}
+						}
+						add_ideas = POR_Crisis
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 2
+							}
+						}
+						add_ideas = POR_Declining_Economy
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 3
+							}
+						}
+						add_ideas = POR_Declining_Economy1
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 5
+							}
+						}
+						add_ideas = POR_Declining_Economy2
+					}
+				}
+			}
+			custom_effect_tooltip = POR_GDP_Add
+		}
+	}
+
+	POR_Industrial_Investment = {
+		priority = 1
+		days_re_enable = 30
+		days_remove = 30
+		allowed = {
+			tag = POR
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = POR_GDP_Limit1
+				check_variable = {
+					POR.GDP > 0
+				}
+			}
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.05
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				POR.GDP = 1
+			}
+			hidden_effect = {
+				remove_ideas = {
+					POR_Rising_Economy
+					POR_Rising_Economy1
+					POR_Rising_Economy2
+					POR_Rising_Crisis
+					POR_Rising_Bankrupcy_Declared
+					POR_Declining_Economy
+					POR_Declining_Economy1
+					POR_Declining_Economy2
+					POR_Crisis
+					POR_Bankrupcy_Declared
+				}
+
+				#	Rising Economy
+
+				if = {
+					limit = {
+						has_completed_focus = POR_Modern_Industry
+					}
+					if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 0
+							}
+						}
+						add_ideas = POR_Rising_Bankrupcy_Declared
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 1
+							}
+						}
+						add_ideas = POR_Rising_Crisis
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 2
+							}
+						}
+						add_ideas = POR_Rising_Economy
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 3
+							}
+						}
+						add_ideas = POR_Rising_Economy1
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 4
+							}
+						}
+						add_ideas = POR_Rising_Economy2
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 5
+							}
+						}
+						add_ideas = POR_Rising_Economy3
+					}
+				}
+
+				#	Declining Economy
+
+				else = {
+					if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 0
+							}
+						}
+						add_ideas = POR_Bankrupcy_Declared
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 1
+							}
+						}
+						add_ideas = POR_Crisis
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 2
+							}
+						}
+						add_ideas = POR_Declining_Economy
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 3
+							}
+						}
+						add_ideas = POR_Declining_Economy1
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								POR.GDP = 5
+							}
+						}
+						add_ideas = POR_Declining_Economy2
+					}
+				}
+			}
+			112 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			custom_effect_tooltip = POR_GDP_Remove
+		}
+	}
+}

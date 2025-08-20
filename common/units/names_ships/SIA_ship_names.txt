@@ -86,23 +86,6 @@ SIA_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-SIA_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { SIA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HTMS "
-	fallback_name = "Reux Brrthuk Kheruxngbin %d"	
-
-	unique = {
-		"Muang Thai" "Ao Thai" "Chakri Nareubet"
-	}
-}
-
 ### SUBMARINES ###
 SIA_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

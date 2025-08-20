@@ -85,23 +85,6 @@ GUA_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-GUA_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { GUA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARG "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República de Guatemala" "Escuintia" 
-	}
-}
-
 ### SUBMARINES ###
 GUA_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

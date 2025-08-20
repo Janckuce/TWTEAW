@@ -1076,28 +1076,22 @@ focus_tree = {
 			add_popularity = {
             ideology = fascism
             popularity = 0.05
-        }
-
-				212 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
+        	}
+			212 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
 			}
-
-			 add_resource = {
-            state = 212  # Replace with the actual state ID
+			add_resource = {
             type = tungsten  # Resource type: oil, steel, aluminum, etc.
             amount = 3   # Amount of the resource
-        }
-
-			 add_resource = {
-            state = 212  # Replace with the actual state ID
+        	}
+			add_resource = {
             type = steel  # Resource type: oil, steel, aluminum, etc.
             amount = 6   # Amount of the resource
-        }
-
+        	}
 		}
 		
 	}
@@ -2235,9 +2229,6 @@ focus_tree = {
 		y = 3
 		cost = 10
 
-		prerequisite = {
-		focus = BUL_pass_new_uniform_mandate
-		}
 		prerequisite = {
 		focus = BUL_reform_conscription_system
 		}

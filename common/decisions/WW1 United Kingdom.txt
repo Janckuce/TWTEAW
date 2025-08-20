@@ -10,17 +10,11 @@ GER_ENG_agadir_crisis_category = {
 			    controls_state = 461
 				controls_state = 462
 		    }
-			NOT = {
-			    FRA = { has_completed_focus = FRA_crisis_averted }
-			}
 		}
 		complete_effect = {
 		    add_political_power = 1
 			ENG = { news_event = { id = ww1_news.3 days = 10 } }
 			add_named_threat = { threat = 5 name = ENG_send_battleship }
-			FRA = {
-			    complete_national_focus = FRA_eng_will_help
-			}
 			ENG = {
 				complete_national_focus = ENG_Interfere_In_Agadir
 			}

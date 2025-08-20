@@ -85,23 +85,6 @@ NIC_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-NIC_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { NIC }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARN "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"Somoza y Nicaragua" "Tachito" 
-	}
-}
-
 ### SUBMARINES ###
 NIC_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

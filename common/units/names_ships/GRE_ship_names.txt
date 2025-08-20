@@ -87,23 +87,6 @@ GRE_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-GRE_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { GRE }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "RHS "
-	fallback_name = "Aeroplanoforo %s"	
-
-	unique = {
-		"Ellas" "Socrates" "Vasilefs Georgios" "Vasilissa Olga" "Hydra" "Spetsai" "Psara" 
-	}
-}
-
 ### SUBMARINES ###
 GRE_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

@@ -264,58 +264,6 @@ USA_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-USA_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { USA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "USS "							
-	fallback_name = "Carrier CV-%d"	
-
-	unique = {
-
-		"Yorktown" "Enterprise" "Wasp" "Hornet" 
-		"Lexington" "Saratoga" "Ranger" 
-		"Essex" "Intrepid" "Bunker Hill" "Franklin" "Ticonderoga" "Hancock" "Bennington" "Shangri-la" "Randolph" "Bon Homme Richard" "Antietam" "Boxer" "Lake Champlain" "Princeton" "Tarawa" 
-		"Kearsarge" "Leyte" "Valley Forge" "Philippine Sea" "Oriskany" "Reprisal" "Iwo Jima" "Midway" "Franklin D Roosevelt" "Coral Sea" 
-
-		# Cold War and Beyond  (WW2 era Gen/Adm names excluded)
-		"United States" "Forrestal" "Independence" "Kitty Hawk" "Constellation" "America" "Theodore Roosevelt" "Abraham Lincoln" "George Washington"
-		"Ever Given"
-	}
-}
-
-### LIGHT CARRIER NAMES ###
-USA_CVL_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CVL
-
-	for_countries = { USA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "USS "							
-	fallback_name = "Carrier CVL-%d"	
-
-	unique = {
-		# CVL Names
-		"Independence" "Princeton" "Belleau Wood" "Cowpens" "Monterey" "Cabot" "Bataan" "San Jacinto" "Saipan" "Wright" 
-		"Langley"
-		# CV Battle Names
-		"Ticonderoga" "Bunker Hill" "Bennington" "Tarawa" "Antietam" "Leyte" "Valley Forge" "Philippine Sea" "Coral Sea"	
-		# CVE Names
-		"Long Island" "Bogue" "Card" "Copahee" "Core" "Croatan" "Nassau" "Altamaha" "Barnes" "Block Island" "Breton" "Prince William" "Sangamon" "Suwannee" "Chenango" "Santee"
-		"Casablanca" "Liscombe Bay" "Corregidor" "Mission Bay" "Guadalcanal" "Manila Bay" "Natoma Bay" "Midway" "Didrickson Bay" "Wake Island" "White Plains" "Solomons" "Kalinin Bay" 
-		"Kasaan Bay" "Fanshaw Bay" "Kitkun Bay" "Tulagi" "Gambier Bay" "Nehenta Bay" "Hoggatt Bay" "Kadashan Bay" "Marcus Island" "Savo Island" "Ommaney Bay" "Petrof Bay" "Rudyerd Bay" "Saginaw Bay" 
-		"Sargent Bay" "Shamrock Bay" "Shipley Bay" "Sitkoh Bay" "Steamer Bay" "Cape Esperance" "Takanis Bay" "Thetis Bay" "Makassar Strait" "Windham Bay" "Makin Island" "Lunga Point" "Bismarck Sea" 
-		"Salamaua" "Hollandia" "Kwajalein" "Admiralty Islands" "Bougainville" "Matanikau" "Attu" "Roi" "Munda" 
-	}
-}
-
 ### SUBMARINES ###
 USA_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
@@ -353,25 +301,6 @@ USA_SS_HISTORICAL = {
 		"Barracuda" "Bass" "Bonita" "Argonaut" "Narwhal" "Nautilus" "Dolphin" "Cachalot" "Cuttlefish" "Porpoise" "Pike" "Shark" 
 		# Unifnished
 		"Turbot" "Ulua" "Vendace" "Whitefish" "Whiting" "Wolffish" "Comber" "Sea Panther" "Tiburon" "Kinn" "Springeren"
-	}
-}
-
-### THEME: U.S. STATES ###
-USA_STATES = {
-	name = NAME_THEME_STATES
-
-	for_countries = { USA }
-
-	type = ship
-	ship_types = { ship_hull_heavy ship_hull_carrier ship_hull_submarine }
-	
-	prefix = "USS "							
-
-	unique = {
-		"Alabama" "Arizona" "Arkansas" "California" "Colorado" "Connecticut" "Delaware" "Florida" "Georgia" "Indiana" "Idaho" "Iowa" "Illinois" "Kansas" "Kentucky"   
-		"Louisiana" "Maine" "Maryland" "Massachusetts" "Michigan" "Minnesota" "Mississippi" "Missouri" "Montana" 
-		"Nebraska" "Nevada" "New Hampshire" "New Jersey" "New Mexico" "New York" "North Carolina" "North Dakota" "Ohio" "Oklahoma" "Oregon"
-		"Pennsylvania" "Rhode Island" "South Carolina" "South Dakota" "Tennessee" "Texas" "Utah" "Vermont" "Virginia" "Washington" "West Virginia" "Wisconsin" "Wyoming" 
 	}
 }
 
@@ -598,27 +527,6 @@ USA_BC_CONFEDERATE = {
 	unique = {
 			#List of stinging insects in the Southern States
 			"Yellow Jacket" "Copperhead" "Fire Ant" "Rattler" "Black Widow" "Hornet" "Water Moccasin" "Wasp" "Scorpion" "Honey Bee" "Coral Snake" "Bumble Bee" "Chigger" 
-	}
-}
-
-### CSA AIRCRAFT CARRIER NAMES ###
-USA_CV_CONFEDERATE = {
-	name = NAME_THEME_CONFEDERATE_CARRIERS
-
-	for_countries = { CSA USA }
-	can_use = {
-		has_government = fascism
-	}
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "CSS "							
-	fallback_name = "Carrier CV-%d"	
-
-	unique = {
-		"Robert E. Lee" "Stonewall Jackson" "Nathan B. Forrest" "Patrick Henry" "Jefferson Davis" "James Longstreet" "Stephen Mallory" "Wade Hampton" "Thomas Jefferson" 
-		"Pierre T. G. Beauregard" "Kirby Smith" "Braxton Bragg" "Albert Sidney Johnston" "Joseph E. Johnston" "John Bell Hood" "A.P. Hill" "Richard Ewell" 
-		"Simon Bolivar Buckner" "William Hardee" "D.H. Hill" "John C. Pemberton" "Leonidas Polk" "Theophilus Holmes" 
 	}
 }
 

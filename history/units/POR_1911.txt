@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Divisão de Infantaria"
+	name = "Divisão De Infantaria"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -12,41 +12,28 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	
-	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-	}
 }
 
 units = {
     division = {
-		name = "Divisão de Infantaria"
+		name = "Divisão De Infantaria"
 		location = 11805
-		division_template = "Divisão de Infantaria"
+		division_template = "Divisão De Infantaria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.1
 
 	}
 	division = {
-		name = "Divisão de Infantaria"
+		name = "Divisão De Infantaria"
 		location = 11805
-		division_template = "Divisão de Infantaria"
+		division_template = "Divisão De Infantaria"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.1
 
 	}
 }
 
-### Air oob in its own file
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = ww1_infantry_equipment_2
@@ -54,28 +41,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.1
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "POR"
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = ww1_artillery_equipment_1
-			creator = "POR"
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
+		efficiency = 30
 	}
 }
-
-#####################

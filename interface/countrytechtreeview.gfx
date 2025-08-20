@@ -195,12 +195,6 @@ spriteTypes = {
 		textureFile = "gfx//interface//techtree//techtree_tabs.dds"
 		noOfFrames = 2		
 	}
-
-	spriteType = {
-		name = "GFX_2d_3d_switch"
-		textureFile = "gfx/interface/divisiondesigner/2d_3d.png"
-		noOfFrames = 2			
-	}
 	
 	spriteType = {
 		name = "GFX_doctrine_tab_glow"
@@ -340,19 +334,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_technology_researched_item_bg"
 		textureFile = "gfx//interface//techtree//technology_researched_item_bg.dds"
-	}
-
-	frameAnimatedSpriteType = {
-		name = "GFX_subtech_carrier_plane_currently_researching_item_bg"
-		texturefile = "gfx/interface/subtech_air_techs_currently_researching_item_bg.dds"
-		noOfFrames = 2
-		animation_rate_fps = 2
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-#		alwaystransparent = yes
-		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}		
+	}	
 	
 	spriteType = {
 		name = "GFX_subtechnology_air_techs_available_item_bg"
@@ -468,12 +450,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_info_top_win"
 		textureFile = "gfx/interface/techtree/tech_info_top_win.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-	
-	SpriteType = {
-		name = "GFX_technology_info_bg"
-		textureFile = "gfx/interface/technology_info_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	
@@ -1021,18 +997,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_technology_air_techs_folder_foreign_researched_item_bg"
 		textureFile = "gfx//interface//techtree//technology_researched_item_bg.dds"
-	}	
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_air_techs_folder_foreign_currently_researching_item_bg"
-		texturefile = "gfx//interface//researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
 	}
 
 	frameAnimatedSpriteType = {
@@ -1089,18 +1053,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_technology_bba_air_techs_folder_foreign_researched_item_bg"
 		textureFile = "gfx//interface//techtree//technology_researched_item_bg.dds"
-	}	
-
-	frameAnimatedSpriteType = {
-		name = "GFX_technology_bba_air_techs_folder_foreign_currently_researching_item_bg"
-		texturefile = "gfx//interface//researching_anim_strip.dds"
-		noOfFrames = 9
-		loadType = "INGAME"
-		transparencecheck = yes
-		animation_rate_fps = 15
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
 	}
     ##############
 

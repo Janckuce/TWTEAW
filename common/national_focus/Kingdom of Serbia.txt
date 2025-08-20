@@ -101,25 +101,24 @@ focus_tree = {
 			division_template = {
 				name = "Srbska Narodna Odbrana"
 				priority = 0
-				division_names_group = bruh
 				template_counter = 42
 				is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
 				regiments = {
 				militia = { x = 0 y = 0 }
 				militia = { x = 0 y = 1 }
 				militia = { x = 0 y = 2 }
-				militia = { x = 0 y = 3 }
-				militia = { x = 2 y = 3 }
-				militia = { x = 3 y = 4 }
-				militia = { x = 4 y = 5 }
-					
-				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 0 }
 				militia = { x = 1 y = 1 }
 				militia = { x = 1 y = 2 }
+				militia = { x = 2 y = 0 }
+				militia = { x = 2 y = 1 }
 				militia = { x = 2 y = 2 }
+				militia = { x = 3 y = 0 }
+				militia = { x = 3 y = 1 }
+				militia = { x = 3 y = 2 }
 			}
 			support = {
-			engineer = { x = 0 y = 1 }
+			engineer = { x = 0 y = 0 }
 			}
 		}
 
@@ -466,9 +465,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas =
-			SER_liberal_serbia	{
-		}
+			add_ideas = SER_liberal_serbia	
 	}
 }
 
@@ -497,9 +494,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_ideas = {
-			SER_our_way_of_life_active
-		}
+			add_ideas = SER_our_way_of_life_active
 	}
 }
 
@@ -1198,12 +1193,12 @@ focus = {
         		mountaineers = { x = 2 y = 0 }
 				mountaineers = { x = 2 y = 1 }
 				mountaineers = { x = 2 y = 2 }
-				artillery = { x = 3 y = 0 }
-				artillery = { x = 3 y = 1 }
-				artillery = { x = 3 y = 2 }
-				artillery = { x = 4 y = 0 }
-				artillery = { x = 4 y = 1 }
-				artillery = { x = 4 y = 2 }
+				artillery_brigade = { x = 3 y = 0 }
+				artillery_brigade = { x = 3 y = 1 }
+				artillery_brigade = { x = 3 y = 2 }
+				artillery_brigade = { x = 4 y = 0 }
+				artillery_brigade = { x = 4 y = 1 }
+				artillery_brigade = { x = 4 y = 2 }
 			}
 
 			support = {

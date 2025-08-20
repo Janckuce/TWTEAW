@@ -103,15 +103,6 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			OR = {
-				original_tag = IND
-				original_tag = VLN
-			}			
-		}
-		always = no
-	}
-	if = {
-		limit = {
 			has_game_rule = {
 				rule = allow_release_nations
 				option = FREE
@@ -140,7 +131,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					tag = ALG
 					tag = TUN
 					tag = LBA
-					tag = ASR
 					tag = YEM
 					tag = MRT
 					tag = MLI
@@ -180,10 +170,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					tag = KUW
 					tag = PNG
 					tag = RWA
-					tag = GLD
-					tag = HBY
-					tag = MJT
-					tag = BHR
 					tag = VIN
 					tag = CAM
 					tag = LAO
@@ -218,7 +204,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					original_tag = HAN
 					original_tag = SHL
 					original_tag = DNZ
-					original_tag = OLD
 					original_tag = GER
 				}
 			}	
@@ -240,31 +225,23 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					option = PEACE_ONLY
 				}
 			}
-			original_tag = AUH
+			original_tag = AUS
 			FROM = {
 				OR = {
-					original_tag = GAL
 					original_tag = CZE
 					original_tag = CRO
 					original_tag = HUN
 					original_tag = SLO
 					original_tag = MOL
 					original_tag = UKR
-					original_tag = WUK
 					original_tag = POL
 					original_tag = TRA
 					original_tag = SLV
-					original_tag = FIU
 				}
 			}
 		}
 		custom_trigger_tooltip = {
-			tooltip = AUSTRIAN_EMPIRE_SEPARATISM_RULE_TOOLTIP	
-			OR = {
-				has_cosmetic_tag = AUH_USGA
-				has_cosmetic_tag = AUH_EMP
-			}	
-			
+			tooltip = AUSTRIAN_EMPIRE_SEPARATISM_RULE_TOOLTIP		
 		}
 	}
 	if = {
@@ -280,7 +257,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				}
 			}
 			original_tag = BRA
-			FROM = { original_tag = RGS }
 		}
 		custom_trigger_tooltip = {
 			tooltip = ROOT_UNITED_RULE_TOOLTIP
@@ -300,24 +276,17 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				}
 			}
 			original_tag = TUR
-			NOT = {
-				has_cosmetic_tag = TUR_REP
-			}
 			FROM = { 
 			    OR = { 
 				    original_tag = TUR
 					original_tag = SYR
 					original_tag = IRQ
-					original_tag = HJZ
-					original_tag = PON
 					original_tag = ARM
 					original_tag = JOR
 					original_tag = PAL
 					original_tag = ALB
 					original_tag = YEM
 					original_tag = LEB
-					original_tag = ASR
-					original_tag = ASY
 				} 
 			}
 		}
@@ -404,13 +373,11 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					option = PEACE_ONLY
 				}
 			}
-			original_tag = QIN
 			FROM = {
 				OR = {
 					original_tag = TIB
 					original_tag = MON
 					original_tag = TAN
-					original_tag = KUM
 				}
 			}
 		}
@@ -431,7 +398,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 					option = PEACE_ONLY
 				}
 			}
-			has_cosmetic_tag = BEL_netherlands_cosmetic_tag
 			FROM = {
 				OR = {
 					original_tag = BEL
@@ -644,7 +610,6 @@ DIPLOMACY_DOCKING_RIGHTS_ENABLE_TRIGGER = {
 DIPLOMACY_REVOKE_OFFER_MILACC_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			original_tag = CER
 			NOT = { has_global_flag = chinese_eastern_railway_sold }
 		}
 		custom_trigger_tooltip = {
@@ -679,7 +644,6 @@ DIPLOMACY_REVOKE_OFFER_MILACC_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			original_tag = KUW
-			has_cosmetic_tag = KUW_TUR
 			FROM = {
 				original_tag = TUR
 			}
@@ -701,7 +665,6 @@ DIPLOMACY_REVOKE_OFFER_MILACC_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			original_tag = MOR
-			has_idea = FRA_idea_moroccan_intervention
 			FROM = {
 				original_tag = FRA
 			}
@@ -733,7 +696,6 @@ DIPLOMACY_REVOKE_OFFER_MILACC_ENABLE_TRIGGER = {
 						has_country_flag = great_war_winner
 					}
 					AND = {
-						original_tag = MAF
 						is_neighbor_of = PREV
 						GER = {
 							has_country_flag = great_war_winner

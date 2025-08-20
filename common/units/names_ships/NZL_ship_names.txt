@@ -91,24 +91,6 @@ NZL_BC_HISTORICAL = {
  	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-NZL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { NZL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HMNZS "							
-	fallback_name = "Carrier %s"		
-
-	unique = {
-		"Vengeance" "New Zealand" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" 
-		"Marlborough" "Canterbury" "Otago" "Southland" "Stafford" "Seddon" "Hall-Jones" "Ward" "Massey" 
-	}
-}
-
 
 ### SUBMARINES ###
 NZL_SS_HISTORICAL = {

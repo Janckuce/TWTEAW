@@ -87,23 +87,6 @@ SPR_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-SPR_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { SPR }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARE "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"Dédalo" "Príncipe de Asturias" "República" "Victoria" 
-	}
-}
-
 ### SUBMARINES ###
 SPR_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

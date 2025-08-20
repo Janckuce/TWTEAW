@@ -88,23 +88,6 @@ ARG_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-ARG_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { ARG }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARA "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"Independencia" "República" "General San Martín" 
-	}
-}
-
 ### SUBMARINES ###
 ARG_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

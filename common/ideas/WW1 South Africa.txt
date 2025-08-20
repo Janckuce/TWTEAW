@@ -1,0 +1,219 @@
+ideas = {
+	country = {
+		SAF_Maritz_Disruption = {
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+				}
+				support_equipment = {
+					build_cost_ic = 0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = 0.1
+				}
+			}
+		}
+		SAF_Maritz_Command = {
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		SAF_Afrikaner_British_Division = {
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.3
+				research_speed_factor = -0.3
+			}
+		}
+		SAF_Afrikaner_British_Division1 = {
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				research_speed_factor = -0.2
+			}
+		}
+		SAF_Afrikaner_British_Division2 = {
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				research_speed_factor = -0.1
+			}
+		}
+		SAF_Afrikaner_British_Division3 = {
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		SAF_Afrikaner_British_Union = {
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.25
+				research_speed_factor = -0.1
+			}
+		}
+		SAF_Afrikaner_British_Union1 = {
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SAF_Afrikaner_British_Union2 = {
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		SAF_Union_Of_South_Africa = {
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		SAF_Inefficient_Economy = {
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.3
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		SAF_Inefficient_Economy1 = {
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.2
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		SAF_Inefficient_Economy2 = {
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		SAF_Republic_Act = {
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		SAF_Republic_Act1 = {
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SAF_Republic_Act2 = {
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = 0.2
+				war_support_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SAF_British_Republic = {
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = 0.2
+				war_support_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		SAF_Our_Own_Republic = {
+			modifier = {
+				democratic_drift = 0.1
+				stability_factor = 0.2
+				war_support_factor = 0.1
+				line_change_production_efficiency_factor = 0.5
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SAF_Boer_Superiority = {
+			modifier = {
+				fascism_drift = 0.1
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SAF_Boer_Superiority1 = {
+			modifier = {
+				fascism_drift = 0.1
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SAF_Boer_Superiority2 = {
+			modifier = {
+				fascism_drift = 0.1
+				stability_factor = -0.15
+				production_speed_buildings_factor = 0.3
+			}
+		}
+		SAF_Boer_Military_Ideals = {
+			modifier = {
+				army_speed_factor = 0.1
+				dig_in_speed_factor = 0.1
+			}
+		}
+		SAF_Act_Of_Free_Trade = {
+			modifier = {
+				trade_opinion_factor = 0.15
+			}
+		}
+		SAF_Small_Arms = {
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+				}
+			}
+		}
+		SAF_Military_Improvements = {
+			modifier = {
+				supply_consumption_factor = -0.05
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		SAF_Military_Improvements_Left = {
+			modifier = {
+				supply_consumption_factor = -0.05
+				production_factory_max_efficiency_factor = 0.025
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+		SAF_Military_Improvements_Right = {
+			modifier = {
+				supply_consumption_factor = -0.05
+				production_factory_max_efficiency_factor = 0.025
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+		SAF_British_Military_Advisors = {
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+	}
+}

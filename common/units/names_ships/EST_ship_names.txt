@@ -85,23 +85,6 @@ EST_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-EST_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { EST }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "EML "
-	fallback_name = "Lennukikandja %d"	
-
-	unique = {
-		"Tallinn" "Valga" "Tartu" "Muhu" "Hiiumaa" "Saaremaa" "Abruka" "Kihnu" "Vormsi" "Sulev" "Wambola" "Vaindlo" "Olev" 
-	}
-}
-
 ### SUBMARINES ###
 EST_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

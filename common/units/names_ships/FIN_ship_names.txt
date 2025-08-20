@@ -83,23 +83,6 @@ FIN_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-FIN_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { FIN }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Lentotukialus %d"	
-
-	unique = {
-		"Suur-Suomi" "Karjala" "Turku" "Pohjanmaa" "Mannerheim" "Viipuri" "Vaasa" "Uusimaa" "Ahvenanmaa" "Oulu" "Kemi" 
-		"Turku" "Pohjanmaa" "Mannerheim" "Viipuri" "Vaasa" "Uusimaa" "Ahvenanmaa" "Oulu" "Kemi" 
-	}
-}
-
 ### SUBMARINES ###
 FIN_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

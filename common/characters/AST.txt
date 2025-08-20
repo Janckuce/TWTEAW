@@ -1,0 +1,312 @@
+characters={
+	AST_andrew_fisher = {
+		name = AST_andrew_fisher
+		portraits = {
+			civilian = {
+				large = "GFX_AST_andrew_fisher"
+				small = "GFX_AST_andrew_fisher"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	ast_billy_hughes = {
+    name = "William Morris Billy Hughes"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_billy_hughes_frame"
+		    }
+		}
+			country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { AST_joker_australia }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_billy_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+	ast_throsby_bridges = {
+    name = "William Throsby Bridges"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_throsby_bridges"
+                small = "GFX_ast_throsby_bridges_frame"
+		    }
+		}
+        corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+		planning_skill = 3
+	logistics_skill = 2
+	}
+    advisor = {
+        slot = high_command
+        traits = { ast_throsby_bridges }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_throsby_bridges
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    ast_john_monash = {
+    name = "John Monash"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_john_monash"
+                small = "GFX_ast_throsby_bridges_frame"
+		    }
+		}
+        corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+		planning_skill = 3
+	logistics_skill = 2
+	}
+}
+
+    AST_leadership_of_aef = {
+    name = "Australian Naval and Military Expeditionary Force"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_ast_comittee"
+                small = "GFX_advisor_ast_comittee"
+		    }
+		}
+    advisor = {
+        slot = theorist
+        traits = { AST_leadership_of_aef }
+        cost = 150
+        can_be_fired = yes
+        idea_token = AST_leadership_of_aef
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+    ast_birdwood = {
+    name = "William Riddell Birdwoode"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_birdwood"
+                small = "GFX_ast_birdwood_frame"
+		    }
+		}
+    advisor = {
+        slot = army_chief
+        traits = { ast_birdwood_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_birdwood
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+    field_marshal = {
+	    traits = { desert_fox media_personality war_hero naval_invader }
+			skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 1
+	}
+}
+    ast_harry_chauve = {
+    name = "Henry George Chauvel"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_harry_chauve"
+                small = "GFX_ast_harry_chauve_frame"
+		    }
+		}
+    advisor = {
+        slot = high_command
+        traits = { ast_henry_george }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_harry_chauve
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+    corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+	}
+}
+
+    ast_john_gellibrand = {
+    name = "John Gellibrand"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_john_gellibrand"
+                small = "GFX_ast_william_bridges_frame"
+		    }
+		}
+    advisor = {
+        slot = high_command
+        traits = { ast_john_gellibrand }
+        slot = army_chief
+        traits = { }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_harry_chauve
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+    corps_commander = {
+	    traits = { desert_fox hill_fighter }
+			skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+	}
+}
+
+	ast_joseph_cook = {
+    name = "Joseph Cook"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_josef_cook_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_joseph_cook_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_billy_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+	ast_denison_miller = {
+    name = "Denison Miller"
+            portraits = {
+			civilian = {
+				large = "GFX_advisor_auh_ernest_von_koerber"
+                small = "GFX_ast_dennis_miller_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_denison_miller_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_denison_miller
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+
+}
+
+	ast_henry_bournes_higgins = {
+    name = "Henry Bournes Higgins"
+            portraits = {
+			civilian = {
+				large = "GFX_ast_billy_hughes"
+                small = "GFX_ast_higgins_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        traits = { ast_henry_bournes_higgins_trait }
+        cost = 150
+        can_be_fired = yes
+        idea_token = ast_henry_bournes_higgins
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+            }
+        }
+    }
+}

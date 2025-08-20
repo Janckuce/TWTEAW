@@ -55,7 +55,6 @@ ITA_lancia_organization = {
 ITA_ansaldo_navale_organization = {
 	name = ansaldo_navale
 	include = generic_battle_line_ship_organization
-	icon = GFX_idea_ansaldo
 	allowed = {	
 		original_tag = ITA
 		has_dlc = "Arms Against Tyranny"
@@ -107,7 +106,6 @@ ITA_macchi_organization = {
 	allowed = {	
 		OR = {
 			original_tag = ITA
-			original_tag = VNC
 		}
 	}
 	
@@ -125,7 +123,6 @@ ITA_caproni_organization = {
 	allowed = {	 
 		OR = {
 			original_tag = ITA
-			original_tag = VNC
 		}
 	}
 	
@@ -144,7 +141,6 @@ ITA_SIAI_organization = {
 	allowed = {
 		OR = {
 			original_tag = ITA
-			original_tag = VNC
 		}
 	}
 	
@@ -193,12 +189,10 @@ ITA_SIAI_organization = {
 ITA_ansaldo_aerei_organization = {
 	name = ansaldo_aerei
 	include = generic_multi_role_aircraft_organization
-	icon = GFX_idea_ansaldo
 	
 	allowed = {
 		OR ={
 			original_tag = ITA
-			original_tag = SRD
 		}
 	}
 	
@@ -263,11 +257,9 @@ ITA_fiat_aviazione_organization = {
 ITA_ansaldo_organization = {
 	name = ansaldo
 	include = generic_artillery_organization
-	icon = GFX_idea_ansaldo
 	allowed = {
 		OR ={
 			original_tag = ITA
-			original_tag = SRD
 		}
 	}
 	
@@ -285,7 +277,6 @@ ITA_beretta_organization = {
 	allowed = {	 
 		OR = {
 			original_tag = ITA
-			original_tag = VNC
 		}
 	}
 
@@ -302,7 +293,6 @@ ITA_breda_organization = {
 	allowed = {
 		OR ={
 			original_tag = ITA
-			original_tag = VNC
 		}
 	}
 	
@@ -320,7 +310,6 @@ ITA_vickers_terni_organization = {
 	allowed = {
 		OR = {
 			original_tag = ITA
-			original_tag = TUS
 		}
 	}
 	
