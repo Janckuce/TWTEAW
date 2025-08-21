@@ -10,6 +10,15 @@ on_actions = {
 				}
 				295 = {
 					set_state_controller_to = BEL
+					teleport_armies = {
+						limit = {
+							or = {
+								tag = GER
+								is_ally_with = GER
+							}
+						}
+						to_state = 546
+					}
 				}
 			}
 		}
