@@ -1777,7 +1777,7 @@ technologies = {
 			ww1_land_doctrine_10 = 1
 		}
 	
-		max_dig_in = 10
+		max_dig_in = 5
 		dig_in_speed_factor = 0.25 #25% bonus
 		
 		
@@ -3459,12 +3459,12 @@ technologies = {
 	
 	ww1_land_doctrine_2 = {
 		path = {
-			leads_to_tech = ww1_land_doctrine_3
+			leads_to_tech = ww1_land_doctrine_11
 			research_cost_coeff = 1
 		}	
 		#Modifiers
 		category_all_infantry = {
-			defense = 0.05
+			defense = 0.10
 		}
 		##########
 		
@@ -3487,16 +3487,12 @@ technologies = {
 	}
 	
 	ww1_land_doctrine_3 = {
-	    path = {
-			leads_to_tech = ww1_land_doctrine_4
-			research_cost_coeff = 1
-		}
 		path = {
-			leads_to_tech = ww1_land_doctrine_11
+			leads_to_tech = ww1_land_doctrine_12
 			research_cost_coeff = 1
 		}
 		#Modifiers
-		max_dig_in = 10
+		max_dig_in = 5
 		dig_in_speed_factor = 0.3 #30% bonus
 		##########
 		
@@ -3508,7 +3504,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 0 y = 4 }
+			position = { x = -2 y = 6  }
 		}
 		
 		categories = { land_doctrine }
@@ -3518,17 +3514,17 @@ technologies = {
 		}
 	}
 	
-	ww1_land_doctrine_4 = {
+	ww1_land_doctrine_6 = {
 	    path = {
 			leads_to_tech = ww1_land_doctrine_5
 			research_cost_coeff = 1
 		}
-		
 		#Modifiers
-		category_front_line = {
-			soft_attack = 0.25
+		category_light_infantry = {
+			max_organisation = 5
+			breakthrough = 0.05
 		}
-	
+		org_loss_when_moving = -0.25
 		##########
 		
 		doctrine = yes
@@ -3548,10 +3544,10 @@ technologies = {
 			factor = 20 
 		}
 	}
-	
+
 	ww1_land_doctrine_5 = {
 	    path = {
-			leads_to_tech = ww1_land_doctrine_6
+			leads_to_tech = ww1_land_doctrine_4
 			research_cost_coeff = 1
 		}
 		#Modifiers
@@ -3578,17 +3574,17 @@ technologies = {
 		}
 	}
 	
-	ww1_land_doctrine_6 = {
+	ww1_land_doctrine_4 = {
 	    path = {
-			leads_to_tech = ww1_land_doctrine_7
+			leads_to_tech = ww1_land_doctrine_15
 			research_cost_coeff = 1
 		}
+		
 		#Modifiers
-		category_light_infantry = {
-			max_organisation = 5
-			breakthrough = 0.05
+		category_front_line = {
+			soft_attack = 0.25
 		}
-		org_loss_when_moving = -0.25
+	
 		##########
 		
 		doctrine = yes
@@ -3609,15 +3605,13 @@ technologies = {
 		}
 	}
 	
+	
 	ww1_land_doctrine_7 = {
 	    path = {
-			leads_to_tech = ww1_land_doctrine_8
+			leads_to_tech = ww1_land_doctrine_10
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = ww1_land_doctrine_14
-			research_cost_coeff = 1
-		}
+		
 		#Modifiers
 		category_tanks = {
 			max_organisation = 4
@@ -3636,7 +3630,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 0 y = 12 }
+			position = { x = -2 y = 16  }
 		}
 		
 		categories = { land_doctrine }
@@ -3729,10 +3723,16 @@ technologies = {
 	}
 	
 	ww1_land_doctrine_11 = {
-	    path = {
-			leads_to_tech = ww1_land_doctrine_12
+	    	path = {
+			leads_to_tech = ww1_land_doctrine_6
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = ww1_land_doctrine_3
+			research_cost_coeff = 1
+		}
+
 		#Modifiers
 		category_support_battalions = {
 			max_organisation = 10
@@ -3751,7 +3751,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 6 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = { land_doctrine }
@@ -3768,6 +3768,8 @@ technologies = {
 		}
 		#Modifiers
 		supply_consumption_factor = -0.15
+		max_dig_in = 3
+		
 		##########
 		
 		doctrine = yes
@@ -3790,7 +3792,7 @@ technologies = {
 	
 	ww1_land_doctrine_13 = {
 	    path = {
-			leads_to_tech = ww1_land_doctrine_7
+			leads_to_tech = ww1_land_doctrine_15
 			research_cost_coeff = 1
 		}
 		#Modifiers
@@ -3798,6 +3800,8 @@ technologies = {
 			max_organisation = 5
 			default_morale = 0.1
 		}
+		max_dig_in = 3
+
 		##########
 		
 		doctrine = yes
@@ -3820,7 +3824,7 @@ technologies = {
 	
 	ww1_land_doctrine_14 = {
 	    path = {
-			leads_to_tech = ww1_land_doctrine_15
+			leads_to_tech = ww1_land_doctrine_7
 			research_cost_coeff = 1
 		}
 		#Modifiers
@@ -3849,12 +3853,16 @@ technologies = {
 	
 	ww1_land_doctrine_15 = {
 	    path = {
-			leads_to_tech = ww1_land_doctrine_10
+			leads_to_tech = ww1_land_doctrine_8
+			research_cost_coeff = 1
+		}
+	    path = {
+			leads_to_tech = ww1_land_doctrine_14
 			research_cost_coeff = 1
 		}
 		#Modifiers
 		category_front_line = {
-			breakthrough = 0.05
+			defense = 0.10
 			soft_attack = 0.10
 		}
 		##########
@@ -3867,7 +3875,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 16 }
+			position = { x = 0 y = 12 }
 		}
 		
 		categories = { land_doctrine }
