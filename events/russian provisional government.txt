@@ -1,131 +1,147 @@
-country_event = {
-    id = RUS.1
-    title = "RUS_abdication_title"
-    desc = "RUS_abdication_desc"
-    picture = "GFX_event_generic_political_crisis"
-
-    trigger = {
-        tag = RUS
-
-        # Trigger only if key states are lost
-        NOT = { owns_state =  }  
-        NOT = { owns_state =  }  
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "RUS_abdication_option"
-        ai_chance = { factor = 1 }
-	add_ideas = A_DIVIDED_RUSSIA
-        set_government = democratic
-	add_country_flag = provisional_government
-	create_country_leader = {
-            name = "Georgy Lvov"
-            desc = "POLITICS_GEORGY_LVOV_DESC"
-            picture = "gfx/leaders/RUS/Portrait_RUS_Georgy_Lvov.dds"
-            expire = "Never"
-            ideology = democratic
-            traits = {}
-        }
-
-        #activate first focus
-        activate_focus = RUS_democratic_revolution
-    }
-}
+add_namespace = ww1_prog
 
 country_event = {
-    id = RUS.2
-    title = "Political prisoners return home"
-    desc = "RUS_prisoners_desc"
-    picture = "GFX_event_generic_political_crisis"
-
-       fire_only_once = yes
-
-        
-}
-##lenin returns
-
-namespace = RUS_milyukov
-
-country_event = {
-    id = RUS_milyukov.1
-    title = RUS_milyukov.1.t
-    desc = RUS_milyukov.1.d
-    picture = GFX_report_event_generic_diplomacy
-    fire_only_once = yes
+    id = ww1_prog.1
+    title = ww1_prog.1.t
+    desc = ww1_prog_desc.1
+    picture = GFX_report_event_generic_sign_alliance
 
     is_triggered_only = yes
 
     option = {
-        name = RUS_milyukov.1.a
-        add_opinion_modifier = { target = ENG modifier = positive_opinion }
-        add_opinion_modifier = { target = FRA modifier = positive_opinion }
-        add_stability = -0.05   
-	#war support -?
+        name = ww1_prog.1.a
+
+        add_ideas = RUS_Equipment_Now
+    }
+
+    option = {
+        name = ww1_prog.1.a
+
+        add_ideas = RUS_We_Still_Have_Time
     }
 }
 
 country_event = {
-    id = RUS.kerensky_offensive
-    title = RUS_kerensky_offensive_title
-    desc = RUS_kerensky_offensive_desc
-    picture = GFX_report_event_generic_battle
+    id = ww1_prog.2
+    title = ww1_prog.2.t
+    desc = ww1_prog_desc.2
+    picture = GFX_report_event_generic_sign_alliance
 
     is_triggered_only = yes
 
     option = {
-        name = RUS_kerensky_offensive_option
-        add_opinion_modifier = {
-            target = ENG
-            modifier = positive_opinion
-        }
-        add_opinion_modifier = {
-            target = FRA
-            modifier = positive_opinion
-        }
-        add_political_power = 50
-    }
-}
+        name = ww1_prog.2.a
 
-
-country_event = {
-    id = RUS.july_days
-    title = RUS_july_days_title
-    desc = RUS_july_days_desc
-    picture = GFX_report_event_generic_protest
-
-    trigger = {
-        tag = RUS
-        has_completed_focus = RUS_moscow_state_conference
-        NOT = { has_country_flag = RUS_july_days_happened }
-    }
-
-    mean_time_to_happen = {
-        days = 15
-    }
-
-    option = {
-        name = RUS_july_days_option1
-        # Government cracks down
-        add_stability = -0.1
-        add_political_power = -50
-        add_popularity = {
-            ideology = communism
-            popularity = 0.05
-        }
-        set_country_flag = RUS_july_days_happened
-    }
-
-    option = {
-        name = RUS_july_days_option2
-        # Allow protests to grow
         add_stability = -0.2
-        add_war_support = -0.05
-        add_popularity = {
-            ideology = communism
-            popularity = 0.10
+        add_war_support = 0.2
+
+        FRA = {
+            country_event = ww1_france.20
         }
-        set_country_flag = RUS_july_days_happened
+        ENG = {
+            country_event = ww1_uk.15
+        }
+    }
+}
+
+country_event = {
+    id = ww1_prog.3
+    title = ww1_prog.3.t
+    desc = ww1_prog_desc.3
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.3.a
+
+        add_timed_idea = {
+            idea = RUS_desperate_offensive
+            days = 120
+        }
+    }
+}
+
+country_event = {
+    id = ww1_prog.4
+    title = ww1_prog.4.t
+    desc = ww1_prog_desc.4
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.4.a
+
+        every_state = {
+            if = {
+                limit = {
+                    and = {
+                        is_controlled_by = RUS
+                        is_core_of = UKR
+                    }
+                }
+                start_resistance = yes
+                remove_core_of = RUS
+                set_resistance = 20
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ww1_prog.5
+    title = ww1_prog.5.t
+    desc = ww1_progdesc.5
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.5.a
+
+        add_ideas = RUS_Moskva_Conference
+    }
+}
+
+country_event = {
+    id = ww1_prog.6
+    title = ww1_prog.6.t
+    desc = ww1_progdesc.6
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.6.a
+
+        add_ideas = RUS_The_Republic
+    }
+
+    option = {
+        name = ww1_prog.6.b
+
+        add_ideas = RUS_Military_Dictatorship
+    }
+}
+
+country_event = {
+    id = ww1_prog.7
+    title = ww1_prog.7.t
+    desc = ww1_progdesc.7
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.7.a
+
+        add_ideas = RUS_Kadet_Victory
+    }
+
+    option = {
+        name = ww1_prog.7.b
+
+        add_ideas = RUS_Trudovik_Victory
     }
 }

@@ -1,60 +1,111 @@
-A_DIVIDED_RUSSIA = {
-    allowed = { tag = RUS }
-
-    # Effects (example)
-    political_power_gain_factor = -0.10   
-    stability = -0.05                     
-    # Optional: icon
-    icon = GFX_goal_generic_political_reform
-}
-
-
-land_question = {
-    allowed = {
-        tag = RUS
-    }
-
-    # General modifiers for the national spirit
-    modifier = {
-        stability = -0.05       
-        political_power_gain = -0.10  
-    }
-
-    picture = GFX_idea_land_question
-}
-
 ideas = {
-    RUS_desperate_offensive = {
-        picture = generic_offensive
-        allowed = {
-            original_tag = RUS
+    country = {
+        A_DIVIDED_RUSSIA = {
+            allowed = { tag = RUS }
+
+            modifier = {
+                political_power_gain_factor = -0.10   
+                stability = -0.05        
+            }
         }
-        modifier = {
-            army_attack_factor = 0.1          
-            war_support_factor = 0.1          
-            stability_factor = -0.1           
-            
+
+
+        RUS_land_question = {
+            allowed = {
+                tag = RUS
+            }
+
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                production_speed_industrial_complex_factor = -0.2
+            }
+            picture = GFX_idea_land_question
         }
-    }
-}
+
+        RUS_desperate_offensive = {
+            picture = generic_offensive
+            allowed = {
+                original_tag = RUS
+            }
+            modifier = {
+                supply_consumption_factor = 0.15
+                war_support_factor = 0.15
+                army_attack_factor = 0.15
+            }
+        }
 
 
 ##should be replaced a few months later by "exhausted army, exhausted people" which is worse
 
-
-
-
-ideas = {
-    RUS_exhausted_army_people = {
-        picture = generic_army_disorganized
-        allowed = {
-            original_tag = RUS
+        RUS_exhausted_army_people = {
+            picture = generic_army_disorganized
+            allowed = {
+                original_tag = RUS
+            }
+            modifier = {
+                army_attack_factor = -0.15       
+                army_org_factor = -0.20           
+                stability_factor = -0.10          
+                war_support_factor = -0.15        
+            }
         }
-        modifier = {
-            army_attack_factor = -0.15       
-            army_org_factor = -0.20           
-            stability_factor = -0.10          
-            war_support_factor = -0.15        
+
+        RUS_Political_Liberties = {
+            modifier = {
+                political_advisor_cost_factor = -0.5
+            }
+        }
+        RUS_Democratic_Army = {
+			modifier = {
+				army_org_factor = -0.025
+				army_attack_factor = 0.025
+			}
+		}
+        RUS_Equipment_Now = {
+		    modifier = {
+			    industrial_capacity_factory = 0.1
+		    }
+	    }
+	    RUS_We_Still_Have_Time = {
+		    modifier = {
+		    	production_factory_max_efficiency_factor = 0.05
+		    }
+	    }
+        RUS_Moskva_Conference = {
+            modifier = {
+                army_org_factor = -0.05
+                production_speed_buildings_factor = -0.1
+                army_attack_factor = 0.05
+                industrial_capacity_factory = 0.1
+                production_factory_max_efficiency_factor = 0.05
+                land_reinforce_rate = -0.05
+            }
+        }
+        RUS_The_Republic = {
+            modifier = {
+                stability_factor = 0.3
+                war_support_factor = -0.3
+                industrial_capacity_factory = 0.1
+            }
+        }
+        RUS_Military_Dictatorship = {
+            modifier = {
+                army_speed_factor = 0.1
+                stability_factor = -0.3
+                war_support_factor = 0.3
+            }
+        }
+        RUS_Kadet_Victory = {
+            modifier = {
+                experience_gain_army_factor = 0.2
+                industrial_capacity_factory = 0.2
+            }
+        }
+        RUS_Trudovik_Victory = {
+            modifier = {
+                local_resources_factor = 0.2
+                industrial_capacity_factory = 0.2
+            }
         }
     }
 }

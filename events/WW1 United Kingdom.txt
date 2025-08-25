@@ -428,3 +428,36 @@ country_event = {
 		add_political_power = 50
 	}
 }
+
+country_event = {
+	id = ww1_uk.15
+	title = ww1_uk.15.t
+	desc = ww1_uk_desc.15
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_uk.15.a
+
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+		}
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 10000
+			target = RUS
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = ww1_uk.15.b
+	}
+}

@@ -4,4 +4,26 @@ leader_traits = {
 		political_power_factor = 0.15
 		stability_factor = -0.15
 	}
+	State_Reforms = {
+		random = no
+		political_advisor_cost_factor = 0.5
+		production_speed_buildings_factor = 0.025
+		research_speed_factor = 0.025
+	}
+	Man_Of_Steel = {
+		random = no
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		command_power_gain = 0.1
+	}
+	Minister_Of_Agriculture = {
+		random = no
+		consumer_goods_factor = -0.15
+		local_resources_factor = 0.3
+	}
+	Minister_Of_Interior = {
+		random = no
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.15
+	}
 }

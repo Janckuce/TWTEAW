@@ -819,3 +819,36 @@ country_event = {
 		activate_mission = FRA_Stability_Mission4
 	}
 }
+
+#	Give Russia Aid Event
+country_event = {
+	id = ww1_france.20
+	title = ww1_france.20.t
+	desc = ww1_france_desc.20
+	picture = GFX_report_event_generic_meeting 
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.20.a
+
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+		}
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 10000
+			target = RUS
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_france.20.b
+	}
+}

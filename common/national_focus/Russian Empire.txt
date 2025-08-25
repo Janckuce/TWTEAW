@@ -25,7 +25,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_The_Tsars_Ideas
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_the_true_tsars
 		cost = 10
 		x = 10
 		y = 0
@@ -36,7 +36,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Construction_Efforts
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_consumer_goods
 		cost = 5
 		relative_position_id = RUS_The_Tsars_Ideas
 		x = -10
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		#	Steel Investment (+9)
 		id = RUS_Industry1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_steel
 		cost = 5
 		relative_position_id = RUS_Construction_Efforts
 		x = -2
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		#	St.Petersburg Investment
 		id = RUS_Industry2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_fortify_city
 		cost = 10
 		relative_position_id = RUS_Construction_Efforts
 		x = 0
@@ -114,7 +114,7 @@ focus_tree = {
 	focus = {
 		#	Minsk Investment
 		id = RUS_Industry3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 10
 		relative_position_id = RUS_Construction_Efforts
 		x = 2
@@ -140,7 +140,7 @@ focus_tree = {
 	focus = {
 		#	Poland Investment
 		id = RUS_Industry4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_POL_warsaw_main_station
 		cost = 10
 		relative_position_id = RUS_Construction_Efforts
 		x = -1
@@ -176,7 +176,7 @@ focus_tree = {
 	focus = {
 		#	Kyiv Investment
 		id = RUS_Industry5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_HUN_the_kingdom_of_ukraine
 		cost = 10
 		relative_position_id = RUS_Construction_Efforts
 		x = 1
@@ -197,7 +197,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_New_Exports
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_tea_exports
 		cost = 10
 		relative_position_id = RUS_Construction_Efforts
 		x = 0
@@ -251,7 +251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Export_Cotton
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
 		cost = 5
 		relative_position_id = RUS_New_Exports
 		x = 3
@@ -281,7 +281,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Export_Sugar_Beets
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_sugar_factory
 		cost = 5
 		relative_position_id = RUS_Export_Cotton
 		x = 0
@@ -362,7 +362,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Continue_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_rubber_plantations
 		cost = 5.8
 		relative_position_id = RUS_New_Exports
 		x = 0
@@ -401,7 +401,7 @@ focus_tree = {
 	focus = {
 		#	Kherson Investment
 		id = RUS_Continue_Industry1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		relative_position_id = RUS_Continue_Main
 		x = -1
@@ -427,7 +427,7 @@ focus_tree = {
 	focus = {
 		#	Crimea Investment
 		id = RUS_Continue_Industry2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_naval_invasion_tank
 		cost = 10
 		relative_position_id = RUS_Continue_Main
 		x = 1
@@ -453,7 +453,7 @@ focus_tree = {
 	focus = {
 		#	Helsinki Investment
 		id = RUS_Continue_Industry3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_naval_invasion
 		cost = 10
 		relative_position_id = RUS_Continue_Industry1
 		x = 0
@@ -480,7 +480,7 @@ focus_tree = {
 	focus = {
 		#	Tallinn Investment
 		id = RUS_Continue_Industry4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_naval_discipline
 		cost = 10
 		relative_position_id = RUS_Continue_Industry2
 		x = 0
@@ -506,7 +506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Peasants_Land_Bank
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_national_bank
 		cost = 10
 		relative_position_id = RUS_Continue_Main
 		x = 0
@@ -528,7 +528,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research
 		cost = 10
 		relative_position_id = RUS_The_Tsars_Ideas
 		x = -6
@@ -543,7 +543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Extra_Research
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research2
 		cost = 10
 		relative_position_id = RUS_Science_Expansion_Main
 		x = 2
@@ -561,7 +561,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion_Main
 		x = 0
@@ -582,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_3
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion1
 		x = -1
@@ -601,7 +601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_electrification
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion1
 		x = 1
@@ -620,7 +620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_weapon_caches
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion2
 		x = 0
@@ -642,7 +642,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion3
 		x = 0
@@ -664,7 +664,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Scientific_Breakthrough
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industrialists
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion5
 		x = 0
@@ -685,7 +685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion6
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_aircraft_production
 		cost = 5.8
 		relative_position_id = RUS_Scientific_Breakthrough
 		x = 0
@@ -704,7 +704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Science_Expansion7
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_support_the_proletarian_uprising
 		cost = 5.8
 		relative_position_id = RUS_Science_Expansion6
 		x = 0
@@ -723,7 +723,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Establish_Laboratories
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_optimize_reich_labour_service
 		cost = 10
 		relative_position_id = RUS_Science_Expansion7
 		x = 0
@@ -742,7 +742,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BUL_support_macedonian_organizations
 		cost = 5
 		relative_position_id = RUS_The_Tsars_Ideas
 		x = -2
@@ -766,7 +766,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_doctrines
 		cost = 5
 		relative_position_id = RUS_Organised_Warfare_Main
 		x = 0
@@ -784,7 +784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 10
 		relative_position_id = RUS_Organised_Warfare1
 		x = 0
@@ -802,7 +802,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_dictatorship
 		cost = 5
 		relative_position_id = RUS_Organised_Warfare2
 		x = -1
@@ -817,7 +817,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_rom_royal_dictatorship
 		cost = 5
 		relative_position_id = RUS_Organised_Warfare2
 		x = 1
@@ -832,7 +832,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_jungle_training
 		cost = 5
 		relative_position_id = RUS_Organised_Warfare3
 		x = 0
@@ -848,7 +848,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare6
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_hill_training
 		cost = 5
 		relative_position_id = RUS_Organised_Warfare4
 		x = 0
@@ -864,7 +864,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Organised_Warfare7
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_tank_assault
 		cost = 7.2
 		relative_position_id = RUS_Organised_Warfare2
 		x = 0
@@ -883,7 +883,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Begin_Modernisation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_kdf_wagen
 		cost = 10
 		relative_position_id = RUS_Organised_Warfare7
 		x = 0
@@ -901,7 +901,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Establish_Military_Academy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_academy
 		cost = 10
 		relative_position_id = RUS_Begin_Modernisation
 		x = 0
@@ -916,7 +916,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		cost = 5
 		relative_position_id = RUS_The_Tsars_Ideas
 		x = 2
@@ -940,7 +940,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_army_doctrines_2
 		cost = 5
 		relative_position_id = RUS_Assault_Warfare_Main
 		x = 0
@@ -958,7 +958,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_mobilization_plan
 		cost = 5
 		relative_position_id = RUS_Assault_Warfare1
 		x = 0
@@ -976,7 +976,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_political_pressure
 		cost = 5
 		relative_position_id = RUS_Assault_Warfare2
 		x = -1
@@ -991,7 +991,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_just_good_business
 		cost = 5
 		relative_position_id = RUS_Assault_Warfare2
 		x = 1
@@ -1006,7 +1006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_desert_training
 		cost = 5
 		relative_position_id = RUS_Assault_Warfare3
 		x = 0
@@ -1023,7 +1023,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare6
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_mountain_training
 		cost = 5
 		relative_position_id = RUS_Assault_Warfare4
 		x = 0
@@ -1040,7 +1040,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Assault_Warfare7
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_gebirgsjager
 		cost = 7.2
 		relative_position_id = RUS_Assault_Warfare2
 		x = 0
@@ -1061,7 +1061,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Empower_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_forge_the_kshatriya_army
 		cost = 10
 		relative_position_id = RUS_Assault_Warfare7
 		x = 0
@@ -1079,7 +1079,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Mass_Mobilise
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_full_social_mobilization
 		cost = 10
 		relative_position_id = RUS_Empower_Army
 		x = 0
@@ -1094,11 +1094,11 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_Complete_Modernity
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_kriegslokomotive
 		cost = 10
 		relative_position_id = RUS_Organised_Warfare_Main
 		x = 2
-		y = 7
+		y = 8
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		available = {
 			not = {
@@ -1125,8 +1125,8 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = RUS_Begin_Modernisation
-			focus = RUS_Empower_Army
+			focus = RUS_Establish_Military_Academy
+			focus = RUS_Mass_Mobilise
 		}
 		completion_reward = {
 			add_ideas = RUS_Modern_Warfare
@@ -1159,9 +1159,6 @@ focus_tree = {
 			focus = RUS_democratic_revolution
 		}
         completion_reward = {
-            add_political_power = 100
-            add_stability = 0.05
-            trigger_event = Political_prisoners.txt
         }
     }
 
@@ -1174,7 +1171,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_democratic_revolution }
         completion_reward = {
-            add_stability = 0.05
+			add_ideas = RUS_Political_Liberties
         }
     }
 
@@ -1187,9 +1184,12 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_free_political_prisoners focus = RUS_establish_political_liberties }
         completion_reward = {
-            add_attack = -0.20
-            add_defense = -0.05
-            add_organization_regen = -0.20
+			add_ideas = RUS_Democratic_Army
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 2
+			}
         }
     }
 
@@ -1202,7 +1202,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_democratisation_army }
         completion_reward = {
-            add_stability = 0.05
+			add_country_leader_trait = State_Reforms
 	}
      }
      ### 3a. Main land Committee
@@ -1214,7 +1214,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_reform_state_structure }
         completion_reward = {
-            add_stability = 0.05
+			add_ideas = RUS_land_question
         }
     }
 
@@ -1227,7 +1227,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_democratisation_army }
         completion_reward = {
-            add_political_power = 50
+			country_event = ww1_prog.1
         }
     }
 
@@ -1240,7 +1240,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_reform_state_structure }
         completion_reward = {
-            add_stability = 0.05
+			country_event = ww1_prog.2
         }
     }
 
@@ -1253,7 +1253,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_milyukov_note }
         completion_reward = {
-            add_attack = -0.10
+			country_event = ww1_prog.3
         }
     }
 
@@ -1266,7 +1266,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_kerensky_offensive }
         completion_reward = {
-            add_stability = 0.05
+			country_event = ww1_prog.4
         }
     }
 
@@ -1279,7 +1279,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_negotiations_ukrainian_rada }
         completion_reward = {
-            add_political_power = 50
+			country_event = ww1_prog.5
         }
     }
 
@@ -1292,8 +1292,7 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_moscow_state_conference }
         completion_reward = {
-            add_stability = 0.05
-            trigger_event = RUS_kornilov_Affair
+			country_event = ww1_prog.6
         }
     }
 
@@ -1306,8 +1305,10 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_kornilov_affair }
         completion_reward = {
-            add_political_power = 50
-            add_stability = 0.05
+			country_event = {
+				id = ww1_prog.7
+				days = 70
+			}
         }
     }
 }
