@@ -13,6 +13,33 @@ ORO_spectator_state = {
 	#nov 11
 	#dec 12
 
+
+
+
+	Italy_Declare_War = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			date > 1911.10.17
+		}
+		complete_effect = {
+			ITA = {
+			set_country_flag = ITA_attack_turkey
+			country_event = ww1_italy.1
+			}
+			news_event = ww1_news.17
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
 	Italy_win_libya_war = {
 		allowed = {
 			original_tag = ORO
@@ -78,6 +105,38 @@ ORO_spectator_state = {
 		complete_effect = {
 		    TUR = {
 			    country_event = ww1_ottoman.2
+			}
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+	Italy_Join_WW1 = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			date > 1915.5.22
+			FRA = { has_war_with = GER }
+		}
+		complete_effect = {
+			GER = {
+			set_variable = {
+				Italy_in_war = 1
+				}				
+			}
+			ITA = {
+			remove_ideas = ITA_central_powers_2
+			declare_war_on = {
+				type = take_claimed_state
+				target = AUS
+			}
+			add_ideas = ITA_entente
 			}
 		}
 		fire_only_once = yes

@@ -331,25 +331,21 @@ ideas = {
 		}
 		TUR_Remember_The_Revolution = {
 			modifier = {
-				war_support_factor = 0.1
+				fascism_drift = 0.05
 			}
 			picture = tur_remember_coup
 		}
 		TUR_Remember_The_Revolution1 = {
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = 0.1
-				fascism_drift = 0.03
-				research_speed_factor = 0.1
+				stability_factor = -0.025
+				fascism_drift = 0.1
 			}
 			picture = tur_remember_coup
 		}
 		TUR_Remember_The_Revolution2 = {
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = 0.15
-				fascism_drift = 0.04
-				research_speed_factor = 0.15
+				stability_factor = -0.05
+				fascism_drift = 0.15
 			}
 			picture = tur_remember_coup
 		}
@@ -361,16 +357,12 @@ ideas = {
 		}
 		TUR_Iron_Pasha = {
 			modifier = {
-				war_support_factor = 0.25
 				fascism_drift = 0.05
 				command_power_gain = 0.01
-				research_speed_factor = 0.1
 				pocket_penalty = 0.2
 				army_speed_factor = 0.1
 				army_attack_speed_factor = 0.1
-				conscription_factor = 0.15
-				acclimatization_cold_climate_gain_factor = -0.1
-				supply_consumption_factor = -0.15
+				supply_consumption_factor = -0.05
 				war_stability_factor = 0.4
 			}
 			picture = tur_enver_pasha

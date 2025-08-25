@@ -21,3 +21,4 @@ NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12        -- Modifier for
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 20        -- Chance for land combat to damage fortifications
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.01        -- Collateral damage to fortifications in land combat
 NDefines.NMilitary.BASE_FORT_PENALTY = 0			-- Base fort penalty for land combat
+NDefines.NMilitary.TRAINING_ATTRITION = 0
