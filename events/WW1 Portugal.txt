@@ -19,3 +19,27 @@ country_event = {
 		add_ideas = POR_Failed_Constitution
 	}
 }
+
+#	Join War
+country_event = {
+	id = ww1_portugal.2
+	title = ww1_portugal.2.t
+	desc = ww1_portugal_desc.2
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	trigger = {
+		date < 1915.3.9
+		ENG = {
+			has_war_with = GER
+		}
+	}
+
+	option = {
+		name = ww1_portugal.2.a
+		declare_war_on = {
+			target = GER
+		}
+	}
+}
