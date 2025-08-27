@@ -197,20 +197,25 @@ ORO_spectator_state = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
 					declare_war_on = { target = RUS type = annex_everything }
+					declare_war_on = { target = MNT type = annex_everything }
 					news_event = ww1_news.10
-					country_event = ww1_germany.6
+					country_event = { id = ww1_germany.6 days = 7 }
 					transfer_state = 8
+					add_threat = 40
 				}
 				AUS = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
 					declare_war_on = { target = RUS type = annex_everything }
+					declare_war_on = { target = MNT type = annex_everything }
+					add_threat = 40
 				}
 				RUS = {
 				    add_timed_idea = {
 						idea = RUS_austrian_offensive_idea
-						days = 30
+						days = 60
 					}
+					add_threat = 40
 				}
 			}
 				if = {
@@ -243,6 +248,7 @@ ORO_spectator_state = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
 					declare_war_on = { target = RUS type = annex_everything }
+					declare_war_on = { target = MNT type = annex_everything }
 				}
 			}
 		}
