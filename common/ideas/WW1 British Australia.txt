@@ -1,0 +1,304 @@
+ideas = {
+	country = {
+		AST_Labour_Party = {
+			picture = bul_victory_of_brsdp
+			modifier = {
+				industry_repair_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		AST_Labour_Party1 = {
+			picture = bul_victory_of_brsdp
+			modifier = {
+				industry_repair_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		AST_Labour_Party2 = {
+			picture = bul_victory_of_brsdp
+			modifier = {
+				industry_repair_factor = 0.2
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		AST_Liberal_Party = {
+			picture = ast_liberal_party
+			modifier = {
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		AST_Liberal_Party1 = {
+			picture = ast_liberal_party
+			modifier = {
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		AST_Liberal_Party2 = {
+			picture = ast_liberal_party
+			modifier = {
+				stability_factor = 0.1
+				industry_repair_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		AST_White_Policy = {
+			picture = ast_whites
+			modifier = {
+				stability_factor = 0.1
+				monthly_population = -0.5
+				conscription_factor = -0.3
+				recruitable_population_factor = -0.3
+			}
+		}
+		AST_Black_Policy = {
+			picture = ETH_scavenging_tactics
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = 0.5
+				conscription_factor = 0.3
+				recruitable_population_factor = 0.3
+			}
+		}
+		AST_Grey_Policy = {
+			picture = COG_the_invisible_roof
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = -0.1
+				conscription_factor = -0.1
+				recruitable_population_factor = -0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		AST_Small_Defence_Spending = {
+			picture = chi_army_corruption
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				training_time_army_factor = -0.15
+				army_speed_factor = -0.1
+				army_attack_speed_factor = -0.1
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		AST_Small_Defence_Spending1 = {
+			picture = chi_army_corruption
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				training_time_army_factor = -0.15
+				army_speed_factor = -0.08
+				army_attack_speed_factor = -0.08
+				army_org_factor = -0.08
+				army_morale_factor = -0.08
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+			}
+		}
+		AST_Small_Defence_Spending_Minor = {
+			picture = chi_army_corruption
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+				army_speed_factor = -0.04
+				army_attack_speed_factor = -0.04
+				army_org_factor = -0.04
+				army_morale_factor = -0.04
+				army_attack_factor = -0.04
+				army_defence_factor = -0.04
+			}
+		}
+		AST_Small_Defence_Spending_Minor1 = {
+			picture = chi_army_corruption
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+				army_speed_factor = -0.02
+				army_attack_speed_factor = -0.02
+				army_org_factor = -0.02
+				army_morale_factor = -0.02
+				army_attack_factor = -0.02
+				army_defence_factor = -0.02
+			}
+		}
+		AST_Small_Defence_Spending_Minor2 = {
+			picture = chi_army_corruption
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+			}
+		}
+		AST_Small_Defence_Spending_Minor3 = {
+			picture = chi_army_corruption
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				training_time_army_factor = -0.1
+				army_speed_factor = 0.03
+				army_attack_speed_factor = 0.03
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+		AST_Small_Defence_Spending_Major = {
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				army_speed_factor = -0.03
+				consumer_goods_expected_value = 0.1
+				army_attack_speed_factor = -0.03
+				army_org_factor = -0.03
+				army_morale_factor = -0.03
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+			}
+		}
+		AST_Small_Defence_Spending_Major1 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				consumer_goods_expected_value = 0.15
+			}
+		}
+		AST_Small_Defence_Spending_Major2 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				army_speed_factor = 0.03
+				army_attack_speed_factor = 0.03
+				consumer_goods_expected_value = 0.2
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+		AST_Small_Defence_Spending_Major3 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				consumer_goods_expected_value = 0.25
+				army_speed_factor = 0.06
+				army_attack_speed_factor = 0.06
+				army_org_factor = 0.06
+				army_morale_factor = 0.06
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+			}
+		}
+		AST_Royal_Navy = {
+			picture = ast_naval_spirit
+			modifier = {
+				industrial_capacity_dockyard = 0.025
+				repair_speed_factor = 0.03
+				production_speed_dockyard_factor = 0.025
+				positioning = 0.025
+				screening_efficiency = 0.025
+				navy_weather_penalty = -0.025
+				naval_speed_factor = 0.03
+			}
+		}
+		AST_Royal_Navy1 = {
+			picture = ast_naval_spirit
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				repair_speed_factor = 0.06
+				production_speed_dockyard_factor = 0.05
+				positioning = 0.05
+				screening_efficiency = 0.05
+				navy_weather_penalty = -0.05
+				naval_speed_factor = 0.06
+			}
+		}
+		AST_Consumer_Reduction = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_expected_value = 0.5
+			}
+		}
+		AST_Stability_Reduction = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				stability_factor = -0.5
+			}
+		}
+		AST_Academy = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.25
+			}
+		}
+		AST_Increased_Worker_Wages = {
+			picture = NOR_printing_money
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		AST_Increased_Worker_Rights = {
+			picture = NOR_printing_money
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		AST_Decreased_Pollution = {
+			picture = RAJ_contamination_cleanup_crew
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		AST_Extra_Liberties = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+		industrial_concern = {
+		
+			ast_cement = {
+			name = ast_cement
+			picture = ast_cement
+			allowed = {
+				original_tag = AST
+			}
+
+			visible = {
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			modifier = {
+				consumer_goods_expected_value = -0.025
+				industry_repair_factor = 0.1
+				production_speed_industrial_complex_factor = 0.065
+				production_speed_dockyard_factor = 0.05
+
+			}
+			
+			traits = { construction_company }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

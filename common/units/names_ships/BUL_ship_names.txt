@@ -27,7 +27,7 @@ BUL_CL_HISTORICAL = {
 	fallback_name = "Lek Kraitser %d"
 
 	unique = {
-		"Sofia" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" “Shipka” “Svetlinen Kraitser”
+		"Sofia" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" "Shipka" "Svetlinen Kraitser"
 	}
 }
 
@@ -43,7 +43,7 @@ BUL_CA_HISTORICAL = {
 	fallback_name = "Tezhuk Kraitser %d"
 
 	unique = {
-		"Sofia" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" “Shipka”
+		"Sofia" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" "Shipka"
 	}
 }
 
@@ -77,22 +77,6 @@ BUL_BC_HISTORICAL = {
 
 	unique = {
 		"Shipka" "Doyran" "Slivnitsa" "Odrin" "Tutrakan" "Karapelit" "Sheynovo" "Lule-Burgaz" "Pleven" "Vidin" "Ongal"
-	}
-}
-
-### AIRCRAFT CARRIER NAMES ###
-BUL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { BUL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Samoletonosach %d"	
-
-	unique = {
-		"Nadezhda" "General Vladimir Vazov" "General Georgi Todorov" "General Stefan Toshev" "General Panteley Kiselov" "General Ivan Kolev" "General Aleksandar Protogerov" "Mayor Boris Drangov" "General Boris Vazov"  
 	}
 }
 

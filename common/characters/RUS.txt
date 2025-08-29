@@ -7,6 +7,7 @@ characters={
 			}
 		}
 		country_leader = {
+			traits = {Tsar_Nikolai_Romanov}
 			ideology = centrism
 			expire = "1965.1.1.1"
 		}
@@ -18,6 +19,11 @@ characters={
 			civilian = {
 				large = "GFX_RUS_provisional_government"
 			}
+		}
+		country_leader = {
+			traits = {Corruption_Incarnate}
+			ideology = centrism
+			expire = "1965.1.1.1"
 		}
 	}
 	
@@ -407,6 +413,87 @@ characters={
 			}
 			traits = {
 				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RUS_josif_stalin = {
+		name = RUS_character_josif_stalin
+		portraits = {
+			army = {
+				small = "GFX_RUS_vladimir_sukhomlinov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_josif_stalin
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				has_completed_focus = RUS_free_political_prisoners
+			}
+			traits = {
+				Man_Of_Steel
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RUS_viktor_chernov = {
+		name = RUS_character_viktor_chernov
+		portraits = {
+			army = {
+				small = "GFX_RUS_vladimir_sukhomlinov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_viktor_chernov
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				has_completed_focus = RUS_free_political_prisoners
+			}
+			traits = {
+				Minister_Of_Agriculture
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	RUS_irakli_tsereteli = {
+		name = RUS_character_irakli_tsereteli
+		portraits = {
+			army = {
+				small = "GFX_RUS_vladimir_sukhomlinov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_irakli_tsereteli
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				has_completed_focus = RUS_free_political_prisoners
+			}
+			traits = {
+				Minister_Of_Interior
 			}
 			cost = 150
 			ai_will_do = {

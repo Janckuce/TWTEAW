@@ -7,6 +7,7 @@ set_technology = {
     #Infantry
 	ww1_infantry_weapons1 = 1
 	ww1_infantry_weapons2 = 1
+	ww1_hand_grenade1 = 1
 	tech_trucks = 1
 	
 	#Artillery
@@ -22,12 +23,15 @@ set_technology = {
 }
 
 recruit_character = BEL_albert_I
-recruit_character = BEL_Field_Marshal
-recruit_character = BEL_General_1
-recruit_character = BEL_General_2
-recruit_character = BEL_Advisor_1
-recruit_character = BEL_Advisor_2
-recruit_character = BEL_Advisor_3
+recruit_character = bel_alexandre_galopin
+recruit_character = bel_edouard_empain
+recruit_character = bel_frans_schollaert
+recruit_character = bel_henri_jaspar
+recruit_character = bel_charles_de_broqueville
+recruit_character = BEL_cyriaque_gillain
+recruit_character = bel_louis_ruquoy
+recruit_character = bel_armand_de_ceuninck
+recruit_character = BEL_gerard_leman
 
 ##### Party Popularity, Stability, War Support and other #####
 
@@ -45,11 +49,24 @@ set_popularities = {
 	neutrality = 40
 }
 
+add_ideas = {
+	BEL_King_Status_fixed
+	BEL_Neutral_State
+	BEL_Divided_Nation
+	BEL_Limited_Naval_Force
+}
+
 set_convoys = 40
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.8
 set_war_support = 0.1
+
+295 = {
+	start_resistance = yes
+	set_resistance = 10
+	set_compliance = 30
+}
 
 # End of Party Popularity, Stability, War Support and other ##
 

@@ -158,25 +158,6 @@ FRA_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-FRA_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { FRA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "%d Porte-Avions"	
-
-	unique = {
-		"Joffre" "Painlevé" "Clemenceau" "Foch" 
-		"Dixmude" "Arromanches" "La Fayette" "Bois Belleau" "Jeanne d'Arc" "Verdun" "Foudre" 
-		"Félix Faure" "Émile Loubet" "Armand Fallières" "Raymond Poincaré" "Alexandre Millerand" "Gaston Doumergue" "Paul Doumer" "Albert Lebrun" 
-		"Commandant Teste" "Sans Souci" "Ville d'Ys" "Océan" "Béarn" 
-	}
-}
-
 ### SUBMARINES ###
 FRA_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

@@ -407,6 +407,7 @@ focus_tree = {
 			focus = TUR_Healthy_Growth
 		}
 		completion_reward = {
+			add_manpower = 50000
 			add_ideas = TUR_Total_war
 		}
 	}
@@ -667,18 +668,18 @@ focus_tree = {
 				militia = { x = 0 y = 0 }
 				militia = { x = 0 y = 1 }
 				militia = { x = 0 y = 2 }
-				militia = { x = 0 y = 3 }
-				militia = { x = 2 y = 3 }
-				irregular_infantry = { x = 3 y = 4 }
-				irregular_infantry = { x = 4 y = 5 }
-					
-				irregular_infantry = { x = 1 y = 1 }
-				irregular_infantry = { x = 1 y = 1 }
-				irregular_infantry = { x = 1 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				irregular_infantry = { x = 2 y = 0 }
+				irregular_infantry = { x = 2 y = 1 }
 				irregular_infantry = { x = 2 y = 2 }
+				irregular_infantry = { x = 3 y = 0 }
+				irregular_infantry = { x = 3 y = 1 }
+				irregular_infantry = { x = 3 y = 2 }
 			}
 			support = {
-			engineer = { x = 0 y = 1 }
+			engineer = { x = 0 y = 0 }
 			}
 		}
 
@@ -694,10 +695,10 @@ focus_tree = {
 				limit = {
 					is_core_of = TUR
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -743,9 +744,9 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			army_experience = 150
-			navy_experience = 150
-			air_experience = 150
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
 		}
 	}
 	focus = {
@@ -996,6 +997,14 @@ focus_tree = {
 				type = oil
 				amount = 15
 				state = 680
+			}
+			291 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 	}

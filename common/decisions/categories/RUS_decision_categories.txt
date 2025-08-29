@@ -1,9 +1,48 @@
-RUS_uprising_category = {
+RUS_Peasants_Land_Bank_Category = {
 	icon = military_operation
 	
 	priority = 100
 
 	allowed = {
-		original_tag = RUS
+		tag = RUS
+	}
+	
+	visible = {
+		has_completed_focus = RUS_Peasants_Land_Bank
+	}
+}
+
+RUS_Laboratories_Category = {
+	icon = military_operation
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = RUS
+	}
+
+	visible = {
+		has_completed_focus = RUS_Establish_Laboratories
+	}
+}
+
+RUS_Military_Academy_Category = {
+	icon = military_operation
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = RUS
+	}
+
+	visible = {
+		or = {
+			has_completed_focus = RUS_Mass_Mobilise
+			has_completed_focus = RUS_Establish_Military_Academy
+		}
 	}
 }

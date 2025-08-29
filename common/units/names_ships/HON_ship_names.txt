@@ -84,23 +84,6 @@ HON_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-HON_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { HON }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARH "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República de Honduras" "La Paloma" 
-	}
-}
-
 ### SUBMARINES ###
 HON_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

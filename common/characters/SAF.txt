@@ -1,0 +1,53 @@
+characters = {
+		SAF_louis_botha = {
+		name = "Louis Botha"
+		portraits = {
+			civilian = {
+				large = "GFX_SAF_louis_botha"
+				small = "GFX_AST_andrew_fisher"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	SAF_Salomon_Gerhardus_Maritz = {
+		name = SAF_Character_Maritz
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_ferdinand_foch"
+			}
+			army = {
+				small = "GFX_FRA_ferdinand_foch_frame"
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = FRA_ferdinand_foch
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+			traits = {
+				old_guard
+				trait_reckless
+			}
+		}
+	}
+}

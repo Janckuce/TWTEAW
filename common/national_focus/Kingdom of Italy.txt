@@ -34,7 +34,7 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_completed_focus = ITA_war_with_ottoman_empire
+
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -61,7 +61,7 @@ focus_tree = {
 		mutually_exclusive = {
 		    focus = ITA_develop_north_italy
 		}
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 
@@ -117,7 +117,7 @@ focus_tree = {
 		mutually_exclusive = {
 		    focus = ITA_develop_south_italy
 		}
-		x = 3
+		x = 1
 		y = 1
 		cost = 10
 
@@ -170,7 +170,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_four_year_plan
 		}
-		x = -1
+		x = 3
 		y = 1
 		cost = 10
 
@@ -237,11 +237,10 @@ focus_tree = {
 		icon = GFX_focus_kingdom_of_sardinia
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
-			focus = ITA_develop_north_italy
-			focus = ITA_develop_south_italy
+			focus = ITA_hire_captain_of_industry
 		}
-		x = 2
-		y = 2
+		x = -3
+		y = 3
 		cost = 10
 
 		bypass = {
@@ -275,12 +274,6 @@ focus_tree = {
 			focus = ITA_develop_north_italy
 			focus = ITA_develop_south_italy
 		}
-		prerequisite = {
-			focus = ITA_british_goods
-		}
-		prerequisite = {
-			focus = ITA_expand_rome_resources
-		}
 		x = 0
 		y = 2
 		cost = 10
@@ -306,10 +299,7 @@ focus_tree = {
 		icon = GFX_focus_generic_low_cost_housing
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
-			focus = ITA_british_goods
-		}
-		prerequisite = {
-			focus = ITA_expand_rome_resources
+			focus = ITA_develop_south_italy
 		}
 		x = -2
 		y = 2
@@ -327,8 +317,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    add_political_power = 50
-			custom_effect_tooltip = ITA_captain_of_industry_cet
+			2 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		    activate_advisor = ITA_Guy4
 		}
 	}
 	
@@ -337,12 +334,10 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
+			focus = ITA_improve_railway_network
 			focus = ITA_hire_captain_of_industry
 		}
-		prerequisite = {
-			focus = ITA_research_slot
-		}
-		x = -3
+		x = 1
 		y = 3
 		cost = 10
 
@@ -392,7 +387,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_mil_factory_1
 		}
-		x = -3
+		x = 1
 		y = 4
 		cost = 10
 
@@ -453,12 +448,7 @@ focus_tree = {
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
 			focus = ITA_hire_captain_of_industry
-		}
-		prerequisite = {
-			focus = ITA_research_slot
-		}
-		prerequisite = {
-			focus = ITA_invest_in_sardinia
+			focus = ITA_improve_railway_network
 		}
 		x = -1
 		y = 3
@@ -512,12 +502,9 @@ focus_tree = {
 		icon = GFX_focus_generic_steel
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
-			focus = ITA_research_slot
+			focus = ITA_improve_railway_network
 		}
-		prerequisite = {
-			focus = ITA_invest_in_sardinia
-		}
-		x = 1
+		x = 3
 		y = 3
 		cost = 10
 
@@ -544,7 +531,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -558,10 +545,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_steel_casting_industry
 		}
-		mutually_exclusive = {
-		    focus = ITA_a_civilian_economy
-		}
-		x = 1
+		x = 3
 		y = 4
 		cost = 10
 
@@ -582,10 +566,10 @@ focus_tree = {
 					is_in_home_area = yes
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -594,10 +578,10 @@ focus_tree = {
 					is_in_home_area = yes
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -606,10 +590,10 @@ focus_tree = {
 					is_in_home_area = yes
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -618,10 +602,10 @@ focus_tree = {
 					is_in_home_area = yes
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -630,10 +614,10 @@ focus_tree = {
 					is_in_home_area = yes
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -645,13 +629,10 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
-			focus = ITA_research_slot
+			focus = ITA_develop_north_italy
 		}
-		prerequisite = {
-			focus = ITA_invest_in_sardinia
-		}
-		x = 3
-		y = 3
+		x = 2
+		y = 2
 		cost = 10
 
 		bypass = {
@@ -671,42 +652,42 @@ focus_tree = {
 		
 		completion_reward = {
 		    913 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			160 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			849 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			156 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			157 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -718,12 +699,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = ITA_four_year_plan
 		prerequisite = {
-			focus = ITA_improve_railway_network
+			focus = ITA_invest_in_sardinia
 		}
-		mutually_exclusive = {
-		    focus = ITA_wartime_industry
-		}
-		x = 3
+		x = -3
 		y = 4
 		cost = 10
 
@@ -731,7 +709,6 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_war = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -740,63 +717,43 @@ focus_tree = {
 		
 		completion_reward = {
 			
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			156 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			849 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			117 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			115 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+			157 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -842,7 +799,6 @@ focus_tree = {
 		}
 		available = {
 		    controls_state = 550
-			has_completed_focus = ITA_war_with_ottoman_empire
 		}
 		
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -901,7 +857,6 @@ focus_tree = {
 		}
 		available = {
 		    controls_state = 559
-			has_completed_focus = ITA_war_with_ottoman_empire
 		}
 		
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -1009,70 +964,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = ITA_claims_in_libya
-		icon = GFX_focus_ITA_a_colonial_empire
-		relative_position_id = ITA_colonial_ambition
-		prerequisite = {
-			focus = ITA_colonial_ambition
-		}
-		x = 2
-		y = 1
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			448 = { add_claim_by = ITA }
-			451 = { add_claim_by = ITA }
-			449 = { add_claim_by = ITA }
-			450 = { add_claim_by = ITA }
-			661 = { add_claim_by = ITA }
-			662 = { add_claim_by = ITA }
-			663 = { add_claim_by = ITA }
-			273 = { add_claim_by = ITA }
-		}
-	}
-	
-	focus = {
-		id = ITA_war_with_ottoman_empire
-		icon = GFX_focus_generic_attack_turkey
-		relative_position_id = ITA_colonial_ambition
-		prerequisite = {
-			focus = ITA_claims_in_libya
-		}
-		x = 2
-		y = 2
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_WAR_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-		    set_country_flag = ITA_attack_turkey
-			country_event = ww1_italy.1
-			news_event = ww1_news.17
-		}
-	}
-	
 	focus = {
 		id = ITA_aproach_entente
 		icon = GFX_focus_befriend_france
@@ -1088,11 +979,10 @@ focus_tree = {
 			#
 		}
 		available = {
+			date > 1912.1.1
 		    FRA = {
-			    has_completed_focus = FRA_pact_with_italy
 				is_in_faction_with = RUS
 			}
-			has_completed_focus = ITA_war_with_ottoman_empire
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -1107,47 +997,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = ITA_war_with_austria
-		icon = GFX_focus_attack_austria_hungary
-		relative_position_id = ITA_colonial_ambition
-		prerequisite = {
-			focus = ITA_prepare_for_the_inevitable
-		}
-		x = 4
-		y = 3
-		cost = 10
-
-		bypass = {
-			#
-		}
-		available = {
-		    FRA = {
-			    has_war_with = GER
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_WAR_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			GER = {
-			set_variable = {
-				Italy_in_war = 1
-				}				
-			}
-
-			remove_ideas = ITA_central_powers_2
-			declare_war_on = {
-				type = take_claimed_state
-				target = AUS
-			}
-			add_ideas = ITA_entente
-		}
-	}
-	
 	focus = {
 		id = ITA_prepare_for_the_inevitable
 		icon = GFX_goal_generic_demand_territory
@@ -1190,7 +1039,6 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_completed_focus = ITA_war_with_ottoman_empire
 		}
 		
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
@@ -1198,7 +1046,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    custom_effect_tooltip = ITA_army_offense_cet
+			if = {
+				limit = {
+					ITA = {
+						NOT = {
+							has_idea = army_chief	
+						}
+					}
+				}
+				activate_advisor = ITA_luigi_cadorna
+			} else = {
+				army_experience = 20
+			}
+
 		}
 	}
 	
@@ -1301,15 +1161,15 @@ focus_tree = {
 		prerequisite = {
 		    focus = ITA_colonial_ambition
 		}
-		x = 15
-		y = 2
+		x = 16
+		y = 1
 		cost = 10
 
 		bypass = {
 			#
 		}
 		available = {
-		    has_completed_focus = ITA_war_with_ottoman_empire
+
 		}
 		
 		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
@@ -1473,7 +1333,7 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_completed_focus = ITA_war_with_ottoman_empire
+
 		}
 		
 		search_filters = {FOCUS_FILTER_NAVY_MOD}

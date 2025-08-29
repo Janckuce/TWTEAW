@@ -1,0 +1,820 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = belgian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = BEL
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = BEL_The_King's_Nation
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 5
+		x = 10
+		y = 0
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		completion_reward = {
+			add_ideas = BEL_Outrage_Over_Congolese_Treatment
+			country_event = {
+				id = ww1_belgium.1
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = BEL_Industrial1
+		icon = GFX_focus_BEL_belgian_renaissance
+		cost = 7.2
+		relative_position_id = BEL_The_King's_Nation
+		x = -8
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			34 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Industrial2
+		icon = GFX_focus_BEL_christian_corporatism
+		cost = 7.2
+		relative_position_id = BEL_Industrial1
+		x = 2
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			6 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Industrial1
+		icon = GFX_focus_generic_modernize_industry
+		cost = 7.2
+		relative_position_id = BEL_Industrial1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_Industrial1
+			focus = BEL_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Industrial2
+		icon = GFX_focus_CONGO_congo_investments
+		cost = 7.2
+		relative_position_id = BEL_Industrial1
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_Industrial1
+			focus = BEL_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Iron_Mines
+		icon = GFX_focus_CONGO_congo_free_state
+		cost = 10
+		relative_position_id = BEL_Congo_Industrial1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_Congo_Industrial1
+		}
+		prerequisite = {
+			focus = BEL_Congo_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_resource = {
+					type = steel
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Rubber_Production
+		icon = GFX_focus_BRA_rubber_war
+		cost = 10
+		relative_position_id = BEL_Congo_Industrial1
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_Congo_Industrial1
+		}
+		prerequisite = {
+			focus = BEL_Congo_Industrial2
+		}
+		completion_reward = {
+			295 = {
+				add_resource = {
+					type = rubber
+					amount = 7
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		relative_position_id = BEL_Congo_Iron_Mines
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_Congo_Iron_Mines
+		}
+		prerequisite = {
+			focus = BEL_Congo_Rubber_Production
+		}
+		completion_reward = {
+			295 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Research_Slot
+		icon = GFX_focus_generic_africa_factory
+		cost = 10
+		relative_position_id = BEL_Congo_Infrastructure
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = BEL_Congo_Infrastructure
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BEL_Belgium_Military
+		icon = GFX_focus_BEL_defensive_neutrality
+		cost = 10
+		relative_position_id = BEL_The_King's_Nation
+		x = -4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = BEL_Congo_Military
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			34 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Belgium_Defense1
+		icon = GFX_focus_BEL_national_redoubt_at_antwerp
+		cost = 10
+		relative_position_id = BEL_Belgium_Military
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = BEL_Belgium_Military
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = land_doctrine
+				uses = 2
+			}
+			34 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Belgium_Defense2
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 7.2
+		relative_position_id = BEL_Belgium_Defense1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = BEL_Belgium_Defense1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Military
+		icon = GFX_focus_CONGO_force_publique
+		cost = 10
+		relative_position_id = BEL_Belgium_Military
+		x = 2
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = BEL_Belgium_Military
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			295 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Defense1
+		icon = GFX_focus_COG_force_publique_mutiny
+		cost = 10
+		relative_position_id = BEL_Congo_Military
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = BEL_Congo_Military
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = cat_mountaineers_doctrine
+				uses = 2
+			}
+			295 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Congo_Defense2
+		icon = GFX_focus_COG_force_aerienne_congolaise
+		cost = 7.2
+		relative_position_id = BEL_Congo_Defense1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = BEL_Congo_Defense1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mountaineers_tech
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Military_Defense
+		icon = GFX_focus_CONGO_copper_cartridges
+		cost = 10
+		relative_position_id = BEL_Belgium_Defense2
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = BEL_Belgium_Defense2
+			focus = BEL_Congo_Defense2
+		}
+		completion_reward = {
+			add_ideas = BEL_Military_Investment
+		}
+	}
+	focus = {
+		id = BEL_Science1
+		icon = GFX_focus_research
+		cost = 5
+		relative_position_id = BEL_The_King's_Nation
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_tech = ww1_mechanical_computing_1
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			add_ideas = BEL_Science_Power
+		}
+	}
+	focus = {
+		id = BEL_Science2
+		icon = GFX_goal_continuous_research
+		cost = 5
+		relative_position_id = BEL_Science1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_tech = ww1_mechanical_computing_2
+		}
+		prerequisite = {
+			focus = BEL_Science1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Science_Power
+				add_idea = BEL_Science_Power1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Science3
+		icon = GFX_focus_research2
+		cost = 5
+		relative_position_id = BEL_Science2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available = {
+			has_tech = ww1_mechanical_computing_3
+		}
+		prerequisite = {
+			focus = BEL_Science2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Science_Power1
+				add_idea = BEL_Science_Power2
+			}
+		}
+	}
+	focus = {
+		id = BEL_Loyal_To_The_King
+		icon = GFX_focus_BEL_king_of_the_belgians
+		cost = 10
+		relative_position_id = BEL_The_King's_Nation
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = BEL_Commune
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			add_country_leader_trait = BEL_Honourable_King
+		}
+	}
+	focus = {
+		id = BEL_French_Language
+		icon = GFX_focus_fra_french_union
+		cost = 10
+		relative_position_id = BEL_Loyal_To_The_King
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = BEL_Dutch_Language
+		}
+		prerequisite = {
+			focus = BEL_Loyal_To_The_King
+		}
+		completion_reward = {
+			add_ideas = BEL_French_Primacy
+		}
+	}
+	focus = {
+		id = BEL_Dutch_Language
+		icon = GFX_focus_hol_oranje_boven
+		cost = 10
+		relative_position_id = BEL_Loyal_To_The_King
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = BEL_French_Language
+		}
+		prerequisite = {
+			focus = BEL_Loyal_To_The_King
+		}
+		completion_reward = {
+			add_ideas = BEL_Dutch_Primacy
+		}
+	}
+	focus = {
+		id = BEL_Address_Colonial_Issues
+		icon = GFX_focus_BRA_amazon_colonization
+		cost = 10
+		relative_position_id = BEL_Loyal_To_The_King
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_French_Language
+			focus = BEL_Dutch_Language
+		}
+		completion_reward = {
+			remove_ideas = BEL_Outrage_Over_Congolese_Treatment
+		}
+	}
+	focus = {
+		id = BEL_United_Through_The_Crown
+		icon = GFX_focus_BEL_the_walloon_legion
+		cost = 10
+		relative_position_id = BEL_Address_Colonial_Issues
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Address_Colonial_Issues
+		}
+		completion_reward = {
+			remove_ideas = BEL_Divided_Nation
+		}
+	}
+	focus = {
+		id = BEL_Armoured_Car_Race
+		icon = GFX_focus_SWE_lynx_armored_car
+		cost = 10
+		relative_position_id = BEL_United_Through_The_Crown
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_United_Through_The_Crown
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_armored_cars
+				bonus = 1
+			}
+			add_ideas = BEL_Armoured_Car_Supremacy
+		}
+	}
+	focus = {
+		id = BEL_Commune
+		icon = GFX_focus_BEL_the_grand_place
+		cost = 10000
+		relative_position_id = BEL_The_King's_Nation
+		x = 7
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = BEL_Loyal_To_The_King
+		}
+		prerequisite = {
+			focus = BEL_The_King's_Nation
+		}
+		completion_reward = {
+			custom_effect_tooltip = BEL_Commune_Tooltip
+			add_ideas = BEL_Socialist_Power
+		}
+	}
+	focus = {
+		id = BEL_Frame_Our_Opponents1
+		icon = GFX_focus_BEL_government_resigns
+		cost = 7.2
+		relative_position_id = BEL_Commune
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Commune
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			6 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Frame_Our_Opponents2
+		icon = GFX_focus_BEL_la_dame_blanche
+		cost = 7.2
+		relative_position_id = BEL_Commune
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Commune
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			6 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_Enter_The_Stage
+		icon = GFX_focus_BEL_unfit_to_reign
+		cost = 5
+		relative_position_id = BEL_Commune
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			communism > 0.5
+		}
+		prerequisite = {
+			focus = BEL_Frame_Our_Opponents1
+		}
+		prerequisite = {
+			focus = BEL_Frame_Our_Opponents2
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+			remove_ideas = BEL_Outrage_Over_Congolese_Treatment
+		}
+	}
+	focus = {
+		id = BEL_Socialist_Consolidation1
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10
+		relative_position_id = BEL_Enter_The_Stage
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			has_idea = BEL_Socialist_Power
+		}
+		prerequisite = {
+			focus = BEL_Enter_The_Stage
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Socialist_Power
+				add_idea = BEL_Socialist_Power1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Socialist_Consolidation2
+		icon = GFX_focus_generic_price_controls
+		cost = 10
+		relative_position_id = BEL_Enter_The_Stage
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			has_idea = BEL_Socialist_Power1
+		}
+		prerequisite = {
+			focus = BEL_Enter_The_Stage
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Socialist_Power1
+				add_idea = BEL_Socialist_Power2
+			}
+		}
+	}
+	focus = {
+		id = BEL_The_King_Stays
+		icon = GFX_focus_AFG_telegraph
+		cost = 7.2
+		relative_position_id = BEL_Socialist_Consolidation1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Socialist_Consolidation1
+		}
+		completion_reward = {
+			add_ideas = BEL_The_King
+		}
+	}
+	focus = {
+		id = BEL_The_Workers_Stay
+		icon = GFX_focus_generic_communist
+		cost = 7.2
+		relative_position_id = BEL_Socialist_Consolidation2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_Socialist_Consolidation2
+		}
+		completion_reward = {
+			add_ideas = BEL_The_People
+		}
+	}
+	focus = {
+		id = BEL_The_People's_Nation
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10
+		relative_position_id = BEL_Enter_The_Stage
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = BEL_The_King_Stays
+		}
+		prerequisite = {
+			focus = BEL_The_Workers_Stay
+		}
+		completion_reward = {
+			remove_ideas = BEL_Divided_Nation
+		}
+	}
+	focus = {
+		id = BEL_Knight_King
+		icon = GFX_focus_BEL_consitutional_crisis
+		cost = 10
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status_fixed
+				add_idea = BEL_King_Status1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Soldier_King_two
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		relative_position_id = BEL_Knight_King
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = BEL_Knight_King
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status1
+				add_idea = BEL_King_Status2
+			}
+		}
+	}
+	focus = {
+		id = BEL_King_Of_The_Congo
+		icon = GFX_focus_COG_the_nyim_of_kuba
+		cost = 10
+		relative_position_id = BEL_Soldier_King_two
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		prerequisite = {
+			focus = BEL_Soldier_King_two
+		}
+		completion_reward = {
+			295 = {
+				add_core_of = BEL
+			}
+		}
+	}
+	focus = {
+		id = BEL_King_Of_Belgium
+		icon = GFX_focus_BEL_the_lost_tribe
+		cost = 10
+		relative_position_id = BEL_King_Of_The_Congo
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		prerequisite = {
+			focus = BEL_King_Of_The_Congo
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status2
+				add_idea = BEL_King_Status3
+			}
+		}
+	}
+	focus = {
+		id = BEL_Hero_Of_Belgium
+		icon = GFX_focus_BEL_burgundy_rising
+		cost = 10
+		relative_position_id = BEL_King_Of_Belgium
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = BEL_King_Of_Belgium
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_King_Status3
+				add_idea = BEL_King_Status4
+			}
+		}
+	}
+}

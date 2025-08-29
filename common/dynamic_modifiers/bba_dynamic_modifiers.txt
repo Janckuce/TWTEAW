@@ -261,7 +261,6 @@ ETH_state_development_dynamic_modifier = { #STATE MODIFIER
 
 
 	# Later
-	local_factories = ETH_state_development_local_factories
 	state_resources_factor = ETH_state_development_state_resources_factor
 
 }
@@ -463,7 +462,6 @@ ITA_regio_esercito_dynamic_modifier = { #NATIONAL SPIRIT
 	acclimatization_hot_climate_gain_factor = ITA_re_acclimatization_hot_climate_gain_factor #0.15
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
-	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
 
 
@@ -521,7 +519,6 @@ ITA_regio_esercito_2_dynamic_modifier = { #NATIONAL SPIRIT
 	acclimatization_hot_climate_gain_factor = ITA_re_acclimatization_hot_climate_gain_factor #0.15
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
-	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
 
 
@@ -579,7 +576,6 @@ ITA_regio_esercito_3_dynamic_modifier = { #NATIONAL SPIRIT
 	acclimatization_hot_climate_gain_factor = ITA_re_acclimatization_hot_climate_gain_factor #0.15
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
-	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
 
 
@@ -640,7 +636,6 @@ ITA_regio_esercito_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	acclimatization_hot_climate_gain_factor = ITA_re_acclimatization_hot_climate_gain_factor #0.15
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
-	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
 
 
@@ -699,7 +694,6 @@ ITA_regio_esercito_2_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	acclimatization_hot_climate_gain_factor = ITA_re_acclimatization_hot_climate_gain_factor #0.15
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
-	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
 
 
@@ -758,7 +752,6 @@ ITA_regio_esercito_3_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	acclimatization_hot_climate_gain_factor = ITA_re_acclimatization_hot_climate_gain_factor #0.15
 	heat_attrition_factor = ITA_re_heat_attrition_factor #-0.1
 	modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor
-	modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor
 
 
 
@@ -803,7 +796,6 @@ ITA_regia_aeronautica_dynamic_modifier = { #NATIONAL SPIRIT
 	air_cas_present_factor = ITA_ra_air_cas_present_factor
 	air_mission_efficiency = ITA_ra_air_mission_efficiency
 	air_attack_factor = ITA_ra_air_attack
-	air_intercept_efficiency = ITA_ra_air_interception
 }
 
 ITA_regia_aeronautica_2_dynamic_modifier = { #NATIONAL SPIRIT
@@ -837,7 +829,6 @@ ITA_regia_aeronautica_2_dynamic_modifier = { #NATIONAL SPIRIT
 	air_cas_present_factor = ITA_ra_air_cas_present_factor
 	air_mission_efficiency = ITA_ra_air_mission_efficiency
 	air_attack_factor = ITA_ra_air_attack
-	air_intercept_efficiency = ITA_ra_air_interception
 }
 
 ITA_regia_aeronautica_3_dynamic_modifier = { #NATIONAL SPIRIT
@@ -871,7 +862,6 @@ ITA_regia_aeronautica_3_dynamic_modifier = { #NATIONAL SPIRIT
 	air_cas_present_factor = ITA_ra_air_cas_present_factor
 	air_mission_efficiency = ITA_ra_air_mission_efficiency
 	air_attack_factor = ITA_ra_air_attack
-	air_intercept_efficiency = ITA_ra_air_interception
 }
 
 
@@ -908,7 +898,6 @@ ITA_regia_aeronautica_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	air_cas_present_factor = ITA_ra_air_cas_present_factor
 	air_mission_efficiency = ITA_ra_air_mission_efficiency
 	air_attack_factor = ITA_ra_air_attack
-	air_intercept_efficiency = ITA_ra_air_interception
 }
 
 #ALT NAME
@@ -943,7 +932,6 @@ ITA_regia_aeronautica_2_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	air_cas_present_factor = ITA_ra_air_cas_present_factor
 	air_mission_efficiency = ITA_ra_air_mission_efficiency
 	air_attack_factor = ITA_ra_air_attack
-	air_intercept_efficiency = ITA_ra_air_interception
 }
 
 #ALT NAME
@@ -978,7 +966,6 @@ ITA_regia_aeronautica_3_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	air_cas_present_factor = ITA_ra_air_cas_present_factor
 	air_mission_efficiency = ITA_ra_air_mission_efficiency
 	air_attack_factor = ITA_ra_air_attack
-	air_intercept_efficiency = ITA_ra_air_interception
 }
 
 
@@ -1011,7 +998,6 @@ ITA_regia_marina_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_strike_agility_factor = ITA_rm_naval_strike_agility_factor #0.05
 	naval_critical_score_chance_factor = ITA_rm_naval_critical_score_chance_factor #0.02
 	sub_retreat_speed = ITA_rm_sub_retreat_speed #0.05
-	navy_screen_attack_factor = ITA_rm_navy_screen_attack_factor #0.05
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
@@ -1044,7 +1030,6 @@ ITA_regia_marina_2_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_strike_agility_factor = ITA_rm_naval_strike_agility_factor #0.05
 	naval_critical_score_chance_factor = ITA_rm_naval_critical_score_chance_factor #0.02
 	sub_retreat_speed = ITA_rm_sub_retreat_speed #0.05
-	navy_screen_attack_factor = ITA_rm_navy_screen_attack_factor #0.05
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
@@ -1077,7 +1062,6 @@ ITA_regia_marina_3_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_strike_agility_factor = ITA_rm_naval_strike_agility_factor #0.05
 	naval_critical_score_chance_factor = ITA_rm_naval_critical_score_chance_factor #0.02
 	sub_retreat_speed = ITA_rm_sub_retreat_speed #0.05
-	navy_screen_attack_factor = ITA_rm_navy_screen_attack_factor #0.05
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
@@ -1113,7 +1097,6 @@ ITA_regia_marina_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_strike_agility_factor = ITA_rm_naval_strike_agility_factor #0.05
 	naval_critical_score_chance_factor = ITA_rm_naval_critical_score_chance_factor #0.02
 	sub_retreat_speed = ITA_rm_sub_retreat_speed #0.05
-	navy_screen_attack_factor = ITA_rm_navy_screen_attack_factor #0.05
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
@@ -1147,7 +1130,6 @@ ITA_regia_marina_2_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_strike_agility_factor = ITA_rm_naval_strike_agility_factor #0.05
 	naval_critical_score_chance_factor = ITA_rm_naval_critical_score_chance_factor #0.02
 	sub_retreat_speed = ITA_rm_sub_retreat_speed #0.05
-	navy_screen_attack_factor = ITA_rm_navy_screen_attack_factor #0.05
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
@@ -1181,7 +1163,6 @@ ITA_regia_marina_3_alt_dynamic_modifier = { #NATIONAL SPIRIT
 	naval_strike_agility_factor = ITA_rm_naval_strike_agility_factor #0.05
 	naval_critical_score_chance_factor = ITA_rm_naval_critical_score_chance_factor #0.02
 	sub_retreat_speed = ITA_rm_sub_retreat_speed #0.05
-	navy_screen_attack_factor = ITA_rm_navy_screen_attack_factor #0.05
 	decryption_factor = ITA_rm_decryption_factor #0.05
 	navy_intel_factor = ITA_rm_navy_intel_factor #0.1
 	naval_invasion_prep_speed = ITA_rm_naval_invasion_prep_speed #0.15
@@ -1239,10 +1220,6 @@ ITA_fronte_militare_clandestino_modifier = { #In a RSI state
 		ROOT = { is_controlled_by = RDS } # ROOT refers to the state on which the modifier is added
 	}
 	icon = GFX_modifiers_SOV_invaders_must_die
-
-	#INITIAL (FRONTE MILITARE CLANDESTINO)
-	required_garrison_factor = 2.ITA_fronte_militare_clandestino_required_garrison_factor #0.15
-	resistance_growth_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_growth_on_our_occupied_states #0.1
 
 	#GAPPISTI
 	resistance_damage_to_garrison_on_our_occupied_states = 2.ITA_fronte_militare_clandestino_resistance_damage_to_garrison_on_our_occupied_states #0.1

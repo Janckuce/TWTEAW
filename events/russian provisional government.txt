@@ -1,0 +1,174 @@
+add_namespace = ww1_prog
+
+country_event = {
+    id = ww1_prog.1
+    title = ww1_prog.1.t
+    desc = ww1_prog_desc.1
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.1.a
+
+        add_ideas = RUS_Equipment_Now
+    }
+
+    option = {
+        name = ww1_prog.1.a
+
+        add_ideas = RUS_We_Still_Have_Time
+    }
+}
+
+country_event = {
+    id = ww1_prog.2
+    title = ww1_prog.2.t
+    desc = ww1_prog_desc.2
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.2.a
+
+        add_stability = -0.2
+        add_war_support = 0.2
+
+        FRA = {
+            country_event = ww1_france.20
+        }
+        ENG = {
+            country_event = ww1_uk.15
+        }
+    }
+}
+
+country_event = {
+    id = ww1_prog.3
+    title = ww1_prog.3.t
+    desc = ww1_prog_desc.3
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.3.a
+
+        add_timed_idea = {
+            idea = RUS_desperate_offensive
+            days = 120
+        }
+    }
+}
+
+country_event = {
+    id = ww1_prog.4
+    title = ww1_prog.4.t
+    desc = ww1_prog_desc.4
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.4.a
+
+        hidden_effect = {
+            every_state = {
+                if = {
+                    limit = {
+                        and = {
+                            is_controlled_by = RUS
+                            is_core_of = UKR
+                        }
+                    }
+                    start_resistance = yes
+                    remove_core_of = RUS
+                    set_resistance = 20
+                }
+            }
+        }
+        add_ideas = RUS_Negotiations_With_Ukraine
+        custom_effect_tooltip = ww1_russia_ukraine
+    }
+}
+
+country_event = {
+    id = ww1_prog.5
+    title = ww1_prog.5.t
+    desc = ww1_progdesc.5
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.5.a
+
+        add_ideas = RUS_Moskva_Conference
+    }
+}
+
+country_event = {
+    id = ww1_prog.6
+    title = ww1_prog.6.t
+    desc = ww1_progdesc.6
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.6.a
+
+        add_ideas = RUS_The_Republic
+    }
+
+    option = {
+        name = ww1_prog.6.b
+
+        add_ideas = RUS_Military_Dictatorship
+    }
+}
+
+country_event = {
+    id = ww1_prog.7
+    title = ww1_prog.7.t
+    desc = ww1_progdesc.7
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.7.a
+
+        add_ideas = RUS_Kadet_Victory
+    }
+
+    option = {
+        name = ww1_prog.7.b
+
+        add_ideas = RUS_Trudovik_Victory
+    }
+}
+
+country_event = {
+    id = ww1_prog.8
+    title = ww1_prog.8.t
+    desc = ww1_progdesc.8
+    picture = GFX_report_event_generic_sign_alliance
+
+    is_triggered_only = yes
+
+    option = {
+        name = ww1_prog.8.a
+
+        add_political_power = -300
+        add_stability = 0.1
+    }
+
+    option = {
+        name = ww1_prog.8.b
+
+        add_political_power = -300
+        add_war_support = 0.1
+    }
+}

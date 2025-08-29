@@ -1,61 +1,318 @@
-RUS_uprising_category = {
-
-	RUS_uprising = {
-		priority = 2
-		allowed = {
-			original_tag = RUS
-		}
-		visible = {
-			always = yes
-		}
-		available = {
-		    has_completed_focus = RUS_deal_with_the_communists
-		}
-		
-		highlight_states = {
-		    highlight_state_targets = { state = 195 } 
-	    }
-		
-		is_good = no
-		
-		days_mission_timeout = 100
-		
-		cancel_trigger = {
-		    #
-		}
-		
-		timeout_effect = {
-		}
-		
-		fire_only_once = yes
-	}
-	
-	RUS_delay_uprising_1 = {
+RUS_Peasants_Land_Bank_Category = {
+	RUS_Sieze_Land = {
 		priority = 1
+		days_remove = 30
+		cost = 30
 		allowed = {
-			original_tag = RUS
+			tag = RUS
 		}
 		visible = {
-			has_active_mission = RUS_uprising
+			or = {
+				has_idea = RUS_Agrarian_Industry3
+				has_idea = RUS_Agrarian_Industry4
+				has_idea = RUS_Agrarian_Industry5
+			}
 		}
-		available = {
-		    always = yes
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = RUS_Agrarian_Industry3
+				}
+				swap_ideas = {
+					remove_idea = RUS_Agrarian_Industry3
+					add_idea = RUS_Agrarian_Industry4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Agrarian_Industry4
+				}
+				swap_ideas = {
+					remove_idea = RUS_Agrarian_Industry4
+					add_idea = RUS_Agrarian_Industry5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Agrarian_Industry5
+				}
+				remove_ideas = RUS_Agrarian_Industry5
+			}
 		}
-		
-		cost = 0
-		
+	}
+	RUS_Enact_Land_Reforms = {
+		priority = 1
+		cost = 50
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			not = {
+				or = {
+					has_idea = RUS_Agrarian_Industry
+					has_idea = RUS_Agrarian_Industry1
+					has_idea = RUS_Agrarian_Industry2
+					has_idea = RUS_Agrarian_Industry3
+					has_idea = RUS_Agrarian_Industry4
+					has_idea = RUS_Agrarian_Industry5
+				}
+			}
+		}
 		complete_effect = {
-		    add_days_mission_timeout = {
-				mission = RUS_uprising
+			add_ideas = RUS_Land_Reforms
+		}
+	}
+}
+
+RUS_Laboratories_Category = {
+	RUS_Use_What_We've_Learnt = {
+		priority = 1
+		days_remove = 30
+		cost = 50
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			has_idea = RUS_Lack_Of_Scientists3
+		}
+		remove_effect = {
+			remove_ideas = RUS_Lack_Of_Scientists3
+		}
+	}
+	RUS_Infantry_Experts = {
+		priority = 1
+		cost = 50
+		days_re_enable = 200
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			not = {
+				has_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = "add a name"
+				category = infantry_weapons
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	RUS_Support_Experts = {
+		priority = 1
+		cost = 50
+		days_re_enable = 200
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			not = {
+				has_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = "add a name 2, electric boogaloo"
+				category = support_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	RUS_Armour_Experts = {
+		priority = 1
+		cost = 50
+		days_re_enable = 200
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			not = {
+				has_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Oh this one is armour, cool"
+				category = armor
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	RUS_Artillery_Experts = {
+		priority = 1
+		cost = 50
+		days_re_enable = 200
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			not = {
+				has_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Artillery very nice"
+				category = artillery
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	RUS_Naval_Experts = {
+		priority = 1
+		cost = 50
+		days_re_enable = 200
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			not = {
+				has_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Why is navy here???"
+				category = naval_equipment
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	RUS_Aircraft_Experts = {
+		priority = 1
+		cost = 50
+		days_re_enable = 200
+		allowed = {
+			tag = RUS
+		}
+		visible = {
+			has_completed_focus = RUS_Establish_Laboratories
+			not = {
+				has_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = "add a name"
+				category = air_equipment
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+}
+
+RUS_Military_Academy_Category = {
+	RUS_Army_Modernisation = {
+		priority = 1
+		days_remove = 30
+		cost = 50
+		allowed = {
+				RUS = {
+					or = {
+					has_idea = RUS_Dated_Warfare1
+					has_idea = RUS_Dated_Warfare2
+					has_idea = RUS_Dated_Warfare3
+					has_idea = RUS_Dated_Warfare4
+					has_idea = RUS_Dated_Warfare5
+					}
+				}	
+			}
+			visible = {
+				or = {
+					has_completed_focus = RUS_Mass_Mobilise
+					has_completed_focus = RUS_Establish_Military_Academy
+				}
+			}
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare1
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare1
+					add_idea = RUS_Dated_Warfare2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare2
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare2
+					add_idea = RUS_Dated_Warfare3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare3
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare3
+					add_idea = RUS_Dated_Warfare4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare4
+				}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare4
+					add_idea = RUS_Dated_Warfare5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Dated_Warfare5
+				}
+				remove_ideas = RUS_Dated_Warfare5
+			}
+		}
+	}
+	RUS_Organised_Offensive = {
+		priority = 1
+		custom_cost_trigger = {
+			command_power > 15
+		}
+		custom_cost_text = decision_cost_CP_25
+		visible = {
+			has_completed_focus = RUS_Establish_Military_Academy
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = RUS_Mobilise_The_Nation
 				days = 100
 			}
-			add_political_power = -50
 		}
-		
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 10000
+	}
+	RUS_Mobilisation = {
+		priority = 1
+		custom_cost_trigger = {
+			command_power > 15
+		}
+		custom_cost_text = decision_cost_CP_25
+		visible = {
+			has_completed_focus = RUS_Mass_Mobilise
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = RUS_Brusilov_Offensive
+				days = 100
+			}
 		}
 	}
 }

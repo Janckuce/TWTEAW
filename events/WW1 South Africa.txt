@@ -1,0 +1,159 @@
+add_namespace = ww1_south_africa
+
+country_event = {
+	id = ww1_south_africa.1
+	title = ww1_south_africa.1.t
+	desc = ww1_south_africa.1.d
+	picture = GFX_report_event_england_in_somalia
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SAF
+	}
+
+    option = {
+        name = "Our man in Lisbon"
+        # Triggering an event in another country
+        POR = {
+            country_event = { id = ww1_portugal.3 days = 1 }
+        }
+    }
+}
+
+country_event = {
+	id = ww1_south_africa.3
+	title = ww1_south_africa.3.t
+	desc = ww1_south_africa.3.d
+	picture = GFX_report_event_england_in_somalia
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SAF
+	}
+
+    option = {
+        name = "Our man in London"
+        # Triggering an event in another country
+        ENG = {
+            country_event = { id = ww1_uk.16 days = 1 }
+        }
+    }
+}
+
+country_event = {
+	id = ww1_south_africa.4
+	title = ww1_south_africa.4.t
+	desc =  ww1_south_africa.4
+	picture = GFX_report_event_italy_in_libya
+
+	is_triggered_only = yes
+
+	option = {
+		name =  ww1_south_africa.4.a
+		
+		GER = {
+			set_province_controller = 10400
+			set_province_controller = 2213
+			set_province_controller = 2171	
+			set_province_controller = 10566
+			
+			division_template = {
+				name = "Maritz-rebellie"
+				division_names_group = HOL_INF_01
+				regiments = {
+					irregular_infantry = {
+						x = 0
+						y = 0
+					}
+					irregular_infantry = {
+						x = 0
+						y = 1
+					}
+					irregular_infantry = {
+						x = 0
+						y = 2
+					}
+					irregular_infantry = {
+						x = 1
+						y = 0
+					}
+					irregular_infantry = {
+						x = 1
+						y = 1
+					}
+					irregular_infantry = {
+						x = 1
+						y = 2
+					}
+				}
+			}
+			
+			275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 10400
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 10400
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 10400
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 2213
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 2171
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 2171
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 5106
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+				275 = {
+				create_unit = {
+					division = "name = \"I Maritz-rebellie\" division_template = \"Maritz-rebellie\" start_experience_factor = 0.2"
+					owner = GER
+					prioritize_location = 5217
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+}

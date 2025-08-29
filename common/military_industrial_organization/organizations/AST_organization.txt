@@ -1,0 +1,20 @@
+
+AST_lithgow_arms_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ast_litgow_invest
+	
+	allowed = {	 
+		OR = {
+			tag = AST
+			AND = {
+			has_completed_focus = BEL_The_King's_Nation
+			}
+		}
+	}
+
+	available = {
+		AST = {
+			has_completed_focus = AST_Major_Military_Investment
+			}
+		}
+	}

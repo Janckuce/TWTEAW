@@ -1,0 +1,82 @@
+leader_traits = {
+	BEL_Honourable_King = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.1
+		weekly_casualties_war_support = 0.001
+	}
+	bel_military_companist = {
+		sprite = 13
+	production_speed_arms_factory_factor = 0.075
+	research_speed_factor = 0.05
+	industrial_capacity_factory = 0.025
+	}
+	bel_industrialist_companist = {
+		sprite = 13
+		production_speed_industrial_complex_factor = 0.075
+		production_speed_rail_way_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.05
+		production_speed_supply_node_factor = 0.075
+	}
+		bel_royalist_judge = {
+			sprite = 13
+		political_advisor_cost_factor = -0.2
+		political_power_factor = 0.15
+		production_speed_infrastructure_factor = 0.075
+		resistance_damage_to_garrison = -0.2
+		foreign_subversive_activites = -0.1
+		trade_laws_cost_factor = -0.15
+		economy_cost_factor = -0.15
+	}
+		bel_henri_jaspar = {
+			sprite = 13
+		consumer_goods_factor = -0.15
+		army_advisor_cost_factor = -0.2
+		drift_defence_factor = 0.1
+		non_core_manpower = -0.075
+	}
+		bel_charles_de_broqueville = {
+			sprite = 13
+		democratic_drift = 0.25
+		party_popularity_stability_factor = 0.25
+		weekly_casualties_war_support = 0.001
+		weekly_bombing_war_support = 0.001
+		weekly_convoys_war_support = 0.001
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_arms_factory_factor = -0.025
+		cavalry_attack_factor = 0.025
+		cavalry_defence_factor = 0.025
+
+	}
+		bel_general_loved = {
+			sprite = 8
+			equipment_bonus = {
+			armored_car_equipment = {
+				maximum_speed = 0.1
+				soft_attack = 0.05
+				hard_attack = 0.05
+			}
+		}
+		army_artillery_attack_factor = 0.075
+		army_artillery_defence_factor = 0.1
+		cavalry_attack_factor = 0.05
+		cavalry_defence_factor = 0.05
+		initiative_factor = 0.075
+		coordination_bonus = 0.075
+	}
+		bel_fotress_man = {
+		sprite = 5
+		army_infantry_attack_factor = 0.075
+		army_infantry_defence_factor = 0.075
+		army_morale_factor = 0.05
+		land_reinforce_rate = 0.05
+	}
+		bel_organizator = {
+		sprite = 5
+		army_org_factor = 0.15
+		army_morale_factor = 0.075
+		army_org_regain = 0.05
+		land_reinforce_rate = 0.025
+
+	}
+}

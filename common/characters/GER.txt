@@ -53,7 +53,7 @@ characters={
 			}
 		}
 		navy_leader = {
-			traits = { ironside cruiser_Capitan}
+			traits = { ironside cruiser_captain }
 			skill = 5
 			attack_skill = 5
 			defense_skill = 3
@@ -66,7 +66,7 @@ characters={
 		name = ger_richtoffen
 		portraits = {
 			civilian = {
-				large = "GFX_ger_richtoffen"
+				large = "GFX_ger_richtoffen_frame"
 			}
 				army = {
 				small = "GFX_ger_richtoffen_frame"
@@ -91,7 +91,7 @@ characters={
 		name = ger_boelcke
 		portraits = {
 			civilian = {
-				large = "GFX_ger_boelcke"
+				large = "GFX_ger_boelcke_frame"
 			}
 				army = {
 				small = "GFX_ger_boelcke_frame"
@@ -186,7 +186,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits = { fast_planner charismatic expert_delegator }
+			traits = { fast_planner expert_delegator }
 			skill=4
 			attack_skill=5
 			defense_skill=5
@@ -235,7 +235,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits = { media_personality politically_connected scavenger charismatic }
+			traits = { media_personality politically_connected scavenger }
 			skill=3
 			attack_skill=6
 			defense_skill=2
@@ -294,7 +294,7 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+				army_infantry_3 #Inf Attack +10% Inf Defense +15%
 			}
 			cost = 150
 			ai_will_do = {
@@ -466,7 +466,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits = { ranger engineer  }
+			traits = { ranger  }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -519,7 +519,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits = { commmando desert_fox swamp_fox jungle_rat trickster  }
+			traits = { desert_fox swamp_fox jungle_rat trickster  }
 			skill=2
 			attack_skill=3
 			defense_skill=6
@@ -841,7 +841,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits = { urban_assault_specialist improvisation_expert }
+			traits = { urban_assault_specialist }
 			skill=2
 			attack_skill=1
 			defense_skill=1

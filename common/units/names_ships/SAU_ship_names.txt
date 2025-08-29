@@ -85,24 +85,6 @@ SAU_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-SAU_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { SAU }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HMS "							
-	fallback_name = "Carrier %d"		
-
-	unique = {
-		"Al 'Arabiyah as Su'udiyah" "Aziz ibn Saud" 
-	}
-}
-
-
 ### SUBMARINES ###
 SAU_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

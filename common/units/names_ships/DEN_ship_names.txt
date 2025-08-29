@@ -87,23 +87,6 @@ DEN_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-DEN_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { DEN }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HDMS "
-	fallback_name = "Hangarskib %d"	
-
-	unique = {
-		"Danske Løve" "Peter Willemoes" "Steen Bille" "Peder Marsvin" "Dannebrog" "Peder Skram" "Rolf Krake" "Lindormen" "Gorm" "Odin" 
-	}
-}
-
 ### SUBMARINES ###
 DEN_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

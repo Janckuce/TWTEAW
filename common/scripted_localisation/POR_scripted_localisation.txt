@@ -1,0 +1,57 @@
+scripted_loc = {
+	name = POR_GDP_Status
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 5
+			}
+		}
+		localization_key = POR_GDP_Status_View
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 4
+			}
+		}
+		localization_key = POR_GDP_Status_View0
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 3
+			}
+		}
+		localization_key = POR_GDP_Status_View1
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 2
+			}
+		}
+		localization_key = POR_GDP_Status_View2
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 1
+			}
+		}
+		localization_key = POR_GDP_Status_View3
+	}
+
+	text = {
+		trigger = {
+			check_variable = {
+				POR.GDP = 0
+			}
+		}
+		localization_key = POR_GDP_Status_View4
+	}
+}

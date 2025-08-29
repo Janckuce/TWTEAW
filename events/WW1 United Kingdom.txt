@@ -428,3 +428,75 @@ country_event = {
 		add_political_power = 50
 	}
 }
+
+country_event = {
+	id = ww1_uk.15
+	title = ww1_uk.15.t
+	desc = ww1_uk_desc.15
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_uk.15.a
+
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+		}
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 10000
+			target = RUS
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = ww1_uk.15.b
+	}
+}
+
+country_event = {
+	id = ww1_uk.16
+	title = ww1_uk.16.t
+	desc = ww1_uk_desc.16
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+		option = {
+        name = "Our Dominion we Serve"
+        SAF = { transfer_state = 542 }
+		SAF = { transfer_state = 545 }
+		SAF = { transfer_state = 771 }
+		SAF = { transfer_state = 770 }
+
+            121 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                instant_build = yes
+            }
+        }
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+		option = {
+        name = "No..."
+        }
+	}

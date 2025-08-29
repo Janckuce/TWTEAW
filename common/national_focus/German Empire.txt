@@ -442,7 +442,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = GER_Political_Gain
 			focus = GER_Command_Power_Addon
 		}
 		completion_reward = {
@@ -459,9 +458,6 @@ focus_tree = {
 		relative_position_id = GER_Media_Propaganda
 		x = 0
 		y = 3
-		prerequisite = {
-			focus = GER_Prepare1
-		}
 		prerequisite = {
 			focus = GER_Prepare2
 		}
@@ -1286,7 +1282,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		available = {
-			has_tech = synth_oil_experiments
+			has_tech = ww1_synthetic_oil_experiments
 		}
 		prerequisite = {
 			focus = GER_Kaiser_Leader1
@@ -1362,7 +1358,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		available = {
-			has_tech = synth_oil_experiments
+			has_tech = ww1_synthetic_oil_experiments
 		}
 		prerequisite = {
 			focus = GER_Wilhelm_Leader3

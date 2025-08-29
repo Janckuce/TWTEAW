@@ -947,7 +947,6 @@ abandon_colony_tag = {
 			limit = {
 				OR = {
 					has_cosmetic_tag = united_polynesia
-					has_cosmetic_tag = MAJ_UNIFIED
 				}
 			}
 		}
@@ -1212,10 +1211,6 @@ remove_communist_spirits_effect = {
 	if = {
 		limit = { has_idea = american_influence_drift_communism }
 		remove_ideas = american_influence_drift_communism
-	}
-	if = {
-		limit = { has_idea = comintern_influence }
-		remove_ideas = comintern_influence
 	}
 	if = {
 		limit = { has_idea = pan_slavic_propaganda }
@@ -1864,10 +1859,6 @@ SF_marine_demoliton_effect = { #When changing this, update the research tooltip
 	}
 	damage_building = {
 		type = dockyard
-		damage = 1
-	}
-	damage_building = {
-		type = nuclear_reactor
 		damage = 1
 	}
 	damage_building = {

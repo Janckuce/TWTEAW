@@ -1,0 +1,25 @@
+BEL_War_Support_Category = {
+	icon = CHL_nacista_decisions
+
+	priority = 100
+
+	allowed = {
+		tag = BEL
+	}
+}
+
+BEL_Congo_Divisions_Category = {
+	icon = generic_arms_trade
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = BEL
+	}
+
+	visible = {
+		controls_province = 5117
+	}
+}

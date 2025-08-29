@@ -289,9 +289,6 @@ ideas = {
 				breakthrough_factor = 0.1
 				motorized_attack_factor = 0.025
 				motorized_defence_factor = 0.025
-				motorized_speed_factor = 0.05
-				motorized_max_org_factor = 0.025
-				motorized_reliability_factor = 0.01
 
 			}
 		}
@@ -317,9 +314,6 @@ ideas = {
 				breakthrough_factor = 0.1
 				motorized_attack_factor = 0.025
 				motorized_defence_factor = 0.025
-				motorized_speed_factor = 0.05
-				motorized_max_org_factor = 0.025
-				motorized_reliability_factor = 0.01
 
 			}
 		}
@@ -345,9 +339,6 @@ ideas = {
 				breakthrough_factor = 0.125
 				motorized_attack_factor = 0.05
 				motorized_defence_factor = 0.05
-				motorized_speed_factor = 0.075
-				motorized_max_org_factor = 0.05
-				motorized_reliability_factor = 0.02
 				army_armor_attack_factor = 0.05
 				army_armor_defence_factor = 0.05
 
@@ -375,24 +366,8 @@ ideas = {
 				breakthrough_factor = 0.15
 				motorized_attack_factor = 0.075
 				motorized_defence_factor = 0.075
-				motorized_speed_factor = 0.1
-				motorized_max_org_factor = 0.075
-				motorized_reliability_factor = 0.025
 				army_armor_attack_factor = 0.075
 				army_armor_defence_factor = 0.075
-
-				equipment_bonus = {
-				motorized_equipment = {
-					build_cost_ic = -0.15 instant = yes
-					soft_attack = 0.025 instant = yes
-				}
-
-				light_tank_equipment_production_cost = {
-					build_cost_ic = -0.2 instant = yes
-					soft_attack = 0.025 instant = yes
-				}
-			}
-
 			}
 		}
 
@@ -663,15 +638,6 @@ ideas = {
 			resistance_growth = -0.1
 			conscription = 0.01
 			army_breakthrough_against_minor_factor = 0.1
-				infantry_equipment = {
-				build_cost_ic = -0.075
-				instant = yes
-			}
-
-				support_equipment = {
-				build_cost_ic = -0.075
-				instant = yes
-			}
 
 
 
@@ -708,15 +674,6 @@ ideas = {
 			army_breakthrough_against_minor_factor = 0.1
 			line_change_production_efficiency_factor = 0.025
 			production_factory_start_efficiency_factor = 0.025
-				infantry_equipment = {
-				build_cost_ic = -0.075
-				instant = yes
-			}
-
-				support_equipment = {
-				build_cost_ic = -0.075
-				instant = yes
-			}
 
 
 
@@ -752,15 +709,6 @@ ideas = {
 			army_breakthrough_against_minor_factor = 0.15
 			line_change_production_efficiency_factor = 0.05
 			production_factory_start_efficiency_factor = 0.05
-				infantry_equipment = {
-				build_cost_ic = -0.075
-				instant = yes
-			}
-
-				support_equipment = {
-				build_cost_ic = -0.075
-				instant = yes
-			}
 
 
 

@@ -13,6 +13,33 @@ ORO_spectator_state = {
 	#nov 11
 	#dec 12
 
+
+
+
+	Italy_Declare_War = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			date > 1911.10.17
+		}
+		complete_effect = {
+			ITA = {
+			set_country_flag = ITA_attack_turkey
+			country_event = ww1_italy.1
+			}
+			news_event = ww1_news.17
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
 	Italy_win_libya_war = {
 		allowed = {
 			original_tag = ORO
@@ -86,6 +113,38 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
+	Italy_Join_WW1 = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			date > 1915.5.22
+			FRA = { has_war_with = GER }
+		}
+		complete_effect = {
+			GER = {
+			set_variable = {
+				Italy_in_war = 1
+				}				
+			}
+			ITA = {
+			remove_ideas = ITA_central_powers_2
+			declare_war_on = {
+				type = take_claimed_state
+				target = AUS
+			}
+			add_ideas = ITA_entente
+			}
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
 	
 	Franz_ferdinand_assasinated = {
 		allowed = {
@@ -138,20 +197,25 @@ ORO_spectator_state = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
 					declare_war_on = { target = RUS type = annex_everything }
+					declare_war_on = { target = MNT type = annex_everything }
 					news_event = ww1_news.10
-					country_event = ww1_germany.6
+					country_event = { id = ww1_germany.6 days = 7 }
 					transfer_state = 8
+					add_threat = 40
 				}
 				AUS = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
 					declare_war_on = { target = RUS type = annex_everything }
+					declare_war_on = { target = MNT type = annex_everything }
+					add_threat = 40
 				}
 				RUS = {
 				    add_timed_idea = {
 						idea = RUS_austrian_offensive_idea
-						days = 30
+						days = 60
 					}
+					add_threat = 40
 				}
 			}
 				if = {
@@ -184,6 +248,7 @@ ORO_spectator_state = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
 					declare_war_on = { target = RUS type = annex_everything }
+					declare_war_on = { target = MNT type = annex_everything }
 				}
 			}
 		}
@@ -972,14 +1037,6 @@ ORO_spectator_state = {
 			}
 			RUS = {
 			    has_war_with = PER
-			    has_country_flag = {
-					flag = RUS_attack_persia_1
-					days > 10
-				}
-				has_country_flag = {
-					flag = RUS_attack_persia_1
-					days < 365 #The war shouldn't last this only, this is to prevent the decision from triggering later
-				}
 			}
 		}
 		
@@ -1023,14 +1080,6 @@ ORO_spectator_state = {
 			}
 			RUS = {
 			    has_war_with = PER
-			    has_country_flag = {
-					flag = RUS_attack_persia_1
-					days > 60
-				}
-				has_country_flag = {
-					flag = RUS_attack_persia_1
-					days < 365 #The war shouldn't last this only, this is to prevent the decision from triggering later
-				}
 			}
 		}
 		
@@ -1707,7 +1756,6 @@ ORO_spectator_state = {
 					promote_leader = yes
 					country_leader = {
 						ideology = centrism
-						traits = {}
 					}
 				}
 				news_event = ww1_news.48
@@ -2273,7 +2321,6 @@ ORO_death_news = {
 					promote_leader = yes
 					country_leader = {
 						ideology = centrism
-						traits = {}
 					}
 				}
 				news_event = ww1_news.46
@@ -2307,7 +2354,6 @@ ORO_death_news = {
 					promote_leader = yes
 					country_leader = {
 						ideology = centrism
-						traits = {}
 					}
 				}
 				news_event = ww1_news.28

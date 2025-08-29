@@ -105,27 +105,6 @@ HUN_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-HUN_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { HUN }
-
-	can_use = { 
-		not = { has_cosmetic_tag = HUN_EMPIRE }
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	
-	fallback_name = "Repülögép-hordozó %d"	
-
-	unique = {
-		 "Mars" "Viribus Unitis" "Prinz Eugen" "Szent István" "Budapest" "Zrinyi" "Radetzky"
-	}
-}
-
 ### SUBMARINES ###
 HUN_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
@@ -278,27 +257,6 @@ HUN_BC_IMPERIAL = {
 	
 	prefix = "SMS "
 	fallback_name = "Csatacirkáló %d"		
-
-	unique = {
-		"Tegetthoff" "Mars" "Viribus Unitis" "Prinz Eugen" "Szent István" "Erzherzog" "Kaiser" "König" "Monarch" "Wien" "Budapest" "Zrinyi" "Radetzky" "Habsburg" "Árpád" "Babenberg" "Erzherzog Karl" "Erzherzog Friedrich" "Erzherzog Franz Ferdinand"
-	}
-}
-
-### AIRCRAFT CARRIER NAMES ###
-HUN_CV_IMPERIAL = {
-	name = NAME_THEME_IMPERIAL_CARRIERS
-
-	for_countries = { AUS CZE CRO HUN }
-
-	can_use = { 
-		has_cosmetic_tag = HUN_EMPIRE
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "SMS "
-	fallback_name = "Repülögép-hordozó %d"	
 
 	unique = {
 		"Tegetthoff" "Mars" "Viribus Unitis" "Prinz Eugen" "Szent István" "Erzherzog" "Kaiser" "König" "Monarch" "Wien" "Budapest" "Zrinyi" "Radetzky" "Habsburg" "Árpád" "Babenberg" "Erzherzog Karl" "Erzherzog Friedrich" "Erzherzog Franz Ferdinand"

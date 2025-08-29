@@ -8,7 +8,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_tech = ww1_land_doctrine_4
+			OWNER = {
+				has_tech = ww1_land_doctrine_4
+			}
 			is_leading_army_group = no
 			is_border_war = no
 			OWNER = {

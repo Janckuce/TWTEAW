@@ -1,0 +1,33 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Parliament_Window"
+		orientation = CENTER
+		origo = center
+		position = {
+			x = 0
+			y = 0
+		}
+
+		size = {
+			width = 500
+			height = 20
+		}
+
+		instantTextBoxType = {
+			name = "Parliament_Window_Labour_Text"
+			position = {
+				x = 50
+				y = -7
+			}
+			text = "AST_Labour_Popularity"
+		}
+		instantTextBoxType = {
+			name = "Parliament_Window_Liberty_Text"
+			position = {
+				x = 300
+				y = -7
+			}
+			text = "AST_Liberty_Popularity"
+		}
+	}
+}

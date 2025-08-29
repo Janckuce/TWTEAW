@@ -85,23 +85,6 @@ OMA_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-OMA_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { OMA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "SNV "							
-	fallback_name = "Carrier %d"		
-
-	unique = {
-		"Salah al-Din" 
-	}
-}
-
 
 ### SUBMARINES ###
 OMA_SS_HISTORICAL = {

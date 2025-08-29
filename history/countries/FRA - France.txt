@@ -33,22 +33,22 @@ set_technology = {
 }
 
 ### Naval Tech ### - ONLY FOR MAJORS
-	set_technology = {
-		ww1_destroyer_1 = 1
-		ww1_light_cruiser_1 = 1
-		ww1_heavy_cruiser_1 = 1
-		ww1_dreadnought_1 = 1
-		mtg_transport = 1
-	}
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+}
 
+set_power_balance = {
+	id = FRA_power_balance
+	set_value = 0
+}
 add_ideas = {
-	FRA_disjointed_government_ww1
-	FRA_stagnant_economy
-	FRA_champagne_riots
-	FRA_french_colonies
-	FRA_sour_losers
-	FRA_fortificate_german_border
-	FRA_entente
+	FRA_Sour_Loser
+	FRA_Fragmented_Government
+	FRA_Halted_Industrial_Power
 }
 
 recruit_character = FRA_joseph_caillaux
@@ -87,10 +87,12 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 100
+	democratic = 75
+	communism = 10
+	fascism = 10
 }
 
-set_convoys = 300
+set_convoys = 200
 
 set_research_slots = 4
 set_stability = 0.6

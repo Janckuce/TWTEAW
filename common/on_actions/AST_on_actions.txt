@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			AST = {
+				set_variable = {
+					var = Labour_Support
+					value = 42
+				}
+				set_variable = {
+					var = Liberal_Support
+					value = 31
+				}
+			}
+		}
+	}
+}

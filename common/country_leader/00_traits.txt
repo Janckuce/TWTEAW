@@ -1119,7 +1119,6 @@ leader_traits = {
 		modifier_army_sub_unit_militia_defence_factor = 0.2
 		modifier_army_sub_unit_militia_attack_factor = 0.2
 		modifier_army_sub_unit_militia_max_org_factor = 0.25
-		ETH_army_modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
 	}
 
 	champion_of_peace_1 = {
@@ -1258,6 +1257,16 @@ leader_traits = {
 		air_chief_cost_factor = -0.34
 		army_chief_cost_factor = -0.34
 		navy_chief_cost_factor = -0.34
+	}
+
+		cyriaque_gillain_trait = {
+		sprite = 7
+		random = no
+		army_attack_factor = 0.075
+		experience_loss_factor = -0.025
+		cavalry_attack_factor = 0.025
+		cavalry_defence_factor = 0.025
+		experience_gain_army = @chief_experience_gain_medium
 	}
 
 	empire_builder = {
@@ -4515,6 +4524,13 @@ leader_traits = {
 		naval_doctrine_cost_factor = -0.1
 		experience_gain_navy_factor = 0.2
 	}
+		AST_leadership_of_aef = {
+		random = no
+		naval_doctrine_cost_factor = -0.1
+		experience_gain_navy_factor = 0.075
+		experience_gain_army_factor = 0.075
+		land_doctrine_cost_factor = -0.1
+	}
 
 	ICE_transportation_enthusiast = {
 		equipment_bonus = {
@@ -4522,8 +4538,6 @@ leader_traits = {
 				instant = yes
 				build_cost_ic = -0.15
 			}
-		}
-		equipment_bonus = {
 			motorized_equipment = {
 				instant = yes
 				build_cost_ic = -0.15
@@ -6789,7 +6803,6 @@ leader_traits = {
 		production_speed_naval_base_factor = 0.15
 		production_speed_rocket_site_factor = 0.15
 		production_speed_radar_station_factor = 0.15
-		production_speed_nuclear_reactor_factor = 0.15
 
 		ai_will_do = {
 			factor = 0.2
@@ -6953,7 +6966,6 @@ leader_traits = {
 		production_speed_naval_base_factor = 0.05
 		production_speed_rocket_site_factor = 0.05
 		production_speed_radar_station_factor = 0.05
-		production_speed_nuclear_reactor_factor = 0.05
 
 		ai_will_do = {
 			factor = 0.2
@@ -10718,7 +10730,64 @@ leader_traits = {
 		}
 	}
 
-	### BELGIAN CHARACTERS ###
+
+		AST_joker_australia = { 
+		sprite = 10
+		random = no
+		industrial_capacity_factory = 0.045
+		production_speed_arms_factory_factor = 0.045
+		production_speed_industrial_complex_factor = 0.045
+		production_speed_dockyard_factor = 0.075
+		war_support_factor = 0.05
+		industrial_capacity_dockyard = 0.05
+
+	}	
+
+		ast_joseph_cook_trait = { 
+		sprite = 10
+		random = no
+		industrial_capacity_dockyard = 0.025
+		production_speed_dockyard_factor = 0.025
+		production_speed_infrastructure_factor = 0.075
+		consumer_goods_factor = -0.125
+
+	}
+
+		ast_george_pearce_trait = { 
+		sprite = 10
+		random = no
+		production_speed_arms_factory_factor = 0.065
+		war_support_factor = 0.075
+		political_power_gain = 0.25
+		conversion_cost_civ_to_mil_factor = -0.25
+		production_speed_bunker_factor = 0.15
+		production_speed_coastal_bunker_factor = 0.15
+
+	}
+
+		ast_denison_miller_trait = { 
+		sprite = 10
+		random = no
+		war_support_factor = 0.025
+		production_speed_arms_factory_factor = 0.025
+		production_speed_industrial_complex_factor = 0.1
+		industrial_capacity_dockyard = 0.05
+		consumer_goods_factor = -0.075
+	}
+
+		ast_henry_bournes_higgins_trait = { 
+		sprite = 10
+		random = no
+		resource_trade_cost_bonus_per_factory = 1
+		political_advisor_cost_factor = -0.15
+		political_power_factor = 0.1
+		army_advisor_cost_factor = -0.15
+		navy_advisor_cost_factor = -0.15
+		command_power_gain_mult = 0.15
+		experience_gain_army_factor = 0.15
+		experience_gain_navy_factor = 0.15
+		party_popularity_stability_factor = 0.15
+	}
 
 	### Belgian Country Leaders ###
 
@@ -10902,7 +10971,6 @@ leader_traits = {
 		sp_tag_nuclear_warfare_speed_factor = 0.1
 		sp_tag_nuclear_power_speed_factor = 0.15
 		local_resources_factor = 0.1
-		production_speed_nuclear_reactor_factor = 0.1
 	}
 
 	#Marchienne
@@ -12006,13 +12074,13 @@ leader_traits = {
 		
 		experience_gain_army = @chief_experience_gain_low
 
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12026,13 +12094,13 @@ leader_traits = {
 		
 		experience_gain_army = @chief_experience_gain_low
 
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12042,13 +12110,13 @@ leader_traits = {
 		army_infantry_attack_factor = 0.075
 		army_infantry_defence_factor = 0.1
 
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12058,13 +12126,13 @@ leader_traits = {
 		army_org_factor = 0.05
 		army_morale_factor = 0.05
 		army_org_regain = 0.025
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12073,13 +12141,13 @@ leader_traits = {
 		sprite = 5
 		army_artillery_attack_factor = 0.025
 		army_artillery_defence_factor = 0.05
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12089,13 +12157,13 @@ leader_traits = {
 		modifier_army_sub_unit_militia_max_org_factor = 0.025
 		modifier_army_sub_unit_militia_attack_factor = 0.05
 		modifier_army_sub_unit_militia_defence_factor = 0.05
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12103,13 +12171,13 @@ leader_traits = {
 		army_SER_mihailo_zivkovic = {
 		sprite = 5
 		land_doctrine_cost_factor = -0.15
-		command_cap_increase = @tier1
+		command_cap_increase = 20
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1
+				command_power < 20
 			}
 		}
 	}
@@ -12291,6 +12359,53 @@ leader_traits = {
 		experience_gain_army = 0.2
 
 	}
+		ast_birdwood_trait = {
+		random = no
+		sprite = 7
+		experience_gain_army = 0.25
+		army_attack_factor = 0.075
+		naval_invasion_prep_speed = 0.1
+		amphibious_invasion = 0.1
+	}
+		ast_father_trait = {
+		random = no
+		sprite = 7
+	naval_speed_factor = 0.10
+	navy_anti_air_attack_factor = 0.10
+	navy_max_range_factor = 0.2
+	navy_capital_ship_attack_factor = 0.125
+	navy_capital_ship_defence_factor = 0.125
+	navy_screen_attack_factor = 0.125
+	navy_screen_defence_factor = 0.125
+	experience_gain_navy = 0.2
+	}
+		ast_henry_george_trait = {
+		random = no
+		sprite = 7
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.075
+		army_breakthrough_against_minor_factor = 0.05
+		army_breakthrough_against_major_factor = 0.05
+	}
+		ast_william_bridges = {
+		random = no
+		sprite = 7
+	}
+		ast_john_gellibrand_trait = {
+		random = no
+		sprite = 7
+		naval_invasion_prep_speed = 0.15
+		amphibious_invasion = 0.075
+		experience_loss_factor = -0.075
+	}
+		ast_throsby_bridges_trait = {
+		random = no
+		sprite = 7
+		army_org_factor = 0.025
+		army_org_regain = 0.075
+		planning_speed = 0.05
+		max_planning = 0.025
+	}
 
 		army_BUL_stefan_toshev = {
 		random = no
@@ -12395,9 +12510,6 @@ leader_traits = {
 			build_cost_ic = -0.075
 			instant = yes
 		}
-	}
-
-		equipment_bonus = {
 		support_equipment = {
 		build_cost_ic = -0.075
 		instant = yes

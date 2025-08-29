@@ -168,30 +168,6 @@ SOV_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-SOV_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { SOV }
-
-	can_use = {
-		NOT = { 
-			has_government = fascism
-			has_government = neutrality
-		}
-	}
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Avianosets %d"	
-
-	unique = {
-			# Fictional names start here
-			"Moskva" "Leningrad" "Oryol" "Kiyev" "Minsk" "Novorossysk" "Kharkov" "Baku" "Riga" "Ulyanovsk" "Tblisi" "Admiral Gorshkov" "Leonid Brezhnev" "Admiral Kuznetsov" 
-	}
-}
-
 ### SUBMARINES ###
 SOV_SS_SHCHUKA = {
 	name = NAME_THEME_HISTORICAL_SHCHUKAS

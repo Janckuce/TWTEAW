@@ -390,14 +390,13 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { hill_fighter mountaineer commando engineer trickster ranger }
+				traits = { hill_fighter commando trickster ranger }
 				skill = 2
 				attack_skill = 3
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 2
 			}
-			name =  AUH_ignaz_trollmann
 			portraits = { #add new art here
 				army = {
 					large = "GFX_portrait_AUH_ignaz_trollmann"
@@ -433,11 +432,6 @@ characters = {
 		}
 	}
 
-    	spriteType = {
-		name = "GFX_portrait_AUH_ignaz_trollmann"
-		texturefile = "gfx/leaders/AUH/trooll_mann_done.png"
-	}
-
     auh_svetozar_bojna = {
 		instance = {
 			allowed = {
@@ -459,7 +453,7 @@ characters = {
 			}
 
 			corps_commander = {
-				traits = { infantry_leader organizer mountaineer }
+				traits = { infantry_leader organizer }
 				skill = 2
 				attack_skill = 2
 				defense_skill = 4
@@ -480,7 +474,7 @@ characters = {
 			name = auh_svetozar_bojna
 			portraits = { 
 				army = {
-					small = "GFX_idea_generic_army_europe_1"
+					large = "GFX_idea_generic_army_europe_1"
 				}
 			}
 		}
@@ -491,7 +485,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_arz_straussenburg"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -519,7 +512,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_viktor_krasnik"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -547,7 +539,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_erzherzog_franz_habsburg"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -621,7 +612,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_claudius_czibulka"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -649,7 +639,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_georgy_reny"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -677,11 +666,10 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_teraszszky"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
-			traits = { engineeer engineer_officer swamp_fox }
+			traits = { engineer_officer swamp_fox }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 3
@@ -705,7 +693,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_pflanzer_baltin"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -733,7 +720,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_karl_huyn"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -762,7 +748,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_kovesz_koveshaza"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -790,7 +775,6 @@ characters = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_AUH_rudolf_brudermann"
-				small = "GFX_portrait_AUS_eduard_barger_small"
 			}
 		}
 		corps_commander = {
@@ -865,7 +849,6 @@ characters = {
 		name = AUH_anton_haus
 		portraits = {
 			army = {
-				large = GFX_portrait_auh_anton_haus
 				small = GFX_advisor_auh_anton_haus
 			}
 			army = {
@@ -1032,7 +1015,6 @@ characters = {
     name = "Leopold von Hauer"
             portraits = {
 			civilian = {
-				large = "GFX_portrait_auh_leopold_hauer"
                 small = "GFX_advisor_auh_leopold_hauer"
 		    }
 		}
@@ -1045,7 +1027,7 @@ characters = {
 
         allowed = {
             OR = {
-                always = YES
+                always = yes
             }
         }
 
@@ -1088,9 +1070,6 @@ characters = {
                 small = "GFX_advisor_AUH_stefan_burian"
 		    }
 		}
-            visible = {
-			date < 1922.1.1
-			}
     advisor = {
         slot = political_advisor
         cost = 150
@@ -1117,9 +1096,6 @@ AUH_leon_blinski = {
                 small = "GFX_advisor_AUH_leon_blinski"
 		    }
 		}
-        visible = {
-			date < 1923.1.1
-			}
     advisor = {
         slot = political_advisor
         cost = 150
@@ -1145,9 +1121,6 @@ AUH_friedrich_von_georgi = {
 			civilian = {
                 small = "GFX_advisor_AUH_friedrich_von_georgi"
 		    }
-		}
-        visible = {
-			date < 1926.1.1
 		}
     advisor = {
         slot = political_advisor
@@ -1175,13 +1148,9 @@ AUH_alois_lexa_von_aehrenthal = {
                 small = "GFX_advisor_AUH_alois_lexa_von_aehrenthal"
 		    }
 		}
-            visible = {
-			date < 1912.2.17
-		}
     advisor = {
         slot = political_advisor
         cost = 150
-        expire = "1922.6.1"
         traits = { kuk_forgein_affairs }
         can_be_fired = yes
         idea_token = AUH_alois_lexa_von_aehrenthal
@@ -1231,15 +1200,11 @@ AUH_otto_wagner = {
                 small = "GFX_advisor_AUH_otto_wagner"
 		    }
 		}
-                    visible = {
-			date < 1918.2.17
-		}
     advisor = {
         slot = political_advisor
         cost = 150
         traits = { kuk_rebuilder }
         can_be_fired = yes
-		expire = "1918.1.1"
         idea_token = AUH_otto_wagner
 
         allowed = {
@@ -1260,9 +1225,6 @@ AUH_karl_wittgenstein = {
 			civilian = {
                 small = "GFX_AUS_wittgenstein_frame"
 		    }
-		}
-            visible = {
-			date < 1913.1.20
 		}
     advisor = {
         slot = political_advisor
@@ -1316,7 +1278,6 @@ AUH_adolf_loos = {
                 small = "GFX_advisor_AUH_adolf_loos"
 		    }
 		}
-    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_modern_achitect }
@@ -1342,15 +1303,10 @@ AUH_viktor_adler = {
                 small = "GFX_advisor_AUH_viktor_Adler"
 		    }
 		}
-            visible = {
-			date < 1918.5.5
-		}
-    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_prominent_austromarxist }
         can_be_fired = yes
-		expire = "1919.1.1"
         idea_token = AUH_viktor_adler
 
         allowed = {
@@ -1372,16 +1328,11 @@ AUH_eugen_von_bohm_bawerk = {
                 small = "GFX_advisor_AUH_eduard_bohm"
 		    }
 		}
-            visible = {
-			date < 1914.8.1
-		}
-    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_austrian_school_of_economics }
         can_be_fired = yes
-		expire = "1914.11.11"
-GFX_advisor_AUH_eduard_bohm
+        idea_token = AUH_eugen_von_bohm_bawerk
         allowed = {
             OR = {
                 always = yes
@@ -1401,12 +1352,10 @@ AUH_otto_bauer = {
                 small = "GFX_advisor_AUH_otto_bauer"
 		    }
 		}
-    cost = 150
     advisor = {
         slot = political_advisor
         traits = { kuk_austromarxist_economist }
         can_be_fired = yes
-		expire = "1938.1.1"
         idea_token = AUH_viktor_adler
 
         allowed = {

@@ -83,22 +83,6 @@ EGY_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-EGY_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { EGY }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARS "
-	fallback_name = "Aircraft Carrier %d"	
-
-	unique = {
-	}
-}
-
 ### SUBMARINES ###
 EGY_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

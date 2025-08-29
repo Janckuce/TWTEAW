@@ -1,0 +1,33 @@
+add_namespace = ww1_belgium
+
+country_event = {
+	id = ww1_belgium.1
+	title = ww1_belgium.1.t
+	desc = ww1_belgium_desc.1
+	picture = GFX_aus_elections
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BEL
+		has_completed_focus = BEL_The_King's_Nation
+	}
+
+	option = {
+		name = ww1_belgium.1.a
+		complete_national_focus = BEL_Commune
+		trigger = {
+			not = {
+				has_completed_focus = BEL_Loyal_To_The_King
+			}
+		}
+	}
+
+	option = {
+		name = ww1_belgium.1.b
+		add_timed_idea = {
+			idea = BEL_Worker's_Strike
+			days = 120
+		}
+	}
+}

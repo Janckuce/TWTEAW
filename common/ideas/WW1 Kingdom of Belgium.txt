@@ -1,0 +1,294 @@
+ideas = {
+
+	industrial_concern = {
+
+		BEL_societe_generale_de_belgique_industrial = {
+
+			picture = BEL_societe_generale_de_belgique
+			
+			allowed = {
+				original_tag = BEL
+			}
+
+			available = { 
+			}
+
+			cost = 150
+	
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+
+			traits = { banking_magnate_trait } 
+		}
+
+		BEL_distrigaz = {
+
+			picture = BEL_distrigaz
+			
+			allowed = {
+				original_tag = BEL
+			}
+
+			cost = 150
+	
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			traits = { energy_company_trait } 
+			
+		}
+
+		BEL_colonial_maritime_company = { 
+
+			picture = COG_colonial_maritime_company
+
+			allowed = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+
+			available = {
+			}
+
+			visible = {
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		
+			traits = { merchant_marine_manufacturer } 
+
+			modifier = {
+				
+			}
+		}
+	}
+
+	country = {
+
+
+		BEL_King_Status = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+			picture = bel_king_spirit
+		}
+			BEL_King_Status_fixed = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		BEL_King_Status1 = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_org_regain = 0.05
+			}
+		}
+		BEL_King_Status2 = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_org_regain = 0.05
+				army_morale_factor = 0.08
+				army_org_factor = 0.08
+				army_defence_factor = 0.08
+			}
+		}
+		BEL_King_Status3 = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				army_org_regain = 0.05
+				army_morale_factor = 0.08
+				army_org_factor = 0.08
+				army_defence_factor = 0.08
+			}
+		}
+		BEL_King_Status4 = {
+			picture = bel_king_spirit
+			modifier = {
+				stability_factor = 0.3
+				war_support_factor = 0.3
+				army_org_regain = 0.05
+				army_morale_factor = 0.08
+				army_org_factor = 0.08
+				army_defence_factor = 0.08
+				supply_consumption_factor = -0.1
+				dig_in_speed_factor = 0.05
+				recon_factor_while_entrenched = 0.08
+			}
+		}
+		BEL_Neutral_State = {
+			picture = BEL_defensive_neutrality
+			modifier = {
+				defensive_war_stability_factor = 0.2
+				lend_lease_tension = 1
+				request_lease_tension = 1
+				surrender_limit = 1
+				ai_focus_defense_factor = 1
+				production_speed_bunker_factor = -0.8
+				production_speed_coastal_bunker_factor = -0.8
+			}
+		}
+		BEL_Divided_Nation = {
+			picture = BEL_language_barriers
+			modifier = {
+				army_org_factor = -0.08
+				coordination_bonus = -0.08
+				army_speed_factor = -0.1
+				command_power_gain = -0.01
+				conscription_factor = -0.03
+				training_time_army_factor = 0.3
+				experience_gain_army_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+		BEL_Limited_Naval_Force = {
+			picture = jap_interservice_rivalry_navy_strengthened
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_dockyard = -0.5
+				production_speed_dockyard_factor = -0.5
+			}
+		}
+		BEL_Outrage_Over_Congolese_Treatment = {
+			picture = COG_force_publique
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		BEL_Military_Investment = {
+			picture = SOV_third_five_year_plan_military
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		BEL_French_Primacy = {
+			picture = BEL_language_barriers_fas_fr
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				experience_gain_army_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		BEL_Dutch_Primacy = {
+			picture = BEL_language_barriers_fas_nl
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = 0.15
+				compliance_growth = 0.1
+				required_garrison_factor = -0.15
+			}
+		}
+		BEL_Armoured_Car_Supremacy = {
+			picture = BEL_minerva_imperia_motorized_organization
+			equipment_bonus = {
+				armored_car_equipment = {
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		BEL_Socialist_Power = {
+			picture = socialist_science_focus
+			modifier = {
+				communism_drift = 0.2
+				industry_repair_factor = 0.05
+			}
+		}
+		BEL_Socialist_Power1 = {
+			picture = socialist_science_focus
+			modifier = {
+				communism_drift = 0.3
+				industry_repair_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		BEL_Socialist_Power2 = {
+			picture = socialist_science_focus
+			modifier = {
+				communism_drift = 0.3
+				industry_repair_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		BEL_Worker's_Strike = {
+			picture = FIN_socialist_welfare
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+		BEL_The_King = {
+			picture = bel_king_spirit
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+		}
+		BEL_The_People = {
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+		}
+		BEL_Science_Power = {
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+		BEL_Science_Power1 = {
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		BEL_Science_Power2 = {
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.075
+			}
+		}
+		BEL_Support_Idea = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+		BEL_Support_Idea1 = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+		BEL_Support_Idea2 = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+		BEL_Sabre_From_France = {
+			modifier = {
+				org_loss_at_low_org_factor = -0.15
+				war_support_factor = 0.1
+			}
+		}
+	}
+}

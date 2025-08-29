@@ -85,23 +85,6 @@ BEL_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-BEL_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { BEL }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "BNS "
-	fallback_name = "Porte-Avions %d"	
-
-	unique = {
-		"Graaf van Vlaanderen" "Hainaut" "Robrecht de Béthune" 	"Aster" "Bellis" "Crocus" "Lobelia" "Narcis" "Primula" 
-	}
-}
-
 ### SUBMARINES ###
 BEL_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

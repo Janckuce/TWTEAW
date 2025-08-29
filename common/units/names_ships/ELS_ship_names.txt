@@ -85,23 +85,6 @@ ELS_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-ELS_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { ELS }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARS "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República de El Salvador" "San Salvador" 
-	}
-}
-
 ### SUBMARINES ###
 ELS_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

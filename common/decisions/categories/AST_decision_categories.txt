@@ -1,0 +1,13 @@
+AST_Parliament_Category = {
+	icon = military_operation
+
+	scripted_gui = Parliament_Scripted_Gui
+
+	priority = 100
+	
+	visible_when_empty = yes
+
+	allowed = {
+		tag = AST
+	}
+}

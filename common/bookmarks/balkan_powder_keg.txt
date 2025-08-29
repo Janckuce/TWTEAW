@@ -10,6 +10,16 @@ bookmarks = {
 		FRA = {
 			history = FRA_balkan_powder_keg_desc
 			ideology = democratic
+			focuses = {
+				FRA_Republique
+				FRA_Commune
+				FRA_Nation_Francaise
+			}
+			ideas = {
+				FRA_Sour_Loser
+				FRA_Fragmented_Government
+				FRA_Halted_Industrial_Power
+			}
 		}
 		TUR = {
 			history = TUR_balkan_powder_keg_desc
@@ -75,8 +85,13 @@ bookmarks = {
 		RUS = {
 			history = RUS_balkan_powder_keg_desc
 			ideology = neutrality
+			ideas = {
+				RUS_Agrarian_Industry
+				RUS_Lack_Of_Scientists
+				RUS_Dated_Warfare
+			}
 		}
-
+		
 		"---"={
 			history = "OTHER_balkan_powder_keg_desc"
 		}
@@ -90,6 +105,60 @@ bookmarks = {
 			SER_serbian_general_staff_focus
 			SER_belgrade_fort_ring
 			SER_king_on_the_political_frontline
+			}
+		}
+		BEL = {
+			minor = yes
+			history = BEL_balkan_powder_keg_desc
+			ideology = neutrality
+			ideas = {
+				BEL_King_Status_fixed
+				BEL_Neutral_State
+				BEL_Divided_Nation
+			}
+				focuses = {
+				BEL_The_King's_Nation
+				BEL_Commune
+				BEL_Armoured_Car_Race
+			}
+		}
+		AST = {
+			minor = yes
+			history = AST_balkan_powder_keg_desc
+			ideology = democratic
+				ideas = {
+				AST_white_policy
+				AST_royal_navy
+			}
+				focuses = {
+				AST_Royal_Australian_Marines
+				AST_Address_The_White_Policy
+				AST_Status_Of_Nation
+			}
+		}
+		YEM = {
+			minor = yes
+			history = YEM_balkan_powder_keg_desc
+			ideology = neutrality
+		}
+		POR = {
+			minor = yes
+			history = POR_balkan_powder_keg_desc
+			ideology = democratic
+			ideas = {
+				POR_Disaster_Of_1807
+				POR_Inadequate_African_Territories
+				POR_Declining_Economy
+			}
+		}
+		SAF = {
+			minor = yes
+			history = SAF_balkan_powder_keg_desc
+			ideology = democratic
+			ideas = {
+				SAF_Maritz_Disruption
+				SAF_Afrikaner_British_Division
+				SAF_Inefficient_Economy
 			}
 		}
 		"USA"={

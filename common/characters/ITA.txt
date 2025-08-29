@@ -252,7 +252,6 @@ characters={
 	ITA_Guy1 = {
 		portraits = {
 			army = {
-				small = "GFX_ITA_GUY1_FRAME"
 			}
 		}
 		
@@ -275,7 +274,6 @@ characters={
 	ITA_Guy2 = {
 		portraits = {
 			army = {
-				small = "GFX_ITA_Guy2_frame"
 			}
 		}
 		
@@ -298,7 +296,6 @@ characters={
 	ITA_Guy3 = {
 		portraits = {
 			army = {
-				small = "GFX_ITA_Guy3_frame"
 			}
 		}
 		
@@ -321,18 +318,16 @@ characters={
 	ITA_Guy4 = {
 		portraits = {
 			army = {
-				small = "GFX_ITA_Guy4_frame"
 			}
 		}
 		
 		advisor={
 			slot = political_advisor
-			idea_token = ITA_Guy3
+			idea_token = ITA_Guy4
 			allowed = {
 				original_tag = ITA
 			}
 			available = {
-				has_completed_focus = ITA_hire_captain_of_industry
 			}
 			traits = {
 				captain_of_industry #10% Civ Construction Speed

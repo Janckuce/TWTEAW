@@ -149,10 +149,10 @@ ideas = {
             picture = generic_agrarian_society
 
 			modifier = {
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_infrastructure_factor = -0.15
-				research_speed_factor = -0.15
-				global_building_slots_factor = -0.50
+				production_speed_industrial_complex_factor = -0.275
+				production_speed_infrastructure_factor = -0.275
+				research_speed_factor = -0.3
+				global_building_slots_factor = -0.70
 			}
 		}
 		
@@ -435,6 +435,295 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.2
 				stability_factor = -0.05
+			}
+		}
+
+		#	Reworked Ideas
+
+		RUS_Tsars_Organised_Plan = {
+			modifier = {
+				planning_speed = 0.01
+			}
+		}
+		RUS_Tsars_Organised_Plan1 = {
+			modifier = {
+				planning_speed = 0.03
+			}
+		}
+		RUS_Tsars_Organised_Plan2 = {
+			modifier = {
+				planning_speed = 0.05
+			}
+		}
+		RUS_Tsars_Organised_Plan3 = {
+			modifier = {
+				planning_speed = 0.08
+			}
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		RUS_Tsars_Assault_Plan = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.01
+			}
+		}
+		RUS_Tsars_Assault_Plan1 = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.03
+			}
+		}
+		RUS_Tsars_Assault_Plan2 = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.05
+			}
+		}
+		RUS_Tsars_Assault_Plan3 = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.08
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		RUS_Agrarian_Industry = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_infrastructure_factor = -0.3
+				global_building_slots_factor = -0.8
+			}
+		}
+		RUS_Agrarian_Industry1 = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_infrastructure_factor = -0.25
+				global_building_slots_factor = -0.6
+			}
+		}
+		RUS_Agrarian_Industry2 = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_infrastructure_factor = -0.2
+				global_building_slots_factor = -0.5
+			}
+		}
+		RUS_Agrarian_Industry3 = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_infrastructure_factor = -0.15
+				global_building_slots_factor = -0.4
+			}
+		}
+		RUS_Agrarian_Industry4 = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+				global_building_slots_factor = -0.3
+			}
+		}
+		RUS_Agrarian_Industry5 = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_infrastructure_factor = -0.05
+				global_building_slots_factor = -0.2
+			}
+		}
+		RUS_Lack_Of_Scientists = {
+			modifier = {
+				research_speed_factor = -0.3
+			}
+		}
+		RUS_Lack_Of_Scientists1 = {
+			modifier = {
+				research_speed_factor = -0.25
+			}
+		}
+		RUS_Lack_Of_Scientists2 = {
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+		RUS_Lack_Of_Scientists3 = {
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		RUS_Dated_Warfare = {
+			modifier = {
+				training_time_army_factor = 0.5
+				army_attack_factor = -0.6
+				army_defence_factor = -0.6
+				army_org_factor = -0.35
+			}
+		}
+		RUS_Dated_Warfare1 = {
+			modifier = {
+				training_time_army_factor = 0.4
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_org_factor = -0.25
+			}
+		}
+		RUS_Dated_Warfare2 = {
+			modifier = {
+				training_time_army_factor = 0.3
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+				army_org_factor = -0.15
+			}
+		}
+		RUS_Dated_Warfare3 = {
+			modifier = {
+				training_time_army_factor = 0.3
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+			}
+		}
+		RUS_Dated_Warfare4 = {
+			modifier = {
+				training_time_army_factor = 0.2
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
+		RUS_Dated_Warfare5 = {
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		RUS_Modern_Warfare = {
+			modifier = {
+				training_time_army_factor = 0.1
+				army_org_factor = 0.1
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				breakthrough_factor = 0.1
+				command_power_gain = 0.1
+				conscription_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
+				acclimatization_hot_climate_gain_factor = 0.1
+				supply_consumption_factor = -0.1
+				air_superiority_bonus_in_combat = 0.1
+				army_attack_factor = 0.025
+				army_defence_factor = 0.05
+				army_org_regain = 0.075
+				army_morale_factor = 0.05
+			}
+		}
+		RUS_Cotton = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		RUS_Sugar_Beets = {
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+		RUS_Soybeans = {
+			modifier = {
+				industrial_capacity_factory = 0.25
+			}
+		}
+		RUS_Tobacco = {
+			modifier = {
+				industrial_capacity_factory = 0.3
+			}
+		}
+		RUS_Land_Reforms = {
+			modifier = {
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_infrastructure_factor = 0.3
+				production_speed_arms_factory_factor = 0.3
+				global_building_slots_factor = 0.3
+			}
+		}
+		RUS_Brusilov_Offensive = {
+			modifier = {
+				army_infantry_attack_factor = 0.05
+			}
+		}
+		RUS_Mobilise_The_Nation = {
+			modifier = {
+				training_time_army_factor = -0.1
 			}
 		}
 	}

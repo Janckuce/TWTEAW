@@ -21,6 +21,9 @@ recruit_character = RUS_vladimir_sakharov
 recruit_character = RUS_boris_savinkov
 recruit_character = RUS_aleksei_putilov
 recruit_character = RUS_vladimir_sukhomlinov
+recruit_character = RUS_josif_stalin
+recruit_character = RUS_viktor_chernov
+recruit_character = RUS_irakli_tsereteli
 
 starting_train_buffer = 3.0
 
@@ -53,10 +56,9 @@ set_technology = {
 	}
 
 add_ideas = {
-	RUS_agrarian_society
-	RUS_war_of_1905
-	RUS_entente
-	RUS_communist_threat
+	RUS_Agrarian_Industry
+	RUS_Lack_Of_Scientists
+	RUS_Dated_Warfare
 }
 
 ##### Party Popularity, Stability, War Support and other #####
@@ -75,7 +77,7 @@ set_popularities = {
 
 set_convoys = 300
 
-set_research_slots = 2
+set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.1
 

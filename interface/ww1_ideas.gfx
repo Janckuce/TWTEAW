@@ -22,13 +22,65 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_advisor_ast_comittee"
+		texturefile = "gfx/interface/ideas/ast_military_people.png"
+	}
+
+		spriteType = {
 		name = "GFX_idea_aus_bojna_spirit"
 		texturefile = "gfx/interface/ideas/aus_bojna_spirit.png"
 	}
 
 		spriteType = {
+		name = "GFX_idea_ast_litgow_invest"
+		texturefile = "gfx/interface/ideas/idea_litgow.png"
+	}
+
+		spriteType = {
+		name = "GFX_idea_saf_afrikaner"
+		texturefile = "gfx/interface/ideas/saf_afrikaner.png"
+	}
+
+		spriteType = {
+		name = "GFX_idea_saf_army"
+		texturefile = "gfx/interface/ideas/saf_army.png"
+	}
+
+		spriteType = {
+		name = "GFX_idea_saf_decree"
+		texturefile = "gfx/interface/ideas/saf_decreee.png"
+	}
+
+		spriteType = {
+		name = "GFX_idea_ast_cement"
+		texturefile = "gfx/interface/ideas/ast_cement.png"
+	}
+		spriteType = {
+		name = "GFX_idea_ast_naval_spirit"
+		texturefile = "gfx/interface/ideas/ast_navy_spirit.png"
+	}
+
+		spriteType = {
+		name = "GFX_idea_ast_liberal_party"
+		texturefile = "gfx/interface/ideas/ast_liberal_party.png"
+	}
+		spriteType = {
+		name = "GFX_idea_ast_extra_liberties"
+		texturefile = "gfx/interface/ideas/ast_liberal_party.png"
+	}
+		spriteType = {
+		name = "GFX_idea_ast_whites"
+		texturefile = "gfx/interface/ideas/ast_whites.png"
+	}
+
+		spriteType = {
 		name = "GFX_idea_ger_kreuzzeitung"
 		texturefile = "gfx/interface/ideas/ger_kreuzzeitnung.png"
+	}
+
+		spriteType = {
+		name = "GFX_idea_bel_king_spirit"
+		texturefile = "gfx/interface/ideas/bel_king_spirit.png"
 	}
 
 		spriteType = {
@@ -102,12 +154,6 @@ spriteTypes = {
 		name = "GFX_idea_aus_huns_stronk"
 		texturefile = "gfx/interface/bop/aus_hungary_stronk.png"
 	}
-
-		spriteType = {
-		name = "GFX_idea_hun_sun_shining_over_us"
-		texturefile = "gfx/interface/ideas/sun_shining_over_us.dds"
-	}
-
 		spriteType = {
 		name = "GFX_idea_bad_funding_army2"
 		texturefile = "gfx/interface/ideas/bad_funding_army2.png"
@@ -127,12 +173,6 @@ spriteTypes = {
 		name = "GFX_idea_kukkriegsmarine"
 		texturefile = "gfx/interface/ideas/kukkriegsmarine.png"
 	}
-
-		spriteType = {
-		name = "GFX_idea_auh_passive_youth"
-		texturefile = "gfx/interface/ideas/passive_resistance_youth.dds"
-	}
-
 		spriteType = {
 		name = "GFX_idea_auh_luftfahrtruppen"
 		texturefile = "gfx/interface/ideas/kukluftfahrtruppen.png"
@@ -157,12 +197,6 @@ spriteTypes = {
 		name = "GFX_idea_hun_economy_wasteland"
 		texturefile = "gfx/interface/ideas/economy_wasteland.dds"
 	}
-
-		spriteType = {
-		name = "GFX_idea_bos_fez_surrounded_by_cross"
-		texturefile = "gfx/interface/ideas/fez_surrounded_by_cros.dds"
-	}
-
 	spriteType = {
 		name = "GFX_advisor_alexander_von_krobatin"
 		texturefile = "gfx/interface/ideas/alexander_krobatin.png"
@@ -232,22 +266,10 @@ spriteTypes = {
 		name = "GFX_advisor_auh_leopold_hauer"
 		texturefile = "gfx/interface/ideas/hauer.png"
 	}
-
-		spriteType = {
-		name = "GFX_advisor_auh_conrad_hotzendorff"
-		texturefile = "gfx/interface/ideashotzendorf.png"
-	}
-
 		spriteType = {
 		name = "GFX_advisor_auh_friedrich_tschen"
 		texturefile = "gfx/interface/ideas/friedrich_tschen.png"
 	}
-
-		spriteType = {
-		name = "GFX_advisor_auh_steinstatten"
-		texturefile = "gfx/interface/ideassteinstatten.png"
-	}
-
 		spriteType = {
 		name = "GFX_advisor_auh_svetozar_bojna"
 		texturefile = "gfx/interface/ideas/bojna.png"
@@ -281,12 +303,6 @@ spriteTypes = {
 		name = "GFX_advisor_AUH_leopold_berchtold"
 		texturefile = "gfx/interface/ideas/leopold_berchtold.png"
 	}
-
-	spriteType = {
-		name = "GFX_advisor_AUH_wittgenstein"
-		texturefile = "gfx/interface/ideaswittgenstein.png"
-	}
-
 	spriteType = {
 		name = "GFX_advisor_AUH_adolf_loos"
 		texturefile = "gfx/interface/ideas/aold_loos.png"
@@ -311,12 +327,6 @@ spriteTypes = {
 		name = "GFX_advisor_AUH_otto_wagner"
 		texturefile = "gfx/interface/ideas/otto_wagner.png"
 	}
-
-	SpriteType = {
-		name = "GFX_idea_AUH_primeminister_werkele"
-		texturefile = "gfx/interface/ideas/AUH_primeminister_werkele.png"
-	}
-
 	SpriteType = {
 		name = "GFX_idea_empire_of_old_habsburg"
 		texturefile = "gfx/interface/ideas/empire_of_habsburg_old.dds"
@@ -326,53 +336,6 @@ spriteTypes = {
 		name = "GFX_idea_ghost_of_the_past"
 		texturefile = "gfx/interface/ideas/ghost_of_the_past.png"
 	}
-
-		spriteType = {
-		name = "GFX_advisor_TUR_ali_kemal"
-		texturefile = "gfx/characters/tur/tur_ali_kemal.png"
-	}
-		spriteType = {
-		name = "GFX_advisor_tur_mehmed_adil"
-		texturefile = "gfx/characters/tur/tur_mehmed_adil.png"
-	}
-		spriteType = {
-		name = "GFX_advisor_tur_mehmed_said"
-		texturefile = "gfx/characters/tur/tur_mehmed_said.png"
-	}
-		spriteType = {
-		name = "GFX_advisor_tur_nazim_bey"
-		texturefile = "gfx/characters/tur/tur_nazim_bey.png"
-	}
-
-		spriteType = {
-		name = "GFX_advisor_tur_yazzif"
-		texturefile = "gfx/characters/tur/tur_yizzrf.png"
-	}
-
-		spriteType = {
-		name = "GFX_advisor_tur_ahmed_muhtar"
-		texturefile = "gfx/characters/tur/tur_ahmed_muhtar.png"
-	}
-		spriteType = {
-		name = "GFX_advisor_tur_talaat"
-		texturefile = "gfx/characters/tur/tur_talaat.png"
-	}
-
-		spriteType = {
-		name = "GFX_advisor_tur_halil_mentese"
-		texturefile = "gfx/characters/tur/tur_halil_mentese.png"
-	}
-
-		spriteType = {
-		name = "GFX_advisor_tur_gabriel_noradoungian"
-		texturefile = "gfx/characters/tur/tur_gabriel_noradoungian.png"
-	}
-
-		spriteType = {
-		name = "GFX_advisor_tur_emanuel_carasso"
-		texturefile = "gfx/characters/tur/tur_emanuel_carasso.png"
-	}
-
 		spriteType = {
 		name = "GFX_idea_apikoglu"
 		texturefile = "gfx/interface/ideas/tur_meat.png"
@@ -387,12 +350,6 @@ spriteTypes = {
 		name = "GFX_idea_manfred_weiss"
 		texturefile = "gfx/interface/ideas/idea_manfred_weiss.dds"
 	}
-
-	SpriteType = {
-		name = "GFX_idea_Richard_von_bienerth_schmerling"
-		texturefile = "gfx/interface/ideas/first_primeminister.png"
-	}
-	
 	spriteType = {
 		name = "GFX_idea_ENG_trade_with_us"
 		textureFile = "gfx/interface/ideas/ENG_trade_with_us.png"

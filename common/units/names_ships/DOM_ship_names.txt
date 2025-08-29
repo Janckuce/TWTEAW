@@ -85,23 +85,6 @@ DOM_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-DOM_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { DOM }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "ARD "
-	fallback_name = "Portaaviones %d"	
-
-	unique = {
-		"República Dominicana" "Isla Catalina" "Yaque del Norte" "Lago Enriquillo" 
-	}
-}
-
 ### SUBMARINES ###
 DOM_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

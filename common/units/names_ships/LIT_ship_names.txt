@@ -80,22 +80,6 @@ LIT_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-LIT_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { LIT }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	fallback_name = "Lektuvnesio %d"	
-
-	unique = {
-		"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" "Dzkas" "Slis" "Skalvis" 
-	}
-}
-
 ### SUBMARINES ###
 LIT_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

@@ -1,0 +1,15 @@
+SAF_Maritz_Category = {
+	SAF_Maritz_Rebellion = {
+		days_mission_timeout = 1354
+		is_good = no
+		allowed = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		timeout_effect = {
+		country_event = { id = ww1_south_africa.4 }
+    	}
+	}
+}

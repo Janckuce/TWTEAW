@@ -93,23 +93,6 @@ BRA_BC_HISTORICAL = {
 	}
 }
 
-### AIRCRAFT CARRIER NAMES ###
-BRA_CV_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_CARRIERS
-
-	for_countries = { BRA }
-
-	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "NRB "
-	fallback_name = "Porta-Aviões %d"	
-
-	unique = {
-		"Santa Catarina" "Espirito Santo" "Rio de Janeiro" "Maranhão" "Goiás" "Rio Grande do Sul" "Pará" "Alagoas" "Pernambuco" "Roraima" "Tocantins" 
-	}
-}
-
 ### SUBMARINES ###
 BRA_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES

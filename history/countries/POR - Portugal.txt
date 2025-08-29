@@ -1,5 +1,7 @@
 ﻿capital = 112
 
+set_oob = "POR_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -13,10 +15,13 @@ set_technology = {
 	#Support Companies
 	tech_support = 1
 	tech_engineers = 1
-	basic_train = 1
 	
 	#Industry
 	ww1_fuel_storage = 1
+}
+
+set_technology = {
+	ww1_destroyer_1 = 1
 }
 
 recruit_character = POR_teofilo_braga
@@ -38,13 +43,19 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 90
-	neutrality = 10
+	democratic = 60
+	neutrality = 40
+}
+
+add_ideas = {
+	POR_Disaster_Of_1807
+	POR_Inadequate_African_Territories
+	POR_Declining_Economy1
 }
 
 set_convoys = 80
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.1
 

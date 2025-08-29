@@ -412,7 +412,6 @@ operation_capture_cipher = { ### 3 1/55
 			target = FROM
 			value > 25
 		}
-		has_tech = electromechanical_adding_machine
 		has_done_agency_upgrade = upgrade_form_department
 		NOT = {
 			ROOT = { is_fully_decrypted = FROM }
@@ -1113,12 +1112,10 @@ operation_coup_government = { ### 7 1/70
 	}
 	risk_chance = 0.3
 	experience = 2.5
-	cost_modifiers = { operation_coup_cost }
 	outcome_execute = { # SCOPE_OPERATION
 		FROM = {
 			if = {
 				limit = {
-					controls_state = FROM.FROM
 				}
 				set_temp_variable = { coup_civil_war_capital = FROM.FROM }
 			}
@@ -1309,10 +1306,6 @@ operation_boost_resistance = { ### 8 2/40
 	outcome_modifiers = { boost_resistance_factor }
 	outcome_execute = {
 		FROM.FROM = {
-			add_resistance_target = {
-				amount = 10
-				tooltip = intelligency_agency_resistance_boost_tt
-			}
 			subtract_from_variable = { boost_resistance_chance = 10 }
 		}
 	}
@@ -1320,22 +1313,11 @@ operation_boost_resistance = { ### 8 2/40
 		random_list = {
 			33 = { #critical success
 				FROM.FROM = {
-					add_resistance_target = {
-						amount = 20
-						tooltip = intelligency_agency_resistance_boost_tt
-					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
-				}
-				FROM.FROM = {
-					add_compliance = -10
 				}
 			}
 			67 = { #normal success
 				FROM.FROM = {
-					add_resistance_target = {
-						amount = 20
-						tooltip = intelligency_agency_resistance_boost_tt
-					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
 				}
 			}
@@ -1344,10 +1326,6 @@ operation_boost_resistance = { ### 8 2/40
 
 	outcome_potential = {
 		FROM.FROM = {
-			add_resistance_target = {
-				amount = 10
-				tooltip = intelligency_agency_resistance_boost_tt
-			}
 		}
 	}
 
@@ -1488,11 +1466,6 @@ operation_make_resistance_contacts = { ### 9 2/40
 					}
 				}
 				FROM.FROM = {
-					add_resistance_target = {
-						amount = 10
-						tooltip = intelligency_agency_resistance_boost_tt
-						days = 180
-					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
 				}
 			}
@@ -1504,11 +1477,6 @@ operation_make_resistance_contacts = { ### 9 2/40
 					}
 				}
 				FROM.FROM = {
-					add_resistance_target = {
-						amount = 10
-						tooltip = intelligency_agency_resistance_boost_tt
-						days = 60
-					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
 				}
 			}

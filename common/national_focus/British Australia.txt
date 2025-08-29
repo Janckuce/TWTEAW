@@ -1,0 +1,1149 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = australian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = AST
+		}
+	}
+
+	default = no
+
+
+	focus = {
+		id = AST_Status_Of_Nation
+		icon = GFX_focus_ast_our_nation
+		cost = 10
+		x = 5
+		y = 0
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		completion_reward = {
+			activate_mission = AST_Better_Industry
+			activate_mission = AST_Better_Naval_Power
+
+			activate_mission = AST_Better_Streets
+			activate_mission = AST_Better_Land_Power
+		add_state_core = 723 
+        add_state_core = 284
+		add_state_core = 726
+        annex_country = {
+            target = NZL  # Tag of the country you want to annex
+        }
+		}
+	}
+	focus = {
+		id = AST_Industrial_Expansion
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		relative_position_id = AST_Status_Of_Nation
+		x = -4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Road_Expansion
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		relative_position_id = AST_Industrial_Expansion
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Industrial_Expansion
+		}
+		completion_reward = {
+			285 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			518 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Harbour_Expansion1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Road_Expansion
+		}
+		completion_reward = {
+			518 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Harbour_Expansion2
+		icon = GFX_goal_continuous_naval_production
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Road_Expansion
+		}
+		completion_reward = {
+			517 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Industry1
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = -1
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Harbour_Expansion1
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Industry2
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = 1
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Harbour_Expansion2
+		}
+		completion_reward = {
+			521 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Finish_Industrialization
+		icon = GFX_focus_generic_modernize_industry
+		cost = 10
+		relative_position_id = AST_Road_Expansion
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Industry1
+		}
+		prerequisite = {
+			focus = AST_Industry2
+		}
+		available = {
+			has_tech = ww1_synthetic_oil_experiments
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Naval_Research
+		icon = GFX_focus_BRA_navy
+		cost = 10
+		relative_position_id = AST_Status_Of_Nation
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		available = {
+			has_tech = ww1_electrical_engineering_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = AST_Destroyer_Primacy
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10
+		relative_position_id = AST_Naval_Research
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		prerequisite = {
+			focus = AST_Naval_Research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = ww1_destroyer_1
+				technology = ww1_destroyer_2
+				technology = ww1_destroyer_3
+				technology = ww1_destroyer_4
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = AST_Light_Cruiser_Primacy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		relative_position_id = AST_Naval_Research
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		prerequisite = {
+			focus = AST_Naval_Research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = ww1_light_cruiser_1
+				technology = ww1_light_cruiser_2
+				technology = ww1_light_cruiser_3
+				technology = ww1_light_cruiser_4
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = AST_Royal_Australian_Marines
+		icon = GFX_focus_ast_marines
+		cost = 10
+		relative_position_id = AST_Naval_Research
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		prerequisite = {
+			focus = AST_Destroyer_Primacy
+		}
+		prerequisite = {
+			focus = AST_Light_Cruiser_Primacy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = marines
+				technology = marines2
+				technology = marines3
+				bonus = 2
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = AST_Naval_Warfare
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		relative_position_id = AST_Royal_Australian_Marines
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_NAVY_MOD}
+		prerequisite = {
+			focus = AST_Royal_Australian_Marines
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Royal_Navy
+				add_idea = AST_Royal_Navy1
+			}
+		}
+	}
+	focus = {
+		id = AST_Academy_Of_Science
+		icon = GFX_focus_generic_africa_naval
+		cost = 10
+		relative_position_id = AST_Naval_Warfare
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = AST_Naval_Warfare
+		}
+		completion_reward = {
+			add_ideas = AST_Academy
+		}
+	}
+	focus = {
+		id = AST_Military_Adjustments
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 5
+		relative_position_id = AST_Status_Of_Nation
+		x = 4
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending
+				add_idea = AST_Small_Defence_Spending1
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Investment
+		icon = GFX_focus_ast_army_bad
+		cost = 7.2
+		relative_position_id = AST_Military_Adjustments
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		mutually_exclusive = {
+			focus = AST_Major_Military_Investment
+		}
+		prerequisite = {
+			focus = AST_Military_Adjustments
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending1
+				add_idea = AST_Small_Defence_Spending_Minor
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Training1
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		relative_position_id = AST_Minor_Military_Investment
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Minor_Military_Investment
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Minor
+				add_idea = AST_Small_Defence_Spending_Minor1
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Training2
+		icon = GFX_focus_generic_army_doctrines_2
+		cost = 10
+		relative_position_id = AST_Minor_Military_Training1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Minor_Military_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Minor1
+				add_idea = AST_Small_Defence_Spending_Minor2
+			}
+		}
+	}
+	focus = {
+		id = AST_Minor_Military_Training3
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		cost = 10
+		relative_position_id = AST_Minor_Military_Training2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Minor_Military_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Minor2
+				add_idea = AST_Small_Defence_Spending_Minor3
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Investment
+		icon = GFX_focus_ast_army_good
+		cost = 7.2
+		relative_position_id = AST_Military_Adjustments
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		mutually_exclusive = {
+			focus = AST_Minor_Military_Investment
+		}
+		prerequisite = {
+			focus = AST_Military_Adjustments
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending1
+				add_idea = AST_Small_Defence_Spending_Major
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Training1
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		relative_position_id = AST_Major_Military_Investment
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Major_Military_Investment
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Major
+				add_idea = AST_Small_Defence_Spending_Major1
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Training2
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10
+		relative_position_id = AST_Major_Military_Training1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Major_Military_Training1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Major1
+				add_idea = AST_Small_Defence_Spending_Major2
+			}
+		}
+	}
+	focus = {
+		id = AST_Major_Military_Training3
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		relative_position_id = AST_Major_Military_Training2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		prerequisite = {
+			focus = AST_Major_Military_Training2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Small_Defence_Spending_Major2
+				add_idea = AST_Small_Defence_Spending_Major3
+			}
+		}
+	}
+	focus = {
+		id = AST_Hold_Elections
+		icon = GFX_focus_generic_election
+		cost = 10
+		relative_position_id = AST_Status_Of_Nation
+		x = 12
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = AST_Status_Of_Nation
+		}
+		completion_reward = {
+			custom_effect_tooltip = AST_Elections_Tooltip
+			if = {
+				limit = {
+					check_variable = {
+						var = Labour_Support
+						value = Liberal_Support
+						compare = greater_than_or_equals
+					}
+				}
+				complete_national_focus = AST_Labour_Victory
+			}
+			else = {
+				complete_national_focus = AST_Liberal_Victory
+			}
+		}
+	}
+	focus = {
+		id = AST_Address_The_White_Policy
+		icon = GFX_focus_ast_races
+		cost = 10
+		relative_position_id = AST_Hold_Elections
+		x = 0
+		y = 4
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = AST_Higher_Wages
+			focus = AST_Reduced_Polution
+		}
+		completion_reward = {
+			country_event = ww1_australia.1
+		}
+	}
+	focus = {
+		id = AST_Labour_Victory
+		icon = GFX_focus_generic_red_flags
+		cost = 10000
+		relative_position_id = AST_Hold_Elections
+		x = -3
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = AST_Liberal_Victory
+		}
+		prerequisite = {
+			focus = AST_Hold_Elections
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = AST_Economy_Spending
+		icon = GFX_focus_AFG_a_modern_economy
+		cost = 10
+		relative_position_id = AST_Labour_Victory
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Labour_Victory
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Labour_Support
+					value = 50
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip
+					always = no
+				}
+			}
+			check_variable = {
+				var = Labour_Support
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Labour_Party
+				add_idea = AST_Labour_Party1
+			}
+		}
+	}
+	focus = {
+		id = AST_Higher_Wages
+		icon = GFX_focus_generic_economic_recovery
+		cost = 10
+		relative_position_id = AST_Economy_Spending
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Economy_Spending
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AST_Increased_Worker_Wages
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_More_Worker_Rights
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		cost = 10
+		relative_position_id = AST_Higher_Wages
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Higher_Wages
+		}
+		completion_reward = {
+			activate_mission = AST_Industrial_Expansion
+			add_timed_idea = {
+				idea = AST_Increased_Worker_Rights
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_Fruits_Of_Our_Labour
+		icon = GFX_focus_GER_liberate_exploited_colonial_workers
+		cost = 10
+		relative_position_id = AST_More_Worker_Rights
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_More_Worker_Rights
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Labour_Support
+					value = 60
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip1
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Labour_Tooltip1
+					always = no
+				}
+			}
+			check_variable = {
+				var = Labour_Support
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Labour_Party1
+				add_idea = AST_Labour_Party2
+			}
+		}
+	}
+	focus = {
+		id = AST_Equal_Investments
+		icon = GFX_focus_CHL_work_on_the_panamerican_highway
+		cost = 10
+		relative_position_id = AST_Labour_Victory
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Labour_Victory
+		}
+		completion_reward = {
+			activate_mission = AST_Major_Military_Expansion
+			522 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			871 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			870 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			519 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Spread_Our_Wealth
+		icon = GFX_focus_generic_road_investment
+		cost = 10
+		relative_position_id = AST_Equal_Investments
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Equal_Investments
+		}
+		completion_reward = {
+			871 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			870 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			519 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Bless_The_Land
+		icon = GFX_focus_generic_coal_mining
+		cost = 10
+		relative_position_id = AST_Spread_Our_Wealth
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Spread_Our_Wealth
+		}
+		completion_reward = {
+			522 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			871 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			870 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+			519 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Liberal_Victory
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 10000
+		relative_position_id = AST_Hold_Elections
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = AST_Labour_Victory
+		}
+		prerequisite = {
+			focus = AST_Hold_Elections
+		}
+		completion_reward = {
+			remove_ideas = AST_Labour_Party
+			add_ideas = AST_Liberal_Party
+			kill_country_leader = yes
+		}
+	}
+	focus = {
+		id = AST_Environmentalist_Movement
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 10
+		relative_position_id = AST_Liberal_Victory
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Liberal_Victory
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Liberal_Support
+					value = 50
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip
+					always = no
+				}
+			}
+			check_variable = {
+				var = Liberal_Support
+				value = 50
+				compare = greater_than_or_equals
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Liberal_Party
+				add_idea = AST_Liberal_Party1
+			}
+			285 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			518 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Reduced_Polution
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
+		cost = 10
+		relative_position_id = AST_Environmentalist_Movement
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Environmentalist_Movement
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = AST_Decreased_Pollution
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_Grant_Liberties
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10
+		relative_position_id = AST_Reduced_Polution
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Reduced_Polution
+		}
+		completion_reward = {
+			activate_mission = AST_Industrial_Investment
+			add_timed_idea = {
+				idea = AST_Extra_Liberties
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = AST_Heart_Of_Australia
+		icon = GFX_focus_AST_squander_bug
+		cost = 10
+		relative_position_id = AST_Grant_Liberties
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Grant_Liberties
+		}
+		available = {
+			if = {
+				limit = {
+					check_variable = {
+					var = Liberal_Support
+					value = 60
+					compare = greater_than_or_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip1
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = AST_Liberal_Tooltip1
+					always = no
+				}
+			}
+			check_variable = {
+				var = Liberal_Support
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_Liberal_Party1
+				add_idea = AST_Liberal_Party2
+			}
+		}
+	}
+	focus = {
+		id = AST_Concecrated_Industry
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		cost = 10
+		relative_position_id = AST_Liberal_Victory
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Liberal_Victory
+		}
+		completion_reward = {
+			activate_mission = AST_Major_Naval_Expansion
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Arms_Industry
+		icon = GFX_focus_generic_military_industry
+		cost = 10
+		relative_position_id = AST_Concecrated_Industry
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Concecrated_Industry
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_Naval_Industry
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 10
+		relative_position_id = AST_Arms_Industry
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = AST_Arms_Industry
+		}
+		completion_reward = {
+			285 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+			}
+			517 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+				}
+			}
+			521 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = rubber
+					amount = 4
+				}
+			}
+			518 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+			}
+		}
+	}
+}

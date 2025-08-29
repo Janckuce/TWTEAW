@@ -176,10 +176,6 @@ technologies = {
 			maximum_speed = 0.1
 			default_morale = 0.2
 		}
-		mot_artillery_brigade = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
 		mot_anti_tank_brigade = {
 			maximum_speed = 0.1
 			default_morale = 0.2
@@ -3504,7 +3500,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 6  }
+			position = { x = -1 y = 6  }
 		}
 		
 		categories = { land_doctrine }
@@ -3535,7 +3531,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 		
 		categories = { land_doctrine }
@@ -3595,7 +3591,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 10 }
+			position = { x = 1 y = 10 }
 		}
 		
 		categories = { land_doctrine }
@@ -3607,6 +3603,10 @@ technologies = {
 	
 	
 	ww1_land_doctrine_7 = {
+		allow = {
+			has_tech = ww1_land_doctrine_6
+			has_tech = ww1_land_doctrine_13
+		}
 	    path = {
 			leads_to_tech = ww1_land_doctrine_10
 			research_cost_coeff = 1
@@ -3630,7 +3630,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 16  }
+			position = { x = -1 y = 16  }
 		}
 		
 		categories = { land_doctrine }
@@ -3687,7 +3687,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 16 }
+			position = { x = 1 y = 16 }
 		}
 		
 		categories = { land_doctrine }
@@ -3699,6 +3699,10 @@ technologies = {
 	
 	ww1_land_doctrine_10 = {
 		#Modifiers
+		allow = {
+			has_tech = ww1_land_doctrine_9
+			has_tech = ww1_land_doctrine_15
+		}
 		category_front_line = {
 			breakthrough = 0.10
 		}
@@ -3812,7 +3816,7 @@ technologies = {
 		
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 10 }
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = { land_doctrine }
