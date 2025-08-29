@@ -66,15 +66,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			246 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 				}
 			}
 			219 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 				}
 			}
 			247 = {
@@ -99,14 +101,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			195 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 				}
 			}
 		}
@@ -125,14 +127,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			206 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 				}
 			}
 		}
@@ -151,24 +153,24 @@ focus_tree = {
 		}
 		completion_reward = {
 			10 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 			}
 			90 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 			}
 			92 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 			}
 		}
@@ -187,10 +189,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			202 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 6
 				}
 			}
 		}
@@ -412,10 +414,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			196 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 				add_building_construction = {
 					type = dockyard
@@ -438,10 +440,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			137 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 				add_building_construction = {
 					type = dockyard
@@ -465,10 +467,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			111 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 				add_building_construction = {
 					type = dockyard
@@ -492,10 +494,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			812 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 				}
 				add_building_construction = {
 					type = dockyard
@@ -743,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Organised_Warfare_Main
 		icon = GFX_focus_BUL_support_macedonian_organizations
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_The_Tsars_Ideas
 		x = -2
 		y = 1
@@ -767,7 +769,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Organised_Warfare1
 		icon = GFX_goal_generic_army_doctrines
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Organised_Warfare_Main
 		x = 0
 		y = 1
@@ -804,7 +806,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Organised_Warfare3
 		icon = GFX_focus_generic_military_dictatorship
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Organised_Warfare2
 		x = -1
 		y = 1
@@ -819,7 +821,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Organised_Warfare4
 		icon = GFX_focus_rom_royal_dictatorship
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Organised_Warfare2
 		x = 1
 		y = 1
@@ -834,7 +836,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Organised_Warfare5
 		icon = GFX_focus_generic_jungle_training
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Organised_Warfare3
 		x = 0
 		y = 1
@@ -850,7 +852,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Organised_Warfare6
 		icon = GFX_focus_generic_hill_training
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Organised_Warfare4
 		x = 0
 		y = 1
@@ -919,7 +921,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare_Main
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_The_Tsars_Ideas
 		x = 2
 		y = 1
@@ -943,7 +945,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare1
 		icon = GFX_focus_generic_army_doctrines_2
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Assault_Warfare_Main
 		x = 0
 		y = 1
@@ -962,7 +964,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare2
 		icon = GFX_focus_SOV_mobilization_plan
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Assault_Warfare1
 		x = 0
 		y = 1
@@ -980,7 +982,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare3
 		icon = GFX_goal_generic_political_pressure
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Assault_Warfare2
 		x = -1
 		y = 1
@@ -995,7 +997,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare4
 		icon = GFX_focus_RAJ_just_good_business
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Assault_Warfare2
 		x = 1
 		y = 1
@@ -1010,7 +1012,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare5
 		icon = GFX_focus_PER_desert_training
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Assault_Warfare3
 		x = 0
 		y = 1
@@ -1027,7 +1029,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assault_Warfare6
 		icon = GFX_focus_AFG_mountain_training
-		cost = 5
+		cost = 5.8
 		relative_position_id = RUS_Assault_Warfare4
 		x = 0
 		y = 1
