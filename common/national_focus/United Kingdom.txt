@@ -56,7 +56,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_invests_in_colonies
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_welfare
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_exploit_empire
@@ -115,7 +115,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_exploit_empire
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_price_controls
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_invests_in_colonies
@@ -168,7 +168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_invests_in_colonies2
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_welfare
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_exploit_empire2
@@ -267,7 +267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_exploit_empire2
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_price_controls
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_invests_in_colonies2
@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_invests_in_colonies3
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_welfare
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_exploit_empire3
@@ -546,7 +546,7 @@ focus_tree = {
 	
 	focus = {
 		id = Britain_invests_in_colonies4
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_welfare
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_exploit_empire4
@@ -808,7 +808,7 @@ focus_tree = {
 	
 	focus = {
 		id = Britain_invests_in_colonies5
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_welfare
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_exploit_empire5
@@ -1149,7 +1149,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_exploit_empire3
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_price_controls
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_invests_in_colonies3
@@ -1329,7 +1329,7 @@ focus_tree = {
 	
 	focus = {
 		id = Britain_exploit_empire4
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_price_controls
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_invests_in_colonies4
@@ -1550,7 +1550,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Britain_exploit_empire5
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_price_controls
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
 			focus = Britain_invests_in_colonies5
@@ -1813,7 +1813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_parliments_decision
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		cost = 10
 		prerequisite = {
 			focus = Britain_invests_in_colonies5
@@ -1844,7 +1844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_democracy
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_social_democracy
 		cost = 999
 		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = {
@@ -1862,7 +1862,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_monarchy
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_generic_monarchy_1
 		cost = 999
 		relative_position_id = ENG_focus_protect_belgium
 		prerequisite = { 
