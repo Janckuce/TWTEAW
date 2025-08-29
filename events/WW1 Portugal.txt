@@ -74,9 +74,13 @@ country_event = {
                 instant_build = yes
             }
         }
-	}
-}
 
-    option = {
-    name = "No..."
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "No..."
+	}
 }
