@@ -174,7 +174,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#	Kyiv Investment
+		#	Kiev Investment
 		id = RUS_Industry5
 		icon = GFX_focus_HUN_the_kingdom_of_ukraine
 		cost = 10
@@ -1104,23 +1104,29 @@ focus_tree = {
 			not = {
 				or = {
 					has_idea = RUS_Agrarian_Industry
-					has_idea = RUS_Agrarian_Industry1
-					has_idea = RUS_Agrarian_Industry2
-					has_idea = RUS_Agrarian_Industry3
-					has_idea = RUS_Agrarian_Industry4
-					has_idea = RUS_Agrarian_Industry5
+					hidden_trigger = {
+						has_idea = RUS_Agrarian_Industry1
+						has_idea = RUS_Agrarian_Industry2
+						has_idea = RUS_Agrarian_Industry3
+						has_idea = RUS_Agrarian_Industry4
+						has_idea = RUS_Agrarian_Industry5
+					}
 
 					has_idea = RUS_Lack_Of_Scientists
-					has_idea = RUS_Lack_Of_Scientists1
-					has_idea = RUS_Lack_Of_Scientists2
-					has_idea = RUS_Lack_Of_Scientists3
+					hidden_trigger = {
+						has_idea = RUS_Lack_Of_Scientists1
+						has_idea = RUS_Lack_Of_Scientists2
+						has_idea = RUS_Lack_Of_Scientists3
+					}
 
 					has_idea = RUS_Dated_Warfare
-					has_idea = RUS_Dated_Warfare1
-					has_idea = RUS_Dated_Warfare2
-					has_idea = RUS_Dated_Warfare3
-					has_idea = RUS_Dated_Warfare4
-					has_idea = RUS_Dated_Warfare5
+					hidden_trigger = {
+						has_idea = RUS_Dated_Warfare1
+						has_idea = RUS_Dated_Warfare2
+						has_idea = RUS_Dated_Warfare3
+						has_idea = RUS_Dated_Warfare4
+						has_idea = RUS_Dated_Warfare5
+					}
 				}
 			}
 		}
@@ -1138,9 +1144,12 @@ focus_tree = {
         icon = GFX_unit_guided_missile_icon_small_texticon
         x = 16
         y = 0
-        cost = 10
+        cost = 5
         available = {
-            has_country_flag = provisional_government
+			has_country_leader = {
+				character = RUS_provisional_government
+			}
+			has_political_power > 300
         }
         completion_reward = {
 			country_event = ww1_prog.8
@@ -1158,6 +1167,9 @@ focus_tree = {
 			focus = RUS_democratic_revolution
 		}
         completion_reward = {
+			custom_effect_tooltip = RUS_Man_Of_Steel_Tooltip
+			custom_effect_tooltip = RUS_Minister_Of_Agriculture_Tooltip
+			custom_effect_tooltip = RUS_Minister_Of_Interior_Tooltip
         }
     }
 
@@ -1170,6 +1182,10 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = RUS_democratic_revolution }
         completion_reward = {
+			swap_ruler_traits = {
+				remove = Corruption_Incarnate
+				add = Corruption_Incarnate1
+			}
 			add_ideas = RUS_Political_Liberties
         }
     }
@@ -1199,11 +1215,17 @@ focus_tree = {
         x = 15
         y = 3
         cost = 10
+		available = {
+			has_country_leader_with_trait = Corruption_Incarnate1
+		}
         prerequisite = { focus = RUS_democratisation_army }
         completion_reward = {
-			add_country_leader_trait = State_Reforms
-	}
-     }
+			swap_ruler_traits = {
+				remove = Corruption_Incarnate1
+				add = State_Reforms
+			}
+		}
+    }
      ### 3a. Main land Committee
     focus = {
         id = RUS_Main_land_committee
@@ -1249,7 +1271,7 @@ focus_tree = {
         icon = GFX_unit_guided_missile_icon_small_texticon
         x = 17
         y = 5
-        cost = 10
+        cost = 5
         prerequisite = { focus = RUS_milyukov_note }
         completion_reward = {
 			country_event = ww1_prog.3
@@ -1301,13 +1323,16 @@ focus_tree = {
         icon = GFX_unit_guided_missile_icon_small_texticon
         x = 17
         y = 9
-        cost = 10
+        cost = 5
         prerequisite = { focus = RUS_kornilov_affair }
         completion_reward = {
-			country_event = {
-				id = ww1_prog.7
-				days = 70
+			hidden_effect = {
+				country_event = {
+					id = ww1_prog.7
+					days = 70
+				}
 			}
+			custom_effect_tooltip = RUS_Election_Tooltip
         }
     }
 }

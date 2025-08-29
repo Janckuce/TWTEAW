@@ -1,7 +1,7 @@
 RUS_Peasants_Land_Bank_Category = {
 	RUS_Sieze_Land = {
 		priority = 1
-		days_re_enable = 90
+		days_remove = 30
 		cost = 30
 		allowed = {
 			tag = RUS
@@ -13,7 +13,7 @@ RUS_Peasants_Land_Bank_Category = {
 				has_idea = RUS_Agrarian_Industry5
 			}
 		}
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					has_idea = RUS_Agrarian_Industry3
@@ -50,13 +50,13 @@ RUS_Peasants_Land_Bank_Category = {
 		visible = {
 			not = {
 				or = {
-				has_idea = RUS_Agrarian_Industry
-				has_idea = RUS_Agrarian_Industry1
-				has_idea = RUS_Agrarian_Industry2
-				has_idea = RUS_Agrarian_Industry3
-				has_idea = RUS_Agrarian_Industry4
-				has_idea = RUS_Agrarian_Industry5
-			}
+					has_idea = RUS_Agrarian_Industry
+					has_idea = RUS_Agrarian_Industry1
+					has_idea = RUS_Agrarian_Industry2
+					has_idea = RUS_Agrarian_Industry3
+					has_idea = RUS_Agrarian_Industry4
+					has_idea = RUS_Agrarian_Industry5
+				}
 			}
 		}
 		complete_effect = {
@@ -68,6 +68,7 @@ RUS_Peasants_Land_Bank_Category = {
 RUS_Laboratories_Category = {
 	RUS_Use_What_We've_Learnt = {
 		priority = 1
+		days_remove = 30
 		cost = 50
 		fire_only_once = yes
 		allowed = {
@@ -77,7 +78,7 @@ RUS_Laboratories_Category = {
 			has_completed_focus = RUS_Establish_Laboratories
 			has_idea = RUS_Lack_Of_Scientists3
 		}
-		complete_effect = {
+		remove_effect = {
 			remove_ideas = RUS_Lack_Of_Scientists3
 		}
 	}
@@ -218,6 +219,7 @@ RUS_Laboratories_Category = {
 RUS_Military_Academy_Category = {
 	RUS_Army_Modernisation = {
 		priority = 1
+		days_remove = 30
 		cost = 50
 		allowed = {
 				RUS = {
@@ -236,7 +238,7 @@ RUS_Military_Academy_Category = {
 					has_completed_focus = RUS_Establish_Military_Academy
 				}
 			}
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					has_idea = RUS_Dated_Warfare1
@@ -278,6 +280,38 @@ RUS_Military_Academy_Category = {
 					has_idea = RUS_Dated_Warfare5
 				}
 				remove_ideas = RUS_Dated_Warfare5
+			}
+		}
+	}
+	RUS_Organised_Offensive = {
+		priority = 1
+		custom_cost_trigger = {
+			command_power > 15
+		}
+		custom_cost_text = decision_cost_CP_25
+		visible = {
+			has_completed_focus = RUS_Establish_Military_Academy
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = RUS_Mobilise_The_Nation
+				days = 100
+			}
+		}
+	}
+	RUS_Mobilisation = {
+		priority = 1
+		custom_cost_trigger = {
+			command_power > 15
+		}
+		custom_cost_text = decision_cost_CP_25
+		visible = {
+			has_completed_focus = RUS_Mass_Mobilise
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = RUS_Brusilov_Offensive
+				days = 100
 			}
 		}
 	}

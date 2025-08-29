@@ -73,19 +73,23 @@ country_event = {
     option = {
         name = ww1_prog.4.a
 
-        every_state = {
-            if = {
-                limit = {
-                    and = {
-                        is_controlled_by = RUS
-                        is_core_of = UKR
+        hidden_effect = {
+            every_state = {
+                if = {
+                    limit = {
+                        and = {
+                            is_controlled_by = RUS
+                            is_core_of = UKR
+                        }
                     }
+                    start_resistance = yes
+                    remove_core_of = RUS
+                    set_resistance = 20
                 }
-                start_resistance = yes
-                remove_core_of = RUS
-                set_resistance = 20
             }
         }
+        add_ideas = RUS_Negotiations_With_Ukraine
+        custom_effect_tooltip = ww1_russia_ukraine
     }
 }
 
@@ -157,12 +161,14 @@ country_event = {
     option = {
         name = ww1_prog.8.a
 
+        add_political_power = -300
         add_stability = 0.1
     }
 
     option = {
         name = ww1_prog.8.b
 
+        add_political_power = -300
         add_war_support = 0.1
     }
 }

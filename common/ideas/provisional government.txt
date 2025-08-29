@@ -52,7 +52,6 @@ ideas = {
 
         RUS_Political_Liberties = {
             modifier = {
-                political_power_factor = 0.15
                 political_advisor_cost_factor = -0.5
             }
         }
@@ -64,7 +63,7 @@ ideas = {
 		}
         RUS_Equipment_Now = {
 		    modifier = {
-			    industrial_capacity_factory = 0.1
+			    industrial_capacity_factory = 0.15
 		    }
 	    }
 	    RUS_We_Still_Have_Time = {
@@ -72,28 +71,33 @@ ideas = {
 		    	production_factory_max_efficiency_factor = 0.05
 		    }
 	    }
+        RUS_Negotiations_With_Ukraine = {
+            modifier = {
+                local_resources_factor = 0.1
+            }
+        }
         RUS_Moskva_Conference = {
             modifier = {
                 army_org_factor = -0.05
                 production_speed_buildings_factor = -0.1
                 army_attack_factor = 0.05
-                industrial_capacity_factory = 0.1
+                industrial_capacity_factory = 0.05
                 production_factory_max_efficiency_factor = 0.05
                 land_reinforce_rate = -0.05
             }
         }
         RUS_The_Republic = {
             modifier = {
-                stability_factor = 0.3
-                war_support_factor = -0.3
+                stability_factor = 0.2
+                war_support_factor = -0.2
                 industrial_capacity_factory = 0.1
             }
         }
         RUS_Military_Dictatorship = {
             modifier = {
-                army_speed_factor = 0.1
-                stability_factor = -0.3
-                war_support_factor = 0.3
+                army_speed_factor = 0.05
+                stability_factor = -0.2
+                war_support_factor = 0.2
             }
         }
         RUS_Kadet_Victory = {
