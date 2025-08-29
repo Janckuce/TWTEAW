@@ -12362,29 +12362,43 @@ leader_traits = {
 		ast_birdwood_trait = {
 		random = no
 		sprite = 7
-		army_attack_factor = 0.065
-		naval_invasion_prep_speed = 0.05
-		amphibious_invasion = 0.05
+		experience_gain_army = 0.25
+		army_attack_factor = 0.075
+		naval_invasion_prep_speed = 0.1
+		amphibious_invasion = 0.1
 	}
-		ast_henry_george = {
+		ast_father_trait = {
 		random = no
 		sprite = 7
-		army_infantry_attack_factor = 0.025
-		army_infantry_defence_factor = 0.05
-		army_breakthrough_against_minor_factor = 0.025	
+	naval_speed_factor = 0.10
+	navy_anti_air_attack_factor = 0.10
+	navy_max_range_factor = 0.2
+	navy_capital_ship_attack_factor = 0.125
+	navy_capital_ship_defence_factor = 0.125
+	navy_screen_attack_factor = 0.125
+	navy_screen_defence_factor = 0.125
+	experience_gain_navy = 0.2
+	}
+		ast_henry_george_trait = {
+		random = no
+		sprite = 7
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.075
+		army_breakthrough_against_minor_factor = 0.05
+		army_breakthrough_against_major_factor = 0.05
 	}
 		ast_william_bridges = {
 		random = no
 		sprite = 7
 	}
-		ast_john_gellibrand = {
+		ast_john_gellibrand_trait = {
 		random = no
 		sprite = 7
-		naval_invasion_prep_speed = 0.065
-		amphibious_invasion = 0.05
-		experience_loss_factor = -0.045
+		naval_invasion_prep_speed = 0.15
+		amphibious_invasion = 0.075
+		experience_loss_factor = -0.075
 	}
-		ast_throsby_bridges = {
+		ast_throsby_bridges_trait = {
 		random = no
 		sprite = 7
 		army_org_factor = 0.025

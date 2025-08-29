@@ -24,6 +24,7 @@ set_technology = {
 ##### Party Popularity, Stability, War Support and other #####
 
 recruit_character = SAF_Salomon_Gerhardus_Maritz
+recruit_character = SAF_louis_botha
 
 starting_train_buffer = 1
 
@@ -35,14 +36,14 @@ set_politics = {
 }
 
 set_popularities = {
-	fascism = 50
-	democratic = 50
+	fascism = 30
+	democratic = 70
 }
 
 add_ideas = {
-	SAF_Maritz_Disruption
 	SAF_Afrikaner_British_Division
 	SAF_Inefficient_Economy
+	SAF_recource_rich
 }
 
 set_research_slots = 2

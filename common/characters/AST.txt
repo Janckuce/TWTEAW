@@ -12,6 +12,19 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+    	ast_alfred_deakin = {
+		name = "Alfred Deakin"
+		portraits = {
+			civilian = {
+				large = "GFX_ast_alfred_deakin"
+				small = "GFX_AST_andrew_fisher"
+			}
+		}
+        	country_leader = {
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
 	ast_billy_hughes = {
     name = "William Morris Billy Hughes"
             portraits = {
@@ -19,10 +32,6 @@ characters={
 				large = "GFX_advisor_auh_ernest_von_koerber"
                 small = "GFX_ast_billy_hughes_frame"
 		    }
-		}
-			country_leader = {
-			ideology = liberalism
-			expire = "1965.1.1.1"
 		}
     advisor = {
         slot = political_advisor
@@ -51,16 +60,16 @@ characters={
 		    }
 		}
         corps_commander = {
-	    traits = { desert_fox hill_fighter }
-			skill = 3
+	    traits = { }
+			skill = 2
 			attack_skill = 2
-			defense_skill = 1
-		planning_skill = 3
-	logistics_skill = 2
+			defense_skill = 2
+		planning_skill = 6
+	logistics_skill = 3
 	}
     advisor = {
         slot = high_command
-        traits = { ast_throsby_bridges }
+        traits = { ast_throsby_bridges_trait }
         cost = 150
         can_be_fired = yes
         idea_token = ast_throsby_bridges
@@ -77,6 +86,77 @@ characters={
     }
 }
 
+	AST_william_rooke_creswell = {
+		name = "William Rooke Creswell"
+		portraits = {
+            	army = {
+				large = "GFX_AST_william_rooke_creswell"
+				small = "GFX_AST_william_rooke_creswell_frame"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = william_rooke_creswell
+			allowed = {
+				original_tag = AST
+			}
+			available = {
+			}
+			traits = {
+				ast_father_trait
+			}
+			cost = 150
+			ai_will_do = {
+				base = 2
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer fleet_protector superior_tactician ironside }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+    	ast_john_saumarez_dumaresq = {
+		name = "John Saumarez Dumaresq"
+		portraits = {
+            	army = {
+				large = "GFX_ast_john_saumarez_dumaresq"
+				small = "GFX_AST_william_rooke_creswell_frame"
+			}
+		}
+		
+		navy_leader = {
+			traits = {  }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 5
+		}
+	}
+        ast_george_edwin_patey = {
+		name = "George Edwin Patey"
+		portraits = {
+            	army = {
+				large = "GFX_ast_george_edwin_patey"
+				small = "GFX_AST_william_rooke_creswell_frame"
+			}
+		}
+		
+		navy_leader = {
+			traits = { ground_pounder }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 1
+		}
+	}
+
     ast_john_monash = {
     name = "John Monash"
             portraits = {
@@ -86,11 +166,11 @@ characters={
 		    }
 		}
         corps_commander = {
-	    traits = { desert_fox hill_fighter }
-			skill = 3
+	    traits = {  }
+			skill = 2
 			attack_skill = 2
 			defense_skill = 1
-		planning_skill = 3
+		planning_skill = 2
 	logistics_skill = 2
 	}
 }
@@ -123,7 +203,7 @@ characters={
 }
 
     ast_birdwood = {
-    name = "William Riddell Birdwoode"
+    name = "William Riddell Birdwood"
             portraits = {
 			civilian = {
 				large = "GFX_ast_birdwood"
@@ -166,7 +246,7 @@ characters={
 		}
     advisor = {
         slot = high_command
-        traits = { ast_henry_george }
+        traits = { ast_henry_george_trait }
         cost = 150
         can_be_fired = yes
         idea_token = ast_harry_chauve
@@ -201,8 +281,7 @@ characters={
 		}
     advisor = {
         slot = high_command
-        traits = { ast_john_gellibrand }
-        slot = army_chief
+        traits = { ast_john_gellibrand_trait }
         traits = { }
         cost = 150
         can_be_fired = yes
@@ -219,7 +298,7 @@ characters={
         }
     }
     corps_commander = {
-	    traits = { desert_fox hill_fighter }
+	    traits = { hill_fighter organizer  }
 			skill = 3
 				attack_skill = 2
 				defense_skill = 1

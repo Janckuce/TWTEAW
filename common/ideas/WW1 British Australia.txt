@@ -154,10 +154,11 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major = {
-			picture = mex_politicised_army_2
+			picture = FRA_scw_intervention_nationalists_focus
 			
 			modifier = {
 				army_speed_factor = -0.03
+				consumer_goods_expected_value = 0.1
 				army_attack_speed_factor = -0.03
 				army_org_factor = -0.03
 				army_morale_factor = -0.03
@@ -166,15 +167,17 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major1 = {
-			picture = mex_politicised_army_2
+			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
+				consumer_goods_expected_value = 0.15
 			}
 		}
 		AST_Small_Defence_Spending_Major2 = {
-			picture = mex_politicised_army_2
+			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
 				army_speed_factor = 0.03
 				army_attack_speed_factor = 0.03
+				consumer_goods_expected_value = 0.2
 				army_org_factor = 0.03
 				army_morale_factor = 0.03
 				army_attack_factor = 0.03
@@ -182,8 +185,9 @@ ideas = {
 			}
 		}
 		AST_Small_Defence_Spending_Major3 = {
-			picture = mex_politicised_army_2
+			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
+				consumer_goods_expected_value = 0.25
 				army_speed_factor = 0.06
 				army_attack_speed_factor = 0.06
 				army_org_factor = 0.06
@@ -256,7 +260,7 @@ ideas = {
 			}
 		}
 		AST_Extra_Liberties = {
-			picture = generic_free_trade
+			picture = FRA_matignon_agreements
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				production_factory_efficiency_gain_factor = 0.05
