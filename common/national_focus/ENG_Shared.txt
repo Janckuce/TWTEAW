@@ -2,8 +2,11 @@
 
 	shared_focus = {
 		id = ENG_Interfere_In_Agadir
-		icon = GFX_surrender_tiny_flag
-		cost = 100000
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		available = {
+			threat = 0.1
+		}
 		x = 1
 		y = 0
 		completion_reward = { 
@@ -257,7 +260,7 @@
 	}
 	shared_focus = {
 		id = ENG_Develop_France
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_befriend_france
 		relative_position_id = ENG_Interfere_In_Agadir
 		cost = 7.2
 		x = -2
@@ -281,7 +284,7 @@
 	}
 	shared_focus = {
 		id = ENG_Develop_Russia
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_befriend_russia
 		relative_position_id = ENG_Interfere_In_Agadir
 		cost = 7.2
 		x = 2
@@ -659,12 +662,12 @@
 					marine = { x = 2 y = 0 }
 					marine = { x = 2 y = 1 }
 					marine = { x = 2 y = 2 }
-					marine = { x = 3 y = 0 }
-					marine = { x = 3 y = 1 }
-					marine = { x = 3 y = 2 }
-					marine = { x = 4 y = 0 }
-					marine = { x = 4 y = 1 }
-					marine = { x = 4 y = 2 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
@@ -850,7 +853,7 @@
 			add_to_variable = {
 				ENG_Specialised = 1
 			}
-			add_ideas = ENG_Britania_Rules_Waves
+			add_ideas = ENG_Britannia_Rules_Waves
 		    swap_ideas = {
 				remove_idea = ENG_naval_arms_race
 				add_idea = ENG_naval_arms_race_expanded
@@ -859,7 +862,7 @@
 	}
 	shared_focus = {
 		id = ENG_War_With_Germany
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_ger_return_of_the_kaiser
 		cost = 10
 		x = 16
 		y = 6
@@ -868,13 +871,13 @@
 		}
 		completion_reward = {
 			add_ideas = limited_conscription
-			add_ideas = ENG_Underequiped_Military
+			add_ideas = ENG_Underequipped_Military
 			remove_ideas = ENG_volunteer_only_army
 		 }
 	}
 	shared_focus = {
 		id = ENG_Send_Equipment_To_Frontline
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_BRA_reach_out_to_military_dem
 		cost = 10
 		prerequisite = {
 			focus = ENG_War_With_Germany
@@ -886,14 +889,14 @@
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = ENG_Underequiped_Military
+				remove_idea = ENG_Underequipped_Military
 				add_idea = ENG_Send_Equipment_To_Frontline
 			}
 		}
 	}
 	shared_focus = {
 		id = ENG_Prepared_Military
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_PER_march_to_nile
 		cost = 10
 		prerequisite = {
 			focus = ENG_Send_Equipment_To_Frontline
@@ -970,7 +973,7 @@
 	}
 	shared_focus = {
 		id = ENG_naval_blockade
-		icon = GFX_focus_attack_german_empire
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
 		relative_position_id = ENG_War_With_Germany
 		prerequisite = {
 			focus = ENG_Send_Equipment_To_Frontline

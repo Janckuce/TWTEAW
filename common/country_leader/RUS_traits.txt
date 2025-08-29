@@ -4,6 +4,15 @@ leader_traits = {
 		political_power_factor = 0.15
 		stability_factor = -0.15
 	}
+	Corruption_Incarnate = {
+		random = no
+		political_power_factor = -0.15
+		stability_factor = -0.15
+	}
+	Corruption_Incarnate1 = {
+		random = no
+		stability_factor = -0.15
+	}
 	State_Reforms = {
 		random = no
 		political_advisor_cost_factor = 0.5
@@ -19,7 +28,7 @@ leader_traits = {
 	Minister_Of_Agriculture = {
 		random = no
 		consumer_goods_factor = -0.15
-		local_resources_factor = 0.3
+		local_resources_factor = 0.2
 	}
 	Minister_Of_Interior = {
 		random = no
