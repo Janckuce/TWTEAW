@@ -666,7 +666,7 @@ focus_tree = {
 		x = 10
 		y = 6
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_german_sudetenland_expansion }
 		prerequisite = { focus = AUH_buda_military_works }
 
@@ -1252,10 +1252,9 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_four
     	add_idea = auh_armeereform_focus_four_bojna
     		}
-		remove_ideas = auh_armeereform_focus_four
     	}
 	}
 
@@ -1339,10 +1338,9 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_four
     	add_idea = auh_armeereform_focus_four_friedrich
     		}
-		remove_ideas = auh_armeereform_focus_four
     	}
 	}
 
@@ -1425,10 +1423,9 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_four
     	add_idea = auh_armeereform_focus_four_hotzendorf
     		}
-		remove_ideas = auh_armeereform_focus_four
     	}
 	}
 
@@ -1506,10 +1503,9 @@ focus_tree = {
 
 		completion_reward = {
 		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_three
+    	remove_idea = auh_armeereform_focus_four
     	add_idea = auh_armeereform_focus_four_hauer
     		}
-		remove_ideas = auh_armeereform_focus_four
     	}
 	}
 
@@ -1591,7 +1587,7 @@ focus_tree = {
 		x = 11
 		y = 3
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_construction_funds }
 
 		completion_reward = {
@@ -1790,7 +1786,7 @@ focus_tree = {
 		x = 10
 		y = 4
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = AUH_build_of_danubian_dam }
 		prerequisite = { focus = AUH_the_silesian_resources }
 
@@ -1901,7 +1897,7 @@ focus_tree = {
 		x = 13
 		y = 5
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = AUH_upper_hungarian_development }
 		prerequisite = { focus = AUH_improve_the_tyrol_mines }
 
@@ -1947,8 +1943,8 @@ focus_tree = {
 
 		completion_reward = {
 				swap_ideas = { 
-    				remove_idea = auh_ghostofthepast2
-    				add_idea = auh_ghostofthepast3
+    				remove_idea = auh_ghostofthepast3
+    				add_idea = auh_ghostofthepast4
    					}
 						88 = {
 						add_extra_state_shared_building_slots = 2
@@ -2354,7 +2350,7 @@ focus_tree = {
 
 		completion_reward = {
 				swap_ideas = {
-				remove_idea = auh_ghostofthepast3
+				remove_idea = auh_ghostofthepast4
 				add_idea = auh_kukindustries
 			}
 		}
