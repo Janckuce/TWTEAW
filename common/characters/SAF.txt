@@ -7,19 +7,30 @@ characters = {
 				small = "GFX_AST_andrew_fisher"
 			}
 		}
+			field_marshal={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+			old_guard
+			politically_connected
+			}
+		}
 		country_leader = {
 			ideology = liberalism
 			expire = "1965.1.1.1"
 		}
 	}
 	SAF_Salomon_Gerhardus_Maritz = {
-		name = SAF_Character_Maritz
+		name = "Henry Timson Lukin"
 		portraits = {
 			civilian = {
-				large = "GFX_FRA_ferdinand_foch"
+				large = "GFX_saf_lukin"
 			}
 			army = {
-				small = "GFX_FRA_ferdinand_foch_frame"
+				small = "GFX_saf_lukin_frame"
 			}
 		}
 
@@ -43,10 +54,204 @@ characters = {
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 5
+			logistics_skill = 6
 			traits = {
-				old_guard
-				trait_reckless
+			hill_fighter
+			mountaineer
+			desert_fox
+			organizer
+			}
+		}
+	}
+
+		saf_william_tanner = {
+		name = "William Ernest Collins Tanner"
+		portraits = {
+			civilian = {
+				large = "GFX_asf_william_tanner"
+			}
+			army = {
+				small = "GFX_asf_william_tanner_frame"
+			}
+		}
+
+		advisor={
+			slot = high_command
+			idea_token = asf_william_tanner
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+			SAF_man_with_honors
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		corps_commander={
+			skill = 3
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 1
+			traits = {
+			hill_fighter
+			ranger
+			}
+		}
+	}
+
+		SAF_jan_christiaan_smuts = {
+		name = "Jan Christiaan Smuts"
+		portraits = {
+			civilian = {
+				large = "GFX_SAF_smuts"
+			}
+			army = {
+				small = "GFX_SAF_smuts_frame"
+			}
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token = SAF_jan_christiaan_smuts
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+				SAF_smuts_army
+			}
+			
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		field_marshal={
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				organizer
+				desert_fox
+				politically_connected
+			}
+		}
+	}
+
+		SAF_john_xavier_merriman = {
+		name = "John Xavier Merriman"
+		portraits = {
+			civilian = {
+				large = "GFX_saf_john_x"
+			}
+			army = {
+				small = "GFX_saf_john_x_frame"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			idea_token = SAF_john_xavier_merriman
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+			SAF_politican
+			
+			}
+			
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+		SAF_john_xavier_merriman = {
+		name = "John Xavier Merriman"
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_ferdinand_foch"
+			}
+			army = {
+				small = "GFX_FRA_ferdinand_foch_frame"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			idea_token = SAF_john_xavier_merriman
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+			SAF_politican
+			
+			}
+			
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+		SAF_frederic_creswell = {
+		name = "Frederic Hugh Page Creswell"
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_ferdinand_foch"
+			}
+			army = {
+				small = "GFX_saf_huges_frame"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			idea_token = SAF_frederic_creswell
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+			SAF_working_man
+			
+			}
+			
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+		SAF_pixley_ka_isaka_semel = {
+		name = "Pixley ka Isaka Seme"
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_ferdinand_foch"
+			}
+			army = {
+				small = "GFX_saf_pixley_frame"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			idea_token = SAF_frederic_creswell
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+			SAF_scientist_of_blacks
+			
+			}
+			
+			cost = 150
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}
