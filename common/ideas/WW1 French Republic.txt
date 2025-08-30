@@ -126,6 +126,7 @@ ideas = {
 			modifier = {
 				coordination_bonus = 0.05
 				army_org_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		FRA_War_Readiness1 = {
@@ -133,6 +134,7 @@ ideas = {
 			modifier = {
 				coordination_bonus = 0.05
 				army_org_factor = 0.05
+				production_speed_arms_factory_factor = 0.15
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -140,12 +142,14 @@ ideas = {
 					soft_attack = 0.05
 				}
 			}
+			
 		}
 		FRA_War_Readiness2 = {
 			picture = MEX_politicised_army
 			modifier = {
 				coordination_bonus = 0.05
 				army_org_factor = 0.05
+				production_speed_arms_factory_factor = 0.2
 			}
 			targeted_modifier = {
 				tag = GER
@@ -203,7 +207,6 @@ ideas = {
 				supply_consumption_factor = -0.1
 				land_reinforce_rate = 0.05
 				training_time_army_factor = -0.15
-				initiative_factor = 0.05
 			}
 		}
 		FRA_Red_Army_Lengthen = {
@@ -212,7 +215,7 @@ ideas = {
 				non_core_manpower = 0.1
 				supply_consumption_factor = -0.1
 				land_reinforce_rate = 0.05
-				training_time_army_factor = 0.15
+				training_time_army_factor = 0.2
 				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
 			}
@@ -268,7 +271,7 @@ ideas = {
 		FRA_Defensive_Experts = {
 			picture = SWE_hedgehog_defense
 			modifier = {
-				army_strength_factor = 0.05
+				max_dig_in_factor = 0.05
 			}
 		}
 		FRA_Defensive_Experts1 = {
