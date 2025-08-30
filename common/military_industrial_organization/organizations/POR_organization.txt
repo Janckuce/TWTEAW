@@ -1,0 +1,80 @@
+@prussia_of_the_balkans_position_X = 9
+@prussia_of_the_balkans_position_Y = 4
+@prussia_of_the_balkans_research_bonus = 0.1
+@prussia_of_the_balkans_production_capacity_factor = 0.1
+
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+### Foreign Subsidiaries
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+POR_fabrica_de_braco_de_prata = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_por_fabrica
+	
+	allowed = {	
+		tag = POR
+	}
+	
+	available = {
+	}
+}
+
+POR_fabrica_de_braco_de_prata1 = {
+	include = generic_artillery_organization
+	icon = GFX_idea_por_fabrica
+	
+	allowed = {	
+		tag = POR
+	}
+
+	available = {
+	}
+}
+
+### Foreign Subsidiaries
+
+### GER_opel_organization -> see GER_organizations.txt 
+### ENG_vauxhall_organization -> see ENG_organizations.txt 
+### SOV_gaz_organization -> see SOV_organizations.txt 
+### ITA_lancia_organization -> see ITA_organizations.txt 
