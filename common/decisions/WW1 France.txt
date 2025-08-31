@@ -1,136 +1,24 @@
 FRA_Political_Stability_Category = {
-	FRA_Stability_Mission1 = {
-		priority = 1
-		days_mission_timeout = 222
-		is_good = no
+	# Mainland France
+	FRA_Hold_Sedan = {
+		is_good = yes
+		days_mission_timeout = 60
 		allowed = {
-			always = no
+			tag = FRA
+		}
+		activation = {
+			FRA = {
+				has_war_with = GER
+			}
 		}
 		available = {
-			hidden_trigger = {
-				16 = {
-					any_province_building_level = {
-						building = bunker
-						level > 1
-						province = {
-							id = 11506
-							id = 9534
-							id = 11518
-						}
-					}
-				}
-				18 = {
-					any_province_building_level = {
-						building = bunker
-						level > 1
-						province = {
-							id = 3546
-						}
-					}
-				}
-				29 = {
-					any_province_building_level = {
-						building = bunker
-						level > 1
-						province = {
-							id = 575
-						}
-					}
-				}
-			}
-			custom_override_tooltip = {
-				tooltip = FRA_Mission_Trigger
-				if = {
-					limit = {
-						16 = {
-							any_province_building_level = {
-								building = bunker
-								level > 1
-								province = {
-									id = 11506
-								}
-							}
-						}
-						always = yes
-					}
-				}
-				else = {
-					always = no
-				}
-			}
-			custom_override_tooltip = {
-				tooltip = FRA_Mission_Trigger2
-				if = {
-					limit = {
-						18 = {
-							any_province_building_level = {
-								building = bunker
-								level > 1
-								province = {
-									id = 3546
-								}
-							}
-						}
-						always = yes
-					}
-				}
-				else = {
-					always = no
-				}
-			}
-			custom_override_tooltip = {
-				tooltip = FRA_Mission_Trigger3
-				if = {
-					limit = {
-						29 = {
-							any_province_building_level = {
-								building = bunker
-								level > 1
-								province = {
-									id = 575
-								}
-							}
-						}
-						always = yes
-					}
-				}
-				else = {
-					always = no
-				}
+			908 = {
+				is_controlled_by = GER
 			}
 		}
 		timeout_effect = {
-			subtract_from_variable = {
+			add_to_variable = {
 				FRA.Political_Stability = 25
-			}
-			custom_effect_tooltip = FRA_Stability_Remove
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 51
-					}
-				}
-				hidden_effect = {
-					FRA_Pull_To_Centre = yes
-				}
-				add_timed_idea = {
-					idea = FRA_Stability_Lower
-					days = 120
-				}
-				custom_effect_tooltip = FRA_BOP_Move_Text
-			}
-		}
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 100
-					}
-				}
-				add_to_variable = {
-					FRA.Political_Stability = 25
-				}
-			custom_effect_tooltip = FRA_Stability_Add
 			}
 			if = {
 				limit = {
@@ -138,56 +26,53 @@ FRA_Political_Stability_Category = {
 						FRA.Political_Stability > 50
 					}
 				}
-				hidden_effect = {
-					FRA_Remove_Pull = yes
+				add_timed_idea = {
+					idea = FRA_Stability_Increase
+					days = 30
+				}
+			}
+			custom_effect_tooltip = FRA_Stability_Add
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				FRA.Political_Stability = 25
+			}
+			custom_effect_tooltip = FRA_Stability_Remove
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability < 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Lower
+					days = 30
 				}
 			}
 		}
 	}
-	FRA_Stability_Mission2 = {
-		priority = 1
-		days_mission_timeout = 222
-		is_good = no
+	FRA_Hold_Verdun = {
+		is_good = yes
+		days_mission_timeout = 90
 		allowed = {
-			always = no
+			tag = FRA
+		}
+		activation = {
+			FRA = {
+				has_war_with = GER
+			}
+			908 = {
+				is_controlled_by = GER
+			}
 		}
 		available = {
-			16 = {
-				fuel_silo > 1
+			GER = {
+				controls_province = 3546
 			}
 		}
 		timeout_effect = {
-			subtract_from_variable = {
+			add_to_variable = {
 				FRA.Political_Stability = 25
-			}
-			custom_effect_tooltip = FRA_Stability_Remove
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 51
-					}
-				}
-				hidden_effect = {
-					FRA_Pull_To_Centre = yes
-				}
-				add_timed_idea = {
-					idea = FRA_Stability_Lower
-					days = 120
-				}
-				custom_effect_tooltip = FRA_BOP_Move_Text
-			}
-		}
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 100
-					}
-				}
-				add_to_variable = {
-					FRA.Political_Stability = 25
-				}
-			custom_effect_tooltip = FRA_Stability_Add
 			}
 			if = {
 				limit = {
@@ -195,56 +80,56 @@ FRA_Political_Stability_Category = {
 						FRA.Political_Stability > 50
 					}
 				}
-				hidden_effect = {
-					FRA_Remove_Pull = yes
+				add_timed_idea = {
+					idea = FRA_Stability_Increase1
+					days = 30
+				}
+			}
+			custom_effect_tooltip = FRA_Stability_Add
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				FRA.Political_Stability = 25
+			}
+			custom_effect_tooltip = FRA_Stability_Remove
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability < 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Lower1
+					days = 30
 				}
 			}
 		}
 	}
-	FRA_Stability_Mission3 = {
-		priority = 1
-		days_mission_timeout = 222
-		is_good = no
+	FRA_Hold_Reims = {
+		is_good = yes
+		days_mission_timeout = 90
 		allowed = {
-			always = no
+			tag = FRA
+		}
+		activation = {
+			FRA = {
+				has_war_with = GER
+			}
+			908 = {
+				is_controlled_by = GER
+			}
+			GER = {
+				controls_province = 3546
+			}
 		}
 		available = {
-			16 = {
-				air_base > 9
+			GER = {
+				controls_province = 13011
 			}
 		}
 		timeout_effect = {
-			subtract_from_variable = {
+			add_to_variable = {
 				FRA.Political_Stability = 25
-			}
-			custom_effect_tooltip = FRA_Stability_Remove
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 51
-					}
-				}
-				hidden_effect = {
-					FRA_Pull_To_Centre = yes
-				}
-				add_timed_idea = {
-					idea = FRA_Stability_Lower
-					days = 120
-				}
-				custom_effect_tooltip = FRA_BOP_Move_Text
-			}
-		}
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 100
-					}
-				}
-				add_to_variable = {
-					FRA.Political_Stability = 25
-				}
-			custom_effect_tooltip = FRA_Stability_Add
 			}
 			if = {
 				limit = {
@@ -252,84 +137,52 @@ FRA_Political_Stability_Category = {
 						FRA.Political_Stability > 50
 					}
 				}
-				hidden_effect = {
-					FRA_Remove_Pull = yes
+				add_timed_idea = {
+					idea = FRA_Stability_Increase1
+					days = 30
+				}
+			}
+			custom_effect_tooltip = FRA_Stability_Add
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				FRA.Political_Stability = 25
+			}
+			custom_effect_tooltip = FRA_Stability_Remove
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability < 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Lower1
+					days = 30
 				}
 			}
 		}
 	}
-	FRA_Stability_Mission4 = {
-		priority = 1
-		days_mission_timeout = 222
-		is_good = no
+
+	#	Race To The Sea
+	FRA_Hold_Liege = {
+		is_good = yes
+		days_mission_timeout = 60
 		allowed = {
-			always = no
+			tag = FRA
+		}
+		activation = {
+			FRA = {
+				has_war_with = GER
+			}
 		}
 		available = {
-			hidden_trigger = {
-				15 = {
-					any_province_building_level = {
-						building = naval_base
-						level > 3
-						province = {
-							id = 6449
-						}
-					}
-				}
-			}
-			custom_override_tooltip = {
-				tooltip = FRA_Mission_Trigger1
-				if = {
-					limit = {
-						15 = {
-							any_province_building_level = {
-								building = naval_base
-								level > 3
-								province = {
-									id = 6449
-								}
-							}
-						}
-					}
-					always = yes
-				}
-				else = {
-					always = no
-				}
+			34 = {
+				is_controlled_by = GER
 			}
 		}
 		timeout_effect = {
-			subtract_from_variable = {
+			add_to_variable = {
 				FRA.Political_Stability = 25
-			}
-			custom_effect_tooltip = FRA_Stability_Remove
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 51
-					}
-				}
-				hidden_effect = {
-					FRA_Pull_To_Centre = yes
-				}
-				add_timed_idea = {
-					idea = FRA_Stability_Lower
-					days = 120
-				}
-				custom_effect_tooltip = FRA_BOP_Move_Text
-			}
-		}
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = {
-						FRA.Political_Stability < 100
-					}
-				}
-				add_to_variable = {
-					FRA.Political_Stability = 25
-				}
-			custom_effect_tooltip = FRA_Stability_Add
 			}
 			if = {
 				limit = {
@@ -337,8 +190,138 @@ FRA_Political_Stability_Category = {
 						FRA.Political_Stability > 50
 					}
 				}
-				hidden_effect = {
-					FRA_Remove_Pull = yes
+				add_timed_idea = {
+					idea = FRA_Stability_Increase2
+					days = 30
+				}
+			}
+			custom_effect_tooltip = FRA_Stability_Add
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				FRA.Political_Stability = 25
+			}
+			custom_effect_tooltip = FRA_Stability_Remove
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability < 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Lower2
+					days = 30
+				}
+			}
+		}
+	}
+	FRA_Hold_Lille = {
+		is_good = yes
+		days_mission_timeout = 90
+		allowed = {
+			tag = FRA
+		}
+		activation = {
+			FRA = {
+				has_war_with = GER
+			}
+			34 = {
+				is_controlled_by = GER
+			}
+		}
+		available = {
+			GER = {
+				controls_province = 11483
+			}
+		}
+		timeout_effect = {
+			add_to_variable = {
+				FRA.Political_Stability = 25
+			}
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability > 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Increase3
+					days = 30
+				}
+			}
+			custom_effect_tooltip = FRA_Stability_Add
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				FRA.Political_Stability = 25
+			}
+			custom_effect_tooltip = FRA_Stability_Remove
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability < 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Lower3
+					days = 30
+				}
+			}
+		}
+	}
+	FRA_Hold_Amiens = {
+		is_good = yes
+		days_mission_timeout = 90
+		allowed = {
+			tag = FRA
+		}
+		activation = {
+			FRA = {
+				has_war_with = GER
+			}
+			34 = {
+				is_controlled_by = GER
+			}
+			GER = {
+				controls_province = 11483
+			}
+		}
+		available = {
+			GER = {
+				controls_province = 11420
+			}
+		}
+		timeout_effect = {
+			add_to_variable = {
+				FRA.Political_Stability = 25
+			}
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability > 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Increase4
+					days = 30
+				}
+			}
+			custom_effect_tooltip = FRA_Stability_Add
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				FRA.Political_Stability = 25
+			}
+			custom_effect_tooltip = FRA_Stability_Remove
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Political_Stability < 50
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_Stability_Lower4
+					days = 30
 				}
 			}
 		}
