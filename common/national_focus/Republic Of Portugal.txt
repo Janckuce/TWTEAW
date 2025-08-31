@@ -883,7 +883,7 @@ focus_tree = {
 	focus = {
 		id = POR_Power_To_The_Republic
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Constitution_Of_1911
 		x = 7
 		y = 1
@@ -892,7 +892,7 @@ focus_tree = {
 			focus = POR_Power_To_The_King
 		}
 		available = {
-			democratic > 0.7
+			democratic > 0.65
 			has_idea = POR_Passed_Constitution
 		}
 		prerequisite = {
@@ -992,14 +992,14 @@ focus_tree = {
 	focus = {
 		id = POR_Nation_Of_Science
 		icon = GFX_focus_NORDIC_mon_research
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Economic_Reforms
 		x = 0
 		y = 3
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		available = {
-			democratic > 0.9
+			democratic > 0.85
 		}
 		prerequisite = {
 			focus = POR_Rebuild_The_Nation2
@@ -1112,6 +1112,7 @@ focus_tree = {
 				remove_idea = POR_Inadequate_African_Territories
 				add_idea = POR_Inadequate_African_Territories1
 			}
+			puppet = BRA
 		}
 	}
 	focus = {
