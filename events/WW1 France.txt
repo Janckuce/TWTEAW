@@ -852,3 +852,39 @@ country_event = {
 		name = ww1_france.20.b
 	}
 }
+country_event = {
+	id = ww1_france.21
+	title = ww1_france.21.t
+	desc = ww1_france_desc.21
+	picture = GFX_report_event_generic_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_france.21.a
+
+		complete_national_focus = FRA_Superior_Warfare
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_france.21.b
+
+		complete_national_focus = FRA_Superior_Air_Force
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = ww1_france.21.c
+
+		complete_national_focus = FRA_Superior_Naval_Power
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
