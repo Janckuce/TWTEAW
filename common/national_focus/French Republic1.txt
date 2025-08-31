@@ -1,0 +1,301 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = french_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	
+	continuous_focus_position = { x = 245 y = 1000 }
+	
+	default = no
+
+	focus = {
+		id = FRA_Morocco_Conundrum
+		icon = GFX_focus_generic_africa_liberation
+		cost = 5
+		x = 4
+		y = 0
+		completion_reward = {
+			country_event = ww1_france.3
+		}
+	}
+	focus = {
+		id = FRA_Industry_Main
+		icon = GFX_focus_generic_industry_1
+		cost = 10
+		relative_position_id = FRA_Morocco_Conundrum
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = FRA_Morocco_Conundrum
+		}
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			785 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			18 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Kickstart_Our_Industry
+		icon = GFX_focus_generic_industrialists
+		cost = 10
+		relative_position_id = FRA_Industry_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Industry_Main
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Halted_Industrial_Power
+				add_idea = FRA_Halted_Industrial_Power1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Industry_Continue
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		relative_position_id = FRA_Kickstart_Our_Industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Kickstart_Our_Industry
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Halted_Industrial_Power1
+				add_idea = FRA_Halted_Industrial_Power2
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			15 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			785 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Military_Industry
+		icon = GFX_focus_generic_military_industry
+		cost = 10
+		relative_position_id = FRA_Morocco_Conundrum
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Morocco_Conundrum
+		}
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			785 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Military_Factories_First
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		relative_position_id = FRA_Military_Industry
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Military_Factories_Second
+		}
+		prerequisite = {
+			focus = FRA_Military_Industry
+		}
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Military_Factories_Second
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		relative_position_id = FRA_Military_Industry
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Military_Factories_First
+		}
+		prerequisite = {
+			focus = FRA_Military_Industry
+		}
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Military_Factories_Continue
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		relative_position_id = FRA_Military_Industry
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Military_Factories_First
+			focus = FRA_Military_Factories_Second
+		}
+		completion_reward = {
+			add_ideas = FRA_Military_Construction_Efforts
+		}
+	}
+	focus = {
+		id = FRA_Finalise_Industrial_Capacity
+		icon = GFX_focus_AFG_a_modern_economy
+		cost = 10
+		relative_position_id = FRA_Industry_Continue
+		x = 2
+		y = 1
+		available = {
+			num_of_factories > 60
+		}
+		prerequisite = {
+			focus = FRA_Industry_Continue
+		}
+		prerequisite = {
+			focus = FRA_Military_Factories_Continue
+		}
+		completion_reward = {
+			remove_ideas = FRA_Halted_Industrial_Power2
+		}
+	}
+	focus = {
+		id = FRA_Spirit_Of_The_Republic
+		icon = GFX_focus_fra_le_deluge
+		cost = 5
+		relative_position_id = FRA_Morocco_Conundrum
+		x = 4
+		y = 1
+		available = {
+			has_completed_focus = FRA_Finalise_Industrial_Capacity
+		}
+		prerequisite = {
+			focus = FRA_Morocco_Conundrum
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Fragmented_Government
+				add_idea = FRA_Fragmented_Government1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Carry_The_Torch
+		icon = GFX_focus_GER_divide_and_conquer
+		cost = 5
+		relative_position_id = FRA_Spirit_Of_The_Republic
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Spirit_Of_The_Republic
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Fragmented_Government1
+				add_idea = FRA_Fragmented_Government2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Only_Forwards
+		icon = GFX_focus_RAJ_to_shake_the_world
+		cost = 5
+		relative_position_id = FRA_Carry_The_Torch
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Carry_The_Torch
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Fragmented_Government2
+				add_idea = FRA_Fragmented_Government3
+			}
+		}
+	}
+	focus = {
+		id = FRA_Look_Towards_The_Future
+		icon = GFX_focus_GER_european_confederation
+		cost = 5
+		relative_position_id = FRA_Only_Forwards
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Only_Forwards
+		}
+		completion_reward = {
+			remove_ideas = FRA_Fragmented_Government3
+			load_focus_tree = french_main_focus
+		}
+	}
+}

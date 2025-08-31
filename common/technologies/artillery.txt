@@ -514,11 +514,6 @@ technologies = {
 			tank_heavy_cannon
 		}
 
-		enable_building = {
-			building = anti_air_building
-			level = 5
-		}
-
 		path = {
 			leads_to_tech = antiair1
 			research_cost_coeff = 1
@@ -1556,6 +1551,11 @@ technologies = {
 			name = artillery_folder
 			position = { x = 5 y = 10 }
 		}
+
+		enable_building = {
+			building = anti_air_building
+			level = 1
+		}
 		
 		start_year = 1915
 
@@ -1590,6 +1590,11 @@ technologies = {
 		path = {
 			leads_to_tech = ww1_improved_antiair_equipment2
 			research_cost_coeff = 1
+		}
+
+		enable_building = {
+			building = anti_air_building
+			level = 2
 		}
 
 		research_cost = 2
@@ -1634,6 +1639,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		enable_building = {
+			building = anti_air_building
+			level = 3
+		}
+
 		research_cost = 2
 
 		folder = {
@@ -1671,6 +1681,11 @@ technologies = {
 			position = { x = 5 y = 16 }
 		}
 		
+		enable_building = {
+			building = anti_air_building
+			level = 4
+		}
+
 		start_year = 1918
 
 		categories = {
