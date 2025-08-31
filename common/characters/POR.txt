@@ -59,4 +59,76 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+
+		por_fernando_silva = {
+		name = "Fernando de Abreu e Silva"
+		portraits = {
+			civilian = {
+				large = "GFX_por_fernando_silva"
+			}
+			army = {
+				small = "GFX_por_fernando_silva_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = GER_paul_von_hindenburg
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = { old_guard }
+			skill=4
+			attack_skill= 3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		por_tomas_rosado = {
+		name = "Tomás António Rosado"
+		portraits = {
+			civilian = {
+				large = "GFX_por_tomas_rosado"
+			}
+			army = {
+				small = "GFX_por_tomas_rosado_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+			POR_man_of_the_legions #Inf Attack +10%
+			}
+			cost = 300
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = { infantry_expert infantry_leader ranger }
+			skill=2
+			attack_skill= 1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
 }
