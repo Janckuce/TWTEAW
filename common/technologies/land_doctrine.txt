@@ -3706,6 +3706,12 @@ technologies = {
 		category_front_line = {
 			breakthrough = 0.10
 		}
+		allow = {
+			AND = {
+				has_tech = ww1_land_doctrine_7
+				has_tech = ww1_land_doctrine_9
+			}
+		}
 		##########
 		
 		doctrine = yes
@@ -3863,6 +3869,12 @@ technologies = {
 	    path = {
 			leads_to_tech = ww1_land_doctrine_14
 			research_cost_coeff = 1
+		}
+		allow = {
+			AND = {
+				has_tech = ww1_land_doctrine_4
+				has_tech = ww1_land_doctrine_13
+			}
 		}
 		#Modifiers
 		category_front_line = {
