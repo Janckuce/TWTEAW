@@ -304,14 +304,14 @@ ideas = {
 		}
 		POR_Order_Of_Christ = {
 			picture = por_camisas_azuis
+				rule = {
+				can_send_volunteers = yes
+			}
 			modifier = {
 				land_doctrine_cost_factor = -0.1
 				send_volunteer_size = 9
 				send_volunteers_tension = -0.7
 				send_volunteer_divisions_required = -1
-			}
-				rule = {
-				can_send_volunteers = yes
 			}
 		}
 	}
