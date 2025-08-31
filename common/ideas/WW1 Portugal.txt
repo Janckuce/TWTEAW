@@ -304,6 +304,9 @@ ideas = {
 		}
 		POR_Order_Of_Christ = {
 			picture = por_camisas_azuis
+				rule = {
+				can_send_volunteers = yes
+			}
 			modifier = {
 				land_doctrine_cost_factor = -0.1
 				send_volunteer_size = 9
