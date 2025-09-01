@@ -8897,6 +8897,16 @@ leader_traits = {
 		}
 	}
 
+	military_baron = {	#	Louis Ruquoy Belgian Theorist
+		sprite = 14
+		experience_gain_army = 0.03
+		land_doctrine_cost_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	military_theorist = {
 		sprite = 14
 		land_doctrine_cost_factor = -0.1
