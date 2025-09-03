@@ -463,8 +463,8 @@ ideas = {
 		GER_offensive_idea = {
 			picture = ger_schlieffen_plan_idea
 			modifier = {
-				army_attack_factor = 0.025
-				army_attack_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_attack_speed_factor = 0.075
 			}
 		}
 		GER_Defensive_idea = {
@@ -567,7 +567,7 @@ ideas = {
 		GER_Aid_For_Austria = {
 			picture = GER_german_trade
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.075
 			}
 		}
 		GER_Prussian_Militarism = {
@@ -575,69 +575,71 @@ ideas = {
 			modifier = {
 				army_org_factor = 0.075
 				experience_gain_army_unit_factor = 0.05
+				land_reinforce_rate = 0.025
+				army_attack_against_major_factor = 0.05
 			}
 		}
 		GER_Prussian_Naval_Combat = {
 			picture = GER_seeherrschaft
 			modifier = {
-				experience_gain_navy_unit_factor = 0.025
-				naval_critical_effect_factor = -0.05
-				naval_morale_factor = 0.05
+				experience_gain_navy_unit_factor = 0.05
+				naval_critical_effect_factor = -0.075
+				naval_morale_factor = 0.075
 			}
 		}
 		GER_Wilhelm_Our_Kaiser = {
 			picture = ger_rebuild_the_nation
 			modifier = {
 				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		GER_Wilhelm_Our_Kaiser1 = {
 			picture = ger_rebuild_the_nation
 			modifier = {
 				consumer_goods_factor = -0.1
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.075
 			}
 		}
 		GER_Wilhelm_Our_Kaiser2 = {
 			picture = ger_rebuild_the_nation
 			modifier = {
-				consumer_goods_factor = -0.1
-				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.125
+				production_factory_efficiency_gain_factor = 0.075
 				production_oil_factor = 0.05
 			}
 		}
 		GER_Wilhelm_Our_Kaiser3 = {
 			picture = ger_rebuild_the_nation
 			modifier = {
-				consumer_goods_factor = -0.1
-				production_factory_efficiency_gain_factor = 0.05
-				production_oil_factor = 0.05
-				production_speed_buildings_factor = 0.025
+				consumer_goods_factor = -0.125
+				production_factory_efficiency_gain_factor = 0.1
+				production_oil_factor = 0.075
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		GER_Wilhelm_Our_Kaiser4 = {
 			picture = ger_rebuild_the_nation
 			modifier = {
-				consumer_goods_factor = -0.1
-				production_factory_efficiency_gain_factor = 0.05
-				production_oil_factor = 0.05
-				production_speed_buildings_factor = 0.025
+				consumer_goods_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.125
+				production_oil_factor = 0.075
+				production_speed_buildings_factor = 0.075
 			}
 
 			equipment_bonus = {
 				gw_tank_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.15
 				}
 			}
 		}
 		GER_Disloyal_Nation = {
 			picture = ger_revive_the_kaiserreich
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				stability_factor = -0.075
+				war_support_factor = -0.075
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.075
 			}
 		}
 		GER_Disloyal_Nation1 = {

@@ -10,7 +10,7 @@ guiTypes = {
 
 		size = {
 			width = 500
-			height = 20
+			height = 100
 		}
 
 		instantTextBoxType = {
@@ -20,6 +20,19 @@ guiTypes = {
 				y = -7
 			}
 			text = "FRA_Stability_Text"
+		}
+
+		instantTextBoxType = {
+			name = "Stability_Information"
+			format = centre
+			origo = center
+			position = {
+				x = 25
+				y = 20
+			}
+			maxWidth = 450
+			maxHeight = 50
+			text = "FRA_Stability_Tip"
 		}
 	}
 }

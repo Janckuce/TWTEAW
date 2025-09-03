@@ -1,0 +1,1178 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = french_main_focus
+	
+	country = {
+		factor = 0
+	}
+	
+	continuous_focus_position = { x = 245 y = 1200 }
+	
+	default = no
+
+	focus = {
+		id = FRA_Sabre_Of_Honour
+		icon = GFX_focus_BEL_consitutional_crisis
+		cost = 2
+		relative_position_id = FRA_War_Has_Begun
+		x = 1
+		y = 1
+		available = {
+			has_war = yes
+			BEL = {
+				has_war = yes
+			}
+			date > 1914.7.28
+		}
+		prerequisite = {
+			focus = FRA_War_Has_Begun
+		}
+		completion_reward = {
+			BEL = {
+				add_timed_idea = {
+					idea = BEL_Sabre_From_France
+					days = 365
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Industry_First
+		icon = GFX_focus_generic_economic_recovery
+		cost = 10
+		relative_position_id = FRA_War_Preparations
+		x = -3
+		y = 2
+		available = {
+			date > 1916.1.1
+		}
+		mutually_exclusive = {
+			focus = FRA_Industry_Second
+		}
+		prerequisite = {
+			focus = FRA_Instruments_Of_War
+		}
+		completion_reward = {
+			add_ideas = FRA_Increased_Production_Max
+		}
+	}
+	focus = {
+		id = FRA_Industry_Second
+		icon = GFX_focus_generic_modernize_industry
+		cost = 10
+		relative_position_id = FRA_War_Preparations
+		x = -1
+		y = 2
+		available = {
+			date > 1916.1.1
+		}
+		mutually_exclusive = {
+			focus = FRA_Industry_First
+		}
+		prerequisite = {
+			focus = FRA_Instruments_Of_War
+		}
+		completion_reward = {
+			add_ideas = FRA_Increased_Production_Gain
+		}
+	}
+	focus = {
+		id = FRA_Home_Materials
+		icon = GFX_focus_generic_mining_industry
+		cost = 10
+		relative_position_id = FRA_War_Preparations
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Morocco_Conundrum
+		}
+		completion_reward = {
+			16 = {
+				add_resource = {
+					type = tungsten
+					amount = 13
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_War_Preparations
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 2
+		x = 0
+		y = 4
+		cancel_if_invalid = no
+		available = {
+			date > 1914.1.1
+		}
+		completion_reward = {
+			add_ideas = FRA_War_Readiness
+		}
+	}
+	focus = {
+		id = FRA_Instruments_Of_War
+		icon = GFX_focus_SWI_issue_war_bonds
+		cost = 2
+		relative_position_id = FRA_War_Preparations
+		x = -2
+		y = 1
+		cancel_if_invalid = no
+		available = {
+			date > 1915.1.1
+		}
+		prerequisite = {
+			focus = FRA_War_Preparations
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_War_Readiness
+				add_idea = FRA_War_Readiness1
+			}
+		}
+	}
+	focus = {
+		id = FRA_War_Is_Our_Profession
+		icon = GFX_focus_GER_german_army_invincible
+		cost = 2
+		relative_position_id = FRA_Instruments_Of_War
+		x = 0
+		y = 2
+		cancel_if_invalid = no
+		available = {
+			date > 1917.1.1
+		}
+		prerequisite = {
+			focus = FRA_Industry_First
+			focus = FRA_Industry_Second
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_War_Readiness1
+				add_idea = FRA_War_Readiness2
+			}
+		}
+	}
+	#	Republic Path
+
+	focus = {
+		id = FRA_Republique
+		icon = GFX_focus_generic_democratic_europe
+		cost = 5
+		x = -4
+		y = 0
+		mutually_exclusive = {
+			focus = FRA_Commune
+			focus = FRA_Nation_Francaise
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Sour_Loser
+				add_idea = FRA_Carry_On
+			}
+			custom_effect_tooltip = FRA_Economist_Tooltip
+		}
+	}
+	focus = {
+		id = FRA_Democratie
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 10
+		relative_position_id = FRA_Republique
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FRA_Republique
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 14
+				}
+				14 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 23
+				}
+				23 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 19
+				}
+				19 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Liberte
+		icon = GFX_focus_FIN_social_democratic_womens_association
+		cost = 10
+		relative_position_id = FRA_Democratie
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_Republique
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.25
+				uses = 2
+			}
+			ENG = {
+				add_doctrine_cost_reduction = {
+					category = land_doctrine
+					cost_reduction = 0.25
+					uses = 2
+				}
+			}
+			RUS = {
+				add_doctrine_cost_reduction = {
+					category = land_doctrine
+					cost_reduction = 0.25
+					uses = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Parti
+		icon = GFX_focus_AFG_parliamentary_democracy
+		cost = 10
+		relative_position_id = FRA_Liberte
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FRA_Liberte
+		}
+		prerequisite = {
+			focus = FRA_Democratie
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = FRA_Entente_Sharing_Group
+			ENG = {
+				add_to_tech_sharing_group = FRA_Entente_Sharing_Group
+			}
+			RUS = {
+				add_to_tech_sharing_group = FRA_Entente_Sharing_Group
+			}
+		}
+	}
+	focus = {
+		id = FRA_Towed_Artillery_Primacy
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		relative_position_id = FRA_Parti
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Heavy_Artillery_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Carry_On
+				add_idea = FRA_Carry_On_Artillery
+			}
+		}
+	}
+	focus = {
+		id = FRA_Heavy_Artillery_Primacy
+		icon = GFX_goal_generic_army_artillery
+		cost = 10
+		relative_position_id = FRA_Parti
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Towed_Artillery_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Carry_On
+				add_idea = FRA_Carry_On_Heavy_Artillery
+			}
+		}
+	}
+
+	#	Commune Path
+
+	focus = {
+		id = FRA_Commune
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
+		cost = 5
+		x = 0
+		y = 0
+		mutually_exclusive = {
+			focus = FRA_Republique
+			focus = FRA_Nation_Francaise
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Sour_Loser
+				add_idea = FRA_Commune_Ideals
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+	focus = {
+		id = FRA_French_Red_Army
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 10
+		relative_position_id = FRA_Commune
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Commune
+		}
+		completion_reward = {
+			add_ideas = FRA_Red_Army
+		}
+	}
+	focus = {
+		id = FRA_Army_Expertise
+		icon = GFX_focus_BEL_the_french_horse_and_the_red_rider
+		cost = 10
+		relative_position_id = FRA_French_Red_Army
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FRA_French_Red_Army
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Reserves
+		icon = GFX_focus_AUS_raid_military_storages
+		cost = 10
+		relative_position_id = FRA_Army_Expertise
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_French_Red_Army
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+		}
+	}
+	focus = {
+		id = FRA_Shorten_Training
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 10
+		relative_position_id = FRA_Reserves
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Lengthen_Training
+		}
+		prerequisite = {
+			focus = FRA_Reserves
+			focus = FRA_Army_Expertise
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Red_Army
+				add_idea = FRA_Red_Army_Shorten
+			}
+		}
+	}
+	focus = {
+		id = FRA_Lengthen_Training
+		icon = GFX_focus_AFG_defender_of_central_asia
+		cost = 10
+		relative_position_id = FRA_Reserves
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Shorten_Training
+		}
+		prerequisite = {
+			focus = FRA_Reserves
+			focus = FRA_Army_Expertise
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Red_Army
+				add_idea = FRA_Red_Army_Lengthen
+			}
+		}
+	}
+
+	#	Fascist Path
+
+	focus = {
+		id = FRA_Nation_Francaise
+		icon = GFX_focus_generic_spread_fascism
+		cost = 5
+		x = 4
+		y = 0
+		mutually_exclusive = {
+			focus = FRA_Republique
+			focus = FRA_Commune
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Sour_Loser
+				add_idea = FRA_Ideaux
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			custom_effect_tooltip = FRA_Head_Of_Directorate_Of_New_Buildings_Tooltip
+		}
+	}
+	focus = {
+		id = FRA_Naval_Advancements
+		icon = GFX_focus_generic_navy_research_bonus
+		cost = 10
+		relative_position_id = FRA_Nation_Francaise
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FRA_Nation_Francaise
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 1
+				uses = 2
+			}
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Naval_Investments
+		icon = GFX_focus_generic_naval_discipline
+		cost = 10
+		relative_position_id = FRA_Naval_Advancements
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_Nation_Francaise
+		}
+		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			15 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Napoleon_Class_Ship
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10
+		relative_position_id = FRA_Naval_Investments
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = FRA_Naval_Investments
+			focus = FRA_Naval_Advancements
+		}
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+				}
+				name = "Napoleon I"
+				requested_factories = 1
+				progress = 0.9
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+		}
+	}
+	focus = {
+		id = FRA_Screens_Primacy
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		relative_position_id = FRA_Napoleon_Class_Ship
+		x = -1
+		y = -1
+		mutually_exclusive = {
+			focus = FRA_Capital_Ships_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Naval_Advancements
+			focus = FRA_Naval_Investments
+		}
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Louis XIX"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Henry V"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				name = "Louis Philippe II"
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_ideas = FRA_Screening_Primacy
+		}
+	}
+	focus = {
+		id = FRA_Capital_Ships_Primacy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		relative_position_id = FRA_Napoleon_Class_Ship
+		x = 1
+		y = -1
+		prerequisite = {
+			focus = FRA_Naval_Advancements
+			focus = FRA_Naval_Investments
+		}
+		mutually_exclusive = {
+			focus = FRA_Screens_Primacy
+		}
+		completion_reward = {
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Louis XVIII"
+				requested_factories = 1
+				progress = 0.6
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Charles X"
+				requested_factories = 1
+				progress = 0.6
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+				}
+				name = "Louis Philippe I"
+				requested_factories = 1
+				progress = 0.6
+				amount = 1
+				industrial_manufacturer = mio:FRA_acl_organization
+			}
+			add_ideas = FRA_Capitals_Primacy
+		}
+	}
+
+	#	Main Research Focus
+
+	focus = {
+		id = FRA_Research_Investments1
+		icon = GFX_focus_research
+		cost = 10
+		x = 7
+		y = 0
+		mutually_exclusive = {
+			focus = FRA_Research_Investments2
+		}
+		completion_reward = {
+			add_ideas = FRA_Research_Funding_Left
+		}
+	}
+	focus = {
+		id = FRA_Research_Investments2
+		icon = GFX_focus_research2
+		cost = 10
+		x = 9
+		y = 0
+		mutually_exclusive = {
+			focus = FRA_Research_Investments1
+		}
+		completion_reward = {
+			add_ideas = FRA_Research_Funding_Right
+		}
+	}
+	focus = {
+		id = FRA_Extreme_Research
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10
+		relative_position_id = FRA_Research_Investments1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FRA_Research_Investments1
+			focus = FRA_Research_Investments2
+		}
+		completion_reward = {
+			add_ideas = FRA_Research_Funding
+		}
+	}
+	focus = {
+		id = FRA_Organisation_Funding
+		icon = GFX_focus_generic_copy_plane_designs
+		cost = 10
+		relative_position_id = FRA_Extreme_Research
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Extreme_Research
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Research_Funding
+				add_idea = FRA_Research_Funding1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Paris_Academy
+		icon = GFX_focus_NORDIC_mon_research
+		cost = 10
+		relative_position_id = FRA_Organisation_Funding
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Organisation_Funding
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					controls_province = 11506
+				}
+				add_ideas = FRA_Paris_Scientists
+			}
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = FRA_State_Of_Military
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		x = 16
+		y = 0
+		completion_reward = { 
+			FRA = {
+				country_event = {
+					id = ww1_france.21
+				}
+			}
+		}
+	}
+
+	# Main Military Focus
+
+	focus = {
+		id = FRA_Superior_Warfare
+		icon = GFX_focus_PER_modern_cataphract
+		cost = 10
+		x = 12
+		y = 1
+		prerequisite = {
+			focus = FRA_State_Of_Military
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Combat
+		}
+	}
+	focus = {
+		id = FRA_Expert_Combatants
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Strength_In_Numbers
+		}
+		prerequisite = {
+			focus = FRA_Superior_Warfare
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Combat
+				add_idea = FRA_Expert_Combat
+			}
+		}
+	}
+	focus = {
+		id = FRA_Strength_In_Numbers
+		icon = GFX_focus_ITA_banda_carita
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Expert_Combatants
+		}
+		prerequisite = {
+			focus = FRA_Superior_Warfare
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Combat
+				add_idea = FRA_Numbers_Combat
+			}
+		}
+	}
+	focus = {
+		id = FRA_Defensive_Nation
+		icon = GFX_focus_SWE_varnplikt
+		cost = 10
+		relative_position_id = FRA_Superior_Warfare
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Expert_Combatants
+			focus = FRA_Strength_In_Numbers
+		}
+		completion_reward = {
+			add_ideas = FRA_Defensive_Experts
+		}
+	}
+	focus = {
+		id = FRA_Defensive_People
+		icon = GFX_focus_SWE_lottakoren
+		cost = 10
+		relative_position_id = FRA_Defensive_Nation
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Defensive_Nation
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Defensive_Experts
+				add_idea = FRA_Defensive_Experts1
+			}
+		}
+	}
+
+	#	Main Air Focus
+
+	focus = {
+		id = FRA_Superior_Air_Force
+		icon = GFX_focus_generic_aircraft_production
+		cost = 10
+		x = 16
+		y = 1
+		prerequisite = {
+			focus = FRA_State_Of_Military
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Air_Combat
+		}
+	}
+	focus = {
+		id = FRA_Expert_Air_Aces
+		icon = GFX_focus_FIN_expand_air_force_academy
+		cost = 10
+		relative_position_id = FRA_Superior_Air_Force
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Superior_Air_Force
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat
+				add_idea = FRA_Superior_Air_Combat1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Fighter_Primacy
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Air_Support_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Expert_Air_Aces
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat1
+				add_idea = FRA_Superior_Air_Combat_Fighter
+			}
+		}
+	}
+	focus = {
+		id = FRA_Air_Support_Primacy
+		icon = GFX_focus_generic_cas_aircraft
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Fighter_Primacy
+		}
+		prerequisite = {
+			focus = FRA_Expert_Air_Aces
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Air_Combat1
+				add_idea = FRA_Superior_Air_Combat_Air_Support
+			}
+		}
+	}
+	focus = {
+		id = FRA_Air_Exercises
+		icon = GFX_focus_generic_air_partners
+		cost = 10
+		relative_position_id = FRA_Expert_Air_Aces
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FRA_Fighter_Primacy
+			focus = FRA_Air_Support_Primacy
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Air_Exercise
+		}
+	}
+
+	#	Main Naval Focus
+
+	focus = {
+		id = FRA_Superior_Naval_Power
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		x = 20
+		y = 1
+		prerequisite = {
+			focus = FRA_State_Of_Military
+		}
+		completion_reward = {
+			add_ideas = FRA_Superior_Naval_Combat
+		}
+	}
+	focus = {
+		id = FRA_Faster_Repairing
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		relative_position_id = FRA_Superior_Naval_Power
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Superior_Naval_Power
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat
+				add_idea = FRA_Superior_Naval_Combat1
+			}
+		}
+	}
+	focus = {
+		id = FRA_Iron_Admirals
+		icon = GFX_focus_generic_naval_invasion_tank
+		cost = 10
+		relative_position_id = FRA_Faster_Repairing
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_Faster_Repairing
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat1
+				add_idea = FRA_Superior_Naval_Combat2
+			}
+		}
+	}
+	focus = {
+		id = FRA_Destroyer_Expertise
+		icon = GFX_focus_generic_naval_invasion
+		cost = 10
+		relative_position_id = FRA_Iron_Admirals
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Capital_Ship_Expertise
+		}
+		prerequisite = {
+			focus = FRA_Iron_Admirals
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat2
+				add_idea = FRA_Superior_Naval_Combat_Destroyer
+			}
+		}
+	}
+	focus = {
+		id = FRA_Capital_Ship_Expertise
+		icon = GFX_focus_generic_cruiser_submarines
+		cost = 10
+		relative_position_id = FRA_Iron_Admirals
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = FRA_Destroyer_Expertise
+		}
+		prerequisite = {
+			focus = FRA_Iron_Admirals
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_Superior_Naval_Combat2
+				add_idea = FRA_Superior_Naval_Combat_Capital_Ship
+			}
+		}
+	}
+
+	#	Main War Focus
+	focus = {
+		id = FRA_War_Has_Begun
+		icon = GFX_focus_generic_total_war
+		cost = 1.5
+		x = 2
+		y = 1
+		relative_position_id = FRA_War_Preparations
+		prerequisite = {
+			focus = FRA_War_Preparations
+		}
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_French_Warfare
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = FRA_Migrate_Industry
+		icon = GFX_focus_SWI_neutrality_on_the_move
+		cost = 5
+		relative_position_id = FRA_War_Has_Begun
+		x = -1
+		y = 1
+		bypass = {
+		}
+		prerequisite = {
+			focus = FRA_War_Has_Begun
+		}
+		completion_reward = {
+			16 = {
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			15 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			24 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			27 = {
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			31 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_Masters_Of_The_Craft
+		icon = GFX_focus_SWE_defense_act
+		cost = 5
+		relative_position_id = FRA_Migrate_Industry
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FRA_Migrate_Industry
+			focus = FRA_Sabre_Of_Honour
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_French_Warfare1
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = FRA_They_Shall_Not_Pass
+		icon = GFX_focus_fra_milice
+		cost = 5
+		relative_position_id = FRA_Masters_Of_The_Craft
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_Migrate_Industry
+			focus = FRA_Sabre_Of_Honour
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_French_Warfare2
+				days = 50
+			}
+		}
+	}
+	focus = {
+		id = FRA_Counter_Attack
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
+		cost = 2
+		relative_position_id = FRA_They_Shall_Not_Pass
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = FRA_Migrate_Industry
+			focus = FRA_Sabre_Of_Honour
+		}
+		available = {
+			date > 1918.7.28
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_100_Days_Offensive
+				days = 100
+			}
+		}
+	}
+}

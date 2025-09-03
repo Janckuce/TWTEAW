@@ -1,6 +1,6 @@
 characters={
 	POR_teofilo_braga = {
-		name = POR_character_teofilo_braga
+		name = "Joaquim Teófilo Fernandes Braga"
 		portraits = {
 			civilian = {
 				large = "GFX_POR_teofilo_braga"
@@ -9,6 +9,126 @@ characters={
 		country_leader = {
 			ideology = liberalism
 			expire = "1965.1.1.1"
+		}
+	}
+		POR_manuel_de_arriaga= {
+		name = "José de Arriaga Brum"
+		portraits = {
+			civilian = {
+				large = "GFX_POR_manuel_de_arriaga"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1965.1.1.1"
+		}
+	}
+		por_bernardino_machado= {
+		name = "Bernardino Luíz Machado Guimarães"
+		portraits = {
+			civilian = {
+				large = "GFX_por_bernardino_machado"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1965.1.1.1"
+		}
+	}
+		por_sidonio_pais= {
+		name = "Sidónio Bernardino da Silva Pais"
+		portraits = {
+			civilian = {
+				large = "GFX_por_sidonio_pais"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			expire = "1965.1.1.1"
+		}
+	}
+		por_manuel_maria= {
+		name = "Manuel Filipe de Saxe-Coburgo-Gotha"
+		portraits = {
+			civilian = {
+				large = "GFX_por_manuel_maria"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+
+		por_fernando_silva = {
+		name = "Fernando de Abreu e Silva"
+		portraits = {
+			civilian = {
+				large = "GFX_por_fernando_silva"
+			}
+			army = {
+				small = "GFX_por_fernando_silva_frame"
+			}
+		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = GER_paul_von_hindenburg
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = { old_guard }
+			skill=4
+			attack_skill= 3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		por_tomas_rosado = {
+		name = "Tomás António Rosado"
+		portraits = {
+			civilian = {
+				large = "GFX_por_tomas_rosado"
+			}
+			army = {
+				small = "GFX_por_tomas_rosado_frame"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+			POR_man_of_the_legions #Inf Attack +10%
+			}
+			cost = 300
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = { infantry_expert infantry_leader ranger }
+			skill=2
+			attack_skill= 1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 		}
 	}
 }

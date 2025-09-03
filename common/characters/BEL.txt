@@ -33,7 +33,7 @@ characters={
         }
     }
 		field_marshal = {
-			traits = {   }
+			traits = { organizer }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 2
@@ -143,19 +143,12 @@ characters={
 		}
     advisor = {
         slot = theorist
-        traits = { military_theorist }
+        traits = { military_baron }
         cost = 150
         can_be_fired = yes
         idea_token = bel_louis_ruquoy
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
         available = {
-            always = yes
+            is_hired_as_advisor = no
         }
     }
 		advisor = {
@@ -164,15 +157,8 @@ characters={
         cost = 150
         can_be_fired = yes
         idea_token = bel_louis_ruquoy
-
-        allowed = {
-            OR = {
-                always = yes
-            }
-        }
-
         available = {
-            always = yes
+            is_hired_as_advisor = no
         }
     }
 		corps_commander = {

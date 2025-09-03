@@ -84,3 +84,93 @@ country_event = {
 		name = "No..."
 	}
 }
+
+country_event = {
+	id = ww1_portugal.4
+	title = "Another one Bites the Dust"
+	desc = ""
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+		trigger = {
+		date > 1911.2.2
+		has_government = democratic
+	}
+
+    option = {
+        name = "The Revolution devours its children"
+			add_popularity = {
+            ideology = communism
+            popularity = 0.1
+        }
+			set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+	}
+}
+
+country_event = {
+	id = ww1_portugal.5
+	title = "Another one Bites the Dust"
+	desc = ""
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+    option = {
+        name = "The Revolution devours its children"
+			add_popularity = {
+            ideology = communism
+            popularity = 0.05
+        }
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+	}
+}
+
+country_event = {
+	id = ww1_portugal.6
+	title = "Another one Bites the Dust"
+	desc = ""
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+    option = {
+        name = "The Revolution devours its children"
+			add_popularity = {
+            ideology = communism
+            popularity = 0.1
+        }
+			set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+        }
+		kill_country_leader = yes
+	}
+}
+
+country_event = {
+	id = ww1_portugal.7
+	title = "Another one Bites the Dust"
+	desc = ""
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+    option = {
+        name = "The Revolution devours its children"
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.1
+        }
+			set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
+	}
+}
