@@ -1,0 +1,57 @@
+add_namespace = ww1_raj
+
+#	Britain Rejects Funding
+country_event = {
+	id = ww1_raj.1
+	title = ww1_raj.1.t
+	desc = ww1_raj_desc.1
+	picture = GFX_aus_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_raj.1.a
+	}
+}
+
+#	Britain Rejects Army Training
+country_event = {
+	id = ww1_raj.2
+	title = ww1_raj.2.t
+	desc = ww1_raj_desc.2
+	picture = GFX_aus_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_raj.2.a
+	}
+}
+
+#	Britain Accepts Funding
+country_event = {
+	id = ww1_raj.3
+	title = ww1_raj.3.t
+	desc = ww1_raj_desc.3
+	picture = GFX_aus_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_raj.3.a
+	}
+}
+
+#	Britain Accepts Army Training
+country_event = {
+	id = ww1_raj.4
+	title = ww1_raj.4.t
+	desc = ww1_raj_desc.4
+	picture = GFX_aus_elections
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_raj.4.a
+	}
+}

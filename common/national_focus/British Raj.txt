@@ -1,0 +1,787 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = indian_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = RAJ
+		}
+	}
+
+	default = no
+
+	#	British Support Path
+
+	focus = {
+		id = RAJ_British_Raj
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 7
+		y = 0
+		mutually_exclusive = {
+			focus = RAJ_British_India
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Bande_Mataram
+				add_idea = RAJ_Bande_Mataram_Britannia
+			}
+		}
+	}
+	
+	#	Swadeshi Path
+
+	focus = {
+		id = RAJ_For_Britannia
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_Raj
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_Raj
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Swadeshi_Movement
+				add_idea = RAJ_For_Britannia_Idea
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Mutual_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_For_Britannia
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_For_Britannia
+		}
+		completion_reward = {
+			439 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Request_Funding
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Mutual_Investments
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Mutual_Investments
+		}
+		completion_reward = {
+			ENG = {
+				country_event = ww1_uk.17
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Major_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Request_Funding
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = RAJ_Minor_Investments
+		}
+		available = {
+			has_idea = RAJ_British_Funds
+		}
+		prerequisite = {
+			focus = RAJ_Request_Funding
+		}
+		completion_reward = {
+			439 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			431 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Minor_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Request_Funding
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = RAJ_Major_Investments
+		}
+		available = {
+			not = {
+				has_idea = RAJ_British_Funds
+			}
+		}
+		prerequisite = {
+			focus = RAJ_Request_Funding
+		}
+		completion_reward = {
+			439 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			431 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Finalise_Deal
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Major_Investments
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Major_Investments
+			focus = RAJ_Minor_Investments
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_For_Britannia_Idea
+				add_idea = RAJ_For_Britannia_Idea1
+			}
+		}
+	}
+
+	#	Populus Path
+
+	focus = {
+		id = RAJ_Populus1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_Raj
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_Raj
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous
+				add_idea = RAJ_Indian_Populous1
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Populus2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Populus1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Populus1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous1
+				add_idea = RAJ_Indian_Populous2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Populus3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Populus2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Populus2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous2
+				add_idea = RAJ_Indian_Populous3
+			}
+		}
+	}
+
+	#	Industry Path
+
+	focus = {
+		id = RAJ_Army1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_Raj
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_Raj
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Minuscule_Armed_Forces
+				add_idea = RAJ_Minuscule_Armed_Forces1
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Army2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Army1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Army1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Minuscule_Armed_Forces1
+				add_idea = RAJ_Minuscule_Armed_Forces2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Army3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Army2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Army2
+		}
+		completion_reward = {
+			remove_ideas = RAJ_Minuscule_Armed_Forces2
+		}
+	}
+
+	#	Bande Mataram Path
+
+	focus = {
+		id = RAJ_Indian_Matters1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_Raj
+		x = -4
+		y = 1
+		available = {
+			neutrality > 0.9
+		}
+		prerequisite = {
+			focus = RAJ_British_Raj
+		}
+		completion_reward = {
+			add_ideas = RAJ_Civilian_Efforts
+		}
+	}
+	focus = {
+		id = RAJ_Indian_Matters2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Indian_Matters1
+		x = 0
+		y = 1
+		available = {
+			date > 1914.7.28
+		}
+		prerequisite = {
+			focus = RAJ_Indian_Matters1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Bande_Mataram_Britannia
+				add_idea = RAJ_Bande_Mataram_Britannia1
+			}
+		}
+	}
+
+	#	Main Focus
+	
+	focus = {
+		id = RAJ_Maximise_Trade_Output
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 17.2
+		relative_position_id = RAJ_Populus3
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Populus3
+		}
+		prerequisite = {
+			focus = RAJ_Army3
+		}
+		prerequisite = {
+			focus = RAJ_Indian_Matters2
+		}
+		completion_reward = {
+			640 = {
+				add_core_of = RAJ
+			}
+			288 = {
+				add_core_of = RAJ
+			}
+			440 = {
+				add_core_of = RAJ
+			}
+			442 = {
+				add_core_of = RAJ
+			}
+			443 = {
+				add_core_of = RAJ
+			}
+			444 = {
+				add_core_of = RAJ
+			}
+			445 = {
+				add_core_of = RAJ
+			}
+			add_ideas = free_trade
+			add_research_slot = 1
+		}
+	}
+
+	#	Middle Path
+
+	focus = {
+		id = RAJ_Research1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 9
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_Raj
+			focus = RAJ_British_India
+		}
+		completion_reward = {
+			add_ideas = RAJ_Scientists
+		}
+	}
+	focus = {
+		id = RAJ_Research2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Research1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Research1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Scientists
+				add_idea = RAJ_Scientists1
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Research3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Research2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Research2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Scientists1
+				add_idea = RAJ_Scientists2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Laboratories
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Research3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Research3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Scientists2
+				add_idea = RAJ_Scientists3
+			}
+			add_research_slot = 1
+		}
+	}
+
+	#	India First Path
+
+	focus = {
+		id = RAJ_British_India
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 11
+		y = 0
+		mutually_exclusive = {
+			focus = RAJ_British_Raj
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Bande_Mataram
+				add_idea = RAJ_Bande_Mataram_India
+			}
+		}
+	}
+	focus = {
+		id = RAJ_For_India
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_India
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_India
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Swadeshi_Movement
+				add_idea = RAJ_For_India_Idea
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Personal_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_For_India
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_For_India
+		}
+		completion_reward = {
+			439 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Request_Training
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Personal_Investments
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Personal_Investments
+		}
+		completion_reward = {
+			ENG = {
+				country_event = ww1_uk.18
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Minor_Training
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Request_Training
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = RAJ_Major_Training
+		}
+		available = {
+			not = {
+				has_idea = RAJ_British_Army_Training
+			}
+		}
+		prerequisite = {
+			focus = RAJ_Request_Training
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.25
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Major_Training
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Request_Training
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = RAJ_Minor_Training
+		}
+		available = {
+			has_idea = RAJ_British_Army_Training
+		}
+		prerequisite = {
+			focus = RAJ_Request_Training
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.5
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Finalise_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Major_Training
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Major_Training
+			focus = RAJ_Minor_Training
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_For_India_Idea
+				add_idea = RAJ_For_India_Idea1
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+
+	#	Populus Path
+
+	focus = {
+		id = RAJ_Populus_India1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_India
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_India
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous
+				add_idea = RAJ_Indian_Populous1
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Populus_India2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Populus_India1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Populus_India1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous1
+				add_idea = RAJ_Indian_Populous2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Populus_India3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Populus_India2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Populus_India2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous2
+				add_idea = RAJ_Indian_Populous3
+			}
+		}
+	}
+
+	#	Industry Path
+
+	focus = {
+		id = RAJ_Army_India1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_India
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = RAJ_British_India
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Minuscule_Armed_Forces
+				add_idea = RAJ_Minuscule_Armed_Forces1
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Army_India2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Army_India1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = RAJ_Army_India1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Minuscule_Armed_Forces1
+				add_idea = RAJ_Minuscule_Armed_Forces2
+			}
+		}
+	}
+	focus = {
+		id = RAJ_Army_India3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Army_India2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Army_India2
+		}
+		completion_reward = {
+			remove_ideas = RAJ_Minuscule_Armed_Forces2
+		}
+	}
+
+	#	Bande Mataram Path
+
+	focus = {
+		id = RAJ_Only_Indian_Matters1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_British_India
+		x = 4
+		y = 1
+		available = {
+			fascism > 0.8
+		}
+		prerequisite = {
+			focus = RAJ_British_India
+		}
+		completion_reward = {
+			add_ideas = RAJ_Military_Efforts
+		}
+	}
+	focus = {
+		id = RAJ_Only_Indian_Matters2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = RAJ_Only_Indian_Matters1
+		x = 0
+		y = 1
+		available = {
+			date > 1914.7.28
+		}
+		prerequisite = {
+			focus = RAJ_Only_Indian_Matters1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RAJ_Bande_Mataram_India
+				add_idea = RAJ_Bande_Mataram_India1
+			}
+		}
+	}
+
+	#	Main Focus
+	
+	focus = {
+		id = RAJ_Maximise_Militancy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 17.2
+		relative_position_id = RAJ_Populus_India3
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = RAJ_Populus_India3
+		}
+		prerequisite = {
+			focus = RAJ_Army_India3
+		}
+		prerequisite = {
+			focus = RAJ_Only_Indian_Matters2
+		}
+		completion_reward = {
+			add_ideas = RAJ_Maximised_Armed_Forces
+			swap_ideas = {
+				remove_idea = RAJ_Indian_Populous3
+				add_idea = RAJ_Maximised_Indian_Populus
+			}
+			add_ideas = Controlled_Swadeshi
+			add_research_slot = 1
+		}
+	}
+}

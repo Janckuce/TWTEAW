@@ -365,6 +365,56 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
+		Swadeshi = {
+
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			removal_cost = -1
+			picture = isolation
+
+			rule = {
+				can_access_market = no
+			}
+
+			modifier = {
+				min_export = 0
+				consumer_goods_expected_value = 0.4
+				army_intel_to_others = 40
+				civilian_intel_to_others = 40
+				production_speed_buildings_factor = -0.3
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		Controlled_Swadeshi = {
+
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			removal_cost = -1
+			picture = isolation
+
+			rule = {
+				can_access_market = no
+			}
+
+			modifier = {
+				min_export = 0
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
 		uncontrolled_exports = {
 
 

@@ -496,7 +496,90 @@ country_event = {
 		}
 	}
 
-		option = {
-        name = "No..."
-        }
+	option = {
+    	name = "No..."
+    }
+}
+
+
+#	India Asks For Funds
+country_event = {
+	id = ww1_uk.17
+	title = ww1_uk.17.t
+	desc = ww1_uk_desc.17
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_uk.17.a
+
+		ENG = {
+			add_timed_idea = {
+				idea = ENG_Indian_Funds
+				days = 60
+			}
+		}
+
+		RAJ = {
+			add_timed_idea = {
+				idea = RAJ_British_Funds
+				days = 120
+			}
+			country_event = ww1_raj.3
+		}
+
+		ai_chance = {
+			factor = 100
+		}
 	}
+
+	option = {
+		name = ww1_uk.17.b
+
+		RAJ = {
+			country_event = ww1_raj.1
+		}
+	}
+}
+
+#	India Asks For Military Training
+country_event = {
+	id = ww1_uk.18
+	title = ww1_uk.18.t
+	desc = ww1_uk_desc.18
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_uk.18.a
+
+		ENG = {
+			add_timed_idea = {
+				idea = ENG_Indian_Army_Training
+				days = 60
+			}
+		}
+
+		RAJ = {
+			add_timed_idea = {
+				idea = RAJ_British_Army_Training
+				days = 120
+			}
+			country_event = ww1_raj.4
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = ww1_uk.18.b
+
+		RAJ = {
+			country_event = ww1_raj.2
+		}
+	}
+}
