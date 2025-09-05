@@ -2466,7 +2466,6 @@ technologies = {
 		#reduce land night combat penalty
 		land_night_attack = 0.25 # negates half of base penalty
 	
-	
 		path = {
 			leads_to_tech = attritional_containment 
 			research_cost_coeff = 1
@@ -3647,6 +3646,9 @@ technologies = {
 		}
 		#Modifiers
 		land_night_attack = 0.15
+
+		planning_speed = 0.3
+
 		##########
 		
 		doctrine = yes
@@ -3677,6 +3679,9 @@ technologies = {
 			max_organisation = 10
 			soft_attack = 0.1
 		}
+
+		max_planning = 0.08
+
 		##########
 		
 		doctrine = yes
@@ -3704,8 +3709,11 @@ technologies = {
 			has_tech = ww1_land_doctrine_15
 		}
 		category_front_line = {
-			breakthrough = 0.10
+			breakthrough = 0.20
 		}
+
+		max_planning = 0.08
+
 		allow = {
 			AND = {
 				has_tech = ww1_land_doctrine_7
@@ -3841,6 +3849,9 @@ technologies = {
 		category_all_infantry = {
 			defense = 0.1
 		}
+
+		max_dig_in = 4
+
 		##########
 		
 		doctrine = yes
