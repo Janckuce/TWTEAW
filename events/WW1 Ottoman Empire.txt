@@ -463,28 +463,75 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ww1_ottoman.12.a
+
+		if = {
+			limit = {
+				656 = {
+					is_controlled_by = TUR
+				}
+			}
+			656 = {
+				set_state_owner_to = YEM
+				set_state_controller_to = YEM
+			}
+		}
+		if = {
+			limit = {
+				294 = {
+					is_controlled_by = TUR
+				}
+			}
+			294 = {
+				set_state_owner_to = YEM
+				set_state_controller_to = YEM
+			}
+		}
+		if = {
+			limit = {
+				658 = {
+					is_controlled_by = TUR
+				}
+			}
+			658 = {
+				set_state_owner_to = YEM
+				set_state_controller_to = YEM
+			}
+		}
+		if = {
+			limit = {
+				765 = {
+					is_controlled_by = TUR
+				}
+			}
+			765 = {
+				set_state_owner_to = YEM
+				set_state_controller_to = YEM
+			}
+		}
+		if = {
+			limit = {
+				293 = {
+					is_controlled_by = TUR
+				}
+			}
+			293 = {
+				set_state_owner_to = YEM
+				set_state_controller_to = YEM
+			}
+		}
+		if = {
+			limit = {
+				922 = {
+					is_controlled_by = TUR
+				}
+			}
+			922 = {
+				set_state_owner_to = YEM
+				set_state_controller_to = YEM
+			}
+		}
 		ai_chance = {
 			factor = 100
-		}
-		656 = {
-			set_state_owner_to = YEM
-			set_state_controller_to = YEM
-			remove_claim_by = YEM
-		}
-		294 = {
-			set_state_owner_to = YEM
-			set_state_controller_to = YEM
-			remove_claim_by = YEM
-		}
-		658 = {
-			set_state_owner_to = YEM
-			set_state_controller_to = YEM
-			remove_claim_by = YEM
-		}
-		765 = {
-			set_state_owner_to = YEM
-			set_state_controller_to = YEM
-			remove_claim_by = YEM
 		}
 	}
 	option = {
