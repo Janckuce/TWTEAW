@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Industry_Main
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 20
 		relative_position_id = YEM_Deciding_Our_Fate
 		x = -8
 		y = 1
@@ -73,46 +73,29 @@ focus_tree = {
 	focus = {
 		id = YEM_Industry1
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 20
 		relative_position_id = YEM_Industry_Main
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = YEM_Industry_Main
 		}
 		completion_reward = {
 			679 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			921 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
-			}
-		}
-	}
-	focus = {
-		id = YEM_Industry2
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Industry_Main
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = YEM_Industry_Main
-		}
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
 			}
 		}
 	}
@@ -130,26 +113,19 @@ focus_tree = {
 			921 = {
 				add_resource = {
 					type = steel
+					amount = 8
+				}
+			}
+				679 = {
+				add_resource = {
+					type = aluminium
 					amount = 4
 				}
 			}
-		}
-	}
-	focus = {
-		id = YEM_Industry4
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Industry2
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Industry2
-		}
-		completion_reward = {
-			675 = {
+				679 = {
 				add_resource = {
-					type = oil
-					amount = 10
+					type = tungsten
+					amount = 6
 				}
 			}
 		}
@@ -157,7 +133,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Industry5
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 28.7
 		relative_position_id = YEM_Industry3
 		x = 0
 		y = 1
@@ -167,43 +143,14 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
-			}
-		}
-	}
-	focus = {
-		id = YEM_Industry6
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Industry4
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Industry4
-		}
-		completion_reward = {
-			679 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			921 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
+				level = 6
 			}
 		}
 	}
 	focus = {
 		id = YEM_Capital_Investment
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 20
 		relative_position_id = YEM_Industry_Main
 		x = 0
 		y = 4
@@ -215,93 +162,20 @@ focus_tree = {
 		}
 		completion_reward = {
 			679 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 9
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 6
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 4
 				}
 			}
 			swap_ideas = {
 				remove_idea = YEM_Relevant_Capital
 				add_idea = YEM_Famous_Capital
 			}
-		}
-	}
-	focus = {
-		id = YEM_Industrial_Expansion
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Capital_Investment
-		x = -1
-		y = 1
-		mutually_exclusive = {
-			focus = YEM_Agricultural_Expansion
-		}
-		prerequisite = {
-			focus = YEM_Capital_Investment
-		}
-		completion_reward = {
-			679 = {
-				add_extra_state_shared_building_slots = 6
-			}
-			add_ideas = YEM_Industrialisation_Efforts
-		}
-	}
-	focus = {
-		id = YEM_Agricultural_Expansion
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Capital_Investment
-		x = 1
-		y = 1
-		mutually_exclusive = {
-			focus = YEM_Industrial_Expansion
-		}
-		prerequisite = {
-			focus = YEM_Capital_Investment
-		}
-		completion_reward = {
-			679 = {
-				add_extra_state_shared_building_slots = 6
-			}
-			add_ideas = YEM_Agricultural_Efforts
-		}
-	}
-	focus = {
-		id = YEM_Capital_Of_Wonders
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Capital_Investment
-		x = 0
-		y = 2
-		available = {
-			industrial_complex > 19
-		}
-		prerequisite = {
-			focus = YEM_Industrial_Expansion
-			focus = YEM_Agricultural_Expansion
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Famous_Capital
-				add_idea = YEM_Wonder_Capital
-			}
-			679 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-				}
-			}
-			add_research_slot = 1
 		}
 	}
 	focus = {
