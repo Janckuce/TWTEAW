@@ -86,6 +86,20 @@ GER_DO_NOT_NAVAL_INVADE = {
 	}
 	enable = {
 		date < 1920.1.1
+
+	}
+	abort = {
+		FRA = {
+			has_capitulated = yes
+		}
+		RUS = {
+			OR = {
+				surrender_progress > 50
+			not = {
+				has_war_with = GER
+				}
+			}
+		}
 	}
 	abort_when_not_enabled = yes
 

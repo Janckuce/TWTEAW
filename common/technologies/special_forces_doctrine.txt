@@ -507,10 +507,10 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		pioneer_support = {
-			jungle = {
-				attack = 0.15
-				defence = 0.10
-				movement = 0.10
+			river = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.05
 			}
 		}
 		
@@ -606,10 +606,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		unit_marine_design_cost_factor = -0.50
+		enable_subunits = {
+			marine_commando
+		}
 
 		marine = {
 			max_organisation = 5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
 		}
 			
 		doctrine = yes	
@@ -650,12 +656,12 @@ technologies = {
 		
 		xor = { marines_expeditionary }
 		
-		enable_subunits = {
-			marine_commando
-		}
-		
-		on_research_complete = {
-			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
+		marine = {
+			river = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.05
+			}
 		}
 		
 		acclimatization_cold_climate_gain_factor = 0.1
@@ -748,6 +754,10 @@ technologies = {
 		marine_commando = {
 			breakthrough = 0.15
 		}
+		marine = {
+			breakthrough = 0.15
+		}
+		special_forces_attack_factor = 0.10
 		
 		doctrine = yes	
 		research_cost = 2.25
@@ -756,10 +766,6 @@ technologies = {
 			special_forces_doctrine
 			marine_tech
 			cat_marines_doctrine
-		}
-		
-		on_research_complete = {
-			custom_effect_tooltip = SF_marine_demoliton_effect_TT
 		}
 		
 		folder = {
@@ -792,8 +798,8 @@ technologies = {
 		
 		pioneer_support = {
 			battalion_mult = {
-				category = category_line_artillery
-				max_organisation = 2
+				category = category_marines
+				max_organisation = 5
 				add = yes
 			}
 		}
