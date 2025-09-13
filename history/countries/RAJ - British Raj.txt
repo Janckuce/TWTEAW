@@ -1,5 +1,7 @@
 ﻿capital = 439
 
+set_oob = "RAJ_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -41,14 +43,18 @@ set_politics = {
 
 set_popularities = {
 	neutrality = 90
-	democratic = 10
+	fascism = 10
 }
 
 add_ideas = {
+	RAJ_Bande_Mataram
+	RAJ_Indian_Populous
+	RAJ_Swadeshi_Movement
+	RAJ_Minuscule_Armed_Forces
+	Swadeshi
+	disarmed_nation
 }
 
-set_research_slots = 3
-set_stability = 0.6
+set_research_slots = 2
+set_stability = 0.4
 set_war_support = 0.3
-
-# End of Party Popularity, Stability, War Support and other ##

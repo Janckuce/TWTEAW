@@ -1,3 +1,24 @@
+YEM_Saudi_Arabia_Category = {
+	YEM_Unify_The_Nation = {
+		priority = 100
+		cost = 1000
+		fire_only_once = yes
+		allowed = {
+			tag = YEM
+		}
+		available = {
+			or = {
+				has_completed_focus = YEM_Our_Place_In_The_Sun
+				has_completed_focus = YEM_Our_Southern_Enemy
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = YEM_Saudi_Arabia
+			add_ideas = YEM_Saudi_Arabian_Militarism
+		}
+	}
+}
+
 YEM_Desert_Expertise_Category = {
 	YEM_Irregular_Exercise = {
 		priority = 100

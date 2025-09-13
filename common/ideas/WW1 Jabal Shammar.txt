@@ -157,7 +157,7 @@ ideas = {
 		}
 		YEM_Agricultural_Efforts = {
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.25
 			}
 		}
 		YEM_Extreme_Conscription = {
@@ -202,6 +202,12 @@ ideas = {
 				naval_bomber = {
 					build_cost_ic = -0.1
 				}
+			}
+		}
+		YEM_Saudi_Arabian_Militarism = {
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
 	}
