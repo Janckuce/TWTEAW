@@ -476,6 +476,60 @@ characters={
 			logistics_skill = 5
 		}
 	}
+
+	FRA_Gabriel_Darrieus = {
+		name = FRA_Character_Gabriel_Darrieus
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_philippe_petain"
+			}
+			army = {
+				small = "GFX_FRA_philippe_petain_frame"
+			}
+		}
+
+		advisor={
+			slot = theorist
+			idea_token = FRA_Gabriel_Darrieus
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				naval_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	FRA_Francois_Ernest_Fournier = {
+		name = FRA_Character_Francois_Ernest_Fournier
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_philippe_petain"
+			}
+			army = {
+				small = "GFX_FRA_philippe_petain_frame"
+			}
+		}
+
+		advisor={
+			slot = navy_chief
+			idea_token = FRA_Francois_Ernest_Fournier
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 	
 	########## Political Advisor ##########
 	

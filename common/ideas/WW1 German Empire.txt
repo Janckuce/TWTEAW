@@ -669,6 +669,54 @@ ideas = {
 				industrial_capacity_dockyard = -0.025
 			}
 		}
+		GER_Bavarian_Diplomacy = {
+			modifier = {
+				political_power_gain = 0.1
+			}
+			targeted_modifier = {
+				tag = AUS
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+		GER_Holy_Crusade = {
+			modifier = {
+				mobilization_speed = 0.1
+			}
+		}
+		GER_Bavarian_Air_Support = {
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		GER_Bavarian_Air_Support1 = {
+			modifier = {
+				air_cas_efficiency = 0.1
+			}
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		GER_Bavarian_Air_Supremacy = {
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		GER_Bavarian_Air_Supremacy1 = {
+			modifier = {
+				air_superiority_efficiency = 0.1
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
 	}
 	
 	industrial_concern = {

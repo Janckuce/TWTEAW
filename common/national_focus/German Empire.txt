@@ -1109,7 +1109,7 @@ focus_tree = {
 		id = GER_Kaiser_Path1
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
-		x = 25
+		x = 29
 		y = 1
 		prerequisite = {
 			focus = GER_Our_Kaiser
@@ -1186,45 +1186,31 @@ focus_tree = {
 			focus = GER_Kaiser_Political
 		}
 		completion_reward = {
-			#country_event = ww1_germany.20
+			country_event = ww1_germany.20
 			remove_ideas = GER_Disloyal_Nation3
 		}
 	}
 	focus = {
 		id = GER_Kaiser_Leader1
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 5
+		cost = 10
 		relative_position_id = GER_Kaiser_Leader_Event
-		x = 0
+		x = -2
 		y = 1
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = GER_Kaiser_Leader_Event
 		}
 		mutually_exclusive = {
-			#focus = GER_Kaiser_Leader2
+			focus = GER_Kaiser_Leader2
 			#focus = GER_Kaiser_Leader3
 		}
 		completion_reward = {
 			add_ideas = GER_Wilhelm_Our_Kaiser
 		}
 	}
-	#focus = {
-	#	id = GER_Kaiser_Leader2
-	#	icon = GFX_unit_guided_missile_icon_small_texticon
-	#	cost = 1000
-	#	relative_position_id = GER_Kaiser_Leader_Event
-	#	x = 0
-	#	y = 1
-	#	prerequisite = {
-	#		focus = GER_Kaiser_Leader_Event
-	#	}
-	#	mutually_exclusive = {
-	#		focus = GER_Kaiser_Leader1
-	#		focus = GER_Kaiser_Leader3
-	#	}
-	#	completion_reward = {
-	#	}
-	#}
 	#focus = {
 	#	id = GER_Kaiser_Leader3
 	#	icon = GFX_unit_guided_missile_icon_small_texticon
@@ -1399,6 +1385,154 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = GER_Wilhelm_Our_Kaiser3
 				add_idea = GER_Wilhelm_Our_Kaiser4
+			}
+		}
+	}
+	focus = {
+		id = GER_Kaiser_Leader2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Kaiser_Leader_Event
+		x = 2
+		y = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = GER_Kaiser_Leader_Event
+		}
+		mutually_exclusive = {
+			focus = GER_Kaiser_Leader1
+		}
+		completion_reward = {
+			retire_ideology_leader = neutrality
+			promote_character = {
+				character = GER_Ludwig_III
+				ideology = despotism
+			}
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		relative_position_id = GER_Kaiser_Leader2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Kaiser_Leader2
+		}
+		completion_reward = {
+			add_country_leader_trait = Catholic_Monarch
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5.8
+		relative_position_id = GER_Ludwig_Leader1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader1
+		}
+		completion_reward = {
+			add_ideas = GER_Bavarian_Diplomacy
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5.8
+		relative_position_id = GER_Ludwig_Leader2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader2
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_Catholic_Reforms
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5.8
+		relative_position_id = GER_Ludwig_Leader3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader3
+		}
+		completion_reward = {
+			custom_effect_tooltip = GER_Crusade_Tooltip
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader_Left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Ludwig_Leader4
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader4
+		}
+		mutually_exclusive = {
+			focus = GER_Ludwig_Leader_Right1
+		}
+		completion_reward = {
+			add_ideas = GER_Bavarian_Air_Support
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader_Left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Ludwig_Leader_Left1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader_Left1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Bavarian_Air_Support
+				add_idea = GER_Bavarian_Air_Support1
+			}
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader_Right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GER_Ludwig_Leader4
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader4
+		}
+		mutually_exclusive = {
+			focus = GER_Ludwig_Leader_Left1
+		}
+		completion_reward = {
+			add_ideas = GER_Bavarian_Air_Supremacy
+		}
+	}
+	focus = {
+		id = GER_Ludwig_Leader_Right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GER_Ludwig_Leader_Right1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GER_Ludwig_Leader_Right1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Bavarian_Air_Supremacy
+				add_idea = GER_Bavarian_Air_Supremacy1
 			}
 		}
 	}

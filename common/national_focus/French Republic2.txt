@@ -486,6 +486,7 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 			}
+			add_ideas = FRA_Marines_Nationaux
 		}
 	}
 	focus = {
@@ -525,6 +526,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_ideas = FRA_Jeu_De_Nombres
 		}
 	}
 	focus = {
@@ -540,7 +542,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			16 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -549,7 +556,7 @@ focus_tree = {
 			}
 			add_equipment_production = {
 				equipment = {
-					type = battleship_1
+					type = battleship_2
 				}
 				name = "Napoleon I"
 				requested_factories = 1
@@ -774,7 +781,7 @@ focus_tree = {
 		id = FRA_Superior_Warfare
 		icon = GFX_focus_PER_modern_cataphract
 		cost = 10
-		x = 12
+		x = 13
 		y = 1
 		prerequisite = {
 			focus = FRA_State_Of_Military
@@ -950,7 +957,7 @@ focus_tree = {
 		id = FRA_Superior_Naval_Power
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10
-		x = 20
+		x = 19
 		y = 1
 		prerequisite = {
 			focus = FRA_State_Of_Military
