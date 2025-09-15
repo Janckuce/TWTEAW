@@ -38,7 +38,7 @@ focus_tree = {
 			#
 		}
 		available = {
-		    #
+			#
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -50,7 +50,7 @@ focus_tree = {
 				Britain_democracy = 0
 				Britain_monarchy = 0
 			}
-		    ENG = {give_guarantee = BEL}
+			ENG = {give_guarantee = BEL}
 			add_political_power = 50
 		}
 	}
@@ -71,41 +71,41 @@ focus_tree = {
 			add_to_variable = {
 				Britain_democracy = 1
 			}
-				276 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+			276 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-				681 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+			681 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-				439 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+			439 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-				285 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+			285 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-				284 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+			284 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
@@ -131,38 +131,23 @@ focus_tree = {
 				Britain_monarchy = 1
 			}
 			swap_ideas = {
-				remove_idea = ENG_Investing_Colonies1
-				add_idea = ENG_Investing_Colonies-1
+				remove_idea = ENG_Investing_Colonies_neutral
+				add_idea = ENG_Investing_Colonies_buff1
 			}
 			CAN = {
-				swap_ideas = {
-				remove_idea = ENG_Receiving_investments1
-				add_idea = ENG_Receiving_investments-1
-				}
+				add_ideas = ENG_Receiving_investments_nerf1
 			}
 			SAF = {
-				swap_ideas = {
-				remove_idea = ENG_Receiving_investments1
-				add_idea = ENG_Receiving_investments-1
-				}
+				add_ideas = ENG_Receiving_investments_nerf1
 			}
 			RAJ = {
-				swap_ideas = {
-				remove_idea = ENG_Receiving_investments1
-				add_idea = ENG_Receiving_investments-1
-				}
+				add_ideas = ENG_Receiving_investments_nerf1
 			}
 			AST = {
-				swap_ideas = {
-				remove_idea = ENG_Receiving_investments1
-				add_idea = ENG_Receiving_investments-1
-				}
+				add_ideas = ENG_Receiving_investments_nerf1
 			}
 			NZL = {
-				swap_ideas = {
-				remove_idea = ENG_Receiving_investments1
-				add_idea = ENG_Receiving_investments-1
-				}
+				add_ideas = ENG_Receiving_investments_nerf1
 			}
 		}
 	}
@@ -186,79 +171,82 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_buff1 # exploit level 1
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies2
+						remove_idea = ENG_Investing_Colonies_buff1
+						add_idea = ENG_Investing_Colonies_neutral
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_nerf1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_nerf1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_nerf1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_nerf1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_nerf1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				} 
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies1
+				else_if = { # neutral
+					limit = {
+						has_idea = ENG_Investing_Colonies_neutral # bug prevention in case of unexpected situation
 					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_nerf1
+						}
 					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 				}
@@ -285,79 +273,82 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_completed_focus = Britain_invests_in_colonies
+					has_idea = ENG_Investing_Colonies_neutral
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies-2
+						remove_idea = ENG_Investing_Colonies_neutral
+						add_idea = ENG_Investing_Colonies_buff1
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_neutral
+						add_idea = ENG_Receiving_investments_nerf1
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+					remove_idea = ENG_Receiving_investments_neutral
+					add_idea = ENG_Receiving_investments_nerf1
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+					remove_idea = ENG_Receiving_investments_neutral
+					add_idea = ENG_Receiving_investments_nerf1
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+					remove_idea = ENG_Receiving_investments_neutral
+					add_idea = ENG_Receiving_investments_nerf1
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+					remove_idea = ENG_Receiving_investments_neutral
+					add_idea = ENG_Receiving_investments_nerf1
 					}
 				} 
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies-2
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff1
 					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_buff2
+						}
 					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
 						}
 					}
 				}
@@ -384,159 +375,164 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_nerf1
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies2
+						remove_idea = ENG_Investing_Colonies_nerf1
+						add_idea = ENG_Investing_Colonies_nerf2
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				} 
 				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies-1 }
+					limit = { 
+						has_idea = ENG_Investing_Colonies_neutral 
+					}
 					ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies1
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_nerf1
+						}
 					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					SAF = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments_neutral
+						add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					RAJ = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments_neutral
+						add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
+					AST = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments_neutral
+						add_idea = ENG_Receiving_investments_buff1
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				} 
+					NZL = {
+						swap_ideas = {
+						remove_idea = ENG_Receiving_investments_neutral
+						add_idea = ENG_Receiving_investments_buff1
+						}
+					}  
 				}
 				else_if = {
-				limit = { 
-					has_idea = ENG_Investing_Colonies2
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff1
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_neutral
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					} 
 				}
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies2
-						add_idea = ENG_Investing_Colonies3
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff2 
 					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff2
+							add_idea = ENG_Investing_Colonies_buff1
+						}
 					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				} 
-				}
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-2
-						add_idea = ENG_Investing_Colonies-1
-					}
-					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
 						}
 					}
 				}
@@ -564,241 +560,246 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_nerf2
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies2
+						remove_idea = ENG_Investing_Colonies_nerf2
+						add_idea = ENG_Investing_Colonies_nerf3
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff3
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff3
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff3
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff3
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
-					}
-				} else_if = {
-					
-				limit = { 
-					has_idea = ENG_Investing_Colonies2
-				}
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies2
-						add_idea = ENG_Investing_Colonies3
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff3
 					}
 				} 
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies3 }
-					ENG = {
-						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies3
-							add_idea = ENG_Investing_Colonies4
-						}
-					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies-1 }
-				
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies1
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				} 
-				}
-				
 				else_if = {
 					limit = { 
-						has_idea = ENG_Investing_Colonies-3
+						has_idea = ENG_Investing_Colonies_nerf1
 					}
 					ENG = {
 						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies-3
-							add_idea = ENG_Investing_Colonies-2
+							remove_idea = ENG_Investing_Colonies_nerf1
+							add_idea = ENG_Investing_Colonies_nerf2
 						}
 					}
 					CAN = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
 						}
 					}
 					SAF = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
 						}
 					}
 					RAJ = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
 						}
 					}
 					AST = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
 						}
 					}
 					NZL = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
+						}
+					} 
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_neutral 
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_nerf1
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 				}
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-2
-						add_idea = ENG_Investing_Colonies-1
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff1 
 					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_neutral
+						}
 					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					} 
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff2
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff2
+							add_idea = ENG_Investing_Colonies_buff1
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
 				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff3
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff3
+							add_idea = ENG_Investing_Colonies_buff2
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
 						}
 					}
 				}
@@ -826,321 +827,328 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_nerf3
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies2
+						remove_idea = ENG_Investing_Colonies_nerf3
+						add_idea = ENG_Investing_Colonies_nerf4
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff4
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff4
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff4
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff4
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments2
-					}
-				} else_if = {
-					
-				limit = { 
-					has_idea = ENG_Investing_Colonies2
-				}
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies2
-						add_idea = ENG_Investing_Colonies3
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments3
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff4
 					}
 				} 
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies3 }
-					ENG = {
-						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies3
-							add_idea = ENG_Investing_Colonies4
-						}
-					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments3
-							add_idea = ENG_Receiving_investments4
-						}
-					}
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies4 }
-					ENG = {
-						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies4
-							add_idea = ENG_Investing_Colonies5
-						}
-					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments4
-							add_idea = ENG_Receiving_investments5
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments4
-							add_idea = ENG_Receiving_investments5
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments4
-							add_idea = ENG_Receiving_investments5
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments4
-							add_idea = ENG_Receiving_investments5
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments4
-							add_idea = ENG_Receiving_investments5
-						}
-					}
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies-1 }
-				
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies1
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments1
-					}
-				} 
-				}
-				
 				else_if = {
 					limit = { 
-						has_idea = ENG_Investing_Colonies-3
+						has_idea = ENG_Investing_Colonies_nerf2
 					}
 					ENG = {
 						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies-3
-							add_idea = ENG_Investing_Colonies-2
+							remove_idea = ENG_Investing_Colonies_nerf2
+							add_idea = ENG_Investing_Colonies_nerf3
 						}
 					}
 					CAN = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff3
 						}
 					}
 					SAF = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff3
 						}
 					}
 					RAJ = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff3
 						}
 					}
 					AST = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff3
 						}
 					}
 					NZL = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-2
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff3
+						}
+					} 
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_nerf1 
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_nerf1
+							add_idea = ENG_Investing_Colonies_nerf2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_buff2
 						}
 					}
 				}
 				else_if = {
 					limit = { 
-						has_idea = ENG_Investing_Colonies-4
+						has_idea = ENG_Investing_Colonies_neutral 
 					}
 					ENG = {
 						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies-4
-							add_idea = ENG_Investing_Colonies-3
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
 					CAN = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-3
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					SAF = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-3
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					RAJ = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-3
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					AST = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-3
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					NZL = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-3
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 				}
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-2
-						add_idea = ENG_Investing_Colonies-1
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff1
 					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_neutral
+						}
 					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					} 
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff2
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff2
+							add_idea = ENG_Investing_Colonies_buff1
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
 				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff3
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff3
+							add_idea = ENG_Investing_Colonies_buff2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
 				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff4
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff4
+							add_idea = ENG_Investing_Colonies_buff3
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf3
 						}
 					}
 				}
@@ -1167,159 +1175,164 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_nerf1
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies-1
+						remove_idea = ENG_Investing_Colonies_nerf1
+						add_idea = ENG_Investing_Colonies_neutral
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff1
+						add_idea = ENG_Receiving_investments_neutral
 					}
 				} 
 				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies-1 }
+					limit = { 
+						has_idea = ENG_Investing_Colonies_neutral
+					}
 					ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies-2
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_buff1
+						}
 					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				} 
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					} 
 				}
 				else_if = {
-				limit = { 
-					has_idea = ENG_Investing_Colonies2
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff1
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_buff2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					} 
 				}
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies2
-						add_idea = ENG_Investing_Colonies1
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff2
 					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff2
+							add_idea = ENG_Investing_Colonies_buff3
+						}
 					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
 					}
-				} 
-				}
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-2
-						add_idea = ENG_Investing_Colonies-3
-					}
-					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
 						}
 					}
 				}
@@ -1347,201 +1360,246 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_nerf2
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies-1
+						remove_idea = ENG_Investing_Colonies_nerf2
+						add_idea = ENG_Investing_Colonies_nerf1
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff1
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff1
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff1
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff1
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
-					}
-				} else_if = {
-					
-				limit = { 
-					has_idea = ENG_Investing_Colonies2
-				}
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies2
-						add_idea = ENG_Investing_Colonies1
+						remove_idea = ENG_Receiving_investments_buff2
+						add_idea = ENG_Receiving_investments_buff1
 					}
 				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				} 
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies-1 }
-				
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies-2
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				} 
 				else_if = {
 					limit = { 
-						has_idea = ENG_Investing_Colonies-3
+						has_idea = ENG_Investing_Colonies_nerf1
 					}
 					ENG = {
 						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies-3
-							add_idea = ENG_Investing_Colonies-4
+							remove_idea = ENG_Investing_Colonies_nerf1
+							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
 					CAN = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					SAF = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					RAJ = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					AST = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					NZL = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
+						}
+					} 
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_neutral 
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_buff1
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					} 
+				}
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff1
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_buff2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
 						}
 					}
 				}
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-2
-						add_idea = ENG_Investing_Colonies-3
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff2
 					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff2
+							add_idea = ENG_Investing_Colonies_buff3
+						}
 					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
 					}
 				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff3
 					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff3
+							add_idea = ENG_Investing_Colonies_buff4
+						}
 					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
 					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
-							}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
 						}
 					}
 				}
@@ -1568,243 +1626,328 @@ focus_tree = {
 			}
 			if = {
 				limit = { 
-					has_idea = ENG_Investing_Colonies1
+					has_idea = ENG_Investing_Colonies_nerf3
 				}
 				ENG = {
 					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies1
-						add_idea = ENG_Investing_Colonies-1
+						remove_idea = ENG_Investing_Colonies_nerf3
+						add_idea = ENG_Investing_Colonies_nerf2
 					}
 				}
 				CAN = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				SAF = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				RAJ = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				AST = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				}
 				NZL = {
 					swap_ideas = {
-					remove_idea = ENG_Receiving_investments1
-					add_idea = ENG_Receiving_investments-1
-					}
-				} else_if = {
-					
-				limit = { 
-					has_idea = ENG_Investing_Colonies2
-				}
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies2
-						add_idea = ENG_Investing_Colonies1
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments2
-					add_idea = ENG_Receiving_investments1
-					}
-				} 
-				}
-				else_if = {
-					limit = { has_idea = ENG_Investing_Colonies-1 }
-				
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-1
-						add_idea = ENG_Investing_Colonies-2
-					}
-				}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-1
-					add_idea = ENG_Receiving_investments-2
+						remove_idea = ENG_Receiving_investments_buff3
+						add_idea = ENG_Receiving_investments_buff2
 					}
 				} 
 				else_if = {
 					limit = { 
-						has_idea = ENG_Investing_Colonies-3
+						has_idea = ENG_Investing_Colonies_nerf2
 					}
 					ENG = {
 						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies-3
-							add_idea = ENG_Investing_Colonies-4
+							remove_idea = ENG_Investing_Colonies_nerf2
+							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
 					CAN = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					SAF = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					RAJ = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					AST = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
 					NZL = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-3
-						add_idea = ENG_Receiving_investments-4
+							remove_idea = ENG_Receiving_investments_buff2
+							add_idea = ENG_Receiving_investments_buff1
 						}
-					}
+					} 
 				}
-				
 				else_if = {
 					limit = { 
-						has_idea = ENG_Investing_Colonies-4
+						has_idea = ENG_Investing_Colonies_nerf1
 					}
 					ENG = {
 						swap_ideas = {
-							remove_idea = ENG_Investing_Colonies-4
-							add_idea = ENG_Investing_Colonies-5
+							remove_idea = ENG_Investing_Colonies_nerf1
+							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
 					CAN = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-5
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					SAF = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-5
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					RAJ = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-5
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					AST = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-5
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 					NZL = {
 						swap_ideas = {
-						remove_idea = ENG_Receiving_investments-4
-						add_idea = ENG_Receiving_investments-5
+							remove_idea = ENG_Receiving_investments_buff1
+							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
 				}
-				else = {
-				ENG = {
-					swap_ideas = {
-						remove_idea = ENG_Investing_Colonies-2
-						add_idea = ENG_Investing_Colonies-3
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_neutral
 					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_neutral
+							add_idea = ENG_Investing_Colonies_buff1
+						}
 					}
-				CAN = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_neutral
+							add_idea = ENG_Receiving_investments_nerf1
+						}
 					}
 				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+				else_if = {
+					limit = { 
+						has_idea = ENG_Investing_Colonies_buff1
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff1
+							add_idea = ENG_Investing_Colonies_buff2
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf1
+							add_idea = ENG_Receiving_investments_nerf2
+						}
 					}
 				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff2
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff2
+							add_idea = ENG_Investing_Colonies_buff3
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf2
+							add_idea = ENG_Receiving_investments_nerf3
+						}
 					}
 				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff3
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff3
+							add_idea = ENG_Investing_Colonies_buff4
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf3
+							add_idea = ENG_Receiving_investments_nerf4
+						}
 					}
 				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments-2
-					add_idea = ENG_Receiving_investments-3
-							}
+				else_if = {
+					limit = {
+						has_idea = ENG_Investing_Colonies_buff4
+					}
+					ENG = {
+						swap_ideas = {
+							remove_idea = ENG_Investing_Colonies_buff4
+							add_idea = ENG_Investing_Colonies_buff5
+						}
+					}
+					CAN = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf5
+						}
+					}
+					SAF = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf5
+						}
+					}
+					RAJ = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf5
+						}
+					}
+					AST = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf5
+						}
+					}
+					NZL = {
+						swap_ideas = {
+							remove_idea = ENG_Receiving_investments_nerf4
+							add_idea = ENG_Receiving_investments_nerf5
 						}
 					}
 				}
@@ -1839,7 +1982,6 @@ focus_tree = {
 				}
 				complete_national_focus = ENG_monarchy
 			}
-			
 		}
 	}
 	focus = {
@@ -1855,8 +1997,8 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = ENG_Democracy_Support
 			load_focus_tree = {
-			tree = british_focus_democracy_yippee
-			keep_completed = yes
+				tree = british_focus_democracy_yippee
+				keep_completed = yes
 			}
 		}
 	}
