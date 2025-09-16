@@ -71,7 +71,8 @@ focus_tree = {
 			add_to_variable = {
 				Britain_democracy = 1
 			}
-			276 = {
+			#this can't be done with a simple every_subject_country into random_owned_controlled_state, might take another crack at it another time
+			276 = { # Southern Ontario, CAN
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -79,7 +80,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			681 = {
+			681 = { # Cape, SAF
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -87,7 +88,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			439 = {
+			439 = { # Delhi, RAJ
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -95,7 +96,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			285 = {
+			285 = { # New South Wales, AST
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -103,7 +104,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			284 = {
+			284 = { # North Island, NZL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			336 = { # Singapore, MAL
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -134,19 +143,7 @@ focus_tree = {
 				remove_idea = ENG_Investing_Colonies_neutral
 				add_idea = ENG_Investing_Colonies_buff1
 			}
-			CAN = {
-				add_ideas = ENG_Receiving_investments_nerf1
-			}
-			SAF = {
-				add_ideas = ENG_Receiving_investments_nerf1
-			}
-			RAJ = {
-				add_ideas = ENG_Receiving_investments_nerf1
-			}
-			AST = {
-				add_ideas = ENG_Receiving_investments_nerf1
-			}
-			NZL = {
+			every_subject_country = {
 				add_ideas = ENG_Receiving_investments_nerf1
 			}
 		}
@@ -179,31 +176,7 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_neutral
 					}
 				}
-				CAN = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_nerf1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_nerf1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_nerf1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_nerf1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				NZL = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_nerf1
 						add_idea = ENG_Receiving_investments_neutral
@@ -219,31 +192,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_buff1
@@ -281,34 +230,10 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_buff1
 					}
 				}
-				CAN = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_neutral
 						add_idea = ENG_Receiving_investments_nerf1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments_neutral
-					add_idea = ENG_Receiving_investments_nerf1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments_neutral
-					add_idea = ENG_Receiving_investments_nerf1
-					}
-				}
-				AST = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments_neutral
-					add_idea = ENG_Receiving_investments_nerf1
-					}
-				}
-				NZL = {
-					swap_ideas = {
-					remove_idea = ENG_Receiving_investments_neutral
-					add_idea = ENG_Receiving_investments_nerf1
 					}
 				} 
 				else_if = {
@@ -321,31 +246,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff2
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_nerf2
@@ -383,31 +284,7 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_nerf2
 					}
 				}
-				CAN = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				NZL = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_buff1
 						add_idea = ENG_Receiving_investments_buff2
@@ -423,34 +300,10 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-						remove_idea = ENG_Receiving_investments_neutral
-						add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-						remove_idea = ENG_Receiving_investments_neutral
-						add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					AST = {
-						swap_ideas = {
-						remove_idea = ENG_Receiving_investments_neutral
-						add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					NZL = {
-						swap_ideas = {
-						remove_idea = ENG_Receiving_investments_neutral
-						add_idea = ENG_Receiving_investments_buff1
 						}
 					}  
 				}
@@ -464,31 +317,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_neutral
@@ -505,31 +334,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf2
 							add_idea = ENG_Receiving_investments_nerf1
@@ -568,31 +373,7 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_nerf3
 					}
 				}
-				CAN = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff3
-					}
-				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff3
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff3
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff3
-					}
-				}
-				NZL = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_buff2
 						add_idea = ENG_Receiving_investments_buff3
@@ -608,36 +389,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf2
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_buff1
 							add_idea = ENG_Receiving_investments_buff2
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -649,31 +406,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_buff1
@@ -690,31 +423,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_neutral
@@ -731,31 +440,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf2
 							add_idea = ENG_Receiving_investments_nerf1
@@ -772,31 +457,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff2
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf3
 							add_idea = ENG_Receiving_investments_nerf2
@@ -835,31 +496,7 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_nerf4
 					}
 				}
-				CAN = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff4
-					}
-				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff4
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff4
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff4
-					}
-				}
-				NZL = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_buff3
 						add_idea = ENG_Receiving_investments_buff4
@@ -875,36 +512,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf3
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_buff2
 							add_idea = ENG_Receiving_investments_buff3
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff3
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff3
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff3
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff3
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -916,31 +529,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf2
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_buff2
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_buff1
 							add_idea = ENG_Receiving_investments_buff2
@@ -957,31 +546,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_buff1
@@ -998,36 +563,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -1039,31 +580,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf2
 							add_idea = ENG_Receiving_investments_nerf1
@@ -1080,31 +597,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff2
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf3
 							add_idea = ENG_Receiving_investments_nerf2
@@ -1121,31 +614,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff3
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf4
 							add_idea = ENG_Receiving_investments_nerf3
@@ -1183,36 +652,12 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_neutral
 					}
 				}
-				CAN = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_buff1
 						add_idea = ENG_Receiving_investments_neutral
 					}
 				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				}
-				NZL = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff1
-						add_idea = ENG_Receiving_investments_neutral
-					}
-				} 
 				else_if = {
 					limit = { 
 						has_idea = ENG_Investing_Colonies_neutral
@@ -1223,36 +668,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff1
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_nerf1
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -1264,36 +685,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff2
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_nerf2
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					} 
 				}
 				else_if = {
 					limit = {
@@ -1305,31 +702,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff3
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf2
 							add_idea = ENG_Receiving_investments_nerf3
@@ -1368,31 +741,7 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_nerf1
 					}
 				}
-				CAN = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff1
-					}
-				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff1
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff1
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff2
-						add_idea = ENG_Receiving_investments_buff1
-					}
-				}
-				NZL = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_buff2
 						add_idea = ENG_Receiving_investments_buff1
@@ -1408,36 +757,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_buff1
 							add_idea = ENG_Receiving_investments_neutral
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -1449,36 +774,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff1
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_nerf1
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -1490,31 +791,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff2
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_nerf2
@@ -1531,31 +808,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff3
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf2
 							add_idea = ENG_Receiving_investments_nerf3
@@ -1572,31 +825,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff4
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf3
 							add_idea = ENG_Receiving_investments_nerf4
@@ -1634,31 +863,7 @@ focus_tree = {
 						add_idea = ENG_Investing_Colonies_nerf2
 					}
 				}
-				CAN = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				SAF = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				RAJ = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				AST = {
-					swap_ideas = {
-						remove_idea = ENG_Receiving_investments_buff3
-						add_idea = ENG_Receiving_investments_buff2
-					}
-				}
-				NZL = {
+				every_subject_country = {
 					swap_ideas = {
 						remove_idea = ENG_Receiving_investments_buff3
 						add_idea = ENG_Receiving_investments_buff2
@@ -1674,36 +879,12 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_nerf1
 						}
 					}
-					CAN = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_buff2
 							add_idea = ENG_Receiving_investments_buff1
 						}
 					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					}
-					NZL = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff2
-							add_idea = ENG_Receiving_investments_buff1
-						}
-					} 
 				}
 				else_if = {
 					limit = { 
@@ -1715,31 +896,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_neutral
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_buff1
-							add_idea = ENG_Receiving_investments_neutral
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_buff1
 							add_idea = ENG_Receiving_investments_neutral
@@ -1756,31 +913,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff1
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_neutral
-							add_idea = ENG_Receiving_investments_nerf1
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_neutral
 							add_idea = ENG_Receiving_investments_nerf1
@@ -1797,31 +930,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff2
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf1
-							add_idea = ENG_Receiving_investments_nerf2
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf1
 							add_idea = ENG_Receiving_investments_nerf2
@@ -1838,31 +947,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff3
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf2
-							add_idea = ENG_Receiving_investments_nerf3
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf2
 							add_idea = ENG_Receiving_investments_nerf3
@@ -1879,31 +964,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff4
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf3
-							add_idea = ENG_Receiving_investments_nerf4
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf3
 							add_idea = ENG_Receiving_investments_nerf4
@@ -1920,31 +981,7 @@ focus_tree = {
 							add_idea = ENG_Investing_Colonies_buff5
 						}
 					}
-					CAN = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf5
-						}
-					}
-					SAF = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf5
-						}
-					}
-					RAJ = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf5
-						}
-					}
-					AST = {
-						swap_ideas = {
-							remove_idea = ENG_Receiving_investments_nerf4
-							add_idea = ENG_Receiving_investments_nerf5
-						}
-					}
-					NZL = {
+					every_subject_country = {
 						swap_ideas = {
 							remove_idea = ENG_Receiving_investments_nerf4
 							add_idea = ENG_Receiving_investments_nerf5
