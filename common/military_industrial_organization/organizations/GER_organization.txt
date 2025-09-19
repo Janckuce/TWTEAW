@@ -16,6 +16,7 @@ GER_porsche_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
+			tag = YEM
 			AND = {
 				tag = BUL
 			}
@@ -374,6 +375,9 @@ GER_rheinmetall_organization = {
 				AND = {
 				tag = TUR
 			}
+			AND = {
+				tag = YEM
+			}
 		}
 	}
 	available = {
@@ -392,7 +396,8 @@ GER_mauser_organization = {
 	
 	allowed = {	 
 		OR = {
-			tag = GER 
+			tag = GER
+			tag = YEM
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"

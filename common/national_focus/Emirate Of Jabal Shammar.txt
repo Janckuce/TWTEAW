@@ -19,7 +19,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = {x = 100 y = 1200}
+	continuous_focus_position = {x = 900 y = 1200}
 
 	default = no
 
@@ -74,9 +74,8 @@ focus_tree = {
 		id = YEM_Industry1
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 20
-		relative_position_id = YEM_Industry_Main
-		x = 0
-		y = 1
+		x = 3
+		y = 2
 		prerequisite = {
 			focus = YEM_Industry_Main
 		}
@@ -103,11 +102,10 @@ focus_tree = {
 		id = YEM_Industry3
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		relative_position_id = YEM_Industry1
-		x = 0
-		y = 1
+		x = 1
+		y = 2
 		prerequisite = {
-			focus = YEM_Industry1
+			focus = YEM_Industry_Main
 		}
 		completion_reward = {
 			921 = {
@@ -151,11 +149,10 @@ focus_tree = {
 		id = YEM_Capital_Investment
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 20
-		relative_position_id = YEM_Industry_Main
-		x = 0
-		y = 4
+		x = 3
+		y = 3
 		prerequisite = {
-			focus = YEM_Industry5
+			focus = YEM_Industry1
 		}
 		prerequisite = {
 			focus = YEM_Industry6
@@ -181,9 +178,8 @@ focus_tree = {
 	focus = {
 		id = YEM_Military_Main
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Deciding_Our_Fate
-		x = -4
+		cost = 7.2
+		x = 6
 		y = 1
 		prerequisite = {
 			focus = YEM_Deciding_Our_Fate
@@ -198,14 +194,13 @@ focus_tree = {
 	focus = {
 		id = YEM_Military_Enhancement
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Military_Main
-		x = 0
-		y = 1
+		cost = 7.2
+		x = 6
+		y = 2
 		continue_if_invalid = yes
 		available = {
 			has_equipment = {
-				infantry_equipment > 3999
+				infantry_equipment > 2999
 			}
 		}
 		prerequisite = {
@@ -221,14 +216,13 @@ focus_tree = {
 	focus = {
 		id = YEM_Military_Logistics
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Military_Enhancement
-		x = 0
-		y = 1
+		cost = 7.2
+		x = 6
+		y = 3
 		continue_if_invalid = yes
 		available = {
 			has_equipment = {
-				artillery_equipment > 299
+				artillery_equipment > 199
 			}
 		}
 		prerequisite = {
@@ -241,30 +235,27 @@ focus_tree = {
 	focus = {
 		id = YEM_Rodent_Tactics
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 14.3
 		relative_position_id = YEM_Military_Logistics
-		x = -1
-		y = 1
-		mutually_exclusive = {
+		x = 0
+		y = 2
+		prerequisite = {
 			focus = YEM_War_Time_Readiness
 		}
-		prerequisite = {
-			focus = YEM_Military_Logistics
-		}
 		completion_reward = {
-			add_ideas = YEM_Rodent_Army
+				swap_ideas = {
+				remove_idea = YEM_Combat_Ready
+				add_idea = YEM_Rodent_Army
+			}
 		}
 	}
 	focus = {
 		id = YEM_War_Time_Readiness
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 14.3
 		relative_position_id = YEM_Military_Logistics
-		x = 1
+		x = 0
 		y = 1
-		mutually_exclusive = {
-			focus = YEM_Rodent_Tactics
-		}
 		prerequisite = {
 			focus = YEM_Military_Logistics
 		}
@@ -358,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Onwards_Emirate
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 10
 		relative_position_id = YEM_Deciding_Our_Fate
 		x = 4
 		y = 1
@@ -401,7 +392,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Strong_As_Steel
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = YEM_Ottoman_Trade
 		x = -1
 		y = 1
@@ -417,7 +408,7 @@ focus_tree = {
 		completion_reward = {
 			679 = {
 				add_resource = {
-					type = tungsten
+					type = steel
 					amount = 6
 				}
 			}
@@ -426,7 +417,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Smooth_As_Silk
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = YEM_Ottoman_Trade
 		x = 1
 		y = 1
@@ -442,8 +433,8 @@ focus_tree = {
 		completion_reward = {
 			679 = {
 				add_resource = {
-					type = chromium
-					amount = 6
+					type = tungsten
+					amount = 9
 				}
 			}
 		}
@@ -474,7 +465,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Emir_Power1
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = YEM_Strength_With_Us
 		x = -2
 		y = 1
@@ -493,7 +484,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Emir_Power2
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = YEM_Strength_With_Us
 		x = 0
 		y = 1
@@ -504,7 +495,11 @@ focus_tree = {
 			921 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 3
+				}
+					add_resource = {
+					type = rubber
+					amount = 2
 				}
 			}
 		}
@@ -512,7 +507,7 @@ focus_tree = {
 	focus = {
 		id = YEM_Emir_Power3
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = YEM_Strength_With_Us
 		x = 2
 		y = 1
@@ -536,46 +531,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-			656 = {
-				controller = {
-					or = {
-						tag = TUR
-						tag = GER
-						tag = AUS
-						tag = BUL
-					}
-				}
-			}
-			294 = {
-				controller = {
-					or = {
-						tag = TUR
-						tag = GER
-						tag = AUS
-						tag = BUL
-					}
-				}
-			}
-			658 = {
-				controller = {
-					or = {
-						tag = TUR
-						tag = GER
-						tag = AUS
-						tag = BUL
-					}
-				}
-			}
-			765 = {
-				controller = {
-					or = {
-						tag = TUR
-						tag = GER
-						tag = AUS
-						tag = BUL
-					}
-				}
-			}
+		date > 1914.6.15
 		}
 		prerequisite = {
 			focus = YEM_Emir_Power1
@@ -587,129 +543,6 @@ focus_tree = {
 			focus = YEM_Emir_Power3
 		}
 		completion_reward = {
-			656 = {
-				add_core_of = YEM
-				add_claim_by = YEM
-			}
-			294 = {
-				add_core_of = YEM
-				add_claim_by = YEM
-			}
-			658 = {
-				add_core_of = YEM
-				add_claim_by = YEM
-			}
-			765 = {
-				add_core_of = YEM
-				add_claim_by = YEM
-			}
-			TUR = {
-				country_event = ww1_ottoman.12
-			}
-		}
-	}
-	focus = {
-		id = YEM_Us_And_The_Ottomans
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
-		relative_position_id = YEM_Deciding_Our_Fate
-		x = 10
-		y = 1
-		continue_if_invalid = yes
-		mutually_exclusive = {
-			focus = YEM_Onwards_Emirate
-		}
-		available = {
-			TUR = {
-				num_of_factories > 50
-			}
-		}
-		prerequisite = {
-			focus = YEM_Deciding_Our_Fate
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-			set_politics = {
-				ruling_party = fascism
-			}
-		}
-	}
-	focus = {
-		id = YEM_Purchase_Licences
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Us_And_The_Ottomans
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Us_And_The_Ottomans
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Ottoman_Dependency
-				add_idea = YEM_Ottoman_Dependency_Fascist
-			}
-		}
-	}
-	focus = {
-		id = YEM_Conscription_Efforts
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Purchase_Licences
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Purchase_Licences
-		}
-		completion_reward = {
-			add_ideas = YEM_Extreme_Conscription
-		}
-	}
-	focus = {
-		id = YEM_Minimise_Oil_Consumption
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Conscription_Efforts
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Conscription_Efforts
-		}
-		completion_reward = {
-			add_ideas = YEM_Maximise_Oil_Production
-		}
-	}
-	focus = {
-		id = YEM_Closer_Ties
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Minimise_Oil_Consumption
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Minimise_Oil_Consumption
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = YEM_Ottoman_Dependency_Fascist
-				add_idea = YEM_Ottoman_Dependency_Fascist1
-			}
-		}
-	}
-	focus = {
-		id = YEM_Our_Southern_Enemy
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Closer_Ties
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Closer_Ties
-		}
-		completion_reward = {
 			292 = {
 				add_core_of = YEM
 				add_claim_by = YEM
@@ -718,90 +551,10 @@ focus_tree = {
 				add_core_of = YEM
 				add_claim_by = YEM
 			}
-			OMA = {
-				country_event = ww1_oman.1
+				create_wargoal = {
+				type = puppet_wargoal_focus
+				target = OMA
 			}
-		}
-	}
-	focus = {
-		id = YEM_Aircraft_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Us_And_The_Ottomans
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = YEM_Us_And_The_Ottomans
-		}
-		completion_reward = {
-			add_ideas = YEM_Plane_Experts
-			679 = {
-				add_building_construction = {
-					type = air_base
-					level = 5
-					instant_build = yes
-				}
-				add_resource = {
-					type = rubber
-					amount = 16
-				}
-			}
-		}
-	}
-	focus = {
-		id = YEM_Fighter_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Aircraft_Production
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Aircraft_Production
-		}
-		completion_reward = {
-			add_ideas = YEM_Plane_Experts_Fighter
-		}
-	}
-	focus = {
-		id = YEM_Air_Support_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Fighter_Production
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Fighter_Production
-		}
-		completion_reward = {
-			add_ideas = YEM_Plane_Experts_Air_Support
-		}
-	}
-	focus = {
-		id = YEM_Bomber_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Air_Support_Production
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Air_Support_Production
-		}
-		completion_reward = {
-			add_ideas = YEM_Plane_Experts_Bombing
-		}
-	}
-	focus = {
-		id = YEM_Naval_Bomber_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = YEM_Bomber_Production
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Bomber_Production
-		}
-		completion_reward = {
-			add_ideas = YEM_Plane_Experts_Naval_Bombing
 		}
 	}
 	focus = {
@@ -810,16 +563,19 @@ focus_tree = {
 		cost = 1
 		relative_position_id = YEM_Military_Logistics
 		x = 0
-		y = 2
+		y = 3
 		available = {
-			date > 1914.7.28
+			date > 1914.1.1
 		}
 		prerequisite = {
 			focus = YEM_Rodent_Tactics
-			focus = YEM_War_Time_Readiness
 		}
 		completion_reward = {
 			add_ideas = YEM_Jabal_Forces
+				swap_ideas = {
+				remove_idea = YEM_Rodent_Army
+				add_idea = YEM_Rodent_Army_finished
+			}
 		}
 	}
 }
