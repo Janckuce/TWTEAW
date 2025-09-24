@@ -1341,12 +1341,13 @@ focus_tree = {
     	remove_idea = auh_armeereform_focus_four_friedrich
     	add_idea = auh_armeereform_focus_five_friedrich
     		}
-			add_tech_bonus = {
-				name = DEN_expand_haerens_tekniske_korps
-				bonus = 2
-				uses = 2
+			
+			add_doctrine_cost_reduction = {
 				category = land_doctrine
+				cost_reduction = 0.50
+				uses = 2
 			}
+			
     	}
 	}
 

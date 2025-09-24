@@ -80,6 +80,10 @@ RUS_Laboratories_Category = {
 		}
 		remove_effect = {
 			remove_ideas = RUS_Lack_Of_Scientists3
+			
+		}
+		complete_effect = {
+			add_ideas = RUS_Promoting_Intellectuals
 		}
 	}
 	RUS_Infantry_Experts = {
@@ -230,12 +234,19 @@ RUS_Military_Academy_Category = {
 					has_idea = RUS_Dated_Warfare4
 					has_idea = RUS_Dated_Warfare5
 					}
-				}	
+				}
 			}
 			visible = {
 				or = {
 					has_completed_focus = RUS_Mass_Mobilise
 					has_completed_focus = RUS_Establish_Military_Academy
+				}
+				or = {
+					has_idea = RUS_Dated_Warfare1
+					has_idea = RUS_Dated_Warfare2
+					has_idea = RUS_Dated_Warfare3
+					has_idea = RUS_Dated_Warfare4
+					has_idea = RUS_Dated_Warfare5
 				}
 			}
 		remove_effect = {
@@ -279,7 +290,10 @@ RUS_Military_Academy_Category = {
 				limit = {
 					has_idea = RUS_Dated_Warfare5
 				}
-				remove_ideas = RUS_Dated_Warfare5
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare5
+					add_idea = RUS_Contemporary_Warfare
+				}
 			}
 		}
 	}

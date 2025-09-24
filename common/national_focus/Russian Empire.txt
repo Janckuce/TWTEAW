@@ -1100,36 +1100,9 @@ focus_tree = {
 		y = 8
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		available = {
-			not = {
-				
-						has_idea = RUS_Agrarian_Industry
-					
-						has_idea = RUS_Agrarian_Industry1
-						has_idea = RUS_Agrarian_Industry2
-						has_idea = RUS_Agrarian_Industry3
-						has_idea = RUS_Agrarian_Industry4
-						has_idea = RUS_Agrarian_Industry5
-						
-						
-					
-
-						has_idea = RUS_Lack_Of_Scientists
-					
-						has_idea = RUS_Lack_Of_Scientists1
-						has_idea = RUS_Lack_Of_Scientists2
-						has_idea = RUS_Lack_Of_Scientists3
-					
-
-					has_idea = RUS_Dated_Warfare
-					hidden_trigger = {
-						has_idea = RUS_Dated_Warfare1
-						has_idea = RUS_Dated_Warfare2
-						has_idea = RUS_Dated_Warfare3
-						has_idea = RUS_Dated_Warfare4
-						has_idea = RUS_Dated_Warfare5
-					}
-				
-			}
+			has_idea = RUS_Contemporary_Warfare
+			has_idea = RUS_Land_Reforms
+			has_idea = RUS_Promoting_Intellectuals
 		}
 		prerequisite = {
 			focus = RUS_Establish_Military_Academy
