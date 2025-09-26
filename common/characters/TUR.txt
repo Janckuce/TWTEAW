@@ -371,40 +371,6 @@ characters={
 			coordination_skill = 2
 		}
 	}
-
-	TUR_omer_fahrettin_pasha = {
-		name = TUR_character_omer_fahrettin_pasha
-		portraits = {
-			civilian = {
-				large = "GFX_TUR_omer_fahrettin_pasha"
-			}
-				army = {
-				small = "GFX_tur_fahrettin_frame"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = TUR_omer_fahrettin_pasha
-			allowed = {
-				original_tag = TUR
-			}
-			traits = {
-				army_infantry_2 #Inf Attack +10% Inf Defense +15%
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		corps_commander={
-			traits = {media_personality brilliant_strategist desert_fox }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
 	TUR_mustafa_kemal_ataturk = {
 		name = TUR_character_mustafa_kemal_ataturk
 		portraits = {
@@ -458,7 +424,10 @@ characters={
 		name = TUR_wehib_pasha
 		portraits = {
 			civilian = {
-				large = "GFX_TUR_wehib_pasha"
+				large = "GFX_TUR_mehmed_wehib"
+			}
+				army = {
+				small = "GFX_TUR_mehmed_wehib_frame"
 			}
 		}
 		corps_commander={
@@ -468,6 +437,20 @@ characters={
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 1
+		}
+		advisor={
+			slot = high_command
+			idea_token = TUR_wehib_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 		tur_mahmud_muhtar = {

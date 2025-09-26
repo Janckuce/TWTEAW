@@ -448,4 +448,28 @@ characters={
 			}
 		}
 	}
+
+	ENG_sholto_douglas = {
+		name = ENG_sholto_douglas
+		portraits={
+			army={
+				small="GFX_idea_sholto_douglas"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = sholto_douglas
+			ledger = air
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				air_chief_ground_support_3
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
 }

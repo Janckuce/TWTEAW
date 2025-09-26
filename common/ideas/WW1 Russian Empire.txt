@@ -491,7 +491,7 @@ ideas = {
 			}
 		}
 		RUS_Agrarian_Industry = {
-			picture = generic_agrarian_society
+			picture = rus_poor_people
 			removal_cost = -1
 			
 			available = {
@@ -510,7 +510,7 @@ ideas = {
 			}
 		}
 		RUS_Agrarian_Industry1 = {
-			picture = generic_agrarian_society
+			picture = rus_poor_people
 			removal_cost = -1
 			
 			available = {
@@ -529,7 +529,7 @@ ideas = {
 			}
 		}
 		RUS_Agrarian_Industry2 = {
-			picture = generic_agrarian_society
+			picture = rus_poor_people
 			removal_cost = -1
 			
 			available = {
@@ -548,7 +548,7 @@ ideas = {
 			}
 		}
 		RUS_Agrarian_Industry3 = {
-			picture = generic_agrarian_society
+			picture = rus_poor_people
 			removal_cost = -1
 			
 			available = {
@@ -567,7 +567,7 @@ ideas = {
 			}
 		}
 		RUS_Agrarian_Industry4 = {
-			picture = generic_agrarian_society
+			picture = rus_poor_people
 			removal_cost = -1
 			
 			available = {
@@ -586,7 +586,7 @@ ideas = {
 			}
 		}
 		RUS_Agrarian_Industry5 = {
-			picture = generic_agrarian_society
+			picture = rus_poor_people
 			removal_cost = -1
 			
 			available = {
@@ -604,27 +604,38 @@ ideas = {
 				global_building_slots_factor = -0.2
 			}
 		}
+		
 		RUS_Lack_Of_Scientists = {
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = -0.3
 			}
 		}
 		RUS_Lack_Of_Scientists1 = {
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = -0.25
 			}
 		}
 		RUS_Lack_Of_Scientists2 = {
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = -0.2
 			}
 		}
 		RUS_Lack_Of_Scientists3 = {
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = -0.1
 			}
 		}
+		RUS_Promoting_Intellectuals = {
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
 		RUS_Dated_Warfare = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.5
 				army_attack_factor = -0.6
@@ -633,6 +644,7 @@ ideas = {
 			}
 		}
 		RUS_Dated_Warfare1 = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.4
 				army_attack_factor = -0.5
@@ -641,6 +653,7 @@ ideas = {
 			}
 		}
 		RUS_Dated_Warfare2 = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.3
 				army_attack_factor = -0.4
@@ -649,6 +662,7 @@ ideas = {
 			}
 		}
 		RUS_Dated_Warfare3 = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.3
 				army_attack_factor = -0.3
@@ -656,6 +670,7 @@ ideas = {
 			}
 		}
 		RUS_Dated_Warfare4 = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.2
 				army_attack_factor = -0.2
@@ -663,13 +678,21 @@ ideas = {
 			}
 		}
 		RUS_Dated_Warfare5 = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.1
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
 			}
 		}
+		RUS_Contemporary_Warfare = {
+			modifier = {
+				training_time_army_factor = -0.15
+			}
+		}
+
 		RUS_Modern_Warfare = {
+			picture = rus_army_debuff
 			modifier = {
 				training_time_army_factor = 0.1
 				army_org_factor = 0.1

@@ -5,10 +5,194 @@ characters={
 			civilian = {
 				large = "GFX_YEM_saud_bin_abdulaziz"
 			}
+				army = {
+				small = "GFX_YEM_saud_bin_abdulaziz_frame"
+			}
 		}
 		country_leader = {
 			ideology = centrism
 			expire = "1965.1.1.1"
+		}
+			advisor={
+			slot = army_chief
+			idea_token = YEM_saud_bin_abdulaziz
+			allowed = {
+				original_tag = YEM
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal={
+			traits = { desert_fox }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+
+		YEM_the_desert_endurs = {
+		name = YEM_the_desert_endurs
+		portraits = {
+			army = {
+				small = "GFX_advisor_yem_desert"
+			}
+		}
+		
+		advisor={
+			can_be_fired = no
+			slot = political_advisor
+			idea_token = YEM_the_desert_endurs
+			allowed = {
+				original_tag = YEM
+			}
+			available = {
+				#
+			}
+			traits = {
+				desert_swallows
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		YEM_the_desert_endurs1 = {
+		unresignable = yes
+		removal_cost = -1
+		name = YEM_the_desert_endurs1
+		portraits = {
+			army = {
+				small = "GFX_advisor_yem_desert"
+			}
+		}
+		
+		advisor={
+			can_be_fired = no
+			slot = political_advisor
+			idea_token = YEM_the_desert_endurs1
+			allowed = {
+				original_tag = YEM
+			}
+			available = {
+				#
+			}
+			traits = {
+				desert_swallows
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+
+		unresignable = yes
+		removal_cost = -1
+		}
+	}
+		YEM_the_desert_endurs2 = {
+		name = YEM_the_desert_endurs2
+		portraits = {
+			army = {
+				small = "GFX_advisor_yem_desert"
+			}
+		}
+		
+		advisor={
+			can_be_fired = no
+			slot = political_advisor
+			idea_token = YEM_the_desert_endurs2
+			allowed = {
+				original_tag = YEM
+			}
+			available = {
+				#
+			}
+			traits = {
+				desert_swallows
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+
+		}
+	}
+
+		YEM_fahrettin_saviore = {
+		name = YEM_fahrettin_saviore
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_omer_fahrettin_pasha"
+			}
+				army = {
+				small = "GFX_tur_fahrettin_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = YEM_fahrettin_saviore
+			allowed = {
+				original_tag = YEM
+			}
+			available = {
+				#
+			}
+			traits = {
+				YEM_fahrettin_military_mission
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+
+		}
+			corps_commander={
+			traits = {media_personality brilliant_strategist desert_fox ranger urban_assault_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+		YEM_attacker_group = {
+		name = YEM_attacker_group
+		portraits = {
+			civilian = {
+				large = "GFX_TUR_omer_fahrettin_pasha"
+			}
+				army = {
+				small = "GFX_tur_fahrettin_frame"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = YEM_attacker_group
+			allowed = {
+				original_tag = YEM
+			}
+			available = {
+				#
+			}
+			traits = {
+				YEM_fahrettin_military_mission
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+
 		}
 	}
 }
