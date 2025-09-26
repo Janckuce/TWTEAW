@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		YEM_Jabal_Forces = {
-			picture = ast_volunteer_defence_corps
+			picture = yem_jab_in_tur
 			rule = {
 				can_send_volunteers = yes
 			}
@@ -138,7 +138,7 @@ ideas = {
 			}
 		}
 			YEM_Rodent_Army_finished = {
-			picture = CHL_ligas_patrioticas
+			picture = yem_fah_spirit
 			modifier = {
 				equipment_capture_factor = 0.25
 				org_loss_when_moving = -0.15
@@ -150,7 +150,7 @@ ideas = {
 			}
 		}
 		YEM_Rodent_Army = {
-			picture = CHL_ligas_patrioticas
+			picture = yem_fah_spirit
 			modifier = {
 				equipment_capture_factor = 0.2
 				org_loss_when_moving = -0.15
@@ -159,7 +159,7 @@ ideas = {
 			}
 		}
 		YEM_Combat_Ready = {
-			picture = RAJ_private_military_complex
+			picture = yem_fah_spirit
 			modifier = {
 				acclimatization_hot_climate_gain_factor = 0.15
 				recon_factor = 0.05
@@ -220,6 +220,7 @@ ideas = {
 			}
 		}
 		YEM_Saudi_Arabian_Militarism = {
+			picture = PER_islamic_traditions_ns
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05

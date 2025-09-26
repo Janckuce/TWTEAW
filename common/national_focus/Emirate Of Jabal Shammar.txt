@@ -24,9 +24,9 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = YEM_Deciding_Our_Fate
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		id = YEM_Deciding_Our_Fatee
+		icon = GFX_focus_yem_our_future
+		cost = 14.4
 		x = 10
 		y = 0
 		completion_reward = {
@@ -38,13 +38,13 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Industry_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_economic_recovery
 		cost = 20
-		relative_position_id = YEM_Deciding_Our_Fate
+		relative_position_id = YEM_Deciding_Our_Fatee
 		x = -8
 		y = 1
 		prerequisite = {
-			focus = YEM_Deciding_Our_Fate
+			focus = YEM_Deciding_Our_Fatee
 		}
 		completion_reward = {
 			679 = {
@@ -72,7 +72,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Industry1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_legalize_the_opium_trade
 		cost = 20
 		x = 3
 		y = 2
@@ -100,8 +100,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Industry3
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		icon = GFX_focus_GER_factories_for_resources
+		cost = 20
 		x = 1
 		y = 2
 		prerequisite = {
@@ -130,7 +130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Industry5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AUS_raid_military_storages
 		cost = 28.7
 		relative_position_id = YEM_Industry3
 		x = 0
@@ -147,8 +147,8 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Capital_Investment
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 20
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		cost = 28.7
 		x = 3
 		y = 3
 		prerequisite = {
@@ -177,12 +177,12 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Military_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_royal_iraqi_army_alt
 		cost = 7.2
 		x = 6
 		y = 1
 		prerequisite = {
-			focus = YEM_Deciding_Our_Fate
+			focus = YEM_Deciding_Our_Fatee
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -193,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Military_Enhancement
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		cost = 7.2
 		x = 6
 		y = 2
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Military_Logistics
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_train
 		cost = 7.2
 		x = 6
 		y = 3
@@ -234,7 +234,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Rodent_Tactics
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_recruit_bakhtiari
 		cost = 14.3
 		relative_position_id = YEM_Military_Logistics
 		x = 0
@@ -251,7 +251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_War_Time_Readiness
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_forge_the_kshatriya_army
 		cost = 14.3
 		relative_position_id = YEM_Military_Logistics
 		x = 0
@@ -265,9 +265,9 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Ottoman_Scientists
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_befriend_turkey
 		cost = 10
-		relative_position_id = YEM_Deciding_Our_Fate
+		relative_position_id = YEM_Deciding_Our_Fatee
 		x = 0
 		y = 1
 		continue_if_invalid = yes
@@ -277,7 +277,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = YEM_Deciding_Our_Fate
+			focus = YEM_Deciding_Our_Fatee
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -288,7 +288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Ottoman_Intervention
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_TUR_ratify_the_six_arrows
 		cost = 10
 		relative_position_id = YEM_Ottoman_Scientists
 		x = 0
@@ -314,7 +314,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Jabal_Intervention
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_institute_of_technology
 		cost = 10
 		relative_position_id = YEM_Ottoman_Intervention
 		x = 0
@@ -325,7 +325,7 @@ focus_tree = {
 				num_of_factories > 60
 			}
 			YEM = {
-				num_of_factories > 20
+				num_of_factories > 15
 			}
 		}
 		prerequisite = {
@@ -348,9 +348,9 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Onwards_Emirate
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_quami
 		cost = 10
-		relative_position_id = YEM_Deciding_Our_Fate
+		relative_position_id = YEM_Deciding_Our_Fatee
 		x = 4
 		y = 1
 		continue_if_invalid = yes
@@ -363,7 +363,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = YEM_Deciding_Our_Fate
+			focus = YEM_Deciding_Our_Fatee
 		}
 		completion_reward = {
 			add_popularity = {
@@ -374,7 +374,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Ottoman_Trade
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_positive_trade_relations
 		cost = 10
 		relative_position_id = YEM_Onwards_Emirate
 		x = 0
@@ -391,7 +391,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Strong_As_Steel
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_steel
 		cost = 7.2
 		relative_position_id = YEM_Ottoman_Trade
 		x = -1
@@ -416,7 +416,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Smooth_As_Silk
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_tungsten
 		cost = 7.2
 		relative_position_id = YEM_Ottoman_Trade
 		x = 1
@@ -441,7 +441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Strength_With_Us
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_shadows_of_the_king
 		cost = 10
 		relative_position_id = YEM_Ottoman_Trade
 		x = 0
@@ -464,10 +464,10 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Emir_Power1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_strengthen_the_iraqi_dinar
 		cost = 7.2
 		relative_position_id = YEM_Strength_With_Us
-		x = -2
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = YEM_Strength_With_Us
@@ -482,50 +482,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YEM_Emir_Power2
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 7.2
-		relative_position_id = YEM_Strength_With_Us
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = YEM_Strength_With_Us
-		}
-		completion_reward = {
-			921 = {
-				add_resource = {
-					type = oil
-					amount = 3
-				}
-					add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = YEM_Emir_Power3
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 7.2
-		relative_position_id = YEM_Strength_With_Us
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = YEM_Strength_With_Us
-		}
-		completion_reward = {
-			675 = {
-				add_resource = {
-					type = aluminium
-					amount = 6
-				}
-			}
-		}
-	}
-	focus = {
 		id = YEM_Our_Place_In_The_Sun
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_TUR_the_sun_language_theory
 		cost = 10
 		relative_position_id = YEM_Strength_With_Us
 		x = 0
@@ -559,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Peace_Keepers
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_approach_tribes_for_support
 		cost = 1
 		relative_position_id = YEM_Military_Logistics
 		x = 0
