@@ -604,6 +604,7 @@ ideas = {
 				global_building_slots_factor = -0.2
 			}
 		}
+		
 		RUS_Lack_Of_Scientists = {
 			picture = generic_research_bonus
 			modifier = {
@@ -626,6 +627,11 @@ ideas = {
 			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = -0.1
+			}
+		}
+		RUS_Promoting_Intellectuals = {
+			modifier = {
+				research_speed_factor = 0.1
 			}
 		}
 		RUS_Dated_Warfare = {
@@ -679,6 +685,12 @@ ideas = {
 				army_defence_factor = -0.1
 			}
 		}
+		RUS_Contemporary_Warfare = {
+			modifier = {
+				training_time_army_factor = -0.15
+			}
+		}
+
 		RUS_Modern_Warfare = {
 			picture = rus_army_debuff
 			modifier = {
