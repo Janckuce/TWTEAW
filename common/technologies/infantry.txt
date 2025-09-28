@@ -404,7 +404,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1910
 		folder = {
 			name = infantry_folder
@@ -1866,20 +1866,16 @@ technologies = {
 	
 	ww1_improved_infantry_equipment = {
 	    infantry = {
-			soft_attack = 0.05
-			defense = 0.1
+			breakthrough = 0.15
 		}
 		cavalry = {
-			soft_attack = 0.05
-			defense = 0.1
+			breakthrough = 0.15
 		}
 		marine = {
-			soft_attack = 0.05
-			defense = 0.1
+			breakthrough = 0.15
 		}
 		mountaineers = {
-		    soft_attack = 0.05
-			defense = 0.1
+		    breakthrough = 0.15
 		}
 		
 		path = {
@@ -1887,11 +1883,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
-		start_year = 1911
+		research_cost = 2
+		start_year = 1912
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -1917,16 +1913,16 @@ technologies = {
 	ww1_hand_grenade1 = {
 	    
 		infantry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		cavalry = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		marine = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		mountaineers = {
-		    soft_attack = 0.05
+		    soft_attack = 0.1
 		}
 		
 		path = {
@@ -1934,7 +1930,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1910
 		folder = {
 			name = infantry_folder
@@ -1980,7 +1976,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1913
 		folder = {
 			name = infantry_folder
@@ -2008,15 +2004,9 @@ technologies = {
 	}
 	
 	ww1_gas_mask_1 = {
-	    
-		infantry = {
-			defense = 0.1
-		}
-		marine = {
-			defense = 0.1
-		}
-		mountaineers = {
-		    defense = 0.1
+		
+		engineer = {
+	    casualty_trickleback = 0.10
 		}
 		
 		path = {
@@ -2053,15 +2043,9 @@ technologies = {
 	
 	ww1_gas_mask_2 = {
 	
-	    infantry = {
-			defense = 0.15
-		}
-		marine = {
-			defense = 0.15
-		}
-		mountaineers = {
-            defense = 0.15
-		}
+	    engineer = {
+			casualty_trickleback = 0.10
+			}
 		
 		path = {
 		    leads_to_tech = ww1_gas_mask_3
@@ -2097,15 +2081,9 @@ technologies = {
 	
 	ww1_gas_mask_3 = {
 	    
-		infantry = {
-			defense = 0.25
-		}
-		marine = {
-			defense = 0.25
-		}
-		mountaineers = {
-            defense = 0.25
-		}
+		engineer = {
+			casualty_trickleback = 0.10
+			}
 		
 		path = {
 			research_cost_coeff = 1
@@ -2142,23 +2120,19 @@ technologies = {
 	    
 		infantry = {
 			soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
+			defense = 0.25
 		}
 		cavalry = {
 			soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
+			defense = 0.25
 		}
 		marine = {
 			soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
+			defense = 0.25
 		}
 		mountaineers = {
             soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
+			defense = 0.25
 		}
 		
 		path = {

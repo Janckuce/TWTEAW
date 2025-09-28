@@ -535,7 +535,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -612,7 +612,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -683,7 +683,7 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
-		cost = 10
+		cost = 7.2
 		ai_will_do = {
 			factor = 20
 		}
@@ -751,7 +751,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -819,7 +819,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -856,7 +856,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 5
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -894,7 +894,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 19
 		y = 1
-		cost = 10
+		cost = 7.2
 
 		prerequisite = {
 			focus = GER_Our_Kaiser
@@ -1209,6 +1209,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = GER_Wilhelm_Our_Kaiser
+			add_tech_bonus = {
+				name = GER_Kaiser_Leader1
+				bonus = 1
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	#focus = {
@@ -1296,6 +1302,12 @@ focus_tree = {
 				remove_idea = GER_Wilhelm_Our_Kaiser
 				add_idea = GER_Wilhelm_Our_Kaiser1
 			}
+			add_tech_bonus = {
+				name = GER_Wilhelm_Leader1
+				bonus = 1
+				uses = 1
+				category = armor
+			}
 		}
 	}
 	focus = {
@@ -1313,6 +1325,7 @@ focus_tree = {
 				remove_idea = GER_Wilhelm_Our_Kaiser1
 				add_idea = GER_Wilhelm_Our_Kaiser2
 			}
+			
 		}
 	}
 	focus = {
@@ -1410,6 +1423,12 @@ focus_tree = {
 				character = GER_Ludwig_III
 				ideology = despotism
 			}
+			add_tech_bonus = {
+				name = GER_Kaiser_Leader2
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 	focus = {
@@ -1438,6 +1457,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = GER_Bavarian_Diplomacy
+			add_tech_bonus = {
+				name = ITA_fighter_focus
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 	focus = {

@@ -1302,6 +1302,38 @@
 		}
 	}
 	shared_focus = {
+		id = ENG_new_warfare
+		icon = GFX_focus_NOR_rikstanken
+		relative_position_id = ENG_Army
+		prerequisite = {
+		    focus = ENG_doctrine_effort2
+		}
+		x = -2
+		y = 3
+		cost = 10
+
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+		
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		    add_tech_bonus = {
+				name = ENG_new_warfare
+				bonus = 1.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	shared_focus = {
 		id = ENG_Army2
 		icon = GFX_focus_generic_military_mission
 		cost = 5.8
