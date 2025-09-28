@@ -29,6 +29,7 @@ replace_path="history/units"
 replace_path="common/units/names_divisions"
 replace_path="common/units/names_ships"
 replace_path="map/strategicregions"
+replace_path="units/equipment"
 tags={
 	"Alternative History"
 	"Balance"
