@@ -241,7 +241,7 @@ focus_tree = {
 		}
 		x = -3
 		y = 3
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -339,7 +339,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -389,7 +389,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 4
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -506,7 +506,7 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -547,13 +547,14 @@ focus_tree = {
 		}
 		x = 3
 		y = 4
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
 		}
 		available = {
 		    has_war = yes
+			date > 1915.01.01
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -703,7 +704,7 @@ focus_tree = {
 		}
 		x = -3
 		y = 4
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -717,24 +718,8 @@ focus_tree = {
 		
 		completion_reward = {
 			
-			156 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			849 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 			117 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -742,7 +727,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -750,7 +735,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -765,7 +750,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_italian_irredentism
 		x = 15
 		y = 0
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -911,7 +896,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -1163,7 +1148,7 @@ focus_tree = {
 		}
 		x = 16
 		y = 1
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -1248,7 +1233,7 @@ focus_tree = {
 		completion_reward = {
 		    add_tech_bonus = {
 				name = ITA_fighter_focus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = light_fighter
 			}
@@ -1280,7 +1265,7 @@ focus_tree = {
 		completion_reward = {
 		    add_tech_bonus = {
 				name = ITA_fighter_focus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = cas_bomber
 			}
@@ -1296,7 +1281,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -1327,7 +1312,7 @@ focus_tree = {
 		}
 		x = 23
 		y = 1
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#

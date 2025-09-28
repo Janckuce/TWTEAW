@@ -90,7 +90,7 @@ buildings = {
 		allied_build = yes
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 10
+			state_max = 2
 		}
 	}
 
@@ -166,15 +166,15 @@ buildings = {
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
-		base_cost = 500
-		per_level_extra_cost = 500
+		base_cost = 300
+		per_level_extra_cost = 200
 		disabled_in_dmz = yes
 		icon_frame = 7
 		land_fort = 1
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 2
+			province_max = 15
 		}		
 	}
 
