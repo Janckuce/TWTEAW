@@ -3461,6 +3461,7 @@ technologies = {
 		category_all_infantry = {
 			defense = 0.10
 		}
+		bunker_max_level_terrain_limit = 2
 		##########
 		
 		doctrine = yes
@@ -3489,6 +3490,7 @@ technologies = {
 		#Modifiers
 		max_dig_in = 6
 		dig_in_speed_factor = 1 #100% bonus
+		bunker_max_level_terrain_limit = 3
 		##########
 		
 		doctrine = yes
@@ -3602,10 +3604,6 @@ technologies = {
 	
 	
 	ww1_land_doctrine_7 = {
-		allow = {
-			has_tech = ww1_land_doctrine_6
-			has_tech = ww1_land_doctrine_13
-		}
 	    path = {
 			leads_to_tech = ww1_land_doctrine_10
 			research_cost_coeff = 1
@@ -3619,6 +3617,8 @@ technologies = {
 		category_all_armor = {
 			default_morale = 0.1
 		}
+		fortification_damage = 1
+		fortification_collateral_chance = 1
 		##########
 		
 		doctrine = yes
@@ -3704,10 +3704,6 @@ technologies = {
 	
 	ww1_land_doctrine_10 = {
 		#Modifiers
-		allow = {
-			has_tech = ww1_land_doctrine_9
-			has_tech = ww1_land_doctrine_15
-		}
 		category_front_line = {
 			breakthrough = 0.20
 		}
@@ -3759,6 +3755,9 @@ technologies = {
 		category_line_artillery = {
 			soft_attack = 0.10
 		}
+		
+		fortification_damage = 0.5
+		fortification_collateral_chance = 0.5
 		##########
 		
 		doctrine = yes
@@ -3787,6 +3786,7 @@ technologies = {
 		#Modifiers
 		supply_consumption_factor = -0.15
 		max_dig_in = 2
+		bunker_max_level_terrain_limit = 2
 		
 		##########
 		
@@ -3819,6 +3819,7 @@ technologies = {
 			default_morale = 0.1
 		}
 		max_dig_in = 2
+		bunker_max_level_terrain_limit = 2
 
 		##########
 		
@@ -3851,7 +3852,7 @@ technologies = {
 		}
 
 		max_dig_in = 4
-
+		bunker_max_level_terrain_limit = 4
 		##########
 		
 		doctrine = yes
@@ -3892,6 +3893,7 @@ technologies = {
 			defense = 0.10
 			soft_attack = 0.10
 		}
+		bunker_max_level_terrain_limit = 2
 		##########
 		
 		doctrine = yes
