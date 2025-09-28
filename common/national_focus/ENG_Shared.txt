@@ -1154,7 +1154,7 @@
 	shared_focus = {
 		id = ENG_air_research_1
 		icon = GFX_focus_generic_air_bases
-		cost = 5.8
+		cost = 10
 		x = 26
 		y = 1
 		prerequisite = {
@@ -1163,8 +1163,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_air_research_1
-				bonus = 0.5
-				uses = 1
+				bonus = 1
+				uses = 3
 				category = light_air
 			}
 		}

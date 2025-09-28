@@ -1,7 +1,8 @@
 ideas = {
+
 	country = {
 		YEM_Jabal_Forces = {
-			picture = ast_volunteer_defence_corps
+			picture = yem_jab_in_tur
 			rule = {
 				can_send_volunteers = yes
 			}
@@ -43,11 +44,11 @@ ideas = {
 		YEM_Ottoman_Dependency_Royalist = {
 			picture = tur_kemalist_army_officers_powerful_neutral
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.15
 			}
 			targeted_modifier = {
 				tag = TUR
-				cic_to_target_factor = 0.1
+				cic_to_target_factor = 0.15
 			}
 		}
 		YEM_Ottoman_Dependency_Royalist1 = {
@@ -57,7 +58,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = TUR
-				cic_to_target_factor = 0.1
+				cic_to_target_factor = 0.25
 			}
 		}
 		YEM_Ottoman_Dependency_Fascist = {
@@ -136,18 +137,32 @@ ideas = {
 				supply_consumption_factor = 0.3
 			}
 		}
-		YEM_Rodent_Army = {
-			picture = CHL_ligas_patrioticas
+			YEM_Rodent_Army_finished = {
+			picture = yem_fah_spirit
 			modifier = {
-				equipment_capture_factor = 0.4
+				equipment_capture_factor = 0.25
 				org_loss_when_moving = -0.15
+				acclimatization_hot_climate_gain_factor = 0.25
+				recon_factor = 0.15
+				supply_consumption_factor = -0.075
+				out_of_supply_factor = -0.1
+
+			}
+		}
+		YEM_Rodent_Army = {
+			picture = yem_fah_spirit
+			modifier = {
+				equipment_capture_factor = 0.2
+				org_loss_when_moving = -0.15
+				acclimatization_hot_climate_gain_factor = 0.15
+				recon_factor = 0.10
 			}
 		}
 		YEM_Combat_Ready = {
-			picture = RAJ_private_military_complex
+			picture = yem_fah_spirit
 			modifier = {
 				acclimatization_hot_climate_gain_factor = 0.15
-				recon_factor = 0.15
+				recon_factor = 0.05
 			}
 		}
 		YEM_Industrialisation_Efforts = {
@@ -205,6 +220,7 @@ ideas = {
 			}
 		}
 		YEM_Saudi_Arabian_Militarism = {
+			picture = PER_islamic_traditions_ns
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05

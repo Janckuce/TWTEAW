@@ -1,5 +1,44 @@
 ideas = {
-
+	
+	industrial_concern = {
+		designer = yes
+		armstrong_whitworth = {
+			allowed = {
+				original_tag = ENG
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			traits = {
+				industrial_concern
+			}
+		}
+		english_electric = {
+			allowed = {
+				original_tag = ENG
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = {
+				electronics_concern
+			}
+		}
+		marconi = {
+			allowed = {
+				original_tag = ENG
+			}
+			research_bonus = {
+				electronics = 0.05
+				industry = 0.05
+			}
+			traits = {
+				electronics_concern
+			}
+			picture = generic_tank_manufacturer_1
+		}
+	}
+	
 	country = {
 		ENG_mass_mobilization = {
 
@@ -356,186 +395,7 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
-		ENG_Investing_Colonies1 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.4
-				production_speed_industrial_complex_factor = -0.4
-				production_speed_arms_factory_factor = -0.4
-			}
-		}
-		ENG_Investing_Colonies2 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.5
-				production_speed_industrial_complex_factor = -0.5
-				production_speed_arms_factory_factor = -0.5
-			}
-		}
-		ENG_Investing_Colonies3 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.6
-				production_speed_industrial_complex_factor = -0.6
-				production_speed_arms_factory_factor = -0.6
-			}
-		}
-		ENG_Investing_Colonies4 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.7
-				production_speed_industrial_complex_factor = -0.7
-				production_speed_arms_factory_factor = -0.7
-			}
-		}
-		ENG_Investing_Colonies5 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.8
-				production_speed_industrial_complex_factor = -0.8
-				production_speed_arms_factory_factor = -0.8
-			}
-		}
-		ENG_Investing_Colonies-1 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.3
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.3
-			}
-		}
-		ENG_Investing_Colonies-2 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.2
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = -0.2
-			}
-		}
-		ENG_Investing_Colonies-3 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0.1
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
-			}
-		}
-		ENG_Investing_Colonies-4 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = 0
-				production_speed_industrial_complex_factor = 0
-				production_speed_arms_factory_factor = 0
-			}
-		}
-		ENG_Investing_Colonies-5 = {
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = -0.1
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-			}
-		}
-		ENG_Receiving_investments1 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.2
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_arms_factory_factor = 0.2
-			}
-		}
-		ENG_Receiving_investments2 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.3
-				production_speed_industrial_complex_factor = 0.3
-				production_speed_arms_factory_factor = 0.3
-			}
-		}
-		ENG_Receiving_investments3 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.4
-				production_speed_industrial_complex_factor = 0.4
-				production_speed_arms_factory_factor = 0.4
-			}
-		}
-		ENG_Receiving_investments4 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.5
-				production_speed_industrial_complex_factor = 0.5
-				production_speed_arms_factory_factor = 0.5
-			}
-		}
-		ENG_Receiving_investments5 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.6
-				production_speed_industrial_complex_factor = 0.6
-				production_speed_arms_factory_factor = 0.6
-			}
-		}
-		ENG_Receiving_investments-1 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.1
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-			}
-		}
-		ENG_Receiving_investments-2 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = 0
-				production_speed_industrial_complex_factor = 0
-				production_speed_arms_factory_factor = 0
-			}
-		}
-		ENG_Receiving_investments-3 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.1
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
-			}
-		}
-		ENG_Receiving_investments-4 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.2
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = -0.2
-			}
-		}
-		ENG_Receiving_investments-5 = {
-			picture = eng_guided_by_britain
-
-			modifier = {
-				consumer_goods_factor = -0.3
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.3
-			}
-		}
+		
 		ENG_Democracy_Support = {
 
 			modifier = {
@@ -723,43 +583,249 @@ ideas = {
 				experience_gain_army = -0.03
 			}
 		}
-	}
-	industrial_concern = {
-		designer = yes
-		armstrong_whitworth = {
-			allowed = {
-				original_tag = ENG
-			}
-			research_bonus = {
-				industry = 0.1
-			}
-			traits = {
-				industrial_concern
-			}
-		}
-		english_electric = {
-			allowed = {
-				original_tag = ENG
-			}
-			research_bonus = {
-				electronics = 0.1
-			}
-			traits = {
-				electronics_concern
+### COLONIAL STUFF ###
+# there's a lot of it so this keeps it out of the way of other things
+# so named because a buff for UK means a nerf for the colonies and vice versa
+# could arguably use even better names but at least it's clearer than +/-(number) with the modifiers not directly corresponding to (number)
+# Bri'ish modifiers
+
+		ENG_Investing_Colonies_buff5 = { # new
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.5
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = 0.5
 			}
 		}
-		marconi = {
-			allowed = {
-				original_tag = ENG
+		ENG_Investing_Colonies_buff4 = { # new
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.4
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_arms_factory_factor = 0.4
 			}
-			research_bonus = {
-				electronics = 0.05
-				industry = 0.05
-			}
-			traits = {
-				electronics_concern
-			}
-			picture = generic_tank_manufacturer_1
 		}
+		ENG_Investing_Colonies_buff3 = { # new
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.3
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_arms_factory_factor = 0.3
+			}
+		}
+		ENG_Investing_Colonies_buff2 = { # new
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}		
+		ENG_Investing_Colonies_buff1 = { # orig. ENG_Investing_Colonies-5
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		ENG_Investing_Colonies_neutral = { # orig. ENG_Investing_Colonies-4
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0
+				production_speed_industrial_complex_factor = 0
+				production_speed_arms_factory_factor = 0
+			}
+		}
+		ENG_Investing_Colonies_nerf1 = { # orig. ENG_Investing_Colonies-3
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		ENG_Investing_Colonies_nerf2 = { # orig. ENG_Investing_Colonies-2
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		ENG_Investing_Colonies_nerf3 = { # orig. ENG_Investing_Colonies-1
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		ENG_Investing_Colonies_nerf4 = { # orig. ENG_Investing_Colonies1
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_industrial_complex_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
+			}
+		}
+		ENG_Investing_Colonies_nerf5 = { # orig. ENG_Investing_Colonies2
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+		ENG_Investing_Colonies_nerf6 = { # orig. ENG_Investing_Colonies3
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.6
+				production_speed_industrial_complex_factor = -0.6
+				production_speed_arms_factory_factor = -0.6
+			}
+		}
+		ENG_Investing_Colonies_nerf7 = { # orig. ENG_Investing_Colonies4
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.7
+				production_speed_industrial_complex_factor = -0.7
+				production_speed_arms_factory_factor = -0.7
+			}
+		}
+		ENG_Investing_Colonies_nerf8 = { # orig. ENG_Investing_Colonies5
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = 0.8
+				production_speed_industrial_complex_factor = -0.8
+				production_speed_arms_factory_factor = -0.8
+			}
+		}
+		
+# Modifiers for colonies
+
+		ENG_Receiving_investments_buff6 = { # orig. ENG_Receiving_investments5
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = -0.6
+				production_speed_industrial_complex_factor = 0.6
+				production_speed_arms_factory_factor = 0.6
+			}
+		}
+		ENG_Receiving_investments_buff5 = { # orig. ENG_Receiving_investments4
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = -0.5
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = 0.5
+			}
+		}
+		ENG_Receiving_investments_buff4 = { # orig. ENG_Receiving_investments3
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = -0.4
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_arms_factory_factor = 0.4
+			}
+		}
+		ENG_Receiving_investments_buff3 = { # orig. ENG_Receiving_investments2
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = -0.3
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_arms_factory_factor = 0.3
+			}
+		}
+		ENG_Receiving_investments_buff2 = { # orig. ENG_Receiving_investments1
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		ENG_Receiving_investments_buff1 = { # orig. ENG_Receiving_investments-1
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		ENG_Receiving_investments_neutral = { # orig. ENG_Receiving_investments-2
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = 0
+				production_speed_industrial_complex_factor = 0
+				production_speed_arms_factory_factor = 0
+			}
+		}
+		ENG_Receiving_investments_nerf1 = { # orig. ENG_Receiving_investments-3
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		ENG_Receiving_investments_nerf2 = { # orig. ENG_Receiving_investments-4
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		ENG_Receiving_investments_nerf3 = { # orig. ENG_Receiving_investments-5
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		ENG_Receiving_investments_nerf4 = { # new
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_industrial_complex_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
+			}
+		}
+		ENG_Receiving_investments_nerf5 = { # new
+			picture = eng_guided_by_britain
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}		
+		
 	}
 }

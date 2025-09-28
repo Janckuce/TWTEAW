@@ -338,4 +338,27 @@ characters={
 			}
 		}
 	}
+	ITA_aldo_pellegrini = {
+		name = ITA_aldo_pellegrini
+		portraits = {
+			army = {
+				small = GFX_portrait_ITA_aldo_pellegrini_small
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = ITA_aldo_pellegrini
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
 }
