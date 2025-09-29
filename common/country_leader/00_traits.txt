@@ -12683,8 +12683,8 @@ leader_traits = {
 
 	army_chief_defensive_2 = { # +10 Defensive efficiency
 		sprite = 9
-		army_defence_factor = 0.1
-		experience_gain_army = @chief_experience_gain_medium
+		army_defence_factor = 0.08
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -12700,7 +12700,7 @@ leader_traits = {
 
 	army_chief_defensive_3 = { # +15 Defensive efficiency
 		sprite = 9
-		army_defence_factor = 0.15
+		army_defence_factor = 0.1
 		experience_gain_army = @chief_experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
@@ -12735,8 +12735,8 @@ leader_traits = {
 
 	army_chief_offensive_2 = { # +10 Offensive efficiency
 		sprite = 7
-		army_attack_factor = 0.1
-		experience_gain_army = @chief_experience_gain_medium
+		army_attack_factor = 0.06
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -12752,7 +12752,7 @@ leader_traits = {
 
 	army_chief_offensive_3 = { # +15 Offensive efficiency
 		sprite = 7
-		army_attack_factor = 0.15
+		army_attack_factor = 0.1
 		experience_gain_army = @chief_experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
@@ -12801,7 +12801,7 @@ leader_traits = {
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.1
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -12852,7 +12852,7 @@ leader_traits = {
 
 	army_chief_reform_2 = {
 		sprite = 5
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 		experience_gain_army_factor = 0.1
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -12905,7 +12905,7 @@ leader_traits = {
 	army_chief_organizational_2 = { # Ground units get 8 more Organization
 		sprite = 5
 		army_org_factor = 0.08
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -12956,7 +12956,7 @@ leader_traits = {
 	army_chief_planning_2 = { #
 		sprite = 5
 		planning_speed = 0.10
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -13007,7 +13007,7 @@ leader_traits = {
 	army_chief_morale_2 = { # Ground units get 8 more Morale
 		sprite = 5
 		out_of_supply_factor = -0.06
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -13059,7 +13059,7 @@ leader_traits = {
 	army_chief_maneuver_2 = { # Ground units move 10% faster
 		sprite = 5
 		army_speed_factor = 0.1
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -13112,7 +13112,7 @@ leader_traits = {
 		sprite = 5
 		max_dig_in = 5
 		mobilization_speed = -0.04
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = @chief_experience_gain_low
 
 		command_cap_increase = @tier2_cp_cap_increase
 		command_power = @tier2_cp_cost
@@ -13254,8 +13254,8 @@ leader_traits = {
 
 	army_artillery_1 = { # +4 artillery efficiency
 		sprite = 16
-		army_artillery_attack_factor = 0.1
-		army_artillery_defence_factor = 0.05
+		army_artillery_attack_factor = 0.08
+		army_artillery_defence_factor = 0.06
 		#experience_gain_army = @experience_gain_low
 
 		command_cap_increase = @tier1_cp_cap_increase
@@ -13272,8 +13272,8 @@ leader_traits = {
 
 	army_artillery_2 = { # +8 artillery efficiency
 		sprite = 16
-		army_artillery_attack_factor = 0.15
-		army_artillery_defence_factor = 0.1
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.08
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -13290,8 +13290,8 @@ leader_traits = {
 
 	army_artillery_3 = { # +12 artillery efficiency
 		sprite = 16
-		army_artillery_attack_factor = 0.2
-		army_artillery_defence_factor = 0.15
+		army_artillery_attack_factor = 0.12
+		army_artillery_defence_factor = 0.1
 		#experience_gain_army = @experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
@@ -13309,7 +13309,7 @@ leader_traits = {
 
 	army_infantry_1 = { # +4 infantry efficiency
 		sprite = 5
-		army_infantry_attack_factor = 0.05
+		army_infantry_attack_factor = 0.06
 		army_infantry_defence_factor = 0.1
 		#experience_gain_army = @experience_gain_low
 
@@ -13327,8 +13327,8 @@ leader_traits = {
 
 	army_infantry_2 = { # +8 infantry efficiency
 		sprite = 5
-		army_infantry_attack_factor = 0.1
-		army_infantry_defence_factor = 0.15
+		army_infantry_attack_factor = 0.08
+		army_infantry_defence_factor = 0.12
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -13345,8 +13345,8 @@ leader_traits = {
 
 	army_infantry_3 = { # +12 infantry efficiency
 		sprite = 5
-		army_infantry_attack_factor = 0.15
-		army_infantry_defence_factor = 0.2
+		army_infantry_attack_factor = 0.10
+		army_infantry_defence_factor = 0.14
 		#experience_gain_army = @experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase
