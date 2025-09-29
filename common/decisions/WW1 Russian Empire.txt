@@ -330,3 +330,63 @@ RUS_Military_Academy_Category = {
 		}
 	}
 }
+
+RUS_Murmansk_Category = {
+	RUS_Found_Murmansk = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+		
+		fire_only_once = yes
+		visible = {
+			not = {
+				RUS = {
+					has_country_flag = RUS_Murmansk_founded
+				}
+			}
+		}
+		
+		available = {
+			ORO = {	has_country_flag = WW1_started_spectator }
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 213
+			controls_state = 213 # Murmansk
+			owns_state = 215
+			controls_state = 215 # Onega
+			OR = {
+				controls_state = 214 # Arkhangelsk
+				controls_state = 216 # Olonets
+				controls_state = 146 # Karelia
+				controls_state = 879 # Kargopol
+			} # Onega + these = simulate ensuring things can actually be done
+			
+		}
+		
+		cost = 25
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+		} # 25 PP and 3 civs for 60 days, we can tweak this later if we want
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		remove_effect = {
+			set_victory_points = { # set Murmansk to 5 VP
+				province = 3134
+				value = 5
+			}
+			213 = { # Murmansk state, needs to be set as scope for what's in here
+				set_building_level = {
+					type = naval_base
+					level = 2
+					province = { id = 3134 } # build lv2 naval base in Murmansk
+				}
+			}
+			RUS = {
+				set_country_flag = RUS_Murmansk_founded
+			}
+		}
+		
+	}
+}

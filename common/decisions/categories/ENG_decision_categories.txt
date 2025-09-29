@@ -1,0 +1,14 @@
+ENG_Send_Equipment_category = {
+	icon = military_operation
+	priority = 100
+	visible_when_empty = no
+	allowed = {
+		tag = ENG
+	}
+	
+	visible = {
+		ORO = {
+			has_country_flag = WW1_started_spectator
+		}
+	}
+}
