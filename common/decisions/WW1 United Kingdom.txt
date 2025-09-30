@@ -57,14 +57,18 @@ ENG_Send_Equipment_category = {
 				controls_province = 3134 # Murmansk
 				has_country_flag = RUS_Murmansk_founded
 			}
-			has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
+			USA = {
+				send_equipment = {
 				equipment = infantry_equipment
 				amount = @ENG_RIFLE_SHIPMENT_EFFECT
 				target = RUS
+				}
 			}
 		}
 	}
@@ -83,14 +87,18 @@ ENG_Send_Equipment_category = {
 				controls_province = 3134 # Murmansk
 				has_country_flag = RUS_Murmansk_founded
 			}
-			has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = artillery_equipment
-				amount = @ENG_ARTY_SHIPMENT_EFFECT
-				target = RUS
+			USA = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = @ENG_ARTY_SHIPMENT_EFFECT
+					target = RUS
+				}
 			}
 		}
 	}
@@ -109,14 +117,18 @@ ENG_Send_Equipment_category = {
 				controls_province = 3134 # Murmansk
 				has_country_flag = RUS_Murmansk_founded
 			}
-			has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = support_equipment
-				amount = @ENG_SPEQ_SHIPMENT_EFFECT
-				target = RUS
+			USA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = @ENG_SPEQ_SHIPMENT_EFFECT
+					target = RUS
+				}
 			}
 		}
 	}
@@ -140,14 +152,18 @@ ENG_Send_Equipment_category = {
 					controls_province = 9737	# Bordeaux
 				}
 			}
-			has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = @ENG_RIFLE_SHIPMENT_EFFECT
-				target = FRA
+			USA = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = @ENG_RIFLE_SHIPMENT_EFFECT
+					target = FRA
+				}
 			}
 		}
 	}
@@ -171,14 +187,18 @@ ENG_Send_Equipment_category = {
 					controls_province = 9737	# Bordeaux
 				}
 			}
-			has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = artillery_equipment
-				amount = @ENG_ARTY_SHIPMENT_EFFECT
-				target = FRA
+			USA = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = @ENG_ARTY_SHIPMENT_EFFECT
+					target = FRA
+				}
 			}
 		}
 	}
@@ -202,14 +222,18 @@ ENG_Send_Equipment_category = {
 					controls_province = 9737	# Bordeaux
 				}
 			}
-			has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = support_equipment
-				amount = @ENG_SPEQ_SHIPMENT_EFFECT
-				target = FRA
+			USA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = @ENG_SPEQ_SHIPMENT_EFFECT
+					target = FRA
+				}
 			}
 		}
 	}
@@ -234,14 +258,18 @@ ENG_Send_Equipment_category = {
 					controls_province = 11837	# Taranto
 				}
 			}
-			has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = @ENG_RIFLE_SHIPMENT_EFFECT
-				target = ITA
+			USA = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = @ENG_RIFLE_SHIPMENT_EFFECT
+					target = ITA
+				}
 			}
 		}
 	}
@@ -266,14 +294,18 @@ ENG_Send_Equipment_category = {
 					controls_province = 11837	# Taranto
 				}
 			}
-			has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = artillery_equipment
-				amount = @ENG_ARTY_SHIPMENT_EFFECT
-				target = ITA
+			USA = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = @ENG_ARTY_SHIPMENT_EFFECT
+					target = ITA
+				}
 			}
 		}
 	}
@@ -298,14 +330,18 @@ ENG_Send_Equipment_category = {
 					controls_province = 11837	# Taranto
 				}
 			}
-			has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			USA = {
+				has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			}
 		}
 
 		complete_effect = {
-			send_equipment = {
-				equipment = support_equipment
-				amount = @ENG_SPEQ_SHIPMENT_EFFECT
-				target = ITA
+			USA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = @ENG_SPEQ_SHIPMENT_EFFECT
+					target = ITA
+				}
 			}
 		}
 	}
