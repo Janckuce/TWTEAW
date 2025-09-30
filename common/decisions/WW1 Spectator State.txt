@@ -942,7 +942,7 @@ ORO_spectator_state = {
 					allow_spawning_on_enemy_provs = yes
 				}
 			}
-			
+			GER = {
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -1013,6 +1013,7 @@ ORO_spectator_state = {
 					type = arms_factory
 					level = 5
 					instant_build = yes
+					}
 				}
 			}
 		}

@@ -46,3 +46,16 @@ RUS_Military_Academy_Category = {
 		}
 	}
 }
+
+RUS_Murmansk_Category = {
+	icon = military_operation
+	priority = 100
+	visible_when_empty = no
+	allowed = {
+		tag = RUS
+	}
+	
+	visible = {
+		ORO = { has_country_flag = WW1_started_spectator }
+	}
+}
