@@ -1,3 +1,18 @@
+@ENG_RIFLE_SHIPMENT_TRIGGER = 999
+@ENG_RIFLE_SHIPMENT_EFFECT = 1000
+
+
+@ENG_ARTY_SHIPMENT_TRIGGER = 99
+@ENG_ARTY_SHIPMENT_EFFECT = 100
+
+
+@ENG_SPEQ_SHIPMENT_TRIGGER = 99
+@ENG_SPEQ_SHIPMENT_EFFECT = 100
+
+
+# above are constant definitions for kit shipments 
+# split per kit type so they can be changed separately
+
 GER_ENG_agadir_crisis_category = {
 
 	ENG_send_battle_ship = {
@@ -24,4 +39,311 @@ GER_ENG_agadir_crisis_category = {
 			factor = 10000
 		}
 	}
+}
+
+ENG_Send_Equipment_category = {
+
+	ENG_Send_rifles_to_Russia = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+		
+		cost = 0
+		days_re_enable = 14
+
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }  
+			RUS = {
+				has_capitulated = no
+				controls_province = 3134 # Murmansk
+				has_country_flag = RUS_Murmansk_founded
+			}
+			USA = {
+				has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+				equipment = infantry_equipment
+				amount = @ENG_RIFLE_SHIPMENT_EFFECT
+				target = RUS
+				}
+			}
+		}
+	}
+
+	ENG_Send_arty_to_Russia = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		cost = 0
+		days_re_enable = 14
+		
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			RUS = {
+				has_capitulated = no
+				controls_province = 3134 # Murmansk
+				has_country_flag = RUS_Murmansk_founded
+			}
+			USA = {
+				has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = @ENG_ARTY_SHIPMENT_EFFECT
+					target = RUS
+				}
+			}
+		}
+	}
+
+	ENG_Send_speq_to_Russia = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		cost = 0
+		days_re_enable = 14
+		
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			RUS = {
+				has_capitulated = no
+				controls_province = 3134 # Murmansk
+				has_country_flag = RUS_Murmansk_founded
+			}
+			USA = {
+				has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = @ENG_SPEQ_SHIPMENT_EFFECT
+					target = RUS
+				}
+			}
+		}
+	}
+	
+	ENG_Send_rifles_to_France = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+		
+		cost = 0
+		days_re_enable = 14
+
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			FRA = {
+				has_capitulated = no
+				OR = { # Check to see if France can reasonably take delivery - can add more ports
+					controls_province = 575		# Dunkerque
+					controls_province = 9434	# Le Havre
+					controls_province = 6449	# Cherbourg
+					controls_province = 3552	# Brest
+					controls_province = 9737	# Bordeaux
+				}
+			}
+			USA = {
+				has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = @ENG_RIFLE_SHIPMENT_EFFECT
+					target = FRA
+				}
+			}
+		}
+	}
+
+	ENG_Send_arty_to_France = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		cost = 0
+		days_re_enable = 14
+		
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			FRA = {
+				has_capitulated = no
+				OR = {
+					controls_province = 575		# Dunkerque
+					controls_province = 9434	# Le Havre
+					controls_province = 6449	# Cherbourg
+					controls_province = 3552	# Brest
+					controls_province = 9737	# Bordeaux
+				}
+			}
+			USA = {
+				has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = @ENG_ARTY_SHIPMENT_EFFECT
+					target = FRA
+				}
+			}
+		}
+	}
+
+	ENG_Send_speq_to_France = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		cost = 0
+		days_re_enable = 14
+		
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			FRA = {
+				has_capitulated = no
+				OR = {
+					controls_province = 575		# Dunkerque
+					controls_province = 9434	# Le Havre
+					controls_province = 6449	# Cherbourg
+					controls_province = 3552	# Brest
+					controls_province = 9737	# Bordeaux
+				}
+			}
+			USA = {
+				has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = @ENG_SPEQ_SHIPMENT_EFFECT
+					target = FRA
+				}
+			}
+		}
+	}
+	
+	ENG_Send_rifles_to_Italy = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+		
+		cost = 0
+		days_re_enable = 14
+
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			ITA = {
+				has_idea = ITA_entente # WW1 entry check
+				has_capitulated = no
+				OR = { # check if Italy can take delivery - can add more ports
+					controls_province = 6788	# Genoa
+					controls_province = 6973	# La Spezia
+					controls_province = 819		# Naples
+					controls_province = 10074	# Palermo
+					controls_province = 11837	# Taranto
+				}
+			}
+			USA = {
+				has_equipment = { infantry_equipment > @ENG_RIFLE_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = @ENG_RIFLE_SHIPMENT_EFFECT
+					target = ITA
+				}
+			}
+		}
+	}
+
+	ENG_Send_arty_to_Italy = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		cost = 0
+		days_re_enable = 14
+		
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			ITA = {
+				has_idea = ITA_entente
+				has_capitulated = no
+				OR = {
+					controls_province = 6788	# Genoa
+					controls_province = 6973	# La Spezia
+					controls_province = 819		# Naples
+					controls_province = 10074	# Palermo
+					controls_province = 11837	# Taranto
+				}
+			}
+			USA = {
+				has_equipment = { artillery_equipment > @ENG_ARTY_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = @ENG_ARTY_SHIPMENT_EFFECT
+					target = ITA
+				}
+			}
+		}
+	}
+
+	ENG_Send_speq_to_Italy = {
+		priority = 1
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		cost = 0
+		days_re_enable = 14
+		
+		available = {
+			ORO = { has_country_flag = WW1_started_spectator }
+			ITA = {
+				has_idea = ITA_entente
+				has_capitulated = no
+				OR = {
+					controls_province = 6788	# Genoa
+					controls_province = 6973	# La Spezia
+					controls_province = 819		# Naples
+					controls_province = 10074	# Palermo
+					controls_province = 11837	# Taranto
+				}
+			}
+			USA = {
+				has_equipment = { support_equipment > @ENG_SPEQ_SHIPMENT_TRIGGER }
+			}
+		}
+
+		complete_effect = {
+			USA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = @ENG_SPEQ_SHIPMENT_EFFECT
+					target = ITA
+				}
+			}
+		}
+	}
+
 }
