@@ -314,6 +314,7 @@ focus_tree = {
             type = support_equipment
             amount = 872
         }
+		add_offsite_building = { type = arms_factory level = 2 }
     }
 }
 
@@ -366,6 +367,8 @@ focus_tree = {
 		
 		completion_reward = {
         create_intelligence_agency = yes
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = industrial_complex level = 2 }
     }
 }
 
@@ -520,23 +523,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
+			add_offsite_building = { type = industrial_complex level = 2 }
 
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
+			add_offsite_building = { type = arms_factory level = 2 }
 	}
 }
 
@@ -777,6 +766,7 @@ focus_tree = {
 		
 		completion_reward = {
 		add_ideas = extensive_conscription
+		add_offsite_building = { type = arms_factory level = 3 }
 	}
 }
 
@@ -991,25 +981,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-				107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_offsite_building = { type = industrial_complex level = 3 }
 			}
-
-				803 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
 	}
-}
 
 	focus = {
 		id = SER_question_of_the_king
@@ -1214,6 +1188,7 @@ focus = {
 				count = 2
 			}
 		}
+		add_offsite_building = { type = arms_factory level = 2 }
 	}
 }
 focus = {
@@ -1238,6 +1213,7 @@ focus = {
 				count = 2
 			}
 		}
+		add_offsite_building = { type = arms_factory level = 2 }
 	}
 }
 focus = {
@@ -1262,6 +1238,7 @@ focus = {
 				count = 2
 			}
 		}
+		add_offsite_building = { type = arms_factory level = 2 }
 	}
 }
 focus = {
