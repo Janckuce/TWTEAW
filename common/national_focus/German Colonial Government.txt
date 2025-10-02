@@ -1,0 +1,220 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = german_colonial_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = GCG
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 900 }
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = GCG_Ties_To_Berlin
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 5
+		y = 0
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = GCG_Political_Left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Ties_To_Berlin
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = GCG_Political_Right1
+		}
+		prerequisite = {
+			focus = GCG_Ties_To_Berlin
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Left1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Left1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Left3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Left2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Left2
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Left4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Left3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Left3
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Ties_To_Berlin
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = GCG_Political_Left1
+		}
+		prerequisite = {
+			focus = GCG_Ties_To_Berlin
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Right1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Right1
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Right3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Right2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Right2
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Right4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Right3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Right3
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GCG_Political_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Political_Left4
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Left4
+			focus = GCG_Political_Right4
+		}
+		completion_reward = {
+		}
+	}
+
+	#	Military Branch
+
+	focus = {
+		id = GCG_Colonial_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 10
+		y = 0
+		completion_reward = {
+		}
+	}
+
+	#	Path Unlocks German Advisors
+
+	focus = {
+		id = GCG_German_Fighting
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Colonial_Army
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = GCG_Askari_Fighting
+		}
+		prerequisite = {
+			focus = GCG_Colonial_Army
+		}
+		completion_reward = {
+			773 = {
+				remove_core_of = GCG
+			}
+			839 = {
+				remove_core_of = GCG
+			}
+			777 = {
+				remove_core_of = GCG
+			}
+		}
+	}
+
+	#	Path Unlocks Askari Advisors
+
+	focus = {
+		id = GCG_Askari_Fighting
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Colonial_Army
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = GCG_German_Fighting
+		}
+		prerequisite = {
+			focus = GCG_Colonial_Army
+		}
+		completion_reward = {
+			add_ideas = GCG_Askari_People
+		}
+	}
+}

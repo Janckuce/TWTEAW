@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+		GCG_Isolated_Government = {
+			modifier = {
+				political_power_factor = -0.15
+				mobilization_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+			}
+		}
+		GCG_Colonial_Elite = {
+			modifier = {
+				conscription_factor = -0.1
+				compliance_growth = 0.1
+			}
+		}
+		GCG_Resource_Based_Economy = {
+			modifier = {
+				local_resources = 0.2
+				industrial_capacity_factory = -0.2
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		GCG_Askari_People = {
+			modifier = {
+				weekly_manpower = 500
+				conscription = 0.005
+			}
+		}
+	}
+}
