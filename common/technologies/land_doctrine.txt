@@ -3611,15 +3611,21 @@ technologies = {
 		}
 		
 		#Modifiers
-		category_tanks = {
-			max_organisation = 4
-			breakthrough = 0.15
+		heavy_armor = {
+			fort = {
+				attack = 0.10
+			}
 		}
-		category_all_armor = {
-			default_morale = 0.1
+		medium_armor = {
+			fort = {
+				attack = 0.10
+			}
 		}
-		fortification_damage = 1
-		fortification_collateral_chance = 1
+		light_armor = {
+			fort = {
+				attack = 0.10
+			}
+		}
 		##########
 		
 		doctrine = yes
