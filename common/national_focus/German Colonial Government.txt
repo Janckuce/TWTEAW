@@ -25,12 +25,15 @@ focus_tree = {
 
 	focus = {
 		id = GCG_Ties_To_Berlin
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10
-		x = 5
+		x = 2
 		y = 0
 		completion_reward = {
-			add_political_power = 75
+			swap_ideas = {
+				remove_idea = GCG_Isolated_Government
+				add_idea = GCG_Isolated_Government1
+			}
 		}
 	}
 	focus = {
@@ -47,12 +50,18 @@ focus_tree = {
 			focus = GCG_Ties_To_Berlin
 		}
 		completion_reward = {
+			888 = {
+				add_core_of = GCG
+			}
+			737 = {
+				add_core_of = GCG
+			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Left2
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Political_Left1
 		x = 0
 		y = 1
@@ -60,6 +69,7 @@ focus_tree = {
 			focus = GCG_Political_Left1
 		}
 		completion_reward = {
+			add_ideas = GCG_Asian_Populus
 		}
 	}
 	focus = {
@@ -73,12 +83,34 @@ focus_tree = {
 			focus = GCG_Political_Left2
 		}
 		completion_reward = {
+			888 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			737 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Left4
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 5
 		relative_position_id = GCG_Political_Left3
 		x = 0
 		y = 1
@@ -86,6 +118,18 @@ focus_tree = {
 			focus = GCG_Political_Left3
 		}
 		completion_reward = {
+			541 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			769 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
 		}
 	}
 	focus = {
@@ -102,12 +146,27 @@ focus_tree = {
 			focus = GCG_Ties_To_Berlin
 		}
 		completion_reward = {
+			684 = {
+				add_core_of = GCG
+			}
+			647 = {
+				add_core_of = GCG
+			}
+			638 = {
+				add_core_of = GCG
+			}
+			646 = {
+				add_core_of = GCG
+			}
+			633 = {
+				add_core_of = GCG
+			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Right2
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Political_Right1
 		x = 0
 		y = 1
@@ -115,6 +174,7 @@ focus_tree = {
 			focus = GCG_Political_Right1
 		}
 		completion_reward = {
+			add_ideas = GCG_Asian_Resources
 		}
 	}
 	focus = {
@@ -128,12 +188,67 @@ focus_tree = {
 			focus = GCG_Political_Right2
 		}
 		completion_reward = {
+			684 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			647 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			638 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			646 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			633 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Right4
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		cost = 5
 		relative_position_id = GCG_Political_Right3
 		x = 0
 		y = 1
@@ -141,6 +256,18 @@ focus_tree = {
 			focus = GCG_Political_Right3
 		}
 		completion_reward = {
+			888 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			684 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
 		}
 	}
 	focus = {
@@ -155,18 +282,98 @@ focus_tree = {
 			focus = GCG_Political_Right4
 		}
 		completion_reward = {
+			remove_ideas = GCG_Isolated_Government1
+		}
+	}
+	focus = {
+		id = GCG_Political_Side1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Ties_To_Berlin
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GCG_Ties_To_Berlin
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GCG_GDP_Req_Tooltip
+				check_variable = {
+					GCG.Current_Budget > 2
+				}
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GCG_Construction_Society
+				days = 70
+			}
+		}
+	}
+	focus = {
+		id = GCG_Political_Side2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Political_Side1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Side1
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GCG_GDP_Req_Tooltip1
+				check_variable = {
+					GCG.Current_Budget > 4
+				}
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GCG_Food_Industry
+				days = 70
+			}
+		}
+	}
+	focus = {
+		id = GCG_Political_Side3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Political_Side2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Political_Side2
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GCG_GDP_Req_Tooltip2
+				check_variable = {
+					GCG.Current_Budget > 6
+				}
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GCG_Production_Expertise
+				days = 70
+			}
 		}
 	}
 
-	#	Military Branch
+	#	Economic Branch
 
 	focus = {
-		id = GCG_Colonial_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = GCG_Economic_Status
+		icon = GFX_focus_CONGO_congo_army
 		cost = 10
-		x = 10
+		x = 7
 		y = 0
 		completion_reward = {
+			custom_effect_tooltip = GCG_GDP_Boost_Tooltip
+			add_to_variable = {
+				GCG.Current_Budget = 2
+			}
 		}
 	}
 
@@ -174,26 +381,62 @@ focus_tree = {
 
 	focus = {
 		id = GCG_German_Fighting
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_glory_to_the_imperial_army
 		cost = 10
-		relative_position_id = GCG_Colonial_Army
+		relative_position_id = GCG_Economic_Status
 		x = -1
 		y = 1
 		mutually_exclusive = {
 			focus = GCG_Askari_Fighting
 		}
 		prerequisite = {
-			focus = GCG_Colonial_Army
+			focus = GCG_Economic_Status
 		}
 		completion_reward = {
-			773 = {
-				remove_core_of = GCG
+			add_ideas = GCG_Berlin_Aid
+		}
+	}
+	focus = {
+		id = GCG_Sieze_Land
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_German_Fighting
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_German_Fighting
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
-			839 = {
-				remove_core_of = GCG
+			add_timed_idea = {
+				idea = GCG_Siezed_Land
+				days = 120
 			}
-			777 = {
-				remove_core_of = GCG
+		}
+	}
+	focus = {
+		id = GCG_Convert_Buildings
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Sieze_Land
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Sieze_Land
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_timed_idea = {
+				idea = GCG_Converted_Buildings
+				days = 120
 			}
 		}
 	}
@@ -202,19 +445,349 @@ focus_tree = {
 
 	focus = {
 		id = GCG_Askari_Fighting
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_URG_colorados
 		cost = 10
-		relative_position_id = GCG_Colonial_Army
+		relative_position_id = GCG_Economic_Status
 		x = 1
 		y = 1
 		mutually_exclusive = {
 			focus = GCG_German_Fighting
 		}
 		prerequisite = {
-			focus = GCG_Colonial_Army
+			focus = GCG_Economic_Status
 		}
 		completion_reward = {
+			773 = {
+				add_core_of = GCG
+			}
+			839 = {
+				add_core_of = GCG
+			}
+			777 = {
+				add_core_of = GCG
+			}
 			add_ideas = GCG_Askari_People
+		}
+	}
+	focus = {
+		id = GCG_National_Treasures
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Askari_Fighting
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Askari_Fighting
+		}
+		completion_reward = {
+			add_stability = 0.05
+			541 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			546 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			swap_ideas = {
+				remove_idea = GCG_Askari_People
+				add_idea = GCG_Askari_People1
+			}
+		}
+	}
+	focus = {
+		id = GCG_Equal_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_National_Treasures
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_National_Treasures
+		}
+		completion_reward = {
+			add_stability = 0.05
+			773 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			777 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			swap_ideas = {
+				remove_idea = GCG_Askari_People1
+				add_idea = GCG_Askari_People2
+			}
+		}
+	}
+	focus = {
+		id = GCG_Final_Industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Convert_Buildings
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GCG_Convert_Buildings
+			focus = GCG_Equal_Investments
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = GCG_Industrial_Government
+		}
+	}
+
+	#	Military Branch
+
+	focus = {
+		id = GCG_Colonial_Militia
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 12
+		y = 0
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GCG_Colonial_Elite
+				add_idea = GCG_Colonial_Elite1
+			}
+		}
+	}
+
+	#	Military Branch 1
+
+	focus = {
+		id = GCG_Support_Equipment1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Colonial_Militia
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = GCG_Colonial_Militia
+		}
+		completion_reward = {
+			add_ideas = GCG_Home_War_Industries
+		}
+	}
+	focus = {
+		id = GCG_Support_Equipment2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Support_Equipment1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Support_Equipment1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GCG_Home_War_Industries
+				add_idea = GCG_Home_War_Industries1
+			}
+		}
+	}
+	focus = {
+		id = GCG_Support_Equipment3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Support_Equipment2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Support_Equipment2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GCG_Home_War_Industries1
+				add_idea = GCG_Home_War_Industries2
+			}
+		}
+	}
+
+	#	Military Branch 2
+
+	focus = {
+		id = GCG_Colonial_Infantry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Colonial_Militia
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Colonial_Militia
+		}
+		completion_reward = {
+			add_ideas = GCG_Colonial_Military_Power
+		}
+	}
+	focus = {
+		id = GCG_Stock_Surplus
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Colonial_Infantry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Colonial_Infantry
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4314
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 678
+			}
+		}
+	}
+	focus = {
+		id = GCG_Military_Expansion
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Stock_Surplus
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Stock_Surplus
+		}
+		completion_reward = {
+			541 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			546 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GCG_Finalised_Support
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = GCG_Support_Equipment3
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GCG_Support_Equipment3
+		}
+		prerequisite = {
+			focus = GCG_Military_Expansion
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GCG_Home_War_Industries2
+				add_idea = GCG_Home_War_Industries3
+			}
+		}
+	}
+
+	#	Naval Path
+
+	focus = {
+		id = GCG_Trade_Security1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Colonial_Militia
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = GCG_Colonial_Militia
+		}
+		completion_reward = {
+			add_ideas = GCG_Convoy_Production
+		}
+	}
+	focus = {
+		id = GCG_Trade_Security2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Trade_Security1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GCG_Trade_Security1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GCG_Convoy_Production
+				}
+				swap_ideas = {
+					remove_idea = GCG_Convoy_Production
+					add_idea = GCG_Convoy_Production1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GCG_Convoy_Production1
+				}
+				swap_ideas = {
+					remove_idea = GCG_Convoy_Production1
+					add_idea = GCG_Convoy_Production2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GCG_Trade_Security3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Trade_Security1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GCG_Trade_Security1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GCG_Convoy_Production
+				}
+				swap_ideas = {
+					remove_idea = GCG_Convoy_Production
+					add_idea = GCG_Convoy_Production1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GCG_Convoy_Production1
+				}
+				swap_ideas = {
+					remove_idea = GCG_Convoy_Production1
+					add_idea = GCG_Convoy_Production2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GCG_Trade_Security4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = GCG_Trade_Security1
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = GCG_Trade_Security2
+			focus = GCG_Trade_Security3
+		}
+		completion_reward = {
 		}
 	}
 }

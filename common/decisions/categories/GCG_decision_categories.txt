@@ -1,0 +1,13 @@
+GCG_Budget_Management = {
+	icon = military_operation
+
+	scripted_gui = Budget_Scripted_Gui
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = GCG
+	}
+}
