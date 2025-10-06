@@ -541,6 +541,55 @@ ideas = {
 				production_speed_supply_node_factor = 0.15
 			}
 		}
+
+			RUS_let_way_for_democracy= {
+			picture = hun_economy_wasteland
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				trade_laws_cost_factor = -0.075
+				drift_defence_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+
+			RUS_let_way_for_democracy2 = {
+			picture = rus_nicholas_constitutional
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				stability_factor = 0.25
+				trade_laws_cost_factor = -0.075
+				drift_defence_factor = 0.3
+				political_power_factor = 0.20
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.075
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.05
+				army_breakthrough_against_minor_factor = 0.75
+				army_defence_against_major_factor = 0.025
+				army_attack_against_major_factor = 0.025
+			}
+		}
 		RUS_Agrarian_Industry1 = {
 			picture = rus_poor_people
 			removal_cost = -1
