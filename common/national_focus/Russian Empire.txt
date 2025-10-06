@@ -477,7 +477,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
             ideology = democratic
-            popularity = 0.05
+            popularity = 0.075
         }
 		add_ideas = RUS_let_way_for_democracy
 
@@ -486,7 +486,7 @@ focus_tree = {
 
 		focus = {
 		id = RUS_limit_the_rights_of_feudals
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_SOV_annex_tannu_tuva_ccp_2d_sov_compatibility
 		cost = 7.2
 		x = 16
 		y = 2
@@ -495,12 +495,18 @@ focus_tree = {
 			focus = RUS_continue_1905_reformation
 		}
 		completion_reward = {
+		add_stability = 0.075
+		add_war_support = -0.05
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.075
+        }
 		}
 	}
 
 		focus = {
 		id = RUS_open_up_newspapers
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_rus_newspapers
 		cost = 7.2
 		x = 18
 		y = 2
@@ -509,12 +515,14 @@ focus_tree = {
 			focus = RUS_continue_1905_reformation
 		}
 		completion_reward = {
+		add_political_power = 250
+		add_stability = 0.025
 		}
 	}
 
 		focus = {
 		id = RUS_strike_the_bolsheviks_not_too_much
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_CHL_chilean_anti_communist_action
 		cost = 7.2
 		x = 18
 		y = 3
@@ -523,12 +531,21 @@ focus_tree = {
 			focus = RUS_open_up_newspapers
 		}
 		completion_reward = {
+			add_popularity = {
+            ideology = communism
+            popularity = -0.075
+        }
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.025
+        }
+		add_war_support = 0.05
 		}
 	}
 
 		focus = {
 		id = RUS_give_in_to_social_revolutinaries
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_generic_social_democracy
 		cost = 7.2
 		x = 18
 		y = 4
@@ -537,12 +554,13 @@ focus_tree = {
 			focus = RUS_strike_the_bolsheviks_not_too_much
 		}
 		completion_reward = {
+			add_ideas = RUS_political_fusion
 		}
 	}
 
 		focus = {
 		id = RUS_release_political_prisoners
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_AUS_release_imprisoned_leaders
 		cost = 7.2
 		x = 18
 		y = 5
@@ -551,12 +569,16 @@ focus_tree = {
 			focus = RUS_give_in_to_social_revolutinaries
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_political_fusion
+				add_idea = RUS_political_fusion2
+			}
 		}
 	}
 
 		focus = {
 		id = RUS_limit_the_tsars_powers
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_PER_limit_foreign_influence
 		cost = 7.2
 		x = 18
 		y = 6
@@ -565,12 +587,16 @@ focus_tree = {
 			focus = RUS_release_political_prisoners
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_political_fusion2
+				add_idea = RUS_political_fusion3
+			}
 		}
 	}
 
 		focus = {
 		id = RUS_free_and_fair_russia
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_SOV_third_rome
 		cost = 7.2
 		x = 17
 		y = 7
@@ -586,12 +612,16 @@ focus_tree = {
 				remove_idea = RUS_let_way_for_democracy
 				add_idea = RUS_let_way_for_democracy2
 			}
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
 		}
 	}
 
 		focus = {
 		id = RUS_fight_peasent_like_status
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_ITA_peasants_rise
 		cost = 7.2
 		x = 16
 		y = 3
@@ -600,12 +630,13 @@ focus_tree = {
 			focus = RUS_limit_the_rights_of_feudals
 		}
 		completion_reward = {
+			add_ideas = RUS_feudals_not_like
 		}
 	}
 
 		focus = {
 		id = RUS_improve_on_our_costitution
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_POL_complete_april_constitution
 		cost = 7.2
 		x = 16
 		y = 4
@@ -614,12 +645,16 @@ focus_tree = {
 			focus = RUS_fight_peasent_like_status
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_feudals_not_like
+				add_idea = RUS_feudals_not_like2
+			}
 		}
 	}
 
 		focus = {
 		id = RUS_think_of_lesser_kingdoms
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_rus_lesser_kingdoms
 		cost = 7.2
 		x = 16
 		y = 5
@@ -628,12 +663,16 @@ focus_tree = {
 			focus = RUS_improve_on_our_costitution
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_feudals_not_like2
+				add_idea = RUS_feudals_not_like3
+			}
 		}
 	}
 
 		focus = {
 		id = RUS_religious_freedom_for_all
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_focus_fra_national_resistance_council
 		cost = 7.2
 		x = 16
 		y = 6
@@ -642,6 +681,7 @@ focus_tree = {
 			focus = RUS_think_of_lesser_kingdoms
 		}
 		completion_reward = {
+			remove_ideas = RUS_feudals_not_like3
 		}
 	}
 

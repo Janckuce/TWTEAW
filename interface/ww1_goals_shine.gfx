@@ -64,6 +64,70 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+		SpriteType = {
+		name = "GFX_focus_rus_lesser_kingdoms_shine"
+		texturefile = "gfx/interface/goals/rus_lesser_kingdoms.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/rus_lesser_kingdoms.png"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/rus_lesser_kingdoms.png"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+		SpriteType = {
+		name = "GFX_focus_rus_newspapers_shine"
+		texturefile = "gfx/interface/goals/rus_newspapers.png"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/rus_newspapers.png"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/rus_newspapers.png"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	    SpriteType = {
 		name = "GFX_focus_rus_our_tsar_shine"
 		texturefile = "gfx/interface/goals/rus_our_tsar.png"			
@@ -354,7 +418,7 @@ spriteTypes = {
 
 		SpriteType = {
 		name = "GFX_focus_rus_russo_american_patent_shine"
-		texturefile = "gfx/interface/goals/rus_planners_for_usrussia.png"			
+		texturefile = "gfx/interface/goals/rus_russo_american_patent.png"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/rus_russo_american_patent.png"			
@@ -386,7 +450,7 @@ spriteTypes = {
 
 		SpriteType = {
 		name = "GFX_focus_rus_war_training_shine"
-		texturefile = "gfx/interface/goals/rus_planners_for_usrussia.png"			
+		texturefile = "gfx/interface/goals/rus_war_training.png"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/rus_war_training.png"			
@@ -481,7 +545,7 @@ spriteTypes = {
 	}
 
 		SpriteType = {
-		name = "GFX_focus_rus_all_imperial_armys_shine"
+		name = "GFX_focus_rus_all_imperial_army_shine"
 		texturefile = "gfx/interface/goals/rus_all_imperial_army.png"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
