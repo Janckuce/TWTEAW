@@ -2308,7 +2308,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_stability = 0.2
+			add_stability = 0.1
 			 set_politics = {
             ruling_party = democratic
             elections_allowed = no
@@ -2694,15 +2694,30 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_stability = -0.15
-				43 = {
-				add_compliance = 20
+			add_stability = -0.05
+				83 = {
+				add_core_of = AUS
 			}
-				842 = {
-				add_compliance = 10
+				764 = {
+				add_core_of = AUS
 			}
-				155 = {
-				add_compliance = 10
+				76 = {
+				add_core_of = AUS
+			}
+				45 = {
+				add_core_of = AUS
+			}
+				664 = {
+				add_core_of = AUS
+			}
+			    70 = {
+				add_core_of = AUS
+			}
+				71 = {
+				add_core_of = AUS
+			}
+				73 = {
+				add_core_of = AUS
 			}
 		}
 	}
