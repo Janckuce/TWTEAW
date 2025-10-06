@@ -509,6 +509,30 @@ ideas = {
 				global_building_slots_factor = -0.8
 			}
 		}
+			RUS_stolypin_reform = {
+			picture = hun_economy_wasteland
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				consumer_goods_factor = -0.075
+				stability_factor = 0.075
+				war_support_factor = 0.075
+				production_speed_infrastructure_factor = 0.075
+				production_speed_rail_way_factor = 0.075
+				production_speed_supply_node_factor = 0.15
+			}
+		}
 		RUS_Agrarian_Industry1 = {
 			picture = rus_poor_people
 			removal_cost = -1
