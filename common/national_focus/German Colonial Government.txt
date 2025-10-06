@@ -38,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Left1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_counter_revolution
 		cost = 10
 		relative_position_id = GCG_Ties_To_Berlin
 		x = -2
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Left2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_population_growth
 		cost = 7.2
 		relative_position_id = GCG_Political_Left1
 		x = 0
@@ -74,7 +74,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Left3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
 		relative_position_id = GCG_Political_Left2
 		x = 0
@@ -109,7 +109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Left4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_air_production
 		cost = 5
 		relative_position_id = GCG_Political_Left3
 		x = 0
@@ -134,7 +134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Right1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_white_revolution
 		cost = 10
 		relative_position_id = GCG_Ties_To_Berlin
 		x = 0
@@ -165,7 +165,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Right2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_resource_extraction
 		cost = 7.2
 		relative_position_id = GCG_Political_Right1
 		x = 0
@@ -179,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Right3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		relative_position_id = GCG_Political_Right2
 		x = 0
@@ -247,7 +247,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Right4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_eng_special_air_service
 		cost = 5
 		relative_position_id = GCG_Political_Right3
 		x = 0
@@ -272,7 +272,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ARG_strengthening_the_concordancia
 		cost = 10
 		relative_position_id = GCG_Political_Left4
 		x = 1
@@ -283,11 +283,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = GCG_Isolated_Government1
+			add_ideas = GCG_Colonial_Connections
 		}
 	}
 	focus = {
 		id = GCG_Political_Side1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construction2
 		cost = 5
 		relative_position_id = GCG_Ties_To_Berlin
 		x = 2
@@ -312,7 +313,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Side2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
 		cost = 5
 		relative_position_id = GCG_Political_Side1
 		x = 0
@@ -337,7 +338,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Side3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_africa_production
 		cost = 5
 		relative_position_id = GCG_Political_Side2
 		x = 0
@@ -398,7 +399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Sieze_Land
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AUS_raid_military_storages
 		cost = 5
 		relative_position_id = GCG_German_Fighting
 		x = 0
@@ -420,7 +421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Convert_Buildings
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_DEN_civilian_preparations
 		cost = 5
 		relative_position_id = GCG_Sieze_Land
 		x = 0
@@ -471,7 +472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_National_Treasures
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CONGO_gold_and_diamonds
 		cost = 10
 		relative_position_id = GCG_Askari_Fighting
 		x = 0
@@ -501,7 +502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Equal_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_invite_french_aristocracy
 		cost = 10
 		relative_position_id = GCG_National_Treasures
 		x = 0
@@ -531,7 +532,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Final_Industry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_invite_oil_nations
 		cost = 10
 		relative_position_id = GCG_Convert_Buildings
 		x = 1
@@ -550,9 +551,9 @@ focus_tree = {
 
 	focus = {
 		id = GCG_Colonial_Militia
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
 		cost = 10
-		x = 12
+		x = 14
 		y = 0
 		completion_reward = {
 			swap_ideas = {
@@ -566,10 +567,10 @@ focus_tree = {
 
 	focus = {
 		id = GCG_Support_Equipment1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_military_sphere
 		cost = 10
 		relative_position_id = GCG_Colonial_Militia
-		x = -2
+		x = -4
 		y = 1
 		prerequisite = {
 			focus = GCG_Colonial_Militia
@@ -580,7 +581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Support_Equipment2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ITA_bersaglieri
 		cost = 10
 		relative_position_id = GCG_Support_Equipment1
 		x = 0
@@ -597,7 +598,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Support_Equipment3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_military_into_the_workforce
 		cost = 10
 		relative_position_id = GCG_Support_Equipment2
 		x = 0
@@ -617,10 +618,10 @@ focus_tree = {
 
 	focus = {
 		id = GCG_Colonial_Infantry
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AUS_frontmiliz_focus
 		cost = 10
 		relative_position_id = GCG_Colonial_Militia
-		x = 0
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = GCG_Colonial_Militia
@@ -631,7 +632,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Stock_Surplus
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_per_albin_bus
 		cost = 10
 		relative_position_id = GCG_Colonial_Infantry
 		x = 0
@@ -652,7 +653,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Military_Expansion
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_workers
 		cost = 10
 		relative_position_id = GCG_Stock_Surplus
 		x = 0
@@ -679,7 +680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Finalised_Support
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_IRQ_royal_iraqi_army_alt
 		cost = 10
 		relative_position_id = GCG_Support_Equipment3
 		x = 1
@@ -698,14 +699,14 @@ focus_tree = {
 		}
 	}
 
-	#	Naval Path
+	#	Naval Branch
 
 	focus = {
 		id = GCG_Trade_Security1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_sheep
 		cost = 5
 		relative_position_id = GCG_Colonial_Militia
-		x = 3
+		x = 1
 		y = 1
 		prerequisite = {
 			focus = GCG_Colonial_Militia
@@ -716,8 +717,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Trade_Security2
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		icon = GFX_focus_generic_trade_interdiction
+		cost = 10
 		relative_position_id = GCG_Trade_Security1
 		x = -1
 		y = 1
@@ -747,8 +748,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Trade_Security3
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		icon = GFX_focus_generic_trade_interdiction
+		cost = 10
 		relative_position_id = GCG_Trade_Security1
 		x = 1
 		y = 1
@@ -778,7 +779,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Trade_Security4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_coastal_fort
 		cost = 5
 		relative_position_id = GCG_Trade_Security1
 		x = 0
@@ -788,6 +789,158 @@ focus_tree = {
 			focus = GCG_Trade_Security3
 		}
 		completion_reward = {
+			546 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+			894 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GCG_Trade_Security5
+		icon = GFX_focus_generic_devaluation
+		cost = 10
+		relative_position_id = GCG_Trade_Security4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Trade_Security4
+		}
+		completion_reward = {
+			546 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+				add_resource = {
+					type = chromium
+					amount = 7
+				}
+			}
+			894 = {
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+				add_resource = {
+					type = chromium
+					amount = 7
+				}
+			}
+		}
+	}
+
+	#	Air Branch
+
+	focus = {
+		id = GCG_Air_Power1
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		relative_position_id = GCG_Colonial_Militia
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = GCG_Colonial_Militia
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_Kaiser_Leader2
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = GCG_Air_Power2
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		relative_position_id = GCG_Air_Power1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GCG_Air_Power1
+		}
+		completion_reward = {
+			add_ideas = GCG_Colonial_Air_Force
+		}
+	}
+	focus = {
+		id = GCG_Air_Power3
+		icon = GFX_SOV_increase_aircraft_production_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = GCG_Air_Power2
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = GCG_Air_Power4
+		}
+		prerequisite = {
+			focus = GCG_Air_Power2
+		}
+		completion_reward = {
+			546 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GCG_Air_Power4
+		icon = GFX_focus_generic_aircraft_production
+		cost = 10
+		relative_position_id = GCG_Air_Power2
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = GCG_Air_Power3
+		}
+		prerequisite = {
+			focus = GCG_Air_Power2
+		}
+		completion_reward = {
+			773 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			777 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GCG_Air_Power5
+		icon = GFX_focus_PER_perfect_iranian_airforce
+		cost = 5
+		relative_position_id = GCG_Air_Power2
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = GCG_Air_Power3
+			focus = GCG_Air_Power4
+		}
+		completion_reward = {
+			add_ideas = GCG_Cheap_Planes
 		}
 	}
 }
