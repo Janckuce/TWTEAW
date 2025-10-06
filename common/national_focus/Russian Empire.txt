@@ -479,6 +479,163 @@ focus_tree = {
 	}
 
 		focus = {
+		id = RUS_limit_the_rights_of_feudals
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 16
+		y = 2
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_continue_1905_reformation
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_open_up_newspapers
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 18
+		y = 2
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_continue_1905_reformation
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_strike_the_bolsheviks_not_too_much
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 18
+		y = 3
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_open_up_newspapers
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_give_in_to_social_revolutinaries
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 18
+		y = 4
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_strike_the_bolsheviks_not_too_much
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_release_political_prisoners
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 18
+		y = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_give_in_to_social_revolutinaries
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_limit_the_tsars_powers
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 18
+		y = 6
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_release_political_prisoners
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_free_and_fair_russia
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 17
+		y = 7
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_limit_the_tsars_powers
+		}
+			prerequisite = {
+			focus = RUS_religious_freedom_for_all
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_fight_peasent_like_status
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 16
+		y = 3
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_limit_the_rights_of_feudals
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_improve_on_our_costitution
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 16
+		y = 4
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_fight_peasent_like_status
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_think_of_lesser_kingdoms
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 16
+		y = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_improve_on_our_costitution
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_religious_freedom_for_all
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 16
+		y = 6
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_think_of_lesser_kingdoms
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
 		id = RUS_close_the_1905_new
 		icon = GFX_focus_rus_stolypin_reform
 		cost = 7.2
@@ -487,6 +644,163 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = RUS_The_Tsars_Ideas
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_arrest_srs
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 21
+		y = 2
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_close_the_1905_new
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_burn_down_the_constitution
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 21
+		y = 3
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_arrest_srs
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_hunt_down_bolsheviks
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 21
+		y = 4
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_burn_down_the_constitution
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_orthodoxy_is_for_us
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 21
+		y = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_hunt_down_bolsheviks
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_invite_black_hunderets
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 21
+		y = 6
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_orthodoxy_is_for_us
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_russia_and_god_against_enemies
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 22
+		y = 7
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_invite_black_hunderets
+		}
+			prerequisite = {
+			focus = RUS_bring_neofeudalism_to_russia
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_strike_against_germanism
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 23
+		y = 2
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_close_the_1905_new
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_force_newspapers_under_ministry
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 23
+		y = 3
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_strike_against_germanism
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_limit_rights_of_lesser_kingdoms
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 23
+		y = 4
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_force_newspapers_under_ministry
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_idea_of_even_greater_russia
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 23
+		y = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_limit_rights_of_lesser_kingdoms
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_bring_neofeudalism_to_russia
+		icon = GFX_focus_rus_stolypin_reform
+		cost = 7.2
+		x = 23
+		y = 6
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		prerequisite = {
+			focus = RUS_idea_of_even_greater_russia
 		}
 		completion_reward = {
 		}
