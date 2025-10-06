@@ -667,6 +667,29 @@ focus_tree = {
 				remove_idea = RUS_feudals_not_like2
 				add_idea = RUS_feudals_not_like3
 			}
+			97 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+
+				190 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -696,6 +719,13 @@ focus_tree = {
 			focus = RUS_The_Tsars_Ideas
 		}
 		completion_reward = {
+		add_stability = -0.2
+		add_war_support = -0.075
+		add_political_power = -350
+			add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+        }
 		}
 	}
 
@@ -710,6 +740,7 @@ focus_tree = {
 			focus = RUS_close_the_1905_new
 		}
 		completion_reward = {
+		add_ideas = RUS_nationality_orthodox
 		}
 	}
 
@@ -724,6 +755,10 @@ focus_tree = {
 			focus = RUS_arrest_srs
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_nationality_orthodox
+				add_idea = RUS_nationality_orthodox2
+			}
 		}
 	}
 
@@ -738,6 +773,10 @@ focus_tree = {
 			focus = RUS_burn_down_the_constitution
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_nationality_orthodox2
+				add_idea = RUS_nationality_orthodox3
+			}
 		}
 	}
 
@@ -752,6 +791,10 @@ focus_tree = {
 			focus = RUS_hunt_down_bolsheviks
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_nationality_orthodox3
+				add_idea = RUS_nationality_orthodox4
+			}
 		}
 	}
 
@@ -766,6 +809,9 @@ focus_tree = {
 			focus = RUS_orthodoxy_is_for_us
 		}
 		completion_reward = {
+		remove_ideas = RUS_nationality_orthodox4
+		add_stability = 0.35
+		add_war_support = 0.1
 		}
 	}
 
@@ -783,6 +829,14 @@ focus_tree = {
 			focus = RUS_bring_neofeudalism_to_russia
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_russian_nationalism5
+				add_idea = RUS_russian_nationalism6
+			}
+			set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+        }
 		}
 	}
 
@@ -797,6 +851,7 @@ focus_tree = {
 			focus = RUS_close_the_1905_new
 		}
 		completion_reward = {
+			add_ideas = RUS_russian_nationalism
 		}
 	}
 
@@ -811,6 +866,10 @@ focus_tree = {
 			focus = RUS_strike_against_germanism
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_russian_nationalism
+				add_idea = RUS_russian_nationalism2
+			}
 		}
 	}
 
@@ -825,6 +884,33 @@ focus_tree = {
 			focus = RUS_force_newspapers_under_ministry
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_russian_nationalism2
+				add_idea = RUS_russian_nationalism3
+			}
+				11 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+
+				193 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -839,6 +925,24 @@ focus_tree = {
 			focus = RUS_limit_rights_of_lesser_kingdoms
 		}
 		completion_reward = {
+			add_state_core = 91
+			add_state_core = 89
+			add_state_core = 80
+			add_state_core = 890
+			add_state_core = 73
+			add_state_core = 188
+			add_state_core = 763
+			add_state_core = 5
+			add_state_core = 85
+			add_state_core = 807
+			add_state_core = 86
+			add_state_core = 67
+			add_state_core = 762
+
+				swap_ideas = {
+				remove_idea = RUS_russian_nationalism3
+				add_idea = RUS_russian_nationalism4
+			}
 		}
 	}
 
@@ -853,6 +957,10 @@ focus_tree = {
 			focus = RUS_idea_of_even_greater_russia
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_russian_nationalism4
+				add_idea = RUS_russian_nationalism5
+			}
 		}
 	}
 
