@@ -542,6 +542,306 @@ ideas = {
 			}
 		}
 
+			RUS_nationality_orthodox= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.15
+			political_power_factor = -0.25
+			stability_factor = -0.15
+			research_speed_factor = -0.25
+			recruitable_population = -0.1
+			production_speed_arms_factory_factor = -0.125
+			production_speed_industrial_complex_factor = -0.125
+			industrial_capacity_factory = -0.15
+			line_change_production_efficiency_factor = -0.05
+			production_factory_start_efficiency_factor = -0.075
+			production_factory_efficiency_gain_factor = -0.025
+			non_core_manpower = -0.2
+			conscription_factor = -0.1
+			land_reinforce_rate = -0.075
+			}
+		}
+
+			RUS_nationality_orthodox2= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.1
+			political_power_factor = -0.15
+			stability_factor = -0.075
+			research_speed_factor = -0.2
+			recruitable_population = -0.075
+			production_speed_arms_factory_factor = -0.1
+			production_speed_industrial_complex_factor = -0.1
+			industrial_capacity_factory = -0.1
+			line_change_production_efficiency_factor = -0.025
+			production_factory_start_efficiency_factor = -0.05
+			non_core_manpower = -0.15
+			conscription_factor = -0.075
+			land_reinforce_rate = -0.05
+			}
+		}
+
+			RUS_nationality_orthodox3= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.075
+			political_power_factor = -0.1
+			stability_factor = -0.05
+			research_speed_factor = -0.15
+			recruitable_population = -0.05
+			production_speed_arms_factory_factor = -0.075
+			production_speed_industrial_complex_factor = -0.075
+			industrial_capacity_factory = -0.075
+			production_factory_start_efficiency_factor = -0.025
+			non_core_manpower = -0.075
+			conscription_factor = -0.05
+			land_reinforce_rate = -0.025
+			}
+		}
+
+			RUS_nationality_orthodox4= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.05
+			political_power_factor = -0.05
+			stability_factor = -0.025
+			research_speed_factor = -0.075
+			production_speed_arms_factory_factor = -0.05
+			production_speed_industrial_complex_factor = -0.05
+			industrial_capacity_factory = -0.05
+			non_core_manpower = -0.075
+			}
+		}
+
+			RUS_russian_nationalism= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.025
+			}
+			
+		}
+
+			RUS_russian_nationalism2= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+			political_power_factor = -0.2
+			stability_factor = -0.075
+			research_speed_factor = -0.1
+			production_speed_arms_factory_factor = 0.075
+			production_speed_industrial_complex_factor = -0.025
+			industrial_capacity_factory = 0.025
+			non_core_manpower = -0.4
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.025
+			}
+			
+		}
+
+			RUS_russian_nationalism3= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			political_power_factor = -0.15
+			stability_factor = -0.05
+			research_speed_factor = -0.075
+			production_speed_arms_factory_factor = 0.1
+			industrial_capacity_factory = 0.05
+			non_core_manpower = -0.35
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.025
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.025
+			}
+		}
+
+			RUS_russian_nationalism4= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			political_power_factor = -0.1
+			research_speed_factor = -0.05
+			stability_factor = -0.025
+			production_speed_arms_factory_factor = 0.125
+			industrial_capacity_factory = 0.075
+			non_core_manpower = -0.3
+			army_org_factor = 0.125
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.05
+			}
+		}
+
+			RUS_russian_nationalism5= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			political_power_factor = -0.05
+			research_speed_factor = -0.025
+			production_speed_arms_factory_factor = 0.15
+			industrial_capacity_factory = 0.1
+			non_core_manpower = -0.15
+			army_org_factor = 0.125
+
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.05
+			}
+		}
+
+			RUS_russian_nationalism6= {
+			picture = rus_russian_democracy
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			modifier = {
+			production_speed_arms_factory_factor = 0.175
+			industrial_capacity_factory = 0.125
+			non_core_manpower = -0.1
+			army_org_factor = 0.2
+			production_factory_start_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.075
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.025
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.05
+			}
+		}
+
 			RUS_let_way_for_democracy= {
 			picture = rus_russian_democracy
 			removal_cost = -1
@@ -589,6 +889,7 @@ ideas = {
 				army_defence_against_major_factor = 0.025
 				army_attack_against_major_factor = 0.025
 				conscription_factor = 0.025
+				research_speed_factor = 0.1
 			}
 		}
 
