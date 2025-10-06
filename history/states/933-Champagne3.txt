@@ -1,31 +1,37 @@
 
 state={
-	id=18
-	name="STATE_18"
+	id=933
+	name="STATE_933"
 
 	history={
 		owner = FRA
+
+		add_dynamic_modifier = {
+			modifier = Schlieffen_No_Fort_North_Front
+		}
+
 		victory_points = {
-			9490 10
+			13011 5 
 		}
-	    victory_points = {
-			3546 10
+		victory_points = {
+			3560 5
 		}
+
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
 		add_core_of = FRA
-
+		
 	}
 
 	provinces={
-		551 3533 3546 6531 6545 9490 9505 11732 13284 13285
+		13260 13261 9472 13011 13262 13283 3560
 	}
-	manpower=706728
+	manpower=564072
 	resources={
-		steel=12 # was: 36
+		steel=22 # was: 36
 	}
 	buildings_max_level_factor=1.000
 	state_category=town

@@ -1,0 +1,38 @@
+
+state={
+	id=934
+	name="STATE_934" # Flanders
+	manpower = 17500
+	resources={
+		steel=1 # was: 48
+	}
+	
+	state_category = rural
+
+	history={
+		owner = BEL
+
+		add_dynamic_modifier = {
+			modifier = Holding_A_Sliver
+		}
+
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			
+			13263 = {
+				bunker = {
+					level = 10
+				}
+			}
+		}
+		
+		add_core_of = BEL
+	}
+
+	provinces={
+		13263
+	}
+
+	local_supplies=0.0 
+}
