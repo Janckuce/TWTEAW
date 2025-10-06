@@ -1,3 +1,17 @@
+RUS_Bolshevik_Solidarity = {
+	icon = GFX_decision_category_SOV_civil_puppet_interaction
+
+	scripted_gui = Bolshevism_Scripted_Gui
+	
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = RUS
+	} 
+}
+
 RUS_Peasants_Land_Bank_Category = {
 	icon = military_operation
 	

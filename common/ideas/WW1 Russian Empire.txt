@@ -830,5 +830,35 @@ ideas = {
 				training_time_army_factor = -0.1
 			}
 		}
+		RUS_Bolshevik_Sabotage = {
+			modifier = {
+				army_morale_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		RUS_Bolshevik_Sabotage1 = {
+			modifier = {
+				army_morale_factor = -0.075
+				stability_factor = -0.075
+				war_support_factor = -0.075
+				industrial_capacity_factory = -0.075
+			}
+		}
+		RUS_Bolshevik_Sabotage2 = {
+			modifier = {
+				army_morale_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		RUS_Bolsheviks_Crushed = {
+			modifier = {
+				stability_factor = 0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
 	}
 }
