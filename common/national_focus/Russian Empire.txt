@@ -466,7 +466,7 @@ focus_tree = {
 
 		focus = {
 		id = RUS_continue_1905_reformation
-		icon = GFX_focus_rus_stolypin_reform
+		icon = GFX_focus_rus_continue_revolution
 		cost = 7.2
 		x = 17
 		y = 1
@@ -475,6 +475,12 @@ focus_tree = {
 			focus = RUS_The_Tsars_Ideas
 		}
 		completion_reward = {
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.05
+        }
+		add_ideas = RUS_let_way_for_democracy
+
 		}
 	}
 
@@ -576,6 +582,10 @@ focus_tree = {
 			focus = RUS_religious_freedom_for_all
 		}
 		completion_reward = {
+				swap_ideas = {
+				remove_idea = RUS_let_way_for_democracy
+				add_idea = RUS_let_way_for_democracy2
+			}
 		}
 	}
 
