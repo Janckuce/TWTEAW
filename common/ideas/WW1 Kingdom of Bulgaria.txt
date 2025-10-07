@@ -546,8 +546,13 @@ ideas = {
        		communism_drift = 0.2
 			consumer_goods_factor = -0.025
 			production_factory_start_efficiency_factor = -0.05
-			conversion_cost_civ_to_mil_factor = -0.1
+			minimum_training_level = -0.05
     	}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+			}
+		}
 	}
 
 			bul_victory_of_brsp_5 = {
@@ -566,9 +571,14 @@ ideas = {
 
 			modifier = {
 				communism_drift = 0.2
-				consumer_goods_factor = -0.025
-				conversion_cost_civ_to_mil_factor = -0.2
+				consumer_goods_factor = -0.05
+				minimum_training_level = -0.05
     	}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+			}
+		}
 	}
 
 			bul_victory_of_brsp_6 = {
@@ -587,10 +597,15 @@ ideas = {
 
 			modifier = {
 				communism_drift = 0.2
-				consumer_goods_factor = -0.025
-				conversion_cost_civ_to_mil_factor = -0.3
+				consumer_goods_factor = -0.05
+				minimum_training_level = -0.05
 				army_breakthrough_against_minor_factor = 0.1
     	}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.05
+			}
+		}
 	}
 
 			bul_victory_of_brsp_7 = {
@@ -609,10 +624,15 @@ ideas = {
 
 			modifier = {
 				communism_drift = 0.2
-				consumer_goods_factor = -0.075
-				conversion_cost_civ_to_mil_factor = -0.3
+				consumer_goods_factor = -0.1
+				minimum_training_level = -0.05
 				army_breakthrough_against_minor_factor = 0.1
     	}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.1
+			}
+		}
 	}
 
 			bul_victory_of_brsp_8 = {
@@ -631,12 +651,17 @@ ideas = {
 
 			modifier = {
 				communism_drift = 0.2
-				consumer_goods_factor = -0.075
-				conversion_cost_civ_to_mil_factor = -0.3
+				consumer_goods_factor = -0.1
+				minimum_training_level = -0.05
 				army_breakthrough_against_minor_factor = 0.1
 				industry_repair_factor = 0.1
 				line_change_production_efficiency_factor = 0.5
     	}
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.1
+			}
+		}
 	}
 
 		bul_victory_of_bzns = {
