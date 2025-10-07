@@ -1317,4 +1317,41 @@ ideas = {
 			}
 		}
 	}
+
+	industrial_concern = {
+		
+			RUS_donetsk_metallurgical_plant = {
+			name = "Donetsk Metallurgical Plant"
+			picture = rus_donetsk_factory
+			allowed = {
+				original_tag = RUS
+			}
+
+
+			visible = {
+
+			}
+
+			cost = 200
+			
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.2
+			}
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_start_efficiency_factor = 0.05
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }
