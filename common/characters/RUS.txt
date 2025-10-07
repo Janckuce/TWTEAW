@@ -376,25 +376,49 @@ characters={
 	}
 	
 	########## Political Advisor ##########
-	
-	RUS_boris_savinkov = {
-		name = RUS_character_boris_savinkov
+
+		RUS_ivan_shcheglovitov = {
+		name = "Ivan Shcheglovitov"
 		portraits = {
 			army = {
-				small = "GFX_RUS_boris_savinkov_frame"
+				small = "GFX_rus_ivan_shcheglovitov_frame"
 			}
 		}
 		
 		advisor={
 			slot = political_advisor
-			idea_token = RUS_boris_savinkov
+			idea_token = RUS_ivan_shcheglovitov
 			allowed = {
 				original_tag = RUS
 			}
 			traits = {
-				silent_workhorse #15% PP gain
+			conservative_justice
 			}
-			cost = 150
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+		RUS_ivan_shcheglovitov = {
+		name = "Ivan Shcheglovitov"
+		portraits = {
+			army = {
+				small = "GFX_rus_ivan_shcheglovitov_frame"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_ivan_shcheglovitov
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+			conservative_justice
+			}
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -405,7 +429,7 @@ characters={
 		name = RUS_character_aleksei_putilov
 		portraits = {
 			army = {
-				small = "GFX_RUS_aleksei_putilov_frame"
+				small = "GFX_rus_vladimir_kokovtsov_frame"
 			}
 		}
 		
@@ -440,9 +464,9 @@ characters={
 				original_tag = RUS
 			}
 			traits = {
-				war_industrialist #10% Mil Construction Speed
+			incompetent_militarist
 			}
-			cost = 150
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -450,10 +474,10 @@ characters={
 	}
 
 	RUS_josif_stalin = {
-		name = RUS_character_josif_stalin
+		name = "Lev Kasso"
 		portraits = {
 			army = {
-				small = "GFX_RUS_vladimir_sukhomlinov_frame"
+				small = "GFX_rus_levo_kasso_frame"
 			}
 		}
 		
@@ -463,13 +487,10 @@ characters={
 			allowed = {
 				original_tag = RUS
 			}
-			available = {
-				has_completed_focus = RUS_free_political_prisoners
-			}
 			traits = {
 				Man_Of_Steel
 			}
-			cost = 150
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -480,7 +501,7 @@ characters={
 		name = RUS_character_viktor_chernov
 		portraits = {
 			army = {
-				small = "GFX_RUS_vladimir_sukhomlinov_frame"
+				small = "GFX_rus_viktor_chernov_frame"
 			}
 		}
 		
@@ -491,37 +512,10 @@ characters={
 				original_tag = RUS
 			}
 			available = {
-				has_completed_focus = RUS_free_political_prisoners
+				has_completed_focus = RUS_release_political_prisoners
 			}
 			traits = {
 				Minister_Of_Agriculture
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	RUS_irakli_tsereteli = {
-		name = RUS_character_irakli_tsereteli
-		portraits = {
-			army = {
-				small = "GFX_RUS_vladimir_sukhomlinov_frame"
-			}
-		}
-		
-		advisor={
-			slot = political_advisor
-			idea_token = RUS_irakli_tsereteli
-			allowed = {
-				original_tag = RUS
-			}
-			available = {
-				has_completed_focus = RUS_free_political_prisoners
-			}
-			traits = {
-				Minister_Of_Interior
 			}
 			cost = 150
 			ai_will_do = {
