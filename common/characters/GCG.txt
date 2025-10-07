@@ -58,6 +58,72 @@ characters = {
 			logistics_skill=2
 		}
 	}
+	GCG_Victor_Franke = {
+		name = GCG_Character_Victor_Franke
+		portraits = {
+			army = {
+				large = "GFX_GCG_Victor_Franke"
+				small = "GFX_GCG_Victor_Franke_Frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = GCG_Victor_Franke
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Hero_Of_Omaruru
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = {
+				war_hero
+			}
+			skill=2
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	GCG_Carl_Zimmermann = {
+		name = GCG_Character_Carl_Zimmermann
+		portraits = {
+			army = {
+				large = "GFX_GCG_Carl_Zimmermann"
+				small = "GFX_GCG_Carl_Zimmermann_Frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GCG_Carl_Zimmermann
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				General_Reformist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+
+	#	Political Advisors
+
 	GCG_Theodor_Seitz = {
 		name = GCG_Character_Theodor_Seitz
 		portraits = {
