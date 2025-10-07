@@ -90,7 +90,7 @@ characters={
 				original_tag = RUS
 			}
 			traits = {
-				army_chief_offensive_2 #Inf Attack +10%
+				army_chief_defensive_2
 			}
 			cost = 150
 			ai_will_do = {
@@ -123,7 +123,7 @@ characters={
 				original_tag = RUS
 			}
 			traits = {
-				army_chief_defensive_2 #Inf Defense +10%
+				army_chief_offensive_2 #Inf Defense +10%
 			}
 			cost = 75
 			ai_will_do = {
@@ -150,13 +150,46 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = theorist
 			idea_token = RUS_aleksei_brusilov
 			allowed = {
 				original_tag = RUS
 			}
 			traits = {
-				army_infantry_2 #Inf Attack +10% Inf Defense +15%
+			innovative_general_among_stupid
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill=5
+			attack_skill=6
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+		}
+	}
+
+		RUS_mikhail_alekseyev = {
+		name = "Mikhail Alekseyev"
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_mikhail_alekseyev"
+			}
+			army = {
+				small = "GFX_RUS_mikhail_alekseyev_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = RUS_mikhail_alekseyev
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+			organiser_in_situations
 			}
 			cost = 150
 			ai_will_do = {
@@ -165,9 +198,9 @@ characters={
 		}
 		corps_commander={
 			skill=2
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
 			logistics_skill=1
 		}
 	}
@@ -249,13 +282,13 @@ characters={
 			}
 		}
 		advisor={
-			slot = theorist
+			slot = high_command
 			idea_token = RUS_aleksei_kaledin
 			allowed = {
 				original_tag = RUS
 			}
 			traits = {
-				military_theorist #10% Off Doctrine
+				army_infantry_2 #10% Off Doctrine
 			}
 			cost = 150
 			ai_will_do = {
@@ -268,6 +301,78 @@ characters={
 			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 4
+		}
+	}
+
+		RUS_rennerkampf = {
+		name = "Paul von Rennenkampf"
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_rennerkampf"
+			}
+			army = {
+				small = "GFX_rus_rennerkampf_frame"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+		RUS_samsonov = {
+		name = "Aleksandr Vasilyevich Samsonov"
+		portraits = {
+			civilian = {
+				large = "GFX_rus_samsonov"
+			}
+			army = {
+				small = "GFX_rus_rennerkampf_frame"
+			}
+		}
+		corps_commander={
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+		RUS_kolach= {
+		name = "Alexander Vasilyevich Kolchak"
+		portraits = {
+			civilian = {
+				large = "GFX_rus_kolchak"
+			}
+				army = {
+				small = "GFX_rus_kolchak_frame"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = RUS_kolach
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = {cruiser_captain }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 6
 		}
 	}
 	
