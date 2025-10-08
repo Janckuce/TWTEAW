@@ -98,6 +98,7 @@ characters={
 			}
 		}
 		field_marshal={
+			traits = { ranger politically_connected}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 4
@@ -163,7 +164,8 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		field_marshal={
+			traits = { infantry_leader brilliant_strategist }
 			skill=5
 			attack_skill=6
 			defense_skill=2
@@ -197,6 +199,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { organizer skilled_staffer expert_delegator }
 			skill=2
 			attack_skill=3
 			defense_skill=2
@@ -230,8 +233,9 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { cavalry_leader cavalry_expert cavalry_officer }
 			skill = 2
-			attack_skill = 3
+			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
@@ -255,7 +259,7 @@ characters={
 				original_tag = RUS
 			}
 			traits = {
-				army_concealment_2 #Enemy Air Support -10%
+				army_artillery_2
 			}
 			cost = 150
 			ai_will_do = {
@@ -263,11 +267,32 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { infantry_leader media_personality trickster commando }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 3
+		}
+	}
+
+		rus_dmitry_shcherbachev = {
+		name = "Dmitry Shcherbachev"
+		portraits = {
+			civilian = {
+				large = "GFX_rus_dmitry_shcherbachev"
+			}
+			army = {
+				small = "GFX_rus_dmitry_shcherbachev_frame"
+			}
+		}
+		corps_commander={
+			traits = { fortress_buster  }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	
@@ -315,6 +340,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { old_guard political_connected media_personality }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -334,6 +360,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { old_guard ranger }
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1
@@ -401,6 +428,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { hill_fighter mountaineer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -426,7 +454,7 @@ characters={
 				original_tag = RUS
 			}
 			traits = {
-				army_artillery_2 #Artillery attack 10% Artillery Defense 15%
+				cossack_ataman
 			}
 			cost = 150
 			ai_will_do = {
@@ -434,30 +462,12 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { cavalry_officer cavalry_leader cavalry_expert }
 			skill = 2
-			attack_skill = 3
+			attack_skill = 4
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 1
-		}
-	}
-	
-	RUS_sergey_markov = {
-		name = RUS_character_sergey_markov
-		portraits = {
-			civilian = {
-				large = "GFX_RUS_sergey_markov"
-			}
-			army = {
-				small = "GFX_RUS_sergey_markov_frame"
-			}
-		}
-		corps_commander={
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
 		}
 	}
 	
@@ -472,6 +482,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { cavalry_officer cavalry_leader skilled_staffer }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 3
