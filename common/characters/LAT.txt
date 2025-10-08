@@ -17,16 +17,220 @@ characters = {
 	LAT_Augusts_Misins = {
 		name = LAT_Augusts_Misins
 		portraits = {
-			civilian = {
+			army = {
 				large = "GFX_LAT_Augusts_Ernests_Misins"
+				small = "GFX_LAT_Augusts_Ernests_Misins_Frame"
 			}
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = LAT_Augusts_Misins
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				army_chief_planning_2
+			}
+			cost = 150
+		}
 		field_marshal = {
+			traits = {
+				ranger
+				infantry_officer
+			}
 			skill = 3
 			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 3
+		}
+	}
+	LAT_Andrejs_Auzans = {
+		name = LAT_Andrejs_Auzans
+		portraits = {
+			army = {
+				large = "GFX_LAT_Andrejs_Auzans"
+				small = "GFX_LAT_Andrejs_Auzans_Frame"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = LAT_Andrejs_Auzans
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 150
+		}
+		field_marshal = {
+			traits = {
+				ranger
+				organizer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LAT_Janis_Francis = {
+		name = LAT_Janis_Francis
+		portraits = {
+			army = {
+				large = "GFX_LAT_Janis_Francis"
+				small = "GFX_LAT_Janis_Francis_Frame"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LAT_Janis_Francis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Speed_Is_Power
+			}
+			cost = 150
+		}
+		corps_commander = {
+			traits = {
+				ranger
+				bearer_of_artillery
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	LAT_Fridrihs_Briedis = {
+		name = LAT_Fridrihs_Briedis
+		portraits = {
+			army = {
+				large = "GFX_LAT_Janis_Francis"
+				small = "GFX_LAT_Janis_Francis_Frame"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LAT_Fridrihs_Briedis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 150
+		}
+		corps_commander = {
+			traits = {
+				ranger
+				trait_mountaineer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LAT_Jukums_Vacietis = {
+		name = LAT_Jukums_Vacietis
+		portraits = {
+			army = {
+				large = "GFX_LAT_Janis_Francis"
+				small = "GFX_LAT_Janis_Francis_Frame"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LAT_Jukums_Vacietis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				army_entrenchment_3
+			}
+			cost = 150
+		}
+		corps_commander = {
+			traits = {
+				ranger
+				trickster
+				guerilla_fighter
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	LAT_Martins_Penikis = {
+		name = LAT_Martins_Penikis
+		portraits = {
+			army = {
+				large = "GFX_LAT_Janis_Francis"
+				small = "GFX_LAT_Janis_Francis_Frame"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LAT_Martins_Penikis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 100
+		}
+		corps_commander = {
+			traits = {
+				ranger
+				old_guard
+				trait_reckless
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LAT_Roberts_Dambitis = {
+		name = LAT_Roberts_Dambitis
+		portraits = {
+			army = {
+				large = "GFX_LAT_Janis_Francis"
+				small = "GFX_LAT_Janis_Francis_Frame"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = LAT_Roberts_Dambitis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 150
+		}
+		corps_commander = {
+			traits = {
+				ranger
+				winter_specialist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }
