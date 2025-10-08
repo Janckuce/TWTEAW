@@ -1,0 +1,32 @@
+characters = {
+	LAT_Tsar_Nicholas = {
+		name = LAT_Tsar_Nicholas
+		portraits = {
+			civilian = {
+				large = "GFX_LAT_Tsar_Nicholas"
+			}
+		}
+		country_leader = {
+			traits = {
+				Neglectful_Leader
+			}
+			ideology = centrism
+			expire = "1965.1.1.1"
+		}
+	}
+	LAT_Augusts_Misins = {
+		name = LAT_Augusts_Misins
+		portraits = {
+			civilian = {
+				large = "GFX_LAT_Augusts_Ernests_Misins"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}
