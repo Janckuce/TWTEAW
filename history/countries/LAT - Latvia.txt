@@ -19,16 +19,18 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
-recruit_character = LAT_Field_Marshal
-recruit_character = LAT_General_1
-recruit_character = LAT_General_2
-recruit_character = LAT_Advisor_1
-recruit_character = LAT_Advisor_2
-recruit_character = LAT_Advisor_3
+recruit_character = LAT_Tsar_Nicholas
+recruit_character = LAT_Augusts_Misins
 
 ##### Party Popularity, Stability, War Support and other #####
 
 starting_train_buffer = 1
+
+add_ideas = {
+	LAT_Conceptual_Regiments
+	LAT_Economic_Boom
+	LAT_Latvian_Nationalist_Sentiment
+}
 
 set_politics = {
 	ruling_party = neutrality
