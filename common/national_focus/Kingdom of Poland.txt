@@ -1,0 +1,93 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = poland_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = POL_must_have_polish
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 5
+		x = 10
+		y = 1
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = POL_open_up_autonomy_debate
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 5
+		x = 9
+		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+		focus = POL_must_have_polish }
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = POL_free_up_imigration_laws
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 5
+		x = 11
+		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+		focus = POL_must_have_polish }
+
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = POL_antipilsudski_line
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 5
+		x = 10
+		y = 3
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+		focus = POL_free_up_imigration_laws }
+		prerequisite = {
+		focus = POL_open_up_autonomy_debate }
+
+
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = POL_for_all_that_give_back
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 5
+		x = 10
+		y = 4
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_antipilsudski_line }
+
+		completion_reward = {
+		}
+	}
+}

@@ -1,0 +1,73 @@
+ideas = {
+	country = {
+		POL_heartland_of_pol = {
+			modifier = {
+			army_core_attack_factor = 0.025
+			army_core_defence_factor = 0.025
+			war_support_weekly = 0.001
+			cavalry_defence_factor = 0.075
+			cavalry_attack_factor = 0.075
+			army_strength_factor = 0.1
+			}
+		}
+			POL_economy_of_russia = {
+			modifier = {
+			consumer_goods_factor = -0.035
+			production_factory_efficiency_gain_factor = 0.075
+			industrial_capacity_factory = 0.025
+			line_change_production_efficiency_factor = 0.045
+			production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+			POL_dmowski_enemy_camp = {
+			modifier = {
+			democratic_drift = 0.15
+			political_power_gain = -0.3
+			political_advisor_cost_factor = 0.25
+			stability_factor = -0.25
+			trade_laws_cost_factor = 0.15
+			conscription_factor = -0.3
+			conscription = -0.005
+			}
+		}
+
+			POL_dmowski_enemy_camp2 = {
+			modifier = {
+			democratic_drift = 0.15
+			political_power_gain = -0.15
+			political_advisor_cost_factor = 0.2
+			stability_factor = -0.18
+			trade_laws_cost_factor = 0.1
+			conscription_factor = -0.25
+			conscription = -0.005
+			}
+		}
+			POL_dmowski_enemy_camp3 = {
+			modifier = {
+			democratic_drift = 0.15
+			political_power_gain = -0.1
+			political_advisor_cost_factor = 0.125
+			stability_factor = -0.11
+			trade_laws_cost_factor = 0.05
+			conscription_factor = -0.2
+			conscription = -0.005
+			}
+		}
+			POL_dmowski_enemy_camp3 = {
+			modifier = {
+			democratic_drift = 0.1
+			political_power_gain = -0.075
+			political_advisor_cost_factor = 0.075
+			stability_factor = -0.04
+			conscription_factor = -0.1
+			conscription = -0.005
+			}
+		}
+			POL_manifesto_to_the_polish_nation = {
+			modifier = {
+			surrender_limit = 1
+			}
+		}
+	}
+}
