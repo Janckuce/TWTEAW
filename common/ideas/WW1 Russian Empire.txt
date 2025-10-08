@@ -291,8 +291,8 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = AUS
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 		
@@ -1274,13 +1274,23 @@ ideas = {
 			}
 		}
 		RUS_Brusilov_Offensive = {
+			picture = landtags_in_revolt
 			modifier = {
-				army_infantry_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_speed_factor = 0.05
+				army_attack_speed_factor = 0.1
+				breakthrough_factor = 0.1
+				command_power_gain = 0.16
+				army_attack_factor = 0.05
+				army_defence_factor = -0.1
+				army_org_regain = 0.1
+				army_morale_factor = 0.075
 			}
 		}
 		RUS_Mobilise_The_Nation = {
+			picture = AFG_adopt_nufus
 			modifier = {
-				training_time_army_factor = -0.1
+				training_time_army_factor = -0.25
 			}
 		}
 		RUS_Bolshevik_Sabotage = {

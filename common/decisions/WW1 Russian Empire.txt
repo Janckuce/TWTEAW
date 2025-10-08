@@ -465,9 +465,6 @@ RUS_Military_Academy_Category = {
 			command_power > 15
 		}
 		custom_cost_text = decision_cost_CP_25
-		visible = {
-			has_completed_focus = RUS_Establish_Military_Academy
-		}
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Mobilise_The_Nation
@@ -481,13 +478,10 @@ RUS_Military_Academy_Category = {
 			command_power > 15
 		}
 		custom_cost_text = decision_cost_CP_25
-		visible = {
-			has_completed_focus = RUS_Mass_Mobilise
-		}
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Brusilov_Offensive
-				days = 100
+				days = 123
 			}
 		}
 	}
