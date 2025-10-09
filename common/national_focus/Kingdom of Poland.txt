@@ -22,20 +22,24 @@ focus_tree = {
 
 	focus = {
 		id = POL_must_have_polish
-		icon = GFX_focus_BEL_legacy_of_the_soldier_king
-		cost = 5
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
 		x = 10
 		y = 1
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = pol_dmowski_enemy_camp
+  			add_idea = pol_dmowski_enemy_camp2				
+  		}
 		}
 	}
 
 		focus = {
 		id = POL_open_up_autonomy_debate
-		icon = GFX_focus_BEL_legacy_of_the_soldier_king
-		cost = 5
+		icon = GFX_focus_pol_autonomy
+		cost = 10
 		x = 9
 		y = 2
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -43,13 +47,26 @@ focus_tree = {
 		prerequisite = {
 		focus = POL_must_have_polish }
 		completion_reward = {
+			add_timed_idea = {
+			days = 200
+			idea = POL_payback_russian_needs
+			}
+
+				195 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 		focus = {
 		id = POL_free_up_imigration_laws
-		icon = GFX_focus_BEL_legacy_of_the_soldier_king
-		cost = 5
+		icon = GFX_focus_pol_organise_better
+		cost = 10
 		x = 11
 		y = 2
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -58,12 +75,16 @@ focus_tree = {
 		focus = POL_must_have_polish }
 
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = pol_dmowski_enemy_camp2
+  			add_idea = pol_dmowski_enemy_camp3			
+  		}
 		}
 	}
 		focus = {
 		id = POL_antipilsudski_line
-		icon = GFX_focus_BEL_legacy_of_the_soldier_king
-		cost = 5
+		icon = GFX_focus_pol_pilsudski_bad
+		cost = 10
 		x = 10
 		y = 3
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -75,12 +96,16 @@ focus_tree = {
 
 
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_heartland_of_pol
+  			add_idea = POL_heartland_of_pol2			
+  		}
 		}
 	}
 		focus = {
 		id = POL_for_all_that_give_back
 		icon = GFX_focus_BEL_legacy_of_the_soldier_king
-		cost = 5
+		cost = 10
 		x = 10
 		y = 4
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
