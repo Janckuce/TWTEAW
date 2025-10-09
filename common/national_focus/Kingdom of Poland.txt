@@ -104,7 +104,7 @@ focus_tree = {
 	}
 		focus = {
 		id = POL_for_all_that_give_back
-		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		icon = GFX_focus_pol_wave_the_for_now_flag
 		cost = 10
 		x = 10
 		y = 4
@@ -113,6 +113,21 @@ focus_tree = {
 		prerequisite = { focus = POL_antipilsudski_line }
 
 		completion_reward = {
+			swap_ideas = {
+  			remove_idea = pol_dmowski_enemy_camp2
+  			add_idea = pol_dmowski_enemy_camp3			
+  		}
+			add_state_core = 5
+			add_state_core = 807
+			add_state_core = 85
+			add_state_core = 86
+			add_state_core = 67
+			add_state_core = 66
+			add_state_core = 762
+			add_state_core = 88
+			add_state_core = 91
+			add_state_core = 89
+			add_state_core = 80
 		}
 	}
 }
