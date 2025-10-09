@@ -1,128 +1,128 @@
 RUS_Bolshevik_Solidarity = {
-	RUS_Impending_Sabotage = {
-		priority = 1
-		days_mission_timeout = 30
-		days_re_enable = 5
-		is_good = no
+	# RUS_Impending_Sabotage = {
+	# 	priority = 1
+	# 	days_mission_timeout = 30
+	# 	days_re_enable = 5
+	# 	is_good = no
 
-		allowed = {
-			tag = RUS
-		}
+	# 	allowed = {
+	# 		tag = RUS
+	# 	}
 
-		available = {
-			has_idea = RUS_Bolsheviks_Crushed
-		}
+	# 	available = {
+	# 		has_idea = RUS_Bolsheviks_Crushed
+	# 	}
 
-		timeout_effect = {
-			custom_effect_tooltip = RUS_Bolshevik_Increase
-			if = {
-				limit = {
-					not = {
-						check_variable = {
-							RUS.Bolshevik_Support = 100
-						}
-					}
-				}
-				add_to_variable = {
-					RUS.Bolshevik_Support = 10
-				}
-			}
-			if = {
-				limit = {
-					and = {
-						check_variable = {
-							RUS.Bolshevik_Support > 50
-						}
-						has_idea = RUS_Bolshevik_Sabotage
-					}
-				}
-				swap_ideas = {
-					remove_idea = RUS_Bolshevik_Sabotage
-					add_idea = RUS_Bolshevik_Sabotage1
-				}
-			}
-			else_if = {
-				limit = {
-					and = {
-						check_variable = {
-							RUS.Bolshevik_Support = 100
-						}
-						has_idea = RUS_Bolshevik_Sabotage1
-					}
-				}
-				swap_ideas = {
-					remove_idea = RUS_Bolshevik_Sabotage1
-					add_idea = RUS_Bolshevik_Sabotage2
-				}
-			}
-		}
+	# 	timeout_effect = {
+	# 		custom_effect_tooltip = RUS_Bolshevik_Increase
+	# 		if = {
+	# 			limit = {
+	# 				not = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support = 100
+	# 					}
+	# 				}
+	# 			}
+	# 			add_to_variable = {
+	# 				RUS.Bolshevik_Support = 10
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				and = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support > 50
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage
+	# 				add_idea = RUS_Bolshevik_Sabotage1
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				and = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support = 100
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage1
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage1
+	# 				add_idea = RUS_Bolshevik_Sabotage2
+	# 			}
+	# 		}
+	# 	}
 
-		complete_effect = {
-		}
-	}
-	RUS_Raid_Bolshevik_Facilities = {
-		priority = 1
-		days_re_enable = 10
+	# 	complete_effect = {
+	# 	}
+	# }
+	# RUS_Raid_Bolshevik_Facilities = {
+	# 	priority = 1
+	# 	days_re_enable = 10
 
-		allowed = {
-			tag = RUS
-		}
+	# 	allowed = {
+	# 		tag = RUS
+	# 	}
 		
-		visible = {
-			not = {
-				has_idea = RUS_Bolsheviks_Crushed
-			}
-		}
+	# 	visible = {
+	# 		not = {
+	# 			has_idea = RUS_Bolsheviks_Crushed
+	# 		}
+	# 	}
 
-		available = {
-			custom_trigger_tooltip = {
-				not = {
-					check_variable = {
-						RUS.Bolshevik_Support = 10
-					}
-				}
-				tooltip = RUS_Bolshevik_Limit
-			}
-		}
+	# 	available = {
+	# 		custom_trigger_tooltip = {
+	# 			not = {
+	# 				check_variable = {
+	# 					RUS.Bolshevik_Support = 10
+	# 				}
+	# 			}
+	# 			tooltip = RUS_Bolshevik_Limit
+	# 		}
+	# 	}
 
-		complete_effect = {
-			custom_effect_tooltip = RUS_Bolshevik_Decrease
-			add_stability = -0.01
-			subtract_from_variable = {
-				RUS.Bolshevik_Support = 10
-			}
-			if = {
-				limit = {
-					and = {
-						check_variable = {
-							RUS.Bolshevik_Support < 60
-						}
-						has_idea = RUS_Bolshevik_Sabotage1
-					}
-				}
-				swap_ideas = {
-					remove_idea = RUS_Bolshevik_Sabotage1
-					add_idea = RUS_Bolshevik_Sabotage
-				}
-			}
-			else_if = {
-				limit = {
-					and = {
-						not = {
-							check_variable = {
-								RUS.Bolshevik_Support = 100
-							}
-						}
-						has_idea = RUS_Bolshevik_Sabotage2
-					}
-				}
-				swap_ideas = {
-					remove_idea = RUS_Bolshevik_Sabotage2
-					add_idea = RUS_Bolshevik_Sabotage1
-				}
-			}
-		}
-	}
+	# 	complete_effect = {
+	# 		custom_effect_tooltip = RUS_Bolshevik_Decrease
+	# 		add_stability = -0.01
+	# 		subtract_from_variable = {
+	# 			RUS.Bolshevik_Support = 10
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				and = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support < 60
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage1
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage1
+	# 				add_idea = RUS_Bolshevik_Sabotage
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				and = {
+	# 					not = {
+	# 						check_variable = {
+	# 							RUS.Bolshevik_Support = 100
+	# 						}
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage2
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage2
+	# 				add_idea = RUS_Bolshevik_Sabotage1
+	# 			}
+	# 		}
+	# 	}
+	# }
 	RUS_Crush_The_Bolsheviks = {
 		priority = 1
 		fire_only_once = yes
