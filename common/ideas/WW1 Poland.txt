@@ -21,6 +21,7 @@ ideas = {
 			cavalry_attack_factor = 0.075
 			army_strength_factor = 0.125
 			army_defence_factor = 0.025
+			surrender_limit = 1
 			}
 		}
 			POL_economy_of_russia = {
@@ -87,14 +88,18 @@ ideas = {
 		}
 			POL_manifesto_to_the_polish_nation = {
 			picture = pol_polacy
-			modifier = {
-			surrender_limit = 1
+				targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.5
+				mic_to_target_factor = 0.7
 			}
 		}
 			POL_manifesto_to_the_polish_nation2 = {
 			picture = pol_polacy
-			modifier = {
-			surrender_limit = 1
+				targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.3
+				mic_to_target_factor = 0.5
 			}
 		}
 			POL_payback_russian_needs = {

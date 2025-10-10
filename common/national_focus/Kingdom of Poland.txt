@@ -17,6 +17,7 @@ focus_tree = {
 			tag = POL
 		}
 	}
+	continuous_focus_position = { x = 880 y = 2500}
 
 	default = no
 
@@ -128,6 +129,62 @@ focus_tree = {
 			add_state_core = 91
 			add_state_core = 89
 			add_state_core = 80
+		}
+	}
+		focus = {
+		id = POL_list_do_cara
+		icon = GFX_focus_pol_wave_the_for_now_flag
+		cost = 5
+		x = 10
+		y = 5
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_for_all_that_give_back }
+
+		completion_reward = {
+		add_stability = 0.1
+		add_War_support = 0.05
+			add_popularity = {
+            ideology = democratic
+            popularity = 0.1
+        }
+			swap_ideas = {
+  			remove_idea = POL_manifesto_to_the_polish_nation
+  			add_idea = POL_manifesto_to_the_polish_nation2		
+  		}
+		}
+	}
+		focus = {
+		id = POL_nominate_dmowski
+		icon = GFX_focus_pol_wave_the_for_now_flag
+		cost = 10
+		x = 8
+		y = 6
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_list_do_cara }
+			mutually_exclusive = {
+			focus = POL_keep_old_order
+		}
+
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = POL_keep_old_order
+		icon = GFX_focus_pol_wave_the_for_now_flag
+		cost = 10
+		x = 12
+		y = 6
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_list_do_cara }
+			mutually_exclusive = {
+			focus = POL_nominate_dmowski
+		}
+
+		completion_reward = {
 		}
 	}
 }
