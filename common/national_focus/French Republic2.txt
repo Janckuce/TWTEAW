@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Republique
 		icon = GFX_focus_generic_democratic_europe
-		cost = 5
+		cost = 10
 		x = -4
 		y = 0
 		mutually_exclusive = {
@@ -195,10 +195,10 @@ focus_tree = {
 					controls_state = 14
 				}
 				14 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 					}
 				}
 			}
@@ -207,10 +207,10 @@ focus_tree = {
 					controls_state = 23
 				}
 				23 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 					}
 				}
 			}
@@ -219,10 +219,10 @@ focus_tree = {
 					controls_state = 19
 				}
 				19 = {
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 					}
 				}
 			}
@@ -329,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Commune
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		cost = 5
+		cost = 10
 		x = 0
 		y = 0
 		mutually_exclusive = {
@@ -447,7 +447,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Nation_Francaise
 		icon = GFX_focus_generic_spread_fascism
-		cost = 5
+		cost = 10
 		x = 4
 		y = 0
 		mutually_exclusive = {

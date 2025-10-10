@@ -6,10 +6,7 @@ state={
 	history={
 		owner = FRA
 		victory_points = {
-			9490 5 
-		}
-		victory_points = {
-			13011 5 
+			9490 10
 		}
 	    victory_points = {
 			3546 10
@@ -20,34 +17,17 @@ state={
 
 		}
 		add_core_of = FRA
-		
-		1916.1.1 = {
-			GER = {
-				set_province_controller = 9472
-			}
-			buildings = {
-			    9472 = {
-				    bunker = 3
-			    }
-				3546 = {
-				    bunker = 3
-			    }
-				13011 = {
-				    bunker = 3
-			    }
-			}
-		}
 
 	}
 
 	provinces={
-		551 3533 3546 6531 6545 9472 9490 9505 11732 13011 13260 13261 13262 13283 13284 13285
+		551 3533 3546 6531 6545 9490 9505 11732 13284 13285
 	}
-	manpower=1070800
+	manpower=706728
 	resources={
-		steel=34 # was: 36
+		steel=12 # was: 36
 	}
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=town
 	local_supplies=0.000
 }

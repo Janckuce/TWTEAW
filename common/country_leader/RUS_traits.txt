@@ -1,8 +1,47 @@
 leader_traits = {
 	Tsar_Nikolai_Romanov = {
 		random = no
-		political_power_factor = 0.15
-		stability_factor = -0.15
+	}
+		conservative_justice = {
+		random = no
+		sprite = 13
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		political_power_factor = 0.25
+	}
+
+		incompetent_militarist = {
+		random = no
+		sprite = 13
+		production_speed_arms_factory_factor = 0.15
+		production_speed_dockyard_factor = 0.075
+		production_speed_fuel_silo_factor = 0.075
+		political_power_factor = -0.1
+		stability_factor = -0.075
+		war_support_factor = -0.025
+		experience_gain_army = 0.03
+	}
+		innovative_general_among_stupid = {
+		random = no
+		sprite = 5
+		research_speed_factor = 0.05
+		land_doctrine_cost_factor = -0.1
+		experience_gain_army = 0.03
+		army_breakthrough_against_minor_factor = 0.035
+		army_breakthrough_against_major_factor = 0.035
+		army_infantry_defence_factor = -0.025
+		attrition = 0.1
+	}
+		organiser_in_situations= {
+		random = no
+		sprite = 5
+		army_org_factor = 0.05
+		land_doctrine_cost_factor = -0.125
+		army_org_regain = 0.075
+		planning_speed = 0.075
+		max_planning = 0.05
 	}
 	Corruption_Incarnate = {
 		random = no
@@ -21,18 +60,28 @@ leader_traits = {
 	}
 	Man_Of_Steel = {
 		random = no
-		stability_factor = 0.1
-		war_support_factor = 0.1
-		command_power_gain = 0.1
+		research_speed_factor = 0.1
+		consumer_goods_factor = -0.075
 	}
 	Minister_Of_Agriculture = {
 		random = no
-		consumer_goods_factor = -0.15
-		local_resources_factor = 0.2
+		consumer_goods_factor = -0.075
+		local_resources_factor = 0.15
+		army_core_defence_factor = 0.05
+		democratic_drift = 0.1
+		communism_drift = 0.15
 	}
 	Minister_Of_Interior = {
 		random = no
 		consumer_goods_factor = -0.15
 		production_speed_buildings_factor = 0.15
+	}
+
+	king_of_poland = {
+		random = no
+		production_speed_buildings_factor = 0.075
+		war_support_factor = 0.025
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.05
 	}
 }

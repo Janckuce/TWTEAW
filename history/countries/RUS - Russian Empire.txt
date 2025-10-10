@@ -5,11 +5,19 @@ set_oob = "RUS_1911"
 set_naval_oob = "RUS_1911_Naval"
 
 recruit_character = RUS_nicholas_II
+recruit_character = RUS_nicholas_II_fas
+recruit_character = rus_dmitry_shcherbachev
+recruit_character = RUS_ivan_shcheglovitov
+recruit_character = RUS_mikhail_alekseyev
+recruit_character = RUS_kolach
+recruit_character = RUS_rennerkampf
+recruit_character = RUS_samsonov
 recruit_character = RUS_provisional_government
 recruit_character = RUS_vladimir_lenin
 recruit_character = RUS_various_leaders
 recruit_character = RUS_nikolai_ruzsky
 recruit_character = RUS_nikolai_nikolaevich
+recruit_character = RUS_pavel_milyukov
 recruit_character = RUS_aleksei_brusilov
 recruit_character = RUS_aleksei_kaledin
 recruit_character = RUS_anton_denikin
@@ -59,6 +67,7 @@ add_ideas = {
 	RUS_Agrarian_Industry
 	RUS_Lack_Of_Scientists
 	RUS_Dated_Warfare
+	RUS_Bolshevik_Sabotage
 }
 
 ##### Party Popularity, Stability, War Support and other #####
@@ -71,14 +80,19 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 80
-	communism = 20
+	neutrality = 45
+	communism = 30
+	democratic = 15
+	fascism = 10
 }
+
+puppet = POL
+puppet = LAT
 
 set_convoys = 300
 
 set_research_slots = 3
 set_stability = 0.5
-set_war_support = 0.1
+set_war_support = 0.2
 
 # End of Party Popularity, Stability, War Support and other ##

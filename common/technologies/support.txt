@@ -1260,10 +1260,9 @@ technologies = {
 		}
 	}
 
-	wartime_train = {
+	basic_train = {
 		enable_equipments = {
 			train_equipment_2
-			railway_gun_equipment_1
 		}
 
 		research_cost = 1.5
@@ -1271,6 +1270,50 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1939 }
+		}
+
+		path = {
+			leads_to_tech = wartime_train
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				num_of_factories > 25
+				factor = 100 #might wanna get on that
+			}
+			modifier = {
+				factor = 1.2
+				date > "1936.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	wartime_train = {
+		enable_equipments = {
+			railway_gun_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1916
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {

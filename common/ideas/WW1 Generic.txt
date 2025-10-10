@@ -157,5 +157,23 @@ ideas = {
 				production_speed_arms_factory_factor = 0.2
 			}
 		}
+
+		GEN_Minor_Nation_Balancer = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			modifier = {
+				experience_gain_army = 0.1
+			}
+		}
 	}
 }

@@ -1344,6 +1344,30 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
+
+		ww1_belgium_forts = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			date > 1914.8.5
+		}
+		
+		complete_effect = {
+				BEL = {
+			    country_event = ww_belgium_war.1
+			}
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
 	
 	kill_roosevelt = {
 		allowed = {

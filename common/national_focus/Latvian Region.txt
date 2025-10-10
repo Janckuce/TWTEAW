@@ -1,0 +1,736 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = latvian_region_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LAT
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 1200 }
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = LAT_Consider_The_Following
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 1
+		y = 0
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = LAT_Conceptual_Regiments
+				add_idea = LAT_Conceptual_Regiments1
+			}
+		}
+	}
+	focus = {
+		id = LAT_Further_Approval
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = LAT_Consider_The_Following
+		x = 0
+		y = 1
+		available = {
+			date > 1911.6.1
+		}
+		prerequisite = {
+			focus = LAT_Consider_The_Following
+		}
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = LAT_Conceptual_Regiments1
+				add_idea = LAT_Conceptual_Regiments2
+			}
+		}
+	}
+	focus = {
+		id = LAT_Consolidate_Formation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = LAT_Further_Approval
+		x = 0
+		y = 1
+		available = {
+			date > 1912.1.1
+		}
+		prerequisite = {
+			focus = LAT_Further_Approval
+		}
+		completion_reward = {
+			army_experience = 30
+			swap_ideas = {
+				remove_idea = LAT_Conceptual_Regiments2
+				add_idea = LAT_Conceptual_Regiments3
+			}
+		}
+	}
+	focus = {
+		id = LAT_Convince_The_Tsar
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = LAT_Consolidate_Formation
+		x = 0
+		y = 1
+		available = {
+			date > 1912.6.1
+		}
+		prerequisite = {
+			focus = LAT_Consolidate_Formation
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 12532
+			}
+			swap_ideas = {
+				remove_idea = LAT_Conceptual_Regiments3
+				add_idea = LAT_Conceptual_Regiments4
+			}
+		}
+	}
+	focus = {
+		id = LAT_Final_Proposal
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = LAT_Convince_The_Tsar
+		x = 0
+		y = 1
+		available = {
+			date > 1913.1.1
+		}
+		prerequisite = {
+			focus = LAT_Convince_The_Tsar
+		}
+		completion_reward = {
+			remove_ideas = LAT_Conceptual_Regiments4
+		}
+	}
+
+	#	Military Branch
+
+	focus = {
+		id = LAT_Latvian_Riflemen
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 6
+		y = 0
+		available = {
+			has_completed_focus = LAT_Final_Proposal
+		}
+		completion_reward = {
+			add_ideas = LAT_Riflemen
+		}
+	}
+	#	Should Recruit Generals Into The Army As Well
+	focus = {
+		id = LAT_Recruit_Guerilla_Veterans
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Latvian_Riflemen
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LAT_Latvian_Riflemen
+		}
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = LAT_Bane_Of_Germans
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Recruit_Guerilla_Veterans
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = LAT_Bane_Of_Austrians
+		}
+		prerequisite = {
+			focus = LAT_Recruit_Guerilla_Veterans
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Latvian_Nationalist_Sentiment
+				add_idea = LAT_Latvian_Nationalist_Sentiment_Germany
+			}
+		}
+	}
+	focus = {
+		id = LAT_Bane_Of_Austrians
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Recruit_Guerilla_Veterans
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = LAT_Bane_Of_Germans
+		}
+		prerequisite = {
+			focus = LAT_Recruit_Guerilla_Veterans
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Latvian_Nationalist_Sentiment
+				add_idea = LAT_Latvian_Nationalist_Sentiment_Austria
+			}
+		}
+	}
+	focus = {
+		id = LAT_The_Tsars_Blessing
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Recruit_Guerilla_Veterans
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAT_Bane_Of_Germans
+			focus = LAT_Bane_Of_Austrians
+		}
+		completion_reward = {
+			LAT_Tsar_Nicholas = {
+				swap_country_leader_traits = {
+					remove = Neglectful_Leader
+					add = Blessed_Tsar
+				}
+			}
+		}
+	}
+
+	#	Riflemen Buffs
+
+	focus = {
+		id = LAT_Heroes_Of_Latvia
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Latvian_Riflemen
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LAT_Latvian_Riflemen
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Riflemen
+				add_idea = LAT_Riflemen1
+			}
+		}
+	}
+	focus = {
+		id = LAT_Strike_Fast
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Heroes_Of_Latvia
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Heroes_Of_Latvia
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Riflemen1
+				add_idea = LAT_Riflemen2
+			}
+		}
+	}
+	focus = {
+		id = LAT_Strike_Hard
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Strike_Fast
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Strike_Fast
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Riflemen2
+				add_idea = LAT_Riflemen3
+			}
+		}
+	}
+
+	#	Several Military Paths
+
+	focus = {
+		id = LAT_Latvian_Genius
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Latvian_Riflemen
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = LAT_The_Tsars_Blessing
+		}
+		prerequisite = {
+			focus = LAT_Strike_Hard
+		}
+		completion_reward = {
+			add_ideas = LAT_Military_Genius
+		}
+	}
+
+	#	Mountaineer Branch
+
+	focus = {
+		id = LAT_Caucasus_Training
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Latvian_Genius
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = LAT_Mobile_Infantry
+			focus = LAT_Armour_Cars
+		}
+		prerequisite = {
+			focus = LAT_Latvian_Genius
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mountaineers_tech
+				bonus = 1.5
+				uses = 1
+			}
+		}
+	}
+	focus = {
+		id = LAT_Overwhelming_Firepower
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Caucasus_Training
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Caucasus_Training
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				bonus = 0.5
+				uses = 2
+			}
+			add_ideas = LAT_Piercing_Riflemen
+		}
+	}
+	focus = {
+		id = LAT_Ground_Bombardment
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Overwhelming_Firepower
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Overwhelming_Firepower
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Piercing_Riflemen
+				add_idea = LAT_Piercing_Riflemen1
+			}
+		}
+	}
+	focus = {
+		id = LAT_Briedis_Offensive
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Ground_Bombardment
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Ground_Bombardment
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = LAT_Briedis_Kick_The_Giant
+				days = 70
+			}
+		}
+	}
+
+	#	Mobile Infantry Branch
+
+	focus = {
+		id = LAT_Mobile_Infantry
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Latvian_Genius
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = LAT_Caucasus_Training
+			focus = LAT_Armour_Cars
+		}
+		prerequisite = {
+			focus = LAT_Latvian_Genius
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = motorised_infantry
+				bonus = 1.5
+			}
+		}
+	}
+	focus = {
+		id = LAT_Lighting_War
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Mobile_Infantry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Mobile_Infantry
+		}
+		completion_reward = {
+			add_ideas = LAT_Maneuver_Warfare
+		}
+	}
+	focus = {
+		id = LAT_Thunder_War
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Lighting_War
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Lighting_War
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_Maneuver_Warfare
+				add_idea = LAT_Maneuver_Warfare1
+			}
+		}
+	}
+	focus = {
+		id = LAT_Storm_War
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Thunder_War
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Thunder_War
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = LAT_Auzans_Outmaneuver_And_Overpower
+				days = 70
+			}
+		}
+	}
+
+	#	Armoured Cars Branch
+
+	focus = {
+		id = LAT_Armour_Cars
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Latvian_Genius
+		x = 3
+		y = 1
+		mutually_exclusive = {
+			focus = LAT_Caucasus_Training
+			focus = LAT_Mobile_Infantry
+		}
+		prerequisite = {
+			focus = LAT_Latvian_Genius
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_armored_cars
+				bonus = 1.5
+			}
+		}
+	}
+	focus = {
+		id = LAT_Armoured_Cars
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Armour_Cars
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Armour_Cars
+		}
+		completion_reward = {
+			add_ideas = LAT_More_Armour
+		}
+	}
+	focus = {
+		id = LAT_Armourer_Cars
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Armoured_Cars
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Armoured_Cars
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LAT_More_Armour
+				add_idea = LAT_More_Armour1
+			}
+		}
+	}
+	focus = {
+		id = LAT_The_More_The_Merrier
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Armourer_Cars
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Armourer_Cars
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = LAT_Francis_Production_Plan
+				days = 120
+			}
+		}
+	}
+
+	#	Economic Branch
+
+	focus = {
+		id = LAT_Economic_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 13
+		y = 0
+		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			swap_ideas = {
+				remove_idea = LAT_Economic_Boom
+				add_idea = LAT_Economic_Boom1
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic_Main
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic_Main
+		}
+		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic_Main
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic_Main
+		}
+		completion_reward = {
+			12 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic1
+		}
+		completion_reward = {
+			810 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic_Main
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LAT_Economic1
+			focus = LAT_Economic2
+		}
+		completion_reward = {
+			190 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic2
+		}
+		completion_reward = {
+			809 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic3
+			focus = LAT_Economic4
+		}
+		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic_Plan
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic_Main
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = LAT_Economic3
+		}
+		prerequisite = {
+			focus = LAT_Economic4
+		}
+		prerequisite = {
+			focus = LAT_Economic5
+		}
+		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			swap_ideas = {
+				remove_idea = LAT_Economic_Boom1
+				add_idea = LAT_Economic_Boom2
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic4
+			focus = LAT_Economic5
+		}
+		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = LAT_Economic_Plan_Final
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = LAT_Economic_Plan
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LAT_Economic6
+		}
+		prerequisite = {
+			focus = LAT_Economic_Plan
+		}
+		prerequisite = {
+			focus = LAT_Economic7
+		}
+		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			swap_ideas = {
+				remove_idea = LAT_Economic_Boom2
+				add_idea = LAT_Economic_Boom3
+			}
+		}
+	}
+}

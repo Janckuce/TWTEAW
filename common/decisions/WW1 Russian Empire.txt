@@ -1,3 +1,165 @@
+RUS_Bolshevik_Solidarity = {
+	# RUS_Impending_Sabotage = {
+	# 	priority = 1
+	# 	days_mission_timeout = 30
+	# 	days_re_enable = 5
+	# 	is_good = no
+
+	# 	allowed = {
+	# 		tag = RUS
+	# 	}
+
+	# 	available = {
+	# 		has_idea = RUS_Bolsheviks_Crushed
+	# 	}
+
+	# 	timeout_effect = {
+	# 		custom_effect_tooltip = RUS_Bolshevik_Increase
+	# 		if = {
+	# 			limit = {
+	# 				not = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support = 100
+	# 					}
+	# 				}
+	# 			}
+	# 			add_to_variable = {
+	# 				RUS.Bolshevik_Support = 10
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				and = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support > 50
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage
+	# 				add_idea = RUS_Bolshevik_Sabotage1
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				and = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support = 100
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage1
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage1
+	# 				add_idea = RUS_Bolshevik_Sabotage2
+	# 			}
+	# 		}
+	# 	}
+
+	# 	complete_effect = {
+	# 	}
+	# }
+	# RUS_Raid_Bolshevik_Facilities = {
+	# 	priority = 1
+	# 	days_re_enable = 10
+
+	# 	allowed = {
+	# 		tag = RUS
+	# 	}
+		
+	# 	visible = {
+	# 		not = {
+	# 			has_idea = RUS_Bolsheviks_Crushed
+	# 		}
+	# 	}
+
+	# 	available = {
+	# 		custom_trigger_tooltip = {
+	# 			not = {
+	# 				check_variable = {
+	# 					RUS.Bolshevik_Support = 10
+	# 				}
+	# 			}
+	# 			tooltip = RUS_Bolshevik_Limit
+	# 		}
+	# 	}
+
+	# 	complete_effect = {
+	# 		custom_effect_tooltip = RUS_Bolshevik_Decrease
+	# 		add_stability = -0.01
+	# 		subtract_from_variable = {
+	# 			RUS.Bolshevik_Support = 10
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				and = {
+	# 					check_variable = {
+	# 						RUS.Bolshevik_Support < 60
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage1
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage1
+	# 				add_idea = RUS_Bolshevik_Sabotage
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				and = {
+	# 					not = {
+	# 						check_variable = {
+	# 							RUS.Bolshevik_Support = 100
+	# 						}
+	# 					}
+	# 					has_idea = RUS_Bolshevik_Sabotage2
+	# 				}
+	# 			}
+	# 			swap_ideas = {
+	# 				remove_idea = RUS_Bolshevik_Sabotage2
+	# 				add_idea = RUS_Bolshevik_Sabotage1
+	# 			}
+	# 		}
+	# 	}
+	# }
+	RUS_Crush_The_Bolsheviks = {
+		priority = 1
+		fire_only_once = yes
+
+		allowed = {
+			tag = RUS
+		}
+
+		available = {
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = RUS_Bolshevik_Sabotage
+				}
+				remove_ideas = RUS_Bolshevik_Sabotage
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Bolshevik_Sabotage1
+				}
+				remove_ideas = RUS_Bolshevik_Sabotage1
+			}
+			else_if = {
+				limit = {
+					has_idea = RUS_Bolshevik_Sabotage2
+				}
+				remove_ideas = RUS_Bolshevik_Sabotage2
+			}
+			remove_mission = RUS_Impending_Sabotage
+			add_ideas = RUS_Bolsheviks_Crushed
+		}
+	}
+}
+
 RUS_Peasants_Land_Bank_Category = {
 	RUS_Sieze_Land = {
 		priority = 1
@@ -103,7 +265,7 @@ RUS_Laboratories_Category = {
 			add_tech_bonus = {
 				name = "add a name"
 				category = infantry_weapons
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 			}
 		}
@@ -125,7 +287,7 @@ RUS_Laboratories_Category = {
 			add_tech_bonus = {
 				name = "add a name 2, electric boogaloo"
 				category = support_tech
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 			}
 		}
@@ -147,7 +309,7 @@ RUS_Laboratories_Category = {
 			add_tech_bonus = {
 				name = "Oh this one is armour, cool"
 				category = armor
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 			}
 		}
@@ -169,7 +331,7 @@ RUS_Laboratories_Category = {
 			add_tech_bonus = {
 				name = "Artillery very nice"
 				category = artillery
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 			}
 		}
@@ -191,7 +353,7 @@ RUS_Laboratories_Category = {
 			add_tech_bonus = {
 				name = "Why is navy here???"
 				category = naval_equipment
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 			}
 		}
@@ -213,7 +375,7 @@ RUS_Laboratories_Category = {
 			add_tech_bonus = {
 				name = "add a name"
 				category = air_equipment
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 			}
 		}
@@ -303,9 +465,6 @@ RUS_Military_Academy_Category = {
 			command_power > 15
 		}
 		custom_cost_text = decision_cost_CP_25
-		visible = {
-			has_completed_focus = RUS_Establish_Military_Academy
-		}
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Mobilise_The_Nation
@@ -319,13 +478,10 @@ RUS_Military_Academy_Category = {
 			command_power > 15
 		}
 		custom_cost_text = decision_cost_CP_25
-		visible = {
-			has_completed_focus = RUS_Mass_Mobilise
-		}
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Brusilov_Offensive
-				days = 100
+				days = 123
 			}
 		}
 	}
