@@ -2,25 +2,13 @@ add_namespace = ww1_GCG
 
 country_event = {
 	id = ww1_GCG.1
-	title = ww1_GCG.1.t
-	desc = ww1_GCG_desc.1
+	title = "Cut Off From Berlin"
+	desc = "Paul Von Lettow-Vorbeck Takes Charge"
 	picture = GFX_report_event_generic_alliance
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_war = yes
-	}
-
-	immediate = {
-		retire_ideology_leader = neutrality
-		promote_character = {
-			character = GCG_Paul_Lettow
-			ideology = despotism
-		}
-	}
-
 	option = {
-		name = "Oh"
+		name = "He Shall Lead Us To Victory"
 	}
 }

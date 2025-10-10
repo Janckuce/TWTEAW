@@ -1768,6 +1768,33 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
+	German_Colonies_Leader_Change = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			GCG = {
+				has_war = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GCG = {
+				retire_ideology_leader = neutrality
+				promote_character = {
+					character = GCG_Paul_Lettow
+					ideology = despotism
+				}
+				country_event = ww1_GCG.1
+			}
+		}
+	}
 }
 
 ORO_portugal_mess = {

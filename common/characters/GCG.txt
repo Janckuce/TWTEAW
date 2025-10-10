@@ -121,6 +121,36 @@ characters = {
 			logistics_skill=3
 		}
 	}
+	GCG_Joachim_Von_Heydebreck = {
+		name = GCG_Character_Joachim_Von_Heydebreck
+		portraits = {
+			army = {
+				large = "GFX_GCG_Joachim_Von_Heydebreck"
+				small = "GFX_GCG_Joachim_Von_Heydebreck_Frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GCG_Joachim_Von_Heydebreck
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Scavenging_Expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=5
+		}
+	}
 
 	#	Political Advisors
 
