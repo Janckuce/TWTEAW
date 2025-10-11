@@ -24,6 +24,17 @@ ideas = {
 			surrender_limit = 1
 			}
 		}
+
+			POL_constitutional_kingdom = {
+			picture = pol_king_constitution
+			modifier = {
+			production_speed_buildings_factor = 0.075
+			war_support_factor = 0.05
+			conscription_factor = 0.15
+			army_core_defence_factor = 0.075
+
+			}
+		}
 			POL_economy_of_russia = {
 			picture = pol_russian_eco
 			modifier = {
@@ -75,15 +86,14 @@ ideas = {
 			}
 		}
 			POL_dmowski_enemy_camp4 = {
-				picture = pol_roman_resistance
+			picture = pol_roman_resistance
 			modifier = {
-			democratic_drift = 0.1
+			democratic_drift = 0.2
 			communism_drift = 0.05
-			political_power_gain = -0.075
-			political_advisor_cost_factor = 0.075
-			stability_factor = -0.04
-			conscription_factor = -0.1
-			conscription = -0.005
+			political_power_gain = -0.1
+			political_advisor_cost_factor = 0.05
+			trade_laws_cost_factor = 0.05
+			conscription_factor = -0.05
 			}
 		}
 			POL_manifesto_to_the_polish_nation = {

@@ -133,7 +133,7 @@ focus_tree = {
 	}
 		focus = {
 		id = POL_list_do_cara
-		icon = GFX_focus_pol_wave_the_for_now_flag
+		icon = GFX_focus_POL_dopis_do_cara
 		cost = 5
 		x = 10
 		y = 5
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 		focus = {
 		id = POL_nominate_dmowski
-		icon = GFX_focus_pol_wave_the_for_now_flag
+		icon = GFX_focus_pol_dmowski_domination
 		cost = 10
 		x = 8
 		y = 6
@@ -168,13 +168,90 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+		add_ideas = POL_constitutional_kingdom
+		}
+	}
+		focus = {
+		id = POL_open_polish_gymansiums
+		icon = GFX_focus_pol_dmowski_domination
+		cost = 10
+		x = 8
+		y = 7
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_list_do_cara }
+
+
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+		focus = {
+		id = POL_polish_only_signs
+		icon = GFX_focus_pol_dmowski_domination
+		cost = 10
+		x = 6
+		y = 7
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_nominate_dmowski }
+
+		completion_reward = {
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+		add_ideas = POL_constitutional_kingdom
+		}
+	}
+
+		focus = {
+		id = POL_change_of_national_oath
+		icon = GFX_focus_pol_dmowski_domination
+		cost = 10
+		x = 6
+		y = 8
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_polish_only_signs }
+
+		completion_reward = {
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+		add_ideas = POL_constitutional_kingdom
+		}
+	}
+
+		focus = {
+		id = POL_anti_nonpolonism
+		icon = GFX_focus_pol_dmowski_domination
+		cost = 10
+		x = 8
+		y = 8
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_open_polish_gymansiums }
+
+		completion_reward = {
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+		add_ideas = POL_constitutional_kingdom
 		}
 	}
 
 		focus = {
 		id = POL_keep_old_order
-		icon = GFX_focus_pol_wave_the_for_now_flag
-		cost = 10
+		icon = GFX_focus_pol_keep_old_order
+		cost = 5
 		x = 12
 		y = 6
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
