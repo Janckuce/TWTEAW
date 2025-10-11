@@ -82,6 +82,16 @@ ideas = {
 			conscription_factor = -0.2
 			conscription = -0.005
 			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
 		}
 			POL_dmowski_enemy_camp3 = {
 				picture = pol_roman_resistance
@@ -94,6 +104,16 @@ ideas = {
 			trade_laws_cost_factor = 0.1
 			conscription_factor = -0.1
 			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
 		}
 			POL_dmowski_enemy_camp4 = {
 			picture = pol_roman_resistance
@@ -104,6 +124,16 @@ ideas = {
 			political_advisor_cost_factor = 0.05
 			trade_laws_cost_factor = 0.05
 			conscription_factor = -0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
 			}
 		}
 			POL_manifesto_to_the_polish_nation = {

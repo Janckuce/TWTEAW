@@ -240,11 +240,10 @@ focus_tree = {
 		prerequisite = { focus = POL_open_polish_gymansiums }
 
 		completion_reward = {
-			set_politics = {
-            ruling_party = democratic
-            elections_allowed = no
-        }
-		add_ideas = POL_constitutional_kingdom
+			swap_ideas = {
+  			remove_idea = pol_dmowski_enemy_camp3
+  			add_idea = pol_dmowski_enemy_camp4			
+  		}
 		}
 	}
 
