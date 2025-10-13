@@ -40,7 +40,7 @@ focus_tree = {
 		focus = {
 		id = POL_open_up_autonomy_debate
 		icon = GFX_focus_pol_autonomy
-		cost = 10
+		cost = 5
 		x = 9
 		y = 2
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -61,13 +61,17 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
 		}
 	}
 
 		focus = {
 		id = POL_free_up_imigration_laws
 		icon = GFX_focus_pol_organise_better
-		cost = 10
+		cost = 5
 		x = 11
 		y = 2
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -177,24 +181,32 @@ focus_tree = {
 	}
 		focus = {
 		id = POL_open_polish_gymansiums
-		icon = GFX_focus_pol_dmowski_domination
+		icon = GFX_focus_pol_gymnasium
 		cost = 10
 		x = 8
 		y = 7
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = { focus = POL_list_do_cara }
+		prerequisite = { focus = POL_nominate_dmowski}
 
 
 		completion_reward = {
 		add_research_slot = 1
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+			add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
 		}
 	}
 
 		focus = {
 		id = POL_polish_only_signs
-		icon = GFX_focus_pol_dmowski_domination
-		cost = 10
+		icon = GFX_focus_pol_give_our_nation_feel
+		cost = 5
 		x = 6
 		y = 7
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -202,17 +214,14 @@ focus_tree = {
 		prerequisite = { focus = POL_nominate_dmowski }
 
 		completion_reward = {
-			set_politics = {
-            ruling_party = democratic
-            elections_allowed = no
-        }
-		add_ideas = POL_constitutional_kingdom
+		add_stability = 0.1
+		add_War_support = 0.075
 		}
 	}
 
 		focus = {
 		id = POL_change_of_national_oath
-		icon = GFX_focus_pol_dmowski_domination
+		icon = GFX_focus_POL_expand_polish_intelligence
 		cost = 10
 		x = 6
 		y = 8
@@ -221,17 +230,33 @@ focus_tree = {
 		prerequisite = { focus = POL_polish_only_signs }
 
 		completion_reward = {
-			set_politics = {
-            ruling_party = democratic
-            elections_allowed = no
-        }
-		add_ideas = POL_constitutional_kingdom
+		add_political_power = 100
+		 add_manpower = 200000
+		}
+	}
+
+		focus = {
+		id = POL_change_of_national_oath2
+		icon = GFX_focus_BRA_tribunal
+		cost = 5
+		x = 7
+		y = 9
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_change_of_national_oath }
+		prerequisite = { focus = POL_anti_nonpolonism }
+
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_dmowski_enemy_camp4
+  			add_idea = POL_dmowski_enemy_camp5
+  		}
 		}
 	}
 
 		focus = {
 		id = POL_anti_nonpolonism
-		icon = GFX_focus_pol_dmowski_domination
+		icon = GFX_focus_pol_polonism_above
 		cost = 10
 		x = 8
 		y = 8
@@ -250,7 +275,7 @@ focus_tree = {
 		focus = {
 		id = POL_keep_old_order
 		icon = GFX_focus_pol_keep_old_order
-		cost = 5
+		cost = 10
 		x = 12
 		y = 6
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -261,6 +286,104 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_stability = -0.1
+		add_War_support = -0.05
+			add_popularity = {
+            ideology = neutrality
+            popularity = 0.075
+        }
+			swap_ideas = {
+  			remove_idea = POL_manifesto_to_the_polish_nation2
+  			add_idea = POL_manifesto_to_the_polish_nation
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_russian_then_polish
+		icon = GFX_focus_SOV_restore_cossack_units
+		cost = 10
+		x = 12
+		y = 7
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_keep_old_order }
+			mutually_exclusive = {
+			focus = POL_nominate_dmowski
+		}
+
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_dmowski_enemy_camp3
+  			add_idea = POL_dmowski_enemy_camp4_2
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_russian_then_polish2
+		icon = GFX_focus_SOV_organize_wreckers
+		cost = 10
+		x = 12
+		y = 8
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_russian_then_polish }
+
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_manifesto_to_the_polish_nation
+  			add_idea = POL_manifesto_to_the_polish_nation3
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_serve_russia_get_stiff
+		icon = GFX_focus_FIN_weapon_caches
+		cost = 10
+		x = 12
+		y = 9
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_russian_then_polish2 }
+		prerequisite = { focus = POL_strike_all_political_parties2 }
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 6000
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 1500
+        }
+			swap_ideas = {
+  			remove_idea = POL_dmowski_enemy_camp4_2
+  			add_idea = POL_dmowski_enemy_camp4_3
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_get_to_work
+		icon = GFX_focus_POL_end_the_regency
+		cost = 5
+		x = 10
+		y = 10
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_change_of_national_oath2 focus = POL_serve_russia_get_stiff }
+
+		completion_reward = {
+			add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+			add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
 		}
 	}
 }

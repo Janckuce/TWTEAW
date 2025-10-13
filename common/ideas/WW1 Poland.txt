@@ -25,6 +25,20 @@ ideas = {
 			}
 		}
 
+			POL_heartland_of_pol3 = {
+			picture = pol_heartbeat_of_poland
+			modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			war_support_weekly = 0.001
+			cavalry_defence_factor = 0.075
+			cavalry_attack_factor = 0.075
+			army_strength_factor = 0.125
+			army_defence_factor = 0.025
+			surrender_limit = 1
+			}
+		}
+
 			POL_constitutional_kingdom = {
 			picture = pol_king_constitution
 			modifier = {
@@ -38,6 +52,7 @@ ideas = {
 			POL_economy_of_russia = {
 			picture = pol_russian_eco
 			modifier = {
+			research_speed_factor = -0.2
 			consumer_goods_factor = -0.035
 			production_factory_efficiency_gain_factor = 0.075
 			industrial_capacity_factory = 0.025
@@ -84,13 +99,13 @@ ideas = {
 			}
 				targeted_modifier = {
 				tag = AUS
-				attack_bonus_against = -0.25
-				defense_bonus_against = -0.25
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 				targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.25
-				defense_bonus_against = -0.25
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
 			}
 		}
 			POL_dmowski_enemy_camp3 = {
@@ -106,13 +121,54 @@ ideas = {
 			}
 				targeted_modifier = {
 				tag = AUS
-				attack_bonus_against = -0.25
-				defense_bonus_against = -0.25
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
 			}
 				targeted_modifier = {
 				tag = GER
-				attack_bonus_against = -0.25
-				defense_bonus_against = -0.25
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+		}
+
+			POL_dmowski_enemy_camp4_2 = {
+			picture = pol_roman_resistance
+			modifier = {
+			democratic_drift = 0.1
+			communism_drift = 0.05
+			political_power_gain = -0.1
+			political_advisor_cost_factor = 0.05
+			trade_laws_cost_factor = 0.05
+			conscription_factor = -0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+			POL_dmowski_enemy_camp4_3 = {
+			picture = pol_roman_resistance
+			modifier = {
+			political_power_gain = -0.1
+			political_advisor_cost_factor = 0.05
+			trade_laws_cost_factor = 0.05
+			conscription_factor = -0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
 			}
 		}
 			POL_dmowski_enemy_camp4 = {
@@ -124,6 +180,24 @@ ideas = {
 			political_advisor_cost_factor = 0.05
 			trade_laws_cost_factor = 0.05
 			conscription_factor = -0.05
+			}
+				targeted_modifier = {
+				tag = AUS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+				targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+		}
+
+			POL_dmowski_enemy_camp5 = {
+			picture = pol_roman_resistance
+			modifier = {
+			democratic_drift = 0.2
+			political_power_gain = -0.05
 			}
 				targeted_modifier = {
 				tag = AUS
@@ -150,6 +224,17 @@ ideas = {
 				tag = RUS
 				cic_to_target_factor = 0.3
 				mic_to_target_factor = 0.5
+			}
+		}
+			POL_manifesto_to_the_polish_nation3 = {
+			picture = pol_polacy
+				targeted_modifier = {
+				tag = RUS
+				cic_to_target_factor = 0.4
+				mic_to_target_factor = 0.6
+			}
+			modifier = {
+			recruitable_population = 0.015
 			}
 		}
 			POL_payback_russian_needs = {
