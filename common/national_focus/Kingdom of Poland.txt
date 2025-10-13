@@ -386,4 +386,20 @@ focus_tree = {
 		}
 		}
 	}
+
+		focus = {
+		id = POL_industrial_heartbeat
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 18
+		y = 1
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = pol_dmowski_enemy_camp
+  			add_idea = pol_dmowski_enemy_camp2				
+  		}
+		}
+	}
 }
