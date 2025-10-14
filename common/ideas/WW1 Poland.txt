@@ -72,6 +72,33 @@ ideas = {
 			}
 		}
 
+			POL_economy_of_russia3 = {
+			picture = pol_russian_eco
+			modifier = {
+			research_speed_factor = -0.05
+			consumer_goods_factor = -0.075
+			production_factory_efficiency_gain_factor = 0.1
+			industrial_capacity_factory = 0.075
+			line_change_production_efficiency_factor = 0.08
+			production_factory_start_efficiency_factor = 0.1
+			}
+		}
+			POL_economy_of_russia4 = {
+			picture = pol_russian_eco
+			modifier = {
+			research_speed_factor = 0.125
+			consumer_goods_factor = -0.15
+			production_factory_efficiency_gain_factor = 0.15
+			industrial_capacity_factory = 0.125
+			line_change_production_efficiency_factor = 0.125
+			production_factory_start_efficiency_factor = 0.125
+			industry_free_repair_factor = 0.125
+			production_speed_buildings_factor = 0.075
+			production_lack_of_resource_penalty_factor = -0.35
+
+			}
+		}
+
 			POL_dmowski_enemy_camp = {
 			picture = pol_roman_resistance
 			modifier = {
