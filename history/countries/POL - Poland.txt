@@ -1,5 +1,7 @@
 ﻿capital = 10
 
+set_oob = "POL_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -20,6 +22,7 @@ set_technology = {
 }
 
 recruit_character = POL_Field_Marshal
+recruit_character = POL_nikolai_nikolaevich
 recruit_character = POL_roman_dmowski
 recruit_character = POL_General_1
 recruit_character = POL_General_2
@@ -39,11 +42,19 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 90
-	democratic = 10
+	neutrality = 55
+	democratic = 30
+	communism = 15
 }
 
-set_research_slots = 3
+add_ideas = {
+	POL_heartland_of_pol
+	POL_economy_of_russia
+	POL_dmowski_enemy_camp
+	POL_manifesto_to_the_polish_nation
+}
+
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.3
 

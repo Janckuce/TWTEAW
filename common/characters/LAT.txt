@@ -23,6 +23,17 @@ characters = {
 			}
 		}
 		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Augusts_Misins
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Economy_Liberator
+			}
+			cost = 150
+		}
+		advisor = {
 			slot = army_chief
 			idea_token = LAT_Augusts_Misins
 			allowed = {
@@ -52,6 +63,17 @@ characters = {
 				large = "GFX_LAT_Andrejs_Auzans"
 				small = "GFX_LAT_Andrejs_Auzans_Frame"
 			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Andrejs_Auzans
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Caring_Workhorse
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = army_chief
@@ -85,6 +107,17 @@ characters = {
 			}
 		}
 		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Janis_Francis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Armour_Producer
+			}
+			cost = 150
+		}
+		advisor = {
 			slot = high_command
 			idea_token = LAT_Janis_Francis
 			allowed = {
@@ -93,7 +126,7 @@ characters = {
 			traits = {
 				Speed_Is_Power
 			}
-			cost = 150
+			cost = 100
 		}
 		corps_commander = {
 			traits = {
@@ -116,13 +149,29 @@ characters = {
 			}
 		}
 		advisor = {
+				large = "GFX_LAT_Fridrihs_Briedis"
+				small = "GFX_LAT_Fridrihs_Briedis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Fridrihs_Briedis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Agricultural_Genius
+			}
+			cost = 150
+		}
+		advisor = {
 			slot = high_command
 			idea_token = LAT_Fridrihs_Briedis
 			allowed = {
 				tag = LAT
 			}
 			traits = {
-				army_commando_2
+				Little_Corporal
 			}
 			cost = 150
 		}
@@ -145,6 +194,22 @@ characters = {
 				large = "GFX_LAT_Janis_Francis"
 				small = "GFX_LAT_Janis_Francis_Frame"
 			}
+		}
+		advisor = {
+				large = "GFX_LAT_Jukums_Vacietis"
+				small = "GFX_LAT_Jukums_Vacietis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Jukums_Vacietis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Industrial_Moderniser
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = high_command
@@ -179,6 +244,22 @@ characters = {
 			}
 		}
 		advisor = {
+				large = "GFX_LAT_Martins_Penikis"
+				small = "GFX_LAT_Martins_Penikis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Martins_Penikis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Consumer_Produce
+			}
+			cost = 150
+		}
+		advisor = {
 			slot = high_command
 			idea_token = LAT_Martins_Penikis
 			allowed = {
@@ -211,6 +292,22 @@ characters = {
 			}
 		}
 		advisor = {
+				large = "GFX_LAT_Roberts_Dambitis"
+				small = "GFX_LAT_Roberts_Dambitis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Roberts_Dambitis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Military_Producer
+			}
+			cost = 150
+		}
+		advisor = {
 			slot = theorist
 			idea_token = LAT_Roberts_Dambitis
 			allowed = {
@@ -219,7 +316,7 @@ characters = {
 			traits = {
 				military_theorist
 			}
-			cost = 150
+			cost = 100
 		}
 		corps_commander = {
 			traits = {
