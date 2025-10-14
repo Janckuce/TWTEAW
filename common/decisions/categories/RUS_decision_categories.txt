@@ -73,3 +73,14 @@ RUS_Murmansk_Category = {
 		ORO = { has_country_flag = WW1_started_spectator }
 	}
 }
+
+RUS_Mod_Descision_Catagory = {
+	
+	priority = 100
+
+	visible_when_empty = no
+
+	allowed = {
+		tag = RUS
+	} 
+}

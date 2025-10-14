@@ -546,3 +546,38 @@ RUS_Murmansk_Category = {
 		
 	}
 }
+
+RUS_Mod_Descision_Catagory = {
+
+  RUS_Annex_Poland = {
+	visible = {
+		POL = {
+			owns_state = 10 # Warsaw
+		}
+		POL = {is_ai = yes}
+	}
+	available = {
+		tag = RUS
+		POL = {is_ai = yes}
+	}
+	complete_effect = {
+		annex_country = { target = POL}
+	  }
+  }
+
+  RUS_Annex_Latvia = {
+	visible = {
+		LAT = {
+			owns_state = 808 # Riga
+		}
+		LAT = {is_ai = yes}
+	}
+	available = {
+		tag = RUS
+		LAT = {is_ai = yes}
+	}
+	complete_effect = {
+		annex_country = { target = LAT}
+	  }
+  }
+}
