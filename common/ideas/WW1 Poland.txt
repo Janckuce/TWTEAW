@@ -38,6 +38,21 @@ ideas = {
 			surrender_limit = 1
 			}
 		}
+			POL_heartland_of_pol4 = {
+			picture = pol_heartbeat_of_poland
+			modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			war_support_weekly = 0.001
+			cavalry_defence_factor = 0.075
+			cavalry_attack_factor = 0.075
+			army_strength_factor = 0.125
+			army_defence_factor = 0.025
+			army_attack_factor = 0.025
+			production_speed_arms_factory_factor = 0.05
+			surrender_limit = 1
+			}
+		}
 
 			POL_constitutional_kingdom = {
 			picture = pol_king_constitution
@@ -147,7 +162,7 @@ ideas = {
 			}
 		}
 			POL_dmowski_enemy_camp3 = {
-				picture = pol_roman_resistance
+				picture = pol_pilsudski_resistance
 			modifier = {
 			democratic_drift = 0.15
 			communism_drift = 0.075
@@ -210,7 +225,7 @@ ideas = {
 			}
 		}
 			POL_dmowski_enemy_camp4 = {
-			picture = pol_roman_resistance
+			picture = pol_pilsudski_resistance
 			modifier = {
 			democratic_drift = 0.2
 			communism_drift = 0.05
@@ -232,7 +247,7 @@ ideas = {
 		}
 
 			POL_dmowski_enemy_camp5 = {
-			picture = pol_roman_resistance
+			picture = pol_pilsudski_resistance
 			modifier = {
 			democratic_drift = 0.2
 			political_power_gain = -0.05

@@ -685,8 +685,8 @@ focus_tree = {
 		prerequisite = { focus = POL_list_do_cara }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol3
+  			add_idea = POL_heartland_of_pol4
   		}
 		}
 	}
@@ -700,10 +700,18 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_our_army_strenght }
 		completion_reward = {
-			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
-  		}
+			add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 2500
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 500
+        }
+		     add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 750
+        }
 		}
 	}
 		focus = {
@@ -715,6 +723,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_buy_of_needed_equipment }
+			mutually_exclusive = {
+			focus = POL_me_must_hold
+		}
 		completion_reward = {
 			swap_ideas = {
   			remove_idea = POL_economy_of_russia
@@ -814,6 +825,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_buy_of_needed_equipment }
+			mutually_exclusive = {
+			focus = POL_our_natural_choice
+		}
 		completion_reward = {
 			swap_ideas = {
   			remove_idea = POL_economy_of_russia
