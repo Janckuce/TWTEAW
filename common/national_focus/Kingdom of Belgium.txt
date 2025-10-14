@@ -201,7 +201,13 @@ focus_tree = {
 			focus = BEL_The_King's_Nation
 		}
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 3 }
+			934 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+			}
 		}
 	}
 	focus = {
@@ -222,7 +228,13 @@ focus_tree = {
 				category = land_doctrine
 				uses = 2
 			}
-			add_offsite_building = { type = arms_factory level = 2 }
+			934 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
 		}
 	}
 	focus = {
@@ -277,8 +289,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				category = cat_mountaineers_doctrine
+				cost_reduction = 0.25
+				category = land_doctrine
 				uses = 2
 			}
 			add_offsite_building = { type = arms_factory level = 2 }
@@ -298,7 +310,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				category = mountaineers_tech
+				category = artillery
 				bonus = 0.5
 				uses = 1
 			}
@@ -688,6 +700,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		available_if_capitulated = yes
 		available = {
 			has_war = yes
 			date > 1914.7.28
@@ -707,6 +720,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		available_if_capitulated = yes
 		prerequisite = {
 			focus = BEL_Knight_King
 		}
@@ -725,6 +739,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		available_if_capitulated = yes
 		prerequisite = {
 			focus = BEL_Soldier_King_two
 		}
@@ -743,6 +758,7 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_STABILITY}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		available_if_capitulated = yes
 		prerequisite = {
 			focus = BEL_King_Of_The_Congo
 		}
@@ -763,6 +779,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		available_if_capitulated = yes
 		prerequisite = {
 			focus = BEL_King_Of_Belgium
 		}
