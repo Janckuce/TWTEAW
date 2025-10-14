@@ -138,7 +138,7 @@ focus_tree = {
 		focus = {
 		id = POL_list_do_cara
 		icon = GFX_focus_POL_dopis_do_cara
-		cost = 5
+		cost = 10
 		x = 10
 		y = 5
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -206,7 +206,7 @@ focus_tree = {
 		focus = {
 		id = POL_polish_only_signs
 		icon = GFX_focus_pol_give_our_nation_feel
-		cost = 5
+		cost = 10
 		x = 6
 		y = 7
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -378,11 +378,11 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 			type = arms_factory
-			level = 1
+			level = 2
 		}
 			add_offsite_building = {
 			type = industrial_complex
-			level = 1
+			level = 2
 		}
 		}
 	}
@@ -397,8 +397,156 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = pol_dmowski_enemy_camp
-  			add_idea = pol_dmowski_enemy_camp2				
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_development_of_other_friend
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 17
+		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_industrial_heartbeat }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+		focus = {
+		id = POL_radom_company_grow
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 17
+		y = 3
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_development_of_other_friend }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_develop_our_tru_land
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 17
+		y = 4
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_radom_company_grow }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+
+		focus = {
+		id = POL_brest_litevks_development
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 19
+		y = 2
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_industrial_heartbeat }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+		focus = {
+		id = POL_north_polish_industry
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 19
+		y = 3
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_brest_litevks_development }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+		focus = {
+		id = POL_warsaw_central_hub
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 19
+		y = 4
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_north_polish_industry }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+		focus = {
+		id = POL_polish_goods_to_the_world
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 18
+		y = 5
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_warsaw_central_hub }
+		prerequisite = { focus = POL_develop_our_tru_land }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+		focus = {
+		id = POL_do_what_they_can_not
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 18
+		y = 6
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_polish_goods_to_the_world }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
+  		}
+		}
+	}
+		focus = {
+		id = POL_warsaw_economical_miracle
+		icon = GFX_focus_por_must_know_polish
+		cost = 10
+		x = 18
+		y = 7
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = { focus = POL_do_what_they_can_not }
+		completion_reward = {
+			swap_ideas = {
+  			remove_idea = POL_economy_of_russia
+  			add_idea = POL_economy_of_russia2			
   		}
 		}
 	}
