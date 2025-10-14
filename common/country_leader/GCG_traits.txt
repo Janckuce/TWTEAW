@@ -1,0 +1,59 @@
+leader_traits = {
+	Colonial_Manager = {
+		random = no
+		stability_factor = 0.2
+		production_speed_buildings_factor = 0.1
+	}
+	Guerilla_Warfare_Genius = {
+		random = no
+		war_support_factor = 0.2
+		max_dig_in_factor = 0.1
+	}
+	Guerilla_Strategist = {
+		sprite = 5
+		planning_speed = 0.2
+		initiative_factor = 0.1
+		experience_gain_army = 0.4
+
+		command_cap_increase = 30
+		command_power = 0
+	}
+	Governor_Of_German_South_West_Africa = {
+		random = no
+		political_power_factor = 0.15
+		production_speed_synthetic_refinery_factor = 0.15
+	}
+	Governor_Of_Kamerun = {
+		random = no
+		resistance_activity = -0.05
+		required_garrison_factor = -0.05
+		resistance_damage_to_garrison = -0.05
+	}
+	Governor_Of_Togoland = {
+		random = no
+		resistance_growth_on_our_occupied_states = 0.1
+	}
+	Governor_Of_German_New_Guinea = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = -0.05
+		industrial_capacity_factory = 0.05
+	}
+	Hero_Of_Omaruru = {
+		random = no
+		sprite = 14
+		war_support_factor = 0.15
+		land_doctrine_cost_factor = -0.15
+	}
+	General_Reformist = {
+		random = no
+		sprite = 14
+		experience_gain_army = 0.1
+		experience_gain_army_unit_factor = 0.15
+	}
+	Scavenging_Expert = {
+		random = no
+		sprite = 5
+		equipment_capture_factor = 0.05
+	}
+}

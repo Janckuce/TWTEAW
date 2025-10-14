@@ -1,0 +1,184 @@
+GCG_Budget_Management = {
+	GCG_Recruit_Joachim = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			has_war = yes
+		}
+		complete_effect = {
+			recruit_character = GCG_Joachim_Von_Heydebreck
+			add_to_variable = {
+				GCG.Current_Budget = 2
+			}
+			custom_effect_tooltip = GCG_Budget_Increase
+		}
+	}
+	GCG_Economic_Boom = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			num_of_factories > 30
+		}
+		complete_effect = {
+			add_to_variable = {
+				GCG.Current_Budget = 2
+			}
+			custom_effect_tooltip = GCG_Budget_Increase
+		}
+	}
+}
+
+GCG_Native_Cooperation = {
+	GCG_Walvis_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			855 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			855 = {
+				add_core_of = GCG
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+	}
+	GCG_Gilbert_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			639 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			639 = {
+				add_core_of = GCG
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+	}
+	GCG_Papua_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			523 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			523 = {
+				add_core_of = GCG
+			}
+		}
+	}
+	GCG_South_Africa_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			681 = {
+				is_controlled_by = GCG
+			}
+			275 = {
+				is_controlled_by = GCG
+			}
+			719 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			681 = {
+				add_core_of = GCG
+			}
+		}
+	}
+	GCG_Rhodesia_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			542 = {
+				is_controlled_by = GCG
+			}
+			545 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			542 = {
+				add_core_of = GCG
+			}
+			545 = {
+				add_core_of = GCG
+			}
+		}
+	}
+	GCG_Zambia_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			771 = {
+				is_controlled_by = GCG
+			}
+			770 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			771 = {
+				add_core_of = GCG
+			}
+			770 = {
+				add_core_of = GCG
+			}
+		}
+	}
+	GCG_Congo_Cooperation = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = GCG
+		}
+		available = {
+			295 = {
+				is_controlled_by = GCG
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 10000
+			}
+		}
+	}
+}

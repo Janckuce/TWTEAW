@@ -1,0 +1,230 @@
+ideas = {
+	country = {
+		GCG_Isolated_Government = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				political_power_factor = -0.15
+				mobilization_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+			}
+		}
+		GCG_Isolated_Government1 = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				political_power_factor = -0.1
+				mobilization_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+			}
+		}
+		GCG_Colonial_Connections = {
+			picture = ARG_argentine_metropole
+			modifier = {
+				neutrality_drift = 0.06
+				local_resources = 0.1
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				base_fuel_gain_factor = 0.1
+			}
+		}
+		GCG_Colonial_Elite = {
+			picture = ARG_military_government
+			modifier = {
+				conscription_factor = -0.1
+				compliance_growth = 0.1
+			}
+		}
+		GCG_Colonial_Elite1 = {
+			picture = ARG_military_government
+			modifier = {
+				compliance_growth = 0.1
+			}
+		}
+		GCG_Resource_Based_Economy = {
+			picture = ARG_rapid_militarization
+			modifier = {
+				local_resources = 0.2
+				industrial_capacity_factory = -0.2
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		GCG_Asian_Populus = {
+			picture = prc_low_popular_support3
+			modifier = {
+				monthly_population = 0.2
+				conscription_factor = 0.2
+			}
+		}
+		GCG_Asian_Resources = {
+			picture = ARG_resource_extration_focus
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+		GCG_Construction_Society = {
+			picture = ARG_construction_guilds
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		GCG_Food_Industry = {
+			picture = RAJ_state_of_famine_country
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+		GCG_Production_Expertise = {
+			picture = generic_flexible_foreign_policy
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+		GCG_Berlin_Aid = {
+			picture = generic_foreign_capital
+			modifier = {
+				weekly_manpower = 500
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		GCG_Siezed_Land = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		GCG_Converted_Buildings = {
+			picture = AFG_parliament_building
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		GCG_Askari_People = {
+			picture = por_colonial_army
+			modifier = {
+				conscription = 0.01
+			}
+		}
+		GCG_Askari_People1 = {
+			picture = por_colonial_army
+			modifier = {
+				conscription = 0.01
+				monthly_population = 0.1
+			}
+		}
+		GCG_Askari_People2 = {
+			picture = por_colonial_army
+			modifier = {
+				conscription = 0.01
+				monthly_population = 0.2
+			}
+		}
+		GCG_Industrial_Government = {
+			picture = ETH_joint_african_development_program
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_air_base_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		GCG_Home_War_Industries = {
+			picture = ITA_bandits_war
+			equipment_bonus = {
+				infantry_equipment = {
+					defense = 0.01
+				}
+				support_equipment = {
+					build_cost_ic = -0.012
+				}
+			}
+		}
+		GCG_Home_War_Industries1 = {
+			picture = ITA_bandits_war
+			equipment_bonus = {
+				infantry_equipment = {
+					defense = 0.02
+				}
+				support_equipment = {
+					build_cost_ic = -0.024
+				}
+			}
+		}
+		GCG_Home_War_Industries2 = {
+			picture = ITA_bandits_war
+			equipment_bonus = {
+				infantry_equipment = {
+					defense = 0.03
+				}
+				support_equipment = {
+					build_cost_ic = -0.036
+				}
+			}
+		}
+		GCG_Home_War_Industries3 = {
+			picture = ITA_bandits_war
+			equipment_bonus = {
+				infantry_equipment = {
+					defense = 0.03
+					soft_attack = 0.03
+				}
+				support_equipment = {
+					build_cost_ic = -0.048
+				}
+			}
+		}
+		GCG_Colonial_Military_Power = {
+			picture = SWE_wargames
+			modifier = {
+				army_infantry_attack_factor = 0.025
+				army_infantry_defence_factor = 0.025
+			}
+		}
+		GCG_Convoy_Production = {
+			modifier = {
+				consumer_goods_factor = 0.025
+			}
+			equipment_bonus = {
+				convoy = {
+					surface_visibility = -0.05
+				}
+			}
+		}
+		GCG_Convoy_Production1 = {
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.025
+					surface_visibility = -0.05
+				}
+			}
+		}
+		GCG_Convoy_Production2 = {
+			modifier = {
+				consumer_goods_factor = 0.075
+			}
+			equipment_bonus = {
+				convoy = {
+					naval_speed = 0.1
+					build_cost_ic = -0.025
+					surface_visibility = -0.05
+				}
+			}
+		}
+		GCG_Colonial_Air_Force = {
+			picture = air_war_plans_division_focus
+			modifier = {
+				air_agility_factor = 0.05
+			}
+		}
+		GCG_Cheap_Planes = {
+			picture = SOV_third_five_year_plan_military
+			equipment_bonus = {
+				fighter = {
+					air_attack = -0.5
+					build_cost_ic = -0.5
+				}
+			}
+		}
+	}
+}

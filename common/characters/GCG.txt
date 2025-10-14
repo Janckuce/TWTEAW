@@ -1,0 +1,245 @@
+characters = {
+	GCG_Heinrich_Schnee = {
+		name = GCG_Character_Heinrich_Schnee
+		portraits = {
+			civilian = {
+				large = "GFX_GCG_Heinrich_Schnee"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1949.1.1.1"
+			traits = {
+				Colonial_Manager
+			}
+		}
+	}
+	GCG_Paul_Lettow = {
+		name = GCG_Character_Paul_Lettow
+		portraits = {
+			civilian = {
+				large = "GFX_GCG_Paul_Von_Lettow"
+			}
+			army = {
+				large = "GFX_GCG_Paul_Von_Lettow"
+				small = "GFX_GCG_Paul_Von_Lettow_Frame"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1920.1.1.1"
+			traits = {
+				Guerilla_Warfare_Genius
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = GCG_Paul_Lettow
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Guerilla_Strategist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits = {
+				inflexible_strategist
+				ascari_officer
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	GCG_Victor_Franke = {
+		name = GCG_Character_Victor_Franke
+		portraits = {
+			army = {
+				large = "GFX_GCG_Victor_Franke"
+				small = "GFX_GCG_Victor_Franke_Frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = GCG_Victor_Franke
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Hero_Of_Omaruru
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = {
+				war_hero
+			}
+			skill=2
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	GCG_Carl_Zimmermann = {
+		name = GCG_Character_Carl_Zimmermann
+		portraits = {
+			army = {
+				large = "GFX_GCG_Carl_Zimmermann"
+				small = "GFX_GCG_Carl_Zimmermann_Frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GCG_Carl_Zimmermann
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				General_Reformist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+		}
+	}
+	GCG_Joachim_Von_Heydebreck = {
+		name = GCG_Character_Joachim_Von_Heydebreck
+		portraits = {
+			army = {
+				large = "GFX_GCG_Joachim_Von_Heydebreck"
+				small = "GFX_GCG_Joachim_Von_Heydebreck_Frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = GCG_Joachim_Von_Heydebreck
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Scavenging_Expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=5
+		}
+	}
+
+	#	Political Advisors
+
+	GCG_Theodor_Seitz = {
+		name = GCG_Character_Theodor_Seitz
+		portraits = {
+			army = {
+				small = "GFX_GCG_Theodor_Seitz_Frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GCG_Theodor_Seitz
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Governor_Of_German_South_West_Africa
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	GCG_Karl_Ebermaier = {
+		name = GCG_Character_Karl_Ebermaier
+		portraits = {
+			army = {
+				small = "GFX_GCG_Karl_Ebermaier_Frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GCG_Karl_Ebermaier
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Governor_Of_Kamerun
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	GCG_Hans_Georg_Von_Doering = {
+		name = GCG_Character_Hans_Georg_Von_Doering
+		portraits = {
+			army = {
+				small = "GFX_GCG_Hans_Georg_Von_Doering_Frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GCG_Hans_Georg_Von_Doering
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Governor_Of_Togoland
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	GCG_Albert_Hahl = {
+		name = GCG_Character_Albert_Hahl
+		portraits = {
+			army = {
+				small = "GFX_GCG_Albert_Hahl_Frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GCG_Albert_Hahl
+			allowed = {
+				tag = GCG
+			}
+			traits = {
+				Governor_Of_German_New_Guinea
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

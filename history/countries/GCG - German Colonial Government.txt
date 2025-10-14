@@ -1,0 +1,55 @@
+capital = 546
+
+set_oob = "GCG_1911"
+
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+starting_train_buffer = 1
+
+recruit_character = GCG_Heinrich_Schnee
+recruit_character = GCG_Paul_Lettow
+recruit_character = GCG_Theodor_Seitz
+recruit_character = GCG_Karl_Ebermaier
+recruit_character = GCG_Hans_Georg_Von_Doering
+recruit_character = GCG_Albert_Hahl
+recruit_character = GCG_Victor_Franke
+recruit_character = GCG_Carl_Zimmermann
+
+add_ideas = {
+	GCG_Isolated_Government
+	GCG_Colonial_Elite
+	GCG_Resource_Based_Economy
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 90
+	democratic = 10
+}
+
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.3
+set_convoys = 100
