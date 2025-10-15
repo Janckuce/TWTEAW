@@ -1,11 +1,13 @@
 ideas = {
 	country = {
 		RAJ_Recruitable_Pop_Nerf = {
+			picture = RAJ_partition_chaos_bad
 			modifier = {
 				conscription_factor = -0.90
 			}
 		}
 		RAJ_Bande_Mataram = {
+			picture = RAJ_federal_court_of_india
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
@@ -15,6 +17,7 @@ ideas = {
 			}
 		}
 		RAJ_Bande_Mataram_Britannia = {
+			picture = RAJ_federal_court_of_india
 			modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.2
@@ -24,6 +27,7 @@ ideas = {
 			}
 		}
 		RAJ_Bande_Mataram_Britannia1 = {
+			picture = RAJ_federal_court_of_india
 			modifier = {
 				neutrality_drift = 0.03
 				conscription = 0.015
@@ -31,12 +35,14 @@ ideas = {
 			}
 		}
 		RAJ_Bande_Mataram_India = {
+			picture = RAJ_federal_court_of_india
 			modifier = {
 				fascism_drift = 0.06
 				local_resources_factor = 0.1
 			}
 		}
 		RAJ_Bande_Mataram_India1 = {
+			picture = RAJ_federal_court_of_india
 			modifier = {
 				fascism_drift = 0.06
 				local_resources_factor = 0.1
@@ -44,6 +50,7 @@ ideas = {
 			}
 		}
 		RAJ_Indian_Populous = {
+			picture = RAJ_widespread_turmoil
 			modifier = {
 				monthly_population = 0.1
 				stability_factor = -0.1
@@ -52,6 +59,7 @@ ideas = {
 			}
 		}
 		RAJ_Indian_Populous1 = {
+			picture = RAJ_widespread_turmoil
 			modifier = {
 				monthly_population = 0.2
 				stability_factor = -0.1
@@ -60,12 +68,14 @@ ideas = {
 			}
 		}
 		RAJ_Indian_Populous2 = {
+			picture = RAJ_widespread_turmoil
 			modifier = {
 				monthly_population = 0.2
 				political_advisor_cost_factor = -0.15
 			}
 		}
 		RAJ_Indian_Populous3 = {
+			picture = RAJ_widespread_turmoil
 			modifier = {
 				monthly_population = 0.2
 				political_advisor_cost_factor = -0.15
@@ -74,6 +84,7 @@ ideas = {
 			}
 		}
 		RAJ_Maximised_Indian_Populus = {
+			picture = RAJ_widespread_turmoil
 			modifier = {
 				monthly_population = 0.2
 				political_advisor_cost_factor = -0.15
@@ -84,6 +95,7 @@ ideas = {
 			}
 		}
 		RAJ_Minuscule_Armed_Forces = {
+			picture = raj_indian_gentlemen_officers
 			modifier = {
 				army_speed_factor = -0.1
 				army_attack_factor = -0.1
@@ -91,17 +103,20 @@ ideas = {
 			}
 		}
 		RAJ_Minuscule_Armed_Forces1 = {
+			picture = raj_indian_gentlemen_officers
 			modifier = {
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
 			}
 		}
 		RAJ_Minuscule_Armed_Forces2 = {
+			picture = raj_indian_gentlemen_officers
 			modifier = {
 				army_defence_factor = -0.1
 			}
 		}
 		RAJ_Maximised_Armed_Forces = {
+			picture = raj_indian_gentlemen_officers
 			modifier = {
 				out_of_supply_factor = -0.1
 				land_reinforce_rate = 0.05
@@ -109,6 +124,7 @@ ideas = {
 			}
 		}
 		RAJ_Swadeshi_Movement = {
+			picture = RAJ_boycott_british_made_goods
 			targeted_modifier = {
 				tag = ENG
 				trade_cost_for_target_factor = 1
@@ -135,11 +151,13 @@ ideas = {
 			}
 		}
 		RAJ_For_Britannia_Idea = {
+			picture = eng_guided_by_britain
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
 		RAJ_For_Britannia_Idea1 = {
+			picture = eng_guided_by_britain
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 			}
@@ -149,6 +167,7 @@ ideas = {
 			}
 		}
 		RAJ_For_India_Idea = {
+			picture = AFG_raj_attack_bonus
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 			}
@@ -178,6 +197,7 @@ ideas = {
 			}
 		}
 		RAJ_For_India_Idea1 = {
+			picture = AFG_raj_attack_bonus
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
 			}
@@ -207,16 +227,19 @@ ideas = {
 			}
 		}
 		RAJ_British_Funds = {
+			picture = eng_steady_as_she_goes
 			modifier = {
 				consumer_goods_factor = -0.1
 			}
 		}
 		RAJ_British_Army_Training = {
+			picture = MEX_politicised_army
 			modifier = {
 				experience_gain_army = 0.06
 			}
 		}
 		RAJ_Civilian_Efforts = {
+			picture = ARG_construction_guilds
 			modifier = {
 				industrial_factory_donations = 3
 				repair_speed_infrastructure_factor = 0.5
@@ -224,6 +247,7 @@ ideas = {
 			}
 		}
 		RAJ_Military_Efforts = {
+			picture = SOV_third_five_year_plan_military
 			modifier = {
 				military_factory_donations = 3
 				repair_speed_arms_factory_factor = 0.5
@@ -231,21 +255,25 @@ ideas = {
 			}
 		}
 		RAJ_Scientists = {
+			picture = AFG_neutrality_graduates
 			modifier = {
 				research_speed_factor = 0.025
 			}
 		}
 		RAJ_Scientists1 = {
+			picture = AFG_neutrality_graduates
 			modifier = {
 				research_speed_factor = 0.05
 			}
 		}
 		RAJ_Scientists2 = {
+			picture = AFG_neutrality_graduates
 			modifier = {
 				research_speed_factor = 0.075
 			}
 		}
 		RAJ_Scientists3 = {
+			picture = AFG_neutrality_graduates
 			modifier = {
 				research_speed_factor = 0.1
 			}

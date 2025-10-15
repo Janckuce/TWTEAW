@@ -23,7 +23,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_British_Raj
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_tryst_with_destiny
 		cost = 10
 		x = 7
 		y = 0
@@ -42,7 +42,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_For_Britannia
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_appoint_a_c_suite
 		cost = 10
 		relative_position_id = RAJ_British_Raj
 		x = 0
@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Mutual_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_just_good_business
 		cost = 10
 		relative_position_id = RAJ_For_Britannia
 		x = 0
@@ -86,7 +86,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Request_Funding
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
 		cost = 10
 		relative_position_id = RAJ_Mutual_Investments
 		x = 0
@@ -102,7 +102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Major_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_institutional_money_laundering
 		cost = 10
 		relative_position_id = RAJ_Request_Funding
 		x = -2
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Minor_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 10
 		relative_position_id = RAJ_Request_Funding
 		x = 0
@@ -184,7 +184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Finalise_Deal
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_go_into_hiding
 		cost = 10
 		relative_position_id = RAJ_Major_Investments
 		x = 1
@@ -205,7 +205,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Populus1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_DEN_civilian_preparations
 		cost = 10
 		relative_position_id = RAJ_British_Raj
 		x = -2
@@ -222,7 +222,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Populus2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 10
 		relative_position_id = RAJ_Populus1
 		x = 0
@@ -239,7 +239,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Populus3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_population_growth
 		cost = 10
 		relative_position_id = RAJ_Populus2
 		x = -1
@@ -259,7 +259,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Army1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_parmis_devils
 		cost = 10
 		relative_position_id = RAJ_British_Raj
 		x = -6
@@ -276,7 +276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Army2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_shift_to_armaments_production_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = RAJ_Army1
 		x = 0
@@ -293,7 +293,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Army3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_rehabilitated_military_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = RAJ_Army2
 		x = 1
@@ -310,7 +310,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Indian_Matters1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_khadi_movement
 		cost = 10
 		relative_position_id = RAJ_British_Raj
 		x = -4
@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Indian_Matters2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_kingmaker
 		cost = 10
 		relative_position_id = RAJ_Indian_Matters1
 		x = 0
@@ -350,7 +350,7 @@ focus_tree = {
 	
 	focus = {
 		id = RAJ_Maximise_Trade_Output
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_war_taxes
 		cost = 17.2
 		relative_position_id = RAJ_Populus3
 		x = -1
@@ -395,7 +395,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Research1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 10
 		x = 9
 		y = 1
@@ -409,7 +409,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Research2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research
 		cost = 10
 		relative_position_id = RAJ_Research1
 		x = 0
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Research3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research2
 		cost = 10
 		relative_position_id = RAJ_Research2
 		x = 0
@@ -443,7 +443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Laboratories
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_NORDIC_mon_research
 		cost = 10
 		relative_position_id = RAJ_Research3
 		x = 0
@@ -464,7 +464,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_British_India
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_pruna_swaraj
 		cost = 10
 		x = 11
 		y = 0
@@ -480,7 +480,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_For_India
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_mahatma
 		cost = 10
 		relative_position_id = RAJ_British_India
 		x = 0
@@ -497,7 +497,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Personal_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_the_crown_and_the_world
 		cost = 10
 		relative_position_id = RAJ_For_India
 		x = 0
@@ -521,7 +521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Request_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_military_into_the_workforce
 		cost = 10
 		relative_position_id = RAJ_Personal_Investments
 		x = 0
@@ -537,7 +537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Minor_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_indian_gurkhas
 		cost = 10
 		relative_position_id = RAJ_Request_Training
 		x = 0
@@ -563,7 +563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Major_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_indianisation_of_army
 		cost = 10
 		relative_position_id = RAJ_Request_Training
 		x = 2
@@ -587,7 +587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Finalise_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_a_private_military
 		cost = 10
 		relative_position_id = RAJ_Major_Training
 		x = -1
@@ -615,7 +615,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Populus_India1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_DEN_civilian_preparations
 		cost = 10
 		relative_position_id = RAJ_British_India
 		x = 6
@@ -632,7 +632,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Populus_India2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 10
 		relative_position_id = RAJ_Populus_India1
 		x = 0
@@ -649,7 +649,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Populus_India3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_population_growth
 		cost = 10
 		relative_position_id = RAJ_Populus_India2
 		x = -1
@@ -669,7 +669,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Army_India1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_parmis_devils
 		cost = 10
 		relative_position_id = RAJ_British_India
 		x = 2
@@ -686,7 +686,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Army_India2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_shift_to_armaments_production_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = RAJ_Army_India1
 		x = 0
@@ -703,7 +703,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Army_India3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_rehabilitated_military_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = RAJ_Army_India2
 		x = 1
@@ -720,7 +720,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_Only_Indian_Matters1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_hindu_mahasabha
 		cost = 10
 		relative_position_id = RAJ_British_India
 		x = 4
@@ -737,7 +737,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RAJ_Only_Indian_Matters2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_peacock_throne_for_the_modern_age
 		cost = 10
 		relative_position_id = RAJ_Only_Indian_Matters1
 		x = 0
@@ -760,7 +760,7 @@ focus_tree = {
 	
 	focus = {
 		id = RAJ_Maximise_Militancy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_a_tiger_unchained
 		cost = 17.2
 		relative_position_id = RAJ_Populus_India3
 		x = -1
