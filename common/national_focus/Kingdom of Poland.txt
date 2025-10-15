@@ -308,9 +308,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_keep_old_order }
-			mutually_exclusive = {
-			focus = POL_nominate_dmowski
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -728,8 +725,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4
+  			add_idea = POL_heartland_of_pol4_1			
   		}
 		}
 	}
@@ -761,8 +758,8 @@ focus_tree = {
 		prerequisite = { focus = POL_our_natural_choice }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4_1
+  			add_idea = POL_heartland_of_pol4_2			
   		}
 		}
 	}
