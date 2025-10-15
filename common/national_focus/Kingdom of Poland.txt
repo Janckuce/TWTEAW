@@ -675,7 +675,7 @@ focus_tree = {
 		id = POL_our_army_strenght
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 26
+		x = 25
 		y = 6
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -691,7 +691,7 @@ focus_tree = {
 		id = POL_buy_of_needed_equipment
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 26
+		x = 25
 		y = 7
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -699,15 +699,15 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
             type = infantry_equipment
-            amount = 2500
+            amount = 1000
         }
         add_equipment_to_stockpile = {
             type = support_equipment
-            amount = 500
+            amount = 400
         }
 		     add_equipment_to_stockpile = {
             type = artillery_equipment
-            amount = 750
+            amount = 625
         }
 		}
 	}
@@ -825,7 +825,7 @@ focus_tree = {
 		id = POL_me_must_hold
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 28
+		x = 27
 		y = 8
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -835,8 +835,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4
+  			add_idea = POL_heartland_of_pol4_1_1
   		}
 		}
 	}
@@ -844,23 +844,26 @@ focus_tree = {
 		id = POL_medicaments_for_army
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 27
+		x = 26
 		y = 9
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_me_must_hold }
 		completion_reward = {
-			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
-  		}
+			add_manpower = 75010
+			add_tech_bonus = {
+            name = "support_company_bonus"
+            bonus = 0.50
+            uses = 2
+            category = support_tech
+        }
 		}
 	}
 		focus = {
 		id = POL_we_see_we_do
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 27
+		x = 26
 		y = 10
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -876,15 +879,15 @@ focus_tree = {
 		id = POL_everycitywehold
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 29
+		x = 28
 		y = 9
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_me_must_hold }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4_1_1
+  			add_idea = POL_heartland_of_pol4_1_2
   		}
 		}
 	}
@@ -892,31 +895,15 @@ focus_tree = {
 		id = POL_workaroundrailways
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 29
+		x = 28
 		y = 10
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_everycitywehold }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
-  		}
-		}
-	}
-		focus = {
-		id = POL_we_see_we_do
-		icon = GFX_focus_por_must_know_polish
-		cost = 10
-		x = 27
-		y = 10
-		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = { focus = POL_medicaments_for_army }
-		completion_reward = {
-			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4_1_2
+  			add_idea = POL_heartland_of_pol4_1_3
   		}
 		}
 	}
@@ -924,7 +911,7 @@ focus_tree = {
 		id = POL_infantry_our_might
 		icon = GFX_focus_por_must_know_polish
 		cost = 10
-		x = 28
+		x = 27
 		y = 11
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -932,8 +919,8 @@ focus_tree = {
 		prerequisite = { focus = POL_workaroundrailways }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4_1_3
+  			add_idea = POL_heartland_of_pol4_1_4
   		}
 		}
 	}
