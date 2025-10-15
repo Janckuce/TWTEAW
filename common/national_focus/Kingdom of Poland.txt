@@ -682,7 +682,7 @@ focus_tree = {
 		prerequisite = { focus = POL_list_do_cara }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_heartland_of_pol3
+  			remove_idea = POL_heartland_of_pol2
   			add_idea = POL_heartland_of_pol4
   		}
 		}
@@ -740,10 +740,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_our_natural_choice }
 		completion_reward = {
-			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
-  		}
+		add_manpower = 55675
+			add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+
 		}
 	}
 
@@ -774,8 +776,8 @@ focus_tree = {
 		prerequisite = { focus = POL_establish_regiments }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4_2
+  			add_idea = POL_heartland_of_pol4_3	
   		}
 		}
 	}
@@ -791,8 +793,8 @@ focus_tree = {
 		prerequisite = { focus = POL_it_also_needs_support }
 		completion_reward = {
 			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
+  			remove_idea = POL_heartland_of_pol4_3
+  			add_idea = POL_heartland_of_pol4_4
   		}
 		}
 	}
@@ -806,10 +808,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_expand_breeding }
 		completion_reward = {
-			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
-  		}
+		    add_tech_bonus = {
+            name = "support_company_bonus"
+            bonus = 0.75
+            uses = 2
+            category = support_tech
+        }
+		    add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 565
+        }
 		}
 	}
 
