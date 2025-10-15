@@ -66,3 +66,26 @@ units = {
 		start_equipment_factor = 1
 	}
 }
+
+instant_effect = {
+	add_manpower = 100000
+
+	add_equipment_production = {
+		equipment = {
+			type = ww1_infantry_equipment_2
+			creator = "SAF"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SAF"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 30
+	}
+}
