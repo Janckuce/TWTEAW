@@ -386,7 +386,7 @@ focus_tree = {
 
 		focus = {
 		id = POL_industrial_heartbeat
-		icon = GFX_focus_por_must_know_polish
+		icon = GFX_focus_generic_modernize_industry
 		cost = 10
 		x = 18
 		y = 6
@@ -403,7 +403,7 @@ focus_tree = {
 
 		focus = {
 		id = POL_development_of_other_friend
-		icon = GFX_focus_por_must_know_polish
+		icon = GFX_focus_LAT_lightning_strike
 		cost = 10
 		x = 17
 		y = 7
@@ -431,7 +431,7 @@ focus_tree = {
 	}
 		focus = {
 		id = POL_radom_company_grow
-		icon = GFX_focus_por_must_know_polish
+		icon = GFX_focus_pol_radom_works
 		cost = 10
 		x = 17
 		y = 8
@@ -485,7 +485,7 @@ focus_tree = {
 
 		focus = {
 		id = POL_brest_litevks_development
-		icon = GFX_focus_por_must_know_polish
+		icon = GFX_focus_generic_military_industry
 		cost = 10
 		x = 19
 		y = 7
@@ -869,10 +869,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = { focus = POL_medicaments_for_army }
 		completion_reward = {
-			swap_ideas = {
-  			remove_idea = POL_economy_of_russia
-  			add_idea = POL_economy_of_russia2			
-  		}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				category = land_doctrine
+				uses = 4
+			}
 		}
 	}
 		focus = {
