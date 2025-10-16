@@ -1,0 +1,692 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = canadian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CAN
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 1200 }
+
+	default = no
+
+	focus = {
+		id = CAN_political1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 5
+		y = 0
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = CAN_eco_infrastructure_east
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = CAN_political1
+		}
+
+		completion_reward = {
+			464 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			465 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			468 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			276 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			682 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_dockyards_east
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = 2
+		y = 3
+
+		prerequisite = {
+			focus = CAN_eco_infrastructure_east
+		}
+
+		completion_reward = {
+			464 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+		    }
+			465 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_eco_infrastructure_west
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = CAN_political1
+		}
+
+		completion_reward = {
+			467 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			469 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			470 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			473 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_dockyards_east
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = -2
+		y = 3
+
+		prerequisite = {
+			focus = CAN_eco_infrastructure_east
+		}
+
+		completion_reward = {
+			473 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_american_manpower
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = CAN_eco_infrastructure_west
+		}	
+		prerequisite = {
+			focus = CAN_eco_infrastructure_east
+		}
+
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+
+		completion_reward = {
+			add_manpower = 25000
+		}
+	}
+
+
+	focus = {
+		id = CAN_factories1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = 5
+		y = 1
+
+		prerequisite = {
+			focus = CAN_political1
+		}
+
+		completion_reward = {
+			276 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_factories2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = 5
+		y = 2
+
+		prerequisite = {
+			focus = CAN_factories1
+		}
+
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_factories3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = 5
+		y = 3
+
+		prerequisite = {
+			focus = CAN_factories2
+		}
+
+		completion_reward = {
+			473 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_factories4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = 5
+		y = 4
+
+		prerequisite = {
+			focus = CAN_factories3
+		}
+
+		completion_reward = {
+			465 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+
+
+
+	focus = {
+		id = CAN_bar_natives_from_volounteering
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 8
+		y = 1
+
+		prerequisite = {
+			focus = CAN_political1
+		}
+		mutually_exclusive = {
+			focus = CAN_first_nations_people_in_army
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_native_repression
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 8
+		y = 2
+
+		prerequisite = {
+			focus = CAN_bar_natives_from_volounteering
+		}
+		mutually_exclusive = {
+			focus = CAN_question_of_first_nations
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = CAN_sieze_native_lands
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 8
+		y = 4
+
+		prerequisite = {
+			focus = CAN_native_repression
+		}
+
+		completion_reward = {
+			add_manpower = -10000
+		}
+	}
+
+	focus = {
+		id = CAN_first_nations_people_in_army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 11
+		y = 1
+
+		prerequisite = {
+			focus = CAN_political1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_reform_repressive_policies
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 11
+		y = 2
+
+		prerequisite = {
+			focus = CAN_first_nations_people_in_army
+		}
+
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = CAN_native_concessions
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 11
+		y = 3
+
+		prerequisite = {
+			focus = CAN_reform_repressive_policies
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_first_nations_rights
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 11
+		y = 4
+
+		prerequisite = {
+			focus = CAN_native_concessions
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_native_land_utilization
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 5
+		y = 5
+
+		prerequisite = {
+			focus = CAN_factories4
+		}
+
+		prerequisite = {
+			focus = CAN_first_nations_rights
+			focus = CAN_sieze_native_lands
+		}
+
+		completion_reward = {
+			682 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+			467 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+			469 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+			470 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_british_heritage
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 8
+		y = 5
+
+		prerequisite = {
+			focus = CAN_sieze_native_lands
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_army1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 16
+		y = 0
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_army1
+				bonus = 1
+				uses = 1
+				category = hospital_tech
+			}
+		}
+	}
+	
+
+	focus = {
+		id = CAN_army_left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 14
+		y = 1
+
+		prerequisite = {
+			focus = CAN_army1
+		}
+		
+		completion_reward = {
+			add_political_power = -100
+			remove_ideas = CAN_French_Minority
+		}
+	}
+
+	focus = {
+		id = CAN_army_left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 14
+		y = 2
+
+		prerequisite = {
+			focus = CAN_army_left1
+		}
+		prerequisite = {
+			focus = CAN_first_nations_people_in_army
+		}
+
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+
+	focus = {
+		id = CAN_army_left3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 14
+		y = 3
+
+		prerequisite = {
+			focus = CAN_army_left2
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_army_right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 18
+		y = 1
+
+		prerequisite = {
+			focus = CAN_army1
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = CAN_army_science
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 19
+		y = 2
+
+		prerequisite = {
+			focus = CAN_army_right1
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = CAN_army_right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 17
+		y = 2
+
+		prerequisite = {
+			focus = CAN_army_right1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_infantry_weapons
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 18
+		y = 3
+
+		prerequisite = {
+			focus = CAN_army_science
+		}
+
+		prerequisite = {
+			focus = CAN_army_right2
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_infantry_weapons
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_artillery_tech
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 20
+		y = 3
+
+		prerequisite = {
+			focus = CAN_army_science
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_army_science
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_lessons_of_1812
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 16
+		y = 3
+
+		prerequisite = {
+			focus = CAN_army_right2
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = CAN_a_new_heritage
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 15
+		y = 4
+
+		prerequisite = {
+			focus = CAN_army_left3
+		}
+		prerequisite = {
+			focus = CAN_lessons_of_1812
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}
