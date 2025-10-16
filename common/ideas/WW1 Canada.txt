@@ -5,6 +5,43 @@ ideas = {
 				conscription_factor = -0.3
 			}
 		}
+
+		CAN_Strong_Volunteer_Base = {
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		CAN_Native_Consessions = {
+			modifier = {
+				consumer_goods_factor = 0.1 
+				conscription_factor = 0.05
+			}
+		}
+
+		CAN_Native_Support = {
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+
+		CAN_Exclusive_Army_Enlistment = {
+			modifier = {
+				training_time_army_factor = -0.2
+			}
+		}
+
+		# CAN_American_Resource_Imports = {
+		# 	targeted_modifier = {
+		# 		tag = CAN
+		# 		trade_cost_for_target_factor = -0.75
+		# 	}
+		# }
 		
+		CAN_Man_And_Rifle = {
+			modifier = {
+				army_org_factor = 0.15
+			}
+		}
 	}
 }

@@ -158,21 +158,63 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_dockyards_east
+		id = CAN_north_ontario_resources
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 7.2
 		x = -2
 		y = 3
 
 		prerequisite = {
-			focus = CAN_eco_infrastructure_east
+			focus = CAN_eco_infrastructure_west
 		}
 
 		completion_reward = {
-			473 = {
+			682 = {
+				add_resource = { type = steel amount = 24 }
+				add_resource = { type = tungsten amount = 15 }
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_import_more_resources
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = -2
+		y = 4
+
+		prerequisite = {
+			focus = CAN_north_ontario_resources
+		}
+
+		completion_reward = {
+			USA = {
+			add_ideas = CAN_American_Resource_Imports
+		    }
+		}
+	}
+
+	focus = {
+		id = CAN_halifax_munitions_depot
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7.2
+		x = 2
+		y = 4
+
+		prerequisite = {
+			focus = CAN_dockyards_east
+		}
+
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+
+		completion_reward = {
+			464 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-				type = dockyard
+				type = arms_factory
 				level = 3
 				instant_build = yes
 				}
@@ -315,7 +357,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = CAN_Exclusive_Army_Enlistment
 		}
 	}
 
@@ -366,7 +408,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_manpower = 10000
 		}
 	}
 
@@ -398,7 +440,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = CAN_Native_Consessions
 		}
 	}
 
@@ -414,7 +456,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_stability = 0.1
+			add_ideas = CAN_Native_Support
 		}
 	}
 
@@ -516,8 +559,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -100
-			remove_ideas = CAN_French_Minority
+			add_ideas = CAN_Strong_Volunteer_Base
 		}
 	}
 
@@ -531,17 +573,21 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_army_left1
 		}
-		prerequisite = {
-			focus = CAN_first_nations_people_in_army
-		}
 
 		available = {
 			has_war = yes
-			date > 1914.7.28
+			date > 1915.1.1
+			has_idea = limited_conscription
+		}
+
+		bypass = {
+			has_war = yes
+			date > 1915.1.1
+			has_idea = extensive_conscription
 		}
 
 		completion_reward = {
-			add_manpower = 10000
+			add_ideas = extensive_conscription
 		}
 	}
 
@@ -557,7 +603,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = -100
+			remove_ideas = CAN_French_Minority
 		}
 	}
 
@@ -565,7 +612,7 @@ focus_tree = {
 		id = CAN_army_right1
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 18
+		x = 19
 		y = 1
 
 		prerequisite = {
@@ -581,7 +628,7 @@ focus_tree = {
 		id = CAN_army_science
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 19
+		x = 20
 		y = 2
 
 		prerequisite = {
@@ -597,7 +644,7 @@ focus_tree = {
 		id = CAN_army_right2
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 17
+		x = 18
 		y = 2
 
 		prerequisite = {
@@ -613,7 +660,7 @@ focus_tree = {
 		id = CAN_infantry_weapons
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 18
+		x = 19
 		y = 3
 
 		prerequisite = {
@@ -638,7 +685,7 @@ focus_tree = {
 		id = CAN_artillery_tech
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 20
+		x = 21
 		y = 3
 
 		prerequisite = {
@@ -659,11 +706,80 @@ focus_tree = {
 		id = CAN_lessons_of_1812
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 16
+		x = 17
 		y = 3
 
 		prerequisite = {
 			focus = CAN_army_right2
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.25
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_lessons_from_the_french
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 17
+		y = 4
+
+		prerequisite = {
+			focus = CAN_lessons_of_1812
+		}
+
+		available = {
+			has_war = yes
+			date > 1914.11.1
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.40
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_lessons_from_the_trench
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 17
+		y = 5
+
+		prerequisite = {
+			focus = CAN_lessons_from_the_french
+		}
+
+		available = {
+			date > 1915.2.1
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				cost_reduction = 0.60
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_a_new_heritage
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 11
+		y = 5
+
+		prerequisite = {
+			focus = CAN_first_nations_rights
 		}
 
 		completion_reward = {
@@ -672,21 +788,26 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_a_new_heritage
+		id = CAN_man_and_rifle
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		x = 15
-		y = 4
+		x = 14
+		y = 6
 
 		prerequisite = {
-			focus = CAN_army_left3
+			focus = CAN_a_new_heritage
 		}
+
 		prerequisite = {
-			focus = CAN_lessons_of_1812
+			focus = CAN_lessons_from_the_trench
+		}
+
+		available = {
+			date > 1915.4.1
 		}
 
 		completion_reward = {
-			
+			add_ideas = CAN_Man_And_Rifle
 		}
 	}
 }
