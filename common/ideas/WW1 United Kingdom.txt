@@ -397,13 +397,12 @@ ideas = {
 		}
 		
 		ENG_Democracy_Support = {
-			picture = GFX_generic_democratic_drift_bonus
+
 			modifier = {
 				democratic_drift = 0.02
 			}
 		}
 		ENG_Fallen_Government = {
-			picture = GFX_idea_generic_king_handled
 			modifier = {
 				democratic_drift = -0.02
 				neutrality_drift = 0.02
@@ -412,7 +411,7 @@ ideas = {
 			}
 		}
 		ENG_navy1 = {
-			picture = generic_coastal_navy
+			picture = eng_navy
 
 			modifier = {
 				navy_visibility = 0.15
@@ -421,7 +420,7 @@ ideas = {
 			}
 		}
 		ENG_Navy2 = {
-			picture = AUS_naval_efficiency_idea
+			picture = eng_navy
 			modifier = {
 				navy_visibility = 0.075
 				naval_speed_factor = -0.05
@@ -429,7 +428,7 @@ ideas = {
 			}
 		}
 		ENG_navy3 = {
-			picture = generic_navy_cruiser_warfare
+			picture = eng_navy
 			modifier = {
 				navy_visibility = 0.05
 				naval_speed_factor = -0.025
@@ -448,7 +447,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-            picture = NORDIC_navy_monarchist
+            picture = generic_navy_bonus
 
 			modifier = {
 			    political_power_gain = -0.3
@@ -462,7 +461,7 @@ ideas = {
 			}
 		}
 		ENG_Britannia_Rules_Waves = {
-			picture = liberty_ships_focus
+			picture = eng_navy
 
 			modifier = {
 				navy_visibility = -0.05
@@ -471,7 +470,7 @@ ideas = {
 			}
 		}
 		ENG_Air1 = {
-			picture = generic_air_fighter
+			picture = eng_air
 
 			modifier = {
 				air_mission_efficiency = -0.3
@@ -481,7 +480,7 @@ ideas = {
 			}
 		}
 		ENG_Air2 = {
-			picture = generic_anti_air
+			picture = eng_air
 
 			modifier = {
 				air_mission_efficiency = -0.2
@@ -491,7 +490,7 @@ ideas = {
 			}
 		}
 		ENG_Air3 = {
-			picture = generic_air_interception
+			picture = eng_air
 
 			modifier = {
 				air_mission_efficiency = -0.1
@@ -501,7 +500,7 @@ ideas = {
 			}
 		}
 		ENG_air_Britain_rules_air = {
-			picture = generic_aircraft_support
+			picture = eng_air
 
 			modifier = {
 				air_mission_efficiency = 0.15
@@ -510,7 +509,7 @@ ideas = {
 			}
 		}
 		ENG_Army1 = {
-			picture = generic_army_problems
+			picture = eng_army
 
 			modifier = {
 				army_org_factor = -0.2
@@ -519,7 +518,7 @@ ideas = {
 			}
 		}
 		ENG_Army2 = {
-			picture = chi_army_corruption
+			picture = eng_army
 
 			modifier = {
 				army_org_factor = -0.1
@@ -528,7 +527,7 @@ ideas = {
 			}
 		}
 		ENG_Army3 = {
-			picture = chi_army_corruption2
+			picture = eng_army
 
 			modifier = {
 				army_org_factor = -0.05
@@ -537,7 +536,7 @@ ideas = {
 			}
 		}
 		ENG_Modern_Army = {
-			picture = eng_special_air_service 
+			picture = eng_army
 
 			modifier = {
 				army_attack_factor = 0.05
@@ -548,7 +547,6 @@ ideas = {
 			}
 		}
 		ENG_Military_Investment = {
-			picture = GFX_idea_SOV_third_five_year_plan_military
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -559,7 +557,6 @@ ideas = {
 			}
 		}
 		ENG_Kings_Party = {
-			picture = GFX_idea_eng_the_kings_party
 			modifier = {
 				political_power_gain = 0.05
 				stability_factor = 0.05
@@ -567,15 +564,13 @@ ideas = {
 			}
 		}
 		ENG_Kings_Investments = {
-			picture = GFX_idea_RAJ_kingmaker
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		ENG_Kings_People = {
-			picture = GFX_brittish_stoicism
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
 			}
 		}
 		ENG_Indian_Funds = {
@@ -831,16 +826,6 @@ ideas = {
 				production_speed_arms_factory_factor = -0.5
 			}
 		}		
-		ENG_public_worried = {
-			picture = generic_disjointed_gov
-
-			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
-				political_power_gain = -0.1
-				consumer_goods_expected_value = 0.15
-				production_speed_dockyard_factor = -0.2
-			}
-		}
+		
 	}
 }

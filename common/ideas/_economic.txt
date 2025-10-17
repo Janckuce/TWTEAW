@@ -46,10 +46,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.7
-				production_speed_arms_factory_factor = -0.6
-				production_speed_industrial_complex_factor = -0.6
-				production_speed_dockyard_factor = -0.6
+				consumer_goods_expected_value = 0.3
+				production_speed_arms_factory_factor = -0.75
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_dockyard_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.4
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
@@ -59,34 +59,6 @@ ideas = {
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.5
 				agency_upgrade_time = 0.8
-			}
-			allowed_to_remove = {
-				always = no
-			}
-
-			cancel_if_invalid = no
-		}
-
-		disturbed_isolation = {
-
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_expected_value = 0.5
-				production_speed_arms_factory_factor = -0.4
-				production_speed_industrial_complex_factor = -0.4
-				production_speed_dockyard_factor = -0.3
-				conversion_cost_civ_to_mil_factor= 0.3
-				generate_wargoal_tension = 0.05
-				join_faction_tension = 0.10
-				lend_lease_tension = 0.05
-				send_volunteers_tension = 0.10
-				guarantee_tension = 0.25
-				max_fuel_factor = -0.3
-				fuel_gain_factor = -0.25
 			}
 			allowed_to_remove = {
 				always = no

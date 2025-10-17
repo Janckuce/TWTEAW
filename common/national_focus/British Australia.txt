@@ -24,7 +24,7 @@ focus_tree = {
 	focus = {
 		id = AST_Status_Of_Nation
 		icon = GFX_focus_ast_our_nation
-		cost = 7.2
+		cost = 10
 		x = 5
 		y = 0
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -34,6 +34,12 @@ focus_tree = {
 
 			activate_mission = AST_Better_Streets
 			activate_mission = AST_Better_Land_Power
+		add_state_core = 723 
+        add_state_core = 284
+		add_state_core = 726
+        annex_country = {
+            target = NZL  # Tag of the country you want to annex
+        }
 		}
 	}
 	focus = {
@@ -548,32 +554,6 @@ focus_tree = {
 			else = {
 				complete_national_focus = AST_Liberal_Victory
 			}
-		}
-	}
-	focus = {
-		id = AST_referendum
-		icon = GFX_focus_generic_annex_country_2
-		cost = 2.9
-		available = {
-			date > 1913.1.1
-			NZL = {
-				is_ai = yes
-			}
-		}
-		relative_position_id = AST_Hold_Elections
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = AST_Hold_Elections
-		}
-		completion_reward = {
-		add_state_core = 723 
-        add_state_core = 284
-		add_state_core = 726
-        annex_country = {
-            target = NZL  # Tag of the country you want to annex
-        }
 		}
 	}
 	focus = {
