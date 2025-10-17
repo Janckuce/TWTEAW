@@ -7,9 +7,10 @@
 		available = {
 			threat = 0.1
 		}
-		x = 1
+		x = 0
 		y = 0
 		completion_reward = { 
+			add_dynamic_modifier = { modifier = ENG_funding_into_Military }
 			ENG = {
 				add_war_support = 0.05
 			}
@@ -259,52 +260,6 @@
 		}
 	}
 	shared_focus = {
-		id = ENG_Develop_France
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_Interfere_In_Agadir
-		cost = 7.2
-		x = -2
-		y = 2
-		prerequisite = {
-			focus = ENG_government_reform
-		}
-		available = {
-			has_completed_focus = ENG_trade_with_france_focus
-		}
-		completion_reward = {
-			15 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-		 }
-	}
-	shared_focus = {
-		id = ENG_Develop_Russia
-		icon = GFX_focus_befriend_russia
-		relative_position_id = ENG_Interfere_In_Agadir
-		cost = 7.2
-		x = 2
-		y = 2
-		prerequisite = {
-			focus = ENG_reafirm_the_triple_entente
-		}
-		completion_reward = {
-			219 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-		 }
-	}
-	
-	shared_focus = {
 		id = ENG_naval_power_projection
 		icon = GFX_goal_generic_navy_cruiser
 		x = 16
@@ -314,17 +269,14 @@
 		bypass = {
 			#
 		}
-		#available = {
-		#	NOT = {
-		#		check_variable = {
-		#		ENG_funding = 2
-		#		}
-		#	}
-		#}
 		
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		
 		available_if_capitulated = yes
+
+		available = {
+			has_completed_focus = ENG_Interfere_In_Agadir
+		}
 		
 		completion_reward = {
 		    navy_experience = 25
@@ -334,9 +286,6 @@
 				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
-			}
-			add_to_variable = {
-				ENG_funding = 1
 			}
 		}
 	}
@@ -419,8 +368,15 @@
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		
 		available_if_capitulated = yes
+
+		mutually_exclusive = {
+			focus = ENG_the_race_shall_end
+		}
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 		    navy_experience = 125
 			
 			if = {
@@ -521,6 +477,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 		    if = {
 				limit = {
 					is_ai = no
@@ -615,6 +574,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			swap_ideas = {
 				remove_idea = ENG_navy1
 				add_idea = ENG_navy2
@@ -645,6 +607,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			if = {
 				limit = {
 					has_tech = marines
@@ -730,6 +695,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			if = {
 				limit = {
 					has_idea = ENG_navy3
@@ -768,6 +736,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 		    if = {
 				limit = {
 					has_idea = ENG_navy3
@@ -788,24 +759,18 @@
 		icon = GFX_focus_chi_british_cooperation
 		relative_position_id = ENG_naval_power_projection
 		prerequisite = {
-			focus = ENG_improve_the_destroyers
-		}
-		prerequisite = {
-			focus = ENG_HMS_Agincourt
+			focus = ENG_naval_power_projection
 		}
 		x = -2
-		y = 4
+		y = 1
 		cost = 10
 
 		bypass = {
 			#
 		}
-		available = {
-		    NOT = {
-				check_variable = {
-					ENG_Specialised = 1
-				}
-			}
+
+		mutually_exclusive = {
+			focus = ENG_expand_naval_facilities
 		}
 		
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
@@ -813,8 +778,12 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_to_variable = {
-				ENG_Specialised = 1
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = -0.1 tooltip = consumer_goods_expected_value_tt }
+			}
+			add_timed_idea = {
+				idea = ENG_public_worried
+				days = 120
 			}
 		    remove_ideas = ENG_naval_arms_race
 		}
@@ -830,7 +799,7 @@
 		prerequisite = {
 			focus = ENG_HMS_Agincourt
 		}
-		x = 2
+		x = 0
 		y = 4
 		cost = 10
 
@@ -838,11 +807,6 @@
 			#
 		}
 		available = {
-			NOT = {
-				check_variable = {
-					ENG_Specialised = 1
-				}
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
@@ -850,11 +814,11 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_to_variable = {
-				ENG_Specialised = 1
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.03 tooltip = consumer_goods_expected_value_tt }
 			}
 			add_ideas = ENG_Britannia_Rules_Waves
-		    swap_ideas = {
+			swap_ideas = {
 				remove_idea = ENG_naval_arms_race
 				add_idea = ENG_naval_arms_race_expanded
 			}
@@ -864,49 +828,20 @@
 		id = ENG_War_With_Germany
 		icon = GFX_focus_ger_return_of_the_kaiser
 		cost = 10
-		x = 16
-		y = 6
+		x = 22
+		y = 5
 		available = {
 			has_war_with = GER
+		}
+		prerequisite = {
+			focus = ENG_the_race_will_expand
+			focus = ENG_air_Britain_rules_air
+			focus = ENG_Army_Britain_rules_army
 		}
 		completion_reward = {
 			add_ideas = limited_conscription
-			add_ideas = ENG_Underequipped_Military
 			remove_ideas = ENG_volunteer_only_army
 		 }
-	}
-	shared_focus = {
-		id = ENG_Send_Equipment_To_Frontline
-		icon = GFX_focus_BRA_reach_out_to_military_dem
-		cost = 10
-		prerequisite = {
-			focus = ENG_War_With_Germany
-		}
-		x = 16
-		y = 7
-		available = {
-			has_war_with = GER
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_Underequipped_Military
-				add_idea = ENG_Send_Equipment_To_Frontline
-			}
-		}
-	}
-	shared_focus = {
-		id = ENG_Prepared_Military
-		icon = GFX_focus_PER_march_to_nile
-		cost = 10
-		prerequisite = {
-			focus = ENG_Send_Equipment_To_Frontline
-		}
-		relative_position_id = ENG_War_With_Germany
-		x = 0
-		y = 2
-		completion_reward = { 
-			remove_ideas = ENG_Send_Equipment_To_Frontline
-		}
 	}
 	
 	shared_focus = {
@@ -916,8 +851,8 @@
 		prerequisite = {
 			focus = ENG_War_With_Germany
 		}
-		x = 2
-		y = 1
+		x = 1
+		y = 2
 		cost = 5.8
 
 		bypass = {
@@ -947,8 +882,8 @@
 		prerequisite = {
 		    focus = ENG_War_With_Germany
 		}
-		x = -2
-		y = 1
+		x = -1
+		y = 2
 		cost = 5.8
 
 		bypass = {
@@ -976,10 +911,10 @@
 		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
 		relative_position_id = ENG_War_With_Germany
 		prerequisite = {
-			focus = ENG_Send_Equipment_To_Frontline
+			focus = ENG_War_With_Germany
 		}
 		x = -2
-		y = 2
+		y = 1
 		cost = 10
 
 		bypass = {
@@ -1004,10 +939,10 @@
 		icon = GFX_focus_befriend_france
 		relative_position_id = ENG_War_With_Germany 
 		prerequisite = {
-			focus = ENG_Send_Equipment_To_Frontline
+			focus = ENG_War_With_Germany
 		}
 		x = 2
-		y = 2
+		y = 1
 		cost = 7.2
 
 		bypass = {
@@ -1037,22 +972,18 @@
 		id = ENG_Air
 		icon = GFX_focus_generic_air_bases
 		cost = 5.8
-		x = 24
+		x = 20
 		y = 0
-		#available = {
-		#	NOT = {
-		#		check_variable = {
-		#		ENG_funding = 2
-		#		}
-		#	}
-		#}
+		available = {
+			has_completed_focus = ENG_Interfere_In_Agadir
+		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			swap_ideas = {
 				remove_idea = ENG_Air1
 				add_idea = ENG_Air2
-			}
-			add_to_variable = {
-				ENG_funding = 1
 			}
 		}
 	}
@@ -1067,7 +998,9 @@
 		x = -2
 		y = 1
 		cost = 5.8
-
+		prerequisite = {
+			focus = ENG_naval_power_projection
+		}
 		bypass = {
 			#
 		}
@@ -1080,6 +1013,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 		    if = {
 				limit = {
 					is_ai = no
@@ -1155,31 +1091,92 @@
 		id = ENG_air_research_1
 		icon = GFX_focus_generic_air_bases
 		cost = 10
-		x = 26
+		x = 3
 		y = 1
 		prerequisite = {
 			focus = ENG_Air
 		}
+		relative_position_id = ENG_Air
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			add_tech_bonus = {
 				name = ENG_air_research_1
-				bonus = 1
-				uses = 3
+				bonus = 0.5
+				uses = 2
 				category = light_air
 			}
 		}
 	}
+
+	shared_focus = {
+		id = ENG_air_research_2
+		icon = GFX_focus_generic_air_bases
+		cost = 10
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = ENG_air_research_1
+
+		}
+		prerequisite = {
+			focus = ENG_Army_research
+		}
+		relative_position_id = ENG_Air
+		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
+			add_tech_bonus = {
+				name = ENG_CAS_1
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	shared_focus = {
+		id = ENG_air_research_3
+		icon = GFX_focus_generic_air_bases
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = ENG_Air
+		}
+		prerequisite = {
+			focus = ENG_HMS_Erin
+		}
+		relative_position_id = ENG_Air
+		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
+			add_tech_bonus = {
+				name = ENG_air_research_1
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+	
 	shared_focus = {
 		id = ENG_Air2
 		icon = GFX_focus_generic_air_bases
 		cost = 5.8
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = ENG_Air
 		prerequisite = {
 			focus = ENG_Air
 		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			swap_ideas = {
 				remove_idea = ENG_Air2
 				add_idea = ENG_Air3
@@ -1190,13 +1187,16 @@
 		id = ENG_Air3
 		icon = GFX_focus_generic_air_bases
 		cost = 5.8
-		x = 0
+		x = 1
 		y = 2
 		relative_position_id = ENG_Air
 		prerequisite = {
 			focus = ENG_Air2
 		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			remove_ideas = ENG_Air3
 		}
 	}
@@ -1204,22 +1204,20 @@
 		id = ENG_air_Britain_rules_air
 		icon = GFX_focus_generic_air_bases
 		cost = 10
-		x = 0
+		x = 2
 		y = 3
 		relative_position_id = ENG_Air
 		prerequisite = {
 			focus = ENG_Air3
 		}
+		prerequisite = {
+			focus = ENG_air_research_2
+		}
 		available = {
-			NOT = {
-				check_variable = {
-					ENG_Specialised = 1
-				}
-			}
 		}
 		completion_reward = {
-			add_to_variable = {
-				ENG_Specialised = 1
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
 			}
 			add_ideas = ENG_air_Britain_rules_air
 		}
@@ -1228,22 +1226,18 @@
 		id = ENG_Army
 		icon = GFX_focus_generic_military_mission
 		cost = 5.8
-		x = 32
+		x = 28
 		y = 0
-		#available = {
-		#	NOT = {
-		#		check_variable = {
-		#		ENG_funding = 2
-		#		}
-		#	}
-		#}
+		available = {
+			has_completed_focus = ENG_Interfere_In_Agadir
+		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			swap_ideas = {
 				remove_idea = ENG_Army1
 				add_idea = ENG_Army2
-			}
-			add_to_variable = {
-				ENG_funding = 1
 			}
 		}
 	}
@@ -1261,11 +1255,42 @@
 		available = {
 		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			add_tech_bonus = {
 				name = ENG_artillery_research_1
 				bonus = 1
 				uses = 2
 				category = infantry_tech
+			}
+		}
+	}
+
+	shared_focus = {
+		id = ENG_Army_research_2
+		icon = GFX_focus_generic_military_mission
+		cost = 5.8
+		x = -4
+		y = 3
+		prerequisite = {
+			focus = ENG_doctrine_effort2
+		}
+		prerequisite = {
+			focus = ENG_air_research_1
+		}
+		relative_position_id = ENG_Army
+		available = {
+		}
+		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
+			add_tech_bonus = {
+				name = ENG_artillery_research_1
+				bonus = 1
+				uses = 1
+				category = cat_anti_air
 			}
 		}
 	}
@@ -1293,6 +1318,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 		    add_doctrine_cost_reduction = {
 				name = ENG_land_doc_bonus_2
 				cost_reduction = 0.5
@@ -1324,6 +1352,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 		    add_tech_bonus = {
 				name = ENG_new_warfare
 				bonus = 1.5
@@ -1344,6 +1375,9 @@
 			focus = ENG_Army
 		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			swap_ideas = {
 				remove_idea = ENG_Army2
 				add_idea = ENG_Army3
@@ -1361,6 +1395,9 @@
 			focus = ENG_Army2
 		}
 		completion_reward = {
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			}
 			remove_ideas = ENG_Army3
 		}
 	}
@@ -1375,15 +1412,10 @@
 			focus = ENG_Army3
 		}
 		available = {
-			NOT = {
-				check_variable = {
-					ENG_Specialised = 1
-				}
-			}
 		}
 		completion_reward = {
-			add_to_variable = {
-				ENG_Specialised = 1
+			ENG = {
+				add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
 			}
 			add_ideas = ENG_Modern_Army
 		}
