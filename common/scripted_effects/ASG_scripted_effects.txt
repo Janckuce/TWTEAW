@@ -4762,6 +4762,9 @@ ASG_civilian_add_point_to_line = {
 		GLOBAL.ASG_civilian_last_y_position_grey = GLOBAL.ASG_civilian_y_position_grey
 	}
 	set_variable = {
+		GLOBAL.ASG_civilian_last_y_position_black = GLOBAL.ASG_civilian_y_position_black
+	}
+	set_variable = {
 		GLOBAL.ASG_civilian_last_y_position_light_white = GLOBAL.ASG_civilian_y_position_light_white
 	}
 	set_temp_variable = {
@@ -4802,22 +4805,22 @@ ASG_civilian_add_point_to_line = {
 		GLOBAL.ASG_civilian_y_position_red = ASG_civilian_red_pixel_value
 	}
 	set_temp_variable = {
-		ASG_civilian_grey_pixel_value = GER.ASG_civilian_score
+		ASG_civilian_black_pixel_value = GER.ASG_civilian_score
 	}
 	multiply_temp_variable = {
-		ASG_civilian_grey_pixel_value = 0.6
+		ASG_civilian_black_pixel_value = 0.6
 	}
 	add_to_temp_variable = {
-		ASG_civilian_grey_pixel_value = 4
+		ASG_civilian_black_pixel_value = 4
 	}
-	round_temp_variable = ASG_civilian_grey_pixel_value
+	round_temp_variable = ASG_civilian_black_pixel_value
 	clamp_variable = {
-		var = ASG_civilian_grey_pixel_value
+		var = ASG_civilian_black_pixel_value
 		min = 4
 		max = 394
 	}
 	set_variable = {
-		GLOBAL.ASG_civilian_y_position_grey = ASG_civilian_grey_pixel_value
+		GLOBAL.ASG_civilian_y_position_black = ASG_civilian_black_pixel_value
 	}
 	
 	set_temp_variable = {
@@ -4935,8 +4938,8 @@ ASG_civilian_add_point_to_line = {
 	log = "ASG : USA.ASG_civilian_score = [?USA.ASG_civilian_score]    USA Y Value = [?GLOBAL.ASG_civilian_y_position_blue]        "
 	log = "ASG : JAP.ASG_civilian_score = [?JAP.ASG_civilian_score]    JAP Y Value = [?GLOBAL.ASG_civilian_y_position_light_white] "
 	log = "ASG : ENG.ASG_civilian_score = [?ENG.ASG_civilian_score]    ENG Y Value = [?GLOBAL.ASG_civilian_y_position_light_Red]   "
-	log = "ASG : GER.ASG_civilian_score = [?GER.ASG_civilian_score]    GER Y Value = [?GLOBAL.ASG_civilian_y_position_grey]        "
-	log = "ASG : AUS.ASG_civilian_score = [?AUS.ASG_civilian_score]    AUS Y Value = [?GLOBAL.ASG_civilian_y_position_light_yellow] "
+	log = "ASG : GER.ASG_civilian_score = [?GER.ASG_civilian_score]    GER Y Value = [?GLOBAL.ASG_civilian_y_position_black]        "
+	log = "ASG : AUS.ASG_civilian_score = [?AUS.ASG_civilian_score]    AUS Y Value = [?GLOBAL.ASG_civilian_y_position_grey] "
 	log = "ASG : END OF CIVILIAN GRAPH UPDATE"
 	# The y position offset is the inverse of the y position
 	set_temp_variable = {
@@ -4956,6 +4959,9 @@ ASG_civilian_add_point_to_line = {
 	}
 	set_temp_variable = {
 		civilian_offset_grey = GLOBAL.ASG_civilian_last_y_position_grey
+	}
+	set_temp_variable = {
+		civilian_offset_black = GLOBAL.ASG_civilian_last_y_position_black
 	}
 	set_temp_variable = {
 		civilian_offset_light_white = GLOBAL.ASG_civilian_last_y_position_light_white
@@ -4984,6 +4990,9 @@ ASG_civilian_add_point_to_line = {
 	multiply_temp_variable = {
 		civilian_offset_grey = -1
 	}
+	multiply_temp_variable = {
+		civilian_offset_black = -1
+	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_civilian_graph_offsets_green = civilian_offset_green
 	}
@@ -5004,6 +5013,9 @@ ASG_civilian_add_point_to_line = {
 	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_civilian_graph_offsets_grey = civilian_offset_grey
+	}
+	add_to_array = {
+		GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black = civilian_offset_black
 	}
 	# The 'slope' here is simply the difference between the current y value and the last one, divided by 2 plus 50
 	# These last two changes are needed for the shader
@@ -5112,6 +5124,21 @@ ASG_civilian_add_point_to_line = {
 	add_to_array = {
 		GLOBAL.ASG_civilian_graph_slopes_grey = civilian_diff_grey
 	}
+	set_temp_variable = {
+		civilian_diff_black = GLOBAL.ASG_civilian_y_position_black
+	}
+	subtract_from_temp_variable = {
+		civilian_diff_black = GLOBAL.ASG_civilian_last_y_position_black
+	}
+	divide_temp_variable = {
+		civilian_diff_black = 2
+	}
+	add_to_temp_variable = {
+		civilian_diff_black = 50
+	}
+	add_to_array = {
+		GLOBAL.ASG_civilian_graph_slopes_black = civilian_diff_black
+	}
 }
 
 ASG_casualties_add_point_to_line = {
@@ -5135,6 +5162,9 @@ ASG_casualties_add_point_to_line = {
 	}
 	set_variable = {
 		GLOBAL.ASG_casualties_last_y_position_grey = GLOBAL.ASG_casualties_y_position_grey
+	}
+	set_variable = {
+		GLOBAL.ASG_casualties_last_y_position_black = GLOBAL.ASG_casualties_y_position_black
 	}
 	set_variable = {
 		GLOBAL.ASG_casualties_last_y_position_light_white = GLOBAL.ASG_casualties_y_position_light_white
@@ -5190,28 +5220,28 @@ ASG_casualties_add_point_to_line = {
 		}
 	}
 	set_temp_variable = {
-		ASG_casualties_grey_pixel_value = GER.ASG_casualties_score
+		ASG_casualties_black_pixel_value = GER.ASG_casualties_score
 	}
 	multiply_temp_variable = {
-		ASG_casualties_grey_pixel_value = 0.03
+		ASG_casualties_black_pixel_value = 0.03
 	}
 	add_to_temp_variable = {
-		ASG_casualties_grey_pixel_value = 4
+		ASG_casualties_black_pixel_value = 4
 	}
-	round_temp_variable = ASG_casualties_grey_pixel_value
+	round_temp_variable = ASG_casualties_black_pixel_value
 	clamp_variable = {
-		var = ASG_casualties_grey_pixel_value
+		var = ASG_casualties_black_pixel_value
 		min = 4
 		max = 394
 	}
 	if = {
 		limit = {
 			check_variable = {
-				GLOBAL.ASG_casualties_y_position_grey < ASG_casualties_grey_pixel_value
+				GLOBAL.ASG_casualties_y_position_black < ASG_casualties_black_pixel_value
 			}
 		}
 		set_variable = {
-			GLOBAL.ASG_casualties_y_position_grey = ASG_casualties_grey_pixel_value
+			GLOBAL.ASG_casualties_y_position_black = ASG_casualties_black_pixel_value
 		}
 	}
 	
@@ -5372,8 +5402,8 @@ ASG_casualties_add_point_to_line = {
 	log = "ASG : USA.ASG_casualties_score = [?USA.ASG_casualties_score]    USA Y Value = [?GLOBAL.ASG_casualties_y_position_blue]        "
 	log = "ASG : JAP.ASG_casualties_score = [?JAP.ASG_casualties_score]    JAP Y Value = [?GLOBAL.ASG_casualties_y_position_light_white] "
 	log = "ASG : ENG.ASG_casualties_score = [?ENG.ASG_casualties_score]    ENG Y Value = [?GLOBAL.ASG_casualties_y_position_light_Red]   "
-	log = "ASG : GER.ASG_casualties_score = [?GER.ASG_casualties_score]    GER Y Value = [?GLOBAL.ASG_casualties_y_position_grey]        "
-	log = "ASG : AUS.ASG_casualties_score = [?AUS.ASG_casualties_score]    AUS Y Value = [?GLOBAL.ASG_casualties_y_position_light_yellow] "
+	log = "ASG : GER.ASG_casualties_score = [?GER.ASG_casualties_score]    GER Y Value = [?GLOBAL.ASG_casualties_y_position_black]        "
+	log = "ASG : AUS.ASG_casualties_score = [?AUS.ASG_casualties_score]    AUS Y Value = [?GLOBAL.ASG_casualties_y_position_grey] "
 	log = "ASG : END OF casualties GRAPH UPDATE"
 	# The y position offset is the inverse of the y position
 	set_temp_variable = {
@@ -5393,6 +5423,9 @@ ASG_casualties_add_point_to_line = {
 	}
 	set_temp_variable = {
 		casualties_offset_grey = GLOBAL.ASG_casualties_last_y_position_grey
+	}
+	set_temp_variable = {
+		casualties_offset_black = GLOBAL.ASG_casualties_last_y_position_black
 	}
 	set_temp_variable = {
 		casualties_offset_light_white = GLOBAL.ASG_casualties_last_y_position_light_white
@@ -5421,6 +5454,9 @@ ASG_casualties_add_point_to_line = {
 	multiply_temp_variable = {
 		casualties_offset_grey = -1
 	}
+	multiply_temp_variable = {
+		casualties_offset_black = -1
+	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_casualties_graph_offsets_green = casualties_offset_green
 	}
@@ -5441,6 +5477,9 @@ ASG_casualties_add_point_to_line = {
 	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_casualties_graph_offsets_grey = casualties_offset_grey
+	}
+	add_to_array = {
+		GLOBAL.ASG_SAMPLE_casualties_graph_offsets_black = casualties_offset_black
 	}
 	# The 'slope' here is simply the difference between the current y value and the last one, divided by 2 plus 50
 	# These last two changes are needed for the shader
@@ -5547,7 +5586,22 @@ ASG_casualties_add_point_to_line = {
 		casualties_diff_grey = 50
 	}
 	add_to_array = {
-		GLOBAL.ASG_casualties_graph_slopes_grey = casualties_diff_grey
+		GLOBAL.ASG_casualties_graph_slopes_black = casualties_diff_grey
+	}
+	set_temp_variable = {
+		casualties_diff_black = GLOBAL.ASG_casualties_y_position_black
+	}
+	subtract_from_temp_variable = {
+		casualties_diff_black = GLOBAL.ASG_casualties_last_y_position_black
+	}
+	divide_temp_variable = {
+		casualties_diff_black = 2
+	}
+	add_to_temp_variable = {
+		casualties_diff_black = 50
+	}
+	add_to_array = {
+		GLOBAL.ASG_casualties_graph_slopes_black = casualties_diff_black
 	}
 }
 
@@ -5572,6 +5626,9 @@ ASG_manpower_add_point_to_line = {
 	}
 	set_variable = {
 		GLOBAL.ASG_manpower_last_y_position_grey = GLOBAL.ASG_manpower_y_position_grey
+	}
+	set_variable = {
+		GLOBAL.ASG_manpower_last_y_position_black = GLOBAL.ASG_manpower_y_position_black
 	}
 	set_variable = {
 		GLOBAL.ASG_manpower_last_y_position_light_white = GLOBAL.ASG_manpower_y_position_light_white
@@ -5613,22 +5670,22 @@ ASG_manpower_add_point_to_line = {
 		GLOBAL.ASG_manpower_y_position_red = ASG_manpower_red_pixel_value
 	}
 	set_temp_variable = {
-		ASG_manpower_grey_pixel_value = GER.ASG_manpower_score
+		ASG_manpower_black_pixel_value = GER.ASG_manpower_score
 	}
 	divide_temp_variable = {
-		ASG_manpower_grey_pixel_value = 25
+		ASG_manpower_black_pixel_value = 25
 	}
 	add_to_temp_variable = {
-		ASG_manpower_grey_pixel_value = 4
+		ASG_manpower_black_pixel_value = 4
 	}
-	round_temp_variable = ASG_manpower_grey_pixel_value
+	round_temp_variable = ASG_manpower_black_pixel_value
 	clamp_variable = {
-		var = ASG_manpower_grey_pixel_value
+		var = ASG_manpower_black_pixel_value
 		min = 4
 		max = 394
 	}
 	set_variable = {
-		GLOBAL.ASG_manpower_y_position_grey = ASG_manpower_grey_pixel_value
+		GLOBAL.ASG_manpower_y_position_black = ASG_manpower_black_pixel_value
 	}
 	set_temp_variable = {
 		ASG_manpower_grey_pixel_value = AUS.ASG_manpower_score
@@ -5745,8 +5802,8 @@ ASG_manpower_add_point_to_line = {
 	log = "ASG : USA.ASG_manpower_score = [?USA.ASG_manpower_score]    USA Y Value = [?GLOBAL.ASG_manpower_y_position_blue]        "
 	log = "ASG : JAP.ASG_manpower_score = [?JAP.ASG_manpower_score]    JAP Y Value = [?GLOBAL.ASG_manpower_y_position_light_white] "
 	log = "ASG : ENG.ASG_manpower_score = [?ENG.ASG_manpower_score]    ENG Y Value = [?GLOBAL.ASG_manpower_y_position_light_Red]   "
-	log = "ASG : GER.ASG_manpower_score = [?GER.ASG_manpower_score]    GER Y Value = [?GLOBAL.ASG_manpower_y_position_grey]        "
-	log = "ASG : AUS.ASG_manpower_score = [?AUS.ASG_manpower_score]    AUS Y Value = [?GLOBAL.ASG_manpower_y_position_light_yellow] "
+	log = "ASG : GER.ASG_manpower_score = [?GER.ASG_manpower_score]    GER Y Value = [?GLOBAL.ASG_manpower_y_position_black]        "
+	log = "ASG : AUS.ASG_manpower_score = [?AUS.ASG_manpower_score]    AUS Y Value = [?GLOBAL.ASG_manpower_y_position_grey] "
 	log = "ASG : END OF manpower GRAPH UPDATE"
 	# The y position offset is the inverse of the y position
 	set_temp_variable = {
@@ -5766,6 +5823,9 @@ ASG_manpower_add_point_to_line = {
 	}
 	set_temp_variable = {
 		manpower_offset_grey = GLOBAL.ASG_manpower_last_y_position_grey
+	}
+	set_temp_variable = {
+		manpower_offset_black = GLOBAL.ASG_manpower_last_y_position_black
 	}
 	set_temp_variable = {
 		manpower_offset_light_white = GLOBAL.ASG_manpower_last_y_position_light_white
@@ -5794,6 +5854,9 @@ ASG_manpower_add_point_to_line = {
 	multiply_temp_variable = {
 		manpower_offset_grey = -1
 	}
+	multiply_temp_variable = {
+		manpower_offset_black = -1
+	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_manpower_graph_offsets_green = manpower_offset_green
 	}
@@ -5814,6 +5877,9 @@ ASG_manpower_add_point_to_line = {
 	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_manpower_graph_offsets_grey = manpower_offset_grey
+	}
+	add_to_array = {
+		GLOBAL.ASG_SAMPLE_manpower_graph_offsets_black = manpower_offset_black
 	}
 	# The 'slope' here is simply the difference between the current y value and the last one, divided by 2 plus 50
 	# These last two changes are needed for the shader
@@ -5922,6 +5988,21 @@ ASG_manpower_add_point_to_line = {
 	add_to_array = {
 		GLOBAL.ASG_manpower_graph_slopes_grey = manpower_diff_grey
 	}
+	set_temp_variable = {
+		manpower_diff_black = GLOBAL.ASG_manpower_y_position_black
+	}
+	subtract_from_temp_variable = {
+		manpower_diff_black = GLOBAL.ASG_manpower_last_y_position_black
+	}
+	divide_temp_variable = {
+		manpower_diff_black = 2
+	}
+	add_to_temp_variable = {
+		manpower_diff_black = 50
+	}
+	add_to_array = {
+		GLOBAL.ASG_manpower_graph_slopes_black = manpower_diff_black
+	}
 }
 
 ASG_equipment_add_point_to_line = {
@@ -5945,6 +6026,9 @@ ASG_equipment_add_point_to_line = {
 	}
 	set_variable = {
 		GLOBAL.ASG_equipment_last_y_position_grey = GLOBAL.ASG_equipment_y_position_grey
+	}
+	set_variable = {
+		GLOBAL.ASG_equipment_last_y_position_black = GLOBAL.ASG_equipment_y_position_black
 	}
 	set_variable = {
 		GLOBAL.ASG_equipment_last_y_position_light_white = GLOBAL.ASG_equipment_y_position_light_white
@@ -5986,22 +6070,22 @@ ASG_equipment_add_point_to_line = {
 		GLOBAL.ASG_equipment_y_position_red = ASG_equipment_red_pixel_value
 	}
 	set_temp_variable = {
-		ASG_equipment_grey_pixel_value = GER.ASG_equipment_score
+		ASG_equipment_black_pixel_value = GER.ASG_equipment_score
 	}
 	multiply_temp_variable = {
-		ASG_equipment_grey_pixel_value = 3
+		ASG_equipment_black_pixel_value = 3
 	}
 	add_to_temp_variable = {
-		ASG_equipment_grey_pixel_value = 0
+		ASG_equipment_black_pixel_value = 0
 	}
-	round_temp_variable = ASG_equipment_grey_pixel_value
+	round_temp_variable = ASG_equipment_black_pixel_value
 	clamp_variable = {
-		var = ASG_equipment_grey_pixel_value
+		var = ASG_equipment_black_pixel_value
 		min = 4
 		max = 394
 	}
 	set_variable = {
-		GLOBAL.ASG_equipment_y_position_grey = ASG_equipment_grey_pixel_value
+		GLOBAL.ASG_equipment_y_position_black = ASG_equipment_black_pixel_value
 	}
 	
 	set_temp_variable = {
@@ -6119,8 +6203,8 @@ ASG_equipment_add_point_to_line = {
 	log = "ASG : USA.ASG_equipment_score = [?USA.ASG_equipment_score]    USA Y Value = [?GLOBAL.ASG_equipment_y_position_blue]        "
 	log = "ASG : JAP.ASG_equipment_score = [?JAP.ASG_equipment_score]    JAP Y Value = [?GLOBAL.ASG_equipment_y_position_light_white] "
 	log = "ASG : ENG.ASG_equipment_score = [?ENG.ASG_equipment_score]    ENG Y Value = [?GLOBAL.ASG_equipment_y_position_light_Red]   "
-	log = "ASG : GER.ASG_equipment_score = [?GER.ASG_equipment_score]    GER Y Value = [?GLOBAL.ASG_equipment_y_position_grey]        "
-	log = "ASG : AUS.ASG_equipment_score = [?AUS.ASG_equipment_score]    AUS Y Value = [?GLOBAL.ASG_equipment_y_position_light_yellow] "
+	log = "ASG : GER.ASG_equipment_score = [?GER.ASG_equipment_score]    GER Y Value = [?GLOBAL.ASG_equipment_y_position_black]        "
+	log = "ASG : AUS.ASG_equipment_score = [?AUS.ASG_equipment_score]    AUS Y Value = [?GLOBAL.ASG_equipment_y_position_grey] "
 	log = "ASG : END OF equipment GRAPH UPDATE"
 	# The y position offset is the inverse of the y position
 	set_temp_variable = {
@@ -6140,6 +6224,9 @@ ASG_equipment_add_point_to_line = {
 	}
 	set_temp_variable = {
 		equipment_offset_grey = GLOBAL.ASG_equipment_last_y_position_grey
+	}
+	set_temp_variable = {
+		equipment_offset_black = GLOBAL.ASG_equipment_last_y_position_black
 	}
 	set_temp_variable = {
 		equipment_offset_light_white = GLOBAL.ASG_equipment_last_y_position_light_white
@@ -6168,6 +6255,9 @@ ASG_equipment_add_point_to_line = {
 	multiply_temp_variable = {
 		equipment_offset_grey = -1
 	}
+	multiply_temp_variable = {
+		equipment_offset_black = -1
+	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_equipment_graph_offsets_green = equipment_offset_green
 	}
@@ -6188,6 +6278,9 @@ ASG_equipment_add_point_to_line = {
 	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_equipment_graph_offsets_grey = equipment_offset_grey
+	}
+	add_to_array = {
+		GLOBAL.ASG_SAMPLE_equipment_graph_offsets_black = equipment_offset_black
 	}
 	# The 'slope' here is simply the difference between the current y value and the last one, divided by 2 plus 50
 	# These last two changes are needed for the shader
@@ -6296,6 +6389,21 @@ ASG_equipment_add_point_to_line = {
 	add_to_array = {
 		GLOBAL.ASG_equipment_graph_slopes_grey = equipment_diff_grey
 	}
+	set_temp_variable = {
+		equipment_diff_black = GLOBAL.ASG_equipment_y_position_black
+	}
+	subtract_from_temp_variable = {
+		equipment_diff_black = GLOBAL.ASG_equipment_last_y_position_black
+	}
+	divide_temp_variable = {
+		equipment_diff_black = 2
+	}
+	add_to_temp_variable = {
+		equipment_diff_black = 50
+	}
+	add_to_array = {
+		GLOBAL.ASG_equipment_graph_slopes_black = equipment_diff_black
+	}
 }
 
 ASG_military_add_point_to_line = {
@@ -6319,6 +6427,9 @@ ASG_military_add_point_to_line = {
 	}
 	set_variable = {
 		GLOBAL.ASG_military_last_y_position_grey = GLOBAL.ASG_military_y_position_grey
+	}
+	set_variable = {
+		GLOBAL.ASG_military_last_y_position_black = GLOBAL.ASG_military_y_position_black
 	}
 	set_variable = {
 		GLOBAL.ASG_military_last_y_position_light_white = GLOBAL.ASG_military_y_position_light_white
@@ -6360,22 +6471,22 @@ ASG_military_add_point_to_line = {
 		GLOBAL.ASG_military_y_position_red = ASG_military_red_pixel_value
 	}
 	set_temp_variable = {
-		ASG_military_grey_pixel_value = GER.ASG_industrial_score
+		ASG_military_black_pixel_value = GER.ASG_industrial_score
 	}
 	multiply_temp_variable = {
-		ASG_military_grey_pixel_value = 0.6
+		ASG_military_black_pixel_value = 0.6
 	}
 	add_to_temp_variable = {
-		ASG_military_grey_pixel_value = 4
+		ASG_military_black_pixel_value = 4
 	}
-	round_temp_variable = ASG_military_grey_pixel_value
+	round_temp_variable = ASG_military_black_pixel_value
 	clamp_variable = {
-		var = ASG_military_grey_pixel_value
+		var = ASG_military_black_pixel_value
 		min = 4
 		max = 394
 	}
 	set_variable = {
-		GLOBAL.ASG_military_y_position_grey = ASG_military_grey_pixel_value
+		GLOBAL.ASG_military_y_position_black = ASG_military_black_pixel_value
 	}
 	
 	set_temp_variable = {
@@ -6493,8 +6604,8 @@ ASG_military_add_point_to_line = {
 	log = "ASG : USA.ASG_industrial_score = [?USA.ASG_industrial_score]    USA Y Value = [?GLOBAL.ASG_military_y_position_blue]        "
 	log = "ASG : JAP.ASG_industrial_score = [?JAP.ASG_industrial_score]    JAP Y Value = [?GLOBAL.ASG_military_y_position_light_white] "
 	log = "ASG : ENG.ASG_industrial_score = [?ENG.ASG_industrial_score]    ENG Y Value = [?GLOBAL.ASG_military_y_position_light_Red]   "
-	log = "ASG : GER.ASG_industrial_score = [?GER.ASG_industrial_score]    GER Y Value = [?GLOBAL.ASG_military_y_position_grey]        "
-	log = "ASG : AUS.ASG_industrial_score = [?AUS.ASG_industrial_score]    AUS Y Value = [?GLOBAL.ASG_military_y_position_light_yellow] "
+	log = "ASG : GER.ASG_industrial_score = [?GER.ASG_industrial_score]    GER Y Value = [?GLOBAL.ASG_military_y_position_black]        "
+	log = "ASG : AUS.ASG_industrial_score = [?AUS.ASG_industrial_score]    AUS Y Value = [?GLOBAL.ASG_military_y_position_grey] "
 	log = "ASG : END OF MILITARY GRAPH UPDATE"
 	# The y position offset is the inverse of the y position
 	set_temp_variable = {
@@ -6514,6 +6625,9 @@ ASG_military_add_point_to_line = {
 	}
 	set_temp_variable = {
 		military_offset_grey = GLOBAL.ASG_military_last_y_position_grey
+	}
+	set_temp_variable = {
+		military_offset_black = GLOBAL.ASG_military_last_y_position_black
 	}
 	set_temp_variable = {
 		military_offset_light_white = GLOBAL.ASG_military_last_y_position_light_white
@@ -6542,6 +6656,9 @@ ASG_military_add_point_to_line = {
 	multiply_temp_variable = {
 		military_offset_grey = -1
 	}
+	multiply_temp_variable = {
+		military_offset_black = -1
+	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_military_graph_offsets_green = military_offset_green
 	}
@@ -6562,6 +6679,9 @@ ASG_military_add_point_to_line = {
 	}
 	add_to_array = {
 		GLOBAL.ASG_SAMPLE_military_graph_offsets_grey = military_offset_grey
+	}
+	add_to_array = {
+		GLOBAL.ASG_SAMPLE_military_graph_offsets_black = military_offset_black
 	}
 	# The 'slope' here is simply the difference between the current y value and the last one, divided by 2 plus 50
 	# These last two changes are needed for the shader
@@ -6668,7 +6788,22 @@ ASG_military_add_point_to_line = {
 		military_diff_grey = 50
 	}
 	add_to_array = {
-		GLOBAL.ASG_military_graph_slopes_grey = military_diff_grey
+		GLOBAL.ASG_military_graph_slopes_black = military_diff_black
+	}
+	set_temp_variable = {
+		military_diff_black = GLOBAL.ASG_military_y_position_black
+	}
+	subtract_from_temp_variable = {
+		military_diff_black = GLOBAL.ASG_military_last_y_position_black
+	}
+	divide_temp_variable = {
+		military_diff_black = 2
+	}
+	add_to_temp_variable = {
+		military_diff_black = 50
+	}
+	add_to_array = {
+		GLOBAL.ASG_military_graph_slopes_black = military_diff_black
 	}
 }
 
@@ -6932,6 +7067,43 @@ ASG_military_rescale_down = {
 			}
 			set_variable = {
 				GLOBAL.ASG_military_graph_slopes_grey^index = value_slope
+			}
+		}
+	}
+	for_each_loop = {
+		array = GLOBAL.ASG_SAMPLE_military_graph_offsets_black
+		set_temp_variable = {
+			value_slope = v
+		}
+		divide_temp_variable = {
+			value_slope = 2
+		}
+		set_variable = {
+			GLOBAL.ASG_SAMPLE_military_graph_offsets_black^i = value_slope
+		}
+		if = {
+			limit = {
+				check_variable = {
+					i > 0
+				}
+			}
+			set_temp_variable = {
+				index = i
+			}
+			subtract_from_temp_variable = {
+				index = 1
+			}
+			subtract_from_temp_variable = {
+				value_slope = GLOBAL.ASG_SAMPLE_military_graph_offsets_black^index
+			}
+			divide_temp_variable = {
+				value_slope = -2
+			}
+			add_to_temp_variable = {
+				value_slope = 50
+			}
+			set_variable = {
+				GLOBAL.ASG_military_graph_slopes_black^index = value_slope
 			}
 		}
 	}
@@ -7200,6 +7372,43 @@ ASG_military_rescale_up = {
 			}
 		}
 	}
+	for_each_loop = {
+		array = GLOBAL.ASG_SAMPLE_military_graph_offsets_black
+		set_temp_variable = {
+			value_slope = v
+		}
+		divide_temp_variable = {
+			value_slope = 0.5
+		}
+		set_variable = {
+			GLOBAL.ASG_SAMPLE_military_graph_offsets_black^i = value_slope
+		}
+		if = {
+			limit = {
+				check_variable = {
+					i > 0
+				}
+			}
+			set_temp_variable = {
+				index = i
+			}
+			subtract_from_temp_variable = {
+				index = 1
+			}
+			subtract_from_temp_variable = {
+				value_slope = GLOBAL.ASG_SAMPLE_military_graph_offsets_black^index
+			}
+			divide_temp_variable = {
+				value_slope = -2
+			}
+			add_to_temp_variable = {
+				value_slope = 50
+			}
+			set_variable = {
+				GLOBAL.ASG_military_graph_slopes_black^index = value_slope
+			}
+		}
+	}
 }
 
 ASG_civilian_rescale_down = {
@@ -7465,6 +7674,44 @@ ASG_civilian_rescale_down = {
 			}
 		}
 	}
+	
+	for_each_loop = {
+		array = GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black
+		set_temp_variable = {
+			value_slope = v
+		}
+		divide_temp_variable = {
+			value_slope = 2
+		}
+		set_variable = {
+			GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black^i = value_slope
+		}
+		if = {
+			limit = {
+				check_variable = {
+					i > 0
+				}
+			}
+			set_temp_variable = {
+				index = i
+			}
+			subtract_from_temp_variable = {
+				index = 1
+			}
+			subtract_from_temp_variable = {
+				value_slope = GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black^index
+			}
+			divide_temp_variable = {
+				value_slope = -2
+			}
+			add_to_temp_variable = {
+				value_slope = 50
+			}
+			set_variable = {
+				GLOBAL.ASG_civilian_graph_slopes_black^index = value_slope
+			}
+		}
+	}
 }
 
 ASG_civilian_rescale_up = {
@@ -7727,6 +7974,44 @@ ASG_civilian_rescale_up = {
 			}
 			set_variable = {
 				GLOBAL.ASG_civilian_graph_slopes_grey^index = value_slope
+			}
+		}
+	}
+	
+	for_each_loop = {
+		array = GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black
+		set_temp_variable = {
+			value_slope = v
+		}
+		divide_temp_variable = {
+			value_slope = 0.5
+		}
+		set_variable = {
+			GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black^i = value_slope
+		}
+		if = {
+			limit = {
+				check_variable = {
+					i > 0
+				}
+			}
+			set_temp_variable = {
+				index = i
+			}
+			subtract_from_temp_variable = {
+				index = 1
+			}
+			subtract_from_temp_variable = {
+				value_slope = GLOBAL.ASG_SAMPLE_civilian_graph_offsets_black^index
+			}
+			divide_temp_variable = {
+				value_slope = -2
+			}
+			add_to_temp_variable = {
+				value_slope = 50
+			}
+			set_variable = {
+				GLOBAL.ASG_civilian_graph_slopes_black^index = value_slope
 			}
 		}
 	}

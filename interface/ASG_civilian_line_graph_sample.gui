@@ -75,6 +75,15 @@ guiTypes = {
 		}
 
 		gridboxtype = {
+			name = "ASG_civilian_line_segments_black"
+			position = { x = 132	 y = 380 }
+			size = { width = 0 height = 200 }
+			slotsize = { width = 5 height = 200 }
+			max_slots_horizontal = 400
+			add_horizontal = yes
+		}
+
+		gridboxtype = {
 			name = "ASG_civilian_line_segments_blue"
 			position = { x = 132	 y = 380 }
 			size = { width = 0 height = 200 }
@@ -462,6 +471,19 @@ guiTypes = {
 		iconType = {
 			name = "segment_grey"
 			spriteType = "GFX_Line_Segment_grey"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "ASG_civilian_line_graph_line_segment_black"
+		size = { width = 5 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_black"
+			spriteType = "GFX_Line_Segment_black"
 			position = { x = 0 y = 0 }
 			frame = 57
 		}
