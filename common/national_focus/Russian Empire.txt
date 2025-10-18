@@ -1401,7 +1401,7 @@ focus_tree = {
 		available = {
 			has_idea = RUS_Contemporary_Warfare
 			has_idea = RUS_Land_Reforms
-			has_idea = RUS_Promoting_Intellectuals
+			NOT = { has_idea = RUS_Lack_Of_Scientists }
 		}
 		prerequisite = {
 			focus = RUS_Establish_Military_Academy
