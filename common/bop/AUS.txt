@@ -41,6 +41,8 @@ side = { # This is the left side of the power balance
 				production_factory_max_efficiency_factor = 0.075
 				production_factory_efficiency_gain_factor = 0.075
 				production_factory_start_efficiency_factor = 0.075
+
+				power_balance_daily = 0.001
 			}
 	}
 
@@ -62,6 +64,7 @@ side = { # This is the left side of the power balance
 				production_factory_max_efficiency_factor = 0.025
 				production_factory_efficiency_gain_factor = 0.025
 				production_factory_start_efficiency_factor = 0.025
+				
 			}
 	}
 }
@@ -89,6 +92,8 @@ side = {
 				production_factory_max_efficiency_factor = -0.025
 				production_factory_efficiency_gain_factor = -0.025
 				production_factory_start_efficiency_factor = -0.025
+
+				power_balance_daily = -0.001
 			}
 	}
 
@@ -110,6 +115,8 @@ side = {
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_start_efficiency_factor = -0.05
+
+				power_balance_daily = -0.001
 			}
 	}
 }
