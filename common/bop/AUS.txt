@@ -28,19 +28,19 @@ side = { # This is the left side of the power balance
 		min = -1
 		max = -0.5
 				modifier = {
-				production_speed_infrastructure_factor = 0.1
-				production_speed_rail_way_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				research_speed_factor = 0.1
+				production_speed_infrastructure_factor = 0.125
+				production_speed_rail_way_factor = 0.125
+				production_speed_industrial_complex_factor = 0.125
+				research_speed_factor = 0.15
 				economy_cost_factor = -0.1
 				trade_laws_cost_factor = -0.1
 
 				mobilization_laws_cost_factor = -0.1
-				production_speed_arms_factory_factor = 0.1
-				training_time_factor = -0.1
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_start_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.125
+				training_time_factor = -0.15
+				production_factory_max_efficiency_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_start_efficiency_factor = 0.075
 			}
 	}
 
