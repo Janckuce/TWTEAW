@@ -1,0 +1,139 @@
+ideas = {
+	country = {
+		SPR_Political_Divide = {
+			allowed_civil_war = {
+				tag = SPR
+			}
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.5
+			}
+		}
+		SPR_Money_On_My_Mind = {
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SPR_Clergy_Influence = {
+			modifier = {
+				neutrality_drift = 0.03
+				stability_factor = 0.05
+			}
+		}
+		SPR_Clergy_Influence1 = {
+			modifier = {
+				neutrality_drift = 0.06
+				stability_factor = 0.1
+			}
+		}
+		SPR_Monetised_Clergy = {
+			modifier = {
+				neutrality_drift = 0.03
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SPR_Military_Influence = {
+			allowed_civil_war = {
+				tag = SPR
+			}
+			modifier = {
+				fascism_drift = 0.06
+				war_support_factor = 0.1
+			}
+		}
+		SPR_Militares_Desprevenidos = {
+			allowed_civil_war = {
+				tag = SPR
+			}
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		SPR_Militar_Competente = {
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.1
+			}
+		}
+		SPR_Liberal_Government = {
+			allowed_civil_war = {
+				tag = SPR
+			}
+			modifier = {
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SPR_Conservative_Government = {
+			allowed_civil_war = {
+				tag = SPR
+			}
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				experience_gain_air_factor = 0.1
+			}
+		}
+		SPR_Hallelujah = {
+			modifier = {
+				army_strength_factor = 0.05
+				combat_width_factor = -0.05
+			}
+		}
+		SPR_Hallelujah1 = {
+			modifier = {
+				army_strength_factor = 0.05
+				combat_width_factor = -0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+		SPR_Faction_Block = {
+			allowed_civil_war = {
+				tag = SPR
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+		SPR_Industrial_Labour = {
+			modifier = {
+				weekly_manpower = 500
+				pocket_penalty = -0.2
+			}
+		}
+		SPR_Property_Building = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SPR_Agrarian_Base = {
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		SPR_Private_Companies = {
+			modifier = {
+				supply_consumption_factor = -0.1
+				lend_lease_tension = -1
+				supply_factor = 0.1
+			}
+		}
+		SPR_Volunteer_Forces = {
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteer_size = 5
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+			}
+		}
+	}
+}

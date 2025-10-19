@@ -1,0 +1,687 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = spanish_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 1000 }
+
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = SPR_Alternate_The_Government
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 4
+		y = 0
+		completion_reward = {
+			add_stability = -0.05
+			remove_ideas = SPR_Liberal_Government
+			add_ideas = SPR_Conservative_Government
+		}
+	}
+	focus = {
+		id = SPR_Economic_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Alternate_The_Government
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = SPR_Alternate_The_Government
+		}
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Road_Construction
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Economic_Investments
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SPR_Economic_Investments
+		}
+		completion_reward = {
+			171 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			726 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			790 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Aluminium_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Road_Construction
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SPR_Road_Construction
+		}
+		completion_reward = {
+			41 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Rubber_Production
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Road_Construction
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SPR_Road_Construction
+		}
+		completion_reward = {
+			167 = {
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Military_Efforts
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Road_Construction
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SPR_Aluminium_Production
+			focus = SPR_Rubber_Production
+		}
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_Spanish_Science1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Economic_Investments
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = SPR_Economic_Investments
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = SPR_Spanish_Science2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Spanish_Science1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Spanish_Science1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = SPR_Spanish_Science3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Spanish_Science2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Spanish_Science2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				bonus = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SPR_Advanced_Warfare
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Military_Efforts
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Heavy_War
+		}
+		prerequisite = {
+			focus = SPR_Military_Efforts
+		}
+		prerequisite = {
+			focus = SPR_Spanish_Science3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = heavy_artillery_equipment1
+				technology = heavy_artillery_improvement1
+				technology = heavy_artillery_equipment2
+				bonus = 3
+			}
+		}
+	}
+	focus = {
+		id = SPR_Heavy_War
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Spanish_Science3
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Advanced_Warfare
+		}
+		prerequisite = {
+			focus = SPR_Military_Efforts
+		}
+		prerequisite = {
+			focus = SPR_Spanish_Science3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				bonus = 3
+			}
+		}
+	}
+
+	#	Clergy Path
+
+	focus = {
+		id = SPR_Spanish_Apostles
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Alternate_The_Government
+		x = 3
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Military_Junta
+			focus = SPR_Capitalist_Rule
+		}
+		prerequisite = {
+			focus = SPR_Alternate_The_Government
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_Clergy_Influence
+				add_idea = SPR_Clergy_Influence1
+			}
+		}
+	}
+	focus = {
+		id = SPR_Glorious_Nation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Spanish_Apostles
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Spanish_Apostles
+		}
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots = 15
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Glorious_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Glorious_Nation
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SPR_Glorious_Nation
+		}
+		completion_reward = {
+			add_ideas = SPR_Hallelujah
+		}
+	}
+	focus = {
+		id = SPR_Blow_Up_France
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Glorious_Nation
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SPR_Glorious_Nation
+		}
+		completion_reward = {
+			FRA = {
+				every_core_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Share_Our_Prestige
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Glorious_Nation
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = SPR_Glorious_Army
+		}
+		prerequisite = {
+			focus = SPR_Blow_Up_France
+		}
+		completion_reward = {
+			64 = {
+				add_extra_state_shared_building_slots = 15
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			4 = {
+				add_extra_state_shared_building_slots = 15
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_For_God
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Glorious_Nation
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = SPR_Glorious_Army
+		}
+		prerequisite = {
+			focus = SPR_Blow_Up_France
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_Hallelujah
+				add_idea = SPR_Hallelujah1
+			}
+		}
+	}
+	#	Change Country Name And Colour
+	focus = {
+		id = SPR_King_Of_Earth
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Glorious_Nation
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = SPR_Share_Our_Prestige
+		}
+		prerequisite = {
+			focus = SPR_For_God
+		}
+		completion_reward = {
+			remove_ideas = SPR_Political_Divide
+		}
+	}
+
+	#	Military Path
+
+	focus = {
+		id = SPR_Military_Junta
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Alternate_The_Government
+		x = 6
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Spanish_Apostles
+			focus = SPR_Capitalist_Rule
+		}
+		prerequisite = {
+			focus = SPR_Alternate_The_Government
+		}
+		completion_reward = {
+			remove_ideas = SPR_Clergy_Influence
+			add_ideas = SPR_Military_Influence
+		}
+	}
+	focus = {
+		id = SPR_National_Coup
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Military_Junta
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Military_Junta
+		}
+		completion_reward = {
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.2
+				capital = 165
+				states = {
+					165 794 167 168 173 789 169
+				}
+				keep_all_characters = yes
+				hidden_effect = {
+					add_ideas = SPR_Faction_Block
+				}
+			}
+			remove_ideas = SPR_Political_Divide
+		}
+	}
+	focus = {
+		id = SPR_Purge_The_Disloyals
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_National_Coup
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_National_Coup
+		}
+		completion_reward = {
+			add_manpower = -100000
+			remove_ideas = SPR_Militares_Desprevenidos
+		}
+	}
+	focus = {
+		id = SPR_Consolidate_The_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Purge_The_Disloyals
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Purge_The_Disloyals
+		}
+		completion_reward = {
+			add_ideas = SPR_Militar_Competente
+		}
+	}
+	focus = {
+		id = SPR_Forced_Labour
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Consolidate_The_Army
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Consolidate_The_Army
+		}
+		completion_reward = {
+			add_ideas = SPR_Industrial_Labour
+		}
+	}
+
+	#	Capital Path
+
+	focus = {
+		id = SPR_Capitalist_Rule
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Alternate_The_Government
+		x = 9
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Spanish_Apostles
+			focus = SPR_Military_Junta
+		}
+		prerequisite = {
+			focus = SPR_Alternate_The_Government
+		}
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			165 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			169 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Monetise_The_Clergy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Capitalist_Rule
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SPR_Capitalist_Rule
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_Clergy_Influence
+				add_idea = SPR_Monetised_Clergy
+			}
+		}
+	}
+	focus = {
+		id = SPR_Money_Moves_The_World
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Capitalist_Rule
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SPR_Capitalist_Rule
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_Political_Divide
+				add_idea = SPR_Money_On_My_Mind
+			}
+		}
+	}
+	focus = {
+		id = SPR_Further_Investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Capitalist_Rule
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SPR_Monetise_The_Clergy
+		}
+		prerequisite = {
+			focus = SPR_Money_Moves_The_World
+		}
+		completion_reward = {
+			41 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			165 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			167 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			169 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Private_Property
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Further_Investments
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SPR_Further_Investments
+		}
+		completion_reward = {
+			add_ideas = SPR_Property_Building
+		}
+	}
+	focus = {
+		id = SPR_Agrarian_Industrial_Base
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Further_Investments
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SPR_Further_Investments
+		}
+		completion_reward = {
+			add_ideas = SPR_Agrarian_Base
+		}
+	}
+	focus = {
+		id = SPR_Spanish_Company
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Further_Investments
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SPR_Private_Property
+		}
+		prerequisite = {
+			focus = SPR_Agrarian_Industrial_Base
+		}
+		completion_reward = {
+			add_ideas = SPR_Private_Companies
+		}
+	}
+
+	#	Volunteer Idea
+
+	focus = {
+		id = SPR_Spanish_Decree
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = SPR_Military_Junta
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = SPR_King_Of_Earth
+			focus = SPR_Forced_Labour
+			focus = SPR_Spanish_Company
+		}
+		completion_reward = {
+			add_ideas = SPR_Volunteer_Forces
+		}
+	}
+}

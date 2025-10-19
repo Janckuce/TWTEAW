@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "División de Infantería"
+	name = "División De Infantería"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,7 +11,35 @@
         infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "División De Infantería"
+	is_locked = yes
+	force_allow_recruiting = yes
+
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+        irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+        irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
+		irregular_infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0}
+		artillery_brigade = { x = 3 y = 1}
+		artillery_brigade = { x = 3 y = 2}
+		artillery_brigade = { x = 4 y = 0}
+		artillery_brigade = { x = 4 y = 1}
+		artillery_brigade = { x = 4 y = 2}
 	}
 	
 	support = {
@@ -22,23 +50,23 @@
 
 division_template = {
 	name = "División Colonial"
+	priority = 0
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 	}
-	priority = 0
 }
 
 units = {
-    division = {
+	#	Madrid
+	division = {
 		name = "División de Infantería"
 		location = 3938
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "División de Infantería"
@@ -46,7 +74,6 @@ units = {
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "División de Infantería"
@@ -54,7 +81,6 @@ units = {
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
 		name = "División de Infantería"
@@ -62,35 +88,72 @@ units = {
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
+
+	#	Barcelona
+
 	division = {
 		name = "División de Infantería"
-		location = 3938
+		location = 9764
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
-		name = "División Colonial"
-		location = 8038
-		division_template = "División Colonial"
+		name = "División de Infantería"
+		location = 9764
+		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División de Infantería"
+		location = 9764
+		division_template = "División de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División de Infantería"
+		location = 9764
+		division_template = "División de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
 
+	#	Valencia
+
+	division = {
+		name = "División de Infantería"
+		location = 6906
+		division_template = "División de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División de Infantería"
+		location = 6906
+		division_template = "División de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División de Infantería"
+		location = 6906
+		division_template = "División de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División de Infantería"
+		location = 6906
+		division_template = "División de Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
 	}
 }
 
-### Air oob in its own file
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = ww1_infantry_equipment_2
@@ -100,7 +163,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -110,7 +172,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = ww1_artillery_equipment_1
@@ -121,5 +182,3 @@ instant_effect = {
 		efficiency = 50
 	}
 }
-
-#####################
