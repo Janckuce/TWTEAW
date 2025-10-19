@@ -867,6 +867,7 @@ leader_traits = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
+		political_power_factor = 0.25
 
 		ai_will_do = {
 			factor = 1
@@ -1682,9 +1683,9 @@ leader_traits = {
 
 	freedom_fighter = { #Seyid Riza
 		random = no
-		stability_factor = 0.25
-		war_support_factor = 0.15
-		army_core_defence_factor = 0.1
+		stability_factor = 0.125
+		war_support_factor = 0.1
+		army_core_defence_factor = 0.065
 	}
 
 	experienced_insurgent = { #Ihsan Nuri
@@ -2150,6 +2151,10 @@ leader_traits = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_infrastructure_factor = 0.05
 		consumer_goods_factor = -0.10
+		industrial_capacity_factory = 0.1
+		production_factory_max_efficiency_factor = 0.065
+		line_change_production_efficiency_factor = 0.065
+		production_factory_efficiency_gain_factor = 0.05
 	}
 
 	womens_rights_activist = {
