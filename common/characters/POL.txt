@@ -6,7 +6,7 @@ characters={
 				large = "GFX_POL_nikolai_nikolaevich"
 			}
 			army = {
-				small = "GFX_POL_nikolai_nikolaevich_frame"
+				small = "GFX_RUS_nikolai_nikolaevich_frame"
 			}
 		}
 		advisor={
@@ -18,7 +18,7 @@ characters={
 			traits = {
 				army_chief_offensive_2 #Inf Defense +10%
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -34,6 +34,39 @@ characters={
 			traits = {king_of_poland}
 			ideology = centrism
 			expire = "1965.1.1.1"
+		}
+	}
+
+		POL_leonard_wilhelm_skierski = {
+		name = "Leonard Wilhelm Skierski"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_leonard_wilhelm_skierski"
+			}
+			army = {
+				small = "GFX_POL_leonard_wilhelm_skierski_frame"
+			}
+		}
+		advisor={
+			slot = high_Command
+			idea_token = POL_leonard_wilhelm_skierski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			army_artillery_2
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
 		}
 	}
 		POL_jozef_dowbor_musnicki = {
@@ -53,8 +86,140 @@ characters={
 				original_tag = POL
 			}
 			traits = {
+			army_infantry_2
 			}
-			cost = 100
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+		POL_stanislaw_bulak-Balachowicz = {
+		name = "Józef Dowbor-Muśnicki"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_stanislaw_bulak-Balachowicz"
+			}
+			army = {
+				small = "GFX_POL_stanislaw_bulak-Balachowicz_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = POL_stanislaw_bulak-Balachowicz
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			army_cavalry_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+		POL_waclaw_IwaszkiewiczRudoszanski = {
+		name = "Wacław Iwaszkiewicz-Rudoszański"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_waclaw_Iwaszkiewicz-Rudoszanski"
+			}
+			army = {
+				small = "GFX_POL_waclaw_IwaszkiewiczRudoszanski_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = POL_waclaw_Iwaszkiewicz-Rudoszanski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			surveyor
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+		POL_kazimierz_rumsza = {
+		name = "Kazimierz Rumsza"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_kazimierz_rumsza"
+			}
+			army = {
+				small = "GFX_POL_kazimierz_rumsza_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_kazimierz_rumsza
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			war_industrialist
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+		pol_lucjan_zeligowski = {
+		name = "Kazimierz Rumsza"
+		portraits = {
+			civilian = {
+				large = "GFX_pol_lucjan_zeligowski"
+			}
+			army = {
+				small = "GFX_pol_lucjan_zeligowski_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = pol_lucjan_zeligowski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			military_theorist
+			}
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -92,7 +257,7 @@ characters={
 			traits = {
 			camarilla_leader
 			}
-			cost = 100
+			cost = 90
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -122,7 +287,7 @@ characters={
 			traits = {
 			freedom_fighter
 			}
-			cost = 250
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -147,7 +312,7 @@ characters={
 			traits = {
 			industry_reformer
 			}
-			cost = 250
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}

@@ -78,7 +78,8 @@ SOV_putilov_organization = {
 	
 	allowed = {	
 		OR = {
-			original_tag = RUS
+			tag = RUS
+			tag = POL
 		}
 	}
 
@@ -381,9 +382,10 @@ RUS_putilov_design_bureau_organization = {
 	icon = GFX_idea_rus_putilov_arms
 	
 	allowed = {	
-	tag = RUS
-	tag = LAT
+		OR = {
+			tag = RUS
 			tag = POL
+		}
 	}
 }
 
@@ -392,14 +394,9 @@ SOV_tula_arms_plant_organization = {
 	icon = GFX_idea_tula_arms_plant
 	
 	allowed = {	
-		original_tag = RUS
-			AND = {
-			tag = LAT
-			has_dlc = "Battle for the Bosporus"
-		}
-		AND = {
+		OR = {
+			tag = RUS
 			tag = POL
-			has_dlc = "Battle for the Bosporus"
 		}
 	}
 
@@ -442,15 +439,7 @@ SOV_russobalt_organization = {
 	allowed = {	
 		OR = {
 			tag = RUS
-			AND = {
-				tag = LAT
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = POL
-				has_dlc = "By Blood Alone"
-			}
-
+			tag = POL
 		}
 	}
 }
