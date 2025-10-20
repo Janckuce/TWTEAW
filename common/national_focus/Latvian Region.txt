@@ -25,7 +25,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Consider_The_Following
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_claims_in_baltic_ccp_2d_sov_compatibility
 		cost = 7.2
 		x = 1
 		y = 0
@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Further_Approval
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_annex_tannu_tuva_ccp_2d_sov_compatibility
 		cost = 7.2
 		relative_position_id = LAT_Consider_The_Following
 		x = 0
@@ -60,7 +60,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Consolidate_Formation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_expand_aviation_institutes_ccp_2d_sov_compatibility
 		cost = 7.2
 		relative_position_id = LAT_Further_Approval
 		x = 0
@@ -81,7 +81,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Convince_The_Tsar
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 7.2
 		relative_position_id = LAT_Consolidate_Formation
 		x = 0
@@ -105,7 +105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Final_Proposal
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
 		cost = 7.2
 		relative_position_id = LAT_Convince_The_Tsar
 		x = 0
@@ -125,7 +125,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Latvian_Riflemen
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_lat_riflemen
 		cost = 10
 		x = 6
 		y = 0
@@ -139,7 +139,7 @@ focus_tree = {
 	#	Should Recruit Generals Into The Army As Well
 	focus = {
 		id = LAT_Recruit_Guerilla_Veterans
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_promote_the_war_heroes
 		cost = 10
 		relative_position_id = LAT_Latvian_Riflemen
 		x = -2
@@ -153,7 +153,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Bane_Of_Germans
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_attack_german_empire
 		cost = 10
 		relative_position_id = LAT_Recruit_Guerilla_Veterans
 		x = 0
@@ -173,7 +173,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_The_Tsars_Blessing
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_rus_our_tsar
 		cost = 10
 		relative_position_id = LAT_Recruit_Guerilla_Veterans
 		x = 0
@@ -195,7 +195,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Heroes_Of_Latvia
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_LAT_latvia_for_latvians
 		cost = 10
 		relative_position_id = LAT_Latvian_Riflemen
 		x = 2
@@ -212,7 +212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Strike_Fast
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = LAT_Heroes_Of_Latvia
 		x = 0
@@ -229,7 +229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Strike_Hard
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_the_last_break_southward_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = LAT_Strike_Fast
 		x = 0
@@ -249,7 +249,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Latvian_Genius
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_LAT_lightning_strike
 		cost = 10
 		relative_position_id = LAT_Latvian_Riflemen
 		x = 0
@@ -272,7 +272,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Caucasus_Training
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GRE_a_land_of_mountains
 		cost = 10
 		relative_position_id = LAT_Latvian_Genius
 		x = -2
@@ -294,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Overwhelming_Firepower
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
 		cost = 10
 		relative_position_id = LAT_Caucasus_Training
 		x = 0
@@ -316,7 +316,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Ground_Bombardment
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_artillery2
 		cost = 10
 		relative_position_id = LAT_Overwhelming_Firepower
 		x = 0
@@ -333,7 +333,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Briedis_Offensive
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ITA_banda_carita
 		cost = 10
 		relative_position_id = LAT_Ground_Bombardment
 		x = 0
@@ -353,7 +353,7 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Armour_Cars
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_lat_armored
 		cost = 10
 		relative_position_id = LAT_Latvian_Genius
 		x = 2
@@ -380,7 +380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Armoured_Cars2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_lynx_armored_car
 		cost = 10
 		relative_position_id = LAT_Armour_Cars
 		x = 0
@@ -397,7 +397,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Armourer_Cars3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_motorized
 		cost = 10
 		relative_position_id = LAT_Armoured_Cars2
 		x = 0
@@ -414,7 +414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_The_More_The_Merrier
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_truck
 		cost = 10
 		relative_position_id = LAT_Armourer_Cars3
 		x = 0
@@ -434,16 +434,16 @@ focus_tree = {
 
 	focus = {
 		id = LAT_Economic_Main
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		icon = GFX_focus_generic_economic_recovery
+		cost = 7.2
 		x = 13
 		y = 0
 		completion_reward = {
 			808 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 				}
 			}
 			swap_ideas = {
@@ -454,8 +454,8 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Economic1
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 7.2
 		relative_position_id = LAT_Economic_Main
 		x = -1
 		y = 1
@@ -467,15 +467,15 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 				}
 			}
 		}
 	}
 	focus = {
 		id = LAT_Economic2
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
+		icon = GFX_SOV_planned_economy_ccp_2d_sov_compatibility
+		cost = 7.2
 		relative_position_id = LAT_Economic_Main
 		x = 1
 		y = 1
@@ -487,14 +487,14 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 				}
 			}
 		}
 	}
 	focus = {
 		id = LAT_Economic3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_institutional_money_laundering
 		cost = 10
 		relative_position_id = LAT_Economic1
 		x = -1
@@ -504,7 +504,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			810 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -518,7 +518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Economic4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = LAT_Economic_Main
 		x = 0
@@ -529,17 +529,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			190 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 				}
 			}
 		}
 	}
 	focus = {
 		id = LAT_Economic5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_paced_industrialization_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = LAT_Economic2
 		x = 1
@@ -549,7 +549,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			809 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -563,7 +563,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Economic6
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 10
 		relative_position_id = LAT_Economic3
 		x = 0
@@ -574,7 +574,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			808 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -584,7 +584,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Economic_Plan
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_continuous_non_factory_construct
 		cost = 10
 		relative_position_id = LAT_Economic_Main
 		x = 0
@@ -600,7 +600,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			808 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 			}
 			swap_ideas = {
 				remove_idea = LAT_Economic_Boom1
@@ -610,7 +610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Economic7
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_military_industry
 		cost = 10
 		relative_position_id = LAT_Economic5
 		x = 0
@@ -621,7 +621,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			808 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LAT_Economic_Plan_Final
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = LAT_Economic_Plan
 		x = 0
