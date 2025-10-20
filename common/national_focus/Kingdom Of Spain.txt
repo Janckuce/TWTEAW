@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Alternate_The_Government
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BEL_government_resigns
 		cost = 5
 		x = 4
 		y = 0
@@ -36,7 +36,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Economic_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		relative_position_id = SPR_Alternate_The_Government
 		x = -2
@@ -63,7 +63,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Road_Construction
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_road_investment
 		cost = 10
 		relative_position_id = SPR_Economic_Investments
 		x = -1
@@ -97,7 +97,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Aluminium_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_aluminum
 		cost = 10
 		relative_position_id = SPR_Road_Construction
 		x = -1
@@ -108,6 +108,10 @@ focus_tree = {
 		completion_reward = {
 			41 = {
 				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
 					type = aluminium
 					amount = 8
 				}
@@ -116,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Rubber_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_rubber
 		cost = 10
 		relative_position_id = SPR_Road_Construction
 		x = 1
@@ -130,12 +134,16 @@ focus_tree = {
 					type = rubber
 					amount = 12
 				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
 			}
 		}
 	}
 	focus = {
 		id = SPR_Military_Efforts
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
 		relative_position_id = SPR_Road_Construction
 		x = 0
@@ -157,7 +165,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Spanish_Science1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 10
 		relative_position_id = SPR_Economic_Investments
 		x = 2
@@ -174,7 +182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Spanish_Science2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10
 		relative_position_id = SPR_Spanish_Science1
 		x = 0
@@ -191,7 +199,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Spanish_Science3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10
 		relative_position_id = SPR_Spanish_Science2
 		x = 0
@@ -209,7 +217,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Advanced_Warfare
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = SPR_Military_Efforts
 		x = 0
@@ -234,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Heavy_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_NOR_rikstanken
 		cost = 10
 		relative_position_id = SPR_Spanish_Science3
 		x = 0
@@ -260,7 +268,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Spanish_Apostles
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_pope
 		cost = 10
 		relative_position_id = SPR_Alternate_The_Government
 		x = 3
@@ -268,6 +276,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SPR_Military_Junta
 			focus = SPR_Capitalist_Rule
+			focus = SPR_Bring_Back_The_Age_Of_Expansion
 		}
 		prerequisite = {
 			focus = SPR_Alternate_The_Government
@@ -281,7 +290,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Glorious_Nation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_spr_maintain_the_republic
 		cost = 10
 		relative_position_id = SPR_Spanish_Apostles
 		x = 0
@@ -301,7 +310,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Glorious_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_spr_no_pasaran
 		cost = 10
 		relative_position_id = SPR_Glorious_Nation
 		x = -1
@@ -315,7 +324,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Blow_Up_France
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_focus_fra_down_marianne
 		cost = 10
 		relative_position_id = SPR_Glorious_Nation
 		x = 1
@@ -336,7 +345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Share_Our_Prestige
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10
 		relative_position_id = SPR_Glorious_Nation
 		x = -1
@@ -366,7 +375,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_For_God
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ITA_moschettieri_del_duce
 		cost = 10
 		relative_position_id = SPR_Glorious_Nation
 		x = 1
@@ -387,7 +396,7 @@ focus_tree = {
 	#	Change Country Name And Colour
 	focus = {
 		id = SPR_King_Of_Earth
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_the_crown_and_the_world
 		cost = 10
 		relative_position_id = SPR_Glorious_Nation
 		x = 0
@@ -407,7 +416,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Military_Junta
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWI_helvetic_junta
 		cost = 10
 		relative_position_id = SPR_Alternate_The_Government
 		x = 6
@@ -415,6 +424,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SPR_Spanish_Apostles
 			focus = SPR_Capitalist_Rule
+			focus = SPR_Bring_Back_The_Age_Of_Expansion
 		}
 		prerequisite = {
 			focus = SPR_Alternate_The_Government
@@ -426,7 +436,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_National_Coup
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_coup_detat_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = SPR_Military_Junta
 		x = 0
@@ -453,7 +463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Purge_The_Disloyals
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SOV_military_purge
 		cost = 10
 		relative_position_id = SPR_National_Coup
 		x = 0
@@ -468,7 +478,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Consolidate_The_Army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_POL_belarus_army
 		cost = 10
 		relative_position_id = SPR_Purge_The_Disloyals
 		x = 0
@@ -482,7 +492,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Forced_Labour
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_the_trade_union_as_labor_organizer_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = SPR_Consolidate_The_Army
 		x = 0
@@ -499,7 +509,7 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Capitalist_Rule
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_institutional_money_laundering
 		cost = 10
 		relative_position_id = SPR_Alternate_The_Government
 		x = 9
@@ -507,6 +517,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SPR_Spanish_Apostles
 			focus = SPR_Military_Junta
+			focus = SPR_Bring_Back_The_Age_Of_Expansion
 		}
 		prerequisite = {
 			focus = SPR_Alternate_The_Government
@@ -544,7 +555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Monetise_The_Clergy
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 10
 		relative_position_id = SPR_Capitalist_Rule
 		x = -1
@@ -561,7 +572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Money_Moves_The_World
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_to_shake_the_world
 		cost = 10
 		relative_position_id = SPR_Capitalist_Rule
 		x = 1
@@ -578,7 +589,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Further_Investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_devaluation
 		cost = 10
 		relative_position_id = SPR_Capitalist_Rule
 		x = 0
@@ -622,7 +633,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Private_Property
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWE_privately_managed_vacation
 		cost = 10
 		relative_position_id = SPR_Further_Investments
 		x = -1
@@ -636,7 +647,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Agrarian_Industrial_Base
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_agricultural_subsidies
 		cost = 10
 		relative_position_id = SPR_Further_Investments
 		x = 1
@@ -650,7 +661,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_Spanish_Company
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_mex_privatisation
 		cost = 10
 		relative_position_id = SPR_Further_Investments
 		x = 0
@@ -662,7 +673,147 @@ focus_tree = {
 			focus = SPR_Agrarian_Industrial_Base
 		}
 		completion_reward = {
+			remove_ideas = SPR_Political_Divide
 			add_ideas = SPR_Private_Companies
+		}
+	}
+
+	#	Habsburg Spain
+
+	focus = {
+		id = SPR_Bring_Back_The_Age_Of_Expansion
+		icon = GFX_focus_AUS_bring_back_the_habsburg_rule
+		cost = 10
+		relative_position_id = SPR_Alternate_The_Government
+		x = 12
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Spanish_Apostles
+			focus = SPR_Military_Junta
+			focus = SPR_Capitalist_Rule
+		}
+		prerequisite = {
+			focus = SPR_Alternate_The_Government
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SPR_Rightful_Monarchs_Of_Spain
+		icon = GFX_focus_HABSBURG_bring_back_royal_and_imperial_hussars
+		cost = 10
+		relative_position_id = SPR_Bring_Back_The_Age_Of_Expansion
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_Bring_Back_The_Age_Of_Expansion
+		}
+		completion_reward = {
+			add_ideas = SPR_Habsburg_Monarchs
+		}
+	}
+	focus = {
+		id = SPR_Industrial_Power
+		icon = GFX_SOV_industrial_modernization_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Rightful_Monarchs_Of_Spain
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Military_Power
+		}
+		prerequisite = {
+			focus = SPR_Rightful_Monarchs_Of_Spain
+		}
+		completion_reward = {
+			AUS = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Military_Power
+		icon = GFX_SOV_expand_the_aircraft_industry_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Rightful_Monarchs_Of_Spain
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Industrial_Power
+		}
+		prerequisite = {
+			focus = SPR_Rightful_Monarchs_Of_Spain
+		}
+		completion_reward = {
+			AUS = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Military_Prowess
+		icon = GFX_focus_HABSBURG_defensive_hussars
+		cost = 10
+		relative_position_id = SPR_Rightful_Monarchs_Of_Spain
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SPR_Industrial_Power
+			focus = SPR_Military_Power
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SPR_Habsburg_Monarchs
+				add_idea = SPR_Habsburg_Monarchs1
+			}
+		}
+	}
+	focus = {
+		id = SPR_Habsburgs_Lead_The_Way
+		icon = GFX_focus_HABSBURG_for_the_glory_of_the_empire
+		cost = 10
+		relative_position_id = SPR_Military_Prowess
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_We_Remain_Spanish
+		}
+		prerequisite = {
+			focus = SPR_Military_Prowess
+		}
+		completion_reward = {
+			remove_ideas = SPR_Political_Divide
+			swap_ideas = {
+				remove_idea = SPR_Clergy_Influence
+				add_idea = SPR_Habsburg_Clergy
+			}
+		}
+	}
+	focus = {
+		id = SPR_We_Remain_Spanish
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		cost = 10
+		relative_position_id = SPR_Military_Prowess
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Habsburgs_Lead_The_Way
+		}
+		prerequisite = {
+			focus = SPR_Military_Prowess
+		}
+		completion_reward = {
+			remove_ideas = SPR_Political_Divide
+			swap_ideas = {
+				remove_idea = SPR_Clergy_Influence
+				add_idea = SPR_Spanish_Clergy
+			}
 		}
 	}
 
@@ -670,15 +821,17 @@ focus_tree = {
 
 	focus = {
 		id = SPR_Spanish_Decree
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_HUN_reestablish_the_rongyos_garda
 		cost = 10
 		relative_position_id = SPR_Military_Junta
-		x = 0
+		x = 2
 		y = 5
 		prerequisite = {
 			focus = SPR_King_Of_Earth
 			focus = SPR_Forced_Labour
 			focus = SPR_Spanish_Company
+			focus = SPR_Habsburgs_Lead_The_Way
+			focus = SPR_We_Remain_Spanish
 		}
 		completion_reward = {
 			add_ideas = SPR_Volunteer_Forces

@@ -43,6 +43,23 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
+		SPR_Habsburg_Clergy = {
+			modifier = {
+				neutrality_drift = 0.03
+				modifier_army_sub_unit_cavalry_speed_factor = 0.1
+			}
+		}
+		SPR_Spanish_Clergy = {
+			modifier = {
+				neutrality_drift = 0.03
+				breakthrough_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
 		SPR_Militares_Desprevenidos = {
 			allowed_civil_war = {
 				tag = SPR
@@ -54,8 +71,11 @@ ideas = {
 		}
 		SPR_Militar_Competente = {
 			modifier = {
+				experience_gain_army_unit_factor = 0.25
+				org_loss_when_moving = -0.05
+				land_night_attack = 0.1
 				planning_speed = 0.1
-				max_planning = 0.1
+				max_planning = 0.15
 			}
 		}
 		SPR_Liberal_Government = {
@@ -81,16 +101,25 @@ ideas = {
 			modifier = {
 				army_strength_factor = 0.05
 				combat_width_factor = -0.05
+				breakthrough_factor = 0.05
+				army_attack_speed_factor = 0.05
 			}
 		}
 		SPR_Hallelujah1 = {
 			modifier = {
 				army_strength_factor = 0.05
 				combat_width_factor = -0.05
+				breakthrough_factor = 0.05
+				army_attack_speed_factor = 0.05
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					soft_attack = 0.05
+					soft_attack = 0.03
+					defense = 0.03
+				}
+				heavy_artillery_equipment = {
+					breakthrough = 0.03
+					maximum_speed = 0.03
 				}
 			}
 		}
@@ -105,7 +134,10 @@ ideas = {
 		SPR_Industrial_Labour = {
 			modifier = {
 				weekly_manpower = 500
-				pocket_penalty = -0.2
+				pocket_penalty = -0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
 		SPR_Property_Building = {
@@ -123,6 +155,22 @@ ideas = {
 				supply_consumption_factor = -0.1
 				lend_lease_tension = -1
 				supply_factor = 0.1
+			}
+		}
+		SPR_Habsburg_Monarchs = {
+			modifier = {
+				cavalry_attack_factor = 0.025
+				cavalry_defence_factor = 0.025
+				acclimatization_cold_climate_gain_factor = 0.025
+				acclimatization_hot_climate_gain_factor = 0.025
+			}
+		}
+		SPR_Habsburg_Monarchs1 = {
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+				acclimatization_hot_climate_gain_factor = 0.05
 			}
 		}
 		SPR_Volunteer_Forces = {
