@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = LAT_Consider_The_Following
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		x = 1
 		y = 0
 		completion_reward = {
@@ -40,7 +40,7 @@ focus_tree = {
 	focus = {
 		id = LAT_Further_Approval
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = LAT_Consider_The_Following
 		x = 0
 		y = 1
@@ -61,7 +61,7 @@ focus_tree = {
 	focus = {
 		id = LAT_Consolidate_Formation
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = LAT_Further_Approval
 		x = 0
 		y = 1
@@ -72,7 +72,7 @@ focus_tree = {
 			focus = LAT_Further_Approval
 		}
 		completion_reward = {
-			army_experience = 30
+			army_experience = 15
 			swap_ideas = {
 				remove_idea = LAT_Conceptual_Regiments2
 				add_idea = LAT_Conceptual_Regiments3
@@ -82,12 +82,12 @@ focus_tree = {
 	focus = {
 		id = LAT_Convince_The_Tsar
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = LAT_Consolidate_Formation
 		x = 0
 		y = 1
 		available = {
-			date > 1912.6.1
+			date > 1912.3.6
 		}
 		prerequisite = {
 			focus = LAT_Consolidate_Formation
@@ -95,7 +95,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = ww1_infantry_equipment_1
-				amount = 12532
+				amount = 5000
 			}
 			swap_ideas = {
 				remove_idea = LAT_Conceptual_Regiments3
@@ -106,12 +106,12 @@ focus_tree = {
 	focus = {
 		id = LAT_Final_Proposal
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = LAT_Convince_The_Tsar
 		x = 0
 		y = 1
 		available = {
-			date > 1913.1.1
+			date > 1912.7.14
 		}
 		prerequisite = {
 			focus = LAT_Convince_The_Tsar
@@ -156,7 +156,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = LAT_Recruit_Guerilla_Veterans
-		x = -1
+		x = 0
 		y = 1
 		mutually_exclusive = {
 			focus = LAT_Bane_Of_Austrians
@@ -172,26 +172,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LAT_Bane_Of_Austrians
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = LAT_Recruit_Guerilla_Veterans
-		x = 1
-		y = 1
-		mutually_exclusive = {
-			focus = LAT_Bane_Of_Germans
-		}
-		prerequisite = {
-			focus = LAT_Recruit_Guerilla_Veterans
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LAT_Latvian_Nationalist_Sentiment
-				add_idea = LAT_Latvian_Nationalist_Sentiment_Austria
-			}
-		}
-	}
-	focus = {
 		id = LAT_The_Tsars_Blessing
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
@@ -200,7 +180,6 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = LAT_Bane_Of_Germans
-			focus = LAT_Bane_Of_Austrians
 		}
 		completion_reward = {
 			LAT_Tsar_Nicholas = {
@@ -282,7 +261,10 @@ focus_tree = {
 			focus = LAT_Strike_Hard
 		}
 		completion_reward = {
-			add_ideas = LAT_Military_Genius
+				swap_ideas = {
+				remove_idea = LAT_Riflemen3
+				add_idea = LAT_Military_Genius
+			}
 		}
 	}
 
@@ -293,7 +275,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = LAT_Latvian_Genius
-		x = -3
+		x = -2
 		y = 1
 		mutually_exclusive = {
 			focus = LAT_Mobile_Infantry
@@ -305,8 +287,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = mountaineers_tech
-				bonus = 3
-				uses = 1
+				bonus = 1
+				uses = 2
 			}
 		}
 	}
@@ -321,12 +303,15 @@ focus_tree = {
 			focus = LAT_Caucasus_Training
 		}
 		completion_reward = {
-			add_tech_bonus = {
+				swap_ideas = {
+				remove_idea = LAT_Military_Genius
+				add_idea = LAT_Military_Genius_fire
+			}
+				add_tech_bonus = {
 				category = artillery
 				bonus = 0.5
 				uses = 2
 			}
-			add_ideas = LAT_Piercing_Riflemen
 		}
 	}
 	focus = {
@@ -341,7 +326,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = LAT_Piercing_Riflemen
+				remove_idea = LAT_Military_Genius_fire
 				add_idea = LAT_Piercing_Riflemen1
 			}
 		}
@@ -359,79 +344,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = LAT_Briedis_Kick_The_Giant
-				days = 70
-			}
-		}
-	}
-
-	#	Mobile Infantry Branch
-
-	focus = {
-		id = LAT_Mobile_Infantry
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = LAT_Latvian_Genius
-		x = 0
-		y = 1
-		mutually_exclusive = {
-			focus = LAT_Caucasus_Training
-			focus = LAT_Armour_Cars
-		}
-		prerequisite = {
-			focus = LAT_Latvian_Genius
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				technology = motorised_infantry
-				bonus = 3
-			}
-		}
-	}
-	focus = {
-		id = LAT_Lighting_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = LAT_Mobile_Infantry
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = LAT_Mobile_Infantry
-		}
-		completion_reward = {
-			add_ideas = LAT_Maneuver_Warfare
-		}
-	}
-	focus = {
-		id = LAT_Thunder_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = LAT_Lighting_War
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = LAT_Lighting_War
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LAT_Maneuver_Warfare
-				add_idea = LAT_Maneuver_Warfare1
-			}
-		}
-	}
-	focus = {
-		id = LAT_Storm_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 10
-		relative_position_id = LAT_Thunder_War
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = LAT_Thunder_War
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = LAT_Auzans_Outmaneuver_And_Overpower
-				days = 70
+				days = 165
 			}
 		}
 	}
@@ -443,7 +356,7 @@ focus_tree = {
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = LAT_Latvian_Genius
-		x = 3
+		x = 2
 		y = 1
 		mutually_exclusive = {
 			focus = LAT_Caucasus_Training
@@ -455,12 +368,18 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = cat_armored_cars
-				bonus = 3
+				bonus = 2
+				uses = 1
+			}
+				add_tech_bonus = {
+				category = motorized_equipment
+				bonus = 2.5
+				uses = 1
 			}
 		}
 	}
 	focus = {
-		id = LAT_Armoured_Cars
+		id = LAT_Armoured_Cars2
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = LAT_Armour_Cars
@@ -470,18 +389,21 @@ focus_tree = {
 			focus = LAT_Armour_Cars
 		}
 		completion_reward = {
-			add_ideas = LAT_More_Armour
+				swap_ideas = {
+				remove_idea = LAT_Military_Genius
+				add_idea = LAT_More_Armour
+			}
 		}
 	}
 	focus = {
-		id = LAT_Armourer_Cars
+		id = LAT_Armourer_Cars3
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		relative_position_id = LAT_Armoured_Cars
+		relative_position_id = LAT_Armoured_Cars2
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = LAT_Armoured_Cars
+			focus = LAT_Armoured_Cars2
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -494,16 +416,16 @@ focus_tree = {
 		id = LAT_The_More_The_Merrier
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		relative_position_id = LAT_Armourer_Cars
+		relative_position_id = LAT_Armourer_Cars3
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = LAT_Armourer_Cars
+			focus = LAT_Armourer_Cars3
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = LAT_Francis_Production_Plan
-				days = 120
+			swap_ideas = {
+				remove_idea = LAT_More_Armour1
+				add_idea = LAT_More_Armour2
 			}
 		}
 	}

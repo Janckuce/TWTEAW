@@ -24,16 +24,31 @@ characters={
 			}
 		}
 		field_marshal={
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			traits = { politicaly_connected old_guard reckless }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 			country_leader = {
 			traits = {king_of_poland}
 			ideology = centrism
 			expire = "1965.1.1.1"
+		}
+	}
+
+		POL_sejmik_regency = {
+		name=POL_sejmik_regency
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_Sejmik_Regency" 
+			}
+		}
+		country_leader = {
+			ideology=rexism
+			expire="1965.1.1.1"
+			id=-1
 		}
 	}
 
@@ -54,7 +69,7 @@ characters={
 				original_tag = POL
 			}
 			traits = {
-			army_artillery_2
+			army_artillery_1
 			}
 			cost = 200
 			ai_will_do = {
@@ -62,11 +77,12 @@ characters={
 			}
 		}
 		field_marshal={
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			traits = { bearer_of_artillery  }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
 		}
 	}
 		POL_jozef_dowbor_musnicki = {
@@ -86,7 +102,7 @@ characters={
 				original_tag = POL
 			}
 			traits = {
-			army_infantry_2
+			army_infantry_1
 			}
 			cost = 200
 			ai_will_do = {
@@ -95,15 +111,15 @@ characters={
 		}
 		corps_commander={
 			skill = 2
-			attack_skill = 3
-			defense_skill = 2
+			attack_skill = 1
+			defense_skill = 1
 			planning_skill = 3
-			logistics_skill = 4
+			logistics_skill = 1
 		}
 	}
 
 		POL_stanislaw_bulak-Balachowicz = {
-		name = "Józef Dowbor-Muśnicki"
+		name = "Stanisław Bułak-Bałachowicz"
 		portraits = {
 			civilian = {
 				large = "GFX_POL_stanislaw_bulak-Balachowicz"
@@ -119,7 +135,7 @@ characters={
 				original_tag = POL
 			}
 			traits = {
-			army_cavalry_2
+			army_cavalry_1
 			}
 			cost = 200
 			ai_will_do = {
@@ -127,11 +143,12 @@ characters={
 			}
 		}
 		corps_commander={
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
+			traits = { cavalry_leader cavalry_expert trickster  }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 1
 			planning_skill = 3
-			logistics_skill = 4
+			logistics_skill = 2
 		}
 	}
 
@@ -160,11 +177,12 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { organizer ranger  }
 			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 
@@ -193,15 +211,16 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { commando }
 			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 		pol_lucjan_zeligowski = {
-		name = "Kazimierz Rumsza"
+		name = "Lucjan Żeligowski"
 		portraits = {
 			civilian = {
 				large = "GFX_pol_lucjan_zeligowski"
@@ -226,10 +245,10 @@ characters={
 		}
 		corps_commander={
 			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 

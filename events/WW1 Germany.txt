@@ -22,6 +22,18 @@ country_event = {
 			
 			inherit_technology = GER
 		}
+		    POL = {
+            set_politics = {
+                ruling_party = fascism
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.3
+            }
+        }
+				POL = {
+				country_event = { id = ww1_germany.1 days = 1 }
+			}
 		GER = {
 			add_to_faction = POL
 			puppet = POL

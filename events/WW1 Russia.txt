@@ -26,15 +26,22 @@ country_event = {
 
 	option = {
 		name = ww1_russia.2.a
-		
+
 		add_country_leader_role = {
 			character = RUS_provisional_government
 			promote_leader = yes
 			country_leader = {
-				ideology = centrism
+				ideology = liberalism
 				traits = {}
 			}
 		}
+		retire_country_leader = yes
+			 set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+		remove_ideas = RUS_let_way_for_democracy2
+		remove_ideas = RUS_russian_nationalism6
 		set_country_flag = RUS_provisional_government_flag
 		set_cosmetic_tag = RUS_provisional
 		news_event = ww1_news.12
