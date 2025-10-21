@@ -80,6 +80,7 @@ SOV_putilov_organization = {
 		OR = {
 			tag = RUS
 			tag = POL
+			tag = LAT
 		}
 	}
 
@@ -385,6 +386,7 @@ RUS_putilov_design_bureau_organization = {
 		OR = {
 			tag = RUS
 			tag = POL
+			tag = LAT
 		}
 	}
 }
@@ -440,6 +442,20 @@ SOV_russobalt_organization = {
 		OR = {
 			tag = RUS
 			tag = POL
+			tag = LAT
 		}
+	}
+}
+
+LAT_russobalt_armored = {
+	name = "Russo-Balt Armored Vehicles"
+	include = generic_armored_car_organization
+	icon = GFX_idea_rus_russobaltin_cars
+	allowed = {
+		OR = {
+			original_tag = LAT
+		}
+		has_dlc = "Gotterdammerung"
+		has_dlc = "La Resistance"
 	}
 }
