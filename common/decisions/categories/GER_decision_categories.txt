@@ -11,3 +11,18 @@ GER_Catholic_Reforms = {
 		has_completed_focus = GER_Ludwig_Leader3
 	}
 }
+
+GER_Plunder_Decisions = {
+	icon = generic_decision_icon_buildings
+
+	visible_when_empty = yes
+
+	priority = 5
+
+	allowed = {
+		original_tag = GER
+	}
+	visible = {
+		always = yes
+	}
+}

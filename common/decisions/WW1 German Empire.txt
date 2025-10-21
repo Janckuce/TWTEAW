@@ -85,3 +85,268 @@ GER_Catholic_Reforms = {
 		}
 	}
 }
+
+GER_Plunder_Decisions = {
+	#in total: 27, 33 or 41? civs, 16 mils possible
+
+	GER_Plunder_Ardennes = {
+		priority = 100
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_state = 835
+			controls_state = 8
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 835
+				}
+				NOT = {
+					controls_state = 8
+				}
+			}
+		}
+		remove_effect = {
+			835 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
+			8 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 7 } }
+			8 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 4 } }
+			42 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 8
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		}
+	}
+	
+	GER_Plunder_Belgium = {
+		priority = 100
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_state = 6
+			controls_state = 34
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 6
+				}
+				NOT = {
+					controls_state = 34
+				}
+			}
+		}
+		remove_effect = {
+			6 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 5 } }
+			34 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			6 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
+			34 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			916 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 8
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		}
+	}
+
+	GER_Plunder_The_French_Border = {
+		priority = 100
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_state = 918
+			controls_state = 908
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 918
+				}
+				NOT = {
+					controls_state = 908
+				}
+			}
+		}
+		remove_effect = {
+			918 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			908 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+
+			28 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+		}
+	}
+
+	GER_Plunder_Deeper_Into_France = {
+		priority = 100
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_state = 27
+			controls_state = 18
+			controls_state = 17
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 27
+				}
+				NOT = {
+					controls_state = 18
+				}
+				NOT = {
+					controls_state = 17
+				}
+				NOT = {
+					controls_state = 933
+				}
+			}
+		}
+		remove_effect = {
+			933 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			18 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			17 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			27 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			27 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
+			28 = {
+				add_extra_state_shared_building_slots = 11
+				add_building_construction = {
+					type = industrial_complex
+					level = 9
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	GER_Plunder_Callais = {
+		priority = 100
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_state = 29
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 2
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 29
+				}
+			}
+		}
+		remove_effect = {
+			29 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			29 = { limit = { industrial_complex > 0 } remove_building = { type = arms_factory level = 3 } }
+			28 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+
+	GER_Plunder_Paris = {
+		priority = 100
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		available = {
+			controls_state = 27
+			controls_state = 18
+			controls_state = 17
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 16
+				}
+				NOT = {
+					controls_state = 15
+				}
+				NOT = {
+					controls_state = 785
+				}
+			}
+		}
+		remove_effect = {
+
+			16 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 4 } }
+			16 = { limit = { industrial_complex > 0 } remove_building = { type = arms_factory level = 1 } }
+			15 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			15 = { limit = { industrial_complex > 0 } remove_building = { type = arms_factory level = 2 } }
+			785 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			785 = { limit = { industrial_complex > 0 } remove_building = { type = arms_factory level = 1 } }
+			857 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 9
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+}
