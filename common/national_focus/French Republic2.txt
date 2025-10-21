@@ -1173,12 +1173,13 @@ focus_tree = {
 			focus = FRA_Sabre_Of_Honour
 		}
 		available = {
-			date > 1918.7.28
+			date > 1914.9.1
+			date < 1915.1.1
 		}
 		completion_reward = {
 			add_timed_idea = {
-				idea = FRA_100_Days_Offensive
-				days = 100
+				idea = FRA_Counter_Offensive
+				days = 40
 			}
 		}
 	}

@@ -405,11 +405,9 @@ ideas = {
 				army_core_attack_factor = 0.1
 			}
 		}
-		FRA_100_Days_Offensive = {
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = 0.20
-				defense_bonus_against = -0.20
+		FRA_Counter_Offensive = {
+			modifier = {
+				army_core_attack_factor = 0.25
 			}
 		}
 		FRA_Stability_Lower = {
