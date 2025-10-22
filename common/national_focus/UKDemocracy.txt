@@ -6,298 +6,298 @@
 #search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 #search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 
-focus_tree = {
-	id = british_focus_democracy_yippee
+# focus_tree = {
+# 	id = british_focus_democracy_yippee
 	
-	country = {
-		factor = 0
-	}
-	shared_focus = ENG_Interfere_In_Agadir
-	shared_focus = ENG_naval_power_projection
-	shared_focus = ENG_War_With_Germany
-	shared_focus = ENG_Air
-	shared_focus = ENG_Army
+# 	country = {
+# 		factor = 0
+# 	}
+# 	shared_focus = ENG_Interfere_In_Agadir
+# 	shared_focus = ENG_naval_power_projection
+# 	shared_focus = ENG_War_With_Germany
+# 	shared_focus = ENG_Air
+# 	shared_focus = ENG_Army
 	
-	continuous_focus_position = { x = 245 y = 1200 }
+# 	continuous_focus_position = { x = 245 y = 1200 }
 	
-	default = no
-	reset_on_civilwar = no
-	focus = {
-		id = ENG_democratic1
-		icon = GFX_focus_generic_democratic_europe
-		x = 8
-		y = 0
-		cost = 7.2
+# 	default = no
+# 	reset_on_civilwar = no
+# 	focus = {
+# 		id = ENG_democratic1
+# 		icon = GFX_focus_generic_democratic_europe
+# 		x = 8
+# 		y = 0
+# 		cost = 7.2
 
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
+# 		bypass = {
+# 			#
+# 		}
+# 		available = {
+# 		    #
+# 		}
 		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+# 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		
-		available_if_capitulated = yes
+# 		available_if_capitulated = yes
 		
-		completion_reward = {
-			34 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			6 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-	}
-	focus = {
-		id = ENG_democratic2
-		icon = GFX_focus_generic_democratic_europe
-		relative_position_id = ENG_democratic1
-		prerequisite = {
-			focus = ENG_democratic1
-		}
-		cost = 10
-		x = 0
-		y = 1
-		completion_reward = { 
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ENG
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ENG
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ENG
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ENG
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ENG
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-	}
-	focus = {
-		id = ENG_democratic3
-		icon = GFX_focus_generic_democratic_europe
-		relative_position_id = ENG_democratic1
-		prerequisite = {
-			focus = ENG_democratic1
-		}
-		cost = 10
-		x = -2
-		y = 1
-		completion_reward = { 
-			FRA = {
-			random_controlled_state = {
-				limit = {
-					is_core_of = FRA
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = FRA
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = FRA
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = FRA
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = FRA
-					infrastructure < 5
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					}
-					add_building_construction = {
-					type = industrial_complex
-					level = 1
-					}
-				}
-			}
-		}
-	}
+# 		completion_reward = {
+# 			34 = {
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			6 = {
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 		}
+# 	}
+# 	focus = {
+# 		id = ENG_democratic2
+# 		icon = GFX_focus_generic_democratic_europe
+# 		relative_position_id = ENG_democratic1
+# 		prerequisite = {
+# 			focus = ENG_democratic1
+# 		}
+# 		cost = 10
+# 		x = 0
+# 		y = 1
+# 		completion_reward = { 
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = ENG
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = ENG
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = ENG
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = ENG
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = ENG
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 		}
+# 	}
+# 	focus = {
+# 		id = ENG_democratic3
+# 		icon = GFX_focus_generic_democratic_europe
+# 		relative_position_id = ENG_democratic1
+# 		prerequisite = {
+# 			focus = ENG_democratic1
+# 		}
+# 		cost = 10
+# 		x = -2
+# 		y = 1
+# 		completion_reward = { 
+# 			FRA = {
+# 			random_controlled_state = {
+# 				limit = {
+# 					is_core_of = FRA
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = FRA
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = FRA
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = FRA
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 				}
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 				}
+# 			}
+# 			random_owned_controlled_state = {
+# 				limit = {
+# 					is_core_of = FRA
+# 					infrastructure < 5
+# 				}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					}
+# 					add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	focus = {
-		id = ENG_democratic4
-		icon = GFX_focus_generic_democratic_europe
-		relative_position_id = ENG_democratic1
-		prerequisite = {
-			focus = ENG_democratic1
-		}
-		cost = 5
-		x = 2
-		y = 1
-		completion_reward = { 
-			RUS = {
-				add_stability = 0.05
-				add_political_power = 50
-			}
-		}
-	}
-	focus = {
-		id = ENG_democratic5
-		icon = GFX_focus_generic_democratic_europe
-		relative_position_id = ENG_democratic1
-		prerequisite = {
-			focus = ENG_democratic3
-			focus = ENG_democratic2
-			focus = ENG_democratic4
-		}
-		cost = 5.8
-		x = 1
-		y = 2
-		completion_reward = { 
-			FRA = {
-				add_ideas = ENG_Military_Investment
-			}
-			RUS = {
-				add_ideas = ENG_Military_Investment
-			}
-		}
-	}
-	focus = {
-		id = ENG_democratic6
-		icon = GFX_focus_generic_democratic_europe
-		relative_position_id = ENG_democratic1
-		prerequisite = {
-			focus = ENG_democratic3
-			focus = ENG_democratic2
-			focus = ENG_democratic4
-		}
-		cost = 5.8
-		x = -1
-		y = 2
-		completion_reward = { 
-			ENG = {
-				add_ideas = ENG_Peoples_trust
-			}
-		}
-	}
-}
+# 	focus = {
+# 		id = ENG_democratic4
+# 		icon = GFX_focus_generic_democratic_europe
+# 		relative_position_id = ENG_democratic1
+# 		prerequisite = {
+# 			focus = ENG_democratic1
+# 		}
+# 		cost = 5
+# 		x = 2
+# 		y = 1
+# 		completion_reward = { 
+# 			RUS = {
+# 				add_stability = 0.05
+# 				add_political_power = 50
+# 			}
+# 		}
+# 	}
+# 	focus = {
+# 		id = ENG_democratic5
+# 		icon = GFX_focus_generic_democratic_europe
+# 		relative_position_id = ENG_democratic1
+# 		prerequisite = {
+# 			focus = ENG_democratic3
+# 			focus = ENG_democratic2
+# 			focus = ENG_democratic4
+# 		}
+# 		cost = 5.8
+# 		x = 1
+# 		y = 2
+# 		completion_reward = { 
+# 			FRA = {
+# 				add_ideas = ENG_Military_Investment
+# 			}
+# 			RUS = {
+# 				add_ideas = ENG_Military_Investment
+# 			}
+# 		}
+# 	}
+# 	focus = {
+# 		id = ENG_democratic6
+# 		icon = GFX_focus_generic_democratic_europe
+# 		relative_position_id = ENG_democratic1
+# 		prerequisite = {
+# 			focus = ENG_democratic3
+# 			focus = ENG_democratic2
+# 			focus = ENG_democratic4
+# 		}
+# 		cost = 5.8
+# 		x = -1
+# 		y = 2
+# 		completion_reward = { 
+# 			ENG = {
+# 				add_ideas = ENG_Peoples_trust
+# 			}
+# 		}
+# 	}
+# }
