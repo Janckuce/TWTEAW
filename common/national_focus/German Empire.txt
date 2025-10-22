@@ -590,11 +590,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
+		    60 = { #Thuringen
 				add_resource = {
 					type = tungsten
 					amount = 15

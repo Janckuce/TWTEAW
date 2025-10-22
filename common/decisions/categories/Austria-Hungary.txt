@@ -35,3 +35,19 @@ AUH_propaganda_campaigns = {
 		}
 	}
 }
+
+AUH_plunder_decisions = {
+	priority = 20
+
+	visible_when_empty = yes
+
+	icon = generic_decision_icon_buildings
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		always = yes
+	}
+}
