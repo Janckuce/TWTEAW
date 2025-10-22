@@ -51,8 +51,6 @@ add_ideas = {
 	isolation
 	free_trade
 	ENG_weak_government
-	ENG_Investing_Colonies_neutral # neutral modifier, neat for testing as it's a nice flag of "yeah it's there"
-#	ENG_Investing_Colonies_nerf4 # no colonial decision has been made yet at game start
 	ENG_Army1
 	ENG_navy1
 	ENG_Air1
@@ -95,5 +93,7 @@ set_convoys = 2000
 set_research_slots = 4
 set_stability = 0.8
 set_war_support = 0.5
+
+set_variable = { ENG_industrial_consumer_goods_expected_value = 0 }
 
 # End of Party Popularity, Stability, War Support and other ##

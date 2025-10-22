@@ -1,6 +1,6 @@
 characters = {
 	GCG_Heinrich_Schnee = {
-		name = GCG_Character_Heinrich_Schnee
+		name = "Heinrich Albert Schnee"
 		portraits = {
 			civilian = {
 				large = "GFX_GCG_Heinrich_Schnee"
@@ -15,14 +15,14 @@ characters = {
 		}
 	}
 	GCG_Paul_Lettow = {
-		name = GCG_Character_Paul_Lettow
+		name = "Paul Emil von Lettow-Vorbeck
 		portraits = {
 			civilian = {
-				large = "GFX_GCG_Paul_Von_Lettow"
+				large = "GFX_GER_paul_von_lettow_vorbeck"
 			}
 			army = {
-				large = "GFX_GCG_Paul_Von_Lettow"
-				small = "GFX_GCG_Paul_Von_Lettow_Frame"
+				large = "GFX_GER_paul_von_lettow_vorbeck"
+				small = "GFX_GER_paul_von_lettow_vorbeck_frame"
 			}
 		}
 		country_leader = {
@@ -46,20 +46,17 @@ characters = {
 				factor = 1.000
 			}
 		}
-		field_marshal={
-			traits = {
-				inflexible_strategist
-				ascari_officer
-			}
-			skill=3
+		corps_commander={
+			traits = { desert_fox swamp_fox jungle_rat trickster  }
+			skill=4
 			attack_skill=3
-			defense_skill=2
+			defense_skill=6
 			planning_skill=4
-			logistics_skill=2
+			logistics_skill=3
 		}
 	}
 	GCG_Victor_Franke = {
-		name = GCG_Character_Victor_Franke
+		name = "Viktor Franke"
 		portraits = {
 			army = {
 				large = "GFX_GCG_Victor_Franke"
@@ -92,7 +89,7 @@ characters = {
 		}
 	}
 	GCG_Carl_Zimmermann = {
-		name = GCG_Character_Carl_Zimmermann
+		name = "Karl Zimmerman"
 		portraits = {
 			army = {
 				large = "GFX_GCG_Carl_Zimmermann"
@@ -122,7 +119,7 @@ characters = {
 		}
 	}
 	GCG_Joachim_Von_Heydebreck = {
-		name = GCG_Character_Joachim_Von_Heydebreck
+		name = "Joachim von Heydebreck"
 		portraits = {
 			army = {
 				large = "GFX_GCG_Joachim_Von_Heydebreck"
@@ -155,7 +152,7 @@ characters = {
 	#	Political Advisors
 
 	GCG_Theodor_Seitz = {
-		name = GCG_Character_Theodor_Seitz
+		name = "Theodor Seitz"
 		portraits = {
 			army = {
 				small = "GFX_GCG_Theodor_Seitz_Frame"
@@ -177,7 +174,7 @@ characters = {
 		}
 	}
 	GCG_Karl_Ebermaier = {
-		name = GCG_Character_Karl_Ebermaier
+		name = "Karl Ebermaier"
 		portraits = {
 			army = {
 				small = "GFX_GCG_Karl_Ebermaier_Frame"
@@ -199,7 +196,7 @@ characters = {
 		}
 	}
 	GCG_Hans_Georg_Von_Doering = {
-		name = GCG_Character_Hans_Georg_Von_Doering
+		name = "Hans Georg von Doering"
 		portraits = {
 			army = {
 				small = "GFX_GCG_Hans_Georg_Von_Doering_Frame"
@@ -221,7 +218,7 @@ characters = {
 		}
 	}
 	GCG_Albert_Hahl = {
-		name = GCG_Character_Albert_Hahl
+		name = "Albert Hahl"
 		portraits = {
 			army = {
 				small = "GFX_GCG_Albert_Hahl_Frame"
