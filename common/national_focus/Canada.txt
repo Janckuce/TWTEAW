@@ -695,9 +695,30 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_army_science
-				bonus = 0.5
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_artillery_tech
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 21
+		y = 4
+
+		prerequisite = {
+			focus = CAN_artillery_tech
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_army_science
+				bonus = 0.4
+				uses = 1
+				technology = heavy_artillery_equipment1
 			}
 		}
 	}
