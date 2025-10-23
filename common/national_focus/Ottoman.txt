@@ -132,7 +132,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
-			random_owned_state = {
+			capital_scope = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -172,7 +172,7 @@ focus_tree = {
 			focus = TUR_Sick_man_europe_2
 		}
 		completion_reward = {
-			random_owned_state = {
+			340 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -212,7 +212,7 @@ focus_tree = {
 			focus = TUR_Sick_man_europe_3
 		}
 		completion_reward = {
-			random_owned_state = {
+			49 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -234,10 +234,7 @@ focus_tree = {
 		x = 5
 		y = 3
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-				}
+			capital_scope = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
@@ -278,10 +275,7 @@ focus_tree = {
 		x = 5
 		y = 4
 		completion_reward = { 
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-				}
+			capital_scope = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -311,51 +305,31 @@ focus_tree = {
 		x = 7
 		y = 4
 		completion_reward = { 
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 5
-				}
+			capital_scope = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 5
-				}
+			49 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 5
-				}
+			340 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 5
-				}
+			341 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 5
-				}
+			339 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -691,10 +665,7 @@ focus_tree = {
 				}
 			}
 			add_ideas = TUR_Military_Empowerment
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-				}
+			capital_scope = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -1157,11 +1128,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					is_coastal = yes
-				}
+			capital_scope = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -1182,11 +1149,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_NAVY_MOD}
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					is_coastal = yes
-				}
+			339 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
