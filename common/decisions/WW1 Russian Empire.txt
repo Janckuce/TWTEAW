@@ -462,7 +462,12 @@ RUS_Military_Academy_Category = {
 	RUS_Organised_Offensive = {
 		priority = 1
 		custom_cost_trigger = {
-			command_power > 15
+			command_power > 25
+		}
+		visible = {
+			NOT = {
+				has_idea = RUS_Mobilise_The_Nation
+			}
 		}
 		custom_cost_text = decision_cost_CP_25
 		complete_effect = {
@@ -470,19 +475,22 @@ RUS_Military_Academy_Category = {
 				idea = RUS_Mobilise_The_Nation
 				days = 100
 			}
+			command_power = -25
 		}
 	}
 	RUS_Mobilisation = {
 		priority = 1
 		custom_cost_trigger = {
-			command_power > 15
+			command_power > 25
 		}
+		fire_only_once = yes
 		custom_cost_text = decision_cost_CP_25
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Brusilov_Offensive
 				days = 123
 			}
+			command_power = -25
 		}
 	}
 }
