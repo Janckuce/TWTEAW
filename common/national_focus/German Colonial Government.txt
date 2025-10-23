@@ -400,7 +400,7 @@ focus_tree = {
 	focus = {
 		id = GCG_Sieze_Land
 		icon = GFX_focus_AUS_raid_military_storages
-		cost = 5
+		cost = 7.2
 		relative_position_id = GCG_German_Fighting
 		x = 0
 		y = 1
@@ -408,11 +408,6 @@ focus_tree = {
 			focus = GCG_German_Fighting
 		}
 		completion_reward = {
-			add_stability = -0.05
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
 				add_offsite_building = {
 				type = arms_factory
 				level = 2
@@ -426,7 +421,7 @@ focus_tree = {
 	focus = {
 		id = GCG_Convert_Buildings
 		icon = GFX_focus_DEN_civilian_preparations
-		cost = 5
+		cost = 7.2
 		relative_position_id = GCG_Sieze_Land
 		x = 0
 		y = 1
@@ -434,13 +429,8 @@ focus_tree = {
 			focus = GCG_Sieze_Land
 		}
 		completion_reward = {
-			add_stability = -0.05
 			add_offsite_building = {
 				type = arms_factory
-				level = 1
-			}
-				add_offsite_building = {
-				type = industrial_complex
 				level = 1
 			}
 			add_timed_idea = {

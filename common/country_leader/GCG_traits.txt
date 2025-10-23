@@ -1,8 +1,8 @@
 leader_traits = {
 	Colonial_Manager = {
 		random = no
-		stability_factor = 0.1
-		production_speed_buildings_factor = 0.1
+		stability_factor = 0.075
+		production_speed_buildings_factor = 0.025
 	}
 	Guerilla_Warfare_Genius = {
 		random = no
@@ -12,9 +12,11 @@ leader_traits = {
 	Guerilla_Strategist = {
 		sprite = 5
 		planning_speed = 0.2
+		max_dig_in_factor = 0.05
+		army_attack_factor = 0.05
+		army_defence_factor = 0.075
 		initiative_factor = 0.1
-		experience_gain_army = 0.25
-
+		experience_gain_army = 0.15
 		command_cap_increase = 30
 		command_power = 0
 	}

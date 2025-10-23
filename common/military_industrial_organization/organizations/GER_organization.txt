@@ -17,6 +17,7 @@ GER_porsche_organization = {
 		OR = {
 			tag = GER 
 			tag = YEM
+			tag = GCG
 			AND = {
 				tag = BUL
 			}
@@ -46,6 +47,7 @@ GER_man_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
+			tag = GCG
 			AND = {
 				tag = BUL
 			}
@@ -154,6 +156,7 @@ GER_ag_vulcan_stettin = {
 	allowed = {	
 		OR = {
 			tag = GER 
+			tag = CGC
 			AND = {
 				tag = BUL
 			}
@@ -367,7 +370,8 @@ GER_rheinmetall_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = GER 
+			tag = GER
+			tag = GCG
 			AND = {
 				tag = GRE
 			}
@@ -400,6 +404,7 @@ GER_mauser_organization = {
 		OR = {
 			tag = GER
 			tag = YEM
+			tag = GCG
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
