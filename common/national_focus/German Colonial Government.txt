@@ -552,7 +552,7 @@ focus_tree = {
 
 	focus = {
 		id = GCG_Colonial_Militia
-		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		icon = GFX_focus_RAJ_forge_the_kshatriya_army
 		cost = 10
 		x = 14
 		y = 0
@@ -717,77 +717,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GCG_Trade_Security2
-		icon = GFX_focus_generic_trade_interdiction
-		cost = 10
-		relative_position_id = GCG_Trade_Security1
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = GCG_Trade_Security1
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = GCG_Convoy_Production
-				}
-				swap_ideas = {
-					remove_idea = GCG_Convoy_Production
-					add_idea = GCG_Convoy_Production1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = GCG_Convoy_Production1
-				}
-				swap_ideas = {
-					remove_idea = GCG_Convoy_Production1
-					add_idea = GCG_Convoy_Production2
-				}
-			}
-		}
-	}
-	focus = {
-		id = GCG_Trade_Security3
-		icon = GFX_focus_generic_trade_interdiction
-		cost = 10
-		relative_position_id = GCG_Trade_Security1
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = GCG_Trade_Security1
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = GCG_Convoy_Production
-				}
-				swap_ideas = {
-					remove_idea = GCG_Convoy_Production
-					add_idea = GCG_Convoy_Production1
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = GCG_Convoy_Production1
-				}
-				swap_ideas = {
-					remove_idea = GCG_Convoy_Production1
-					add_idea = GCG_Convoy_Production2
-				}
-			}
-		}
-	}
-	focus = {
 		id = GCG_Trade_Security4
 		icon = GFX_focus_generic_coastal_fort
 		cost = 5
 		relative_position_id = GCG_Trade_Security1
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {
-			focus = GCG_Trade_Security2
-			focus = GCG_Trade_Security3
+			focus = GCG_Trade_Security1
 		}
 		completion_reward = {
 			546 = {
