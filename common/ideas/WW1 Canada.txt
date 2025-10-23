@@ -43,5 +43,31 @@ ideas = {
 				army_org_factor = 0.15
 			}
 		}
+
+		CAN_The_Redcoats_Of_Canada = {
+			modifier = {
+				army_strength_factor = 0.1
+			}
+		}
+		CAN_Like_The_Hardworking_Brits = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		CAN_All_For_Britain = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		CAN_Sacrafice_For_King_And_Country = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = -0.25
+			}
+		}
 	}
 }

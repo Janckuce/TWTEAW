@@ -18,7 +18,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 245 y = 1200 }
+	continuous_focus_position = { x = 245 y = 1500 }
 
 	default = no
 
@@ -526,6 +526,93 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+
+	focus = {
+		id = CAN_our_own_redcoats
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 9
+		y = 6
+
+		prerequisite = {
+			focus = CAN_british_heritage
+		}
+
+		completion_reward = {
+			add_ideas = CAN_The_Redcoats_Of_Canada
+		}
+	}
+
+	focus = {
+		id = CAN_Study_British_Military_History
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 9
+		y = 7
+
+		prerequisite = {
+			focus = CAN_our_own_redcoats
+		}
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = CAN_hardworking_brits
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 7
+		y = 6
+
+		prerequisite = {
+			focus = CAN_british_heritage
+		}
+
+		completion_reward = {
+			add_ideas = CAN_Like_The_Hardworking_Brits
+		}
+	}
+
+	focus = {
+		id = CAN_all_for_britain
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 7
+		y = 7
+
+		prerequisite = {
+			focus = CAN_hardworking_brits
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_Like_The_Hardworking_Brits
+				add_idea = CAN_All_For_Britain
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_sacrafice_for_king_and_country
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 7
+		y = 8
+
+		prerequisite = {
+			focus = CAN_all_for_britain
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_All_For_Britain
+				add_idea = CAN_Sacrafice_For_King_And_Country
+			}
+			add_stability = -0.1
 		}
 	}
 
