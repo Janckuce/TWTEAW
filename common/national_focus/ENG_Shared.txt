@@ -248,7 +248,10 @@
 		}
 		available = {
 			date > 1914.1.1
+			OR = {
 		    has_idea = isolation
+			has_idea = disturbed_isolation
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
