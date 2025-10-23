@@ -706,7 +706,7 @@ ideas = {
 			political_power_factor = -0.2
 			stability_factor = -0.075
 			research_speed_factor = -0.1
-			production_speed_arms_factory_factor = 0.075
+			production_speed_arms_factory_factor = 0.05
 			production_speed_industrial_complex_factor = -0.025
 			industrial_capacity_factory = 0.025
 			non_core_manpower = -0.4
@@ -739,8 +739,8 @@ ideas = {
 			political_power_factor = -0.15
 			stability_factor = -0.05
 			research_speed_factor = -0.075
-			production_speed_arms_factory_factor = 0.1
-			industrial_capacity_factory = 0.05
+			production_speed_arms_factory_factor = 0.08
+			industrial_capacity_factory = 0.04
 			non_core_manpower = -0.35
 			}
 				targeted_modifier = {
@@ -770,8 +770,8 @@ ideas = {
 			political_power_factor = -0.1
 			research_speed_factor = -0.05
 			stability_factor = -0.025
-			production_speed_arms_factory_factor = 0.125
-			industrial_capacity_factory = 0.075
+			production_speed_arms_factory_factor = 0.08
+			industrial_capacity_factory = 0.06
 			non_core_manpower = -0.3
 			}
 				targeted_modifier = {
@@ -800,8 +800,8 @@ ideas = {
 			modifier = {
 			political_power_factor = -0.05
 			research_speed_factor = -0.025
-			production_speed_arms_factory_factor = 0.15
-			industrial_capacity_factory = 0.1
+			production_speed_arms_factory_factor = 0.08
+			industrial_capacity_factory = 0.08
 			non_core_manpower = -0.15
 
 			}
@@ -829,12 +829,11 @@ ideas = {
 			}
 			
 			modifier = {
-			production_speed_arms_factory_factor = 0.175
-			industrial_capacity_factory = 0.125
+			production_speed_arms_factory_factor = 0.1
+			industrial_capacity_factory = 0.10
 			non_core_manpower = -0.1
-			army_org_factor = 0.2
 			production_factory_start_efficiency_factor = 0.05
-			production_factory_efficiency_gain_factor = 0.075
+			production_factory_efficiency_gain_factor = 0.15
 			army_core_attack_factor = 0.05
 			army_core_defence_factor = 0.025
 			}
@@ -970,7 +969,7 @@ ideas = {
 				conscription_factor = 0.025
 				political_advisor_cost_factor = -0.4
 				democratic_drift = 0.35
-				stability_weekly = 0.001
+				stability_weekly = 0.003
 				non_core_manpower = 0.075
 
 			}
