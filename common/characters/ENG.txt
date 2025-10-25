@@ -40,6 +40,7 @@ characters={
 			}
 		}
 		field_marshal={
+			traits = { logistics_wizard fast_planner offensive_doctrine }
 			skill = 2
 			attack_skill = 4
 			defense_skill = 2
@@ -73,6 +74,7 @@ characters={
 			}
 		}
 		field_marshal={
+			traits = {	thorough_planner aggressive_assaulter inspirational_leader }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -106,6 +108,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { trait_engineer fortress_buster offensive_doctrine }
 			skill = 2
 			attack_skill = 5
 			defense_skill = 1
@@ -139,6 +142,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { infantry_leader infantry_expert organizer }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -172,6 +176,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { infantry_leader invader_ii }
 			skill = 2
 			attack_skill = 4
 			defense_skill = 3
@@ -205,6 +210,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { panzer_leader organizer cavalry_expert }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -224,6 +230,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { defensive_doctrine unyielding_defender infantry_leader }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -243,6 +250,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { infantry_leader commando offensive_doctrine }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -276,6 +284,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { infantry_expert infantry_leader organizer }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -295,6 +304,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = { engineer_officer fortress_buster }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -472,4 +482,55 @@ characters={
 			}
 		}
 	}
+	ENG_Jhon_jellico = {
+		name = ENG_Jhon_jellico
+		portraits = {
+			army = {
+				
+			}
+		}
+		navy_leader={
+			traits={ cruiser_captain fleet_protector }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 4
+			legacy_id = -1
+		}
+	}
+	ENG_David_beatty = {
+		name = ENG_david_beatty
+		portraits = {
+			army = {
+				
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician spotter }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 4
+
+	}
+}
+	Eng_Jhon_Fisher = {
+		name = Eng_Jhon_Fisher
+		portraits ={
+			army={
+
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician fleet_protector cruiser_captain }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 4
+		
+	}
+}
 }
