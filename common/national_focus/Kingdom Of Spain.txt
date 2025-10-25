@@ -837,4 +837,206 @@ focus_tree = {
 			add_ideas = SPR_Volunteer_Forces
 		}
 	}
+
+	#	War Time Focuses
+
+	focus = {
+		id = SPR_War_Effort
+		icon = GFX_focus_spa_unify_the_nationalist_front
+		cost = 10
+		x = 19
+		y = 5
+		available = {
+			has_war = yes
+			date > 1914.7.28
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SPR_War_Efficiency
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = SPR_Mobilisation
+		icon = GFX_focus_CHL_promote_pan_hispanic_rhetoric
+		cost = 10
+		relative_position_id = SPR_War_Effort
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SPR_War_Effort
+		}
+		completion_reward = {
+			every_controlled_state = {
+				if = {
+					limit = {
+						not = {
+							is_core_of = SPR
+						}
+					}
+					add_core_of = SPR
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Mutual_Assistance
+		icon = GFX_SOV_cohesion_first_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Mobilisation
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = SPR_Mobilisation
+		}
+		completion_reward = {
+			army_experience = 30
+			GER = {
+				army_experience = 30
+			}
+			AUS = {
+				army_experience = 30
+			}
+		}
+	}
+	focus = {
+		id = SPR_What_We_Learned1
+		icon = GFX_SOV_improve_the_stalin_line_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Mutual_Assistance
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_What_We_Learned2
+		}
+		prerequisite = {
+			focus = SPR_Mutual_Assistance
+		}
+		completion_reward = {
+			add_ideas = SPR_Military_Officers
+		}
+	}
+	focus = {
+		id = SPR_What_We_Learned2
+		icon = GFX_SOV_no_time_for_peace_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Mutual_Assistance
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_What_We_Learned1
+		}
+		prerequisite = {
+			focus = SPR_Mutual_Assistance
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SPR_Counter_Offensive
+				days = 70
+			}
+		}
+	}
+	focus = {
+		id = SPR_Construction_Program
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 10
+		relative_position_id = SPR_Mobilisation
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = SPR_Mobilisation
+		}
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			GER = {
+				capital_scope = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+			AUS = {
+				capital_scope = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Military_Boost
+		icon = GFX_SOV_national_unification_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Construction_Program
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Civilian_Boost
+		}
+		prerequisite = {
+			focus = SPR_Construction_Program
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SPR_Military_Construction
+				days = 70
+			}
+			GER = {
+				add_timed_idea = {
+					idea = SPR_Military_Construction
+					days = 70
+				}
+			}
+			AUS = {
+				add_timed_idea = {
+					idea = SPR_Military_Construction
+					days = 70
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_Civilian_Boost
+		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SPR_Construction_Program
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = SPR_Military_Boost
+		}
+		prerequisite = {
+			focus = SPR_Construction_Program
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SPR_Civilian_Construction
+				days = 70
+			}
+			GER = {
+				add_timed_idea = {
+					idea = SPR_Civilian_Construction
+					days = 70
+				}
+			}
+			AUS = {
+				add_timed_idea = {
+					idea = SPR_Civilian_Construction
+					days = 70
+				}
+			}
+		}
+	}
 }
