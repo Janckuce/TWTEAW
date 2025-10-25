@@ -1,3 +1,15 @@
+BEL_Germany_Guide = {
+	icon = GFX_decision_category_generic
+
+	priority = 110
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = GER
+	}
+}
+
 GER_Catholic_Reforms = {
 	icon = military_operation
 
@@ -20,7 +32,7 @@ GER_Plunder_Decisions = {
 	priority = 5
 
 	allowed = {
-		original_tag = GER
+		tag = GER
 	}
 	visible = {
 		always = yes

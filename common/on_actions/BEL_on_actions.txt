@@ -1,4 +1,11 @@
 on_actions = {
+	on_startup = {
+		effect	= {
+			BEL	= {
+				country_event = {id = belgium_startup.1}
+			}
+		}
+	}
 	on_capitulation = {
 		effect = {
 			if = {

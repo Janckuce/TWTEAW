@@ -568,6 +568,9 @@ RUS_Mod_Descision_Catagory = {
 		tag = RUS
 		POL = {is_ai = yes}
 	}
+	ai_will_do = {
+		factor = 100
+	}
 	complete_effect = {
 		annex_country = { target = POL}
 	  }
@@ -583,6 +586,9 @@ RUS_Mod_Descision_Catagory = {
 	available = {
 		tag = RUS
 		LAT = {is_ai = yes}
+	}
+	ai_will_do = {
+		factor = 100
 	}
 	complete_effect = {
 		annex_country = { target = LAT}

@@ -1,5 +1,32 @@
 add_namespace = ww1_belgium
+add_namespace = belgium_guide
+add_namespace = belgium_startup
 
+country_event = {
+	id = belgium_startup.1
+	title = belgium_startup.1.t
+	desc = belgium_startup_desc.1
+	picture = GFX_report_event_SWI_cantons_flags_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = belgium_startup.1.a
+	}
+}
+
+country_event = {
+	id = belgium_guide.1
+	title = belgium_guide.1.t
+	desc = belgium_guide_desc.1
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = belgium_guide.1.a
+	}
+}
 
 country_event = {
 	id = ww1_belgium.1

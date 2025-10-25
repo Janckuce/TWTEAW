@@ -1,4 +1,32 @@
 add_namespace = ww1_france
+add_namespace = france_startup
+add_namespace = france_guide
+
+country_event = {
+	id = france_startup.1
+	title = france_startup.1.t
+	desc = france_startup_desc.1
+	picture = GFX_report_event_SWI_cantons_flags_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_startup.1.a
+	}
+}
+
+country_event = {
+	id = france_guide.1
+	title = france_guide.1.t
+	desc = france_guide_desc.1
+	picture = GFX_report_event_generic_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_guide.1.a
+	}
+}
 
 #France asks Russia for economic proposals
 country_event = {

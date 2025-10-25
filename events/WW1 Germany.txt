@@ -1,4 +1,32 @@
 add_namespace = ww1_germany
+add_namespace = germany_guide
+add_namespace = germany_startup
+
+country_event = {
+	id = germany_startup.1
+	title = germany_startup.1.t
+	desc = germany_startup_desc.1
+	picture = GFX_report_event_SWI_cantons_flags_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany_startup.1.a
+	}
+}
+
+country_event = {
+	id = germany_guide.1
+	title = germany_guide.1.t
+	desc = germany_guide_desc.1
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany_guide.1.a
+	}
+}
 
 #Formation of Poland
 country_event = {
