@@ -481,12 +481,9 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 10
 		relative_position_id = SAF_World_Trade
-		x = 5
+		x = 6
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		mutually_exclusive = {
-			focus = SAF_Maritz_Our_Guy
-		}
 		prerequisite = {
 			focus = SAF_World_Trade
 		}
@@ -502,7 +499,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10
 		relative_position_id = SAF_Cut_Down_On_Nationalism
-		x = 0
+		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
@@ -600,22 +597,17 @@ focus_tree = {
 		id = SAF_Maritz_Our_Guy
 		icon = GFX_focus_GER_factories_for_resources
 		cost = 10
-		x = 13
+		relative_position_id = SAF_Cut_Down_On_Nationalism
+		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		mutually_exclusive = {
-			focus = SAF_Cut_Down_On_Nationalism
-		}
 		available = {
 		}
 		prerequisite = {
-			focus = SAF_World_Trade
+			focus = SAF_Cut_Down_On_Nationalism
 		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_recource_rich
-				add_idea = SAF_small_but_ours
-			}
+			add_ideas = SAF_small_but_ours
 			}
 		}
 	focus = {
@@ -658,8 +650,9 @@ focus_tree = {
 		id = SAF_Boers_First
 		icon = GFX_focus_generic_africa_factory
 		cost = 10
-		x = 13
-		y = 3
+		relative_position_id = SAF_Industrialise_The_Nation
+		x = 0
+		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = SAF_Industrialise_The_Nation
@@ -730,9 +723,12 @@ focus_tree = {
 		icon = GFX_focus_GER_total_control_over_domestic_affairs
 		cost = 10
 		relative_position_id = SAF_Boers_And_God
-		x = 0
+		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = SAF_Our_Very_Own
+		}
 		prerequisite = {
 			focus = SAF_Boers_And_God
 		}
