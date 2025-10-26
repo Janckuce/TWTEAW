@@ -212,11 +212,14 @@ focus_tree = {
 
 		completion_reward = {
 			464 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
-				type = arms_factory
-				level = 3
-				instant_build = yes
+					type = arms_factory
+					level = 3
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 				}
 		    }
 		}
@@ -406,7 +409,9 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_political1
 		}
-
+		mutually_exclusive = {
+			focus = CAN_bar_natives_from_volounteering
+		}
 		completion_reward = {
 			add_manpower = 10000
 		}
@@ -597,7 +602,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_sacrafice_for_king_and_country
+		id = CAN_ifice_for_king_and_country
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		x = 7
@@ -610,7 +615,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = CAN_All_For_Britain
-				add_idea = CAN_Sacrafice_For_King_And_Country
+				add_idea = CAN_Sacrifice_For_King_And_Country
 			}
 			add_stability = -0.1
 		}
@@ -644,9 +649,15 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_army1
 		}
+
+		available = {
+			date > 1913.1.1
+		}
 		
 		completion_reward = {
+			remove_ideas = CAN_Flurishing_Civilian_Economy
 			add_ideas = CAN_Strong_Volunteer_Base
+			add_war_support = 0.1
 		}
 	}
 
@@ -663,18 +674,11 @@ focus_tree = {
 
 		available = {
 			has_war = yes
-			date > 1915.1.1
-			has_idea = limited_conscription
+			date > 1914.8.4
 		}
-
-		bypass = {
-			has_war = yes
-			date > 1915.1.1
-			has_idea = extensive_conscription
-		}
-
+		
 		completion_reward = {
-			add_ideas = extensive_conscription
+			add_ideas = limited_conscription
 		}
 	}
 
@@ -687,6 +691,37 @@ focus_tree = {
 
 		prerequisite = {
 			focus = CAN_army_left2
+		}
+
+		available = {
+			has_war = yes
+			date > 1916.1.1
+			has_idea = limited_conscription
+		}
+
+		bypass = {
+			has_war = yes
+			date > 1916.1.1
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement 
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
+
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+
+	focus = {
+		id = CAN_army_left4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 14
+		y = 4
+
+		prerequisite = {
+			focus = CAN_army_left3
 		}
 
 		completion_reward = {
@@ -790,7 +825,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_artillery_tech
+		id = CAN_heavy_artillery_tech
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		x = 21
@@ -803,7 +838,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_army_science
-				bonus = 0.4
+				bonus = 0.80
 				uses = 1
 				technology = heavy_artillery_equipment1
 			}
@@ -891,7 +926,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = CAN_Native_Teachings
 		}
 	}
 

@@ -1,4 +1,4 @@
-BEL_Germany_Guide = {
+GER_Germany_Guide = {
 	GER_Country_Guide = {
 		fire_only_once = no
 		allowed = {
@@ -9,6 +9,139 @@ BEL_Germany_Guide = {
 		}
 		complete_effect = {
 			country_event = germany_guide.1
+		}
+	}
+}
+
+GER_Research_Decisions = { 
+	
+	GER_air_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 140
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Air Research"
+				category = light_air
+				bonus = 0.4
+				uses = 1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_arty_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = GER_artillery_research_1
+				bonus = 0.6
+				uses = 1
+				category = artillery
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_ship_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = GER_ships_research_1
+				bonus = 0.6
+				uses = 1
+				category = naval_equipment
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_tank_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Armor Research"
+				category = armor
+				bonus = 0.8
+				uses = 1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 4
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_heavy_arty_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 220
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_artillery_research_1
+				bonus = 1
+				uses = 1
+				technology = heavy_artillery_equipment1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 6
+		}
+		remove_effect = {
+			
 		}
 	}
 }
@@ -153,12 +286,11 @@ GER_Plunder_Decisions = {
 				}
 			}
 		}
-		days_remove = 5
+		days_remove = 60
 
 		modifier = {
 			civilian_factory_use = 5
 		}
-		days_re_enable = 10
 
 		cancel_trigger = {
 			OR = {

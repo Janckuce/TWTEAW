@@ -3,12 +3,19 @@ ideas = {
 		CAN_French_Minority = {
 			modifier = {
 				conscription_factor = -0.3
+				mobilization_laws_cost_factor = 5
 			}
 		}
 
 		CAN_Strong_Volunteer_Base = {
 			modifier = {
 				conscription = 0.01
+			}
+		}
+
+		CAN_Flurishing_Civilian_Economy = {
+			modifier = {
+				consumer_goods_factor = -0.2
 			}
 		}
 
@@ -38,6 +45,12 @@ ideas = {
 		# 	}
 		# }
 		
+		CAN_Native_Teachings = {
+			modifier = {
+				no_supply_grace = 48
+			}
+		}
+
 		CAN_Man_And_Rifle = {
 			modifier = {
 				army_org_factor = 0.15
@@ -61,7 +74,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
-		CAN_Sacrafice_For_King_And_Country = {
+		CAN_Sacrifice_For_King_And_Country = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_factory_start_efficiency_factor = 0.15

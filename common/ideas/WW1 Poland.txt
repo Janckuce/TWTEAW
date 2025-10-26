@@ -1,5 +1,12 @@
 ideas = {
 	country = {
+		POL_no_conscription_laws = {
+			picture = chi_forced_conscription
+			modifier = {
+				mobilization_laws_cost_factor = 5
+			}
+		}
+		
 		POL_heartland_of_pol = {
 			picture = pol_heartbeat_of_poland
 			modifier = {
