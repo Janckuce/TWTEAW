@@ -5,37 +5,50 @@ ideas = {
 				conscription_factor = -0.3
 				mobilization_laws_cost_factor = 5
 			}
+			picture = SPR_disbanded_army
 		}
 
 		CAN_Strong_Volunteer_Base = {
 			modifier = {
 				conscription = 0.01
 			}
+			picture = AFG_adopt_nufus
 		}
 
 		CAN_Flurishing_Civilian_Economy = {
 			modifier = {
 				consumer_goods_factor = -0.2
 			}
+			picture = ARG_civilian_economy_boost
+		}
+
+		CAN_Export_Driven_Growth = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			picture = generic_build_infrastructure
 		}
 
 		CAN_Native_Consessions = {
 			modifier = {
-				consumer_goods_factor = 0.1 
+				global_building_slots_factor = -0.1 
 				conscription_factor = 0.05
 			}
+			picture = ARG_social_welfare_fund_ns
 		}
 
 		CAN_Native_Support = {
 			modifier = {
 				political_power_gain = 0.15
 			}
+			picture = air_support_focus
 		}
 
 		CAN_Exclusive_Army_Enlistment = {
 			modifier = {
 				training_time_army_factor = -0.2
 			}
+			picture = COG_the_invisible_roof
 		}
 
 		# CAN_American_Resource_Imports = {
@@ -45,42 +58,118 @@ ideas = {
 		# 	}
 		# }
 		
-		CAN_Native_Teachings = {
+		CAN_New_Heritage = {
 			modifier = {
-				no_supply_grace = 48
+				weekly_manpower = 500
 			}
+			picture = can_defence_of_canada_regulations_democratic
 		}
-
-		CAN_Man_And_Rifle = {
+		CAN_New_Heritage2 = {
 			modifier = {
+				weekly_manpower = 500
+				political_advisor_cost_factor = -0.4
+			}
+			picture = can_defence_of_canada_regulations_democratic
+		}
+		CAN_New_Heritage3 = {
+			modifier = {
+				weekly_manpower = 500
+				political_advisor_cost_factor = -0.4
+				war_support_weekly = 0.002
+			}
+			picture = can_defence_of_canada_regulations_democratic
+		}
+		CAN_New_Heritage4 = {
+			modifier = {
+				weekly_manpower = 500
+				political_advisor_cost_factor = -0.4
+				war_support_weekly = 0.002
+				command_power_gain_mult = 0.5
+			}
+			picture = can_defence_of_canada_regulations_democratic
+		}
+		CAN_Man_And_Rifle1 = {
+			modifier = {
+				army_infantry_defence_factor = 0.15
+				army_infantry_attack_factor = 0.10
+			}
+			picture = HUN_secret_rearmament
+		}
+		CAN_Man_And_Rifle2 = {
+			modifier = {
+				army_infantry_defence_factor = 0.15
+				army_infantry_attack_factor = 0.10
 				army_org_factor = 0.15
 			}
+			picture = HUN_secret_rearmament
+		}
+		CAN_Man_And_Rifle3 = {
+			modifier = {
+				army_infantry_defence_factor = 0.15
+				army_infantry_attack_factor = 0.10
+				army_org_factor = 0.15
+				equipment_capture = 0.1
+				no_supply_grace = 48
+			}
+			picture = HUN_secret_rearmament
 		}
 
-		CAN_The_Redcoats_Of_Canada = {
+		CAN_The_Redcoats_Of_Canada1 = {
 			modifier = {
 				army_strength_factor = 0.1
 			}
+			picture = NORDIC_army_monarchist
+		}
+		CAN_The_Redcoats_Of_Canada2 = {
+			modifier = {
+				army_strength_factor = 0.1
+				shore_bombardment_bonus = 0.6
+			}
+			picture = NORDIC_army_monarchist
+		}
+		CAN_The_Redcoats_Of_Canada3 = {
+			modifier = {
+				army_strength_factor = 0.1
+				shore_bombardment_bonus = 0.6
+				special_forces_cap = 2
+			}
+			picture = NORDIC_army_monarchist
+		}
+		CAN_British_Heritage1 = {
+			modifier = {
+				local_resources_factor = 0.4
+				stability_weekly = 0.001
+			}
+			picture = ARG_construction_guilds
 		}
 		CAN_Like_The_Hardworking_Brits = {
 			modifier = {
+				local_resources_factor = 0.4
+				stability_weekly = 0.001
 				industrial_capacity_factory = 0.1
 			}
+			picture = ARG_construction_guilds
 		}
 		CAN_All_For_Britain = {
 			modifier = {
+				local_resources_factor = 0.4
+				stability_weekly = 0.001
 				industrial_capacity_factory = 0.1
 				production_factory_start_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.2
 			}
+			picture = ARG_construction_guilds
 		}
 		CAN_Sacrifice_For_King_And_Country = {
 			modifier = {
+				local_resources_factor = 0.4
+				stability_weekly = 0.001
 				industrial_capacity_factory = 0.1
 				production_factory_start_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.2
 				consumer_goods_factor = -0.25
 			}
+			picture = ARG_construction_guilds
 		}
 	}
 }

@@ -24,7 +24,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_political1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10
 		x = 5
 		y = 0
@@ -35,7 +35,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_eco_infrastructure_east
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10
 		x = 2
 		y = 1
@@ -85,7 +85,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_dockyards_east
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 7.2
 		x = 2
 		y = 3
@@ -116,7 +116,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_eco_infrastructure_west
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10
 		x = -2
 		y = 1
@@ -159,7 +159,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_north_ontario_resources
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
 		cost = 7.2
 		x = -2
 		y = 3
@@ -178,8 +178,8 @@ focus_tree = {
 
 	focus = {
 		id = CAN_import_more_resources
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 7.2
+		icon = GFX_goal_generic_trade
+		cost = 7.2 
 		x = -2
 		y = 4
 
@@ -196,7 +196,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_halifax_munitions_depot
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		cost = 7.2
 		x = 2
 		y = 4
@@ -227,7 +227,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_american_manpower
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_manpower
 		cost = 10
 		x = 0
 		y = 2
@@ -249,10 +249,27 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = CAN_construction_industry
+		icon = GFX_goal_generic_construction
+		cost = 10
+		x = 0
+		y = 5
+
+		prerequisite = {
+			focus = CAN_north_ontario_resources	
+			focus = CAN_dockyards_east
+		}
+
+		completion_reward = {
+			add_ideas = CAN_Export_Driven_Growth
+		}
+	}
+
 
 	focus = {
 		id = CAN_factories1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 7.2
 		x = 5
 		y = 1
@@ -275,7 +292,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_factories2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 7.2
 		x = 5
 		y = 2
@@ -298,7 +315,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_factories3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 7.2
 		x = 5
 		y = 3
@@ -321,7 +338,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_factories4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 7.2
 		x = 5
 		y = 4
@@ -347,7 +364,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_bar_natives_from_volounteering
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		cost = 10
 		x = 8
 		y = 1
@@ -366,7 +383,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_native_repression
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_the_onslaught_on_colonialism_ccp_2d_sov_compatibility
 		cost = 5
 		x = 8
 		y = 2
@@ -385,7 +402,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_sieze_native_lands
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_annex_country_2
 		cost = 5
 		x = 8
 		y = 4
@@ -401,7 +418,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_first_nations_people_in_army
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_NORDIC_com_institution_1
 		cost = 10
 		x = 11
 		y = 1
@@ -419,7 +436,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_reform_repressive_policies
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_BRA_repeale_national_security_law
 		cost = 10
 		x = 11
 		y = 2
@@ -435,7 +452,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_native_concessions
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_reverse_the_collectivization_process_ccp_2d_sov_compatibility
 		cost = 10
 		x = 11
 		y = 3
@@ -451,7 +468,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_first_nations_rights
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AUS_lawmaking_leniency
 		cost = 10
 		x = 11
 		y = 4
@@ -468,7 +485,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_native_land_utilization
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_DEN_limited_regulations
 		cost = 10
 		x = 5
 		y = 5
@@ -520,7 +537,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_british_heritage
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_chi_british_cooperation
 		cost = 10
 		x = 8
 		y = 5
@@ -530,13 +547,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_ideas = CAN_British_Heritage1
 		}
 	}
 
 	focus = {
 		id = CAN_our_own_redcoats
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_NORDIC_com_selector_army
 		cost = 10
 		x = 9
 		y = 6
@@ -546,13 +563,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_The_Redcoats_Of_Canada
+			add_ideas = CAN_The_Redcoats_Of_Canada1
 		}
 	}
 
 	focus = {
-		id = CAN_Study_British_Military_History
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = CAN_study_british_military_history
+		icon = GFX_SOV_naval_infantry_ccp_2d_sov_compatibility
 		cost = 10
 		x = 9
 		y = 7
@@ -562,13 +579,34 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 50
+			swap_ideas = {
+				remove_idea = CAN_The_Redcoats_Of_Canada1
+				add_idea = CAN_The_Redcoats_Of_Canada2
+			}
+		}
+	}
+	focus = {
+		id = CAN_we_are_special_too
+		icon = GFX_focus_SMB_special_forces_option_1
+		cost = 10
+		x = 9
+		y = 8
+
+		prerequisite = {
+			focus = CAN_study_british_military_history
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_The_Redcoats_Of_Canada2
+				add_idea = CAN_The_Redcoats_Of_Canada3
+			}
 		}
 	}
 
 	focus = {
 		id = CAN_hardworking_brits
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_production
 		cost = 10
 		x = 7
 		y = 6
@@ -578,13 +616,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_Like_The_Hardworking_Brits
+			swap_ideas = {
+				remove_idea = CAN_British_Heritage1
+				add_idea = CAN_Like_The_Hardworking_Brits
+			}
 		}
 	}
 
 	focus = {
 		id = CAN_all_for_britain
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		cost = 10
 		x = 7
 		y = 7
@@ -602,14 +643,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_ifice_for_king_and_country
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = CAN_sacrifice_for_king_and_country
+		icon = GFX_focus_NORDIC_mon_civilian
 		cost = 10
 		x = 7
 		y = 8
 
 		prerequisite = {
 			focus = CAN_all_for_britain
+		}
+		available = {
+			has_war = yes
 		}
 
 		completion_reward = {
@@ -623,7 +667,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_bad_medical
 		cost = 10
 		x = 16
 		y = 0
@@ -641,7 +685,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army_left1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_expand_aviation_institutes_ccp_2d_sov_compatibility
 		cost = 10
 		x = 14
 		y = 1
@@ -663,7 +707,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army_left2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_strengthen_the_mobilization_plan_ccp_2d_sov_compatibility
 		cost = 10
 		x = 14
 		y = 2
@@ -684,7 +728,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army_left3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_limited_social_mobilization
 		cost = 10
 		x = 14
 		y = 3
@@ -715,7 +759,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army_left4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
 		cost = 10
 		x = 14
 		y = 4
@@ -732,7 +776,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army_right1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_research
 		cost = 10
 		x = 19
 		y = 1
@@ -742,13 +786,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_research_slot = 1
 		}
 	}
 
 	focus = {
 		id = CAN_army_science
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_pc_of_mechanical_engineering_ccp_2d_sov_compatibility
 		cost = 10
 		x = 20
 		y = 2
@@ -758,13 +802,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				name = CAN_army_right1
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
 		}
 	}
 
 	focus = {
 		id = CAN_army_right2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_defence
 		cost = 10
 		x = 18
 		y = 2
@@ -774,13 +823,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = CAN_army_right1
+				bonus = 1
+				uses = 3
+				technology = ww1_gas_mask_1
+				technology = ww1_gas_mask_2
+				technology = ww1_gas_mask_3
+			}
 		}
 	}
 
 	focus = {
 		id = CAN_infantry_weapons
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 10
 		x = 19
 		y = 3
@@ -805,7 +861,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_artillery_tech
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_mountain_guns
 		cost = 10
 		x = 21
 		y = 3
@@ -826,7 +882,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_heavy_artillery_tech
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_PER_construct_air_defenses
 		cost = 10
 		x = 21
 		y = 4
@@ -847,7 +903,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_lessons_of_1812
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_air_doctrine
 		cost = 10
 		x = 17
 		y = 3
@@ -867,7 +923,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_lessons_from_the_french
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_army_doctrines
 		cost = 10
 		x = 17
 		y = 4
@@ -892,7 +948,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_lessons_from_the_trench
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_army_doctrines_2
 		cost = 10
 		x = 17
 		y = 5
@@ -916,7 +972,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_a_new_heritage
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_workers
 		cost = 10
 		x = 11
 		y = 5
@@ -926,31 +982,127 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_Native_Teachings
+			add_ideas = CAN_New_Heritage
 		}
 	}
 
 	focus = {
-		id = CAN_man_and_rifle
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = CAN_a_new_heritage2
+		icon = GFX_focus_generic_improve_the_administration
 		cost = 10
-		x = 14
+		x = 13
 		y = 6
 
 		prerequisite = {
 			focus = CAN_a_new_heritage
 		}
 
-		prerequisite = {
-			focus = CAN_lessons_from_the_trench
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_New_Heritage
+				add_idea = CAN_New_Heritage2
+			}
 		}
+	}
 
-		available = {
-			date > 1915.4.1
+	focus = {
+		id = CAN_a_new_heritage3
+		icon = GFX_focus_attack_canada
+		cost = 10
+		x = 13
+		y = 7
+
+		prerequisite = {
+			focus = CAN_a_new_heritage2
 		}
 
 		completion_reward = {
-			add_ideas = CAN_Man_And_Rifle
+			swap_ideas = {
+				remove_idea = CAN_New_Heritage2
+				add_idea = CAN_New_Heritage3
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_a_new_heritage4
+		icon = GFX_focus_BEL_legacy_of_the_soldier_king
+		cost = 10
+		x = 13
+		y = 8
+
+		prerequisite = {
+			focus = CAN_a_new_heritage3
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_New_Heritage3
+				add_idea = CAN_New_Heritage4
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_man_and_rifle
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 10
+		x = 15
+		y = 6
+
+		prerequisite = {
+			focus = CAN_a_new_heritage
+			focus = CAN_lessons_from_the_trench
+		}
+
+		completion_reward = {
+				add_ideas = CAN_Man_And_Rifle1
+			}
+	}
+
+	focus = {
+		id = CAN_man_and_rifle2
+		icon = GFX_focus_ICE_hrafninn_flygur
+		cost = 10
+		x = 15
+		y = 7
+
+		prerequisite = {
+			focus = CAN_man_and_rifle
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_Man_And_Rifle1
+				add_idea = CAN_Man_And_Rifle2
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_man_and_rifle3
+		icon = GFX_focus_AFG_scavenging
+		cost = 10
+		x = 15
+		y = 8
+
+		prerequisite = {
+			focus = CAN_man_and_rifle2
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_Man_And_Rifle2
+				add_idea = CAN_Man_And_Rifle3
+			}
 		}
 	}
 }
