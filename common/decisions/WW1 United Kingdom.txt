@@ -366,6 +366,9 @@ ENG_Send_Equipment_category = {
 
 		activation = {
 			has_completed_focus = ENG_develop_ast
+			NOT = {
+				has_completed_focus = ENG_finish_development
+			}
 			AST = {
 				NOT = {
 					all_core_state = {
@@ -376,10 +379,10 @@ ENG_Send_Equipment_category = {
 		}
 
 		is_good = yes
-
+		
 		selectable_mission = no
-
-		days_mission_timeout = 120
+		
+		days_mission_timeout = 90
 
 		modifier = {
 		}
@@ -421,7 +424,7 @@ ENG_Send_Equipment_category = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.01 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_ast
@@ -450,6 +453,9 @@ ENG_Send_Equipment_category = {
 
 		activation = {
 			has_completed_focus = ENG_develop_nzl
+			NOT = {
+				has_completed_focus = ENG_finish_development
+			}
 			NZL = {
 				NOT = {
 					all_core_state = {
@@ -463,7 +469,7 @@ ENG_Send_Equipment_category = {
 
 		selectable_mission = no
 
-		days_mission_timeout = 120
+		days_mission_timeout = 90
 
 		modifier = {
 		}
@@ -505,7 +511,7 @@ ENG_Send_Equipment_category = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.01 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_nzl
@@ -533,6 +539,9 @@ ENG_Send_Equipment_category = {
 		}
 
 		activation = {
+			NOT = {
+				has_completed_focus = ENG_finish_development
+			}
 			has_completed_focus = ENG_develop_canada
 			CAN = {
 				NOT = {
@@ -547,7 +556,7 @@ ENG_Send_Equipment_category = {
 
 		selectable_mission = no
 
-		days_mission_timeout = 120
+		days_mission_timeout = 90
 
 		modifier = {
 		}
@@ -588,7 +597,7 @@ ENG_Send_Equipment_category = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.01 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_can
@@ -617,6 +626,9 @@ ENG_Send_Equipment_category = {
 
 		activation = {
 			has_completed_focus = ENG_develop_saf
+			NOT = {
+				has_completed_focus = ENG_finish_development
+			}
 			SAF = {
 				NOT = {
 					all_core_state = {
@@ -630,7 +642,7 @@ ENG_Send_Equipment_category = {
 
 		selectable_mission = no
 
-		days_mission_timeout = 120
+		days_mission_timeout = 90
 
 		modifier = {
 		}
@@ -671,7 +683,7 @@ ENG_Send_Equipment_category = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.01 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_saf
@@ -700,6 +712,9 @@ ENG_Send_Equipment_category = {
 
 		activation = {
 			has_completed_focus = ENG_develop_raj
+			NOT = {
+				has_completed_focus = ENG_finish_development
+			}
 			RAJ = {
 				NOT = {
 					all_core_state = {
@@ -713,7 +728,7 @@ ENG_Send_Equipment_category = {
 
 		selectable_mission = no
 
-		days_mission_timeout = 120
+		days_mission_timeout = 90
 
 		modifier = {
 		}
@@ -754,7 +769,7 @@ ENG_Send_Equipment_category = {
 							compare = greater_than_or_equals
 						}
 					}
-					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.03 tooltip = consumer_goods_expected_value_tt }
+					add_to_variable = { ENG_industrial_consumer_goods_expected_value = -0.01 tooltip = consumer_goods_expected_value_tt }
 				}
 				else = {
 					activate_mission = ENG_invest_raj
