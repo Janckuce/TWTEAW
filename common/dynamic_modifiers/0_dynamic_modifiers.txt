@@ -1260,7 +1260,27 @@ Schlieffen_No_Fort_North_Front = {
 
 Holding_A_Sliver = {
 	enable = { always = yes }
-
+	remove_trigger = {
+		date > 1911.1.1
+	}
 	icon = GFX_modifiers_generic_defense
     state_bunker_max_level_terrain_limit = 10
+}
+
+Sere_De_Rivieres_System = {
+	enable = { always = yes }
+	remove_trigger = {
+		date > 1911.1.1
+	}
+	icon = GFX_modifiers_generic_defense
+    state_bunker_max_level_terrain_limit = 7
+}
+
+German_Fortifications = {
+	enable = { always = yes }
+	remove_trigger = {
+		date > 1911.1.1
+	}
+	icon = GFX_modifiers_generic_defense
+    state_bunker_max_level_terrain_limit = 6
 }

@@ -1,6 +1,7 @@
 ideas = {
 	country = {
 		LAT_Conceptual_Regiments = {
+			picture = LAT_neopaganism_1
 			modifier = {
 				political_power_factor = -0.15
 				training_time_army_factor = 0.3
@@ -10,6 +11,7 @@ ideas = {
 			}
 		}
 		LAT_Conceptual_Regiments1 = {
+			picture = LAT_neopaganism_2
 			modifier = {
 				political_power_factor = -0.15
 				training_time_army_factor = 0.25
@@ -19,6 +21,7 @@ ideas = {
 			}
 		}
 		LAT_Conceptual_Regiments2 = {
+			picture = LAT_neopaganism_3
 			modifier = {
 				political_power_factor = -0.15
 				training_time_army_factor = 0.2
@@ -28,6 +31,7 @@ ideas = {
 			}
 		}
 		LAT_Conceptual_Regiments3 = {
+			picture = LAT_neopaganism_4
 			modifier = {
 				political_power_factor = -0.15
 				training_time_army_factor = 0.15
@@ -37,12 +41,14 @@ ideas = {
 			}
 		}
 		LAT_Conceptual_Regiments4 = {
+			picture = LAT_perkonkrust
 			modifier = {
 				political_power_factor = -0.15
 				training_time_army_factor = 0.15
 			}
 		}
 		LAT_Latvian_Nationalist_Sentiment = {
+			picture = LAT_saeimas
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.05
@@ -53,13 +59,14 @@ ideas = {
 			}
 		}
 		LAT_Latvian_Nationalist_Sentiment_Germany = {
+			picture = LAT_saeimas
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.075
 			}
 			targeted_modifier = {
 				tag = AUS
-				attack_bonus_against = 0.05
+				attack_bonus_against = 0.075
 			}
 		}
 		LAT_Latvian_Nationalist_Sentiment_Austria = {
@@ -73,30 +80,88 @@ ideas = {
 			}
 		}
 		LAT_Riflemen = {
+			picture = LAT_saeimas_military
 			modifier = {
 				breakthrough_factor = 0.025
+				training_time_factor = 0.5
+				max_training = -0.4
+				land_reinforce_rate = 0.025
+				org_loss_when_moving = -0.025
+				initiative_factor = 0.025
+				coordination_bonus = 0.025
 			}
 		}
 		LAT_Riflemen1 = {
+			picture = LAT_saeimas_military
 			modifier = {
-				breakthrough_factor = 0.05
+				breakthrough_factor = 0.045
+				training_time_factor = 0.4
+				max_training = -0.3
+				land_reinforce_rate = 0.025
+				org_loss_when_moving = -0.045
+				initiative_factor = 0.045
+				coordination_bonus = 0.025
 			}
 		}
 		LAT_Riflemen2 = {
+			picture = LAT_saeimas_military
 			modifier = {
-				breakthrough_factor = 0.075
+				breakthrough_factor = 0.065
+				training_time_factor = 0.3
+				max_training = -0.2
+				land_reinforce_rate = 0.025
+				org_loss_when_moving = -0.065
+				initiative_factor = 0.065
+				coordination_bonus = 0.025
 			}
 		}
 		LAT_Riflemen3 = {
+			picture = LAT_saeimas_military
 			modifier = {
-				breakthrough_factor = 0.1
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.025
+				org_loss_when_moving = -0.085
+				initiative_factor = 0.085
+				coordination_bonus = 0.025
 			}
 		}
 		LAT_Military_Genius = {
+			picture = LAT_saeimas_military
 			modifier = {
 				experience_gain_army_factor = 0.25
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.045
+				org_loss_when_moving = -0.085
+				initiative_factor = 0.085
+				coordination_bonus = 0.025
 			}
 		}
+			LAT_Military_Genius_fire = {
+			picture = LAT_saeimas_military
+			modifier = {
+				experience_gain_army_factor = 0.25
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.045
+				org_loss_when_moving = -0.085
+				initiative_factor = 0.085
+				coordination_bonus = 0.025
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.04
+				}
+				artillery_equipment = {
+					soft_attack = 0.02
+				}
+			}
+		}
+
 		LAT_Piercing_Riflemen = {
 			equipment_bonus = {
 				artillery_equipment = {
@@ -105,27 +170,48 @@ ideas = {
 			}
 		}
 		LAT_Piercing_Riflemen1 = {
-			equipment_bonus = {
+			picture = LAT_saeimas_military
+			modifier = {
+				experience_gain_army_factor = 0.25
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.045
+				org_loss_when_moving = -0.085
+				initiative_factor = 0.085
+				coordination_bonus = 0.025
+				army_artillery_attack_factor = 0.025
+				army_artillery_defence_factor = 0.05
+				forest_attack = 0.1
+			}
+				equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.06
+				}
 				artillery_equipment = {
-					soft_attack = 0.05
+					soft_attack = 0.03
 				}
 				railway_gun_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 			}
 		}
 		LAT_Briedis_Kick_The_Giant = {
+			picture = GER_OHL
 			targeted_modifier = {
-				tag = AUS
+				tag = GER
 				breakthrough_bonus_against = 0.1
+				attack_bonus_against = 0.1
 			}
 		}
 		LAT_Maneuver_Warfare = {
+			picture = LAT_saeimas_military
 			modifier = {
 				army_speed_factor = 0.05
 			}
 		}
 		LAT_Maneuver_Warfare1 = {
+			picture = LAT_saeimas_military
 			modifier = {
 				motorized_attack_factor = 0.05
 				army_speed_factor = 0.05
@@ -137,17 +223,79 @@ ideas = {
 			}
 		}
 		LAT_More_Armour = {
+			picture = LAT_saeimas_military
+			modifier = {
+				experience_gain_army_factor = 0.25
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.045
+				initiative_factor = 0.085
+				org_loss_when_moving = -0.085
+				army_org_factor = 0.05
+				coordination_bonus = 0.025
+				army_armored_car_attack_factor = 0.025
+				army_armored_car_defence_factor = 0.05
+			}
 			equipment_bonus = {
 				armored_car_equipment = {
-					armor_value = 0.1
+				armor_value = 0.1
+				maximum_speed = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+
 				}
 			}
 		}
 		LAT_More_Armour1 = {
+			picture = LAT_saeimas_military
+			modifier = {
+				experience_gain_army_factor = 0.25
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.045
+				initiative_factor = 0.085
+				org_loss_when_moving = -0.085
+				army_org_factor = 0.05
+				coordination_bonus = 0.05
+				army_armored_car_attack_factor = 0.025
+				army_armored_car_defence_factor = 0.05
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.075
+			}
 			equipment_bonus = {
 				armored_car_equipment = {
-					armor_value = 0.1
-					hardness = 0.05
+				armor_value = 0.15
+				maximum_speed = 0.08
+				soft_attack = 0.08
+				hard_attack = 0.08
+				}
+			}
+		}
+			LAT_More_Armour2 = {
+				picture = LAT_saeimas_military
+			modifier = {
+				experience_gain_army_factor = 0.25
+				breakthrough_factor = 0.085
+				training_time_factor = 0.2
+				max_training = -0.1
+				land_reinforce_rate = 0.045
+				initiative_factor = 0.085
+				org_loss_when_moving = -0.085
+				army_org_factor = 0.05
+				coordination_bonus = 0.05
+				army_armored_car_attack_factor = 0.025
+				army_armored_car_defence_factor = 0.05
+				motorized_attack_factor = 0.075
+				motorized_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				armored_car_equipment = {
+				armor_value = 0.15
+				maximum_speed = 0.1
+				soft_attack = 0.1
+				hard_attack = 0.1
 				}
 			}
 		}
@@ -158,24 +306,28 @@ ideas = {
 			}
 		}
 		LAT_Economic_Boom = {
+			picture = generic_improved_industries
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_speed_arms_factory_factor = -0.3
 			}
 		}
 		LAT_Economic_Boom1 = {
+			picture = generic_improved_industries
 			modifier = {
 				industrial_capacity_factory = 0.15
 				production_speed_arms_factory_factor = -0.3
 			}
 		}
 		LAT_Economic_Boom2 = {
+			picture = generic_improved_industries
 			modifier = {
 				industrial_capacity_factory = 0.2
 				production_speed_arms_factory_factor = -0.3
 			}
 		}
 		LAT_Economic_Boom3 = {
+			picture = generic_improved_industries
 			modifier = {
 				industrial_capacity_factory = 0.3
 				production_speed_arms_factory_factor = -0.3

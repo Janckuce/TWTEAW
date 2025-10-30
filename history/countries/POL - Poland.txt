@@ -1,5 +1,7 @@
 ﻿capital = 10
 
+set_oob = "POL_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -19,13 +21,17 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
-recruit_character = POL_Field_Marshal
+recruit_character = POL_nikolai_nikolaevich
+recruit_character = POL_jozef_dowbor_musnicki
 recruit_character = POL_roman_dmowski
-recruit_character = POL_General_1
-recruit_character = POL_General_2
-recruit_character = POL_Advisor_1
-recruit_character = POL_Advisor_2
-recruit_character = POL_Advisor_3
+recruit_character = POL_aleksander_lednicki
+recruit_character = POL_stanislaw_grabski
+recruit_character = POL_kazimierz_rumsza
+recruit_character = pol_lucjan_zeligowski
+recruit_character = POL_stanislaw_bulak-Balachowicz
+recruit_character = POL_waclaw_IwaszkiewiczRudoszanski
+recruit_character = POL_leonard_wilhelm_skierski
+recruit_character = POL_sejmik_regency
 
 ##### Party Popularity, Stability, War Support and other #####
 
@@ -39,11 +45,21 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 90
-	democratic = 10
+	neutrality = 55
+	democratic = 30
+	communism = 15
 }
 
-set_research_slots = 3
+add_ideas = {
+	GEN_Minor_Nation_Balancer
+	POL_heartland_of_pol
+	POL_economy_of_russia
+	POL_dmowski_enemy_camp
+	POL_manifesto_to_the_polish_nation
+	POL_no_conscription_laws
+}
+
+set_research_slots = 2
 set_stability = 0.6
 set_war_support = 0.3
 

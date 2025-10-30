@@ -1,0 +1,12 @@
+units= {
+	fleet = {
+	    name = "Portuguese Navy"
+		naval_base = 11805 #Lisbon
+		task_force = {
+		    name = "Him"
+			location = 11805 #Lisbon
+			
+			ship = { name = "Ship Of War Support" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }
+		}
+	}
+}

@@ -13,10 +13,19 @@ set_technology = {
 	#Support Companies
 	tech_support = 1
 	tech_engineers = 1
+	tech_field_hospital = 1
 	basic_train = 1
 	
 	#Industry
 	ww1_fuel_storage = 1
+
+	### Naval Tech ### - ONLY FOR MAJORS
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+	
 }
 
 recruit_character = CAN_sir_wilfrid_laurier
@@ -44,12 +53,15 @@ set_popularities = {
 }
 
 add_ideas = {
+	GEN_Minor_Nation_Balancer
+	CAN_French_Minority
+	CAN_Flurishing_Civilian_Economy
 }
 
 set_convoys = 100
 
 set_research_slots = 3
 set_stability = 0.7
-set_war_support = 0.1
+set_war_support = 0.05
 
 # End of Party Popularity, Stability, War Support and other ##

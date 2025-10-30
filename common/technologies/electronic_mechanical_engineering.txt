@@ -15,6 +15,11 @@ technologies = {
 			leads_to_tech = ww1_blueprints_1
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = ww1_recon_balloons_1
+			research_cost_coeff = 1
+		}
 		
 		# small boost to research speed
 		research_speed_factor = 0.03
@@ -106,6 +111,86 @@ technologies = {
 		}
 	}
 	
+	ww1_recon_balloons_1 = {
+		path = {
+			leads_to_tech = ww1_recon_balloons_2 
+			research_cost_coeff = 1
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
+		
+		research_cost = 2
+		start_year = 1913
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	ww1_recon_balloons_2 = {
+		path = {
+			leads_to_tech = ww1_recon_balloons_3
+			research_cost_coeff = 1
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+		
+		research_cost = 2
+		start_year = 1915
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	ww1_recon_balloons_3 = {
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+		
+		research_cost = 2
+		start_year = 1917
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 15
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
 	ww1_mechanical_computing_1 = {
 	
 	    path = {

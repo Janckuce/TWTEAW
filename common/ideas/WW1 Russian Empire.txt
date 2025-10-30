@@ -516,6 +516,14 @@ ideas = {
 				production_speed_infrastructure_factor = -0.3
 				global_building_slots_factor = -0.8
 			}
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+				}
+					artillery_equipment = {
+					build_cost_ic = 0.075
+				}
+			}
 		}
 			RUS_stolypin_reform = {
 			picture = hun_economy_wasteland
@@ -698,7 +706,7 @@ ideas = {
 			political_power_factor = -0.2
 			stability_factor = -0.075
 			research_speed_factor = -0.1
-			production_speed_arms_factory_factor = 0.075
+			production_speed_arms_factory_factor = 0.05
 			production_speed_industrial_complex_factor = -0.025
 			industrial_capacity_factory = 0.025
 			non_core_manpower = -0.4
@@ -731,8 +739,8 @@ ideas = {
 			political_power_factor = -0.15
 			stability_factor = -0.05
 			research_speed_factor = -0.075
-			production_speed_arms_factory_factor = 0.1
-			industrial_capacity_factory = 0.05
+			production_speed_arms_factory_factor = 0.08
+			industrial_capacity_factory = 0.04
 			non_core_manpower = -0.35
 			}
 				targeted_modifier = {
@@ -762,10 +770,9 @@ ideas = {
 			political_power_factor = -0.1
 			research_speed_factor = -0.05
 			stability_factor = -0.025
-			production_speed_arms_factory_factor = 0.125
-			industrial_capacity_factory = 0.075
+			production_speed_arms_factory_factor = 0.08
+			industrial_capacity_factory = 0.06
 			non_core_manpower = -0.3
-			army_org_factor = 0.125
 			}
 				targeted_modifier = {
 				tag = GER
@@ -793,10 +800,9 @@ ideas = {
 			modifier = {
 			political_power_factor = -0.05
 			research_speed_factor = -0.025
-			production_speed_arms_factory_factor = 0.15
-			industrial_capacity_factory = 0.1
+			production_speed_arms_factory_factor = 0.08
+			industrial_capacity_factory = 0.08
 			non_core_manpower = -0.15
-			army_org_factor = 0.125
 
 			}
 				targeted_modifier = {
@@ -823,12 +829,11 @@ ideas = {
 			}
 			
 			modifier = {
-			production_speed_arms_factory_factor = 0.175
-			industrial_capacity_factory = 0.125
+			production_speed_arms_factory_factor = 0.1
+			industrial_capacity_factory = 0.10
 			non_core_manpower = -0.1
-			army_org_factor = 0.2
 			production_factory_start_efficiency_factor = 0.05
-			production_factory_efficiency_gain_factor = 0.075
+			production_factory_efficiency_gain_factor = 0.15
 			army_core_attack_factor = 0.05
 			army_core_defence_factor = 0.025
 			}
@@ -877,19 +882,16 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = 0.25
+				stability_factor = 0.17
 				trade_laws_cost_factor = -0.1
-				drift_defence_factor = 0.3
-				political_power_factor = 0.20
-				consumer_goods_factor = -0.1
-				production_speed_buildings_factor = 0.075
+				drift_defence_factor = 0.2
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.1
 				line_change_production_efficiency_factor = 0.05
-				army_breakthrough_against_minor_factor = 0.075
-				army_defence_against_major_factor = 0.025
-				army_attack_against_major_factor = 0.025
 				conscription_factor = 0.025
-				research_speed_factor = 0.1
+				research_speed_factor = 0.075
 			}
 		}
 
@@ -967,7 +969,7 @@ ideas = {
 				conscription_factor = 0.025
 				political_advisor_cost_factor = -0.4
 				democratic_drift = 0.35
-				stability_weekly = 0.001
+				stability_weekly = 0.003
 				non_core_manpower = 0.075
 
 			}
@@ -1296,10 +1298,10 @@ ideas = {
 		RUS_Bolshevik_Sabotage = {
 			picture = rus_lenin_spirit
 			modifier = {
-				army_morale_factor = -0.05
+				army_morale_factor = -0.1
 				stability_factor = -0.05
 				war_support_factor = -0.05
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = -0.075
 				stability_weekly = -0.002
 			}
 		}

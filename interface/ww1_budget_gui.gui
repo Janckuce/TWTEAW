@@ -1,0 +1,25 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Budget_Window"
+		orientation = CENTER
+		origo = center
+		position = {
+			x = 0
+			y = 0
+		}
+
+		size = {
+			width = 500
+			height = 30
+		}
+
+		instantTextBoxType = {
+			name = "Budget_Window_Text"
+			position = {
+				x = 150
+				y = -5
+			}
+			text = "GCG_Budget_Viewer"
+		}
+	}
+}

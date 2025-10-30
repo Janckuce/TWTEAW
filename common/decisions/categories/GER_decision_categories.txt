@@ -1,6 +1,33 @@
+GER_Germany_Guide = {
+	icon = GFX_decision_category_generic
+
+	priority = 110
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = GER
+	}
+}
+
+GER_Research_Decisions = {
+	icon = GFX_decision_category_generic
+
+	priority = 90
+
+	visible_when_empty = yes
+
+	visible = {
+		has_completed_focus = GER_Research_Slot1
+	}
+	allowed = {
+		tag = GER
+	}
+}
+
 GER_Catholic_Reforms = {
 	icon = military_operation
-
+	
 	priority = 100
 
 	allowed = {
@@ -9,5 +36,19 @@ GER_Catholic_Reforms = {
 
 	visible = {
 		has_completed_focus = GER_Ludwig_Leader3
+	}
+}
+
+GER_Plunder_Decisions = {
+	icon = GFX_decision_category_SOV_merge_designers
+	visible_when_empty = yes
+
+	priority = 5
+
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		always = yes
 	}
 }

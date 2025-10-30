@@ -357,10 +357,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			275 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -418,10 +418,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			681 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 				}
 				add_building_construction = {
 					type = bunker
@@ -481,12 +481,9 @@ focus_tree = {
 		icon = GFX_focus_focus_fra_fascist_threat
 		cost = 10
 		relative_position_id = SAF_World_Trade
-		x = 5
+		x = 6
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		mutually_exclusive = {
-			focus = SAF_Maritz_Our_Guy
-		}
 		prerequisite = {
 			focus = SAF_World_Trade
 		}
@@ -502,7 +499,7 @@ focus_tree = {
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10
 		relative_position_id = SAF_Cut_Down_On_Nationalism
-		x = 0
+		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
@@ -599,34 +596,66 @@ focus_tree = {
 	focus = {
 		id = SAF_Maritz_Our_Guy
 		icon = GFX_focus_GER_factories_for_resources
-		cost = 12.9
-		x = 13
+		cost = 10
+		relative_position_id = SAF_Cut_Down_On_Nationalism
+		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		mutually_exclusive = {
-			focus = SAF_Cut_Down_On_Nationalism
-		}
 		available = {
 		}
 		prerequisite = {
-			focus = SAF_World_Trade
+			focus = SAF_Cut_Down_On_Nationalism
 		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_recource_rich
-				add_idea = SAF_small_but_ours
-			}
+			add_ideas = SAF_small_but_ours
 			}
 		}
 	focus = {
-		id = SAF_Boers_First
-		icon = GFX_focus_generic_africa_factory
-		cost = 12.9
-		x = 13
-		y = 3
+		id = SAF_Industrialise_The_Nation
+		icon = GFX_focus_generic_modernize_industry
+		cost = 10
+		relative_position_id = SAF_Maritz_Our_Guy
+		x = 0
+		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = SAF_Maritz_Our_Guy
+		}
+		completion_reward = {
+			681 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+			719 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_Boers_First
+		icon = GFX_focus_generic_africa_factory
+		cost = 10
+		relative_position_id = SAF_Industrialise_The_Nation
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = SAF_Industrialise_The_Nation
 		}
 		completion_reward = {
 				swap_ideas = {
@@ -636,20 +665,94 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SAF_Boers_And_God
-		icon = GFX_focus_RAJ_tryst_with_destiny_hand
-		cost = 12.9
+		id = SAF_Mine_Away
+		icon = GFX_focus_generic_mining_industry
+		cost = 10
 		relative_position_id = SAF_Boers_First
 		x = 0
-		y = 3
+		y = 1
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
 			focus = SAF_Boers_First
 		}
 		completion_reward = {
+			681 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+			719 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_Boers_And_God
+		icon = GFX_focus_RAJ_tryst_with_destiny_hand
+		cost = 10
+		relative_position_id = SAF_Mine_Away
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = SAF_Mine_Away
+		}
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = SAF_small_but_ours1
 				add_idea = SAF_small_but_ours2
+			}
+		}
+	}
+	focus = {
+		id = SAF_Realm_Expansion
+		icon = GFX_focus_GER_total_control_over_domestic_affairs
+		cost = 10
+		relative_position_id = SAF_Boers_And_God
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = SAF_Our_Very_Own
+		}
+		prerequisite = {
+			focus = SAF_Boers_And_God
+		}
+		completion_reward = {
+			546 = {
+				add_core_of = SAF
+			}
+			768 = {
+				add_core_of = SAF
+			}
+			769 = {
+				add_core_of = SAF
+			}
+			773 = {
+				add_core_of = SAF
+			}
+			839 = {
+				add_core_of = SAF
+			}
+			818 = {
+				add_core_of = SAF
+			}
+			777 = {
+				add_core_of = SAF
 			}
 		}
 	}

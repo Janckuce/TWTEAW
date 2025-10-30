@@ -6,7 +6,7 @@ characters={
 				large = "GFX_POL_nikolai_nikolaevich"
 			}
 			army = {
-				small = "GFX_POL_nikolai_nikolaevich_frame"
+				small = "GFX_RUS_nikolai_nikolaevich_frame"
 			}
 		}
 		advisor={
@@ -18,17 +18,18 @@ characters={
 			traits = {
 				army_chief_offensive_2 #Inf Defense +10%
 			}
-			cost = 100
+			cost = 250
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		field_marshal={
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 4
+			traits = { politicaly_connected old_guard reckless }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 			country_leader = {
 			traits = {king_of_poland}
@@ -37,25 +38,245 @@ characters={
 		}
 	}
 
-		POL_roman_dmowski = {
-		name = "Roman Dmowski"
+		POL_sejmik_regency = {
+		name=POL_sejmik_regency
 		portraits = {
 			civilian = {
-				large = "GFX_POL_roman_dmowski"
+				large="GFX_portrait_POL_Sejmik_Regency" 
+			}
+		}
+		country_leader = {
+			ideology=rexism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+		POL_leonard_wilhelm_skierski = {
+		name = "Leonard Wilhelm Skierski"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_leonard_wilhelm_skierski"
 			}
 			army = {
-				small = "GFX_POL_roman_dmowski_frame"
+				small = "GFX_POL_leonard_wilhelm_skierski_frame"
 			}
 		}
 		advisor={
-			slot = advisor
-			idea_token = POL_roman_dmowski
+			slot = high_Command
+			idea_token = POL_leonard_wilhelm_skierski
 			allowed = {
 				original_tag = POL
 			}
 			traits = {
+			army_artillery_1
 			}
-			cost = 100
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits = { bearer_of_artillery  }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+		POL_jozef_dowbor_musnicki = {
+		name = "Józef Dowbor-Muśnicki"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_jozef_dowbor_musnicki"
+			}
+			army = {
+				small = "GFX_POL_jozef_dowbor_musnicki_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = POL_jozef_dowbor_musnicki
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			army_infantry_1
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+
+		POL_stanislaw_bulak-Balachowicz = {
+		name = "Stanisław Bułak-Bałachowicz"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_stanislaw_bulak-Balachowicz"
+			}
+			army = {
+				small = "GFX_POL_stanislaw_bulak-Balachowicz_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = POL_stanislaw_bulak-Balachowicz
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			army_cavalry_1
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { cavalry_leader cavalry_expert trickster  }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+		POL_waclaw_IwaszkiewiczRudoszanski = {
+		name = "Wacław Iwaszkiewicz-Rudoszański"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_waclaw_Iwaszkiewicz-Rudoszanski"
+			}
+			army = {
+				small = "GFX_POL_waclaw_IwaszkiewiczRudoszanski_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = POL_waclaw_Iwaszkiewicz-Rudoszanski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			surveyor
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { organizer ranger  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+		POL_kazimierz_rumsza = {
+		name = "Kazimierz Rumsza"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_kazimierz_rumsza"
+			}
+			army = {
+				small = "GFX_POL_kazimierz_rumsza_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_kazimierz_rumsza
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			war_industrialist
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+		pol_lucjan_zeligowski = {
+		name = "Lucjan Żeligowski"
+		portraits = {
+			civilian = {
+				large = "GFX_pol_lucjan_zeligowski"
+			}
+			army = {
+				small = "GFX_pol_lucjan_zeligowski_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = pol_lucjan_zeligowski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			military_theorist
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+		POL_roman_dmowski = {
+		name = "Roman Dmowski"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_dmowski"
+			}
+			army = {
+				small = "GFX_POL_dmowski_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_roman_dmowski
+			allowed = {
+				original_tag = POL
+			}
+				available = {
+				NOT = {
+				has_completed_focus = POL_nominate_dmowski
+				}
+			}
+			traits = {
+			camarilla_leader
+			}
+			cost = 90
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -64,6 +285,56 @@ characters={
 			traits = {}
 			ideology = liberalism
 			expire = "1965.1.1.1"
+		}
+	}
+		POL_aleksander_lednicki = {
+		name = "Aleksander Lednicki"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_dmowski"
+			}
+			army = {
+				small = "GFX_POL_aleksander_lednicki_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_aleksander_lednicki
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			freedom_fighter
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+		POL_stanislaw_grabski = {
+		name = "Stanisław Grabski"
+		portraits = {
+			civilian = {
+				large = "GFX_POL_dmowski"
+			}
+			army = {
+				small = "GFX_POL_stanislaw_grabski_frame"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = POL_stanislaw_grabski
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+			industry_reformer
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 }

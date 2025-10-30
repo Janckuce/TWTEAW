@@ -11,15 +11,29 @@ state={
 
 	history={
 		owner = GER
+
+		add_dynamic_modifier = {
+			modifier = German_Fortifications
+		}
+
 		#victory_points = { 6529 1 }
 		#victory_points = { 549 1 }
 		victory_points = { 678 5 }
-		victory_points = { 9503 5 }
-		victory_points = { 9559 10 }
+		victory_points = { 9503 10 }
+		victory_points = { 9559 5 }
 		buildings = {
 			infrastructure = 4
 			anti_air_building = 5
-
+			9559 = {
+				bunker = {
+					level = 6
+				}
+			}
+			9503 = {
+				bunker = {
+					level = 5
+				}
+			}
 		}
 		add_core_of = FRA
 		add_core_of = WUR

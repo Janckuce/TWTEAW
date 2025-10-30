@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "División de Infantería"
+	name = "División De Infantería"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,7 +11,6 @@
         infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
 	}
 	
 	support = {
@@ -22,75 +21,110 @@
 
 division_template = {
 	name = "División Colonial"
+	priority = 0
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 	}
-	priority = 0
 }
 
 units = {
-    division = {
-		name = "División de Infantería"
+	#	Madrid
+	division = {
+		name = "División De Infantería"
 		location = 3938
-		division_template = "División de Infantería"
+		division_template = "División De Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
-		name = "División de Infantería"
+		name = "División De Infantería"
 		location = 3938
-		division_template = "División de Infantería"
+		division_template = "División De Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
-		name = "División de Infantería"
+		name = "División De Infantería"
 		location = 3938
-		division_template = "División de Infantería"
+		division_template = "División De Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
-		name = "División de Infantería"
+		name = "División De Infantería"
 		location = 3938
-		division_template = "División de Infantería"
+		division_template = "División De Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
+	}
 
+	#	Barcelona
+
+	division = {
+		name = "División De Infantería"
+		location = 9764
+		division_template = "División De Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
 	}
 	division = {
-		name = "División de Infantería"
-		location = 3938
-		division_template = "División de Infantería"
+		name = "División De Infantería"
+		location = 9764
+		division_template = "División De Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
-
 	}
 	division = {
-		name = "División Colonial"
-		location = 8038
-		division_template = "División Colonial"
+		name = "División De Infantería"
+		location = 9764
+		division_template = "División De Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División De Infantería"
+		location = 9764
+		division_template = "División De Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
 
+	#	Valencia
+
+	division = {
+		name = "División De Infantería"
+		location = 6906
+		division_template = "División De Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División De Infantería"
+		location = 6906
+		division_template = "División De Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División De Infantería"
+		location = 6906
+		division_template = "División De Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "División De Infantería"
+		location = 6906
+		division_template = "División De Infantería"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
 	}
 }
 
-### Air oob in its own file
-
-
-#########################
-## STARTING PRODUCTION ##
-#########################
-
 instant_effect = {
-
 	add_equipment_production = {
 		equipment = {
 			type = ww1_infantry_equipment_2
@@ -100,7 +134,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -110,7 +143,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = ww1_artillery_equipment_1
@@ -121,5 +153,3 @@ instant_effect = {
 		efficiency = 50
 	}
 }
-
-#####################

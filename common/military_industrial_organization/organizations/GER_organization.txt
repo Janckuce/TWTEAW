@@ -17,6 +17,7 @@ GER_porsche_organization = {
 		OR = {
 			tag = GER 
 			tag = YEM
+			tag = GCG
 			AND = {
 				tag = BUL
 			}
@@ -46,6 +47,7 @@ GER_man_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
+			tag = GCG
 			AND = {
 				tag = BUL
 			}
@@ -154,6 +156,7 @@ GER_ag_vulcan_stettin = {
 	allowed = {	
 		OR = {
 			tag = GER 
+			tag = CGC
 			AND = {
 				tag = BUL
 			}
@@ -193,16 +196,7 @@ GER_messerschmitt_organization = {
 	allowed = {	
 		OR = {
 			tag = GER
-		}
-	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
+			tag = GCG
 		}
 	}
 
@@ -253,6 +247,7 @@ GER_junkers_organization = {
 	allowed = {	 
 		OR = {
 			tag = GER 
+			tag = GCG
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
@@ -260,27 +255,6 @@ GER_junkers_organization = {
 		}
 	}
 
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
-			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { NOT  = { original_tag = GER } }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_GER_junkers_organization_flag
-				}
-			}
-		}
-	}
 
 	add_trait = {
 		token = GER_mio_trait_psychological_warfare
@@ -303,7 +277,10 @@ GER_focke_wulf_organization = {
 	icon = GFX_idea_focke_wulf
 	
 	allowed = {	
-		tag = GER 
+		OR = {
+			tag = GER
+			tag = GCG
+		}
 	}
 }
 
@@ -314,6 +291,7 @@ GER_heinkel_organization = {
 	allowed = {	
 		OR = {
 			tag = GER 
+			tag = GCG
 		}
 	}
 
@@ -345,7 +323,10 @@ GER_dornier_organization = {
 	icon = GFX_idea_dornier
 	
 	allowed = {	
-		tag = GER 
+		OR = {
+			tag = GER
+			tag = GCG
+		}
 	}
 }
 
@@ -367,7 +348,8 @@ GER_rheinmetall_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = GER 
+			tag = GER
+			tag = GCG
 			AND = {
 				tag = GRE
 			}
@@ -400,6 +382,7 @@ GER_mauser_organization = {
 		OR = {
 			tag = GER
 			tag = YEM
+			tag = GCG
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"

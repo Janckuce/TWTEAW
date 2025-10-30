@@ -1,6 +1,6 @@
 characters = {
 	LAT_Tsar_Nicholas = {
-		name = LAT_Tsar_Nicholas
+		name = "Nicholas II"
 		portraits = {
 			civilian = {
 				large = "GFX_LAT_Tsar_Nicholas"
@@ -15,12 +15,23 @@ characters = {
 		}
 	}
 	LAT_Augusts_Misins = {
-		name = LAT_Augusts_Misins
+		name = "Augusts Ernests Misiņš"
 		portraits = {
 			army = {
 				large = "GFX_LAT_Augusts_Ernests_Misins"
 				small = "GFX_LAT_Augusts_Ernests_Misins_Frame"
 			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Augusts_Misins
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Economy_Liberator
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = army_chief
@@ -46,7 +57,7 @@ characters = {
 		}
 	}
 	LAT_Andrejs_Auzans = {
-		name = LAT_Andrejs_Auzans
+		name = "Andrejs Auzāns"
 		portraits = {
 			army = {
 				large = "GFX_LAT_Andrejs_Auzans"
@@ -77,12 +88,23 @@ characters = {
 		}
 	}
 	LAT_Janis_Francis = {
-		name = LAT_Janis_Francis
+		name = "Jānis Francis"
 		portraits = {
 			army = {
 				large = "GFX_LAT_Janis_Francis"
 				small = "GFX_LAT_Janis_Francis_Frame"
 			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Janis_Francis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Armour_Producer
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = high_command
@@ -93,7 +115,7 @@ characters = {
 			traits = {
 				Speed_Is_Power
 			}
-			cost = 150
+			cost = 100
 		}
 		corps_commander = {
 			traits = {
@@ -108,12 +130,28 @@ characters = {
 		}
 	}
 	LAT_Fridrihs_Briedis = {
-		name = LAT_Fridrihs_Briedis
+		name = "Frīdrihs Briedis"
 		portraits = {
 			army = {
-				large = "GFX_LAT_Janis_Francis"
-				small = "GFX_LAT_Janis_Francis_Frame"
+				large = "GFX_LAT_Fridrihs_Briedis"
+				small = "GFX_LAT_Fridrihs_Briedis_Frame"
 			}
+		}
+		advisor = {
+				large = "GFX_LAT_Fridrihs_Briedis"
+				small = "GFX_LAT_Fridrihs_Briedis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Fridrihs_Briedis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Agricultural_Genius
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = high_command
@@ -122,7 +160,7 @@ characters = {
 				tag = LAT
 			}
 			traits = {
-				army_commando_2
+				Little_Corporal
 			}
 			cost = 150
 		}
@@ -139,12 +177,28 @@ characters = {
 		}
 	}
 	LAT_Jukums_Vacietis = {
-		name = LAT_Jukums_Vacietis
+		name = "Jukums Vācietis"
 		portraits = {
 			army = {
-				large = "GFX_LAT_Janis_Francis"
-				small = "GFX_LAT_Janis_Francis_Frame"
+				large = "GFX_LAT_Jukums_Vacietis"
+				small = "GFX_LAT_Jukums_Vacietis_Frame"
 			}
+		}
+		advisor = {
+				large = "GFX_LAT_Jukums_Vacietis"
+				small = "GFX_LAT_Jukums_Vacietis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Jukums_Vacietis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Industrial_Moderniser
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = high_command
@@ -171,12 +225,28 @@ characters = {
 		}
 	}
 	LAT_Martins_Penikis = {
-		name = LAT_Martins_Penikis
+		name = "Mārtiņš Peniķis"
 		portraits = {
 			army = {
-				large = "GFX_LAT_Janis_Francis"
-				small = "GFX_LAT_Janis_Francis_Frame"
+				large = "GFX_LAT_Martins_Penikis"
+				small = "GFX_LAT_Martins_Penikis_Frame"
 			}
+		}
+		advisor = {
+				large = "GFX_LAT_Martins_Penikis"
+				small = "GFX_LAT_Martins_Penikis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Martins_Penikis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Consumer_Produce
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = high_command
@@ -203,12 +273,28 @@ characters = {
 		}
 	}
 	LAT_Roberts_Dambitis = {
-		name = LAT_Roberts_Dambitis
+		name = "Roberts Dambītis"
 		portraits = {
 			army = {
 				large = "GFX_LAT_Janis_Francis"
 				small = "GFX_LAT_Janis_Francis_Frame"
 			}
+		}
+		advisor = {
+				large = "GFX_LAT_Roberts_Dambitis"
+				small = "GFX_LAT_Roberts_Dambitis_Frame"
+			}
+		#}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAT_Roberts_Dambitis
+			allowed = {
+				tag = LAT
+			}
+			traits = {
+				Military_Producer
+			}
+			cost = 150
 		}
 		advisor = {
 			slot = theorist
@@ -219,7 +305,7 @@ characters = {
 			traits = {
 				military_theorist
 			}
-			cost = 150
+			cost = 100
 		}
 		corps_commander = {
 			traits = {

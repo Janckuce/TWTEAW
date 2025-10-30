@@ -1075,6 +1075,12 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_War_Has_Begun
 		}
+		available = {
+			controls_state = 16
+			controls_state = 15
+			controls_state = 24
+			controls_state = 27
+		}
 		completion_reward = {
 			16 = {
 				remove_building = {
@@ -1173,12 +1179,15 @@ focus_tree = {
 			focus = FRA_Sabre_Of_Honour
 		}
 		available = {
-			date > 1918.7.28
+			date > 1914.9.1
+			date < 1915.1.1
 		}
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_timed_idea = {
-				idea = FRA_100_Days_Offensive
-				days = 100
+				idea = FRA_Counter_Offensive
+				days = 40
 			}
 		}
 	}

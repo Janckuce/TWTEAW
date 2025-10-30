@@ -15,13 +15,12 @@ leader_traits = {
 		incompetent_militarist = {
 		random = no
 		sprite = 13
-		production_speed_arms_factory_factor = 0.15
+		production_speed_arms_factory_factor = 0.075
 		production_speed_dockyard_factor = 0.075
 		production_speed_fuel_silo_factor = 0.075
 		political_power_factor = -0.1
-		stability_factor = -0.075
-		war_support_factor = -0.025
-		experience_gain_army = 0.03
+		stability_factor = -0.1
+		war_support_factor = -0.05
 	}
 		innovative_general_among_stupid = {
 		random = no
@@ -39,8 +38,8 @@ leader_traits = {
 		sprite = 5
 		army_org_factor = 0.05
 		land_doctrine_cost_factor = -0.125
-		army_org_regain = 0.075
-		planning_speed = 0.075
+		army_org_regain = 0.05
+		planning_speed = 0.05
 		max_planning = 0.05
 	}
 	Corruption_Incarnate = {
@@ -75,13 +74,5 @@ leader_traits = {
 		random = no
 		consumer_goods_factor = -0.15
 		production_speed_buildings_factor = 0.15
-	}
-
-	king_of_poland = {
-		random = no
-		production_speed_buildings_factor = 0.075
-		war_support_factor = 0.025
-		conscription_factor = 0.1
-		army_core_defence_factor = 0.05
 	}
 }

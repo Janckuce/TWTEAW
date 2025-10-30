@@ -242,13 +242,14 @@
 		cost = 5.8
 
 		bypass = {
-			NOT = {
-			    has_idea = isolation
-			}
+			#
 		}
 		available = {
 			date > 1914.1.1
+			OR = {
 		    has_idea = isolation
+			has_idea = disturbed_isolation
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -1261,8 +1262,8 @@
 			add_tech_bonus = {
 				name = ENG_artillery_research_1
 				bonus = 1
-				uses = 2
-				category = infantry_tech
+				uses = 1
+				category = artillery
 			}
 		}
 	}
@@ -1418,5 +1419,11 @@
 				add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
 			}
 			add_ideas = ENG_Modern_Army
+			add_tech_bonus = {
+				name = CAN_army_science
+				bonus = 0.4
+				uses = 1
+				technology = heavy_artillery_equipment1
+			}
 		}
 	}

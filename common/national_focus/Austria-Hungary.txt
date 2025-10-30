@@ -1446,13 +1446,16 @@ focus_tree = {
     	remove_idea = auh_armeereform_focus_five_hotzendorf
     	add_idea = auh_armeereform_focus_six_hotzendorf
     		}
-
-				add_tech_bonus = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1200
+			}
+			add_tech_bonus = {
 				name = DEN_expand_haerens_tekniske_korps
-				bonus = 1
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				category = artillery
-		}
+			}
     	}
 	}
 
@@ -2016,7 +2019,7 @@ focus_tree = {
 		x = 20
 		y = 9
 
-		cost = 10
+		cost = 1
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2219,7 +2222,7 @@ focus_tree = {
 		prerequisite = { focus = AUH_open_up_imperial_industries }
 		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
 
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
@@ -2251,7 +2254,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		available = {
-		has_idea = auh_ghostofthepast3
+		has_idea = auh_ghostofthepast4
 		}
 
 		completion_reward = {
@@ -2600,19 +2603,43 @@ focus_tree = {
             type = support_equipment
             amount = -6500
         }
-			88 = { 
+			736 = { 
             add_core_of = AUS
         }
-					91 = { 
+					841 = { 
             add_core_of = AUS
         }
-					89 = { 
+					852 = { 
             add_core_of = AUS
         }
-			80 = { 
+			859 = { 
             add_core_of = AUS
         }
-					890 = { 
+					109 = { 
+            add_core_of = AUS
+        }
+			103 = { 
+            add_core_of = AUS
+        }
+					912 = { 
+            add_core_of = AUS
+        }
+					104 = { 
+            add_core_of = AUS
+        }
+					804 = { 
+            add_core_of = AUS
+        }
+				163 = { 
+            add_core_of = AUS
+        }
+			105 = { 
+            add_core_of = AUS
+        }
+			914 = { 
+            add_core_of = AUS
+        }
+			718 = { 
             add_core_of = AUS
         }
 		}

@@ -78,7 +78,9 @@ SOV_putilov_organization = {
 	
 	allowed = {	
 		OR = {
-			original_tag = RUS
+			tag = RUS
+			tag = POL
+			tag = LAT
 		}
 	}
 
@@ -381,7 +383,11 @@ RUS_putilov_design_bureau_organization = {
 	icon = GFX_idea_rus_putilov_arms
 	
 	allowed = {	
-	tag = RUS
+		OR = {
+			tag = RUS
+			tag = POL
+			tag = LAT
+		}
 	}
 }
 
@@ -390,7 +396,10 @@ SOV_tula_arms_plant_organization = {
 	icon = GFX_idea_tula_arms_plant
 	
 	allowed = {	
-		original_tag = RUS
+		OR = {
+			tag = RUS
+			tag = POL
+		}
 	}
 
 	tree_header_text = {
@@ -432,15 +441,21 @@ SOV_russobalt_organization = {
 	allowed = {	
 		OR = {
 			tag = RUS
-			AND = {
-				tag = LAT
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				tag = POL
-				has_dlc = "By Blood Alone"
-			}
-
+			tag = POL
+			tag = LAT
 		}
+	}
+}
+
+LAT_russobalt_armored = {
+	name = "Russo-Balt Armored Vehicles"
+	include = generic_armored_car_organization
+	icon = GFX_idea_rus_russobaltin_cars
+	allowed = {
+		OR = {
+			original_tag = LAT
+		}
+		has_dlc = "Gotterdammerung"
+		has_dlc = "La Resistance"
 	}
 }

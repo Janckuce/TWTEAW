@@ -3458,7 +3458,7 @@ technologies = {
 		}	
 		#Modifiers
 		category_all_infantry = {
-			defense = 0.20
+			defense = 0.10
 		}
 		bunker_max_level_terrain_limit = 3
 		##########
@@ -3518,7 +3518,10 @@ technologies = {
 		}
 		#Modifiers
 		category_all_infantry = {
-			breakthrough = 0.15
+			breakthrough = 0.10
+		}
+		cavalry = {
+			breakthrough = 0.25
 		}
 		org_loss_when_moving = -0.25
 		##########
@@ -3547,9 +3550,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		#Modifiers
-		category_front_line = {
+		category_all_infantry = {
 			soft_attack = 0.1
 		}
+		
 		##########
 		
 		doctrine = yes
@@ -3680,12 +3684,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		#Modifiers
-		category_support_battalions = {
+		category_line_artillery = {
 			max_organisation = 10
 			soft_attack = 0.1
 		}
-
-		max_planning = 0.08
 
 		##########
 		
@@ -3713,7 +3715,7 @@ technologies = {
 			breakthrough = 0.20
 		}
 
-		max_planning = 0.08
+		max_planning = 0.1
 
 		allow = {
 			AND = {
@@ -3753,16 +3755,10 @@ technologies = {
 		}
 
 		#Modifiers
-		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.3
-		}
 		category_line_artillery = {
 			soft_attack = 0.10
+			max_organisation = 5
 		}
-		
-		fortification_damage = 0.5
-		fortification_collateral_chance = 0.5
 		##########
 		
 		doctrine = yes
@@ -3789,9 +3785,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		#Modifiers
-		supply_consumption_factor = -0.15
+		
 		max_dig_in = 2
 		bunker_max_level_terrain_limit = 2
+		supply_consumption_factor = -0.15
 		
 		##########
 		
@@ -3819,12 +3816,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		#Modifiers
-		category_all_infantry = {
-			max_organisation = 5
-			default_morale = 0.1
-		}
+		
 		max_dig_in = 2
 		bunker_max_level_terrain_limit = 2
+		land_reinforce_rate = 0.02
 
 		##########
 		
@@ -3852,9 +3847,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		#Modifiers
-		category_all_infantry = {
-			defense = 0.15
-		}
 
 		max_dig_in = 4
 		bunker_max_level_terrain_limit = 3
@@ -3894,9 +3886,9 @@ technologies = {
 			}
 		}
 		#Modifiers
-		category_all_infantry = {
+		category_light_infantry = {
 			defense = 0.15
-			soft_attack = 0.25
+			soft_attack = 0.10
 		}
 		bunker_max_level_terrain_limit = 3
 		##########

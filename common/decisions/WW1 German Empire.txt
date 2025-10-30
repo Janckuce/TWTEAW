@@ -1,3 +1,151 @@
+GER_Germany_Guide = {
+	GER_Country_Guide = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		complete_effect = {
+			country_event = germany_guide.1
+		}
+	}
+}
+
+GER_Research_Decisions = { 
+	
+	GER_air_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 140
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Air Research"
+				category = light_air
+				bonus = 0.5
+				uses = 1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_arty_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = GER_artillery_research_1
+				bonus = 0.6
+				uses = 1
+				category = artillery
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_ship_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = GER_ships_research_1
+				bonus = 0.6
+				uses = 1
+				category = naval_equipment
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_tank_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = "Armor Research"
+				category = armor
+				bonus = 0.8
+				uses = 1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 4
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	GER_heavy_arty_research = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		days_remove = 220
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_artillery_research_1
+				bonus = 1
+				uses = 1
+				technology = heavy_artillery_equipment1
+			}
+		}
+		modifier = {
+			civilian_factory_use = 6
+		}
+		remove_effect = {
+			
+		}
+	}
+}
+
 GER_ENG_agadir_crisis_category = {
 
 	GER_send_battle_ship = {
@@ -82,6 +230,435 @@ GER_Catholic_Reforms = {
 					days = 120
 				}
 			}
+		}
+	}
+}
+
+GER_Plunder_Decisions = {
+	#in total: 27, 33 or 41? civs, 16 mils possible
+
+	GER_Plunder_Poland = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_Poland
+			}
+		}
+		available = {
+			OR = {
+				controls_state = 10
+				AUS = {
+					controls_state = 10
+				}
+			}
+			OR = {
+				controls_state = 90
+				AUS = {
+					controls_state = 90
+				}
+			}
+			OR = {
+				controls_state = 87
+				AUS = {
+					controls_state = 87
+				}
+			}
+			OR = {
+				controls_state = 98
+				AUS = {
+					controls_state = 98
+				}
+			}
+			OR = {
+				controls_state = 92
+				AUS = {
+					controls_state = 92
+				}
+			}
+			OR = {
+				controls_state = 97
+				AUS = {
+					controls_state = 97
+				}
+			}
+		}
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		cancel_trigger = {
+			OR = {
+				POL = {
+					controls_state = 10
+				}
+				RUS = {
+					controls_state = 10
+				}
+				POL = {
+					controls_state = 90
+				}
+				RUS = {
+					controls_state = 90
+				}
+				POL = {
+					controls_state = 87
+				}
+				RUS = {
+					controls_state = 87
+				}
+				POL = {
+					controls_state = 98
+				}
+				RUS = {
+					controls_state = 98
+				}
+				POL = {
+					controls_state = 92
+				}
+				RUS = {
+					controls_state = 92
+				}
+				POL = {
+					controls_state = 97
+				}
+				RUS = {
+					controls_state = 97
+				}
+				
+			}
+		}
+		remove_effect = {
+			10 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 4 } }
+			10 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			92 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
+			92 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			90 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			87 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
+			98 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
+			97 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			86 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 9
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		add_ideas = GER_Plundered_Poland
+		}
+	}
+
+	GER_Plunder_Ardennes = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_Ardennes
+			}
+		}
+		available = {
+			controls_state = 835
+			controls_state = 8
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 835
+				}
+				NOT = {
+					controls_state = 8
+				}
+			}
+		}
+		remove_effect = {
+			835 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
+			8 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 7 } }
+			8 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 4 } }
+			42 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 8
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		add_ideas = GER_Plundered_Ardennes
+		}
+	}
+	
+	GER_Plunder_Belgium = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_Belgium
+			}
+		}
+		available = {
+			controls_state = 6
+			controls_state = 34
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 6
+				}
+				NOT = {
+					controls_state = 34
+				}
+			}
+		}
+		remove_effect = {
+			6 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 5 } }
+			34 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			6 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
+			34 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			916 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 8
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		add_ideas = GER_Plundered_Belgium
+		}
+	}
+
+	GER_Plunder_The_French_Border = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_The_French_Border
+			}
+		}
+		available = {
+			controls_state = 918
+			controls_state = 908
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 918
+				}
+				NOT = {
+					controls_state = 908
+				}
+			}
+		}
+		remove_effect = {
+			918 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			908 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+
+			28 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+		add_ideas = GER_Plundered_The_French_Border
+		}
+	}
+
+	GER_Plunder_Deeper_Into_France = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_Deeper_Into_France
+			}
+		}
+		available = {
+			controls_state = 27
+			controls_state = 18
+			controls_state = 17
+			controls_state = 933
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 4
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 27
+				}
+				NOT = {
+					controls_state = 18
+				}
+				NOT = {
+					controls_state = 17
+				}
+				NOT = {
+					controls_state = 933
+				}
+			}
+		}
+		remove_effect = {
+			933 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			18 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			17 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			27 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			27 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
+			28 = {
+				add_extra_state_shared_building_slots = 11
+				add_building_construction = {
+					type = industrial_complex
+					level = 9
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		add_ideas = GER_Plundered_Deeper_Into_France
+		}
+	}
+
+	GER_Plunder_Callais = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_Callais
+			}
+		}
+		available = {
+			controls_state = 29
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 2
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 29
+				}
+			}
+		}
+		remove_effect = {
+			29 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			29 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
+			28 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		add_ideas = GER_Plundered_Callais
+		}
+	}
+
+	GER_Plunder_Paris = {
+		priority = 100
+		fire_only_once = no
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			NOT = {
+				has_idea = GER_Plundered_Paris
+			}
+		}
+		available = {
+			controls_state = 16
+			controls_state = 15
+			controls_state = 785
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					controls_state = 16
+				}
+				NOT = {
+					controls_state = 15
+				}
+				NOT = {
+					controls_state = 785
+				}
+			}
+		}
+		remove_effect = {
+
+			16 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 4 } }
+			16 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			15 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
+			15 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 2 } }
+			785 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
+			785 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
+			857 = {
+				add_extra_state_shared_building_slots = 12
+				add_building_construction = {
+					type = industrial_complex
+					level = 9
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		add_ideas = GER_Plundered_Paris
 		}
 	}
 }

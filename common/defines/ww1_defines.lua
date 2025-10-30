@@ -6,7 +6,7 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.2, 0.15, 0.04, 0.0 } -- game speeds
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999			--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999			--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999				--Max air experience a country can store
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 40  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 100  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
@@ -32,3 +32,14 @@ NDefines.NMilitary.LAND_COMBAT_COLLATERAL_INFRASTRUCTURE_FACTOR = 0.1
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 20
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 200
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0
+NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0
+NDefines.NMilitary.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
+NDefines.NBuildings.RADAR_RANGE_BASE = 10
+NDefines.NBuildings.RADAR_RANGE_MIN = 10
+NDefines.NBuildings.RADAR_RANGE_MAX = 28

@@ -1,0 +1,61 @@
+leader_traits = {
+	Neglectful_Leader = {
+		random = no
+		stability_factor = -0.1
+		political_advisor_cost_factor = 0.25
+	}
+	Blessed_Tsar = {
+		random = no
+		command_abilities_cost_factor = -0.25
+	}
+	Economy_Liberator = {
+		random = no
+		political_power_factor = 0.05
+		economy_cost_factor = -0.15
+		trade_laws_cost_factor = -0.15
+	}
+	Caring_Workhorse = {
+		random = no
+		political_power_factor = 0.1
+		political_advisor_cost_factor = -0.15
+	}
+	Armour_Producer = {
+		random = no
+		equipment_bonus = {
+			armored_car_equipment = {
+				build_cost_ic = -0.05
+			}
+		}
+	}
+	Agricultural_Genius = {
+		random = no
+		local_resources_factor = 0.1
+		local_building_slots_factor = 0.1
+	}
+	Industrial_Moderniser = {
+		random = no
+		production_speed_infrastructure_factor = 0.15
+	}
+	Consumer_Produce = {
+		random = no
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.15
+	}
+	Military_Producer = {
+		random = no
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.05
+		production_speed_arms_factory_factor = 0.05
+	}
+	Speed_Is_Power = {
+		random = no
+		sprite = 5
+		army_speed_factor = 0.05
+	}
+	Little_Corporal = {
+		random = no
+		sprite = 5
+		special_forces_attack_factor = 0.1
+		special_forces_defence_factor = 0.1
+	}
+}

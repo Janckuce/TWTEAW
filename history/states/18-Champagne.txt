@@ -5,19 +5,30 @@ state={
 
 	history={
 		owner = FRA
+
+		add_dynamic_modifier = {
+			modifier = Sere_De_Rivieres_System
+		}
+
 		victory_points = {
 			9490 10
 		}
 	    victory_points = {
 			3546 10
 		}
+		victory_points = {
+			9505 1
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-
+			3546 = {
+				bunker = {
+					level = 7
+				}
+			}
 		}
 		add_core_of = FRA
-
 	}
 
 	provinces={

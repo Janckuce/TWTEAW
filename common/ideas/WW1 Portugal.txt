@@ -233,7 +233,6 @@ ideas = {
 		POR_Rapid_Reaction2 = {
 			picture = por_empire
 			modifier = {
-				modifier_army_sub_unit_militia_speed_factor = 0.05
 				modifier_army_sub_unit_militia_attack_factor = 0.1
 				modifier_army_sub_unit_militia_defence_factor = 0.1
 			}
@@ -241,7 +240,7 @@ ideas = {
 		POR_Rapid_Reaction3 = {
 			picture = por_empire
 			modifier = {
-				modifier_army_sub_unit_militia_speed_factor = 0.1
+				dont_lose_dig_in_on_attack = 1
 				modifier_army_sub_unit_militia_attack_factor = 0.15
 				modifier_army_sub_unit_militia_defence_factor = 0.15
 			}
@@ -249,6 +248,7 @@ ideas = {
 		POR_Commandos = {
 			picture = por_empire
 			modifier = {
+				special_forces_min = 100
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.025
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.025
 			}
@@ -256,6 +256,7 @@ ideas = {
 		POR_Commandos1 = {
 			picture = por_empire
 			modifier = {
+				special_forces_min = 100
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
 			}
@@ -263,6 +264,7 @@ ideas = {
 		POR_Commandos2 = {
 			picture = por_empire
 			modifier = {
+				special_forces_min = 100
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.025
@@ -271,6 +273,7 @@ ideas = {
 		POR_Commandos3 = {
 			picture = por_empire
 			modifier = {
+				special_forces_min = 100
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
@@ -293,7 +296,7 @@ ideas = {
 		POR_Hunters2 = {
 			picture = por_empire
 			modifier = {
-				experience_gain_army_unit_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
 			}
@@ -301,7 +304,7 @@ ideas = {
 		POR_Hunters3 = {
 			picture = por_empire
 			modifier = {
-				experience_gain_army_unit_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.1
 				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
 			}

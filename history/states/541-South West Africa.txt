@@ -3,11 +3,18 @@ state={
 	id=541
 	name="STATE_541"
 
-	history={
-		owner = GER
-		buildings = {
-			infrastructure = 2
+	resources = {
+		steel = 4
+		tungsten = 3
+	}
 
+	history={
+		owner = GCG
+		add_core_of = GCG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 3
 		}
 		victory_points = {
 			4879 1 

@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GCG = {
+				set_variable = {
+					var = Current_Budget
+					value = 2
+				}
+			}
+		}
+	}
+}
