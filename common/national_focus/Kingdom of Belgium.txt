@@ -694,7 +694,7 @@ focus_tree = {
 	focus = {
 		id = BEL_Knight_King
 		icon = GFX_focus_BEL_consitutional_crisis
-		cost = 10
+		cost = 3
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -706,9 +706,8 @@ focus_tree = {
 			date > 1914.7.28
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BEL_King_Status_fixed
-				add_idea = BEL_King_Status1
+			295 = {
+				add_core_of = BEL
 			}
 		}
 	}
@@ -726,8 +725,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = BEL_King_Status1
-				add_idea = BEL_King_Status2
+				remove_idea = BEL_King_Status_fixed
+				add_idea = BEL_King_Status1
 			}
 		}
 	}
@@ -744,8 +743,9 @@ focus_tree = {
 			focus = BEL_Soldier_King_two
 		}
 		completion_reward = {
-			295 = {
-				add_core_of = BEL
+			swap_ideas = {
+				remove_idea = BEL_King_Status1
+				add_idea = BEL_King_Status2
 			}
 		}
 	}
@@ -767,6 +767,7 @@ focus_tree = {
 				remove_idea = BEL_King_Status2
 				add_idea = BEL_King_Status3
 			}
+
 		}
 	}
 	focus = {
