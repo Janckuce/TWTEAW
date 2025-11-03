@@ -138,4 +138,38 @@ characters={
 			}
 		}
 	}
+
+		RAJ_stanley_maude = {
+		name = "Stanley Maude"
+		portraits = {
+			civilian = {
+				large = "GFX_raj_stanley_maude"
+			}
+			army = {
+				small = "GFX_raj_stanley_maude_frame"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = RAJ_stanley_maude
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+			military_theorist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { hill_fighter engineer_officer  }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }
