@@ -1342,6 +1342,51 @@ leader_traits = {
 		research_speed_factor = -0.1
 	}
 
+		raj_guy_who_defend = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.075
+		war_support_factor = 0.15
+		stability_weekly = -0.002
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.125
+	}
+
+		raj_woman_feminist = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.065
+		war_support_factor = -0.15
+		stability_factor = 0.1
+		autonomy_gain = 0.4
+		political_advisor_cost_factor = -0.15
+	}
+
+		raj_muslim_of_india = {
+		sprite = 13
+		random = no
+		army_defence_factor = 0.05
+		army_attack_factor = 0.025
+		war_support_factor = 0.1
+		stability_factor = -0.075
+		recruitable_population_factor = 0.1
+		weekly_manpower = 1000
+
+	}
+
+		raj_he_thinks_of_us = {
+		sprite = 13
+		random = no
+		mobilization_laws_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		army_advisor_cost_factor = -0.15
+		military_industrial_organization_funds_gain = 0.15
+		military_industrial_organization_research_bonus = 0.15
+		materiel_manufacturer_cost_factor = -0.35
+
+	}
+
 	our_right_to_survive = {
 		random = no
 		war_support_factor = 0.1
@@ -2148,13 +2193,13 @@ leader_traits = {
 	industry_reformer = {
 		random = no
 		sprite = 10
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.05
-		consumer_goods_factor = -0.10
-		industrial_capacity_factory = 0.1
-		production_factory_max_efficiency_factor = 0.065
-		line_change_production_efficiency_factor = 0.065
-		production_factory_efficiency_gain_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_infrastructure_factor = 0.075
+		consumer_goods_factor = -0.075
+		industrial_capacity_factory = 0.45
+		production_factory_max_efficiency_factor = 0.045
+		line_change_production_efficiency_factor = 0.045
+		production_factory_efficiency_gain_factor = 0.025
 	}
 
 	womens_rights_activist = {

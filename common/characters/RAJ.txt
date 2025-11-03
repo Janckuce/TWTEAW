@@ -1,6 +1,6 @@
 characters={
 	RAJ_Charles_Hardinge = {
-		name = RAJ_Character_Charles_Hardinge
+		name = "Charles Hardinge"
 		portraits = {
 			civilian = {
 				large = "GFX_RAJ_Charles_Hardinge"
@@ -18,7 +18,7 @@ characters={
 				large = "GFX_ger_tirpitz"
 			}
 				army = {
-				small = "GFX_GER_tirpitz_frame"
+				small = "GFX_advisor_raj_edwin_montagu_frame"
 			}
 		}
 		advisor={
@@ -28,6 +28,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
+			raj_guy_who_defend
 			}
 			cost = 150
 			ai_will_do = {
@@ -42,7 +43,7 @@ characters={
 				large = "GFX_ger_tirpitz"
 			}
 				army = {
-				small = "GFX_GER_tirpitz_frame"
+				small = "GFX_advisor_raj_annie_besant_frame"
 			}
 		}
 		advisor={
@@ -52,8 +53,9 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
+			raj_woman_feminist
 			}
-			cost = 150
+			cost = 75
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -66,7 +68,7 @@ characters={
 				large = "GFX_ger_tirpitz"
 			}
 				army = {
-				small = "GFX_GER_tirpitz_frame"
+				small = "GFX_advisor_raj_muhammad_ali_jinnaht_frame"
 			}
 		}
 		advisor={
@@ -76,6 +78,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
+			raj_muslim_of_india
 			}
 			cost = 150
 			ai_will_do = {
@@ -91,7 +94,7 @@ characters={
 				large = "GFX_ger_tirpitz"
 			}
 				army = {
-				small = "GFX_GER_tirpitz_frame"
+				small = "GFX_advisor_raj_william_stevenson_meyer_frame"
 			}
 		}
 		advisor={
@@ -101,6 +104,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
+			industry_reformer
 			}
 			cost = 150
 			ai_will_do = {
@@ -116,7 +120,7 @@ characters={
 				large = "GFX_ger_tirpitz"
 			}
 				army = {
-				small = "GFX_GER_tirpitz_frame"
+				small = "GFX_advisor_raj_william_malcolm_hailey_frame"
 			}
 		}
 		advisor={
@@ -126,6 +130,7 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
+			raj_he_thinks_of_us
 			}
 			cost = 150
 			ai_will_do = {
