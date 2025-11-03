@@ -3317,20 +3317,20 @@ leader_traits = {
 		SAF_politican = { 
 		random = no
 		sprite = 13 
-		democratic_drift = 0.25
-		surrender_limit = 0.25
-		political_power_gain = 0.35
-		political_advisor_cost_factor = -0.25
+		democratic_drift = 0.2
+		surrender_limit = 0.2
+		political_power_gain = 0.2
+		political_advisor_cost_factor = -0.2
 
 	}
 
 		SAF_smuts_army = { 
 		random = no
 		sprite = 7
-		army_attack_factor = 0.125
-		army_defence_factor = 0.025
+		army_attack_factor = 0.1
+		army_defence_factor = 0.05
 		experience_gain_army = @chief_experience_gain_medium
-		production_speed_arms_factory_factor = 0.075
+		production_speed_arms_factory_factor = 0.065
 	}
 
 		SAF_man_with_honors = { 
@@ -3350,11 +3350,11 @@ leader_traits = {
 		SAF_working_man = { 
 		random = no
 		sprite = 13 
-		production_lack_of_resource_penalty_factor = -0.2
-		production_speed_industrial_complex_factor = 0.1
-		industrial_capacity_factory = 0.05
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+		production_speed_industrial_complex_factor = 0.075
+		industrial_capacity_factory = 0.025
+		production_speed_infrastructure_factor = 0.075
+		production_speed_rail_way_factor = 0.05
 	}
 
 		SAF_scientist_of_blacks = { 
@@ -4617,10 +4617,10 @@ leader_traits = {
 	}
 		AST_leadership_of_aef = {
 		random = no
-		naval_doctrine_cost_factor = -0.1
+		naval_doctrine_cost_factor = -0.05
 		experience_gain_navy_factor = 0.075
 		experience_gain_army_factor = 0.075
-		land_doctrine_cost_factor = -0.1
+		land_doctrine_cost_factor = -0.05
 	}
 
 	ICE_transportation_enthusiast = {
@@ -10850,7 +10850,7 @@ leader_traits = {
 		industrial_capacity_dockyard = 0.025
 		production_speed_dockyard_factor = 0.025
 		production_speed_infrastructure_factor = 0.075
-		consumer_goods_factor = -0.125
+		consumer_goods_factor = -0.075
 
 	}
 
@@ -10871,9 +10871,9 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.025
 		production_speed_arms_factory_factor = 0.025
-		production_speed_industrial_complex_factor = 0.1
+		production_speed_industrial_complex_factor = 0.065
 		industrial_capacity_dockyard = 0.05
-		consumer_goods_factor = -0.075
+		consumer_goods_factor = -0.05
 	}
 
 		ast_henry_bournes_higgins_trait = { 
@@ -12483,10 +12483,12 @@ leader_traits = {
 		ast_henry_george_trait = {
 		random = no
 		sprite = 7
-		army_infantry_attack_factor = 0.05
-		army_infantry_defence_factor = 0.075
-		army_breakthrough_against_minor_factor = 0.05
-		army_breakthrough_against_major_factor = 0.05
+		army_infantry_attack_factor = 0.025
+		army_infantry_defence_factor = 0.05
+		special_forces_attack_factor = 0.075
+		special_forces_defence_factor = 0.1
+		army_breakthrough_against_minor_factor = 0.065
+		army_breakthrough_against_major_factor = 0.035
 	}
 		ast_william_bridges = {
 		random = no
@@ -12495,9 +12497,9 @@ leader_traits = {
 		ast_john_gellibrand_trait = {
 		random = no
 		sprite = 7
-		naval_invasion_prep_speed = 0.15
-		amphibious_invasion = 0.075
-		experience_loss_factor = -0.075
+		naval_invasion_prep_speed = 0.075
+		amphibious_invasion = 0.045
+		experience_loss_factor = -0.045
 	}
 		ast_throsby_bridges_trait = {
 		random = no
