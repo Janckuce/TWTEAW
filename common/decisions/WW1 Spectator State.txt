@@ -49,12 +49,18 @@ ORO_spectator_state = {
 		}
 		
 		available = {
-			ITA = {
-			    has_war_with = TUR
-				controls_state = 448
-				controls_state = 449
-				controls_state = 450
-				controls_state = 451
+			OR = {
+				ITA = {
+					has_war_with = TUR
+					controls_state = 448
+					controls_state = 449
+					controls_state = 450
+					controls_state = 451
+				}
+				ITA = {
+					has_war_with = TUR
+					controls_state = 797
+				}
 			}
 		}
 		
@@ -79,16 +85,36 @@ ORO_spectator_state = {
 		}
 		
 		available = {
-			TUR = {
-			    has_war_with = ITA
-				controls_state = 448
-				controls_state = 449
-				controls_state = 450
-				controls_state = 451
-				controls_state = 661
-				controls_state = 662
-				controls_state = 663
-				controls_state = 273
+			OR = {
+				TUR = {
+					has_war_with = ITA
+					controls_state = 448
+					controls_state = 449
+					controls_state = 450
+					controls_state = 451
+					controls_state = 661
+					controls_state = 662
+					controls_state = 663
+					controls_state = 273
+				}
+				TUR = {
+					has_war_with = ITA
+					controls_state = 2
+				}
+				TUR = {
+					has_war_with = ITA
+					OR = {
+						controls_state = 448
+						controls_state = 449
+						controls_state = 450
+						controls_state = 451
+					ITA = {
+						has_country_flag = {
+							flag = ITA_attack_turkey
+							days > 100
+						}
+					}
+				}
 			}
 			ITA = {
 			    has_country_flag = {
