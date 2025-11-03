@@ -172,4 +172,38 @@ characters={
 			logistics_skill = 1
 		}
 	}
+
+		RAJ_maharaja_ganga_singh = {
+		name = "Maharaja Ganga Singh"
+		portraits = {
+			civilian = {
+				large = "GFX_raj_ganga_singh"
+			}
+			army = {
+				small = "GFX_raj_ganga_singh_frame"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = RAJ_maharaja_ganga_singh
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+			RAJ_supreme_leader
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal ={
+			traits = { desert_fox trickster organizer logistics_wizard  }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 }
