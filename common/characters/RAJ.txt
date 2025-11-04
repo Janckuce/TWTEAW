@@ -173,6 +173,94 @@ characters={
 		}
 	}
 
+		raj_pratap_singh = {
+		name = "Pratap Singh"
+		portraits = {
+			civilian = {
+				large = "GFX_raj_pratap_singh"
+			}
+			army = {
+				small = "GFX_raj_pratap_singh_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = raj_pratap_singh
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+			RAJ_camels_horses_desert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { cavalry_leader cavalry_expert cavalry_officer  }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+		raj_james_willcocks = {
+		name = "James Willcocksh"
+		portraits = {
+			civilian = {
+				large = "GFX_raj_james_willcocks"
+			}
+			army = {
+				small = "GFX_raj_james_willcocks_frame"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = raj_james_willcocksh
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+			RAJ_infantry_brit
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { infantry_leader infantry_officer  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+		raj_arthur_barrett = {
+		name = "Arthur Barrett"
+		portraits = {
+			civilian = {
+				large = "GFX_raj_arthur_barrett"
+			}
+			army = {
+				small = "GFX_raj_arthur_barrett_frame"
+			}
+		}
+		corps_commander={
+			traits = { infantry_leader engineer invader trickster  }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 		RAJ_maharaja_ganga_singh = {
 		name = "Maharaja Ganga Singh"
 		portraits = {
