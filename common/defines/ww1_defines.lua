@@ -43,3 +43,4 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
 NDefines.NBuildings.RADAR_RANGE_BASE = 10
 NDefines.NBuildings.RADAR_RANGE_MIN = 10
 NDefines.NBuildings.RADAR_RANGE_MAX = 28
+NDefines.NMilitary.SLOWEST_SPEED = 1
