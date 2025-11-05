@@ -227,7 +227,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_american_manpower
-		icon = GFX_focus_generic_manpower
+		icon = GFX_focus_RAJ_headhunt_army_personell
 		cost = 10
 		x = 0
 		y = 2
@@ -384,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = CAN_native_repression
 		icon = GFX_SOV_the_onslaught_on_colonialism_ccp_2d_sov_compatibility
-		cost = 5
+		cost = 7.2
 		x = 8
 		y = 2
 
@@ -396,16 +396,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = -0.1
+			add_stability = -0.25
 			add_manpower = -50000
-			add_war_support = 0.065
+			add_war_support = 0.05
 		}
 	}
 
 	focus = {
 		id = CAN_sieze_native_lands
 		icon = GFX_focus_generic_annex_country_2
-		cost = 5
+		cost = 7.2
 		x = 8
 		y = 4
 
@@ -415,7 +415,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = -25000
-			add_stability = -0.05
+			add_stability = -0.075
 			add_war_support = 0.035
 		}
 	}
@@ -441,7 +441,7 @@ focus_tree = {
 	focus = {
 		id = CAN_reform_repressive_policies
 		icon = GFX_focus_BRA_repeale_national_security_law
-		cost = 10
+		cost = 7.2
 		x = 11
 		y = 2
 
@@ -450,7 +450,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = -250
 		}
 	}
 
@@ -483,7 +483,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
-			add_ideas = CAN_Native_Support
+				swap_ideas = {
+				remove_idea = CAN_Native_Consessions
+				add_idea = CAN_Native_Support
+			}
 		}
 	}
 
@@ -508,27 +511,11 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 		    }
 			467 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-				}
-		    }
-			469 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-				}
-		    }
-			470 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 				type = industrial_complex
@@ -551,13 +538,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_British_Heritage1
+				swap_ideas = {
+				remove_idea = CAN_Exclusive_Army_Enlistment
+				add_idea = CAN_British_Heritage1
+			}
 		}
 	}
 
 	focus = {
 		id = CAN_our_own_redcoats
-		icon = GFX_focus_NORDIC_com_selector_army
+		icon = GFX_goal_can_our_own_redcoat
 		cost = 10
 		x = 9
 		y = 6
@@ -591,7 +581,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAN_we_are_special_too
-		icon = GFX_focus_SMB_special_forces_option_1
+		icon = GFX_focus_ICE_the_armed_forces_of_iceland
 		cost = 10
 		x = 9
 		y = 8
@@ -610,7 +600,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_hardworking_brits
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
 		cost = 10
 		x = 7
 		y = 6
@@ -711,7 +701,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_army_left2
-		icon = GFX_SOV_strengthen_the_mobilization_plan_ccp_2d_sov_compatibility
+		icon = GFX_focus_CONGO_congo_army
 		cost = 10
 		x = 14
 		y = 2
@@ -952,7 +942,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_lessons_from_the_trench
-		icon = GFX_focus_generic_army_doctrines_2
+		icon = GFX_goal_can_our_own_warging
 		cost = 10
 		x = 17
 		y = 5
@@ -986,7 +976,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_New_Heritage
+				swap_ideas = {
+				remove_idea = CAN_Native_Support
+				add_idea = CAN_New_Heritage
+			}
 		}
 	}
 
@@ -1049,7 +1042,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_man_and_rifle
-		icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_focus_CAN_rifle_association
 		cost = 10
 		x = 15
 		y = 6
@@ -1089,7 +1082,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_man_and_rifle3
-		icon = GFX_focus_AFG_scavenging
+		icon = GFX_goal_can_ammo_lives
 		cost = 10
 		x = 15
 		y = 8

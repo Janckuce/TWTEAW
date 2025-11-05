@@ -31,7 +31,7 @@ ideas = {
 
 		CAN_Native_Consessions = {
 			modifier = {
-				global_building_slots_factor = -0.1 
+				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
 			}
 			picture = ARG_social_welfare_fund_ns
@@ -40,6 +40,8 @@ ideas = {
 		CAN_Native_Support = {
 			modifier = {
 				political_power_gain = 0.15
+				global_building_slots_factor = -0.15
+				conscription_factor = 0.05
 			}
 			picture = air_support_focus
 		}
@@ -61,6 +63,9 @@ ideas = {
 		CAN_New_Heritage = {
 			modifier = {
 				weekly_manpower = 500
+				political_power_gain = 0.15
+				global_building_slots_factor = -0.15
+				conscription_factor = 0.05
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -68,6 +73,9 @@ ideas = {
 			modifier = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
+				political_power_gain = 0.15
+				global_building_slots_factor = -0.15
+				conscription_factor = 0.05
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -76,6 +84,9 @@ ideas = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
 				war_support_weekly = 0.002
+				political_power_gain = 0.15
+				global_building_slots_factor = -0.15
+				conscription_factor = 0.05
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -85,6 +96,9 @@ ideas = {
 				political_advisor_cost_factor = -0.4
 				war_support_weekly = 0.002
 				command_power_gain_mult = 0.05
+				political_power_gain = 0.15
+				global_building_slots_factor = -0.15
+				conscription_factor = 0.05
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -119,7 +133,7 @@ ideas = {
 				army_strength_factor = 0.1
 				army_morale_factor = 0.065
 			}
-			picture = NORDIC_army_monarchist
+			picture = can_our_own_redcoat_idea
 		}
 		CAN_The_Redcoats_Of_Canada2 = {
 			modifier = {
@@ -127,23 +141,24 @@ ideas = {
 				shore_bombardment_bonus = 0.35
 				army_morale_factor = 0.065
 			}
-			picture = NORDIC_army_monarchist
+			picture = can_our_own_redcoat_idea
 		}
 		CAN_The_Redcoats_Of_Canada3 = {
 			modifier = {
 				army_strength_factor = 0.1
 				shore_bombardment_bonus = 0.35
 				army_morale_factor = 0.075
-				special_forces_cap = 5
+				special_forces_cap = 0.05
 				army_attack_factor = 0.035
 				army_defence_factor = 0.05
 			}
-			picture = NORDIC_army_monarchist
+			picture = can_our_own_redcoat_idea
 		}
 		CAN_British_Heritage1 = {
 			modifier = {
 				local_resources_factor = 0.25
 				stability_weekly = 0.001
+				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
 		}
@@ -154,6 +169,7 @@ ideas = {
 				industrial_capacity_factory = 0.065
 				production_factory_start_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
 		}
@@ -164,6 +180,7 @@ ideas = {
 				industrial_capacity_factory = 0.08
 				production_factory_start_efficiency_factor = 0.075
 				production_factory_efficiency_gain_factor = 0.075
+				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
 		}
@@ -175,6 +192,7 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				consumer_goods_factor = -0.2
+				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
 		}
