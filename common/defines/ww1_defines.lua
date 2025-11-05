@@ -6,8 +6,8 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.2, 0.15, 0.04, 0.0 } -- game speeds
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999			--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999			--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999				--Max air experience a country can store
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 100  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 60  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 60		-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which militaryfactories produce equipment
