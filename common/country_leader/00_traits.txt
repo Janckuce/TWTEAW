@@ -106,6 +106,15 @@ leader_traits = {
 		consumer_goods_factor = -0.2
 	}
 
+		can_scientist_for_the_army = {
+		sprite = 13
+		random = no
+		weekly_casualties_war_support = 0.003
+		experience_loss_factor = -0.2
+		army_defence_against_major_factor = 0.065
+		army_attack_against_major_factor = 0.065
+	}
+
 	collaborator_king = {
 		random = no
 		fascism_drift = 0.1

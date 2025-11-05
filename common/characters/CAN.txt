@@ -109,4 +109,30 @@ characters={
     }
 }
 
+	CAN_george_halsey_perley = {
+    name = "George Halsey Perley"
+            portraits = {
+			civilian = {
+                small = "GFX_CAN_george_halsey_perley_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { can_scientist_for_the_army }
+        can_be_fired = yes
+        idea_token = CAN_george_halsey_perley
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
 }
