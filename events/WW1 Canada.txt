@@ -1,0 +1,18 @@
+add_namespace = ww1_canada
+
+country_event = {
+	id = ww1_canada.1
+	title = "The 1911 Elections!"
+	desc = "The winner takes all"
+	picture = GFX_report_event_crowd_in_prague
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Conservative Victory!"
+			set_politics = {
+            ruling_party = democratic
+            elections_allowed = no
+        }
+	}
+}
