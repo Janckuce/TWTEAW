@@ -24,4 +24,89 @@ characters={
 			expire = "1965.1.1.1"
 		}
 	}
+	CAN_arthur_meighen = {
+    name = "Arthur Meighen"
+            portraits = {
+			civilian = {
+                small = "GFX_CAN_arthur_meighen_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { can_our_politican }
+        can_be_fired = yes
+        idea_token = CAN_arthur_meighen
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+	CAN_sam_hughes = {
+    name = "Sam Hughes"
+            portraits = {
+			civilian = {
+                small = "GFX_CAN_sam_hughes_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { incompetent_militarist }
+        can_be_fired = yes
+        idea_token = CAN_sam_hughes
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+		corps_commander = {
+		traits = { }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 1
+	}
+}
+	CAN_william_thomas_white = {
+    name = "William Thomas White"
+            portraits = {
+			civilian = {
+                small = "GFX_CAN_sam_hughes_frame"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { can_banker_of_canada }
+        can_be_fired = yes
+        idea_token = CAN_william_thomas_white
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
 }
