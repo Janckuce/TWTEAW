@@ -20,7 +20,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.2
 			}
-			picture = can_our_work_best
+			picture = ARG_civilian_economy_boost
 		}
 
 		CAN_Export_Driven_Growth = {
@@ -96,7 +96,7 @@ ideas = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
 				war_support_weekly = 0.002
-				command_power_gain_mult = 0.05
+				command_power_gain_mult = 0.5
 				political_power_gain = 0.15
 				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
@@ -105,24 +105,24 @@ ideas = {
 		}
 		CAN_Man_And_Rifle1 = {
 			modifier = {
-				army_infantry_defence_factor = 0.05
-				army_infantry_attack_factor = 0.075
+				army_infantry_defence_factor = 0.15
+				army_infantry_attack_factor = 0.10
 			}
 			picture = HUN_secret_rearmament
 		}
 		CAN_Man_And_Rifle2 = {
 			modifier = {
-				army_infantry_defence_factor = 0.075
+				army_infantry_defence_factor = 0.15
 				army_infantry_attack_factor = 0.10
-				army_org_factor = 0.065
+				army_org_factor = 0.1
 			}
 			picture = HUN_secret_rearmament
 		}
 		CAN_Man_And_Rifle3 = {
 			modifier = {
-				army_infantry_defence_factor = 0.075
+				army_infantry_defence_factor = 0.15
 				army_infantry_attack_factor = 0.10
-				army_org_factor = 0.08
+				army_org_factor = 0.1
 				equipment_capture = 0.1
 				no_supply_grace = 48
 			}
@@ -132,32 +132,27 @@ ideas = {
 		CAN_The_Redcoats_Of_Canada1 = {
 			modifier = {
 				army_strength_factor = 0.1
-				army_morale_factor = 0.065
 			}
 			picture = can_our_own_redcoat_idea
 		}
 		CAN_The_Redcoats_Of_Canada2 = {
 			modifier = {
 				army_strength_factor = 0.1
-				shore_bombardment_bonus = 0.35
-				army_morale_factor = 0.065
+				shore_bombardment_bonus = 0.60
 			}
 			picture = can_our_own_redcoat_idea
 		}
 		CAN_The_Redcoats_Of_Canada3 = {
 			modifier = {
 				army_strength_factor = 0.1
-				shore_bombardment_bonus = 0.35
-				army_morale_factor = 0.075
-				special_forces_cap = 0.05
-				army_attack_factor = 0.035
-				army_defence_factor = 0.05
+				shore_bombardment_bonus = 0.60
+				special_forces_cap = 2
 			}
 			picture = can_our_own_redcoat_idea
 		}
 		CAN_British_Heritage1 = {
 			modifier = {
-				local_resources_factor = 0.25
+				local_resources_factor = 0.35
 				stability_weekly = 0.001
 				training_time_army_factor = -0.2
 			}
@@ -167,9 +162,7 @@ ideas = {
 			modifier = {
 				local_resources_factor = 0.35
 				stability_weekly = 0.001
-				industrial_capacity_factory = 0.065
-				production_factory_start_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.15
 				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
@@ -178,20 +171,19 @@ ideas = {
 			modifier = {
 				local_resources_factor = 0.35
 				stability_weekly = 0.001
-				industrial_capacity_factory = 0.08
-				production_factory_start_efficiency_factor = 0.075
-				production_factory_efficiency_gain_factor = 0.075
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.25
 				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
 		}
 		CAN_Sacrifice_For_King_And_Country = {
 			modifier = {
-				local_resources_factor = 0.45
+				local_resources_factor = 0.35
 				stability_weekly = 0.001
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.25
 				industrial_capacity_factory = 0.1
-				production_factory_start_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
 				consumer_goods_factor = -0.2
 				training_time_army_factor = -0.2
 			}
