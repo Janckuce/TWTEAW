@@ -45,8 +45,8 @@ ideas = {
 				training_time_army_factor = 0.2
 				army_attack_factor = -0.1
 				army_defence_factor = -0.1
-				army_org_factor = -0.15
-				supply_consumption_factor = 0.10
+				army_org_factor = -0.2
+				supply_consumption_factor = 0.15
 			}
 		}
 		TUR_Army_Of_Bygon_Era_3 = {
@@ -60,7 +60,7 @@ ideas = {
 				training_time_army_factor = 0.05
 				army_attack_factor = -0.05
 				army_defence_factor = -0.05
-				army_org_factor = -0.05
+				army_org_factor = -0.1
 				supply_consumption_factor = 0.05
 			}
 		}
@@ -640,6 +640,13 @@ ideas = {
 				air_attack_factor = -0.15
 				air_defence_factor = -0.15
 				air_agility_factor = -0.15
+			}
+		}
+		TUR_Choosing_Leader = {
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.05
 			}
 		}
 	}
