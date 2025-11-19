@@ -1,6 +1,6 @@
 characters={
 	ITA_vittorio_emanuele_III = {
-		name = ITA_character_vittorio_emanuele_III
+		name = ITA_charactername_vittorio_emanuele_III
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_vittorio_emanuele_III"
@@ -12,21 +12,8 @@ characters={
 		}
 	}
 	
-	ITA_benito_mussolini_K = {
-		name = ITA_character_benito_mussolini_K
-		portraits = {
-			civilian = {
-				large = "GFX_ITA_benito_mussolini_K"
-			}
-		}
-		country_leader = {
-			ideology = nazism
-			expire = "1965.1.1.1"
-		}
-	}
-	
 	ITA_luigi_cadorna = {
-		name = ITA_character_luigi_cadorna
+		name = ITA_charactername_luigi_cadorna
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_luigi_cadorna"
@@ -42,7 +29,7 @@ characters={
 				original_tag = ITA
 			}
 			traits = {
-				army_chief_offensive_2 #Inf Attack +10%
+				army_chief_luigi_cadorna #Special trait for a "special" individual
 			}
 			cost = 150
 			ai_will_do = {
@@ -59,7 +46,7 @@ characters={
 	}
 	
 	ITA_alberico_albricci = {
-		name = ITA_character_alberico_albricci
+		name = ITA_charactername_alberico_albricci
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_alberico_albricci"
@@ -92,7 +79,7 @@ characters={
 	}
 	
 	ITA_alberto_cavaciocchi = {
-		name = ITA_character_alberto_cavaciocchi
+		name = ITA_charactername_alberto_cavaciocchi
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_alberto_cavaciocchi"
@@ -125,7 +112,7 @@ characters={
 	}
 	
 	ITA_emanuele_filiberto_di_savoia-aosta = {
-		name = ITA_character_emanuele_filiberto_di_savoia-aosta
+		name = ITA_charactername_emanuele_filiberto_di_savoia-aosta
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_emanuele_filiberto_di_savoia-aosta"
@@ -158,7 +145,7 @@ characters={
 	}
 	
 	ITA_giorgio_emo_di_capodilista = {
-		name = ITA_character_giorgio_emo_di_capodilista
+		name = ITA_charactername_giorgio_emo_di_capodilista
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_giorgio_emo_di_capodilista"
@@ -177,7 +164,7 @@ characters={
 	}
 	
 	ITA_gaetano_giardino = {
-		name = ITA_character_gaetano_giardino
+		name = ITA_charactername_gaetano_giardino
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_gaetano_giardino"
@@ -210,7 +197,7 @@ characters={
 	}
 	
 	ITA_pietro_badoglio = {
-		name = ITA_character_pietro_badoglio
+		name = ITA_charactername_pietro_badoglio
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_pietro_badoglio"
@@ -229,7 +216,7 @@ characters={
 	}
 	
 	ITA_armando_diaz = {
-		name = ITA_character_pietro_badoglio
+		name = ITA_charactername_pietro_badoglio
 		portraits = {
 			civilian = {
 				large = "GFX_ITA_armando_diaz"
@@ -339,7 +326,7 @@ characters={
 		}
 	}
 	ITA_aldo_pellegrini = {
-		name = ITA_aldo_pellegrini
+		name = ITA_charactername_aldo_pellegrini
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_aldo_pellegrini_small
@@ -361,4 +348,49 @@ characters={
 			}
 		}
 	}
+
+	ITA_Giulio_Douhet = {
+		name = ITA_charactername_Giulio_Douhet
+		portraits = {
+			#
+		}
+		
+		advisor = {
+			slot = air_chief
+			idea_token = ITA_Giulio_Douhet
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				air_chief_giulio_douhet
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+	ITA_Prince_Luigi_Amedeo = {
+		name = ITA_charactername_Prince_Luigi_Amedeo
+		portraits = {
+			#
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = ITA_Prince_Luigi_Amedeo
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 150
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
 }

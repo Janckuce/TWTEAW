@@ -28,8 +28,8 @@ ORO_spectator_state = {
 		}
 		complete_effect = {
 			ITA = {
-			set_country_flag = ITA_attack_turkey
-			country_event = ww1_italy.1
+				set_country_flag = ITA_attack_turkey
+				country_event = ww1_italy.1
 			}
 			news_event = ww1_news.17
 		}
@@ -62,11 +62,18 @@ ORO_spectator_state = {
 					controls_state = 797
 				}
 			}
+			NOT = { # prevention of accidental trigger later
+				ITA = {
+					has_country_flag = ITA_Lose_Libya
+					has_country_flag = ITA_Win_Libya
+				}
+			}
 		}
 		
 		complete_effect = {
 		    ITA = {
 			    country_event = ww1_italy.2
+			    set_country_flag = ITA_Win_Libya
 			}
 		}
 		fire_only_once = yes
@@ -108,29 +115,34 @@ ORO_spectator_state = {
 						controls_state = 449
 						controls_state = 450
 						controls_state = 451
-					ITA = {
-						has_country_flag = {
-							flag = ITA_attack_turkey
-							days > 100
+						ITA = {
+							has_country_flag = {
+								flag = ITA_attack_turkey
+								days > 100
+							}
 						}
 					}
 				}
 			}
 			ITA = {
-			    has_country_flag = {
-					flag = ITA_attack_turkey
-					days > 10
-				}
 				has_country_flag = {
 					flag = ITA_attack_turkey
-					days < 365 #The war shouldn't last this only, this is to prevent the decision from triggering later
+					days > 100
+				}
+			}
+			NOT = { # prevention of accidental trigger later
+				ITA = {
+					has_country_flag = ITA_Lose_Libya
+					has_country_flag = ITA_Win_Libya
 				}
 			}
 		}
-		
 		complete_effect = {
 		    TUR = {
 			    country_event = ww1_ottoman.2
+			}
+			ITA = {
+				set_country_flag = ITA_Lose_Libya
 			}
 		}
 		fire_only_once = yes
@@ -138,8 +150,8 @@ ORO_spectator_state = {
 		ai_will_do = {
 			factor = 10000
 		}
-		}
 	}
+
 	Italy_Join_WW1 = {
 		allowed = {
 			original_tag = ORO
@@ -158,12 +170,12 @@ ORO_spectator_state = {
 				}				
 			}
 			ITA = {
-			remove_ideas = ITA_central_powers_2
-			declare_war_on = {
-				type = take_claimed_state
-				target = AUS
-			}
-			add_ideas = ITA_entente
+				remove_ideas = ITA_central_powers_2
+				declare_war_on = {
+					type = take_claimed_state
+					target = AUS
+				}
+				add_ideas = ITA_entente
 			}
 		}
 		fire_only_once = yes
@@ -245,26 +257,26 @@ ORO_spectator_state = {
 					add_threat = 40
 				}
 			}
-				if = {
-                limit = {
-                    GER = {
-                        has_completed_focus = GER_schlieffen_moltke_plan_idea
-                        }
-                    }
-                GER = {
-                    add_ideas = GER_schlieffen_moltke_plan_idea
-                	}
-				}
+			if = {
+		        limit = {
+		            GER = {
+		                has_completed_focus = GER_schlieffen_moltke_plan_idea
+	                }
+	            }
+		        GER = {
+		            add_ideas = GER_schlieffen_moltke_plan_idea
+	        	}
+			}
 			if = {
                 limit = {
                     GER = {
                         has_completed_focus = GER_Helmuth_von_Moltke
-                        }
                     }
+                }
                 GER = {
                     add_ideas = GER_Helmuth_Plan
-					}
-                }
+				}
+            }
 			if = {
 				limit = {
 					GER = {

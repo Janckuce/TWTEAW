@@ -13265,6 +13265,24 @@ leader_traits = {
 			}
 		}
 	}
+	
+	army_chief_luigi_cadorna = { # Just Luigi, please be patient, he has autism
+		sprite = 7 # 7
+		army_attack_factor = 0.05 # 5% attack because he's not that good
+		experience_gain_army = @chief_experience_gain_high # Lots of XP gain because he is good at finding out what not to do
+		experience_loss_factor = 0.3 # He is also very good at sticking to doing things that don't work
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+
+		ai_will_do = {
+			factor = @army_chief_factor_2
+			modifier = {
+				factor = 0
+				command_power < @tier2_cp_cost
+			}
+		}
+	}
 
 
 	army_entrenchment_1 = { # Ground units entrench n% faster
@@ -14174,6 +14192,23 @@ leader_traits = {
 		}
 	}
 
+
+	air_chief_giulio_douhet = {
+		sprite = 2
+		air_strategic_bomber_bombing_factor = 0.1
+		experience_gain_air = @chief_experience_gain_medium
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+
+		ai_will_do = {
+			factor = @army_command_factor_2
+			modifier = {
+				factor = 0
+				command_power < @tier2_cp_cost
+			}
+		}
+	}
 
 	air_air_combat_training_1 = {  # Chance of ace generating is increased by 5%
 		sprite = 1
