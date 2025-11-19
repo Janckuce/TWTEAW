@@ -333,8 +333,10 @@ focus_tree = {
 			focus = GER_appease_Britain
 		}
 		completion_reward = {
-			remove_ideas = GER_naval_arms_race
-			add_ideas = GER_naval_arms_race_2
+			swap_ideas = {
+				remove_idea = GER_naval_arms_race
+				add_idea = GER_naval_arms_race_2
+			}
 		}
 	}
 	focus = {

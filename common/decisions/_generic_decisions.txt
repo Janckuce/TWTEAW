@@ -1,86 +1,44 @@
-political_actions = {
-
-	improved_worker_conditions = {
-
-		icon = generic_industry
-		priority = 10
-		available = {
-			has_stability < 1.0
-		}
-
-		visible = {
-			always = yes
-		}
-
-		fire_only_once = no
-
-		modifier = {
-			stability_weekly = 0.005
-			consumer_goods_factor = 0.10
-			industrial_capacity_factory = -0.1
-		}
-
-		days_remove = 180
-		days_re_enable = 540
-
-		cost = 100
-
-		complete_effect = {
-
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				has_stability < 0.6
-				has_political_power > 155 #Spend on other things first
-			}
-		}
-	}
-}
-
 economy_decisions = {
 
-	restructure_supply_system = { #one time boost to get a few cheap supply hubs
+	# restructure_supply_system = { #one time boost to get a few cheap supply hubs
 
-		icon = GFX_decision_generic_construction
+	# 	icon = GFX_decision_generic_construction
 
-		visible = { 
-			OR = {
-				is_major = no
-				AND = {
-					is_faction_leader = yes
-					num_of_factories < 51 #would be a minor if it wasn't for faction leader status
-				}
-			}
-		}
-		fire_only_once = yes
+	# 	visible = { 
+	# 		OR = {
+	# 			is_major = no
+	# 			AND = {
+	# 				is_faction_leader = yes
+	# 				num_of_factories < 51 #would be a minor if it wasn't for faction leader status
+	# 			}
+	# 		}
+	# 	}
+	# 	fire_only_once = yes
 
-		days_remove = 120
+	# 	days_remove = 120
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				num_of_factories < 30
-				factor = 0
-			}
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			num_of_factories < 30
+	# 			factor = 0
+	# 		}
+	# 	}
 
-		modifier = {
-			production_speed_supply_node_factor = 3
-		}
+	# 	modifier = {
+	# 		production_speed_supply_node_factor = 3
+	# 	}
 
-		complete_effect = {
-			set_variable = { node_goal = num_of_supply_nodes }
-			add_to_variable = { node_goal = 3 } #maximum 3 additional nodes
-		}
+	# 	complete_effect = {
+	# 		set_variable = { node_goal = num_of_supply_nodes }
+	# 		add_to_variable = { node_goal = 3 } #maximum 3 additional nodes
+	# 	}
 
-		cancel_trigger = {
+	# 	cancel_trigger = {
 			
-			 check_variable = { node_goal < num_of_supply_nodes } #if the number of supply nodes exceeds the old number by +3, immediately cancel
-		}
-	}
+	# 		 check_variable = { node_goal < num_of_supply_nodes } #if the number of supply nodes exceeds the old number by +3, immediately cancel
+	# 	}
+	# }
 	seize_some_trains_woo = { #repeating train seize
 
 		icon = GFX_decision_hol_draw_up_staff_plans	
@@ -115,51 +73,137 @@ economy_decisions = {
 }
 
 propaganda_efforts = {
-	war_propaganda = { 
 
-		icon = generic_prepare_civil_war
+	homefront_stability_increase = {
 
+		icon = GFX_decision_generic_political_address
+		priority = 10
 		available = {
-			NOT = { has_country_flag = war_propaganda_campaign_running }
-			has_war_support < 0.5
-			if = {
-				limit = {
-					original_tag = SPR
-					has_dlc = "La Resistance"
-				}
-				has_global_flag = scw_over
-			}
+			base_stability < 1.0
 		}
 
 		visible = {
-			OR = {
-				has_war_with_non_exiled_country = yes  
-				any_neighbor_country = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-						has_added_tension_amount > 10
-					}
-				}
-			}
+			date > 1914.7.26
+			has_war = yes
+		}
+
+		available = {
+			has_political_power > 0
 		}
 
 		fire_only_once = no
 
-		days_remove = 90
-		days_re_enable = 180
-
-		cost = 150
-
 		modifier = {
-			war_support_weekly = 0.005
+			stability_weekly = 0.002
+			consumer_goods_factor = 0.05
+			political_power_gain = -0.2
+		}
+
+		
+
+		days_remove = 6767
+		days_re_enable = 0
+
+		cost = 0
+
+		cancel_trigger = {
+			OR = {
+				has_stability > 0.99
+				has_political_power < 0
+
+				NOT = {
+					has_variable = homefront_stability_increase
+				}
+			}
 		}
 
 		complete_effect = {
-			set_country_flag = war_propaganda_campaign_running
+			set_variable = { var = homefront_stability_increase value = 1 }
 		}
+
 		remove_effect = {
-			clr_country_flag = war_propaganda_campaign_running
+			clear_variable = homefront_stability_increase
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155 #Spend on other things first
+			}
+		}
+	}
+
+	cancel_homefront_stability_increase = {
+
+		icon = GFX_decision_generic_political_address
+		priority = 10
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_variable = homefront_stability_increase
+		}
+
+		fire_only_once = no
+
+		modifier = {
+
+		}
+
+		days_re_enable = 0
+
+		cost = 0
+
+		complete_effect = {
+			clear_variable = homefront_stability_increase
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155 #Spend on other things first
+			}
+		}
+	}
+
+	home_by_christmas = { 
+
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+			has_war_support < 1.0
+			date < 1914.11.1
+		}
+
+		visible = {
+			date > 1914.7.26
+			date < 1914.11.1
+			has_war = yes
+			has_stability < 0.6
+		}
+
+		available = {
+			has_political_power > 0
+		}
+
+		fire_only_once = yes
+
+		days_remove = 135
+
+		cost = 0
+
+		modifier = {
+			war_support_weekly = 0.002
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+
 		}
 
 		ai_will_do = {
@@ -168,6 +212,101 @@ propaganda_efforts = {
 				add = 1
 				has_war_support < 0.4
 				has_war = yes
+			}
+		}
+	}
+
+	war_support_posters = {
+
+		icon = GFX_decision_SWI_dismiss_council
+		priority = 9
+		available = {
+			base_war_support < 1.0
+		}
+
+		visible = {
+			date > 1914.11.1
+			has_war = yes
+		}
+
+		available = {
+			has_political_power > 0
+		}
+
+		fire_only_once = no
+
+		modifier = {
+			war_support_weekly = 0.002
+			consumer_goods_factor = 0.10
+			political_power_gain = -0.2
+		}
+
+		days_remove = 6767
+		days_re_enable = 0
+
+		cost = 0
+
+		cancel_trigger = {
+			OR = {
+				has_war_support > 0.99
+				has_political_power < 0
+
+				NOT = {
+					has_variable = war_support_posters
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = { var = war_support_posters value = 1 }
+		}
+
+		remove_effect = {
+			clear_variable = war_support_posters
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155 #Spend on other things first
+			}
+		}
+	}
+
+	cancel_war_support_posters = {
+
+		icon = GFX_decision_SWI_dismiss_council
+		priority = 9
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_variable = war_support_posters
+		}
+
+		fire_only_once = no
+
+		modifier = {
+
+		}
+
+		days_re_enable = 0
+
+		cost = 0
+
+		complete_effect = {
+			clear_variable = war_support_posters
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+				has_political_power > 155 #Spend on other things first
 			}
 		}
 	}

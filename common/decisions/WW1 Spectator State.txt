@@ -226,12 +226,7 @@ ORO_spectator_state = {
 		}
 		
 		complete_effect = {
-			if = {
-				limit = {
-					GER = {
-						has_country_flag = WW1_with_GER
-					}
-				}
+			
 				GER = {
 					declare_war_on = { target = FRA type = annex_everything }
 					declare_war_on = { target = SER type = annex_everything }
@@ -1382,30 +1377,6 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
-
-		ww1_belgium_forts = {
-		allowed = {
-			original_tag = ORO
-		}
-		visible = {
-			always = yes
-		}
-		
-		available = {
-			date > 1914.8.5
-		}
-		
-		complete_effect = {
-				BEL = {
-			    country_event = ww_belgium_war.1
-			}
-		}
-		fire_only_once = yes
-		
-		ai_will_do = {
-			factor = 10000
-		}
-	}
 	
 	kill_roosevelt = {
 		allowed = {
@@ -2496,7 +2467,6 @@ ORO_end_WW1_german_loss = {
 			factor = 10000
 		}
 	}
-}
 
 
 	ORO_death_news = {
