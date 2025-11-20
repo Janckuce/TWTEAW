@@ -30,9 +30,17 @@ ideas = {
 			picture = generic_build_infrastructure
 		}
 
+		CAN_First_Reform = {
+			modifier = {
+				political_advisor_cost_factor = -0.4
+			}
+			picture = can_defence_of_canada_regulations_democratic
+		}
+
 		CAN_Native_Consessions = {
 			modifier = {
 				global_building_slots_factor = -0.15
+				political_advisor_cost_factor = -0.4
 				conscription_factor = 0.05
 			}
 			picture = ARG_social_welfare_fund_ns
@@ -41,6 +49,7 @@ ideas = {
 		CAN_Native_Support = {
 			modifier = {
 				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.4
 				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
 			}
@@ -61,9 +70,10 @@ ideas = {
 		# 	}
 		# }
 		
-		CAN_New_Heritage = {
+		CAN_New_Heritage1 = {
 			modifier = {
 				weekly_manpower = 500
+				political_advisor_cost_factor = -0.4
 				political_power_gain = 0.15
 				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
@@ -77,6 +87,8 @@ ideas = {
 				political_power_gain = 0.15
 				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
+				research_speed_factor = 0.06
+				consumer_goods_factor = -0.1
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -88,6 +100,9 @@ ideas = {
 				political_power_gain = 0.15
 				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
+				research_speed_factor = 0.06
+				consumer_goods_factor = -0.1
+				war_stability_factor = 0.15
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -96,10 +111,13 @@ ideas = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
 				war_support_weekly = 0.002
-				command_power_gain_mult = 0.5
+				command_power_gain_mult = 0.8
 				political_power_gain = 0.15
 				global_building_slots_factor = -0.15
 				conscription_factor = 0.05
+				research_speed_factor = 0.06
+				consumer_goods_factor = -0.1
+				war_stability_factor = 0.15
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
