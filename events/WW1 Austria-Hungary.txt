@@ -1,0 +1,22 @@
+add_namespace = ww1_austria_hungary
+
+country_event = {
+	id = ww1_austria_hungary.1
+	title = "Austrian Elections"
+	desc = "The Upcoming Austrian Elecions Shall Decide The Future Of Our Nation Going Forth."
+	picture = GFX_report_event_SWI_cantons_flags_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We Are Austrian First And Foremost."
+
+		complete_national_focus = AUS_Austrian_Primacy
+	}
+
+	option = {
+		name = "The Dual Monarchy Is Dual For A Reason."
+
+		complete_national_focus = AUS_Unity_Is_Strength
+	}
+}

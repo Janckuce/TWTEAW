@@ -8,2820 +8,814 @@
 
 focus_tree = {
 	id = austrian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = AUS
 		}
 	}
-	
-	continuous_focus_position = { x = 50 y = 2000 }
 
 	default = no
 
-	# Political and Coring Tree
-	
+	continuous_focus_position = { x = 100 y = 1000 }
 
-		focus = {
-		id = AUH_empire_of_franz_josef
+	focus = {
+		id = AUS_Head_Of_The_Empire
 		icon = GFX_goal_empire_of_franz_josef
-		x = 20
-		y = 1
-
 		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
+		x = 9
+		y = 0
 		completion_reward = {
-			add_political_power = 250
+			add_political_power = 100
 		}
 	}
 
-		focus = {
-		id = AUH_allow_regional_languages
-		icon = GFX_goal_AUH_allow_regional_languages
-		x = 23
-		y = 2
+	#	Political Branch
 
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_empire_of_franz_josef}  
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.22
-					days = 1
-					}
-	every_owned_state = {
-				limit = {
-					NOT = {
-						is_core_of = ROOT
-					}
-					is_controlled_by = ROOT
-				}
-				add_compliance = 5
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_problems_with_translatheinia
-		icon = GFX_goal_AUH_problems_with_translatheinia
-		x = 25
-		y = 2
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_empire_of_franz_josef}  
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.33
-					days = 1
-					}
-		}
-	}
-
-		focus = {
-		id = AUH_give_jobs_to_regionals
-		icon = GFX_goal_AUH_give_jobs_to_regionals
-		x = 24
-		y = 3
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_problems_with_translatheinia}
-		prerequisite = {focus = AUH_allow_regional_languages}    
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.44
-					days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_reinforce_kuk_gendarmarie
-		icon = GFX_goal_AUH_pay_more_gendarm
-		x = 24
-		y = 4
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_give_jobs_to_regionals}  
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = DEN_expand_haerens_tekniske_korps
-				bonus = 1
-				uses = 2
-				category = military_police_tech
-		}
-	}
-	}
-
-		focus = {
-		id = AUH_purge_of_unloyal_hungarians
-		icon = GFX_goal_AUH_killing_unloyal_officers
-		x = 22
-		y = 5
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
-
-		completion_reward = {
-				add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-				add_popularity = {
-				ideology = democratic
-				popularity = -0.025
-			}
-
-				add_popularity = {
-				ideology = communism
-				popularity = -0.025
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_limit_rights_on_slavonia
-		icon = GFX_goal_workplace_slavonia
-		x = 24
-		y = 5
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
-
-		completion_reward = {
-		109 = {
-		add_compliance = 5
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = industrial_complex
-		level = 2
-		instant_build = yes
-			}
-		}
-	}
-}
-		focus = {
-		id = AUH_serbians_on_their_own
-		icon = GFX_goal_AUH_serbians_on_their_own
-		x = 26
-		y = 5
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_reinforce_kuk_gendarmarie}  
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.55
-					days = 1
-				}
-		804 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-		type = industrial_complex
-		level = 1
-		instant_build = yes
-		}
-	}
-		}
-	}
-
-		focus = {
-		id = AUH_slovenian_debate
-		icon = GFX_goal_AUH_slovenia_sign
-		x = 23
-		y = 6
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
-		prerequisite = {focus = AUH_purge_of_unloyal_hungarians} 
-
-		completion_reward = {
-			add_state_core = 736
-			add_state_core = 841
-			add_state_core = 852
-			add_state_core = 859
-		}
-	}
-
-		focus = {
-		id = AUH_austrian_sud_tirol
-		icon = GFX_goal_AUH_austrian_sud_tirol
-		x = 25
-		y = 6
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_limit_rights_on_slavonia}  
-		prerequisite = {focus = AUH_serbians_on_their_own} 
-
-		completion_reward = {
-			
-				850 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-					type = supply_node
-					level = 1
-					instant_build = yes
-					province = 9598
-				}
-			}
-			add_state_core = 850
-		}
-	}
-
-		focus = {
-		id = AUH_declare_the_revolt_uncostitutional
-		icon = GFX_goal_AUH_state_good
-		x = 24
-		y = 7
-
-		cost = 2.2
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_austrian_sud_tirol}  
-		prerequisite = {focus = AUH_slovenian_debate} 
-
-		completion_reward = {
-    	add_ideas = AUH_well_oiled_machine
-    }
-		}
-
-		focus = {
-		id = AUH_many_crowns_many_problems
-		icon = GFX_goal_crown_head
-		x = 17
-		y = 2
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_empire_of_franz_josef}
-
-		completion_reward = {
-		country_event = {
-		id = austria_hungary.66
-		days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_elections_1911
-		icon = GFX_focus_generic_election
-		x = 3
-		y = 2
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_empire_of_franz_josef}
-
+	focus = {
+		id = AUS_Political_Referendum
+		icon = GFX_focus_AUS_diplomatic_effort
+		cost = 10
+		relative_position_id = AUS_Head_Of_The_Empire
+		x = -7
+		y = 1
 		available = {
-		date > 1911.6.20
+			date > 1915.6.1
 		}
-
+		prerequisite = {
+			focus = AUS_Head_Of_The_Empire
+		}
 		completion_reward = {
-		country_event = {
-		id = austria_hungary.99
-		days = 1
-			}
+			country_event = ww1_austria_hungary.1
 		}
 	}
 
-		focus = {
-		id = AUH_victory_of_cs
-		icon = GFX_goal_aus_css
-		x = 2
-		y = 3
+	#	Fascist Path
 
-			available = {
-			always = no
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_elections_1911}
-
-		completion_reward = {
-			add_ideas = AUH_victory_of_the_css
-		}
-	}
-
-		focus = {
-		id = AUH_safeguard_traditions_cs
-		icon = GFX_focus_CHL_mapuche_reconcilliation_campaigns_export
-		x = 2
-		y = 4
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_victory_of_cs}
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_css
-				add_idea = AUH_victory_of_the_css2
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_award_new_titles_cs
-		icon = GFX_focus_generic_monarchy_2
-		x = 2
-		y = 5
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_safeguard_traditions_cs}
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_css2
-				add_idea = AUH_victory_of_the_css3
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_limit_the_socialists_parties_cs
-		icon = GFX_focus_BRA_utilize_security_law
-		x = 2
-		y = 6
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_award_new_titles_cs}
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_css3
-				add_idea = AUH_victory_of_the_css4
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_tradition_lives_on_cs
-		icon = GFX_focus_DEN_national_unity
-		x = 2
-		y = 7
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_limit_the_socialists_parties_cs}
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_css4
-				add_idea = AUH_victory_of_the_css5
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_victory_of_sdap
-		icon = GFX_goal_aus_sdap
-		x = 4
-		y = 3
-
+	focus = {
+		id = AUS_Austrian_Primacy
+		icon = GFX_focus_AUS_legacy_of_the_empire
+		cost = 10
+		relative_position_id = AUS_Political_Referendum
+		x = -1
+		y = 1
 		available = {
 			always = no
 		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_elections_1911}
-
+		mutually_exclusive = {
+			focus = AUS_Unity_Is_Strength
+		}
+		prerequisite = {
+			focus = AUS_Political_Referendum
+		}
 		completion_reward = {
-			
-			add_ideas = AUH_victory_of_the_sdap
+			add_ideas = AUS_Power_To_Us
 		}
 	}
-
-		focus = {
-		id = AUH_improve_the_workers_rights_sdap
-		icon = GFX_focus_AUS_the_right_to_self_determination
-		x = 4
-		y = 4
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_victory_of_sdap}
-
+	focus = {
+		id = AUS_Austrian_Storm
+		icon = GFX_focus_PER_wether_the_storm
+		cost = 10
+		relative_position_id = AUS_Austrian_Primacy
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Austrian_Primacy
+		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_sdap
-				add_idea = AUH_victory_of_the_sdap2
+			swap_ideas = {
+				remove_idea = AUS_Power_To_Us
+				add_idea = AUS_Power_To_Us1
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_naturfreunde_sdap
-		icon = GFX_goal_aus_naturfreunde
-		x = 4
-		y = 5
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_improve_the_workers_rights_sdap}
-
+	focus = {
+		id = AUS_Invincible_Army
+		icon = GFX_focus_GER_german_army_invincible
+		cost = 10
+		relative_position_id = AUS_Austrian_Storm
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Austrian_Storm
+		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_sdap2
-				add_idea = AUH_victory_of_the_sdap3
+			swap_ideas = {
+				remove_idea = AUS_Power_To_Us1
+				add_idea = AUS_Power_To_Us2
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_implement_women_universal_suffrage_sdap
-		icon = GFX_focus_PER_women_vote
-		x = 4
-		y = 6
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_naturfreunde_sdap}
-
+	focus = {
+		id = AUS_Totaler_Krieg
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		relative_position_id = AUS_Invincible_Army
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Invincible_Army
+		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_sdap3
-				add_idea = AUH_victory_of_the_sdap4
+			add_ideas = AUS_Blitzkrieg
+		}
+	}
+	
+	#	Monarchist Path
+
+	focus = {
+		id = AUS_Unity_Is_Strength
+		icon = GFX_focus_AUS_an_improved_german_state
+		cost = 10
+		relative_position_id = AUS_Political_Referendum
+		x = 1
+		y = 1
+		available = {
+			always = no
+		}
+		mutually_exclusive = {
+			focus = AUS_Austrian_Primacy
+		}
+		prerequisite = {
+			focus = AUS_Political_Referendum
+		}
+		completion_reward = {
+			add_ideas = AUS_Power_To_The_People
+		}
+	}
+	focus = {
+		id = AUS_Uniting_The_Populus
+		icon = GFX_focus_AUS_heeding_the_call_of_duty
+		cost = 10
+		relative_position_id = AUS_Unity_Is_Strength
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Unity_Is_Strength
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Power_To_The_People
+				add_idea = AUS_Power_To_The_People1
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_dream_of_austromarxists_sdap
-		icon = GFX_focus_generic_social_democracy
-		x = 4
-		y = 7
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_implement_women_universal_suffrage_sdap}
-
+	focus = {
+		id = AUS_The_People_Of_Austira
+		icon = GFX_focus_AUS_legitimistische_jugend
+		cost = 10
+		relative_position_id = AUS_Uniting_The_Populus
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Uniting_The_Populus
+		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_victory_of_the_sdap4
-				add_idea = AUH_victory_of_the_sdap5
+			swap_ideas = {
+				remove_idea = AUS_Power_To_The_People1
+				add_idea = AUS_Power_To_The_People2
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_allow_scientific_research_in_languages
-		icon = GFX_goal_AUH_sceience_language
-		x = 18
-		y = 3
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_many_crowns_many_problems}
-
+	focus = {
+		id = AUS_Rat_Fighting
+		icon = GFX_focus_AUS_frontmiliz_focus
+		cost = 10
+		relative_position_id = AUS_The_People_Of_Austira
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_The_People_Of_Austira
+		}
 		completion_reward = {
-				if = {
-				limit = { has_idea = auh_Multiethnicity }
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity
-					add_idea = auh_Multiethnicity_scientific
-				}
-				
-			}
+			add_ideas = AUS_Rat_Army
+		}
+	}
+
+	#	Final Focus
+
+	focus = {
+		id = AUS_Austrian_Empire
+		icon = GFX_focus_AUS_proclaim_austrian_empire
+		cost = 10
+		relative_position_id = AUS_Totaler_Krieg
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Totaler_Krieg
+			focus = AUS_Rat_Fighting
+		}
+		completion_reward = {
 			add_research_slot = 1
 		}
 	}
 
-		focus = {
-		id = AUH_celebration_of_international_christendom
-		icon = GFX_goal_AUH_celebrate_christendom
-		x = 16 
-		y = 3
+	#	Political Power Branch
 
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_many_crowns_many_problems}
-
-		completion_reward = {
-				add_timed_idea = {
-				days = 75
-				idea = AUH_christendom_celebrated
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_second_language_german
-		icon = GFX_goal_AUH_push_for_austrian_identity
-		x = 16
-		y = 5
-
+	focus = {
+		id = AUS_PP1
+		icon = GFX_focus_AUS_pardon_political_exiles
 		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_integrate_party_political}
-
+		relative_position_id = AUS_Head_Of_The_Empire
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = AUS_Head_Of_The_Empire
+		}
 		completion_reward = {
-				swap_ideas = {
-				remove_idea = auh_Multiethnicity_political_party
-				add_idea = auh_Multiethnicity_second_language
+			swap_ideas = {
+				remove_idea = AUS_Ethnic_Split
+				add_idea = AUS_Ethnic_Split1
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_propagate_loyal_culture
-		icon = GFX_goal_AUH_propagate_loyal_culture
-		x = 18
-		y = 5
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_integrate_party_political}
-
-		completion_reward = {
-		add_political_power = 15
-				country_event = {
-				id = austria_hungary.77
-				days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_last_stand_deutsche_ritter
-		icon = GFX_goal_AUH_teutonic_order
-		x = 16
-		y = 4
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_celebration_of_international_christendom}
-
-		completion_reward = {
-		
-		add_ideas = AUH_deutsche_ritter_ordnung
-		}
-	}
-
-		focus = {
-		id = AUH_propagate_loyal_culture2
-		icon = GFX_goal_AUH_die_muskete
-		x = 18
-		y = 6
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_propagate_loyal_culture }
-
-		completion_reward = {
-			hidden_effect = {
-				X_AUH_pick_propaganda_campaign_slot_effect = yes
-			}
-			unlock_decision_category_tooltip = X_AUH_propaganda_campaigns
-		}
-	}
-
-		focus = {
-		id = AUH_integrate_party_political
-		icon = GFX_goal_AUH_politics_stuff
-		x = 18
-		y = 4
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_allow_scientific_research_in_languages}
-
-		completion_reward = {
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity_scientific
-					add_idea = auh_Multiethnicity_political_party
-				}
-		}
-	}
-
-		focus = {
-		id = AUH_eas_up_pn_evidenzbureau
-		icon = GFX_goal_AUH_creating_evidenz
-		x = 16
-		y = 6
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-		prerequisite = {focus = AUH_second_language_german}
-
-		completion_reward = {
-				swap_ideas = {
-					remove_idea = auh_Multiethnicity_second_language
-					add_idea = auh_Multiethnicity_evidenzburo
-				}
-
-				IF = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				create_intelligence_agency = {
-					name = "Evidenzbureau"
-					icon = GFX_intelligence_agency_logo_AUS_evidenzbureau
-				}
-			}
-		}
-	}
-		
-		focus = {
-		id = AUH_equality_before_the_court
-		icon = GFX_goal_equal_court
-		x = 17
-		y = 7
-
-		cost = 5
-		prerequisite = {focus = AUH_eas_up_pn_evidenzbureau}
-		prerequisite = {focus = AUH_propagate_loyal_culture2}
-
-		completion_reward = {
-		remove_ideas = auh_Multiethnicity_evidenzburo
-				add_popularity = {
-				ideology = democratic
-				popularity = 0.025
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_pilsen_military_odrders
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 10
-		y = 6
-
-		cost = 5
-		prerequisite = { focus = AUH_german_sudetenland_expansion }
-		prerequisite = { focus = AUH_buda_military_works }
-
-		completion_reward = {
-				9 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_oweg_in_vienna
-		icon = GFX_focus_AUS_steyr_arms_investment
-		x = 8
-		y = 6
-
+	focus = {
+		id = AUS_PP2
+		icon = GFX_focus_BRA_cafe_com_leite_politics
 		cost = 10
-		prerequisite = { focus = AUH_buda_military_works }
-
+		relative_position_id = AUS_PP1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_PP1
+		}
 		completion_reward = {
-				4 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = AUS_Ethnic_Split1
+				add_idea = AUS_Ethnic_Split2
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_buda_military_works
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 9
-		y = 5
-
-		cost = 5
-		prerequisite = { focus = AUH_transylvanian_mines }
-		prerequisite = { focus = AUH_bielitz_works }
-
+	focus = {
+		id = AUS_PP3
+		icon = GFX_focus_NOR_broken_gun_policies
+		cost = 10
+		relative_position_id = AUS_PP2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_PP2
+		}
 		completion_reward = {
-				43 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = AUS_Ethnic_Split2
+				add_idea = AUS_Ethnic_Split3
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_bielitz_works
-		icon = GFX_focus_AFG_a_modern_economy
-		x = 8
-		y = 4
-
-		cost = 2.9
-		prerequisite = { focus = AUH_the_silesian_resources }
-
+	focus = {
+		id = AUS_PP4
+		icon = GFX_focus_POL_habsburg
+		cost = 10
+		relative_position_id = AUS_PP3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_PP3
+		}
 		completion_reward = {
-				72 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = AUS_Ethnic_Split3
+				add_idea = AUS_Ethnic_Split4
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_finish_1908_armeereform
-		icon = GFX_focus_HABSBURG_for_the_glory_of_the_empire
-		x = 33
-		y = 2
-
-		cost = 5
-		prerequisite = { focus = AUH_empire_of_franz_josef }
-
+	focus = {
+		id = AUS_PP5
+		icon = GFX_focus_POL_end_the_regency
+		cost = 10
+		relative_position_id = AUS_PP4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_PP4
+		}
 		completion_reward = {
-    		add_ideas = auh_armeereform_focus_one
-		swap_ideas = { 
-    	remove_idea = auh_underfunded_army
-    	add_idea = auh_underfunded_army_two
-    		}
-    	}
+			swap_ideas = {
+				remove_idea = AUS_Ethnic_Split4
+				add_idea = AUS_Ethnic_Split5
+			}
+			unlock_decision_category_tooltip = AUS_Imperial_Reforms
+		}
+	}
+	focus = {
+		id = AUS_PP6
+		icon = GFX_focus_GER_weltpolitik
+		cost = 10
+		relative_position_id = AUS_PP5
+		x = 0
+		y = 1
+		available = {
+			or = {
+				has_idea = AUS_United_Nation
+				has_idea = AUS_United_Nation1
+				has_idea = AUS_United_Nation2
+			}
+		}
+		prerequisite = {
+			focus = AUS_PP5
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 
-		focus = {
-		id = AUH_creation_of_kuk_luftfahrtruppen
-		icon = GFX_focus_ICE_hrafninn_flygur
-		x = 45
-		y = 2
+	#	Economic Branch
 
-		cost = 5
-		prerequisite = { focus = AUH_empire_of_franz_josef }
-
+	focus = {
+		id = AUS_Economic_Plan
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Head_Of_The_Empire
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Head_Of_The_Empire
+		}
 		completion_reward = {
-		add_ideas = auh_kuk_luftfahrtruppen
-    	}
+			swap_ideas = {
+				remove_idea = AUS_Economic_Crisis
+				add_idea = AUS_Economic_Crisis1
+			}
+		}
 	}
-
-		focus = {
-		id = AUH_luftfahrtruppens_training_ground
-		icon = GFX_focus_generic_air_bases
-		x = 45
-		y = 3
-
-		cost = 5
-		prerequisite = { focus = AUH_creation_of_kuk_luftfahrtruppen }
-
+	focus = {
+		id = AUS_Economic_Plan_Left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan
+		}
 		completion_reward = {
 			4 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = air_base
-					level = 3
-					instant_build = yes
-				}
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_give_allow_uzelac_free_space
-		icon = GFX_focus_aus_emil_uzelac
-		x = 45
-		y = 5
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
-
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_kuk_luftfahrtruppen
-    	add_idea = auh_kuk_luftfahrtruppen_two
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_detached_working_center
-		icon = GFX_focus_generic_aircraft_production
-		x = 44
-		y = 4
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
-
-		completion_reward = {
-				91 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-
-				88 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_hungarian_training_center
-		icon = GFX_focus_HUN_establish_the_mavag_aircraft_factory
-		x = 46
-		y = 4
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppens_training_ground }
-
-		completion_reward = {
-
-				43 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = air_base
+					type = industrial_complex
 					level = 2
-					instant_build = yes
 				}
 			}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_dedicated_organisation
-		icon = GFX_focus_SOV_organize_wreckers
-		x = 44
-		y = 6
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_kuk_luftfahrtruppen_two
-    	add_idea = auh_kuk_luftfahrtruppen_three
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_divert_money_towards
-		icon = GFX_focus_RAJ_institutional_money_laundering
-		x = 46
-		y = 6
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
-
-		completion_reward = {
-				add_tech_bonus = {
-				name = GER_aeronautical_research_institute
-				bonus = 2
-				uses = 2
-				category = light_fighter
-			}
-				add_ideas = air_investments
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_creation_of_first_fliks
-		icon = GFX_focus_aus_airforce_focus_wtf
-		x = 45
-		y = 7
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_give_allow_uzelac_free_space }
-		prerequisite = { focus = AUH_luftfahrtruppen_divert_money_towards }
-		prerequisite = { focus = AUH_luftfahrtruppen_dedicated_organisation }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_kuk_luftfahrtruppen_three
-    	add_idea = auh_kuk_luftfahrtruppen_four
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_importance_of_recon
-		icon = GFX_focus_aus_recon
-		x = 44
-		y = 8
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
-
-		completion_reward = {
-				add_tech_bonus = {
-				name = GER_aeronautical_research_institute
-				bonus = 0.5
-				uses = 2
-				category = air_equipment
-			}
-			set_technology = {
-				photo_reconnaisance = 1
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_in_need_of_engines
-		icon = GFX_focus_PER_feat_of_engineering
-		x = 46
-		y = 8
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_creation_of_first_fliks }
-
-		completion_reward = {
-		air_experience = 150
-	}
-}
-
-		focus = {
-		id = AUH_luftfahrtruppen_implement_basic_arms
-		icon = GFX_focus_SWE_let_fly_all_guns
-		x = 47
-		y = 9
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
-
-		completion_reward = {
-		    add_tech_bonus = {
-				name = RUS_fighter_focus
-				bonus = 1.5
-				uses = 1
-				category = light_fighter
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_experiment_designs_shall_lead
-		icon = GFX_focus_generic_copy_plane_designs
-		x = 43
-		y = 9
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
-
-		completion_reward = {
-				add_tech_bonus = {
-				name = GER_aeronautical_research_institute
-				bonus = 1
-				uses = 1
-				category = medium_air
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_luftfahrtruppen_zelacs_dream_reafirmed
-		icon = GFX_focus_AUS_osterreichische_luftstreitkrafte
-		x = 45
-		y = 10
-
-		cost = 5
-		prerequisite = { focus = AUH_luftfahrtruppen_experiment_designs_shall_lead }
-		prerequisite = { focus = AUH_luftfahrtruppen_implement_basic_arms }
-		prerequisite = { focus = AUH_luftfahrtruppen_in_need_of_engines }
-		prerequisite = { focus = AUH_luftfahrtruppen_importance_of_recon }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_kuk_luftfahrtruppen_four
-    	add_idea = auh_kuk_luftfahrtruppen_five
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_naval_rearnamnet
-		icon = GFX_focus_generic_naval_discipline
-		x = 39
-		y = 2
-
-		cost = 10
-		prerequisite = { focus = AUH_empire_of_franz_josef }
-
-		completion_reward = {
-		add_ideas = auh_kuk_kriegsmarine
-		841 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = dockyard
-		level = 2
-		instant_build = yes
 		}
 	}
-
-		852 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = dockyard
-		level = 2
-		instant_build = yes
+	focus = {
+		id = AUS_Economic_Plan_Left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan_Left1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Left1
 		}
-	}
-
-		163 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = dockyard
-		level = 2
-		instant_build = yes
-		}
-	}
-
-		103 = {
-		add_extra_state_shared_building_slots = 2
-		add_building_construction = {
-		type = dockyard
-		level = 2
-		instant_build = yes
-		}
-	}
-    	}
-	}
-
-		focus = {
-		id = AUH_study_of_submarines
-		icon = GFX_goal_generic_navy_submarine
-		x = 38
-		y = 3
-
-		cost = 10
-		prerequisite = { focus = AUH_naval_rearnamnet }
-		mutually_exclusive = {focus = AUH_focus_on_bigger_ships}
-
 		completion_reward = {
-				add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = ss_tech
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_give_uboots_greenlight
-		icon = GFX_goal_generic_navy_anti_submarine
-		x = 38
-		y = 4
-
-		cost = 10
-		prerequisite = { focus = AUH_study_of_submarines }
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = auh_kuk_kriegsmarine
-				add_idea = auh_kuk_kriegsmarine_greenlight
-			}
-
-    	}
-	}
-
-		focus = {
-		id = AUH_focus_on_bigger_ships
-		icon = GFX_goal_generic_navy_battleship
-		x = 40
-		y = 3
-
-		cost = 10
-		prerequisite = { focus = AUH_naval_rearnamnet }
-		mutually_exclusive = {focus = AUH_study_of_submarines}
-
-		completion_reward = {
-				add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = ca_tech
-				category = cl_tech
-				category = bb_tech
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_hotzendorf_doctrine_on_ships
-		icon = GFX_focus_generic_navy_battleship2
-		x = 40
-		y = 4
-
-		cost = 10
-		prerequisite = { focus = AUH_focus_on_bigger_ships }
-
-		completion_reward = {
-		
-				swap_ideas = {
-				remove_idea = auh_kuk_kriegsmarine
-				add_idea = auh_kuk_kriegsmarine_hotz
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_kuk_navy_support
-		icon = GFX_focus_AUS_reestablish_austrian_navy
-		x = 39
-		y = 5
-
-		cost = 10
-		prerequisite = { focus = AUH_hotzendorf_doctrine_on_ships focus = AUH_give_uboots_greenlight }
-
-		completion_reward = {
-		
-			add_tech_bonus = {
-				bonus = 0.25
-				uses = 5
-				category = naval_doctrine
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_simplify_military_production
-		icon = GFX_goal_generic_production
-		x = 33
-		y = 3
-
-		cost = 5
-		prerequisite = { focus = AUH_finish_1908_armeereform }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_one
-    	add_idea = auh_armeereform_focus_two
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_prove_to_investors
-		icon = GFX_focus_generic_monetary_union
-		x = 33
-		y = 4
-
-		cost = 5
-		prerequisite = { focus = AUH_simplify_military_production }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_two
-    	add_idea = auh_armeereform_focus_three
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_we_must_pick_aok_leader
-		icon = GFX_goal_AUH_army_leadership_question
-		x = 33
-		y = 5
-
-		cost = 10
-		prerequisite = { focus = AUH_prove_to_investors }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_three
-    	add_idea = auh_armeereform_focus_four
-    		}
-		swap_ideas = { 
-    	remove_idea = auh_underfunded_army_two
-    	add_idea = auh_underfunded_army_three
-    		}
-					country_event = {
-					id = austria_hungary.88
-					days = 1
+			926 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 				}
-    	}
-	}
-
-		focus = {
-		id = AUH_bojna_doctrine
-		icon = GFX_goal_aus_von_bojna
-		x = 29
-		y = 6
-
-		cost = 10
-		prerequisite = { focus = AUH_we_must_pick_aok_leader }
-
-			available = {
-			always = no
+			}
 		}
-		
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four
-    	add_idea = auh_armeereform_focus_four_bojna
-    		}
-    	}
 	}
-
-		focus = {
-		id = AUH_bojna_preparade_position
-		icon = GFX_goal_aus_lion1
-		x = 29
-		y = 7
-
+	focus = {
+		id = AUS_Economic_Plan_Left3
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		prerequisite = { focus = AUH_bojna_doctrine }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four_bojna
-    	add_idea = auh_armeereform_focus_five_bojna
-    		}
-			add_tech_bonus = {
-				name = DEN_expand_haerens_tekniske_korps
-				bonus = 0.25
-				uses = 2
-				category = infantry_weapons
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_bojna_use_of_mountains
-		icon = GFX_goal_aus_lion2
-		x = 29
-		y = 8
-
-		cost = 10
-		prerequisite = { focus = AUH_bojna_preparade_position }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_five_bojna
-    	add_idea = auh_armeereform_focus_six_bojna
-    		}
-			add_tech_bonus = {
-				name = DEN_expand_haerens_tekniske_korps
-				bonus = 0.5
-				uses = 1
-				category = mountaineers_tech
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_bojna_defensive_army
-		icon = GFX_goal_aus_lion3
-		x = 29
-		y = 9
-
-		cost = 10
-		prerequisite = { focus = AUH_bojna_use_of_mountains }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_six_bojna
-    	add_idea = auh_armeereform_focus_seven_bojna
-    		}
-		remove_ideas = auh_underfunded_army_three
-
-    	}
-	}
-
-		focus = {
-		id = AUH_friedrich_doctrine
-		icon = GFX_goal_aus_friedrich_teschen
-		x = 31
-		y = 6
-
-		cost = 10
-		prerequisite = { focus = AUH_we_must_pick_aok_leader }
-
-			available = {
-			always = no
+		relative_position_id = AUS_Economic_Plan_Left2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Left2
 		}
-
 		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four
-    	add_idea = auh_armeereform_focus_four_friedrich
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_friedrich_doctrine_balance_of_tactics
-		icon = GFX_goal_aus_teschen1
-		x = 31
-		y = 7
-
-		cost = 10
-		prerequisite = { focus = AUH_friedrich_doctrine }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four_friedrich
-    	add_idea = auh_armeereform_focus_five_friedrich
-    		}
-			
-			add_doctrine_cost_reduction = {
-				category = land_doctrine
-				cost_reduction = 0.50
-				uses = 2
+			152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
 			}
-			
-    	}
-	}
-
-		focus = {
-		id = AUH_friedrich_improve_communication_ours
-		icon = GFX_focus_generic_radio_communication
-		x = 31
-		y = 8
-
-		cost = 10
-		prerequisite = { focus = AUH_friedrich_doctrine_balance_of_tactics }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_five_friedrich
-    	add_idea = auh_armeereform_focus_six_friedrich
-    		}
-				add_tech_bonus = {
-				name = DEN_expand_haerens_tekniske_korps
-				bonus = 0.5
-				uses = 2
-				category = electronics
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_friedrich_decentralize_give_more_freedom
-		icon = GFX_focus_HABSBURG_reform_gemeinsame_armee
-		x = 31
-		y = 9
-
-		cost = 10
-		prerequisite = { focus = AUH_friedrich_improve_communication_ours }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_six_friedrich
-    	add_idea = auh_armeereform_focus_seven_friedrich
-    		}
-		remove_ideas = auh_underfunded_army_three
-    	}
-	}
-
-		focus = {
-		id = AUH_ohoh_hotzendorf_doctrine
-		icon = GFX_goal_aus_von_hotzendorf
-		x = 34
-		y = 6
-
-		cost = 10
-		prerequisite = { focus = AUH_we_must_pick_aok_leader }
-
-			available = {
-			always = no
 		}
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four
-    	add_idea = auh_armeereform_focus_four_hotzendorf
-    		}
-    	}
 	}
-
-		focus = {
-		id = AUH_ohoh_hotzendorf_war_like_trainings
-		icon = GFX_goal_aus_hotz1
-		x = 34
-		y = 7
-
+	focus = {
+		id = AUS_Economic_Plan_Centre1
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		prerequisite = { focus = AUH_ohoh_hotzendorf_doctrine }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four_hotzendorf
-    	add_idea = auh_armeereform_focus_five_hotzendorf
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins
-		icon = GFX_goal_aus_hotz2
-		x = 34
-		y = 8
-
-		cost = 10
-		prerequisite = { focus = AUH_ohoh_hotzendorf_war_like_trainings }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_five_hotzendorf
-    	add_idea = auh_armeereform_focus_six_hotzendorf
-    		}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = 1200
-			}
-			add_tech_bonus = {
-				name = DEN_expand_haerens_tekniske_korps
-				bonus = 0.5
-				uses = 1
-				category = artillery
-			}
-    	}
-	}
-
-		focus = {
-		id = AUH_hotzendorf_officers_must_do
-		icon = GFX_goal_aus_hotz3
-		x = 34
-		y = 9
-
-		cost = 10
-		prerequisite = { focus = AUH_ohoh_hotzendorf_bigger_canons_bigger_wins }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_six_hotzendorf
-    	add_idea = auh_armeereform_focus_seven_hotzendorf
-    		}
-		remove_ideas = auh_underfunded_army_three
-    	}
-	}
-
-		focus = {
-		id = AUH_hauer_cav_doctrine
-		icon = GFX_goal_aus_von_hauer
-		x = 36
-		y = 6
-
-		cost = 10
-		prerequisite = { focus = AUH_we_must_pick_aok_leader }
-
-			available = {
-			always = no
-		}
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four
-    	add_idea = auh_armeereform_focus_four_hauer
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_hauer_squadron_tactics
-		icon = GFX_focus_AFG_contact_amanullah_loyalists_alt
-		x = 36
-		y = 7
-
-		cost = 10
-		prerequisite = { focus = AUH_hauer_cav_doctrine }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_four_hauer
-    	add_idea = auh_armeereform_focus_five_hauer
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_hauer_live_of_the_land
-		icon = GFX_goal_generic_cavalry
-		x = 36
-		y = 8
-
-		cost = 10
-		prerequisite = { focus = AUH_hauer_squadron_tactics }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_five_hauer
-    	add_idea = auh_armeereform_focus_six_hauer
-    		}
-    	}
-	}
-
-		focus = {
-		id = AUH_hauer_lead_by_tasks
-		icon = GFX_focus_HABSBURG_bring_back_royal_and_imperial_hussars
-		x = 36
-		y = 9
-
-		cost = 10
-		prerequisite = { focus = AUH_hauer_live_of_the_land }
-
-		completion_reward = {
-		swap_ideas = { 
-    	remove_idea = auh_armeereform_focus_six_hauer
-    	add_idea = auh_armeereform_focus_seven_hauer
-    		}
-		remove_ideas = auh_underfunded_army_three
-    	}
-	}
-
-		focus = {
-		id = AUH_construction_funds
-		icon = GFX_goal_AUH_government_funds_austria
-		x = 11
+		relative_position_id = AUS_Economic_Plan
+		x = 0
 		y = 2
-
-		cost = 2.9
-		prerequisite = { focus = AUH_empire_of_franz_josef }
-		available = {
-        has_completed_focus = AUH_declare_the_revolt_uncostitutional
-   	 	}
-
+		prerequisite = {
+			focus = AUS_Economic_Plan_Left1
+			focus = AUS_Economic_Plan_Right1
+		}
 		completion_reward = {
-				add_timed_idea = {
-				days = 360
-				idea = auh_construction_funds
+			swap_ideas = {
+				remove_idea = AUS_Economic_Crisis1
+				add_idea = AUS_Economic_Crisis2
 			}
 		}
 	}
-
-		focus = {
-		id = AUH_build_of_danubian_dam
-		icon = GFX_focus_BEL_dam_the_consequences
-		x = 11
-		y = 3
-
+	focus = {
+		id = AUS_Economic_Plan_Centre2
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		prerequisite = { focus = AUH_construction_funds }
+		relative_position_id = AUS_Economic_Plan_Centre1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Centre1
+		}
+		completion_reward = {
+			remove_ideas = AUS_Economic_Crisis2
+		}
+	}
+	focus = {
+		id = AUS_Economic_Plan_Right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan
+		}
+		completion_reward = {
+			43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_Economic_Plan_Right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan_Right1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Right1
+		}
+		completion_reward = {
+			842 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_Economic_Plan_Right3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan_Right2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Right2
+		}
+		completion_reward = {
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_Economic_Plan_Main_Left
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan_Centre2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Left3
+		}
+		prerequisite = {
+			focus = AUS_Economic_Plan_Centre2
+		}
+		completion_reward = {
+			add_ideas = AUS_Austrian_Economic_Plan
+		}
+	}
+	focus = {
+		id = AUS_Economic_Plan_Main_Right
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan_Centre2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Right3
+		}
+		prerequisite = {
+			focus = AUS_Economic_Plan_Centre2
+		}
+		completion_reward = {
+			add_ideas = AUS_Hungarian_Economic_Plan
+		}
+	}
+	focus = {
+		id = AUS_Research_Slot
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Economic_Plan_Main_Left
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Economic_Plan_Main_Left
+			focus = AUS_Economic_Plan_Main_Right
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
+	#	Military Branch
+
+	focus = {
+		id = AUS_Military_Plan1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Head_Of_The_Empire
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = AUS_Head_Of_The_Empire
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Underfunded_Army
+				add_idea = AUS_Underfunded_Army1
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan1
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Neglected_Special_Forces
+				add_idea = AUS_Neglected_Special_Forces1
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Left1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Left1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Neglected_Special_Forces
+				add_idea = AUS_Neglected_Special_Forces1
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Left3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Left2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Left2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Neglected_Special_Forces1
+				add_idea = AUS_Neglected_Special_Forces2
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Left4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Left3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Left3
+		}
+		completion_reward = {
+			remove_ideas = AUS_Neglected_Special_Forces2
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Left5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Left4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Left4
+		}
+		completion_reward = {
+			add_ideas = AUS_Austrian_Special_Forces
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Left6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Left5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Left5
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Austrian_Special_Forces
+				add_idea = AUS_Austrian_Special_Forces1
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan1
+		}
 		completion_reward = {
 			4 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		4 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-				}	
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_improve_the_tyrol_mines
-		icon = GFX_focus_generic_uranium_extraction
-		x = 13
-		y = 3
-
-		cost = 5
-		prerequisite = { focus = AUH_construction_funds }
-
-		completion_reward = {
-			swap_ideas = { 
-    		remove_idea = auh_ghostofthepast
-    		add_idea = auh_ghostofthepast2
-    		}
-
-			850 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			39 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			850 = {
-				add_resource = {
-					type = aluminium
-					amount = 10
-				}
-			}
-				39 = {
-					add_resource = {
-					type = steel
-					amount = 4
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = AUH_the_silesian_resources
-		icon = GFX_goal_aus_silesian_mines
-		x = 9
-		y = 3
-
-		cost = 5
-		prerequisite = { focus = AUH_construction_funds }
-
-		completion_reward = {
-				72 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-
-				88 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-
-			88 = {
-				add_resource = {
-					type = oil
-					amount = 3
-				}
-			}
-			72 = {
-				add_resource = {
-					type = steel
-					amount = 6
-				}
-			}
-			88 = {
-				add_resource = {
-					type = aluminium
-					amount = 4
-				}
-			}
-
-				72 = {
-				add_resource = {
-					type = aluminium
-					amount = 4
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_german_sudetenland_expansion
-		icon = GFX_goal_aus_sudeten_workers
-		x = 11
-		y = 5
-
-		cost = 10
-		prerequisite = { focus = AUH_transylvanian_mines }
-		prerequisite = { focus = AUH_upper_hungarian_development }
-
-		completion_reward = {
-				69 = {
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-					}
-						add_building_construction = {
-						type = infrastructure
-							level = 1
-							instant_build = yes
-					}
-				74 = {
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = infrastructure
-							level = 1
-							instant_build = yes
-					}
-				}
-			}
-		}
-	}
-				
-	focus = {
-		id = AUH_transylvanian_mines
-		icon = GFX_focus_generic_public_works
-		x = 10
-		y = 4
-
-		cost = 5
-		prerequisite = { focus = AUH_build_of_danubian_dam }
-		prerequisite = { focus = AUH_the_silesian_resources }
-
-		completion_reward = {
-			84 = {
-			add_extra_state_shared_building_slots = 2
-			add_resource = {
-				type = steel
-				amount = 3
-			}
-			
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-			}
-		}
-			76 = {
-			add_extra_state_shared_building_slots = 2
-			add_resource = {
-				type = aluminium
-				amount = 4
-			}
-			
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-			}
-		}
-			83 = {
-			add_extra_state_shared_building_slots = 2
-			add_resource = {
-				type = aluminium
-				amount = 4
-			}
-			add_resource = {
-			type = steel
-			amount = 8
-				}
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_upper_hungarian_development
-		icon = GFX_goal_generic_construction
-		x = 12
-		y = 4
-
-		cost = 5
-		prerequisite = { focus = AUH_build_of_danubian_dam }
-		prerequisite = { focus = AUH_improve_the_tyrol_mines }
-
-		completion_reward = {
-			664 = {
-			add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			73= {
-			add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-			}
-				}
-			71 = {
-				add_extra_state_shared_building_slots = 1
-				add_resource = {
-				type = oil
-				amount = 2
-				}
-			}
-				add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = industry
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_core_land_of_austria
-		icon = GFX_focus_AUS_the_matzen_oil_fields
-		x = 13
-		y = 5
-
-		cost = 10
-		prerequisite = { focus = AUH_upper_hungarian_development }
-		prerequisite = { focus = AUH_improve_the_tyrol_mines }
-
-		completion_reward = {
-			swap_ideas = { 
-    		remove_idea = auh_ghostofthepast2
-    		add_idea = auh_ghostofthepast3
-   			}
-				152 = {
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				153 = {
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = AUH_austrian_development_twice
-		icon = GFX_focus_AUS_devalue_the_schilling
-		x = 13
-		y = 7
-
-		cost = 10
-		prerequisite = { focus = AUH_vienna_of_the_east }
-		prerequisite = { focus = AUH_core_land_of_austria }
-
-		completion_reward = {
-				swap_ideas = { 
-    				remove_idea = auh_ghostofthepast3
-    				add_idea = auh_ghostofthepast4
-   					}
-						88 = {
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-				}
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-					}
-				}
-					926 = {
-						add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-				}
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes	
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_development_of_kingdom_of_bohemia
-		icon = GFX_focus_generic_befriend_bohemia
-		x = 11
-		y = 7
-
-		cost = 10
-		prerequisite = { focus = AUH_vienna_of_the_east }
-		prerequisite = { focus = AUH_german_sudetenland_expansion }
-
-		completion_reward = {
-				9 = {
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-						add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-					75 = {
-					add_extra_state_shared_building_slots = 2
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-					}
-						add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_expansion_of_vienna_school
-		icon = GFX_focus_ARG_develop_the_electricity_sector
-		x = 12
-		y = 8
-
-		cost = 10
-		prerequisite = { focus = AUH_austrian_development_twice }
-		prerequisite = { focus = AUH_development_of_kingdom_of_bohemia }
-
-		completion_reward = {
-		add_research_slot = 1
-		}
-	}	
-
-	focus = {
-			id = AUH_vienna_of_the_east
-			icon = GFX_focus_SWE_landsverk
-			x = 12
-			y = 6
-
-			cost = 10
-			prerequisite = { focus = AUH_german_sudetenland_expansion }
-			prerequisite = { focus = AUH_core_land_of_austria }
-
-			completion_reward = {
-				91 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
-				add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-				}
-				add_building_construction = {
-				type = air_base
-				level = 2
-				instant_build = yes
-				}
-			}
-				89 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
-
-	focus = {
-		id = AUH_son_of_the_empire
-		icon = GFX_focus_aus_karl_leader
-		x = 20
-		y = 9
-
-		cost = 1
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			country_event = {
-			id = austria_hungary.155
-			days = 1
-		}
-	}
-
-    available = {
-        has_country_leader = {
-            name = "Karl I"  # Must match the character's ID in /common/characters/
-            ruling_only = yes   # Only matches if he's the *actual leader*
-        }
-    }
-}
-	focus = {
-		id = AUH_crowning_of_karl_in_vienna
-		icon = GFX_focus_aus_crown_habsurg
-		x = 19
-		y = 10
-		prerequisite = { focus = AUH_son_of_the_empire }
-			available = {
-			always = no
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-		focus = {
-		id = AUH_crowning_of_karl_in_budapest
-		icon = GFX_focus_aus_crown_hungarian
-		x = 21
-		y = 10
-		prerequisite = { focus = AUH_son_of_the_empire }
-			available = {
-			always = no
-		}
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-		focus = {
-		id = AUH_karls_dream_becoming_a_reality
-		icon = GFX_focus_aus_start_changing_maps
-		x = 20
-		y = 11
-		prerequisite = { focus = AUH_son_of_the_empire }
-		prerequisite = { focus = AUH_crowning_of_karl_in_budapest focus = AUH_crowning_of_karl_in_vienna }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.10
-		}
-	}
-
-		focus = {
-		id = AUH_test_of_the_reichsrat
-		icon = GFX_focus_BEL_government_resigns
-		x = 18
-		y = 15
-		prerequisite = { focus = AUH_give_out_titles }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.166
-					days = 1
-					}
-		}
-	}
-
-		focus = {
-		id = AUH_meeting_with_nobility
-		icon = GFX_focus_CHL_invite_french_aristocracy
-		x = 20
-		y = 15
-		prerequisite = { focus = AUH_give_out_titles }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			country_event = {
-			id = austria_hungary.177
-			days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_talks_with_the_army
-		icon = GFX_focus_AUS_bring_generals_out_of_retirement
-		x = 22
-		y = 15
-		prerequisite = { focus = AUH_give_out_titles }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			country_event = {
-			id = austria_hungary.188
-			days = 1
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_we_must_do
-		icon = GFX_focus_AUS_strengthen_legitimistische_corps
-		x = 20
-		y = 16
-		prerequisite = { focus = AUH_test_of_the_reichsrat }
-		prerequisite = { focus = AUH_meeting_with_nobility }
-		prerequisite = { focus = AUH_talks_with_the_army }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-					country_event = {
-					id = austria_hungary.144
-					days = 1
-					}
-		}
-	}
-
-		focus = {
-		id = AUH_support_eugens_group
-		icon = GFX_focus_aus_eugen_group_better
-		x = 21
-		y = 12
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = AUH_deutsche_ritter_ordnung
-				add_idea = AUH_deutsche_ritter_ordnung_better
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_improve_life_in_gg
-		icon = GFX_focus_AUS_an_improved_german_state
-		x = 21
-		y = 13
-		prerequisite = { focus = AUH_support_eugens_group }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		available = {
-				107 = {
-				is_controlled_by = AUS
-			}
-		}
-
-		completion_reward = {
-				107 = {
-				add_compliance = 10
-			}
-				817 = {
-				add_compliance = 10
-			}
-				105 = {
-				add_compliance = 10
-			}
-				910 = {
-				add_compliance = 10
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_give_out_titles
-		icon = GFX_focus_generic_monarchist_workers
-		x = 20
-		y = 14
-		prerequisite = { focus = AUH_improve_life_in_gg }
-		prerequisite = { focus = AUH_open_up_imperial_industries }
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		add_political_power = 50
-		army_experience = 25
-		navy_experience = 25
-		air_experience = 25
-		add_war_support = 0.05
-		add_popularity = {
-   		ideology = fascism
-   		popularity = 0.025
-	}
-		add_popularity = {
-   		ideology = neutrality
-   		popularity = 0.075
-	}
-
-		}
-	}
-
-		focus = {
-		id = AUH_open_up_imperial_mines5
-		icon = GFX_focus_aus_bergwerke
-		x = 19
-		y = 12
-		prerequisite = { focus = AUH_karls_dream_becoming_a_reality }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		available = {
-		has_idea = auh_ghostofthepast4
-		}
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = auh_ghostofthepast4
-				add_idea = auh_kukindustries
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_open_up_imperial_industries
-		icon = GFX_focus_generic_military_industry
-		x = 19
-		y = 13
-		prerequisite = { focus = AUH_open_up_imperial_mines5 }
-
-		cost = 2.9
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-				4 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
-					instant_build = yes
 				}
 			}
-				4 = {
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Right_Mini1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Right1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Right1
+		}
+		completion_reward = {
+			add_ideas = AUS_Cautious_Naval_Command
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan1
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = AUS_Military_Plan1
+		}
+		prerequisite = {
+			focus = AUS_Military_Plan_Right1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Underfunded_Army1
+				add_idea = AUS_Underfunded_Army2
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan2
+		}
+		completion_reward = {
+			4 = {
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_dualism_stays
-		icon = GFX_focus_HUN_hungarian_tradition
-		x = 17
-		y = 17
-
-
-			available = {
-			has_completed_focus = AUH_crowning_of_karl_in_budapest
-			has_country_flag = karl_dual
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_stability = 0.1
-			 set_politics = {
-            ruling_party = democratic
-            elections_allowed = no
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_return_to_tradition
-		icon = GFX_focus_AUS_proclaim_austrian_empire
-		x = 22
-		y = 17
-		prerequisite = { }
-
-		available = {
-			has_completed_focus = AUH_crowning_of_karl_in_vienna
-			has_country_flag = karl_imper
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		kill_country_leader = yes
-		remove_power_balance = {
-    	id = AUS_power_balance
-		}
-		}
-	}
-
-		focus = {
-		id = AUH_idea_of_federation
-		icon = GFX_focus_AUS_the_right_to_self_determination
-		x = 28
-		y = 17
-		prerequisite = { }
-
-		available = {
-			has_completed_focus = AUH_crowning_of_karl_in_vienna
-			has_country_flag = karl_soc
-		}
-
-		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		kill_country_leader = yes
-		remove_power_balance = {
-    	id = AUS_power_balance
-		}
-			add_popularity = {
-            ideology = communism
-            popularity = 0.1
-        }
-			set_politics = {
-            ruling_party = communism
-            elections_allowed = no
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_fight_against_the_clergy
-		icon = GFX_focus_AUS_austromarxism
-		x = 27
-		y = 18
-		prerequisite = { focus = AUH_idea_of_federation  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = -0.05
-			add_popularity = {
-            ideology = communism
-            popularity = 0.25
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_reform_court_system
-		icon = GFX_focus_generic_court
-		x = 27
-		y = 19
-		prerequisite = { focus = AUH_fight_against_the_clergy  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_ideas = auh_socialists
-		}
-	}
-
-		focus = {
-		id = AUH_take_power_of_huns
-		icon = GFX_focus_generic_attack_hungary
-		x = 29
-		y = 18
-		prerequisite = { focus = AUH_idea_of_federation  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-
-		43 = {
-		add_extra_state_shared_building_slots = 3
-		add_building_construction = {
-		type = industrial_complex
-		level = 3
-		instant_build = yes
-		}
-	}
-		43 = {
-		add_extra_state_shared_building_slots = 1
-		add_building_construction = {
-		type = arms_factory
-		level = 1
-		instant_build = yes
-		}
-	}
-	add_stability = -0.075
-		}
-	}
-
-		focus = {
-		id = AUH_focus_on_peoples_needs
-		icon = GFX_focus_GER_the_peoples_victory
-		x = 29
-		y = 19
-		prerequisite = { focus = AUH_take_power_of_huns  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-				109 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-				853 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-				841 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-				88 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-				91 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_peoples_empire
-		icon = GFX_focus_AUS_bring_back_the_habsburg_rule
-		x = 28
-		y = 20
-		prerequisite = { focus = AUH_focus_on_peoples_needs  }
-		prerequisite = { focus = AUH_reform_court_system  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = auh_socialists
-				add_idea = auh_socialists_better
-			}
-					AUS = {
-			every_owned_state = {
-				add_core_of = AUS
-			}
-		}
-		}
-	}
-
-		focus = {
-		id = AUH_fight_against_austromarxism
-		icon = GFX_focus_eng_liberate_the_home_of_marx
-		x = 21
-		y = 18
-		prerequisite = { focus = AUH_return_to_tradition  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_popularity = {
-            ideology = democratic
-            popularity = -0.1
-        }
-			add_popularity = {
-            ideology = communism
-            popularity = -0.25
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_kaiserhaus_investments
-		icon = GFX_focus_generic_road_investment
-		x = 21
-		y = 19
-		prerequisite = { focus = AUH_fight_against_austromarxism  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-
-		4 = {
-		add_extra_state_shared_building_slots = 4
-		add_building_construction = {
-		type = arms_factory
-		level = 4
-		instant_build = yes
-		}
-	}
-		}
-	}
-
-		focus = {
-		id = AUH_no_germans_austrians
-		icon = GFX_focus_AUS_defence_of_the_homeland
-		x = 23
-		y = 18
-		prerequisite = { focus = AUH_return_to_tradition  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		add_stability = 0.025  
-		add_War_support = 0.05
-		9 = { 
-            add_core_of = AUS
-        }
-			75 = { 
-            add_core_of = AUS
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_no_minorities
-		icon = GFX_focus_generic_population_growth
-		x = 23
-		y = 19
-		prerequisite = { focus = AUH_no_germans_austrians  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		add_manpower = -95000
-
-		    add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = -20000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = -6500
-        }
-			736 = { 
-            add_core_of = AUS
-        }
-					841 = { 
-            add_core_of = AUS
-        }
-					852 = { 
-            add_core_of = AUS
-        }
-			859 = { 
-            add_core_of = AUS
-        }
-					109 = { 
-            add_core_of = AUS
-        }
-			103 = { 
-            add_core_of = AUS
-        }
-					912 = { 
-            add_core_of = AUS
-        }
-					104 = { 
-            add_core_of = AUS
-        }
-					804 = { 
-            add_core_of = AUS
-        }
-				163 = { 
-            add_core_of = AUS
-        }
-			105 = { 
-            add_core_of = AUS
-        }
-			914 = { 
-            add_core_of = AUS
-        }
-			718 = { 
-            add_core_of = AUS
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_everyone_a_loyal_catholic
-		icon = GFX_focus_AUS_beyond_our_old_lands
-		x = 22
-		y = 20
-		prerequisite = { focus = AUH_kaiserhaus_investments  }
-		prerequisite = { focus = AUH_no_minorities  }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		add_ideas = AUH_never_shall_we_fall
-			92 = { 
-            add_claim_by = AUS
-        }
-					90 = { 
-            add_claim_by = AUS
-        }
-					10 = { 
-            add_claim_by = AUS
-        }
-					87 = { 
-            add_claim_by = AUS
-        }
-							98 = { 
-            add_claim_by = AUS
-        }
-							87 = { 
-            add_claim_by = AUS
-        }
-			159 = { 
-            add_claim_by = AUS
-        }
-			160 = { 
-            add_core_of = AUS
-        }
-			105 = { 
-            add_core_of = AUS
-        }
-			913 = { 
-            add_core_of = AUS
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_support_hungarian_parliament
-		icon = GFX_focus_HUN_establish_the_second_republic
-		x = 16
-		y = 18
-		prerequisite = { focus = AUH_dualism_stays }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-		add_political_power = 100
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.1
-        }
-		}
-	}
-
-		focus = {
-		id = AUH_blind_eye_on_hun_isue
-		icon = GFX_focus_HUN_carrying_on_arpads_legacy
-		x = 16
-		y = 19
-		prerequisite = { focus = AUH_support_hungarian_parliament }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			add_stability = -0.05
-				83 = {
-				add_core_of = AUS
-			}
-				764 = {
-				add_core_of = AUS
-			}
-				76 = {
-				add_core_of = AUS
-			}
-				45 = {
-				add_core_of = AUS
-			}
-				664 = {
-				add_core_of = AUS
-			}
-			    70 = {
-				add_core_of = AUS
-			}
-				71 = {
-				add_core_of = AUS
-			}
-				73 = {
-				add_core_of = AUS
-			}
-		}
-	}
-
-		focus = {
-		id = AUH_hun_stuff
-		icon = GFX_focus_HUN_szent_laszlo_infantry_division
-		x = 18
-		y = 18
-		prerequisite = { focus = AUH_dualism_stays }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-				70 = {
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 1
-					instant_build = yes
+					level = 2
 				}
 			}
-
-				71 = {
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Right_Mini2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Right2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Right2
+		}
+		completion_reward = {
+			add_ideas = AUS_Cautious_Air_Force_Command
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan2
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = AUS_Military_Plan2
+		}
+		prerequisite = {
+			focus = AUS_Military_Plan_Right2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_Underfunded_Army2
+				add_idea = AUS_Underfunded_Army3
+			}
+		}
+	}
+	focus = {
+		id = AUS_Military_Plan_Right3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan3
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan3
+		}
+		completion_reward = {
+			4 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
-					instant_build = yes
 				}
 			}
 		}
 	}
-	
-		focus = {
-		id = AUH_award_with_more_land
-		icon = GFX_focus_HUN_proclaim_greater_hungary
-		x = 18
-		y = 19
-		prerequisite = { focus = AUH_hun_stuff }
-
-		cost = 5
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
+	focus = {
+		id = AUS_Military_Plan_Right_Mini3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = AUS_Military_Plan_Right3
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = AUS_Military_Plan_Right3
+		}
 		completion_reward = {
-				109 = {
-				add_compliance = 10
-			}
-			912 = {
-				add_compliance = 10
-			}
-			103 = {
-				add_compliance = 10
-			}
-			104 = {
-				add_compliance = 10
-			}
-				804 = {
-				add_compliance = 10
-			}
+			add_ideas = AUS_Cautious_Military_Command
 		}
 	}
-
-		focus = {
-		id = AUH_king_and_constitution
-		icon = GFX_focus_HUN_the_lands_of_the_crown_of_saint_stephen
-		x = 17
-		y = 20
-		prerequisite = { focus = AUH_award_with_more_land }
-		prerequisite = { focus = AUH_blind_eye_on_hun_isue }
-
+	focus = {
+		id = AUS_Military_Plan4
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
+		relative_position_id = AUS_Military_Plan3
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = AUS_Military_Plan3
+		}
+		prerequisite = {
+			focus = AUS_Military_Plan_Right3
+		}
 		completion_reward = {
-			add_ideas = auh_constitution
+			remove_ideas = AUS_Underfunded_Army3
 		}
 	}
 }
