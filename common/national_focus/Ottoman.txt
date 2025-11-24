@@ -560,52 +560,33 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = TUR_give_civs_pls
+
 		completion_reward = { 
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 4
-				}
+			340 = {	
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 4
-				}
+			339 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 4
-				}
+			49 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 4
-				}
+			346 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 				}
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-					infrastructure < 4
-				}
+			343 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -613,6 +594,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 	id = TUR_Industrialising
 	icon = GFX_focus_tur_guns_produce
