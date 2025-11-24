@@ -1,0 +1,103 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = USA_ww1_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+
+	continuous_focus_position = { x = 150 y = 1200 }
+
+	default = no
+
+
+
+	focus = {
+		id = USA_starting_focus
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 9
+		y = 0
+
+		available = {
+			is_ai = no
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			add_timed_idea = {
+				idea = USA_temporary_base_efficiency
+				days = 5
+			}	
+		}
+	}
+
+	focus = {
+		id = USA_war_support
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 6
+		y = 1
+
+		prerequisite = {
+			focus = USA_starting_focus
+		}
+
+		completion_reward = {
+			add_war_support = 0.4
+		}
+	}
+
+
+	focus = {
+		id = USA_industry_electronics_research
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		x = 12
+		y = 1
+
+		prerequisite = {
+			focus = USA_starting_focus
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = USA_research_slot
+		icon = GFX_focus_research
+		cost = 5
+		x = 12
+		y = 2
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+}
