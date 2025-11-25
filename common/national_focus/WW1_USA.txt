@@ -303,9 +303,9 @@ focus_tree = {
 	#Political
 
 	focus = {
-		id = USA_war_support
+		id = USA_collude_with_monopolies
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 7.2
 		x = 10
 		y = 1
 
@@ -318,14 +318,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.4
+			add_ideas = USA_collude_with_monopolies1
 		}
 	}
 
 	focus = {
-		id = USA_stability
+		id = USA_embrace_progressive_era
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 7.2
 		x = 14
 		y = 1
 
@@ -338,7 +338,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.3
+			add_ideas = USA_scientific_management1
 		}
 	}
 
@@ -385,6 +385,106 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = USA_artillery_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = USA_infantry_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = USA_special_forces_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 4
+		y = 1
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_special_forces_generic
+			}
+		}
+	}
+
+	focus = {
+		id = USA_heavy_artillery_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = -4
+		y = 1
+
+		bypass = { has_tech = heavy_artillery_equipment2 }
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = heavy_artillery_equipment1
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = heavy_artillery_improvement1
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = heavy_artillery_equipment2
+			}
 		}
 	}
 }
