@@ -22,12 +22,13 @@ focus_tree = {
 	default = no
 
 
+	#Starting Focus
 
 	focus = {
 		id = USA_starting_focus
 		icon = GFX_goal_unknown
 		cost = 4
-		x = 9
+		x = 12
 		y = 0
 
 		available = {
@@ -43,11 +44,14 @@ focus_tree = {
 		}
 	}
 
+
+	#Industrial
+
 	focus = {
-		id = USA_war_support
+		id = USA_military_industrial_complex
 		icon = GFX_goal_unknown
 		cost = 5
-		x = 6
+		x = 4
 		y = 1
 
 		prerequisite = {
@@ -55,16 +59,297 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = USA_military_funding1
+		}
+	}
+
+	focus = {
+		id = USA_militerized_economy
+		icon = GFX_goal_unknown
+		cost = 5
+
+		relative_position_id = USA_military_industrial_complex
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = USA_military_industrial_complex
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_military_funding1
+				add_idea = USA_military_funding2
+			}
+		}
+	}
+
+	focus = {
+		id = USA_hyper_militerized_economy
+		icon = GFX_goal_unknown
+		cost = 5
+
+		relative_position_id = USA_military_industrial_complex
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = USA_militerized_economy
+		}
+
+		available = {
+			OR = {
+				ITA = { has_capitulated = yes }
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_military_funding2
+				add_idea = USA_military_funding3
+			}
+		}
+	}
+
+	focus = {
+		id = USA_navy_construction1
+		icon = GFX_goal_unknown
+		cost = 5
+
+		relative_position_id = USA_military_industrial_complex
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = USA_military_industrial_complex
+		}
+
+		completion_reward = {
+			add_ideas = USA_navy_funding1
+		}
+	}
+
+	focus = {
+		id = USA_navy_construction2
+		icon = GFX_goal_unknown
+		cost = 5
+
+		relative_position_id = USA_military_industrial_complex
+		x = -2
+		y = 2
+
+		prerequisite = {
+			focus = USA_navy_construction1
+		}
+
+		available = {
+			ENG = { has_capitulated = yes }
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USA_navy_funding1
+				add_idea = USA_navy_funding2
+			}
+		}
+	}
+
+	focus = {
+		id = USA_expand_the_rust_belt
+		icon = GFX_goal_unknown
+		cost = 5
+
+		relative_position_id = USA_military_industrial_complex
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = USA_military_industrial_complex
+		}
+
+		completion_reward = {
+			393 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			396 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			261 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			395 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			394 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_south_belt_industry
+		icon = GFX_goal_unknown
+		cost = 5
+
+		relative_position_id = USA_military_industrial_complex
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = USA_expand_the_rust_belt
+		}
+
+		completion_reward = {
+			362 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			363 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			364 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			365 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			367 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+
+	#Political
+
+	focus = {
+		id = USA_war_support
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 10
+		y = 1
+
+		prerequisite = {
+			focus = USA_starting_focus
+		}
+
+		mutually_exclusive = {
+			focus = USA_stability
+		}
+
+		completion_reward = {
 			add_war_support = 0.4
 		}
 	}
 
+	focus = {
+		id = USA_stability
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 14
+		y = 1
+
+		prerequisite = {
+			focus = USA_starting_focus
+		}
+
+		mutually_exclusive = {
+			focus = USA_war_support
+		}
+
+		completion_reward = {
+			add_stability = 0.3
+		}
+	}
+
+
+	#Technology
 
 	focus = {
 		id = USA_industry_electronics_research
 		icon = GFX_focus_NORDIC_com_research
 		cost = 5
-		x = 12
+		x = 21
 		y = 1
 
 		prerequisite = {
@@ -89,8 +374,10 @@ focus_tree = {
 		id = USA_research_slot
 		icon = GFX_focus_research
 		cost = 5
-		x = 12
-		y = 2
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 0
+		y = 1
 
 		prerequisite = {
 			focus = USA_industry_electronics_research

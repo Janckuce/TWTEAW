@@ -16,5 +16,37 @@ ideas = {
 			}
 			picture = usa_wartime_base_efficiency
 		}
+		USA_navy_funding1 = {
+			modifier = {
+				production_speed_dockyard_factor = 0.25
+			}
+			picture = usa_military_funding
+		}
+		USA_navy_funding2 = {
+			modifier = {
+				production_speed_dockyard_factor = 0.6
+			}
+			picture = usa_military_funding
+		}
+		USA_military_funding1 = {
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+			}
+			picture = usa_military_funding
+		}
+		USA_military_funding2 = {
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+				production_speed_arms_factory_factor = 0.3
+			}
+			picture = usa_military_funding
+		}
+		USA_military_funding3 = {
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+				production_speed_arms_factory_factor = 0.7
+			}
+			picture = usa_military_funding
+		}
 	}
 }
