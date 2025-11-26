@@ -59,7 +59,7 @@ ORO_spectator_state = {
 				}
 				ITA = {
 					has_war_with = TUR
-					controls_state = 797
+					controls_state = 797 #Constantinople
 				}
 			}
 			NOT = { # prevention of accidental trigger later
@@ -106,13 +106,12 @@ ORO_spectator_state = {
 				}
 				TUR = {
 					has_war_with = ITA
-					controls_state = 2
+					controls_state = 2 #Rome
 				}
 				TUR = {
 					has_war_with = ITA
 					OR = {
 						controls_state = 448
-						controls_state = 449
 						controls_state = 450
 						controls_state = 451
 						ITA = {

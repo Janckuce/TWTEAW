@@ -14,8 +14,11 @@ ITA_Lybia_War_Category = {
 		}
 
 		available = {
+			has_country_flag = {
+				flag = ITA_attack_turkey
+				days > 100
+			}
 			controls_state = 448
-			controls_state = 449
 			controls_state = 450
 			controls_state = 451
 		}

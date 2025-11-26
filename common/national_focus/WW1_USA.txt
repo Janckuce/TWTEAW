@@ -314,7 +314,7 @@ focus_tree = {
 		}
 
 		mutually_exclusive = {
-			focus = USA_stability
+			focus = USA_embrace_progressive_era
 		}
 
 		completion_reward = {
@@ -334,7 +334,7 @@ focus_tree = {
 		}
 
 		mutually_exclusive = {
-			focus = USA_war_support
+			focus = USA_collude_with_monopolies
 		}
 
 		completion_reward = {
@@ -389,72 +389,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_artillery_research1
-		icon = GFX_focus_NORDIC_com_research
-		cost = 5
-		
-		relative_position_id = USA_industry_electronics_research
-		x = -2
-		y = 1
-
-		prerequisite = {
-			focus = USA_industry_electronics_research
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = USA_infantry_research1
-		icon = GFX_focus_NORDIC_com_research
-		cost = 5
-		
-		relative_position_id = USA_industry_electronics_research
-		x = 2
-		y = 1
-
-		prerequisite = {
-			focus = USA_industry_electronics_research
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = USA_special_forces_research1
-		icon = GFX_focus_NORDIC_com_research
-		cost = 5
-		
-		relative_position_id = USA_industry_electronics_research
-		x = 4
-		y = 1
-
-		prerequisite = {
-			focus = USA_industry_electronics_research
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = cat_special_forces_generic
-			}
-		}
-	}
-
-	focus = {
 		id = USA_heavy_artillery_research1
 		icon = GFX_focus_NORDIC_com_research
 		cost = 5
@@ -487,4 +421,202 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = USA_artillery_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = USA_heavy_artillery_investment1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = -4
+		y = 2
+
+		prerequisite = {
+			focus = USA_heavy_artillery_research1
+		}
+
+		mutually_exclusive = {
+			focus = USA_normal_artillery_investment1
+		}
+
+		completion_reward = {
+			add_ideas = USA_heavy_artillery_investment1
+		}
+	}
+
+	focus = {
+		id = USA_normal_artillery_investment1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = -2
+		y = 2
+
+		prerequisite = {
+			focus = USA_artillery_research1
+		}
+
+		mutually_exclusive = {
+			focus = USA_normal_artillery_investment1
+		}
+
+		completion_reward = {
+			add_ideas = USA_normal_artillery_investment1
+		}
+	}
+
+	focus = {
+		id = USA_artillery_primacy
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = -3
+		y = 4
+
+		prerequisite = {
+			focus = USA_normal_artillery_investment1
+			focus = USA_heavy_artillery_investment1
+		}
+
+		mutually_exclusive = {
+			focus = USA_infantry_primacy
+		}
+
+		completion_reward = {
+			add_ideas = USA_artillery_primacy
+		}
+	}
+
+	focus = {
+		id = USA_infantry_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = USA_rifle_production1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = USA_infantry_research1
+		}
+
+		mutually_exclusive = {
+			focus = USA_special_forces_division
+		}
+
+		completion_reward = {
+			add_ideas = USA_rifle_production1
+		}
+	}
+
+	focus = {
+		id = USA_special_forces_research1
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 4
+		y = 1
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_special_forces_generic
+			}
+		}
+	}
+
+	focus = {
+		id = USA_special_forces_division
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 4
+		y = 2
+
+		prerequisite = {
+			focus = USA_industry_electronics_research
+		}
+
+		completion_reward = {
+			add_ideas = USA_special_forces_division
+		}
+	}
+
+	focus = {
+		id = USA_infantry_primacy
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+		
+		relative_position_id = USA_industry_electronics_research
+		x = 3
+		y = 4
+
+		prerequisite = {
+			focus = USA_special_forces_division
+			focus = USA_rifle_production1
+		}
+
+		mutually_exclusive = {
+			focus = USA_embrace_progressive_era
+		}
+
+		completion_reward = {
+			add_ideas = USA_infantry_primacy
+		}
+	}
+
+	
 }
