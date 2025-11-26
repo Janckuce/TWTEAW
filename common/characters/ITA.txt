@@ -12,6 +12,101 @@ characters={
 		}
 	}
 	
+	# Political Advisers #
+	
+	ITA_Guy1 = {
+		portraits = {
+			army = {
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy1
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				economist #5% Production Efficiency Cap
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ITA_Guy2 = {
+		portraits = {
+			army = {
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy2
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ITA_Guy3 = {
+		portraits = {
+			army = {
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy3
+			allowed = {
+				original_tag = ITA
+			}
+			traits = {
+				war_industrialist #10% Mil Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	ITA_Guy4 = {
+		portraits = {
+			army = {
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = ITA_Guy4
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+			}
+			traits = {
+				captain_of_industry #10% Civ Construction Speed
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	# End political advisors
+	# Begin military advisors/commanders
+
 	ITA_luigi_cadorna = {
 		name = ITA_charactername_luigi_cadorna
 		portraits = {
@@ -27,6 +122,9 @@ characters={
 			idea_token = ITA_luigi_cadorna
 			allowed = {
 				original_tag = ITA
+			}
+			available = { 
+				has_completed_focus = ITA_focus_Hire_a_Chief_of_Army 
 			}
 			traits = {
 				army_chief_luigi_cadorna #Special trait for a "special" individual
@@ -233,100 +331,12 @@ characters={
 			logistics_skill = 3
 		}
 	}
-	
-	# Political Advisers #
-	
-	ITA_Guy1 = {
-		portraits = {
-			army = {
-			}
-		}
-		
-		advisor={
-			slot = political_advisor
-			idea_token = ITA_Guy1
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				economist #5% Production Efficiency Cap
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
-	ITA_Guy2 = {
-		portraits = {
-			army = {
-			}
-		}
-		
-		advisor={
-			slot = political_advisor
-			idea_token = ITA_Guy2
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				silent_workhorse #15% PP gain
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
-	ITA_Guy3 = {
-		portraits = {
-			army = {
-			}
-		}
-		
-		advisor={
-			slot = political_advisor
-			idea_token = ITA_Guy3
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				war_industrialist #10% Mil Construction Speed
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
-	ITA_Guy4 = {
-		portraits = {
-			army = {
-			}
-		}
-		
-		advisor={
-			slot = political_advisor
-			idea_token = ITA_Guy4
-			allowed = {
-				original_tag = ITA
-			}
-			available = {
-			}
-			traits = {
-				captain_of_industry #10% Civ Construction Speed
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+
 	ITA_aldo_pellegrini = {
 		name = ITA_charactername_aldo_pellegrini
+		allowed = {
+			original_tag = ITA
+		}
 		portraits = {
 			army = {
 				small = GFX_portrait_ITA_aldo_pellegrini_small
@@ -338,6 +348,9 @@ characters={
 			idea_token = ITA_aldo_pellegrini
 			allowed = {
 				original_tag = ITA
+			}
+			available = { 
+				has_completed_focus = ITA_focus_Hire_Pellegrini 
 			}
 			traits = {
 				air_chief_ground_support_2
@@ -361,6 +374,9 @@ characters={
 			allowed = {
 				original_tag = ITA
 			}
+			available = { 
+				has_completed_focus = ITA_focus_Hire_Douhet
+			}
 			traits = {
 				air_chief_giulio_douhet
 			}
@@ -382,6 +398,9 @@ characters={
 			idea_token = ITA_Prince_Luigi_Amedeo
 			allowed = {
 				original_tag = ITA
+			}
+			available = { 
+				has_completed_focus = ITA_focus_Appoint_Chief_of_Navy 
 			}
 			traits = {
 				navy_chief_decisive_battle_2
