@@ -5,10 +5,12 @@ AUS_Imperial_Reforms = {
 		days_mission_timeout = 70
 		is_good = yes
 
+		allowed = {
+			always = no
+		}
+
 		available = {
-			hidden_trigger = {
-				always = no
-			}
+			always = no
 		}
 
 		timeout_effect = {
