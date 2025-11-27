@@ -311,6 +311,13 @@ ideas = {
 				breakthrough_factor = 0.1
 			}
 		}
+		AUS_Economic_Power_House = {
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
 		AUS_Cautious_Naval_Command = {
 			picture = AUS_navy
 			modifier = {
@@ -333,6 +340,55 @@ ideas = {
 				experience_loss_factor = -0.1
 				max_dig_in_factor = 0.1
 				pocket_penalty = -0.1
+			}
+		}
+		AUS_Air_Capital = {
+			modifier = {
+				air_ace_generation_chance_factor = 0.1
+				air_accidents_factor = -0.25
+				air_ace_bonuses_factor = 0.1
+				air_night_penalty = -0.15
+				ace_effectiveness_factor = 0.1
+			}
+		}
+		AUS_DAS_WAR_EIN_BEFEHL = {
+			modifier = {
+				army_infantry_attack_factor = 0.075
+				army_infantry_defence_factor = 0.075
+				experience_loss_factor = -0.5
+				planning_speed = 0.1
+				max_planning_factor = 0.15
+				coordination_bonus = 0.1
+			}
+		}
+		AUS_Traditional_Warfare = {
+			modifier = {
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.15
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				breakthrough_factor = 0.1
+				land_night_attack = 0.2
+			}
+		}
+		AUS_Ask_Later = {
+			modifier = {
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				equipment_capture = 0.03
+				initiative_factor = 0.1
+				army_strength_factor = 0.1
+			}
+		}
+		AUS_Hold_The_Line = {
+			modifier = {
+				experience_gain_army_unit_factor = 0.1
+				army_defence_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+				army_org_regain = 0.05
+				pocket_penalty = -0.15
 			}
 		}
 		AUS_Aid_From_Germany = {
