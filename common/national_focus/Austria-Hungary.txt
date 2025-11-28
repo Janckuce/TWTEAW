@@ -209,7 +209,7 @@ focus_tree = {
 			focus = AUS_Rat_Fighting
 		}
 		completion_reward = {
-			add_ideas = AUS_Economic_Power_House
+			add_research_slot = 1
 		}
 	}
 
@@ -327,7 +327,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_Economic_Plan
-		icon = GFX_focus_AUS_economic_resuscitation
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Head_Of_The_Empire
 		x = 0
@@ -344,7 +344,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Left1
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan
 		x = -1
@@ -364,7 +364,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Left2
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Left1
 		x = -1
@@ -384,7 +384,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Left3
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Left2
 		x = 0
@@ -404,7 +404,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Centre1
-		icon = GFX_focus_RAJ_special_economic_zones
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan
 		x = 0
@@ -422,7 +422,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Centre2
-		icon = GFX_focus_AFG_a_modern_economy
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Centre1
 		x = 0
@@ -436,7 +436,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Right1
-		icon = GFX_focus_generic_military_academy
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan
 		x = 1
@@ -456,7 +456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Right2
-		icon = GFX_focus_generic_military_industry
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Right1
 		x = 1
@@ -476,7 +476,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Right3
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Right2
 		x = 0
@@ -496,7 +496,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Main_Left
-		icon = GFX_focus_AUS_apprentice_programmes
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Centre2
 		x = -1
@@ -513,7 +513,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Economic_Plan_Main_Right
-		icon = GFX_focus_HUN_establish_the_second_republic
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Centre2
 		x = 1
@@ -530,7 +530,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Research_Slot
-		icon = GFX_focus_GER_glory_to_the_imperial_army
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Economic_Plan_Main_Left
 		x = 1
@@ -548,7 +548,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_Military_Plan1
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Head_Of_The_Empire
 		x = 6
@@ -565,7 +565,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Left1
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan1
 		x = -2
@@ -582,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Left2
-		icon = GFX_focus_eng_special_air_service
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Left1
 		x = 0
@@ -599,7 +599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Left3
-		icon = GFX_focus_PER_establish_special_unit
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Left2
 		x = 0
@@ -616,7 +616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Left4
-		icon = GFX_focus_FIN_expand_air_force_academy
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Left3
 		x = 0
@@ -630,7 +630,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Left5
-		icon = GFX_focus_BRA_air_force
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Left4
 		x = 0
@@ -644,7 +644,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Left6
-		icon = GFX_focus_SMB_special_forces_option_3
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Left5
 		x = 0
@@ -661,7 +661,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Right1
-		icon = GFX_focus_generic_currency_reforms
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan1
 		x = 1
@@ -681,7 +681,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Right_Mini1
-		icon = GFX_focus_GER_navy
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Right1
 		x = 1
@@ -695,7 +695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan2
-		icon = GFX_focus_IRQ_royal_iraqi_army_alt
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan1
 		x = 0
@@ -715,7 +715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Right2
-		icon = GFX_focus_generic_currency_reforms
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan2
 		x = 1
@@ -735,7 +735,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Right_Mini2
-		icon = GFX_focus_GER_airforce
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Right2
 		x = 1
@@ -749,7 +749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan3
-		icon = GFX_focus_RAJ_forge_the_kshatriya_army
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan2
 		x = 0
@@ -769,7 +769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Right3
-		icon = GFX_focus_generic_currency_reforms
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan3
 		x = 1
@@ -789,7 +789,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan_Right_Mini3
-		icon = GFX_focus_GER_army
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan_Right3
 		x = 1
@@ -803,7 +803,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_Military_Plan4
-		icon = GFX_focus_TUR_reform_the_balkan_pact
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 10
 		relative_position_id = AUS_Military_Plan3
 		x = 0
@@ -816,109 +816,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = AUS_Underfunded_Army3
-		}
-	}
-
-	#	Special Branches
-
-	focus = {
-		id = AUS_Air_Force_Speciality
-		icon = GFX_goal_generic_build_airforce
-		cost = 10
-		relative_position_id = AUS_Military_Plan4
-		x = -2
-		y = 1
-		mutually_exclusive = {
-			focus = AUS_Good_Soldiers_Follow_Orders
-			focus = AUS_Old_Habits
-			focus = AUS_Shoot_First
-			focus = AUS_Austria_Shall_Not_Fall
-		}
-		prerequisite = {
-			focus = AUS_Military_Plan4
-		}
-		completion_reward = {
-			add_ideas = AUS_Air_Capital
-		}
-	}
-	focus = {
-		id = AUS_Good_Soldiers_Follow_Orders
-		icon = GFX_focus_RAJ_seven_shackles
-		cost = 10
-		relative_position_id = AUS_Military_Plan4
-		x = 0
-		y = 1
-		mutually_exclusive = {
-			focus = AUS_Air_Force_Speciality
-			focus = AUS_Old_Habits
-			focus = AUS_Shoot_First
-			focus = AUS_Austria_Shall_Not_Fall
-		}
-		prerequisite = {
-			focus = AUS_Military_Plan4
-		}
-		completion_reward = {
-			add_ideas = AUS_DAS_WAR_EIN_BEFEHL
-		}
-	}
-	focus = {
-		id = AUS_Old_Habits
-		icon = GFX_focus_generic_horse_studs
-		cost = 10
-		relative_position_id = AUS_Military_Plan4
-		x = 2
-		y = 1
-		mutually_exclusive = {
-			focus = AUS_Air_Force_Speciality
-			focus = AUS_Good_Soldiers_Follow_Orders
-			focus = AUS_Shoot_First
-			focus = AUS_Austria_Shall_Not_Fall
-		}
-		prerequisite = {
-			focus = AUS_Military_Plan4
-		}
-		completion_reward = {
-			add_ideas = AUS_Traditional_Warfare
-		}
-	}
-	focus = {
-		id = AUS_Shoot_First
-		icon = GFX_focus_AFG_scavenging
-		cost = 10
-		relative_position_id = AUS_Military_Plan4
-		x = 4
-		y = 1
-		mutually_exclusive = {
-			focus = AUS_Air_Force_Speciality
-			focus = AUS_Good_Soldiers_Follow_Orders
-			focus = AUS_Shoot_First
-			focus = AUS_Austria_Shall_Not_Fall
-		}
-		prerequisite = {
-			focus = AUS_Military_Plan4
-		}
-		completion_reward = {
-			add_ideas = AUS_Ask_Later
-		}
-	}
-	focus = {
-		id = AUS_Austria_Shall_Not_Fall
-		icon = GFX_focus_AFG_royal_guard
-		cost = 10
-		relative_position_id = AUS_Military_Plan4
-		x = 6
-		y = 1
-		mutually_exclusive = {
-			focus = AUS_Air_Force_Speciality
-			focus = AUS_Good_Soldiers_Follow_Orders
-			focus = AUS_Old_Habits
-			focus = AUS_Shoot_First
-		}
-		prerequisite = {
-			focus = AUS_Military_Plan4
-		}
-		completion_reward = {
-			add_ideas = AUS_Hold_The_Line
 		}
 	}
 }
