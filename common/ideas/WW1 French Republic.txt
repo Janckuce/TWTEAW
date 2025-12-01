@@ -271,7 +271,7 @@ ideas = {
 			picture = NORDIC_army_democratic
 			modifier = {
 				dig_in_speed_factor = 0.05
-				org_loss_at_low_org_factor = -0.1
+				special_forces_min = 63
 			}
 		}
 		FRA_Numbers_Combat = {
@@ -279,6 +279,7 @@ ideas = {
 			modifier = {
 				dig_in_speed_factor = 0.05
 				training_time_army_factor = -0.05
+				org_loss_at_low_org_factor = -0.1
 			}
 		}
 		FRA_Defensive_Experts = {
