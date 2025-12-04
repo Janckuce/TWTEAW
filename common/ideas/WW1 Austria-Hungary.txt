@@ -3,7 +3,7 @@ ideas = {
 		AUS_Ethnic_Split = {
 			picture = AUS_austrofascissm
 			modifier = {
-				political_power_factor = -0.5
+				political_power_factor = -0.8
 				stability_factor = -0.4
 				war_support_factor = -0.2
 				resistance_activity = 0.1
@@ -13,7 +13,7 @@ ideas = {
 		AUS_Ethnic_Split1 = {
 			picture = AUS_austrofascissm
 			modifier = {
-				political_power_factor = -0.4
+				political_power_factor = -0.6
 				stability_factor = -0.4
 				war_support_factor = -0.2
 				resistance_activity = 0.1
@@ -23,7 +23,7 @@ ideas = {
 		AUS_Ethnic_Split2 = {
 			picture = AUS_austrofascissm
 			modifier = {
-				political_power_factor = -0.3
+				political_power_factor = -0.4
 				stability_factor = -0.4
 				war_support_factor = -0.2
 				resistance_activity = 0.1
@@ -43,7 +43,6 @@ ideas = {
 		AUS_Ethnic_Split4 = {
 			picture = AUS_austrofascissm
 			modifier = {
-				political_power_factor = -0.1
 				stability_factor = -0.4
 				war_support_factor = -0.2
 				resistance_activity = 0.1
@@ -53,6 +52,7 @@ ideas = {
 		AUS_Ethnic_Split5 = {
 			picture = AUS_austrofascissm
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = -0.4
 				war_support_factor = -0.2
 				resistance_activity = 0.1
@@ -62,6 +62,7 @@ ideas = {
 		AUS_Lessened_Ethinc_Split = {
 			picture = AUS_austrofascissm
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = -0.3
 				war_support_factor = -0.15
 				resistance_activity = 0.1
@@ -71,6 +72,7 @@ ideas = {
 		AUS_Lessened_Ethinc_Split1 = {
 			picture = AUS_austrofascissm
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = -0.2
 				war_support_factor = -0.1
 				resistance_activity = 0.1
@@ -79,6 +81,7 @@ ideas = {
 		AUS_Lessened_Ethinc_Split2 = {
 			picture = AUS_austrofascissm
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = -0.1
 				war_support_factor = -0.05
 				resistance_activity = 0.1
@@ -87,6 +90,7 @@ ideas = {
 		AUS_United_Nation = {
 			picture = AUS_empire_restored
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = 0.05
 				war_support_factor = 0.05
 				production_factory_max_efficiency_factor = 0.025
@@ -95,6 +99,7 @@ ideas = {
 		AUS_United_Nation1 = {
 			picture = AUS_empire_restored
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = 0.1
 				war_support_factor = 0.1
 				industrial_capacity_factory = 0.025
@@ -105,6 +110,7 @@ ideas = {
 		AUS_United_Nation2 = {
 			picture = AUS_empire_restored
 			modifier = {
+				political_power_factor = 0.2
 				stability_factor = 0.2
 				war_support_factor = 0.2
 				industrial_capacity_factory = 0.05
@@ -176,19 +182,10 @@ ideas = {
 		AUS_Neglected_Special_Forces1 = {
 			picture = AUS_doth
 			modifier = {
-				naval_hit_chance = -0.06
-				naval_damage_factor = -0.06
-				air_attack_factor = -0.06
-				air_defence_factor = -0.06
-			}
-		}
-		AUS_Neglected_Special_Forces2 = {
-			picture = AUS_doth
-			modifier = {
-				naval_hit_chance = -0.03
-				naval_damage_factor = -0.03
-				air_attack_factor = -0.03
-				air_defence_factor = -0.03
+				naval_hit_chance = -0.05
+				naval_damage_factor = -0.05
+				air_attack_factor = -0.05
+				air_defence_factor = -0.05
 			}
 		}
 		AUS_Austrian_Special_Forces = {
@@ -209,10 +206,26 @@ ideas = {
 				air_defence_factor = 0.1
 			}
 		}
+		AUS_Combined_Warfare = {
+			picture = combined_bomber_offensive
+			modifier = {
+				air_cas_efficiency = 0.25
+				naval_invasion_penalty = -0.25
+				air_superiority_bonus_in_combat = 0.25
+				naval_invasion_prep_speed = 0.25
+			}
+		}
+		AUS_Air_Recon = {
+			picture = received_attache
+			modifier = {
+				air_range_factor = 0.15
+				air_night_penalty = -0.25
+				air_weather_penalty = -0.25
+			}
+		}
 		AUS_Economic_Crisis = {
 			picture = AUS_treaty_of_saint_germain_en_laye
 			modifier = {
-				production_speed_buildings_factor = -0.2
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				production_factory_start_efficiency_factor = -0.1
@@ -222,7 +235,6 @@ ideas = {
 		AUS_Economic_Crisis1 = {
 			picture = AUS_treaty_of_saint_germain_en_laye
 			modifier = {
-				production_speed_buildings_factor = -0.15
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_start_efficiency_factor = -0.05
@@ -232,7 +244,6 @@ ideas = {
 		AUS_Economic_Crisis2 = {
 			picture = AUS_treaty_of_saint_germain_en_laye
 			modifier = {
-				production_speed_buildings_factor = -0.05
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				production_factory_start_efficiency_factor = -0.05
@@ -309,6 +320,27 @@ ideas = {
 			modifier = {
 				equipment_capture = 0.03
 				breakthrough_factor = 0.1
+			}
+		}
+		AUS_Imperial_Austria = {
+			picture = HABSBURG_imperial_integration
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.15
+				acclimatization_hot_climate_gain_factor = 0.15
+			}
+		}
+		AUS_Weltpolitik = {
+			picture = HABSBURG_an_imperium_restored
+			modifier = {
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+				civilian_intel_factor = 0.1
+				army_intel_factor = 0.1
+				navy_intel_factor = 0.1
+				airforce_intel_factor = 0.1
+				intel_network_gain_factor = 0.1
 			}
 		}
 		AUS_Economic_Power_House = {
@@ -395,6 +427,172 @@ ideas = {
 				max_dig_in_factor = 0.1
 				army_org_regain = 0.05
 				pocket_penalty = -0.15
+			}
+		}
+		AUS_Navy_Guided_By_God = {
+			picture = generic_navy_bonus
+			modifier = {
+				naval_hit_chance = 0.1
+				positioning = 0.1
+				naval_critical_score_chance_factor = 0.1
+			}
+		}
+		AUS_Navy_Guided_By_God1 = {
+			picture = generic_navy_bonus
+			modifier = {
+				naval_hit_chance = 0.1
+				positioning = 0.1
+				naval_critical_score_chance_factor = 0.1
+				naval_retreat_speed = 0.2
+				convoy_retreat_speed = 0.1
+			}
+		}
+		AUS_Navy_Guided_By_God2 = {
+			picture = generic_navy_bonus
+			modifier = {
+				naval_hit_chance = 0.1
+				positioning = 0.1
+				naval_critical_score_chance_factor = 0.1
+				naval_retreat_speed = 0.2
+				convoy_retreat_speed = 0.1
+				navy_org_factor = 0.1
+				repair_speed_factor = 0.25
+			}
+		}
+		AUS_Navy_Guided_By_God3 = {
+			picture = generic_navy_bonus
+			modifier = {
+				naval_hit_chance = 0.1
+				positioning = 0.1
+				naval_critical_score_chance_factor = 0.1
+				naval_retreat_speed = 0.2
+				convoy_retreat_speed = 0.1
+				navy_org_factor = 0.1
+				repair_speed_factor = 0.25
+				naval_torpedo_hit_chance_factor = 0.1
+				naval_damage_factor = 0.1
+			}
+		}
+		AUS_Naval_Craft = {
+			picture = jap_interservice_rivalry_navy_dominant
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.1
+				}
+				capital_ship = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		AUS_Naval_Craft1 = {
+			picture = jap_interservice_rivalry_navy_dominant
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.2
+				}
+				capital_ship = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		AUS_Naval_Craft2 = {
+			picture = jap_interservice_rivalry_navy_dominant
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.3
+				}
+				capital_ship = {
+					build_cost_ic = -0.3
+				}
+			}
+		}
+		AUS_Funded_Aircraft = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		AUS_Funded_Aircraft1 = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1
+				}
+				strategic_bomber = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		AUS_Funded_Aircraft2 = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1
+				}
+				strategic_bomber = {
+					build_cost_ic = -0.1
+				}
+				cas = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		AUS_Funded_Aircraft3 = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.15
+				}
+				strategic_bomber = {
+					build_cost_ic = -0.15
+				}
+				cas = {
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		AUS_Imperial_Fighters = {
+			picture = generic_air_payment
+			modifier = {
+				air_superiority_detect_factor = 0.1
+				air_mission_efficiency = 0.1
+			}
+		}
+		AUS_Imperial_Bombers = {
+			picture = generic_air_bonus
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.1
+				air_strategic_bomber_night_penalty = -0.1
+			}
+		}
+		AUS_Imperial_Support = {
+			picture = generic_aircraft_support
+			modifier = {
+				air_cas_present_factor = 0.1
+				ground_attack_factor = 0.1
+			}
+		}
+		AUS_For_The_Kaiser = {
+			picture = HUN_hungarian_monarchy_habsburg
+			modifier = {
+				army_morale_factor = 0.1
+				army_org = 5
+			}
+		}
+		AUS_Take_Belgrade = {
+			picture = BEL_fonderie_royale_de_canons_liege
+			targeted_modifier = {
+				tag = SER
+				attack_bonus_against = 0.15
+			}
+		}
+		AUS_Take_Venice = {
+			picture = BEL_fonderie_royale_de_canons_liege
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.15
 			}
 		}
 		AUS_Aid_From_Germany = {
