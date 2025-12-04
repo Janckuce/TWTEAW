@@ -46,6 +46,10 @@ add_ideas = {
 	FRA_Fragmented_Government
 	FRA_Halted_Industrial_Power
 }
+add_timed_idea = {
+    idea = starting_production_efficiency
+    days = 5
+}
 
 recruit_character = FRA_joseph_caillaux
 recruit_character = FRA_ferdinand_foch
@@ -74,7 +78,8 @@ recruit_character = FRA_georges_clemenceau
 recruit_character = FRA_raymond_poincare
 recruit_character = FRA_Gabriel_Darrieus
 recruit_character = FRA_Francois_Ernest_Fournier
-
+recruit_character = FRA_Paul_Chocheprat
+recruit_character = FRA_Georges_leygeus
 ##### Party Popularity, Stability, War Support and other #####
 
 set_politics = {

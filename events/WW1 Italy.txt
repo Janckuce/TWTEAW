@@ -9,6 +9,8 @@ country_event = {
 
 	is_triggered_only = yes
 
+	timeout_days = 2
+
 	option = {
 		name = ww1_italy.1.a
 		
@@ -187,6 +189,8 @@ country_event = {
 
 	is_triggered_only = yes
 
+	timeout_days = 4
+
 	option = {
 		name = ww1_italy.2.a
 		
@@ -196,6 +200,11 @@ country_event = {
 		
 		ai_chance = {
 			factor = 100
+		}
+
+		ITA = {
+			complete_national_focus = ITA_focus_Triumph_in_Tripoli
+			complete_national_focus = ITA_focus_armed_forces_review
 		}
 	}
 }
@@ -208,6 +217,8 @@ country_event = {
 	picture = GFX_report_event_italy_in_libya
 
 	is_triggered_only = yes
+
+	timeout_days = 4
 
 	option = {
 		name = ww1_italy.3.a
@@ -226,6 +237,11 @@ country_event = {
 		
 		ai_chance = {
 			factor = 100
+		}
+
+		ITA = {
+			complete_national_focus = ITA_focus_Catastrophe_in_Cyrenaica
+			complete_national_focus = ITA_focus_armed_forces_review
 		}
 	}
 }

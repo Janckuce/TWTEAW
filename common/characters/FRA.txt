@@ -261,6 +261,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				infantry_leader organizer logistics_wizard
+			}
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -302,7 +305,7 @@ characters={
 			planning_skill = 5
 			logistics_skill = 5
 			traits = {
-				old_guard
+				old_guard bearer_of_artillery cavalry_expert
 			}
 		}
 	}
@@ -334,6 +337,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				bearer_of_artillery commando infantry_leader
+			}
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -354,6 +360,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				infantry_expert infantry_leader bearer_of_artillery
+			}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 4
@@ -374,6 +383,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				camouflage_expert commando 
+			}
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -394,6 +406,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				cavalry_leader cavalry_expert unyielding_defender
+			}
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -414,6 +429,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				infantry_expert infantry_leader aggressive_assaulter
+			}
 			skill = 2
 			attack_skill = 3
 			defense_skill = 3
@@ -434,6 +452,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				engineer_officer scavenger infantry_leader
+			}
 			skill = 2
 			attack_skill = 1
 			defense_skill = 3
@@ -469,6 +490,9 @@ characters={
 		}
 		
 		corps_commander={
+			traits = {
+				organizer logistics_wizard engineer_officer
+			}
 			skill = 2
 			attack_skill = 5
 			defense_skill = 1
@@ -634,4 +658,43 @@ characters={
 			}
 		}
 	}
+	FRA_Paul_Chocheprat = {
+		name = FRA_character_paul_chocheprat
+		portraits = {
+			army = {
+				
+			}
+		}
+		navy_leader = {
+			traits = {
+				superior_tactician concealment_expert blockade_runner
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+		FRA_Georges_leygeus = {
+			name = FRA_character_georges_leygeus
+			portraits = {
+				army = {
+					
+				}
+				
+			}
+			navy_leader = {
+				traits = {
+					marksman concealment_expert destroyer_leader
+				}
+				skill = 1
+				attack_skill = 4
+				defense_skill = 3
+				maneuvering_skill = 5
+				coordination_skill = 3
+			}
+		}
+
+	
 }

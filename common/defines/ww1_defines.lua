@@ -6,8 +6,8 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.2, 0.15, 0.04, 0.0 } -- game speeds
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999			--Max army experience a country can store
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999			--Max navy experience a country can store
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999				--Max air experience a country can store
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 100  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 40			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 60  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked  		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 60		-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which militaryfactories produce equipment
@@ -40,6 +40,12 @@ NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0
 NDefines.NMilitary.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
-NDefines.NBuildings.RADAR_RANGE_BASE = 10
-NDefines.NBuildings.RADAR_RANGE_MIN = 10
-NDefines.NBuildings.RADAR_RANGE_MAX = 28
+NDefines.NBuildings.RADAR_RANGE_BASE = 13
+NDefines.NBuildings.RADAR_RANGE_MIN = 13
+NDefines.NBuildings.RADAR_RANGE_MAX = 33
+NDefines.NMilitary.SLOWEST_SPEED = 1 
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01 
+NDefines.NAir.DETECT_EFFICIENCY_BASE = 0.30
+NDefines.NAir.DETECT_EFFICIENCY_FROM_RADAR = 0.40
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 0.60
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1000

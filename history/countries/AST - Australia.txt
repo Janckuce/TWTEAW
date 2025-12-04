@@ -71,11 +71,15 @@ add_ideas = {
 	AST_Small_Defence_Spending
 	AST_Royal_Navy
 }
+add_timed_idea = {
+    idea = starting_production_efficiency
+    days = 5
+}
 
 set_convoys = 50
 
 set_research_slots = 2
-set_stability = 0.4
-set_war_support = 0.25
+set_stability = 0.25
+set_war_support = 0.1
 
 # End of Party Popularity, Stability, War Support and other ##

@@ -69,6 +69,10 @@ add_ideas = {
 	RUS_Dated_Warfare
 	RUS_Bolshevik_Sabotage
 }
+add_timed_idea = {
+    idea = starting_production_efficiency
+    days = 5
+}
 
 ##### Party Popularity, Stability, War Support and other #####
 
@@ -85,9 +89,6 @@ set_popularities = {
 	democratic = 15
 	fascism = 10
 }
-
-puppet = POL
-puppet = LAT
 
 set_convoys = 300
 
