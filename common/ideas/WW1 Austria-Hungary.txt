@@ -582,17 +582,40 @@ ideas = {
 			}
 		}
 		AUS_Take_Belgrade = {
-			picture = BEL_fonderie_royale_de_canons_liege
+			picture = FIN_coastal_batteries_effort
 			targeted_modifier = {
 				tag = SER
 				attack_bonus_against = 0.15
 			}
 		}
 		AUS_Take_Venice = {
-			picture = BEL_fonderie_royale_de_canons_liege
+			picture = FIN_funs_from_kalevala_koru_oy
 			targeted_modifier = {
 				tag = ITA
 				attack_bonus_against = 0.15
+			}
+		}
+		AUS_In_Glory_Of_The_Dead = {
+			picture = BEL_legacy_of_the_great_war
+			modifier = {
+				army_org_regain = 0.08
+				dig_in_speed_factor = 0.1
+				army_defence_factor = 0.08
+				max_dig_in_factor = 0.1
+			}
+		}
+		AUS_Blunt_Blades = {
+			picture = NOR_broken_gun_ns
+			modifier = {
+				army_attack_factor = -0.08
+			}
+		}
+		AUS_Ferdinand_Offensive = {
+			picture = FIN_academic_karelian_society
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				breakthrough_factor = 0.1
 			}
 		}
 		AUS_Aid_From_Germany = {
