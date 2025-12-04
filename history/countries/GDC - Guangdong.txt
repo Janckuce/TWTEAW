@@ -1,0 +1,50 @@
+﻿capital = 608 # Nanjing
+
+# Starting tech
+set_technology = {
+    #Infantry
+	ww1_infantry_weapons1 = 1
+	ww1_infantry_weapons2 = 1
+	tech_trucks = 1
+	
+	#Artillery
+	ww1_artillery_equipment1 = 1
+	
+	#Support Companies
+	tech_support = 1
+	tech_engineers = 1
+	basic_train = 1
+	
+	#Industry
+	ww1_fuel_storage = 1
+}
+
+recruit_character = CHI_prince_chun
+
+recruit_character = CHI_Field_Marshal
+recruit_character = CHI_General_1
+recruit_character = CHI_General_2
+recruit_character = CHI_Advisor_1
+recruit_character = CHI_Advisor_2
+recruit_character = CHI_Advisor_3
+
+##### Party Popularity, Stability, War Support and other #####
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+set_convoys = 40
+
+set_research_slots = 2
+set_stability = 0.1
+set_war_support = 0
+
+# End of Party Popularity, Stability, War Support and other ##
