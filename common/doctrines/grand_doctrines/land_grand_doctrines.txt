@@ -173,9 +173,9 @@ superior_firepower = {
         }
         {
             #Artillery/Support
-            category_support_battalions = {
-                max_organisation = 5
-            }
+            # category_support_battalions = {
+            #     max_organisation = 5
+            # }
             planning_decay_rate_factor = -0.1
             enable_tactic = tactic_barrage
 
@@ -197,9 +197,9 @@ superior_firepower = {
         {
             #Armor
             enable_tactic = tactic_delay
-            category_army = {
-                default_morale = 0.1
-            }
+            # category_army = {
+            #     default_morale = 0.1
+            # }
 
             effect = {
                 if = {
@@ -218,9 +218,9 @@ superior_firepower = {
         {
             #Operations
             enable_tactic = tactic_tactical_withdrawal
-            category_army = {
-                default_morale = 0.1
-            }
+            # category_army = {
+            #     default_morale = 0.1
+            # }
             planning_decay_rate_factor = -0.1
 
             effect = {
