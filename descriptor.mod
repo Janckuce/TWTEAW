@@ -39,7 +39,7 @@ tags={
 	"Map"
 	"National Focuses"
 }
-name="The Great Curfuffle"
+name="The Great Curfuffle 1.16.10"
 picture="Thumbnail.png"
 supported_version="1.16.10"
 remote_file_id="3619203875"
