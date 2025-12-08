@@ -20,9 +20,9 @@
 #  # #   # ### ##  
 
 
-faction_goal_undo_versailles = {
-	name = undo_versailles_goal_name
-	description = undo_versailles_goal_desc
+faction_goal_defeat_entente = {
+	name = defeat_entente_goal_name
+	description = defeat_entente_goal_desc
 	category = medium_term
 	group = FOCUS_FILTER_WAR_SUPPORT
 	visible = {
@@ -32,34 +32,25 @@ faction_goal_undo_versailles = {
 		OR = {
 			AND = {
 				original_tag = GER
-				has_army_manpower = {
-					size > 1000000
-				}
-				controls_state = 28
-				controls_state = 85
-				controls_state = 86
-				controls_state = 188
-				controls_state = 762
-				controls_state = 807
-				controls_state = 912
+				controls_state = 918
+				controls_state = 908
+				controls_state = 933
+				controls_state = 29
+				controls_state = 6
+				controls_state = 34
+				controls_state = 10
 			}
 			any_allied_country = {
 				original_tag = GER
-				has_army_manpower = {
-					size > 1000000
-				}
-				controls_state = 28
-				controls_state = 85
-				controls_state = 86
-				controls_state = 188
-				controls_state = 762
-				controls_state = 807
-				controls_state = 912
+				controls_state = 918
+				controls_state = 908
+				controls_state = 933
+				controls_state = 29
+				controls_state = 6
+				controls_state = 34
+				controls_state = 10
 			}
 		}
-		42 = { is_demilitarized_zone = no }
-		51 = { is_demilitarized_zone = no }
-		978 = { is_demilitarized_zone = no }
 	}
 	complete_effect = {
 		add_faction_power_projection = 100
@@ -1141,39 +1132,20 @@ faction_goal_marine_corps = {
 	complete_effect = {
 		add_faction_power_projection = 100
 		custom_effect_tooltip = generic_skip_one_line_tt
-		hidden_effect = {
-			every_collection_element = {
-				input = {
-					input = game:scope
-					operators = { 
-						faction_members 
-						limit = {
-							has_army_size = {
-								size > 0
-								unit_category = category_amphibious_tanks
-							}
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators = { 
+					faction_members 
+					limit = {
+						has_army_size = {
+							size > 0
+							unit_category = category_amphibious_tanks
 						}
 					}
-					name = ALL_FACTION_MEMBERS_WITH_1_AMPHIBIOUS
 				}
-				random_character = {
-					tooltip = ONE_GENERAL	
-					visible_when_empty = yes
-					limit = {
-						is_army_leader = yes
-						is_field_marshal = no
-						NOT = { has_trait = cavalry_officer }
-						NOT = { has_trait = panzer_leader }
-						NOT = { has_trait = naval_invader }
-					}
-					gain_xp = 400
-					add_attack = 1
-					add_trait = { trait = naval_invader }
-				}
+				name = ALL_FACTION_MEMBERS_WITH_1_AMPHIBIOUS
 			}
-		}
-		custom_effect_tooltip = ALL_FACTION_MEMBERS_WITH_1_AMPHIBIOUS
-		effect_tooltip = {
 			random_character = {
 				tooltip = ONE_GENERAL	
 				visible_when_empty = yes

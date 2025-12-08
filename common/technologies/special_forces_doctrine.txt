@@ -428,10 +428,6 @@ technologies = {
 	
 	special_forces_marines = {
 		doctrine_name = "MARINES_DOCTRINE"
-
-		allow_branch = {
-			has_dlc = "Arms Against Tyranny"
-		}
 		
 		xp_research_type = navy
 		xp_unlock_cost = 60
@@ -447,10 +443,6 @@ technologies = {
 			}
 		}
 		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
-		
 		path = {
 			leads_to_tech = marines_jungle_troops 
 			research_cost_coeff = 1
@@ -462,7 +454,7 @@ technologies = {
 		}
 		
 		marines_special_forces_contribution_factor = -0.25
-		naval_invasion_division_cap = 2
+		naval_invasion_capacity = 5
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
@@ -477,7 +469,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -493,6 +485,10 @@ technologies = {
 				factor = 0
 				tag = USA
 				NOT = { has_tech = special_forces_paratroopers }
+			}
+			modifier = {
+				factor = 0
+				NOT = { ai_has_completed_naval_doctrine = yes }
 			}
 		}
 		
@@ -511,10 +507,10 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		pioneer_support = {
-			jungle = {
-				attack = 0.15
-				defence = 0.10
-				movement = 0.10
+			river = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.05
 			}
 		}
 		
@@ -528,7 +524,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -574,7 +570,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -610,10 +606,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		unit_marine_design_cost_factor = -0.50
+		enable_subunits = {
+			marine_commando
+		}
 
 		marine = {
 			max_organisation = 5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
 		}
 			
 		doctrine = yes	
@@ -621,7 +623,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -654,12 +656,12 @@ technologies = {
 		
 		xor = { marines_expeditionary }
 		
-		enable_subunits = {
-			marine_commando
-		}
-		
-		on_research_complete = {
-			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
+		marine = {
+			river = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.05
+			}
 		}
 		
 		acclimatization_cold_climate_gain_factor = 0.1
@@ -670,7 +672,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -703,7 +705,7 @@ technologies = {
 		
 		xor = { marines_commandoes }
 
-		special_forces_cap = 0.06
+		special_forces_cap = 0.10
 		naval_invasion_planning_bonus_speed = 0.2
 		
 		army_bonus_air_superiority_factor = 0.10
@@ -713,7 +715,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -743,22 +745,27 @@ technologies = {
 			leads_to_tech = marines_commandoes_mechanised 
 			research_cost_coeff = 1
 		}
-
+		
+		path = {
+			leads_to_tech = marines_commandoes_mechanised_non_mtg
+			research_cost_coeff = 1
+		}
+		
 		marine_commando = {
 			breakthrough = 0.15
 		}
+		marine = {
+			breakthrough = 0.15
+		}
+		special_forces_attack_factor = 0.10
 		
 		doctrine = yes	
 		research_cost = 2.25
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
-		}
-		
-		on_research_complete = {
-			custom_effect_tooltip = SF_marine_demoliton_effect_TT
 		}
 		
 		folder = {
@@ -791,8 +798,8 @@ technologies = {
 		
 		pioneer_support = {
 			battalion_mult = {
-				category = category_line_artillery
-				max_organisation = 2
+				category = category_marines
+				max_organisation = 5
 				add = yes
 			}
 		}
@@ -805,7 +812,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -830,7 +837,8 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-
+		allow_branch = { has_dlc = "Man the Guns" }
+		
 		amphibious_mechanized = {
 			 soft_attack = 0.1
 			 breakthrough = 0.1
@@ -840,7 +848,6 @@ technologies = {
 		pioneer_support = {
 			battalion_mult = {
 				category = category_amphibious_tanks
-				armor = 0.15
 				breakthrough = 0.15
 			}
 		}
@@ -855,7 +862,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
@@ -873,7 +880,41 @@ technologies = {
 			#artillery = 4.0
 		}
 	}
+	
+	marines_commandoes_mechanised_non_mtg = {
+		
+		xp_research_type = navy
+		xp_unlock_cost = 60
+		
+		force_use_small_tech_layout = yes
+		allow_branch = { not = { has_dlc = "Man the Guns" } }
+		
+		special_forces_attack_factor = 0.15
+		
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			special_forces_doctrine
+			marine_tech
+			cat_marines_doctrine
+		}
 
+		
+		folder = {
+			name = special_forces_doctrine_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			#artillery = 4.0
+		}
+	}
+	
 	marines_expeditionary_support = {
 		
 		xp_research_type = navy
@@ -903,15 +944,14 @@ technologies = {
 		}
 
 		extra_marine_supply_grace = 24
-		naval_invasion_prep_days = -5
-		naval_invasion_plan_cap = 1
+		naval_invasion_capacity = 10
 			
 		doctrine = yes	
 		research_cost = 2.25
 		
 		categories = {
 			special_forces_doctrine
-			#marine_tech
+			marine_tech
 			cat_marines_doctrine
 		}
 
