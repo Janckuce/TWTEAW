@@ -2397,10 +2397,12 @@ ORO_end_WW1_german_loss = {
 		available = {
 		    GER = { has_war_with = FRA }
 			OR = {
-				date > 1918.11.11
 				NOT = {
 					GER = {
-					    controls_state = 843
+						controls_state = 64
+					}
+					AUS = {
+						controls_state = 4
 					}
 				}
 			}
