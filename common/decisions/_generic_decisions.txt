@@ -511,22 +511,7 @@ propaganda_efforts = {
 		icon = generic_prepare_civil_war
 
 		available = { 
-			has_war_with_non_exiled_country = yes
-			OR = {
-				is_major = yes
-				any_allied_country = {
-					is_major = yes
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_government = fascism }
-				}
-				threat > 0.5
-			}
-			else = {
-				threat > 0.30
-			}
+			always = yes
 		}
 
 		visible = {
