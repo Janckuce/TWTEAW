@@ -400,10 +400,15 @@ Capture_Edirne = {
 	}
 	timeout_effect = {
 		TUR = { add_ideas = TUR_Lose_Balkan_War_Hurry1 }
-		add_offsite_building = { type = industrial_complex level = 1 }
-		activate_mission = Hold_Edirne2
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
+				activate_mission = Hold_Edirne2
+			}
 		}
-	}
 	Hold_Edirne2 = {
 	icon = "edirne_icon.png"
 	priority = 1
@@ -430,7 +435,12 @@ Capture_Edirne = {
 			remove_idea = TUR_Lose_Balkan_War_Hurry1
 			add_idea = TUR_Lose_Balkan_War_Hurry2
 		}   
-		add_offsite_building = { type = industrial_complex level = 1 }
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
 				activate_mission = Hold_Edirne3
 			}
 		}
@@ -461,7 +471,12 @@ Capture_Edirne = {
 			remove_idea = TUR_Lose_Balkan_War_Hurry2
 			add_idea = TUR_Lose_Balkan_War_Hurry3
 		}   
-		add_offsite_building = { type = industrial_complex level = 1 }
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
 				activate_mission = Hold_Edirne4
 			}
 		}
@@ -486,7 +501,12 @@ Capture_Edirne = {
 			}
 	}
 	timeout_effect = {
-		add_offsite_building = { type = industrial_complex level = 1 }
+		797 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					}
+				}
 				TUR = {
 			    country_event = ww1_ottoman.3
 			}

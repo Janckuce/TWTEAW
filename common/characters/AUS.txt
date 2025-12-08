@@ -1,117 +1,117 @@
 characters = {
 	
     auh_ernest_von_koerber = {
-		name = "Ernest von Koerber"
-		portraits = {
+    name = "Ernest von Koerber"
+            portraits = {
 			civilian = {
 				large = "GFX_advisor_auh_ernest_von_koerber"
-				small = "GFX_advisor_auh_ernest_von_koerber"
-			}
+                small = "GFX_advisor_auh_ernest_von_koerber"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			traits = { minister-president_of_construction }
-			cost = 150
-			can_be_fired = yes
-			idea_token = auh_ernest_von_koerber
+    advisor = {
+        slot = political_advisor
+        traits = { minister-president_of_construction }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_ernest_von_koerber
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
-				visible = {
-				date < 1919.1.1
-			}
-
-			available = {
-				always = yes
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+        	visible = {
+			date < 1919.1.1
 		}
-	}
+
+        available = {
+            always = yes
+        }
+    }
+}
 
     auh_alexander_von_krobatin = {
-		name = "Alexander von Krobatin"
-		portraits = {
+    name = "Alexander von Krobatin"
+            portraits = {
 			civilian = {
 				large = "GFX_advisor_alexander_von_krobatin"
-				small = "GFX_advisor_alexander_von_krobatin"
-			}
+                small = "GFX_advisor_alexander_von_krobatin"
+		    }
 		}
-		advisor = {
-			slot = theorist
-			traits = { alexander_krobatin }
-			cost = 150
-					visible = {
-					date < 1933.1.1
-				}
-			can_be_fired = yes
-			idea_token = auh_alexander_von_krobatin
-
-			allowed = {
-				OR = {
-					always = yes
-				}
+    advisor = {
+        slot = theorist
+        traits = { alexander_krobatin }
+        cost = 150
+        		visible = {
+				date < 1933.1.1
 			}
+        can_be_fired = yes
+        idea_token = auh_alexander_von_krobatin
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
 
     auh_samuel_von_hazai = {
-		name = "Gráf Samuel von Hazai"
-		portraits = {
+    name = "Gráf Samuel von Hazai"
+            portraits = {
 			civilian = {
 				large = "GFX_advisor_samuel_hazai"
-				small = "GFX_advisor_samuel_hazai"
-			}
+                small = "GFX_advisor_samuel_hazai"
+		    }
 		}
-		advisor = {
-			slot = theorist
-			traits = { samuel_hazai }
-			cost = 150
-			can_be_fired = yes
-			idea_token = auh_samuel_von_hazai
+    advisor = {
+        slot = theorist
+        traits = { samuel_hazai }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_samuel_von_hazai
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
     auh_rudolf_stoger_steinstatten = {
-		name = "Rudolf Stöger-Steiner von Steinstätten"
-		portraits = {
+    name = "Rudolf Stöger-Steiner von Steinstätten"
+            portraits = {
 			civilian = {
 				large = "GFX_portrait_auh_rudolf_stoger_steinstatten"
-				small = "GFX_AUS_steinstatten_frame"
-			}
+                small = "GFX_AUS_steinstatten_frame"
+		    }
 		}
-		advisor = {
-			slot = army_chief
-			traits = { rudolf_Steinstatten }
-			cost = 150
-			can_be_fired = yes
-			idea_token = auh_rudolf_stoger_steinstatten
+    advisor = {
+        slot = army_chief
+        traits = { rudolf_Steinstatten }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_rudolf_stoger_steinstatten
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
 	AUH_goglia_zlota = {
 		instance = {
@@ -241,7 +241,7 @@ characters = {
 		}
 	}
 
-	AUH_eugen_habsburg = {
+        AUH_eugen_habsburg = {
 		instance = {
 			allowed = {
 			}
@@ -369,7 +369,7 @@ characters = {
 		}
 	}
 
-	AUH_ignaz_trollmann = {
+        AUH_ignaz_trollmann = {
 		instance = {
 			allowed = {
 			}
@@ -480,7 +480,7 @@ characters = {
 		}
 	}
 
-	AUH_arz_straussenburg = {
+		AUH_arz_straussenburg = {
 		name = AUH_arz_straussenburg
 		portraits = {
 			army = {
@@ -507,7 +507,7 @@ characters = {
 		}
 	}
 
-	AUH_viktor_krasnik = {
+		AUH_viktor_krasnik = {
 		name = AUH_viktor_krasnik
 		portraits = {
 			army = {
@@ -561,7 +561,7 @@ characters = {
 		}
 	}
 
-	AUH_friedrich_habsburg = {
+		AUH_friedrich_habsburg = {
 		name = AUH_friedrich_habsburg
 		portraits = {
 			army = {
@@ -588,26 +588,26 @@ characters = {
 			}
 		}
 
-		advisor = {
-			slot = army_chief
-			traits = { friedrich_habsburg }
-			cost = 150
-			can_be_fired = yes
-			idea_token = AUH_friedrich_habsburg
+	 advisor = {
+        slot = army_chief
+        traits = { friedrich_habsburg }
+        cost = 150
+        can_be_fired = yes
+        idea_token = AUH_friedrich_habsburg
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
+        available = {
+            always = yes
+        }
+    }
 	}
 
-	AUH_claudius_czibulka = {
+		AUH_claudius_czibulka = {
 		name = AUH_claudius_czibulka
 		portraits = {
 			army = {
@@ -634,7 +634,7 @@ characters = {
 		}
 	}
 
-	AUH_georgy_reny = {
+		AUH_georgy_reny = {
 		name = AUH_georgy_reny
 		portraits = {
 			army = {
@@ -661,7 +661,7 @@ characters = {
 		}
 	}
 
-	AUH_teraszszky = {
+		AUH_teraszszky = {
 		name = AUH_teraszszky
 		portraits = {
 			army = {
@@ -688,7 +688,7 @@ characters = {
 		}
 	}
 
-	AUH_pflanzer_baltin = {
+		AUH_pflanzer_baltin = {
 		name = AUH_pflanzer_baltin
 		portraits = {
 			army = {
@@ -715,7 +715,7 @@ characters = {
 		}
 	}
 
-	AUH_karl_huyn = {
+		AUH_karl_huyn = {
 		name = AUH_karl_huyn
 		portraits = {
 			army = {
@@ -743,7 +743,7 @@ characters = {
 	}
 
 	
-	AUH_kovesz_koveshaza = {
+		AUH_kovesz_koveshaza = {
 		name = AUH_kovesz_koveshaza
 		portraits = {
 			army = {
@@ -770,7 +770,7 @@ characters = {
 		}
 	}
 
-	AUH_rudolf_brudermann = {
+		AUH_rudolf_brudermann = {
 		name = AUH_rudolf_brudermann
 		portraits = {
 			army = {
@@ -797,7 +797,7 @@ characters = {
 		}
 	}
 
-	auh_adolf_von_brudermann = {
+	    auh_adolf_von_brudermann = {
 		instance = {
 			allowed = {
 			}
@@ -845,7 +845,7 @@ characters = {
 		}
 	}
 
-	AUH_anton_haus = {
+		AUH_anton_haus = {
 		name = AUH_anton_haus
 		portraits = {
 			army = {
@@ -882,7 +882,7 @@ characters = {
 		}
 	}
 
-	auh_conrad_hotzendorff = {
+        auh_conrad_hotzendorff = {
 		instance = {
 			allowed = {
 			}
@@ -931,66 +931,66 @@ characters = {
 	}
 
     auh_burstyn = {
-		name = "Gunther Adolf Burstyn"
-		portraits = {
+    name = "Gunther Adolf Burstyn"
+            portraits = {
 			civilian = {
 				large = "GFX_advisor_gunther_burstyn"
-				small = "GFX_advisor_gunther_burstyn"
-			}
+                small = "GFX_advisor_gunther_burstyn"
+		    }
 		}
-		advisor = {
-			slot = high_command
-			traits = { panzer_expertise }
-			cost = 200
-			can_be_fired = yes
-			idea_token = auh_leopold_von_hauer
+    advisor = {
+        slot = high_command
+        traits = { panzer_expertise }
+        cost = 200
+        can_be_fired = yes
+        idea_token = auh_leopold_von_hauer
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
     auh_emil_uzelac = {
-		name = "Emil Uzelac"
-		portraits = {
+    name = "Emil Uzelac"
+            portraits = {
 			civilian = {
 				large = "GFX_advisor_samuel_hazai"
-				small = "GFX_advisor_emil_uzelac"
-			}
+                small = "GFX_advisor_emil_uzelac"
+		    }
 		}
-		advisor = {
-			slot = air_chief
-			traits = { emil_uzelac }
-			cost = 150
-			can_be_fired = yes
-			idea_token = auh_emil_uzelac
+    advisor = {
+        slot = air_chief
+        traits = { emil_uzelac }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_emil_uzelac
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
     auh_arthur_giesling = {
-		name = "Arthur Giesl von Gieslingen"
-		portraits = {
+    name = "Arthur Giesl von Gieslingen"
+            portraits = {
 			civilian = {
 				large = "GFX_advisor_auh_arthur_giesling"
-				small = "GFX_advisor_auh_arthur_giesling"
-			}
+                small = "GFX_advisor_auh_arthur_giesling"
+		    }
 		}
     advisor = {
         slot = high_command
@@ -1012,454 +1012,454 @@ characters = {
 }
 
     auh_leopold_von_hauer = {
-		name = "Leopold von Hauer"
-		portraits = {
+    name = "Leopold von Hauer"
+            portraits = {
 			civilian = {
                 small = "GFX_advisor_auh_leopold_hauer"
 		    }
 		}
-		advisor = {
-			slot = army_chief
-			traits = { leopold_von_hauer }
-			cost = 150
-			can_be_fired = yes
-			idea_token = auh_leopold_von_hauer
+    advisor = {
+        slot = army_chief
+        traits = { leopold_von_hauer }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_leopold_von_hauer
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
     auh_morritz_auffenberg = {
-		name = "Moritz von Auffenberg"
-		portraits = {
+    name = "Moritz von Auffenberg"
+            portraits = {
 			civilian = {
                 small = "GFX_advisor_auh_morritz_auffenberg"
 		    }
 		}
-		advisor = {
-			slot = theorist
-			traits = { morritz_auffenberg }
-			cost = 150
-			can_be_fired = yes
-			idea_token = auh_morritz_auffenberg
+    advisor = {
+        slot = theorist
+        traits = { morritz_auffenberg }
+        cost = 150
+        can_be_fired = yes
+        idea_token = auh_morritz_auffenberg
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
+        available = {
+            always = yes
+        }
+    }
 }
 
     AUH_stefan_burian = {
-		name = "Gráf István Burián von Rajecz"
-		portraits = {
+    name = "Gráf István Burián von Rajecz"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_stefan_burian"
-			}
+                small = "GFX_advisor_AUH_stefan_burian"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_finanz_minister }
-			can_be_fired = yes
-			idea_token = AUH_stefan_burian
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_finanz_minister }
+        can_be_fired = yes
+        idea_token = AUH_stefan_burian
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_leon_blinski = {
-		name = "Ritter Leon von Biliński"
-				portraits = {
-				civilian = {
-					small = "GFX_advisor_AUH_leon_blinski"
-				}
-			}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_finanz_ministerii }
-			can_be_fired = yes
-			idea_token = AUH_leon_blinski
-
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
-
-			available = {
-				always = yes
-			}
-		}
-	}
-
-	AUH_friedrich_von_georgi = {
-		name = "Friedrich Robert von Georgi"
-					portraits = {
-				civilian = {
-					small = "GFX_advisor_AUH_friedrich_von_georgi"
-				}
-			}
-		advisor = {
-			slot = political_advisor
-		   cost = 150
-			traits = { kuk_regional_defence_minister }
-			can_be_fired = yes
-			idea_token = AUH_friedrich_von_georgi
-
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
-
-			available = {
-				always = yes
-			}
-		}
-	}
-
-	AUH_alois_lexa_von_aehrenthal = {
-		name = "Alois Lexa von Aehrenthal"
-		portraits = {
+AUH_leon_blinski = {
+    name = "Ritter Leon von Biliński"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_alois_lexa_von_aehrenthal"
-			}
+                small = "GFX_advisor_AUH_leon_blinski"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_forgein_affairs }
-			can_be_fired = yes
-			idea_token = AUH_alois_lexa_von_aehrenthal
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_finanz_ministerii }
+        can_be_fired = yes
+        idea_token = AUH_leon_blinski
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
+        available = {
+            always = yes
+        }
+    }
+}
+
+AUH_friedrich_von_georgi = {
+    name = "Friedrich Robert von Georgi"
+                portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_friedrich_von_georgi"
+		    }
 		}
-	}
+    advisor = {
+        slot = political_advisor
+       cost = 150
+        traits = { kuk_regional_defence_minister }
+        can_be_fired = yes
+        idea_token = AUH_friedrich_von_georgi
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
+
+AUH_alois_lexa_von_aehrenthal = {
+    name = "Alois Lexa von Aehrenthal"
+            portraits = {
+			civilian = {
+                small = "GFX_advisor_AUH_alois_lexa_von_aehrenthal"
+		    }
+		}
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_forgein_affairs }
+        can_be_fired = yes
+        idea_token = AUH_alois_lexa_von_aehrenthal
+
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
+
+        available = {
+            always = yes
+        }
+    }
+}
 
     AUH_leopold_berchtold = {
-		name = "Leopold Berchtold"
-		portraits = {
+    name = "Leopold Berchtold"
+                    portraits = {
 			civilian = {
                 small = "GFX_advisor_AUH_leopold_berchtold"
 		    }
 		}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_forgein_affairsii }
-			can_be_fired = yes
-			idea_token = AUH_leopold_berchtold
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_forgein_affairsii }
+        can_be_fired = yes
+        idea_token = AUH_leopold_berchtold
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_otto_wagner = {
-		name = "Otto Wagner"
-		portraits = {
+AUH_otto_wagner = {
+    name = "Otto Wagner"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_otto_wagner"
-			}
+                small = "GFX_advisor_AUH_otto_wagner"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_rebuilder }
-			can_be_fired = yes
-			idea_token = AUH_otto_wagner
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_rebuilder }
+        can_be_fired = yes
+        idea_token = AUH_otto_wagner
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_karl_wittgenstein = {
-		name = "Karl Wittgenstein"
-		portraits = {
+AUH_karl_wittgenstein = {
+    name = "Karl Wittgenstein"
+            portraits = {
 			civilian = {
-				small = "GFX_AUS_wittgenstein_frame"
-			}
+                small = "GFX_AUS_wittgenstein_frame"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_resources_more }
-			can_be_fired = yes
-			idea_token = AUH_karl_wittgenstein
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_resources_more }
+        can_be_fired = yes
+        idea_token = AUH_karl_wittgenstein
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_vaclav_klement = {
-		name = "Václav Klement"
-		portraits = {
+AUH_vaclav_klement = {
+    name = "Václav Klement"
+                portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_vaclav_klement"
-			}
+                small = "GFX_advisor_AUH_vaclav_klement"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			cost = 150
-			traits = { kuk_engineer_of_future }
-			can_be_fired = yes
-			idea_token = AUH_vaclav_klement
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        traits = { kuk_engineer_of_future }
+        can_be_fired = yes
+        idea_token = AUH_vaclav_klement
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_adolf_loos = {
-		name = "Adolf Loos"
-		portraits = {
+AUH_adolf_loos = {
+    name = "Adolf Loos"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_adolf_loos"
-			}
+                small = "GFX_advisor_AUH_adolf_loos"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			traits = { kuk_modern_achitect }
-			can_be_fired = yes
-			idea_token = AUH_adolf_loos
+    advisor = {
+        slot = political_advisor
+        traits = { kuk_modern_achitect }
+        can_be_fired = yes
+        idea_token = AUH_adolf_loos
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_viktor_adler = {
-		name = "Viktor Adler"
-		portraits = {
+AUH_viktor_adler = {
+    name = "Viktor Adler"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_viktor_Adler"
-			}
+                small = "GFX_advisor_AUH_viktor_Adler"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			traits = { kuk_prominent_austromarxist }
-			can_be_fired = yes
-			idea_token = AUH_viktor_adler
+    advisor = {
+        slot = political_advisor
+        traits = { kuk_prominent_austromarxist }
+        can_be_fired = yes
+        idea_token = AUH_viktor_adler
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_eugen_von_bohm_bawerk = {
-		name = "Eugen von Böhm-Bawerk"
-		portraits = {
+AUH_eugen_von_bohm_bawerk = {
+    name = "Eugen von Böhm-Bawerk"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_eduard_bohm"
-			}
+                small = "GFX_advisor_AUH_eduard_bohm"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			traits = { kuk_austrian_school_of_economics }
-			can_be_fired = yes
-			idea_token = AUH_eugen_von_bohm_bawerk
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+    advisor = {
+        slot = political_advisor
+        traits = { kuk_austrian_school_of_economics }
+        can_be_fired = yes
+        idea_token = AUH_eugen_von_bohm_bawerk
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_otto_bauer = {
-		name = "Otto Bauer"
-		portraits = {
+AUH_otto_bauer = {
+    name = "Otto Bauer"
+            portraits = {
 			civilian = {
-				small = "GFX_advisor_AUH_otto_bauer"
-			}
+                small = "GFX_advisor_AUH_otto_bauer"
+		    }
 		}
-		advisor = {
-			slot = political_advisor
-			traits = { kuk_austromarxist_economist }
-			can_be_fired = yes
-			idea_token = AUH_viktor_adler
+    advisor = {
+        slot = political_advisor
+        traits = { kuk_austromarxist_economist }
+        can_be_fired = yes
+        idea_token = AUH_viktor_adler
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+        allowed = {
+            OR = {
+                always = yes
+            }
+        }
 
-			available = {
-				always = yes
-			}
-		}
-	}
+        available = {
+            always = yes
+        }
+    }
+}
 
-	AUH_franzjosef = {
-		name = "Franz Josef I"
-		country_leader = {
-			desc = "AUH_franzjosef_desc"
-			traits = { kaiser_franz_josef }
-			expire = 1910.1.3
-			ideology = centrism
-		}
-			country_leader = {
-			desc = "AUH_franzjosef_desc"
-			traits = { kaiser_franz_josef }
-			expire = 1910.1.3
-			ideology = rexism
-		}
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AUS/AUH_franz_josef_kaiser.png"
-			}
-		}
-	}
+AUH_franzjosef = {
+    name = "Franz Josef I"
+    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = { kaiser_franz_josef }
+        expire = 1910.1.3
+        ideology = centrism
+    }
+	    country_leader = {
+        desc = "AUH_franzjosef_desc"
+		traits = { kaiser_franz_josef }
+        expire = 1910.1.3
+        ideology = rexism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUS/AUH_franz_josef_kaiser.png"
+        }
+    }
+}
 
-	AUH_karli = {
-		name = "Karl I"
-		country_leader = {
-			desc = "AUH_Karl I_desc"
-			traits = { kaiser_no_bitches }
-			expire = "1930.1.1"
-			ideology = centrism
-		}
-			country_leader = {
-			desc = "AUH_Karl I_desc"
-			traits = { kaiser_no_bitches }
-			expire = "1930.1.1"
-			ideology = rexism
-		}
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
-			}
-		}
-	}
-	AUH_karlii = {
-		name = "Karl I"
-		country_leader = {
-			desc = "AUH_Karl I_desc"
-			traits = { kaiser_imperial }
-			expire = "1930.1.1"
-			ideology = centrism
-		}
-			country_leader = {
-			desc = "AUH_Karl I_desc"
-			traits = { kaiser_imperial }
-			expire = "1930.1.1"
-			ideology = rexism
-		}
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
-			}
-		}
-	}
+AUH_karli = {
+    name = "Karl I"
+    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_no_bitches }
+        expire = "1930.1.1"
+        ideology = centrism
+    }
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_no_bitches }
+        expire = "1930.1.1"
+        ideology = rexism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
+        }
+    }
+}
+AUH_karlii = {
+    name = "Karl I"
+    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_imperial }
+        expire = "1930.1.1"
+        ideology = centrism
+    }
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_imperial }
+        expire = "1930.1.1"
+        ideology = rexism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
+        }
+    }
+}
 
-	AUH_karlii_dual = {
-		name = "Karl I"
-			country_leader = {
-			desc = "AUH_Karl I_desc"
-			traits = { kaiser_dual }
-			expire = "1930.1.1"
-			ideology = liberalism
-		}
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
-			}
-		}
-	}
+AUH_karlii_dual = {
+    name = "Karl I"
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_dual }
+        expire = "1930.1.1"
+        ideology = liberalism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
+        }
+    }
+}
 
-	AUH_karlii_soc = {
-		name = "Karl I"
-			country_leader = {
-			desc = "AUH_Karl I_desc"
-			traits = { kaiser_socialist }
-			expire = "1930.1.1"
-			ideology = stalinism
-		}
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
-			}
-		}
-	}
+AUH_karlii_soc = {
+    name = "Karl I"
+	    country_leader = {
+        desc = "AUH_Karl I_desc"
+		traits = { kaiser_socialist }
+        expire = "1930.1.1"
+        ideology = stalinism
+    }
+    portraits = {
+        civilian = {
+            large = "gfx/leaders/AUS/AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria.png"
+        }
+    }
+}
 
 }

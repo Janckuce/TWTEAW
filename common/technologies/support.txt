@@ -1260,7 +1260,7 @@ technologies = {
 		}
 	}
 
-	wartime_train = {
+	basic_train = {
 		enable_equipments = {
 			train_equipment_2
 		}
@@ -1273,7 +1273,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = railway_gun
+			leads_to_tech = wartime_train
 			research_cost_coeff = 1
 		}
 		
@@ -1304,7 +1304,7 @@ technologies = {
 		}
 	}
 
-	railway_gun = {
+	wartime_train = {
 		enable_equipments = {
 			railway_gun_equipment_1
 		}

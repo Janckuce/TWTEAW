@@ -102,14 +102,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.38 #0.35
+				consumer_goods_expected_value = 0.35
 				production_speed_industrial_complex_factor = 0.2
 				production_speed_arms_factory_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
-				stability_weekly = 0.001
 			}
 
 			default = yes
@@ -127,7 +126,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.34 #0.30
+				consumer_goods_expected_value = 0.3
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.25
@@ -144,7 +143,7 @@ ideas = {
 					is_major = yes
 				}
 				modifier = {
-					has_war_support > 0.25 
+					has_war_support > 0.25
 					factor = 0 #don't even look at it if you could be taking partial mob
 				}
 				modifier = {
@@ -166,8 +165,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.30 #0.25
-				production_speed_arms_factory_factor = 0.15
+				consumer_goods_expected_value = 0.25
+				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = 0.1
 				fuel_gain_factor = -0.1
@@ -189,7 +188,6 @@ ideas = {
 
 
 			available = {
-				date > 1915.1.1
 				has_war_support > 0.5
 				OR = {
 					has_government = fascism
@@ -211,14 +209,12 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.22 #0.20
-				conscription = -0.005
-				production_speed_arms_factory_factor = 0.30
+				consumer_goods_expected_value = 0.2
+				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = 0.2
 				war_support_weekly = -0.001
 				stability_weekly = -0.001
-				production_cost_bunker_factor = -0.4
 			}
 
 			cancel_if_invalid = no
@@ -261,9 +257,8 @@ ideas = {
 
 
 			available = {
-				date > 1916.1.1
 				has_war = yes
-				has_war_support > 0.6
+				has_war_support > 0.8
 				any_enemy_country = {
 					ic_ratio = {
 						tag = ROOT
@@ -327,14 +322,13 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.14 #0.10
-				conscription = -0.015
-				production_speed_arms_factory_factor = 0.45
+				consumer_goods_expected_value = 0.10
+				conscription = -0.03
+				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 				war_support_weekly = -0.002
 				stability_weekly = -0.002
-				production_cost_bunker_factor = -0.7
 			}
 
 			cancel_if_invalid = no
@@ -529,15 +523,15 @@ ideas = {
 				}
 			}
 
-			cost = 50
+			cost = 150
 			removal_cost = -1
 
 			modifier = {
 				min_export = 0.8
-				industrial_capacity_factory = 0.08
-				industrial_capacity_dockyard = 0.08
-				production_speed_buildings_factor = 0.08
-				research_speed_factor = 0.08
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
 				cic_construction_boost_factor = 0.05
@@ -582,14 +576,14 @@ ideas = {
 
 		export_focus = {
 
-			cost = 50
+			cost = 150
 			removal_cost = -1
 
 			modifier = {
 				min_export = 0.5
-				industrial_capacity_factory = 0.06
-				industrial_capacity_dockyard = 0.06
-				production_speed_buildings_factor = 0.06
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
@@ -650,15 +644,15 @@ ideas = {
 				}
 			}
 
-			cost = 50
+			cost = 150
 			removal_cost = -1
 
 			modifier = {
 				min_export = 0.25
-				industrial_capacity_factory = 0.04
-				industrial_capacity_dockyard = 0.04
-				production_speed_buildings_factor = 0.04
-				research_speed_factor = 0.02
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.01
 				civilian_intel_to_others = 10.0
 				navy_intel_to_others = 5
 				lend_lease_tension = 0.20
@@ -714,7 +708,7 @@ ideas = {
 				desc = can_not_access_market_closed_economy
 			}
 
-			cost = 50
+			cost = 150
 			removal_cost = -1
 
 			modifier = {

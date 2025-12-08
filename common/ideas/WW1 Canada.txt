@@ -4,9 +4,8 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.3
 				mobilization_laws_cost_factor = 5
-				stability_factor = -0.05
 			}
-			picture = can_french_against
+			picture = SPR_disbanded_army
 		}
 
 		CAN_Strong_Volunteer_Base = {
@@ -30,17 +29,9 @@ ideas = {
 			picture = generic_build_infrastructure
 		}
 
-		CAN_First_Reform = {
-			modifier = {
-				political_advisor_cost_factor = -0.4
-			}
-			picture = can_defence_of_canada_regulations_democratic
-		}
-
 		CAN_Native_Consessions = {
 			modifier = {
-				global_building_slots_factor = -0.15
-				political_advisor_cost_factor = -0.4
+				global_building_slots_factor = -0.1 
 				conscription_factor = 0.05
 			}
 			picture = ARG_social_welfare_fund_ns
@@ -49,9 +40,6 @@ ideas = {
 		CAN_Native_Support = {
 			modifier = {
 				political_power_gain = 0.15
-				political_advisor_cost_factor = -0.4
-				global_building_slots_factor = -0.15
-				conscription_factor = 0.05
 			}
 			picture = air_support_focus
 		}
@@ -70,13 +58,9 @@ ideas = {
 		# 	}
 		# }
 		
-		CAN_New_Heritage1 = {
+		CAN_New_Heritage = {
 			modifier = {
 				weekly_manpower = 500
-				political_advisor_cost_factor = -0.4
-				political_power_gain = 0.15
-				global_building_slots_factor = -0.15
-				conscription_factor = 0.05
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -84,11 +68,6 @@ ideas = {
 			modifier = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
-				political_power_gain = 0.15
-				global_building_slots_factor = -0.15
-				conscription_factor = 0.05
-				research_speed_factor = 0.06
-				consumer_goods_factor = -0.1
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -97,12 +76,6 @@ ideas = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
 				war_support_weekly = 0.002
-				political_power_gain = 0.15
-				global_building_slots_factor = -0.15
-				conscription_factor = 0.05
-				research_speed_factor = 0.06
-				consumer_goods_factor = -0.1
-				war_stability_factor = 0.15
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -111,13 +84,7 @@ ideas = {
 				weekly_manpower = 500
 				political_advisor_cost_factor = -0.4
 				war_support_weekly = 0.002
-				command_power_gain_mult = 0.8
-				political_power_gain = 0.15
-				global_building_slots_factor = -0.15
-				conscription_factor = 0.05
-				research_speed_factor = 0.06
-				consumer_goods_factor = -0.1
-				war_stability_factor = 0.15
+				command_power_gain_mult = 0.5
 			}
 			picture = can_defence_of_canada_regulations_democratic
 		}
@@ -132,7 +99,7 @@ ideas = {
 			modifier = {
 				army_infantry_defence_factor = 0.15
 				army_infantry_attack_factor = 0.10
-				army_org_factor = 0.1
+				army_org_factor = 0.15
 			}
 			picture = HUN_secret_rearmament
 		}
@@ -140,7 +107,7 @@ ideas = {
 			modifier = {
 				army_infantry_defence_factor = 0.15
 				army_infantry_attack_factor = 0.10
-				army_org_factor = 0.1
+				army_org_factor = 0.15
 				equipment_capture = 0.1
 				no_supply_grace = 48
 			}
@@ -151,59 +118,56 @@ ideas = {
 			modifier = {
 				army_strength_factor = 0.1
 			}
-			picture = can_our_own_redcoat_idea
+			picture = NORDIC_army_monarchist
 		}
 		CAN_The_Redcoats_Of_Canada2 = {
 			modifier = {
 				army_strength_factor = 0.1
-				shore_bombardment_bonus = 0.60
+				shore_bombardment_bonus = 0.6
 			}
-			picture = can_our_own_redcoat_idea
+			picture = NORDIC_army_monarchist
 		}
 		CAN_The_Redcoats_Of_Canada3 = {
 			modifier = {
 				army_strength_factor = 0.1
-				shore_bombardment_bonus = 0.60
+				shore_bombardment_bonus = 0.6
 				special_forces_cap = 2
 			}
-			picture = can_our_own_redcoat_idea
+			picture = NORDIC_army_monarchist
 		}
 		CAN_British_Heritage1 = {
 			modifier = {
-				local_resources_factor = 0.35
+				local_resources_factor = 0.4
 				stability_weekly = 0.001
-				training_time_army_factor = -0.2
 			}
 			picture = ARG_construction_guilds
 		}
 		CAN_Like_The_Hardworking_Brits = {
 			modifier = {
-				local_resources_factor = 0.35
+				local_resources_factor = 0.4
 				stability_weekly = 0.001
-				production_factory_start_efficiency_factor = 0.15
-				training_time_army_factor = -0.2
+				industrial_capacity_factory = 0.1
 			}
 			picture = ARG_construction_guilds
 		}
 		CAN_All_For_Britain = {
 			modifier = {
-				local_resources_factor = 0.35
+				local_resources_factor = 0.4
 				stability_weekly = 0.001
+				industrial_capacity_factory = 0.1
 				production_factory_start_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.25
-				training_time_army_factor = -0.2
+				production_factory_efficiency_gain_factor = 0.2
 			}
 			picture = ARG_construction_guilds
 		}
 		CAN_Sacrifice_For_King_And_Country = {
 			modifier = {
-				local_resources_factor = 0.35
+				local_resources_factor = 0.4
 				stability_weekly = 0.001
-				production_factory_start_efficiency_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.25
 				industrial_capacity_factory = 0.1
-				consumer_goods_factor = -0.2
-				training_time_army_factor = -0.2
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = -0.25
 			}
 			picture = ARG_construction_guilds
 		}

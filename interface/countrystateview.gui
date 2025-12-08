@@ -66,23 +66,24 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "shared_slot_count"
-				position = { x = 194 y = 132 }
+				position = { x = 170 y = 132 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = "SLOTS"
-				maxWidth = 190
+				maxWidth = 220
 				maxHeight = 30
-				format = center
+				format = left
+				fixedsize = yes
 			}
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
-				position = { x = 153 y = 170 }
+				position = { x = 150 y = 170 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 48 height = 36 }
-				max_slots_horizontal = 6
-				max_slots_vertical = 6
+				slotsize = { width = 61 height = 50 }
+				max_slots_horizontal = 5
+				max_slots_vertical = 5
 			}
 
 			iconType ={
@@ -374,15 +375,6 @@ guiTypes = {
 				max_slots_vertical = 1
 			}
 			
-			gridBoxType = {
-				name = "strategic_locations_grid"
-				position = { x = -5 y = 30 }
-				size = { width = 0 height = 0 }
-				format = "LOWER_LEFT"
-				slotsize = { width = 33 height = 33 }
-				max_slots_vertical = 1
-			}
-			
 			containerWindowType = {
 				name = "custom_icon_container"
 				size = { width=100% height=100% }
@@ -436,11 +428,10 @@ guiTypes = {
 
 		buttonType = {
 			name = "scorched_earth_state_button"
-			position = { x = -32 y = 403 }
+			position = { x = -17 y = 413 }
 			quadTextureSprite ="GFX_scorched_earth_state"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
-			scale = 1.5
 		}
 	}
 	
@@ -538,7 +529,6 @@ guiTypes = {
 			name = "building_picture"
 			position = { x = 10 y = 0 }
 			quadTextureSprite = "GFX_buildings_strip"
-			scale = 0.833
 		}
 		
 		iconType = {
@@ -552,7 +542,6 @@ guiTypes = {
 			name = "remove"
 			position = { x = 40 y = 29 }
 			spriteType = "GFX_cancel_conversion_button"
-			scale = 0 
 		}
 		
 		iconType = {

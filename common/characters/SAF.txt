@@ -172,6 +172,34 @@ characters = {
 		}
 	}
 
+		SAF_john_xavier_merriman = {
+		name = "John Xavier Merriman"
+		portraits = {
+			civilian = {
+				large = "GFX_FRA_ferdinand_foch"
+			}
+			army = {
+				small = "GFX_FRA_ferdinand_foch_frame"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			idea_token = SAF_john_xavier_merriman
+			allowed = {
+				tag = SAF
+			}
+			traits = {
+			SAF_politican
+			
+			}
+			
+			cost = 150
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 		SAF_frederic_creswell = {
 		name = "Frederic Hugh Page Creswell"
 		portraits = {

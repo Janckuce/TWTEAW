@@ -13,6 +13,83 @@
 ######################################################################
 
 
+ ##  #   # ###  ## 
+#  #  # #   #  #   
+####   #    #   #  
+#  #  # #   #    # 
+#  # #   # ### ##  
+
+
+faction_goal_one_germany = {
+	name = one_germany_goal_name
+	description = one_germany_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = {
+		FROM = {
+			original_tag = GER
+		}
+	}
+	cancel = { 
+		FROM = {
+			NOT = { has_government = fascism }
+		}
+	}
+	completed = {
+		any_country_with_original_tag = {
+			original_tag_to_check = AUS
+			exists = no 
+		}
+		any_country_with_original_tag = {
+			original_tag_to_check = GER
+			controls_state = 4
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 50
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_faction_initiative = 1
+		add_stability = 0.05
+	}
+	ai_will_do = {
+		base = 10
+	}
+}
+
+
+#  #  ##  ##  
+#  # #   #  # 
+#  #  #  #### 
+#  #   # #  # 
+ ##  ##  #  # 
+
+
+faction_goal_building_up_guam = {
+	name = building_up_guam_goal_name
+	description = building_up_guam_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_CONSOLIDATION
+	visible = {
+		FROM = { tag = USA}
+	}
+	cancel = { 
+		FROM = { NOT = { controls_state = 638 } }
+	}
+	completed = {
+		638 = { naval_base > 2 }
+	}
+	complete_effect = {
+		add_faction_power_projection = 100 
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_faction_initiative = 1
+		add_war_support = 0.02
+	}
+	ai_will_do = {
+		base = 10
+	}
+}
+
+
 ### #  # ###      ##  #   #   ### ###  ## 
  #  #  # #       #  # #   #    #  #   #   
  #  #### ##      #### #   #    #  ##   #  
@@ -20,6 +97,141 @@
  #  #  # ###     #  # ### ### ### ### ## 
 
 
+### none!
+
+
+ ##  #  # ### #  #  ##  
+#  # #  #  #  ## # #  # 
+#    ####  #  # ## #### 
+#  # #  #  #  #  # #  # 
+ ##  #  # ### #  # #  # 
+
+
+faction_goal_guerilla_expansion = {
+	name = guerilla_expansion_goal_name
+	description = guerilla_expansion_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_POLITICAL_CHARACTER
+	allowed = {
+	}
+	visible = {
+		FROM = {
+			has_war = yes
+			is_literally_china = yes
+		}
+	}
+	completed = {
+		custom_trigger_tooltip = {
+			tooltip = GUERILLA_TOTAL_ABOVE_THRESHOLD
+			check_variable = { global.guerilla_counter > 4 }
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 100
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_faction_initiative = 1
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members 
+					limit = {
+						check_variable = { THIS.guerilla_counter > 2 }
+					}
+				}
+				name = GUERILLA_ABOVE_THRESHOLD
+			}
+			add_faction_influence_ratio = 0.2
+			add_war_support = 0.05
+		}
+	}
+	ai_will_do = {
+		base = 3 # Pretty much everyone should want to do this
+		modifier = {
+			add = 2 # PRC cares more
+			original_tag = PRC
+		}
+	}
+}
+
+faction_goal_north_subjugated = {
+	name = faction_goal_north_subjugated_name
+	description = faction_goal_north_subjugated_desc
+	category = short_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = {
+		FROM = {
+			original_tag = CHI
+			has_faction_template = faction_template_chinese_united_front 
+			NOT = {
+				has_country_flag = CHI_tour_the_south_flag
+				has_country_flag = CHI_tour_the_west_flag
+			}
+		}
+	}
+	available = {
+		FROM = { has_completed_focus = CHI_tour_the_north }
+	}
+	completed = {
+		NXM = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		SHX = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		GSM = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		HBC = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		XIC = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		SND = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+
+	}
+	complete_effect = {
+		add_faction_power_projection = 50
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members
+					limit = {
+						is_subject = yes
+					}
+				}
+				
+				name = ALL_FACTION_MEMBERS
+			}
+			custom_effect_tooltip = ALL_FACTION_MEMBERS
+			add_timed_idea = {
+				idea = idea_CHI_central_government_integration_pressure
+				days = 365
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
 
 faction_goal_unlock_research = {
 	name = faction_goal_unlock_research_name
@@ -46,7 +258,7 @@ faction_goal_unlock_research = {
 		
 		multiply_temp_variable = {
 			var = total_techs
-			value = 2
+			value = 1.20
 		}
 		scope:faction = {
 			set_variable = { unlock_military_techs_researched_target = total_techs }
@@ -122,7 +334,7 @@ faction_goal_unlock_military = {
 		
 		multiply_temp_variable = {
 			var = total_divs
-			value = 2
+			value = 1.20
 		}
 		scope:faction = {
 			set_variable = { unlock_target = total_divs }
@@ -173,6 +385,281 @@ faction_goal_unlock_military = {
 	}
 }
 
+faction_goal_west_subjugated = {
+	name = faction_goal_west_subjugated_name
+	description = faction_goal_west_subjugated_desc
+	category = short_term
+	group = FOCUS_FILTER_ANNEXATION
+	visible = {
+		FROM = {
+			original_tag = CHI
+			has_faction_template = faction_template_chinese_united_front 
+			NOT = {
+				has_country_flag = CHI_tour_the_south_flag
+				has_country_flag = CHI_tour_the_north_flag
+			}
+		}
+	}
+	available = {
+		FROM = { has_completed_focus = CHI_tour_the_west }
+	}
+	completed = {
+		XSM = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		KHM = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		SIK = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		SIC = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 50
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members
+					limit = {
+						is_subject = yes
+					}
+				}
+				
+				name = ALL_FACTION_MEMBERS
+			}
+			custom_effect_tooltip = ALL_FACTION_MEMBERS
+			add_timed_idea = {
+				idea = idea_CHI_central_government_integration_pressure
+				days = 365
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+faction_goal_south_subjugated = {
+	name = faction_goal_south_subjugated_name
+	description = faction_goal_south_subjugated_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = short_term
+	visible = {
+		FROM = {
+			original_tag = CHI
+			has_faction_template = faction_template_chinese_united_front 
+			NOT = {
+				has_country_flag = CHI_tour_the_north_flag
+				has_country_flag = CHI_tour_the_west_flag
+			}
+		}
+	}
+	available = {
+		FROM = { has_completed_focus = CHI_tour_the_south }
+	}
+	completed = {
+		GDC = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		GXC = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+		YUN = {
+			all_core_state = {
+				is_owned_by = ROOT
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 50
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members
+					limit = {
+						is_subject = yes
+					}
+				}
+				
+				name = ALL_FACTION_MEMBERS
+			}
+			custom_effect_tooltip = ALL_FACTION_MEMBERS
+			add_timed_idea = {
+				idea = idea_CHI_central_government_integration_pressure
+				days = 365
+			}
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+
+ ###  ##  ###   ##  #  # 
+   # #  # #  # #  # ## # 
+   # #### ###  #### # ## 
+#  # #  # #    #  # #  # 
+ ##  #  # #    #  # #  # 
+
+
+faction_goal_coastal_security = {
+	name = coastal_security_goal_name
+	description = coastal_security_goal_desc
+	category = short_term
+	group = FOCUS_FILTER_NAVY_XP
+	allowed = {
+	}
+	visible = {
+		FROM = {
+			original_tag = JAP
+		}
+	}
+	completed = {
+		has_naval_control = 90
+		has_naval_control = 79
+		has_naval_control = 77
+		has_naval_control = 76
+		has_naval_control = 75
+		has_naval_control = 73
+	}
+	complete_effect = {
+		add_faction_initiative = 1
+		add_faction_power_projection = 500
+		every_collection_element = {
+			input = {
+				input = game:scope
+				operators =  { 
+					faction_members 
+				}	
+				name = ALL_FACTION_MEMBERS
+			}
+			navy_experience = 50
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 4 # Mid game prio
+			date > 1940.1.1
+		}
+	}
+}
+
+
+ ##  ##  #   # ### ### ###     #  # #  # ###  ##  #  # 
+#   #  # #   #  #  #    #      #  # ## #  #  #  # ## # 
+ #  #  #  # #   #  ##   #      #  # # ##  #  #  # # ## 
+  # #  #  # #   #  #    #      #  # #  #  #  #  # #  # 
+##   ##    #   ### ###  #       ##  #  # ###  ##  #  # 
+
+
+#faction_goal_production_quotas = {
+#	name = production_quotas_goal_name
+#	description = production_quotas_goal_desc
+#	category = short_term
+#	allowed = {
+#		tag = SOV
+#	}
+#	completed = {
+#		
+#		custom_trigger_tooltip = {
+#			tooltip = "TODO Count faction Equipment - tanks - Infantry EQ - Planes"
+#			check_variable = { ROOT.num_equipment@infantry_equipment > 1000}
+#		}
+#		#count_in_collection = {
+#		#	collection = {
+#		#		input = game:scope
+#		#		operators = { faction_members }
+#		#		name = FACTION_NAME
+#		#	}
+#		#	equipment = { infantry_equipment }
+#		#	size > 50000
+#		#}
+#		
+#	}
+#	complete_effect = {
+#		add_faction_power_projection = 200
+#		custom_effect_tooltip = generic_skip_one_line_tt
+#		custom_effect_tooltip = INFLUENCE_ABOVE_30_PERCENT
+#		every_faction_member = {
+#			limit = { faction_influence_ratio > 0.3}
+#			add_political_power = 75
+#		}
+#	}
+#	ai_will_do = {
+#		base = 1
+#		modifier = {
+#			add = 1
+#			date < 1940.1.1
+#		}
+#	}
+#}
+
+faction_goal_stall_the_fascist_threat = {
+	name = stall_the_fascist_threat_goal_name
+	description = stall_the_fascist_threat_goal_desc
+	group = FOCUS_FILTER_INTERNAL_AFFAIRS
+	category = short_term
+	allowed = {
+	}
+	visible = {
+		date < 1938.6.1
+		FROM = {
+			original_tag = SOV
+		}
+	}
+	completed = {
+		OR = {
+			AND = {
+				date > 1939.1.1
+				NOT = { has_global_flag = scw_over }
+			}
+			AND = {
+				has_global_flag = scw_over
+				has_global_flag = republican_victory
+			}
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = THE_FACTION_LEADER
+		add_faction_initiative = 1
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = { army_experience = 50 }
+	}
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			SPR_scw_in_progress = yes
+		}
+		modifier = {
+			add = 9 # SOV should always prio this
+			SPR_scw_in_progress = yes
+			original_tag = SOV
+		}
+	}
+}
 
 
 ##########################################################
@@ -277,6 +764,7 @@ faction_goal_spy_master = {
 			limit = {
 				has_intelligence_agency = yes
 				has_done_agency_upgrade = upgrade_crypto_strength
+				has_tech = mechanical_computing
 				NOT = { has_done_agency_upgrade = upgrade_crypto_strength_2 }
 			}
 			add_faction_initiative = 1
@@ -288,6 +776,7 @@ faction_goal_spy_master = {
 				NOT = { agency_upgrade_number > 30 }
 				OR = {
 					has_done_agency_upgrade = upgrade_crypto_strength_2
+					NOT = { has_tech = mechanical_computing }
 				}
 			}
 			add_faction_initiative = 1
@@ -311,6 +800,36 @@ faction_goal_spy_master = {
 		}
 	}
 }
+
+
+#faction_goal_convoy_sufficiency = {
+#	name = convoy_sufficiency_goal_name
+#	description = convoy_sufficiency_goal_desc
+#	completed = {
+#		count_in_collection = {
+#			collection = {
+#				input = game:scope
+#				operators = { faction_members }
+#				name = FACTION_NAME
+#			}
+#			equipment = { convoy }
+#			size > 1000
+#		}
+#	}
+#	complete_effect = {
+#		add_faction_power_projection = 200
+#		custom_effect_tooltip = generic_skip_one_line_tt
+#		every_faction_member = {
+#			tooltip = AT_LEAST_50_MILS
+#			visible_when_empty = yes 
+#			limit = {
+#				num_of_military_factories > 49
+#			}
+#			add_faction_initiative = 1
+#		}
+#		
+#	}
+#}
 
 faction_goal_ensure_military_r_d = {
 	name = ensure_military_r_d_goal_name
@@ -4584,7 +5103,7 @@ faction_goal_fortify_iwo_jima = {
 			anti_air_building > 0
 			any_province_building_level = {
 				province = {
-					id = 10265
+					id = 13025
 				}
 				building = coastal_bunker
 				level > 1

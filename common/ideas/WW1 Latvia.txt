@@ -182,7 +182,7 @@ ideas = {
 				coordination_bonus = 0.025
 				army_artillery_attack_factor = 0.025
 				army_artillery_defence_factor = 0.05
-				#forest_attack = 0.1 # this modifier doesn't work
+				forest_attack = 0.1
 			}
 				equipment_bonus = {
 				infantry_equipment = {
@@ -234,8 +234,8 @@ ideas = {
 				org_loss_when_moving = -0.085
 				army_org_factor = 0.05
 				coordination_bonus = 0.025
-				modifier_army_sub_unit_armored_car_attack_factor = 0.025
-				modifier_army_sub_unit_armored_car_defence_factor = 0.05
+				army_armored_car_attack_factor = 0.025
+				army_armored_car_defence_factor = 0.05
 			}
 			equipment_bonus = {
 				armored_car_equipment = {
@@ -259,8 +259,8 @@ ideas = {
 				org_loss_when_moving = -0.085
 				army_org_factor = 0.05
 				coordination_bonus = 0.05
-				modifier_army_sub_unit_armored_car_attack_factor = 0.025
-				modifier_army_sub_unit_armored_car_defence_factor = 0.05
+				army_armored_car_attack_factor = 0.025
+				army_armored_car_defence_factor = 0.05
 				motorized_attack_factor = 0.05
 				motorized_defence_factor = 0.075
 			}
@@ -285,8 +285,8 @@ ideas = {
 				org_loss_when_moving = -0.085
 				army_org_factor = 0.05
 				coordination_bonus = 0.05
-				modifier_army_sub_unit_armored_car_attack_factor = 0.025
-				modifier_army_sub_unit_armored_car_defence_factor = 0.05
+				army_armored_car_attack_factor = 0.025
+				army_armored_car_defence_factor = 0.05
 				motorized_attack_factor = 0.075
 				motorized_defence_factor = 0.1
 			}

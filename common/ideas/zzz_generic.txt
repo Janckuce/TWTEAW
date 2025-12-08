@@ -1,22 +1,6 @@
 ideas = {
 
 	hidden_ideas = {
-
-		starting_production_efficiency = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				production_factory_start_efficiency_factor = 0.5
-			}
-		}
 		
 		league_of_nations_member_idea = { 
 			allowed = {
@@ -931,8 +915,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				# army_org_factor = 0.02
-				# planning_speed = 0.10
+				army_org_factor = 0.02
+				planning_speed = 0.10
 			}
 		}
 		draft_dodging = {
@@ -1605,7 +1589,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = FIN tag = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = POL tag = LAT tag = GCG tag = RAJ } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = FIN tag = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = POL tag = LAT tag = GCG } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
@@ -1662,7 +1646,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN TAG = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = RUS tag = POL tag = LAT tag = GCG tag = RAJ  } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN TAG = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = RUS tag = POL tag = LAT tag = GCG  } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}

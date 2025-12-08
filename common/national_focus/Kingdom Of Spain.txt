@@ -28,7 +28,6 @@ focus_tree = {
 		cost = 5
 		x = 4
 		y = 0
-
 		completion_reward = {
 			add_stability = -0.05
 			remove_ideas = SPR_Liberal_Government
@@ -45,7 +44,6 @@ focus_tree = {
 		prerequisite = {
 			focus = SPR_Alternate_The_Government
 		}
-
 		completion_reward = {
 			64 = {
 				add_extra_state_shared_building_slots = 2
@@ -335,7 +333,14 @@ focus_tree = {
 			focus = SPR_Glorious_Nation
 		}
 		completion_reward = {
-
+			FRA = {
+				every_core_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -417,9 +422,6 @@ focus_tree = {
 		relative_position_id = SPR_Alternate_The_Government
 		x = 6
 		y = 1
-		available = {
-			date > 1922.7.28
-		}
 		mutually_exclusive = {
 			focus = SPR_Spanish_Apostles
 			focus = SPR_Capitalist_Rule

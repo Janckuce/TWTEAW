@@ -27,8 +27,8 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = -200
-		default_morale = -1.2
+		max_organisation = 20
+		default_morale = 0.3
 		manpower = 300
 		training_time = 120
 
@@ -40,10 +40,7 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
-			entrenchment = 0.50
-			max_organisation = 32
-			default_morale = 0.32
-			max_strength = 12
+			entrenchment = 0.20
 			add = yes
 		}
 
@@ -126,7 +123,7 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = -15
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 300
 		training_time = 120
@@ -208,7 +205,7 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 1
-		max_organisation = -15
+		max_organisation = 30
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
@@ -292,7 +289,7 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = -15
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 300
 		training_time = 120
@@ -402,7 +399,7 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = -15
+		max_organisation = 20
 		default_morale = 0.3
 		manpower = 300
 		training_time = 120
