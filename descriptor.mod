@@ -1,9 +1,4 @@
 version="1.16.x"
-replace_path="common/factions/goals"
-replace_path="common/factions/rules"
-replace_path="common/factions/templates"
-replace_path="common/collections"
-
 replace_path="common/ai_strategy"
 replace_path="common/ai_strategy_plans"
 replace_path="common/ai_templates"
