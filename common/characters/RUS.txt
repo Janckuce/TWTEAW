@@ -516,31 +516,6 @@ characters={
 			}
 		}
 	}
-
-		RUS_ivan_shcheglovitov = {
-		name = "Ivan Shcheglovitov"
-		portraits = {
-			army = {
-				small = "GFX_rus_ivan_shcheglovitov_frame"
-			}
-		}
-		
-		advisor={
-			slot = political_advisor
-			idea_token = RUS_ivan_shcheglovitov
-			allowed = {
-				original_tag = RUS
-			}
-			traits = {
-			conservative_justice
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
 	RUS_aleksei_putilov = {
 		name = RUS_character_aleksei_putilov
 		portraits = {

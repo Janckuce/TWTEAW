@@ -45,18 +45,6 @@ focus_tree = {
 			focus = SAF_World_Trade
 		}
 		completion_reward = {
-			275 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 			681 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -86,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = SAF_Steel_Production
 		icon = GFX_focus_generic_steel
-		cost = 10
+		cost = 5
 		relative_position_id = SAF_Infrastructure_Construction
 		x = -1
 		y = 1
@@ -101,7 +89,7 @@ focus_tree = {
 			681 = {
 				add_resource = {
 					type = steel
-					amount = 18
+					amount = 12
 				}
 			}
 		}
@@ -109,7 +97,7 @@ focus_tree = {
 	focus = {
 		id = SAF_Tungsten_Production
 		icon = GFX_focus_generic_tungsten
-		cost = 10
+		cost = 5
 		relative_position_id = SAF_Infrastructure_Construction
 		x = 2
 		y = 2
@@ -121,7 +109,7 @@ focus_tree = {
 			681 = {
 				add_resource = {
 					type = tungsten
-					amount = 11
+					amount = 8
 				}
 			}
 		}
@@ -165,14 +153,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SAF_Small_Arms
-			275 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 			681 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -224,7 +204,7 @@ focus_tree = {
 	focus = {
 		id = SAF_Growth_Of_Nation
 		icon = GFX_focus_generic_population_growth
-		cost = 10
+		cost = 14.3
 		relative_position_id = SAF_Cancel_Expensive_Welfare
 		x = 1
 		y = 1
@@ -579,18 +559,18 @@ focus_tree = {
 				}
 				896 = {
 					add_core_of = SAF
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 					}
 				}
 				544 = {
 					add_core_of = SAF
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = arms_factory
-						level = 3
+						level = 2
 					}
 				}
 			}
@@ -602,14 +582,14 @@ focus_tree = {
 					}
 				}
 				719 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 					}
 					add_building_construction = {
 						type = arms_factory
-						level = 3
+						level = 2
 					}
 				}
 			}
@@ -648,17 +628,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			681 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_resource = {
-					type = tungsten
-					amount = 6
-				}
-			}
-			719 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex

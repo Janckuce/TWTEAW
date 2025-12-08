@@ -102,6 +102,7 @@ ENG_vauxhall_organization = {
 			tag = CAN
 			tag = AST
 			tag = SAF
+			tag = RAJ
 		}
 	}
 
@@ -458,7 +459,6 @@ ENG_rsaf_enfield_organization = {
 			tag = ENG 
 			tag = SAF
 			tag = CAN
-			tag = AST
 			tag = RAJ
 			AND = {
 				tag = GRE
@@ -537,8 +537,10 @@ ENG_vauxhall_automotive_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG
+			tag = RAJ
 			AND = {
 				tag = AST
+				tag = RAJ
 			}
 				AND = {
 				tag = PER

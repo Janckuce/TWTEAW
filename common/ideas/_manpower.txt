@@ -112,6 +112,7 @@ ideas = {
 				conscription = 0.05
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
+				war_support_weekly = -0.001
 			}
 			ai_will_do = {
 				factor = 400
@@ -178,6 +179,9 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
 				training_time_factor = 0.2
+				war_support_weekly = -0.001
+				stability_weekly = -0.001
+				army_strength_factor = -0.10
 			}
 			ai_will_do = {
 				factor = 600
@@ -251,6 +255,9 @@ ideas = {
 				production_speed_buildings_factor = -0.3
 				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
+				war_support_weekly = -0.002
+				stability_weekly = -0.002
+				army_strength_factor = -0.15
 			}
 			ai_will_do = {
 				factor = 800
@@ -337,6 +344,9 @@ ideas = {
 				industrial_capacity_dockyard = -0.4
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.5
+				war_support_weekly = -0.003
+				stability_weekly = -0.003
+				army_strength_factor = -0.20
 			}
 			ai_will_do = {
 				factor = 1000

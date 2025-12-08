@@ -25,6 +25,8 @@ GER_Research_Decisions = {
 		}
 		days_remove = 140
 
+		icon = GFX_decision_SWE_set_air_budget
+
 		complete_effect = {
 			add_tech_bonus = {
 				name = "Air Research"
@@ -50,6 +52,8 @@ GER_Research_Decisions = {
 			tag = GER
 		}
 		days_remove = 180
+
+		icon = GFX_decision_ger_military_buildup
 
 		complete_effect = {
 			add_tech_bonus = {
@@ -77,6 +81,8 @@ GER_Research_Decisions = {
 		}
 		days_remove = 180
 
+		icon = GFX_decision_SWE_set_navy_budget
+
 		complete_effect = {
 			add_tech_bonus = {
 				name = GER_ships_research_1
@@ -103,6 +109,8 @@ GER_Research_Decisions = {
 		}
 		days_remove = 180
 
+		icon = GFX_decision_generic_tank
+
 		complete_effect = {
 			add_tech_bonus = {
 				name = "Armor Research"
@@ -128,6 +136,8 @@ GER_Research_Decisions = {
 			tag = GER
 		}
 		days_remove = 220
+
+		icon = GFX_decision_generic_ignite_civil_war
 
 		complete_effect = {
 			add_tech_bonus = {
@@ -662,3 +672,24 @@ GER_Plunder_Decisions = {
 		}
 	}
 }
+
+GER_Annex_Subjects_Descision_Catagory = {
+
+	GER_Annex_GCG = {
+	  	visible = {
+			GCG = {
+			  owns_state = 546 # Tanganyika
+		  	}
+		  	GCG = {is_ai = yes}
+	  	}
+		available = {
+			GCG = {is_ai = yes}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			annex_country = { target = GCG}
+		}
+	}
+} 

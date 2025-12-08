@@ -86,6 +86,35 @@ leader_traits = {
 		political_power_factor = -0.05
 	}
 
+		can_our_politican = {
+		sprite = 13
+		random = no
+		stability_factor = 0.075
+		political_power_factor = 0.1
+		local_resources_factor = 0.15
+		economy_cost_factor = -0.2
+		political_advisor_cost_factor = -0.25
+		recruitable_population_factor = 0.2
+	}
+
+		can_banker_of_canada = {
+		sprite = 13
+		random = no
+		industrial_capacity_dockyard = 0.1
+		production_speed_industrial_complex_factor = 0.08
+		production_speed_infrastructure_factor = 0.08
+		consumer_goods_factor = -0.12
+	}
+
+		can_scientist_for_the_army = {
+		sprite = 13
+		random = no
+		weekly_casualties_war_support = 0.003
+		experience_loss_factor = -0.1
+		army_defence_against_major_factor = 0.05
+		army_attack_against_major_factor = 0.05
+	}
+
 	collaborator_king = {
 		random = no
 		fascism_drift = 0.1
@@ -1342,6 +1371,65 @@ leader_traits = {
 		research_speed_factor = -0.1
 	}
 
+		raj_guy_who_defend = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.075
+		war_support_factor = 0.15
+		stability_weekly = -0.002
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.125
+	}
+
+		RAJ_supreme_leader = {
+		sprite = 13
+		random = no
+		army_morale_factor = 0.025
+		army_attack_factor = 0.035
+		army_defence_factor = 0.065
+		army_org_factor = -0.025
+		army_org_regain = 0.05
+		experience_loss_factor = 0.1
+		max_dig_in = -5
+		experience_gain_army = @chief_experience_gain_low
+		recruitable_population_factor = -0.2
+	}
+
+		raj_woman_feminist = {
+		sprite = 13
+		random = no
+		research_speed_factor = 0.065
+		war_support_factor = -0.15
+		stability_factor = 0.1
+		autonomy_gain = 0.4
+		political_advisor_cost_factor = -0.15
+	}
+
+		raj_muslim_of_india = {
+		sprite = 13
+		random = no
+		army_defence_factor = 0.05
+		army_attack_factor = 0.025
+		war_support_factor = 0.1
+		stability_factor = -0.075
+		recruitable_population_factor = 0.1
+		weekly_manpower = 1000
+
+	}
+
+		raj_he_thinks_of_us = {
+		sprite = 13
+		random = no
+		mobilization_laws_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		army_advisor_cost_factor = -0.15
+		military_industrial_organization_funds_gain = 0.15
+		military_industrial_organization_research_bonus = 0.15
+		materiel_manufacturer_cost_factor = -0.35
+
+	}
+
 	our_right_to_survive = {
 		random = no
 		war_support_factor = 0.1
@@ -2148,13 +2236,13 @@ leader_traits = {
 	industry_reformer = {
 		random = no
 		sprite = 10
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.05
-		consumer_goods_factor = -0.10
-		industrial_capacity_factory = 0.1
-		production_factory_max_efficiency_factor = 0.065
-		line_change_production_efficiency_factor = 0.065
-		production_factory_efficiency_gain_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_infrastructure_factor = 0.075
+		consumer_goods_factor = -0.075
+		industrial_capacity_factory = 0.45
+		production_factory_max_efficiency_factor = 0.045
+		line_change_production_efficiency_factor = 0.045
+		production_factory_efficiency_gain_factor = 0.025
 	}
 
 	womens_rights_activist = {
@@ -3317,20 +3405,20 @@ leader_traits = {
 		SAF_politican = { 
 		random = no
 		sprite = 13 
-		democratic_drift = 0.25
-		surrender_limit = 0.25
-		political_power_gain = 0.35
-		political_advisor_cost_factor = -0.25
+		democratic_drift = 0.2
+		surrender_limit = 0.2
+		political_power_gain = 0.2
+		political_advisor_cost_factor = -0.2
 
 	}
 
 		SAF_smuts_army = { 
 		random = no
 		sprite = 7
-		army_attack_factor = 0.125
-		army_defence_factor = 0.025
+		army_attack_factor = 0.1
+		army_defence_factor = 0.05
 		experience_gain_army = @chief_experience_gain_medium
-		production_speed_arms_factory_factor = 0.075
+		production_speed_arms_factory_factor = 0.065
 	}
 
 		SAF_man_with_honors = { 
@@ -3350,11 +3438,11 @@ leader_traits = {
 		SAF_working_man = { 
 		random = no
 		sprite = 13 
-		production_lack_of_resource_penalty_factor = -0.2
-		production_speed_industrial_complex_factor = 0.1
-		industrial_capacity_factory = 0.05
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+		production_speed_industrial_complex_factor = 0.075
+		industrial_capacity_factory = 0.025
+		production_speed_infrastructure_factor = 0.075
+		production_speed_rail_way_factor = 0.05
 	}
 
 		SAF_scientist_of_blacks = { 
@@ -4617,10 +4705,10 @@ leader_traits = {
 	}
 		AST_leadership_of_aef = {
 		random = no
-		naval_doctrine_cost_factor = -0.1
+		naval_doctrine_cost_factor = -0.05
 		experience_gain_navy_factor = 0.075
 		experience_gain_army_factor = 0.075
-		land_doctrine_cost_factor = -0.1
+		land_doctrine_cost_factor = -0.05
 	}
 
 	ICE_transportation_enthusiast = {
@@ -7966,6 +8054,32 @@ leader_traits = {
 		cavalry_defence_factor = 0.15
 	}
 
+		RAJ_camels_horses_desert = {
+		random = no
+		sprite = 7
+		cavalry_attack_factor = 0.075
+		cavalry_defence_factor = 0.1
+		recruitable_population_factor = -0.1
+		supply_consumption_factor = -0.075
+		supply_factor = -0.05
+		army_infantry_attack_factor = -0.05
+		army_infantry_defence_factor = -0.025
+		army_speed_factor = 0.05
+
+	}
+
+		RAJ_infantry_brit = {
+		random = no
+		sprite = 7
+		cavalry_attack_factor = -0.05
+		cavalry_defence_factor = -0.025
+		recruitable_population_factor = -0.1
+		army_infantry_attack_factor = 0.075
+		army_infantry_defence_factor = 0.1
+		experience_loss_factor = 0.2
+		army_speed_factor = 0.1
+	}
+
 	cossack_ataman = {
 		random = no
 		sprite = 13
@@ -10850,7 +10964,7 @@ leader_traits = {
 		industrial_capacity_dockyard = 0.025
 		production_speed_dockyard_factor = 0.025
 		production_speed_infrastructure_factor = 0.075
-		consumer_goods_factor = -0.125
+		consumer_goods_factor = -0.075
 
 	}
 
@@ -10871,9 +10985,9 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.025
 		production_speed_arms_factory_factor = 0.025
-		production_speed_industrial_complex_factor = 0.1
+		production_speed_industrial_complex_factor = 0.065
 		industrial_capacity_dockyard = 0.05
-		consumer_goods_factor = -0.075
+		consumer_goods_factor = -0.05
 	}
 
 		ast_henry_bournes_higgins_trait = { 
@@ -12483,10 +12597,12 @@ leader_traits = {
 		ast_henry_george_trait = {
 		random = no
 		sprite = 7
-		army_infantry_attack_factor = 0.05
-		army_infantry_defence_factor = 0.075
-		army_breakthrough_against_minor_factor = 0.05
-		army_breakthrough_against_major_factor = 0.05
+		army_infantry_attack_factor = 0.025
+		army_infantry_defence_factor = 0.05
+		special_forces_attack_factor = 0.075
+		special_forces_defence_factor = 0.1
+		army_breakthrough_against_minor_factor = 0.065
+		army_breakthrough_against_major_factor = 0.035
 	}
 		ast_william_bridges = {
 		random = no
@@ -12495,9 +12611,9 @@ leader_traits = {
 		ast_john_gellibrand_trait = {
 		random = no
 		sprite = 7
-		naval_invasion_prep_speed = 0.15
-		amphibious_invasion = 0.075
-		experience_loss_factor = -0.075
+		naval_invasion_prep_speed = 0.075
+		amphibious_invasion = 0.045
+		experience_loss_factor = -0.045
 	}
 		ast_throsby_bridges_trait = {
 		random = no
@@ -13145,6 +13261,24 @@ leader_traits = {
 			modifier = {
 				factor = 0
 				command_power < @tier3_cp_cost
+			}
+		}
+	}
+	
+	army_chief_luigi_cadorna = { # Just Luigi, please be patient, he has autism
+		sprite = 7 # 7
+		army_attack_factor = 0.05 # 5% attack because he's not that good
+		experience_gain_army = @chief_experience_gain_high # Lots of XP gain because he is good at finding out what not to do
+		experience_loss_factor = 0.3 # He is also very good at sticking to doing things that don't work
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+
+		ai_will_do = {
+			factor = @army_chief_factor_2
+			modifier = {
+				factor = 0
+				command_power < @tier2_cp_cost
 			}
 		}
 	}
@@ -14057,6 +14191,23 @@ leader_traits = {
 		}
 	}
 
+
+	air_chief_giulio_douhet = {
+		sprite = 2
+		air_strategic_bomber_bombing_factor = 0.1
+		experience_gain_air = @chief_experience_gain_medium
+
+		command_cap_increase = @tier2_cp_cap_increase
+		command_power = @tier2_cp_cost
+
+		ai_will_do = {
+			factor = @army_command_factor_2
+			modifier = {
+				factor = 0
+				command_power < @tier2_cp_cost
+			}
+		}
+	}
 
 	air_air_combat_training_1 = {  # Chance of ace generating is increased by 5%
 		sprite = 1
