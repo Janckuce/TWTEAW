@@ -1,0 +1,31 @@
+SER_Chetnik_Recruitment = {
+	icon = GFX_decision_category_generic
+
+	priority = 10
+
+	visible_when_empty = no
+
+	visible = {
+		has_completed_focus = SER_Chetnik_Volunteers
+	}
+
+	allowed = {
+		tag = SER
+	}
+}
+
+SER_Iron_Army = {
+	icon = GFX_decision_category_generic
+
+	priority = 10
+
+	visible_when_empty = no
+
+	visible = {
+		has_completed_focus = SER_Iron_Regiments
+	}
+
+	allowed = {
+		tag = SER
+	}
+}

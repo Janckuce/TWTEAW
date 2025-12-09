@@ -1,0 +1,308 @@
+SER_Chetnik_Recruitment = {
+	SER_Belgrade_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			107 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Nis_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			108 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Pirot_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			803 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_South_Serbia_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			817 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Kosovo_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			802 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Skopje_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			106 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Debar_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			909 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Stip_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			924 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	SER_Strumica_Recruitment = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			819 = {
+				is_controlled_by = SER
+			}
+		}
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+}
+
+SER_Iron_Army = {
+	SER_Militia1 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1911.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia2 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1912.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia3 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1913.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia4 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1914.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia5 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1915.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia6 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1916.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia7 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1917.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	SER_Militia8 = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			has_capitulated = no
+			date > 1918.1.1
+		}
+		complete_effect = {
+			107 = {
+				create_unit = {
+					division = "name = \"Ćelićna Divizija\" division_template = \"Ćelićna Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+}
