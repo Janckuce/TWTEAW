@@ -1149,7 +1149,7 @@ faction_goal_industrial_domination = {
 				name = FACTION_NAME
 			}
 			buildings = {  industrial_complex arms_factory dockyard }
-			size > 1000
+			size > 599
 		}
 	}
 	complete_effect = {
@@ -1159,7 +1159,7 @@ faction_goal_industrial_domination = {
 			tooltip = AT_LEAST_500_FACTORIES
 			visible_when_empty = yes 
 			limit = {
-				num_of_controlled_factories > 500
+				num_of_controlled_factories > 199
 			}
 			add_faction_initiative = 1
 		}
@@ -1279,132 +1279,6 @@ faction_goal_defeat_of_fascism = {
 				popularity = -0.15
 			}
 			add_political_power = 100
-		}
-	}
-}
-
-# Defeat of Anti-fascists 
-faction_goal_defeat_of_anti_fascists = {
-	name = defeat_of_anti_fascists_goal_name
-	description = defeat_of_anti_fascists_goal_desc
-	category = long_term
-	group = FOCUS_FILTER_CONSOLIDATION
-	visible = {
-		collection_size = {
-			input = {
-				input = game:scope
-				operators = {
-					faction_members
-					limit = {
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-				}
-				name = FACTION
-			}
-			value < 1
-		}
-	}
-	available = {
-
-	}
-	completed = {
-		collection_size = {
-			input = {
-				input = collection:anti_fascist_controlled_states_my_continent
-				name = COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_COMMUNIST
-			}
-			value < 1
-		}
-		
-	}
-	complete_effect = {
-		add_faction_power_projection = 500
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = ALL_FACTION_MEMBERS
-		every_faction_member = {
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.2
-			}
-			add_political_power = 100
-		}
-	}
-	ai_will_do = {
-		base = 0
-		modifier = { 
-			add = 1 # If war with communists you probably hate them
-			any_enemy_country = {
-				has_government = communism
-			}
-		}
-	}
-}
-
-# Defeat of Anti-communists
-faction_goal_defeat_of_anti_communists = {
-	name = defeat_of_anti_communists_goal_name
-	description = defeat_of_anti_communists_goal_desc
-	group = FOCUS_FILTER_CONSOLIDATION
-	category = long_term
-	visible = {
-		collection_size = {
-			input = {
-				input = game:scope
-				operators = {
-					faction_members
-					limit = {
-						OR = {
-							has_government = fascism
-							has_government = democratic
-						}
-					}
-				}
-				name = FACTION
-			}
-			value < 1
-		}
-	}
-	available = {
-
-	}
-	completed = {
-		collection_size = {
-			input = {
-				input = collection:anti_communist_controlled_states_my_continent
-				name = COLLECTION_STATES_MY_CONTINENT_CONTROLLED_DEMOCRATIC_FASCIST
-			}
-			value < 1
-		}
-		
-	}
-	complete_effect = {
-		add_faction_power_projection = 500
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = ALL_FACTION_MEMBERS
-		every_faction_member = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.2
-			}
-			add_political_power = 100
-		}
-	}
-	ai_will_do = {
-		base = 0
-		modifier = { 
-			add = 1 # If war with communists you probably hate them
-			any_enemy_country = {
-				has_government = communism
-			}
 		}
 	}
 }
