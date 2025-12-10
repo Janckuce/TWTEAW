@@ -518,7 +518,7 @@ siege_artillery = {
     xp_type = army
 
     available = {
-        #is_special_project_completed = sp:sp_land_super_heavy_howitzer
+        has_variable = support_milestone_var
     }
 
     super_heavy_artillery = {
@@ -625,6 +625,10 @@ field_engineering = {
 
     xp_cost = 150
     xp_type = army
+
+    available = {
+        has_variable = support_milestone_var
+    }
 
     engineer = {
         river = {

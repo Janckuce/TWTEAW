@@ -60,6 +60,48 @@
 #     }
 # }
 
+great_war_infantry = {
+    track = infantry
+    name = SUBDOCTRINE_GREAT_WAR_INFANTRY
+    description = SUBDOCTRINE_GREAT_WAR_INFANTRY_DESC
+    icon = GFX_doctrine_great_war_infantry_medium
+
+    xp_cost = 50
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    # EFFECTS
+
+    training_time_army_factor = -0.4
+
+
+    rewards = {
+        traverse_digging = {
+            land_reinforce_rate = 0.03
+            category_all_infantry = {
+                defense = 0.10
+            }
+        }
+        sapping_operations = {
+            land_night_attack = 0.15
+            planning_speed = 0.3
+        }
+        centralized_artillery_control = {
+            army_artillery_attack_factor = 0.10
+        }
+        field_fortification_emphasis = {
+            dig_in_speed_factor = 1
+        }
+        redoubt_networks = {
+            production_speed_bunker_factor = 0.4
+        }
+
+    }
+}
+
 defensive_postures = {
     track = infantry
     name = SUBDOCTRINE_DEFENSIVE_POSTURES
@@ -70,7 +112,8 @@ defensive_postures = {
     xp_type = army
 
     available = {
-        always = yes
+        # always = yes
+        has_variable = infantry_milestone_var
     }
 
     #OTHER BASE REWARDS
@@ -114,20 +157,15 @@ large_unit_tactics = {
     xp_type = army
 
     available = {
-        always = yes
+        # always = yes
+        has_variable = infantry_milestone_var
     }
 
     # EFFECTS
 
-        category_all_infantry = {
-            max_organisation = 7
-        }
-        infantry = {
-            combat_width = -0.2
-        }
-        engineer = {
-            max_organisation = -25
-        }
+    infantry = {
+        combat_width = -0.2
+    }
 
    
     #OTHER BASE REWARDS
@@ -135,12 +173,15 @@ large_unit_tactics = {
     rewards = {
         wide_trench_networks = {
             category_all_infantry = {
-                supply_consumption = -0.01
+                max_organisation = 7
+            }
+            engineer = {
+                max_organisation = -25
             }
         }
         flexible_division_structures = {
-            category_line_artillery = {
-                max_organisation = 3
+            category_all_infantry = {
+                supply_consumption = -0.01
             }
         }
         unit_knowledge_sharing = {
@@ -156,6 +197,11 @@ large_unit_tactics = {
                 supply_consumption = -0.01
             }
         }
+        further_organization_initiative = {
+            category_all_infantry = {
+                max_organisation = 2
+            }
+        }
     }
 }
 
@@ -169,7 +215,8 @@ assault_infantry = {
     xp_type = army
 
     available = {
-        always = yes
+        # always = yes
+        has_variable = infantry_milestone_var
     }
 
     # EFFECTS
@@ -226,7 +273,8 @@ mounted_infantry = {
     }
     
     available = {
-        always = yes
+        # always = yes
+        has_variable = infantry_milestone_var
     }
     
     visible = {
@@ -280,7 +328,7 @@ commandos = {
     xp_type = army
 
     available = {
-       
+        has_variable = infantry_milestone_var
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
@@ -327,7 +375,7 @@ irregulars = {
     xp_type = army
 
     available = {
-        
+        has_variable = infantry_milestone_var
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
@@ -413,54 +461,5 @@ irregulars = {
 #                 max_strength = 2.5
 #             }
 #         }
-#     }
-# }
-
-# great_war_infantry = {
-#     track = infantry
-#     name = SUBDOCTRINE_GREAT_WAR_INFANTRY
-#     description = SUBDOCTRINE_GREAT_WAR_INFANTRY_DESC
-#     icon = GFX_doctrine_great_war_infantry_medium
-
-#     xp_cost = 50
-#     xp_type = army
-
-#     available = {
-#         always = yes
-#     }
-
-#     # EFFECTS
-
-#     production_speed_bunker_factor = 2
-
-#     rewards = {
-#         traverse_digging = {
-#             engineer = {
-#                 battalion_mult = {
-#                     category = category_light_infantry
-#                     entrenchment = 2
-#                 }
-#             }
-            
-#         }
-#         sapping_operations = {
-#             category_light_infantry = {
-#                 defense = 0.1
-#             }
-#         }
-#         centralized_artillery_control = {
-#             artillery = {
-#                 soft_attack = 0.1
-#             }
-#         }
-#         field_fortification_emphasis = {
-#             category_light_infantry = {
-#                 defense = 0.1
-#             }
-#         }
-#         redoubt_networks = {
-#             dig_in_speed_factor = 1
-#         }
-
 #     }
 # }
