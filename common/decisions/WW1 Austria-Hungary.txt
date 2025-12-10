@@ -22,13 +22,14 @@ AUH_propaganda_campaigns = {
 				check_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index }
 				check_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index }
 			}
-			is_debug = yes
-		}
-
-		cost = 0
-
-		complete_effect = {
-			AUH_unlock_propaganda_campaign_slot_effect = yes
+			if = {
+				limit = {
+					not = {
+						has_idea = AUS_United_Nation2
+					}
+				}
+				activate_mission = AUS_Incoming_Reform
+			}
 		}
 	}
 
