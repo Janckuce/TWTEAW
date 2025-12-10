@@ -68,6 +68,14 @@ AUS_Imperial_Reforms = {
 					add_idea = AUS_United_Nation2
 				}
 			}
+			if = {
+				limit = {
+					not = {
+						has_idea = AUS_United_Nation2
+					}
+				}
+				activate_mission = AUS_Incoming_Reform
+			}
 		}
 	}
 	AUS_Minecraft = {
