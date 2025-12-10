@@ -1,5 +1,59 @@
+SER_Technological_Advancements = {
+	SER_Food_Security = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			num_of_civilian_factories > 15
+		}
+		complete_effect = {
+			add_ideas = SER_Self_Sustained_People
+		}
+	}
+	SER_Ground_To_Air = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 150
+		allowed = {
+			tag = SER
+		}
+		available = {
+			can_research = ww1_antiair_equipment1
+		}
+		complete_effect = {
+			set_technology = {
+				ww1_antiair_equipment1 = 1
+			}
+		}
+	}
+	SER_We_Ball = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 150
+		allowed = {
+			tag = SER
+		}
+		available = {
+			date > 1913.1.1
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				category = armor
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+}
+
 SER_Chetnik_Recruitment = {
 	SER_Belgrade_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -15,6 +69,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Nis_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -30,6 +85,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Pirot_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -45,6 +101,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_South_Serbia_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -60,6 +117,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Kosovo_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -75,6 +133,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Skopje_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -90,6 +149,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Debar_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -105,6 +165,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Stip_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -120,6 +181,7 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 	SER_Strumica_Recruitment = {
+		icon = GFX_decision_FIN_weapon_caches
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -138,6 +200,7 @@ SER_Chetnik_Recruitment = {
 
 SER_Iron_Army = {
 	SER_Militia1 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -159,6 +222,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia2 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -180,6 +244,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia3 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -201,6 +266,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia4 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -222,6 +288,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia5 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -243,6 +310,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia6 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -264,6 +332,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia7 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {
@@ -285,6 +354,7 @@ SER_Iron_Army = {
 		}
 	}
 	SER_Militia8 = {
+		icon = GFX_decision_CHL_carabineros
 		priority = 1
 		fire_only_once = yes
 		allowed = {

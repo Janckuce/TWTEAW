@@ -1,17 +1,20 @@
 ideas = {
 	country = {
 		SER_Spirit_Of_Pan_Slavism = {
+			picture = YUG_yugoslavian_general_staff
 			modifier = {
 				enemy_attrition = 0.1
 			}
 		}
 		SER_Spirit_Of_Pan_Slavism1 = {
+			picture = YUG_yugoslavian_general_staff
 			modifier = {
 				enemy_attrition = 0.1
 				army_core_defence_factor = 0.05
 			}
 		}
 		SER_Spirit_Of_Pan_Slavism2 = {
+			picture = YUG_yugoslavian_general_staff
 			modifier = {
 				enemy_attrition = 0.1
 				army_core_attack_factor = 0.05
@@ -19,6 +22,7 @@ ideas = {
 			}
 		}
 		SER_Spirit_Of_Pan_Slavism3 = {
+			picture = YUG_yugoslavian_general_staff
 			modifier = {
 				local_manpower = 0.33
 				enemy_attrition = 0.1
@@ -27,17 +31,20 @@ ideas = {
 			}
 		}
 		SER_God_Given_Land = {
+			picture = YUG_orthodox_church_support
 			modifier = {
 				max_training = 0.1
 			}
 		}
 		SER_God_Given_Land1 = {
+			picture = YUG_orthodox_church_support
 			modifier = {
 				max_training = 0.1
 				max_dig_in_factor = 0.1
 			}
 		}
 		SER_God_Given_Land2 = {
+			picture = YUG_orthodox_church_support
 			modifier = {
 				max_training = 0.1
 				max_dig_in_factor = 0.1
@@ -45,38 +52,45 @@ ideas = {
 			}
 		}
 		SER_Small_Country_Big_Heart = {
+			picture = FRA_national_mobilization_focus
 			modifier = {
 				local_resources_factor = 0.33
 			}
 		}
 		SER_Flaming_Defense = {
+			picture = RAJ_contamination_cleanup_crew
 			modifier = {
 				production_speed_bunker_factor = 0.15
 			}
 		}
 		SER_Flaming_Defense1 = {
+			picture = RAJ_contamination_cleanup_crew
 			modifier = {
 				production_speed_bunker_factor = 0.15
 				equipment_capture = 0.03
 			}
 		}
 		SER_Belgrade_Fortress = {
+			picture = FRA_fortification_focus
 			modifier = {
 				army_core_defence_factor = 0.05
 			}
 		}
 		SER_Misplaced_Trust = {
+			picture = HUN_hungarian_monarchy
 			modifier = {
 				industrial_capacity_factory = 0.1
 			}
 		}
 		SER_Misplaced_Trust1 = {
+			picture = HUN_hungarian_monarchy
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 		SER_Misplaced_Trust2 = {
+			picture = HUN_hungarian_monarchy
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
@@ -84,73 +98,86 @@ ideas = {
 			}
 		}
 		SER_Habsburg_Funds = {
+			picture = HABSBURG_industry
 			modifier = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
 		SER_Heavy_Habsburg_Funds = {
+			picture = HABSBURG_industry
 			modifier = {
 				production_speed_buildings_factor = 0.2
 			}
 		}
 		SER_Self_Sustained_People = {
+			picture = HUN_agrarian_tradition
 			modifier = {
 				consumer_goods_expected_value = -1
 			}
 		}
 		SER_Drina_Elite_Infantry = {
+			picture = YUG_serbian_general_staff
 			modifier = {
 				modifier_army_sub_unit_militia_speed_factor = 0.025
 				modifier_army_sub_unit_militia_max_org_factor = 0.025
 			}
 		}
 		SER_Drina_Elite_Infantry1 = {
+			picture = YUG_serbian_general_staff
 			modifier = {
 				modifier_army_sub_unit_militia_speed_factor = 0.05
 				modifier_army_sub_unit_militia_max_org_factor = 0.05
 			}
 		}
 		SER_Drina_Elite_Infantry2 = {
+			picture = YUG_serbian_general_staff
 			modifier = {
 				modifier_army_sub_unit_militia_speed_factor = 0.075
 				modifier_army_sub_unit_militia_max_org_factor = 0.075
 			}
 		}
 		SER_Drina_Elite_Infantry3 = {
+			picture = YUG_serbian_general_staff
 			modifier = {
 				modifier_army_sub_unit_militia_speed_factor = 0.1
 				modifier_army_sub_unit_militia_max_org_factor = 0.1
 			}
 		}
 		SER_Russian_Staff = {
+			picture = LIT_victory_in_trust
 			modifier = {
 				initiative_factor = 0.05
 				coordination_bonus = 0.05
 			}
 		}
 		SER_Russian_Staff1 = {
+			picture = LIT_victory_in_trust
 			modifier = {
 				initiative_factor = 0.1
 				coordination_bonus = 0.1
 			}
 		}
 		SER_Militaristic_Mindset = {
+			picture = YUG_all_yugoslavian_regiments
 			modifier = {
 				surrender_limit = 0.5
 			}
 		}
 		SER_Militaristic_Mindset1 = {
+			picture = YUG_all_yugoslavian_regiments
 			modifier = {
 				surrender_limit = 1
 			}
 		}
 		SER_Militaristic_Mindset2 = {
+			picture = YUG_all_yugoslavian_regiments
 			modifier = {
 				surrender_limit = 1
 				initiative_factor = 0.05
 			}
 		}
 		SER_Militaristic_Mindset3 = {
+			picture = YUG_all_yugoslavian_regiments
 			modifier = {
 				surrender_limit = 1
 				initiative_factor = 0.05
@@ -158,6 +185,7 @@ ideas = {
 			}
 		}
 		SER_Militaristic_Mindset4 = {
+			picture = YUG_all_yugoslavian_regiments
 			modifier = {
 				surrender_limit = 1
 				initiative_factor = 0.05
@@ -166,27 +194,32 @@ ideas = {
 			}
 		}
 		SER_Planning_Bonus = {
+			picture = CZE_planning_bonus
 			modifier = {
 				planning_speed = 0.5
 			}
 		}
 		SER_Nikola_Tesla = {
+			picture = ETH_ethiopian_electric_power
 			modifier = {
 				research_speed_factor = 0.25
 			}
 		}
 		SER_Drina_Offensive = {
+			picture = SWE_neither_death_nor_dishonor
 			targeted_modifier = {
 				tag = AUS
 				attack_bonus_against = 0.1
 			}
 		}
 		SER_Hold_At_All_Costs = {
+			picture = citizen_militia_2
 			modifier = {
 				defence = 0.1
 			}
 		}
 		SER_Austrian_Backstab = {
+			picture = hol_liberation
 			modifier = {
 				consumer_goods_expected_value = 0.2
 				planning_speed = -0.15
@@ -196,6 +229,7 @@ ideas = {
 			}
 		}
 		SER_Austrian_Backstab1 = {
+			picture = hol_liberation
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				planning_speed = -0.1
@@ -205,6 +239,7 @@ ideas = {
 			}
 		}
 		SER_Austrian_Backstab2 = {
+			picture = hol_liberation
 			modifier = {
 				consumer_goods_expected_value = 0.1
 				planning_speed = -0.05
@@ -214,6 +249,7 @@ ideas = {
 			}
 		}
 		SER_Austrian_Backstab3 = {
+			picture = hol_liberation
 			modifier = {
 				consumer_goods_expected_value = 0.05
 				planning_speed = -0.025
@@ -221,12 +257,14 @@ ideas = {
 			}
 		}
 		SER_Economic_Plan = {
+			picture = ARG_economic_reactivation
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				industry_repair_factor = 0.15
 			}
 		}
 		SER_Economic_Plan1 = {
+			picture = ARG_economic_reactivation
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				industry_repair_factor = 0.3
