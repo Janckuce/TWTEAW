@@ -381,6 +381,7 @@ country_event = {
 		create_faction = "Second Balkan League"
 		add_to_faction = GRE
 		add_to_faction = MNT
+		add_to_faction = ROM
 		}
 		news_event = ww1_news.50
 	}
@@ -411,11 +412,22 @@ country_event = {
 				type = take_claimed_state
 				target = MNT
 			}
+			declare_war_on = {
+				type = take_claimed_state
+				target = ROM
+			}
 		}
-		country_event = {id = ww1_serbia.17 days = 7}
+		BUL = {
+			country_event = ww1_ottoman.6
+			country_event = {
+				id = ww1_serbia.19
+				days = 70	#	Number of Days Bulgaria Has To Hold Out For
+			}
+		}
 	}
 }
 
+#	Event Does Nothing Now
 country_event = {
 	id = ww1_serbia.17
 	title = ww1_serbia.17.t
@@ -450,13 +462,10 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = {
-		name = ww1_serbia.18.a
-
+	immediate = {
 		every_country = {
 			white_peace = BUL
 		}
-		
 		SER = {
 			transfer_state = 924
 			leave_faction = yes
@@ -477,19 +486,64 @@ country_event = {
 			leave_faction = yes
 		}
 	}
+
+	option = {
+		name = ww1_serbia.18.a
+	}
 }
 
 country_event = {
 	id = ww1_serbia.19
 	title = ww1_serbia.19.t
-	desc = ww1_serbia.19.d
+	desc = ww1_serbia_desc.19
 	picture = GFX_report_event_ottoman_troops
 
 	fire_only_once = yes
 	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_war_with = SER
+				has_war_with = GRE
+				has_war_with = ROM
+				has_war_with = MNT
+			}
+			every_country = {
+				white_peace = BUL
+			}
+			SER = {
+				transfer_state = 924
+				leave_faction = yes
+			}
+			GRE = {
+				transfer_state = 731
+				leave_faction = yes
+			}
+			ROM = {
+				transfer_state = 77
+				leave_faction = yes
+			}
+			TUR = {
+				transfer_state = 341
+				leave_faction = yes
+			}
+			MNT = {
+				leave_faction = yes
+			}
+			BUL = {
+				capital_scope = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+					}
+				}
+			}
+		}
+	}
 
-		option = {
-		name = ww1_serbia.19.b
-		add_ideas = SER_our_way_of_life_passive
+	option = {
+		name = ww1_serbia.19.a
 	}
 }

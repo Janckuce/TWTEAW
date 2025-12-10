@@ -18,12 +18,12 @@ on_actions = {
                     from.from = {
                         state = 48
                     }
+                    owns_state = 924
+                    owns_state = 731
+                    owns_state = 77
                 }
                 BUL = {
-                    country_event = {
-                        id = ww1_serbia.18
-                        days = 7
-                        }
+                    country_event = ww1_serbia.18
                     }
                 }
             }
@@ -43,6 +43,9 @@ on_actions = {
                         has_war_with = RUS
                         has_war_with = ENG
                         }
+                        owns_state = 924
+                        owns_state = 731
+                        owns_state = 77
                     }
                 }
                 SER = {
@@ -70,9 +73,7 @@ on_actions = {
                 leave_faction = yes
                 }
                 BUL = {
-                    country_event = {
-                    id = ww1_serbia.18
-                    }
+                    country_event = ww1_serbia.18
                 }
             }
         }
