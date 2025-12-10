@@ -40,7 +40,15 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
-			entrenchment = 0.50
+			entrenchment = 0.20
+			max_organisation = 32
+			default_morale = 0.32
+			max_strength = 12
+			add = yes
+		}
+
+		battalion_mult = {
+			category = category_cavalry
 			max_organisation = 32
 			default_morale = 0.32
 			max_strength = 12
