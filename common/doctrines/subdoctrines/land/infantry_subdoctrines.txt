@@ -166,7 +166,7 @@ assault_infantry = {
     track = infantry
     name = SUBDOCTRINE_ASSAULT_INFANTRY
     description = SUBDOCTRINE_ASSAULT_INFANTRY_DESC
-    icon = GFX_doctrine_assault_infantry_medium
+    icon = GFX_doctrine_grand_assault_medium
 
     xp_cost = 150
     xp_type = army
@@ -311,9 +311,7 @@ commandos = {
         }
 
         field_intel_retrieval = {
-            enable_tactic = tactic_breakthrough
             intel_from_combat_factor = 2
-            tactic_breakthrough_preferred_weight_factor = 0.9
         }
 
         integrated_assaults = {

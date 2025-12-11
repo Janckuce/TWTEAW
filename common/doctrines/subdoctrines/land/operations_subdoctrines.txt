@@ -20,6 +20,7 @@ defensive_postures = {
         }
         elastic_operations = {
             land_reinforce_rate = 0.03
+            enable_tactic = tactic_delay
         }
         developed_trench_networking = {
             max_dig_in = 5
@@ -28,6 +29,7 @@ defensive_postures = {
             category_all_infantry = {
                 entrenchment = 0.30
             }
+            enable_tactic = tactic_overwhelming_fire
         }
         field_construction_training = {
             engineer = {
@@ -94,48 +96,6 @@ mission_type_tactics = {
         }
     }
 }
-
-# last_stand = {
-#     track = operations
-#     name = SUBDOCTRINE_LAST_STAND
-#     description = SUBDOCTRINE_LAST_STAND_DESC
-#     icon = GFX_doctrine_last_stand_medium
-#     #TODO: Add trigger tag for surrender progress
-#     xp_cost = 150
-#     xp_type = army
-
-#     available = {
-#         always = yes
-#     }
-#     # EFFECTS
-#     conscription = 0.02
-
-#     rewards = {
-#         werwolf_groups = {
-#             enable_tactic = tactic_guerrilla_tactics
-#         }
-
-#         pocket_consolidation = {
-#             category_all_infantry = {
-#                 defense = 0.05
-#             }
-#         }
-#         digging_in = {
-#             out_of_supply_factor = -0.1
-#             category_all_infantry = {
-#                 defense = 0.05
-#             }
-#         }
-#         stocking_up = {
-#             no_supply_grace = 72 # more hours before supply penalty changes
-#         }
-#         breaking_out = {
-#             category_army = {
-#                 soft_attack = 0.1
-#             }
-#         }
-#     }
-# }
 
 infiltration_tactics = {
     track = operations
@@ -216,7 +176,7 @@ infiltration_tactics = {
     }
 }
 
-grand_assault = {
+grand_assault = { #NOT gonna use
     track = operations
     name = SUBDOCTRINE_GRAND_ASSAULT
     description = SUBDOCTRINE_GRAND_ASSAULT_DESC
@@ -440,56 +400,7 @@ deep_battle = {
 #     }
 # }
 
-guerilla_war = {
-    track = operations
-    name = SUBDOCTRINE_GUERILLA_WAR
-    description = SUBDOCTRINE_GUERILLA_WAR_DESC
-    icon = GFX_doctrine_guerilla_warfare_medium
-    
-    xp_cost = 150
-    xp_type = army
 
-    available = {
-        surrender_progress > 0.25
-    }
-
-    infantry = {
-        default_morale = 0.1
-    }
-
-    rewards = {
-        catch_and_seize = {
-            category_cavalry = {
-                equipment_capture_factor = 0.1
-            }
-            category_light_infantry = { 
-                equipment_capture_factor = 0.1
-            }
-            pocket_penalty = -0.25
-        }
-        galvanize_support = {
-            mobilization_speed = 1
-        }
-        scorched_earth = {
-            category_army = {
-                defense = 0.1
-            }
-        }
-        urban_assaults = {
-            infantry = {
-                urban = {
-                    attack = 0.10
-                    defence = 0.10
-                }
-            }
-        }
-        defense_of_gained_power = {
-            category_army = {
-                defense = 0.1
-            }
-        }
-    }
-}
 
 #shock & awe or airland battle
 rapid_domination = {
