@@ -56,3 +56,5 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 30
 NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 50000
 NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0
 NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100         -- WAS 15, Changed so you can have less lines of naval production
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 20       -- WAS 5, Changed so you can have less lines of naval production

@@ -409,104 +409,74 @@ fire_concentration = {
 #     }
 # }
 
-# self_propelled_support = {
+self_propelled_support = {
 
-#     track = combat_support
-#     name = SUBDOCTRINE_SELF_PROPELLED_SUPPORT
-#     description = SUBDOCTRINE_SELF_PROPELLED_SUPPORT_DESC
-#     icon = GFX_doctrine_self_propelled_support_medium
+    track = combat_support
+    name = SUBDOCTRINE_SELF_PROPELLED_SUPPORT
+    description = SUBDOCTRINE_SELF_PROPELLED_SUPPORT_DESC
+    icon = GFX_doctrine_self_propelled_support_medium
 
-#     xp_cost = 150
-#     xp_type = army
+    xp_cost = 150
+    xp_type = army
 
-#     available = {
-       
-#     }
+    available = {
+        has_variable = support_milestone_var
+    }
 
-#     category_self_propelled_artillery = {
-#         soft_attack = 0.1
-#     }
-#     category_self_propelled_anti_air= {
-#         air_attack = 0.1
-#     }
-#     category_tank_destroyers = {
-#         hard_attack = 0.1
-#     }
+    equipment_bonus = {
+        railway_gun_equipment = {
+            build_cost_ic = -0.10
+            instant = yes
+        }
+    }
 
+    rewards = {
+        mobile_battery_management_platoons = {
+            equipment_bonus = {
+                railway_gun_equipment = {
+                    railway_gun_attack = 0.15
+                    instant = yes
+                }
+            }
+        }
+        screening_attacks = {
+            equipment_bonus = {
+                railway_gun_equipment = {
+                    railway_gun_attack = 0.15
+                    instant = yes
+                }
+            }
+        }
+        all_terrain_mobility = {
+            equipment_bonus = {
+                railway_gun_equipment = {
+                    maximum_speed = 1
+	            	reliability = 0.14
+                    instant = yes
+                }
+            }
+        }
+        multirole_support_vehicles = {
+            equipment_bonus = {
+                railway_gun_equipment = {
+                    railway_gun_attack = 0.21
+                    instant = yes
+                }
+            }
+        }
+        shoot_and_scoot = {
+            equipment_bonus = {
+                railway_gun_equipment = {
+                    railway_gun_hours_between_redistribution = -0.5
+                    instant = yes
+                }
+            }
+        }
 
-#     rewards = {
-#         mobile_battery_management_platoons = {
-#             category_self_propelled_artillery = {
-#                 max_organisation = 5
-#             }
-#             category_self_propelled_anti_air= {
-#                 max_organisation = 5
-#             }
-#             category_tank_destroyers = {
-#                 max_organisation = 5
-#             }
-#         }
-#         screening_attacks = {
-#             recon = {
-#                 battalion_mult = {
-#                     category = category_self_propelled_artillery
-#                     soft_attack = 0.1
-#                     default_morale = 0.1
-#                 }
-#             }
-#             mot_recon = {
-#                 battalion_mult = {
-#                     category = category_self_propelled_artillery
-#                     soft_attack = 0.1
-#                     default_morale = 0.1
-#                 }
-#             }
-#             light_tank_recon = {
-#                 battalion_mult = {
-#                     category = category_self_propelled_artillery
-#                     soft_attack = 0.1
-#                     default_morale = 0.1
-#                 }
-#             }
-#         }
-#         all_terrain_mobility = {
-#             category_self_propelled_artillery = {
-#                 maximum_speed = 0.1
-#             }
-#             category_self_propelled_anti_air= {
-#                 maximum_speed = 0.1
-#             }
-#             category_tank_destroyers = {
-#                 maximum_speed = 0.1
-#             }
-#         }
-#         multirole_support_vehicles = {
-#             category_self_propelled_artillery = {
-#                 hard_attack = 0.05
-#             }
-#             category_self_propelled_anti_air= {
-#                 air_attack = 0.05
-#             }
-#             category_tank_destroyers = {
-#                 soft_attack = 0.05
-#             }
-#         }
-#         shoot_and_scoot = {
-#             category_self_propelled_artillery = {
-#                 max_organisation = 5
-#             }
-#             category_self_propelled_anti_air= {
-#                 max_organisation = 5
-#             }
-#             category_tank_destroyers = {
-#                 max_organisation = 5
-#             }
-#         }
-
-#     }
+    }
 
     
-# }
+}
 
 siege_artillery = {
     track = combat_support
@@ -521,193 +491,43 @@ siege_artillery = {
         has_variable = support_milestone_var
     }
 
-    super_heavy_artillery = {
-        soft_attack = 0.1
-        breakthrough = 0.1
-    }
-
-    equipment_bonus = {
-        railway_gun_equipment = {
-            railway_gun_attack = 0.1
-            instant = yes
-        }
-        super_heavy_railway_gun_equipment = {
-            railway_gun_attack = 0.1
-            instant = yes
-        }
+    heavy_artillery_brigade = {
+        combat_width = -0.2
     }
 
     rewards = {
         fortress_busters = {
-            super_heavy_artillery = {
+            heavy_artillery_brigade = {
                 fort = {
-                    attack = 0.25
-                }
-            }
-            self_propelled_super_heavy_artillery = {
-                fort = {
-                    attack = 0.25
+                    attack = 0.15
                 }
             }
         }
         improved_transport_preparation = {
-            super_heavy_artillery = {
+            heavy_artillery_brigade = {
                 default_morale = 0.1
-            }
-            self_propelled_super_heavy_artillery = {
-                default_morale = 0.1
-            }
-
-            equipment_bonus = {
-                railway_gun_equipment = {
-                    railway_gun_hours_between_redistribution = -0.5
-                    instant = yes
-                }
-                super_heavy_railway_gun_equipment = {
-                    railway_gun_hours_between_redistribution = -0.5
-                    instant = yes
-                }
-                
+                combat_width = -0.2
             }
         }
         precomputed_firing_data = {
-            super_heavy_artillery = {
+            heavy_artillery_brigade = {
                 max_organisation = 10
-                defense = 0.1
+                breakthrough = 0.1
             }
-            self_propelled_super_heavy_artillery = {
-                max_organisation = 10
-                defense = 0.1
-            }
-
         }
         urban_strongpoint_sieges = {
-            super_heavy_artillery = {
+            heavy_artillery_brigade = {
                 urban = {
                     attack = 0.15
                 }
-            }
-            self_propelled_super_heavy_artillery = {
-                urban = {
-                    attack = 0.15
-                }
+                soft_attack = 0.15
             }
         }
         mobile_artillery_command = {
-			super_heavy_artillery = {
-                max_organisation = 10
-                maximum_speed = 0.1
-            }
-            self_propelled_super_heavy_artillery = {
-                max_organisation = 10
-                maximum_speed = 0.1
-            }
-
-            equipment_bonus = {
-                railway_gun_equipment = {
-                    maximum_speed = 1
-                    instant = yes
-                }
-                super_heavy_railway_gun_equipment = {
-                    maximum_speed = 1
-                    instant = yes
-                }
+			heavy_artillery_brigade = {
+                combat_width = -0.3
+                maximum_speed = 0.2
             }
         }
-    }
-}
-
-field_engineering = {
-    track = combat_support
-    name = SUBDOCTRINE_FIELD_ENGINEERING
-    description = SUBDOCTRINE_FIELD_ENGINEERING_DESC
-    icon = GFX_doctrine_field_engineering_medium
-
-    xp_cost = 150
-    xp_type = army
-
-    available = {
-        has_variable = support_milestone_var
-    }
-
-    engineer = {
-        river = {
-            movement = 0.1
-        }
-        forest = {
-            movement = 0.1
-        }
-    }
-    assault_engineer = {
-        river = {
-            movement = 0.1
-        }
-        forest = {
-            movement = 0.1
-        }
-    }
-    pioneer_support = {
-        river = {
-            movement = 0.1
-        }
-        forest = {
-            movement = 0.1
-        }
-    }
-	
-    rewards = {
-        rapid_fire_lane_clearance = {
-            engineer = {
-                battalion_mult = {
-                    category = category_all_infantry
-                    entrenchment = 1.5
-                }
-            }
-        }
-        sapper_fieldcraft = {
-            engineer = {
-                max_strength = 0.25
-                defense = 0.1
-            }
-            maintenance_company = {
-                max_strength = 0.25
-				defense = 0.1
-            }
-        }
-        engineerdug_gun_emplacements = {
-            engineer = {
-                battalion_mult = {
-                    category = category_artillery
-                    breakthrough = 0.1
-                    defense = 0.1
-                }
-            }
-        }
-        smoke_projector_training = {
-            engineer = {
-                battalion_mult = {
-                    category = category_tanks
-                    breakthrough = 0.05
-                }
-            }
-            maintenance_company = {
-                battalion_mult = {
-                    category = category_tanks
-                    reliability = 0.05
-                }
-            }
-
-        }
-        charge_and_flame = {
-            engineer = {
-                max_organisation = 5
-                soft_attack = 0.05
-                hard_attack = 1  
-            }
-            maintenance_company = {
-                max_organisation = 5
-            }
-        }
-
     }
 }

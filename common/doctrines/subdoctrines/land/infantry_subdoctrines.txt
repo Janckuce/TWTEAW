@@ -172,16 +172,20 @@ large_unit_tactics = {
 
     rewards = {
         wide_trench_networks = {
+            engineer = {
+                battalion_mult = {
+                    category = category_light_infantry
+                    entrenchment = 0.20
+                    add = yes
+                }
+            }
+        }
+        flexible_division_structures = {
             category_all_infantry = {
                 max_organisation = 7
             }
             engineer = {
                 max_organisation = -25
-            }
-        }
-        flexible_division_structures = {
-            category_all_infantry = {
-                supply_consumption = -0.01
             }
         }
         unit_knowledge_sharing = {
