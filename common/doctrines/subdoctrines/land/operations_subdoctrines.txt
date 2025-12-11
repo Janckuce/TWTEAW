@@ -1,3 +1,43 @@
+defensive_postures = {
+    track = operations
+    name = SUBDOCTRINE_DEFENSIVE_POSTURES
+    description = SUBDOCTRINE_DEFENSIVE_POSTURES_DESC
+    icon = GFX_doctrine_defensive_postures_medium
+
+    xp_cost = 150
+    xp_type = army
+
+    available = {
+        always = yes
+    }
+
+    #OTHER BASE REWARDS
+	training_time_army_factor = -0.4
+
+    rewards = {
+        improvised_fighting_position = {
+            dig_in_speed_factor = 0.25
+        }
+        elastic_operations = {
+            land_reinforce_rate = 0.03
+        }
+        developed_trench_networking = {
+            max_dig_in = 5
+        }
+        field_emplacements = {
+            category_all_infantry = {
+                entrenchment = 0.30
+            }
+        }
+        field_construction_training = {
+            engineer = {
+                entrenchment = 2
+            }
+        }
+
+    }
+}
+
 mission_type_tactics = {
     track = operations
     name = SUBDOCTRINE_MISSION_TYPE_TACTICS
@@ -8,7 +48,7 @@ mission_type_tactics = {
     xp_type = army
 
     available = {
-        always = yes
+        has_variable = operations_milestone_var
     }
 	
     # EFFECTS
@@ -55,47 +95,47 @@ mission_type_tactics = {
     }
 }
 
-last_stand = {
-    track = operations
-    name = SUBDOCTRINE_LAST_STAND
-    description = SUBDOCTRINE_LAST_STAND_DESC
-    icon = GFX_doctrine_last_stand_medium
-    #TODO: Add trigger tag for surrender progress
-    xp_cost = 150
-    xp_type = army
+# last_stand = {
+#     track = operations
+#     name = SUBDOCTRINE_LAST_STAND
+#     description = SUBDOCTRINE_LAST_STAND_DESC
+#     icon = GFX_doctrine_last_stand_medium
+#     #TODO: Add trigger tag for surrender progress
+#     xp_cost = 150
+#     xp_type = army
 
-    available = {
-        always = yes
-    }
-    # EFFECTS
-    conscription = 0.02
+#     available = {
+#         always = yes
+#     }
+#     # EFFECTS
+#     conscription = 0.02
 
-    rewards = {
-        werwolf_groups = {
-            enable_tactic = tactic_guerrilla_tactics
-        }
+#     rewards = {
+#         werwolf_groups = {
+#             enable_tactic = tactic_guerrilla_tactics
+#         }
 
-        pocket_consolidation = {
-            category_all_infantry = {
-                defense = 0.05
-            }
-        }
-        digging_in = {
-            out_of_supply_factor = -0.1
-            category_all_infantry = {
-                defense = 0.05
-            }
-        }
-        stocking_up = {
-            no_supply_grace = 72 # more hours before supply penalty changes
-        }
-        breaking_out = {
-            category_army = {
-                soft_attack = 0.1
-            }
-        }
-    }
-}
+#         pocket_consolidation = {
+#             category_all_infantry = {
+#                 defense = 0.05
+#             }
+#         }
+#         digging_in = {
+#             out_of_supply_factor = -0.1
+#             category_all_infantry = {
+#                 defense = 0.05
+#             }
+#         }
+#         stocking_up = {
+#             no_supply_grace = 72 # more hours before supply penalty changes
+#         }
+#         breaking_out = {
+#             category_army = {
+#                 soft_attack = 0.1
+#             }
+#         }
+#     }
+# }
 
 infiltration_tactics = {
     track = operations
@@ -324,81 +364,82 @@ deep_battle = {
     }
 }
 
-deep_battle_no_lar = {
-    track = operations
-    name = SUBDOCTRINE_DEEP_BATTLE
-    description = SUBDOCTRINE_DEEP_BATTLE_DESC
-    icon = GFX_doctrine_deep_battle_medium
-    xp_cost = 150
-    xp_type = army
+# deep_battle_no_lar = {
+#     track = operations
+#     name = SUBDOCTRINE_DEEP_BATTLE
+#     description = SUBDOCTRINE_DEEP_BATTLE_DESC
+#     icon = GFX_doctrine_deep_battle_medium
+#     xp_cost = 150
+#     xp_type = army
 
-    available = {
-        always = yes
-    }
-    visible = {
-        NOT = {
-            has_dlc = "La Resistance"
-        }
-    }
+#     available = {
+#         always = yes
+#     }
+#     visible = {
+#         NOT = {
+#             has_dlc = "La Resistance"
+#         }
+#     }
 
-    # EFFECTS
-    enable_tactic = tactic_backhand_blow
-    category_army = {
-        max_organisation = 5
-    }
+#     # EFFECTS
+#     enable_tactic = tactic_backhand_blow
+#     category_army = {
+#         max_organisation = 5
+#     }
 
-    rewards = {
-        bounding_overwatch = {
-            recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-            mot_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-			armored_car_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-            light_tank_recon = {
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.05
-                    defense = 0.05
-                }
-            }
-        }
-        operational_concentration = {
-            category_all_armor = {
-                default_morale = 0.1
-            }
-        }
-        maskirovka = {
-            army_intel_to_others = -10.0
-            airforce_intel_to_others = -10.0
-            army_intel_factor = 0.1
-        }
-        breakthrough_priority = {
-            category_vehicle_infantry = {
-                default_morale = 0.1
-            }
-        }
-        operational_depth_control = {
-            org_loss_when_moving = -0.1
-            land_reinforce_rate = 0.05
-        }
-    }
-}
+#     rewards = {
+#         bounding_overwatch = {
+#             recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+#             mot_recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+# 			armored_car_recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+#             light_tank_recon = {
+#                 battalion_mult = {
+#                     category = category_light_infantry
+#                     soft_attack = 0.05
+#                     defense = 0.05
+#                 }
+#             }
+#         }
+#         operational_concentration = {
+#             category_all_armor = {
+#                 default_morale = 0.1
+#             }
+#         }
+#         maskirovka = {
+#             army_intel_to_others = -10.0
+#             airforce_intel_to_others = -10.0
+#             army_intel_factor = 0.1
+#         }
+#         breakthrough_priority = {
+#             category_vehicle_infantry = {
+#                 default_morale = 0.1
+#             }
+#         }
+#         operational_depth_control = {
+#             org_loss_when_moving = -0.1
+#             land_reinforce_rate = 0.05
+#         }
+#     }
+# }
+
 guerilla_war = {
     track = operations
     name = SUBDOCTRINE_GUERILLA_WAR

@@ -75,12 +75,10 @@ great_war_infantry = {
 
     # EFFECTS
 
-    training_time_army_factor = -0.4
-
+    army_infantry_defence_factor = 0.10
 
     rewards = {
         traverse_digging = {
-            land_reinforce_rate = 0.03
             category_all_infantry = {
                 defense = 0.10
             }
@@ -97,51 +95,6 @@ great_war_infantry = {
         }
         redoubt_networks = {
             production_speed_bunker_factor = 0.4
-        }
-
-    }
-}
-
-defensive_postures = {
-    track = infantry
-    name = SUBDOCTRINE_DEFENSIVE_POSTURES
-    description = SUBDOCTRINE_DEFENSIVE_POSTURES_DESC
-    icon = GFX_doctrine_defensive_postures_medium
-
-    xp_cost = 150
-    xp_type = army
-
-    available = {
-        # always = yes
-        has_variable = infantry_milestone_var
-    }
-
-    #OTHER BASE REWARDS
-    category_all_infantry = {
-        defense = 0.1
-    }
-
-    rewards = {
-        improvised_fighting_position = {
-            dig_in_speed_factor = 0.25
-        }
-        elastic_operations = {
-            category_all_infantry = {
-                defense = 0.10
-            }
-        }
-        developed_trench_networking = {
-            category_all_infantry = {
-                entrenchment = 0.1
-            }
-        }
-        field_emplacements = {
-            category_all_infantry = {
-                soft_attack = 0.1
-            }
-        }
-        field_construction_training = {
-            dig_in_speed_factor = 0.25
         }
 
     }
