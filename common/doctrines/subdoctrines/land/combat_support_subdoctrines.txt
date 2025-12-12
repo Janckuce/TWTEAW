@@ -61,20 +61,30 @@ anti_tank_frontline = {
         has_variable = support_milestone_var
     }
 
-    category_line_artillery = {
-        default_morale = 0.1
-        max_strength = 2
+
+    # PREVIOUS DOCTRINE LEGACY
+    enable_tactic = tactic_overwhelming_fire
+    artillery_brigade = {
+        combat_width = -1
+        breakthrough = 0.1
     }
+    category_line_artillery = {
+        max_organisation = 5
+        soft_attack = 0.1
+    }
+    # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
         pakfront = {
             category_line_artillery = {
-                soft_attack = 0.15
+                default_morale = 0.1
+                max_strength = 2
             }
         }
         emplacement_rotation = {
             category_line_artillery = {
                 max_organisation = 5
+                soft_attack = 0.1
             }
         }
         weakpoint_studies = {
@@ -431,6 +441,18 @@ self_propelled_support = {
         }
     }
 
+    # PREVIOUS DOCTRINE LEGACY
+    enable_tactic = tactic_overwhelming_fire
+    artillery_brigade = {
+        combat_width = -1
+        breakthrough = 0.1
+    }
+    category_line_artillery = {
+        max_organisation = 5
+        soft_attack = 0.1
+    }
+    # PREVIOUS DOCTRINE LEGACY
+
     rewards = {
         mobile_battery_management_platoons = {
             equipment_bonus = {
@@ -493,8 +515,21 @@ siege_artillery = {
         combat_width = -0.2
     }
 
+    # PREVIOUS DOCTRINE LEGACY
+    enable_tactic = tactic_overwhelming_fire
+    artillery_brigade = {
+        combat_width = -1
+        breakthrough = 0.1
+    }
+    category_line_artillery = {
+        max_organisation = 5
+        soft_attack = 0.1
+    }
+    # PREVIOUS DOCTRINE LEGACY
+
     rewards = {
         fortress_busters = {
+            enable_tactic = tactic_barrage
             heavy_artillery_brigade = {
                 fort = {
                     attack = 0.15
@@ -514,6 +549,7 @@ siege_artillery = {
             }
         }
         urban_strongpoint_sieges = {
+            enable_tactic = tactic_sf_barrage
             heavy_artillery_brigade = {
                 urban = {
                     attack = 0.15

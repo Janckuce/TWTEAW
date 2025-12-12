@@ -88,13 +88,13 @@ great_war_infantry = {
             planning_speed = 0.3
         }
         centralized_artillery_control = {
-            army_artillery_attack_factor = 0.10
+            army_artillery_attack_factor = 0.05
         }
         field_fortification_emphasis = {
-            dig_in_speed_factor = 1
+            dig_in_speed_factor = 0.5
         }
         redoubt_networks = {
-            production_speed_bunker_factor = 0.4
+            production_speed_bunker_factor = 0.25
         }
 
     }
@@ -120,6 +120,17 @@ large_unit_tactics = {
         combat_width = -0.2
     }
 
+    # PREVIOUS DOCTRINE LEGACY
+    army_infantry_defence_factor = 0.10
+    category_all_infantry = {
+        defense = 0.10
+    }
+    land_night_attack = 0.15
+    planning_speed = 0.3
+    army_artillery_attack_factor = 0.10
+    dig_in_speed_factor = 0.5
+    production_speed_bunker_factor = 0.4
+    # PREVIOUS DOCTRINE LEGACY
    
     #OTHER BASE REWARDS
 
@@ -154,11 +165,11 @@ large_unit_tactics = {
                 supply_consumption = -0.01
             }
         }
-        further_organization_initiative = {
-            category_all_infantry = {
-                max_organisation = 2
-            }
-        }
+        # further_organization_initiative = {
+        #     category_all_infantry = {
+        #         max_organisation = 2
+        #     }
+        # }
     }
 }
 
@@ -179,16 +190,26 @@ assault_infantry = {
     # EFFECTS
 
     #OTHER BASE REWARDS
-    category_all_infantry = {   
-        breakthrough = 0.15
+
+
+    # PREVIOUS DOCTRINE LEGACY
+    army_infantry_defence_factor = 0.10
+    category_all_infantry = {
+        defense = 0.10
     }
-    breakthrough_factor = 0.10
+    land_night_attack = 0.15
+    planning_speed = 0.3
+    army_artillery_attack_factor = 0.10
+    dig_in_speed_factor = 0.5
+    production_speed_bunker_factor = 0.4
+    # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
         low_echelon_fire_support = {
             category_support_artillery = {
                 soft_attack = 0.35
             }
+            breakthrough_factor = 0.10
         }
         organic_battalion_fire_support = {
             category_all_infantry = {   
@@ -238,12 +259,24 @@ mounted_infantry = {
         has_dlc = "No Compromise, No Surrender"
     }
 
+    # EFFECTS
     cavalry = {
         combat_width = -0.2
         soft_attack = 0.25
     }
 
-    # EFFECTS
+
+    # PREVIOUS DOCTRINE LEGACY
+    army_infantry_defence_factor = 0.10
+    category_all_infantry = {
+        defense = 0.10
+    }
+    land_night_attack = 0.15
+    planning_speed = 0.3
+    army_artillery_attack_factor = 0.10
+    dig_in_speed_factor = 0.5
+    production_speed_bunker_factor = 0.4
+    # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
         dragoon_traditions = {
@@ -254,7 +287,7 @@ mounted_infantry = {
         }
         mounted_skirmish_groups = {
             category_recon = {
-                recon = 4
+                recon = 3
             }
         }
         anti_mechanized_cavalry_groups = {
@@ -291,20 +324,34 @@ commandos = {
         has_dlc = "No Compromise, No Surrender"
     }
     
-    experience_gain_army_unit_factor = 0.33
-    experience_loss_factor = -0.15
-
     # EFFECTS
+
+
+
+
+    # PREVIOUS DOCTRINE LEGACY
+    army_infantry_defence_factor = 0.10
+    category_all_infantry = {
+        defense = 0.10
+    }
+    land_night_attack = 0.15
+    planning_speed = 0.3
+    army_artillery_attack_factor = 0.10
+    dig_in_speed_factor = 0.5
+    production_speed_bunker_factor = 0.4
+    # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
         isolated_combat_elements = { 
             recon = {
                 initiative = 0.40
             }
+            experience_gain_army_unit_factor = 0.33
+            experience_loss_factor = -0.15
         }
         security_zone_operations = {
             special_forces_cap = 0.25
-            special_forces_min = 12
+            special_forces_min = 32
         }
         rigorous_training_regimen = {
             special_forces_no_supply_grace = 120
@@ -336,11 +383,22 @@ irregulars = {
         has_dlc = "No Compromise, No Surrender"
     }
 
+    # EFFECTS
     militia = {
         combat_width = -0.33
     }
 
-    # EFFECTS
+    # PREVIOUS DOCTRINE LEGACY
+    army_infantry_defence_factor = 0.10
+    category_all_infantry = {
+        defense = 0.10
+    }
+    land_night_attack = 0.15
+    planning_speed = 0.3
+    army_artillery_attack_factor = 0.10
+    dig_in_speed_factor = 0.5
+    production_speed_bunker_factor = 0.4
+    # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
         service_by_lot = { 

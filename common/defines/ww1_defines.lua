@@ -54,13 +54,13 @@ NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1
 NDefines.NCountry.ATTACHE_XP_SHARE = 0
 NDefines.NBuildings.MAX_SHARED_SLOTS = 30 
 
-NDefines.NDoctrines.MASTERY_BANK_MAX = 20.0                                            -- The maximum amount of mastery that can be banked
+NDefines.NDoctrines.MASTERY_BANK_MAX = 120.0                                            -- The maximum amount of mastery that can be banked
 NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.334
 NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 40000
 NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.001
 NDefines.NDoctrines.MILITARY_ATTACHE_MASTERY_TRANSFER_FACTOR = 0
 NDefines.NDoctrines.DEFAULT_REWARD_MASTERY = 120.0
-NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 10        -- When doctrine sharing is enabled, this is the base amount of mastery gained monthly
+NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 20        -- When doctrine sharing is enabled, this is the base amount of mastery gained monthly
 
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100         -- WAS 15, Changed so you can have less lines of naval production
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 20       -- WAS 5, Changed so you can have less lines of naval production
