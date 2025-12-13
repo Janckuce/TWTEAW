@@ -8,15 +8,34 @@ on_actions = {
                         has_war_with = AUS
                     }
                 }
+                load_focus_tree = capped_serbian_focus
                 load_oob = SER_Exile
-                add_offsite_building = {
-                    type = arms_factory
-                    level = 3
+                add_timed_idea = {
+                    idea = SER_The_Great_Retreat
+                    days = 70
+                }
+                if = {
+                    limit = {
+                        or = {
+                            has_idea = SER_Austrian_Backstab
+                            has_idea = SER_Austrian_Backstab1
+                            has_idea = SER_Austrian_Backstab2
+                            has_idea = SER_Austrian_Backstab3
+                        }
+                    }
+                    remove_ideas = SER_Austrian_Backstab
+                    remove_ideas = SER_Austrian_Backstab1
+                    remove_ideas = SER_Austrian_Backstab2
+                    remove_ideas = SER_Austrian_Backstab3
+                    add_timed_idea = {
+                        idea = SER_Betrayed_Nation
+                        days = 70
+                    }
                 }
                 add_offsite_building = {
-			        type = arms_factory
-			        level = 3
-		        }
+                    type = arms_factory
+                    level = 6
+                }
             }
         }
     }
