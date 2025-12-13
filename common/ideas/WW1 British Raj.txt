@@ -149,17 +149,27 @@ ideas = {
 				tag = ITA
 				trade_cost_for_target_factor = 1
 			}
+				modifier = {
+			political_power_factor = -0.75
+			political_advisor_cost_factor = 0.65
+			}
 		}
 		RAJ_For_Britannia_Idea = {
 			picture = eng_guided_by_britain
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 			}
+				modifier = {
+			political_power_factor = -0.75
+			political_advisor_cost_factor = 0.65
+			}
 		}
 		RAJ_For_Britannia_Idea1 = {
 			picture = eng_guided_by_britain
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
+			production_speed_infrastructure_factor = 0.1
+			political_power_factor = -0.5
+			political_advisor_cost_factor = 0.45
 			}
 			targeted_modifier = {
 				tag = ENG
@@ -169,7 +179,9 @@ ideas = {
 		RAJ_For_India_Idea = {
 			picture = AFG_raj_attack_bonus
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			political_power_factor = -0.25
+			political_advisor_cost_factor = 0.3
 			}
 			targeted_modifier = {
 				tag = ENG

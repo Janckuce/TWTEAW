@@ -178,16 +178,16 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {
-		name = ww1_france.3.b
+	# option = {
+	# 	name = ww1_france.3.b
 
-		FRA = {
-			puppet = MOR
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
+	# 	FRA = {
+	# 		puppet = MOR
+	# 	}
+	# 	ai_chance = {
+	# 		factor = 0
+	# 	}
+	# }
 }
 
 #France backs down
@@ -434,7 +434,12 @@ country_event = {
 		#white peace Germany
 			every_country = {
 				limit = {
-					has_war_with = GER
+					OR = {
+						has_war_with = GER
+						has_war_with = AUS
+						has_war_with = TUR
+						has_war_with = BUL
+					}
 				}
 				white_peace = GER
 				white_peace = BUL
@@ -455,7 +460,7 @@ country_event = {
 
 			#Treaty of Versailles
 			GER = {
-				country_event = { id = ww1_germany.15 days = 70 }
+				country_event = { id = ww1_germany.15 }
 			}
 
 			news_event = ww1_news.47

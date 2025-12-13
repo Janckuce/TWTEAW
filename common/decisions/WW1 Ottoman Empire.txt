@@ -1,0 +1,40 @@
+TUR_Lybia_War_Category = {
+	TUR_Lybia_War_Timer = {
+		days_mission_timeout = 100
+		is_good = no
+		allowed = {
+			tag = TUR
+		}
+
+		activation = {
+			has_war_with = ITA
+			ITA = {
+				has_country_flag = {
+					flag = ITA_attack_turkey
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				controls_state = 448
+				controls_state = 450
+				controls_state = 451
+			}
+			ITA = {
+				has_country_flag = {
+					flag = ITA_attack_turkey
+					days > 100
+				}
+			}
+		}
+
+		cancel_trigger = {
+			
+		}
+
+		timeout_effect = {
+
+    	}
+	}
+}

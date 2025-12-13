@@ -22,12 +22,16 @@ set_technology = {
 }
 
 recruit_character = RAJ_Charles_Hardinge
-recruit_character = RAJ_Field_Marshal
-recruit_character = RAJ_General_1
-recruit_character = RAJ_General_2
-recruit_character = RAJ_Advisor_1
-recruit_character = RAJ_Advisor_2
-recruit_character = RAJ_Advisor_3
+recruit_character = raj_edwin_montagu
+recruit_character = raj_annie_besant
+recruit_character = raj_muhammad_ali_jinnah
+recruit_character = raj_william_stevenson_meyer
+recruit_character = raj_william_malcolm_hailey
+recruit_character = RAJ_stanley_maude
+recruit_character = RAJ_maharaja_ganga_singh
+recruit_character = raj_pratap_singh
+recruit_character = raj_james_willcocks
+recruit_character = raj_arthur_barrett
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
@@ -43,8 +47,10 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 90
-	fascism = 10
+	neutrality = 70
+	democratic = 22
+	fascism = 4
+	communism = 4
 }
 
 add_ideas = {
@@ -57,7 +63,11 @@ add_ideas = {
 	disarmed_nation
 	RAJ_Recruitable_Pop_Nerf
 }
+add_timed_idea = {
+    idea = starting_production_efficiency
+    days = 5
+}
 
 set_research_slots = 2
-set_stability = 0.4
-set_war_support = 0.3
+set_stability = 0.15
+set_war_support = 0.05
