@@ -7,9 +7,17 @@ ITA_Lybia_War_Category = {
 		}
 
 		activation = {
-			has_war_with = TUR
-			has_country_flag = {
-				flag = ITA_attack_turkey
+			AND = {
+				has_war_with = TUR
+				has_country_flag = {
+					flag = ITA_attack_turkey
+				}
+				NOT = {
+					TUR = {
+						has_country_flag = TUR_surrendered_lybia_war
+					}
+					has_country_flag = ITA_surrendered_lybia_war
+				}
 			}
 		}
 
@@ -23,11 +31,45 @@ ITA_Lybia_War_Category = {
 			controls_state = 451
 		}
 		cancel_trigger = {
-
+			OR = {
+				has_country_flag = ITA_Lose_Libya
+				has_country_flag = ITA_Win_Libya
+				has_country_flag = ITA_surrendered_lybia_war
+				TUR = {
+					has_country_flag = TUR_surrendered_lybia_war
+				}
+			}
 		}
 
 		timeout_effect = {
 
     	}
+	}
+
+	ITA_Lybia_War_Surrender = {
+		allowed = {
+			original_tag = ITA
+		}
+		visible = {
+			has_country_flag = ITA_attack_turkey
+			NOT = {
+				TUR = {
+					has_country_flag = TUR_surrendered_lybia_war
+				}
+				has_country_flag = ITA_Lose_Libya
+				has_country_flag = ITA_Win_Libya
+			}
+		}
+		available = {
+			has_country_flag = {
+				flag = ITA_attack_turkey
+				days > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = ITA_surrendered_lybia_war
+		}
+		fire_only_once = yes
+		
 	}
 }

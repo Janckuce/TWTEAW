@@ -61,13 +61,21 @@ ORO_spectator_state = {
 					has_war_with = TUR
 					controls_state = 797 #Constantinople
 				}
+				TUR = {
+					has_country_flag = {
+						flag = TUR_surrendered_lybia_war
+					}
+				}
 			}
 			NOT = { # prevention of accidental trigger later
 				ITA = {
 					has_country_flag = ITA_Lose_Libya
+				}
+				ITA = {
 					has_country_flag = ITA_Win_Libya
 				}
 			}
+			date < 1914.1.1
 		}
 		
 		complete_effect = {
@@ -123,18 +131,28 @@ ORO_spectator_state = {
 					}
 				}
 			}
-			ITA = {
-				has_country_flag = {
-					flag = ITA_attack_turkey
-					days > 384
+			OR = {
+				ITA = {
+					has_country_flag = {
+						flag = ITA_attack_turkey
+						days > 384
+					}
+				}
+				ITA = {
+					has_country_flag = {
+						flag = ITA_surrendered_lybia_war
+					}
 				}
 			}
 			NOT = { # prevention of accidental trigger later
 				ITA = {
 					has_country_flag = ITA_Lose_Libya
+				}
+				ITA = {
 					has_country_flag = ITA_Win_Libya
 				}
 			}
+			date < 1914.1.1
 		}
 		complete_effect = {
 		    TUR = {
