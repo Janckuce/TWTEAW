@@ -1,6 +1,6 @@
 ITA_Lybia_War_Category = {
 	ITA_Lybia_War_Timer = {
-		days_mission_timeout = 100
+		days_mission_timeout = 384
 		is_good = no
 		allowed = {
 			tag = ITA
@@ -16,7 +16,7 @@ ITA_Lybia_War_Category = {
 		available = {
 			has_country_flag = {
 				flag = ITA_attack_turkey
-				days > 100
+				days > 384
 			}
 			controls_state = 448
 			controls_state = 450
