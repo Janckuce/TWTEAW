@@ -142,6 +142,7 @@ equipments = {
 
 		manpower = 4000
 
+		naval_dominance_factor = 300
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
 		#MIO stat modifers will factory by the unmodified stat value so here a 0.5 mio stat modifier would make this ships naval_weather_penalty_factor stat 1.5.
 		# change this from 1 at your own risk
@@ -193,8 +194,8 @@ equipments = {
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
-		naval_range = 2250
-		
+		naval_range = 3000
+		naval_dominance_factor = 240
 		max_strength = 300
 		naval_speed = 18
 		fuel_consumption = 3.35
@@ -292,7 +293,7 @@ equipments = {
 		}
 
 		naval_range = 3000
-		
+		naval_dominance_factor = 300
 		max_strength = 350
 		reliability = 0.80
 		fuel_consumption = 3.35
@@ -351,7 +352,7 @@ equipments = {
 			fixed_ship_engine_slot = heavy_ship_engine_2
 		}
 		naval_range = 3500
-		
+		naval_dominance_factor = 350
 		max_strength = 370
 		reliability = 0.85
 		fuel_consumption = 3.35
@@ -421,7 +422,7 @@ equipments = {
 		max_strength = 400
 		reliability = 0.9
 		fuel_consumption = 3.35
-		
+		naval_dominance_factor = 375
 		build_cost_ic = 3200
 		resources = {
 			#oil = 1
@@ -484,7 +485,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		naval_range = 4500
-		
+		naval_dominance_factor = 400
 		max_strength = 450
 		naval_speed = 26
 		fuel_consumption = 3.35
@@ -798,7 +799,7 @@ equipments = {
 		reliability = 0.90
 
 		naval_range = 5000
-		
+		naval_dominance_factor = 450
 		max_strength = 500
 		
 
@@ -853,7 +854,7 @@ equipments = {
 		reliability = 0.92
 
 		naval_range = 6000
-		
+		naval_dominance_factor = 450
 		max_strength = 550
 		
 
@@ -1244,7 +1245,7 @@ equipments = {
 		reliability = 0.80
 
 		naval_range = 3000
-		
+		naval_dominance_factor = 450
 		max_strength = 350
 
 		fuel_consumption = 3.35
@@ -1286,7 +1287,7 @@ equipments = {
 		reliability = 0.85
 
 		naval_range = 4000
-
+		naval_dominance_factor = 450
 		max_strength = 450		
 
 
@@ -1327,7 +1328,7 @@ equipments = {
 		reliability = 0.90
 
 		naval_range = 5000
-		
+		naval_dominance_factor = 450
 		max_strength = 500
 		
 
@@ -1369,7 +1370,7 @@ equipments = {
 		reliability = 0.92
 
 		naval_range = 6000
-		
+		naval_dominance_factor = 450
 		max_strength = 550
 		
 
