@@ -68,4 +68,5 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100         -- WAS 15, 
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 20       -- WAS 5, Changed so you can have less lines of naval production
 
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3 -- Penalty factor applied to base cost for each year ahead of time
-NDefines.NTechnology.BASE_TECH_COST = 100                          -- Base cost for technologies
+NDefines.NTechnology.BASE_TECH_COST = 100                          -- Base cost for technologies 
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 400
