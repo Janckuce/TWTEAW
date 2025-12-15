@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_Scraping_The_Barrel
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_manpower
 		cost = 10
 		x = 5
 		y = 0
@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_First_Wave_Of_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_tank_production
 		cost = 10
 		relative_position_id = SER_Scraping_The_Barrel
 		x = 0
@@ -39,13 +39,13 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 6
+				level = 3
 			}
 		}
 	}
 	focus = {
 		id = SER_Scavenge_For_Supplies
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_scavenging
 		cost = 10
 		relative_position_id = SER_First_Wave_Of_Production
 		x = 0
@@ -67,7 +67,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_Second_Wave_Of_Production
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
 		cost = 10
 		relative_position_id = SER_Scavenge_For_Supplies
 		x = 0
@@ -79,13 +79,13 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 3
 			}
 		}
 	}
 	focus = {
 		id = SER_Foreign_Legion
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_FIN_foreign_anti_air
 		cost = 10
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = -2
@@ -140,7 +140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_Serb_Workers
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_expand_the_forestry
 		cost = 10
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = 2
@@ -167,7 +167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_Serbian_Guerillas
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_por_portuguese_legion
 		cost = 10
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = -1
@@ -187,7 +187,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SER_Gradual_Recruitment
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHL_mapuche_reconcilliation_campaigns_export
 		cost = 10
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = 1
@@ -198,6 +198,24 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SER_Recruitment_Centre
+		}
+	}
+	focus = {
+		id = SER_Final_Wave_Of_Production
+		icon = GFX_focus_generic_mass_production
+		cost = 10
+		relative_position_id = SER_Second_Wave_Of_Production
+		x = 0
+		y = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Second_Wave_Of_Production
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
 		}
 	}
 }
