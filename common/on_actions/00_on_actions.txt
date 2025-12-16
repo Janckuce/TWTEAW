@@ -3,24 +3,26 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    Not = {
-                        has_war_with = FRA
-                        has_war_with = RUS
-                        has_war_with = ENG
+                    BUL = {
+                        Not = {
+                            has_war_with = FRA
+                            has_war_with = RUS
+                            has_war_with = ENG
                         }
                         OR = {
-                        tag = SER
-                        tag = GRE
-                        tag = MNT
-                        tag = ROM
-                        tag = TUR
+                            tag = SER
+                            tag = GRE
+                            tag = MNT
+                            tag = ROM
+                            tag = TUR
+                        }
+                        owns_state = 924
+                        owns_state = 731
+                        owns_state = 77
                     }
                     from.from = {
                         state = 48
                     }
-                    owns_state = 924
-                    owns_state = 731
-                    owns_state = 77
                 }
                 BUL = {
                     country_event = ww1_serbia.18
