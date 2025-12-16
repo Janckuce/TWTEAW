@@ -66,8 +66,6 @@ characters={
 		}
 	}
 		YEM_the_desert_endurs1 = {
-		unresignable = yes
-		removal_cost = -1
 		name = YEM_the_desert_endurs1
 		portraits = {
 			army = {
@@ -76,6 +74,7 @@ characters={
 		}
 		
 		advisor={
+			removal_cost = -1
 			can_be_fired = no
 			slot = political_advisor
 			idea_token = YEM_the_desert_endurs1
@@ -92,9 +91,6 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-
-		unresignable = yes
-		removal_cost = -1
 		}
 	}
 		YEM_the_desert_endurs2 = {
