@@ -335,7 +335,14 @@ focus_tree = {
 			focus = SPR_Glorious_Nation
 		}
 		completion_reward = {
-
+			FRA = {
+				capital_scope = {
+					damage_building = {
+						type = infrastructure
+						damage = 5
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -417,9 +424,6 @@ focus_tree = {
 		relative_position_id = SPR_Alternate_The_Government
 		x = 6
 		y = 1
-		available = {
-			date > 1922.7.28
-		}
 		mutually_exclusive = {
 			focus = SPR_Spanish_Apostles
 			focus = SPR_Capitalist_Rule
@@ -843,10 +847,9 @@ focus_tree = {
 		id = SPR_War_Effort
 		icon = GFX_focus_spa_unify_the_nationalist_front
 		cost = 10
-		x = 19
-		y = 5
+		x = 23
+		y = 1
 		available = {
-			has_war = yes
 			date > 1914.7.28
 		}
 		completion_reward = {
