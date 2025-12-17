@@ -158,6 +158,19 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		set_variable = {
+			GER.Agadir_Finished = 0
+		}
+		set_variable = {
+			GER.Lobby_Support = 0
+		}
+		set_variable = {
+			FRA.Lobby_Support = 0
+		}
+		activate_mission = ALL_Discussion_Concluded
+	}
+
 	option = {
 		name = ww1_france.3.a
 		
@@ -178,16 +191,6 @@ country_event = {
 			factor = 100
 		}
 	}
-	# option = {
-	# 	name = ww1_france.3.b
-
-	# 	FRA = {
-	# 		puppet = MOR
-	# 	}
-	# 	ai_chance = {
-	# 		factor = 0
-	# 	}
-	# }
 }
 
 #France backs down

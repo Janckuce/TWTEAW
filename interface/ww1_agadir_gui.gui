@@ -1,0 +1,42 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Agadir_Window"
+		orientation = CENTER
+		origo = center
+		position = {
+			x = 0
+			y = 0
+		}
+
+		size = {
+			width = 500
+			height = 50
+		}
+
+		instantTextBoxType = {
+			name = "ENT_Support_Viewer"
+			format = centre
+			origo = center
+			position = {
+				x = 25
+				y = -7
+			}
+			maxWidth = 450
+			maxHeight = 50
+			text = "ALL_ENT_Support"
+		}
+
+		instantTextBoxType = {
+			name = "CP_Support_Viewer"
+			format = centre
+			origo = center
+			position = {
+				x = 25
+				y = 20
+			}
+			maxWidth = 450
+			maxHeight = 50
+			text = "ALL_CP_Support"
+		}
+	}
+}

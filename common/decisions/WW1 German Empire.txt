@@ -156,35 +156,6 @@ GER_Research_Decisions = {
 	}
 }
 
-GER_ENG_agadir_crisis_category = {
-
-	GER_send_battle_ship = {
-		priority = 100
-		allowed = {
-			original_tag = GER
-		}
-		visible = {
-			FRA = {
-                controls_state = 461
-				controls_state = 462
-		    }
-		}
-		complete_effect = {
-		    add_political_power = 1
-			add_named_threat = { threat = 5 name = GER_send_battleship }
-			FRA = { country_event = { id = ww1_france.4 days = 50 } }
-			GER = {
-			    news_event = { id = ww1_news.2 days = 5 }
-				news_event = { id = ww1_news.4 days = 20 }
-            }
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 10000
-		}
-	}
-}
-
 GER_Catholic_Reforms = {
 	GER_Agricultural_Reforms = {
 		priority = 100
