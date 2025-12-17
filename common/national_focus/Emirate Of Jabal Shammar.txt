@@ -19,7 +19,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = {x = 900 y = 1200}
+	continuous_focus_position = {x = 100 y = 1200}
 
 	default = no
 
@@ -685,12 +685,29 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = YEM_We_Are_Conquerors
+		icon = GFX_focus_GER_divide_and_conquer
+		cost = 10
+		relative_position_id = YEM_Our_Place_In_The_Sun
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Our_Place_In_The_Sun
+		}
+		completion_reward = {
+			set_cosmetic_tag = YEM_Arabia
+			retire_character = YEM_the_desert_endurs
+			retire_character = YEM_the_desert_endurs1
+			retire_character = YEM_the_desert_endurs2
+		}
+	}
 
 	#	War Time Focuses So There's More Variety (Thank You Witez, Very Cool)
 
 	focus = {
 		id = YEM_War_For_Our_Fathers
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_total_war
 		cost = 10
 		x = 20
 		y = 0
@@ -703,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Troops_For_The_Turks
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		cost = 10
 		relative_position_id = YEM_War_For_Our_Fathers
 		x = 0
@@ -748,7 +765,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Seize_Kuwait
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_TUR_taking_over_defense_of_the_gulf
 		cost = 10
 		relative_position_id = YEM_War_For_Our_Fathers
 		x = 2
@@ -779,7 +796,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Fast_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_superior_war_machines_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = YEM_Troops_For_The_Turks
 		x = -1
@@ -796,7 +813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = YEM_Long_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_the_means_to_wage_war_ccp_2d_sov_compatibility
 		cost = 10
 		relative_position_id = YEM_Troops_For_The_Turks
 		x = 1
@@ -812,20 +829,51 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = YEM_Long_War
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		id = YEM_Capitalise_On_Our_Successes
+		icon = GFX_focus_RAJ_war_taxes
 		cost = 10
 		relative_position_id = YEM_Troops_For_The_Turks
-		x = 1
-		y = 1
-		mutually_exclusive = {
-			focus = YEM_Fast_War
+		x = 0
+		y = 2
+		available = {
+			292 = {
+				is_controlled_by = YEM
+			}
+			678 = {
+				is_controlled_by = YEM
+			}
 		}
 		prerequisite = {
-			focus = YEM_Troops_For_The_Turks
+			focus = YEM_Fast_War
+			focus = YEM_Long_War
 		}
 		completion_reward = {
-			add_ideas = YEM_Iron_Army
+			292 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = YEM_Sabotage_Entente_Resources
+		icon = GFX_focus_FIN_motti_tactics
+		cost = 10
+		relative_position_id = YEM_Capitalise_On_Our_Successes
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = YEM_Capitalise_On_Our_Successes
+		}
+		completion_reward = {
+			PER = {
+				add_timed_idea = {
+					idea = YEM_Sabotaged_Resources
+					days = 70
+				}
+			}
 		}
 	}
 }
