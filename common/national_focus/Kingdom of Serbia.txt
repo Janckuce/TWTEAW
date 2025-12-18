@@ -19,6 +19,8 @@ focus_tree = {
 
 	default = no
 
+	continuous_focus_position = { x = 100 y = 1500 }
+
 	#	Russia Political Branch
 
 	focus = {
@@ -335,6 +337,387 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+				}
+			}
+		}
+	}
+
+	#	Milis
+
+	focus = {
+		id = SER_Military_Construction
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 3
+		y = 5
+		mutually_exclusive = {
+			focus = SER_Civilian_Construction
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Milis1
+		icon = GFX_focus_generic_military_industry
+		cost = 10
+		relative_position_id = SER_Military_Construction
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SER_Military_Construction
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Milis2
+		icon = GFX_SOV_military_engineering_university_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SER_Military_Construction
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SER_Military_Construction
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Milis3
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		relative_position_id = SER_Military_Construction
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SER_Milis1
+		}
+		prerequisite = {
+			focus = SER_Milis2
+		}
+		completion_reward = {
+			107 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3609
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11586
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11583
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Milis4
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er
+		cost = 10
+		relative_position_id = SER_Milis3
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SER_Milis3
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Milis5
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		relative_position_id = SER_Milis3
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SER_Milis3
+		}
+		completion_reward = {
+			803 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Milis_Main
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		relative_position_id = SER_Milis3
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SER_Milis4
+		}
+		prerequisite = {
+			focus = SER_Milis5
+		}
+		completion_reward = {
+			107 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3609
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11586
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11583
+				}
+			}
+		}
+	}
+
+	#	Centre Stuff
+	
+	focus = {
+		id = SER_Industrial_Base1
+		icon = GFX_focus_generic_farmland
+		cost = 10
+		x = 7
+		y = 6
+		prerequisite = {
+			focus = SER_Military_Construction
+			focus = SER_Civilian_Construction
+		}
+		completion_reward = {
+			add_ideas = SER_Industrial_Program
+		}
+	}
+	focus = {
+		id = SER_Industrial_Base2
+		icon = GFX_focus_generic_agricultural_subsidies
+		cost = 10
+		relative_position_id = SER_Industrial_Base1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SER_Industrial_Base1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Industrial_Program
+				add_idea = SER_Industrial_Program1
+			}
+		}
+	}
+	focus = {
+		id = SER_Industrial_Base3
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10
+		relative_position_id = SER_Industrial_Base2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SER_Industrial_Base2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Industrial_Program1
+				add_idea = SER_Industrial_Program2
+			}
+		}
+	}
+
+	#	Civis
+
+	focus = {
+		id = SER_Civilian_Construction
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		cost = 10
+		x = 11
+		y = 5
+		mutually_exclusive = {
+			focus = SER_Military_Construction
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Road_Construction
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		relative_position_id = SER_Civilian_Construction
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SER_Civilian_Construction
+		}
+		completion_reward = {
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Civis1
+		icon = GFX_goal_generic_construction
+		cost = 10
+		relative_position_id = SER_Civilian_Construction
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SER_Civilian_Construction
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Civis2
+		icon = GFX_focus_generic_road_investment
+		cost = 10
+		relative_position_id = SER_Civilian_Construction
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SER_Road_Construction
+		}
+		prerequisite = {
+			focus = SER_Civis1
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Civis3
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		relative_position_id = SER_Civis2
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = SER_Civis2
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Civis4
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		relative_position_id = SER_Civis2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SER_Civis2
+		}
+		completion_reward = {
+			803 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Civis_Main
+		icon = GFX_focus_DEN_civilian_preparations
+		cost = 10
+		relative_position_id = SER_Civis2
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SER_Civis3
+		}
+		prerequisite = {
+			focus = SER_Civis4
+		}
+		completion_reward = {
+			107 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			108 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
 				}
 			}
 		}
