@@ -7,6 +7,9 @@ ALL_Agadir_Crisis_Category = {
 		allowed = {
 			always = no
 		}
+		available = {
+			always = no
+		}
 		complete_effect = {
 			if = {
 				limit = {
@@ -27,7 +30,12 @@ ALL_Agadir_Crisis_Category = {
 					}
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					check_variable = {
+						FRA.Lobby_Support < GER.Lobby_Support
+					}
+				}
 				FRA = {
 					add_timed_idea = {
 						idea = ALL_Sanctions
