@@ -178,7 +178,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = infantry_weapons
-				bonus = 1
+				bonus = 1.5
 			}
 		}
 	}
@@ -195,7 +195,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = support_tech
-				bonus = 1
+				bonus = 1.5
 			}
 		}
 	}
@@ -212,7 +212,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = artillery
-				bonus = 1
+				bonus = 1.5
 			}
 		}
 	}
@@ -335,12 +335,16 @@ focus_tree = {
 			focus = SPR_Glorious_Nation
 		}
 		completion_reward = {
-			FRA = {
-				capital_scope = {
-					damage_building = {
-						type = infrastructure
-						damage = 5
-					}
+			806 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			31 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
 				}
 			}
 		}
@@ -829,6 +833,9 @@ focus_tree = {
 		relative_position_id = SPR_Military_Junta
 		x = 2
 		y = 5
+		available = {
+			date > 1914.6.28
+		}
 		prerequisite = {
 			focus = SPR_King_Of_Earth
 			focus = SPR_Forced_Labour
@@ -870,16 +877,19 @@ focus_tree = {
 			focus = SPR_War_Effort
 		}
 		completion_reward = {
-			every_controlled_state = {
-				if = {
-					limit = {
-						not = {
-							is_core_of = SPR
+			hidden_effect = {
+				every_controlled_state = {
+					if = {
+						limit = {
+							not = {
+								is_core_of = SPR
+							}
 						}
+						add_core_of = SPR
 					}
-					add_core_of = SPR
 				}
 			}
+			custom_effect_tooltip = SPR_Core_Tip
 		}
 	}
 	focus = {
@@ -893,12 +903,18 @@ focus_tree = {
 			focus = SPR_Mobilisation
 		}
 		completion_reward = {
-			army_experience = 30
+			add_mastery = {
+				amount = 10
+			}
 			GER = {
-				army_experience = 30
+				add_mastery = {
+					amount = 10
+				}
 			}
 			AUS = {
-				army_experience = 30
+				add_mastery = {
+					amount = 10
+				}
 			}
 		}
 	}
