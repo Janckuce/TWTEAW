@@ -672,3 +672,24 @@ GER_Plunder_Decisions = {
 		}
 	}
 }
+
+GER_Annex_Subjects_Descision_Catagory = {
+
+	GER_Annex_GCG = {
+	  	visible = {
+			GCG = {
+			  owns_state = 546 # Tanganyika
+		  	}
+		  	GCG = {is_ai = yes}
+	  	}
+		available = {
+			GCG = {is_ai = yes}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			annex_country = { target = GCG}
+		}
+	}
+} 

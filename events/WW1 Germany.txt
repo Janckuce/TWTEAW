@@ -682,6 +682,8 @@ country_event = {
 				transfer_state = 28 #Alsace
 				transfer_state = 857 #Saarland
 				transfer_state = 42 #Moselland
+				transfer_state = 51
+				transfer_state = 818
 				
 				#German Colonies
 				transfer_state = 773
@@ -692,7 +694,7 @@ country_event = {
 				transfer_state = 546
 				transfer_state = 839
 			}
-			AUS = {
+			AST = {
 				#German Colonies
 				transfer_state = 888
 				transfer_state = 737
@@ -738,6 +740,33 @@ country_event = {
 				}
 				RUS = {
 					transfer_state = 188 #Memel
+				}
+			}
+			if = {
+			    limit = {
+				    RUS = { controls_state = 10 } #Kaunas
+				}
+				RUS = {
+					release = POL
+					puppet = POL
+				}
+				POL = {
+					transfer_state = 807
+					transfer_state = 85
+					transfer_state = 88
+					transfer_state = 86
+				}
+				RUS = {
+					transfer_state = 93
+					transfer_state = 820
+					transfer_state = 95
+					transfer_state = 94
+					transfer_state = 784
+					transfer_state = 814
+					transfer_state = 856
+					transfer_state = 91
+					transfer_state = 89
+					transfer_state = 80
 				}
 			}
 			if = {
@@ -796,7 +825,184 @@ country_event = {
 					transfer_state = 538
 				}
 			}
-			
+			ROM = {
+				transfer_state = 890
+			}
+			if = {
+				limit = { 
+					GER = {
+						check_variable = {
+						ROM_in_war = 1
+						}
+					}
+				}
+				ROM = {
+				transfer_state = 77
+				transfer_state = 84
+				transfer_state = 76
+				transfer_state = 83
+				transfer_state = 82
+				}
+			}
+			SER = {
+				transfer_state = 764
+				transfer_state = 912
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 103
+				transfer_state = 859
+				transfer_state = 853
+				transfer_state = 102
+				transfer_state = 109
+				transfer_state = 45
+				transfer_state = 910
+				transfer_state = 105
+			}
+			if = {
+				limit = { 
+					GER = {
+						check_variable = {
+							Italy_in_war = 1
+						}
+					}
+				}
+				ITA = {
+					transfer_state = 39
+					transfer_state = 850
+					transfer_state = 736
+					transfer_state = 852
+					transfer_state = 841
+					transfer_state = 163
+					transfer_state = 448
+					transfer_state = 661
+					transfer_state = 449
+					transfer_state = 662
+					transfer_state = 663
+					transfer_state = 450
+					transfer_state = 451
+					transfer_state = 273
+				}
+			}
+			if = {
+				limit = {
+					GER = {
+						check_variable = {
+							Gre_in_war = 1
+						}
+					}
+				}
+				GRE = {
+					transfer_state = 837
+					transfer_state = 838
+					transfer_state = 731
+					transfer_state = 187
+					transfer_state = 184
+				}
+			}
+			if = {
+				limit = { 
+					GER = {
+						check_variable = {
+							ottoman_in_war = 1
+						}
+					}
+				}
+				OMA = {
+					transfer_state = 922
+					transfer_state = 293
+					transfer_state = 679
+					transfer_state = 921
+					transfer_state = 675
+				}
+				ENG = {
+					transfer_state = 454
+					transfer_state = 455
+					transfer_state = 291
+					transfer_state = 676
+					transfer_state = 344
+					transfer_state = 350
+					transfer_state = 348
+					transfer_state = 349
+				}
+				FRA = {
+					transfer_state = 554
+					transfer_state = 553
+					transfer_state = 677
+					transfer_state = 680
+					transfer_state = 799
+				}
+				if = {
+					limit = {
+						GER = {
+							check_variable = {
+								Italy_in_war = 1
+							}
+						}
+					}
+					ITA = {
+						transfer_state = 345
+						transfer_state = 346
+						transfer_state = 342
+						transfer_state = 343
+						transfer_state = 340
+					}
+					if = {
+						limit = {
+							GER = {
+								check_variable = {
+									Gre_in_war = 1
+								}
+							}
+						}
+					GRE = {
+						transfer_state = 339
+						transfer_state = 341
+						transfer_state = 930
+						}
+					} else ={
+						ITA = {
+							transfer_state = 339
+						}
+						if = {
+							limit = {
+								RUS = {
+									controls_state = 195
+								}
+							}
+							RUS = {
+								transfer_state = 341
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						RUS = {
+							controls_state = 195
+						}
+					}
+					RUS = {
+						transfer_state = 354
+						transfer_state = 800
+						transfer_state = 797
+						transfer_state = 352
+						transfer_state = 353
+						transfer_state = 340
+					}
+				} else = {
+					release = KUR
+					ARM = {
+						transfer_state = 354
+						transfer_state = 800
+						transfer_state = 352
+						transfer_state = 353
+					}
+					ORO = {
+						transfer_state = 340
+						transfer_state = 797
+					}
+				}
+			}
 		}
 	}
 }

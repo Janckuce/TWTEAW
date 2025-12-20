@@ -280,10 +280,10 @@ focus_tree = {
 
 		completion_reward = {
 			276 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 		    }
@@ -293,8 +293,8 @@ focus_tree = {
 	focus = {
 		id = CAN_factories2
 		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
-		cost = 7.2
-		x = 5
+		cost = 5
+		x = 4
 		y = 2
 
 		prerequisite = {
@@ -314,14 +314,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAN_mil_factories1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		x = 6
+		y = 2
+
+		prerequisite = {
+			focus = CAN_factories1
+		}
+
+		completion_reward = {
+			468 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
 		id = CAN_factories3
 		icon = GFX_focus_generic_modernize_industry
-		cost = 7.2
-		x = 5
+		cost = 5
+		x = 4
 		y = 3
 
 		prerequisite = {
 			focus = CAN_factories2
+			focus = CAN_mil_factories1
 		}
 
 		completion_reward = {
@@ -337,14 +361,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAN_brit_colombia_naval_factory
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		x = 6
+		y = 3
+
+		prerequisite = {
+			focus = CAN_factories2
+			focus = CAN_mil_factories1
+		}
+
+		completion_reward = {
+			473 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+				}
+		    }
+		}
+	}
+
+	focus = {
 		id = CAN_factories4
 		icon = GFX_focus_generic_industry_1
-		cost = 7.2
+		cost = 5
 		x = 5
 		y = 4
 
 		prerequisite = {
 			focus = CAN_factories3
+			focus = CAN_brit_colombia_naval_factory
 		}
 
 		completion_reward = {
@@ -365,7 +414,7 @@ focus_tree = {
 	focus = {
 		id = CAN_bar_natives_from_volounteering
 		icon = GFX_focus_eng_move_to_secure_the_dominions
-		cost = 10
+		cost = 7.2
 		x = 8
 		y = 1
 
@@ -421,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = CAN_first_nations_people_in_army
 		icon = GFX_focus_NORDIC_com_institution_1
-		cost = 10
+		cost = 7.2
 		x = 11
 		y = 1
 
@@ -448,7 +497,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = -25
+			add_ideas = CAN_First_Reform
 		}
 	}
 
@@ -464,7 +514,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CAN_Native_Consessions
+			swap_ideas = {
+				remove_idea = CAN_First_Reform
+				add_idea = CAN_Native_Consessions
+			}
 		}
 	}
 
@@ -801,7 +854,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army_science
 		icon = GFX_SOV_pc_of_mechanical_engineering_ccp_2d_sov_compatibility
-		cost = 10
+		cost = 7.2
 		x = 20
 		y = 2
 
@@ -822,7 +875,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army_right2
 		icon = GFX_goal_generic_defence
-		cost = 10
+		cost = 7.2
 		x = 18
 		y = 2
 
@@ -845,7 +898,7 @@ focus_tree = {
 	focus = {
 		id = CAN_infantry_weapons
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		cost = 10
+		cost = 7.2
 		x = 19
 		y = 3
 
@@ -992,7 +1045,7 @@ focus_tree = {
 		completion_reward = {
 				swap_ideas = {
 				remove_idea = CAN_Native_Support
-				add_idea = CAN_New_Heritage
+				add_idea = CAN_New_Heritage1
 			}
 		}
 	}
@@ -1010,7 +1063,7 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = CAN_New_Heritage
+				remove_idea = CAN_New_Heritage1
 				add_idea = CAN_New_Heritage2
 			}
 		}

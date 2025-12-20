@@ -159,7 +159,7 @@ focus_tree = {
 			focus = BEL_Congo_Rubber_Production
 		}
 		completion_reward = {
-			295 = {
+			935 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -180,7 +180,7 @@ focus_tree = {
 			focus = BEL_Congo_Infrastructure
 		}
 		completion_reward = {
-			295 = {
+			935 = {
 				add_extra_state_shared_building_slots = 2
 			}
 			add_research_slot = 1
@@ -205,7 +205,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 				}
 			}
 		}
@@ -232,7 +232,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 				}
 			}
 		}
@@ -248,6 +248,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Belgium_Defense1
+			focus = BEL_Congo_Defense1
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -272,7 +273,7 @@ focus_tree = {
 			focus = BEL_The_King's_Nation
 		}
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 	focus = {
@@ -307,6 +308,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = BEL_Congo_Defense1
+			focus = BEL_Belgium_Defense1
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -317,19 +319,77 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BEL_Military_Defense
+		id = BEL_Military_Defense_inf
 		icon = GFX_focus_CONGO_copper_cartridges
 		cost = 10
 		relative_position_id = BEL_Belgium_Defense2
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = BEL_Military_Defense_arty
+		}
 		prerequisite = {
 			focus = BEL_Belgium_Defense2
-			focus = BEL_Congo_Defense2
 		}
 		completion_reward = {
 			add_ideas = BEL_Military_Investment
+		}
+	}
+	focus = {
+		id = BEL_Military_Defense_inf1
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 10
+		relative_position_id = BEL_Belgium_Defense2
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = BEL_Military_Defense_inf
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Military_Investment
+				add_idea = BEL_Military_Investment1
+			}
+		}
+	}
+	focus = {
+		id = BEL_Military_Defense_arty
+		icon = GFX_focus_RAJ_mountain_guns
+		cost = 10
+		relative_position_id = BEL_Belgium_Defense2
+		x = 2
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = BEL_Military_Defense_inf
+		}
+		prerequisite = {
+			focus = BEL_Congo_Defense2
+		}
+		completion_reward = {
+			add_ideas = BEL_Artillery_Investment
+		}
+	}
+	focus = {
+		id = BEL_Military_Defense_arty1
+		icon = GFX_focus_SWE_the_aland_question
+		cost = 10
+		relative_position_id = BEL_Belgium_Defense2
+		x = 2
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = BEL_Military_Defense_arty
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BEL_Artillery_Investment
+				add_idea = BEL_Artillery_Investment1
+			}
 		}
 	}
 	focus = {
@@ -341,7 +401,7 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		available = {
-			has_tech = ww1_mechanical_computing_1
+			has_tech = ww1_electrical_engineering_1
 		}
 		prerequisite = {
 			focus = BEL_The_King's_Nation
@@ -359,7 +419,7 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		available = {
-			has_tech = ww1_mechanical_computing_2
+			has_tech = ww1_mechanical_computing_1
 		}
 		prerequisite = {
 			focus = BEL_Science1
@@ -380,7 +440,7 @@ focus_tree = {
 		y = 1
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		available = {
-			has_tech = ww1_mechanical_computing_3
+			has_tech = ww1_mechanical_computing_2
 		}
 		prerequisite = {
 			focus = BEL_Science2
@@ -706,7 +766,7 @@ focus_tree = {
 			date > 1914.7.28
 		}
 		completion_reward = {
-			295 = {
+			935 = {
 				add_core_of = BEL
 			}
 		}

@@ -1253,6 +1253,7 @@ Schlieffen_No_Fort_North_Front = {
 
 	icon = GFX_modifiers_generic_defense
     state_bunker_max_level_terrain_limit = -15
+	max_dig_in_factor = -2
 	remove_trigger = {
 		BEL = { has_war = yes }
 	}

@@ -7,8 +7,6 @@ set_oob = "ITA_1911"
 set_naval_oob = "ITA_1911_Naval"
 
 recruit_character = ITA_vittorio_emanuele_III
-recruit_character = ITA_benito_mussolini_K
-recruit_character = ITA_luigi_cadorna
 recruit_character = ITA_alberico_albricci
 recruit_character = ITA_alberto_cavaciocchi
 recruit_character = ITA_emanuele_filiberto_di_savoia-aosta
@@ -20,7 +18,13 @@ recruit_character = ITA_Guy1
 recruit_character = ITA_Guy2
 recruit_character = ITA_Guy3
 recruit_character = ITA_Guy4
+recruit_character = ITA_luigi_cadorna
 recruit_character = ITA_aldo_pellegrini
+recruit_character = ITA_Giulio_Douhet
+recruit_character = ITA_Prince_Luigi_Amedeo
+# The following characters are hired via focus: Luigi Cadorna, Aldo Pellegrini, Giulio Douhet, Prince Luigi Amedeo
+# Recruited them here for clarity of availability, they're still focus-gated in terms of appointing them
+# Mussolini has been removed for obvious gross historical inconsistency
 
 # Starting tech
 set_technology = {
@@ -51,13 +55,18 @@ set_technology = {
 	}
 
 add_ideas = {
-	ITA_italian_unification
-	ITA_italian_colonies
-	ITA_central_powers
-	ITA_weak_economy
-	ITA_incompetent_military
-	ITA_incompetent_navy
+	ITA_idea_North_South_Divide_Initial
+	ITA_idea_italian_colonies
+	ITA_idea_central_powers
+	ITA_idea_weak_economy
 }
+add_timed_idea = {
+    idea = starting_production_efficiency
+    days = 5
+}
+
+# North-South divide replaces unification spirit
+# Military debuffs are applied after the Tripoli war via focus and can then get fixed
 
 ##### Party Popularity, Stability, War Support and other #####
 

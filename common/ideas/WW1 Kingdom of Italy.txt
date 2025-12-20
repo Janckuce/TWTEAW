@@ -2,8 +2,10 @@ ideas = {
 
 	country = {
 
-		ITA_incompetent_military = {
-
+	# Begin internal politics/economy ideas
+		
+		ITA_idea_North_South_Divide_Initial = {
+		
 			allowed = {
 				always = no
 			}
@@ -14,18 +16,17 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_army_problems
+			picture = generic_disjointed_gov
 
 			modifier = {
-				training_time_army_factor = 0.1
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
-				army_org_factor = -0.2
-			}
+				political_power_gain = -0.4
+				stability_factor = -0.25
+				conscription_factor = -0.4
+			}	
 		}
-		
-		ITA_incompetent_navy = {
 
+		ITA_idea_North_South_Divide_Localized_Government = {
+		
 			allowed = {
 				always = no
 			}
@@ -36,18 +37,180 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = generic_sea_focused_navy
+			picture = generic_disjointed_gov
 
 			modifier = {
-				experience_gain_navy_factor	= -0.05
-				naval_hit_chance = -0.05
-				naval_speed_factor = -0.05
-				naval_coordination = -0.05
-			}
+				political_power_gain = -0.4
+				stability_factor = -0.1
+				conscription_factor = -0.4
+			}	
 		}
-		
-		ITA_italian_unification = {
 
+		ITA_idea_North_South_Divide_Promoted_Local_Customs = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				conscription_factor = -0.4
+			}	
+		}
+
+		ITA_idea_North_South_Divide_Multiple_Dialects_One_Language = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.1
+				conscription_factor = -0.1
+			}	
+		}
+
+		ITA_idea_Cosa_Nostra_Cooperation = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.15
+			}	
+		}
+
+		ITA_idea_North_South_Divide_Centralized_Government = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_gain = -0.4
+				stability_factor = -0.4
+				conscription_factor = -0.5
+			}	
+		}
+
+		ITA_idea_North_South_Divide_Mafia_Purged = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.4
+				conscription_factor = -0.5
+			}	
+		}
+
+		ITA_idea_Mafia_Purged_timed = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_intel_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}	
+		}
+
+		ITA_idea_North_South_Divide_Standard_Italian = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.4
+			}	
+		}
+
+		ITA_idea_Modern_Labor_Legislation = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}	
+		}
+
+		ITA_idea_Irredentism = {
+		
 			allowed = {
 				always = no
 			}
@@ -62,11 +225,358 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
+				mobilization_speed = 0.1
 				stability_factor = 0.05
+			}	
+		}
+
+		ITA_idea_Ultra_Irredentism = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_italian_irredentism
+
+			modifier = {
+				conscription = 0.025
+				conscription_factor = 0.2
+				mobilization_speed = 0.15
+				stability_factor = 0.05
+			}	
+		}
+
+		ITA_idea_weak_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = usa_great_depression_2
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				industrial_capacity_factory = -0.2
+			}
+		}
+
+		ITA_idea_prepare_for_the_inevitable_ww1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = generic_production_bonus
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 		
-		ITA_italian_colonies = {
+		ITA_idea_trade_with_uk = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+	# End internal affairs ideas
+	# Begin military ideas
+	# Begin army ideas
+
+		ITA_idea_Italian_Army_Initial = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.2
+			}
+		}
+
+		ITA_idea_Italian_Army_Studied_Doctrines = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				training_time_army_factor = 0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+
+		ITA_idea_Italian_Army_Prepared_for_Mountain_Warfare = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				training_time_army_factor = 0.1
+			}
+		}
+
+		ITA_idea_Italian_Army_Large_Scale_Exercises = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+			}
+		}
+
+		ITA_idea_Italian_Army_Mobilization_Organized = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		
+		ITA_idea_Italian_Army_Modern = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regio_esercito_1
+
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+				breakthrough_factor = 0.15
+				acclimatization_cold_climate_gain_factor = 0.1
+				air_superiority_bonus_in_combat = 0.2
+				army_strength_factor = 0.1
+			}
+		}
+		
+		ITA_idea_alpini_elevated = { 
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+            picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				mountaineers_special_forces_contribution_factor = -0.1
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.1
+			}
+		}
+
+		ITA_idea_Army_Training_with_France = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = ENG_trade_with_france
+
+			modifier = {
+				training_time_army_factor = -0.1
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+
+		ITA_idea_Army_Training_with_Germany = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+            picture = german_advisors
+
+			modifier = {
+				training_time_army_factor = -0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+
+# End army ideas
+# Begin navy ideas
+
+		ITA_idea_Italian_Navy_Initial = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regia_marina_1
+
+			modifier = {
+				experience_gain_navy_factor	= -0.05
+				naval_hit_chance = -0.05
+				naval_speed_factor = -0.05
+				naval_coordination = -0.05
+			}
+		}
+
+		ITA_idea_Italian_Navy_Reformed = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regia_marina_1
+
+			modifier = {
+				experience_gain_navy_factor	= 0.05
+				naval_hit_chance = 0.05
+				naval_speed_factor = 0.05
+				naval_coordination = 0.05
+			}
+		}
+		
+# End navy ideas
+# Begin air force ideas
+	
+		ITA_idea_Italian_Air_Force_Modernized = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = ITA_regia_aeronautica_1
+
+			modifier = {
+				air_superiority_efficiency	= 0.05
+				air_intercept_efficiency = 0.05
+				air_cas_efficiency = 0.05
+				air_attack_factor = 0.05
+				air_accidents_factor = -0.05
+			}
+		}
+		
+	# End military ideas
+	# Begin foreign affairs/colonial ideas
+
+		ITA_idea_italian_colonies = {
 
 			allowed = {
 				always = no
@@ -86,7 +596,7 @@ ideas = {
 			}
 		}
 		
-		ITA_italian_colonies_2 = {
+		ITA_idea_italian_colonies_2 = {
 
 			allowed = {
 				always = no
@@ -106,7 +616,147 @@ ideas = {
 			}
 		}
 		
-		ITA_central_powers = {
+		ITA_idea_Tripoli_Triumph_timed = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_weekly_factor = 0.001
+				war_support_weekly_factor = 0.001
+			}	
+		}
+
+		ITA_idea_Model_Colonial_Overlord = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.1
+			}	
+		}
+
+		ITA_idea_Cyrenaica_Catastrophe = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_army_corruption
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_weekly_factor = -0.001
+				war_support_weekly_factor = -0.001
+			}
+		}
+
+		ITA_idea_Cyrenaica_Catastrophe_Compensation = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_army_corruption2
+
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ITA_idea_Cyrenaica_Catastrophe_Inward_Focus = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_army_corruption2
+
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ITA_idea_Cyrenaica_Catastrophe_Jobs = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_army_corruption2
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ITA_idea_Cyrenaica_Catastrophe_Lingering_timed = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_incompetent_officers
+
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ITA_idea_central_powers = {
 
 			allowed = {
 				always = no
@@ -126,7 +776,8 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-		ITA_central_powers_2 = {
+
+		ITA_idea_central_powers_2 = {
 
 			allowed = {
 				always = no
@@ -147,47 +798,7 @@ ideas = {
 			}
 		}
 		
-		ITA_weak_economy = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			picture = usa_great_depression_2
-
-			modifier = {
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_arms_factory_factor = -0.3
-				industrial_capacity_factory = -0.2
-			}
-		}
-		
-		ITA_trade_with_uk = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			picture = eng_the_sun_never_sets
-
-			modifier = {
-				consumer_goods_factor = -0.15
-			}
-		}
-		
-		ITA_entente = {
+		ITA_idea_entente = {
 
 			allowed = {
 				always = no
@@ -216,43 +827,5 @@ ideas = {
 			}
 		}
 		
-		ITA_prepare_for_the_inevitable_idea_ww1 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = generic_production_bonus
-
-			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				industrial_capacity_factory = 0.05
-			}
-		}
-		
-		ITA_army_training_with_france_idea = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = ENG_trade_with_france
-
-			modifier = {
-				training_time_army_factor = -0.1
-			}
-		}
-	}
-}
+	} # end country
+} # end ideas
