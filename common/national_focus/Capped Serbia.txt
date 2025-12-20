@@ -1,0 +1,221 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = capped_serbian_focus
+	country = {
+		factor = 0
+	}
+
+	default = no
+
+	focus = {
+		id = SER_Scraping_The_Barrel
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		x = 5
+		y = 0
+		available_if_capitulated = yes
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+	focus = {
+		id = SER_First_Wave_Of_Production
+		icon = GFX_focus_generic_tank_production
+		cost = 10
+		relative_position_id = SER_Scraping_The_Barrel
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Scraping_The_Barrel
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = SER_Scavenge_For_Supplies
+		icon = GFX_focus_AFG_scavenging
+		cost = 10
+		relative_position_id = SER_First_Wave_Of_Production
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_First_Wave_Of_Production
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+		}
+	}
+	focus = {
+		id = SER_Second_Wave_Of_Production
+		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
+		cost = 10
+		relative_position_id = SER_Scavenge_For_Supplies
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Scavenge_For_Supplies
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = SER_Foreign_Legion
+		icon = GFX_focus_FIN_foreign_anti_air
+		cost = 10
+		relative_position_id = SER_Second_Wave_Of_Production
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Second_Wave_Of_Production
+		}
+		completion_reward = {
+			division_template = {
+				name = "Srpska Strana Divizija"
+				is_locked = yes
+
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+					irregular_infantry = { x = 1 y = 0 }
+					irregular_infantry = { x = 1 y = 1 }
+					irregular_infantry = { x = 1 y = 2 }
+					irregular_infantry = { x = 2 y = 0 }
+					irregular_infantry = { x = 2 y = 1 }
+					irregular_infantry = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+				}
+
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			126 = {
+				create_unit = {
+					division = "name = \"Srpska Strana Divizija\" division_template = \"Srpska Strana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Srpska Strana Divizija\" division_template = \"Srpska Strana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Serb_Workers
+		icon = GFX_focus_CHL_expand_the_forestry
+		cost = 10
+		relative_position_id = SER_Second_Wave_Of_Production
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Second_Wave_Of_Production
+		}
+		completion_reward = {
+			RUS = {
+				capital_scope = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SER_Serbian_Guerillas
+		icon = GFX_focus_por_portuguese_legion
+		cost = 10
+		relative_position_id = SER_Second_Wave_Of_Production
+		x = -1
+		y = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Second_Wave_Of_Production
+		}
+		completion_reward = {
+			107 = {
+				add_resistance = 50
+			}
+			108 = {
+				add_resistance = 50
+			}
+		}
+	}
+	focus = {
+		id = SER_Gradual_Recruitment
+		icon = GFX_focus_CHL_mapuche_reconcilliation_campaigns_export
+		cost = 10
+		relative_position_id = SER_Second_Wave_Of_Production
+		x = 1
+		y = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Second_Wave_Of_Production
+		}
+		completion_reward = {
+			add_ideas = SER_Recruitment_Centre
+		}
+	}
+	focus = {
+		id = SER_Final_Wave_Of_Production
+		icon = GFX_focus_generic_mass_production
+		cost = 10
+		relative_position_id = SER_Second_Wave_Of_Production
+		x = 0
+		y = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Second_Wave_Of_Production
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+}

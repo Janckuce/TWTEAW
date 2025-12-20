@@ -226,22 +226,10 @@ country_event = {
 	option = {
 		name = ww1_ottoman.6.a
 		TUR = {
-		transfer_state = 341	
-		} 
+			transfer_state = 341
+		}
 		ai_chance = {
 			factor = 0
-		}
-	}
-	option = {
-		name = ww1_ottoman.6.b
-		ai_chance = {
-			factor = 0
-		}
-		TUR = {
-			declare_war_on = {
-				type = take_claimed_state
-				target = BUL
-			}
 		}
 	}
 }

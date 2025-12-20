@@ -39,7 +39,6 @@ set_technology = {
 
 add_ideas = {
 	GEN_Minor_Nation_Balancer
-	SER_nikolas_pasic
 }
 add_timed_idea = {
     idea = starting_production_efficiency
@@ -51,15 +50,15 @@ add_timed_idea = {
 starting_train_buffer = 1
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1910.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 31
-	democratic = 43
+	neutrality = 43
+	democratic = 31
 	fascism = 24
 	communism = 2
 }
