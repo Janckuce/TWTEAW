@@ -226,5 +226,25 @@ ideas = {
 				army_defence_factor = 0.05
 			}
 		}
+		YEM_Lightning_Army = {
+			picture = por_colonial_army
+			modifier = {
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+			}
+		}
+		YEM_Iron_Army = {
+			picture = SWE_ga_pa_tactics
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+		}
+		YEM_Sabotaged_Resources = {
+			picture = ETH_scavenging_tactics
+			modifier = {
+				local_resources_factor = -0.33
+			}
+		}
 	}
 }

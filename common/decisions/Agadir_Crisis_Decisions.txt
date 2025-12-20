@@ -1,0 +1,91 @@
+ALL_Agadir_Crisis_Category = {
+	ALL_Discussion_Concluded = {
+		priority = 2
+		is_good = no
+		days_mission_timeout = 150
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						FRA.Lobby_Support > GER.Lobby_Support
+					}
+				}
+				GER = {
+					add_timed_idea = {
+						idea = ALL_Sanctions
+						days = 120
+					}
+				}
+				AUS = {
+					add_timed_idea = {
+						idea = ALL_Sanctions
+						days = 120
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						FRA.Lobby_Support < GER.Lobby_Support
+					}
+				}
+				FRA = {
+					add_timed_idea = {
+						idea = ALL_Sanctions
+						days = 120
+					}
+				}
+				ENG = {
+					add_timed_idea = {
+						idea = ALL_Sanctions
+						days = 120
+					}
+				}
+			}
+			set_variable = {
+				GER.Agadir_Finished = 1
+			}
+		}
+	}
+	ALL_Invest_PP = {
+		priority = 1
+		cost = 20
+		fire_only_once = no
+		days_re_enable = 20
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = ALL_Add_Support
+			if = {
+				limit = {
+					or = {
+						tag = FRA
+						tag = ENG
+					}
+				}
+				add_to_variable = {
+					FRA.Lobby_Support = 1
+				}
+			}
+			else_if = {
+				limit = {
+					or = {
+						tag = GER
+						tag = AUS
+					}
+				}
+				add_to_variable = {
+					GER.Lobby_Support = 1
+				}
+			}
+		}
+	}
+}

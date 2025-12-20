@@ -240,7 +240,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "navy"
-			position = { x= 83377 y = 6}
+			position = { x= 863 y = 6}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -253,14 +253,14 @@ guiTypes = {
 			iconType = {
 				name ="navy_experience_icon"
 				spriteType = "GFX_navy_experience"
-				position = { x= 13335 y = 6 }
+				position = { x= 5 y = 8 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}		
 			
 			instantTextBoxType = {
 				name ="navy_experience_value"
-				position = { x= 13336 y = 3 }
+				position = { x= 20 y = 6 }
 				font = "hoi_18mbs"
 				text = "999"
 				format = left
@@ -273,7 +273,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "air"
-			position = { x= 863 y = 6}
+			position = { x= 920 y = 6}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -293,7 +293,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name ="air_experience_value"
-				position = { x= 20 y = 6 }
+				position = { x= 23 y = 6 }
 				font = "hoi_18mbs"
 				text = "999"
 				format = left

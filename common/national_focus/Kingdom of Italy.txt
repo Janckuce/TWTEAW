@@ -106,27 +106,27 @@ focus_tree = {
 			#
 		}
 		available = {
-		    controls_state = 849
-			controls_state = 117
+		    controls_state = 849 # Puglia
+			controls_state = 117 # Campania
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 				
 		completion_reward = {
-			849 = {
-				add_extra_state_shared_building_slots = 2
+			849 = { # Puglia
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
-					}
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			117 = {
+			117 = { # Campania
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -247,11 +247,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		
 		completion_reward = {
-			2 = {
-				add_extra_state_shared_building_slots = 3
+			2 = { # Lazio
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -310,7 +310,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		
 		completion_reward = {
-		    913 = {
+		    913 = { # Friuli
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -318,7 +318,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			160 = {
+			160 = { # Veneto
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -326,7 +326,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			849 = {
+			849 = { # Puglia
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -334,7 +334,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			156 = {
+			156 = { # Calabria
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -342,7 +342,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			157 = {
+			157 = { # Abruzzo
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -375,7 +375,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 				
 		completion_reward = {
-		    114 = {
+		    114 = { # Sardegna
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -523,8 +523,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		
 		completion_reward = {
-			
-			117 = {
+			115 = { # Sicilia
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -532,15 +531,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			115 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			157 = {
+			157 = { # Abruzzo
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -731,6 +722,9 @@ focus_tree = {
 		y = 0
 		cost = 7.2
 		
+		bypass = {
+			#
+		}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		
 		completion_reward = {
@@ -1454,11 +1448,36 @@ focus_tree = {
 # End colonial focuses
 # Branch 2: Military 
 	focus = {
-		id = ITA_focus_armed_forces_review
+		id = ITA_focus_War_in_Tripoli
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = ITA_focus_colonial_ambition
 		prerequisite = {
 			focus = ITA_focus_colonial_ambition
+		}
+		available = {
+			has_country_flag = ITA_attack_turkey
+		}
+		
+		x = 13
+		y = 1
+		cost = 0.2
+		
+		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+		
+		completion_reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = ITA_focus_armed_forces_review
+		icon = GFX_goal_generic_army_doctrines
+		relative_position_id = ITA_focus_War_in_Tripoli
+		prerequisite = {
+			focus = ITA_focus_Hire_a_Chief_of_Army
+			focus = ITA_focus_Hire_Douhet
+			focus = ITA_focus_Hire_Pellegrini
+			focus = ITA_focus_Appoint_Chief_of_Navy
 		}
 		available = {
 			OR = {
@@ -1467,8 +1486,8 @@ focus_tree = {
 			}
 		}
 		
-		x = 13
-		y = 1
+		x = 0
+		y = 2
 		cost = 1
 		
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
@@ -1485,9 +1504,9 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Hire_a_Chief_of_Army
 		icon = GFX_focus_generic_military_mission
-		relative_position_id = ITA_focus_armed_forces_review
+		relative_position_id = ITA_focus_War_in_Tripoli
 		prerequisite = {
-			focus = ITA_focus_armed_forces_review
+			focus = ITA_focus_War_in_Tripoli
 		}
 		x = -6
 		y = 1
@@ -1509,11 +1528,16 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Study_Other_Powers_Doctrines
 		icon = GFX_focus_generic_combined_arms
-		relative_position_id = ITA_focus_Hire_a_Chief_of_Army
+		relative_position_id = ITA_focus_armed_forces_review
 		prerequisite = {
-			focus = ITA_focus_Hire_a_Chief_of_Army
+			focus = ITA_focus_armed_forces_review
 		}
-		x = 0
+
+		available = {
+			has_completed_focus = ITA_focus_Hire_a_Chief_of_Army
+		}
+
+		x = -6
 		y = 1
 		cost = 5
 
@@ -1526,12 +1550,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
+			add_mastery = {
+				amount = 25
+				folder = land
+				track = infantry
 			}
-			army_experience = 50
 			swap_ideas = {
 				remove_idea = ITA_idea_Italian_Army_Initial
 				add_idea = ITA_idea_Italian_Army_Studied_Doctrines
@@ -1644,11 +1667,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		
 		completion_reward = {
-			army_experience = 50
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
+			add_mastery = {
+				amount = 25
+				folder = land
+				track = operations
 			}
 			swap_ideas = {
 				remove_idea = ITA_idea_Italian_Army_Prepared_for_Mountain_Warfare
@@ -1809,6 +1831,11 @@ focus_tree = {
 		completion_reward = {
 			army_experience = -50
 		    add_ideas = ITA_idea_alpini_elevated
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mountaineers_doctrine
+			}
 		}
 	}
 	
@@ -1816,9 +1843,9 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Hire_Douhet
 		icon = GFX_focus_generic_military_mission
-		relative_position_id = ITA_focus_armed_forces_review
+		relative_position_id = ITA_focus_War_in_Tripoli
 		prerequisite = {
-		    focus = ITA_focus_armed_forces_review
+		    focus = ITA_focus_War_in_Tripoli
 		}
 		mutually_exclusive = {
 		    focus = ITA_focus_Hire_Pellegrini
@@ -1838,9 +1865,9 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Hire_Pellegrini
 		icon = GFX_focus_generic_military_mission
-		relative_position_id = ITA_focus_armed_forces_review
+		relative_position_id = ITA_focus_War_in_Tripoli
 		prerequisite = {
-		    focus = ITA_focus_armed_forces_review
+		    focus = ITA_focus_War_in_Tripoli
 		}
 		mutually_exclusive = {
 		    focus = ITA_focus_Hire_Douhet
@@ -1867,12 +1894,19 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Utilize_Libya_Experience
 		icon = GFX_goal_generic_air_doctrine
-		relative_position_id = ITA_focus_Hire_Pellegrini
+		relative_position_id = ITA_focus_armed_forces_review
 		prerequisite = {
-			focus = ITA_focus_Hire_Douhet
-			focus = ITA_focus_Hire_Pellegrini
+			focus = ITA_focus_armed_forces_review
 		}
-		x = -1
+
+		available = {
+			OR = {
+				has_completed_focus = ITA_focus_Hire_Douhet
+				has_completed_focus = ITA_focus_Hire_Pellegrini
+			}
+		}		
+
+		x = 0
 		y = 1
 		cost = 4
 
@@ -1886,12 +1920,41 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
 		
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = ITA_air_doc_bonus_1
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
+			add_mastery = {
+				amount = 25
+				folder = air
+				track = fighter_aircraft
 			}
+			if = {
+				limit = {
+					has_completed_focus = ITA_focus_Hire_Douhet
+				}
+				add_mastery = {
+					amount = 25
+					folder = air
+					track = medium_aircraft
+				}
+				add_mastery = {
+					amount = 25
+					folder = air
+					track = heavy_aircraft
+				}	
+			}
+			if = {
+				limit = {
+					has_completed_focus = ITA_focus_Hire_Pellegrini
+				}
+				add_mastery = {
+					amount = 25
+					folder = air
+					track = medium_aircraft
+				}
+				add_mastery = {
+					amount = 25
+					folder = air
+					track = strike_aircraft
+				}	
+			}	
 		}
 	}
 	
@@ -1916,7 +1979,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
 		
 		completion_reward = {
-			161 = {
+			161 = { # Emilia Romagna
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -1924,7 +1987,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_air_focus_2air
 			}
-			162 = {
+			162 = { # Toscana
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -1932,7 +1995,7 @@ focus_tree = {
 				}
 				set_state_flag = FRA_air_focus_2air
 			}
-			157 = {
+			157 = { # Abruzzo
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -2152,11 +2215,11 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Appoint_Chief_of_Navy
 		icon = GFX_focus_generic_military_mission
-		relative_position_id = ITA_focus_armed_forces_review
+		relative_position_id = ITA_focus_War_in_Tripoli
 		prerequisite = {
-		    focus = ITA_focus_armed_forces_review
+		    focus = ITA_focus_War_in_Tripoli
 		}
-		x = 7
+		x = 8
 		y = 1
 		cost = 1
 
@@ -2170,11 +2233,16 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Expand_Naval_Facilities
 		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = ITA_focus_Appoint_Chief_of_Navy
+		relative_position_id = ITA_focus_armed_forces_review
 		prerequisite = {
-			focus = ITA_focus_Appoint_Chief_of_Navy
+			focus = ITA_focus_armed_forces_review
 		}
-		x = 0
+
+		available = {
+			has_completed_focus = ITA_focus_Appoint_Chief_of_Navy
+		}
+
+		x = 8
 		y = 1
 		cost = 10
 		
@@ -2259,9 +2327,9 @@ focus_tree = {
 	focus = {
 		id = ITA_focus_Navy_Research_1
 		icon = GFX_goal_generic_navy_cruiser
-		relative_position_id = ITA_focus_Appoint_Chief_of_Navy
+		relative_position_id = ITA_focus_Expand_Naval_Facilities
 		prerequisite = {
-			focus = ITA_focus_Appoint_Chief_of_Navy
+			focus = ITA_focus_Expand_Naval_Facilities
 		}
 		x = -3
 		y = 1
@@ -2796,10 +2864,9 @@ focus_tree = {
 				remove_idea = ITA_idea_Italian_Navy_Initial
 				add_idea = ITA_idea_Italian_Navy_Reformed
 			}
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.75
-				uses = 1
-				category = naval_doctrine
+			add_mastery = {
+				amount = 30
+				folder = naval
 			}
 		}
 	}

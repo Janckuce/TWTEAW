@@ -158,6 +158,30 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		set_variable = {
+			GER.Agadir_Finished = 0
+		}
+		set_variable = {
+			GER.Lobby_Support = 0
+		}
+		set_variable = {
+			FRA.Lobby_Support = 0
+		}
+		ENG = {
+			activate_mission = ALL_Discussion_Concluded
+		}
+		FRA = {
+			activate_mission = ALL_Discussion_Concluded
+		}
+		GER = {
+			activate_mission = ALL_Discussion_Concluded
+		}
+		AUS = {
+			activate_mission = ALL_Discussion_Concluded
+		}
+	}
+
 	option = {
 		name = ww1_france.3.a
 		
@@ -173,21 +197,11 @@ country_event = {
 		SPR = {
 		    country_event = ww1_spain.1
 		}
-		add_named_threat = { threat = 5 name = FRA_annex_morocco }
+		add_named_threat = { threat = 15 name = FRA_annex_morocco }
 		ai_chance = {
 			factor = 100
 		}
 	}
-	# option = {
-	# 	name = ww1_france.3.b
-
-	# 	FRA = {
-	# 		puppet = MOR
-	# 	}
-	# 	ai_chance = {
-	# 		factor = 0
-	# 	}
-	# }
 }
 
 #France backs down

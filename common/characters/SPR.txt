@@ -10,5 +10,125 @@ characters={
 			ideology = centrism
 			expire = "1965.1.1.1"
 		}
+		advisor = {
+			slot = theorist
+			traits = {
+				SPR_Militaristic_Monarch_Of_Spain
+			}
+			cost = 150
+			can_be_fired = yes
+			idea_token = SPR_Alfonso_XIII
+		}
+	}
+	SPR_Valeriano_Weyler = {
+		name = SPR_Valeriano_Weyler
+		portraits = {
+			civilian = {
+				large = "GFX_bel_armand_de_ceuninck"
+				small = "GFX_bel_armand_de_ceuninck_frame"
+			}
+		}
+		advisor = {
+        	slot = army_chief
+        	traits = {
+				SPR_Brutal_Colonial_Veteran
+			}
+        	cost = 100
+        	can_be_fired = yes
+        	idea_token = SPR_Valeriano_Weyler
+    	}
+		corps_commander = {
+			traits = {
+				war_hero
+				aggressive_assaulter
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	SPR_Jose_Villalba_Riquelme = {
+		name = SPR_Jose_Villalba_Riquelme
+		portraits = {
+			civilian = {
+				large = "GFX_bel_armand_de_ceuninck"
+				small = "GFX_bel_armand_de_ceuninck_frame"
+			}
+		}
+		advisor = {
+        	slot = army_chief
+        	traits = {
+				SPR_Army_Reformer
+			}
+        	cost = 150
+        	can_be_fired = yes
+        	idea_token = SPR_Jose_Villalba_Riquelme
+    	}
+		field_marshal = {
+			traits = {
+				organizer
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	SPR_Manuel_Fernandez_Silvestre = {
+		name = SPR_Manuel_Fernandez_Silvestre
+		portraits = {
+			civilian = {
+				large = "GFX_bel_armand_de_ceuninck"
+				small = "GFX_bel_armand_de_ceuninck_frame"
+			}
+		}
+		advisor = {
+        	slot = high_command
+        	traits = {
+				army_infantry_2
+			}
+        	cost = 150
+        	can_be_fired = yes
+        	idea_token = SPR_Manuel_Fernandez_Silvestre
+    	}
+	}
+	SPR_Francisco_Cambo = {
+		name = SPR_Francisco_Cambo
+		portraits = {
+			civilian = {
+				large = "GFX_bel_armand_de_ceuninck"
+				small = "GFX_bel_armand_de_ceuninck_frame"
+			}
+		}
+		advisor = {
+        	slot = political_advisor
+        	traits = {
+				SPR_Military_Industrial_Expert
+			}
+        	cost = 150
+        	can_be_fired = yes
+        	idea_token = SPR_Francisco_Cambo
+    	}
+	}
+	SPR_Jose_Marina_Vega = {
+		name = SPR_Jose_Marina_Vega
+		portraits = {
+			civilian = {
+				large = "GFX_bel_armand_de_ceuninck"
+				small = "GFX_bel_armand_de_ceuninck_frame"
+			}
+		}
+		advisor = {
+        	slot = political_advisor
+        	traits = {
+				SPR_Minister_Of_War
+			}
+        	cost = 150
+        	can_be_fired = yes
+        	idea_token = SPR_Jose_Marina_Vega
+    	}
 	}
 }

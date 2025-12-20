@@ -12,6 +12,7 @@
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	}
 	
 	support = {
@@ -144,6 +145,30 @@ units = {
 	division = {
 		name = "Divisione di Fanteria"
 		location = 13250
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Divisione di Fanteria"
+		location = 9904
 		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7

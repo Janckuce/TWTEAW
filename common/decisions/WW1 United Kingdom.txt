@@ -13,34 +13,6 @@
 # above are constant definitions for kit shipments 
 # split per kit type so they can be changed separately
 
-GER_ENG_agadir_crisis_category = {
-
-	ENG_send_battle_ship = {
-		priority = 100
-		allowed = {
-			original_tag = ENG
-		}
-		visible = {
-			FRA = { 
-			    controls_state = 461
-				controls_state = 462
-		    }
-		}
-		complete_effect = {
-		    add_political_power = 1
-			ENG = { news_event = { id = ww1_news.3 days = 10 } }
-			add_named_threat = { threat = 5 name = ENG_send_battleship }
-			ENG = {
-				complete_national_focus = ENG_Interfere_In_Agadir
-			}
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 10000
-		}
-	}
-}
-
 ENG_Send_Equipment_category = {
 
 	ENG_Send_rifles_to_Russia = {

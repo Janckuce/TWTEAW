@@ -27,7 +27,17 @@ country_event = {
 			set_province_controller = 1130
 			set_province_controller = 4136
 			set_province_controller = 9992
-			
+			if = {
+				limit = { 
+					NOT = {
+						ITA = {
+							has_completed_focus = ITA_focus_colonial_ambition
+						}
+					}
+				}
+				unlock_national_focus = ITA_focus_colonial_ambition
+			}
+			complete_national_focus = ITA_focus_War_in_Tripoli
 			division_template = {
 				name = "Divisione Coloniale"
 				division_names_group = ITA_INF_01
@@ -88,7 +98,7 @@ country_event = {
 			}
 			448 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"II/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 1189
 					allow_spawning_on_enemy_provs = yes
@@ -96,7 +106,7 @@ country_event = {
 			}
 			448 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"III/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 4194
 					allow_spawning_on_enemy_provs = yes
@@ -104,7 +114,7 @@ country_event = {
 			}
 			448 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"IV/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 1149
 					allow_spawning_on_enemy_provs = yes
@@ -112,7 +122,7 @@ country_event = {
 			}
 			448 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"V/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 1189
 					allow_spawning_on_enemy_provs = yes
@@ -120,7 +130,7 @@ country_event = {
 			}
 			448 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"VI/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 4194
 					allow_spawning_on_enemy_provs = yes
@@ -130,7 +140,7 @@ country_event = {
 			#Tobruk
 			451 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"VII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 1130
 					allow_spawning_on_enemy_provs = yes
@@ -138,7 +148,7 @@ country_event = {
 			}
 			451 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"VIII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 4136
 					allow_spawning_on_enemy_provs = yes
@@ -146,7 +156,7 @@ country_event = {
 			}
 			451 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"IX/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 9992
 					allow_spawning_on_enemy_provs = yes
@@ -154,7 +164,7 @@ country_event = {
 			}
 			451 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"X/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 1130
 					allow_spawning_on_enemy_provs = yes
@@ -162,7 +172,7 @@ country_event = {
 			}
 			451 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"XI/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 4136
 					allow_spawning_on_enemy_provs = yes
@@ -170,13 +180,14 @@ country_event = {
 			}
 			451 = {
 				create_unit = {
-					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					division = "name = \"XII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
 					owner = ROOT
 					prioritize_location = 9992
 					allow_spawning_on_enemy_provs = yes
 				}
 			}
 		}
+		threat = 15
 	}
 }
 
@@ -204,6 +215,20 @@ country_event = {
 
 		ITA = {
 			complete_national_focus = ITA_focus_Triumph_in_Tripoli
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = ITA_focus_Hire_a_Chief_of_Army
+							has_completed_focus = ITA_focus_Hire_Douhet
+							has_completed_focus = ITA_focus_Hire_Pellegrini
+							has_completed_focus = ITA_focus_Appoint_Chief_of_Navy
+						}
+					}
+				}
+				complete_national_focus = ITA_focus_Hire_a_Chief_of_Army
+			}
+# intent: if none of the four has been done, give the player Cadorna to not break anything and then complete Armed Forces Review
 			complete_national_focus = ITA_focus_armed_forces_review
 		}
 	}
@@ -241,6 +266,20 @@ country_event = {
 
 		ITA = {
 			complete_national_focus = ITA_focus_Catastrophe_in_Cyrenaica
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = ITA_focus_Hire_a_Chief_of_Army
+							has_completed_focus = ITA_focus_Hire_Douhet
+							has_completed_focus = ITA_focus_Hire_Pellegrini
+							has_completed_focus = ITA_focus_Appoint_Chief_of_Navy
+						}
+					}
+				}
+				complete_national_focus = ITA_focus_Hire_a_Chief_of_Army
+			}
+# intent: if none of the four has been done, give the player Cadorna to not break anything and then complete Armed Forces Review
 			complete_national_focus = ITA_focus_armed_forces_review
 		}
 	}

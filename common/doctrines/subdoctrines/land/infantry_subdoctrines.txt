@@ -82,19 +82,22 @@ great_war_infantry = {
             category_all_infantry = {
                 defense = 0.10
             }
+            land_reinforce_rate = 0.02
         }
         sapping_operations = {
-            land_night_attack = 0.15
+            land_night_attack = 0.1
             planning_speed = 0.3
         }
         centralized_artillery_control = {
-            army_artillery_attack_factor = 0.05
+            category_army = {
+                soft_attack = 0.05
+            }
         }
         field_fortification_emphasis = {
             dig_in_speed_factor = 0.5
         }
         redoubt_networks = {
-            production_speed_bunker_factor = 0.25
+            max_dig_in = 3
         }
 
     }
@@ -110,7 +113,6 @@ large_unit_tactics = {
     xp_type = army
 
     available = {
-        # always = yes
         has_variable = infantry_milestone_var
     }
 
@@ -125,11 +127,14 @@ large_unit_tactics = {
     category_all_infantry = {
         defense = 0.10
     }
-    land_night_attack = 0.15
+    land_reinforce_rate = 0.02
+    land_night_attack = 0.10
     planning_speed = 0.3
-    army_artillery_attack_factor = 0.10
+    category_army = {
+        soft_attack = 0.05
+    }
+    max_dig_in = 3
     dig_in_speed_factor = 0.5
-    production_speed_bunker_factor = 0.4
     # PREVIOUS DOCTRINE LEGACY
    
     #OTHER BASE REWARDS
@@ -197,11 +202,14 @@ assault_infantry = {
     category_all_infantry = {
         defense = 0.10
     }
-    land_night_attack = 0.15
+    land_reinforce_rate = 0.02
+    land_night_attack = 0.10
     planning_speed = 0.3
-    army_artillery_attack_factor = 0.10
+    category_army = {
+        soft_attack = 0.05
+    }
+    max_dig_in = 3
     dig_in_speed_factor = 0.5
-    production_speed_bunker_factor = 0.4
     # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
@@ -271,11 +279,14 @@ mounted_infantry = {
     category_all_infantry = {
         defense = 0.10
     }
-    land_night_attack = 0.15
+    land_reinforce_rate = 0.02
+    land_night_attack = 0.10
     planning_speed = 0.3
-    army_artillery_attack_factor = 0.10
+    category_army = {
+        soft_attack = 0.05
+    }
+    max_dig_in = 3
     dig_in_speed_factor = 0.5
-    production_speed_bunker_factor = 0.4
     # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
@@ -334,11 +345,14 @@ commandos = {
     category_all_infantry = {
         defense = 0.10
     }
-    land_night_attack = 0.15
+    land_reinforce_rate = 0.02
+    land_night_attack = 0.10
     planning_speed = 0.3
-    army_artillery_attack_factor = 0.10
+    category_army = {
+        soft_attack = 0.05
+    }
+    max_dig_in = 3
     dig_in_speed_factor = 0.5
-    production_speed_bunker_factor = 0.4
     # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
@@ -393,11 +407,14 @@ irregulars = {
     category_all_infantry = {
         defense = 0.10
     }
-    land_night_attack = 0.15
+    land_reinforce_rate = 0.02
+    land_night_attack = 0.10
     planning_speed = 0.3
-    army_artillery_attack_factor = 0.10
+    category_army = {
+        soft_attack = 0.05
+    }
+    max_dig_in = 3
     dig_in_speed_factor = 0.5
-    production_speed_bunker_factor = 0.4
     # PREVIOUS DOCTRINE LEGACY
 
     rewards = {

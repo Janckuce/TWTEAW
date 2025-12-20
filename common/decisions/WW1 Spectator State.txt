@@ -61,13 +61,21 @@ ORO_spectator_state = {
 					has_war_with = TUR
 					controls_state = 797 #Constantinople
 				}
+				TUR = {
+					has_country_flag = {
+						flag = TUR_surrendered_lybia_war
+					}
+				}
 			}
 			NOT = { # prevention of accidental trigger later
 				ITA = {
 					has_country_flag = ITA_Lose_Libya
+				}
+				ITA = {
 					has_country_flag = ITA_Win_Libya
 				}
 			}
+			date < 1914.1.1
 		}
 		
 		complete_effect = {
@@ -108,33 +116,27 @@ ORO_spectator_state = {
 					has_war_with = ITA
 					controls_state = 2 #Rome
 				}
-				TUR = {
-					has_war_with = ITA
-					OR = {
-						controls_state = 448
-						controls_state = 450
-						controls_state = 451
-						ITA = {
-							has_country_flag = {
-								flag = ITA_attack_turkey
-								days > 100
-							}
-						}
+				ITA = {
+					has_country_flag = {
+						flag = ITA_attack_turkey
+						days > 384
 					}
 				}
-			}
-			ITA = {
-				has_country_flag = {
-					flag = ITA_attack_turkey
-					days > 100
+				ITA = {
+					has_country_flag = {
+						flag = ITA_surrendered_lybia_war
+					}
 				}
 			}
 			NOT = { # prevention of accidental trigger later
 				ITA = {
 					has_country_flag = ITA_Lose_Libya
+				}
+				ITA = {
 					has_country_flag = ITA_Win_Libya
 				}
 			}
+			date < 1914.1.1
 		}
 		complete_effect = {
 		    TUR = {
@@ -204,6 +206,7 @@ ORO_spectator_state = {
 			    country_event = ww1_austria.2
 				set_country_flag = AUS_july_crisis
 			}
+			threat = 40
 		}
 		fire_only_once = yes
 		
@@ -284,6 +287,7 @@ ORO_spectator_state = {
 					declare_war_on = { target = MNT type = annex_everything }
 				}
 			}
+			threat = 50
 		}
 		fire_only_once = yes
 		
@@ -2218,6 +2222,7 @@ ORO_balkan_wars = {
 					idea = TUR_Europe_last_stand days = 70
 				}
 			}
+			threat = 20
 		}
 		fire_only_once = yes
 		

@@ -52,6 +52,8 @@ NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 0.60
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1000
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1 
 NDefines.NCountry.ATTACHE_XP_SHARE = 0
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 28
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0
 NDefines.NBuildings.MAX_SHARED_SLOTS = 30 
 
 NDefines.NDoctrines.MASTERY_BANK_MAX = 120.0                                            -- The maximum amount of mastery that can be banked
@@ -66,4 +68,5 @@ NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100         -- WAS 15, 
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 20       -- WAS 5, Changed so you can have less lines of naval production
 
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3 -- Penalty factor applied to base cost for each year ahead of time
-NDefines.NTechnology.BASE_TECH_COST = 100                          -- Base cost for technologies
+NDefines.NTechnology.BASE_TECH_COST = 100                          -- Base cost for technologies 
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 400
