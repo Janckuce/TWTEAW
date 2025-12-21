@@ -415,25 +415,28 @@ ideas = {
 			picture = generic_coastal_navy
 
 			modifier = {
-				navy_visibility = 0.15
+				navy_visibility = 0.1
 				naval_speed_factor = -0.1
-				industrial_capacity_dockyard = -0.7
+				industrial_capacity_dockyard = -0.6
+				spotting_chance = -0.5
+				navy_fuel_consumption_factor = 0.2
 			}
 		}
 		ENG_Navy2 = {
 			picture = AUS_naval_efficiency_idea
 			modifier = {
-				navy_visibility = 0.075
+				
 				naval_speed_factor = -0.05
-				industrial_capacity_dockyard = -0.5
+				industrial_capacity_dockyard = -0.4
+				spotting_chance = -0.2
 			}
 		}
 		ENG_navy3 = {
 			picture = generic_navy_cruiser_warfare
 			modifier = {
-				navy_visibility = 0.05
 				naval_speed_factor = -0.025
-				industrial_capacity_dockyard = -0.25
+				industrial_capacity_dockyard = -0.2
+				spotting_chance = -0.1
 			}
 		}
 		ENG_naval_arms_race_expanded = {
