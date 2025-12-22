@@ -621,4 +621,48 @@ Capture_Edirne = {
 		}
 		days_mission_timeout = 60
 	}
+	Take_Belgrade_Mission = {
+		priority = 100
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 70
+		fire_only_once = yes
+		is_good = no
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			AUS = {
+				controls_province = 11586
+			}
+		}
+
+		timeout_effect = {
+			remove_ideas = AUS_Take_Belgrade
+			add_war_support = -0.2
+		}
+	}
+	Take_Venice_Mission = {
+		priority = 100
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 70
+		fire_only_once = yes
+		is_good = no
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			AUS = {
+				controls_province = 11584
+			}
+		}
+
+		timeout_effect = {
+			remove_ideas = AUS_Take_Venice
+			add_war_support = -0.2
+		}
+	}
 }

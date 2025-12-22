@@ -30,6 +30,123 @@ AUH_propaganda_campaigns = {
 				}
 				activate_mission = AUS_Incoming_Reform
 			}
+			if = {
+				limit = {
+					not = {
+						has_idea = AUS_United_Nation2
+					}
+				}
+				activate_mission = AUS_Incoming_Reform
+			}
+		}
+	}
+	AUS_Minecraft = {
+		priority = 90
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+		days_remove = 70
+
+		cost = 100
+
+		allowed = {
+			tag = AUS
+		}
+
+		remove_effect = {
+			4 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+	}
+	AUS_Rubber_Exploitation = {
+		priority = 90
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+		days_remove = 70
+
+		cost = 100
+
+		allowed = {
+			tag = AUS
+		}
+
+		remove_effect = {
+			4 = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+		}
+	}
+	AUS_Oil_Fields = {
+		priority = 90
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+		days_remove = 70
+
+		cost = 100
+
+		allowed = {
+			tag = AUS
+		}
+
+		remove_effect = {
+			4 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+	}
+	AUS_Chromium_Production = {
+		priority = 90
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+		days_remove = 70
+
+		cost = 100
+
+		allowed = {
+			tag = AUS
+		}
+
+		remove_effect = {
+			4 = {
+				add_resource = {
+					type = chromium
+					amount = 16
+				}
+			}
+		}
+	}
+	AUS_Never_Enough_Aluminium = {
+		priority = 90
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+		days_remove = 70
+
+		cost = 100
+
+		allowed = {
+			tag = AUS
+		}
+
+		remove_effect = {
+			4 = {
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+			}
 		}
 	}
 
