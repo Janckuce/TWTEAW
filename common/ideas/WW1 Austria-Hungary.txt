@@ -1,10 +1,7 @@
-
 ideas = {
-	
 	country = {
-		
-		auh_underfunded_army = {
-			picture = bad_funding_army
+		AUS_Ethnic_Split = {
+			picture = AUS_austrofascissm
 			modifier = {
 				political_power_factor = -0.8
 				stability_factor = -0.4
@@ -68,22 +65,12 @@ ideas = {
 				political_power_factor = 0.2
 				stability_factor = -0.3
 				war_support_factor = -0.15
-				army_attack_factor = -0.3
-				army_defence_factor = -0.3
-				army_org_factor = -0.15
-				army_morale_factor = -0.15
-				mobilization_speed = -0.15
-				experience_gain_army_factor = -0.1
-				experience_gain_army_unit_factor = -0.15
-				dig_in_speed_factor = -0.2
-				max_planning_factor = -0.25
-				planning_speed = -0.4
-				command_power_gain_mult = -0.2
+				resistance_activity = 0.1
+				political_advisor_cost_factor = 0.1
 			}
 		}
-
-			auh_kuk_kriegsmarine = {
-			picture = kukkriegsmarine
+		AUS_Lessened_Ethinc_Split1 = {
+			picture = AUS_austrofascissm
 			modifier = {
 				political_power_factor = 0.2
 				stability_factor = -0.2
@@ -91,111 +78,8 @@ ideas = {
 				resistance_activity = 0.1
 			}
 		}
-
-			auh_kuk_luftfahrtruppen = {
-			picture = auh_luftfahrtruppen
-			modifier = {
-			consumer_goods_factor = 0.025
-			air_weather_penalty = 0.1
-			air_untrained_pilots_penalty_factor = 0.25
-			}
-		}
-
-			auh_kuk_luftfahrtruppen_two = {
-			picture = auh_luftfahrtruppen
-			modifier = {
-			consumer_goods_factor = 0.05
-			air_accidents_factor = -0.1
-			air_ace_bonuses_factor = 0.05
-			air_ace_generation_chance_factor = 0.05
-			air_superiority_efficiency = 0.05
-			experience_gain_air = 0.05
-			air_untrained_pilots_penalty_factor = 0.25
-			air_weather_penalty = 0.1
-			}
-		}
-
-			auh_kuk_luftfahrtruppen_three = {
-			picture = auh_luftfahrtruppen
-			modifier = {
-			consumer_goods_factor = 0.075
-			air_accidents_factor = -0.15
-			air_ace_bonuses_factor = 0.075
-			air_ace_generation_chance_factor = 0.075
-			air_superiority_efficiency = 0.05
-			experience_gain_air = 0.05
-			ace_effectiveness_factor = 0.025
-			air_mission_efficiency = 0.025
-			air_untrained_pilots_penalty_factor = 0.2
-			air_weather_penalty = 0.1
-			}
-		}
-
-			auh_kuk_luftfahrtruppen_four = {
-			picture = auh_luftfahrtruppen
-			modifier = {
-			consumer_goods_factor = 0.1
-			air_accidents_factor = -0.2
-			air_ace_bonuses_factor = 0.1
-			air_ace_generation_chance_factor = 0.1
-			air_superiority_efficiency = 0.075
-			experience_gain_air = 0.05
-			ace_effectiveness_factor = 0.05
-			air_mission_efficiency = 0.025
-			air_night_penalty = -0.05
-			air_untrained_pilots_penalty_factor = 0.15
-			air_weather_penalty = 0.05
-			air_defence_factor = 0.025
-			}
-		}
-
-			auh_kuk_luftfahrtruppen_five = {
-			picture = auh_luftfahrtruppen
-			modifier = {
-			consumer_goods_factor = 0.15
-			air_accidents_factor = -0.25
-			air_ace_bonuses_factor = 0.1
-			air_ace_generation_chance_factor = 0.15
-			air_superiority_efficiency = 0.1
-			experience_gain_air = 0.05
-			ace_effectiveness_factor = 0.075
-			air_untrained_pilots_penalty_factor = 0.1
-			air_mission_efficiency = 0.05
-			air_night_penalty = -0.075
-			air_attack_factor = 0.05
-			air_defence_factor = 0.05
-			}
-		}
-
-			auh_kuk_kriegsmarine_hotz = {
-			picture = kukkriegsmarine
-			modifier = {
-			naval_accidents_chance = -0.075
-			naval_coordination = 0.05
-			naval_detection = 0.05
-			experience_gain_navy = 0.05
-			shore_bombardment_bonus = 0.075
-			naval_damage_factor = 0.025
-			consumer_goods_factor = 0.05
-			}
-		}
-
-			auh_kuk_kriegsmarine_greenlight = {
-			picture = kukkriegsmarine
-			modifier = {
-			naval_accidents_chance = -0.075
-			naval_coordination = 0.05
-			naval_detection = 0.05
-			experience_gain_navy = 0.05
-			naval_damage_factor = 0.025
-			convoy_raiding_efficiency_factor = 0.1
-			consumer_goods_factor = 0.05
-
-			}
-		}
-
-			auh_underfunded_army_two = {
-			picture = bad_funding_army
+		AUS_Lessened_Ethinc_Split2 = {
+			picture = AUS_austrofascissm
 			modifier = {
 				political_power_factor = 0.2
 				stability_factor = -0.1
@@ -242,46 +126,61 @@ ideas = {
 				org_loss_when_moving = 0.1
 				army_morale_factor = -0.1
 				army_attack_factor = -0.1
-				army_defence_factor = -0.1
-				army_org_factor = -0.05
-				army_morale_factor = -0.075
-				experience_gain_army_factor = -0.1
-				experience_gain_army_unit_factor = -0.15
-				dig_in_speed_factor = -0.05
-				max_planning_factor = -0.25
-				planning_speed = -0.4
-				command_power_gain_mult = -0.2
-				mobilization_speed = -0.15
-			}
-		}
-
-			auh_underfunded_army_three = {
-			picture = bad_funding_army
-			modifier = {
-				war_support_factor = -0.05
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
-				army_org_factor = -0.05
-				army_morale_factor = -0.075
-				mobilization_speed = -0.05
-				experience_gain_army_factor = -0.05
-				experience_gain_army_unit_factor = -0.05
-				dig_in_speed_factor = -0.05
 				max_planning_factor = -0.1
-				planning_speed = -0.1
+				pocket_penalty = 0.15
+				army_attack_against_minor_factor = -0.1
 			}
 		}
-
-			auh_construction_funds = {
-			picture = aus_investments
+		AUS_Underfunded_Army1 = {
+			picture = AUS_aggression
 			modifier = {
-			consumer_goods_factor = -0.25
-			production_speed_buildings_factor = 0.15
+				army_speed_factor = -0.075
+				army_org_factor = -0.075
+				org_loss_when_moving = 0.075
+				army_morale_factor = -0.075
+				army_attack_factor = -0.075
+				max_planning_factor = -0.075
+				pocket_penalty = 0.1
+				army_attack_against_minor_factor = -0.075
 			}
 		}
-
-			auh_construction_mils = {
-			picture = bad_funding_army
+		AUS_Underfunded_Army2 = {
+			picture = AUS_aggression
+			modifier = {
+				army_speed_factor = -0.05
+				army_org_factor = -0.05
+				org_loss_when_moving = 0.05
+				army_morale_factor = -0.05
+				army_attack_factor = -0.05
+				max_planning_factor = -0.05
+				pocket_penalty = 0.05
+				army_attack_against_minor_factor = -0.05
+			}
+		}
+		AUS_Underfunded_Army3 = {
+			picture = AUS_aggression
+			modifier = {
+				army_speed_factor = -0.025
+				army_org_factor = -0.025
+				org_loss_when_moving = 0.025
+				army_morale_factor = -0.025
+				army_attack_factor = -0.025
+				max_planning_factor = -0.025
+				pocket_penalty = 0.025
+				army_attack_against_minor_factor = -0.025
+			}
+		}
+		AUS_Neglected_Special_Forces = {
+			picture = AUS_doth
+			modifier = {
+				naval_hit_chance = -0.1
+				naval_damage_factor = -0.1
+				air_attack_factor = -0.1
+				air_defence_factor = -0.1
+			}
+		}
+		AUS_Neglected_Special_Forces1 = {
+			picture = AUS_doth
 			modifier = {
 				naval_hit_chance = -0.05
 				naval_damage_factor = -0.05
@@ -289,34 +188,22 @@ ideas = {
 				air_defence_factor = -0.05
 			}
 		}
-			auh_construction_mils3 = {
-			picture = bad_funding_army
+		AUS_Austrian_Special_Forces = {
+			picture = AUS_doth
 			modifier = {
-			consumer_goods_factor = 0.15
-			industrial_capacity_factory = 0.06
-			line_change_production_efficiency_factor = 0.09
-			production_factory_start_efficiency_factor = 0.075
-			production_factory_efficiency_gain_factor = 0.12
+				naval_hit_chance = 0.05
+				naval_damage_factor = 0.05
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
 			}
 		}
-
-			AUH_landtags_in_active_revolt = {
-			picture = landtags_in_revolt
+		AUS_Austrian_Special_Forces1 = {
+			picture = AUS_doth
 			modifier = {
-			stability_factor = -0.1
-			trade_laws_cost_factor = 0.15
-			line_change_production_efficiency_factor = -0.075
-			production_factory_start_efficiency_factor = -0.1
-			production_factory_efficiency_gain_factor = -0.05
-			army_defence_against_major_factor = -0.1
-			army_attack_against_major_factor = -0.1
-			stability_weekly = -0.001
-			democratic_drift = 0.05
-			communism_drift = 0.05
-			fascism_drift = 0.05
-			drift_defence_factor = -0.15
-			industrial_capacity_factory = -0.1
-			political_power_factor = -0.15
+				naval_hit_chance = 0.1
+				naval_damage_factor = 0.1
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
 			}
 		}
 		AUS_Combined_Warfare = {
@@ -345,9 +232,8 @@ ideas = {
 				industrial_capacity_factory = -0.2
 			}
 		}
-
-			AUH_landtags_in_active_revolt_better = {
-			picture = landtags_in_revolt
+		AUS_Economic_Crisis1 = {
+			picture = AUS_treaty_of_saint_germain_en_laye
 			modifier = {
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
@@ -355,9 +241,8 @@ ideas = {
 				industrial_capacity_factory = -0.15
 			}
 		}
-
-			AUH_christendom_celebrated = {
-			picture = celebration_of_international_christendom
+		AUS_Economic_Crisis2 = {
+			picture = AUS_treaty_of_saint_germain_en_laye
 			modifier = {
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
@@ -365,935 +250,31 @@ ideas = {
 				industrial_capacity_factory = -0.05
 			}
 		}
-
-			AUH_victory_of_the_css = {
-			picture = AUS_austrofascissm
+		AUS_Austrian_Economic_Plan = {
+			picture = AUS_habsburg_monarchy_restored
 			modifier = {
-			war_support_factor = 0.015
-			drift_defence_factor = 0.015
-			trade_laws_cost_factor = -0.1
-			political_advisor_cost_factor = -0.05
-			non_core_manpower = -0.05
-			production_speed_arms_factory_factor = 0.015
-			production_speed_industrial_complex_factor = -0.05
-			democratic_drift = -0.1
-			communism_drift = -0.1
-
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
-
-			AUH_victory_of_the_css2 = {
-			picture = AUS_austrofascissm
-			modifier = {
-			war_support_factor = 0.03
-			drift_defence_factor = 0.03
-			trade_laws_cost_factor = -0.125
-			political_advisor_cost_factor = -0.075
-			non_core_manpower = -0.075
-			production_speed_arms_factory_factor = 0.03
-			production_speed_industrial_complex_factor = -0.035
-			democratic_drift = -0.15
-			communism_drift = -0.15
-			}
-		}
-
-			AUH_victory_of_the_css3 = {
-			picture = AUS_austrofascissm
-			modifier = {
-			war_support_factor = 0.045
-			drift_defence_factor = 0.045
-			trade_laws_cost_factor = -0.15
-			political_advisor_cost_factor = -0.09
-			non_core_manpower = -0.09
-			production_speed_arms_factory_factor = 0.045
-			production_speed_industrial_complex_factor = -0.02
-			democratic_drift = -0.2
-			communism_drift = -0.2
-			}
-		}
-
-			AUH_victory_of_the_css4 = {
-			picture = AUS_austrofascissm
-			modifier = {
-			war_support_factor = 0.06
-			drift_defence_factor = 0.06
-			trade_laws_cost_factor = -0.175
-			political_advisor_cost_factor = -0.115
-			non_core_manpower = -0.115
-			production_speed_arms_factory_factor = 0.06
-			production_speed_industrial_complex_factor = -0.005
-			democratic_drift = -0.25
-			communism_drift = -0.25
-			}
-		}
-
-			AUH_victory_of_the_css5 = {
-			picture = AUS_austrofascissm
-			modifier = {
-			war_support_factor = 0.075
-			drift_defence_factor = 0.075
-			trade_laws_cost_factor = -0.2
-			political_advisor_cost_factor = -0.13
-			non_core_manpower = -0.13
-			production_speed_arms_factory_factor = 0.075
-			democratic_drift = -0.3
-			communism_drift = -0.3
-			}
-		}
-
-			AUH_victory_of_the_sdap = {
-			picture = AUS_farr
-			modifier = {
-			stability_factor = 0.015
-			political_power_gain = 0.05
-			democratic_drift = 0.02
-			communism_drift = 0.02
-			compliance_gain = 0.001
-			monthly_population = 0.05
-			war_support_factor = -0.2
-			production_speed_arms_factory_factor = -0.1
-			production_speed_industrial_complex_factor = 0.015
-
-			}
-		}
-
-			AUH_victory_of_the_sdap2 = {
-			picture = AUS_farr
-			modifier = {
-			stability_factor = 0.03
-			political_power_gain = 0.1
-			democratic_drift = 0.04
-			communism_drift = 0.04
-			compliance_gain = 0.002
-			monthly_population = 0.075
-			war_support_factor = -0.175
-			production_speed_arms_factory_factor = -0.075
-			production_speed_industrial_complex_factor = 0.03
-			}
-		}
-
-			AUH_victory_of_the_sdap3 = {
-			picture = AUS_farr
-			modifier = {
-			stability_factor = 0.045
-			political_power_gain = 0.15
-			democratic_drift = 0.06
-			communism_drift = 0.06
-			compliance_gain = 0.003
-			monthly_population = 0.1
-			war_support_factor = -0.15
-			production_speed_arms_factory_factor = -0.05
-			production_speed_industrial_complex_factor = 0.045
-			}
-		}
-
-			AUH_victory_of_the_sdap4 = {
-			picture = AUS_farr
-			modifier = {
-			stability_factor = 0.06
-			political_power_gain = 0.2
-			democratic_drift = 0.08
-			communism_drift = 0.08
-			compliance_gain = 0.04
-			monthly_population = 0.125
-			war_support_factor = -0.125
-			production_speed_arms_factory_factor = -0.025
-			production_speed_industrial_complex_factor = 0.06
-			}
-		}
-
-			AUH_victory_of_the_sdap5 = {
-			picture = AUS_farr
-			modifier = {
-			stability_factor = 0.075
-			political_power_gain = 0.25
-			democratic_drift = 0.1
-			communism_drift = 0.1
-			compliance_gain = 0.005
-			monthly_population = 0.15
-			war_support_factor = -0.1
-			production_speed_industrial_complex_factor = 0.075
-			}
-		}
-
-			AUH_victory_of_the_dfp = {
-			picture = celebration_of_international_christendom
-			modifier = {
-			stability_factor = -0.15
-			drift_defence_factor = -0.2
-			political_advisor_cost_factor = 0.1
-			non_core_manpower = -0.15
-			war_support_factor = 0.25
-			political_power_factor = -0.15
-			}
-		}
-
-			AUH_deutsche_ritter_ordnung = {
-			picture = auh_teutonic
-			modifier = {
-			war_support_factor = 0.05
-			army_defence_against_major_factor = 0.025
-			army_attack_against_major_factor = 0.025
-			weekly_casualties_war_support = 0.05
-			custom_modifier_tooltip = FIN_lotta_svard_support_battalions_bonus_tt
-			}
-		}
-
-			AUH_deutsche_ritter_ordnung_better = {
-			picture = auh_teutonic
-			modifier = {
-			war_support_factor = 0.075
-			army_defence_against_major_factor = 0.05
-			army_attack_against_major_factor = 0.05
-			weekly_casualties_war_support = 0.075
-			custom_modifier_tooltip = FIN_lotta_svard_support_battalions_bonus_tt
-			}
-		}
-
-			AUH_well_oiled_machine = {
-			picture = landtags_in_revolt
-			modifier = {
-			stability_factor = 0.05
-			trade_laws_cost_factor = -0.15
-			line_change_production_efficiency_factor = 0.035
-			production_factory_start_efficiency_factor = 0.025
-			production_factory_efficiency_gain_factor = 0.025
-			industrial_capacity_factory = 0.05
-			}
-		}
-			auh_Multiethnicity = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			resistance_growth = 0.15
-			political_power_gain = -0.8
-			root_out_resistance_effectiveness_factor = -0.25
-			resistance_damage_to_garrison = 0.1
-			required_garrison_factor = 0.25
-			resistance_target = 0.1
-			agency_upgrade_time = 0.5
-			decryption_factor = -0.25
-			encryption_factor = -0.25
-			intel_network_gain_factor = -0.15
-			intelligence_agency_defense = -0.25
-			conscription_factor = -0.1
-			training_time_factor = 0.3
-			minimum_training_level = 0.25
-			max_training = -0.35
-			land_reinforce_rate = -0.06
-			}
-		}
-
-			auh_Multiethnicity_scientific = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			resistance_growth = 0.15
-			root_out_resistance_effectiveness_factor = -0.25
-			resistance_damage_to_garrison = 0.1
-			required_garrison_factor = 0.2
-			political_power_gain = -0.8
-			resistance_target = 0.1
-			agency_upgrade_time = 0.5
-			conscription_factor = -0.1
-			training_time_factor = 0.3
-			max_training = -0.35
-			land_reinforce_rate = -0.08
-			}
-		}
-
-			auh_armeereform_focus_one = {
-			picture = bad_funding_army2
-			modifier = {
-			conscription = 0.005
-			}
-		}
-
-			auh_armeereform_focus_two = {
-			picture = bad_funding_army2
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.025
-				}
-					support_equipment = {
-					build_cost_ic = -0.025
-				}
-			}
-		}
-
-			auh_armeereform_focus_three = {
-			picture = bad_funding_army2
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-				}
-					support_equipment = {
-					build_cost_ic = -0.05
-				}
-			}
-		}
-
-			auh_armeereform_focus_four = {
-			picture = bad_funding_army2
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.075
-				}
-					support_equipment = {
-					build_cost_ic = -0.075
-				}
-			}
-			modifier = {
-			army_org_regain = 0.025
-			army_org_factor = 0.025
-			}
-
-		}
-
-			auh_armeereform_focus_four_bojna = {
-			picture = aus_bojna_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-				}
-					support_equipment = {
-					build_cost_ic = -0.05
-				}
-			}
-			modifier = {
-			army_org_regain = 0.025
-			army_org_factor = 0.025
-			army_defence_factor = 0.1
-			max_dig_in = 10
-			consumer_goods_factor = 0.05
-
-			}
-
-		}
-
-			auh_armeereform_focus_five_bojna = {
-			picture = aus_bojna_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.075
-				}
-					support_equipment = {
-					build_cost_ic = -0.075
-				}
-			}
-			modifier = {
-			army_org_regain = 0.025
-			army_org_factor = 0.025
-			army_defence_factor = 0.1
-			dig_in_speed_factor = 0.1
-			max_dig_in = 10
-			production_speed_bunker_factor = 0.15
-			production_speed_coastal_bunker_factor = 0.15
-			consumer_goods_factor = 0.1
-			planning_speed = 0.3
-			mobilization_speed = 0.1
-			}
-
-		}
-
-			auh_armeereform_focus_six_bojna = {
-			picture = aus_bojna_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1
-				}
-					support_equipment = {
-					build_cost_ic = -0.1
-				}
-			}
-			modifier = {
-			army_org_regain = 0.075
-			army_org_factor = 0.075
-			army_defence_factor = 0.1
-			dig_in_speed_factor = 0.1
-			max_dig_in = 10
-			production_speed_bunker_factor = 0.15
-			production_speed_coastal_bunker_factor = 0.15
-			consumer_goods_factor = 0.15
-			planning_speed = 0.3
-			mobilization_speed = 0.1
-			army_morale_factor = 0.075
-			recon_factor = 0.075
-
-			}
-		}
-
-			auh_armeereform_focus_seven_bojna = {
-			picture = aus_bojna_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.125
-				}
-					support_equipment = {
-					build_cost_ic = -0.125
-				}
-			}
-			modifier = {
-			army_org_regain = 0.075
-			army_org_factor = 0.075
-			recon_factor = 0.075
-			army_defence_factor = 0.1
-			dig_in_speed_factor = 0.1
-			max_dig_in = 10
-			production_speed_bunker_factor = 0.15
-			production_speed_coastal_bunker_factor = 0.15
-			consumer_goods_factor = 0.175
-			planning_speed = 0.3
-			mobilization_speed = 0.1
-			army_morale_factor = 0.075
-
-			}
-		}
-
-			auh_armeereform_focus_four_hauer = {
-			picture = aus_hauer_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-				}
-					support_equipment = {
-					build_cost_ic = -0.05
-				}
-			}
-			modifier = {
-			army_org_regain = 0.025
-			army_org_factor = 0.025
-			cavalry_defence_factor = 0.125
-			cavalry_attack_factor = 0.125
-			army_strength_factor = 0.1
-			army_defence_against_major_factor = 0.125
-			}
-
-		}
-
-			auh_armeereform_focus_five_hauer = {
-			picture = aus_hauer_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.075
-				}
-					support_equipment = {
-					build_cost_ic = -0.075
-				}
-			}
-			modifier = {
-			army_org_regain = 0.1
-			army_org_factor = 0.125
-			cavalry_defence_factor = 0.125
-			cavalry_attack_factor = 0.125
-			recon_factor = 0.075
-			coordination_bonus = 0.1
-			army_strength_factor = 0.1
-			army_defence_against_major_factor = 0.125
-			}
-
-		}
-
-			auh_armeereform_focus_six_hauer = {
-			picture = aus_hauer_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1
-				}
-					support_equipment = {
-					build_cost_ic = -0.1
-				}
-			}
-			modifier = {
-			army_org_regain = 0.1
-			army_org_factor = 0.125
-			cavalry_defence_factor = 0.125
-			cavalry_attack_factor = 0.125
-			experience_gain_army_unit_factor = 0.125
-			recon_factor = 0.125
-			coordination_bonus = 0.1
-			army_strength_factor = 0.1
-			supply_consumption_factor = -0.05
-			army_defence_against_major_factor = 0.125
-			}
-
-		}
-
-			auh_armeereform_focus_seven_hauer = {
-			picture = aus_hauer_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.125
-				}
-					support_equipment = {
-					build_cost_ic = -0.125
-				}
-			}
-			modifier = {
-			army_org_regain = 0.1
-			army_org_factor = 0.125
-			cavalry_defence_factor = 0.125
-			cavalry_attack_factor = 0.125
-			experience_gain_army_unit_factor = 0.125
-			recon_factor = 0.125
-			coordination_bonus = 0.1
-			army_strength_factor = 0.1
-			supply_consumption_factor = -0.05
-			army_defence_against_major_factor = 0.125
-			}
-
-		}
-			auh_armeereform_focus_four_friedrich = {
-			picture = aus_friedrich_teschen_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-				}
-					support_equipment = {
-					build_cost_ic = -0.05
-				}
-			}
-			modifier = {
-			army_org_regain = 0.025
-			army_org_factor = 0.025
-			army_infantry_attack_factor = 0.10
-			army_infantry_defence_factor = 0.10
-			consumer_goods_factor = 0.05
-			}
-
-		}
-
-			auh_armeereform_focus_five_friedrich = {
-			picture = aus_friedrich_teschen_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.075
-				}
-					support_equipment = {
-					build_cost_ic = -0.075
-				}
-			}
-			modifier = {
-			army_org_regain = 0.025
-			army_org_factor = 0.025
-			army_infantry_attack_factor = 0.10
-			army_infantry_defence_factor = 0.10
-			consumer_goods_factor = 0.1
-			experience_gain_army_factor = 0.1
-			experience_gain_army_unit_factor = 0.1
-			planning_speed = 0.125
-			minimum_training_level = -0.12
-			experience_loss_factor = -0.1
-			army_strength_factor = 0.15
-			}	
-
-		}
-
-			auh_armeereform_focus_six_friedrich = {
-			picture = aus_friedrich_teschen_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1
-				}
-					support_equipment = {
-					build_cost_ic = -0.1
-				}
-			}
-			modifier = {
-			army_org_regain = 0.1
-			army_org_factor = 0.1
-			army_infantry_attack_factor = 0.10
-			army_infantry_defence_factor = 0.10
-			consumer_goods_factor = 0.1
-			experience_gain_army_factor = 0.1
-			experience_gain_army_unit_factor = 0.1
-			planning_speed = 0.125
-			coordination_bonus = 0.1
-			land_reinforce_rate = 0.05
-			training_time_factor = -0.1
-			minimum_training_level = -0.12
-			army_morale_factor = 0.1
-			experience_loss_factor = -0.1
-			army_strength_factor = 0.15
-			}
-
-		}
-
-			auh_armeereform_focus_seven_friedrich = {
-			picture = aus_friedrich_teschen_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.125
-				}
-					support_equipment = {
-					build_cost_ic = -0.125
-				}
-			}
-			modifier = {
-			army_org_regain = 0.1
-			army_org_factor = 0.1
-			army_infantry_attack_factor = 0.10
-			army_infantry_defence_factor = 0.10
-			consumer_goods_factor = 0.1
-			experience_gain_army_factor = 0.1
-			experience_gain_army_unit_factor = 0.1
-			planning_speed = 0.125
-			coordination_bonus = 0.1
-			land_reinforce_rate = 0.05
-			training_time_factor = -0.1
-			minimum_training_level = -0.12
-			army_morale_factor = 0.1
-			experience_loss_factor = -0.1
-			army_strength_factor = 0.15
-			}
-
-		}
-
-			auh_armeereform_focus_four_hotzendorf = {
-			picture = aus_conrad_hotzendorf_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.015
-				}
-					support_equipment = {
-					build_cost_ic = -0.05
-				}
-					artillery_equipment = {
-					build_cost_ic = -0.03
-				}
-			}
-			modifier = {
-			army_org_factor = 0.025
-			army_org_regain = 0.025
-			army_infantry_attack_factor = 0.05
-			army_artillery_attack_factor = 0.05
-			consumer_goods_factor = 0.05
-			breakthrough_factor = 0.05
-			}
-
-		}
-
-			auh_armeereform_focus_five_hotzendorf = {
-			picture = aus_conrad_hotzendorf_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.03
-				}
-					support_equipment = {
-					build_cost_ic = -0.075
-				}
-					artillery_equipment = {
-					build_cost_ic = -0.045
-				}
-			}
-			modifier = {
-			army_org_factor = 0.1
-			army_org_regain = 0.025
-			army_infantry_attack_factor = 0.05
-			army_artillery_attack_factor = 0.05
-			consumer_goods_factor = 0.1
-			special_forces_cap = 0.1
-			experience_gain_army_unit_factor = 0.125
-			recon_factor = 0.125
-			minimum_training_level = -0.125
-			army_morale_factor = 0.05
-			breakthrough_factor = 0.05
-			}
-
-		}
-
-			auh_armeereform_focus_six_hotzendorf = {
-			picture = aus_conrad_hotzendorf_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.045
-				}
-					support_equipment = {
-					build_cost_ic = -0.1
-				}
-					artillery_equipment = {
-					build_cost_ic = -0.06
-				}
-			}
-			modifier = {
-			army_org_factor = 0.1
-			army_org_regain = 0.025
-			army_infantry_attack_factor = 0.125
-			army_artillery_attack_factor = 0.125
-			consumer_goods_factor = 0.2
-			special_forces_cap = 0.1
-			max_planning_factor = 0.125
-			experience_gain_army_unit_factor = 0.125
-			recon_factor = 0.125
-			minimum_training_level = -0.125
-			army_morale_factor = 0.1
-			breakthrough_factor = 0.125
-			}
-
-		}
-
-			auh_armeereform_focus_seven_hotzendorf = {
-			picture = aus_conrad_hotzendorf_spirit
-			modifier = {
-				conscription = 0.005
-			}
-				equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.06
-				}
-					support_equipment = {
-					build_cost_ic = -0.125
-				}
-					artillery_equipment = {
-					build_cost_ic = -0.075
-				}
-			}
-			modifier = {
-			army_org_factor = 0.1
-			army_org_regain = 0.025
-			army_infantry_attack_factor = 0.125
-			army_artillery_attack_factor = 0.125
-			consumer_goods_factor = 0.2
-			special_forces_cap = 0.1
-			max_planning_factor = 0.125
-			experience_gain_army_unit_factor = 0.125
-			recon_factor = 0.125
-			minimum_training_level = -0.125
-			army_morale_factor = 0.1
-			breakthrough_factor = 0.125
-			}
-
-		}
-
-			auh_Multiethnicity_political_party = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			resistance_growth = 0.1
-			root_out_resistance_effectiveness_factor = -0.2
-			resistance_damage_to_garrison = 0.05
-			required_garrison_factor = 0.15
-			resistance_target = 0.05
-			agency_upgrade_time = 0.5
-			conscription_factor = -0.1
-			training_time_factor = 0.3
-			max_training = -0.35
-			land_reinforce_rate = -0.06
-			}
-		}
-
-			auh_Multiethnicity_second_language = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			resistance_growth = 0.05
-			root_out_resistance_effectiveness_factor = -0.1
-			resistance_damage_to_garrison = 0.025
-			required_garrison_factor = 0.1
-			resistance_target = 0.025
-			training_time_factor = 0.1
-			max_training = -0.2
-			land_reinforce_rate = -0.06
-			}
-		}
-
-			auh_Multiethnicity_evidenzburo = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			resistance_growth = 0.025
-			root_out_resistance_effectiveness_factor = -0.05
-			resistance_damage_to_garrison = 0.025
-			required_garrison_factor = 0.05
-			training_time_factor = 0.05
-			max_training = -0.1
-			}
-		}
-
-			auh_Multiethnicity_bolster_youth = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			agency_upgrade_time = 0.2
-			training_time_factor = 0.02
-			political_power_gain = -0.1
-			max_training = -0.1
-			}
-		}
-
-			auh_Multiethnicity_amnesty_gunowners = {
-			picture = empire_of_old_habsburg
-			modifier = {
-			agency_upgrade_time = 0.15
-			max_training = -0.05
-			}
-		}
-
-			auh_burden_for_now_better = {
-			picture = bureo_nice
-			modifier = {
-			army_defence_against_major_factor = 0.05
-			army_attack_against_major_factor = 0.05
-			stability_factor = 0.05
-			army_chief_cost_factor = -0.1
-			navy_chief_cost_factor = -0.1
-			consumer_goods_factor = -0.05
-			production_speed_buildings_factor = 0.05
-
-			}
-		}
-
-			auh_ghostofthepast = {
-			picture = ghost_of_the_past
-			modifier = {
-			consumer_goods_factor = 0.1
-			industrial_capacity_factory = -0.25
-			industry_free_repair_factor = -0.05
-			production_oil_factor = -0.1
-			production_factory_efficiency_gain_factor = -0.2
-			production_factory_max_efficiency_factor = -0.2
-			production_factory_start_efficiency_factor = -0.15
-			production_speed_buildings_factor = -0.25
-			line_change_production_efficiency_factor = -0.2
-			research_speed_factor = -0.2
-			production_lack_of_resource_penalty_factor = 0.1
-			hidden_modifier = {
-				power_balance_daily = 0.0025
-			}
-			}
-		}
-
-			auh_ghostofthepast2 = {
-			picture = ghost_of_the_past
-			modifier = {
-			industrial_capacity_factory = -0.25
-			production_factory_efficiency_gain_factor = -0.2
-			production_factory_max_efficiency_factor = -0.2
-			production_factory_start_efficiency_factor = -0.15
-			production_speed_buildings_factor = -0.2
-			line_change_production_efficiency_factor = -0.2
-			research_speed_factor = -0.2
-			hidden_modifier = {
-				power_balance_daily = 0.0025
-			}
-			}
-		}
-
-			auh_ghostofthepast3 = {
-			picture = ghost_of_the_past
-			modifier = {
-			industrial_capacity_factory = -0.1
-			production_factory_efficiency_gain_factor = -0.05
-			production_factory_max_efficiency_factor = -0.1
-			production_factory_start_efficiency_factor = -0.05
-			production_speed_buildings_factor = -0.1
-			line_change_production_efficiency_factor = -0.05
-			research_speed_factor = -0.1
-			hidden_modifier = {
-				power_balance_daily = 0.0025
-			}
-			}
-		}
-		auh_ghostofthepast4 = {
-			picture = ghost_of_the_past
-			modifier = {
-			research_speed_factor = -0.05
-			hidden_modifier = {
-				power_balance_daily = 0.0025
-			}
-			}
-		}
-			auh_kukindustries = {
-			picture = ghost_of_the_past
-			modifier = {
-			industrial_capacity_factory = 0.05
-			production_factory_efficiency_gain_factor = 0.075
-			production_factory_max_efficiency_factor = 0.05
-			production_factory_start_efficiency_factor = 0.075
-			production_speed_buildings_factor = 0.05
-			line_change_production_efficiency_factor = 0.075
-			research_speed_factor = 0.05
-			hidden_modifier = {
-					power_balance_daily = 0.0025
-				}
-			}
-		}
-
-			auh_constitution = {
+		AUS_Hungarian_Economic_Plan = {
 			picture = HUN_old_hungary_reclaimed
 			modifier = {
-			consumer_goods_factor = -0.05
-			production_speed_buildings_factor = 0.1
-			political_advisor_cost_factor = -0.45
-			non_core_manpower = -0.1
-					power_balance_daily = 0.001
+				local_building_slots_factor = 0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
-
-			auh_socialists = {
-			picture = FIN_finnish_federation_of_trade_unions
+		AUS_Power_To_Us = {
+			picture = AUS_farr
 			modifier = {
-			industrial_capacity_factory = 0.025
-			production_factory_efficiency_gain_factor = 0.025
-			production_factory_max_efficiency_factor = 0.025
-			production_factory_start_efficiency_factor = 0.025
-			production_speed_buildings_factor = 0.05
-			line_change_production_efficiency_factor = 0.025
-			consumer_goods_factor = 0.1
-
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
-
-			auh_socialists_better = {
-			picture = FIN_finnish_federation_of_trade_unions
+		AUS_Power_To_Us1 = {
+			picture = AUS_farr
 			modifier = {
 				army_attack_factor = 0.075
 				army_defence_factor = 0.075
@@ -1644,39 +625,19 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.085
 			}
 		}
-		air_investments = {
+		AUH_Plundered_Serbia = {
+			picture = YUG_serbian_general_staff
 			modifier = {
-				consumer_goods_factor = 0.1
-			}
-	}
-
-		AUH_Plundered_Venice = {
-			modifier = {
-			
 			}
 		}
-
-		AUH_Plundered_Serbia = {
+		AUH_Plundered_Venice = {
+			picture = ITA_new_roman_empire_ns
 			modifier = {
-			
 			}
 		}
 		AUH_Plundered_Romania = {
+			picture = AFG_from_the_ashes
 			modifier = {
-			
-			}
-		}
-	}
-		
-		industrial_concern = {
-
-		manfred_weiss = {
-			allowed = { original_tag = AUS }
-			research_bonus = {
-				industry = 0.05
-			}
-			traits = {
-				manfred_weiss_comp
 			}
 		}
 	}
