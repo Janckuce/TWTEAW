@@ -43,8 +43,6 @@ recruit_character = AUH_vaclav_klement
 recruit_character = auh_morritz_auffenberg
 recruit_character = auh_alexander_von_krobatin
 recruit_character = auh_samuel_von_hazai
-activate_advisor = AUH_stefan_burian
-activate_advisor = Auh_morritz_auffenberg
 recruit_character = auh_svetozar_bojna
 recruit_character = AUH_ignaz_trollmann
 recruit_character = AUH_leopold_von_hauer
@@ -55,26 +53,6 @@ recruit_character = auh_conrad_hotzendorff
 recruit_character = auh_arthur_giesling
 recruit_character = AUH_otto_ellison_nidlef
 recruit_character = auh_rudolf_stoger_steinstatten
-activate_advisor = AUH_friedrich_von_georgi
-activate_advisor = AUH_eugen_von_bohm_bawerk
-activate_advisor = auh_morritz_auffenberg
-
-set_variable = { X_AUH_propaganda_3_cost = 90 }
-set_variable = { X_AUH_propaganda_4_cost = 90 }
-set_variable = { X_AUH_propaganda_5_cost = 90 }
-set_variable = { X_AUH_propaganda_6_cost = 90 }
-set_variable = { X_AUH_propaganda_7_cost = 90 }
-set_variable = { X_AUH_propaganda_8_cost = 90 }
-set_variable = { X_AUH_propaganda_9_cost = 90 }
-set_variable = { X_AUH_propaganda_10_cost = 90 }
-set_variable = { X_AUH_propaganda_11_cost = 90 }
-set_variable = { X_AUH_propaganda_12_cost = 90 }
-set_variable = { X_AUH_propaganda_13_cost = 90 }
-
-set_power_balance = {
-		id = AUS_power_balance # Austria's power balance ID
-		set_value = 0.1
-	}
 
 # Starting tech
 set_technology = {
@@ -97,23 +75,28 @@ set_technology = {
 
 ### Naval Tech ### - ONLY FOR MAJORS
 
-	set_technology = {
-		ww1_destroyer_1 = 1
-		ww1_light_cruiser_1 = 1
-		ww1_heavy_cruiser_1 = 1
-		ww1_dreadnought_1 = 1
-		mtg_transport = 1
-	}
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+}
 
 add_ideas = {
-	auh_underfunded_army
-	auh_Multiethnicity
-	auh_ghostofthepast
-	limited_conscription
+	AUS_Ethnic_Split
+	AUS_Underfunded_Army
+	AUS_Neglected_Special_Forces
+	AUS_Economic_Crisis
 }
 add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
+}
+
+set_power_balance = {
+	id = AUS_power_balance # Austria's power balance ID
+	set_value = 0.1
 }
 
 ##### Party Popularity, Stability, War Support and other #####
