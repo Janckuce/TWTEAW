@@ -754,6 +754,18 @@ focus_tree = {
 					level = 2
 				}
 			}
+			91 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+				}
+			}
+			39 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -975,25 +987,7 @@ focus_tree = {
 			focus = AUS_Head_Of_The_Empire
 		}
 		completion_reward = {
-			103 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-				}
-			}
-			91 = {
-				add_building_construction = {
-					type = air_base
-					level = 1
-				}
-			}
-			39 = {
-				add_building_construction = {
-					type = air_base
-					level = 1
-				}
-			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1007,6 +1001,13 @@ focus_tree = {
 			focus = AUS_KUK_Main
 		}
 		completion_reward = {
+			103 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
 			add_tech_bonus = {
 				category = naval_equipment
 				bonus = 0.5
