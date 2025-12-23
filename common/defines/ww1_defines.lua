@@ -72,3 +72,5 @@ NDefines.NTechnology.BASE_TECH_COST = 100                          -- Base cost 
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 400
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 21
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0
+
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15      -- 0.25 
