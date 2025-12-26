@@ -10,7 +10,7 @@ ALL_Agadir_Crisis_Category = {
 		available = {
 			always = no
 		}
-		complete_effect = {
+		timeout_effect = {
 			if = {
 				limit = {
 					check_variable = {
@@ -59,9 +59,6 @@ ALL_Agadir_Crisis_Category = {
 		cost = 20
 		fire_only_once = no
 		days_re_enable = 20
-		visible = {
-			always = yes
-		}
 		complete_effect = {
 			custom_effect_tooltip = ALL_Add_Support
 			if = {

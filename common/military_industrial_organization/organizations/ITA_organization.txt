@@ -203,45 +203,45 @@ ITA_ansaldo_aerei_organization = {
 	}
 }
 
-ITA_fiat_aviazione_organization = {
-	include = generic_range_focused_aircraft_organization
-	icon = GFX_idea_ITA_fiat_aviazione
+# ITA_fiat_aviazione_organization = {
+# 	include = generic_range_focused_aircraft_organization
+# 	icon = GFX_idea_ITA_fiat_aviazione
 	
-	allowed = {	 
-		original_tag = ITA
-	}
+# 	allowed = {	 
+# 		original_tag = ITA
+# 	}
 	
-	available = {
-		FROM = {
-			owns_state = 158
-		}		
-	}
+# 	available = {
+# 		FROM = {
+# 			owns_state = 158
+# 		}		
+# 	}
 	
-	initial_trait = {
-		equipment_bonus = {
-			naval_strike_attack = -0.1
-			maximum_speed = 0.1
-		}
-	}
+# 	initial_trait = {
+# 		equipment_bonus = {
+# 			naval_strike_attack = -0.1
+# 			maximum_speed = 0.1
+# 		}
+# 	}
 
-	add_trait = {
-		token = ITA_mio_trait_high_altitude_fighter_development
-		name = ITA_mio_trait_high_altitude_fighter_development
-		icon = GFX_generic_mio_trait_icon_air_agility
-		special_trait_background = yes
+# 	add_trait = {
+# 		token = ITA_mio_trait_high_altitude_fighter_development
+# 		name = ITA_mio_trait_high_altitude_fighter_development
+# 		icon = GFX_generic_mio_trait_icon_air_agility
+# 		special_trait_background = yes
 		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_low_drag_wings
+# 		position = { x=0 y=1 }  
+# 		relative_position_id = generic_mio_trait_low_drag_wings
 		
-		any_parent = { generic_mio_trait_low_drag_wings }
+# 		any_parent = { generic_mio_trait_low_drag_wings }
 		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
-		equipment_bonus = {
-			air_agility = 0.05
-			air_attack = 0.03
-		}
-	}
-}
+# 		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
+# 		equipment_bonus = {
+# 			air_agility = 0.05
+# 			air_attack = 0.03
+# 		}
+# 	}
+# }
 
 
 ################################### 
