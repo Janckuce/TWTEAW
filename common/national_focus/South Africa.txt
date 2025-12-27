@@ -356,9 +356,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		prerequisite = {
 			focus = SAF_Military1
-		}
+		} 
 		available = {
-        has_idea = SAF_Small_Arms
+			has_completed_focus = SAF_Arms_Industries
    	 	}
 		completion_reward = {
 				swap_ideas = {
