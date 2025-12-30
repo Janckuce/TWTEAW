@@ -441,7 +441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_Naval_Advancements
-		icon = GFX_focus_generic_navy_research_bonus
+		icon = GFX_focus_generic_heavy_tank
 		cost = 10
 		relative_position_id = FRA_Nation_Francaise
 		x = -1
@@ -451,21 +451,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				category = naval_equipment
+				category = armor
 				bonus = 1
 				uses = 2
 			}
-			add_tech_bonus = {
-				category = infantry_weapons
-				bonus = 1
-				uses = 2
-			}
-			add_ideas = FRA_Marines_Nationaux
 		}
 	}
 	focus = {
 		id = FRA_Naval_Investments
-		icon = GFX_focus_generic_naval_discipline
+		icon = GFX_focus_fra_french_union
 		cost = 10
 		relative_position_id = FRA_Naval_Advancements
 		x = 2
@@ -474,182 +468,105 @@ focus_tree = {
 			focus = FRA_Nation_Francaise
 		}
 		completion_reward = {
-			14 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+			458 = {
+				add_core_of = FRA
 			}
-			15 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+			665 = {
+				add_core_of = FRA
 			}
-			add_ideas = FRA_Jeu_De_Nombres
+			460 = {
+				add_core_of = FRA
+			}
+			459 = {
+				add_core_of = FRA
+			}
+			513 = {
+				add_core_of = FRA
+			}
+			462 = {
+				add_core_of = FRA
+			}
+			461 = {
+				add_core_of = FRA
+			}
 		}
 	}
 	focus = {
 		id = FRA_Napoleon_Class_Ship
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_focus_fra_milice
 		cost = 10
 		relative_position_id = FRA_Naval_Investments
 		x = -1
 		y = 2
 		prerequisite = {
-			focus = FRA_Naval_Investments
 			focus = FRA_Naval_Advancements
 		}
+		prerequisite = {
+			focus = FRA_Naval_Investments
+		}
 		completion_reward = {
-			16 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_equipment_production = {
-				equipment = {
-					type = battleship_2
-				}
-				name = "Napoleon I"
-				requested_factories = 1
-				progress = 0.9
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
+			add_mastery = {
+				amount = 40
 			}
 		}
 	}
 	focus = {
 		id = FRA_Screens_Primacy
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_focus_generic_advanced_military_studies
 		cost = 10
 		relative_position_id = FRA_Napoleon_Class_Ship
 		x = -1
 		y = -1
-		mutually_exclusive = {
-			focus = FRA_Capital_Ships_Primacy
-		}
 		prerequisite = {
 			focus = FRA_Naval_Advancements
-			focus = FRA_Naval_Investments
 		}
 		completion_reward = {
-			16 = {
+			23 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
-					instant_build = yes
 				}
 			}
-			add_equipment_production = {
-				equipment = {
-					type = destroyer_1
+			33 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 				}
-				name = "Louis XIX"
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
 			}
-			add_equipment_production = {
-				equipment = {
-					type = destroyer_1
+			26 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 				}
-				name = "Henry V"
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
 			}
-			add_equipment_production = {
-				equipment = {
-					type = destroyer_1
-				}
-				name = "Louis Philippe II"
-				requested_factories = 1
-				progress = 0.8
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
-			}
-			add_ideas = FRA_Screening_Primacy
 		}
 	}
 	focus = {
 		id = FRA_Capital_Ships_Primacy
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_PER_increase_oil_sales
 		cost = 10
 		relative_position_id = FRA_Napoleon_Class_Ship
 		x = 1
 		y = -1
 		prerequisite = {
-			focus = FRA_Naval_Advancements
 			focus = FRA_Naval_Investments
 		}
-		mutually_exclusive = {
-			focus = FRA_Screens_Primacy
-		}
 		completion_reward = {
-			16 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
+			458 = {
+				add_resource = {
+					type = oil
+					amount = 6
 				}
 			}
-			add_equipment_production = {
-				equipment = {
-					type = light_cruiser_1
+			665 = {
+				add_resource = {
+					type = oil
+					amount = 6
 				}
-				name = "Louis XVIII"
-				requested_factories = 1
-				progress = 0.6
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
 			}
-			add_equipment_production = {
-				equipment = {
-					type = light_cruiser_1
-				}
-				name = "Charles X"
-				requested_factories = 1
-				progress = 0.6
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
-			}
-			add_equipment_production = {
-				equipment = {
-					type = light_cruiser_1
-				}
-				name = "Louis Philippe I"
-				requested_factories = 1
-				progress = 0.6
-				amount = 1
-				industrial_manufacturer = mio:FRA_acl_organization
-			}
-			add_ideas = FRA_Capitals_Primacy
 		}
 	}
 
