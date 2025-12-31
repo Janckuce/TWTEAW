@@ -3,14 +3,8 @@ ideas = {
 	country = {
 		YEM_Jabal_Forces = {
 			picture = yem_jab_in_tur
-			rule = {
-				can_send_volunteers = yes
-			}
 			modifier = {
 				experience_gain_army_unit_factor = 0.5
-				send_volunteer_divisions_required = -1
-				send_volunteers_tension = -1
-				send_volunteer_size = 100
 				weekly_manpower = 500
 			}
 		}
