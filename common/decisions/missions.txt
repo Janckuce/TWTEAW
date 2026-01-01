@@ -319,9 +319,10 @@ Capture_Metz = {
 			limit = {
 				has_idea = RUS_Dated_Warfare5
 			}
-		remove_idea = RUS_Dated_Warfare5
+				remove_ideas = RUS_Dated_Warfare5
+				}
+			}
 		}
-	}
 	timeout_effect = {
 		FRA = {
 			add_political_power = -50
@@ -750,12 +751,16 @@ Capture_Edirne = {
 			add_political_power = -100
 			add_stability = -0.10
 			add_war_support = -0.10
-			add_timed_idea = { idea = AUS_Failed_Warsaw_Mission days = 90 }
+			add_timed_idea = { 
+				idea = AUS_Failed_Warsaw_Mission 
+				days = 90 
+			}
 		}
 		RUS = {
 			add_political_power = 50
 			add_stability = 0.05
 			add_war_support = 0.05
-		}}
+			}
+		}
 	}
 }
