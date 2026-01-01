@@ -665,4 +665,45 @@ Capture_Edirne = {
 			add_war_support = -0.2
 		}
 	}
+	Take_Warsaw_Mission = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 120
+		fire_only_once = yes
+		is_good = no
+
+		allowed = {
+			always = no
+		}
+		activation = {
+			AUS = { has_war_with = RUS }
+	    }
+
+		available = {
+		3544 = { is_controlled_by = RUS } # Warsaw
+	    }
+
+	    complete_effect = {
+		FRA = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		GER = {
+			add_political_power = -50
+			add_stability = -0.15
+			add_war_support = -0.15
+		}
+	    timeout_effect = {
+		FRA = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+		GER = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}}
+	}
 }
