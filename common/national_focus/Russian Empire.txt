@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = RUS_The_Tsars_Ideas
 		icon = GFX_focus_rus_our_tsar
-		cost = 12.9
+		cost = 6.5
 		x = 10
 		y = 0
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
@@ -640,7 +640,7 @@ focus_tree = {
 		focus = {
 		id = RUS_improve_on_our_costitution
 		icon = GFX_focus_POL_complete_april_constitution
-		cost = 5.8
+		cost = 3.6
 		x = 16
 		y = 4
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -658,7 +658,7 @@ focus_tree = {
 		focus = {
 		id = RUS_think_of_lesser_kingdoms
 		icon = GFX_focus_rus_lesser_kingdoms
-		cost = 5.8
+		cost = 3.6
 		x = 16
 		y = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -752,7 +752,7 @@ focus_tree = {
 		focus = {
 		id = RUS_burn_down_the_constitution
 		icon = GFX_focus_rus_no_free_speech
-		cost = 5.8
+		cost = 3.6
 		x = 21
 		y = 3
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -770,7 +770,7 @@ focus_tree = {
 		focus = {
 		id = RUS_hunt_down_bolsheviks
 		icon = GFX_focus_generic_communism_anti_fascism
-		cost = 5.8
+		cost = 3.6
 		x = 21
 		y = 4
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -788,7 +788,7 @@ focus_tree = {
 		focus = {
 		id = RUS_orthodoxy_is_for_us
 		icon = GFX_focus_GRE_an_orthodox_state
-		cost = 5.8
+		cost = 3.6
 		x = 21
 		y = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -1116,18 +1116,13 @@ focus_tree = {
 			focus = RUS_Organised_Warfare2
 		}
 		completion_reward = {
-			add_tech_bonus = {
-			name = UKR_french_technical_expertise
-			bonus = 0.75
-			uses = 1
-			category = motorized_equipment
-		}
-		    add_tech_bonus = {
-            name = "support_company_bonus"
-            bonus = 0.5
-            uses = 2
-            category = support_tech
-        }
+			219 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
 		}
 	}
 	focus = {
@@ -1199,7 +1194,7 @@ focus_tree = {
 				remove_idea = RUS_Dated_Warfare
 				add_idea = RUS_Dated_Warfare1
 			}
-			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -1371,7 +1366,7 @@ focus_tree = {
 				remove_idea = RUS_Dated_Warfare
 				add_idea = RUS_Dated_Warfare1
 			}
-			add_war_support = 0.25
+			add_war_support = 0.1
 		}
 	}
 	focus = {
