@@ -274,6 +274,53 @@ Capture_Metz = {
 			add_stability = -0.15
 			add_war_support = -0.15
 		}
+		RUS = {
+		if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare
+			add_idea = RUS_Dated_Warfare1
+			}
+		} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare1
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare1
+			add_idea = RUS_Dated_Warfare2
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare2
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare2
+			add_idea = RUS_Dated_Warfare3
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare3
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare3
+			add_idea = RUS_Dated_Warfare4
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare4
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare4
+			add_idea = RUS_Dated_Warfare5
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare5
+			}
+		remove_idea = RUS_Dated_Warfare5
+		}
 	}
 	timeout_effect = {
 		FRA = {
