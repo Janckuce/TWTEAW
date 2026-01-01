@@ -131,4 +131,270 @@ characters={
 			logistics_skill=2
 		}
 	}
+	POR_Jose_Norton_de_Matos = {
+		name = "José Norton de Matos"
+		portraits = {
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Minister_Of_War
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = {
+				infantry_expert
+				logistics_wizard
+				organizer
+			}
+			skill=2
+			attack_skill= 1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	POR_Fernando_Tamagnini = {
+		name = "Fernando Tamagnini de Abreu e Silva"
+		portraits = {
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Expeditionary_Commander
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = {
+				defensive_doctrine
+				politically_connected
+			}
+			skill=2
+			attack_skill= 1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	POR_Manuel_Gomes = {
+		name = "Manuel Gomes da Costa"
+		portraits = {
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Suspect
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = {
+				offensive_doctrine
+				inspirational_leader
+			}
+			skill=2
+			attack_skill= 1
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	POR_Henrique_Mitchell = {
+		name = "Henrique Mitchell de Paiva Couceiro"
+		portraits = {
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Colonial_Leader
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander={
+			traits = {
+				irregulars_officer
+				ascari_officer
+			}
+			skill=2
+			attack_skill= 3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
+	POR_Jose_Carlos = {
+		name = "José Carlos da Maia"
+		portraits = {
+		}
+		
+		advisor={
+			slot = navy_chief
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Senior_Naval_Officer
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader = {
+			traits = {
+				ironside
+				big_guns_expert
+				marksman
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	POR_Adriano_Paiva = {
+		name = "Adriano de Paiva"
+		portraits = {
+		}
+		
+		advisor={
+			slot = navy_chief
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Naval_Innovator
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader = {
+			traits = {
+				blockade_runner
+				superior_tactician
+				lone_wolf
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	POR_Antonio_Almeida = {
+		name = "António José de Almeida"
+		portraits = {
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Interventionist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	POR_Afonso_Costa = {
+		name = "Afonso Costa"
+		portraits = {
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Divisive_Industrialist
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	POR_Raul_Esteves = {
+		name = "Raul Esteves"
+		portraits = {
+		}
+		
+		advisor={
+			slot = theorist
+			idea_token = por_tomas_rosado
+			allowed = {
+				original_tag = POR
+			}
+			traits = {
+				POR_Train_Train_Train
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		field_marshal = {
+			traits = {
+				organizer
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
 }
