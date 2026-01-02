@@ -124,7 +124,7 @@ ideas = {
             picture = GER_naval_race
 
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_factor = 0.3
 				industrial_capacity_dockyard = 0.5
 				navy_capital_ship_attack_factor = 0.05
 				navy_fuel_consumption_factor = -0.1
@@ -492,8 +492,7 @@ ideas = {
 			modifier = {
 				production_speed_dockyard_factor = 0.1
 				industrial_capacity_dockyard = 0.1
-				navy_org_factor = -0.05
-				repair_speed_factor = 0.1
+				naval_speed_factor = 0.1
 			}
 		}
 		GER_Speed_Up3 = {
@@ -501,8 +500,7 @@ ideas = {
 			modifier = {
 				production_speed_dockyard_factor = 0.1
 				industrial_capacity_dockyard = 0.1
-				navy_org_factor = -0.05
-				repair_speed_factor = 0.1
+				naval_speed_factor = 0.1
 				screening_efficiency = 0.05
 			}
 		}
@@ -581,9 +579,9 @@ ideas = {
 		GER_Prussian_Naval_Combat = {
 			picture = GER_seeherrschaft
 			modifier = {
-				experience_gain_navy_unit_factor = 0.05
-				naval_critical_effect_factor = -0.075
-				naval_morale_factor = 0.075
+				experience_gain_navy_unit_factor = 0.1
+				naval_critical_effect_factor = -0.1
+				naval_morale_factor = 0.1
 			}
 		}
 		GER_Wilhelm_Our_Kaiser = {
@@ -669,50 +667,56 @@ ideas = {
 			}
 		}
 		GER_Bavarian_Diplomacy = {
+			picture = SOV_scientist_defect
 			modifier = {
 				political_power_gain = 0.1
 			}
 			targeted_modifier = {
 				tag = AUS
-				trade_cost_for_target_factor = -0.1
+				trade_cost_for_target_factor = -0.2
 			}
 		}
 		GER_Holy_Crusade = {
+			picture = MEX_church_power_5
 			modifier = {
-				mobilization_speed = 0.1
+				industrial_capacity_factory = 0.15
 			}
 		}
 		GER_Bavarian_Air_Support = {
+			picture = HUN_rapid_army_expansion
 			equipment_bonus = {
-				cas = {
-					build_cost_ic = -0.05
+				artillery_equipment = {
+					build_cost_ic = -0.15
 				}
 			}
 		}
 		GER_Bavarian_Air_Support1 = {
+			picture = HUN_rapid_army_expansion
 			modifier = {
-				air_cas_efficiency = 0.1
+				modifier_army_sub_unit_infantry_defence_factor = 0.1
 			}
 			equipment_bonus = {
-				cas = {
-					build_cost_ic = -0.05
+				artillery_equipment = {
+					build_cost_ic = -0.15
 				}
 			}
 		}
 		GER_Bavarian_Air_Supremacy = {
+			picture = AFG_afghanistan_bank
 			equipment_bonus = {
-				fighter = {
-					build_cost_ic = -0.05
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.1
 				}
 			}
 		}
 		GER_Bavarian_Air_Supremacy1 = {
+			picture = AFG_afghanistan_bank
 			modifier = {
-				air_superiority_efficiency = 0.1
+				cavalry_attack_factor = 0.1
 			}
 			equipment_bonus = {
-				fighter = {
-					build_cost_ic = -0.05
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.1
 				}
 			}
 		}

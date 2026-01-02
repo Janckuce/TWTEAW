@@ -8,13 +8,12 @@ leader_traits = {
 	}
 	King_Of_Bavaria = {
 		random = no
-		air_ace_generation_chance_factor = 0.1
-		air_superiority_bonus_in_combat = 0.1
+		cavalry_attack_factor = 0.15
 	}
 	Catholic_Monarch = {
 		random = no
 		stability_factor = -0.1
-		stability_weekly = 0.01
-		air_accidents_factor = -0.1
+		stability_weekly = 0.005
+		modifier_army_sub_unit_cavalry_speed_factor = 0.2
 	}
 }

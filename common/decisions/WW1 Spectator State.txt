@@ -1805,18 +1805,6 @@ ORO_spectator_state = {
 		}
 		
 		complete_effect = {
-			GER = {
-			    retire_country_leader = yes
-				
-				add_country_leader_role = {
-					character = GER_erich_ludendorff
-					promote_leader = yes
-					country_leader = {
-						ideology = centrism
-					}
-				}
-				news_event = ww1_news.48
-			}
 		}
 		fire_only_once = yes
 		
