@@ -290,11 +290,12 @@ ideas = {
 			picture = NORDIC_airforce_democratic
 			modifier = {
 				air_ace_generation_chance_factor = 0.15
-				air_attack_factor = 0.05
-				air_defence_factor = 0.05
 			}
 			equipment_bonus = {
 				fighter = {
+					build_cost_ic = -0.1
+				}
+				strategic_bomber = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -303,11 +304,12 @@ ideas = {
 			picture = NORDIC_airforce_communist
 			modifier = {
 				air_ace_generation_chance_factor = 0.15
-				air_attack_factor = 0.05
-				air_defence_factor = 0.05
 			}
 			equipment_bonus = {
 				cas = {
+					build_cost_ic = -0.1
+				}
+				naval_bomber = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -315,7 +317,7 @@ ideas = {
 		FRA_Superior_Air_Exercise = {
 			picture = ENG_special_air_service
 			modifier = {
-				air_wing_xp_loss_when_killed_factor = -0.2
+				air_training_xp_gain_factor = 0.2
 			}
 		}
 		FRA_Superior_Naval_Combat = {
@@ -328,14 +330,14 @@ ideas = {
 			picture = generic_navy_cruiser_warfare
 			modifier = {
 				screening_efficiency = 0.05
-				repair_speed_factor = 0.05
+				naval_speed_factor = 0.1
 			}
 		}
 		FRA_Superior_Naval_Combat2 = {
 			picture = generic_navy_cruiser_warfare
 			modifier = {
 				screening_efficiency = 0.05
-				repair_speed_factor = 0.05
+				naval_speed_factor = 0.1
 				trait_ironside_xp_gain_factor = 0.2
 			}
 		}
@@ -343,12 +345,12 @@ ideas = {
 			picture = NORDIC_navy_democratic
 			modifier = {
 				screening_efficiency = 0.05
-				repair_speed_factor = 0.05
+				naval_speed_factor = 0.1
 				trait_ironside_xp_gain_factor = 0.2
 			}
 			equipment_bonus = {
 				destroyer = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 			}
 		}
@@ -356,12 +358,12 @@ ideas = {
 			picture = NORDIC_navy_communist
 			modifier = {
 				screening_efficiency = 0.05
-				repair_speed_factor = 0.05
+				naval_speed_factor = 0.1
 				trait_ironside_xp_gain_factor = 0.2
 			}
 			equipment_bonus = {
 				light_cruiser = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 			}
 		}

@@ -516,7 +516,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				naval_theorist
+				FRA_Naval_Theorist
 			}
 			cost = 150
 			ai_will_do = {
@@ -540,7 +540,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				navy_chief_reform_2
+				FRA_Naval_Reformist
 			}
 			cost = 150
 			ai_will_do = {
@@ -687,6 +687,18 @@ characters={
 				defense_skill = 3
 				maneuvering_skill = 5
 				coordination_skill = 3
+			}
+		}
+		FRA_Victor_Denain = {
+			name = "Victor Denain"
+			portraits = {
+			}
+			advisor = {
+				slot = air_chief
+				traits = {
+					FRA_Chief_Of_Air_Staff
+				}
+				cost = 150
 			}
 		}
 

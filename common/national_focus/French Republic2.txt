@@ -506,7 +506,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_mastery = {
-				amount = 40
+				amount = 25
 			}
 		}
 	}
@@ -767,6 +767,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_Superior_Air_Combat
+			add_tech_bonus = {
+				category = air_equipment
+				bonus = 2
+				uses = 1
+			}
 		}
 	}
 	focus = {
@@ -855,6 +860,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_Superior_Naval_Combat
+			add_tech_bonus = {
+				category = naval_equipment
+				bonus = 2
+				uses = 1
+			}
 		}
 	}
 	focus = {
