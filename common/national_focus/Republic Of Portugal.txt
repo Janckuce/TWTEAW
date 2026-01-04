@@ -448,34 +448,9 @@ focus_tree = {
 			focus = POR_Constitution_Of_1911
 		}
 		completion_reward = {
-			division_template = {
-				name = "Brigada De Reacção Rápida"
-				template_counter = 2
-				is_locked = yes
-				division_cap = 6
-				force_allow_recruiting = yes
-				regiments = {
-					militia = { x = 0 y = 0 }
-					militia = { x = 0 y = 1 }
-					militia = { x = 0 y = 2 }
-        			militia = { x = 1 y = 0 }
-					militia = { x = 1 y = 1 }
-					militia = { x = 1 y = 2 }
-        			militia = { x = 2 y = 0 }
-					militia = { x = 2 y = 1 }
-					militia = { x = 2 y = 2 }
-				}
-				support = {
-					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-				}
-			}
-			112 = {
-				create_unit = {
-					division = "name = \"Brigada De Reacção Rápida\" division_template = \"Brigada De Reacção Rápida\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
-					owner = POR
-					count = 3
-				}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
 			}
 		}
 	}
@@ -510,13 +485,6 @@ focus_tree = {
 				remove_idea = POR_Rapid_Reaction
 				add_idea = POR_Rapid_Reaction1
 			}
-			add_units_to_division_template = {
-				template_name = "Brigada De Reacção Rápida"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 3
-				}
-			}
 		}
 	}
 	focus = {
@@ -534,13 +502,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = POR_Rapid_Reaction1
 				add_idea = POR_Rapid_Reaction2
-			}
-			add_units_to_division_template = {
-				template_name = "Brigada De Reacção Rápida"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 4
-				}
 			}
 		}
 	}
@@ -560,13 +521,6 @@ focus_tree = {
 				remove_idea = POR_Rapid_Reaction2
 				add_idea = POR_Rapid_Reaction3
 			}
-			add_units_to_division_template = {
-				template_name = "Brigada De Reacção Rápida"
-				regiments = {
-					artillery_brigade = 4
-					artillery_brigade = 4
-				}
-			}
 		}
 	}
 	focus = {
@@ -585,34 +539,10 @@ focus_tree = {
 			focus = POR_Constitution_Of_1911
 		}
 		completion_reward = {
-			division_template = {
-				name = "Comandos"
-				template_counter = 12
-				is_locked = yes
-				division_cap = 6
-				force_allow_recruiting = yes
-				regiments = {
-					mountaineers = { x = 0 y = 0 }
-					mountaineers = { x = 0 y = 1 }
-					mountaineers = { x = 0 y = 2 }
-        			mountaineers = { x = 1 y = 0 }
-					mountaineers = { x = 1 y = 1 }
-					mountaineers = { x = 1 y = 2 }
-        			mountaineers = { x = 2 y = 0 }
-					mountaineers = { x = 2 y = 1 }
-					mountaineers = { x = 2 y = 2 }
-				}
-				support = {
-					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-				}
-			}
-			112 = {
-				create_unit = {
-					division = "name = \"Comandos\" division_template = \"Comandos\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
-					owner = POR
-					count = 3
-				}
+			add_tech_bonus = {
+				category = artillery
+				bonus = 1
+				uses = 2
 			}
 		}
 	}
@@ -647,13 +577,6 @@ focus_tree = {
 				remove_idea = POR_Commandos
 				add_idea = POR_Commandos1
 			}
-			add_units_to_division_template = {
-				template_name = "Comandos"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 3
-				}
-			}
 		}
 	}
 	focus = {
@@ -672,13 +595,6 @@ focus_tree = {
 				remove_idea = POR_Commandos1
 				add_idea = POR_Commandos2
 			}
-			add_units_to_division_template = {
-				template_name = "Comandos"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 4
-				}
-			}
 		}
 	}
 	focus = {
@@ -696,13 +612,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = POR_Commandos2
 				add_idea = POR_Commandos3
-			}
-			add_units_to_division_template = {
-				template_name = "Comandos"
-				regiments = {
-					artillery_brigade = 4
-					artillery_brigade = 4
-				}
 			}
 		}
 	}
@@ -750,6 +659,10 @@ focus_tree = {
 					owner = POR
 					count = 3
 				}
+			}
+			set_technology = {
+				tech_recon = 1
+				tech_recon2 = 1
 			}
 		}
 	}
@@ -840,6 +753,9 @@ focus_tree = {
 					artillery_brigade = 4
 					artillery_brigade = 4
 				}
+				support = {
+					recon = 0
+				}
 			}
 		}
 	}
@@ -858,9 +774,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = POR_Order_Of_Christ
-			set_rule = {
-				can_send_volunteers = yes
-			}
 		}
 	}
 
@@ -1098,7 +1011,6 @@ focus_tree = {
 				remove_idea = POR_Inadequate_African_Territories
 				add_idea = POR_Inadequate_African_Territories1
 			}
-			puppet = BRA
 		}
 	}
 	focus = {

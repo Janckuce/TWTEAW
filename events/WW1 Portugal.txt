@@ -29,18 +29,15 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		date < 1915.3.9
-		ENG = {
-			has_war_with = GER
+	immediate = {
+		declare_war_on = {
+			target = GER
+			type = topple_government
 		}
 	}
 
 	option = {
 		name = ww1_portugal.2.a
-		declare_war_on = {
-			target = GER
-		}
 	}
 }
 

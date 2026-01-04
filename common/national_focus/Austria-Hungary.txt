@@ -553,6 +553,8 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = AUS_Economic_Plan_Main_Left
+		}
+		prerequisite = {
 			focus = AUS_Economic_Plan_Main_Right
 		}
 		completion_reward = {
@@ -789,6 +791,9 @@ focus_tree = {
 		relative_position_id = AUS_Military_Plan2
 		x = 0
 		y = 2
+		available = {
+			date > 1914.7.28
+		}
 		prerequisite = {
 			focus = AUS_Military_Plan2
 		}
@@ -860,6 +865,9 @@ focus_tree = {
 		relative_position_id = AUS_Military_Plan3
 		x = 0
 		y = 3
+		available = {
+			date > 1915.7.28
+		}
 		prerequisite = {
 			focus = AUS_Military_Plan3
 		}
@@ -1429,6 +1437,11 @@ focus_tree = {
 		relative_position_id = AUS_For_The_Empire
 		x = -2
 		y = 1
+		bypass = {
+			SER = {
+				has_capitulated = yes
+			}
+		}
 		available = {
 			has_war_with = SER
 		}
@@ -1464,6 +1477,11 @@ focus_tree = {
 		relative_position_id = AUS_For_The_Empire
 		x = 2
 		y = 1
+		bypass = {
+			SER = {
+				has_capitulated = yes
+			}
+		}
 		available = {
 			has_war_with = ITA
 		}

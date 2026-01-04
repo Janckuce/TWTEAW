@@ -700,6 +700,10 @@ focus_tree = {
 			retire_character = YEM_the_desert_endurs
 			retire_character = YEM_the_desert_endurs1
 			retire_character = YEM_the_desert_endurs2
+			declare_war_on = {
+				target = ENG
+				type = topple_government
+			}
 		}
 	}
 
@@ -759,37 +763,6 @@ focus_tree = {
 						allow_spawning_on_enemy_provs = yes
 						count = 6
 					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = YEM_Seize_Kuwait
-		icon = GFX_focus_TUR_taking_over_defense_of_the_gulf
-		cost = 10
-		relative_position_id = YEM_War_For_Our_Fathers
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = YEM_War_For_Our_Fathers
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					or = {
-						divisions_in_state = {
-							size < 1
-							state = 656
-						}
-						656 = {
-							is_controlled_by = TUR
-						}
-					}
-				}
-				656 = {
-					set_state_owner_to = YEM
-					set_state_controller_to = YEM
-					add_core_of = YEM
 				}
 			}
 		}

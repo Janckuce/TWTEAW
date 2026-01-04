@@ -1,0 +1,49 @@
+leader_traits = {
+	POR_Minister_Of_War = {
+		random = no
+		mobilization_speed = 0.5
+		conscription = 0.005
+	}
+	POR_Expeditionary_Commander = {
+		random = no
+		max_dig_in = 5
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.05
+		}
+	}
+	POR_Suspect = {
+		random = no
+		max_planning = 0.15
+		planning_speed = 0.25
+	}
+	POR_Colonial_Leader = {
+		random = no
+		modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
+		modifier_army_sub_unit_irregular_infantry_speed_factor = 0.1
+	}
+	POR_Senior_Naval_Officer = {
+		random = no
+		experience_gain_navy = 0.2
+		naval_critical_score_chance_factor = 0.2
+	}
+	POR_Naval_Innovator = {
+		random = no
+		experience_gain_navy = 0.25
+		research_speed_factor = 0.1
+	}
+	POR_Interventionist = {
+		random = no
+		war_support_weekly = 0.005
+	}
+	POR_Divisive_Industrialist = {
+		random = no
+		stability_factor = -0.1
+		production_speed_buildings_factor = 0.15
+	}
+	POR_Train_Train_Train = {
+		random = no
+		land_mastery_gain_factor = 0.1
+		land_doctrine_cost_factor = -0.1
+	}
+}

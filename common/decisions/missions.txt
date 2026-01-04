@@ -274,7 +274,55 @@ Capture_Metz = {
 			add_stability = -0.15
 			add_war_support = -0.15
 		}
-	}
+		RUS = {
+		if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare
+			add_idea = RUS_Dated_Warfare1
+			}
+		} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare1
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare1
+			add_idea = RUS_Dated_Warfare2
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare2
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare2
+			add_idea = RUS_Dated_Warfare3
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare3
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare3
+			add_idea = RUS_Dated_Warfare4
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare4
+			}
+		swap_ideas = {
+			remove_idea = RUS_Dated_Warfare4
+			add_idea = RUS_Dated_Warfare5
+			}
+			} else if = {
+			limit = {
+				has_idea = RUS_Dated_Warfare5
+			}
+				remove_ideas = RUS_Dated_Warfare5
+				}
+			}
+		}
 	timeout_effect = {
 		FRA = {
 			add_political_power = -50
@@ -663,6 +711,56 @@ Capture_Edirne = {
 		timeout_effect = {
 			remove_ideas = AUS_Take_Venice
 			add_war_support = -0.2
+		}
+	}
+	Take_Warsaw_Mission = {
+		priority = 1
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 120
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			original_tag = AUS
+		}
+		activation = {
+			AUS = { has_war_with = RUS }
+	    }
+
+		available = {
+		or = {
+			10 = { is_controlled_by = AUS  } # Warsaw
+			10 = { is_controlled_by = GER  } # Warsaw
+		    }
+	    }
+
+	    complete_effect = {
+		AUS = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_manpower = 50000
+		}
+		RUS = {
+			add_political_power = -50
+			add_stability = -0.15
+			add_war_support = -0.15
+		}
+	}
+	    timeout_effect = {
+		AUS = {
+			add_political_power = -100
+			add_stability = -0.10
+			add_war_support = -0.10
+			add_timed_idea = { 
+				idea = AUS_Failed_Warsaw_Mission 
+				days = 90 
+			}
+		}
+		RUS = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+			}
 		}
 	}
 }

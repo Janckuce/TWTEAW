@@ -46,7 +46,8 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.06
 				local_resources_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.1
 			}
 		}
 		RAJ_Indian_Populous = {
@@ -86,11 +87,11 @@ ideas = {
 		RAJ_Maximised_Indian_Populus = {
 			picture = RAJ_widespread_turmoil
 			modifier = {
-				monthly_population = 0.2
+				monthly_population = 0.5
 				political_advisor_cost_factor = -0.15
 				stability_factor = 0.1
 				war_support_factor = 0.1
-				weekly_manpower = 500
+				weekly_manpower = 1000
 				weekly_casualties_war_support = 0.001
 			}
 		}
@@ -113,6 +114,22 @@ ideas = {
 			picture = raj_indian_gentlemen_officers
 			modifier = {
 				army_defence_factor = -0.1
+			}
+		}
+		RAJ_Army_Britain = {
+			modifier = {
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.1
+			}
+		}
+		RAJ_Army_India = {
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_speed_factor = 0.1
 			}
 		}
 		RAJ_Maximised_Armed_Forces = {

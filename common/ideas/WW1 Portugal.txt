@@ -219,36 +219,34 @@ ideas = {
 		POR_Rapid_Reaction = {
 			picture = por_empire
 			modifier = {
-				modifier_army_sub_unit_militia_attack_factor = 0.05
-				modifier_army_sub_unit_militia_defence_factor = 0.05
+				modifier_army_sub_unit_infantry_attack_factor = 0.025
+				modifier_army_sub_unit_infantry_defence_factor = 0.025
 			}
 		}
 		POR_Rapid_Reaction1 = {
 			picture = por_empire
 			modifier = {
-				modifier_army_sub_unit_militia_attack_factor = 0.075
-				modifier_army_sub_unit_militia_defence_factor = 0.075
+				modifier_army_sub_unit_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_infantry_defence_factor = 0.05
 			}
 		}
 		POR_Rapid_Reaction2 = {
 			picture = por_empire
 			modifier = {
-				modifier_army_sub_unit_militia_attack_factor = 0.1
-				modifier_army_sub_unit_militia_defence_factor = 0.1
+				modifier_army_sub_unit_infantry_attack_factor = 0.075
+				modifier_army_sub_unit_infantry_defence_factor = 0.075
 			}
 		}
 		POR_Rapid_Reaction3 = {
 			picture = por_empire
 			modifier = {
-				dont_lose_dig_in_on_attack = 1
-				modifier_army_sub_unit_militia_attack_factor = 0.15
-				modifier_army_sub_unit_militia_defence_factor = 0.15
+				modifier_army_sub_unit_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_infantry_defence_factor = 0.1
 			}
 		}
 		POR_Commandos = {
 			picture = por_empire
 			modifier = {
-				
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.025
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.025
 			}
@@ -256,7 +254,6 @@ ideas = {
 		POR_Commandos1 = {
 			picture = por_empire
 			modifier = {
-				
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
 			}
@@ -264,7 +261,6 @@ ideas = {
 		POR_Commandos2 = {
 			picture = por_empire
 			modifier = {
-				
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.025
@@ -273,7 +269,6 @@ ideas = {
 		POR_Commandos3 = {
 			picture = por_empire
 			modifier = {
-				
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				modifier_army_sub_unit_mountaineers_defence_factor = 0.05
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
@@ -297,28 +292,22 @@ ideas = {
 			picture = por_empire
 			modifier = {
 				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.05
-				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
-				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.075
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.075
 			}
 		}
 		POR_Hunters3 = {
 			picture = por_empire
 			modifier = {
 				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.1
-				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
-				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.1
 			}
 		}
 		POR_Order_Of_Christ = {
 			picture = por_camisas_azuis
-				rule = {
-				can_send_volunteers = yes
-			}
 			modifier = {
-				land_doctrine_cost_factor = -0.1
-				send_volunteer_size = 9
-				send_volunteers_tension = -0.7
-				send_volunteer_divisions_required = -1
+				land_night_attack = 0.2
 			}
 		}
 	}

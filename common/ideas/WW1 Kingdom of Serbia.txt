@@ -3,20 +3,20 @@ ideas = {
 		SER_Spirit_Of_Pan_Slavism = {
 			picture = YUG_yugoslavian_general_staff
 			modifier = {
-				enemy_attrition = 0.1
+				army_org_factor = 0.05
 			}
 		}
 		SER_Spirit_Of_Pan_Slavism1 = {
 			picture = YUG_yugoslavian_general_staff
 			modifier = {
-				enemy_attrition = 0.1
+				army_org_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
 		}
 		SER_Spirit_Of_Pan_Slavism2 = {
 			picture = YUG_yugoslavian_general_staff
 			modifier = {
-				enemy_attrition = 0.1
+				army_org_factor = 0.05
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
@@ -24,8 +24,8 @@ ideas = {
 		SER_Spirit_Of_Pan_Slavism3 = {
 			picture = YUG_yugoslavian_general_staff
 			modifier = {
-				local_manpower = 0.33
-				enemy_attrition = 0.1
+				conscription = 0.01
+				army_org_factor = 0.05
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
 			}
@@ -33,20 +33,20 @@ ideas = {
 		SER_God_Given_Land = {
 			picture = YUG_orthodox_church_support
 			modifier = {
-				max_training = 0.1
+				equipment_capture = 0.03
 			}
 		}
 		SER_God_Given_Land1 = {
 			picture = YUG_orthodox_church_support
 			modifier = {
-				max_training = 0.1
+				equipment_capture = 0.03
 				max_dig_in_factor = 0.1
 			}
 		}
 		SER_God_Given_Land2 = {
 			picture = YUG_orthodox_church_support
 			modifier = {
-				max_training = 0.1
+				equipment_capture = 0.03
 				max_dig_in_factor = 0.1
 				max_planning_factor = 0.1
 			}
@@ -54,7 +54,7 @@ ideas = {
 		SER_Small_Country_Big_Heart = {
 			picture = FRA_national_mobilization_focus
 			modifier = {
-				local_resources_factor = 0.33
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 		SER_Flaming_Defense = {
@@ -220,7 +220,7 @@ ideas = {
 		SER_Nikola_Tesla = {
 			picture = ETH_ethiopian_electric_power
 			modifier = {
-				research_speed_factor = 0.25
+				research_speed_factor = 0.05
 			}
 		}
 		SER_Drina_Offensive = {
@@ -233,13 +233,13 @@ ideas = {
 		SER_Hold_At_All_Costs = {
 			picture = citizen_militia_2
 			modifier = {
-				defence = 0.1
+				army_defence_factor = 0.1
 			}
 		}
 		SER_Austrian_Backstab = {
 			picture = hol_liberation
 			modifier = {
-				consumer_goods_expected_value = 0.2
+				industrial_capacity_factory = -0.2
 				planning_speed = -0.15
 				land_night_attack = -0.1
 				initiative_factor = -0.075
@@ -249,7 +249,7 @@ ideas = {
 		SER_Austrian_Backstab1 = {
 			picture = hol_liberation
 			modifier = {
-				consumer_goods_expected_value = 0.15
+				industrial_capacity_factory = -0.15
 				planning_speed = -0.1
 				land_night_attack = -0.1
 				initiative_factor = -0.05
@@ -259,7 +259,7 @@ ideas = {
 		SER_Austrian_Backstab2 = {
 			picture = hol_liberation
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				industrial_capacity_factory = -0.1
 				planning_speed = -0.05
 				land_night_attack = -0.05
 				initiative_factor = -0.025
@@ -269,7 +269,7 @@ ideas = {
 		SER_Austrian_Backstab3 = {
 			picture = hol_liberation
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				industrial_capacity_factory = -0.05
 				planning_speed = -0.025
 				land_night_attack = -0.025
 			}

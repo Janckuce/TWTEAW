@@ -19,8 +19,15 @@ POR_Economic_Management_Category = {
 			civilian_factory_use = 3
 		}
 		remove_effect = {
-			add_to_variable = {
-				POR.GDP = 1
+			if = {
+				limit = {
+					check_variable = {
+						POR.GDP > 4
+					}
+				}
+				add_to_variable = {
+					POR.GDP = 1
+				}
 			}
 			hidden_effect = {
 				remove_ideas = {
