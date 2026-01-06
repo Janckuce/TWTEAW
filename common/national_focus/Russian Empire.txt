@@ -142,7 +142,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Russia_monarchist_8
 		}
-		completion_reward = { }
+		completion_reward = { 
+			load_focus_tree = RUS_Monarchist
+		}
 	}
 	focus = {
 		id = Russia_democratic_1
@@ -291,7 +293,13 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-		completion_reward = { }
+		completion_reward = { 
+			remove_ideas = RUS_Democratic_Opposition_4
+			set_politics = {
+				ruling_party = democratic
+			}
+			load_focus_tree = RUS_Democratic
+		}
 	}
 	focus = {
 		id = RUS_Constitutional_Monarchy
@@ -306,7 +314,16 @@ focus_tree = {
 		}
 		x = -2
 		y = 4
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Democratic_Opposition_4
+				add_idea = RUS_Constitutional_Monarchy
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+			load_focus_tree = RUS_Constitutional
+		}
 	}
 	focus = {
 		id = RUS_Socialism_Not_Communism
@@ -326,6 +343,10 @@ focus_tree = {
 				remove_idea = RUS_Bolshevik_Sabotage
 				add_idea = Russia_Reduced_Bolshevik_Threat
 			}
+			set_politics = {
+				ruling_party = communism
+			}
+			load_focus_tree = RUS_Socialist
 		}
 	}
 }
