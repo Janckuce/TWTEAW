@@ -24,1389 +24,308 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	focus = {
-		id = RUS_The_Tsars_Ideas
-		icon = GFX_focus_rus_our_tsar
-		cost = 6.5
-		x = 10
-		y = 0
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		completion_reward = {
-			country_event = ww1_russia.11
-		}
-	}
-	focus = {
-		id = RUS_Construction_Efforts
-		icon = GFX_goal_generic_consumer_goods
-		cost = 7.2
-		relative_position_id = RUS_The_Tsars_Ideas
-		x = -9
-		y = 2
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Stolypin_reform
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Agrarian_Industry
-				add_idea = RUS_Agrarian_Industry1
-			}
-		}
-	}
-	focus = {
-		#	Steel Investment (+9)
-		id = RUS_Industry1
-		icon = GFX_focus_generic_steel
-		cost = 7.2
-		relative_position_id = RUS_Construction_Efforts
-		x = -2
+		id = Russia_monarchist_1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 5
 		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Construction_Efforts
-		}
-		completion_reward = {
-			246 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			219 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			247 = {
-				add_resource = {
-					type = steel
-					amount = 3
-				}
-			}
-		}
-	}
-	focus = {
-		#	St.Petersburg Investment
-		id = RUS_Industry2
-		icon = GFX_goal_generic_fortify_city
-		cost = 7.2
-		relative_position_id = RUS_Construction_Efforts
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Construction_Efforts
-		}
-		completion_reward = {
-			195 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Minsk Investment
-		id = RUS_Industry3
-		icon = GFX_focus_generic_modernize_industry
-		cost = 7.2
-		relative_position_id = RUS_Construction_Efforts
-		x = 2
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Construction_Efforts
-		}
-		completion_reward = {
-			206 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Poland Investment
-		id = RUS_Industry4
-		icon = GFX_focus_POL_warsaw_main_station
-		cost = 7.2
-		relative_position_id = RUS_Construction_Efforts
-		x = -1
-		y = 2
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Construction_Efforts
-		}
-		completion_reward = {
-			10 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			90 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Kiev Investment
-		id = RUS_Industry5
-		icon = GFX_focus_HUN_the_kingdom_of_ukraine
-		cost = 7.2
-		relative_position_id = RUS_Construction_Efforts
-		x = 1
-		y = 2
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Construction_Efforts
-		}
-		completion_reward = {
-			202 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = RUS_New_Exports
-		icon = GFX_focus_RAJ_tea_exports
-		cost = 7.2
-		relative_position_id = RUS_Construction_Efforts
-		x = 0
-		y = 3
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Industry1
-		}
-		prerequisite = {
-			focus = RUS_Industry2
-		}
-		prerequisite = {
-			focus = RUS_Industry3
-		}
-		prerequisite = {
-			focus = RUS_Industry4
-		}
-		prerequisite = {
-			focus = RUS_Industry5
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Agrarian_Industry1
-				add_idea = RUS_Agrarian_Industry2
-			}
-			821 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-			232 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-			229 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-			234 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = RUS_Continue_Main
-		icon = GFX_focus_generic_rubber_plantations
-		cost = 7.2
-		relative_position_id = RUS_New_Exports
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_New_Exports
-		}
-		completion_reward = {
-			821 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-			232 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-			229 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-			234 = {
-				add_resource = {
-					type = rubber
-					amount = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Kherson Investment
-		id = RUS_Continue_Industry1
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 7.2
-		relative_position_id = RUS_Continue_Main
-		x = -1
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Continue_Main
-		}
-		completion_reward = {
-			196 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Crimea Investment
-		id = RUS_Continue_Industry2
-		icon = GFX_focus_PER_national_bank
-		cost = 7.2
-		relative_position_id = RUS_Continue_Main
-		x = 1
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Continue_Main
-		}
-		completion_reward = {
-			137 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Helsinki Investment
-		id = RUS_Continue_Industry3
-		icon = GFX_focus_generic_naval_invasion
-		cost = 7.2
-		relative_position_id = RUS_Continue_Industry1
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Continue_Industry1
-			focus = RUS_Continue_Industry2
-		}
-		completion_reward = {
-			111 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		#	Tallinn Investment
-		id = RUS_Continue_Industry4
-		icon = GFX_focus_generic_naval_discipline
-		cost = 7.2
-		relative_position_id = RUS_Continue_Industry2
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_Continue_Industry1
-			focus = RUS_Continue_Industry2
-		}
-		completion_reward = {
-			812 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = RUS_Peasants_Land_Bank
-		icon = GFX_focus_SWE_rations
-		cost = 14.4
-		relative_position_id = RUS_Continue_Main
-		x = 0
-		y = 3
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-			available = {
-			num_of_factories > 80
-		}
-		prerequisite = {
-			focus = RUS_Continue_Industry3
-		}
-		prerequisite = {
-			focus = RUS_Continue_Industry4
-		}
-		completion_reward = {
-			remove_ideas = RUS_Agrarian_Industry2
-		}
-	}
-	focus = {
-		id = RUS_Science_Expansion_Main
-		icon = GFX_focus_research
-		cost = 7.2
-		relative_position_id = RUS_The_Tsars_Ideas
-		x = -6
-		y = 2
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_Stolypin_reform
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = RUS_Extra_Research
-		icon = GFX_focus_research2
-		cost = 14.4
-		relative_position_id = RUS_Science_Expansion_Main
-		x = 1
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		available = {
-			num_of_factories > 95
-		}
-		prerequisite = {
-			focus = RUS_Science_Expansion_Main
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = RUS_Science_Expansion1
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 7.2
-		relative_position_id = RUS_Science_Expansion_Main
-		x = 0
-		y = 2
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_Science_Expansion_Main
-		}
-		prerequisite = {
-			focus = RUS_Construction_Efforts
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Lack_Of_Scientists
-				add_idea = RUS_Lack_Of_Scientists1
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_continue_1905_reformation
-		icon = GFX_focus_rus_continue_revolution
-		cost = 7.2
-		x = 17
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_The_Tsars_Ideas
-		}
-			mutually_exclusive = {
-			focus = RUS_close_the_1905_new
-		}
-		completion_reward = {
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.075
-        }
-		add_ideas = RUS_let_way_for_democracy
-
-		}
-	}
-
-		focus = {
-		id = RUS_limit_the_rights_of_feudals
-		icon = GFX_SOV_annex_tannu_tuva_ccp_2d_sov_compatibility
-		cost = 5.8
-		x = 16
-		y = 2
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_continue_1905_reformation
-		}
-		completion_reward = {
-		add_stability = 0.075
-		add_war_support = -0.05
-			add_popularity = {
-            ideology = democratic
-            popularity = 0.075
-        }
-		}
-	}
-
-		focus = {
-		id = RUS_open_up_newspapers
-		icon = GFX_focus_rus_newspapers
-		cost = 5.8
-		x = 18
-		y = 2
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_continue_1905_reformation
-		}
-		completion_reward = {
-		add_political_power = 150
-		add_stability = 0.025
-		}
-	}
-
-		focus = {
-		id = RUS_strike_the_bolsheviks_not_too_much
-		icon = GFX_focus_CHL_chilean_anti_communist_action
-		cost = 5.8
-		x = 18
-		y = 3
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_open_up_newspapers
-		}
-		completion_reward = {
-			add_popularity = {
-            ideology = communism
-            popularity = -0.075
-        }
-			add_popularity = {
-            ideology = fascism
-            popularity = 0.025
-        }
-		add_war_support = 0.05
-		}
-	}
-
-		focus = {
-		id = RUS_give_in_to_social_revolutinaries
-		icon = GFX_focus_generic_social_democracy
-		cost = 5.8
-		x = 18
-		y = 4
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_strike_the_bolsheviks_not_too_much
-		}
-		completion_reward = {
-			add_ideas = RUS_political_fusion
-		}
-	}
-
-		focus = {
-		id = RUS_release_political_prisoners
-		icon = GFX_focus_AUS_release_imprisoned_leaders
-		cost = 5.8
-		x = 18
-		y = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_give_in_to_social_revolutinaries
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_political_fusion
-				add_idea = RUS_political_fusion2
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_limit_the_tsars_powers
-		icon = GFX_focus_PER_limit_foreign_influence
-		cost = 5.8
-		x = 18
-		y = 6
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_release_political_prisoners
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_political_fusion2
-				add_idea = RUS_political_fusion3
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_free_and_fair_russia
-		icon = GFX_focus_SOV_third_rome
-		cost = 5.8
-		x = 17
-		y = 7
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_limit_the_tsars_powers
-		}
-			prerequisite = {
-			focus = RUS_religious_freedom_for_all
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_let_way_for_democracy
-				add_idea = RUS_let_way_for_democracy2
-			}
-			set_politics = {
-            ruling_party = democratic
-            elections_allowed = no
-        }
-		}
-	}
-
-		focus = {
-		id = RUS_fight_peasent_like_status
-		icon = GFX_focus_ITA_peasants_rise
-		cost = 5.8
-		x = 16
-		y = 3
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_limit_the_rights_of_feudals
-		}
-		completion_reward = {
-			add_ideas = RUS_feudals_not_like
-		}
-	}
-
-		focus = {
-		id = RUS_improve_on_our_costitution
-		icon = GFX_focus_POL_complete_april_constitution
-		cost = 3.6
-		x = 16
-		y = 4
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_fight_peasent_like_status
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_feudals_not_like
-				add_idea = RUS_feudals_not_like2
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_think_of_lesser_kingdoms
-		icon = GFX_focus_rus_lesser_kingdoms
-		cost = 3.6
-		x = 16
-		y = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_improve_on_our_costitution
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_feudals_not_like2
-				add_idea = RUS_feudals_not_like3
-			}
-			97 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-
-				190 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_religious_freedom_for_all
-		icon = GFX_focus_focus_fra_national_resistance_council
-		cost = 5.8
-		x = 16
-		y = 6
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_think_of_lesser_kingdoms
-		}
-		completion_reward = {
-			remove_ideas = RUS_feudals_not_like3
-		}
-	}
-
-		focus = {
-		id = RUS_close_the_1905_new
-		icon = GFX_focus_rus_imerialist_focus
-		cost = 5.8
-		x = 22
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_The_Tsars_Ideas
-		}
-			mutually_exclusive = {
-			focus = RUS_continue_1905_reformation
-		}
-		completion_reward = {
-		add_stability = -0.1
-		add_political_power = -50
-			add_popularity = {
-            ideology = fascism
-            popularity = 0.2
-        }
-		}
-	}
-
-		focus = {
-		id = RUS_arrest_srs
-		icon = GFX_focus_NOR_arrest_quisling
-		cost = 5.8
-		x = 21
-		y = 2
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_close_the_1905_new
-		}
-		completion_reward = {
-		add_ideas = RUS_nationality_orthodox
-		}
-	}
-
-		focus = {
-		id = RUS_burn_down_the_constitution
-		icon = GFX_focus_rus_no_free_speech
-		cost = 3.6
-		x = 21
-		y = 3
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_arrest_srs
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_nationality_orthodox
-				add_idea = RUS_nationality_orthodox2
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_hunt_down_bolsheviks
-		icon = GFX_focus_generic_communism_anti_fascism
-		cost = 3.6
-		x = 21
-		y = 4
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_burn_down_the_constitution
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_nationality_orthodox2
-				add_idea = RUS_nationality_orthodox3
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_orthodoxy_is_for_us
-		icon = GFX_focus_GRE_an_orthodox_state
-		cost = 3.6
-		x = 21
-		y = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_hunt_down_bolsheviks
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_nationality_orthodox3
-				add_idea = RUS_nationality_orthodox4
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_invite_black_hunderets
-		icon = GFX_focus_SOV_panslavic_nationalism
-		cost = 5.8
-		x = 21
-		y = 6
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_orthodoxy_is_for_us
-		}
-		completion_reward = {
-		remove_ideas = RUS_nationality_orthodox4
-		add_stability = 0.35
-		add_war_support = 0.10
-		}
-	}
-
-		focus = {
-		id = RUS_russia_and_god_against_enemies
-		icon = GFX_focus_SOV_zemsky_sobor
-		cost = 5.8
-		x = 22
-		y = 7
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_invite_black_hunderets
-		}
-			prerequisite = {
-			focus = RUS_bring_neofeudalism_to_russia
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_russian_nationalism5
-				add_idea = RUS_russian_nationalism6
-			}
-			set_politics = {
-            ruling_party = fascism
-            elections_allowed = no
-        }
-		}
-	}
-
-		focus = {
-		id = RUS_strike_against_germanism
-		icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
-		cost = 5.8
-		x = 23
-		y = 2
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_close_the_1905_new
-		}
-		completion_reward = {
-			add_ideas = RUS_russian_nationalism
-		}
-	}
-
-		focus = {
-		id = RUS_force_newspapers_under_ministry
-		icon = GFX_goal_continuous_def_against_influence
-		cost = 5.8
-		x = 23
-		y = 3
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_strike_against_germanism
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_russian_nationalism
-				add_idea = RUS_russian_nationalism2
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_limit_rights_of_lesser_kingdoms
-		icon = GFX_focus_rus_use_them_for_us
-		cost = 5.8
-		x = 23
-		y = 4
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_force_newspapers_under_ministry
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_russian_nationalism2
-				add_idea = RUS_russian_nationalism3
-			}
-				11 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-
-				193 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_idea_of_even_greater_russia
-		icon = GFX_SOV_patriarch_of_all_russia_ccp_2d_sov_compatibility
-		cost = 5.8
-		x = 23
-		y = 5
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_limit_rights_of_lesser_kingdoms
-		}
-		completion_reward = {
-			add_state_core = 91
-			add_state_core = 89
-			add_state_core = 80
-			add_state_core = 890
-			add_state_core = 73
-			add_state_core = 188
-			add_state_core = 763
-			add_state_core = 5
-			add_state_core = 85
-			add_state_core = 807
-			add_state_core = 86
-			add_state_core = 67
-			add_state_core = 762
-
-				swap_ideas = {
-				remove_idea = RUS_russian_nationalism3
-				add_idea = RUS_russian_nationalism4
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_bring_neofeudalism_to_russia
-		icon = GFX_focus_SOV_breadbasket_of_the_union
-		cost = 5.8
-		x = 23
-		y = 6
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_idea_of_even_greater_russia
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = RUS_russian_nationalism4
-				add_idea = RUS_russian_nationalism5
-			}
-		}
-	}
-
-		focus = {
-		id = RUS_Stolypin_reform
-		icon = GFX_focus_rus_stolypin_reform
-		cost = 7.2
-		x = 2
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_The_Tsars_Ideas
-		}
-		completion_reward = {
-				add_timed_idea = {
-				idea = RUS_stolypin_reform
-				days = 265
-			}
-		}
-	}
-	focus = {
-		id = RUS_Science_Expansion2
-		icon = GFX_focus_generic_industry_3
-		cost = 7.2
-		relative_position_id = RUS_Science_Expansion1
-		x = -1
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_Science_Expansion1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				category = industry
-				bonus = 0.25
-				uses = 1
-			}
-		}
-	}
-	focus = {
-		id = RUS_Science_Expansion3
-		icon = GFX_focus_generic_electrification
-		cost = 7.2
-		relative_position_id = RUS_Science_Expansion1
-		x = 1
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_Science_Expansion1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				category = electronics
-				bonus = 0.25
-				uses = 1
-			}
-		}
-	}
-	focus = {
-		id = RUS_Establish_Laboratories
-		icon = GFX_focus_GER_optimize_reich_labour_service
-		cost = 7.2
-		relative_position_id = RUS_Science_Expansion2
-		x = 1
-		y = 1
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		prerequisite = {
-			focus = RUS_Science_Expansion2
-		}
-			prerequisite = {
-			focus = RUS_Science_Expansion3
-		}
-		completion_reward = {
-			remove_ideas = RUS_Lack_Of_Scientists1
-			unlock_decision_category_tooltip = RUS_Laboratories_Category
-		}
-	}
-	focus = {
-		id = RUS_Organised_Warfare_Main
-		icon = GFX_focus_rus_army_planners
-		cost = 3.6
-		relative_position_id = RUS_The_Tsars_Ideas
-		x = -2
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
 		mutually_exclusive = {
-			focus = RUS_Assault_Warfare_Main
+			focus = Russia_democratic_1
 		}
-		available = {
-			has_idea = RUS_Tsars_Organised_Plan
-		}
-		prerequisite = {
-			focus = RUS_The_Tsars_Ideas
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Tsars_Organised_Plan
-				add_idea = RUS_Tsars_Organised_Plan1
-			}
-		}
-	}
-	focus = {
-		id = RUS_Organised_Warfare1
-		icon = GFX_goal_generic_army_doctrines
-		cost = 7.2
-		relative_position_id = RUS_Organised_Warfare_Main
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Organised_Warfare_Main
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.25
-				category = land_doctrine
-				uses = 2
-			}
-		}
-	}
-	focus = {
-		id = RUS_Organised_Warfare2
-		icon = GFX_focus_rus_planners_for_usrussia
-		cost = 7.2
-		relative_position_id = RUS_Organised_Warfare1
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Organised_Warfare1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Tsars_Organised_Plan1
-				add_idea = RUS_Tsars_Organised_Plan2
-			}
-		}
-	}
-	focus = {
-		id = RUS_Organised_Warfare4
-		icon = GFX_focus_rus_russo_american_patent
-		cost = 7.2
-		relative_position_id = RUS_Organised_Warfare2
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD FOCUS_FILTER_WAR_SUPPORT}
-		prerequisite = {
-			focus = RUS_Organised_Warfare2
-		}
-		completion_reward = {
-			219 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-				}
-			}
-		}
-	}
-	focus = {
-		id = RUS_Organised_Warfare6
-		icon = GFX_focus_rus_war_training
-		cost = 7.2
-		relative_position_id = RUS_Organised_Warfare4
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD FOCUS_FILTER_ARMY_XP}
-		prerequisite = {
-			focus = RUS_Organised_Warfare4
-		}
-		completion_reward = {
-			add_ideas = RUS_Special_Forces
-			army_experience = 45
-			FRA = {
-			army_experience = 45
-			}
-		}
-	}
-	focus = {
-		id = RUS_Organised_Warfare7
-		icon = GFX_focus_rus_gun_of_future
-		cost = 7.2
-		relative_position_id = RUS_Organised_Warfare2
-		x = 0
-		y = 3
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Organised_Warfare6
-		}
-		completion_reward = {
-				11 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-				199 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-			swap_ideas = {
-				remove_idea = RUS_Tsars_Organised_Plan2
-				add_idea = RUS_Tsars_Organised_Plan3
-			}
-		}
-	}
-	focus = {
-		id = RUS_Begin_Modernisation
-		icon = GFX_SOV_reinstitute_the_mestnichestvo_ccp_2d_sov_compatibility
-		cost = 7.2
-		relative_position_id = RUS_Organised_Warfare7
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Organised_Warfare7
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Dated_Warfare
-				add_idea = RUS_Dated_Warfare1
-			}
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = RUS_Establish_Military_Academy
-		icon = GFX_focus_rus_clean_up_the_ranks
-		cost = 7.2
-		relative_position_id = RUS_Begin_Modernisation
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = { 
 
-		available = {
-			date > 1913.09.01
-		}
-		prerequisite = {
-			focus = RUS_Begin_Modernisation
-		}
-		completion_reward = {
-			unlock_decision_category_tooltip = RUS_Military_Academy_Category
 		}
 	}
 	focus = {
-		id = RUS_Assault_Warfare_Main
-		icon = GFX_focus_rus_our_men_must
-		cost = 3.6
-		relative_position_id = RUS_The_Tsars_Ideas
-		x = 2
+		id = Russia_monarchist_2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_1
+		}
+		x = -1
 		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = Russia_monarchist_3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_1
+		}
+		x = 1
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = Russia_monarchist_4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_2
+		}
+		x = -2
+		y = 2
+		completion_reward = { }
+	}
+	focus = {
+		id = Russia_monarchist_5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_2
+			focus = Russia_monarchist_3
+		}
+		x = 0
+		y = 2
+		completion_reward = { }
+	}
+	focus = {
+		id = Russia_monarchist_6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_3
+		}
+		x = 2
+		y = 2
+		completion_reward = { }
+	}
+	focus = {
+		id = Russia_monarchist_7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_4
+		}
+		prerequisite = {
+			focus = Russia_monarchist_5
+		}
+		x = -1
+		y = 3
+		completion_reward = { }
+	}
+	focus = {
+		id = Russia_monarchist_8
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_monarchist_1
+		prerequisite = {
+			focus = Russia_monarchist_5
+		}
+		prerequisite = {
+			focus = Russia_monarchist_6
+		}
+		x = 1
+		y = 3
+		completion_reward = { }
+	}
+	focus = {
+		id = RUS_Assassinate_Stolypin
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1
+		relative_position_id = Russia_monarchist_1
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = Russia_monarchist_7
+		}
+		prerequisite = {
+			focus = Russia_monarchist_8
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = Russia_democratic_1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 15
+		y = 1
 		mutually_exclusive = {
-			focus = RUS_Organised_Warfare_Main
+			focus = Russia_monarchist_1
 		}
-		available = {
-			has_idea = RUS_Tsars_Assault_Plan
+		completion_reward = { 
+			add_ideas = RUS_Democratic_Opposition
 		}
+	}
+	focus = {
+		id = Russia_democratic_2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
 		prerequisite = {
-			focus = RUS_The_Tsars_Ideas
+			focus = Russia_democratic_1
 		}
-		completion_reward = {
+		x = -1
+		y = 1
+		completion_reward = { 
 			swap_ideas = {
-				remove_idea = RUS_Tsars_Assault_Plan
-				add_idea = RUS_Tsars_Assault_Plan1
+				remove_idea = RUS_Democratic_Opposition
+				add_idea = RUS_Democratic_Opposition_2
 			}
 		}
 	}
 	focus = {
-		id = RUS_Assault_Warfare1
-		icon = GFX_focus_generic_army_doctrines_2
-		cost = 7.2
-		relative_position_id = RUS_Assault_Warfare_Main
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		id = Russia_democratic_3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
 		prerequisite = {
-			focus = RUS_Assault_Warfare_Main
+			focus = Russia_democratic_1
 		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.25
-				category = land_doctrine
-				uses = 2
-			}
+		x = 1
+		y = 1
+		completion_reward = { 
+			add_ideas = RUS_Making_Constituation
 		}
 	}
 	focus = {
-		id = RUS_Assault_Warfare2
-		icon = GFX_focus_rus_army_of_many
-		cost = 7.2
-		relative_position_id = RUS_Assault_Warfare1
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		id = Russia_democratic_4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
 		prerequisite = {
-			focus = RUS_Assault_Warfare1
+			focus = Russia_democratic_2
 		}
-		completion_reward = {
+		x = -2
+		y = 2
+		completion_reward = { 
 			swap_ideas = {
-				remove_idea = RUS_Tsars_Assault_Plan1
-				add_idea = RUS_Tsars_Assault_Plan2
+				remove_idea = RUS_Democratic_Opposition_2
+				add_idea = RUS_Democratic_Opposition_3
 			}
 		}
 	}
 	focus = {
-		id = RUS_Assault_Warfare4
-		icon = GFX_focus_rus_know_our_place
-		cost = 7.2
-		relative_position_id = RUS_Assault_Warfare2
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		id = Russia_democratic_5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
 		prerequisite = {
-			focus = RUS_Assault_Warfare2
+			focus = Russia_democratic_2
+			focus = Russia_democratic_3
 		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 15000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 10000
-        }
+		x = 0
+		y = 2
+		completion_reward = { 
+			add_political_power = 120
+			add_stability = 0.05
 		}
 	}
 	focus = {
-		id = RUS_Assault_Warfare6
-		icon = GFX_focus_rus_aristocracy_knows_best
-		cost = 7.2
-		relative_position_id = RUS_Assault_Warfare4
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		id = Russia_democratic_6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
 		prerequisite = {
-			focus = RUS_Assault_Warfare4
+			focus = Russia_democratic_3
 		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-	}
-	focus = {
-		id = RUS_Assault_Warfare7
-		icon = GFX_focus_rus_tsar_financed_factories
-		cost = 7.2
-		relative_position_id = RUS_Assault_Warfare2
-		x = 0
-		y = 3
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Assault_Warfare6
-		}
-		completion_reward = {
-							11 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}
-				199 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}
-			swap_ideas = {
-				remove_idea = RUS_Tsars_Assault_Plan2
-				add_idea = RUS_Tsars_Assault_Plan3
-			}
-		}
-	}
-	focus = {
-		id = RUS_Empower_Army
-		icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
-		cost = 7.2
-		relative_position_id = RUS_Assault_Warfare7
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = RUS_Assault_Warfare7
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Dated_Warfare
-				add_idea = RUS_Dated_Warfare1
-			}
-			add_war_support = 0.1
-		}
-	}
-	focus = {
-		id = RUS_Mass_Mobilise
-		icon = GFX_focus_rus_army_goes_to_war
-		cost = 7.2
-		relative_position_id = RUS_Empower_Army
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-
-		available = {
-			date > 1913.09.01
-		}
-		prerequisite = {
-			focus = RUS_Empower_Army
-		}
-		completion_reward = {
-			unlock_decision_category_tooltip = RUS_Military_Academy_Category
-		}
-	}
-	focus = {
-		id = RUS_Complete_Modernity
-		icon = GFX_focus_rus_all_imperial_army
-		cost = 14.4
-		relative_position_id = RUS_Organised_Warfare_Main
 		x = 2
-		y = 8
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		available = {
-			has_idea = RUS_Contemporary_Warfare
-			has_idea = RUS_Land_Reforms
-			NOT = { has_idea = RUS_Lack_Of_Scientists }
+		y = 2
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Making_Constituation
+				add_idea = RUS_Making_Constituation_2
+			}
+		}
+	}
+	focus = {
+		id = Russia_democratic_7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
+		prerequisite = {
+			focus = Russia_democratic_4
 		}
 		prerequisite = {
-			focus = RUS_Establish_Military_Academy
-			focus = RUS_Mass_Mobilise
+			focus = Russia_democratic_5
 		}
-		completion_reward = {
-			add_ideas = RUS_Modern_Warfare
+		x = -1
+		y = 3
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Democratic_Opposition_3
+				add_idea = RUS_Democratic_Opposition_4
+			}
+		}
+	}
+	focus = {
+		id = Russia_democratic_8
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = Russia_democratic_1
+		prerequisite = {
+			focus = Russia_democratic_5
+		}
+		prerequisite = {
+			focus = Russia_democratic_6
+		}
+		x = 1
+		y = 3
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Making_Constituation_2
+				add_idea = RUS_Making_Constituation_3
+			}
+		}
+	}
+	focus = {
+		id = RUS_Abdicate_Nicholas
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1
+		relative_position_id = Russia_democratic_1
+		prerequisite = {
+			focus = Russia_democratic_7
+		}
+		prerequisite = {
+			focus = Russia_democratic_8
+		}
+		x = 0
+		y = 4
+		completion_reward = { }
+	}
+	focus = {
+		id = RUS_Constitutional_Monarchy
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1
+		relative_position_id = Russia_democratic_1
+		prerequisite = {
+			focus = Russia_democratic_7
+		}
+		prerequisite = {
+			focus = Russia_democratic_8
+		}
+		x = -2
+		y = 4
+		completion_reward = { }
+	}
+	focus = {
+		id = RUS_Socialism_Not_Communism
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 1
+		x = 2
+		y = 4
+		relative_position_id = Russia_democratic_1
+		prerequisite = {
+			focus = Russia_democratic_7
+		}
+		prerequisite = {
+			focus = Russia_democratic_8
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Bolshevik_Sabotage
+				add_idea = Russia_Reduced_Bolshevik_Threat
+			}
 		}
 	}
 }

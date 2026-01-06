@@ -1341,9 +1341,68 @@ ideas = {
 			modifier = {
 			}
 		}
-	}
-
-	industrial_concern = {
+		RUS_Democratic_Opposition = {
+			picture = rus_duma_meeting
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				democratic_drift = 0.1
+				}
+			}
+		RUS_Democratic_Opposition_2 = {
+			picture = rus_duma_meeting
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				democratic_drift = 0.1
+				}
+			}
+		RUS_Democratic_Opposition_3 = {
+			picture = rus_duma_meeting
+			modifier = {
+				democratic_drift = 0.2
+				}
+			}
+		RUS_Democratic_Opposition_4 = {
+			picture = rus_duma_meeting
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				democratic_drift = 0.2
+				}
+			}
+		RUS_Making_Constituation = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				democratic_drift = 0.2
+				}
+			}
+		RUS_Making_Constituation_2 = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				democratic_drift = 0.2
+				}
+			}
+		RUS_Making_Constituation_3 = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				democratic_drift = 0.2
+				}
+			}
+		Russia_Reduced_Bolshevik_Threat = {
+			picture = rus_lenin_dead
+			modifier = {
+				army_morale_factor = -0.05
+				stability_factor = -0.025
+				war_support_factor = -0.025
+				}
+			}
+		}
+		industrial_concern = {
 		
 			RUS_donetsk_metallurgical_plant = {
 			name = "Donetsk Metallurgical Plant"
