@@ -54,7 +54,7 @@ ideas = {
 		SER_Small_Country_Big_Heart = {
 			picture = FRA_national_mobilization_focus
 			modifier = {
-				production_speed_arms_factory_factor = 0.2
+				production_speed_bunker_factor = 0.3
 			}
 		}
 		SER_Flaming_Defense = {
@@ -304,7 +304,14 @@ ideas = {
 		SER_Recruitment_Centre = {
 			picture = ARG_social_welfare_fund_ns
 			modifier = {
-				weekly_manpower = 300
+				weekly_manpower = 500
+			}
+		}
+		SER_Government_In_Exile = {
+			picture = ARG_military_government
+			modifier = {
+				consumer_goods_expected_value = -1
+				production_lack_of_resource_penalty_factor = -1
 			}
 		}
 	}

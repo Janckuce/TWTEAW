@@ -10,9 +10,14 @@ on_actions = {
                 }
                 load_focus_tree = capped_serbian_focus
                 load_oob = SER_Exile
+                add_ideas = SER_Government_In_Exile
                 add_timed_idea = {
                     idea = SER_The_Great_Retreat
                     days = 70
+                }
+                add_equipment_to_stockpile = {
+                    type = convoy
+                    amount = 3000
                 }
                 if = {
                     limit = {
