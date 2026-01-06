@@ -298,14 +298,19 @@ focus_tree = {
 			set_politics = {
 				ruling_party = democratic
 			}
-			add_country_leader_role = {
+			
+			hidden_effect = {
+				retire_country_leader = yes
+				add_country_leader_role = {
     			character = RUS_Alexander_Guchkov
     			promote_leader = yes
     			country_leader = {
         		ideology = liberalism
-    			}
+    				}
+				}
+				activate_advisor = RUS_Alexander_Guchkov_Advisor
+				load_focus_tree = RUS_Democratic
 			}
-			load_focus_tree = RUS_Democratic
 		}
 	}
 	focus = {

@@ -33,7 +33,7 @@ characters = {
 		name = "Alexander Guchkov"
 		portraits = {
 			army = {
-				small = "GFX_RUS_Alexander_Guchkov"
+				small = "GFX_RUS_Alexander_Guchkov_Political"
 			}
 		}
 		advisor={
@@ -45,6 +45,9 @@ characters = {
 			traits = {
 				Ideological_Crusader
 			}
+			visible = {
+				has_completed_focus = RUS_Abdicate_Nicholas
+			}
 			can_be_fired = no
 			ai_will_do = {
 				factor = 1.000
@@ -55,7 +58,7 @@ characters = {
 		name = "Mikhail Rodzianko"
 		portraits = {
 			army = {
-				small = "GFX_RUS_Mikhail_Rodzianko"
+				small = "GFX_RUS_Mikhail_Rodzianko_Political"
 			}
 		}
 		advisor={
@@ -67,6 +70,9 @@ characters = {
 			traits = {
 				RUS_Backroom_Backstabber
 			}
+			visible = {
+				has_completed_focus = RUS_Abdicate_Nicholas
+			}
 			can_be_fired = no
 			ai_will_do = {
 				factor = 1.000
@@ -77,7 +83,7 @@ characters = {
 		name = "Pyotr Struve"
 		portraits = {
 			army = {
-				small = "GFX_RUS_provisional_government"
+				small = "GFX_RUS_Pyotr_Struve_Political"
 			}
 		}
 		advisor={
@@ -88,6 +94,9 @@ characters = {
 			}
 			traits = {
 				RUS_Captain_of_Industry
+			}
+			visible = {
+				has_completed_focus = RUS_Abdicate_Nicholas
 			}
 			can_be_fired = no
 			ai_will_do = {
