@@ -55,18 +55,15 @@ set_politics = {
 	elections_allowed = no
 }
 
-add_ideas = {
- GEN_Minor_Nation_Balancer
- limited_conscription
-}
-add_timed_idea = {
-    idea = starting_production_efficiency
-    days = 5
-}
-
 set_popularities = {
 	neutrality = 79
 	democratic = 21
+}
+
+add_ideas = {
+	BUL_Agrarian_Industrial_Base
+	BUL_Prussia_Of_The_Balkans
+	BUL_State_Of_The_Army
 }
 
 set_convoys = 80

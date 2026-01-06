@@ -1,0 +1,78 @@
+BUL_Funding_Of_The_Armiya = {
+	BUL_No_Funding = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = BUL
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = BUL_State_Of_The_Army
+				remove_ideas = BUL_State_Of_The_Army1
+				remove_ideas = BUL_State_Of_The_Army2
+				remove_ideas = BUL_State_Of_The_Army3
+			}
+			add_ideas = BUL_State_Of_The_Army
+		}
+	}
+	BUL_Low_Funding = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = BUL
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = BUL_State_Of_The_Army
+				remove_ideas = BUL_State_Of_The_Army1
+				remove_ideas = BUL_State_Of_The_Army2
+				remove_ideas = BUL_State_Of_The_Army3
+			}
+			add_ideas = BUL_State_Of_The_Army1
+		}
+	}
+	BUL_Medium_Funding = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = BUL
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = BUL_State_Of_The_Army
+				remove_ideas = BUL_State_Of_The_Army1
+				remove_ideas = BUL_State_Of_The_Army2
+				remove_ideas = BUL_State_Of_The_Army3
+			}
+			add_ideas = BUL_State_Of_The_Army2
+		}
+	}
+	BUL_High_Funding = {
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = BUL
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = BUL_State_Of_The_Army
+				remove_ideas = BUL_State_Of_The_Army1
+				remove_ideas = BUL_State_Of_The_Army2
+				remove_ideas = BUL_State_Of_The_Army3
+			}
+			add_ideas = BUL_State_Of_The_Army3
+		}
+	}
+}

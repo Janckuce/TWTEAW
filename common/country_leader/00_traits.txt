@@ -12451,48 +12451,40 @@ leader_traits = {
 		advisor_BUL_aleksander_malinov = {
 		random = no
 		sprite = 13
-		production_speed_infrastructure_factor = 0.05
-		production_speed_rail_way_factor = 0.05
-		industry_free_repair_factor = 0.15
-		industry_repair_factor = 0.1
-		democratic_drift = 0.05
+		consumer_goods_factor = -0.1
+		industry_free_repair_factor = 0.2
+		industry_repair_factor = 0.25
 		supply_node_range = 0.15
-
 	}
 
 		advisor_BUL_ivan_evstratiev_geshov = {
 		random = no
 		sprite = 13
 		consumer_goods_factor = -0.05
-		production_speed_industrial_complex_factor = 0.075
-		production_speed_arms_factory_factor = -0.025
+		production_speed_industrial_complex_factor = 0.05
 		industrial_capacity_factory = 0.05
-		fascism_drift = 0.05
-		neutrality_drift = 0.05
-
 	}
 
 		advisor_BUL_lyubomir_miletich = {
 		random = no
 		sprite = 13
 		research_speed_factor = 0.1
-		production_speed_industrial_complex_factor = 0.025
 	}
 
 		advisor_BUL_ivan_shishmanov = {
 		random = no
 		sprite = 13
 		stability_weekly = 0.005
-		political_power_factor = 0.1
-		army_core_attack_factor = 0.015
-		army_core_defence_factor = 0.015
+		political_power_factor = 0.15
+		army_core_attack_factor = 0.025
+		army_core_defence_factor = 0.025
 	}
 
 		advisor_BUL_ivan_vazov = {
 		random = no
 		sprite = 13
-		army_core_attack_factor = 0.075
-		army_core_defence_factor = 0.075
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
 	}
 
 		advisor_BUL_aleksander_tanev = {
@@ -12551,12 +12543,10 @@ leader_traits = {
 		bul_military_teacher_infantry = {
 		random = no
 		sprite = 13
-		land_doctrine_cost_factor = -0.05
+		land_doctrine_cost_factor = -0.1
 		coordination_bonus = 0.05
 		command_power_gain = 0.1
-		army_speed_factor = 0.05
-		experience_gain_army = 0.05
-		mobilization_laws_cost_factor = -0.1
+		army_speed_factor = 0.1
 
 	}
 
@@ -12657,33 +12647,29 @@ leader_traits = {
 		army_BUL_aleksandar_protogerov = {
 		random = no
 		sprite = 9
-		out_of_supply_factor = -0.05
-		supply_combat_penalties_on_core_factor = -0.075
-		supply_consumption_factor = -0.075
-		supply_factor = 0.075
-		production_lack_of_resource_penalty_factor = -0.1
-		supply_node_range = 0.05
-		stability_weekly = -0.005
-		political_power_factor = -0.1
+		targeted_modifier = {
+			tag = SER
+			attack_bonus_against = 0.1
+		}
 	}
 
 		army_BUL_nikola_ivanov = {
 		random = no
 		sprite = 9
-		coastal_bunker_effectiveness_factor = 0.1
-		land_bunker_effectiveness_factor = 0.1 
-		production_speed_bunker_factor = 0.05
-		production_speed_coastal_bunker_factor = 0.05
+		coastal_bunker_effectiveness_factor = 0.25
+		land_bunker_effectiveness_factor = 0.25
+		production_speed_bunker_factor = 0.15
+		production_speed_coastal_bunker_factor = 0.15
 	}
 
 		army_BUL_stefan_tasev = {
 		random = no
 		sprite = 6
-		experience_gain_army = 0.15
+		experience_gain_army = 0.2
 		army_org_factor = 0.05
-		army_org_regain = 0.075
-		planning_speed = 0.1
-		max_planning = 0.05
+		army_org_regain = 0.1
+		planning_speed = 0.15
+		max_planning = 0.1
 	}
 
 
@@ -12692,8 +12678,8 @@ leader_traits = {
 		random = no
 		sprite = 13
 		land_doctrine_cost_factor = -0.1
-		cavalry_attack_factor = 0.025
-		cavalry_defence_factor = 0.025
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
 		army_speed_factor = 0.05
 		initiative_factor = 0.05
 	}
@@ -12776,10 +12762,6 @@ leader_traits = {
 		advisor_BUL_vasil_radoslavov = {
 		random = no
 		sprite = 13
-		industrial_capacity_factory = 0.05
-		consumer_goods_factor = 0.075
-		production_speed_arms_factory_factor = 0.075
-		production_speed_industrial_complex_factor = -0.025
 			equipment_bonus = {
 			infantry_equipment = {
 				build_cost_ic = -0.05
