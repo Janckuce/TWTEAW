@@ -132,7 +132,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assassinate_Stolypin
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		relative_position_id = Russia_monarchist_1
 		x = 0
 		y = 4
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Abdicate_Nicholas
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		relative_position_id = Russia_democratic_1
 		prerequisite = {
 			focus = Russia_democratic_7
@@ -298,13 +298,20 @@ focus_tree = {
 			set_politics = {
 				ruling_party = democratic
 			}
+			add_country_leader_role = {
+    			character = RUS_Alexander_Guchkov
+    			promote_leader = yes
+    			country_leader = {
+        		ideology = liberalism
+    			}
+			}
 			load_focus_tree = RUS_Democratic
 		}
 	}
 	focus = {
 		id = RUS_Constitutional_Monarchy
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		relative_position_id = Russia_democratic_1
 		prerequisite = {
 			focus = Russia_democratic_7
@@ -328,7 +335,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Socialism_Not_Communism
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		x = 2
 		y = 4
 		relative_position_id = Russia_democratic_1

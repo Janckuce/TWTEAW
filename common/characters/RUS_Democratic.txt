@@ -1,0 +1,98 @@
+characters = {
+	RUS_Alexander_Guchkov = {
+		name = "RUS_character_Alexander_Guchkov_name"
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_Alexander_Guchkov"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+	RUS_pavel_milyukov = {
+		name = "Pavel Milyukov"
+		portraits = {
+			civilian = {
+				large = "GFX_RUS_pavel_milyukov"
+			}
+		}
+		country_leader = {
+			traits = {}
+			ideology = liberalism
+			expire = "1965.1.1.1"
+		}
+	}
+
+
+
+	########## Political Advisor ##########
+	RUS_Alexander = {
+		name = "Alexander Guchkov"
+		portraits = {
+			army = {
+				small = "GFX_RUS_Alexander_Guchkov"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Alexander_Guchkov_Advisor
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				Ideological_Crusader
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_Mikhail_Rodzianko = {
+		name = "Mikhail Rodzianko"
+		portraits = {
+			army = {
+				small = "GFX_RUS_Mikhail_Rodzianko"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Mikhail_Rodzianko_Advisor
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				RUS_Backroom_Backstabber
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RUS_Pyotr_Struve = {
+		name = "Pyotr Struve"
+		portraits = {
+			army = {
+				small = "GFX_RUS_provisional_government"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RUS_Pyotr_Struve_Advisor
+			allowed = {
+				original_tag = RUS
+			}
+			traits = {
+				RUS_Captain_of_Industry
+			}
+			can_be_fired = no
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}
