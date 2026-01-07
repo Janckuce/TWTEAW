@@ -32,6 +32,7 @@ focus_tree = {
 		x = 5
 		y = 0
 		completion_reward = {
+			add_political_power = 25
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.07
@@ -70,7 +71,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_ideas = RUS_idea_Foreign_Experts
-			195 = {
+			195 = { # St. Paintersburg
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -92,6 +93,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 			add_stability = 0.05
 			swap_ideas = {
 				remove_idea = RUS_Agrarian_Industry
@@ -108,7 +110,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Invite_Foreign_Experts
 		}
-		cost = 5
+		cost = 7
 		x = 1
 		y = 1
 		completion_reward = {
@@ -168,6 +170,9 @@ focus_tree = {
 		relative_position_id = RUS_focus_SR_Land_and_Freedom
 		prerequisite = {
 			focus = RUS_focus_SR_Land_and_Freedom
+		}
+		available = {
+			has_completed_focus = RUS_focus_SR_Utilize_Savinkovs_Experience
 		}
 		cost = 5
 		x = -1
@@ -230,7 +235,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Ensure_Basic_Literacy
 		}
-		cost = 5
+		cost = 6
 		x = 0
 		y = 1
 		completion_reward = {
@@ -238,7 +243,7 @@ focus_tree = {
 				remove_idea = RUS_idea_Foreign_Experts
 				add_idea = RUS_idea_Own_Skilled_Labor_Pool
 			}
-			252 = {
+			252 = { # Nizhniy Novgorod
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -259,7 +264,7 @@ focus_tree = {
 		available = {
 			# TODO some economic focus which finishes land reform
 		}
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		completion_reward = {
@@ -288,6 +293,9 @@ focus_tree = {
 		relative_position_id = RUS_focus_SR_Set_Educational_Standards
 		prerequisite = {
 			focus = RUS_focus_SR_Set_Educational_Standards
+		}
+		available = {
+			has_completed_focus = RUS_focus_SR_Train_Skilled_Workers
 		}
 		cost = 5
 		x = 0
@@ -324,6 +332,7 @@ focus_tree = {
 		x = 8
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 			set_party_name = {
 				ideology = communism
 				long_name = "Socialist Revolutionary Party - Left Wing"
@@ -357,6 +366,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_political_power = 25
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = yes
@@ -402,6 +412,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
@@ -421,6 +432,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 50
 			swap_ideas = {
 				remove_idea = RUS_Bolshevik_Sabotage
 				add_idea = Russia_Reduced_Bolshevik_Threat
@@ -439,6 +451,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
+			add_political_power = 20
 			# Add timed idea "SR propaganda" for +weekly stability and socialism drift
 		}
 	}
@@ -482,7 +495,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			
+			add_political_power = 50
+			add_stability = 0.15
+			# TODO add some more good effects
 		}
 	}
 
@@ -497,6 +512,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
+			add_political_power = 30
 			swap_ideas = {
 				remove_idea = Russia_Reduced_Bolshevik_Threat
 				add_idea = RUS_Bolsheviks_Crushed
@@ -520,9 +536,328 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
+			add_political_power = 30
 			add_stability = 0.05
 			add_war_support = 0.1
 		}
 	}
+
+	focus = {
+		id = RUS_SR_Construction_Effort
+		icon = GFX_goal_generic_consumer_goods
+		cost = 7.2
+		relative_position_id = RUS_focus_SR_Listen_to_SRs
+		x = 15
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_focus_SR_Listen_to_SRs
+		}
+		available = {
+			has_completed_focus = RUS_focus_SR_Allow_Cooperatives
+			has_completed_focus = RUS_focus_SR_Rural_Investments
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry2
+				add_idea = RUS_Agrarian_Industry3
+			}
+		}
+	}
+
+	focus = {
+		#	St.Petersburg Investment
+		id = RUS_Industry2
+		icon = GFX_goal_generic_fortify_city
+		cost = 7.2
+		relative_position_id = RUS_SR_Construction_Effort
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_SR_Construction_Effort
+		}
+		completion_reward = {
+			195 = { # St. Paintersburg
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Minsk Investment
+		id = RUS_Industry3
+		icon = GFX_focus_generic_modernize_industry
+		cost = 7.2
+		relative_position_id = RUS_SR_Construction_Effort
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_SR_Construction_Effort
+		}
+		completion_reward = {
+			206 = { # Minsk
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Poland Investment
+		id = RUS_Industry4
+		icon = GFX_focus_POL_warsaw_main_station
+		cost = 7.2
+		relative_position_id = RUS_SR_Construction_Effort
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_SR_Construction_Effort
+		}
+		completion_reward = {
+			217 = { # Tsaritsyn
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Kiev Investment
+		id = RUS_Industry5
+		icon = GFX_focus_HUN_the_kingdom_of_ukraine
+		cost = 7.2
+		relative_position_id = RUS_Industry4
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_Industry2
+		}
+		prerequisite = {
+			focus = RUS_Industry3
+		}
+		prerequisite = {
+			focus = RUS_Industry4
+		}
+		completion_reward = {
+			202 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Kherson Investment
+		id = RUS_Continue_Industry1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7.2
+		relative_position_id = RUS_Industry5
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_Industry5
+		}
+		completion_reward = {
+			196 = { # Kherson
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Crimea Investment
+		id = RUS_Continue_Industry2
+		icon = GFX_focus_PER_national_bank
+		cost = 7.2
+		relative_position_id = RUS_Industry5
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_Industry5
+		}
+		completion_reward = {
+			137 = { # Crimea
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Helsinki Investment
+		id = RUS_Continue_Industry3
+		icon = GFX_focus_generic_naval_invasion
+		cost = 7.2
+		relative_position_id = RUS_Continue_Industry1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_Continue_Industry1
+			focus = RUS_Continue_Industry2
+		}
+		completion_reward = {
+			111 = { # Uusimaa
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		#	Tallinn Investment
+		id = RUS_Continue_Industry4
+		icon = GFX_focus_generic_naval_discipline
+		cost = 7.2
+		relative_position_id = RUS_Continue_Industry2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_Continue_Industry1
+			focus = RUS_Continue_Industry2
+		}
+		completion_reward = {
+			812 = { # Harju
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+		focus = {
+		#	Steel Investment (+9)
+		id = RUS_focus_SR_Steel_Mines
+		icon = GFX_focus_generic_steel
+		cost = 9
+		relative_position_id = RUS_SR_Construction_Effort
+		x = 4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_SR_Construction_Effort
+		}
+		completion_reward = {
+			573 = { # Zlatoust - you also get a decision to build a steel mill there
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 14
+				}
+			}
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry3
+				add_idea = RUS_Agrarian_Industry4
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Rubber_Production
+		icon = GFX_focus_RAJ_tea_exports
+		cost = 7
+		relative_position_id = RUS_focus_SR_Steel_Mines
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_focus_SR_Steel_Mines
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry4
+				add_idea = RUS_Agrarian_Industry5
+			}
+			229 = { # Azerbaijan - incentive for player to hold it + scales with infra
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Peasants_Land_Bank
+		icon = GFX_focus_SWE_rations
+		cost = 14
+		relative_position_id = RUS_focus_SR_Rubber_Production
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_focus_SR_Rubber_Production
+		}
+		completion_reward = {
+			remove_ideas = RUS_Agrarian_Industry5
+			# More may be added here
+		}
+	}
+
 
 }
