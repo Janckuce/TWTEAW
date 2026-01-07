@@ -1346,6 +1346,12 @@ ORO_spectator_state = {
 		available = {
 			date > 1911.9.18
 		}
+		available = {	
+		RUS = {
+			has_completed_focus = RUS_Assassinate_Stolypin
+		}
+
+		}
 		
 		complete_effect = {
 			news_event = ww1_news.18
@@ -1356,7 +1362,33 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
+	Peter_Stolypin_Survived = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			date > 1911.9.18
+		}
+		available = {	
+		RUS = {
+			has_completed_focus = RUS_Constitutional_Monarchy	
+		}
 	
+		}
+		
+		complete_effect = {
+			news_event = ww1_news.52
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
 	sink_titanic = {
 		allowed = {
 			original_tag = ORO

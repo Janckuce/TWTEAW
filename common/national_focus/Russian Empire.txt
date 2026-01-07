@@ -132,7 +132,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Assassinate_Stolypin
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		relative_position_id = Russia_monarchist_1
 		x = 0
 		y = 4
@@ -142,7 +142,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Russia_monarchist_8
 		}
-		completion_reward = { }
+		completion_reward = { 
+			load_focus_tree = RUS_Monarchist
+		}
 	}
 	focus = {
 		id = Russia_democratic_1
@@ -281,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Abdicate_Nicholas
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		relative_position_id = Russia_democratic_1
 		prerequisite = {
 			focus = Russia_democratic_7
@@ -291,12 +293,30 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-		completion_reward = { }
+		completion_reward = { 
+			remove_ideas = RUS_Democratic_Opposition_4
+			set_politics = {
+				ruling_party = democratic
+			}
+			
+			hidden_effect = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+    			character = RUS_Alexander_Guchkov
+    			promote_leader = yes
+    			country_leader = {
+        		ideology = liberalism
+    				}
+				}
+				activate_advisor = RUS_Alexander_Guchkov_Advisor
+				load_focus_tree = RUS_Democratic
+			}
+		}
 	}
 	focus = {
 		id = RUS_Constitutional_Monarchy
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		relative_position_id = Russia_democratic_1
 		prerequisite = {
 			focus = Russia_democratic_7
@@ -306,12 +326,18 @@ focus_tree = {
 		}
 		x = -2
 		y = 4
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Democratic_Opposition_4
+				add_idea = RUS_Constitutional_Monarchy
+			}
+			load_focus_tree = RUS_Constitutional
+		}
 	}
 	focus = {
 		id = RUS_Socialism_Not_Communism
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 1
+		cost = 2
 		x = 2
 		y = 4
 		relative_position_id = Russia_democratic_1
@@ -326,6 +352,10 @@ focus_tree = {
 				remove_idea = RUS_Bolshevik_Sabotage
 				add_idea = Russia_Reduced_Bolshevik_Threat
 			}
+			set_politics = {
+				ruling_party = communism
+			}
+			load_focus_tree = RUS_Socialist
 		}
 	}
 }

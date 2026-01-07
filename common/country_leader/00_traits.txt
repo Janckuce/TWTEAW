@@ -121,6 +121,39 @@ leader_traits = {
 		fascism_acceptance = 75
 		political_power_factor = 0.1
 	}
+	Ideological_Crusader = {
+		random = no
+		stability_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	RUS_War_Industrialist = {
+		random = no
+		industrial_capacity_factory = 0.05
+		conversion_cost_civ_to_mil_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	RUS_Backroom_Backstabber = {
+		random = no
+		political_power_gain = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	RUS_Captain_of_Industry = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	imperial_sanction = {
 		random = no
