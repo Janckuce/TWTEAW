@@ -1,4 +1,4 @@
-characters={
+characters = {
 	RUS_nicholas_II = {
 		name = RUS_character_nicholas_II
 		portraits = {
@@ -13,7 +13,7 @@ characters={
 		}
 	}
 
-		RUS_nicholas_II_fas = {
+	RUS_nicholas_II_fas = {
 		name = "Nikolay II"
 		portraits = {
 			civilian = {
@@ -41,7 +41,7 @@ characters={
 		}
 	}
 
-		RUS_pavel_milyukov = {
+	RUS_pavel_milyukov = {
 		name = "Pavel Milyukov"
 		portraits = {
 			civilian = {
@@ -62,6 +62,11 @@ characters={
 				large = "GFX_RUS_vladimir_lenin"
 			}
 		}
+		country_leader = {
+			traits = {} #TBD
+			ideology = leninism
+			expire = "1922.1.1.1"
+		}
 	}
 	
 	RUS_various_leaders = {
@@ -71,6 +76,21 @@ characters={
 				large = "GFX_RUS_various_leaders"
 			}
 		}
+	}
+
+	RUS_character_SR_Viktor_Chernov_leader = {
+		name = RUS_character_viktor_chernov
+		portraits = {
+			army = {
+				small = "GFX_rus_viktor_chernov_frame"
+			}
+		}
+		country_leader = {
+			traits = {} #TBD
+			ideology = radical_socialism
+			expire = "1952.1.1.1"
+		}
+
 	}
 	
 	RUS_nikolai_ruzsky = {
@@ -83,7 +103,7 @@ characters={
 				small = "GFX_RUS_nikolai_ruzsky_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = army_chief
 			idea_token = RUS_nikolai_ruzsky
 			allowed = {
@@ -97,7 +117,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		field_marshal={
+		field_marshal = {
 			traits = { ranger politically_connected}
 			skill = 2
 			attack_skill = 2
@@ -117,7 +137,7 @@ characters={
 				small = "GFX_RUS_nikolai_nikolaevich_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = army_chief
 			idea_token = RUS_nikolai_nikolaevich
 			allowed = {
@@ -131,7 +151,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		field_marshal={
+		field_marshal = {
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -150,7 +170,7 @@ characters={
 				small = "GFX_RUS_aleksei_brusilov_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = theorist
 			idea_token = RUS_aleksei_brusilov
 			allowed = {
@@ -164,7 +184,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		field_marshal={
+		field_marshal = {
 			traits = { infantry_leader brilliant_strategist }
 			skill=5
 			attack_skill=6
@@ -174,7 +194,7 @@ characters={
 		}
 	}
 
-		RUS_mikhail_alekseyev = {
+	RUS_mikhail_alekseyev = {
 		name = "Mikhail Alekseyev"
 		portraits = {
 			civilian = {
@@ -184,7 +204,7 @@ characters={
 				small = "GFX_RUS_mikhail_alekseyev_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = theorist
 			idea_token = RUS_mikhail_alekseyev
 			allowed = {
@@ -198,7 +218,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { organizer skilled_staffer expert_delegator }
 			skill=2
 			attack_skill=3
@@ -218,7 +238,7 @@ characters={
 				small = "GFX_RUS_aleksei_kaledin_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = high_command
 			idea_token = RUS_aleksei_kaledin
 			allowed = {
@@ -232,7 +252,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { cavalry_leader cavalry_expert cavalry_officer }
 			skill = 2
 			attack_skill = 2
@@ -252,7 +272,7 @@ characters={
 				small = "GFX_RUS_anton_denikin_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = high_command
 			idea_token = RUS_anton_denikin
 			allowed = {
@@ -266,7 +286,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { infantry_leader media_personality trickster commando }
 			skill = 2
 			attack_skill = 2
@@ -276,7 +296,7 @@ characters={
 		}
 	}
 
-		rus_dmitry_shcherbachev = {
+	RUS_Dmitry_Shcherbachev = {
 		name = "Dmitry Shcherbachev"
 		portraits = {
 			civilian = {
@@ -286,7 +306,7 @@ characters={
 				small = "GFX_rus_dmitry_shcherbachev_frame"
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { fortress_buster  }
 			skill = 2
 			attack_skill = 3
@@ -306,7 +326,7 @@ characters={
 				small = "GFX_RUS_lavr_kornilov_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = high_command
 			idea_token = RUS_aleksei_kaledin
 			allowed = {
@@ -320,7 +340,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -329,7 +349,7 @@ characters={
 		}
 	}
 
-		RUS_rennerkampf = {
+	RUS_rennerkampf = {
 		name = "Paul von Rennenkampf"
 		portraits = {
 			civilian = {
@@ -339,7 +359,7 @@ characters={
 				small = "GFX_rus_rennerkampf_frame"
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { old_guard politically_connected media_personality }
 			skill = 1
 			attack_skill = 2
@@ -349,7 +369,7 @@ characters={
 		}
 	}
 
-		RUS_samsonov = {
+	RUS_samsonov = {
 		name = "Aleksandr Vasilyevich Samsonov"
 		portraits = {
 			civilian = {
@@ -359,7 +379,7 @@ characters={
 				small = "GFX_rus_rennerkampf_frame"
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { old_guard ranger }
 			skill = 1
 			attack_skill = 2
@@ -369,7 +389,7 @@ characters={
 		}
 	}
 
-		RUS_kolach= {
+	RUS_kolach = {
 		name = "Alexander Vasilyevich Kolchak"
 		portraits = {
 			civilian = {
@@ -379,7 +399,7 @@ characters={
 				small = "GFX_rus_kolchak_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = navy_chief
 			idea_token = RUS_kolach
 			allowed = {
@@ -413,7 +433,7 @@ characters={
 				small = "GFX_RUS_nikolai_yudenich_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = high_command
 			idea_token = RUS_nikolai_yudenich
 			allowed = {
@@ -427,7 +447,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { hill_fighter trait_mountaineer }
 			skill = 2
 			attack_skill = 2
@@ -447,7 +467,7 @@ characters={
 				small = "GFX_RUS_pyotr_krasnov_frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = high_command
 			idea_token = RUS_pyotr_krasnov
 			allowed = {
@@ -461,7 +481,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { cavalry_officer cavalry_leader cavalry_expert }
 			skill = 2
 			attack_skill = 4
@@ -481,7 +501,7 @@ characters={
 				small = "GFX_RUS_vladimir_sakharov_frame"
 			}
 		}
-		corps_commander={
+		corps_commander = {
 			traits = { cavalry_officer cavalry_leader skilled_staffer }
 			skill = 2
 			attack_skill = 1
@@ -493,7 +513,7 @@ characters={
 	
 	########## Political Advisor ##########
 
-		RUS_ivan_shcheglovitov = {
+	RUS_ivan_shcheglovitov = {
 		name = "Ivan Shcheglovitov"
 		portraits = {
 			army = {
@@ -501,7 +521,7 @@ characters={
 			}
 		}
 		
-		advisor={
+		advisor = {
 			slot = political_advisor
 			idea_token = RUS_ivan_shcheglovitov
 			allowed = {
@@ -524,7 +544,7 @@ characters={
 			}
 		}
 		
-		advisor={
+		advisor = {
 			slot = political_advisor
 			idea_token = RUS_aleksei_putilov
 			allowed = {
@@ -548,7 +568,7 @@ characters={
 			}
 		}
 		
-		advisor={
+		advisor = {
 			slot = political_advisor
 			idea_token = RUS_vladimir_sukhomlinov
 			allowed = {
@@ -572,7 +592,7 @@ characters={
 			}
 		}
 		
-		advisor={
+		advisor = {
 			slot = political_advisor
 			idea_token = RUS_josif_stalin
 			allowed = {
@@ -596,22 +616,63 @@ characters={
 			}
 		}
 		
-		advisor={
+		country_leader = {
+			traits = {} #TBD
+			ideology = communism
+			expire = "1952.1.1.1"
+		}
+
+		advisor = {
 			slot = political_advisor
 			idea_token = RUS_viktor_chernov
 			allowed = {
 				original_tag = RUS
 			}
 			available = {
-				has_completed_focus = RUS_release_political_prisoners
+				NOT = {
+					has_government = communism
+				}
+				#OR = {
+					#has_completed_focus = RUS_release_political_prisoners
+					#has_completed_focus = RUS_focus_SR_Invite_Back_Emigres
+				#}
 			}
 			traits = {
-				Minister_Of_Agriculture
+				Voice_of_SRs
 			}
 			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
+
+
 		}
 	}
+
+	RUS_character_Boris_Savinkov = {
+		name = "Boris Viktorovich Savinkov"
+		
+		portraits = {
+			#TODO
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = RUS_Boris_Savinkov
+			allowed = {
+				original_tag = RUS
+			}
+			available = {
+				has_completed_focus = RUS_focus_SR_Invite_Back_Emigres
+			}
+			traits = {
+				#TODO, some kinda revolutionary organizer?
+			}
+			cost = 150 #subject to change
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
 }

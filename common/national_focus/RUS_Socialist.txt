@@ -6,13 +6,523 @@
 #search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 #search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 
+# Russian socialist focus tree
+# Main idea: SRs come into power, with their program of agricultural populist reform pre-empting a Bolshevik coup as that'd lose its appeal in the eyes of the masses
+# Main characters: Viktor Chernov, Boris Savinkov
+# 
+
+
 focus_tree = {
 	id = RUS_Socialist
-	country = { 
+	country = {
 		factor = 0
+		modifier = {
+			add = 20
+			tag = RUS
+		}
 	}
 	continuous_focus_position = { x = 245 y = 2000 }
 	default = no
 	reset_on_civilwar = no
+
+	focus = {
+		id = RUS_focus_SR_Listen_to_SRs
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 1 # initial focus to select a path, should not be too long
+		x = 5
+		y = 0
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Continue_Stolypins_Reforms
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Listen_to_SRs
+		prerequisite = {
+			focus = RUS_focus_SR_Listen_to_SRs
+		}
+		cost = 4
+		x = -2
+		y = 1
+		completion_reward = {
+			add_ideas = RUS_stolypin_reform
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Invite_Foreign_Experts
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Listen_to_SRs
+		prerequisite = {
+			focus = RUS_focus_SR_Listen_to_SRs
+		}
+		cost = 5
+		x = 2
+		y = 1
+		completion_reward = {
+			add_ideas = RUS_idea_Foreign_Experts
+			195 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_focus_SR_Land_and_Freedom
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Continue_Stolypins_Reforms
+		prerequisite = {
+			focus = RUS_focus_SR_Continue_Stolypins_Reforms
+		}
+		cost = 5
+		x = -1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry
+				add_idea = RUS_Agrarian_Industry1
+			}
+			add_ideas = RUS_feudals_not_like
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Rural_Investments
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Invite_Foreign_Experts
+		prerequisite = {
+			focus = RUS_focus_SR_Invite_Foreign_Experts
+		}
+		cost = 5
+		x = 1
+		y = 1
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = RUS
+					is_fully_controlled_by = RUS
+					has_state_category = rural
+					infrastructure < 5
+				}
+				random_select_amount = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} # 4 random core fully owned and controlled rural states that don't have max infra get +1 infra each
+			every_owned_state = {
+				limit = {
+					is_core_of = RUS
+					is_fully_controlled_by = RUS
+					has_state_category = rural
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			} # 2 random core fully owned and controlled rural states get +1 slot and a civ each
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Ensure_Basic_Literacy
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Invite_Foreign_Experts
+		prerequisite = {
+			focus = RUS_focus_SR_Continue_Stolypins_Reforms
+			focus = RUS_focus_SR_Invite_Foreign_Experts
+		}
+		cost = 5
+		x = -2
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists
+				add_idea = RUS_Lack_Of_Scientists2
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Crack_Down_on_Feudalists
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Land_and_Freedom
+		prerequisite = {
+			focus = RUS_focus_SR_Land_and_Freedom
+		}
+		cost = 5
+		x = -1
+		y = 1
+		completion_reward = {
+			remove_ideas = RUS_feudals_not_like
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Allow_Cooperatives
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Land_and_Freedom
+		prerequisite = {
+			focus = RUS_focus_SR_Land_and_Freedom
+		}
+		prerequisite = {
+			focus = RUS_focus_SR_Crack_Down_on_Feudalists
+		}
+		prerequisite = {
+			focus = RUS_focus_SR_Ensure_Basic_Literacy
+		}
+		cost = 5
+		x = 0
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry1
+				add_idea = RUS_Agrarian_Industry2
+			}
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Democratize_General_Education
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Ensure_Basic_Literacy
+		prerequisite = {
+			focus = RUS_focus_SR_Ensure_Basic_Literacy
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists2
+				add_idea = RUS_Lack_Of_Scientists3
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Train_Skilled_Workers
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Rural_Investments
+		prerequisite = {
+			focus = RUS_focus_SR_Rural_Investments
+		}
+		prerequisite = {
+			focus = RUS_focus_SR_Ensure_Basic_Literacy
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_idea_Foreign_Experts
+				add_idea = RUS_idea_Own_Skilled_Labor_Pool
+			}
+			252 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Efficient_Land_Use
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Allow_Cooperatives
+		prerequisite = {
+			focus = RUS_focus_SR_Allow_Cooperatives
+		}
+		available = {
+			# TODO some economic focus which finishes land reform
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = RUS_Land_Reforms
+		}
+	}
+	
+	focus = {
+		id = RUS_focus_SR_Set_Educational_Standards
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Democratize_General_Education
+		prerequisite = {
+			focus = RUS_focus_SR_Democratize_General_Education
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			remove_ideas = RUS_Lack_Of_Scientists3
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Promote_Higher_Education
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Set_Educational_Standards
+		prerequisite = {
+			focus = RUS_focus_SR_Set_Educational_Standards
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = RUS_Promoting_Intellectuals
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Improve_Worker_Conditions
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Train_Skilled_Workers
+		prerequisite = {
+			focus = RUS_focus_SR_Train_Skilled_Workers
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = RUS_idea_Improved_Worker_Conditions
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Invite_Back_Emigres
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Listen_to_SRs
+		prerequisite = {
+			focus = RUS_focus_SR_Listen_to_SRs
+		}
+		cost = 2
+		x = 8
+		y = 1
+		completion_reward = {
+			set_party_name = {
+				ideology = communism
+				long_name = "Socialist Revolutionary Party - Left Wing"
+				name = "Left - SR"
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Socialist Revolutionary Party - Right Wing"
+				name = "Right - SR"
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			promote_character = {
+				character = RUS_character_SR_Viktor_Chernov_leader
+				ideology = radical_socialism
+			}
+			add_stability = -0.07
+		}
+	}
+	
+	focus = {
+		id = RUS_focus_SR_Call_the_Fourth_Duma
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Invite_Back_Emigres
+		prerequisite = {
+			focus = RUS_focus_SR_Invite_Back_Emigres
+		}
+		cost = 2
+		x = 0
+		y = 1
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+				last_election = global.date
+				election_frequency = 48
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Utilize_Savinkovs_Experience
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
+		prerequisite = {
+			focus = RUS_focus_SR_Call_the_Fourth_Duma
+		}
+		available = {
+			RUS_character_Boris_Savinkov = {
+				is_hired_as_advisor = yes
+			}
+		}
+		cost = 3
+		x = -3
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Leniency_for_Revolutionaries
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
+		prerequisite = {
+			focus = RUS_focus_SR_Call_the_Fourth_Duma
+		}
+		cost = 2
+		x = -1
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Counter_Bolshevik_Propaganda
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
+		prerequisite = {
+			focus = RUS_focus_SR_Call_the_Fourth_Duma
+		}
+		cost = 3
+		x = 1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Bolshevik_Sabotage
+				add_idea = Russia_Reduced_Bolshevik_Threat
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Propaganda_of_Our_Own
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Counter_Bolshevik_Propaganda
+		prerequisite = {
+			focus = RUS_focus_SR_Counter_Bolshevik_Propaganda
+		}
+		cost = 4
+		x = 1
+		y = 1
+		completion_reward = {
+			# Add timed idea "SR propaganda" for +weekly stability and socialism drift
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Revive_the_SRCO
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Utilize_Savinkovs_Experience
+		prerequisite = {
+			focus = RUS_focus_SR_Utilize_Savinkovs_Experience
+		}
+		prerequisite = {
+			focus = RUS_focus_SR_Leniency_for_Revolutionaries
+		}
+		cost = 5
+		x = 1
+		y = 1
+		completion_reward = {
+			# add "Revived SRCO" idea for bonuses to partisan activity and maybe other stuff
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Secure_the_Regime
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Counter_Bolshevik_Propaganda
+		prerequisite = {
+			focus = RUS_focus_SR_Counter_Bolshevik_Propaganda
+		}
+		prerequisite = {
+			focus = RUS_focus_SR_Leniency_for_Revolutionaries
+		}
+		available = {
+			AND = {
+				has_completed_focus = RUS_focus_SR_Allow_Cooperatives
+				has_completed_focus = RUS_focus_SR_Democratize_General_Education
+				has_completed_focus = RUS_focus_SR_Rural_Investments
+			}
+		}
+		cost = 5
+		x = -1
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Preempt_Bolshevik_Coup
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Secure_the_Regime
+		prerequisite = {
+			focus = RUS_focus_SR_Secure_the_Regime
+		}
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Russia_Reduced_Bolshevik_Threat
+				add_idea = RUS_Bolsheviks_Crushed
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Support_the_Oborontsy
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
+		prerequisite = {
+			focus = RUS_focus_SR_Call_the_Fourth_Duma
+		}
+		available = {
+			RUS = {
+				has_war_with = GER
+			}
+		}
+		cost = 4
+		x = 3
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+		}
+	}
 
 }
