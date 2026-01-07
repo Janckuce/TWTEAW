@@ -77,30 +77,29 @@ anti_tank_frontline = {
     rewards = {
         pakfront = {
             category_line_artillery = {
-                default_morale = 0.1
-                max_strength = 2
+                default_morale = 0.02
+                max_strength = 1
             }
         }
         emplacement_rotation = {
             category_line_artillery = {
-                max_organisation = 5
                 soft_attack = 0.1
             }
         }
         weakpoint_studies = {
             category_line_artillery = {
-                soft_attack = 0.15
+                soft_attack = 0.1
             }
         }
         offensive_deployments = {
             category_line_artillery = {
-                breakthrough = 0.15
+                breakthrough = 0.25
             }
         }
         assault_anti_tank = {
             artillery_brigade = {
                 fort = {
-                    attack = 0.25
+                    attack = 0.20
                 }
             }
         }

@@ -125,7 +125,7 @@ infiltration_tactics = {
 
     rewards = {
         infiltration_assault = {
-            max_planning = 0.05 
+            max_planning = 0.03 
             enable_tactic = tactic_planned_attack
         }
         nightly_assaults = {
@@ -137,7 +137,6 @@ infiltration_tactics = {
             out_of_supply_factor = -0.25
         }
         terrain_and_situation_assessment = {
-            terrain_penalty_reduction = 0.33
             river_crossing_factor = -0.50
         }
         infiltration_in_depth = {
