@@ -948,22 +948,6 @@ news_event = {
 	}
 }
 
-#Armistice of Stuttgart
-news_event = {
-	id = ww1_news.51
-	title = ww1_news.51t
-	desc = ww1_news_desc.51
-	picture = GFX_news_event_armistice_of_compiegne
-
-	major = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = ww1_news.51.a
-	}
-}
-
 #Erich Ludendorff Takes Power
 news_event = {
 	id = ww1_news.48
@@ -1011,5 +995,37 @@ news_event = {
 		name = ww1_news.50.a
 
 		country_event = { id = ww1_serbia.16 days = 7 }
+	}
+}
+
+#Armistice of Stuttgart
+news_event = {
+	id = ww1_news.51
+	title = ww1_news.51t
+	desc = ww1_news_desc.51
+	picture = GFX_news_event_armistice_of_compiegne
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.51.a
+	}
+}
+
+#Fortifications Doctrine Unlock
+news_event = {
+	id = ww1_news.52
+	title = ww1_news.52.t
+	desc = ww1_news_desc.52
+	picture = GFX_news_event_001
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.52.a
 	}
 }
