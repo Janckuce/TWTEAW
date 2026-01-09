@@ -534,10 +534,10 @@ ideas = {
 			
 			available = {
 			    NOT = {
-				    OR = {
-						has_government = communism
+				    #OR = {
+						#has_government = communism # Allowed for SRs
 						has_war_with = SOR
-					}
+					#}
 				}
 			}
 			
@@ -1031,7 +1031,7 @@ ideas = {
 		RUS_feudals_not_like3 = {
 			picture = RAJ_partition_chaos_bad
 			removal_cost = -1
-			
+
 			available = {
 			    NOT = {
 				    OR = {
@@ -1054,16 +1054,7 @@ ideas = {
 		RUS_Agrarian_Industry1 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
+
 			modifier = {
 				production_speed_industrial_complex_factor = -0.25
 				production_speed_infrastructure_factor = -0.25
@@ -1074,16 +1065,7 @@ ideas = {
 		RUS_Agrarian_Industry2 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
+
 			modifier = {
 				production_speed_industrial_complex_factor = -0.2
 				production_speed_infrastructure_factor = -0.2
@@ -1094,16 +1076,7 @@ ideas = {
 		RUS_Agrarian_Industry3 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
+
 			modifier = {
 				production_speed_industrial_complex_factor = -0.15
 				production_speed_infrastructure_factor = -0.15
@@ -1115,15 +1088,6 @@ ideas = {
 			picture = rus_poor_people
 			removal_cost = -1
 			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
 			modifier = {
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_infrastructure_factor = -0.1
@@ -1134,15 +1098,6 @@ ideas = {
 		RUS_Agrarian_Industry5 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
 			
 			modifier = {
 				production_speed_industrial_complex_factor = -0.05
@@ -1180,6 +1135,7 @@ ideas = {
 		}
 
 		RUS_Promoting_Intellectuals = {
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = 0.1
 			}
@@ -1294,6 +1250,7 @@ ideas = {
 		}
 
 		RUS_Land_Reforms = {
+			picture = generic_agrarian_reform
 			modifier = {
 				production_speed_industrial_complex_factor = 0.3
 				production_speed_infrastructure_factor = 0.3
@@ -1434,13 +1391,6 @@ ideas = {
 			}
 		}
 
-		Russia_Reduced_Bolshevik_Threat = {
-			picture = rus_lenin_dead
-			modifier = {
-				army_morale_factor = -0.05
-				stability_factor = -0.025
-				war_support_factor = -0.025
-			}
 		RUS_Constitutional_Monarchy = {
 			picture = rus_nicholas_constitutional
 			modifier = {
@@ -1448,7 +1398,15 @@ ideas = {
 				trade_laws_cost_factor = -0.05
 				drift_defence_factor = 0.05
 				political_power_factor = 0.05
-				}
+			}
+		}
+
+		RUS_idea_Reduced_Bolshevik_Threat = {
+			picture = rus_lenin_dead
+			modifier = {
+				army_morale_factor = -0.05
+				stability_factor = -0.025
+				war_support_factor = -0.025
 			}
 		}
 
@@ -1461,7 +1419,7 @@ ideas = {
 		}
 
 		RUS_idea_Foreign_Experts = {
-			picture = generic_goods_red_bonus # TODO something different
+			picture = generic_improved_industries
 			modifier = {
 				stability_factor = -0.05
 				production_speed_buildings_factor = 0.05
@@ -1470,7 +1428,7 @@ ideas = {
 		}
 
 		RUS_idea_Own_Skilled_Labor_Pool = {
-			picture = generic_goods_red_bonus # TODO something different
+			picture = generic_improved_industries
 			modifier = {
 				stability_factor = 0.05
 				production_speed_buildings_factor = 0.15
@@ -1478,7 +1436,37 @@ ideas = {
 			}
 		}
 
-	}
+		RUS_idea_Improving_Education_Temp_Effect = {
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+
+		RUS_idea_SRCO_Revived = {
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.005
+				resistance_growth_on_our_occupied_states = 0.1
+				resistance_decay_on_our_occupied_states = -0.1
+			}
+		}
+
+		RUS_idea_SR_Propaganda = {
+			picture = generic_shield_against_communism
+			modifier = {
+				stability_weekly = 0.001
+				communism_drift = 0.05
+			}
+		}
+
+		RUS_idea_Oborontsy = {
+			picture = generic_infantry_bonus
+			modifier = {
+				recruitable_population_factor = 0.1
+			}
+		}
+
 # End spirits
 
 # Begin industrial concerns

@@ -74,6 +74,18 @@ leader_traits = {
 		consumer_goods_factor = -0.15
 		production_speed_buildings_factor = 0.15
 	}
+
+	Agricultural_Reformer = {
+		consumer_goods_factor = -0.075
+		local_resources_factor = 0.15
+		production_speed_buildings_factor = 0.05
+	}
+
+	Revolutionary_Organizer = {
+		political_power_factor = 0.15
+		stability_factor = 0.1
+	}
+
 	# TODO Add Savinkov and maybe Chernov
 
 }

@@ -81,16 +81,15 @@ characters = {
 	RUS_character_SR_Viktor_Chernov_leader = {
 		name = RUS_character_viktor_chernov
 		portraits = {
-			army = {
-				small = "GFX_rus_viktor_chernov_frame"
+			civilian = {
+				large = "GFX_rus_viktor_chernov"
 			}
 		}
 		country_leader = {
-			traits = {} #TBD
+			traits = { Agricultural_Reformer }
 			ideology = radical_socialism
 			expire = "1952.1.1.1"
 		}
-
 	}
 	
 	RUS_nikolai_ruzsky = {
@@ -615,12 +614,6 @@ characters = {
 				small = "GFX_rus_viktor_chernov_frame"
 			}
 		}
-		
-		country_leader = {
-			traits = {} #TBD
-			ideology = communism
-			expire = "1952.1.1.1"
-		}
 
 		advisor = {
 			slot = political_advisor
@@ -644,18 +637,17 @@ characters = {
 			ai_will_do = {
 				factor = 1.000
 			}
-
-
 		}
 	}
 
 	RUS_character_Boris_Savinkov = {
-		name = "Boris Viktorovich Savinkov"
+		name = "Boris Savinkov"
 		
 		portraits = {
-			#TODO
+			civilian = {
+				small = "GFX_RUS_boris_savinkov_frame"
+			}
 		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = RUS_Boris_Savinkov
@@ -666,11 +658,11 @@ characters = {
 				has_completed_focus = RUS_focus_SR_Invite_Back_Emigres
 			}
 			traits = {
-				#TODO, some kinda revolutionary organizer?
+				Revolutionary_Organizer
 			}
-			cost = 150 #subject to change
+			cost = 150
 			ai_will_do = {
-				factor = 1.000
+				factor = 2.000
 			}
 		}
 	}
