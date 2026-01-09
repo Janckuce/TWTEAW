@@ -23,4 +23,202 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {
+		id = RUS_Constitutional_2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_1
+		prerequisite = {
+			focus = RUS_Constitutional_1
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_2
+		prerequisite = {
+			focus = RUS_Constitutional_2
+		}
+		x = -1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_2
+		prerequisite = {
+			focus = RUS_Constitutional_2
+		}
+		x = 1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_3
+		prerequisite = {
+			focus = RUS_Constitutional_3
+		}
+		prerequisite = {
+			focus = RUS_Constitutional_4
+		}
+		x = 1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_5
+		prerequisite = {
+			focus = RUS_Constitutional_5
+		}
+		x = 1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_5
+		prerequisite = {
+			focus = RUS_Constitutional_5
+		}
+		x = -1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_8
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_7
+		prerequisite = {
+			focus = RUS_Constitutional_7
+		}
+		x = -1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_9
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_8
+		prerequisite = {
+			focus = RUS_Constitutional_8
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_10
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_6
+		prerequisite = {
+			focus = RUS_Constitutional_6
+		}
+		x = 1 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_11
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_10
+		prerequisite = {
+			focus = RUS_Constitutional_10
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_12
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_5
+		prerequisite = {
+			focus = RUS_Constitutional_13
+			focus = RUS_Constitutional_14
+		}
+		x = 0 y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_13
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_11
+		mutually_exclusive = {
+			focus = RUS_Constitutional_14
+		}
+		prerequisite = {
+			focus = RUS_Constitutional_11
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_14
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_9
+		mutually_exclusive = {
+			focus = RUS_Constitutional_13
+		}
+		prerequisite = {
+			focus = RUS_Constitutional_9
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_15
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 10 y = 1
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = RUS_Constitutional_16
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_15
+		prerequisite = {
+			focus = RUS_Constitutional_15
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = RUS_Constitutional_17
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = RUS_Constitutional_16
+		prerequisite = {
+			focus = RUS_Constitutional_16
+		}
+		x = 0 y = 1
+		completion_reward = {
+		}
+	}
 }

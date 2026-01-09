@@ -1410,6 +1410,12 @@ ideas = {
 				political_power_factor = 0.05
 				}
 			}
+		RUS_rasputin_idea = {
+			picture = RUS_rasputin
+			modifier = {
+				political_power_cost = 0.2
+			}
+		}
 		}
 		industrial_concern = {
 		
@@ -1444,15 +1450,6 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
-			}
-		}
-		RUS_rasputin_idea = {
-			allowed = {
-				always = no
-			}
-			picture = RUS_rasputin
-			modifier = {
-				political_power_factor = -0.2
 			}
 		}
 	}
