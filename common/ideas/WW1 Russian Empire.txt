@@ -1336,34 +1336,174 @@ ideas = {
 				stability_factor = 0.2
 			}
 		}
+
 		RUS_Special_Forces = {
 			picture = eng_special_air_service
 			modifier = {
 			}
 		}
+
+		RUS_Democratic_Opposition = {
+			picture = rus_duma_meeting
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				democratic_drift = 0.1
+			}
+		}
+
+		RUS_Democratic_Opposition_2 = {
+			picture = rus_duma_meeting
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				democratic_drift = 0.1
+			}
+		}
+
+		RUS_Democratic_Opposition_3 = {
+			picture = rus_duma_meeting
+			modifier = {
+				democratic_drift = 0.2
+			}
+		}
+
+		RUS_Democratic_Opposition_4 = {
+			picture = rus_duma_meeting
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				democratic_drift = 0.2
+			}
+		}
+
+		RUS_Making_Constituation = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				democratic_drift = 0.2
+			}
+		}
+
+		RUS_Making_Constituation_2 = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				democratic_drift = 0.2
+			}
+		}
+
+		RUS_Making_Constituation_3 = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				democratic_drift = 0.2
+			}
+		}
+
+		RUS_Constitutional_Monarchy = {
+			picture = rus_nicholas_constitutional
+			modifier = {
+				stability_factor = 0.1
+				trade_laws_cost_factor = -0.05
+				drift_defence_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		RUS_rasputin_idea = {
+			picture = RUS_rasputin
+			modifier = {
+				political_power_cost = 0.2
+			}
+		}
+
+		RUS_idea_Reduced_Bolshevik_Threat = {
+			picture = rus_lenin_dead
+			modifier = {
+				army_morale_factor = -0.05
+				stability_factor = -0.025
+				war_support_factor = -0.025
+			}
+		}
+
+		RUS_idea_Improved_Worker_Conditions = {
+			picture = generic_goods_red_bonus
+			modifier = {
+				stability_factor = 0.075
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		RUS_idea_Foreign_Experts = {
+			picture = generic_improved_industries
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		RUS_idea_Own_Skilled_Labor_Pool = {
+			picture = generic_improved_industries
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+		RUS_idea_Improving_Education_Temp_Effect = {
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+
+		RUS_idea_SRCO_Revived = {
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.005
+				resistance_growth_on_our_occupied_states = 0.1
+				resistance_decay_on_our_occupied_states = -0.1
+			}
+		}
+
+		RUS_idea_SR_Propaganda = {
+			picture = generic_shield_against_communism
+			modifier = {
+				stability_weekly = 0.001
+				communism_drift = 0.05
+			}
+		}
+
+		RUS_idea_Oborontsy = {
+			picture = generic_infantry_bonus
+			modifier = {
+				recruitable_population_factor = 0.1
+			}
+		}
 	}
+# End spirits - country{} section needs to end here
+
+# Begin industrial concerns
 
 	industrial_concern = {
-		
-			RUS_donetsk_metallurgical_plant = {
+
+		RUS_donetsk_metallurgical_plant = {
 			name = "Donetsk Metallurgical Plant"
 			picture = rus_donetsk_factory
 			allowed = {
 				original_tag = RUS
 			}
-
-
 			visible = {
-
 			}
-
 			cost = 200
-			
 			research_bonus = {
 				industry = 0.1
 				synth_resources = 0.2
 			}
-
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_fuel_silo_factor = 0.1
@@ -1371,9 +1511,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.075
 				production_factory_start_efficiency_factor = 0.05
 			}
-			
 			traits = { industrial_concern }
-			
 			ai_will_do = {
 				factor = 1
 			}

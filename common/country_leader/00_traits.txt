@@ -86,7 +86,7 @@ leader_traits = {
 		political_power_factor = -0.05
 	}
 
-		can_our_politican = {
+	can_our_politican = {
 		sprite = 13
 		random = no
 		stability_factor = 0.075
@@ -97,7 +97,7 @@ leader_traits = {
 		recruitable_population_factor = 0.2
 	}
 
-		can_banker_of_canada = {
+	can_banker_of_canada = {
 		sprite = 13
 		random = no
 		industrial_capacity_dockyard = 0.1
@@ -106,7 +106,7 @@ leader_traits = {
 		consumer_goods_factor = -0.12
 	}
 
-		can_scientist_for_the_army = {
+	can_scientist_for_the_army = {
 		sprite = 13
 		random = no
 		weekly_casualties_war_support = 0.003
@@ -120,6 +120,43 @@ leader_traits = {
 		fascism_drift = 0.1
 		fascism_acceptance = 75
 		political_power_factor = 0.1
+	}
+
+	Ideological_Crusader = {
+		random = no
+		stability_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	RUS_War_Industrialist = {
+		random = no
+		industrial_capacity_factory = 0.05
+		conversion_cost_civ_to_mil_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	RUS_Backroom_Backstabber = {
+		random = no
+		political_power_gain = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	RUS_Captain_of_Industry = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	imperial_sanction = {
@@ -410,6 +447,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	spirit_of_genghis = {
 		random = no
 		cavalry_attack_factor = 0.05
@@ -423,7 +461,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-
 
 	indomitable_perseverance = { # Ground units get 4 more Morale
 		random = no
@@ -951,6 +988,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	eager_collaborator = {
 		random = yes
 		send_volunteer_size = 2
@@ -969,6 +1007,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	duke_of_orleans = {
 		random = no
 		neutrality_drift = 0.1
@@ -976,6 +1015,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	count_of_paris = {
 		random = no
 		global_building_slots_factor = 0.05
@@ -983,11 +1023,13 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	reluctant_veteran = {
 		random = no
 		war_support_factor = 0.05
 		conscription_factor = 0.05
 	}
+
 	proletariat_internationalist = {
 		random = no
 		war_support_factor = 0.05
@@ -1004,6 +1046,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	emergency_powers = {
 		random = no
 		political_power_gain = 0.5
@@ -1029,6 +1072,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
 	american_caesar = {
 		random = no
 		high_command_cost_factor = -0.25
@@ -1084,7 +1128,6 @@ leader_traits = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -1148,7 +1191,7 @@ leader_traits = {
 		drift_defence_factor = 0.15
 	}
 
-		TUR_paramilitariess_commander = {
+	TUR_paramilitariess_commander = {
 		random = no
 		sprite = 5
 		conscription_factor = 0.03
@@ -1157,7 +1200,7 @@ leader_traits = {
 		modifier_army_sub_unit_militia_max_org_factor = 0.25
 	}
 
-		YEM_fahrettin_military_mission = {
+	YEM_fahrettin_military_mission = {
 		random = no
 		sprite = 5
 		conscription_factor = 0.25
@@ -1306,7 +1349,7 @@ leader_traits = {
 		navy_chief_cost_factor = -0.34
 	}
 
-		cyriaque_gillain_trait = {
+	cyriaque_gillain_trait = {
 		sprite = 7
 		random = no
 		army_attack_factor = 0.075
@@ -1371,7 +1414,7 @@ leader_traits = {
 		research_speed_factor = -0.1
 	}
 
-		raj_guy_who_defend = {
+	raj_guy_who_defend = {
 		sprite = 13
 		random = no
 		research_speed_factor = 0.075
@@ -1395,7 +1438,7 @@ leader_traits = {
 		recruitable_population_factor = -0.2
 	}
 
-		raj_woman_feminist = {
+	raj_woman_feminist = {
 		sprite = 13
 		random = no
 		research_speed_factor = 0.065
@@ -1405,7 +1448,7 @@ leader_traits = {
 		political_advisor_cost_factor = -0.15
 	}
 
-		raj_muslim_of_india = {
+	raj_muslim_of_india = {
 		sprite = 13
 		random = no
 		army_defence_factor = 0.05
@@ -1417,7 +1460,7 @@ leader_traits = {
 
 	}
 
-		raj_he_thinks_of_us = {
+	raj_he_thinks_of_us = {
 		sprite = 13
 		random = no
 		mobilization_laws_cost_factor = -0.25
@@ -1729,7 +1772,6 @@ leader_traits = {
 		trade_opinion_factor = 0.25
 	}
 
-
 	the_statist = { #Peker
 		random = no
 		consumer_goods_factor = -0.10
@@ -1763,7 +1805,6 @@ leader_traits = {
 		random = no
 		political_power_factor = -0.3
 		stability_factor = -0.1
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -1789,7 +1830,6 @@ leader_traits = {
 	CAN_liberal_corporatist = {
 		random = no
 		sprite = 13
-
 		production_speed_infrastructure_factor = 0.1
 		drift_defence_factor = 0.15
 		research_speed_factor = 0.02
@@ -1798,7 +1838,6 @@ leader_traits = {
 	CAN_father_of_the_canadian_welfare_state = {
 		random = no
 		sprite = 13
-
 		production_speed_industrial_complex_factor = 0.05
 		stability_factor = 0.1
 	}
@@ -1806,7 +1845,6 @@ leader_traits = {
 	CAN_canadian_fuhrer = {
 		random = no
 		sprite = 13
-
 		political_power_factor = 0.15
 		war_support_factor = 0.05
 		fascism_drift = 0.02
@@ -1815,7 +1853,6 @@ leader_traits = {
 	CAN_social_gospel = {
 		random = no
 		sprite = 13
-
 		mobilization_speed = 0.15
 		stability_factor = 0.05
 		communism_drift = 0.02
@@ -1835,7 +1872,6 @@ leader_traits = {
 	devoted_corporatist = {
 		random = no
 		sprite = 13
-
 		political_power_factor = 0.1
 		industrial_capacity_factory = 0.05
 	}
@@ -1851,7 +1887,6 @@ leader_traits = {
 	resolute_social_democrat = {
 		random = no
 		sprite = 13
-
 		stability_factor = 0.05
 		political_power_factor = 0.05
 		democratic_drift = 0.1
@@ -1860,7 +1895,6 @@ leader_traits = {
 	gifted_shipping_magnate = {
 		random = no
 		sprite = 10
-
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
@@ -1875,7 +1909,6 @@ leader_traits = {
 	marxist_academic = {
 		random = no
 		sprite = 13
-
 		political_power_factor = 0.05
 		communism_drift = 0.1
 	}
@@ -1883,7 +1916,6 @@ leader_traits = {
 	marxist_priest = {
 		random = no
 		sprite = 13
-
 		war_support_factor = 0.05
 		army_core_defence_factor = 0.05
 		drift_defence_factor = 0.3
@@ -1892,7 +1924,6 @@ leader_traits = {
 	guerilla_warfare_expert = {
 		random = no
 		sprite = 13
-
 		required_garrison_factor = -0.25
 		resistance_damage_to_garrison = -0.15
 		conscription = 0.002
@@ -1903,7 +1934,6 @@ leader_traits = {
 	prime_minister_inonu = {
 		random = no
 		sprite = 13
-
 		stability_factor = 0.05
 		production_speed_industrial_complex_factor = 0.05
 		industrial_capacity_factory = 0.05
@@ -1913,7 +1943,6 @@ leader_traits = {
 	prime_minister_cakmak = {
 		random = no
 		sprite = 13
-
 		war_support_factor = 0.05
 		mobilization_speed = 0.15
 		command_power_gain_mult = 0.1
@@ -1922,7 +1951,6 @@ leader_traits = {
 	prime_minister_bayar = {
 		random = no
 		sprite = 13
-
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.15
 		trade_opinion_factor = 0.25
@@ -1931,7 +1959,6 @@ leader_traits = {
 	prime_minister_okyar = {
 		random = no
 		sprite = 13
-
 		local_resources_factor = 0.1
 		subversive_activites_upkeep = -0.15
 		production_speed_arms_factory_factor = 0.05
@@ -1941,7 +1968,6 @@ leader_traits = {
 	prime_minister_saracoglu = {
 		random = no
 		sprite = 13
-
 		consumer_goods_factor = -0.10
 		political_power_gain = 0.05
 		opinion_gain_monthly_factor = 0.25
@@ -1951,7 +1977,6 @@ leader_traits = {
 	prime_minister_peker = {
 		random = no
 		sprite = 13
-
 		consumer_goods_factor = -0.10
 		production_speed_arms_factory_factor = 0.07
 		production_speed_industrial_complex_factor = 0.07
@@ -1961,7 +1986,6 @@ leader_traits = {
 	prime_minister_aydemir = {
 		random = no
 		sprite = 13
-
 		political_power_gain = 0.05
 		economy_cost_factor = -0.15
 		production_factory_max_efficiency_factor = 0.07
@@ -1971,7 +1995,6 @@ leader_traits = {
 	prime_minister_husnu = {
 		random = no
 		sprite = 13
-
 		war_support_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		communism_drift = 0.1
@@ -1980,7 +2003,6 @@ leader_traits = {
 	prime_minister_menderes = {
 		random = no
 		sprite = 13
-
 		stability_factor = 0.05
 		political_power_gain = 0.07
 		political_advisor_cost_factor = -0.1
@@ -1990,7 +2012,6 @@ leader_traits = {
 	prime_minister_demirag = {
 		random = no
 		sprite = 13
-
 		political_power_gain = 0.05
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_infrastructure_factor = 0.1
@@ -2002,7 +2023,6 @@ leader_traits = {
 	grand_vizier_nursi = {
 		random = no
 		sprite = 13
-
 		war_support_factor = 0.1
 		mobilization_laws_cost_factor = -0.33
 		justify_war_goal_time = -0.25
@@ -3384,7 +3404,7 @@ leader_traits = {
 		political_power_gain = 0.3
 	}
 
-		POR_man_of_the_legions = { 
+	POR_man_of_the_legions = {
 		random = no
 		sprite = 5
 		army_infantry_attack_factor = 0.1
@@ -3392,27 +3412,24 @@ leader_traits = {
 		army_artillery_attack_factor = 0.05
 		army_artillery_defence_factor = 0.075
 		command_cap_increase = 10
-		army_speed_factor = 0.05
 		coordination_bonus = 0.075
 		initiative_factor = 0.075
 		army_speed_factor = 0.1
 		army_org_regain = 0.1
 		army_breakthrough_against_major_factor = 0.05
 		max_planning = 0.05
-
 	}
 
-		SAF_politican = { 
+	SAF_politican = {
 		random = no
 		sprite = 13 
 		democratic_drift = 0.2
 		surrender_limit = 0.2
 		political_power_gain = 0.2
 		political_advisor_cost_factor = -0.2
-
 	}
 
-		SAF_smuts_army = { 
+	SAF_smuts_army = {
 		random = no
 		sprite = 7
 		army_attack_factor = 0.1
@@ -3421,21 +3438,17 @@ leader_traits = {
 		production_speed_arms_factory_factor = 0.065
 	}
 
-		SAF_man_with_honors = { 
+	SAF_man_with_honors = {
 		random = no
 		sprite = 5
 		army_org_factor = 0.05
-		army_speed_factor = 0.025
 		army_speed_factor = 0.05
 		supply_node_range = 0.15
 		army_morale_factor = 0.075
 		experience_loss_factor = -0.075
-
-
-
 	}
 
-		SAF_working_man = { 
+	SAF_working_man = {
 		random = no
 		sprite = 13 
 		production_lack_of_resource_penalty_factor = -0.1
@@ -3445,7 +3458,7 @@ leader_traits = {
 		production_speed_rail_way_factor = 0.05
 	}
 
-		SAF_scientist_of_blacks = { 
+	SAF_scientist_of_blacks = {
 		random = no
 		sprite = 13 
 		research_speed_factor = 0.25
@@ -3453,7 +3466,7 @@ leader_traits = {
 		stability_factor = -0.3
 	}
 
-	SWI_social_democrat = { #Unlocks Focus on Swiss Unity 
+	SWI_social_democrat = { #Unlocks Focus on Swiss Unity
 		random = no
 		sprite = 13
 		#power_balance_daily = -0.003
