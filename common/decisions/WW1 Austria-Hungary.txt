@@ -206,17 +206,17 @@ AUH_plunder_decisions = {
 		available = {
 			NOT = {
 				SER = {
-					controls_state = 107
+					controls_state = 107 # Serbia
 				}
 				}
 			NOT = {
 				SER = {
-					controls_state = 108
+					controls_state = 108 # Morava
 				}
 			}
 			NOT = {
 				SER = {
-					controls_state = 106
+					controls_state = 106 # Macedonia
 				}
 			}
 		}
@@ -228,24 +228,70 @@ AUH_plunder_decisions = {
 		cancel_trigger = {
 			OR = {
 				SER = {
-					controls_state = 107
+					controls_state = 107 # Serbia
 				}
 				SER = {
-					controls_state = 108
+					controls_state = 108 # Morava
 				}
 				SER = {
-					controls_state = 106
+					controls_state = 106 # Macedonia
 				}
 			}
 		}
 		remove_effect = {
-			107 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-			107 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			108 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			108 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			106 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-
-			842 = {
+			107 = { # Serbia
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			107 = { # Serbia again
+				if = {
+					limit = { arms_factory > 0 }
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			108 = { # Morava
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex level = 2
+					}
+				}
+			}
+			108 = { # Morava again
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			106 = { # Macedonia
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			842 = { # Southern Plain, Hungary
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
@@ -273,8 +319,8 @@ AUH_plunder_decisions = {
 			}
 		}
 		available = {
-			controls_state = 160
-			controls_state = 913
+			controls_state = 160 # Veneto
+			controls_state = 913 # Friuli
 		}
 		days_remove = 60
 		modifier = {
@@ -283,20 +329,59 @@ AUH_plunder_decisions = {
 		cancel_trigger = {
 			OR = {
 				NOT = {
-					controls_state = 160
+					controls_state = 160 # Veneto
 				}
 				NOT = {
-					controls_state = 913
+					controls_state = 913 # Friuli
 				}
 			}
 		}
 		remove_effect = {
-			160 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 4 } }
-			160 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 2 } }
-			160 = { limit = { dockyard > 0 } remove_building = { type = dockyard level = 2 } }
-			913 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-
-			841 = {
+			160 = { # Veneto
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 4
+					}
+				}
+			}
+			160 = { # Veneto
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+			160 = { # Veneto
+				if = {
+					limit = {
+						dockyard > 0
+					}
+					remove_building = {
+						type = dockyard
+						level = 2
+					}
+				}
+			}
+			913 = { # Friuli
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			841 = { # Triest
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
@@ -330,12 +415,12 @@ AUH_plunder_decisions = {
 		available = {
 			NOT = {
 				ROM = {
-					controls_state = 46
+					controls_state = 46 # Muntenia
 				}
 				}
 			NOT = {
 				ROM = {
-					controls_state = 81
+					controls_state = 81 # Oltenia
 				}
 			}
 		}
@@ -347,19 +432,48 @@ AUH_plunder_decisions = {
 		cancel_trigger = {
 			OR = {
 				ROM = {
-					controls_state = 46
+					controls_state = 46 # Muntenia
 				}
 				ROM = {
-					controls_state = 81
+					controls_state = 81 # Oltenia
 				}
 			}
 		}
 		remove_effect = {
-			46 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-			46 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 4 } }
-			81 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-
-			842 = {
+			46 = { # Muntenia
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			46 = { # Muntenia
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 4
+					}
+				}
+			}
+			81 = { # Oltenia
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			842 = { # Southern Plain, Hungary
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex

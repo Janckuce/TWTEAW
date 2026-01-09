@@ -1399,12 +1399,13 @@ ideas = {
 				drift_defence_factor = 0.05
 				political_power_factor = 0.05
 			}
+		}
+
 		RUS_rasputin_idea = {
 			picture = RUS_rasputin
 			modifier = {
 				political_power_cost = 0.2
 			}
-		}
 		}
 
 		RUS_idea_Reduced_Bolshevik_Threat = {
@@ -1472,32 +1473,27 @@ ideas = {
 				recruitable_population_factor = 0.1
 			}
 		}
+}
 
-# End spirits
+# End spirits - country{} section needs to end here
 
 # Begin industrial concerns
 
-		industrial_concern = {
+	industrial_concern = {
 
-			RUS_donetsk_metallurgical_plant = {
+		RUS_donetsk_metallurgical_plant = {
 			name = "Donetsk Metallurgical Plant"
 			picture = rus_donetsk_factory
 			allowed = {
 				original_tag = RUS
 			}
-
-
 			visible = {
-
 			}
-
 			cost = 200
-
 			research_bonus = {
 				industry = 0.1
 				synth_resources = 0.2
 			}
-
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.1
 				production_speed_fuel_silo_factor = 0.1
@@ -1505,12 +1501,11 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.075
 				production_factory_start_efficiency_factor = 0.05
 			}
-
 			traits = { industrial_concern }
-
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
+
 }

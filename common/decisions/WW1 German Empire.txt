@@ -234,37 +234,37 @@ GER_Plunder_Decisions = {
 		}
 		available = {
 			OR = {
-				controls_state = 10
+				controls_state = 10 # Warsaw
 				AUS = {
 					controls_state = 10
 				}
 			}
 			OR = {
-				controls_state = 90
+				controls_state = 90 # Kielce
 				AUS = {
 					controls_state = 90
 				}
 			}
 			OR = {
-				controls_state = 87
+				controls_state = 87 # Lodz
 				AUS = {
 					controls_state = 87
 				}
 			}
 			OR = {
-				controls_state = 98
+				controls_state = 98 # Plock
 				AUS = {
 					controls_state = 98
 				}
 			}
 			OR = {
-				controls_state = 92
+				controls_state = 92 # Lublin
 				AUS = {
 					controls_state = 92
 				}
 			}
 			OR = {
-				controls_state = 97
+				controls_state = 97 # Lomza
 				AUS = {
 					controls_state = 97
 				}
@@ -279,37 +279,37 @@ GER_Plunder_Decisions = {
 		cancel_trigger = {
 			OR = {
 				POL = {
-					controls_state = 10
+					controls_state = 10  # Warsaw
 				}
 				RUS = {
 					controls_state = 10
 				}
 				POL = {
-					controls_state = 90
+					controls_state = 90 # Kielce
 				}
 				RUS = {
 					controls_state = 90
 				}
 				POL = {
-					controls_state = 87
+					controls_state = 87 # Lodz
 				}
 				RUS = {
 					controls_state = 87
 				}
 				POL = {
-					controls_state = 98
+					controls_state = 98 # Plock
 				}
 				RUS = {
 					controls_state = 98
 				}
 				POL = {
-					controls_state = 92
+					controls_state = 92 # Lublin
 				}
 				RUS = {
 					controls_state = 92
 				}
 				POL = {
-					controls_state = 97
+					controls_state = 97 # Lomza
 				}
 				RUS = {
 					controls_state = 97
@@ -318,15 +318,95 @@ GER_Plunder_Decisions = {
 			}
 		}
 		remove_effect = {
-			10 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 4 } }
-			10 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			92 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-			92 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			90 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			87 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-			98 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-			97 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			86 = {
+			10 = { # Warsaw
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 4
+					}
+				}
+			}
+			10 = { # Warsaw
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			92 = { # Lublin
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			92 = { # Lublin
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			90 = { # Kielce
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			87 = { # Lodz
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			98 = { # Plock
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			97 = { # Lomza
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			86 = { # Poznan
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
@@ -354,7 +434,7 @@ GER_Plunder_Decisions = {
 			}
 		}
 		available = {
-			controls_state = 835
+			controls_state = 835 # Ardennes
 			controls_state = 8
 		}
 		days_remove = 60
@@ -364,18 +444,48 @@ GER_Plunder_Decisions = {
 		cancel_trigger = {
 			OR = {
 				NOT = {
-					controls_state = 835
+					controls_state = 835 # Ardennes
 				}
 				NOT = {
-					controls_state = 8
+					controls_state = 8 # Luxemburg
 				}
 			}
 		}
 		remove_effect = {
-			835 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 1 } }
-			8 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 7 } }
-			8 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 4 } }
-			42 = {
+			835 = { # Ardennes
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			8 = { # Luxemburg
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 7
+					}
+				}
+			}
+			8 = { # Luxemburg
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 4
+					}
+				}
+			}
+			42 = { # Moselland
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
@@ -403,8 +513,8 @@ GER_Plunder_Decisions = {
 			}
 		}
 		available = {
-			controls_state = 6
-			controls_state = 34
+			controls_state = 6 # Vlaanderen
+			controls_state = 34 # Wallonie
 		}
 		days_remove = 60
 		modifier = {
@@ -413,19 +523,59 @@ GER_Plunder_Decisions = {
 		cancel_trigger = {
 			OR = {
 				NOT = {
-					controls_state = 6
+					controls_state = 6  # Vlaanderen
 				}
 				NOT = {
-					controls_state = 34
+					controls_state = 34 # Wallonie
 				}
 			}
 		}
 		remove_effect = {
-			6 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 5 } }
-			34 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
-			6 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
-			34 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			916 = {
+			6 = { # Vlaanderen
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 5
+					}
+				}
+			}
+			34 = { # Wallonie
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			6 = { # Vlaanderen
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+				}
+			}
+			34 = { # Wallonie
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			916 = { # Eupen-Malmedy
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
@@ -453,8 +603,8 @@ GER_Plunder_Decisions = {
 			}
 		}
 		available = {
-			controls_state = 918
-			controls_state = 908
+			controls_state = 918 # Nancy
+			controls_state = 908 # Briey
 		}
 		days_remove = 60
 		modifier = {
@@ -463,18 +613,37 @@ GER_Plunder_Decisions = {
 		cancel_trigger = {
 			OR = {
 				NOT = {
-					controls_state = 918
+					controls_state = 918 # Nancy
 				}
 				NOT = {
-					controls_state = 908
+					controls_state = 908 # Briey
 				}
 			}
 		}
 		remove_effect = {
-			918 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			908 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-
-			28 = {
+			918 = { # Nancy
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			908 = { # Briey
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			28 = { # Alsace-Lorraine
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -498,10 +667,10 @@ GER_Plunder_Decisions = {
 			}
 		}
 		available = {
-			controls_state = 27
-			controls_state = 18
-			controls_state = 17
-			controls_state = 933
+			controls_state = 27 # Bourgogne
+			controls_state = 18 # Fortified Champagne
+			controls_state = 17 # Franche-Comte
+			controls_state = 933 # Champagne
 		}
 		days_remove = 60
 		modifier = {
@@ -510,26 +679,76 @@ GER_Plunder_Decisions = {
 		cancel_trigger = {
 			OR = {
 				NOT = {
-					controls_state = 27
+					controls_state = 27 # Bourgogne
 				}
 				NOT = {
-					controls_state = 18
+					controls_state = 18 # Fortified Champagne
 				}
 				NOT = {
-					controls_state = 17
+					controls_state = 17 # Franche-Comte
 				}
 				NOT = {
-					controls_state = 933
+					controls_state = 933 # Champagne
 				}
 			}
 		}
 		remove_effect = {
-			933 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			18 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
-			17 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			27 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			27 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
-			28 = {
+			933 = { # Champagne
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			18 = { # Fortified Champagne
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			17 = { # Franche-Comte
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			27 = { # Bourgogne
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			27 = { # Bourgogne
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+				}
+			}
+			28 = { # Alsace-Lorraine
 				add_extra_state_shared_building_slots = 11
 				add_building_construction = {
 					type = industrial_complex
@@ -557,23 +776,41 @@ GER_Plunder_Decisions = {
 			}
 		}
 		available = {
-			controls_state = 29
+			controls_state = 29 # Nord-Pas-de-Calais
 		}
 		days_remove = 60
 		modifier = {
 			civilian_factory_use = 2
 		}
 		cancel_trigger = {
-			OR = {
-				NOT = {
-					controls_state = 29
-				}
+			NOT = {
+				controls_state = 29 # Nord-Pas-de-Calais
 			}
 		}
 		remove_effect = {
-			29 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
-			29 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 3 } }
-			28 = {
+			29 = { # Nord-Pas-de-Calais
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			29 = { # Nord-Pas-de-Calais
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+				}
+			}
+			28 = { # Alsace-Lorraine
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
@@ -601,9 +838,9 @@ GER_Plunder_Decisions = {
 			}
 		}
 		available = {
-			controls_state = 16
-			controls_state = 15
-			controls_state = 785
+			controls_state = 16 # Ile-de-France
+			controls_state = 15 # Normandy
+			controls_state = 785 # Picardy
 		}
 		days_remove = 60
 		modifier = {
@@ -612,25 +849,85 @@ GER_Plunder_Decisions = {
 		cancel_trigger = {
 			OR = {
 				NOT = {
-					controls_state = 16
+					controls_state = 16 # Ile-de-France
 				}
 				NOT = {
-					controls_state = 15
+					controls_state = 15 # Normandy
 				}
 				NOT = {
-					controls_state = 785
+					controls_state = 785 # Picardy
 				}
 			}
 		}
 		remove_effect = {
 
-			16 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 4 } }
-			16 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			15 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 2 } }
-			15 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 2 } }
-			785 = { limit = { industrial_complex > 0 } remove_building = { type = industrial_complex level = 3 } }
-			785 = { limit = { arms_factory > 0 } remove_building = { type = arms_factory level = 1 } }
-			857 = {
+			16 = { # Ile-de-France
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 4
+					}
+				}
+			}
+			16 = { # Ile-de-France
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			15 = { # Normandy
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			15 = { # Normandy
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+			785 = { # Picardy
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+			785 = { # Picardy
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			857 = { # Saarland
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
