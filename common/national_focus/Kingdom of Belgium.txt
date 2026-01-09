@@ -21,31 +21,28 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = BEL_The_King's_Nation
+		id = BEL_The_Kings_Nation
 		icon = GFX_focus_BEL_legacy_of_the_soldier_king
-		cost = 5
+		cost = 10
 		x = 10
 		y = 0
 		search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
 			add_ideas = BEL_Outrage_Over_Congolese_Treatment
-			country_event = {
-				id = ww1_belgium.1
-				days = 30
-			}
+			country_event = ww1_belgium.1
 		}
 	}
 	focus = {
 		id = BEL_Industrial1
 		icon = GFX_focus_BEL_belgian_renaissance
 		cost = 7.2
-		relative_position_id = BEL_The_King's_Nation
+		relative_position_id = BEL_The_Kings_Nation
 		x = -8
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 1 }
@@ -60,7 +57,7 @@ focus_tree = {
 		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			add_offsite_building = { type = industrial_complex level = 1 }
@@ -190,7 +187,7 @@ focus_tree = {
 		id = BEL_Belgium_Military
 		icon = GFX_focus_BEL_defensive_neutrality
 		cost = 10
-		relative_position_id = BEL_The_King's_Nation
+		relative_position_id = BEL_The_Kings_Nation
 		x = -4
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -198,7 +195,7 @@ focus_tree = {
 			focus = BEL_Congo_Military
 		}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			934 = {
@@ -270,7 +267,7 @@ focus_tree = {
 			focus = BEL_Belgium_Military
 		}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 1 }
@@ -396,7 +393,7 @@ focus_tree = {
 		id = BEL_Science1
 		icon = GFX_focus_research
 		cost = 5
-		relative_position_id = BEL_The_King's_Nation
+		relative_position_id = BEL_The_Kings_Nation
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -404,7 +401,7 @@ focus_tree = {
 			has_tech = ww1_electrical_engineering_1
 		}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			add_ideas = BEL_Science_Power
@@ -456,7 +453,7 @@ focus_tree = {
 		id = BEL_Loyal_To_The_King
 		icon = GFX_focus_BEL_king_of_the_belgians
 		cost = 10
-		relative_position_id = BEL_The_King's_Nation
+		relative_position_id = BEL_The_Kings_Nation
 		x = 3
 		y = 1
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -466,7 +463,7 @@ focus_tree = {
 			focus = BEL_Commune
 		}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			add_country_leader_trait = BEL_Honourable_King
@@ -544,22 +541,95 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BEL_One_True_King
+		icon = GFX_focus_RAJ_the_crown_and_the_world
+		cost = 10
+		relative_position_id = BEL_United_Through_The_Crown
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = BEL_All_Will_Be_Equal
+		}
+		prerequisite = {
+			focus = BEL_United_Through_The_Crown
+		}
+		completion_reward = {
+			custom_effect_tooltip = BEL_Changing_Focus_Tip
+			if = {
+				limit = {
+					has_idea = BEL_French_Primacy
+				}
+				swap_ideas = {
+					remove_idea = BEL_French_Primacy
+					add_idea = BEL_French_Primacy_Dictator
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BEL_Dutch_Primacy
+				}
+				swap_ideas = {
+					remove_idea = BEL_Dutch_Primacy
+					add_idea = BEL_Dutch_Primacy_Dictator
+				}
+			}
+		}
+	}
+	focus = {
+		id = BEL_All_Will_Be_Equal
+		icon = GFX_focus_CHL_crown_antoine_as_sovereign_king
+		cost = 10
+		relative_position_id = BEL_United_Through_The_Crown
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		mutually_exclusive = {
+			focus = BEL_One_True_King
+		}
+		prerequisite = {
+			focus = BEL_United_Through_The_Crown
+		}
+		completion_reward = {
+			custom_effect_tooltip = BEL_Changing_Focus_Tip
+			if = {
+				limit = {
+					has_idea = BEL_French_Primacy
+				}
+				swap_ideas = {
+					remove_idea = BEL_French_Primacy
+					add_idea = BEL_French_Primacy_Democratic
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BEL_Dutch_Primacy
+				}
+				swap_ideas = {
+					remove_idea = BEL_Dutch_Primacy
+					add_idea = BEL_Dutch_Primacy_Democratic
+				}
+			}
+		}
+	}
+	focus = {
 		id = BEL_Armoured_Car_Race
 		icon = GFX_focus_SWE_lynx_armored_car
 		cost = 10
 		relative_position_id = BEL_United_Through_The_Crown
 		x = 0
-		y = 1
+		y = 2
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
-			focus = BEL_United_Through_The_Crown
+			focus = BEL_One_True_King
+			focus = BEL_All_Will_Be_Equal
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				category = cat_armored_cars
-				bonus = 1
+				bonus = 2
 			}
 			add_ideas = BEL_Armoured_Car_Supremacy
 		}
@@ -568,7 +638,7 @@ focus_tree = {
 		id = BEL_Commune
 		icon = GFX_focus_BEL_the_grand_place
 		cost = 10
-		relative_position_id = BEL_The_King's_Nation
+		relative_position_id = BEL_The_Kings_Nation
 		x = 7
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -577,7 +647,7 @@ focus_tree = {
 			focus = BEL_Loyal_To_The_King
 		}
 		prerequisite = {
-			focus = BEL_The_King's_Nation
+			focus = BEL_The_Kings_Nation
 		}
 		completion_reward = {
 			add_ideas = BEL_Socialist_Power
@@ -733,7 +803,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BEL_The_People's_Nation
+		id = BEL_The_Peoples_Nation
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10
 		relative_position_id = BEL_Enter_The_Stage

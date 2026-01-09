@@ -110,50 +110,53 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
 				mobilization_laws_cost_factor = 5
-				conscription_factor = -0.33
+				conscription_factor = -0.5
 			}
 		}
 		BEL_King_Status1 = {
 			picture = bel_king_spirit
 			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.15
-				army_org_regain = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_org_regain = 0.1
+				army_org_factor = 0.05
 			}
 		}
 		BEL_King_Status2 = {
 			picture = bel_king_spirit
 			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.15
-				army_org_regain = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_org_regain = 0.1
 				army_morale_factor = 0.08
-				army_org_factor = 0.08
+				army_org_factor = 0.05
 				army_defence_factor = 0.08
 			}
 		}
 		BEL_King_Status3 = {
 			picture = bel_king_spirit
 			modifier = {
-				stability_factor = 0.25
-				war_support_factor = 0.25
-				army_org_regain = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_org_regain = 0.1
 				army_morale_factor = 0.08
-				army_org_factor = 0.08
+				army_org_factor = 0.1
 				army_defence_factor = 0.08
+				land_reinforce_rate = 0.05
 			}
 		}
 		BEL_King_Status4 = {
 			picture = bel_king_spirit
 			modifier = {
-				stability_factor = 0.3
-				war_support_factor = 0.3
-				army_org_regain = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_org_regain = 0.1
 				army_morale_factor = 0.08
-				army_org_factor = 0.08
+				army_org_factor = 0.1
 				army_defence_factor = 0.08
+				land_reinforce_rate = 0.05
 				supply_consumption_factor = -0.1
-				dig_in_speed_factor = 0.05
+				dig_in_speed_factor = 0.1
 			}
 		}
 		BEL_Neutral_State = {
@@ -175,10 +178,21 @@ ideas = {
 				coordination_bonus = -0.08
 				army_speed_factor = -0.1
 				command_power_gain = -0.01
-				conscription_factor = -0.03
 				training_time_army_factor = 0.3
 				experience_gain_army_factor = -0.1
 				army_morale_factor = -0.1
+			}
+		}
+		BEL_Divided_Nation1 = {
+			picture = BEL_language_barriers
+			modifier = {
+				army_org_factor = -0.04
+				coordination_bonus = -0.04
+				army_speed_factor = -0.05
+				command_power_gain = -0.01
+				training_time_army_factor = 0.15
+				experience_gain_army_factor = -0.1
+				army_morale_factor = -0.05
 			}
 		}
 		BEL_Limited_Naval_Force = {
@@ -200,7 +214,7 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.12
+					build_cost_ic = -0.15
 				}
 			}
 		}
@@ -208,7 +222,7 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.12
+					build_cost_ic = -0.15
 				}
 			}
 			modifier = {
@@ -219,7 +233,7 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.09
+					build_cost_ic = -0.1
 				}
 			}
 		}
@@ -227,7 +241,7 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.09
+					build_cost_ic = -0.1
 				}
 			}
 			modifier = {
@@ -239,23 +253,65 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = 0.1
-				experience_gain_army_factor = 0.1
-				conscription_factor = 0.1
+				experience_gain_army_unit_factor = 0.05
+				conscription = 0.0025
+			}
+		}
+		BEL_French_Primacy_Dictator = {
+			picture = BEL_language_barriers_fas_fr
+			modifier = {
+				stability_weekly = -0.01
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				experience_gain_army_unit_factor = 0.05
+				org_loss_at_low_org_factor = -0.05
+				org_loss_when_moving = -0.05
+				army_speed_factor = 0.05
+				conscription = 0.0025
+			}
+		}
+		BEL_French_Primacy_Democratic = {
+			picture = BEL_language_barriers_fas_fr
+			modifier = {
+				war_support_factor = 0.1
+				experience_gain_army_unit_factor = 0.05
+				dig_in_speed_factor = 0.05
+				max_dig_in_factor = 0.05
+				conscription = 0.0025
 			}
 		}
 		BEL_Dutch_Primacy = {
 			picture = BEL_language_barriers_fas_nl
 			modifier = {
 				stability_factor = -0.1
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.5
+			}
+		}
+		BEL_Dutch_Primacy_Dictator = {
+			picture = BEL_language_barriers_fas_nl
+			modifier = {
+				stability_factor = -0.1
 				research_speed_factor = 0.15
-				compliance_growth = 0.1
-				required_garrison_factor = -0.15
+				industrial_capacity_factory = 0.1
+				political_power_gain = 0.5
+			}
+		}
+		BEL_Dutch_Primacy_Democratic = {
+			picture = BEL_language_barriers_fas_nl
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = 0.2
+				industrial_capacity_factory = 0.05
+				political_power_gain = 1
 			}
 		}
 		BEL_Armoured_Car_Supremacy = {
 			picture = BEL_minerva_imperia_motorized_organization
 			equipment_bonus = {
 				armored_car_equipment = {
+					armor_value = 0.05
 					build_cost_ic = -0.15
 				}
 			}
@@ -308,19 +364,19 @@ ideas = {
 		BEL_Science_Power = {
 			picture = jap_duplicate_research
 			modifier = {
-				research_speed_factor = 0.025
+				research_speed_factor = 0.05
 			}
 		}
 		BEL_Science_Power1 = {
 			picture = jap_duplicate_research
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.1
 			}
 		}
 		BEL_Science_Power2 = {
 			picture = jap_duplicate_research
 			modifier = {
-				research_speed_factor = 0.075
+				research_speed_factor = 0.15
 			}
 		}
 		BEL_Support_Idea = {
