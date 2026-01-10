@@ -9,16 +9,16 @@ on_actions = {
                             has_war_with = RUS
                             has_war_with = ENG
                         }
-                        OR = {
-                            tag = SER
-                            tag = GRE
-                            tag = MNT
-                            tag = ROM
-                            tag = TUR
-                        }
                         owns_state = 924
                         owns_state = 731
                         owns_state = 77
+                    }
+                    OR = {
+                        tag = SER
+                        tag = GRE
+                        tag = MNT
+                        tag = ROM
+                        tag = TUR
                     }
                     from.from = {
                         state = 48

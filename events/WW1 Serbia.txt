@@ -504,10 +504,12 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				has_war_with = SER
-				has_war_with = GRE
-				has_war_with = ROM
-				has_war_with = MNT
+				or = {
+					has_war_with = SER
+					has_war_with = GRE
+					has_war_with = ROM
+					has_war_with = MNT
+				}
 			}
 			every_country = {
 				white_peace = BUL
