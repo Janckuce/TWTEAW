@@ -700,10 +700,6 @@ focus_tree = {
 			retire_character = YEM_the_desert_endurs
 			retire_character = YEM_the_desert_endurs1
 			retire_character = YEM_the_desert_endurs2
-			declare_war_on = {
-				target = ENG
-				type = topple_government
-			}
 		}
 	}
 
@@ -810,9 +806,6 @@ focus_tree = {
 		y = 2
 		available = {
 			292 = {
-				is_controlled_by = YEM
-			}
-			678 = {
 				is_controlled_by = YEM
 			}
 		}
