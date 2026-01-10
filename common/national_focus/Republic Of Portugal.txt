@@ -767,13 +767,19 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		available = {
+			num_of_factories > 90
+		}
 		prerequisite = {
 			focus = POR_Rapid_Reaction_Training4
 			focus = POR_Commandos_Training4
 			focus = POR_Hunters_Training4
 		}
 		completion_reward = {
-			add_ideas = POR_Order_Of_Christ
+			annex_country = {
+				target = SPR
+			}
+			set_cosmetic_tag = POR_Iberia
 		}
 	}
 

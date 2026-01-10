@@ -49,6 +49,24 @@ SER_Technological_Advancements = {
 			}
 		}
 	}
+	SER_Integrate_Montenegro = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			tag = SER
+		}
+		available = {
+			TUR = {
+				has_country_flag = TUR_balkan_war_lost_1
+			}
+		}
+		complete_effect = {
+			annex_country = {
+				target = MNT
+			}
+		}
+	}
 }
 
 SER_Chetnik_Recruitment = {

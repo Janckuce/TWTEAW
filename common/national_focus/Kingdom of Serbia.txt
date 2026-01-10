@@ -150,6 +150,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SER_Small_Country_Big_Heart
+			add_offsite_building = {
+				type = arms_factory
+				level = 6
+			}
 		}
 	}
 
@@ -277,12 +281,9 @@ focus_tree = {
 			focus = SER_Industrial_Funding
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
 			}
 		}
 	}
@@ -332,12 +333,9 @@ focus_tree = {
 			focus = SER_Industrial_Funding
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 	}
@@ -351,12 +349,9 @@ focus_tree = {
 		x = 3
 		y = 5
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -371,12 +366,9 @@ focus_tree = {
 			focus = SER_Military_Construction
 		}
 		completion_reward = {
-			108 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -391,12 +383,9 @@ focus_tree = {
 			focus = SER_Military_Construction
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -414,22 +403,9 @@ focus_tree = {
 			focus = SER_Milis2
 		}
 		completion_reward = {
-			107 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 3609
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11586
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11583
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
 			}
 		}
 	}
@@ -444,12 +420,9 @@ focus_tree = {
 			focus = SER_Milis3
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -464,12 +437,9 @@ focus_tree = {
 			focus = SER_Milis3
 		}
 		completion_reward = {
-			803 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -487,22 +457,9 @@ focus_tree = {
 			focus = SER_Milis5
 		}
 		completion_reward = {
-			107 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 3609
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11586
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 11583
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
 			}
 		}
 	}
@@ -567,12 +524,9 @@ focus_tree = {
 		x = 11
 		y = 5
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -587,12 +541,9 @@ focus_tree = {
 			focus = SER_Civilian_Construction
 		}
 		completion_reward = {
-			108 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -607,12 +558,9 @@ focus_tree = {
 			focus = SER_Civilian_Construction
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -630,19 +578,9 @@ focus_tree = {
 			focus = SER_Civis1
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			108 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 	}
@@ -657,12 +595,9 @@ focus_tree = {
 			focus = SER_Civis2
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -677,12 +612,9 @@ focus_tree = {
 			focus = SER_Civis2
 		}
 		completion_reward = {
-			803 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -700,19 +632,9 @@ focus_tree = {
 			focus = SER_Civis4
 		}
 		completion_reward = {
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			108 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 	}
@@ -960,12 +882,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SER_Militaristic_Mindset
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -984,12 +903,9 @@ focus_tree = {
 				remove_idea = SER_Militaristic_Mindset
 				add_idea = SER_Militaristic_Mindset1
 			}
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -1008,12 +924,9 @@ focus_tree = {
 				remove_idea = SER_Militaristic_Mindset1
 				add_idea = SER_Militaristic_Mindset2
 			}
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -1032,12 +945,9 @@ focus_tree = {
 				remove_idea = SER_Militaristic_Mindset2
 				add_idea = SER_Militaristic_Mindset3
 			}
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -1056,12 +966,9 @@ focus_tree = {
 				remove_idea = SER_Militaristic_Mindset3
 				add_idea = SER_Militaristic_Mindset4
 			}
-			107 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
 			}
 		}
 	}
@@ -1191,12 +1098,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SER_Economic_Plan
-			107 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 	}
@@ -1232,12 +1136,9 @@ focus_tree = {
 				remove_idea = SER_Economic_Plan
 				add_idea = SER_Economic_Plan1
 			}
-			107 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 	}

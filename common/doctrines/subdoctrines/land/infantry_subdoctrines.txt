@@ -76,10 +76,12 @@ great_war_infantry = {
     # EFFECTS
 
     army_infantry_defence_factor = 0.10
+    cavalry_attack_factor = 0.06
+
 
     rewards = {
         traverse_digging = {
-            category_all_infantry = {
+            category_army = {
                 defense = 0.10
             }
             land_reinforce_rate = 0.02

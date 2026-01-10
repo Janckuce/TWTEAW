@@ -56,8 +56,7 @@ last_stand = {
 
     rewards = {
         werwolf_groups = {
-            army_core_defence_factor = 0.20
-            army_core_attack_factor = 0.10
+            army_core_defence_factor = 0.15
         }
 
         pocket_consolidation = {
@@ -65,15 +64,16 @@ last_stand = {
             no_supply_grace = 72
         }
         digging_in = {
-            land_reinforce_rate = 0.1
+            land_reinforce_rate = 0.05
             max_dig_in = 5
         }
         stocking_up = {
             equipment_capture_factor = 0.1
-            land_night_attack = 0.25
+            land_night_attack = 0.10
         }
         breaking_out = {
             org_loss_at_low_org_factor = -0.15
+            army_core_attack_factor = 0.10
         }
     }
 }
@@ -105,7 +105,7 @@ guerilla_war = {
             max_planning = 0.04
             engineer = {
                 fort = {
-                    attack = 0.04
+                    attack = 0.06
                 }
             }
         }
@@ -120,14 +120,14 @@ guerilla_war = {
         urban_assaults = {
             engineer = {
                 fort = {
-                    attack = 0.12
+                    attack = 0.10
                 }
             }
         }
         defense_of_gained_power = {
             engineer = {
                 fort = {
-                    attack = 0.16
+                    attack = 0.12
                 }
             }
         }
