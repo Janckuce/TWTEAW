@@ -6,6 +6,13 @@
 #search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 #search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 
+
+# Russian Constitutional Monarchy focus tree
+
+
+
+
+
 focus_tree = {
 	id = RUS_Constitutional
 	country = { 
@@ -16,7 +23,7 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	focus = {
-		id = RUS_Constitutional_1
+		id = RUS_Con_Power_through_Constitution
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
 		x = 5 y = 1
@@ -24,75 +31,75 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_2
+		id = RUS_Con_Remove_the_Manipulator
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_1
+		relative_position_id = RUS_Con_Power_through_Constitution
 		prerequisite = {
-			focus = RUS_Constitutional_1
+			focus = RUS_Con_Power_through_Constitution
 		}
 		x = 0 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_3
+		id = RUS_Con_Removal_Of_Corrupt_Autocrats
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_2
+		relative_position_id = RUS_Con_Remove_the_Manipulator
 		prerequisite = {
-			focus = RUS_Constitutional_2
+			focus = RUS_Con_Remove_the_Manipulator
 		}
 		x = -1 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_4
+		id = RUS_Con_Favour_Grand_Duke_Michael
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_2
+		relative_position_id = RUS_Con_Remove_the_Manipulator
 		prerequisite = {
-			focus = RUS_Constitutional_2
+			focus = RUS_Con_Remove_the_Manipulator
 		}
 		x = 1 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_5
+		id = RUS_Con_The_Might_of_the_Duma
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_3
+		relative_position_id = RUS_Con_Removal_Of_Corrupt_Autocrats
 		prerequisite = {
-			focus = RUS_Constitutional_3
+			focus = RUS_Con_Removal_Of_Corrupt_Autocrats
 		}
 		prerequisite = {
-			focus = RUS_Constitutional_4
+			focus = RUS_Con_Favour_Grand_Duke_Michael
 		}
 		x = 1 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_6
+		id = RUS_Con_Begin_Stolypin_Reforms
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_5
+		relative_position_id = RUS_Con_The_Might_of_the_Duma
 		prerequisite = {
-			focus = RUS_Constitutional_5
+			focus = RUS_Con_The_Might_of_the_Duma
 		}
 		x = 1 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_7
+		id = RUS_Con_Begin_Diplomacy_with_Bolsheviks
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_5
+		relative_position_id = RUS_Con_The_Might_of_the_Duma
 		prerequisite = {
-			focus = RUS_Constitutional_5
+			focus = RUS_Con_The_Might_of_the_Duma
 		}
 		x = -1 y = 1
 		completion_reward = {
@@ -102,9 +109,9 @@ focus_tree = {
 		id = RUS_Constitutional_8
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_7
+		relative_position_id = RUS_Con_Begin_Diplomacy_with_Bolsheviks
 		prerequisite = {
-			focus = RUS_Constitutional_7
+			focus = RUS_Con_Begin_Diplomacy_with_Bolsheviks
 		}
 		x = -1 y = 1
 		completion_reward = {
@@ -126,9 +133,9 @@ focus_tree = {
 		id = RUS_Constitutional_10
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_6
+		relative_position_id = RUS_Con_Begin_Stolypin_Reforms
 		prerequisite = {
-			focus = RUS_Constitutional_6
+			focus = RUS_Con_Begin_Stolypin_Reforms
 		}
 		x = 1 y = 1
 		completion_reward = {
@@ -150,7 +157,7 @@ focus_tree = {
 		id = RUS_Constitutional_12
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_5
+		relative_position_id = RUS_Con_The_Might_of_the_Duma
 		prerequisite = {
 			focus = RUS_Constitutional_13
 			focus = RUS_Constitutional_14
