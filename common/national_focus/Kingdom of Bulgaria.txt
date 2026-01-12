@@ -630,7 +630,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 3
+				level = 4
 			}
 		}
 	}
@@ -1037,6 +1037,170 @@ focus_tree = {
 					level = 4
 				}
 			}
+		}
+	}
+
+	#	War Time Focuses
+
+	focus = {
+		id = BUL_Vengeance_Will_Be_Ours
+		icon = GFX_focus_SWI_patriotic_shooting_clubs
+		cost = 1
+		x = 28
+		y = 0
+		available = {
+			date > 1915.10.14
+			has_war_with = SER
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = BUL_Vengeance_Fuels_Us
+				days = 70
+			}
+		}
+	}
+	focus = {
+		id = BUL_Germany_Leads_Us
+		icon = GFX_focus_GER_german_hegemony_in_the_middle_east_neutrality
+		cost = 5
+		relative_position_id = BUL_Vengeance_Will_Be_Ours
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BUL_Vengeance_Will_Be_Ours
+		}
+		completion_reward = {
+			add_ideas = BUL_Berlin_Aid
+		}
+	}
+	focus = {
+		id = BUL_Follow_Their_Lead
+		icon = GFX_focus_AUS_bring_generals_out_of_retirement
+		cost = 5
+		relative_position_id = BUL_Germany_Leads_Us
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BUL_Germany_Leads_Us
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_Berlin_Aid
+				add_idea = BUL_Berlin_Aid1
+			}
+		}
+	}
+	focus = {
+		id = BUL_Alter_The_Program
+		icon = GFX_focus_AUS_lawmaking_leniency
+		cost = 5
+		relative_position_id = BUL_Follow_Their_Lead
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = BUL_Follow_Their_Lead
+		}
+		completion_reward = {
+			remove_ideas = BUL_Berlin_Aid1
+			add_ideas = BUL_Berlin_Aid_Alt
+		}
+	}
+	focus = {
+		id = BUL_Revived_Nation
+		icon = GFX_focus_BUL_found_the_brannik
+		cost = 5
+		relative_position_id = BUL_Follow_Their_Lead
+		x = 0
+		y = 1
+		available = {
+			controls_state = 803
+			controls_state = 924
+			controls_state = 106
+			controls_state = 909
+		}
+		prerequisite = {
+			focus = BUL_Follow_Their_Lead
+		}
+		completion_reward = {
+			set_cosmetic_tag = BUL_Empire
+		}
+	}
+	focus = {
+		id = BUL_Divert_Resources
+		icon = GFX_focus_GER_factories_for_resources
+		cost = 5
+		relative_position_id = BUL_Revived_Nation
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BUL_Revived_Nation
+		}
+		completion_reward = {
+			803 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			924 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			106 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			909 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_Sieze_Pirot_Mines
+		icon = GFX_focus_CONGO_bakwanga_mine
+		cost = 5
+		relative_position_id = BUL_Divert_Resources
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BUL_Divert_Resources
+		}
+		completion_reward = {
+			803 = {
+				add_resource = {
+					type = steel
+					amount = 28
+				}
+				add_resource = {
+					type = tungsten
+					amount = 9
+				}
+			}
+		}
+	}
+	focus = {
+		id = BUL_Forced_Enlistment
+		icon = GFX_focus_FIN_parmis_devils
+		cost = 5
+		relative_position_id = BUL_Sieze_Pirot_Mines
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = BUL_Sieze_Pirot_Mines
+		}
+		completion_reward = {
+			add_ideas = BUL_To_The_Army_With_You
 		}
 	}
 }

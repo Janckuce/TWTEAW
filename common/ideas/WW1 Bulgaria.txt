@@ -4,9 +4,8 @@ ideas = {
 			picture = generic_agrarian_reform
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				production_factory_efficiency_gain_factor = -0.1
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
 			}
 		}
 		BUL_Prussia_Of_The_Balkans = {
@@ -258,6 +257,40 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.05
+			}
+		}
+		BUL_Vengeance_Fuels_Us = {
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		BUL_Berlin_Aid = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BUL_Berlin_Aid1 = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		BUL_Berlin_Aid_Alt = {
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				initiative_factor = 0.05
+				coordination_bonus = 0.05
+				land_night_attack = 0.05
+			}
+		}
+		BUL_To_The_Army_With_You = {
+			modifier = {
+				weekly_manpower = 500
 			}
 		}
 	}
