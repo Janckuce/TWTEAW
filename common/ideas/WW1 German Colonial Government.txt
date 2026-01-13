@@ -88,7 +88,7 @@ ideas = {
 			picture = generic_foreign_capital
 			modifier = {
 				weekly_manpower = 500
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 		GCG_Siezed_Land = {
@@ -136,10 +136,10 @@ ideas = {
 			picture = PER_iranian_oil_company
 			equipment_bonus = {
 				infantry_equipment = {
-					defense = 0.01
+					defense = 0.05
 				}
 				support_equipment = {
-					build_cost_ic = -0.012
+					build_cost_ic = -0.02
 				}
 			}
 		}
@@ -147,10 +147,10 @@ ideas = {
 			picture = PER_iranian_oil_company
 			equipment_bonus = {
 				infantry_equipment = {
-					defense = 0.02
+					defense = 0.1
 				}
 				support_equipment = {
-					build_cost_ic = -0.024
+					build_cost_ic = -0.05
 				}
 			}
 		}
@@ -158,10 +158,10 @@ ideas = {
 			picture = PER_iranian_oil_company
 			equipment_bonus = {
 				infantry_equipment = {
-					defense = 0.03
+					defense = 0.15
 				}
 				support_equipment = {
-					build_cost_ic = -0.036
+					build_cost_ic = -0.1
 				}
 			}
 		}
@@ -169,11 +169,11 @@ ideas = {
 			picture = PER_iranian_oil_company
 			equipment_bonus = {
 				infantry_equipment = {
-					defense = 0.03
-					soft_attack = 0.03
+					defense = 0.15
+					soft_attack = 0.05
 				}
 				support_equipment = {
-					build_cost_ic = -0.048
+					build_cost_ic = -0.15
 				}
 			}
 		}
