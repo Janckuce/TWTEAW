@@ -33,7 +33,8 @@ focus_tree = {
 			focus = Russia_democratic_1
 		}
 		completion_reward = { 
-
+			add_stability = 0.10
+			add_political_power = 80
 		}
 	}
 	focus = {
@@ -46,8 +47,11 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		mutually_exclusive = {
+			focus = Russia_monarchist_3
+		}
 		completion_reward = { 
-
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -60,7 +64,12 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		completion_reward = { }
+		mutually_exclusive = {
+			focus = Russia_monarchist_2
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = Russia_monarchist_4
@@ -69,10 +78,17 @@ focus_tree = {
 		relative_position_id = Russia_monarchist_1
 		prerequisite = {
 			focus = Russia_monarchist_2
+			focus = Russia_monarchist_3
 		}
-		x = -2
+		x = -1
 		y = 2
-		completion_reward = { }
+		mutually_exclusive = {
+			focus = Russia_monarchist_5
+		}
+		completion_reward = {
+			add_political_power = -60
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = Russia_monarchist_5
@@ -83,64 +99,68 @@ focus_tree = {
 			focus = Russia_monarchist_2
 			focus = Russia_monarchist_3
 		}
-		x = 0
+		x = 1
 		y = 2
-		completion_reward = { }
-	}
-	focus = {
-		id = Russia_monarchist_6
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
-		relative_position_id = Russia_monarchist_1
-		prerequisite = {
-			focus = Russia_monarchist_3
-		}
-		x = 2
-		y = 2
-		completion_reward = { }
-	}
-	focus = {
-		id = Russia_monarchist_7
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
-		relative_position_id = Russia_monarchist_1
-		prerequisite = {
+		mutually_exclusive = {
 			focus = Russia_monarchist_4
 		}
-		prerequisite = {
-			focus = Russia_monarchist_5
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
 		}
-		x = -1
-		y = 3
-		completion_reward = { }
 	}
-	focus = {
-		id = Russia_monarchist_8
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
-		relative_position_id = Russia_monarchist_1
-		prerequisite = {
-			focus = Russia_monarchist_5
-		}
-		prerequisite = {
-			focus = Russia_monarchist_6
-		}
-		x = 1
-		y = 3
-		completion_reward = { }
-	}
+	# focus = {
+	# 	id = Russia_monarchist_6
+	# 	icon = GFX_unit_guided_missile_icon_small_texticon
+	# 	cost = 5
+	# 	relative_position_id = Russia_monarchist_1
+	# 	prerequisite = {
+	# 		focus = Russia_monarchist_3
+	# 	}
+	# 	x = 2
+	# 	y = 2
+	# 	completion_reward = { }
+	# }
+	# focus = {
+	# 	id = Russia_monarchist_7
+	# 	icon = GFX_unit_guided_missile_icon_small_texticon
+	# 	cost = 5
+	# 	relative_position_id = Russia_monarchist_1
+	# 	prerequisite = {
+	# 		focus = Russia_monarchist_4
+	# 	}
+	# 	prerequisite = {
+	# 		focus = Russia_monarchist_5
+	# 	}
+	# 	x = -1
+	# 	y = 3
+	# 	completion_reward = { }
+	# }
+	# focus = {
+	# 	id = Russia_monarchist_8
+	# 	icon = GFX_unit_guided_missile_icon_small_texticon
+	# 	cost = 5
+	# 	relative_position_id = Russia_monarchist_1
+	# 	prerequisite = {
+	# 		focus = Russia_monarchist_5
+	# 	}
+	# 	prerequisite = {
+	# 		focus = Russia_monarchist_6
+	# 	}
+	# 	x = 1
+	# 	y = 3
+	# 	completion_reward = { }
+	# }
 	focus = {
 		id = RUS_Assassinate_Stolypin
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 2
+		cost = 5
 		relative_position_id = Russia_monarchist_1
 		x = 0
-		y = 4
+		y = 3
 		prerequisite = {
-			focus = Russia_monarchist_7
-		}
-		prerequisite = {
-			focus = Russia_monarchist_8
+			focus = Russia_monarchist_4
+			focus = Russia_monarchist_5
 		}
 		completion_reward = { 
 			load_focus_tree = RUS_Monarchist
