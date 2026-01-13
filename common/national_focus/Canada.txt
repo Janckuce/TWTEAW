@@ -502,7 +502,7 @@ focus_tree = {
 	focus = {
 		id = CAN_native_concessions
 		icon = GFX_SOV_reverse_the_collectivization_process_ccp_2d_sov_compatibility
-		cost = 10
+		cost = 7.2
 		x = 11
 		y = 3
 
@@ -511,6 +511,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = -35
+
 			swap_ideas = {
 				remove_idea = CAN_First_Reform
 				add_idea = CAN_Native_Consessions
@@ -521,7 +523,7 @@ focus_tree = {
 	focus = {
 		id = CAN_first_nations_rights
 		icon = GFX_focus_AUS_lawmaking_leniency
-		cost = 10
+		cost = 7.2
 		x = 11
 		y = 4
 
@@ -1019,7 +1021,7 @@ focus_tree = {
 	focus = {
 		id = CAN_a_new_heritage
 		icon = GFX_focus_generic_workers
-		cost = 10
+		cost = 7.2
 		x = 11
 		y = 5
 
@@ -1038,7 +1040,7 @@ focus_tree = {
 	focus = {
 		id = CAN_a_new_heritage2
 		icon = GFX_focus_generic_improve_the_administration
-		cost = 10
+		cost = 7.2
 		x = 13
 		y = 6
 
