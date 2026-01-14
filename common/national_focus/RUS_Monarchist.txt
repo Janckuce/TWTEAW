@@ -44,20 +44,167 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = MON_RUS_TsarCult
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 7.2
+		relative_position_id = MON_RUS_first_focus
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_first_focus
+		}
+		available = {
+
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_TsarFlag1
+
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Tsar1
+		icon = GFX_focus_POL_expand_polish_intelligence
+		cost = 14.4
+		relative_position_id = MON_RUS_TsarCult
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_TsarCult
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_TsarFlag1
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_TsarFlag1_days_tt
+				has_country_flag = {
+					flag = MON_RUS_TsarFlag1
+					days > 200
+				}
+			}
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_TsarFlag2
+			
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Tsar2
+		icon = GFX_focus_GRE_an_orthodox_state
+		cost = 14.4
+		relative_position_id = MON_RUS_TsarCult
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Tsar1
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_TsarFlag2
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_TsarFlag2_days_tt
+				has_country_flag = {
+					flag = MON_RUS_TsarFlag2
+					days > 200
+				}
+			}
+		}
+		completion_reward = {
+			tooltip = MON_RUS_TsarFlag3_days_tt
+			
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Tsar3
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 14.4
+		relative_position_id = MON_RUS_TsarCult
+		x = 0
+		y = 4
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Tsar2
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_TsarFlag3
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_TsarFlag3_days_tt
+				has_country_flag = {
+					flag = MON_RUS_TsarFlag3
+					days > 200
+				}
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin1
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 7.2
+		relative_position_id = MON_RUS_TsarCult
+		x = 4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_TsarCult
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stolpyn1
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 7.2
+		relative_position_id = MON_RUS_TsarCult
+		x = -4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_TsarCult
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
 
 	# Branch 3: Economy
 	# Start: Construction effort
 
 	focus = {
 		id = MON_RUS_Mills1
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_DEN_reorganize_sovaernet
 		cost = 2.9
 		relative_position_id = MON_RUS_first_focus
 		x = 10
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = MON_RUS_first_focus
+
 		}
 		available = {
 
@@ -86,7 +233,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Mills2
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_generic_army_artillery
 		cost = 2.9
 		relative_position_id = MON_RUS_Mills1
 		x = 0
@@ -129,7 +276,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Mills3
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_GER_kriegslokomotive
 		cost = 2.9
 		relative_position_id = MON_RUS_Mills1
 		x = 0
@@ -172,7 +319,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Mills4
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_GER_kdf_wagen
 		cost = 2.9
 		relative_position_id = MON_RUS_Mills1
 		x = 0
@@ -215,14 +362,14 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Mills5
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_RAJ_mountain_guns
 		cost = 2.9
-		relative_position_id = MON_RUS_Mills1
-		x = 0
-		y = 4
+		relative_position_id = MON_RUS_Mills2
+		x = 2
+		y = -1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = MON_RUS_Mills4
+
 		}
 		available = {
 			has_country_flag = {
@@ -258,11 +405,11 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Mills6
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_SOV_cohesion_first_ccp_2d_sov_compatibility
 		cost = 2.9
-		relative_position_id = MON_RUS_Mills1
+		relative_position_id = MON_RUS_Mills5
 		x = 0
-		y = 5
+		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = MON_RUS_Mills5
@@ -303,9 +450,9 @@ focus_tree = {
 		id = MON_RUS_Mills7
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 2.9
-		relative_position_id = MON_RUS_Mills1
+		relative_position_id = MON_RUS_Mills5
 		x = 0
-		y = 6
+		y = 2
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = MON_RUS_Mills6
@@ -344,11 +491,11 @@ focus_tree = {
 
 	focus = {					#50 Mills Total including this focus
 		id = MON_RUS_Mills8
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		cost = 2.9
-		relative_position_id = MON_RUS_Mills1
+		relative_position_id = MON_RUS_Mills5
 		x = 0
-		y = 7
+		y = 3
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = MON_RUS_Mills7
