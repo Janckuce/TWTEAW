@@ -15,7 +15,7 @@
 # Expansionist Foreign Policy gives combat bonuses against specific territorial claims like Prussia and Galicia
 # Short term War Economy gives mills and stockpiles in preperation for war
 
-# Hitting 0% Stability begins the Rapid Collapse of Russian Society And eventual collapse of the army
+# Hitting 0% Stability begins the Rapid Collapse of the army and eventual collapse of Russian Society (Russian Civil War procced)
 
 
 focus_tree = {
@@ -43,6 +43,9 @@ focus_tree = {
 
 		}
 	}
+
+
+	# Tsar Nicholas II Cult of Personality Branch
 
 	focus = {
 		id = MON_RUS_TsarCult
@@ -90,7 +93,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = MON_RUS_TsarFlag2
-			
+			add_stability = 0.15
 		}
 	}
 
@@ -120,7 +123,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			tooltip = MON_RUS_TsarFlag3_days_tt
-			
+			add_stability = 0.20
 		}
 	}
 
@@ -149,9 +152,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			add_stability = 0.25
 		}
 	}
+
+
+	# Rasputin Branch
 
 	focus = {
 		id = MON_RUS_Rasputin1
@@ -173,7 +179,54 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MON_RUS_Stolpyn1
+		id = MON_RUS_Rasputin2
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 7.2
+		relative_position_id = MON_RUS_Rasputin1
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Rasputin3
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Rasputin1
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin3
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 7.2
+		relative_position_id = MON_RUS_Rasputin1
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Rasputin2
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Rasputin1
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+
+	# Stolpin Branch
+
+	focus = {
+		id = MON_RUS_Stolpin1
 		icon = GFX_focus_SOV_patriarch_of_all_russia
 		cost = 7.2
 		relative_position_id = MON_RUS_TsarCult
@@ -191,17 +244,61 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = MON_RUS_Stolpin2
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 7.2
+		relative_position_id = MON_RUS_Stolpin1
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Stolpin3
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stolpin1
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stolpin3
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 7.2
+		relative_position_id = MON_RUS_Stolpin1
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Stolpin2
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stolpin1
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+
 
 	# Branch 3: Economy
 	# Start: Construction effort
 
 	focus = {
-		id = MON_RUS_Mills1
-		icon = GFX_focus_DEN_reorganize_sovaernet
-		cost = 2.9
-		relative_position_id = MON_RUS_first_focus
-		x = 10
-		y = 1
+		id = MON_RUS_Mills_Start
+		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
+		cost = 7.2
+		x = 20
+		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 
@@ -210,17 +307,36 @@ focus_tree = {
 
 		}
 		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills1
+		icon = GFX_focus_DEN_reorganize_sovaernet
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills_Start
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills_Start
+		}
+		available = {
+
+		}
+		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving1
 			195 = { # St. Petersburg
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 8
 
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -263,7 +379,7 @@ focus_tree = {
 
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 6
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -306,7 +422,7 @@ focus_tree = {
 
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 6
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -364,12 +480,12 @@ focus_tree = {
 		id = MON_RUS_Mills5
 		icon = GFX_focus_RAJ_mountain_guns
 		cost = 2.9
-		relative_position_id = MON_RUS_Mills2
-		x = 2
-		y = -1
+		relative_position_id = MON_RUS_Mills_Start
+		x = 1
+		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-
+			focus = MON_RUS_Mills_Start
 		}
 		available = {
 			has_country_flag = {
@@ -489,7 +605,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {					#50 Mills Total including this focus
+	focus = {					#54 Mills Total including this focus
 		id = MON_RUS_Mills8
 		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		cost = 2.9
@@ -529,6 +645,157 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+
+	# Spare Rifles Stockpiles
+
+	focus = {
+		id = MON_RUS_Stockpiles1
+		icon = GFX_focus_AUS_raid_military_storages
+		cost = 5
+		x = 15
+		y = 6
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		available = {
+
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_stockpile_withdrawal1
+
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 100
+				producer = RUS
+			}
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles2
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 0
+		y = 1
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles1
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_stockpile_withdrawal1
+				days > 180
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_stockpile_withdrawal1_days_tt
+				has_country_flag = {
+					flag = MON_RUS_stockpile_withdrawal1
+					days > 180
+				}
+			}
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_stockpile_withdrawal2
+
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 15000
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_2
+				amount = 15000
+				producer = RUS
+			}
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles3
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 0
+		y = 2
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles2
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_stockpile_withdrawal2
+				days > 180
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_stockpile_withdrawal2_days_tt
+				has_country_flag = {
+					flag = MON_RUS_stockpile_withdrawal2
+					days > 180
+				}
+			}
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_stockpile_withdrawal3
+
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 20000
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_2
+				amount = 20000
+				producer = RUS
+			}
+			add_stability = -0.03
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles4
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 0
+		y = 3
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles3
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_stockpile_withdrawal3
+				days > 180
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_stockpile_withdrawal3_days_tt
+				has_country_flag = {
+					flag = MON_RUS_stockpile_withdrawal3
+					days > 180
+				}
+			}
+		}
+		completion_reward = {			
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 25000
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_2
+				amount = 25000
+				producer = RUS
+			}
+			add_stability = -0.04
 		}
 	}
 
