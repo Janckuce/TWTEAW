@@ -732,6 +732,7 @@ focus_tree = {
 			TUR = {
 				division_template = {
 					name = "Jabalian Shammarians"
+					template_counter = 3
 
 					regiments = {
 						infantry = { x = 0 y = 0 }
@@ -743,6 +744,12 @@ focus_tree = {
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0}
+						artillery_brigade = { x = 3 y = 1}
+						artillery_brigade = { x = 3 y = 2}
+						artillery_brigade = { x = 4 y = 0}
+						artillery_brigade = { x = 4 y = 1}
+						artillery_brigade = { x = 4 y = 2}
 					}
 
 					support = {
@@ -753,7 +760,7 @@ focus_tree = {
 
 				797 = {
 					create_unit = {
-						division = "name = \"Jabalian Shammarians\" division_template = \"Jabalian Shammarians\" start_experience_factor = 1"
+						division = "name = \"Jabalian Shammarians\" division_template = \"Jabalian Shammarians\" start_experience_factor = 0.1"
 						owner = TUR
 						prioritize_location = 9833
 						allow_spawning_on_enemy_provs = yes
@@ -834,12 +841,7 @@ focus_tree = {
 			focus = YEM_Capitalise_On_Our_Successes
 		}
 		completion_reward = {
-			PER = {
-				add_timed_idea = {
-					idea = YEM_Sabotaged_Resources
-					days = 70
-				}
-			}
+			add_ideas = YEM_Combined_Training
 		}
 	}
 }

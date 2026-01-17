@@ -531,14 +531,15 @@ siege_artillery = {
             enable_tactic = tactic_barrage
             heavy_artillery_brigade = {
                 fort = {
-                    attack = 0.15
+                    attack = 0.10
                 }
+                soft_attack = 0.10
             }
         }
         improved_transport_preparation = {
             heavy_artillery_brigade = {
                 default_morale = 0.1
-                combat_width = -0.2
+                combat_width = -0.3
             }
         }
         precomputed_firing_data = {
@@ -551,15 +552,15 @@ siege_artillery = {
             enable_tactic = tactic_sf_barrage
             heavy_artillery_brigade = {
                 urban = {
-                    attack = 0.15
+                    attack = 0.25
                 }
-                soft_attack = 0.15
+                soft_attack = 0.10
             }
         }
         mobile_artillery_command = {
 			heavy_artillery_brigade = {
                 combat_width = -0.3
-                maximum_speed = 0.2
+                maximum_speed = 0.33
             }
         }
     }

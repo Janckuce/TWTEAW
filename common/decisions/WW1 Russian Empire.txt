@@ -383,34 +383,38 @@ RUS_Laboratories_Category = {
 }
 
 RUS_Military_Academy_Category = {
+
 	RUS_Army_Modernisation = {
 		priority = 1
 		days_remove = 80
 		cost = 100
 		allowed = {
-				RUS = {
-					or = {
+			tag = RUS
+		}
+		visible = {
+			or = {
+				has_completed_focus = RUS_Mass_Mobilise
+				has_completed_focus = RUS_Establish_Military_Academy
+			}
+			or = {
+				has_idea = RUS_Dated_Warfare1
+				has_idea = RUS_Dated_Warfare2
+				has_idea = RUS_Dated_Warfare3
+				has_idea = RUS_Dated_Warfare4
+				has_idea = RUS_Dated_Warfare5
+			}
+		}
+		available = {
+			RUS = { # wasn't supported in the allowed block, moved here
+				or = {
 					has_idea = RUS_Dated_Warfare1
 					has_idea = RUS_Dated_Warfare2
 					has_idea = RUS_Dated_Warfare3
 					has_idea = RUS_Dated_Warfare4
 					has_idea = RUS_Dated_Warfare5
-					}
 				}
 			}
-			visible = {
-				or = {
-					has_completed_focus = RUS_Mass_Mobilise
-					has_completed_focus = RUS_Establish_Military_Academy
-				}
-				or = {
-					has_idea = RUS_Dated_Warfare1
-					has_idea = RUS_Dated_Warfare2
-					has_idea = RUS_Dated_Warfare3
-					has_idea = RUS_Dated_Warfare4
-					has_idea = RUS_Dated_Warfare5
-				}
-			}
+		}
 		remove_effect = {
 			if = {
 				limit = {
@@ -459,6 +463,7 @@ RUS_Military_Academy_Category = {
 			}
 		}
 	}
+
 	RUS_Organised_Offensive = {
 		priority = 1
 		custom_cost_trigger = {
@@ -475,9 +480,10 @@ RUS_Military_Academy_Category = {
 				idea = RUS_Mobilise_The_Nation
 				days = 100
 			}
-			command_power = -25
+			add_command_power = -25
 		}
 	}
+
 	RUS_Mobilisation = {
 		priority = 1
 		custom_cost_trigger = {
@@ -494,7 +500,7 @@ RUS_Military_Academy_Category = {
 				idea = RUS_Brusilov_Offensive
 				days = 123
 			}
-			command_power = -25
+			add_command_power = -25
 		}
 	}
 }
@@ -514,7 +520,9 @@ RUS_Murmansk_Category = {
 		}
 		
 		available = {
-			ORO = {	has_country_flag = WW1_started_spectator }
+			ORO = {
+				has_country_flag = WW1_started_spectator
+			}
 			num_of_civilian_factories_available_for_projects > 2
 			owns_state = 213
 			controls_state = 213 # Murmansk

@@ -1,545 +1,606 @@
 missions = {
-Capture_Brussels = {
-	icon = "brussels_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
-			original_tag = GER
+
+	Capture_Brussels = {
+		icon = "brussels_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+				original_tag = GER
 		}
 		days_mission_timeout = 80
-	activation = {
-		AND = {
-			GER = { has_war_with = FRA }
-			GER = { has_war_with = BEL }
-		}
+		activation = {
+			AND = {
+				GER = { has_war_with = FRA }
+				GER = { has_war_with = BEL }
+			}
 		}
 		available = {
-			6 = { is_controlled_by = GER } # Brussels 
-		}
-		
-	complete_effect = {
-		GER = { 
-			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
+			6 = { # Brussels
+				is_controlled_by = GER
 			}
 		}
-	timeout_effect = {
-		GER = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
+		complete_effect = {
+			GER = {
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+		timeout_effect = {
+			GER = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
 			}
 		}
 	}
-Capture_Warsaw = {
-	icon = "warsaw_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Warsaw = {
+		icon = "warsaw_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = GER
 		}
 		days_mission_timeout = 80
-	activation = {
-		AND = {
-			GER = { has_war_with = RUS }
-			GER = { has_war_with = FRA }
+		activation = {
+			AND = {
+				GER = { has_war_with = RUS }
+				GER = { has_war_with = FRA }
+			}
+		}
+		available = {
+			10 = {  # Warsaw
+				is_controlled_by = GER
+			}
+		}
+		complete_effect = {
+			GER = {
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			RUS = {
+				add_political_power = -50
+				add_stability = -0.25
+				add_war_support = -0.25
+			}
+		}
+		timeout_effect = {
+			GER = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			RUS = {
+				add_political_power = 50
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 		}
 	}
-	available = {
-		10 = { is_controlled_by = GER } # Warsaw
-	}
-	complete_effect = {
-		GER = {
-			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
-		}
-		RUS = {
-			add_political_power = -50
-			add_stability = -0.25
-			add_war_support = -0.25
-		}
-	}
-	timeout_effect = {
-		GER = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-		RUS = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
-	}
-}
-Capture_Paris = {
-	icon = "paris_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Paris = {
+		icon = "paris_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = GER
 		}
 		days_mission_timeout = 140
-	activation = {
-		AND = {
-			GER = { has_war_with = FRA }
-			GER = { has_war_with = RUS }
+		activation = {
+			AND = {
+				GER = { has_war_with = FRA }
+				GER = { has_war_with = RUS }
+			}
+		}
+		available = {
+			16 = { # Paris
+				is_controlled_by = GER
+			}
+		}
+		complete_effect = {
+			GER = {
+				add_political_power = 100
+				add_stability = 0.25
+				add_war_support = 0.25
+			}
+			FRA = {
+				add_political_power = -50
+				add_stability = -0.25
+				add_war_support = -0.25
+			}
+		}
+		timeout_effect = {
+			GER = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			FRA = {
+				add_political_power = 50
+				add_stability = 0.5
+				add_war_support = 0.5
+			}
 		}
 	}
-	available = {
-		16 = { is_controlled_by = GER } # Paris
-	}
-	complete_effect = {
-		GER = {
-			add_political_power = 100
-			add_stability = 0.25
-			add_war_support = 0.25
-		}
-		FRA = {
-			add_political_power = -50
-			add_stability = -0.25
-			add_war_support = -0.25
-		}
-	}
-	timeout_effect = {
-		GER = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-		FRA = {
-			add_political_power = 50
-			add_stability = 0.5
-			add_war_support = 0.5
-		}
-	}
-}
-Capture_Koningsberg = {
-	icon = "konigsberg_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Koningsberg = {
+		icon = "konigsberg_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = RUS
 		}
 		days_mission_timeout = 80
-	activation = {
-		AND = {
-			GER = { has_war_with = RUS }
-			GER = { has_war_with = POL }
+		activation = {
+			AND = {
+				GER = { has_war_with = RUS }
+				GER = { has_war_with = POL }
+			}
+		}
+		available = {
+			763 = { # Königsberg
+				is_controlled_by = GER
+			}
+		}
+		complete_effect = {
+			RUS = {
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			GER = {
+				add_political_power = -50
+				add_stability = -0.25
+				add_war_support = -0.25
+			}
+		}
+		timeout_effect = {
+			RUS = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			GER = {
+				add_political_power = 50
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 		}
 	}
-	available = {
-		763 = { is_controlled_by = GER } # Königsberg
-	}
-	complete_effect = {
-		RUS = {
-			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
-		}
-		GER = {
-			add_political_power = -50
-			add_stability = -0.25
-			add_war_support = -0.25
-		}
-	}
-	timeout_effect = {
-		RUS = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-		GER = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
-	}
-}
-Capture_Krakow = {
-	icon = "krakow_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Krakow = {
+		icon = "krakow_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = RUS
 		}
 		days_mission_timeout = 80
-	activation = {
-		AND = {
-			RUS = { has_war_with = AUS }
-			RUS = { has_war_with = GER }
+		activation = {
+			AND = {
+				RUS = { has_war_with = AUS }
+				RUS = { has_war_with = GER }
+			}
+		}
+		available = {
+			88 = { # Krakow
+				is_controlled_by = RUS
+			}
+		}
+		complete_effect = {
+			RUS = {
+				add_political_power = 100
+				add_stability = 0.15
+				add_war_support = 0.15
+			}
+			AUS = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+		timeout_effect = {
+			RUS = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			AUS = {
+				add_political_power = 50
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 		}
 	}
-	available = {
-		88 = { is_controlled_by = RUS } # Krakow
-	}
-	complete_effect = {
-		RUS = {
-			add_political_power = 100
-			add_stability = 0.15
-			add_war_support = 0.15
-		}
-		AUS = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-	}
-	timeout_effect = {
-		RUS = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-		AUS = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
-	}
-}
-Capture_Lwow = {
-	icon = "lvov_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Lwow = {
+		icon = "lvov_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = RUS
 		}
 		days_mission_timeout = 80
-	activation = {
-		AND = {
-			RUS = { has_war_with = AUS }
-			RUS = { has_war_with = GER }
+		activation = {
+			AND = {
+				RUS = { has_war_with = AUS }
+				RUS = { has_war_with = GER }
+			}
+		}
+		available = {
+			91 = { # Lwow
+				is_controlled_by = RUS
+			}
+		}
+		complete_effect = {
+			RUS = {
+				add_political_power = 100
+				add_stability = 0.15
+				add_war_support = 0.15
+			}
+			AUS = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+		timeout_effect = {
+			RUS = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			AUS = {
+				add_political_power = 50
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 		}
 	}
-	available = {
-		91 = { is_controlled_by = RUS } # Lwow
-	}
-	complete_effect = {
-		RUS = {
-			add_political_power = 100
-			add_stability = 0.15
-			add_war_support = 0.15
-		}
-		AUS = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-	}
-	timeout_effect = {
-		RUS = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-		AUS = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
-	}
-}
-Capture_Metz = {
-	icon = "metz_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Metz = {
+		icon = "metz_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = FRA
 		}
 		days_mission_timeout = 80
-	activation = {
+		activation = {
 			FRA = { has_war_with = GER }
-	}
-	available = {
-		28 = { is_controlled_by = FRA } # Metz
-	}
-	complete_effect = {
-		FRA = {
-			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
 		}
-		GER = {
-			add_political_power = -50
-			add_stability = -0.15
-			add_war_support = -0.15
+		available = {
+			28 = { # Metz
+				is_controlled_by = FRA
+			}
 		}
-		RUS = {
-		if = {
-			limit = {
-				has_idea = RUS_Dated_Warfare
+		complete_effect = {
+			FRA = {
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.05
 			}
-		swap_ideas = {
-			remove_idea = RUS_Dated_Warfare
-			add_idea = RUS_Dated_Warfare1
+			GER = {
+				add_political_power = -50
+				add_stability = -0.15
+				add_war_support = -0.15
 			}
-		} else if = {
-			limit = {
-				has_idea = RUS_Dated_Warfare1
-			}
-		swap_ideas = {
-			remove_idea = RUS_Dated_Warfare1
-			add_idea = RUS_Dated_Warfare2
-			}
-			} else if = {
-			limit = {
-				has_idea = RUS_Dated_Warfare2
-			}
-		swap_ideas = {
-			remove_idea = RUS_Dated_Warfare2
-			add_idea = RUS_Dated_Warfare3
-			}
-			} else if = {
-			limit = {
-				has_idea = RUS_Dated_Warfare3
-			}
-		swap_ideas = {
-			remove_idea = RUS_Dated_Warfare3
-			add_idea = RUS_Dated_Warfare4
-			}
-			} else if = {
-			limit = {
-				has_idea = RUS_Dated_Warfare4
-			}
-		swap_ideas = {
-			remove_idea = RUS_Dated_Warfare4
-			add_idea = RUS_Dated_Warfare5
-			}
-			} else if = {
-			limit = {
-				has_idea = RUS_Dated_Warfare5
-			}
-				remove_ideas = RUS_Dated_Warfare5
+			RUS = {
+				if = {
+					limit = {
+						has_idea = RUS_Dated_Warfare
+					}
+					swap_ideas = {
+						remove_idea = RUS_Dated_Warfare
+						add_idea = RUS_Dated_Warfare1
+					}
+				} else_if = {
+					limit = {
+						has_idea = RUS_Dated_Warfare1
+					}
+					swap_ideas = {
+						remove_idea = RUS_Dated_Warfare1
+						add_idea = RUS_Dated_Warfare2
+					}
+				} else_if = {
+					limit = {
+						has_idea = RUS_Dated_Warfare2
+					}
+					swap_ideas = {
+						remove_idea = RUS_Dated_Warfare2
+						add_idea = RUS_Dated_Warfare3
+					}
+				} else_if = {
+					limit = {
+						has_idea = RUS_Dated_Warfare3
+					}
+					swap_ideas = {
+						remove_idea = RUS_Dated_Warfare3
+						add_idea = RUS_Dated_Warfare4
+					}
+				} else_if = {
+					limit = {
+						has_idea = RUS_Dated_Warfare4
+					}
+				swap_ideas = {
+					remove_idea = RUS_Dated_Warfare4
+					add_idea = RUS_Dated_Warfare5
+					}
+				} else_if = {
+					limit = {
+						has_idea = RUS_Dated_Warfare5
+					}
+					remove_ideas = RUS_Dated_Warfare5
 				}
 			}
 		}
-	timeout_effect = {
-		FRA = {
-			add_political_power = -50
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-		GER = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_war_support = 0.05
+		timeout_effect = {
+			FRA = {
+				add_political_power = -50
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+			GER = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
 		}
 	}
-}
-Capture_Edirne = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	allowed = {
+
+	Capture_Edirne = {
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		allowed = {
 			original_tag = BUL
 		}
 		days_mission_timeout = 30
-	activation = {
-		AND = {
-			BUL = { is_in_faction_with = SER }
-			BUL = { has_war_with = TUR }
+		activation = {
+			AND = {
+				BUL = { is_in_faction_with = SER }
+				BUL = { has_war_with = TUR }
+			}
 		}
+		available = { # Edirne
+			341 = {
+				is_controlled_by = BUL
+			}
 		}
-		available = {
-			341 = { is_controlled_by = BUL } # Edirne
-		}
-	complete_effect = {
-		BUL = {
-			48 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 5
+		complete_effect = {
+			BUL = {
+				48 = { # Sofia
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+					}
 				}
 			}
 		}
-	}
-	timeout_effect = {
-		BUL = {
-			activate_mission = Capture_Edirne_2
+		timeout_effect = {
+			BUL = {
+				activate_mission = Capture_Edirne_2
+				}
 			}
 		}
-	}
+
 	Capture_Edirne_2 = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	activation = {
-		always = no
-	}
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		activation = {
+			always = no
+		}
 		days_mission_timeout = 30
 		available = {
-			341 = { is_controlled_by = BUL } # Edirne
+			341 = { # Edirne
+				is_controlled_by = BUL
+			}
 		}
-	complete_effect = {
-		BUL = {
-			48 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 3
+		complete_effect = {
+			BUL = {
+				48 = { # Sofia
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			BUL = {
+				activate_mission = Capture_Edirne_3
+			}
+		}
+	}
+
+	Capture_Edirne_3 = {
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		is_good = no
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 30
+		available = {
+			341 = { # Edirne
+				is_controlled_by = BUL
+			}
+		}
+		complete_effect = {
+			BUL = {
+				48 = { # Sofia
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
 				}
 			}
 		}
 	}
-	timeout_effect = {
-		BUL = {
-			activate_mission = Capture_Edirne_3
+	Hold_Edirne = {
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+			original_tag = TUR
+		}
+		days_mission_timeout = 30
+		activation = {
+			AND = {
+				TUR = {
+					has_war_with = BUL
+				}
+				TUR = {
+					has_war_with = SER
+				}
+				TUR = {
+					has_war_with = GRE
+				}
 			}
 		}
-	}
-	Capture_Edirne_3 = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	is_good = no
-	activation = {
-		always = no
-	}
-		days_mission_timeout = 30
 		available = {
-			341 = { is_controlled_by = BUL } # Edirne
+			341 = { # Edirne
+				is_controlled_by = BUL
+			}
 		}
-	complete_effect = {
-		BUL = {
-			48 = {
-				add_building_construction = {
-					type = arms_factory
+		complete_effect = {
+			TUR = {
+				add_political_power = -100
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+		timeout_effect = {
+			TUR = {
+				add_ideas = TUR_Lose_Balkan_War_Hurry1
+				add_offsite_building = {
+					type = industrial_complex
 					level = 1
 				}
+				activate_mission = Hold_Edirne2
 			}
 		}
 	}
-}
-	Hold_Edirne = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	allowed = {
-			original_tag = TUR
-		}
-		days_mission_timeout = 30
-	activation = {
-		AND = {
-			TUR = { has_war_with = BUL }
-			TUR = { has_war_with = SER }
-			TUR = { has_war_with = GRE }
-			}
-		}
-		available = {
-			341 = { is_controlled_by = BUL } # Edirne
-		}
-	complete_effect = {
-		TUR = {
-			add_political_power = -100
-			add_stability = -0.05
-			add_war_support = -0.05
-		}
-	}
-	timeout_effect = {
-		TUR = { add_ideas = TUR_Lose_Balkan_War_Hurry1 }
-		add_offsite_building = { type = industrial_complex level = 1 }
-		activate_mission = Hold_Edirne2
-		}
-	}
+
 	Hold_Edirne2 = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	allowed = {
-			original_tag = TUR
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		allowed = {
+				original_tag = TUR
+			}
+			days_mission_timeout = 30
+		activation = {
+			always = no
+			}
+			available = {
+				341 = { is_controlled_by = BUL } # Edirne
+			}
+		complete_effect = {
+			TUR = {
+				add_political_power = -75
+				add_stability = -0.025
+				add_war_support = -0.025
+			}
 		}
-		days_mission_timeout = 30
-	activation = {
-		always = no
-		}
-		available = {
-			341 = { is_controlled_by = BUL } # Edirne
-		}
-	complete_effect = {
-		TUR = {
-			add_political_power = -75
-			add_stability = -0.025
-			add_war_support = -0.025
-		}
-	}
-	timeout_effect = {
-		TUR = { swap_ideas = {
-			remove_idea = TUR_Lose_Balkan_War_Hurry1
-			add_idea = TUR_Lose_Balkan_War_Hurry2
-		}   
-		add_offsite_building = { type = industrial_complex level = 1 }
+		timeout_effect = {
+			TUR = {
+				swap_ideas = {
+					remove_idea = TUR_Lose_Balkan_War_Hurry1
+					add_idea = TUR_Lose_Balkan_War_Hurry2
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
 				activate_mission = Hold_Edirne3
 			}
 		}
 	}
-		Hold_Edirne3 = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	allowed = {
+
+	Hold_Edirne3 = {
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		allowed = {
 			original_tag = TUR
 		}
 		days_mission_timeout = 30
-	activation = {
-		always = no
+		activation = {
+			always = no
 		}
 		available = {
-			341 = { is_controlled_by = BUL } # Edirne
+			341 = { # Edirne
+				is_controlled_by = BUL
+			}
 		}
-	complete_effect = {
-		TUR = {
-			add_political_power = -25
-			add_stability = -0.01
-			add_war_support = -0.01
+		complete_effect = {
+			TUR = {
+				add_political_power = -25
+				add_stability = -0.01
+				add_war_support = -0.01
+			}
 		}
-	}
-	timeout_effect = {
-		TUR = { swap_ideas = {
-			remove_idea = TUR_Lose_Balkan_War_Hurry2
-			add_idea = TUR_Lose_Balkan_War_Hurry3
-		}   
-		add_offsite_building = { type = industrial_complex level = 1 }
+		timeout_effect = {
+			TUR = {
+				swap_ideas = {
+					remove_idea = TUR_Lose_Balkan_War_Hurry2
+					add_idea = TUR_Lose_Balkan_War_Hurry3
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
 				activate_mission = Hold_Edirne4
+				}
 			}
 		}
-	}
+
 	Hold_Edirne4 = {
-	icon = "edirne_icon.png"
-	priority = 1
-	fire_only_once = yes
-	allowed = {
+		icon = "edirne_icon.png"
+		priority = 1
+		fire_only_once = yes
+		allowed = {
 			original_tag = TUR
 		}
 		days_mission_timeout = 30
-	activation = {
+		activation = {
 		always = no
 		}
 		available = {
-			341 = { is_controlled_by = BUL } # Edirne
-		}
-	complete_effect = {
-		TUR = {
-			    country_event = ww1_ottoman.3
-			}
-	}
-	timeout_effect = {
-		add_offsite_building = { type = industrial_complex level = 1 }
-				TUR = {
-			    country_event = ww1_ottoman.3
+			341 = { # Edirne
+				is_controlled_by = BUL
 			}
 		}
+		complete_effect = {
+			TUR = {
+				country_event = ww1_ottoman.3
+			}
+		}
+		timeout_effect = {
+			TUR = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				country_event = ww1_ottoman.3
+			}
+		}
 	}
+
 	take_sofia = {
 		icon = "sofia_icon.png"
 		priority = 1
@@ -547,33 +608,49 @@ Capture_Edirne = {
 		is_good = no
 		allowed = {
 			OR = {
-			original_tag = SER
-			original_tag = GRE
-			original_tag = MON
-			original_tag = ROM
-			original_tag = TUR
+				original_tag = SER
+				original_tag = GRE
+				original_tag = MON
+				original_tag = ROM
+				original_tag = TUR
 			}
 		}
 		days_mission_timeout = 30
 		activation = {
 			AND = {
-				BUL = { has_war_with = SER }
-				BUL = { has_war_with = GRE }
-				SER = { is_in_faction_with = GRE }
+				BUL = {
+					has_war_with = SER
+				}
+				BUL = {
+					has_war_with = GRE
+				}
+				SER = {
+					is_in_faction_with = GRE
+				}
 			}
 		}
 		available = {
-			or = {
-				48 = { is_controlled_by = SER } # Sofia
-				48 = { is_controlled_by = GRE } # Sofia
-				48 = { is_controlled_by = MON } # Sofia
-				48 = { is_controlled_by = ROM } # Sofia
+			OR = {
+				48 = { # Sofia
+					is_controlled_by = SER
+				}
+				48 = { # Sofia
+					is_controlled_by = GRE
+				}
+				48 = { # Sofia
+					is_controlled_by = MON
+				}
+				48 = { # Sofia
+					is_controlled_by = ROM
+				}
 				if = {
-					limit = { 
+					limit = {
 						original_tag = TUR
 						TUR = { has_war_with = BUL }
 					}
-					48 = { is_controlled_by = TUR } # Sofia
+					48 = { # Sofia
+						is_controlled_by = TUR
+					}
 				}
 			}
 		}
@@ -599,9 +676,11 @@ Capture_Edirne = {
 				add_war_support = 0.05
 			}
 			if = {
-				limit = { 
+				limit = {
 					original_tag = TUR
-					TUR = { has_war_with = BUL }
+					TUR = {
+						has_war_with = BUL
+					}
 				}
 				TUR = {
 					add_political_power = 50
@@ -632,9 +711,11 @@ Capture_Edirne = {
 				add_war_support = -0.05
 			}
 			if = {
-				limit = { 
+				limit = {
 					original_tag = TUR
-					TUR = { has_war_with = BUL }
+					TUR = {
+						has_war_with = BUL
+					}
 				}
 				TUR = {
 					add_political_power = -50
@@ -644,6 +725,7 @@ Capture_Edirne = {
 			}
 		}
 	}
+
 	Take_Suez = {
 		icon = "Suez_icon.png"
 		priority = 1
@@ -652,8 +734,8 @@ Capture_Edirne = {
 		activation = {
 			TUR = {
 				AND = {
-				has_war_with = ENG
-				has_completed_focus = TUR_Focus_On_Britain
+					has_war_with = ENG
+					has_completed_focus = TUR_Focus_On_Britain
 				}
 			}
 		}
@@ -664,55 +746,55 @@ Capture_Edirne = {
 		}
 		complete_effect = {
 			TUR = {
-			add_timed_idea = { idea = TUR_Took_Suez days = 180 }
+				add_timed_idea = {
+					idea = TUR_Took_Suez
+					days = 180
+				}
 			}
 		}
 		days_mission_timeout = 60
 	}
+
 	Take_Belgrade_Mission = {
 		priority = 100
 		icon = GFX_decision_generic_factory
 		days_mission_timeout = 70
 		fire_only_once = yes
 		is_good = no
-
 		allowed = {
 			always = no
 		}
-
 		available = {
 			AUS = {
 				controls_province = 11586
 			}
 		}
-
 		timeout_effect = {
 			remove_ideas = AUS_Take_Belgrade
 			add_war_support = -0.2
 		}
 	}
+
 	Take_Venice_Mission = {
 		priority = 100
 		icon = GFX_decision_generic_factory
 		days_mission_timeout = 70
 		fire_only_once = yes
 		is_good = no
-
 		allowed = {
 			always = no
 		}
-
 		available = {
 			AUS = {
 				controls_province = 11584
 			}
 		}
-
 		timeout_effect = {
 			remove_ideas = AUS_Take_Venice
 			add_war_support = -0.2
 		}
 	}
+
 	Take_Warsaw_Mission = {
 		priority = 1
 		icon = GFX_decision_generic_factory
@@ -724,43 +806,46 @@ Capture_Edirne = {
 		}
 		activation = {
 			AUS = { has_war_with = RUS }
-	    }
-
+		}
 		available = {
-		or = {
-			10 = { is_controlled_by = AUS  } # Warsaw
-			10 = { is_controlled_by = GER  } # Warsaw
-		    }
-	    }
+			or = {
+				10 = { # Warsaw
+					is_controlled_by = AUS
+				}
+				10 = { # Warsaw
+					is_controlled_by = GER
+				}
+			}
+		}
+		complete_effect = {
+			AUS = {
+				add_political_power = 100
+				add_stability = 0.05
+				add_war_support = 0.05
+				add_manpower = 50000
+			}
+			RUS = {
+				add_political_power = -50
+				add_stability = -0.15
+				add_war_support = -0.15
+			}
+		}
+		timeout_effect = {
+			AUS = {
+				add_political_power = -100
+				add_stability = -0.10
+				add_war_support = -0.10
+				add_timed_idea = {
+					idea = AUS_Failed_Warsaw_Mission
+					days = 90
+				}
+			}
+			RUS = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+	}
 
-	    complete_effect = {
-		AUS = {
-			add_political_power = 100
-			add_stability = 0.05
-			add_war_support = 0.05
-			add_manpower = 50000
-		}
-		RUS = {
-			add_political_power = -50
-			add_stability = -0.15
-			add_war_support = -0.15
-		}
-	}
-	    timeout_effect = {
-		AUS = {
-			add_political_power = -100
-			add_stability = -0.10
-			add_war_support = -0.10
-			add_timed_idea = { 
-				idea = AUS_Failed_Warsaw_Mission 
-				days = 90 
-			}
-		}
-		RUS = {
-			add_political_power = 50
-			add_stability = 0.05
-			add_war_support = 0.05
-			}
-		}
-	}
 }

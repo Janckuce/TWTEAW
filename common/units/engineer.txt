@@ -55,6 +55,15 @@ sub_units = {
 			add = yes
 		}
 
+		battalion_mult = {
+			category = category_line_artillery
+			max_organisation = 20
+			default_morale = 0.05
+			max_strength = 2
+			add = yes
+		}
+		
+
 				
 		defense = 0.1
 		breakthrough = 0.5
@@ -73,20 +82,20 @@ sub_units = {
 
 		can_be_parachuted = yes
 		forest = {
-			defence = 0.25
+			# defence = 0.25
 			movement = 0.05
 		}
 
 		hills = {
-			defence = 0.1
+			# defence = 0.1
 		}
 
 		jungle = {
-			defence = 0.25
+			# defence = 0.25
 		}
 
 		marsh = {
-			defence = 0.25
+			# defence = 0.25
 			movement = 0.2
 		}
 
