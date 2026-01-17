@@ -94,7 +94,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Con_Begin_Diplomacy_with_Bolsheviks
+		id = RUS_Con_Begin_Diplomacy_with_Mensheviks
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
 		relative_position_id = RUS_Con_The_Might_of_the_Duma
@@ -106,31 +106,31 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_8
+		id = RUS_Con_Give_Concessions_to_Axelrod
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Con_Begin_Diplomacy_with_Bolsheviks
+		relative_position_id = RUS_Con_Begin_Diplomacy_with_Mensheviks
 		prerequisite = {
-			focus = RUS_Con_Begin_Diplomacy_with_Bolsheviks
+			focus = RUS_Con_Begin_Diplomacy_with_Mensheviks
 		}
 		x = -1 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_9
+		id = RUS_Con_Finalize_The_Agreement
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_8
+		relative_position_id = RUS_Con_Give_Concessions_to_Axelrod
 		prerequisite = {
-			focus = RUS_Constitutional_8
+			focus = RUS_Con_Give_Concessions_to_Axelrod
 		}
 		x = 0 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_10
+		id = RUS_Con_Introduce_Cooperative_Initiatives
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
 		relative_position_id = RUS_Con_Begin_Stolypin_Reforms
@@ -142,55 +142,55 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_11
+		id = RUS_Con_Reduce_former_Serfs_Debt
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_10
+		relative_position_id = RUS_Con_Introduce_Cooperative_Initiatives
 		prerequisite = {
-			focus = RUS_Constitutional_10
+			focus = RUS_Con_Introduce_Cooperative_Initiatives
 		}
 		x = 0 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_12
+		id = RUS_Con_End_of_The_Infighting
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
 		relative_position_id = RUS_Con_The_Might_of_the_Duma
 		prerequisite = {
-			focus = RUS_Constitutional_13
-			focus = RUS_Constitutional_14
+			focus = RUS_Con_Limit_Their_Influence
+			focus = RUS_Con_Overshadow_Stolypin
 		}
 		x = 0 y = 5
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_13
+		id = RUS_Con_Limit_Their_Influence
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_11
+		relative_position_id = RUS_Con_Reduce_former_Serfs_Debt
 		mutually_exclusive = {
 			focus = RUS_Constitutional_14
 		}
 		prerequisite = {
-			focus = RUS_Constitutional_11
+			focus = RUS_Con_Reduce_former_Serfs_Debt
 		}
 		x = 0 y = 1
 		completion_reward = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_14
+		id = RUS_Con_Overshadow_Stolypin
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_9
+		relative_position_id = RUS_Con_Finalize_The_Agreement
 		mutually_exclusive = {
-			focus = RUS_Constitutional_13
+			focus = RUS_Con_Limit_Their_Influence
 		}
 		prerequisite = {
-			focus = RUS_Constitutional_9
+			focus = RUS_Con_Finalize_The_Agreement
 		}
 		x = 0 y = 1
 		completion_reward = {
