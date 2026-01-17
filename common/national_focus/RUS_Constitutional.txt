@@ -24,16 +24,16 @@ focus_tree = {
 
 	focus = {
 		id = RUS_Con_Power_through_Constitution
-		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		icon = GFX_goal_Power_Through_Constitution
+		cost = 2
 		x = 5 y = 1
-		completion_reward = {
+		completion_reward = { 
 		}
 	}
 	focus = {
 		id = RUS_Con_Remove_the_Manipulator
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 2
 		relative_position_id = RUS_Con_Power_through_Constitution
 		prerequisite = {
 			focus = RUS_Con_Power_through_Constitution
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Con_Removal_Of_Corrupt_Autocrats
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = RUS_Con_Remove_the_Manipulator
 		prerequisite = {
 			focus = RUS_Con_Remove_the_Manipulator
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Con_Favour_Grand_Duke_Michael
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = RUS_Con_Remove_the_Manipulator
 		prerequisite = {
 			focus = RUS_Con_Remove_the_Manipulator
@@ -69,7 +69,7 @@ focus_tree = {
 	focus = {
 		id = RUS_Con_The_Might_of_the_Duma
 		icon = GFX_unit_guided_missile_icon_small_texticon
-		cost = 5
+		cost = 7.2
 		relative_position_id = RUS_Con_Removal_Of_Corrupt_Autocrats
 		prerequisite = {
 			focus = RUS_Con_Removal_Of_Corrupt_Autocrats
@@ -89,7 +89,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_Con_The_Might_of_the_Duma
 		}
-		x = 1 y = 1
+		x = 2 y = 1
 		completion_reward = {
 		}
 	}
@@ -101,7 +101,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_Con_The_Might_of_the_Duma
 		}
-		x = -1 y = 1
+		x = -2 y = 1
 		completion_reward = {
 		}
 	}
@@ -197,35 +197,50 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_15
+		id = RUS_Con_Catching_Up_With_Western_Technology
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		x = 8 y = 1
+		relative_position_id = RUS_Con_The_Might_of_the_Duma
+		x = 0 y = 1
 		completion_reward = {
+		swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists
+				add_idea = RUS_Lack_Of_Scientists2
+			}
+		}
+		prerequisite = {
+			focus = RUS_Con_The_Might_of_the_Duma
 		}
 	}	
 	focus = {
-		id = RUS_Constitutional_16
+		id = RUS_Con_Give_Research_Grants
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_15
+		relative_position_id = RUS_Con_Catching_Up_With_Western_Technology
 		prerequisite = {
-			focus = RUS_Constitutional_15
+			focus = RUS_Con_Catching_Up_With_Western_Technology
 		}
 		x = 0 y = 1
 		completion_reward = {
+		swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists2
+				add_idea = RUS_Lack_Of_Scientists3
+			}
 		}
 	}
 	focus = {
-		id = RUS_Constitutional_17
+		id = RUS_Con_Power_of_Russian_Science
 		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = RUS_Constitutional_16
+		relative_position_id = RUS_Con_Give_Research_Grants
 		prerequisite = {
-			focus = RUS_Constitutional_16
+			focus = RUS_Con_Give_Research_Grants
 		}
 		x = 0 y = 1
 		completion_reward = {
+			remove_ideas = { RUS_Lack_Of_Scientists3
+			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
