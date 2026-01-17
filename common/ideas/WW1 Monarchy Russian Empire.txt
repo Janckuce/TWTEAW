@@ -1,0 +1,373 @@
+ideas = {
+
+	country = { 
+	
+		RUS_military_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			picture = GER_economy_of_conquest
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.25
+			}
+		}
+
+		RUS_military_economic_burden_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+			}
+		}
+
+		RUS_military_economic_burden_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+			}
+		}
+
+		RUS_military_economic_burden_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+			}
+		}
+
+		RUS_military_economic_burden_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+
+		RUS_military_economic_burden_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+
+		RUS_military_economic_burden_6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		RUS_military_economic_burden_7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		RUS_military_economic_burden_8 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		RUS_stolpyn_reforms_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.01
+			}
+		}
+
+		RUS_stolpyn_reforms_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.02
+			}
+		}
+
+		RUS_stolpyn_reforms_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.03
+			}
+		}
+
+
+		RUS_cavalry_charge = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_afghanistan_bank
+
+			modifier = {
+				cavalry_attack_factor = 0.12
+				cavalry_defence_factor = -0.06
+			}
+		}
+		
+	}
+
+}
