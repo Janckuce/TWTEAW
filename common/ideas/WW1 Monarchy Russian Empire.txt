@@ -2,7 +2,7 @@ ideas = {
 
 	country = { 
 	
-		RUS_military_economy = {
+		RUS_extractative_eco = {
 
 			allowed = {
 				always = no
@@ -23,10 +23,10 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = GER_economy_of_conquest
+			picture = ARG_resource_extration_focus
 			
 			modifier = {
-				conversion_cost_civ_to_mil_factor = -0.25
+				local_resources_factor = 0.15
 			}
 		}
 
@@ -278,34 +278,6 @@ ideas = {
             picture = generic_economic_increase
 			
 			modifier = {
-				consumer_goods_expected_value = -0.01
-			}
-		}
-
-		RUS_stolpyn_reforms_2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
-			removal_cost = -1
-			
-            picture = generic_economic_increase
-			
-			modifier = {
 				consumer_goods_expected_value = -0.02
 			}
 		}
@@ -334,7 +306,35 @@ ideas = {
             picture = generic_economic_increase
 			
 			modifier = {
-				consumer_goods_expected_value = -0.03
+				consumer_goods_expected_value = -0.04
+			}
+		}
+
+		RUS_stolpyn_reforms_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.06
 			}
 		}
 
