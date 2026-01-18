@@ -76,6 +76,7 @@ focus_tree = {
 			set_cosmetic_tag = AUS_Empire
 		}
 	}
+
 	focus = {
 		id = AUS_Austrian_Storm
 		icon = GFX_focus_PER_wether_the_storm
@@ -93,6 +94,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Invincible_Army
 		icon = GFX_focus_GER_german_army_invincible
@@ -110,6 +112,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Totaler_Krieg
 		icon = GFX_focus_generic_total_war
@@ -148,6 +151,7 @@ focus_tree = {
 			set_cosmetic_tag = AUS_Federation
 		}
 	}
+
 	focus = {
 		id = AUS_Uniting_The_Populus
 		icon = GFX_focus_AUS_heeding_the_call_of_duty
@@ -165,6 +169,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_The_People_Of_Austira
 		icon = GFX_focus_AUS_legitimistische_jugend
@@ -182,6 +187,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Rat_Fighting
 		icon = GFX_focus_AUS_frontmiliz_focus
@@ -234,6 +240,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_PP2
 		icon = GFX_focus_BRA_cafe_com_leite_politics
@@ -251,6 +258,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_PP3
 		icon = GFX_focus_NOR_broken_gun_policies
@@ -268,6 +276,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_PP4
 		icon = GFX_focus_POL_habsburg
@@ -285,6 +294,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_PP5
 		icon = GFX_focus_POL_end_the_regency
@@ -304,6 +314,7 @@ focus_tree = {
 			activate_mission = AUS_Incoming_Reform
 		}
 	}
+
 	focus = {
 		id = AUS_PP6
 		icon = GFX_focus_GER_weltpolitik
@@ -312,13 +323,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			has_idea = AUS_United_Nation
-			hidden_trigger = {
-				or = {
-					has_idea = AUS_United_Nation
-					has_idea = AUS_United_Nation1
-					has_idea = AUS_United_Nation2
-				}
+			#has_idea = AUS_United_Nation
+			or = {
+				has_idea = AUS_United_Nation
+				has_idea = AUS_United_Nation1
+				has_idea = AUS_United_Nation2
 			}
 		}
 		prerequisite = {
@@ -348,6 +357,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Left1
 		icon = GFX_focus_generic_industry_1
@@ -372,6 +382,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Left2
 		icon = GFX_focus_generic_industry_2
@@ -396,6 +407,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Left3
 		icon = GFX_focus_generic_industry_3
@@ -420,6 +432,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Centre1
 		icon = GFX_focus_RAJ_special_economic_zones
@@ -438,6 +451,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Centre2
 		icon = GFX_focus_AFG_a_modern_economy
@@ -452,6 +466,7 @@ focus_tree = {
 			remove_ideas = AUS_Economic_Crisis2
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Right1
 		icon = GFX_focus_generic_military_academy
@@ -472,6 +487,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Right2
 		icon = GFX_focus_generic_military_industry
@@ -492,6 +508,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Right3
 		icon = GFX_goal_generic_construct_mil_factory
@@ -512,6 +529,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Main_Left
 		icon = GFX_focus_AUS_apprentice_programmes
@@ -529,6 +547,7 @@ focus_tree = {
 			add_ideas = AUS_Austrian_Economic_Plan
 		}
 	}
+
 	focus = {
 		id = AUS_Economic_Plan_Main_Right
 		icon = GFX_focus_HUN_establish_the_second_republic
@@ -546,6 +565,7 @@ focus_tree = {
 			add_ideas = AUS_Hungarian_Economic_Plan
 		}
 	}
+
 	focus = {
 		id = AUS_Research_Slot
 		icon = GFX_focus_GER_glory_to_the_imperial_army
@@ -583,6 +603,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Left1
 		icon = GFX_goal_generic_special_forces
@@ -600,6 +621,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Left2
 		icon = GFX_focus_eng_special_air_service
@@ -614,6 +636,7 @@ focus_tree = {
 			remove_ideas = AUS_Neglected_Special_Forces1
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Left3
 		icon = GFX_focus_PER_establish_special_unit
@@ -628,6 +651,7 @@ focus_tree = {
 			add_ideas = AUS_Austrian_Special_Forces
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Left4
 		icon = GFX_focus_FIN_expand_air_force_academy
@@ -645,6 +669,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Left5
 		icon = GFX_focus_BRA_air_force
@@ -662,6 +687,7 @@ focus_tree = {
 			add_ideas = AUS_Combined_Warfare
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Left6
 		icon = GFX_focus_SMB_special_forces_option_3
@@ -679,6 +705,7 @@ focus_tree = {
 			add_ideas = AUS_Air_Recon
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Right1
 		icon = GFX_focus_generic_currency_reforms
@@ -706,6 +733,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Right_Mini1
 		icon = GFX_focus_GER_navy
@@ -720,6 +748,7 @@ focus_tree = {
 			add_ideas = AUS_Cautious_Naval_Command
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan2
 		icon = GFX_focus_IRQ_royal_iraqi_army_alt
@@ -740,6 +769,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Right2
 		icon = GFX_focus_generic_currency_reforms
@@ -772,6 +802,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Right_Mini2
 		icon = GFX_focus_GER_airforce
@@ -786,6 +817,7 @@ focus_tree = {
 			add_ideas = AUS_Cautious_Air_Force_Command
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan3
 		icon = GFX_focus_RAJ_forge_the_kshatriya_army
@@ -809,6 +841,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Right3
 		icon = GFX_focus_generic_currency_reforms
@@ -846,6 +879,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan_Right_Mini3
 		icon = GFX_focus_GER_army
@@ -860,6 +894,7 @@ focus_tree = {
 			add_ideas = AUS_Cautious_Military_Command
 		}
 	}
+
 	focus = {
 		id = AUS_Military_Plan4
 		icon = GFX_focus_TUR_reform_the_balkan_pact
@@ -903,6 +938,7 @@ focus_tree = {
 			add_ideas = AUS_Air_Capital
 		}
 	}
+
 	focus = {
 		id = AUS_Good_Soldiers_Follow_Orders
 		icon = GFX_focus_RAJ_seven_shackles
@@ -923,6 +959,7 @@ focus_tree = {
 			add_ideas = AUS_DAS_WAR_EIN_BEFEHL
 		}
 	}
+
 	focus = {
 		id = AUS_Old_Habits
 		icon = GFX_focus_generic_horse_studs
@@ -943,6 +980,7 @@ focus_tree = {
 			add_ideas = AUS_Traditional_Warfare
 		}
 	}
+
 	focus = {
 		id = AUS_Shoot_First
 		icon = GFX_focus_AFG_scavenging
@@ -963,6 +1001,7 @@ focus_tree = {
 			add_ideas = AUS_Ask_Later
 		}
 	}
+
 	focus = {
 		id = AUS_Austria_Shall_Not_Fall
 		icon = GFX_focus_AFG_royal_guard
@@ -1000,6 +1039,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left_Main
 		icon = GFX_goal_generic_navy_battleship
@@ -1025,6 +1065,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left_Left1
 		icon = GFX_goal_generic_navy_cruiser
@@ -1039,6 +1080,7 @@ focus_tree = {
 			add_ideas = AUS_Navy_Guided_By_God
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left_Left2
 		icon = GFX_focus_generic_sheep
@@ -1056,6 +1098,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left_Left3
 		icon = GFX_focus_hol_prepare_the_inundation_lines
@@ -1073,6 +1116,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left_Left4
 		icon = GFX_focus_generic_navy_battleship2
@@ -1090,6 +1134,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left1
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1117,6 +1162,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left2
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1144,6 +1190,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left3
 		icon = GFX_goal_generic_air_naval_bomber
@@ -1161,6 +1208,7 @@ focus_tree = {
 			add_ideas = AUS_Naval_Craft
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left4
 		icon = GFX_goal_generic_navy_submarine
@@ -1178,6 +1226,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Left5
 		icon = GFX_goal_generic_navy_anti_submarine
@@ -1195,6 +1244,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Centre_Main
 		icon = GFX_focus_generic_combined_arms
@@ -1213,6 +1263,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Centre1
 		icon = GFX_focus_generic_purchase_mechanized_equipment
@@ -1231,6 +1282,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Centre2
 		icon = GFX_goal_generic_army_artillery2
@@ -1249,6 +1301,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Centre3
 		icon = GFX_focus_generic_refit_civilian_ships
@@ -1267,6 +1320,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Centre4
 		icon = GFX_focus_generic_air_research_boost
@@ -1285,6 +1339,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right_Main
 		icon = GFX_focus_PER_raf_planes
@@ -1303,6 +1358,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right1
 		icon = GFX_focus_generic_copy_plane_designs
@@ -1317,6 +1373,7 @@ focus_tree = {
 			add_ideas = AUS_Funded_Aircraft
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right_Mini1
 		icon = GFX_focus_NORDIC_mon_selector_airforce
@@ -1331,6 +1388,7 @@ focus_tree = {
 			add_ideas = AUS_Imperial_Fighters
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right2
 		icon = GFX_focus_PER_luftwaffe_planes
@@ -1348,6 +1406,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right3
 		icon = GFX_focus_generic_jet_planes
@@ -1365,6 +1424,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right4
 		icon = GFX_SOV_increase_aircraft_production_ccp_2d_sov_compatibility
@@ -1382,6 +1442,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right_Mini2
 		icon = GFX_focus_NORDIC_mon_airforce
@@ -1399,6 +1460,7 @@ focus_tree = {
 			add_ideas = AUS_Imperial_Bombers
 		}
 	}
+
 	focus = {
 		id = AUS_KUK_Right_Mini3
 		icon = GFX_focus_NORDIC_mon_capstone_airforce
@@ -1432,6 +1494,7 @@ focus_tree = {
 			add_ideas = AUS_For_The_Kaiser
 		}
 	}
+
 	focus = {
 		id = AUS_Against_Belgrade
 		icon = GFX_focus_BEL_belgian_gates
@@ -1455,6 +1518,7 @@ focus_tree = {
 			activate_mission = Take_Belgrade_Mission
 		}
 	}
+
 	focus = {
 		id = AUS_Glorious_Army
 		icon = GFX_focus_CONGO_congo_army
@@ -1472,6 +1536,7 @@ focus_tree = {
 			add_ideas = AUS_In_Glory_Of_The_Dead
 		}
 	}
+
 	focus = {
 		id = AUS_Against_Rome
 		icon = GFX_focus_FIN_foreign_anti_air
@@ -1495,6 +1560,7 @@ focus_tree = {
 			activate_mission = Take_Venice_Mission
 		}
 	}
+
 	focus = {
 		id = AUS_Mass_Conscription
 		icon = GFX_focus_HUN_expand_the_army
@@ -1515,10 +1581,10 @@ focus_tree = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
 				infantry = { x = 0 y = 2 }
-       			infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				infantry = { x = 1 y = 2 }
-        		infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 0 }
 				infantry = { x = 2 y = 1 }
 				infantry = { x = 2 y = 2 }
 				artillery_brigade = { x = 3 y = 0 }
@@ -1530,8 +1596,8 @@ focus_tree = {
 			}
 
 			support = {
-        		engineer = { x = 0 y = 0 }
-        		artillery = { x = 0 y = 1 }
+				engineer = { x = 0 y = 0 }
+				artillery = { x = 0 y = 1 }
 			}
 		}
 			4 = {
@@ -1543,6 +1609,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Russian_Blunt_Blades
 		icon = GFX_focus_RAJ_union_busting
@@ -1562,6 +1629,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = AUS_Bash_The_Rash
 		icon = GFX_focus_CHL_avenge_the_pacification_of_araucania
@@ -1591,4 +1659,5 @@ focus_tree = {
 			}
 		}
 	}
+
 }
