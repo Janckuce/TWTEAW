@@ -1,13 +1,34 @@
 War_Timers_catagories = {
     War_Timers = {
-
+        days_mission_timeout = 1305
 		icon = GFX_decision_category_generic
-
+        fire_only_once = yes
 		available = { 
 			always = no
         }
-        countdown = {
-            days = 1305
+    }
+    War_Timers1 = {
+        days_mission_timeout = 290
+		icon = GFX_decision_category_generic
+        fire_only_once = yes
+		available = { 
+			always = no
+        }
+    }
+    War_Timers2 = {
+        days_mission_timeout = 647
+		icon = GFX_decision_category_generic
+        fire_only_once = yes
+		available = { 
+			always = no
+        }
+    }
+    War_Timers3 = {
+        days_mission_timeout = 911
+		icon = GFX_decision_category_generic
+        fire_only_once = yes
+		available = { 
+			always = no
         }
     }
 }
