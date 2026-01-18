@@ -1408,6 +1408,15 @@ ideas = {
 			}
 		}
 
+		RUS_idea_Socialist_Constitution = {
+			picture = SOV_restore_the_glory_of_the_motherland_ccp_sov_compatibility
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				communism_drift = 0.15
+			}
+		}
+
 		RUS_idea_Reduced_Bolshevik_Threat = {
 			picture = rus_lenin_dead
 			modifier = {
@@ -1421,7 +1430,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				stability_factor = 0.075
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.125
 			}
 		}
 

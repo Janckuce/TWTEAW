@@ -9,7 +9,7 @@
 # Russian socialist focus tree
 # Main idea: SRs come into power, with their program of agricultural populist reform stabilizing the country (original idea was to also prevent a Bolshevik coup but with other paths still under construction this is on hold)
 # Main characters: Viktor Chernov, Boris Savinkov
-# Three main branches: Society, Politics, and Economy
+# Three main branches: Society, Politics, and Economy - to be expanded to 4, including Military (TODO)
 # Society contains some land reform, the literacy issue and skilled labor
 # Politics gets SRs into power, enables hiring Savinkov (required for parts of land reform too) and grants support for the regime
 # Economy deals with the rest of land reforms and most of the industrialization
@@ -20,49 +20,29 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 0 # change this if you want to see it at game start
+			add = 20 # change this if you want to see it at game start
 			tag = RUS
 		}
 	}
-	continuous_focus_position = { x = 245 y = 2000 }
+	continuous_focus_position = { x = 0 y = 1200}
 	default = no
 	reset_on_civilwar = no
 
 	# Begin focus tree
 	# Root focus
 
-	focus = {
-		id = RUS_focus_SR_Listen_to_SRs
-		icon = GFX_goal_generic_dangerous_deal
-		cost = 1 # initial focus to select a path, should not be too long
-		x = 10
-		y = 0
-		completion_reward = {
-			add_political_power = 25
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.07
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.15
-			}
-		}
-	}
-
 	# Branch 1: Solving the worst economic issues, early industrialization
-	# Branch 1-1: Early land reforms + final land reform bonus
+	# Branch 1-1: Land reforms
 
 	focus = {
 		id = RUS_focus_SR_Continue_Stolypins_Reforms
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		relative_position_id = RUS_focus_SR_Listen_to_SRs
 		prerequisite = {
 			focus = RUS_focus_SR_Listen_to_SRs
 		}
-		cost = 4
-		x = -7
-		y = 1
+		cost = 3
+		x = 2
+		y = 0
 		completion_reward = {
 			add_ideas = RUS_stolypin_reform
 		}
@@ -75,7 +55,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Continue_Stolypins_Reforms
 		}
-		cost = 5
+		cost = 6
 		x = -1
 		y = 1
 		completion_reward = {
@@ -90,26 +70,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_focus_SR_Crack_Down_on_Feudalists
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		relative_position_id = RUS_focus_SR_Land_and_Freedom
-		prerequisite = {
-			focus = RUS_focus_SR_Land_and_Freedom
-		}
-		available = {
-			RUS_character_Boris_Savinkov = {
-				is_hired_as_advisor = yes
-			}
-		}
-		cost = 5
-		x = -1
-		y = 1
-		completion_reward = {
-			remove_ideas = RUS_feudals_not_like
-		}
-	}
-
-	focus = {
 		id = RUS_focus_SR_Allow_Cooperatives
 		icon = GFX_goal_generic_national_unity
 		relative_position_id = RUS_focus_SR_Land_and_Freedom
@@ -117,34 +77,126 @@ focus_tree = {
 			focus = RUS_focus_SR_Land_and_Freedom
 		}
 		prerequisite = {
-			focus = RUS_focus_SR_Crack_Down_on_Feudalists
-		}
-		prerequisite = {
 			focus = RUS_focus_SR_Ensure_Basic_Literacy
 		}
-		cost = 5
+		cost = 3
 		x = 0
-		y = 2
+		y = 1
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Agrarian_Industry1
 				add_idea = RUS_Agrarian_Industry2
 			}
-			add_stability = 0.03
 		}
 	}
 
 	focus = {
-		id = RUS_focus_SR_Efficient_Land_Use
-		icon = GFX_focus_generic_land_reclamation
+		id = RUS_focus_SR_Crack_Down_on_Feudalists
+		icon = GFX_focus_eng_move_to_secure_the_dominions
 		relative_position_id = RUS_focus_SR_Allow_Cooperatives
 		prerequisite = {
 			focus = RUS_focus_SR_Allow_Cooperatives
 		}
+		cost = 6
+		x = 0
+		y = 1
+		completion_reward = {
+			remove_ideas = RUS_feudals_not_like
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry2
+				add_idea = RUS_Agrarian_Industry3
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Steel_Production
+		icon = GFX_focus_generic_steel
+		cost = 9
+		relative_position_id = RUS_focus_SR_Crack_Down_on_Feudalists
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_focus_SR_Crack_Down_on_Feudalists
+		}
+		completion_reward = {
+			573 = { # Zlatoust - you also get a decision to build a steel mill there
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry3
+				add_idea = RUS_Agrarian_Industry4
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Rubber_Production
+		icon = GFX_focus_generic_rubber_plantations
+		cost = 6
+		relative_position_id = RUS_focus_SR_Steel_Production
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_focus_SR_Steel_Production
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry4
+				add_idea = RUS_Agrarian_Industry5
+			}
+			229 = { # Azerbaijan - incentive for player to hold it + scales better with infra than 2 each in 4 states
+				add_resource = {
+					type = rubber
+					amount = 16
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Peasants_Land_Bank
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 6
+		relative_position_id = RUS_focus_SR_Rubber_Production
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = RUS_focus_SR_Rubber_Production
+		}
+		completion_reward = {
+			remove_ideas = RUS_Agrarian_Industry5
+		}
+	}
+
+
+	focus = {
+		id = RUS_focus_SR_Efficient_Land_Use
+		icon = GFX_focus_generic_land_reclamation
+		relative_position_id = RUS_focus_SR_Peasants_Land_Bank
+		prerequisite = {
+			focus = RUS_focus_SR_Peasants_Land_Bank
+		}
 		available = {
 			has_completed_focus = RUS_focus_SR_Peasants_Land_Bank
 		}
-		cost = 10
+		cost = 9
 		x = 0
 		y = 1
 		completion_reward = {
@@ -152,18 +204,110 @@ focus_tree = {
 		}
 	}
 
-	# Branch 1-2: Early industrialization efforts with foreign help + improved worker conditions at the end
+	# Branch 1-2: Literacy + bonus research slot
+
+	focus = {
+		id = RUS_focus_SR_Ensure_Basic_Literacy
+		icon = GFX_focus_research
+		relative_position_id = RUS_focus_SR_Invite_Foreign_Experts
+		prerequisite = {
+			focus = RUS_focus_SR_Continue_Stolypins_Reforms
+			focus = RUS_focus_SR_Invite_Foreign_Experts
+		}
+		cost = 6
+		x = -2
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists
+				add_idea = RUS_Lack_Of_Scientists2
+			}
+			set_country_flag = RUS_flag_SR_Basic_Literacy
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Democratize_General_Education
+		icon = GFX_focus_generic_military_academy
+		relative_position_id = RUS_focus_SR_Ensure_Basic_Literacy
+		prerequisite = {
+			focus = RUS_focus_SR_Ensure_Basic_Literacy
+		}
+		available = {
+			has_country_flag = {
+				flag = RUS_flag_SR_Basic_Literacy
+				days > 42
+			}
+		}
+		cost = 6
+		x = 0
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists2
+				add_idea = RUS_Lack_Of_Scientists3
+			}
+			set_country_flag = RUS_flag_SR_General_Education
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Set_Educational_Standards
+		icon = GFX_focus_generic_treaty
+		relative_position_id = RUS_focus_SR_Democratize_General_Education
+		prerequisite = {
+			focus = RUS_focus_SR_Democratize_General_Education
+		}
+		available = {
+			has_country_flag = {
+				flag = RUS_flag_SR_General_Education
+				days > 42
+			}
+		}
+		cost = 6
+		x = 0
+		y = 1
+		completion_reward = {
+			remove_ideas = RUS_Lack_Of_Scientists3
+			set_country_flag = RUS_flag_SR_Educational_Standards
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Promote_Higher_Education
+		icon = GFX_focus_research2
+		relative_position_id = RUS_focus_SR_Set_Educational_Standards
+		prerequisite = {
+			focus = RUS_focus_SR_Set_Educational_Standards
+		}
+		available = {
+			has_completed_focus = RUS_focus_SR_Train_Skilled_Workers
+			has_country_flag = {
+				flag = RUS_flag_SR_Educational_Standards
+				days > 42
+			}
+		}
+		cost = 9
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = RUS_Promoting_Intellectuals
+			add_research_slot = 1
+		}
+	}
+
+
+	# Branch 1-3: Early industrialization efforts with foreign help + improved worker conditions at the end
 
 	focus = {
 		id = RUS_focus_SR_Invite_Foreign_Experts
 		icon = GFX_goal_generic_intelligence_exchange
-		relative_position_id = RUS_focus_SR_Listen_to_SRs
 		prerequisite = {
 			focus = RUS_focus_SR_Listen_to_SRs
 		}
-		cost = 5
-		x = -3
-		y = 1
+		cost = 3
+		x = 6
+		y = 0
 		completion_reward = {
 			add_ideas = RUS_idea_Foreign_Experts
 			195 = { # St. Paintersburg
@@ -184,7 +328,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Invite_Foreign_Experts
 		}
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		completion_reward = {
@@ -229,7 +373,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Ensure_Basic_Literacy
 		}
-		cost = 6
+		cost = 3
 		x = 0
 		y = 1
 		completion_reward = {
@@ -255,7 +399,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Train_Skilled_Workers
 		}
-		cost = 5
+		cost = 3
 		x = 0
 		y = 1
 		completion_reward = {
@@ -263,191 +407,37 @@ focus_tree = {
 		}
 	}
 
-	# Branch 1-3: Literacy + bonus research slot
-
-	focus = {
-		id = RUS_focus_SR_Ensure_Basic_Literacy
-		icon = GFX_focus_research
-		relative_position_id = RUS_focus_SR_Invite_Foreign_Experts
-		prerequisite = {
-			focus = RUS_focus_SR_Continue_Stolypins_Reforms
-			focus = RUS_focus_SR_Invite_Foreign_Experts
-		}
-		cost = 5
-		x = -2
-		y = 1
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Lack_Of_Scientists
-				add_idea = RUS_Lack_Of_Scientists2
-			}
-			add_timed_idea = {
-				idea = RUS_idea_Improving_Education_Temp_Effect
-				days = 21 # let the player do something else in between
-			}
-		}
-	}
-
-
-	focus = {
-		id = RUS_focus_SR_Democratize_General_Education
-		icon = GFX_focus_generic_military_academy
-		relative_position_id = RUS_focus_SR_Ensure_Basic_Literacy
-		prerequisite = {
-			focus = RUS_focus_SR_Ensure_Basic_Literacy
-		}
-		available = {
-			NOT = {
-				RUS = {
-					has_idea = RUS_idea_Improving_Education_Temp_Effect
-				}
-			}
-		}
-		cost = 5
-		x = 0
-		y = 1
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Lack_Of_Scientists2
-				add_idea = RUS_Lack_Of_Scientists3
-			}
-			add_timed_idea = {
-				idea = RUS_idea_Improving_Education_Temp_Effect
-				days = 21 # let the player do something else in between
-			}
-		}
-	}
-
-	focus = {
-		id = RUS_focus_SR_Set_Educational_Standards
-		icon = GFX_focus_generic_treaty
-		relative_position_id = RUS_focus_SR_Democratize_General_Education
-		prerequisite = {
-			focus = RUS_focus_SR_Democratize_General_Education
-		}
-		available = {
-			NOT = {
-				RUS = {
-					has_idea = RUS_idea_Improving_Education_Temp_Effect
-				}
-			}
-		}
-		cost = 5
-		x = 0
-		y = 1
-		completion_reward = {
-			remove_ideas = RUS_Lack_Of_Scientists3
-			add_timed_idea = {
-				idea = RUS_idea_Improving_Education_Temp_Effect
-				days = 21 # let the player do something else in between
-			}
-		}
-	}
-
-	focus = {
-		id = RUS_focus_SR_Promote_Higher_Education
-		icon = GFX_focus_research2
-		relative_position_id = RUS_focus_SR_Set_Educational_Standards
-		prerequisite = {
-			focus = RUS_focus_SR_Set_Educational_Standards
-		}
-		available = {
-			has_completed_focus = RUS_focus_SR_Train_Skilled_Workers
-			NOT = {
-				RUS = {
-					has_idea = RUS_idea_Improving_Education_Temp_Effect
-				}
-			}
-		}
-		cost = 5
-		x = 0
-		y = 1
-		completion_reward = {
-			add_ideas = RUS_Promoting_Intellectuals
-			add_research_slot = 1
-			add_timed_idea = {
-				idea = RUS_idea_Improving_Education_Temp_Effect
-				days = 21 # let the player do something else in between
-			}
-		}
-	}
-
 	# End Branch 1
 	# Branch 2: Politics
-	# "Level 1": Initial focuses establishing the SR regime
+	# "Level 1": Re-inviting emigres to enable hiring Savinkov
 
 	focus = {
 		id = RUS_focus_SR_Invite_Back_Emigres
 		icon = GFX_goal_generic_intelligence_exchange
-		relative_position_id = RUS_focus_SR_Listen_to_SRs
-		prerequisite = {
-			focus = RUS_focus_SR_Listen_to_SRs
-		}
-		cost = 2
-		x = 3
-		y = 1
+		cost = 3
+		x = 12
+		y = 0
 		completion_reward = {
 			add_political_power = 50
-			set_party_name = {
-				ideology = communism
-				long_name = "Socialist Revolutionary Party - Left Wing"
-				name = "Left - SR"
-			}
-			set_party_name = {
-				ideology = democratic
-				long_name = "Socialist Revolutionary Party - Right Wing"
-				name = "Right - SR"
-			}
 			add_popularity = {
 				ideology = communism
-				popularity = 0.1
+				popularity = 0.15
 			}
-			promote_character = {
-				character = RUS_character_SR_Viktor_Chernov_leader
-				ideology = radical_socialism
-			}
-			add_stability = -0.07
-		}
-	}
-	
-	focus = {
-		id = RUS_focus_SR_Call_the_Fourth_Duma
-		icon = GFX_focus_SOV_zemsky_sobor
-		relative_position_id = RUS_focus_SR_Invite_Back_Emigres
-		prerequisite = {
-			focus = RUS_focus_SR_Invite_Back_Emigres
-		}
-		cost = 2
-		x = 0
-		y = 1
-		completion_reward = {
-			add_political_power = 25
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = yes
-				last_election = global.date
-				election_frequency = 48
-			}
-			add_stability = 0.05
+			add_stability = -0.05
 		}
 	}
 
-	# Level 2, left to right: Using Savinkov, leniency for terrorists, counter-propaganda against Bolsheviks
+	# Level 2, left to right: Using Savinkov, leniency for "terrorists"
 
 	focus = {
 		id = RUS_focus_SR_Utilize_Savinkovs_Experience
 		icon = GFX_goal_generic_military_deal
-		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
+		relative_position_id = RUS_focus_SR_Invite_Back_Emigres
 		prerequisite = {
-			focus = RUS_focus_SR_Call_the_Fourth_Duma
-		}
-		available = {
-			RUS_character_Boris_Savinkov = {
-				is_hired_as_advisor = yes
-			}
+			focus = RUS_focus_SR_Invite_Back_Emigres
 		}
 		cost = 3
-		x = -3
+		x = -2
 		y = 1
 		completion_reward = {
 			add_popularity = {
@@ -461,39 +451,20 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Leniency_for_Revolutionaries
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
+		relative_position_id = RUS_focus_SR_Invite_Back_Emigres
 		prerequisite = {
-			focus = RUS_focus_SR_Call_the_Fourth_Duma
+			focus = RUS_focus_SR_Invite_Back_Emigres
 		}
-		cost = 2
-		x = -1
+		cost = 3
+		x = 0
 		y = 1
 		completion_reward = {
 			add_political_power = 50
 			add_popularity = {
 				ideology = communism
-				popularity = 0.05
+				popularity = 0.1
 			}
-			add_stability = -0.1
-		}
-	}
-
-	focus = {
-		id = RUS_focus_SR_Counter_Bolshevik_Propaganda
-		icon = GFX_goal_anti_comintern_pact
-		relative_position_id = RUS_focus_SR_Call_the_Fourth_Duma
-		prerequisite = {
-			focus = RUS_focus_SR_Call_the_Fourth_Duma
-		}
-		cost = 3
-		x = 1
-		y = 1
-		completion_reward = {
-			add_political_power = 50
-			swap_ideas = {
-				remove_idea = RUS_Bolshevik_Sabotage
-				add_idea = RUS_idea_Reduced_Bolshevik_Threat
-			}
+			add_stability = -0.05
 		}
 	}
 
@@ -509,8 +480,8 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Leniency_for_Revolutionaries
 		}
-		cost = 5
-		x = 1
+		cost = 3
+		x = 0
 		y = 1
 		completion_reward = {
 			add_ideas = RUS_idea_SRCO_Revived
@@ -520,10 +491,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Secure_the_Regime
 		icon = GFX_goal_generic_political_pressure
-		relative_position_id = RUS_focus_SR_Counter_Bolshevik_Propaganda
-		prerequisite = {
-			focus = RUS_focus_SR_Counter_Bolshevik_Propaganda
-		}
+		relative_position_id = RUS_focus_SR_Leniency_for_Revolutionaries
 		prerequisite = {
 			focus = RUS_focus_SR_Leniency_for_Revolutionaries
 		}
@@ -534,28 +502,31 @@ focus_tree = {
 				has_completed_focus = RUS_focus_SR_Rural_Investments
 			}
 		}
-		cost = 5
-		x = -1
+		cost = 6
+		x = 0
 		y = 1
 		completion_reward = {
-			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_political_power = 75
 			add_stability = 0.15
-			# TODO add some more good effects
 		}
 	}
 
 	focus = {
 		id = RUS_focus_SR_Propaganda_of_Our_Own
 		icon = GFX_goal_generic_forceful_treaty
-		relative_position_id = RUS_focus_SR_Counter_Bolshevik_Propaganda
+		relative_position_id = RUS_focus_SR_Invite_Back_Emigres
 		prerequisite = {
-			focus = RUS_focus_SR_Counter_Bolshevik_Propaganda
+			focus = RUS_focus_SR_Invite_Back_Emigres
 		}
-		cost = 4
-		x = 1
-		y = 1
+		cost = 3
+		x = 3
+		y = 2
 		completion_reward = {
-			add_political_power = 30
+			add_political_power = 25
 			add_timed_idea = {
 				idea = RUS_idea_SR_Propaganda
 				days = 350
@@ -563,7 +534,7 @@ focus_tree = {
 		}
 	}
 
-	# Level 4: Preventing a Bolshevik coup, support for whoever is willing to defend the Rodina
+	# Level 4: Preventing a Bolshevik coup - at least for now, support for whoever is willing to defend the Rodina
 
 	focus = {
 		id = RUS_focus_SR_Preempt_Bolshevik_Coup
@@ -572,11 +543,11 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Secure_the_Regime
 		}
-		cost = 5
+		cost = 6
 		x = 0
 		y = 1
 		completion_reward = {
-			add_political_power = 30
+			add_political_power = 50
 			swap_ideas = {
 				remove_idea = RUS_idea_Reduced_Bolshevik_Threat
 				add_idea = RUS_Bolsheviks_Crushed
@@ -599,7 +570,7 @@ focus_tree = {
 				has_war_with = GER
 			}
 		}
-		cost = 4
+		cost = 3
 		x = 2
 		y = 1
 		completion_reward = {
@@ -610,46 +581,16 @@ focus_tree = {
 		}
 	}
 
-	# Branch 3: Economy
-	# Start: Construction effort
-
-	focus = {
-		id = RUS_focus_SR_Construction_Effort
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 4
-		relative_position_id = RUS_focus_SR_Listen_to_SRs
-		x = 10
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Listen_to_SRs
-		}
-		available = {
-			has_completed_focus = RUS_focus_SR_Allow_Cooperatives
-			has_completed_focus = RUS_focus_SR_Rural_Investments
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Agrarian_Industry2
-				add_idea = RUS_Agrarian_Industry3
-			}
-		}
-	}
-
-	# Branch 3-1: Mass industrialization
+	# Branch 3: Economy-industrialization
 	# Level 1: Moscow, Tsaritsyn, and Minsk
 
 	focus = {
 		id = RUS_focus_SR_Moscow_Development
 		icon = GFX_focus_generic_industry_3
-		cost = 7.2
-		relative_position_id = RUS_focus_SR_Construction_Effort
-		x = -2
-		y = 1
+		cost = 9
+		x = 18
+		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Construction_Effort
-		}
 		completion_reward = {
 			219 = { # Moscow
 				add_extra_state_shared_building_slots = 6
@@ -668,14 +609,10 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Tsaritsyn_Development
 		icon = GFX_focus_generic_modernize_industry
-		cost = 7.2
-		relative_position_id = RUS_focus_SR_Construction_Effort
-		x = 2
-		y = 1
+		cost = 9
+		x = 22
+		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Construction_Effort
-		}
 		completion_reward = {
 			217 = { # Tsaritsyn
 				add_extra_state_shared_building_slots = 6
@@ -694,14 +631,10 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Minsk_Development
 		icon = GFX_focus_generic_industry_2
-		cost = 7.2
-		relative_position_id = RUS_focus_SR_Construction_Effort
-		x = 0
-		y = 1
+		cost = 9
+		x = 20
+		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Construction_Effort
-		}
 		completion_reward = {
 			206 = { # Minsk
 				add_extra_state_shared_building_slots = 6
@@ -718,12 +651,12 @@ focus_tree = {
 		}
 	}
 
-	# Level 2: Kiev, available after Efficient Land Use
+	# Level 2: Kiev, available after steel production
 
 	focus = {
 		id = RUS_focus_SR_Kiev_Development
 		icon = GFX_focus_HUN_the_kingdom_of_ukraine
-		cost = 3.6
+		cost = 6
 		relative_position_id = RUS_focus_SR_Minsk_Development
 		x = 0
 		y = 1
@@ -738,14 +671,14 @@ focus_tree = {
 			focus = RUS_focus_SR_Minsk_Development
 		}
 		available = {
-			has_completed_focus = RUS_focus_SR_Efficient_Land_Use
+			has_completed_focus = RUS_focus_SR_Steel_Production
 		}
 		completion_reward = {
 			202 = { # Kiev
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 				}
 				add_building_construction = {
 					type = arms_factory
@@ -760,7 +693,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Develop_Omsk
 		icon = GFX_goal_generic_position_armies
-		cost = 4.8
+		cost = 6
 		relative_position_id = RUS_focus_SR_Kiev_Development
 		x = -2
 		y = 1
@@ -786,7 +719,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Develop_Novonikolayevsk
 		icon = GFX_focus_generic_industry_1
-		cost = 4.8
+		cost = 6
 		relative_position_id = RUS_focus_SR_Develop_Omsk
 		x = 0
 		y = 1
@@ -812,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Develop_Chita
 		icon = GFX_goal_generic_construction2
-		cost = 4.8
+		cost = 6
 		relative_position_id = RUS_focus_SR_Develop_Novonikolayevsk
 		x = 0
 		y = 1
@@ -838,7 +771,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Remember_the_Navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 6.4
+		cost = 6
 		relative_position_id = RUS_focus_SR_Develop_Chita
 		x = 0
 		y = 1
@@ -871,7 +804,7 @@ focus_tree = {
 		}
 	}
 
-	# Branch 3-1-2: Expanding well known plants + reseaerch bonuses + research slot
+	# Branch 3-1-2: Expanding well known plants + research bonuses + research slot
 
 	focus = {
 		id = RUS_focus_SR_Expand_Tula_Arms_Plant
@@ -932,7 +865,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Special_Research_Facilities
 		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 5
+		cost = 6
 		relative_position_id = RUS_focus_SR_More_Funds_for_Obukhov
 		x = 0
 		y = 1
@@ -953,78 +886,6 @@ focus_tree = {
 
 
 	# Branch 3-2: final solution to the agrarian industry question + resource extraction
-
-	focus = {
-		id = RUS_focus_SR_Steel_Production
-		icon = GFX_focus_generic_steel
-		cost = 8
-		relative_position_id = RUS_focus_SR_Construction_Effort
-		x = 4
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Construction_Effort
-		}
-		completion_reward = {
-			573 = { # Zlatoust - you also get a decision to build a steel mill there
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 14
-				}
-			}
-			swap_ideas = {
-				remove_idea = RUS_Agrarian_Industry3
-				add_idea = RUS_Agrarian_Industry4
-			}
-		}
-	}
-
-	focus = {
-		id = RUS_focus_SR_Rubber_Production
-		icon = GFX_focus_generic_rubber_plantations
-		cost = 6
-		relative_position_id = RUS_focus_SR_Steel_Production
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Steel_Production
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Agrarian_Industry4
-				add_idea = RUS_Agrarian_Industry5
-			}
-			229 = { # Azerbaijan - incentive for player to hold it + scales better with infra than 2 each in 4 states
-				add_resource = {
-					type = rubber
-					amount = 8
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = RUS_focus_SR_Peasants_Land_Bank
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 10
-		relative_position_id = RUS_focus_SR_Rubber_Production
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = RUS_focus_SR_Rubber_Production
-		}
-		completion_reward = {
-			remove_ideas = RUS_Agrarian_Industry5
-			# More may be added here
-		}
-	}
 
 	# End SR focus tree
 }

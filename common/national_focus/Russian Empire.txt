@@ -32,11 +32,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Russia_democratic_1
 		}
-		completion_reward = { 
+		completion_reward = {
 			add_stability = 0.10
 			add_political_power = 80
 		}
 	}
+
 	focus = {
 		id = Russia_monarchist_2
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -50,10 +51,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Russia_monarchist_3
 		}
-		completion_reward = { 
+		completion_reward = {
 			add_stability = 0.05
 		}
 	}
+
 	focus = {
 		id = Russia_monarchist_3
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -71,6 +73,7 @@ focus_tree = {
 			add_war_support = 0.05
 		}
 	}
+
 	focus = {
 		id = Russia_monarchist_4
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -90,6 +93,7 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
+
 	focus = {
 		id = Russia_monarchist_5
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -109,6 +113,7 @@ focus_tree = {
 			add_stability = -0.05
 		}
 	}
+
 	# focus = {
 	# 	id = Russia_monarchist_6
 	# 	icon = GFX_unit_guided_missile_icon_small_texticon
@@ -121,6 +126,7 @@ focus_tree = {
 	# 	y = 2
 	# 	completion_reward = { }
 	# }
+	#
 	# focus = {
 	# 	id = Russia_monarchist_7
 	# 	icon = GFX_unit_guided_missile_icon_small_texticon
@@ -136,6 +142,7 @@ focus_tree = {
 	# 	y = 3
 	# 	completion_reward = { }
 	# }
+	#
 	# focus = {
 	# 	id = Russia_monarchist_8
 	# 	icon = GFX_unit_guided_missile_icon_small_texticon
@@ -151,6 +158,7 @@ focus_tree = {
 	# 	y = 3
 	# 	completion_reward = { }
 	# }
+
 	focus = {
 		id = RUS_Assassinate_Stolypin
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -162,10 +170,11 @@ focus_tree = {
 			focus = Russia_monarchist_4
 			focus = Russia_monarchist_5
 		}
-		completion_reward = { 
+		completion_reward = {
 			load_focus_tree = RUS_Monarchist
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_1
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -175,10 +184,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Russia_monarchist_1
 		}
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = RUS_Democratic_Opposition
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_2
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -189,13 +199,14 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Democratic_Opposition
 				add_idea = RUS_Democratic_Opposition_2
 			}
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_3
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -206,10 +217,11 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		completion_reward = { 
+		completion_reward = {
 			add_ideas = RUS_Making_Constituation
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_4
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -220,13 +232,14 @@ focus_tree = {
 		}
 		x = -2
 		y = 2
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Democratic_Opposition_2
 				add_idea = RUS_Democratic_Opposition_3
 			}
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_5
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -238,11 +251,12 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		completion_reward = { 
+		completion_reward = {
 			add_political_power = 120
 			add_stability = 0.05
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_6
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -253,13 +267,14 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Making_Constituation
 				add_idea = RUS_Making_Constituation_2
 			}
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_7
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -273,13 +288,14 @@ focus_tree = {
 		}
 		x = -1
 		y = 3
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Democratic_Opposition_3
 				add_idea = RUS_Democratic_Opposition_4
 			}
 		}
 	}
+
 	focus = {
 		id = Russia_democratic_8
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -293,13 +309,14 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Making_Constituation_2
 				add_idea = RUS_Making_Constituation_3
 			}
 		}
 	}
+
 	focus = {
 		id = RUS_Abdicate_Nicholas
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -311,9 +328,15 @@ focus_tree = {
 		prerequisite = {
 			focus = Russia_democratic_8
 		}
+		mutually_exclusive = {
+			focus = RUS_Socialism_Not_Communism
+		}
+		mutually_exclusive = {
+			focus = RUS_Constitutional_Monarchy
+		}
 		x = 0
 		y = 4
-		completion_reward = { 
+		completion_reward = {
 			remove_ideas = RUS_Democratic_Opposition_4
 			set_politics = {
 				ruling_party = democratic
@@ -322,17 +345,18 @@ focus_tree = {
 			hidden_effect = {
 				retire_country_leader = yes
 				add_country_leader_role = {
-    			character = RUS_Alexander_Guchkov
-    			promote_leader = yes
-    			country_leader = {
-        		ideology = liberalism
-    				}
+					character = RUS_Alexander_Guchkov
+					promote_leader = yes
+					country_leader = {
+						ideology = liberalism
+					}
 				}
 				activate_advisor = RUS_Alexander_Guchkov_Advisor
 				load_focus_tree = RUS_Democratic
 			}
 		}
 	}
+
 	focus = {
 		id = RUS_Constitutional_Monarchy
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -344,9 +368,15 @@ focus_tree = {
 		prerequisite = {
 			focus = Russia_democratic_8
 		}
+		mutually_exclusive = {
+			focus = RUS_Socialism_Not_Communism
+		}
+		mutually_exclusive = {
+			focus = RUS_Abdicate_Nicholas
+		}
 		x = -2
 		y = 4
-		completion_reward = { 
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Democratic_Opposition_4
 				add_idea = RUS_Constitutional_Monarchy
@@ -354,6 +384,7 @@ focus_tree = {
 			load_focus_tree = RUS_Constitutional
 		}
 	}
+
 	focus = {
 		id = RUS_Socialism_Not_Communism
 		icon = GFX_unit_guided_missile_icon_small_texticon
@@ -367,10 +398,33 @@ focus_tree = {
 		prerequisite = {
 			focus = Russia_democratic_8
 		}
-		completion_reward = { 
+		mutually_exclusive = {
+			focus = RUS_Constitutional_Monarchy
+		}
+		mutually_exclusive = {
+			focus = RUS_Abdicate_Nicholas
+		}
+		completion_reward = {
+			remove_ideas = {
+				RUS_rasputin_idea # makes no sense he'd be left alone
+				RUS_Democratic_Opposition_4
+				RUS_Making_Constituation_3
+			}
+			add_ideas = {
+				RUS_idea_Socialist_Constitution
+			}
 			swap_ideas = {
 				remove_idea = RUS_Bolshevik_Sabotage
 				add_idea = RUS_idea_Reduced_Bolshevik_Threat
+			}
+			promote_character = {
+				character = RUS_character_SR_Viktor_Chernov_leader
+				ideology = radical_socialism
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = "Socialist Revolutionary Party"
+				name = "SR"
 			}
 			set_politics = {
 				ruling_party = communism
