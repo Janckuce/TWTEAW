@@ -1482,6 +1482,24 @@ ideas = {
 				recruitable_population_factor = 0.1
 			}
 		}
+
+		RUS_idea_Westernized_Air_Force = {
+			picture = AUS_airforce
+			modifier = {
+				air_intercept_efficiency = 0.05
+				air_attack_factor = 0.05
+			}
+		}
+
+		RUS_idea_Lessons_of_Tsushima = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				navy_org_factor = 0.1
+				spotting_chance = 0.05
+				naval_accidents_chance = -0.1
+			}
+		}
+
 }
 
 # End spirits - country{} section needs to end here

@@ -20,7 +20,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 0 # change this if you want to see it at game start
+			add = 20 # change this if you want to see it at game start
 			tag = RUS
 		}
 	}
@@ -43,6 +43,7 @@ focus_tree = {
 		cost = 3
 		x = 2
 		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			add_ideas = RUS_stolypin_reform
 		}
@@ -58,6 +59,7 @@ focus_tree = {
 		cost = 6
 		x = -1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.05
@@ -82,6 +84,7 @@ focus_tree = {
 		cost = 3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Agrarian_Industry1
@@ -100,6 +103,7 @@ focus_tree = {
 		cost = 6
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			remove_ideas = RUS_feudals_not_like
 			swap_ideas = {
@@ -199,6 +203,7 @@ focus_tree = {
 		cost = 9
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			add_ideas = RUS_Land_Reforms
 		}
@@ -217,6 +222,7 @@ focus_tree = {
 		cost = 6
 		x = -2
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Lack_Of_Scientists
@@ -238,10 +244,18 @@ focus_tree = {
 				flag = RUS_flag_SR_Basic_Literacy
 				days > 42
 			}
+			custom_trigger_tooltip = {
+				tooltip = RUS_flag_SR_Basic_Literacy_days_tt
+				has_country_flag = {
+					flag = RUS_flag_SR_Basic_Literacy
+					days > 42
+				}
+			}
 		}
 		cost = 6
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Lack_Of_Scientists2
@@ -263,10 +277,18 @@ focus_tree = {
 				flag = RUS_flag_SR_General_Education
 				days > 42
 			}
+			custom_trigger_tooltip = {
+				tooltip = RUS_flag_SR_General_Education_days_tt
+				has_country_flag = {
+					flag = RUS_flag_SR_General_Education
+					days > 42
+				}
+			}
 		}
 		cost = 6
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			remove_ideas = RUS_Lack_Of_Scientists3
 			set_country_flag = RUS_flag_SR_Educational_Standards
@@ -286,10 +308,18 @@ focus_tree = {
 				flag = RUS_flag_SR_Educational_Standards
 				days > 42
 			}
+			custom_trigger_tooltip = {
+				tooltip = RUS_flag_SR_Educational_Standards_days_tt
+				has_country_flag = {
+					flag = RUS_flag_SR_Educational_Standards
+					days > 42
+				}
+			}
 		}
 		cost = 9
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = RUS_Promoting_Intellectuals
 			add_research_slot = 1
@@ -308,6 +338,7 @@ focus_tree = {
 		cost = 3
 		x = 6
 		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			add_ideas = RUS_idea_Foreign_Experts
 			195 = { # St. Paintersburg
@@ -331,6 +362,7 @@ focus_tree = {
 		cost = 3
 		x = 1
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -376,6 +408,7 @@ focus_tree = {
 		cost = 3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_idea_Foreign_Experts
@@ -402,6 +435,7 @@ focus_tree = {
 		cost = 3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_ideas = RUS_idea_Improved_Worker_Conditions
 		}
@@ -417,6 +451,7 @@ focus_tree = {
 		cost = 3
 		x = 12
 		y = 0
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 50
 			add_popularity = {
@@ -439,6 +474,7 @@ focus_tree = {
 		cost = 3
 		x = -2
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
@@ -458,6 +494,7 @@ focus_tree = {
 		cost = 3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 50
 			add_popularity = {
@@ -483,6 +520,7 @@ focus_tree = {
 		cost = 3
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_ideas = RUS_idea_SRCO_Revived
 		}
@@ -505,6 +543,7 @@ focus_tree = {
 		cost = 6
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
@@ -525,6 +564,7 @@ focus_tree = {
 		cost = 3
 		x = 3
 		y = 2
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_political_power = 25
 			add_timed_idea = {
@@ -546,6 +586,7 @@ focus_tree = {
 		cost = 6
 		x = 0
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_political_power = 50
 			swap_ideas = {
@@ -573,6 +614,7 @@ focus_tree = {
 		cost = 3
 		x = 2
 		y = 1
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_political_power = 30
 			add_stability = 0.05
@@ -607,28 +649,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_focus_SR_Tsaritsyn_Development
-		icon = GFX_focus_generic_modernize_industry
-		cost = 9
-		x = 22
-		y = 0
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		completion_reward = {
-			217 = { # Tsaritsyn
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = RUS_focus_SR_Minsk_Development
 		icon = GFX_focus_generic_industry_2
 		cost = 9
@@ -646,6 +666,28 @@ focus_tree = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Tsaritsyn_Development
+		icon = GFX_focus_generic_modernize_industry
+		cost = 9
+		x = 22
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		completion_reward = {
+			217 = { # Tsaritsyn
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
 				}
 			}
 		}
@@ -695,7 +737,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		cost = 6
 		relative_position_id = RUS_focus_SR_Kiev_Development
-		x = -2
+		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -810,9 +852,9 @@ focus_tree = {
 		id = RUS_focus_SR_Expand_Tula_Arms_Plant
 		icon = GFX_focus_RUS_tula_arms_plant
 		cost = 3
-		relative_position_id = RUS_focus_SR_Develop_Novonikolayevsk
-		x = 2
-		y = 0
+		relative_position_id = RUS_focus_SR_Kiev_Development
+		x = 1
+		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_focus_SR_Kiev_Development
@@ -869,10 +911,10 @@ focus_tree = {
 		relative_position_id = RUS_focus_SR_More_Funds_for_Obukhov
 		x = 0
 		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 			focus = RUS_focus_SR_More_Funds_for_Obukhov
 		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_research_slot = 1
 			add_tech_bonus = {
@@ -884,8 +926,407 @@ focus_tree = {
 		}
 	}
 
+	# Branch 4: Military
+	# Start: XP
 
-	# Branch 3-2: final solution to the agrarian industry question + resource extraction
+	focus = {
+		id = RUS_focus_SR_State_of_the_Military
+		icon = GFX_focus_generic_combined_arms
+		cost = 6
+		x = 28
+		y = 0
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+		}
+	}
+
+	# Branch 4-1: Army
+
+	focus = {
+		id = RUS_focus_SR_Infantry
+		icon = GFX_focus_NORDIC_com_selector_army
+		cost = 6
+		relative_position_id = RUS_focus_SR_State_of_the_Military
+		prerequisite = {
+			focus = RUS_focus_SR_State_of_the_Military
+		}
+		x = -3
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Infantry_tt
+			add_to_variable = {
+				RUS_var_army_inf_attack_factor = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_inf_defense_factor = 0.05
+			}
+			add_mastery = {
+				amount = 25
+				folder = land
+				track = infantry
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Logistics
+		icon = GFX_goal_generic_position_armies
+		cost = 6
+		relative_position_id = RUS_focus_SR_Infantry
+		prerequisite = {
+			focus = RUS_focus_SR_Infantry
+		}
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Logistics_tt
+			add_to_variable = {
+				RUS_var_army_supply_consumption_factor = -0.05
+			}
+			add_to_variable = {
+				RUS_var_army_out_of_supply = -0.1
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Literate_NCOs
+		icon = GFX_focus_chi_army_reform
+		cost = 6
+		relative_position_id = RUS_focus_SR_Logistics
+		prerequisite = {
+			focus = RUS_focus_SR_Logistics
+		}
+		available = {
+			has_completed_focus = RUS_focus_SR_Ensure_Basic_Literacy
+		}
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Literate_NCOs_tt
+			add_to_variable = {
+				RUS_var_army_org_factor = 0.1
+			}
+			add_to_variable = {
+				RUS_var_army_initiative_factor = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Quick_Training
+		icon = GFX_focus_ITA_banda_carita
+		cost = 6
+		relative_position_id = RUS_focus_SR_Literate_NCOs
+		prerequisite = {
+			focus = RUS_focus_SR_Literate_NCOs
+		}
+		mutually_exclusive = {
+			focus = RUS_focus_SR_Thorough_Training
+		}
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Quick_Training_tt
+			add_to_variable = {
+				RUS_var_army_training_time = -0.1
+			}
+			add_to_variable = {
+				RUS_var_army_min_training_level = -0.1
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Thorough_Training
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 6
+		relative_position_id = RUS_focus_SR_Literate_NCOs
+		prerequisite = {
+			focus = RUS_focus_SR_Literate_NCOs
+		}
+		mutually_exclusive = {
+			focus = RUS_focus_SR_Quick_Training
+		}
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Thorough_Training_tt
+			add_to_variable = {
+				RUS_var_army_training_time = 0.1
+			}
+			add_to_variable = {
+				RUS_var_army_xp_loss_factor = -0.1
+			}
+			add_to_variable = {
+				RUS_var_army_org_regain = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_org_factor = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Uniforms
+		icon = GFX_focus_RAJ_forge_the_kshatriya_army
+		cost = 6
+		relative_position_id = RUS_focus_SR_Thorough_Training
+		prerequisite = {
+			focus = RUS_focus_SR_Thorough_Training
+			focus = RUS_focus_SR_Quick_Training
+		}
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Uniforms_tt
+			add_to_variable = {
+				RUS_var_army_div_defense_factor = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_breakthrough = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_cas_dmg_reduction = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Cossacks
+		icon = GFX_focus_generic_horse_studs
+		cost = 6
+		relative_position_id = RUS_focus_SR_Uniforms
+		prerequisite = {
+			focus = RUS_focus_SR_Uniforms
+		}
+		mutually_exclusive = {
+			focus = RUS_focus_SR_Artillery
+		}
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Cossacks_tt
+			add_to_variable = {
+				RUS_var_army_cav_attack_factor = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Artillery
+		icon = GFX_focus_SWE_let_fly_all_guns
+		cost = 6
+		relative_position_id = RUS_focus_SR_Uniforms
+		prerequisite = {
+			focus = RUS_focus_SR_Uniforms
+		}
+		mutually_exclusive = {
+			focus = RUS_focus_SR_Cossacks
+		}
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Artillery_tt
+			add_to_variable = {
+				RUS_var_army_art_attack_factor = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_art_defense_factor = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Issue_Helmets
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 6
+		relative_position_id = RUS_focus_SR_Artillery
+		prerequisite = {
+			focus = RUS_focus_SR_Cossacks
+			focus = RUS_focus_SR_Artillery
+		}
+		available = {
+			date > 1916.1.1
+		}
+		x = -3
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_Issue_Helmets_tt
+			add_to_variable = {
+				RUS_var_army_hp = 0.07
+			}
+			add_to_variable = {
+				RUS_var_army_xp_loss_factor = -0.07
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Leadership_Academies
+		icon = GFX_focus_generic_military_academy
+		cost = 9
+		relative_position_id = RUS_focus_SR_Artillery
+		prerequisite = {
+			focus = RUS_focus_SR_Cossacks
+			focus = RUS_focus_SR_Artillery
+		}
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			swap_ideas = { # just in case so nothing breaks
+				remove_idea = RUS_Dated_Warfare
+				add_idea = RUS_Dated_Warfare1
+			}
+			unlock_decision_category_tooltip = RUS_Military_Academy_Category
+			custom_effect_tooltip = RUS_focus_SR_Leadership_Academies_tt
+			add_to_variable = {
+				RUS_var_army_morale_factor = 0.1
+			}
+			add_to_variable = {
+				RUS_var_army_coordination = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_A_Modern_And_Peoples_Army
+		icon = GFX_goal_generic_army_doctrines
+		cost = 6
+		relative_position_id = RUS_focus_SR_Leadership_Academies
+		prerequisite = {
+			focus = RUS_focus_SR_Leadership_Academies
+		}
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			custom_effect_tooltip = RUS_focus_SR_A_Modern_And_Peoples_Army_tt
+			add_to_variable = {
+				RUS_var_army_div_attack_factor = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_div_defense_factor = 0.05
+			}
+			add_to_variable = {
+				RUS_var_army_reinforce_rate = 0.05
+			}
+		}
+	}
+
+	# Branch 4-2: Air force - token because the Russian air force wasn't very good during WW1
+
+	focus = {
+		id = RUS_focus_SR_Sikorsky
+		icon = GFX_focus_generic_air_research_boost
+		cost = 6
+		relative_position_id = RUS_focus_SR_State_of_the_Military
+		prerequisite = {
+			focus = RUS_focus_SR_State_of_the_Military
+		}
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			add_tech_bonus = {
+				category = air_equipment
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Westernized_Air_Force
+		icon = GFX_goal_generic_CAS
+		cost = 6
+		relative_position_id = RUS_focus_SR_Sikorsky
+		prerequisite = {
+			focus = RUS_focus_SR_Sikorsky
+		}
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			add_ideas = {
+				RUS_idea_Westernized_Air_Force
+			}
+		}
+	}
+
+	# Branch 4-3: Navy - token because the Russian navy wasn't very good then plus land is where it's at
+
+	focus = {
+		id = RUS_focus_SR_New_Ship_Designs
+		icon = GFX_goal_generic_navy_battleship
+		cost = 6
+		relative_position_id = RUS_focus_SR_State_of_the_Military
+		prerequisite = {
+			focus = RUS_focus_SR_State_of_the_Military
+		}
+		x = 3
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = naval_equipment
+				}
+			}
+			else = {
+				navy_experience = 200
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_focus_SR_Learn_from_Tsushima
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 6
+		relative_position_id = RUS_focus_SR_New_Ship_Designs
+		prerequisite = {
+			focus = RUS_focus_SR_New_Ship_Designs
+		}
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			add_ideas = {
+				RUS_idea_Lessons_of_Tsushima
+			}
+		}
+	}
 
 	# End SR focus tree
 }

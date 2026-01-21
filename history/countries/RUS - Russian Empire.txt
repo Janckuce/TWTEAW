@@ -103,3 +103,29 @@ set_stability = 0.3
 set_war_support = 0.15
 
 # End of Party Popularity, Stability, War Support and other ##
+
+# Russian Army variables and dynamic modifier addition
+add_dynamic_modifier = { modifier = RUS_dynamic_modifier_Russian_Army }
+
+set_variable = { RUS_var_army_inf_attack_factor = 0 }
+set_variable = { RUS_var_army_inf_defense_factor = 0 }
+set_variable = { RUS_var_army_supply_consumption_factor = 0 }
+set_variable = { RUS_var_army_out_of_supply = 0 }
+set_variable = { RUS_var_army_org_factor = 0 }
+set_variable = { RUS_var_army_initiative_factor = 0 }
+set_variable = { RUS_var_army_training_time = 0 }
+set_variable = { RUS_var_army_min_training_level = 0 }
+set_variable = { RUS_var_army_xp_loss_factor = 0 }
+set_variable = { RUS_var_army_org_regain = 0 }
+set_variable = { RUS_var_army_breakthrough = 0 }
+set_variable = { RUS_var_army_cas_dmg_reduction = 0 }
+set_variable = { RUS_var_army_cav_attack_factor = 0 }
+set_variable = { RUS_var_army_art_attack_factor = 0 }
+set_variable = { RUS_var_army_art_defense_factor = 0 }
+set_variable = { RUS_var_army_hp = 0 }
+set_variable = { RUS_var_army_morale_factor = 0 }
+set_variable = { RUS_var_army_coordination = 0 }
+set_variable = { RUS_var_army_reinforce_rate = 0 }
+set_variable = { RUS_var_army_org_factor = 0 }
+set_variable = { RUS_var_army_div_attack_factor = 0 }
+set_variable = { RUS_var_army_div_defense_factor = 0 }
