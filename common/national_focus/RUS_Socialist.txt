@@ -20,7 +20,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20 # change this if you want to see it at game start
+			add = 0 # change this if you want to see it at game start
 			tag = RUS
 		}
 	}
@@ -29,17 +29,12 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	# Begin focus tree
-	# Root focus
-
 	# Branch 1: Solving the worst economic issues, early industrialization
-	# Branch 1-1: Land reforms
+	# Level 1: Stolypin's reforms as a base, foreign experts to help modernize
 
 	focus = {
 		id = RUS_focus_SR_Continue_Stolypins_Reforms
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = {
-			focus = RUS_focus_SR_Listen_to_SRs
-		}
 		cost = 3
 		x = 2
 		y = 0
@@ -48,6 +43,29 @@ focus_tree = {
 			add_ideas = RUS_stolypin_reform
 		}
 	}
+
+	focus = {
+		id = RUS_focus_SR_Invite_Foreign_Experts
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3
+		x = 6
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		completion_reward = {
+			add_ideas = RUS_idea_Foreign_Experts
+			195 = { # St. Paintersburg
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	# Branch 1-1: Land reforms
 
 	focus = {
 		id = RUS_focus_SR_Land_and_Freedom
@@ -328,29 +346,6 @@ focus_tree = {
 
 
 	# Branch 1-3: Early industrialization efforts with foreign help + improved worker conditions at the end
-
-	focus = {
-		id = RUS_focus_SR_Invite_Foreign_Experts
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = {
-			focus = RUS_focus_SR_Listen_to_SRs
-		}
-		cost = 3
-		x = 6
-		y = 0
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		completion_reward = {
-			add_ideas = RUS_idea_Foreign_Experts
-			195 = { # St. Paintersburg
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
 	
 	focus = {
 		id = RUS_focus_SR_Rural_Investments
