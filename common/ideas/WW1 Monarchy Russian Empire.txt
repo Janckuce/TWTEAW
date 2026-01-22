@@ -1,7 +1,203 @@
 ideas = {
 
 	country = { 
-	
+
+		RUS_improved_science = {
+			picture = rus_science
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+
+		MON_RUS_disciplining_army1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.35
+				army_attack_factor = -0.45
+				army_defence_factor = -0.5
+				army_org_factor = -0.25
+				army_strength_factor = -0.02
+			}
+		}
+
+		MON_RUS_disciplining_army2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.20
+				army_attack_factor = -0.30
+				army_defence_factor = -0.4
+				army_org_factor = -0.15
+				army_strength_factor = -0.04
+			}
+		}
+
+		MON_RUS_disciplining_army3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.05
+				army_attack_factor = -0.15
+				army_defence_factor = -0.3
+				army_org_factor = -0.05
+				army_strength_factor = -0.06
+			}
+		}
+
+		MON_RUS_disciplining_army4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = -0.05
+				# army_attack_factor = -0.15
+				army_defence_factor = -0.2
+				army_org_factor = 0.05
+				army_strength_factor = -0.08
+			}
+		}
+
+		MON_RUS_disciplining_army_temp_wartime = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				army_org_factor = -0.25
+			}
+		}
+
+		MON_RUS_disciplining_army5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = -0.20
+				army_attack_factor = 0.05
+				army_defence_factor = -0.10
+				army_org_factor = 0.10
+				army_strength_factor = -0.10
+			}
+		}
+
+
 		RUS_extractative_eco = {
 
 			allowed = {

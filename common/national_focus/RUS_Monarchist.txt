@@ -45,6 +45,34 @@ focus_tree = {
 	}
 
 
+	# Scientific Development Branch
+
+	focus = {
+		id = MON_RUS_left_science_focus1
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 7.2 
+		x = -2
+		y = 0
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists
+				add_idea = RUS_improved_science
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_right_science_focus2
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 7.2 
+		x = 0
+		y = 0
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+
 	# Tsar Nicholas II Cult of Personality Branch
 
 	focus = {
@@ -358,19 +386,19 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving1
 			195 = { # St. Petersburg
-				add_extra_state_shared_building_slots = 9
+				add_extra_state_shared_building_slots = 6
 
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -410,11 +438,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving2
 			224 = { # Bryansk
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 5
 
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 5
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -454,11 +482,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving3
 			247 = { # Tver
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 5
 
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 5
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -498,11 +526,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving4
 			205 = { # Kaluga
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 5
 				
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 5
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -542,11 +570,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving5
 			219 = { # Moscow
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 6
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -586,11 +614,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving6
 			223 = { # Moscow
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 6
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -630,11 +658,11 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_industry_devving7
 			252 = { # Nizhny Novgorod
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 6
 
 				add_building_construction = {
 					type = arms_factory
-					level = 8
+					level = 6
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -646,7 +674,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {					#54 Mills Total including this focus
+	focus = {					#43 Mills Total including this focus
 		id = MON_RUS_Mills8
 		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
 		cost = 2.9
@@ -685,9 +713,171 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+
+				## Add Chemical Plants instead of the 2 mills when implemented
 			}
 		}
 	}
+
+
+
+	# Army Reforms Branch
+
+	focus = {
+		id = MON_RUS_army_reform_start
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 7.2
+		# relative_position_id = MON_RUS_first_focus
+		x = 28
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+
+		}
+		available = {
+
+		}
+		completion_reward = {
+			army_experience = 40
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform1
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 7.2
+		relative_position_id = MON_RUS_army_reform_start
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Dated_Warfare
+				add_idea = MON_RUS_disciplining_army1
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform2
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 7.2
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_disciplining_army1
+				add_idea = MON_RUS_disciplining_army2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform3
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 7.2
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform2
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_disciplining_army2
+				add_idea = MON_RUS_disciplining_army3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform4
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 14.4
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform3
+		}
+		available = {
+			date > 1914.7.27
+		}
+		select_effect = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_disciplining_army3
+				add_idea = MON_RUS_disciplining_army4
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform5
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 14.4
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 4
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform4
+		}
+		available = {
+			date > 1915.1.1
+		}
+		select_effect = {
+			add_timed_idea = { idea = MON_RUS_disciplining_army_temp_wartime days = 100 }
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_disciplining_army4
+				add_idea = MON_RUS_disciplining_army5
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_RUS_attack_japan1
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 7.2
+		relative_position_id = MON_RUS_army_reform_start
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
 
 
 	# Spare Rifles Stockpiles
