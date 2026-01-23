@@ -74,3 +74,18 @@ RUS_Murmansk_Category = {
 		ORO = { has_country_flag = WW1_started_spectator }
 	}
 }
+
+MON_RUS_Stolypin_reform_decisions = {
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 90
+
+	visible_when_empty = yes
+
+	visible = {
+		has_completed_focus = MON_RUS_first_focus
+	}
+	allowed = {
+		tag = RUS
+	}
+}

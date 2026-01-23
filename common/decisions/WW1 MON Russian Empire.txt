@@ -1,0 +1,107 @@
+
+MON_RUS_Stolypin_reform_decisions = { 
+
+	stolypin_assassination_incoming = {
+		priority = 2
+		is_good = no
+		days_mission_timeout = 220
+		fire_only_once = no
+		allowed = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			# if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			FRA.Lobby_Support > GER.Lobby_Support
+			# 		}
+			# 	}
+			# 	GER = {
+			# 		add_timed_idea = {
+			# 			idea = ALL_Sanctions
+			# 			days = 120
+			# 		}
+			# 	}
+			# 	AUS = {
+			# 		add_timed_idea = {
+			# 			idea = ALL_Sanctions
+			# 			days = 120
+			# 		}
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		check_variable = {
+			# 			FRA.Lobby_Support < GER.Lobby_Support
+			# 		}
+			# 	}
+			# 	FRA = {
+			# 		add_timed_idea = {
+			# 			idea = ALL_Sanctions
+			# 			days = 120
+			# 		}
+			# 	}
+			# 	ENG = {
+			# 		add_timed_idea = {
+			# 			idea = ALL_Sanctions
+			# 			days = 120
+			# 		}
+			# 	}
+			# }
+			# set_variable = {
+			# 	GER.Agadir_Finished = 1
+			# }
+		}
+	}
+	
+	prevent_stolypins_assassination = {
+		cost = 50
+		fire_only_once = no
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			tag = RUS
+		}
+		days_remove = 10
+
+		icon = GFX_decision_generic_arrest
+		
+		complete_effect = {
+
+		}
+		modifier = {
+
+		}
+		remove_effect = {
+			
+		}
+	}
+
+	stolypin_reform1 = {
+		cost = 80
+		fire_only_once = no
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			has_completed_focus = MON_RUS_Stolypin1
+		}
+		days_remove = 100
+
+		icon = GFX_decision_eng_trade_unions_support
+		
+		complete_effect = {
+
+		}
+		modifier = {
+
+		}
+		remove_effect = {
+			
+		}
+	}
+}

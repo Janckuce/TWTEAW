@@ -193,7 +193,7 @@ ideas = {
 				army_attack_factor = 0.05
 				army_defence_factor = -0.10
 				army_org_factor = 0.10
-				army_strength_factor = -0.10
+				army_strength_factor = -0.08
 			}
 		}
 
@@ -450,7 +450,7 @@ ideas = {
 			}
 		}
 
-		RUS_stolpyn_reforms_1 = {
+		RUS_Stolypin_reforms_1 = {
 
 			allowed = {
 				always = no
@@ -478,7 +478,7 @@ ideas = {
 			}
 		}
 
-		RUS_stolpyn_reforms_2 = {
+		RUS_Stolypin_reforms_2 = {
 
 			allowed = {
 				always = no
@@ -506,7 +506,7 @@ ideas = {
 			}
 		}
 
-		RUS_stolpyn_reforms_2 = {
+		RUS_Stolypin_reforms_2 = {
 
 			allowed = {
 				always = no
@@ -531,6 +531,13 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.06
+			}
+		}
+
+		RUS_rasputin_idea_1 = {
+			picture = RUS_rasputin
+			modifier = {
+				political_power_cost = 0.10
 			}
 		}
 
