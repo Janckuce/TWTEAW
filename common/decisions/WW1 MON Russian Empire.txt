@@ -101,7 +101,68 @@ MON_RUS_Stolypin_reform_decisions = {
 
 		}
 		remove_effect = {
+			swap_ideas = {
+				remove_idea = RUS_Stolypin_reforms_1
+				add_idea = RUS_Stolypin_reforms_2
+			}
 			
 		}
 	}
+
+	stolypin_reform2 = {
+		cost = 80
+		fire_only_once = no
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			has_idea = RUS_Stolypin_reforms_2
+		}
+		days_remove = 100
+
+		icon = GFX_decision_eng_trade_unions_support
+		
+		complete_effect = {
+
+		}
+		modifier = {
+
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = RUS_Stolypin_reforms_2
+				add_idea = RUS_Stolypin_reforms_3
+			}
+			
+		}
+	}
+
+	stolypin_reform3 = {
+		cost = 80
+		fire_only_once = no
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			has_idea = RUS_Stolypin_reforms_3
+		}
+		days_remove = 100
+
+		icon = GFX_decision_eng_trade_unions_support
+		
+		complete_effect = {
+
+		}
+		modifier = {
+
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = RUS_Stolypin_reforms_3
+				add_idea = RUS_Stolypin_reforms_4
+			}
+			
+		}
+	}
+
 }
