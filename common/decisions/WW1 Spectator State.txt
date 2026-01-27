@@ -1271,6 +1271,40 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
+
+	RUS_last_offensive = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+		
+		available = {
+		    RUS = {
+			    has_country_flag = RUS_provisional_government_flag
+				has_completed_focus = MON_RUS_first_focus
+				has_stability < 0.01
+				has_war_with = GER
+			}
+		}
+		
+		complete_effect = {
+		    RUS = {
+				unlock_decision_category_tooltip = MON_RUS_army_collapse_mechanic
+				activate_mission = MON_RUS_army_collapse_incoming
+				swap_ideas = {
+					remove_idea = MON_RUS_Increased_Bolshevik_Sabotage
+					add_idea = MON_RUS_Bolshevik_Revolution_Brewing
+				}
+			}
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+	}
 	
 	RUS_october_revolution = {
 		allowed = {
@@ -1288,11 +1322,16 @@ ORO_spectator_state = {
 				RUS = {
 					has_war_with = GER
 				}
-				RUS = {
-					AND = {
-						NOT ={
-							controls_state = 206
-							controls_state = 202
+				OR = {
+					RUS = {
+						has_country_flag = RUS_rapid_army_collapse
+					}
+					RUS = {
+						AND = {
+							NOT ={
+								controls_state = 206 #Minsk
+								controls_state = 202 #Kyiv
+							}
 						}
 					}
 				}

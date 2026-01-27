@@ -13,47 +13,7 @@ MON_RUS_Stolypin_reform_decisions = {
 			always = no
 		}
 		timeout_effect = {
-			# if = {
-			# 	limit = {
-			# 		check_variable = {
-			# 			FRA.Lobby_Support > GER.Lobby_Support
-			# 		}
-			# 	}
-			# 	GER = {
-			# 		add_timed_idea = {
-			# 			idea = ALL_Sanctions
-			# 			days = 120
-			# 		}
-			# 	}
-			# 	AUS = {
-			# 		add_timed_idea = {
-			# 			idea = ALL_Sanctions
-			# 			days = 120
-			# 		}
-			# 	}
-			# }
-			# else_if = {
-			# 	limit = {
-			# 		check_variable = {
-			# 			FRA.Lobby_Support < GER.Lobby_Support
-			# 		}
-			# 	}
-			# 	FRA = {
-			# 		add_timed_idea = {
-			# 			idea = ALL_Sanctions
-			# 			days = 120
-			# 		}
-			# 	}
-			# 	ENG = {
-			# 		add_timed_idea = {
-			# 			idea = ALL_Sanctions
-			# 			days = 120
-			# 		}
-			# 	}
-			# }
-			# set_variable = {
-			# 	GER.Agadir_Finished = 1
-			# }
+			set_country_flag = MON_RUS_Stolypin_assassinated
 		}
 	}
 	
@@ -165,4 +125,23 @@ MON_RUS_Stolypin_reform_decisions = {
 		}
 	}
 
+}
+
+MON_RUS_army_collapse_mechanic = { 
+
+	MON_RUS_army_collapse_incoming = {
+		priority = 2
+		is_good = no
+		days_mission_timeout = 80
+		fire_only_once = no
+		allowed = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			set_country_flag = RUS_rapid_army_collapse
+		}
+	}
 }

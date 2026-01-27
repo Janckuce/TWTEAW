@@ -379,8 +379,11 @@ focus_tree = {
 		available = {
 
 		}
-		completion_reward = {
-
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_rasputin_idea_1
+				add_idea = RUS_rasputin_ignored
+			}
 		}
 	}
 
@@ -401,8 +404,11 @@ focus_tree = {
 		available = {
 
 		}
-		completion_reward = {
-
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_rasputin_idea_1
+				add_idea = RUS_rasputin_embraced
+			}
 		}
 	}
 
@@ -443,10 +449,10 @@ focus_tree = {
 			focus = MON_RUS_Stolypin1
 		}
 		available = {
-
+			has_country_flag = MON_RUS_Stolypin_assassinated
 		}
 		completion_reward = {
-
+			add_political_power = 40
 		}
 	}
 
@@ -465,10 +471,10 @@ focus_tree = {
 			focus = MON_RUS_Stolypin1
 		}
 		available = {
-
+			has_idea = RUS_Stolypin_reforms_4
 		}
 		completion_reward = {
-
+			add_political_power = 100
 		}
 	}
 
@@ -918,6 +924,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_means_of_living
+		}
 		prerequisite = {
 			focus = MON_RUS_break_monopolies
 		}
@@ -962,6 +971,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_industry_centralization1
+		}
 		prerequisite = {
 			focus = MON_RUS_break_monopolies
 		}
