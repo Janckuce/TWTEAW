@@ -55,7 +55,7 @@ focus_tree = {
 		id = MON_RUS_research_speed
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.8 
-		x = -2
+		x = -1
 		y = 0
 
 		available = {
@@ -74,7 +74,7 @@ focus_tree = {
 		id = MON_RUS_research_slot
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.8 
-		x = 0
+		x = 1
 		y = 0
 
 		available = {
@@ -245,6 +245,7 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MON_RUS_TsarFlag1
 			add_political_power = 150
+			add_stability = 0.30
 		}
 	}
 
@@ -274,7 +275,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = MON_RUS_TsarFlag2
-			add_stability = 0.15
+			add_stability = 0.20
 		}
 	}
 
@@ -333,7 +334,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_stability = 0.25
+			add_stability = 0.20
 		}
 	}
 
@@ -345,7 +346,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_patriarch_of_all_russia
 		cost = 5.8
 		relative_position_id = MON_RUS_TsarCult
-		x = 4
+		x = -4
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -420,7 +421,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_patriarch_of_all_russia
 		cost = 5.8
 		relative_position_id = MON_RUS_TsarCult
-		x = -4
+		x = 4
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -487,7 +488,7 @@ focus_tree = {
 		id = MON_RUS_Mills_Start
 		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 		cost = 5.8
-		x = 20
+		x = 25
 		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -899,7 +900,7 @@ focus_tree = {
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
-		x = 25
+		x = 19
 		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1018,8 +1019,8 @@ focus_tree = {
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
-		x = 32
-		y = 0
+		x = 19
+		y = 7
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 
@@ -1176,10 +1177,14 @@ focus_tree = {
 		id = MON_RUS_Stockpiles1
 		icon = GFX_focus_AUS_raid_military_storages
 		cost = 5.8
-		x = 15
-		y = 6
+		relative_position_id = MON_RUS_army_reform_start
+		x = 0
+		y = 1
 
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
 
 		available = {
 			has_war = yes
@@ -1191,7 +1196,6 @@ focus_tree = {
 				amount = 100
 				producer = RUS
 			}
-			add_stability = -0.01
 		}
 	}
 
@@ -1223,7 +1227,6 @@ focus_tree = {
 				amount = 15000
 				producer = RUS
 			}
-			add_stability = -0.02
 		}
 	}
 
@@ -1254,7 +1257,6 @@ focus_tree = {
 				amount = 20000
 				producer = RUS
 			}
-			add_stability = -0.03
 		}
 	}
 
@@ -1284,7 +1286,6 @@ focus_tree = {
 				amount = 25000
 				producer = RUS
 			}
-			add_stability = -0.04
 		}
 	}
 

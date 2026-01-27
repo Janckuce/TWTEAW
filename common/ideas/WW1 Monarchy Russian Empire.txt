@@ -16,7 +16,7 @@ ideas = {
 		MON_RUS_Increased_Bolshevik_Sabotage = {
 			picture = rus_lenin_spirit
 			modifier = {
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = 0.05
 				stability_weekly = -0.003
 			}
 		}
@@ -25,7 +25,7 @@ ideas = {
 		picture = rus_lenin_spirit
 		modifier = {
 			industrial_capacity_factory = -0.05
-			stability_weekly = -0.006
+			stability_weekly = -0.005
 		}
 	}
 
@@ -188,7 +188,7 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				army_org_factor = -0.25
+				army_org_factor = -0.20
 			}
 		}
 
@@ -217,7 +217,7 @@ ideas = {
 
 			modifier = {
 				training_time_army_factor = -0.20
-				army_attack_factor = 0.05
+				army_attack_factor = 0.08
 				army_defence_factor = -0.10
 				army_org_factor = 0.10
 				army_strength_factor = -0.08
@@ -277,7 +277,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.40
+				consumer_goods_factor = 0.24
 			}
 		}
 
@@ -305,7 +305,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.22
 			}
 		}
 
@@ -333,7 +333,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.30
+				consumer_goods_factor = 0.20
 			}
 		}
 
@@ -361,7 +361,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.18
 			}
 		}
 
@@ -389,7 +389,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = 0.16
 			}
 		}
 
@@ -417,7 +417,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.14
 			}
 		}
 
@@ -445,7 +445,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.12
 			}
 		}
 
@@ -473,7 +473,7 @@ ideas = {
             picture = GER_economy_of_conquest
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -502,7 +502,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.02
-				stability_factor = -0.02
 			}
 		}
 
@@ -531,7 +530,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.03
-				stability_factor = -0.03
 			}
 		}
 
@@ -560,7 +558,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.04
-				stability_factor = -0.04
 			}
 		}
 
@@ -589,7 +586,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_expected_value = -0.05
-				stability_factor = -0.05
 			}
 		}
 
@@ -603,16 +599,17 @@ ideas = {
 		RUS_rasputin_embraced = {
 			picture = RUS_rasputin
 			modifier = {
-				political_power_cost = -0.15
-				stability_factor = -0.05
+				political_power_cost = -0.20
+				war_support_factor = -0.05
 			}
 		}
 
 		RUS_rasputin_ignored = {
 			picture = RUS_rasputin
 			modifier = {
-				war_support_weekly = -0.002
-				stability_factor = 0.05
+				political_power_cost = 0.10
+				war_support_weekly = -0.001
+				stability_factor = 0.08
 			}
 		}
 
