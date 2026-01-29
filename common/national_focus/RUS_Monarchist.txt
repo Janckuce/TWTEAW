@@ -36,7 +36,7 @@ focus_tree = {
 		id = MON_RUS_first_focus
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 2.9 # initial focus to select a path, should not be too long
-		x = 10
+		x = 8
 		y = 0
 		completion_reward = {
 			unlock_decision_category_tooltip = MON_RUS_Stolypin_reform_decisions
@@ -55,8 +55,8 @@ focus_tree = {
 		id = MON_RUS_research_speed
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.8 
-		x = -1
-		y = 0
+		x = 25
+		y = 10
 
 		available = {
 			has_completed_focus = MON_RUS_first_focus
@@ -74,8 +74,8 @@ focus_tree = {
 		id = MON_RUS_research_slot
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 5.8 
-		x = 1
-		y = 0
+		x = 27
+		y = 10
 
 		available = {
 			has_completed_focus = MON_RUS_first_focus
@@ -166,6 +166,34 @@ focus_tree = {
 				uses = 1
 				category = train_tech
 			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_train_spawnin
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4
+
+		relative_position_id = MON_RUS_train_research1
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = MON_RUS_train_research1
+		}
+
+		available = {
+			has_tech = railway_gun
+		}
+
+		completion_reward = {
+			create_railway_gun = {
+				equipment = railway_gun_equipment_1
+				name = "The Tzargun"
+				location = 3151
+				# teleport_railway_guns_to_deploy_province = yes
+			}
+			add_ideas = RUN_railway_gun_modifiers
 		}
 	}
 
@@ -512,7 +540,7 @@ focus_tree = {
 		id = MON_RUS_Mills_Start
 		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
 		cost = 5.8
-		x = 27
+		x = 26
 		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1194,7 +1222,7 @@ focus_tree = {
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
-		x = 19
+		x = 17
 		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1383,7 +1411,7 @@ focus_tree = {
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
-		x = 17
+		x = 11
 		y = 7
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1529,7 +1557,160 @@ focus_tree = {
 
 		}
 		completion_reward = {
+			408 = { # Vladivostok
+				add_extra_state_shared_building_slots = 3
 
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan2
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_attack_japan1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			JAP = {
+				division_template = {
+					name = "Japanese Border Guards"
+					is_locked = no
+
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+					}
+
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+				527 = {
+					create_unit = {
+						division = "name = \"Japanese Border Guards\" division_template = \"Japanese Border Guards\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = JAP
+						prioritize_location = 6944
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"Japanese Border Guards\" division_template = \"Japanese Border Guards\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = JAP
+						prioritize_location = 6944
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 408 # Vladivostok
+					num_provinces = 1
+					on_win = won_second_Russo_Japanese_border_conflict_event.1
+					on_lose = won_second_Russo_Japanese_border_conflict_event.2
+					on_cancel = won_second_Russo_Japanese_border_conflict_event.2
+				}
+				
+				defender = {
+					state = 527
+					num_provinces = 1
+					# on_win = SEA_border_incidents_events.6
+					# on_lose = SEA_border_incidents_events.5
+					# on_cancel = SEA_border_incidents_events.7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan3
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_attack_japan2
+		}
+		available = {
+			has_country_flag = won_second_Russo_Japanese_border_conflict
+		}
+		completion_reward = {
+			CHI = {
+				give_resource_rights = { receiver = RUS state = 716 }
+				give_resource_rights = { receiver = RUS state = 328 }
+			}
+			408 = { # Vladivostok
+				add_extra_state_shared_building_slots = 6
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan4
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_attack_japan3
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = RUS_cavalry_charge1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan5
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 0
+		y = 4
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_attack_japan4
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_cavalry_charge1
+				add_idea = RUS_cavalry_charge2
+			}
 		}
 	}
 

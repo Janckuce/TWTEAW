@@ -1,0 +1,32 @@
+add_namespace = won_second_Russo_Japanese_border_conflict_event
+
+# 1905 Revenge Border Conflict Results
+
+country_event = {
+	id = won_second_Russo_Japanese_border_conflict_event.1
+	title = won_second_Russo_Japanese_border_conflict_event.1.t
+	desc = won_second_Russo_Japanese_border_conflict_event_desc.1
+	picture = GFX_report_event_yugoslavian_cavalry
+
+	is_triggered_only = yes
+
+	option = {
+		name = won_second_Russo_Japanese_border_conflict_event.1.a
+
+		set_country_flag = won_second_Russo_Japanese_border_conflict
+	}
+}
+
+country_event = {
+	id = won_second_Russo_Japanese_border_conflict_event.2
+	title = won_second_Russo_Japanese_border_conflict_event.2.t
+	desc = won_second_Russo_Japanese_border_conflict_event_desc.2
+	picture = GFX_report_event_yugoslavia_partisans
+
+	is_triggered_only = yes
+
+	option = {
+		name = won_second_Russo_Japanese_border_conflict_event.2.a
+
+	}
+}

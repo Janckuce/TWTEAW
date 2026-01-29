@@ -1134,7 +1134,7 @@ ideas = {
 		}
 
 
-		RUS_cavalry_charge = {
+		RUS_cavalry_charge1 = {
 
 			allowed = {
 				always = no
@@ -1160,6 +1160,76 @@ ideas = {
 			modifier = {
 				cavalry_attack_factor = 0.12
 				cavalry_defence_factor = -0.06
+			}
+		}
+
+		RUS_cavalry_charge2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_afghanistan_bank
+
+			modifier = {
+				cavalry_attack_factor = 0.12
+				# cavalry_defence_factor = -0.06
+			}
+			# cavalry = {
+			# 	max_strength = 1
+			# }
+		}
+
+		RUN_railway_gun_modifiers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_afghanistan_bank
+
+			modifier = {
+
+			}
+
+			equipment_bonus = {
+				railway_gun_equipment = {
+					railway_gun_attack = 0.351
+					maximum_speed = 1
+	            	reliability = 0.14
+                    railway_gun_hours_between_redistribution = -0.5
+					instant = yes
+				}
 			}
 		}
 		

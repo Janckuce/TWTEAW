@@ -432,6 +432,9 @@ self_propelled_support = {
 
     available = {
         has_variable = support_milestone_var
+        NOT = {
+            has_completed_focus = MON_RUS_first_focus
+        }
     }
 
     equipment_bonus = {
