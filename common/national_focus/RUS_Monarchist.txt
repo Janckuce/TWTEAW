@@ -1412,7 +1412,7 @@ focus_tree = {
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
 		x = 11
-		y = 7
+		y = 8
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
 
@@ -1430,9 +1430,13 @@ focus_tree = {
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
-		x = -3
+		x = 1
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		mutually_exclusive = {
+			focus = MON_RUS_army_defense_reform1
+		}
 		prerequisite = {
 			focus = MON_RUS_army_reform_start
 		}
@@ -1440,10 +1444,11 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Dated_Warfare
-				add_idea = MON_RUS_disciplining_army1
-			}
+			add_war_support = 0.05
+			# swap_ideas = {
+			# 	remove_idea = RUS_Dated_Warfare
+			# 	add_idea = MON_RUS_disciplining_army1
+			# }
 		}
 	}
 
@@ -1463,16 +1468,38 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = MON_RUS_disciplining_army1
+				remove_idea = RUS_Dated_Warfare
 				add_idea = MON_RUS_disciplining_army2
 			}
 		}
 	}
 
+	# focus = {
+	# 	id = MON_RUS_army_reform3
+	# 	icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+	# 	cost = 5.8
+	# 	relative_position_id = MON_RUS_army_reform1
+	# 	x = 0
+	# 	y = 2
+	# 	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+	# 	prerequisite = {
+	# 		focus = MON_RUS_army_reform2
+	# 	}
+	# 	available = {
+
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = MON_RUS_disciplining_army2
+	# 			add_idea = MON_RUS_disciplining_army3
+	# 		}
+	# 	}
+	# }
+
 	focus = {
 		id = MON_RUS_army_reform3
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
-		cost = 5.8
+		cost = 14.4
 		relative_position_id = MON_RUS_army_reform1
 		x = 0
 		y = 2
@@ -1481,6 +1508,9 @@ focus_tree = {
 			focus = MON_RUS_army_reform2
 		}
 		available = {
+			date > 1914.7.27
+		}
+		select_effect = {
 
 		}
 		completion_reward = {
@@ -1503,11 +1533,11 @@ focus_tree = {
 			focus = MON_RUS_army_reform3
 		}
 		available = {
-			date > 1914.5.87
+			date > 1915.1.1
 		}
-		select_effect = {
-
-		}
+		# select_effect = {
+		# 	add_timed_idea = { idea = MON_RUS_disciplining_army_temp_wartime days = 100 }
+		# }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = MON_RUS_disciplining_army3
@@ -1517,29 +1547,120 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MON_RUS_army_reform5
+		id = MON_RUS_army_defense_reform1
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
-		cost = 14.4
-		relative_position_id = MON_RUS_army_reform1
+		cost = 5.8
+		relative_position_id = MON_RUS_army_reform_start
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		mutually_exclusive = {
+			focus = MON_RUS_army_reform1
+		}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_stability = 0.05
+			# swap_ideas = {
+			# 	remove_idea = RUS_Dated_Warfare
+			# 	add_idea = MON_RUS_defensive_army1
+			# }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_defense_reform2
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_army_defense_reform1
 		x = 0
-		y = 4
+		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = MON_RUS_army_reform4
+			focus = MON_RUS_army_defense_reform1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Dated_Warfare
+				add_idea = MON_RUS_defensive_army2
+			}
+		}
+	}
+
+	# focus = {
+	# 	id = MON_RUS_army_defense_reform3
+	# 	icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+	# 	cost = 5.8
+	# 	relative_position_id = MON_RUS_army_defense_reform1
+	# 	x = 0
+	# 	y = 2
+	# 	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+	# 	prerequisite = {
+	# 		focus = MON_RUS_army_defense_reform2
+	# 	}
+	# 	available = {
+
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = MON_RUS_defensive_army2
+	# 			add_idea = MON_RUS_defensive_army3
+	# 		}
+	# 	}
+	# }
+
+	focus = {
+		id = MON_RUS_army_defense_reform3
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_army_defense_reform1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_defense_reform2
+		}
+		available = {
+			date > 1914.7.27
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_defensive_army2
+				add_idea = MON_RUS_defensive_army3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_defense_reform4
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_army_defense_reform1
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_defense_reform3
 		}
 		available = {
 			date > 1915.1.1
 		}
-		select_effect = {
-			add_timed_idea = { idea = MON_RUS_disciplining_army_temp_wartime days = 100 }
-		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = MON_RUS_disciplining_army4
-				add_idea = MON_RUS_disciplining_army5
+				remove_idea = MON_RUS_defensive_army3
+				add_idea = MON_RUS_defensive_army4
 			}
 		}
 	}
+
 
 
 	focus = {
@@ -1547,7 +1668,7 @@ focus_tree = {
 		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
-		x = 3
+		x = 4
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1688,31 +1809,31 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_ideas = RUS_cavalry_charge1
+			add_ideas = RUS_cavalry_charge2
 		}
 	}
 
-	focus = {
-		id = MON_RUS_attack_japan5
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
-		cost = 5.8
-		relative_position_id = MON_RUS_attack_japan1
-		x = 0
-		y = 4
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = MON_RUS_attack_japan4
-		}
-		available = {
+	# focus = {
+	# 	id = MON_RUS_attack_japan5
+	# 	icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+	# 	cost = 5.8
+	# 	relative_position_id = MON_RUS_attack_japan1
+	# 	x = 0
+	# 	y = 4
+	# 	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+	# 	prerequisite = {
+	# 		focus = MON_RUS_attack_japan4
+	# 	}
+	# 	available = {
 
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_cavalry_charge1
-				add_idea = RUS_cavalry_charge2
-			}
-		}
-	}
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = RUS_cavalry_charge1
+	# 			add_idea = RUS_cavalry_charge2
+	# 		}
+	# 	}
+	# }
 
 
 
@@ -1723,8 +1844,8 @@ focus_tree = {
 		icon = GFX_focus_AUS_raid_military_storages
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
-		x = 0
-		y = 2
+		x = -4
+		y = 1
 
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {

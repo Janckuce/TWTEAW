@@ -36,37 +36,37 @@ ideas = {
 			}
 		}
 
-		MON_RUS_disciplining_army1 = {
+		# MON_RUS_disciplining_army1 = {
 
-			allowed = {
-				always = no
-			}
+		# 	allowed = {
+		# 		always = no
+		# 	}
 
-			allowed_civil_war = {
-				always = yes
-			}
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
 			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
 			
-			removal_cost = -1
+		# 	removal_cost = -1
 			
-            picture = RUS_1905_war
+        #     picture = RUS_1905_war
 
-			modifier = {
-				training_time_army_factor = 0.35
-				army_attack_factor = -0.45
-				army_defence_factor = -0.5
-				army_org_factor = -0.25
-				army_strength_factor = -0.02
-			}
-		}
+		# 	modifier = {
+		# 		training_time_army_factor = 0.35
+		# 		army_attack_factor = -0.45
+		# 		army_defence_factor = -0.5
+		# 		army_org_factor = -0.25
+		# 		army_strength_factor = -0.02
+		# 	}
+		# }
 
 		MON_RUS_disciplining_army2 = {
 
@@ -92,11 +92,11 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				training_time_army_factor = 0.20
-				army_attack_factor = -0.30
-				army_defence_factor = -0.4
+				training_time_army_factor = 0.25
+				army_attack_factor = -0.10
+				army_defence_factor = -0.25
 				army_org_factor = -0.15
-				army_strength_factor = -0.04
+				army_strength_factor = -0.02
 			}
 		}
 
@@ -124,11 +124,11 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				training_time_army_factor = 0.05
-				army_attack_factor = -0.15
-				army_defence_factor = -0.3
-				army_org_factor = -0.05
-				army_strength_factor = -0.06
+				# training_time_army_factor = -0.10
+				# army_attack_factor = -0.15
+				army_defence_factor = -0.2
+				army_org_factor = 0.05
+				army_strength_factor = -0.04
 			}
 		}
 
@@ -156,11 +156,11 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				training_time_army_factor = -0.05
-				# army_attack_factor = -0.15
-				army_defence_factor = -0.2
-				army_org_factor = 0.05
-				army_strength_factor = -0.08
+				training_time_army_factor = -0.25
+				army_attack_factor = 0.08
+				army_defence_factor = -0.10
+				army_org_factor = 0.10
+				army_strength_factor = -0.06
 			}
 		}
 
@@ -192,7 +192,71 @@ ideas = {
 			}
 		}
 
-		MON_RUS_disciplining_army5 = {
+		# MON_RUS_disciplining_army5 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = -0.25
+		# 		army_attack_factor = 0.08
+		# 		army_defence_factor = -0.10
+		# 		army_org_factor = 0.10
+		# 		army_strength_factor = -0.08
+		# 	}
+		# }
+
+		# MON_RUS_defensive_army1 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = 0.35
+		# 		army_attack_factor = -0.5
+		# 		army_defence_factor = -0.35
+		# 		army_org_factor = -0.20
+		# 		army_strength_factor = -0.01
+		# 	}
+		# }
+
+		MON_RUS_defensive_army2 = {
 
 			allowed = {
 				always = no
@@ -216,13 +280,109 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				training_time_army_factor = -0.20
-				army_attack_factor = 0.08
+				training_time_army_factor = 0.25
+				army_attack_factor = -0.25
 				army_defence_factor = -0.10
-				army_org_factor = 0.10
-				army_strength_factor = -0.08
+				army_org_factor = -0.10
+				army_strength_factor = -0.01
 			}
 		}
+
+		MON_RUS_defensive_army3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				# training_time_army_factor = 0.05
+				army_attack_factor = -0.10
+				army_defence_factor = 0.05
+				# army_org_factor = -0.05
+				army_strength_factor = -0.02
+			}
+		}
+
+		MON_RUS_defensive_army4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = -0.25
+				# army_attack_factor = -0.05
+				army_defence_factor = 0.15
+				army_org_factor = 0.10
+				army_strength_factor = -0.03
+			}
+		}
+
+		# MON_RUS_defensive_army5 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = -0.25
+		# 		army_attack_factor = -0.05
+		# 		army_defence_factor = 0.15
+		# 		army_org_factor = 0.15
+		# 		army_strength_factor = -0.04
+		# 	}
+		# }
 
 
 		RUS_extractative_eco = {
