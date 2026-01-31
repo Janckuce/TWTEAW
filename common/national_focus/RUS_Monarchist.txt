@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_first_focus
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_BRA_ban_communist_party
 		cost = 2.9 # initial focus to select a path, should not be too long
 		x = 8
 		y = 0
@@ -53,7 +53,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_research_speed
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_NORDIC_dem_selector_research
 		cost = 5.8 
 		x = 25
 		y = 10
@@ -72,7 +72,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_research_slot
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_NORDIC_dem_research
 		cost = 5.8 
 		x = 27
 		y = 10
@@ -88,7 +88,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_infantry_research1
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
 		cost = 4
 
 		relative_position_id = MON_RUS_research_speed
@@ -116,7 +116,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_infantry_research2
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 4
 
 		relative_position_id = MON_RUS_research_speed
@@ -143,7 +143,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_train_research1
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_railroad
 		cost = 4
 
 		relative_position_id = MON_RUS_research_speed
@@ -171,7 +171,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_train_spawnin
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_railway_gun
 		cost = 4
 
 		relative_position_id = MON_RUS_train_research1
@@ -199,7 +199,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_support_research1
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
 		cost = 4
 
 		relative_position_id = MON_RUS_research_speed
@@ -371,7 +371,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Rasputin1
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_focus_CZE_german_puppet
 		cost = 5.8
 		relative_position_id = MON_RUS_TsarCult
 		x = -4
@@ -393,7 +393,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Rasputin2
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_focus_generic_military_academy
 		cost = 5.8
 		relative_position_id = MON_RUS_Rasputin1
 		x = -1
@@ -418,7 +418,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Rasputin3
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_focus_ARG_keep_it_in_the_party
 		cost = 5.8
 		relative_position_id = MON_RUS_Rasputin1
 		x = 1
@@ -441,12 +441,75 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = MON_RUS_Rasputin4
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_Rasputin3
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			add_political_power = -50
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin5
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_Rasputin2
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			add_political_power = -50
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = MON_RUS_govenrment1
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin2
+		x = 1
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_Rasputin4
+			focus = MON_RUS_Rasputin5
+		}
+		available = {
+
+		}
+		completion_reward = { 
+
+		}
+	}
+
 
 	# Stolypin Branch
 
 	focus = {
 		id = MON_RUS_Stolypin1
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_SOV_reformalize_the_role_of_the_patriarchate_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_TsarCult
 		x = 4
@@ -465,7 +528,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Stolypin2
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_SOV_smersh_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_Stolypin1
 		x = -1
@@ -487,7 +550,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Stolypin3
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_focus_generic_currency_reforms
 		cost = 5.8
 		relative_position_id = MON_RUS_Stolypin1
 		x = 1
@@ -509,7 +572,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_redirect_stolypin_reforms
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_monetary_union
 		cost = 5.8
 		relative_position_id = MON_RUS_Stolypin3
 		x = -1
@@ -527,7 +590,28 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 4 }
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_redirect_stolypin_reforms2
+		icon = GFX_focus_generic_monetary_union
+		cost = 8.6
+		relative_position_id = MON_RUS_redirect_stolypin_reforms
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_redirect_stolypin_reforms
+		}
+
+		available = {
+			
+		}
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 
@@ -538,7 +622,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_Mills_Start
-		icon = GFX_SOV_rebuild_the_nation_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_mining_industry
 		cost = 5.8
 		x = 26
 		y = 0
@@ -903,7 +987,7 @@ focus_tree = {
 
 	focus = {					#43 Mills Total including this focus
 		id = MON_RUS_Mills8
-		icon = GFX_SOV_reorganize_the_pc_of_heavy_industry_ccp_2d_sov_compatibility
+		icon = GFX_focus_CHL_high_quality_nitrate
 		cost = 2.9
 		relative_position_id = MON_RUS_Mills5
 		x = 0
@@ -948,7 +1032,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_centralized_production1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		cost = 5.8
 		relative_position_id = MON_RUS_Mills4
 		x = -1
@@ -970,7 +1054,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_centralized_production2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		cost = 5.8
 		relative_position_id = MON_RUS_centralized_production1
 		x = 0
@@ -992,7 +1076,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_centralized_production3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
 		cost = 5.8
 		relative_position_id = MON_RUS_centralized_production2
 		x = 0
@@ -1014,7 +1098,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_decentralized_production1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_reorient_production
 		cost = 5.8
 		relative_position_id = MON_RUS_Mills4
 		x = 1
@@ -1036,7 +1120,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_decentralized_production2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_reorient_production
 		cost = 5.8
 		relative_position_id = MON_RUS_decentralized_production1
 		x = 0
@@ -1059,7 +1143,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_decentralized_production3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_reorient_production
 		cost = 5.8
 		relative_position_id = MON_RUS_decentralized_production1
 		x = 0
@@ -1082,7 +1166,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_high_yield_production1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_production
 		cost = 5.8
 		relative_position_id = MON_RUS_Mills8
 		x = -1
@@ -1104,7 +1188,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_high_yield_production2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_production
 		cost = 5.8
 		relative_position_id = MON_RUS_high_yield_production1
 		x = 0
@@ -1127,7 +1211,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_high_yield_production3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_production
 		cost = 5.8
 		relative_position_id = MON_RUS_high_yield_production1
 		x = 0
@@ -1150,7 +1234,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_adaptive_yield_production1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_continuous_naval_production
 		cost = 5.8
 		relative_position_id = MON_RUS_Mills8
 		x = 1
@@ -1172,7 +1256,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_adaptive_yield_production2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_continuous_naval_production
 		cost = 5.8
 		relative_position_id = MON_RUS_adaptive_yield_production1
 		x = 0
@@ -1195,7 +1279,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_adaptive_yield_production3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_continuous_naval_production
 		cost = 5.8
 		relative_position_id = MON_RUS_adaptive_yield_production1
 		x = 0
@@ -1241,7 +1325,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_industry_centralization1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_GER_integrated_economies
 		cost = 5.8
 		relative_position_id = MON_RUS_break_monopolies
 		x = -1
@@ -1266,7 +1350,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_industry_centralization2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_SWI_issue_war_bonds
 		cost = 5.8
 		relative_position_id = MON_RUS_break_monopolies
 		x = -1
@@ -1288,7 +1372,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_industry_centralization3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 5.8
 		relative_position_id = MON_RUS_break_monopolies
 		x = -2
@@ -1313,7 +1397,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_industry_centralization4
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_SOV_planned_economy_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_industry_centralization3
 		x = 0
@@ -1336,7 +1420,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_means_of_living
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_population_growth
 		cost = 5.8
 		relative_position_id = MON_RUS_break_monopolies
 		x = 1
@@ -1361,7 +1445,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_means_of_prosperity
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_AFG_a_modern_economy
 		cost = 5.8
 		relative_position_id = MON_RUS_break_monopolies
 		x = 1
@@ -1383,7 +1467,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_means_of_growth
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_economic_recovery
 		cost = 11.5
 		relative_position_id = MON_RUS_break_monopolies
 		x = 1
@@ -1403,15 +1487,37 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = MON_RUS_means_of_war
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 5.8
+		relative_position_id = MON_RUS_means_of_growth
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_means_of_growth
+		}
+		available = {
+			date > 1914.01.01
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_civving3
+				add_idea = RUS_Agrarian_Industry_civving4
+			}
+		}
+	}
+
 
 	# Army Reforms Branch
 
 	focus = {
 		id = MON_RUS_army_reform_start
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_POL_belarus_army
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
-		x = 11
+		x = 15
 		y = 8
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1427,7 +1533,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_reform1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
 		x = 1
@@ -1454,7 +1560,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_reform2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_NORDIC_mon_army
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform1
 		x = 0
@@ -1498,7 +1604,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_reform3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_NORDIC_mon_capstone_army
 		cost = 14.4
 		relative_position_id = MON_RUS_army_reform1
 		x = 0
@@ -1523,7 +1629,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_reform4
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_NORDIC_mon_selector_army
 		cost = 14.4
 		relative_position_id = MON_RUS_army_reform1
 		x = 0
@@ -1548,7 +1654,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_defense_reform1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_defence
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
 		x = -1
@@ -1575,7 +1681,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_defense_reform2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_NORDIC_com_army
 		cost = 5.8
 		relative_position_id = MON_RUS_army_defense_reform1
 		x = 0
@@ -1619,8 +1725,8 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_defense_reform3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
-		cost = 5.8
+		icon = GFX_focus_NORDIC_com_capstone_army
+		cost = 14.4
 		relative_position_id = MON_RUS_army_defense_reform1
 		x = 0
 		y = 2
@@ -1641,8 +1747,8 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_army_defense_reform4
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
-		cost = 5.8
+		icon = GFX_focus_NORDIC_com_selector_army
+		cost = 14.4
 		relative_position_id = MON_RUS_army_defense_reform1
 		x = 0
 		y = 3
@@ -1665,10 +1771,10 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_attack_japan1
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
-		x = 4
+		x = -4
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
@@ -1697,7 +1803,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_attack_japan2
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_attack_japan
 		cost = 5.8
 		relative_position_id = MON_RUS_attack_japan1
 		x = 0
@@ -1771,7 +1877,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_attack_japan3
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_resource_extraction
 		cost = 5.8
 		relative_position_id = MON_RUS_attack_japan1
 		x = 0
@@ -1796,12 +1902,15 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_attack_japan4
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_FIN_strengthen_military_administration
 		cost = 5.8
 		relative_position_id = MON_RUS_attack_japan1
-		x = 0
+		x = -1
 		y = 3
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_attack_japan5
+		}
 		prerequisite = {
 			focus = MON_RUS_attack_japan3
 		}
@@ -1809,31 +1918,31 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_ideas = RUS_cavalry_charge2
+			add_ideas = RUS_cavalry_charge1
 		}
 	}
 
-	# focus = {
-	# 	id = MON_RUS_attack_japan5
-	# 	icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
-	# 	cost = 5.8
-	# 	relative_position_id = MON_RUS_attack_japan1
-	# 	x = 0
-	# 	y = 4
-	# 	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-	# 	prerequisite = {
-	# 		focus = MON_RUS_attack_japan4
-	# 	}
-	# 	available = {
+	focus = {
+		id = MON_RUS_attack_japan5
+		icon = GFX_focus_generic_manpower
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 1
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_attack_japan4
+		}
+		prerequisite = {
+			focus = MON_RUS_attack_japan3
+		}
+		available = {
 
-	# 	}
-	# 	completion_reward = {
-	# 		swap_ideas = {
-	# 			remove_idea = RUS_cavalry_charge1
-	# 			add_idea = RUS_cavalry_charge2
-	# 		}
-	# 	}
-	# }
+		}
+		completion_reward = {
+			add_ideas = RUS_infantry_defense1
+		}
+	}
 
 
 
@@ -1844,7 +1953,7 @@ focus_tree = {
 		icon = GFX_focus_AUS_raid_military_storages
 		cost = 5.8
 		relative_position_id = MON_RUS_army_reform_start
-		x = -4
+		x = 4
 		y = 1
 
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -1931,7 +2040,7 @@ focus_tree = {
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		cost = 5.8
 		relative_position_id = MON_RUS_Stockpiles1
-		x = 0
+		x = -1
 		y = 3
 
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -1944,12 +2053,31 @@ focus_tree = {
 		completion_reward = {			
 			add_equipment_to_stockpile = {
 				type = ww1_infantry_equipment_1
-				amount = 25000
+				amount = 40000
 				producer = RUS
 			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles5
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5.8
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 1
+		y = 3
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles3
+		}
+		available = {
+
+		}
+		completion_reward = {			
 			add_equipment_to_stockpile = {
 				type = ww1_infantry_equipment_2
-				amount = 25000
+				amount = 30000
 				producer = RUS
 			}
 		}
