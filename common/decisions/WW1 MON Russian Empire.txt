@@ -4,7 +4,7 @@ MON_RUS_Stolypin_reform_decisions = {
 	stolypin_assassination_incoming = {
 		priority = 2
 		is_good = no
-		days_mission_timeout = 220
+		days_mission_timeout = 180
 		fire_only_once = no
 		allowed = {
 			always = no
@@ -13,7 +13,23 @@ MON_RUS_Stolypin_reform_decisions = {
 			always = no
 		}
 		timeout_effect = {
-			set_country_flag = MON_RUS_Stolypin_assassinated
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MON_RUS_prevented_stolypin_assassination
+					}
+				}
+				set_country_flag = MON_RUS_Stolypin_assassinated
+			}
+
+			if = {
+				limit = {
+					has_country_flag = MON_RUS_prevented_stolypin_assassination
+				}
+				activate_mission = stolypin_assassination_incoming
+				clr_country_flag = MON_RUS_prevented_stolypin_assassination
+			}
+			
 		}
 	}
 	
@@ -26,12 +42,20 @@ MON_RUS_Stolypin_reform_decisions = {
 		available = {
 			tag = RUS
 		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = MON_RUS_prevented_stolypin_assassination
+					has_country_flag = MON_RUS_Stolypin_assassinated
+				}
+			}
+		}
 		days_remove = 10
 
 		icon = GFX_decision_generic_arrest
 		
 		complete_effect = {
-
+			set_country_flag = MON_RUS_prevented_stolypin_assassination # Always executed due to being outside of the if statement.
 		}
 		modifier = {
 
@@ -49,6 +73,11 @@ MON_RUS_Stolypin_reform_decisions = {
 		}
 		available = {
 			has_completed_focus = MON_RUS_Stolypin1
+		}
+		visible = {
+			NOT = {
+				has_country_flag = MON_RUS_Stolypin_assassinated
+			}
 		}
 		days_remove = 100
 
@@ -78,6 +107,11 @@ MON_RUS_Stolypin_reform_decisions = {
 		available = {
 			has_idea = RUS_Stolypin_reforms_2
 		}
+		visible = {
+			NOT = {
+				has_country_flag = MON_RUS_Stolypin_assassinated
+			}
+		}
 		days_remove = 100
 
 		icon = GFX_decision_eng_trade_unions_support
@@ -105,6 +139,11 @@ MON_RUS_Stolypin_reform_decisions = {
 		}
 		available = {
 			has_idea = RUS_Stolypin_reforms_3
+		}
+		visible = {
+			NOT = {
+				has_country_flag = MON_RUS_Stolypin_assassinated
+			}
 		}
 		days_remove = 100
 
