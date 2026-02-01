@@ -23,9 +23,14 @@ sub_units = {
 
 		combat_width = 3
 
+		essential = {
+			artillery_equipment
+		}
+
 		manpower = 500
 		need = {
 			artillery_equipment = 36
+			HE_shell = 72
 		}
 		
 		max_strength = 6
