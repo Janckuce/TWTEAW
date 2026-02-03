@@ -26,8 +26,13 @@ sub_units = {
 
 		combat_width = 0
 
+		essential = {
+			artillery_equipment
+		}
+
 		need = {
 			artillery_equipment = 12
+			HE_shell = 24
 		}
 		manpower = 300
 		training_time = 120
