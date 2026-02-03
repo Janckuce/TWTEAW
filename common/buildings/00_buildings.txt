@@ -286,7 +286,7 @@ buildings = {
 	}
 
 	steel_refinery = {
-		base_cost = 25000	#Was 3000, Reduced by about 20k form 45k In
+		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
 		icon_frame = 28
 		refinery = yes
 		value = 1
@@ -297,15 +297,15 @@ buildings = {
 		}
 
 		local_resources_steel = 8 # May use local_resources_ + any resource name
-		country_modifiers = {
-			modifiers = {
-				country_resource_cost_oil = 2
-			}
-		}
+		# country_modifiers = {
+		# 	modifiers = {
+		# 		country_resource_cost_oil = 2
+		# 	}
+		# }
 	}
 
 	coal_refinery = {
-		base_cost = 25000	#Was 3000, Reduced by about 20k form 45k In
+		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
 		icon_frame = 29
 		refinery = yes
 		value = 1
@@ -315,18 +315,18 @@ buildings = {
 			state_max = 25
 		}
 
-		local_resources_coal = 4 # May use local_resources_ + any resource name
-		country_modifiers = {
-			modifiers = {
-				country_resource_cost_oil = 2
-				country_resource_cost_aluminium = 2
-				country_resource_cost_tungsten = 1
-			}
-		}
+		local_resources_coal = 6 # May use local_resources_ + any resource name
+		# country_modifiers = {
+		# 	modifiers = {
+		# 		country_resource_cost_oil = 2
+		# 		country_resource_cost_aluminium = 2
+		# 		country_resource_cost_tungsten = 1
+		# 	}
+		# }
 	}
 
 	sulfur_refinery = {
-		base_cost = 25000	#Was 3000, Reduced by about 20k form 45k In
+		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
 		icon_frame = 30
 		refinery = yes
 		value = 1
@@ -336,14 +336,14 @@ buildings = {
 			state_max = 25
 		}
 
-		local_resources_sulfur = 4 # May use local_resources_ + any resource name
-		country_modifiers = {
-			modifiers = {
-				country_resource_cost_oil = 2
-				country_resource_cost_aluminium = 2
-				country_resource_cost_tungsten = 1
-			}
-		}
+		local_resources_sulfur = 10 # May use local_resources_ + any resource name
+		# country_modifiers = {
+		# 	modifiers = {
+		# 		country_resource_cost_oil = 2
+		# 		country_resource_cost_aluminium = 2
+		# 		country_resource_cost_tungsten = 1
+		# 	}
+		# }
 	}
 
 
