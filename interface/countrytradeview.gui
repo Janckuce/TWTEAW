@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=750 height=100%% } #689
+		size = { width=770 height=100%% } #689
 		# clipping = no #TODO SEA remove it. Added for displaying coal
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -31,14 +31,14 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "TRADE_TRADE"
-			maxWidth = 440
+			maxWidth = 600 #440
 			maxHeight = 20
 			format = left
 		}				
 
 		containerWindowType = {
 			name = "trade_back"
-			size = { width = 660 height = 400 }
+			size = { width = 750 height = 400 } #660 width
 			position = { x = 8 y = 43 }
 
 			background = {
@@ -121,7 +121,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "resources_grid"
 				position = { x = 101 y = 0 }
-				size = { width = 462 height = 100%% }
+				size = { width = 500 height = 100%% } #462 width
 				slotsize = { width = 79 height = 156 }
 				max_slots = { x = 8 y = 1 }
 				format = "UPPER_LEFT"
@@ -130,7 +130,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "trade_icon_and_bg"
-			size = { width = 105 height = 66 }
+			size = { width = 105 height = 66 } #105 width
 			position = { x= 10 y = 90 }
 
 			iconType = {
@@ -562,7 +562,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "resources_info_entry"
 		position = { x = 0 y = 0 }	
-		size = { width = 79 height = 170 }
+		size = { width = 79 height = 170 }  #79 width
 		clipping = no
 
 		background = {
@@ -580,7 +580,7 @@ guiTypes = {
 			name = "balance"
 			position = { x=13 y=8 }
 			font = "hoi_20bs"
-			maxWidth = 57
+			maxWidth = 57 #57
 			maxHeight = 18
 			format = right
 		}
@@ -589,7 +589,7 @@ guiTypes = {
 			name = "produced"
 			position = { x=20 y=37 }
 			font = "hoi_16mbs"
-			maxWidth = 50
+			maxWidth = 50 #50
 			maxHeight = 18
 			format = right
 		}
@@ -659,7 +659,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "resources_filter_entry"
 		position = { x = 0 y = 4 }
-		size = { width = 74 height = 50 }
+		size = { width = 74 height = 50 } #74 width
 		clipping = no
 		
 		
