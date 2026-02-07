@@ -31,14 +31,14 @@ guiTypes = {
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "TRADE_TRADE"
-			maxWidth = 600 #440
+			maxWidth = 620 #440
 			maxHeight = 20
 			format = left
 		}				
 
 		containerWindowType = {
 			name = "trade_back"
-			size = { width = 750 height = 400 } #660 width
+			size = { width = 760 height = 400 } #660 width
 			position = { x = 8 y = 43 }
 
 			background = {
@@ -110,7 +110,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "resources"
 			position = { x = 11 y = 115 }	
-			size = { width = 655 height = 210 }
+			size = { width = 750 height = 210 } #655
 			verticalScrollbar = "right_vertical_slider"
 
 			background = {
@@ -121,7 +121,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "resources_grid"
 				position = { x = 101 y = 0 }
-				size = { width = 500 height = 100%% } #462 width
+				size = { width = 600 height = 100%% } #462 width
 				slotsize = { width = 79 height = 156 }
 				max_slots = { x = 8 y = 1 }
 				format = "UPPER_LEFT"
@@ -257,7 +257,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "resources_grid"
 				position = { x = 0 y = 0 }
-				size = { width = 400 height = 100%% }
+				size = { width = 400 height = 100%% } 
 				slotsize = { width = 79 height = 46 }
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
