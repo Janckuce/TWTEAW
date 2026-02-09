@@ -22,8 +22,13 @@ heavy_artillery_brigade = {
 	combat_width = 3
 	
 	manpower = 750
+
+	essential = {
+		heavy_artillery_equipment
+	}
 	need = { 
 	    heavy_artillery_equipment = 36
+		Large_caliber_shell = 72
 	}
 	
 	max_strength = 10

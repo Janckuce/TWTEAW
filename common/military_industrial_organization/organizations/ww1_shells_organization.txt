@@ -21,6 +21,7 @@ generic_artillery_shell_organization = {
 
 	equipment_type = {
 		HE_shell
+		Large_caliber_shell
 	}
 
 	research_categories = {
@@ -173,9 +174,9 @@ generic_artillery_shell_organization = {
 		mutually_exclusive = { generic_mio_trait_big_guns }
 
 
-		limit_to_equipment_type = { 
-			HE_shell
-		}
+		# limit_to_equipment_type = { 
+		# 	HE_shell
+		# }
 
 		production_bonus = {
 			production_resource_need_factor = -0.50
