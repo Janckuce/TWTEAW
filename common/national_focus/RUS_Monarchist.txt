@@ -484,8 +484,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MON_RUS_govenrment1
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		id = MON_RUS_government1
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
 		cost = 5.8
 		relative_position_id = MON_RUS_Rasputin2
 		x = 1
@@ -500,7 +500,7 @@ focus_tree = {
 
 		}
 		completion_reward = { 
-
+			add_political_power = 80
 		}
 	}
 
@@ -1303,7 +1303,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_RUS_break_monopolies
-		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		icon = GFX_focus_generic_supply_line
 		cost = 5.8
 		# relative_position_id = MON_RUS_first_focus
 		x = 17
