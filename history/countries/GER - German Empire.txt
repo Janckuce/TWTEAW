@@ -43,11 +43,15 @@ add_ideas = {
 	GER_Fear_Of_Russia_Potential
 	GER_neglected_military
 	GER_Disloyal_Nation
-	no_attrition
+	
 }
 add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
+}
+add_timed_idea = {
+    idea = no_attrition
+    days = 1305
 }
 
 recruit_character = GER_wilhelm_II
