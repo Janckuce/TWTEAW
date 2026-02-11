@@ -11,12 +11,12 @@ field_engineering = {
         date > 1914.9.15
     }
 
-    bunker_max_level_terrain_limit = 2
+    bunker_max_level_terrain_limit = 1
 
 	
     rewards = {
         rapid_fire_lane_clearance = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
         }
         sapper_fieldcraft = {
             bunker_max_level_terrain_limit = 2
@@ -25,7 +25,7 @@ field_engineering = {
             bunker_max_level_terrain_limit = 2
         }
         smoke_projector_training = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
         }
         charge_and_flame = {
             bunker_max_level_terrain_limit = 2
@@ -52,11 +52,12 @@ last_stand = {
 
 
     # PREVIOUS DOCTRINE LEGACY
-    bunker_max_level_terrain_limit = 12 
+    bunker_max_level_terrain_limit = 9 
 
     rewards = {
         werwolf_groups = {
             army_core_defence_factor = 0.15
+            bunker_max_level_terrain_limit = 1
         }
 
         pocket_consolidation = {
@@ -65,7 +66,8 @@ last_stand = {
         }
         digging_in = {
             land_reinforce_rate = 0.05
-            max_dig_in = 5
+            max_dig_in = 3
+            bunker_max_level_terrain_limit = 2
         }
         stocking_up = {
             equipment_capture_factor = 0.1
@@ -95,7 +97,7 @@ guerilla_war = {
 
 
     # PREVIOUS DOCTRINE LEGACY
-    bunker_max_level_terrain_limit = 12
+    bunker_max_level_terrain_limit = 9
 
     rewards = {
         catch_and_seize = {
