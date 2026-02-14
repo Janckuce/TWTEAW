@@ -82,25 +82,24 @@ sub_units = {
 
 		can_be_parachuted = yes
 		forest = {
-			# defence = 0.25
+			defence = 0.1
 			movement = 0.05
 		}
 
 		hills = {
-			# defence = 0.1
+			defence = 0.1
 		}
 
 		jungle = {
-			# defence = 0.25
 		}
 
 		marsh = {
-			# defence = 0.25
+			defence = 0.10
 			movement = 0.2
 		}
 
 		fort = {
-			defence = 0.25
+			defence = 0.15
 		}
 
 		river = {
@@ -140,11 +139,11 @@ sub_units = {
 
 	
 		combat_width = 0
-	
+
 		#Size Definitions
 		max_strength = 2
-		max_organisation = -15
-		default_morale = 0.3
+		max_organisation = -200
+		default_morale = -1.2
 		manpower = 300
 		training_time = 120
 
@@ -155,13 +154,39 @@ sub_units = {
 		entrenchment = 2
 		
 		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.20
+			max_organisation = 32
+			default_morale = 0.32
+			max_strength = 12
+			add = yes
+		}
+
+		battalion_mult = {
+			category = category_cavalry
+			max_organisation = 32
+			default_morale = 0.32
+			max_strength = 12
+			add = yes
+		}
+
+		battalion_mult = {
+			category = category_line_artillery
+			max_organisation = 20
+			default_morale = 0.05
+			max_strength = 2
+			add = yes
+		}
+		
+		entrenchment = 2
+		
+		battalion_mult = {
 			category = category_marines
 			breakthrough = 0.15
 			#add = yes
 		}
 
 		
-		entrenchment = 2.5
 		defense = 0.1
 		breakthrough = 0.5
 
@@ -181,7 +206,7 @@ sub_units = {
 
 		marsh = {
 			attack = 0.10
-			defence = 0.20
+			defence = 0.15
 			movement = 0.2
 		}
 

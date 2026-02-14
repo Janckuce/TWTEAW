@@ -19,6 +19,26 @@ ideas = {
 	}
 
 	country = {
+		Berlin_Baghdad_railway_initiative = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = ARG_invest_in_railways
+
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = AUS
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -0.50
+			}
+		}
 		TUR_Army_Of_Bygon_Era = {
 			allowed = {
 				always = no
