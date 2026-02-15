@@ -1,0 +1,28 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = RUS_Democratic
+	country = { 
+		factor = 0
+	}
+	continuous_focus_position = { x = 245 y = 2000 }
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = RUS_democratic_1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 0
+		y = 0
+		completion_reward = { 
+			
+		}
+	}
+}

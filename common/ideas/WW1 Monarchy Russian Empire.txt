@@ -1,0 +1,1419 @@
+ideas = {
+
+	country = { 
+
+		# RUS_Bolshevik_Sabotage = {
+		# 	picture = rus_lenin_spirit
+		# 	modifier = {
+		# 		army_morale_factor = -0.1
+		# 		stability_factor = -0.05
+		# 		war_support_factor = -0.05
+		# 		industrial_capacity_factory = -0.075
+		# 		stability_weekly = -0.002
+		# 	}
+		# }
+
+		MON_RUS_Increased_Bolshevik_Sabotage = {
+			picture = rus_lenin_spirit
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_weekly = -0.003
+			}
+		}
+
+		MON_RUS_Bolshevik_Revolution_Brewing = { 
+		picture = rus_lenin_spirit
+		modifier = {
+			industrial_capacity_factory = -0.05
+			stability_weekly = -0.005
+		}
+	}
+
+		RUS_improved_science = {
+			picture = rus_science
+			modifier = {
+				research_speed_factor = -0.15
+			}
+		}
+
+		# MON_RUS_disciplining_army1 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = 0.35
+		# 		army_attack_factor = -0.45
+		# 		army_defence_factor = -0.5
+		# 		army_org_factor = -0.25
+		# 		army_strength_factor = -0.02
+		# 	}
+		# }
+
+		MON_RUS_disciplining_army2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.25
+				army_attack_factor = -0.10
+				army_defence_factor = -0.25
+				army_org_factor = -0.15
+				army_strength_factor = -0.02
+			}
+		}
+
+		MON_RUS_disciplining_army3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				# training_time_army_factor = -0.10
+				# army_attack_factor = -0.15
+				army_defence_factor = -0.2
+				army_org_factor = 0.05
+				army_strength_factor = -0.04
+			}
+		}
+
+		MON_RUS_disciplining_army4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = -0.25
+				army_attack_factor = 0.08
+				army_defence_factor = -0.10
+				army_org_factor = 0.10
+				army_strength_factor = -0.06
+			}
+		}
+
+		MON_RUS_disciplining_army_temp_wartime = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				army_org_factor = -0.20
+			}
+		}
+
+		# MON_RUS_disciplining_army5 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = -0.25
+		# 		army_attack_factor = 0.08
+		# 		army_defence_factor = -0.10
+		# 		army_org_factor = 0.10
+		# 		army_strength_factor = -0.08
+		# 	}
+		# }
+
+		# MON_RUS_defensive_army1 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = 0.35
+		# 		army_attack_factor = -0.5
+		# 		army_defence_factor = -0.35
+		# 		army_org_factor = -0.20
+		# 		army_strength_factor = -0.01
+		# 	}
+		# }
+
+		MON_RUS_defensive_army2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = 0.25
+				army_attack_factor = -0.25
+				army_defence_factor = -0.10
+				army_org_factor = -0.10
+				army_strength_factor = -0.01
+			}
+		}
+
+		MON_RUS_defensive_army3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				# training_time_army_factor = 0.05
+				army_attack_factor = -0.10
+				army_defence_factor = 0.05
+				# army_org_factor = -0.05
+				army_strength_factor = -0.02
+			}
+		}
+
+		MON_RUS_defensive_army4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = RUS_1905_war
+
+			modifier = {
+				training_time_army_factor = -0.25
+				# army_attack_factor = -0.05
+				army_defence_factor = 0.15
+				army_org_factor = 0.10
+				army_strength_factor = -0.03
+			}
+		}
+
+		# MON_RUS_defensive_army5 = {
+
+		# 	allowed = {
+		# 		always = no
+		# 	}
+
+		# 	allowed_civil_war = {
+		# 		always = yes
+		# 	}
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+			
+		# 	removal_cost = -1
+			
+        #     picture = RUS_1905_war
+
+		# 	modifier = {
+		# 		training_time_army_factor = -0.25
+		# 		army_attack_factor = -0.05
+		# 		army_defence_factor = 0.15
+		# 		army_org_factor = 0.15
+		# 		army_strength_factor = -0.04
+		# 	}
+		# }
+
+
+		RUS_extractative_eco = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			picture = ARG_resource_extration_focus
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+
+		RUS_military_economic_burden_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.24
+			}
+		}
+
+		RUS_military_economic_burden_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.22
+			}
+		}
+
+		RUS_military_economic_burden_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+
+		RUS_military_economic_burden_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.18
+			}
+		}
+
+		RUS_military_economic_burden_5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.16
+			}
+		}
+
+		RUS_military_economic_burden_6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.14
+			}
+		}
+
+		RUS_military_economic_burden_7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = GER_economy_of_conquest
+			
+			modifier = {
+				consumer_goods_factor = 0.12
+			}
+		}
+
+		RUS_centralized_production_idea1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = SOV_the_local_soviets_idea_nsb_ccp_sov_compatibility
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = -0.10
+			}
+		}
+
+		RUS_centralized_production_idea2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = SOV_the_local_soviets_idea_nsb_ccp_sov_compatibility
+			
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = -0.20
+			}
+		}
+
+		RUS_centralized_production_idea3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = SOV_the_local_soviets_idea_nsb_ccp_sov_compatibility
+			
+			modifier = {
+				industrial_capacity_factory = 0.30
+				production_factory_efficiency_gain_factor = -0.30
+			}
+		}
+
+		RUS_decentralized_production_idea1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_central_management
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+
+		RUS_decentralized_production_idea2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_central_management
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.20
+			}
+		}
+		
+		RUS_decentralized_production_idea3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_central_management
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.30
+			}
+		}
+
+		RUS_higher_yields_idea1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+
+		RUS_higher_yields_idea2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.06
+			}
+		}
+		
+		RUS_higher_yields_idea3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+
+		RUS_adaptive_yields_idea1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.10
+			}
+		}
+
+		RUS_adaptive_yields_idea2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.20
+			}
+		}
+
+		RUS_adaptive_yields_idea3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.30
+			}
+		}
+
+
+		RUS_Stolypin_reforms_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.02
+			}
+		}
+
+		RUS_Stolypin_reforms_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.03
+			}
+		}
+
+		RUS_Stolypin_reforms_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.04
+			}
+		}
+
+		RUS_Stolypin_reforms_4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+
+		RUS_rasputin_idea_1 = {
+			picture = RUS_rasputin
+			modifier = {
+				political_power_cost = 0.10
+			}
+		}
+
+		RUS_rasputin_embraced = {
+			picture = RUS_rasputin
+			modifier = {
+				political_power_cost = -0.20
+				war_support_factor = -0.05
+			}
+		}
+
+		RUS_rasputin_ignored = {
+			picture = RUS_rasputin
+			modifier = {
+				political_power_cost = 0.10
+				war_support_weekly = -0.001
+				stability_factor = 0.08
+			}
+		}
+
+		# RUS_Agrarian_Industry = {
+		# 	picture = rus_poor_people
+		# 	removal_cost = -1
+			
+		# 	available = {
+		# 	    NOT = {
+		# 		    OR = {
+		# 				has_government = communism
+		# 				has_war_with = SOR
+		# 			}
+		# 		}
+		# 	}
+
+		# 	modifier = {
+		# 		production_speed_industrial_complex_factor = -0.3
+		# 		production_speed_infrastructure_factor = -0.3
+		# 		global_building_slots_factor = -0.8
+		# 	}
+		# 		equipment_bonus = {
+		# 		infantry_equipment = {
+		# 			build_cost_ic = 0.1
+		# 		}
+		# 			artillery_equipment = {
+		# 			build_cost_ic = 0.075
+		# 		}
+		# 	}
+		# }
+
+		RUS_Agrarian_Industry_fixed_IC = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_infrastructure_factor = -0.3
+				global_building_slots_factor = -0.8
+			}
+		}
+
+		RUS_Agrarian_Industry_civving1 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_infrastructure_factor = -0.1
+				global_building_slots_factor = -0.5
+				consumer_goods_expected_value = 0.01
+			}
+		}
+
+		RUS_Agrarian_Industry_civving2 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				# production_speed_industrial_complex_factor = -0.10
+				production_speed_infrastructure_factor = 0.1
+				global_building_slots_factor = -0.2
+				consumer_goods_expected_value = 0.02
+			}
+		}
+
+		RUS_Agrarian_Industry_civving3 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				# production_speed_industrial_complex_factor = -0.10
+				production_speed_infrastructure_factor = 0.1
+				global_building_slots_factor = -0.1
+				# consumer_goods_expected_value = 0.02
+				production_speed_arms_factory_factor = 0.08
+			}
+		}
+
+		RUS_Agrarian_Industry_civving4 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				# production_speed_industrial_complex_factor = -0.10
+				production_speed_infrastructure_factor = 0.1
+				global_building_slots_factor = -0.1
+				# consumer_goods_expected_value = 0.02
+				production_speed_arms_factory_factor = 0.14
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+
+
+		RUS_Agrarian_Industry_milling1 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_infrastructure_factor = -0.25
+				global_building_slots_factor = -0.65
+				production_speed_arms_factory_factor = 0.08
+				conversion_cost_civ_to_mil_factor = -0.1
+				consumer_goods_expected_value = 0.01
+			}
+		}
+
+		RUS_Agrarian_Industry_milling2 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.20
+				production_speed_infrastructure_factor = -0.20
+				global_building_slots_factor = -0.5
+				production_speed_arms_factory_factor = 0.16
+				conversion_cost_civ_to_mil_factor = -0.2
+				consumer_goods_expected_value = 0.02
+			}
+		}
+
+		RUS_Agrarian_Industry_milling3 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.20
+				production_speed_infrastructure_factor = -0.10
+				global_building_slots_factor = -0.3
+				production_speed_arms_factory_factor = 0.16
+				conversion_cost_civ_to_mil_factor = -0.2
+				consumer_goods_expected_value = 0.01
+			}
+		}
+
+		RUS_Agrarian_Industry_milling4 = {
+			picture = rus_poor_people
+			removal_cost = -1
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.20
+				# production_speed_infrastructure_factor = -0.10
+				global_building_slots_factor = -0.1
+				production_speed_arms_factory_factor = 0.16
+				conversion_cost_civ_to_mil_factor = -0.2
+				# consumer_goods_expected_value = 0.01
+			}
+		}
+
+		RUS_cavalry_charge1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_afghanistan_bank
+
+			modifier = {
+				cavalry_attack_factor = 0.12
+				# cavalry_defence_factor = -0.06
+			}
+			# cavalry = {
+			# 	max_strength = 1
+			# }
+		}
+
+		RUS_infantry_defense1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_adopt_nufus
+
+			modifier = {
+				army_infantry_defence_factor = 0.10
+			}
+		}
+
+		RUN_railway_gun_modifiers = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_afghanistan_bank
+
+			modifier = {
+
+			}
+
+			equipment_bonus = {
+				railway_gun_equipment = {
+					railway_gun_attack = 0.351
+					maximum_speed = 1
+	            	reliability = 0.14
+                    railway_gun_hours_between_redistribution = -0.5
+					instant = yes
+				}
+			}
+		}
+		
+	}
+
+}

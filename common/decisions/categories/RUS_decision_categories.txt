@@ -1,16 +1,16 @@
-RUS_Bolshevik_Solidarity = {
-	icon = GFX_decision_category_SOV_civil_puppet_interaction
+# RUS_Bolshevik_Solidarity = {
+# 	icon = GFX_decision_category_SOV_civil_puppet_interaction
 
-	scripted_gui = Bolshevism_Scripted_Gui
+# 	scripted_gui = Bolshevism_Scripted_Gui
 	
-	priority = 100
+# 	priority = 100
 
-	visible_when_empty = yes
+# 	visible_when_empty = yes
 
-	allowed = {
-		tag = RUS
-	} 
-}
+# 	allowed = {
+# 		tag = RUS
+# 	} 
+# }
 
 RUS_Peasants_Land_Bank_Category = {
 	icon = military_operation
@@ -57,6 +57,7 @@ RUS_Military_Academy_Category = {
 		or = {
 			has_completed_focus = RUS_Mass_Mobilise
 			has_completed_focus = RUS_Establish_Military_Academy
+			has_completed_focus = RUS_focus_SR_Leadership_Academies
 		}
 	}
 }
@@ -71,5 +72,35 @@ RUS_Murmansk_Category = {
 	
 	visible = {
 		ORO = { has_country_flag = WW1_started_spectator }
+	}
+}
+
+MON_RUS_Stolypin_reform_decisions = {
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 90
+
+	visible_when_empty = no
+
+	visible = {
+		has_completed_focus = MON_RUS_first_focus
+	}
+	allowed = {
+		tag = RUS
+	}
+}
+
+MON_RUS_army_collapse_mechanic = { 
+	icon = GFX_decision_category_generic_political_actions
+
+	priority = 95
+
+	visible_when_empty = no
+
+	visible = {
+		stability > 50.0
+	}
+	allowed = {
+		tag = RUS
 	}
 }

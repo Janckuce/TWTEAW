@@ -1,0 +1,2086 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+# Russian Monarchist focus tree
+# Main idea: Tsar Nicholas II Disbands the Duma and rules as an absolute monarch with the support of conservative and monarchist factions within Russia. 
+# Main characters: Rasputin, Stolypin, Tsar Nicholas II
+# Stolypin Assanination risk Decision Mechanic, Spend PP to avoid assassination, failure results in loss of Research Speed, Consumer Goods Reduction and Stability
+# Three main branches: Tsar Nicholas II Cult of Personality, Expansionist Foreign Policy, and Short term War Economy
+# Tsar Nicholas II Cult of Personality vs The Currupting Influence of Rasputin
+# Expansionist Foreign Policy gives combat bonuses against specific territorial claims like Prussia and Galicia
+# Short term War Economy gives mills and stockpiles in preperation for war
+
+# Hitting 0% Stability begins the Rapid Collapse of the army and eventual collapse of Russian Society (Russian Civil War procced)
+
+
+focus_tree = {
+	id = RUS_Monarchist
+	country = { 
+		factor = 0
+	}
+	continuous_focus_position = { x = 245 y = 2000 }
+	default = no
+	reset_on_civilwar = no
+
+
+
+	# Begin focus tree
+	# Root focus
+
+	focus = {
+		id = MON_RUS_first_focus
+		icon = GFX_focus_BRA_ban_communist_party
+		cost = 2.9 # initial focus to select a path, should not be too long
+		x = 8
+		y = 0
+		completion_reward = {
+			unlock_decision_category_tooltip = MON_RUS_Stolypin_reform_decisions
+			activate_mission = stolypin_assassination_incoming
+			swap_ideas = {
+				remove_idea = RUS_Bolshevik_Sabotage
+				add_idea = MON_RUS_Increased_Bolshevik_Sabotage
+			}
+		}
+	}
+
+
+	# Scientific Development Branch
+
+	focus = {
+		id = MON_RUS_research_speed
+		icon = GFX_focus_NORDIC_dem_selector_research
+		cost = 5.8 
+		x = 25
+		y = 10
+
+		available = {
+			has_completed_focus = MON_RUS_first_focus
+		}
+
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_Lack_Of_Scientists
+				add_idea = RUS_improved_science
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_research_slot
+		icon = GFX_focus_NORDIC_dem_research
+		cost = 5.8 
+		x = 27
+		y = 10
+
+		available = {
+			has_completed_focus = MON_RUS_first_focus
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	} 
+
+	focus = {
+		id = MON_RUS_infantry_research1
+		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
+		cost = 4
+
+		relative_position_id = MON_RUS_research_speed
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = MON_RUS_research_slot
+			focus = MON_RUS_research_speed
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_RUS_infantry_research_1
+				bonus = 0.8
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_infantry_research2
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 4
+
+		relative_position_id = MON_RUS_research_speed
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = MON_RUS_infantry_research1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_RUS_infantry_research_2
+				bonus = 0.8
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_train_research1
+		icon = GFX_focus_generic_railroad
+		cost = 4
+
+		relative_position_id = MON_RUS_research_speed
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = MON_RUS_research_slot
+			focus = MON_RUS_research_speed
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_RUS_train_research_1
+				bonus = 0.8
+				uses = 1
+				category = train_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_train_spawnin
+		icon = GFX_focus_generic_railway_gun
+		cost = 4
+
+		relative_position_id = MON_RUS_train_research1
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = MON_RUS_train_research1
+		}
+
+		available = {
+			has_tech = railway_gun
+		}
+
+		completion_reward = {
+			create_railway_gun = {
+				equipment = railway_gun_equipment_1
+				name = "The Tzargun"
+				location = 3151
+				# teleport_railway_guns_to_deploy_province = yes
+			}
+			add_ideas = RUN_railway_gun_modifiers
+		}
+	}
+
+	focus = {
+		id = MON_RUS_support_research1
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
+		cost = 4
+
+		relative_position_id = MON_RUS_research_speed
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = MON_RUS_research_slot
+			focus = MON_RUS_research_speed
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_RUS_support_research_1
+				bonus = 0.8
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_support_research2
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4
+
+		relative_position_id = MON_RUS_research_speed
+		x = 3
+		y = 2
+
+		prerequisite = {
+			focus = MON_RUS_support_research1
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MON_RUS_support_research_2
+				bonus = 0.8
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+
+
+
+	# Tsar Nicholas II Cult of Personality Branch
+
+	focus = {
+		id = MON_RUS_TsarCult
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_first_focus
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_first_focus
+		}
+		available = {
+
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_TsarFlag1
+			add_political_power = 150
+			add_stability = 0.30
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Tsar1
+		icon = GFX_focus_POL_expand_polish_intelligence
+		cost = 14.4
+		relative_position_id = MON_RUS_TsarCult
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_TsarCult
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_TsarFlag1
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_TsarFlag1_days_tt
+				has_country_flag = {
+					flag = MON_RUS_TsarFlag1
+					days > 200
+				}
+			}
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_TsarFlag2
+			add_stability = 0.20
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Tsar2
+		icon = GFX_focus_GRE_an_orthodox_state
+		cost = 14.4
+		relative_position_id = MON_RUS_TsarCult
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Tsar1
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_TsarFlag2
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_TsarFlag2_days_tt
+				has_country_flag = {
+					flag = MON_RUS_TsarFlag2
+					days > 200
+				}
+			}
+		}
+		completion_reward = {
+			tooltip = MON_RUS_TsarFlag3_days_tt
+			add_stability = 0.20
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Tsar3
+		icon = GFX_focus_SOV_patriarch_of_all_russia
+		cost = 14.4
+		relative_position_id = MON_RUS_TsarCult
+		x = 0
+		y = 4
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Tsar2
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_TsarFlag3
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_TsarFlag3_days_tt
+				has_country_flag = {
+					flag = MON_RUS_TsarFlag3
+					days > 200
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.20
+		}
+	}
+
+
+	# Rasputin Branch
+
+	focus = {
+		id = MON_RUS_Rasputin1
+		icon = GFX_focus_CZE_german_puppet
+		cost = 5.8
+		relative_position_id = MON_RUS_TsarCult
+		x = -4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_TsarCult
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_rasputin_idea
+				add_idea = RUS_rasputin_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin2
+		icon = GFX_focus_generic_military_academy
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin1
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Rasputin3
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Rasputin1
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_rasputin_idea_1
+				add_idea = RUS_rasputin_ignored
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin3
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin1
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Rasputin2
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Rasputin1
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = RUS_rasputin_idea_1
+				add_idea = RUS_rasputin_embraced
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin4
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_Rasputin3
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			add_political_power = -50
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Rasputin5
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_Rasputin2
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			add_political_power = -50
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = MON_RUS_government1
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_Rasputin2
+		x = 1
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_Rasputin4
+			focus = MON_RUS_Rasputin5
+		}
+		available = {
+
+		}
+		completion_reward = { 
+			add_political_power = 80
+		}
+	}
+
+
+	# Stolypin Branch
+
+	focus = {
+		id = MON_RUS_Stolypin1
+		icon = GFX_SOV_reformalize_the_role_of_the_patriarchate_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_TsarCult
+		x = 4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_TsarCult
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = RUS_Stolypin_reforms_1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stolypin2
+		icon = GFX_SOV_smersh_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_Stolypin1
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Stolypin3
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stolypin1
+		}
+		available = {
+			has_country_flag = MON_RUS_Stolypin_assassinated
+		}
+		completion_reward = {
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stolypin3
+		icon = GFX_focus_generic_currency_reforms
+		cost = 5.8
+		relative_position_id = MON_RUS_Stolypin1
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = MON_RUS_Stolypin2
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stolypin1
+		}
+		available = {
+			has_idea = RUS_Stolypin_reforms_4
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = MON_RUS_redirect_stolypin_reforms
+		icon = GFX_focus_generic_monetary_union
+		cost = 5.8
+		relative_position_id = MON_RUS_Stolypin3
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_industry_centralization3
+		}
+		prerequisite = {
+			focus = MON_RUS_Stolypin2
+			focus = MON_RUS_Stolypin3
+		}
+
+		available = {
+			
+		}
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_redirect_stolypin_reforms2
+		icon = GFX_focus_generic_monetary_union
+		cost = 8.6
+		relative_position_id = MON_RUS_redirect_stolypin_reforms
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_redirect_stolypin_reforms
+		}
+
+		available = {
+			
+		}
+		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 3 }
+		}
+	}
+
+
+
+	# Branch 3: Economy
+	# Start: Construction effort
+
+	focus = {
+		id = MON_RUS_Mills_Start
+		icon = GFX_focus_generic_mining_industry
+		cost = 5.8
+		x = 26
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+
+		}
+		available = {
+			has_completed_focus = MON_RUS_first_focus
+		}
+		completion_reward = {
+			add_ideas = RUS_extractative_eco
+
+			221 = { # Kharkov
+				add_extra_state_shared_building_slots = 4
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			227 = { # Donetsk
+				add_extra_state_shared_building_slots = 4
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills1
+		icon = GFX_focus_DEN_reorganize_sovaernet
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills_Start
+		x = -2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills_Start
+		}
+		available = {
+
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving1
+			195 = { # St. Petersburg
+				add_extra_state_shared_building_slots = 6
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_1  days = 40 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills2
+		icon = GFX_goal_generic_army_artillery
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills1
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving1
+				days > 40
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving1_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving1
+					days > 40
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving2
+			224 = { # Bryansk
+				add_extra_state_shared_building_slots = 5
+
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_2  days = 80 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills3
+		icon = GFX_focus_GER_kriegslokomotive
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills2
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving2
+				days > 80
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving2_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving2
+					days > 80
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving3
+			247 = { # Tver
+				add_extra_state_shared_building_slots = 5
+
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = MON_RUS_train_research_1
+				bonus = 0.8
+				uses = 1
+				category = train_tech
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_3  days = 120 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills4
+		icon = GFX_focus_GER_kdf_wagen
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills1
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills3
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving3
+				days > 120
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving3_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving3
+					days > 120
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving4
+			205 = { # Kaluga
+				add_extra_state_shared_building_slots = 5
+				
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_4  days = 160 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills5
+		icon = GFX_focus_RAJ_mountain_guns
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills_Start
+		x = 2
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills_Start
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving4
+				days > 160
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving4_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving4
+					days > 160
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving5
+			219 = { # Moscow
+				add_extra_state_shared_building_slots = 6
+
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = MON_RUS_train_research_1
+				bonus = 0.8
+				uses = 1
+				category = artillery
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_5  days = 200 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills6
+		icon = GFX_SOV_cohesion_first_ccp_2d_sov_compatibility
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills5
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills5
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving5
+				days > 200
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving5_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving5
+					days > 200
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving6
+			223 = { # Moscow
+				add_extra_state_shared_building_slots = 6
+
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_6  days = 240 }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Mills7
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills5
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills6
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving6
+				days > 240
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving6_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving6
+					days > 240
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving7
+			252 = { # Nizhny Novgorod
+				add_extra_state_shared_building_slots = 6
+
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = { idea = RUS_military_economic_burden_7  days = 280 }
+		}
+	}
+
+	focus = {					#43 Mills Total including this focus
+		id = MON_RUS_Mills8
+		icon = GFX_focus_CHL_high_quality_nitrate
+		cost = 2.9
+		relative_position_id = MON_RUS_Mills5
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Mills7
+		}
+		available = {
+			has_country_flag = {
+				flag = MON_RUS_industry_devving7
+				days > 280
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_RUS_industry_devving7_days_tt
+				has_country_flag = {
+					flag = MON_RUS_industry_devving7
+					days > 280
+				}
+			}
+		}
+
+		completion_reward = {
+			set_country_flag = MON_RUS_industry_devving8
+			249 = { # Kazan
+				add_extra_state_shared_building_slots = 8
+
+				add_building_construction = {
+					type = arms_factory
+					level = 8
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+
+				## Add Chemical Plants instead of the 2 mills when implemented
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_centralized_production1
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
+		cost = 5.8
+		relative_position_id = MON_RUS_Mills4
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_decentralized_production1
+		}
+		prerequisite = {
+			focus = MON_RUS_Mills4
+		}
+		available = {
+			num_of_military_factories > 60
+		}
+		completion_reward = {
+			add_ideas = RUS_centralized_production_idea1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_centralized_production2
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
+		cost = 5.8
+		relative_position_id = MON_RUS_centralized_production1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_centralized_production1
+		}
+		available = {
+			num_of_military_factories > 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_centralized_production_idea1
+				add_idea = RUS_centralized_production_idea2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_centralized_production3
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
+		cost = 5.8
+		relative_position_id = MON_RUS_centralized_production2
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_centralized_production2
+		}
+		available = {
+			num_of_military_factories > 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_centralized_production_idea2
+				add_idea = RUS_centralized_production_idea3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_decentralized_production1
+		icon = GFX_focus_generic_reorient_production
+		cost = 5.8
+		relative_position_id = MON_RUS_Mills4
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_centralized_production1
+		}
+		prerequisite = {
+			focus = MON_RUS_Mills4
+		}
+		available = {
+			num_of_military_factories > 60
+		}
+		completion_reward = {
+			add_ideas = RUS_decentralized_production_idea1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_decentralized_production2
+		icon = GFX_focus_generic_reorient_production
+		cost = 5.8
+		relative_position_id = MON_RUS_decentralized_production1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_decentralized_production1
+		}
+		available = {
+			num_of_military_factories > 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_decentralized_production_idea1
+				add_idea = RUS_decentralized_production_idea2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_decentralized_production3
+		icon = GFX_focus_generic_reorient_production
+		cost = 5.8
+		relative_position_id = MON_RUS_decentralized_production1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_decentralized_production2
+		}
+		available = {
+			num_of_military_factories > 100
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_decentralized_production_idea2
+				add_idea = RUS_decentralized_production_idea3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_high_yield_production1
+		icon = GFX_goal_generic_production
+		cost = 5.8
+		relative_position_id = MON_RUS_Mills8
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_adaptive_yield_production1
+		}
+		prerequisite = {
+			focus = MON_RUS_Mills8
+		}
+		available = {
+			num_of_controlled_factories > 180
+		}
+		completion_reward = {
+			add_ideas = RUS_higher_yields_idea1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_high_yield_production2
+		icon = GFX_goal_generic_production
+		cost = 5.8
+		relative_position_id = MON_RUS_high_yield_production1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_high_yield_production1
+		}
+		available = {
+			num_of_controlled_factories > 200
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_higher_yields_idea1
+				add_idea = RUS_higher_yields_idea2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_high_yield_production3
+		icon = GFX_goal_generic_production
+		cost = 5.8
+		relative_position_id = MON_RUS_high_yield_production1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_high_yield_production2
+		}
+		available = {
+			num_of_controlled_factories > 220
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_higher_yields_idea2
+				add_idea = RUS_higher_yields_idea3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_adaptive_yield_production1
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.8
+		relative_position_id = MON_RUS_Mills8
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_high_yield_production1
+		}
+		prerequisite = {
+			focus = MON_RUS_Mills8
+		}
+		available = {
+			num_of_controlled_factories > 180
+		}
+		completion_reward = {
+			add_ideas = RUS_adaptive_yields_idea1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_adaptive_yield_production2
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.8
+		relative_position_id = MON_RUS_adaptive_yield_production1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_adaptive_yield_production1
+		}
+		available = {
+			num_of_controlled_factories > 200
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_adaptive_yields_idea1
+				add_idea = RUS_adaptive_yields_idea2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_adaptive_yield_production3
+		icon = GFX_goal_continuous_naval_production
+		cost = 5.8
+		relative_position_id = MON_RUS_adaptive_yield_production1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		prerequisite = {
+			focus = MON_RUS_adaptive_yield_production2
+		}
+		available = {
+			num_of_controlled_factories > 220
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_adaptive_yields_idea2
+				add_idea = RUS_adaptive_yields_idea3
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_RUS_break_monopolies
+		icon = GFX_focus_generic_supply_line
+		cost = 5.8
+		# relative_position_id = MON_RUS_first_focus
+		x = 17
+		y = 0
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+
+		}
+		available = {
+			has_completed_focus = MON_RUS_first_focus
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry
+				add_idea = RUS_Agrarian_Industry_fixed_IC
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_industry_centralization1
+		icon = GFX_focus_GER_integrated_economies
+		cost = 5.8
+		relative_position_id = MON_RUS_break_monopolies
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_means_of_living
+		}
+		prerequisite = {
+			focus = MON_RUS_break_monopolies
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_fixed_IC
+				add_idea = RUS_Agrarian_Industry_milling1
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_industry_centralization2
+		icon = GFX_focus_SWI_issue_war_bonds
+		cost = 5.8
+		relative_position_id = MON_RUS_break_monopolies
+		x = -1
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_industry_centralization1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_milling1
+				add_idea = RUS_Agrarian_Industry_milling2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_industry_centralization3
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 5.8
+		relative_position_id = MON_RUS_break_monopolies
+		x = -2
+		y = 4
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_industry_centralization2
+		}
+		prerequisite = {
+			focus = MON_RUS_Stolypin3
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_milling2
+				add_idea = RUS_Agrarian_Industry_milling3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_industry_centralization4
+		icon = GFX_SOV_planned_economy_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_industry_centralization3
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_industry_centralization3
+		}
+
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_milling3
+				add_idea = RUS_Agrarian_Industry_milling4
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_means_of_living
+		icon = GFX_focus_generic_population_growth
+		cost = 5.8
+		relative_position_id = MON_RUS_break_monopolies
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_industry_centralization1
+		}
+		prerequisite = {
+			focus = MON_RUS_break_monopolies
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_fixed_IC
+				add_idea = RUS_Agrarian_Industry_civving1
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_means_of_prosperity
+		icon = GFX_focus_AFG_a_modern_economy
+		cost = 5.8
+		relative_position_id = MON_RUS_break_monopolies
+		x = 1
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_means_of_living
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_civving1
+				add_idea = RUS_Agrarian_Industry_civving2
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_means_of_growth
+		icon = GFX_focus_generic_economic_recovery
+		cost = 11.5
+		relative_position_id = MON_RUS_break_monopolies
+		x = 1
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_means_of_prosperity
+		}
+		available = {
+			date > 1913.01.01
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_civving2
+				add_idea = RUS_Agrarian_Industry_civving3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_means_of_war
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 5.8
+		relative_position_id = MON_RUS_means_of_growth
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_means_of_growth
+		}
+		available = {
+			date > 1914.01.01
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Agrarian_Industry_civving3
+				add_idea = RUS_Agrarian_Industry_civving4
+			}
+		}
+	}
+
+
+	# Army Reforms Branch
+
+	focus = {
+		id = MON_RUS_army_reform_start
+		icon = GFX_focus_POL_belarus_army
+		cost = 5.8
+		# relative_position_id = MON_RUS_first_focus
+		x = 15
+		y = 8
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+
+		}
+		available = {
+			has_completed_focus = MON_RUS_first_focus
+		}
+		completion_reward = {
+			army_experience = 40
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform1
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
+		cost = 5.8
+		relative_position_id = MON_RUS_army_reform_start
+		x = 1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		mutually_exclusive = {
+			focus = MON_RUS_army_defense_reform1
+		}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			# swap_ideas = {
+			# 	remove_idea = RUS_Dated_Warfare
+			# 	add_idea = MON_RUS_disciplining_army1
+			# }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform2
+		icon = GFX_focus_NORDIC_mon_army
+		cost = 8.6
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Dated_Warfare
+				add_idea = MON_RUS_disciplining_army2
+			}
+		}
+	}
+
+	# focus = {
+	# 	id = MON_RUS_army_reform3
+	# 	icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+	# 	cost = 5.8
+	# 	relative_position_id = MON_RUS_army_reform1
+	# 	x = 0
+	# 	y = 2
+	# 	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+	# 	prerequisite = {
+	# 		focus = MON_RUS_army_reform2
+	# 	}
+	# 	available = {
+
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = MON_RUS_disciplining_army2
+	# 			add_idea = MON_RUS_disciplining_army3
+	# 		}
+	# 	}
+	# }
+
+	focus = {
+		id = MON_RUS_army_reform3
+		icon = GFX_focus_NORDIC_mon_capstone_army
+		cost = 14.4
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform2
+		}
+		available = {
+			date > 1914.7.27
+		}
+		select_effect = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_disciplining_army2
+				add_idea = MON_RUS_disciplining_army3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_reform4
+		icon = GFX_focus_NORDIC_mon_selector_army
+		cost = 14.4
+		relative_position_id = MON_RUS_army_reform1
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform3
+		}
+		available = {
+			date > 1915.1.1
+		}
+		# select_effect = {
+		# 	add_timed_idea = { idea = MON_RUS_disciplining_army_temp_wartime days = 100 }
+		# }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_disciplining_army3
+				add_idea = MON_RUS_disciplining_army4
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_defense_reform1
+		icon = GFX_goal_generic_defence
+		cost = 5.8
+		relative_position_id = MON_RUS_army_reform_start
+		x = -1
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+		mutually_exclusive = {
+			focus = MON_RUS_army_reform1
+		}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_stability = 0.05
+			# swap_ideas = {
+			# 	remove_idea = RUS_Dated_Warfare
+			# 	add_idea = MON_RUS_defensive_army1
+			# }
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_defense_reform2
+		icon = GFX_focus_NORDIC_com_army
+		cost = 8.6
+		relative_position_id = MON_RUS_army_defense_reform1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_defense_reform1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Dated_Warfare
+				add_idea = MON_RUS_defensive_army2
+			}
+		}
+	}
+
+	# focus = {
+	# 	id = MON_RUS_army_defense_reform3
+	# 	icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+	# 	cost = 5.8
+	# 	relative_position_id = MON_RUS_army_defense_reform1
+	# 	x = 0
+	# 	y = 2
+	# 	search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+	# 	prerequisite = {
+	# 		focus = MON_RUS_army_defense_reform2
+	# 	}
+	# 	available = {
+
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = MON_RUS_defensive_army2
+	# 			add_idea = MON_RUS_defensive_army3
+	# 		}
+	# 	}
+	# }
+
+	focus = {
+		id = MON_RUS_army_defense_reform3
+		icon = GFX_focus_NORDIC_com_capstone_army
+		cost = 14.4
+		relative_position_id = MON_RUS_army_defense_reform1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_defense_reform2
+		}
+		available = {
+			date > 1914.7.27
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_defensive_army2
+				add_idea = MON_RUS_defensive_army3
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_army_defense_reform4
+		icon = GFX_focus_NORDIC_com_selector_army
+		cost = 14.4
+		relative_position_id = MON_RUS_army_defense_reform1
+		x = 0
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_defense_reform3
+		}
+		available = {
+			date > 1915.1.1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MON_RUS_defensive_army3
+				add_idea = MON_RUS_defensive_army4
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = MON_RUS_attack_japan1
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 5.8
+		relative_position_id = MON_RUS_army_reform_start
+		x = -4
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+		available = {
+
+		}
+		completion_reward = {
+			408 = { # Vladivostok
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan2
+		icon = GFX_focus_attack_japan
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 0
+		y = 1
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_attack_japan1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			JAP = {
+				division_template = {
+					name = "Japanese Border Guards"
+					is_locked = no
+
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+					}
+
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+				527 = {
+					create_unit = {
+						division = "name = \"Japanese Border Guards\" division_template = \"Japanese Border Guards\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = JAP
+						prioritize_location = 6944
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"Japanese Border Guards\" division_template = \"Japanese Border Guards\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = JAP
+						prioritize_location = 6944
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 408 # Vladivostok
+					num_provinces = 1
+					on_win = won_second_Russo_Japanese_border_conflict_event.1
+					on_lose = won_second_Russo_Japanese_border_conflict_event.2
+					on_cancel = won_second_Russo_Japanese_border_conflict_event.2
+				}
+				
+				defender = {
+					state = 527
+					num_provinces = 1
+					# on_win = SEA_border_incidents_events.6
+					# on_lose = SEA_border_incidents_events.5
+					# on_cancel = SEA_border_incidents_events.7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan3
+		icon = GFX_focus_generic_resource_extraction
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 0
+		y = 2
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_attack_japan2
+		}
+		available = {
+			has_country_flag = won_second_Russo_Japanese_border_conflict
+		}
+		completion_reward = {
+			CHI = {
+				give_resource_rights = { receiver = RUS state = 716 }
+				give_resource_rights = { receiver = RUS state = 328 }
+			}
+			408 = { # Vladivostok
+				add_extra_state_shared_building_slots = 6
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan4
+		icon = GFX_focus_FIN_strengthen_military_administration
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = -1
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_attack_japan5
+		}
+		prerequisite = {
+			focus = MON_RUS_attack_japan3
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = RUS_cavalry_charge1
+		}
+	}
+
+	focus = {
+		id = MON_RUS_attack_japan5
+		icon = GFX_focus_generic_manpower
+		cost = 5.8
+		relative_position_id = MON_RUS_attack_japan1
+		x = 1
+		y = 3
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		mutually_exclusive = {
+			focus = MON_RUS_attack_japan4
+		}
+		prerequisite = {
+			focus = MON_RUS_attack_japan3
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = RUS_infantry_defense1
+		}
+	}
+
+
+
+	# Spare Rifles Stockpiles
+
+	focus = {
+		id = MON_RUS_Stockpiles1
+		icon = GFX_focus_AUS_raid_military_storages
+		cost = 5.8
+		relative_position_id = MON_RUS_army_reform_start
+		x = 4
+		y = 1
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_army_reform_start
+		}
+
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 100
+				producer = RUS
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles2
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5.8
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 0
+		y = 1
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles1
+		}
+		available = {
+
+		}
+		completion_reward = {
+			set_country_flag = MON_RUS_stockpile_withdrawal2
+
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 15000
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_2
+				amount = 15000
+				producer = RUS
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles3
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5.8
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 0
+		y = 2
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles2
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 20000
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_2
+				amount = 20000
+				producer = RUS
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles4
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5.8
+		relative_position_id = MON_RUS_Stockpiles1
+		x = -1
+		y = 3
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles3
+		}
+		available = {
+
+		}
+		completion_reward = {			
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_1
+				amount = 40000
+				producer = RUS
+			}
+		}
+	}
+
+	focus = {
+		id = MON_RUS_Stockpiles5
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5.8
+		relative_position_id = MON_RUS_Stockpiles1
+		x = 1
+		y = 3
+
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		prerequisite = {
+			focus = MON_RUS_Stockpiles3
+		}
+		available = {
+
+		}
+		completion_reward = {			
+			add_equipment_to_stockpile = {
+				type = ww1_infantry_equipment_2
+				amount = 30000
+				producer = RUS
+			}
+		}
+	}
+
+}

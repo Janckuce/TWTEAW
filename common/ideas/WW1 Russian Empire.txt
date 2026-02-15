@@ -499,6 +499,7 @@ ideas = {
 				}
 			}
 		}
+
 		RUS_Agrarian_Industry = {
 			picture = rus_poor_people
 			removal_cost = -1
@@ -526,16 +527,17 @@ ideas = {
 				}
 			}
 		}
-			RUS_stolypin_reform = {
+
+		RUS_stolypin_reform = {
 			picture = hun_economy_wasteland
 			removal_cost = -1
 			
 			available = {
 			    NOT = {
-				    OR = {
-						has_government = communism
+				    #OR = {
+						#has_government = communism # Allowed for SRs
 						has_war_with = SOR
-					}
+					#}
 				}
 			}
 			
@@ -551,7 +553,7 @@ ideas = {
 			}
 		}
 
-			RUS_nationality_orthodox= {
+		RUS_nationality_orthodox = {
 			picture = rus_const_revolt
 			removal_cost = -1
 			
@@ -582,7 +584,7 @@ ideas = {
 			}
 		}
 
-			RUS_nationality_orthodox2= {
+		RUS_nationality_orthodox2 = {
 			picture = rus_const_revolt
 			removal_cost = -1
 			
@@ -612,7 +614,7 @@ ideas = {
 			}
 		}
 
-			RUS_nationality_orthodox3= {
+		RUS_nationality_orthodox3 = {
 			picture = rus_const_revolt
 			removal_cost = -1
 			
@@ -641,7 +643,7 @@ ideas = {
 			}
 		}
 
-			RUS_nationality_orthodox4= {
+		RUS_nationality_orthodox4 = {
 			picture = rus_const_revolt
 			removal_cost = -1
 			
@@ -666,7 +668,7 @@ ideas = {
 			}
 		}
 
-			RUS_russian_nationalism= {
+		RUS_russian_nationalism = {
 			picture = rus_russian_empire_strike
 			removal_cost = -1
 			
@@ -690,7 +692,7 @@ ideas = {
 			
 		}
 
-			RUS_russian_nationalism2= {
+		RUS_russian_nationalism2 = {
 			picture = rus_russian_empire_strike
 			removal_cost = -1
 			
@@ -723,7 +725,7 @@ ideas = {
 			
 		}
 
-			RUS_russian_nationalism3= {
+		RUS_russian_nationalism3 = {
 			picture = rus_russian_empire_strike
 			removal_cost = -1
 			
@@ -754,7 +756,7 @@ ideas = {
 			}
 		}
 
-			RUS_russian_nationalism4= {
+		RUS_russian_nationalism4 = {
 			picture = rus_russian_empire_strike
 			removal_cost = -1
 			
@@ -785,7 +787,7 @@ ideas = {
 			}
 		}
 
-			RUS_russian_nationalism5= {
+		RUS_russian_nationalism5 = {
 			picture = rus_russian_empire_strike
 			removal_cost = -1
 			
@@ -816,7 +818,7 @@ ideas = {
 			}
 		}
 
-			RUS_russian_nationalism6= {
+		RUS_russian_nationalism6 = {
 			picture = rus_russian_empire_strike
 			removal_cost = -1
 			
@@ -848,7 +850,7 @@ ideas = {
 			}
 		}
 
-			RUS_let_way_for_democracy= {
+		RUS_let_way_for_democracy = {
 			picture = rus_russian_democracy
 			removal_cost = -1
 			
@@ -869,7 +871,7 @@ ideas = {
 			}
 		}
 
-			RUS_let_way_for_democracy2 = {
+		RUS_let_way_for_democracy2 = {
 			picture = rus_nicholas_constitutional
 			removal_cost = -1
 			
@@ -896,7 +898,7 @@ ideas = {
 			}
 		}
 
-			RUS_political_fusion = {
+		RUS_political_fusion = {
 			picture = rus_political_fusion
 			removal_cost = -1
 			
@@ -921,7 +923,7 @@ ideas = {
 			}
 		}
 
-			RUS_political_fusion2 = {
+		RUS_political_fusion2 = {
 			picture = rus_political_fusion
 			removal_cost = -1
 			
@@ -949,7 +951,7 @@ ideas = {
 			}
 		}
 
-			RUS_political_fusion3 = {
+		RUS_political_fusion3 = {
 			picture = rus_political_fusion
 			removal_cost = -1
 			
@@ -976,7 +978,7 @@ ideas = {
 			}
 		}
 
-			RUS_feudals_not_like = {
+		RUS_feudals_not_like = {
 			picture = RAJ_partition_chaos_bad
 			removal_cost = -1
 			
@@ -1000,7 +1002,8 @@ ideas = {
 				line_change_production_efficiency_factor = -0.1
 			}
 		}
-			RUS_feudals_not_like2 = {
+
+		RUS_feudals_not_like2 = {
 			picture = RAJ_partition_chaos_bad
 			removal_cost = -1
 			
@@ -1024,10 +1027,11 @@ ideas = {
 				line_change_production_efficiency_factor = -0.05
 			}
 		}
-			RUS_feudals_not_like3 = {
+
+		RUS_feudals_not_like3 = {
 			picture = RAJ_partition_chaos_bad
 			removal_cost = -1
-			
+
 			available = {
 			    NOT = {
 				    OR = {
@@ -1046,75 +1050,43 @@ ideas = {
 				industrial_capacity_factory = -0.05
 			}
 		}
+
 		RUS_Agrarian_Industry1 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
+
 			modifier = {
 				production_speed_industrial_complex_factor = -0.25
 				production_speed_infrastructure_factor = -0.25
 				global_building_slots_factor = -0.6
 			}
 		}
+
 		RUS_Agrarian_Industry2 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
+
 			modifier = {
 				production_speed_industrial_complex_factor = -0.2
 				production_speed_infrastructure_factor = -0.2
 				global_building_slots_factor = -0.5
 			}
 		}
+
 		RUS_Agrarian_Industry3 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
-			
+
 			modifier = {
 				production_speed_industrial_complex_factor = -0.15
 				production_speed_infrastructure_factor = -0.15
 				global_building_slots_factor = -0.4
 			}
 		}
+
 		RUS_Agrarian_Industry4 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
 			
 			modifier = {
 				production_speed_industrial_complex_factor = -0.1
@@ -1122,18 +1094,10 @@ ideas = {
 				global_building_slots_factor = -0.3
 			}
 		}
+
 		RUS_Agrarian_Industry5 = {
 			picture = rus_poor_people
 			removal_cost = -1
-			
-			available = {
-			    NOT = {
-				    OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
-				}
-			}
 			
 			modifier = {
 				production_speed_industrial_complex_factor = -0.05
@@ -1148,29 +1112,35 @@ ideas = {
 				research_speed_factor = -0.3
 			}
 		}
+
 		RUS_Lack_Of_Scientists1 = {
 			picture = rus_science
 			modifier = {
 				research_speed_factor = -0.25
 			}
 		}
+
 		RUS_Lack_Of_Scientists2 = {
 			picture = rus_science
 			modifier = {
 				research_speed_factor = -0.2
 			}
 		}
+
 		RUS_Lack_Of_Scientists3 = {
 			picture = rus_science
 			modifier = {
 				research_speed_factor = -0.1
 			}
 		}
+
 		RUS_Promoting_Intellectuals = {
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = 0.1
 			}
 		}
+
 		RUS_Dated_Warfare = {
 			picture = rus_army_debuff
 			modifier = {
@@ -1180,6 +1150,7 @@ ideas = {
 				army_org_factor = -0.35
 			}
 		}
+
 		RUS_Dated_Warfare1 = {
 			picture = rus_army_debuff
 			modifier = {
@@ -1189,6 +1160,7 @@ ideas = {
 				army_org_factor = -0.25
 			}
 		}
+
 		RUS_Dated_Warfare2 = {
 			picture = rus_army_debuff
 			modifier = {
@@ -1198,6 +1170,7 @@ ideas = {
 				army_org_factor = -0.15
 			}
 		}
+
 		RUS_Dated_Warfare3 = {
 			picture = rus_army_debuff
 			modifier = {
@@ -1206,6 +1179,7 @@ ideas = {
 				army_defence_factor = -0.3
 			}
 		}
+
 		RUS_Dated_Warfare4 = {
 			picture = rus_army_debuff
 			modifier = {
@@ -1214,6 +1188,7 @@ ideas = {
 				army_defence_factor = -0.2
 			}
 		}
+
 		RUS_Dated_Warfare5 = {
 			picture = rus_army_debuff
 			modifier = {
@@ -1222,6 +1197,7 @@ ideas = {
 				army_defence_factor = -0.1
 			}
 		}
+
 		RUS_Contemporary_Warfare = {
 			modifier = {
 				training_time_army_factor = -0.15
@@ -1248,27 +1224,33 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+
 		RUS_Cotton = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+
 		RUS_Sugar_Beets = {
 			modifier = {
 				industrial_capacity_factory = 0.2
 			}
 		}
+
 		RUS_Soybeans = {
 			modifier = {
 				industrial_capacity_factory = 0.25
 			}
 		}
+
 		RUS_Tobacco = {
 			modifier = {
 				industrial_capacity_factory = 0.3
 			}
 		}
+
 		RUS_Land_Reforms = {
+			picture = generic_agrarian_reform
 			modifier = {
 				production_speed_industrial_complex_factor = 0.3
 				production_speed_infrastructure_factor = 0.3
@@ -1276,6 +1258,7 @@ ideas = {
 				global_building_slots_factor = 0.3
 			}
 		}
+
 		RUS_Brusilov_Offensive = {
 			picture = landtags_in_revolt
 			modifier = {
@@ -1290,18 +1273,21 @@ ideas = {
 				army_morale_factor = 0.075
 			}
 		}
+
 		RUS_Mobilise_The_Nation = {
 			picture = AFG_adopt_nufus
 			modifier = {
 				training_time_army_factor = -0.25
 			}
 		}
+
 		RUS_3_Less_Forts = {
 			picture = FRA_fortification_focus
 			modifier = {
 				bunker_max_level_terrain_limit = -3
 			}
 		}
+
 		RUS_Bolshevik_Sabotage = {
 			picture = rus_lenin_spirit
 			modifier = {
@@ -1312,6 +1298,7 @@ ideas = {
 				stability_weekly = -0.002
 			}
 		}
+
 		RUS_Bolshevik_Sabotage1 = {
 			picture = rus_lenin_spirit
 			modifier = {
@@ -1321,6 +1308,7 @@ ideas = {
 				industrial_capacity_factory = -0.075
 			}
 		}
+
 		RUS_Bolshevik_Sabotage2 = {
 			picture = rus_lenin_spirit
 			modifier = {
@@ -1330,6 +1318,7 @@ ideas = {
 				industrial_capacity_factory = -0.1
 			}
 		}
+
 		RUS_Bolsheviks_Crushed = {
 			picture = rus_lenin_dead
 			modifier = {
@@ -1419,6 +1408,15 @@ ideas = {
 			}
 		}
 
+		RUS_idea_Socialist_Constitution = {
+			picture = SOV_restore_the_glory_of_the_motherland_ccp_sov_compatibility
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.05
+				communism_drift = 0.15
+			}
+		}
+
 		RUS_idea_Reduced_Bolshevik_Threat = {
 			picture = rus_lenin_dead
 			modifier = {
@@ -1431,7 +1429,7 @@ ideas = {
 		RUS_idea_Improved_Worker_Conditions = {
 			picture = generic_goods_red_bonus
 			modifier = {
-				stability_factor = 0.075
+				stability_factor = 0.05
 				consumer_goods_factor = -0.1
 			}
 		}
@@ -1484,7 +1482,26 @@ ideas = {
 				recruitable_population_factor = 0.1
 			}
 		}
-	}
+
+		RUS_idea_Westernized_Air_Force = {
+			picture = AUS_airforce
+			modifier = {
+				air_intercept_efficiency = 0.05
+				air_attack_factor = 0.05
+			}
+		}
+
+		RUS_idea_Lessons_of_Tsushima = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				navy_org_factor = 0.1
+				spotting_chance = 0.05
+				naval_accidents_chance = -0.1
+			}
+		}
+
+}
+
 # End spirits - country{} section needs to end here
 
 # Begin industrial concerns
