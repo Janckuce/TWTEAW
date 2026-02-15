@@ -122,15 +122,48 @@ guiTypes = {
 			format = right
 			alwaystransparent = yes
 		}
+
+		instantTextBoxType = {
+			name = "steel_refinery_speed"   
+			position = { x = 396 y = 67 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_steel_refinery_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "coal_refinery_speed"   
+			position = { x = 442 y = 67 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_coal_refinery_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "sulfur_refinery_speed"   
+			position = { x = 488 y = 67 } 
+			font = "cg_16b"              
+			text = "[?modifier@production_speed_sulfur_refinery_factor|%0=+]"	   
+			maxWidth = 50  
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
 		
 		instantTextBoxType = {
 			name = "fuel_silo_speed"   
-			position = { x = 406 y = 67 } 
+			position = { x = 536 y = 67 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_fuel_silo_factor|%0=+]"	   
 			maxWidth = 50  
 			maxHeight = 20
-			format = left
+			format = right
 			alwaystransparent = yes
 		}
 
@@ -147,7 +180,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "rocket_site_speed"   
-			position = { x = 455 y = 67 } 
+			position = { x = 400 y = 111 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_rocket_site_factor|%0=+]"	   
 			maxWidth = 50  
@@ -158,7 +191,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "mil_to_civ_cost_fator"   
-			position = { x = 488 y = 67 } 
+			position = { x = 441 y = 111 } 
 			font = "cg_16b"              
 			text = "[?modifier@conversion_cost_mil_to_civ_factor|-=%0]"	   
 			maxWidth = 50  
@@ -169,7 +202,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "civ_to_mil_cost_fator"   
-			position = { x = 504 y = 67 } 
+			position = { x = 457 y = 111 } 
 			font = "cg_16b"              
 			text = "[?modifier@conversion_cost_civ_to_mil_factor|-=%0]"	   
 			maxWidth = 50  
@@ -215,7 +248,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "supply_node_speed"   
-			position = { x = 396 y = 160 } 
+			position = { x = 396 y = 202 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_supply_node_factor|%0=+]"	   
 			maxWidth = 50  
@@ -226,7 +259,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "rail_way_speed"   
-			position = { x = 442 y = 160 } 
+			position = { x = 442 y = 202 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_rail_way_factor|%0=+]"	   
 			maxWidth = 50  
@@ -237,7 +270,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "naval_base_speed"   
-			position = { x = 488 y = 160 } 
+			position = { x = 488 y = 202 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_naval_base_factor|%0=+]"	   
 			maxWidth = 50  
@@ -248,7 +281,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bunker_speed"   
-			position = { x = 534 y = 160 } 
+			position = { x = 534 y = 202 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_bunker_factor|%0=+]"	   
 			maxWidth = 50  
@@ -259,7 +292,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "coastal_bunker_speed"   
-			position = { x = 396 y = 202 } 
+			position = { x = 396 y = 244 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_coastal_bunker_factor|%0=+]"	   
 			maxWidth = 50  
@@ -272,7 +305,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "naval_facility_speed"   
-			position = { x = 396 y = 300 } 
+			position = { x = 396 y = 342 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_naval_facility_factor|%0=+]"	   
 			maxWidth = 50  
@@ -283,7 +316,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "nuclear_facility_speed"   
-			position = { x = 442 y = 300 } 
+			position = { x = 442 y = 342 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_nuclear_facility_factor|%0=+]"	   
 			maxWidth = 50  
@@ -294,7 +327,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "air_facility_speed"   
-			position = { x = 488 y = 300 } 
+			position = { x = 488 y = 342 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_air_facility_factor|%0=+]"	   
 			maxWidth = 50  
@@ -305,7 +338,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "land_facility_speed"   
-			position = { x = 534 y = 300 } 
+			position = { x = 534 y = 342 } 
 			font = "cg_16b"              
 			text = "[?modifier@production_speed_land_facility_factor|%0=+]"	   
 			maxWidth = 50  

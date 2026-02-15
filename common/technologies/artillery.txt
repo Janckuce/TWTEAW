@@ -1136,7 +1136,9 @@ technologies = {
 		
 		enable_equipments = {
 			ww1_artillery_equipment_1
+			HE_shell_1
 		}
+		show_equipment_icon = yes
 		
 		path = {
 			leads_to_tech = ww1_improved_artillery_equipment1
@@ -1274,7 +1276,9 @@ technologies = {
 		
 		enable_equipments = {
 			ww1_artillery_equipment_2
+			HE_shell_2
 		}
+		show_equipment_icon = yes
 
 		folder = {
 			name = artillery_folder
@@ -1309,7 +1313,9 @@ technologies = {
 		
 		enable_equipments = {
 			ww1_artillery_equipment_3
+			HE_shell_3
 		}
+		show_equipment_icon = yes
 
 		folder = {
 			name = artillery_folder
@@ -1383,7 +1389,9 @@ technologies = {
 		
 		enable_equipments = {
 			ww1_artillery_equipment_4
+			HE_shell_4
 		}
+		show_equipment_icon = yes
 
 		folder = {
 			name = artillery_folder
@@ -1710,7 +1718,9 @@ technologies = {
 
 		enable_equipments = {
 			heavy_artillery_equipment_1
+			Large_caliber_shell_1
 		}
+		show_equipment_icon = yes
 
 		path = {
 			leads_to_tech = heavy_artillery_improvement1
@@ -1736,34 +1746,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1910.1.1"
-			}
-		}
-	}
-	heavy_artillery_equipment2 = {
-
-		enable_equipments = {
-			heavy_artillery_equipment_2
-		}
-
-		research_cost = 2.5
-
-		start_year = 1918
-
-		folder = {
-			name = artillery_folder
-			position = { x = -4 y = 16 }
-		}
-
-		categories = { 
-			mio_cat_all_artillery_equipment
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1915.1.1"
 			}
 		}
 	}
@@ -1802,4 +1784,35 @@ technologies = {
 			}
 		}
 	}
+	heavy_artillery_equipment2 = {
+
+		enable_equipments = {
+			heavy_artillery_equipment_2
+			Large_caliber_shell_2
+		}
+		show_equipment_icon = yes
+
+		research_cost = 2.5
+
+		start_year = 1918
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 16 }
+		}
+
+		categories = { 
+			mio_cat_all_artillery_equipment
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1915.1.1"
+			}
+		}
+	}
+
 }

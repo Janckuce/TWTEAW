@@ -23,9 +23,14 @@ sub_units = {
 
 		combat_width = 3
 
+		essential = {
+			artillery_equipment
+		}
+
 		manpower = 500
 		need = {
 			artillery_equipment = 36
+			HE_shell = 72
 		}
 		
 		max_strength = 6
@@ -37,33 +42,47 @@ sub_units = {
 
 		#Line artillery bonuses
 		# soft_attack = 0.25
+
+		plains = {
+			defence = -0.2
+		}
+
+		desert = {
+			defence = -0.2
+		}
 		
 		forest = {
 			attack = -0.1
 			movement = -0.1
+			defence = -0.4
 		}
 
 		hills = {
 			movement = -0.05
+			defence = -0.4
 		}
 
 		mountain = {
 			attack = -0.2
 			movement = -0.2
+			defence = -0.5
 		}
 
 		jungle = {
 			attack = -0.2
 			movement = -0.2
+			defence = -0.4
 		}
 
 		marsh = {
 			attack = -0.1
 			movement = -0.1
+			defence = -0.5
 		}
 
 		urban = {
 			attack = -0.1
+			defence = -0.4
 		}
 
 		fort = {
