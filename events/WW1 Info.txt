@@ -1,0 +1,17 @@
+add_namespace = ww1_mod_info
+
+#France annexes Morocco, do we take the north?
+country_event = {
+	id = ww1_mod_info.1
+	title = ww1_mod_info.1.t
+	desc = ww1_mod_info_desc.1
+	picture = GFX_report_event_bul_artillery
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_mod_info.1.a
+		
+
+	}
+}
