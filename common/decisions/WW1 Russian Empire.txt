@@ -402,17 +402,17 @@ RUS_Military_Academy_Category = {
 				has_idea = RUS_Dated_Warfare5
 			}
 		}
-		# available = {
-		# 	# RUS = { # wasn't supported in the allowed block, moved here
-		# 	# 	or = {
-		# 	# 		has_idea = RUS_Dated_Warfare1
-		# 	# 		has_idea = RUS_Dated_Warfare2
-		# 	# 		has_idea = RUS_Dated_Warfare3
-		# 	# 		has_idea = RUS_Dated_Warfare4
-		# 	# 		has_idea = RUS_Dated_Warfare5
-		# 	# 	}
-		# 	# }
-		# }
+		available = {
+			RUS = { # wasn't supported in the allowed block, moved here
+				or = {
+					has_idea = RUS_Dated_Warfare1
+					has_idea = RUS_Dated_Warfare2
+					has_idea = RUS_Dated_Warfare3
+					has_idea = RUS_Dated_Warfare4
+					has_idea = RUS_Dated_Warfare5
+				}
+			}
+		}
 		remove_effect = {
 			if = {
 				limit = {
