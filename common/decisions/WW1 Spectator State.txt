@@ -1382,14 +1382,13 @@ ORO_spectator_state = {
 			always = yes
 		}
 		
-		available = {
-			date > 1911.9.18
-		}
+		# available = {
+		# 	date > 1911.9.18
+		# }
 		available = {	
-		RUS = {
-			has_completed_focus = RUS_Assassinate_Stolypin
-		}
-
+			RUS = {
+				has_country_flag = MON_RUS_Stolypin_assassinated
+			}
 		}
 		
 		complete_effect = {
@@ -1401,33 +1400,33 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
-	Peter_Stolypin_Survived = {
-		allowed = {
-			original_tag = ORO
-		}
-		visible = {
-			always = yes
-		}
+	# Peter_Stolypin_Survived = {
+	# 	allowed = {
+	# 		original_tag = ORO
+	# 	}
+	# 	visible = {
+	# 		always = yes
+	# 	}
 		
-		available = {
-			date > 1911.9.18
-		}
-		available = {	
-		RUS = {
-			has_completed_focus = RUS_Constitutional_Monarchy	
-		}
+	# 	available = {
+	# 		date > 1911.9.18
+	# 	}
+	# 	available = {	
+	# 	RUS = {
+	# 		has_completed_focus = RUS_Constitutional_Monarchy	
+	# 	}
 	
-		}
+	# 	}
 		
-		complete_effect = {
-			news_event = ww1_news.52
-		}
-		fire_only_once = yes
+	# 	complete_effect = {
+	# 		news_event = ww1_news.52
+	# 	}
+	# 	fire_only_once = yes
 		
-		ai_will_do = {
-			factor = 10000
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 10000
+	# 	}
+	# }
 	sink_titanic = {
 		allowed = {
 			original_tag = ORO
@@ -1923,7 +1922,7 @@ ORO_spectator_state = {
 		}
 		
 		complete_effect = {
-			news_event = ww1_news.52
+			news_event = ww1_news.53
 		}
 		fire_only_once = yes
 		

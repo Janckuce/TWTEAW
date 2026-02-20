@@ -20,6 +20,7 @@ MON_RUS_Stolypin_reform_decisions = {
 					}
 				}
 				set_country_flag = MON_RUS_Stolypin_assassinated
+				news_event = ww1_news.18
 			}
 
 			if = {
@@ -30,6 +31,9 @@ MON_RUS_Stolypin_reform_decisions = {
 				clr_country_flag = MON_RUS_prevented_stolypin_assassination
 			}
 			
+		}
+		cancel_trigger = {
+			has_completed_focus = MON_RUS_Stolypin3
 		}
 	}
 	
@@ -47,6 +51,7 @@ MON_RUS_Stolypin_reform_decisions = {
 				OR = {
 					has_country_flag = MON_RUS_prevented_stolypin_assassination
 					has_country_flag = MON_RUS_Stolypin_assassinated
+					has_completed_focus = MON_RUS_Stolypin3
 				}
 			}
 		}
