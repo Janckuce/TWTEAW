@@ -23,11 +23,8 @@ ideas = {
 				line_change_production_efficiency_factor = 0.025
 				production_factory_max_efficiency_factor = 0.025
 				democratic_drift = 0.03
-			}
-			equipment_bonus = {
-				artillery_equipment = {
-					soft_attack = 0.1
-				}
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
 			}
 		}
 		FRA_Carry_On_Heavy_Artillery = {
@@ -40,7 +37,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				heavy_artillery_equipment = {
-					soft_attack = 0.05
+					breakthrough = 0.45
 				}
 			}
 		}
