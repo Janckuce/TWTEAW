@@ -33,7 +33,10 @@ MON_RUS_Stolypin_reform_decisions = {
 			
 		}
 		cancel_trigger = {
-			has_completed_focus = MON_RUS_Stolypin3
+			OR = {
+				has_completed_focus = MON_RUS_Stolypin3
+				has_country_flag = MON_RUS_Stolypin_assassinated
+			}
 		}
 	}
 	
