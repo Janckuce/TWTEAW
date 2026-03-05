@@ -39,6 +39,27 @@ country_event = {
 }
 
 country_event = {
+	id = ww1_bulgaria.2
+	title = ww1_bulgaria.2.t
+	desc = ww1_bulgaria.2.de
+	picture = GFX_report_event_spr_civil_war_equipment
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_bulgaria.2.a
+
+		declare_war_on = { target = ROM type = annex_everything }
+
+		GER = {
+			set_variable = {
+				rom_in_war = 1
+			}
+		}
+	}
+}
+
+country_event = {
 	id = ww1_ottoman.10
 	title = ww1_ottoman.10.t
 	desc = ww1_ottoman_desc.10

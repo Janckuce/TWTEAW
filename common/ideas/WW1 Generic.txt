@@ -175,6 +175,31 @@ ideas = {
 				experience_gain_army = 0.1
 			}
 		} 
+
+		GEN_Can_Send_8_Nolunteers = {
+
+			picture = SWE_wargames
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			rule = {
+				can_send_volunteers = yes
+			}
+
+			modifier = {
+				send_volunteer_divisions_required = -1
+				send_volunteer_size = 7
+				send_volunteers_tension = -0.5
+			}
+		} 
 	}
 
 	hidden_ideas = {

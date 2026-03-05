@@ -1,5 +1,5 @@
 War_Timers_catagories = {
-    War_Timers = {
+    War_Timers = { #World War 1
         days_mission_timeout = 1305
 		icon = GFX_decision_category_generic
         fire_only_once = yes
@@ -7,15 +7,22 @@ War_Timers_catagories = {
 			always = no
         }
     }
-    War_Timers1 = {
-        days_mission_timeout = 290
+    War_Timers3 = { #Second Balkan War, Happens around 50 days after the first one, double check if wrong
+        days_mission_timeout = 50
 		icon = GFX_decision_category_generic
         fire_only_once = yes
-		available = { 
+        activation = { 
+            TUR = {
+			    has_country_flag = {
+					flag = TUR_balkan_war_lost_1
+				}
+			}
+        }
+        available = { 
 			always = no
         }
     }
-    War_Timers2 = {
+    War_Timers2 = { #First Balkan War
         days_mission_timeout = 647
 		icon = GFX_decision_category_generic
         fire_only_once = yes
@@ -23,8 +30,8 @@ War_Timers_catagories = {
 			always = no
         }
     }
-    War_Timers3 = {
-        days_mission_timeout = 911
+    War_Timers1 = { #Lybia War
+        days_mission_timeout = 290
 		icon = GFX_decision_category_generic
         fire_only_once = yes
 		available = { 

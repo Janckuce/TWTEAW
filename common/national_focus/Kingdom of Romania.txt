@@ -157,21 +157,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    create_wargoal = {
-				type = annex_everything
-				target = BUL
-				expire = 0
-			}
-			GER = {
-			set_variable = {
-			rom_in_war = 1
-		}
-			}
+		#     create_wargoal = {
+		# 		type = annex_everything
+		# 		target = BUL
+		# 		expire = 0
+		# 	}
+		# 	GER = {
+		# 	set_variable = {
+		# 	rom_in_war = 1
+		# }
+		# 	}
 
-		give_military_access = USA
-		give_military_access = FRA
-		give_military_access = RUS
-		give_military_access = ENG
+		# give_military_access = USA
+		# give_military_access = FRA
+		# give_military_access = RUS
+		# give_military_access = ENG
+
+		BUL = {
+			country_event = ww1_bulgaria.2
+		}
 	}
 }
 
