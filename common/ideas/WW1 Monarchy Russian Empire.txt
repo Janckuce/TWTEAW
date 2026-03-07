@@ -1413,6 +1413,63 @@ ideas = {
 				}
 			}
 		}
+
+		RUS_kerrensky_offensive_underway = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_adopt_nufus
+
+			modifier = {
+
+			}
+		}
+
+		RUS_successful_kerrensky_offensive = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+			    NOT = {
+				    OR = {
+						has_government = communism
+						has_war_with = SOR
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+            picture = AFG_adopt_nufus
+
+			modifier = {
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+			}
+		}
 		
 	}
 

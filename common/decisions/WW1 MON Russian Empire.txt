@@ -181,14 +181,315 @@ MON_RUS_army_collapse_mechanic = {
 		is_good = no
 		days_mission_timeout = 80
 		fire_only_once = no
+
+		icon = GFX_decision_revolt
+
 		allowed = {
 			always = no
 		}
 		available = {
 			always = no
 		}
+		cancel_trigger = {
+			has_idea = RUS_successful_kerrensky_offensive
+		}
+		cancel_effect = {
+			add_stability = 0.15
+			swap_ideas = {
+				remove_idea = MON_RUS_Bolshevik_Revolution_Brewing
+				add_idea = MON_RUS_Increased_Bolshevik_Sabotage
+			}
+		}
 		timeout_effect = {
 			set_country_flag = RUS_rapid_army_collapse
+		}
+	}
+
+	k_offensive_liberate_all = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			surrender_progress < 0.03
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
+		}
+	}
+
+	k_offensive_warsaw = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+
+			NOT = {
+				controls_state = 90 #Kielce
+				controls_state = 98 #Plock
+				controls_state = 10 #Warsaw
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			controls_state = 10 #Warsaw
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
+		}
+	}
+
+	k_offensive_kaunas = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+
+			NOT = {
+				controls_state = 815 #North of Kaunas
+				controls_state = 784 #Wilno
+				controls_state = 11 #Kaunas
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			controls_state = 11 #Kaunas
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
+		}
+	}
+
+	k_offensive_lwow = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+
+			NOT = {
+				controls_state = 199 #East of Galicia
+				controls_state = 93 #Wolyn
+				controls_state = 92 #Lublin
+				controls_state = 91 #Lwow
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			controls_state = 91 #Lwow
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
+		}
+	}
+
+	k_offensive_east_of_galicia = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+
+			NOT = {
+				controls_state = 201 #Zhytomyr
+				controls_state = 93 #Wolyn
+				controls_state = 92 #Lublin
+				controls_state = 199 #East of Galicia
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			controls_state = 199 #East of Galicia
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
+		}
+	}
+
+	k_offensive_minsk = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+			
+			NOT = {
+				controls_state = 95 #Nowogrodek
+				controls_state = 204 #Bobruysk
+				controls_state = 206 #Minsk
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			controls_state = 206 #Minsk
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
+		}
+	}
+
+	k_offensive_kiev = {
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = RUS
+		}
+		available = {
+			# always = yes
+
+			NOT = {
+				has_idea = RUS_kerrensky_offensive_underway
+			}
+			
+			NOT = {
+				controls_state = 202 #Kiev
+			}
+		}
+		visible = {
+			has_idea = MON_RUS_Bolshevik_Revolution_Brewing
+		}
+		days_remove = 100
+
+		complete_effect = {
+			add_ideas = RUS_kerrensky_offensive_underway
+		}
+
+		cancel_trigger = {
+			controls_state = 202 #Kiev
+		}
+
+		icon = GFX_decision_infiltrate_state
+		
+		cancel_effect = {
+			swap_ideas = {
+				remove_idea = RUS_kerrensky_offensive_underway
+				add_idea = RUS_successful_kerrensky_offensive
+			}
 		}
 	}
 }

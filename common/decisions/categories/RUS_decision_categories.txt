@@ -91,14 +91,14 @@ MON_RUS_Stolypin_reform_decisions = {
 }
 
 MON_RUS_army_collapse_mechanic = { 
-	icon = GFX_decision_category_generic_political_actions
+	icon = GFX_decision_category_hol_secret_staff_talks
 
 	priority = 95
 
 	visible_when_empty = no
 
 	visible = {
-		stability > 50.0
+		always = yes
 	}
 	allowed = {
 		tag = RUS

@@ -1290,7 +1290,7 @@ ORO_spectator_state = {
 		    RUS = {
 			    has_country_flag = RUS_provisional_government_flag
 				has_completed_focus = MON_RUS_first_focus
-				has_stability < 0.01
+				has_stability < 0.10
 				has_war_with = GER
 			}
 		}
@@ -1333,11 +1333,9 @@ ORO_spectator_state = {
 						has_country_flag = RUS_rapid_army_collapse
 					}
 					RUS = {
-						AND = {
-							NOT ={
-								controls_state = 206 #Minsk
-								controls_state = 202 #Kyiv
-							}
+						NOT ={
+							controls_state = 206 #Minsk
+							controls_state = 202 #Kyiv
 						}
 					}
 				}
