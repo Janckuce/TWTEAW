@@ -274,6 +274,14 @@ MON_RUS_army_collapse_mechanic = {
 		}
 
 		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10 #Warsaw
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 		
 		cancel_effect = {
 			swap_ideas = {
@@ -316,6 +324,14 @@ MON_RUS_army_collapse_mechanic = {
 		}
 
 		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 11 #Kaunas
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 		
 		cancel_effect = {
 			swap_ideas = {
@@ -359,6 +375,14 @@ MON_RUS_army_collapse_mechanic = {
 		}
 
 		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 91 #Lwow
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 		
 		cancel_effect = {
 			swap_ideas = {
@@ -402,6 +426,14 @@ MON_RUS_army_collapse_mechanic = {
 		}
 
 		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 199 #East of Galicia
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 		
 		cancel_effect = {
 			swap_ideas = {
@@ -425,8 +457,6 @@ MON_RUS_army_collapse_mechanic = {
 			}
 			
 			NOT = {
-				controls_state = 95 #Nowogrodek
-				controls_state = 204 #Bobruysk
 				controls_state = 206 #Minsk
 			}
 		}
@@ -444,6 +474,14 @@ MON_RUS_army_collapse_mechanic = {
 		}
 
 		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 206 #Minsk
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 		
 		cancel_effect = {
 			swap_ideas = {
@@ -484,6 +522,14 @@ MON_RUS_army_collapse_mechanic = {
 		}
 
 		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202 #Kiev
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 		
 		cancel_effect = {
 			swap_ideas = {
