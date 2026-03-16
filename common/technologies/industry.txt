@@ -546,7 +546,28 @@ technologies = {
 	ww1_excavation1 = {
 		
 		local_resources_factor = 0.15
-		
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 1
+			}
+
+			modify_building_resources = {
+				building = coal_refinery
+				resource = coal
+				amount = 1
+			}
+			
+			modify_building_resources = {
+				building = sulfur_refinery
+				resource = sulfur
+				amount = 1
+			}
+		}
+
+
 		path = {
 			research_cost_coeff = 1
 		}
@@ -596,6 +617,26 @@ technologies = {
 	ww1_excavation2 = {
 		
 		local_resources_factor = 0.15
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 1
+			}
+
+			modify_building_resources = {
+				building = coal_refinery
+				resource = coal
+				amount = 1
+			}
+			
+			modify_building_resources = {
+				building = sulfur_refinery
+				resource = sulfur
+				amount = 1
+			}
+		}
 		
 		path = {
 			research_cost_coeff = 1
@@ -646,6 +687,26 @@ technologies = {
 	ww1_excavation3 = {
 		
 		local_resources_factor = 0.15
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_refinery
+				resource = steel
+				amount = 1
+			}
+
+			modify_building_resources = {
+				building = coal_refinery
+				resource = coal
+				amount = 1
+			}
+			
+			modify_building_resources = {
+				building = sulfur_refinery
+				resource = sulfur
+				amount = 1
+			}
+		}
 		
 		path = {
 			research_cost_coeff = 1
