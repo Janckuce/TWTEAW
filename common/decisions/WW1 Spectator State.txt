@@ -1,5 +1,5 @@
 ORO_spectator_state = {
-    #1911.8(Month).21(Day)
+	#1911.8(Month).21(Day)
 	#jan 1
 	#feb 2
 	#mar 3
@@ -12,8 +12,6 @@ ORO_spectator_state = {
 	#oct 10
 	#nov 11
 	#dec 12
-
-
 
 	Portugal_Declare_War = {
 		allowed = {
@@ -31,11 +29,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
+
 	Italy_Declare_War = {
 		allowed = {
 			original_tag = ORO
@@ -54,7 +53,7 @@ ORO_spectator_state = {
 			news_event = ww1_news.17
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -67,7 +66,7 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			OR = {
 				ITA = {
@@ -97,20 +96,20 @@ ORO_spectator_state = {
 			}
 			date < 1914.1.1
 		}
-		
+
 		complete_effect = {
-		    ITA = {
-			    country_event = ww1_italy.2
-			    set_country_flag = ITA_Win_Libya
+			ITA = {
+				country_event = ww1_italy.2
+				set_country_flag = ITA_Win_Libya
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Italy_lose_libya_war = {
 		allowed = {
 			original_tag = ORO
@@ -118,7 +117,7 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			OR = {
 				TUR = {
@@ -159,15 +158,15 @@ ORO_spectator_state = {
 			date < 1914.1.1
 		}
 		complete_effect = {
-		    TUR = {
-			    country_event = ww1_ottoman.2
+			TUR = {
+				country_event = ww1_ottoman.2
 			}
 			ITA = {
 				set_country_flag = ITA_Lose_Libya
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -186,8 +185,8 @@ ORO_spectator_state = {
 		}
 		complete_effect = {
 			GER = {
-			set_variable = {
-				Italy_in_war = 1
+				set_variable = {
+					Italy_in_war = 1
 				}				
 			}
 			ITA = {
@@ -200,12 +199,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Franz_ferdinand_assasinated = {
 		allowed = {
 			original_tag = ORO
@@ -213,28 +212,28 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1914.6.28
 		}
-		
+
 		complete_effect = {
-		    GER = {
-			    news_event = ww1_news.5
+			GER = {
+				news_event = ww1_news.5
 			}
 			AUS = {
-			    country_event = ww1_austria.2
+				country_event = ww1_austria.2
 				set_country_flag = AUS_july_crisis
 			}
 			threat = 40
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	start_ww1 = {
 		allowed = {
 			original_tag = ORO
@@ -242,64 +241,63 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1914.7.28
 		}
-		
+
 		complete_effect = {
-			
-				GER = {
-					declare_war_on = { target = FRA type = annex_everything }
-					declare_war_on = { target = SER type = annex_everything }
-					declare_war_on = { target = RUS type = annex_everything }
-					declare_war_on = { target = MNT type = annex_everything }
-					news_event = ww1_news.10
-					country_event = { id = ww1_germany.6 days = 7 }
-					transfer_state = 8
-					add_threat = 40
+			GER = {
+				declare_war_on = { target = FRA type = annex_everything }
+				declare_war_on = { target = SER type = annex_everything }
+				declare_war_on = { target = RUS type = annex_everything }
+				declare_war_on = { target = MNT type = annex_everything }
+				news_event = ww1_news.10
+				country_event = { id = ww1_germany.6 days = 7 }
+				transfer_state = 8
+				add_threat = 40
+			}
+			AUS = {
+				declare_war_on = { target = FRA type = annex_everything }
+				declare_war_on = { target = SER type = annex_everything }
+				declare_war_on = { target = RUS type = annex_everything }
+				declare_war_on = { target = MNT type = annex_everything }
+				add_threat = 40
+			}
+			RUS = {
+				add_timed_idea = {
+					idea = RUS_austrian_offensive_idea
+					days = 60
 				}
-				AUS = {
-					declare_war_on = { target = FRA type = annex_everything }
-					declare_war_on = { target = SER type = annex_everything }
-					declare_war_on = { target = RUS type = annex_everything }
-					declare_war_on = { target = MNT type = annex_everything }
-					add_threat = 40
-				}
-				RUS = {
-				    add_timed_idea = {
-						idea = RUS_austrian_offensive_idea
-						days = 60
-					}
-					add_threat = 40
-				}
-				BUL = {
-		            add_ideas = GEN_Can_Send_8_Nolunteers
-				}
-				ITA = {
-		            add_ideas = GEN_Can_Send_8_Nolunteers
-				}
-			
+				add_threat = 40
+			}
+			BUL = {
+				add_ideas = GEN_Can_Send_8_Nolunteers
+			}
+			ITA = {
+				add_ideas = GEN_Can_Send_8_Nolunteers
+			}
+
 			if = {
-		        limit = {
-		            GER = {
-		                has_completed_focus = GER_schlieffen_moltke_plan_idea
-	                }
-	            }
-		        GER = {
-		            add_ideas = GER_schlieffen_moltke_plan_idea
-	        	}
+				limit = {
+					GER = {
+						has_completed_focus = GER_schlieffen_moltke_plan_idea
+					}
+				}
+				GER = {
+					add_ideas = GER_schlieffen_moltke_plan_idea
+				}
 			}
 			if = {
-                limit = {
-                    GER = {
-                        has_completed_focus = GER_Helmuth_von_Moltke
-                    }
-                }
-                GER = {
-                    add_ideas = GER_Helmuth_Plan
+				limit = {
+					GER = {
+						has_completed_focus = GER_Helmuth_von_Moltke
+					}
 				}
-            }
+				GER = {
+					add_ideas = GER_Helmuth_Plan
+				}
+			}
 			if = {
 				limit = {
 					GER = {
@@ -316,12 +314,12 @@ ORO_spectator_state = {
 			threat = 50
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	GER_ww1_mobilization = {
 		allowed = {
 			original_tag = ORO
@@ -329,18 +327,18 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			GER = { 
-			    is_ai = yes
+				is_ai = yes
 				has_war_with = FRA
 				has_war_with = RUS #WW1 Started
 			}
 		}
-		
+
 		complete_effect = {
-		    GER = {
-			    division_template = {
+			GER = {
+				division_template = {
 					name = "Infantry Division"
 					division_names_group = GER_INF_01
 					regiments = {
@@ -401,7 +399,7 @@ ORO_spectator_state = {
 					}
 				}
 			}
-			
+
 			#Berlin
 			64 = {
 				create_unit = {
@@ -1006,87 +1004,87 @@ ORO_spectator_state = {
 				}
 			}
 			GER = {
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
 				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
 				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
 				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
 				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
 				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
+				random_owned_controlled_state = {
+					limit = {
+						is_in_home_area = yes
+						is_core_of = ROOT
+					}
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
 					}
 				}
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Russia_win_in_iran = {
 		allowed = {
 			original_tag = ORO
@@ -1094,18 +1092,18 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			RUS = {
-			    controls_state = 266
+				controls_state = 266
 			}
 			RUS = {
-			    has_war_with = PER
+				has_war_with = PER
 			}
 		}
-		
+
 		complete_effect = {
-		    every_country = {
+			every_country = {
 				limit = {
 					OR = {
 						is_subject_of = RUS
@@ -1114,7 +1112,7 @@ ORO_spectator_state = {
 				}
 				white_peace = PER
 			}
-		    RUS = {
+			RUS = {
 				transfer_state = 419
 				transfer_state = 420
 				transfer_state = 266
@@ -1122,12 +1120,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Russia_lose_in_iran = {
 		allowed = {
 			original_tag = ORO
@@ -1135,20 +1133,20 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    NOT = {
+			NOT = {
 				RUS = {
 					controls_state = 266
 				}
 			}
 			RUS = {
-			    has_war_with = PER
+				has_war_with = PER
 			}
 		}
-		
+
 		complete_effect = {
-		    every_country = {
+			every_country = {
 				limit = {
 					OR = {
 						is_subject_of = RUS
@@ -1159,12 +1157,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	WW1_started = {
 		allowed = {
 			original_tag = ORO
@@ -1172,28 +1170,28 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    GER = {
-			    has_war_with = FRA
+			GER = {
+				has_war_with = FRA
 				has_war_with = RUS
-            }
-            FRA = {
-			    is_in_faction_with = RUS
+			}
+			FRA = {
+				is_in_faction_with = RUS
 			}
 		}
-		
+
 		complete_effect = {
-		    set_country_flag = WW1_started_spectator
+			set_country_flag = WW1_started_spectator
 		}
-		
+
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	WW1_ended = {
 		allowed = {
 			original_tag = ORO
@@ -1201,24 +1199,24 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    NOT = {
-			    FRA = { has_war_with = GER }
+			NOT = {
+				FRA = { has_war_with = GER }
 			}
 			has_country_flag = WW1_started_spectator
 		}
-		
+
 		complete_effect = {
-		    set_country_flag = WW1_ended_spectator
+			set_country_flag = WW1_ended_spectator
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	RUS_abdicate_tsar = {
 		allowed = {
 			original_tag = ORO
@@ -1226,10 +1224,10 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    OR = {
-			    AND = {
+			OR = {
+				AND = {
 					date > 1917.2.15
 					RUS = {
 						has_war_with = GER
@@ -1242,7 +1240,7 @@ ORO_spectator_state = {
 					}
 				}
 				AND = {
-				    OR = {
+					OR = {
 						NOT = {
 							RUS = {
 								controls_state = 206 #Minsk
@@ -1255,24 +1253,24 @@ ORO_spectator_state = {
 				}
 			}
 			NOT = {
-			    OR = {
+				OR = {
 					RUS = {
 						has_war = no
 					}
 					RUS = {
-					    controls_state = 763 #Kaliningrad
+						controls_state = 763 #Kaliningrad
 					}
 				}
 			}
 		}
-		
+
 		complete_effect = {
-		    RUS = {
+			RUS = {
 				country_event = { hours = 6 id = ww1_russia.2 }
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -1285,18 +1283,18 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    RUS = {
-			    has_country_flag = RUS_provisional_government_flag
+			RUS = {
+				has_country_flag = RUS_provisional_government_flag
 				has_completed_focus = MON_RUS_first_focus
 				has_stability < 0.10
 				has_war_with = GER
 			}
 		}
-		
+
 		complete_effect = {
-		    RUS = {
+			RUS = {
 				unlock_decision_category_tooltip = MON_RUS_army_collapse_mechanic
 				activate_mission = MON_RUS_army_collapse_incoming
 				swap_ideas = {
@@ -1306,12 +1304,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	RUS_october_revolution = {
 		allowed = {
 			original_tag = ORO
@@ -1319,10 +1317,10 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    RUS = {
-			    has_country_flag = RUS_provisional_government_flag
+			RUS = {
+				has_country_flag = RUS_provisional_government_flag
 			}
 			AND = {
 				RUS = {
@@ -1341,21 +1339,21 @@ ORO_spectator_state = {
 				}
 			}
 		}
-		
+
 		complete_effect = {
-		    RUS = {
-			    retire_country_leader = yes
+			RUS = {
+				retire_country_leader = yes
 				country_event = { hours = 6 id = ww1_russia.3 }
 				country_event = { id = ww1_russia.4 days = 20 }
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	mona_lisa_steal = {
 		allowed = {
 			original_tag = ORO
@@ -1363,21 +1361,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1911.8.21
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.16
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Peter_Stolypin_killed = {
 		allowed = {
 			original_tag = ORO
@@ -1385,21 +1383,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		# available = {
 		# 	date > 1911.9.18
 		# }
-		available = {	
+		available = {
 			RUS = {
 				has_country_flag = MON_RUS_Stolypin_assassinated
 			}
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.18
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -1411,22 +1409,22 @@ ORO_spectator_state = {
 	# 	visible = {
 	# 		always = yes
 	# 	}
-		
+
 	# 	available = {
 	# 		date > 1911.9.18
 	# 	}
-	# 	available = {	
+	# 	available = {
 	# 	RUS = {
-	# 		has_completed_focus = RUS_Constitutional_Monarchy	
+	# 		has_completed_focus = RUS_Constitutional_Monarchy
 	# 	}
-	
+
 	# 	}
-		
+
 	# 	complete_effect = {
 	# 		news_event = ww1_news.52
 	# 	}
 	# 	fire_only_once = yes
-		
+
 	# 	ai_will_do = {
 	# 		factor = 10000
 	# 	}
@@ -1438,21 +1436,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1912.4.15
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.19
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	ww1_1912_olympics = {
 		allowed = {
 			original_tag = ORO
@@ -1460,21 +1458,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1912.7.6
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.20
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	kill_roosevelt = {
 		allowed = {
 			original_tag = ORO
@@ -1482,21 +1480,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1912.10.14
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.22
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	us_occupies_veracruz = {
 		allowed = {
 			original_tag = ORO
@@ -1504,24 +1502,24 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1914.4.21
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.32
 			USA = {
-			    transfer_state = 477
+				transfer_state = 477
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	us_leaves_veracruz = {
 		allowed = {
 			original_tag = ORO
@@ -1529,11 +1527,11 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1914.11.23
 			OR = {
-			    MEX = { 
+				MEX = {
 					controls_state = 277 
 				}
 				MXF = {
@@ -1541,13 +1539,13 @@ ORO_spectator_state = {
 				}
 			}
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.33
 			if = {
-			    limit = {
-				    MEX = { 
-					    controls_state = 277 
+				limit = {
+					MEX = {
+						controls_state = 277
 					}
 				}
 				MEX = {
@@ -1555,9 +1553,9 @@ ORO_spectator_state = {
 				}
 			}
 			if = {
-			    limit = {
-				    MXF = { 
-					    controls_state = 277 
+				limit = {
+					MXF = {
+						controls_state = 277
 					}
 				}
 				MXF = {
@@ -1566,12 +1564,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	USA_womens_suffrage = {
 		allowed = {
 			original_tag = ORO
@@ -1579,21 +1577,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1913.3.3
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.35
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	berlin_olympics = {
 		allowed = {
 			original_tag = ORO
@@ -1601,21 +1599,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1916.7.1
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.36
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	south_pole_reached = {
 		allowed = {
 			original_tag = ORO
@@ -1623,21 +1621,21 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1911.12.14
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.37
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_spawn_divisions = {
 		allowed = {
 			original_tag = ORO
@@ -1645,14 +1643,14 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			FRA = { 
-			    is_ai = yes
+				is_ai = yes
 				has_war_with = GER
 			}
 			OR = {
-			    NOT = {
+				NOT = {
 					FRA = {
 						controls_province = 3546 #Verdun fell
 						controls_province = 11483 #Lille fell
@@ -1666,10 +1664,10 @@ ORO_spectator_state = {
 				}
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    division_template = {
+				division_template = {
 					name = "Infantry Division"
 					division_names_group = FRA_INF_01
 					regiments = {
@@ -1730,7 +1728,7 @@ ORO_spectator_state = {
 					}
 				}
 			}
-			
+
 			#Paris
 			16 = {
 				create_unit = {
@@ -1856,12 +1854,12 @@ ORO_spectator_state = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	GER_ludendorff_leader_OHL = {
 		allowed = {
 			original_tag = ORO
@@ -1869,19 +1867,19 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1916.1.1
-		    GER = {
+			GER = {
 				has_war = yes
 				has_government = neutrality
 			}
 		}
-		
+
 		complete_effect = {
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -1920,16 +1918,16 @@ ORO_spectator_state = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1914.9.15
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.53
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -1937,28 +1935,28 @@ ORO_spectator_state = {
 }
 
 ORO_portugal_mess = {
-    POR_mess_election = {
+	POR_mess_election = {
 		allowed = {
 			original_tag = ORO
 		}
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1911.8.24
 			POR = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			POR = {
-			    country_event = ww1_portugal.4
+				country_event = ww1_portugal.4
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -1970,26 +1968,26 @@ ORO_portugal_mess = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1915.5.29
 			POR = {
-			    has_government = communism
+				has_government = communism
 			}
 		}
-		
+
 		complete_effect = {
 			POR = {
-			    country_event = ww1_portugal.5
+				country_event = ww1_portugal.5
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	POR_mess_election3 = {
 		allowed = {
 			original_tag = ORO
@@ -1997,26 +1995,26 @@ ORO_portugal_mess = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1917.12.12
 			POR = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			POR = {
-			    country_event = ww1_portugal.6
+				country_event = ww1_portugal.6
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	POR_mess_election4 = {
 		allowed = {
 			original_tag = ORO
@@ -2024,21 +2022,21 @@ ORO_portugal_mess = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1911.12.5
 			POR = {
-			    has_government = communism
+				has_government = communism
 			}
 		}
-		
+
 		complete_effect = {
 			POR = {
-			    country_event = ww1_portugal.7
+				country_event = ww1_portugal.7
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -2047,28 +2045,28 @@ ORO_portugal_mess = {
 
 
 ORO_french_election = {
-    FRA_poincare_election = {
+	FRA_poincare_election = {
 		allowed = {
 			original_tag = ORO
 		}
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1912.1.21
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.5
+				country_event = ww1_france.5
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -2080,26 +2078,26 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1913.1.21
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.6
+				country_event = ww1_france.6
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_barthou_election = {
 		allowed = {
 			original_tag = ORO
@@ -2107,26 +2105,26 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1913.3.22
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.7
+				country_event = ww1_france.7
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_gaston_election = {
 		allowed = {
 			original_tag = ORO
@@ -2134,26 +2132,26 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1913.12.9
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.8
+				country_event = ww1_france.8
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_ribot_election = {
 		allowed = {
 			original_tag = ORO
@@ -2161,26 +2159,26 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1914.6.9
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.9
+				country_event = ww1_france.9
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_viviani_election = {
 		allowed = {
 			original_tag = ORO
@@ -2188,26 +2186,26 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1915.6.13
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.10
+				country_event = ww1_france.10
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_paul_election = {
 		allowed = {
 			original_tag = ORO
@@ -2215,26 +2213,26 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1917.9.12
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.11
+				country_event = ww1_france.11
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	FRA_clemenceau_election = {
 		allowed = {
 			original_tag = ORO
@@ -2242,21 +2240,21 @@ ORO_french_election = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1917.11.16
 			FRA = {
-			    has_government = democratic
+				has_government = democratic
 			}
 		}
-		
+
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.12
+				country_event = ww1_france.12
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -2264,40 +2262,40 @@ ORO_french_election = {
 }
 
 ORO_balkan_wars = {
-    SER_balkan_league = {
+	SER_balkan_league = {
 		allowed = {
 			original_tag = ORO
 		}
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1912.4.10
 		}
-		
+
 		complete_effect = {
 			SER = {
-			    create_faction = BALKAN_LEAGUE
+				create_faction = BALKAN_LEAGUE
 				news_event = ww1_news.30
 			}
 			BUL = {
-			    country_event = { id = ww1_serbia.11 days = 2 }
+				country_event = { id = ww1_serbia.11 days = 2 }
 			}
 			MNT = {
-			    country_event = { id = ww1_serbia.11 days = 2 }
+				country_event = { id = ww1_serbia.11 days = 2 }
 			}
 			GRE = {
-			    country_event = { id = ww1_serbia.11 days = 2 }
+				country_event = { id = ww1_serbia.11 days = 2 }
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	SER_first_balkan_war = {
 		allowed = {
 			original_tag = ORO
@@ -2305,11 +2303,11 @@ ORO_balkan_wars = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1912.10.8
 		}
-		
+
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -2328,12 +2326,12 @@ ORO_balkan_wars = {
 			threat = 20
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Russia_Show_Navy = {
 		allowed = {
 			original_tag = ORO
@@ -2341,22 +2339,22 @@ ORO_balkan_wars = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1913.1.1
 			BUL = { has_war_with = TUR }
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.38
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Ottoman_Surrender = {
 		allowed = {
 			original_tag = ORO
@@ -2364,30 +2362,30 @@ ORO_balkan_wars = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    TUR = { has_war_with = SER }
-		    OR = {
+			TUR = { has_war_with = SER }
+			OR = {
 				date > 1913.5.30
 				casualties > 150000
 				NOT = {
-				    TUR = { controls_state = 341 }
+					TUR = { controls_state = 341 }
 				}
 			}
 		}
-		
+
 		complete_effect = {
 			TUR = {
-			    country_event = ww1_ottoman.3
+				country_event = ww1_ottoman.3
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	Anti-Bulgaria_League = {
 		allowed = {
 			original_tag = ORO
@@ -2395,16 +2393,16 @@ ORO_balkan_wars = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    TUR = {
-			    has_country_flag = {
+			TUR = {
+				has_country_flag = {
 					flag = TUR_balkan_war_lost_1
 					days > 5
 				}
 			}
 		}
-		
+
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -2422,7 +2420,7 @@ ORO_balkan_wars = {
 			#}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -2430,42 +2428,42 @@ ORO_balkan_wars = {
 }
 
 ORO_end_WW1_german_loss = {
-    GER_kiel_mutiny = {
-	    allowed = {
+	GER_kiel_mutiny = {
+		allowed = {
 			original_tag = ORO
 		}
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    GER = { has_war_with = FRA }
+			GER = { has_war_with = FRA }
 			date > 1918.11.3
 			NOT = { has_country_flag = WW1_ended_spectator }
 		}
-		
+
 		complete_effect = {
 			news_event = ww1_news.41
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	AUS_collapse_of_austria_hungary = {
-	    allowed = {
+		allowed = {
 			original_tag = ORO
 		}
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    GER = { has_war_with = FRA }
-			AUS = { 
-			    OR = {
+			GER = { has_war_with = FRA }
+			AUS = {
+				OR = {
 					is_in_faction_with = GER
 					has_war_with = FRA
 				}
@@ -2474,36 +2472,36 @@ ORO_end_WW1_german_loss = {
 				date > 1918.11.4
 				NOT = {
 					AUS = {
-					    controls_state = 4
+						controls_state = 4
 					}
 					GER = {
-					    controls_state = 843
+						controls_state = 843
 					}
 				}
 			}
 			NOT = { has_country_flag = WW1_ended_spectator }
 		}
-		
+
 		complete_effect = {
 			AUS = { country_event = ww1_austria.4 }
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
-	
+
 	GER_surrender_event = {
-	    allowed = {
+		allowed = {
 			original_tag = ORO
 		}
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
-		    GER = { has_war_with = FRA }
+			GER = { has_war_with = FRA }
 			OR = {
 				NOT = {
 					GER = {
@@ -2516,20 +2514,20 @@ ORO_end_WW1_german_loss = {
 			}
 			NOT = { has_country_flag = WW1_ended_spectator }
 		}
-		
+
 		complete_effect = {
 			GER = {
-			    country_event = ww1_germany.14
+				country_event = ww1_germany.14
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
 	}
 	Entente_surrender_event = {
-	    allowed = {
+		allowed = {
 			original_tag = ORO
 		}
 		visible = {
@@ -2539,39 +2537,39 @@ ORO_end_WW1_german_loss = {
 			factor = 10000
 		}
 		available = {
-		    GER = { has_war_with = FRA }
+			GER = { has_war_with = FRA }
 			AND = {
 				FRA = {
-						NOT = {
-							OR = {
+					NOT = {
+						OR = {
 							controls_state = 16
 							controls_state = 19
 							controls_state = 21
-							}
 						}
 					}
-					OR = {
-						NOT = {
+				}
+				OR = {
+					NOT = {
 						RUS = {
-						controls_state = 195
-							}
+							controls_state = 195
 						}
-						NOT = {
+					}
+					NOT = {
 						RUS = {
-						has_war_with = GER
+							has_war_with = GER
 						}
 					}
 				}
 				NOT = { has_country_flag = WW1_ended_spectator }
-				}
 			}
+		}
 		complete_effect = {
 			FRA = {
-			    country_event = ww1_france.16
+				country_event = ww1_france.16
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -2586,15 +2584,15 @@ ORO_end_WW1_german_loss = {
 			visible = {
 				always = yes
 			}
-			
+
 			available = {
 				date > 1914.10.10
 			}
-			
+
 			complete_effect = {
 				ROM = {
 					retire_country_leader = yes
-					
+
 					add_country_leader_role = {
 						character = ROM_ferdinand_I
 						promote_leader = yes
@@ -2606,7 +2604,7 @@ ORO_end_WW1_german_loss = {
 				}
 			}
 			fire_only_once = yes
-			
+
 			ai_will_do = {
 				factor = 10000
 			}
@@ -2619,15 +2617,15 @@ ORO_end_WW1_german_loss = {
 		visible = {
 			always = yes
 		}
-		
+
 		available = {
 			date > 1916.11.21
 		}
-		
+
 		complete_effect = {
 			AUS = {
-			    retire_country_leader = yes
-				
+				retire_country_leader = yes
+
 				add_country_leader_role = {
 					character = AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria
 					promote_leader = yes
@@ -2639,7 +2637,7 @@ ORO_end_WW1_german_loss = {
 			}
 		}
 		fire_only_once = yes
-		
+
 		ai_will_do = {
 			factor = 10000
 		}
@@ -2663,7 +2661,7 @@ ORO_end_WW1_german_loss = {
 				set_variable = {
 					Bulgaria_in_war = 1
 				}
-				country_event = ww1_germany.16 
+				country_event = ww1_germany.16
 			}
 		}
 	}
@@ -2683,8 +2681,8 @@ ORO_end_WW1_german_loss = {
 		fire_only_once = yes
 		complete_effect = {
 			GER = {
-			set_variable = {
-			ottoman_in_war = 1
+				set_variable = {
+					ottoman_in_war = 1
 				}
 			} 
 			country_event = ww1_ottoman.5

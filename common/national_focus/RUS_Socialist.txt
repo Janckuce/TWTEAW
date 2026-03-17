@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Continue_Stolypins_Reforms
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 3
+		cost = 6
 		x = 2
 		y = 0
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -99,7 +99,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Ensure_Basic_Literacy
 		}
-		cost = 3
+		cost = 6
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -118,7 +118,7 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Allow_Cooperatives
 		}
-		cost = 6
+		cost = 9
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD FOCUS_FILTER_POLITICAL}
@@ -169,7 +169,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Rubber_Production
 		icon = GFX_focus_generic_rubber_plantations
-		cost = 6
+		cost = 9
 		relative_position_id = RUS_focus_SR_Steel_Production
 		x = 0
 		y = 1
@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Peasants_Land_Bank
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 6
+		cost = 9
 		relative_position_id = RUS_focus_SR_Rubber_Production
 		x = 0
 		y = 1
@@ -218,7 +218,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = RUS_focus_SR_Peasants_Land_Bank
 		}
-		cost = 9
+		cost = 12
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
@@ -693,7 +693,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Kiev_Development
 		icon = GFX_focus_HUN_the_kingdom_of_ukraine
-		cost = 6
+		cost = 9
 		relative_position_id = RUS_focus_SR_Minsk_Development
 		x = 0
 		y = 1
@@ -730,7 +730,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Develop_Omsk
 		icon = GFX_goal_generic_position_armies
-		cost = 6
+		cost = 9
 		relative_position_id = RUS_focus_SR_Kiev_Development
 		x = -1
 		y = 1
@@ -756,7 +756,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Develop_Novonikolayevsk
 		icon = GFX_focus_generic_industry_1
-		cost = 6
+		cost = 9
 		relative_position_id = RUS_focus_SR_Develop_Omsk
 		x = 0
 		y = 1
@@ -782,7 +782,7 @@ focus_tree = {
 	focus = {
 		id = RUS_focus_SR_Develop_Chita
 		icon = GFX_goal_generic_construction2
-		cost = 6
+		cost = 9
 		relative_position_id = RUS_focus_SR_Develop_Novonikolayevsk
 		x = 0
 		y = 1
@@ -859,7 +859,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 				}
 			}
 			add_tech_bonus = {
@@ -887,7 +887,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 				}
 			}
 			add_tech_bonus = {
@@ -1079,6 +1079,9 @@ focus_tree = {
 			focus = RUS_focus_SR_Thorough_Training
 			focus = RUS_focus_SR_Quick_Training
 		}
+		available = {
+			date > 1913.1.1 # wikipedia says so
+		}
 		x = -1
 		y = 1
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
@@ -1177,6 +1180,11 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Cossacks
 			focus = RUS_focus_SR_Artillery
+		}
+		available = {
+			AUS = {
+				has_country_flag = AUS_july_crisis # time gate to Franz Ferdinand being assassinated
+			}
 		}
 		x = -1
 		y = 1

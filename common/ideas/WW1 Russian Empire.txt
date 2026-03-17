@@ -368,24 +368,6 @@ ideas = {
 			}
 		}
 
-		RUS_Agrarian_Industry = {
-			picture = rus_poor_people
-			removal_cost = -1
-			modifier = {
-				production_speed_industrial_complex_factor = -0.3
-				production_speed_infrastructure_factor = -0.3
-				global_building_slots_factor = -0.8
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = 0.1
-				}
-				artillery_equipment = {
-					build_cost_ic = 0.075
-				}
-			}
-		}
-
 		RUS_stolypin_reform = {
 			picture = hun_economy_wasteland
 			removal_cost = -1
@@ -866,13 +848,33 @@ ideas = {
 			}
 		}
 
+		RUS_Agrarian_Industry = {
+			picture = rus_poor_people
+			removal_cost = -1
+			modifier = {
+				#production_speed_industrial_complex_factor = -0.3
+				#production_speed_infrastructure_factor = -0.3
+				global_building_slots_factor = -0.8
+				production_speed_buildings_factor = -0.3
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = 0.075
+				}
+			}
+		}
+
 		RUS_Agrarian_Industry1 = {
 			picture = rus_poor_people
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = -0.25
-				production_speed_infrastructure_factor = -0.25
+				#production_speed_industrial_complex_factor = -0.25
+				#production_speed_infrastructure_factor = -0.25
 				global_building_slots_factor = -0.6
+				production_speed_buildings_factor = -0.25
 			}
 		}
 
@@ -880,9 +882,10 @@ ideas = {
 			picture = rus_poor_people
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_infrastructure_factor = -0.2
+				#production_speed_industrial_complex_factor = -0.2
+				#production_speed_infrastructure_factor = -0.2
 				global_building_slots_factor = -0.5
+				production_speed_buildings_factor = -0.2
 			}
 		}
 
@@ -890,9 +893,10 @@ ideas = {
 			picture = rus_poor_people
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_infrastructure_factor = -0.15
+				#production_speed_industrial_complex_factor = -0.15
+				#production_speed_infrastructure_factor = -0.15
 				global_building_slots_factor = -0.4
+				production_speed_buildings_factor = -0.15
 			}
 		}
 
@@ -900,9 +904,10 @@ ideas = {
 			picture = rus_poor_people
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_infrastructure_factor = -0.1
+				#production_speed_industrial_complex_factor = -0.1
+				#production_speed_infrastructure_factor = -0.1
 				global_building_slots_factor = -0.3
+				production_speed_buildings_factor = -0.1
 			}
 		}
 
@@ -910,9 +915,10 @@ ideas = {
 			picture = rus_poor_people
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = -0.05
-				production_speed_infrastructure_factor = -0.05
+				#production_speed_industrial_complex_factor = -0.05
+				#production_speed_infrastructure_factor = -0.05
 				global_building_slots_factor = -0.2
+				production_speed_buildings_factor = -0.05
 			}
 		}
 
@@ -1240,7 +1246,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			modifier = {
 				stability_factor = 0.05
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 
