@@ -1182,9 +1182,7 @@ focus_tree = {
 			focus = RUS_focus_SR_Artillery
 		}
 		available = {
-			AUS = {
-				has_country_flag = AUS_july_crisis # time gate to Franz Ferdinand being assassinated
-			}
+			date > 1914.3.1
 		}
 		x = -1
 		y = 1
