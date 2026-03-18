@@ -20,7 +20,7 @@ MON_RUS_Stolypin_reform_decisions = {
 					}
 				}
 				set_country_flag = MON_RUS_Stolypin_assassinated
-				news_event = ww1_news.18
+				# news_event = ww1_news.18
 			}
 
 			if = {
@@ -75,7 +75,7 @@ MON_RUS_Stolypin_reform_decisions = {
 
 	stolypin_reform1 = {
 		cost = 80
-		fire_only_once = no
+		fire_only_once = yes
 		allowed = {
 			tag = RUS
 		}
@@ -108,7 +108,7 @@ MON_RUS_Stolypin_reform_decisions = {
 
 	stolypin_reform2 = {
 		cost = 80
-		fire_only_once = no
+		fire_only_once = yes
 		allowed = {
 			tag = RUS
 		}
@@ -141,7 +141,7 @@ MON_RUS_Stolypin_reform_decisions = {
 
 	stolypin_reform3 = {
 		cost = 80
-		fire_only_once = no
+		fire_only_once = yes
 		allowed = {
 			tag = RUS
 		}
