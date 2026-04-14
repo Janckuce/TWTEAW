@@ -356,10 +356,6 @@ focus_tree = {
 			focus = USA_embrace_progressive_era
 		}
 
-		mutually_exclusive = {
-			focus = USA_collude_with_monopolies
-		}
-
 		completion_reward = {
 			add_stability = 0.10
 			add_war_support = 0.25
@@ -505,7 +501,7 @@ focus_tree = {
 		}
 
 		mutually_exclusive = {
-			focus = USA_normal_artillery_investment1
+			focus = USA_heavy_artillery_investment1
 		}
 
 		completion_reward = {
@@ -615,6 +611,10 @@ focus_tree = {
 			focus = USA_special_forces_research1
 		}
 
+		mutually_exclusive = {
+			focus = USA_rifle_production1
+		}
+
 		completion_reward = {
 			add_ideas = USA_special_forces_division
 		}
@@ -632,6 +632,10 @@ focus_tree = {
 		prerequisite = {
 			focus = USA_special_forces_division
 			focus = USA_rifle_production1
+		}
+
+		mutually_exclusive = {
+			focus = USA_artillery_primacy
 		}
 
 		completion_reward = {

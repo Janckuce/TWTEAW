@@ -626,7 +626,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.25
+					build_cost_ic = -0.25 instant = yes
 				}
 			}
 		}
@@ -777,11 +777,14 @@ ideas = {
 			
 			research_bonus = {
 				industry = 0.05
-				synth_resources = 0.15
+				synth_resources = 0.25
 			}
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_steel_refinery_factor = 0.15
+				production_speed_coal_refinery_factor = 0.15 
+				production_speed_sulfur_refinery_factor = 0.15 
 				production_speed_fuel_silo_factor = 0.1
 			}
 			
@@ -801,7 +804,7 @@ ideas = {
 			cost = 150
 			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.25
 			}
 
 			traits = { industrial_concern }
@@ -820,7 +823,7 @@ ideas = {
 			cost = 150
 			
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.30
 			}
 			
 			traits = { electronics_concern }
@@ -837,7 +840,7 @@ ideas = {
 			cost = 150
 
 			research_bonus = {
-				excavation_tech = 0.15
+				excavation_tech = 0.35
 			}
 			
 			traits = { mining_company }

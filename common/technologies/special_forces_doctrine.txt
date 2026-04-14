@@ -169,8 +169,6 @@ technologies = {
 		category_mountaineers = {
 			initiative = 0.01
 		}
-		unit_mountaineers_design_cost_factor = -0.50
-		unit_rangers_support_design_cost_factor = -0.50
 		
 		force_use_small_tech_layout = yes
 		
@@ -390,7 +388,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 50
 		
-		special_forces_cap = 0.08
+		mountaineers_special_forces_contribution_factor = -0.1
 		special_forces_out_of_supply_factor = -0.1
 		special_forces_attack_factor = 0.10
 		acclimatization_hot_climate_gain_factor = 0.10
@@ -703,7 +701,7 @@ technologies = {
 		
 		xor = { marines_commandoes }
 
-		special_forces_cap = 0.06
+		marines_special_forces_contribution_factor = -0.1
 		naval_invasion_planning_bonus_speed = 0.2
 		
 		army_bonus_air_superiority_factor = 0.10
