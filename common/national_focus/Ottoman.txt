@@ -360,10 +360,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
 			capital_scope = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -403,10 +403,10 @@ focus_tree = {
 		relative_position_id = TUR_give_civs_pls
 		completion_reward = {
 			340 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -446,10 +446,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			49 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -469,10 +469,10 @@ focus_tree = {
 		relative_position_id = TUR_give_civs_pls
 		completion_reward = {
 			capital_scope = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -508,10 +508,10 @@ focus_tree = {
 		relative_position_id = TUR_give_civs_pls
 		completion_reward = { 
 			454 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 3
 				}
 			}
 		}
@@ -519,7 +519,7 @@ focus_tree = {
 	focus = {
 		id = TUR_Forced_Nationalisation
 		icon = GFX_focus_generic_industrialists
-		cost = 10
+		cost = 7.2
 		prerequisite = {
 			focus = TUR_give_mills_pls
 			focus = TUR_Industrialising2
@@ -529,19 +529,16 @@ focus_tree = {
 		y = 3
 		relative_position_id = TUR_give_civs_pls
 		completion_reward = { 
-			random_owned_state = {
-				limit = {
-					is_core_of = TUR
-				}
-				add_extra_state_shared_building_slots = 4
+			798 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -907,7 +904,6 @@ focus_tree = {
 				remove_idea = TUR_Average_Literacy
 				add_idea = TUR_Educated_Population
 			}
-			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1342,14 +1338,6 @@ focus_tree = {
 				type = oil
 				amount = 15
 				state = 680
-			}
-			291 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
 			}
 		}
 	}
