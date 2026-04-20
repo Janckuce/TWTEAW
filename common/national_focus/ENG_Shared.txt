@@ -779,6 +779,7 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
+		    remove_ideas = ENG_naval_arms_race
 			ENG = {
 				add_to_variable = { ENG_military_funding_expected_value = -0.1 tooltip = consumer_goods_expected_value_tt }
 			}
@@ -786,7 +787,6 @@
 				idea = ENG_public_worried
 				days = 120
 			}
-		    remove_ideas = ENG_naval_arms_race
 		}
 	}
 	
