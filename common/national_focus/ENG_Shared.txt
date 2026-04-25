@@ -376,9 +376,9 @@
 		}
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 		    navy_experience = 125
 			
 			if = {
@@ -479,9 +479,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 		    if = {
 				limit = {
 					is_ai = no
@@ -576,9 +576,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			swap_ideas = {
 				remove_idea = ENG_navy1
 				add_idea = ENG_navy2
@@ -609,9 +609,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			if = {
 				limit = {
 					has_tech = marines
@@ -697,9 +697,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			if = {
 				limit = {
 					has_idea = ENG_navy3
@@ -738,9 +738,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 		    if = {
 				limit = {
 					has_idea = ENG_navy3
@@ -781,9 +781,9 @@
 		
 		completion_reward = {
 		    remove_ideas = ENG_naval_arms_race
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = -0.1 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = -0.1 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_timed_idea = {
 				idea = ENG_public_worried
 				days = 120
@@ -816,9 +816,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.03 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.03 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_ideas = ENG_Britannia_Rules_Waves
 			swap_ideas = {
 				remove_idea = ENG_naval_arms_race
@@ -981,9 +981,9 @@
 		}
 		completion_reward = {
 			activate_advisor = sholto_douglas
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			swap_ideas = {
 				remove_idea = ENG_Air1
 				add_idea = ENG_Air2
@@ -1016,9 +1016,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 		    if = {
 				limit = {
 					is_ai = no
@@ -1101,9 +1101,9 @@
 		}
 		relative_position_id = ENG_Air
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_tech_bonus = {
 				name = ENG_air_research_1
 				bonus = 0.5
@@ -1128,9 +1128,9 @@
 		}
 		relative_position_id = ENG_Air
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_tech_bonus = {
 				name = ENG_CAS_1
 				bonus = 1
@@ -1154,9 +1154,9 @@
 		}
 		relative_position_id = ENG_Air
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_tech_bonus = {
 				name = ENG_air_research_1
 				bonus = 1
@@ -1177,9 +1177,9 @@
 			focus = ENG_Air
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			swap_ideas = {
 				remove_idea = ENG_Air2
 				add_idea = ENG_Air3
@@ -1197,9 +1197,9 @@
 			focus = ENG_Air2
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			remove_ideas = ENG_Air3
 		}
 	}
@@ -1219,9 +1219,9 @@
 		available = {
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_ideas = ENG_air_Britain_rules_air
 		}
 	}
@@ -1236,9 +1236,9 @@
 		}
 		completion_reward = {
 			activate_advisor = ENG_herbert_kitchener
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			swap_ideas = {
 				remove_idea = ENG_Army1
 				add_idea = ENG_Army2
@@ -1259,9 +1259,9 @@
 		available = {
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_tech_bonus = {
 				name = ENG_artillery_research_1
 				bonus = 1
@@ -1287,9 +1287,9 @@
 		available = {
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_tech_bonus = {
 				name = ENG_artillery_research_1
 				bonus = 1
@@ -1322,9 +1322,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 		    add_doctrine_cost_reduction = {
 				name = ENG_land_doc_bonus_2
 				cost_reduction = 0.5
@@ -1356,9 +1356,9 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 		    add_tech_bonus = {
 				name = ENG_new_warfare
 				bonus = 1.5
@@ -1379,9 +1379,9 @@
 			focus = ENG_Army
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			swap_ideas = {
 				remove_idea = ENG_Army2
 				add_idea = ENG_Army3
@@ -1399,9 +1399,9 @@
 			focus = ENG_Army2
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.01 tooltip = consumer_goods_expected_value_tt }
+			# }
 			remove_ideas = ENG_Army3
 		}
 	}
@@ -1418,9 +1418,9 @@
 		available = {
 		}
 		completion_reward = {
-			ENG = {
-				add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
-			}
+			# ENG = {
+			# 	add_to_variable = { ENG_military_funding_expected_value = 0.05 tooltip = consumer_goods_expected_value_tt }
+			# }
 			add_ideas = ENG_Modern_Army
 			add_tech_bonus = {
 				name = CAN_army_science
