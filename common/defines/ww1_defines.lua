@@ -50,6 +50,7 @@ NDefines.NAir.DETECT_EFFICIENCY_BASE = 0.30
 NDefines.NAir.DETECT_EFFICIENCY_FROM_RADAR = 0.40
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS = 0.60
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1000
+NDefines.NAir.FUEL_COST_MULT = 0.1
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1 
 NDefines.NCountry.ATTACHE_XP_SHARE = 0
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 28
@@ -67,16 +68,16 @@ NDefines.NFactions.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 20        -- Whe
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100         -- WAS 15, Changed so you can have less lines of naval production
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 20       -- WAS 5, Changed so you can have less lines of naval production
 
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3 -- Penalty factor applied to base cost for each year ahead of time
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3 -- Penalty factor applied to base cost for each year ahead of time 
 NDefines.NTechnology.BASE_TECH_COST = 100                          -- Base cost for technologies 
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 400
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 21
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0
 
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15      -- 0.25   
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.20 
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.15
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.90
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.20      -- 0.25   
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.10
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.85
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 150
 
 NDefines.NAI.LENDLEASE_FRACTION_OF_PRODUCTION = 0
@@ -97,3 +98,6 @@ NDefines.NSupply.SUPPLY_THRESHOLD_FOR_ARMY_ATTRITION = 0.35  -- 0.35
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1
+
+-- Navy Fuel consumption reduced by 70%
+NDefines.NNavy.FUEL_COST_MULT = 0.03
