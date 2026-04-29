@@ -443,5 +443,16 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 			}
 		}
+		FRA_mobilization_effect = {
+			modifier = {
+				army_strength_factor = -0.30
+				army_speed_factor = 0.30
+				army_attack_speed_factor = -0.30
+				army_org_factor = 0.15
+				army_morale_factor = 0.40
+				dig_in_speed_factor = 1
+				industrial_capacity_factory = -0.60
+			}
+		}
 	}
 }
