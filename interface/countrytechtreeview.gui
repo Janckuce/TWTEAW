@@ -2085,11 +2085,63 @@ guiTypes = {
 				name ="mtgnavaltechtree_bg"
 				spriteType = "GFX_naval_techtree_bg"
 				position = { x=0 y=0 }
-			}
+			} #here
+
+			# instantTextBoxType = {
+			# 	name = "naval_year1"
+			# 	position = { x = 205 y = 20 }
+			# 	textureFile = ""
+			# 	font = "hoi_36header"
+			# 	borderSize = {x = 0 y = 4}
+			# 	text = "1910"
+			# 	maxWidth = 170
+			# 	maxHeight = 32
+			# 	format = left
+			# 	Orientation = "UPPER_LEFT"
+			# }
+
+			# instantTextBoxType = {
+			# 	name = "naval_year2"
+			# 	position = { x = 700 y = 20 }
+			# 	textureFile = ""
+			# 	font = "hoi_36header"
+			# 	borderSize = {x = 0 y = 4}
+			# 	text = "1912"
+			# 	maxWidth = 170
+			# 	maxHeight = 32
+			# 	format = left
+			# 	Orientation = "UPPER_LEFT"
+			# }
+
+			# instantTextBoxType = {
+			# 	name = "naval_year3"
+			# 	position = { x = 1180 y = 20 }
+			# 	textureFile = ""
+			# 	font = "hoi_36header"
+			# 	borderSize = {x = 0 y = 4}
+			# 	text = "1914"
+			# 	maxWidth = 170
+			# 	maxHeight = 32
+			# 	format = left
+			# 	Orientation = "UPPER_LEFT"
+			# }
+
+			# instantTextBoxType = {
+			# 	name = "naval_year4"
+			# 	position = { x = 1670 y = 20 }
+			# 	textureFile = ""
+			# 	font = "hoi_36header"
+			# 	borderSize = {x = 0 y = 4}
+			# 	text = "1916"
+			# 	maxWidth = 170
+			# 	maxHeight = 32
+			# 	format = left
+			# 	Orientation = "UPPER_LEFT"
+			# }
 
 				instantTextBoxType = {
 					name = "naval_year1"
-					position = { x = 224 y = 20 }
+					position = { x = 205 y = 20 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2102,7 +2154,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_year2"
-					position = { x = 644 y = 20 }
+					position = { x = 700 y = 20 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2115,11 +2167,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_year3"
-					position = { x = 1064 y = 20 }
+					position = { x = 1180 y = 20 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1915"
+					text = "1914"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -2128,11 +2180,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "naval_year4"
-					position = { x = 1484 y = 20 }
+					position = { x = 1670 y = 20 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1918"
+					text = "1916"
 					maxWidth = 170
 					maxHeight = 32
 					format = left

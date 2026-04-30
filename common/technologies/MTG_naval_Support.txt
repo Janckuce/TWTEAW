@@ -1373,10 +1373,10 @@ technologies = {
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
-		path = {
-			leads_to_tech = sp_improved_repair_ship
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = sp_improved_repair_ship
+		# 	research_cost_coeff = 1
+		# }
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -2122,359 +2122,359 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 	}
 
-	mtg_transport = { 
+	# mtg_transport = { 
 
-		transport_capacity = -0.33
-		naval_invasion_prep_days = -10
-		naval_invasion_division_cap = 2 
-		naval_invasion_plan_cap = 1
+	# 	transport_capacity = -0.33
+	# 	naval_invasion_prep_days = -10
+	# 	naval_invasion_division_cap = 2 
+	# 	naval_invasion_plan_cap = 1
 
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_naval_support_ships	
-			}
-		}
+	# 	on_research_complete = {
+	# 		custom_effect_tooltip = {
+	# 			localization_key = SP_UNLOCK_PROJECT
+	# 			PROJECT = sp_naval_support_ships	
+	# 		}
+	# 	}
 
-		path = {
-			leads_to_tech = mtg_landing_craft
-			research_cost_coeff = 1
-		}	
+	# 	path = {
+	# 		leads_to_tech = mtg_landing_craft
+	# 		research_cost_coeff = 1
+	# 	}	
 
-		path = {
-			leads_to_tech = sp_multi_product_supply_ships
-			research_cost_coeff = 1
-		}	
+	# 	path = {
+	# 		leads_to_tech = sp_multi_product_supply_ships
+	# 		research_cost_coeff = 1
+	# 	}	
 
-		research_cost = 1.5
-		start_year = 1922
+	# 	research_cost = 1.5
+	# 	start_year = 1922
 
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 0 y = 1 }
-		}
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = 0 y = 1 }
+	# 	}
 
-		ai_will_do = {
-			factor = 1
+	# 	ai_will_do = {
+	# 		factor = 1
 
-			modifier = {
-				factor = 0.5
-				has_war = no
-			}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			has_war = no
+	# 		}
 
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			modifier = {
-				has_war_with = JAP
-				factor = 2
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			tag = USA
+	# 		}
+	# 		modifier = {
+	# 			has_war_with = JAP
+	# 			factor = 2
+	# 		}
 
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
+	# 		modifier = {
+	# 			factor = 3
+	# 			tag = JAP
+	# 		}
 
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			tag = ENG
+	# 		}
+	# 	}
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }
+	# }
 
-	mtg_landing_craft = {
+	# mtg_landing_craft = {
 
-		#invasion_preparation = -0.25
-		amphibious_invasion_defence = 0.15
-		naval_invasion_prep_days = -10
-		naval_invasion_division_cap = 4 
-		naval_invasion_plan_cap = 3	
-		#naval_invasion_capacity = 20
+	# 	#invasion_preparation = -0.25
+	# 	amphibious_invasion_defence = 0.15
+	# 	naval_invasion_prep_days = -10
+	# 	naval_invasion_division_cap = 4 
+	# 	naval_invasion_plan_cap = 3	
+	# 	#naval_invasion_capacity = 20
 
-		path = {
-			leads_to_tech = mtg_tank_landing_craft
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = mtg_tank_landing_craft
+	# 		research_cost_coeff = 1
+	# 	}
 
-		path = {
-			leads_to_tech = sp_improved_support_ship
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = sp_improved_support_ship
+	# 		research_cost_coeff = 1
+	# 	}
 
-		enable_equipments = {
-			floating_harbor_equipment_1
-		}
-		force_use_small_tech_layout = yes
-		show_equipment_icon = yes
+	# 	enable_equipments = {
+	# 		floating_harbor_equipment_1
+	# 	}
+	# 	force_use_small_tech_layout = yes
+	# 	show_equipment_icon = yes
 
-		research_cost = 2
-		start_year = 1940
+	# 	research_cost = 2
+	# 	start_year = 1940
 
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 0 y = 13 }
-		}
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = 0 y = 13 }
+	# 	}
 
-		ai_will_do = {
-			factor = 2
+	# 	ai_will_do = {
+	# 		factor = 2
 
-			modifier = {
-				factor = 0.5
-				has_war = no
-			}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			has_war = no
+	# 		}
 
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			modifier = {
-				has_war_with = JAP
-				factor = 2
-			}
-			modifier = {
-				factor = 50
-				tag = JAP
-				OR = {
-					has_war_with = USA
-					CHI = {
-						OR = {
-							has_capitulated = yes
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
-				}
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			tag = USA
+	# 		}
+	# 		modifier = {
+	# 			has_war_with = JAP
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			factor = 50
+	# 			tag = JAP
+	# 			OR = {
+	# 				has_war_with = USA
+	# 				CHI = {
+	# 					OR = {
+	# 						has_capitulated = yes
+	# 						exists = no
+	# 	                    is_subject_of = JAP
+	# 					}
+	# 				}
+	# 			}
+	# 		}
 
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			tag = ENG
+	# 		}
 
-			modifier = {
-				factor = 10
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
-			}
-		}
+	# 		modifier = {
+	# 			factor = 10
+	# 			OR = {
+	# 				tag = ENG
+	# 				tag = USA
+	# 			}
+	# 			has_war_with = GER
+	# 			GER = { has_war_with = SOV }
+	# 		}
+	# 	}
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }
+	# }
 
-	mtg_tank_landing_craft = {
+	# mtg_tank_landing_craft = {
 
-		amphibious_invasion = 0.25
-		amphibious_invasion_defence = 0.5
-		naval_invasion_prep_days = -10
-		naval_invasion_division_cap = 5 
-		naval_invasion_plan_cap = 4			
-		#naval_invasion_capacity = 100
+	# 	amphibious_invasion = 0.25
+	# 	amphibious_invasion_defence = 0.5
+	# 	naval_invasion_prep_days = -10
+	# 	naval_invasion_division_cap = 5 
+	# 	naval_invasion_plan_cap = 4			
+	# 	#naval_invasion_capacity = 100
 
-		research_cost = 2
-		start_year = 1944
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 0 y = 19 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1944
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = 0 y = 19 }
+	# 	}
 
-		ai_will_do = {
-			factor = 2
+	# 	ai_will_do = {
+	# 		factor = 2
 
-			modifier = {
-				factor = 0.5
-				has_war = no
-			}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			has_war = no
+	# 		}
 
-			modifier = {
-				factor = 20
-				tag = USA
-			}
-			modifier = {
-				factor = 2
-				has_war_with = JAP
-			}
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
+	# 		modifier = {
+	# 			factor = 20
+	# 			tag = USA
+	# 		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			has_war_with = JAP
+	# 		}
+	# 		modifier = {
+	# 			factor = 3
+	# 			tag = JAP
+	# 		}
 
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
+	# 		modifier = {
+	# 			factor = 2
+	# 			tag = ENG
+	# 		}
+	# 	}
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }
+	# }
 
 	### SPECIAL PROJECTS ###
 
-	sp_multi_product_supply_ships = {
+	# sp_multi_product_supply_ships = {
 
-		underway_replenishment_range = 0.25
-		underway_replenishment_convoy_cost = -0.2
+	# 	underway_replenishment_range = 0.25
+	# 	underway_replenishment_convoy_cost = -0.2
 
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
+	# 	allow_branch = {
+	# 		 has_dlc = "Gotterdammerung"
+	# 	}
 
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_underway_replenishment
-			}
-		}
+	# 	allow = {
+	#  		ROOT = {
+	# 			is_special_project_completed = sp:sp_naval_underway_replenishment
+	# 		}
+	# 	}
 
-		path = {
-			leads_to_tech = sp_standard_tenshioned_replenishment_alongside_method
-			research_cost_coeff = 1
-		}
-		force_use_small_tech_layout = yes
-		is_special_project_tech = yes	
-		xp_research_type = navy
-		xp_boost_cost = 75
-		xp_research_bonus = 1.75
-		research_cost = 2.0
-		start_year = 1938
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 1 y = 10 }
-		}
+	# 	path = {
+	# 		leads_to_tech = sp_standard_tenshioned_replenishment_alongside_method
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	force_use_small_tech_layout = yes
+	# 	is_special_project_tech = yes	
+	# 	xp_research_type = navy
+	# 	xp_boost_cost = 75
+	# 	xp_research_bonus = 1.75
+	# 	research_cost = 2.0
+	# 	start_year = 1938
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = 1 y = 10 }
+	# 	}
 
-		folder = {
-			name = naval_folder
-			position = { x = 1 y = 10 }
-		}		
+	# 	folder = {
+	# 		name = naval_folder
+	# 		position = { x = 1 y = 10 }
+	# 	}		
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }
+	# }
 
 
-	sp_standard_tenshioned_replenishment_alongside_method = {
+	# sp_standard_tenshioned_replenishment_alongside_method = {
 
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_underway_replenishment
-			}
-		}
+	# 	allow = {
+	#  		ROOT = {
+	# 			is_special_project_completed = sp:sp_naval_underway_replenishment
+	# 		}
+	# 	}
 
-		underway_replenishment_range = 0.25
-		underway_replenishment_convoy_cost = -0.2	
+	# 	underway_replenishment_range = 0.25
+	# 	underway_replenishment_convoy_cost = -0.2	
 		
-		force_use_small_tech_layout = yes
-		is_special_project_tech = yes		
-		xp_research_type = navy
-		xp_boost_cost = 75
-		xp_research_bonus = 1.5
-		research_cost = 2.5
-		start_year = 1943
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 1 y = 17 }
-		}
+	# 	force_use_small_tech_layout = yes
+	# 	is_special_project_tech = yes		
+	# 	xp_research_type = navy
+	# 	xp_boost_cost = 75
+	# 	xp_research_bonus = 1.5
+	# 	research_cost = 2.5
+	# 	start_year = 1943
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = 1 y = 17 }
+	# 	}
 
-		folder = {
-			name = naval_folder
-			position = { x = 1 y = 17 }
-		}		
+	# 	folder = {
+	# 		name = naval_folder
+	# 		position = { x = 1 y = 17 }
+	# 	}		
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }	
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }	
+	# }
 
 	#### SUPPORT & REPAIR SHIPS ####
 
-	sp_improved_support_ship = {
-		allow_branch = {
-			has_dlc = "No Compromise, No Surrender"
-		}
+	# sp_improved_support_ship = {
+	# 	allow_branch = {
+	# 		has_dlc = "No Compromise, No Surrender"
+	# 	}
 
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_naval_support_ships
-			}
-		}
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_special_project_completed = sp:sp_naval_support_ships
+	# 		}
+	# 	}
 
-		enable_equipments = {
-			support_ship_2
-		}
+	# 	enable_equipments = {
+	# 		support_ship_2
+	# 	}
 
-		is_special_project_tech = yes
-		xp_research_type = navy
-		xp_boost_cost = 75
-		xp_research_bonus = 1
-		research_cost = 2
-		start_year = 1942
+	# 	is_special_project_tech = yes
+	# 	xp_research_type = navy
+	# 	xp_boost_cost = 75
+	# 	xp_research_bonus = 1
+	# 	research_cost = 2
+	# 	start_year = 1942
 
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = -2 y = 17 }
-		}
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = -2 y = 17 }
+	# 	}
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }
+	# }
 
-	sp_improved_repair_ship = {
-		allow_branch = {
-			has_dlc = "No Compromise, No Surrender"
-		}
+	# sp_improved_repair_ship = {
+	# 	allow_branch = {
+	# 		has_dlc = "No Compromise, No Surrender"
+	# 	}
 
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_naval_support_ships
-			}
-		}
+	# 	allow = {
+	# 		ROOT = {
+	# 			is_special_project_completed = sp:sp_naval_support_ships
+	# 		}
+	# 	}
 
-		enable_equipments = {
-			repair_ship_2
-		}
+	# 	enable_equipments = {
+	# 		repair_ship_2
+	# 	}
 
-		is_special_project_tech = yes
-		xp_research_type = navy
-		xp_boost_cost = 75
-		xp_research_bonus = 1
-		research_cost = 2
-		start_year = 1942
+	# 	is_special_project_tech = yes
+	# 	xp_research_type = navy
+	# 	xp_boost_cost = 75
+	# 	xp_research_bonus = 1
+	# 	research_cost = 2
+	# 	start_year = 1942
 
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 0 y = 17 }
-		}
+	# 	folder = {
+	# 		name = mtgnavalsupportfolder
+	# 		position = { x = 0 y = 17 }
+	# 	}
 
-		categories = {
-			naval_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	# 	categories = {
+	# 		naval_equipment
+	# 		tp_tech
+	# 	}
+	# 	special_project_specialization = { specialization_naval }
+	# }
 
 }
