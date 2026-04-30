@@ -238,6 +238,15 @@ technologies = {
 
 		research_cost = 1.75
 
+		on_research_complete = {          
+			add_tech_bonus = {
+				name = "Light into Medium Tank Bonus"
+				bonus = 3
+				uses = 1
+				technology = ww1_medium_tank_1
+			}
+		}
+
 		folder = {
 			name = armour_folder
 			position = { x = 7 y = 10 }
@@ -445,6 +454,15 @@ technologies = {
 		}
 
 		research_cost = 2.5
+
+		on_research_complete = {          
+			add_tech_bonus = {
+				name = "Medium into Heavy Tank Bonus"
+				bonus = 3
+				uses = 1
+				technology = ww1_heavy_tank_1
+			}
+		}
 
 		folder = {
 			name = armour_folder
