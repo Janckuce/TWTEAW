@@ -893,6 +893,10 @@ technologies = {
 	}
 
 	ww1_cruiser_armor_1 = {
+		enable_equipment_modules = {
+			ship_armor_cruiser_1
+		}
+
 		path = {
 			leads_to_tech = ww1_cruiser_armor_2
 			research_cost_coeff = 1
@@ -948,6 +952,10 @@ technologies = {
 	}
 
 	ww1_cruiser_armor_2 = {
+		enable_equipment_modules = {
+			ship_armor_cruiser_2
+		}
+
 		path = {
 			leads_to_tech = ww1_cruiser_armor_3
 			research_cost_coeff = 1
@@ -1003,6 +1011,10 @@ technologies = {
 	}
 
 	ww1_cruiser_armor_3 = {
+		enable_equipment_modules = {
+			ship_armor_cruiser_3
+		}
+
 		path = {
 			leads_to_tech = ww1_cruiser_armor_4
 			research_cost_coeff = 1
@@ -1058,6 +1070,9 @@ technologies = {
 	}
 
 	ww1_cruiser_armor_4 = {
+		enable_equipment_modules = {
+			ship_armor_cruiser_4
+		}
 
 		research_cost = 1
 
@@ -1996,6 +2011,10 @@ technologies = {
 	}
 
 	ww1_dreadnought_armor_1 = {
+		enable_equipment_modules = {
+			ship_armor_bb_1
+		}
+
 		path = {
 			leads_to_tech = ww1_dreadnought_armor_2
 			research_cost_coeff = 1
@@ -2007,7 +2026,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = 12 y = 4 }
+			position = { x = 13 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -2051,6 +2070,10 @@ technologies = {
 	}
 
 	ww1_dreadnought_armor_2 = {
+		enable_equipment_modules = {
+			ship_armor_bb_2
+		}
+
 		path = {
 			leads_to_tech = ww1_dreadnought_armor_3
 			research_cost_coeff = 1
@@ -2062,7 +2085,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = 12 y = 12 }
+			position = { x = 13 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -2106,6 +2129,10 @@ technologies = {
 	}
 
 	ww1_dreadnought_armor_3 = {
+		enable_equipment_modules = {
+			ship_armor_bb_3
+		}
+
 		path = {
 			leads_to_tech = ww1_dreadnought_armor_4
 			research_cost_coeff = 1
@@ -2117,7 +2144,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = 12 y = 20 }
+			position = { x = 13 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -2161,6 +2188,9 @@ technologies = {
 	}
 
 	ww1_dreadnought_armor_4 = {
+		enable_equipment_modules = {
+			ship_armor_bb_4
+		}
 
 		research_cost = 1
 
@@ -2168,7 +2198,7 @@ technologies = {
 		
 		folder = {
 			name = naval_folder
-			position = { x = 12 y = 26 }
+			position = { x = 13 y = 26 }
 		}
 		
 		ai_will_do = {
