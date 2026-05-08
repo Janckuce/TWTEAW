@@ -276,7 +276,7 @@ equipments = {
 					ship_heavy_battery
 				}
 			}
-		}
+		} 
 		
 		default_modules = {
 			fixed_ship_battery_slot = empty
@@ -648,6 +648,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_heavy_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -656,6 +657,24 @@ equipments = {
 				allowed_module_categories = {
 					ship_anti_air
 					ship_heavy_battery
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					battleship_light_battery
+				}
+			}
+			rear_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					battleship_light_battery
+				}
+			}
+			rear_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					battleship_light_battery
 				}
 			}
 		}
