@@ -218,7 +218,7 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = ship_light_battery
+			module_category = battleship_light_battery
 			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_light_guns }
@@ -244,12 +244,12 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = ship_light_battery
+			module_category = battleship_light_battery
 			convert_cost_ic = 85 #conversion cost from ANY ship_light_battery module
 		}
 		
 		can_convert_from = {
-			module = ship_light_battery_1
+			module = dp_light_battery_1
 			convert_cost_ic = 55 #conversion cost from that specific module
 		}
 		critical_parts = { damaged_light_guns }
@@ -275,12 +275,12 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = ship_light_battery
+			module_category = battleship_light_battery
 			convert_cost_ic = 85
 		}
 		
 		can_convert_from = {
-			module= ship_light_battery_2
+			module= dp_light_battery_2
 			convert_cost_ic = 55
 		}
 		critical_parts = { damaged_light_guns }
@@ -306,12 +306,12 @@ equipment_modules = {
 		}
 		
 		can_convert_from = {
-			module_category = ship_light_battery
+			module_category = battleship_light_battery
 			convert_cost_ic = 200
 		}
 			
 		can_convert_from = {
-			module = ship_light_battery_3
+			module = dp_light_battery_3
 			convert_cost_ic = 130
 		}
 		critical_parts = { damaged_light_guns }

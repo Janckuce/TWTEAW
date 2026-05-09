@@ -100,4 +100,5 @@ NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1
 
 -- Navy Fuel consumption reduced by 70%
-NDefines.NNavy.FUEL_COST_MULT = 0.03
+NDefines.NNavy.FUEL_COST_MULT = 0.03 
+NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.05
