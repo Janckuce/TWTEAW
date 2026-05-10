@@ -425,6 +425,7 @@ equipments = {
 		
 		anti_air_attack = 0
 		
+		max_strength = 120
 		armor_value = 5
 		naval_dominance_factor = 100
 		
@@ -433,9 +434,9 @@ equipments = {
 		surface_visibility = 15
 		naval_speed = 29
 		reliability = 0.8
+		build_cost_ic = 1550
 		resources = {
-			#oil = 1
-			steel = 2
+			steel = 3
 		}
 	}
 
@@ -473,7 +474,7 @@ equipments = {
 
 		naval_range = 3000
 		naval_dominance_factor = 100
-		max_strength = 120
+		max_strength = 135
 		
 
 		
@@ -483,7 +484,6 @@ equipments = {
 		}
 		build_cost_ic = 1650
 		resources = {
-			#oil = 1
 			steel = 3
 		}
 		manpower = 800
@@ -523,7 +523,7 @@ equipments = {
 
 		naval_range = 4000
 		naval_dominance_factor = 100
-		max_strength = 140
+		max_strength = 150
 		
 
 		
@@ -533,7 +533,6 @@ equipments = {
 		}
 		build_cost_ic = 1700
 		resources = {
-			#oil = 2
 			steel = 3
 		}
 		manpower = 960
@@ -574,7 +573,7 @@ equipments = {
 
 		naval_range = 4500
 		naval_dominance_factor = 100
-		max_strength = 160
+		max_strength = 170
 		
 
 		
@@ -584,9 +583,7 @@ equipments = {
 		}
 		build_cost_ic = 2000
 		resources = {
-			#oil = 2
-			steel = 4
-			chromium = 1
+			steel = 3
 		}
 		manpower = 1140
 	}
@@ -694,15 +691,15 @@ equipments = {
 		
 		naval_range = 3000
 		naval_dominance_factor = 200
-		max_strength = 210
+		max_strength = 160
 		
 
 		fuel_consumption = 1.65
 		
 		build_cost_ic = 2200
 		resources = {
-			#oil = 1
 			steel = 3
+			chromium = 1
 		}
 		
 		manpower = 1500
@@ -745,14 +742,14 @@ equipments = {
 
 		naval_range = 4000
 		naval_dominance_factor = 200
-		max_strength = 240
+		max_strength = 180
 		
 
 
 		build_cost_ic = 2400
 		resources = {
-			#oil = 1
-			steel = 4
+			steel = 3
+			chromium = 1
 		}		
 		manpower = 1700
 	}
@@ -795,14 +792,14 @@ equipments = {
 
 		naval_range = 4500
 		naval_dominance_factor = 200
-		max_strength = 270
+		max_strength = 210
 		
 
 
 		build_cost_ic = 2600
 		resources = {
-			#oil = 2
-			steel = 4
+			steel = 3
+			chromium = 1
 		}		
 		manpower = 1900
 	}
@@ -846,14 +843,13 @@ equipments = {
 
 		naval_range = 5000
 		naval_dominance_factor = 200
-		max_strength = 300
+		max_strength = 240
 		
 
 
 		build_cost_ic = 2800
 		resources = {
-			#oil = 2
-			steel = 5
+			steel = 3
 			chromium = 1
 		}		
 		manpower = 2200
@@ -1217,10 +1213,11 @@ equipments = {
 		sub_attack = 0
 		
 		anti_air_attack = 0
-		naval_dominance_factor = 100
+		naval_dominance_factor = 120
+		max_strength = 120
 		armor_value = 5
 
-		build_cost_ic = 3500
+		build_cost_ic = 3600
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
@@ -1228,7 +1225,7 @@ equipments = {
 		reliability = 0.8
 		resources = {
 			#oil = 1
-			steel = 2
+			steel = 3
 		}
 	}
 	
@@ -1253,15 +1250,15 @@ equipments = {
 		naval_speed = 30
 		reliability = 0.85
 
-		naval_range = 3000
+		naval_range = 3800
 		naval_dominance_factor = 100
-		max_strength = 120
+		max_strength = 135
 		
 		type = { 
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 4500
+		build_cost_ic = 3800
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1293,7 +1290,7 @@ equipments = {
 
 		naval_range = 4000
 		naval_dominance_factor = 100
-		max_strength = 140
+		max_strength = 150
 		
 
 		
@@ -1301,7 +1298,7 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 5000
+		build_cost_ic = 4000
 		resources = {
 			#oil = 2
 			steel = 3
@@ -1332,7 +1329,7 @@ equipments = {
 
 		naval_range = 4500
 		naval_dominance_factor = 100
-		max_strength = 160
+		max_strength = 170
 		
 
 		
@@ -1340,11 +1337,10 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 5500
+		build_cost_ic = 4200
 		resources = {
 			#oil = 2
-			steel = 4
-			chromium = 1
+			steel = 3
 		}
 		manpower = 1140
 	}
