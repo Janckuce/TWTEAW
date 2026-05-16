@@ -576,7 +576,9 @@ RUS_Civ_Donation_Mechanic = {
 			always = yes
 		}
 		available = {
-			Date < 1914.6.28
+			NOT = {
+				Date < 1914.6.28
+			}
 		}
 		activation = {
 		Date < 1914.6.28
