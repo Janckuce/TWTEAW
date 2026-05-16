@@ -104,17 +104,3 @@ MON_RUS_army_collapse_mechanic = {
 		tag = RUS
 	}
 }
-RUS_Civ_Donation_Mechanic = {
-	icon = GFX_decision_category_generic_political_actions
-
-	priority = 100
-
-	visible_when_empty = yes
-
-	visible = {
-		always = yes
-	}
-	allowed = {
-		tag = RUS
-	}
-}
