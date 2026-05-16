@@ -3389,11 +3389,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_empire_of_franz_josef_shine"
-		texturefile = "gfx/interface/goals/regin_of_franz_josef.dds"			
+		name = "GFX_goal_empire_of_franz_josef_shine"					
+		texturefile = "gfx/interface/goals/regin_of_john_parker.dds"		#regin_of_franz_josef	
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/regin_of_franz_josef.dds"			
+			animationmaskfile = "gfx/interface/goals/regin_of_john_parker.dds"			#regin_of_franz_josef	
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -3406,7 +3406,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/regin_of_franz_josef.dds"			
+			animationmaskfile = "gfx/interface/goals/regin_of_john_parker.dds"			#regin_of_franz_josef	
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
