@@ -50,6 +50,180 @@ ORO_spectator_state = {
 				set_country_flag = ITA_attack_turkey
 				country_event = ww1_italy.1
 			}
+
+		ITA = {
+		    declare_war_on = {
+				type = take_claimed_state
+				target = 448.OWNER
+			}
+			#Tripoli
+			set_province_controller = 1149
+			set_province_controller = 4194
+			set_province_controller = 1189		
+			#Tobruk
+			set_province_controller = 1130
+			set_province_controller = 4136
+			set_province_controller = 9992
+			if = {
+				limit = { 
+					NOT = {
+						ITA = {
+							has_completed_focus = ITA_focus_colonial_ambition
+						}
+					}
+				}
+				unlock_national_focus = ITA_focus_colonial_ambition
+			}
+			complete_national_focus = ITA_focus_War_in_Tripoli
+			division_template = {
+				name = "Divisione Coloniale"
+				division_names_group = ITA_INF_01
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 2
+					}
+				}
+				support = {
+					engineer = {
+						x = 0
+						y = 0
+					}
+				}
+			}
+			
+			#Tripoli
+			448 = {
+				create_unit = {
+					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1149
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"II/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1189
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"III/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4194
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"IV/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1149
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"V/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1189
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			448 = {
+				create_unit = {
+					division = "name = \"VI/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4194
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			
+			#Tobruk
+			451 = {
+				create_unit = {
+					division = "name = \"VII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1130
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"VIII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4136
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"IX/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 9992
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"X/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 1130
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"XI/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 4136
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			451 = {
+				create_unit = {
+					division = "name = \"XII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
+					owner = ROOT
+					prioritize_location = 9992
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
 			news_event = ww1_news.17
 		}
 		fire_only_once = yes
