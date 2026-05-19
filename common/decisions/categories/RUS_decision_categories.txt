@@ -38,7 +38,7 @@ RUS_Laboratories_Category = {
 	}
 
 	visible = {
-		has_completed_focus = RUS_Establish_Laboratories
+		always = no # the RUS_Establish_Laboratories focus does not exist and it being completed was the only condition
 	}
 }
 

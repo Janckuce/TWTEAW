@@ -399,7 +399,7 @@ ORO_spectator_state = {
 				country_event = ww1_austria.2
 				set_country_flag = AUS_july_crisis
 			}
-			threat = 40
+			add_threat = 40
 		}
 		fire_only_once = yes
 
@@ -485,7 +485,7 @@ ORO_spectator_state = {
 					declare_war_on = { target = MNT type = annex_everything }
 				}
 			}
-			threat = 50
+			add_threat = 50
 		}
 		fire_only_once = yes
 
@@ -2497,7 +2497,7 @@ ORO_balkan_wars = {
 					idea = TUR_Europe_last_stand days = 70
 				}
 			}
-			threat = 20
+			add_threat = 20
 		}
 		fire_only_once = yes
 

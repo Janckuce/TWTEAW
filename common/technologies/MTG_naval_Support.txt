@@ -56,9 +56,15 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					has_tech = early_ship_hull_light
-					has_tech = early_ship_hull_cruiser
-					has_tech = early_ship_hull_heavy
+					#has_tech = early_ship_hull_light
+					#has_tech = early_ship_hull_cruiser
+					#has_tech = early_ship_hull_heavy
+					#techs do not exist
+					OR = {
+						tag = ENG
+						tag = USA
+						tag = JAP
+					}#navy focused countries
 				}
 				factor = 500
 			}
@@ -98,7 +104,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_light_battery_2
 			ship_light_medium_battery_2
-			ship_secondaries_2			
+			ship_secondaries_2
 		}
 
 
@@ -110,7 +116,13 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = basic_ship_hull_light
+				#has_tech = basic_ship_hull_light
+				#tech does not exist
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}#navy focused countries
 				factor = 20
 			}
 		}
@@ -431,7 +443,13 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = basic_ship_hull_heavy
+				#has_tech = basic_ship_hull_heavy
+				#tech does not exist
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}#navy focused countries
 				factor = 20
 			}
 			modifier = {
