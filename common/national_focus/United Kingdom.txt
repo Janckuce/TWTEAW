@@ -63,7 +63,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_focus_protect_belgium
 		mutually_exclusive = {
-			focus = ENG_Disturbed
+			focus = ENG_issue_bonds
 		}
 		
 		cost = 5.8
@@ -377,119 +377,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_Disturbed
-		icon = GFX_focus_usa_focus_on_europe
-		cost = 5
-		x = 3
-		y = 1
-		relative_position_id = ENG_focus_protect_belgium
-		available = {
-			has_completed_focus = ENG_Interfere_In_Agadir
-		}
-		prerequisite = {
-			focus = ENG_focus_protect_belgium
-		}
-		mutually_exclusive = {
-			focus = ENG_start_colonial_investment
-		}
-		completion_reward = {
-			add_ideas = disturbed_isolation
-		 }
-	}
-	focus = {
-		id = ENG_Development
-		icon = GFX_focus_generic_industry_1
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = ENG_Disturbed
-		prerequisite = {
-			focus = ENG_Disturbed
-		}
-		completion_reward = { 
-			123 = {
-				add_extra_state_shared_building_slots = 4
-				# add_building_construction = {
-				# 	type = industrial_complex
-				# 	level = 1
-				# }
-			}
-			338 = {
-				add_extra_state_shared_building_slots = 4
-				# add_building_construction = {
-				# 	type = industrial_complex
-				# 	level = 1
-				# }
-			}
-			129 = {
-				add_extra_state_shared_building_slots = 4
-				# add_building_construction = {
-				# 	type = industrial_complex
-				# 	level = 1
-				# }
-			}
-			125 = {
-				add_extra_state_shared_building_slots = 4
-				# add_building_construction = {
-				# 	type = industrial_complex
-				# 	level = 1
-				# }
-			}
-			113 = {
-				add_extra_state_shared_building_slots = 4
-				# add_building_construction = {
-				# 	type = industrial_complex
-				# 	level = 1
-				# }
-			}
-		}
-	}
-	focus = {
-		id = ENG_Develop_Russia
-		icon = GFX_focus_befriend_russia
-		relative_position_id = ENG_focus_protect_belgium
-		cost = 5.8
-		x = 4
-		y = 3
-		prerequisite = {
-			focus = ENG_Development
-		}
-		completion_reward = {
-			219 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		 }
-	}
-	focus = {
-		id = ENG_Develop_France
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_focus_protect_belgium
-		cost = 5.8
-		x = 2
-		y = 3
-		prerequisite = {
-			focus = ENG_Development
-		}
-		available = {
-			has_completed_focus = ENG_trade_with_france_focus
-		}
-		completion_reward = {
-			15 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		 }
-	}
-	focus = {
 		id = ENG_democracy
 		icon = GFX_focus_generic_social_democracy
 		cost = 5
@@ -784,231 +671,320 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_Loyal_to_King
-		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
-		cost = 2.9
-		x = 3
-		y = 4
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = { 
-			focus = ENG_Develop_France
-		}
-		prerequisite = {
-			focus = ENG_Develop_Russia
-		}
-		completion_reward = { 
-			every_country = {
-				limit = { is_subject_of = ENG }
-				random_state = {
-					limit = {
-					is_core_of = prev
-				}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = ENG_monarchy
-		icon = GFX_focus_generic_monarchy_1
+		id = ENG_issue_bonds
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-		relative_position_id = ENG_focus_protect_belgium
-		prerequisite = { 
-			focus = ENG_Loyal_to_King
-		}
-		x = 3
-		y = 5
-		completion_reward = { 
-			add_ideas = ENG_Fallen_Government
-		}
-	}
-	focus = {
-		id = ENG_monarchy1
-		icon = GFX_focus_generic_monarchy_2
-		x = 0
-		y = 1
-		cost = 5.8
-		prerequisite = {
-			focus = ENG_monarchy
-		}
-		bypass = {
-			#
-		}
-		available = {
-		    #
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		
-		available_if_capitulated = yes
-		
-		relative_position_id = ENG_monarchy
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ENG_Fallen_Government
-				add_idea = ENG_Kings_Party
-			}
-		}
-	}
-	focus = {
-		id = ENG_monarchy2
-		icon = GFX_focus_generic_industry_3
-		relative_position_id = ENG_monarchy1
-		prerequisite = {
-			focus = ENG_monarchy1
-		}
-		cost = 10
-		x = 0
-		y = 1
-		completion_reward = { 
-				276 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-				681 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-				439 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-				285 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-				284 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = ENG_monarchy3
-		icon = GFX_focus_generic_military_industry
-		relative_position_id = ENG_monarchy1
-		prerequisite = {
-			focus = ENG_monarchy1
-		}
-		cost = 7.2
-		x = -2
-		y = 1
-		completion_reward = { 
-			add_ideas = ENG_Kings_Investments
-		}
-	}
-	focus = {
-		id = ENG_monarchy4
-		icon = GFX_focus_generic_monarchist_workers
-		cost = 10
-		relative_position_id = ENG_monarchy1
-		prerequisite = {
-			focus = ENG_monarchy1
-		}
 		x = 2
 		y = 1
+		mutually_exclusive = {
+			focus = ENG_start_colonial_investment
+		}
+		prerequisite = {
+			focus = ENG_focus_protect_belgium
+		}
+		relative_position_id = ENG_focus_protect_belgium
 		completion_reward = { 
-			add_ideas = ENG_Kings_People
+			swap_ideas = {
+				remove_idea = ENG_outdated_factories
+				add_idea = ENG_outdated_factories_2
+			}
+			add_timed_idea = {
+				idea = ENG_issued_bonds
+				days = 90
+			}
 		}
 	}
 	focus = {
-		id = ENG_monarchy5
-		icon = GFX_focus_eng_imperial_federation
-		cost = 10
-		relative_position_id = ENG_monarchy1
+		id = ENG_encourage_investments
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = ENG_issue_bonds
 		prerequisite = {
-			focus = ENG_monarchy2
+			focus = ENG_issue_bonds
+		}
+		completion_reward = { 
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ENG
+					infrastructure < 5
+					infrastructure > 3
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_promote_modernisation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = ENG_issue_bonds
+		available = {
+			ENG = {
+				NOT = {
+					has_idea = ENG_issued_bonds
+				}
+			}
 		}
 		prerequisite = {
-			focus = ENG_monarchy3
+			focus = ENG_issue_bonds
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = ENG_outdated_factories_2
+				add_idea = ENG_outdated_factories_3
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = ENG_learn_from_germany
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = ENG_promote_modernisation
+		prerequisite = {
+			focus = ENG_promote_modernisation
 		}
 		prerequisite = {
-			focus = ENG_monarchy4
+			focus = ENG_encourage_investments
 		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = ENG_outdated_factories_3
+				add_idea = ENG_outdated_factories_4
+			}
+			GER = {
+				add_intel = {
+					target = ENG
+					civilian_intel = 20
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_more_mills
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = ENG_learn_from_germany
+		prerequisite = {
+			focus = ENG_learn_from_germany
+		}
+		completion_reward = { 
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_more_civs
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ENG_learn_from_germany
+		}
+		relative_position_id = ENG_learn_from_germany
+		completion_reward = { 
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_breakthrough_parliment
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
 		x = 0
 		y = 2
+		relative_position_id = ENG_learn_from_germany
+		prerequisite = {
+			focus = ENG_more_civs
+		}
+		prerequisite = {
+			focus = ENG_more_mills
+		}
 		completion_reward = { 
-			random_owned_state = {
-				limit = {
-					is_core_of = SCO
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = ENG_outdated_factories_4
+				add_idea = ENG_outdated_factories_5
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = SCO
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
+		}
+	}
+	focus = {
+		id = ENG_improve_wages
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ENG_breakthrough_parliment
+		}
+		mutually_exclusive = {
+			focus = ENG_improve_conditions
+		}
+		relative_position_id = ENG_breakthrough_parliment
+		completion_reward = { 
+			add_ideas = ENG_improve_wages
+		}
+	}
+	focus = {
+		id = ENG_improve_conditions
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ENG_breakthrough_parliment
+		}
+		mutually_exclusive = {
+			focus = ENG_improve_wages
+		}
+		relative_position_id = ENG_breakthrough_parliment
+		completion_reward = { 
+			add_ideas = ENG_improve_conditions
+		}
+	}
+	focus = {
+		id = ENG_finish_modernisation
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = ENG_breakthrough_parliment
+		prerequisite = {
+			focus = ENG_improve_conditions
+			focus = ENG_improve_wages
+		}
+		completion_reward = { 
+			remove_ideas = ENG_outdated_factories_5
+		}
+	}
+	focus = {
+		id = ENG_british_dream
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = ENG_finish_modernisation
+		prerequisite = {
+			focus = ENG_finish_modernisation
+		}
+		completion_reward = { 
+			add_timed_idea = {
+				idea = ENG_british_dream
+				days = 240
 			}
-			random_owned_state = {
-				limit = {
-					is_core_of = WLS
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_core_of = IRE
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_core_of = IRE
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-				}
-			}
+			add_stability = 0.2
 		}
 	}
 }
