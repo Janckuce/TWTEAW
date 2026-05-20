@@ -672,7 +672,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_issue_bonds
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_RAJ_issue_bonds_on_the_stock_market
 		cost = 5
 		x = 2
 		y = 1
@@ -696,7 +696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_encourage_investments
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_industry_investment
 		cost = 5
 		x = -1
 		y = 1
@@ -725,7 +725,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_promote_modernisation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_modernize_industry
 		cost = 5
 		x = 1
 		y = 1
@@ -750,7 +750,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_learn_from_germany
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_befriend_germany_democratic
 		cost = 5
 		x = -1
 		y = 1
@@ -776,7 +776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_more_mills
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_SWI_issue_war_bonds
 		cost = 5
 		x = -1
 		y = 1
@@ -839,7 +839,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_more_civs
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5
 		x = 1
 		y = 1
@@ -902,7 +902,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_breakthrough_parliment
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		cost = 5
 		x = 0
 		y = 2
@@ -922,7 +922,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_improve_wages
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_improve_the_administration_2
 		cost = 5
 		x = 1
 		y = 1
@@ -939,7 +939,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_improve_conditions
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_improve_the_administration
 		cost = 5
 		x = -1
 		y = 1
@@ -956,7 +956,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_finish_modernisation
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_a_modern_economy
 		cost = 10
 		x = 0
 		y = 2
@@ -971,7 +971,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_british_dream
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		cost = 10
 		x = 0
 		y = 1
@@ -989,7 +989,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_1
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_AFG_parliamentary_democracy
 		cost = 0.2
 		x = 14
 		y = 4
@@ -1016,7 +1016,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_2
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility
 		cost = 5
 		x = 0
 		y = 1
@@ -1036,7 +1036,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_3
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 7
 		x = -1
 		y = 1
@@ -1076,7 +1076,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_4
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
 		cost = 5
 		x = 1
 		y = 1
@@ -1118,7 +1118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_5
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_ARG_balancing_act
 		cost = 10
 		x = 0
 		y = 1
@@ -1152,7 +1152,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_6
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_annex_tannu_tuva_ccp_2d_sov_compatibility
 		cost = 10
 		x = 0
 		y = 1
@@ -1166,7 +1166,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
-			add_stability = 0.05
+			add_stability = -0.05
 			add_political_power = 30
 			113 = {
 				add_compliance = 20
@@ -1192,7 +1192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_7
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_GER_divide_and_conquer
 		cost = 10
 		x = 0
 		y = 1
@@ -1207,7 +1207,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_political_power = -40
-			add_stability = -0.05
+			add_stability = 0.1
 			119 = {
 				add_compliance = 15
 				add_resistance = -10
@@ -1229,7 +1229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_8
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_SOV_cohesion_first_ccp_2d_sov_compatibility
 		cost = 7
 		x = 0
 		y = 1
@@ -1262,7 +1262,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_ireland_9
-		icon = GFX_unit_guided_missile_icon_small_texticon
+		icon = GFX_focus_CHI_reject_the_nine_powers
 		cost = 5
 		x = 1
 		y = 1

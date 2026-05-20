@@ -867,7 +867,7 @@ ideas = {
 			}
 		}
 		ENG_issued_bonds = {
-			picture = generic_production_bonus
+			picture = RAJ_issue_bonds_on_the_stock_market
 
 			modifier = {
 				consumer_goods_factor = 0.2
@@ -906,7 +906,7 @@ ideas = {
 			}
 		}
 		ENG_british_dream = {
-			picture = generic_production_bonus
+			picture = ARG_envoy_to_london
 
 			modifier = {
 				consumer_goods_expected_value = -0.05
@@ -917,18 +917,18 @@ ideas = {
 			}
 		}
 		ENG_improve_wages = {
-			picture = generic_production_bonus
+			picture = GER_wage_war_on_capitalism
 
 			modifier = {
-				industrial_capacity_factory = 0.15
-				stability_weekly_factor = 0.0005
+				industrial_capacity_factory = 0.1
+				stability_weekly_factor = 0.001
 			}
 		}
 		ENG_improve_conditions = {
-			picture = generic_production_bonus
+			picture = generic_improved_industries
 
 			modifier = {
-				stability_weekly_factor = 0.0015
+				stability_weekly_factor = 0.002
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -941,7 +941,7 @@ ideas = {
 			}
 		}
 		ENG_ric_reinforced = {
-			picture = generic_army_problems
+			picture = RAJ_private_military_complex
 
 			modifier = {
 				stability_weekly = 0.001
@@ -949,7 +949,7 @@ ideas = {
 			}
 		}
 		ENG_redmond_cooperation = {
-			picture = GFX_goal_generic_intelligence_exchange
+			picture = RAJ_just_good_business
 
 			modifier = {
 				stability_weekly = 0.002
@@ -961,9 +961,9 @@ ideas = {
 			}
 		}
 		ENG_home_rule_momentum = {
-			picture = GFX_goal_generic_intelligence_exchange
+			picture = BRA_dasp
 			modifier = {
-				stability_weekly = 0.002
+				stability_weekly = 0.001
 				political_power_gain = 0.1
 				mobilisation_speed = 0.05
 			}
@@ -972,7 +972,7 @@ ideas = {
 			}
 		}
 		ENG_irish_volunteer_spirit = {
-			picture = GFX_goal_generic_small_arms
+			picture = PRC_hundred_regiments_offensive
 			modifier = {
 				training_time_army_factor = -0.1
 				war_support_weekly = 0.001
