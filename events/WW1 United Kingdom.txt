@@ -583,3 +583,36 @@ country_event = {
 		}
 	}
 }
+#	Irish Events
+country_event = {
+	id = ww1_uk.19
+	title = ww1_uk.19.t
+	desc = ww1_uk_desc.19
+	picture = GFX_report_event_generic_train_ww1
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_uk.19.a
+
+		ENG = {
+			complete_national_focus = ENG_ireland_3
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = ww1_uk.19.b
+
+		ENG = {
+			complete_national_focus = ENG_ireland_4
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

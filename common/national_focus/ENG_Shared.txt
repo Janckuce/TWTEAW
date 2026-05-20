@@ -100,6 +100,7 @@
 		
 		completion_reward = {
 		    remove_ideas = ENG_weak_government_2
+			complete_national_focus = ENG_ireland_1
 		}
 	}
 	shared_focus = {
@@ -614,7 +615,7 @@
 			# }
 			if = {
 				limit = {
-					has_tech = marines
+					has_tech = special_forces_marines
 				}
 		    division_template = {
 				name = "Royal Marines"
@@ -668,7 +669,7 @@
 				}
 			} else = {
 				set_technology = {
-				marines = 1
+				special_forces_marines = 1
 				}
 			}
 		}

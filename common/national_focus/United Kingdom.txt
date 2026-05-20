@@ -987,4 +987,368 @@ focus_tree = {
 			add_stability = 0.2
 		}
 	}
+	focus = {
+		id = ENG_ireland_1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 0.2
+		x = 14
+		y = 4
+		available = {
+			always = no
+		}
+		completion_reward = {
+    		add_stability = -0.05
+    		add_political_power = 15
+    		134 = {
+				add_resistance = 3
+			}
+			135 = {
+				add_resistance = 3
+			}
+			113 = {
+				add_resistance = 3
+			}
+			119 = {
+				add_resistance = 5
+			}
+    	add_ideas = ENG_irish_question_spirit
+		}
+	}
+	focus = {
+		id = ENG_ireland_2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = ENG_ireland_1
+		prerequisite = {
+			focus = ENG_ireland_1
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_political_power = -25
+    		country_event = { id = ww1_uk.19 days = 7 }
+		}
+	}
+	focus = {
+		id = ENG_ireland_3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = ENG_ireland_2
+		prerequisite = {
+			focus = ENG_ireland_2
+		}
+		mutually_exclusive = {
+			focus = ENG_ireland_4
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_political_power = -20
+        	134 = {
+				add_resistance = -8
+        		add_compliance = -5
+			}
+        	135 = {
+				add_resistance = -8
+				add_compliance = -5
+			}
+			113 = {
+				add_resistance = -8
+				add_compliance = -5
+			}
+			119 = {
+				add_resistance = -4
+				add_compliance = 5
+			}
+    	add_ideas = ENG_ric_reinforced
+    	set_country_flag = ENG_firm_hand
+		}
+	}
+	focus = {
+		id = ENG_ireland_4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = ENG_ireland_2
+		prerequisite = {
+			focus = ENG_ireland_2
+		}
+		mutually_exclusive = {
+			focus = ENG_ireland_3
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_stability = -0.03
+			113 = {
+				add_resistance = -5
+				add_compliance = 8
+			}
+			134 = {
+				add_resistance = -5
+				add_compliance = 8
+			}
+			135 = {
+				add_resistance = -5
+				add_compliance = 8
+			}
+			119 = {
+				add_compliance = -8
+			}
+			swap_ideas = {
+				remove_idea = ENG_irish_question_spirit
+				add_idea = ENG_redmond_cooperation
+			}
+			set_country_flag = ENG_olive_branch
+		}
+	}
+	focus = {
+		id = ENG_ireland_5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = ENG_ireland_3
+		prerequisite = {
+			focus = ENG_ireland_3
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_political_power = -30
+			113 = { 
+				add_compliance = -10
+				add_resistance = -5
+			}
+			134 = {
+				add_compliance = -10
+				add_resistance = -5
+			}
+			135 = {
+				add_compliance = -10
+				add_resistance = -5
+			}
+			119 = {
+				add_compliance = 5
+			}
+		}
+	}
+	focus = {
+		id = ENG_ireland_6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = ENG_ireland_4
+		prerequisite = {
+			focus = ENG_ireland_4
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_stability = 0.05
+			add_political_power = 30
+			113 = {
+				add_compliance = 20
+				add_resistance = -8
+			}
+			134 = {
+				add_compliance = 20
+				add_resistance = -8
+			}
+			135 = {
+				add_compliance = 20
+				add_resistance = -8
+			}
+			119 = {
+				add_compliance = -5
+				add_resistance = 5
+			}
+			swap_ideas = {
+				remove_idea = ENG_irish_resistence
+				add_idea = ENG_home_rule_momentum
+			}
+		}
+	}
+	focus = {
+		id = ENG_ireland_7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = ENG_ireland_5
+		prerequisite = {
+			focus = ENG_ireland_5
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_political_power = -40
+			add_stability = -0.05
+			119 = {
+				add_compliance = 15
+				add_resistance = -10
+			}
+			113 = {
+				add_resistance = 5
+				add_compliance = -8
+			}
+			134 = {
+				add_resistance = 5
+				add_compliance = -8
+			}
+			135 = {
+				add_resistance = 5
+				add_compliance = -8
+			}
+			set_country_flag = ENG_partition_proposed
+		}
+	}
+	focus = {
+		id = ENG_ireland_8
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = ENG_ireland_6
+		prerequisite = {
+			focus = ENG_ireland_6
+		}
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		completion_reward = { 
+			add_manpower = 150000
+			add_political_power = 20
+			113 = {
+				add_compliance = 10
+			}
+			134 = {
+				add_compliance = 10
+			}
+			135 = {
+				add_compliance = 10
+			}
+			119 = {
+				add_compliance = -5
+			}
+			add_ideas = ENG_irish_volunteer_spirit
+		}
+	}
+	focus = {
+		id = ENG_ireland_9
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = ENG_ireland_7
+		prerequisite = {
+			focus = ENG_ireland_7
+			focus = ENG_ireland_8
+		}
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = ENG_irish_question_spirit
+				}
+				remove_ideas = ENG_irish_question_spirit
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_redmond_cooperation
+				}
+				remove_ideas = ENG_redmond_cooperation
+			}
+			if = {
+				limit = { 
+					has_idea = ENG_home_rule_momentum
+				}
+				remove_ideas = ENG_home_rule_momentum
+			}
+			if = {
+				limit = {
+					has_country_flag = ENG_olive_branch
+				}
+				add_manpower = 100000
+				add_stability = 0.1
+				113 = {
+					add_compliance = 10
+				}
+				134 = {
+					add_compliance = 10
+				}
+				135 = {
+					add_compliance = 10
+				}
+				119 = {
+					add_compliance = 5
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ENG_firm_hand
+				}
+				add_manpower = 75000
+				add_stability = -0.1
+				113 = {
+					add_compliance = 5
+				}
+				134 = {
+					add_compliance = 5
+				}
+				135 = {
+					add_compliance = 5
+				}
+				119 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ENG_partition_proposed
+				}
+				add_manpower = 25000
+				119 = {
+					add_compliance = 15
+				}
+				113 = {
+					add_resistance = 0.05
+				}
+				134 = {
+					add_resistance = 0.05
+				}
+				135 = {
+					add_resistance = 0.05
+				}
+			}
+		}
+	}
 }

@@ -932,5 +932,51 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+		ENG_irish_question_spirit = {
+			picture = generic_disjointed_gov
+
+			modifier = {
+				stability_weekly_factor = -0.001
+				political_power_cost = 0.05
+			}
+		}
+		ENG_ric_reinforced = {
+			picture = generic_army_problems
+
+			modifier = {
+				stability_weekly = 0.001
+				political_power_cost = 0.1
+			}
+		}
+		ENG_redmond_cooperation = {
+			picture = GFX_goal_generic_intelligence_exchange
+
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		ENG_home_rule_momentum = {
+			picture = GFX_goal_generic_intelligence_exchange
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = 0.1
+				mobilisation_speed = 0.05
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		ENG_irish_volunteer_spirit = {
+			picture = GFX_goal_generic_small_arms
+			modifier = {
+				training_time_army_factor = -0.1
+				war_support_weekly = 0.001
+			}
+		}
 	}
 }
