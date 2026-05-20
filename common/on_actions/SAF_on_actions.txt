@@ -2,7 +2,10 @@ on_actions = {
 	on_startup = {
 		effect = {
 			SAF = {
-				activate_mission = SAF_Maritz_Rebellion
+				set_variable = {
+					var = Aid_Percentage
+					value = 100
+				}
 			}
 		}
 	}

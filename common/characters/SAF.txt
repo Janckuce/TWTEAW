@@ -22,6 +22,10 @@ characters = {
 			ideology = liberalism
 			expire = "1965.1.1.1"
 		}
+		country_leader = {
+			ideology = falangism
+			expire = "1965.1.1.1"
+		}
 	}
 	SAF_Salomon_Gerhardus_Maritz = {
 		name = "Henry Timson Lukin"
@@ -188,12 +192,14 @@ characters = {
 			allowed = {
 				tag = SAF
 			}
+			available = {
+				has_completed_focus = SAF_Paper2
+			}
 			traits = {
-			SAF_working_man
-			
+				SAF_working_man
 			}
 			
-			cost = 150
+			cost = 200
 			ai_will_do = {
 				factor = 1
 			}

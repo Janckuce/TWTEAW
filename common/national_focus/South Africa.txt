@@ -22,730 +22,1216 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = SAF_World_Trade
-		icon = GFX_goal_generic_trade
+		id = SAF_Start_Focus
+		icon = GFX_focus_SOV_panslavic_nationalism
 		cost = 10
-		x = 5
+		x = 10
 		y = 0
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		completion_reward = {
-			add_ideas = free_trade
-		}
-	}
-	focus = {
-		id = SAF_Infrastructure_Construction
-		icon = GFX_focus_generic_africa_infrastructure
-		cost = 10
-		relative_position_id = SAF_World_Trade
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = SAF_World_Trade
-		}
-		completion_reward = {
-			681 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			719 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.5
+				uses = 1
 			}
 		}
 	}
+
 	focus = {
-		id = SAF_Steel_Production
-		icon = GFX_focus_generic_steel
+		id = SAF_Start_Left
+		icon = GFX_focus_PHI_rebuild_sakdalistas
 		cost = 5
-		relative_position_id = SAF_Infrastructure_Construction
+		relative_position_id = SAF_Start_Focus
 		x = -1
 		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = SAF_Infrastructure_Construction
-		}
-			prerequisite = {
-			focus = SAF_Divide
+			focus = SAF_Start_Focus
 		}
 		completion_reward = {
-			681 = {
-				add_resource = {
-					type = steel
-					amount = 12
-				}
+			add_timed_idea = {
+				idea = SAF_Glory_To_The_Nation
+				days = 365
 			}
 		}
 	}
+
 	focus = {
-		id = SAF_Tungsten_Production
-		icon = GFX_focus_generic_tungsten
+		id = SAF_Start_Right
+		icon = GFX_focus_CZE_coalition_building
 		cost = 5
-		relative_position_id = SAF_Infrastructure_Construction
-		x = 2
-		y = 2
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		relative_position_id = SAF_Start_Focus
+		x = 1
+		y = 1
 		prerequisite = {
-			focus = SAF_Divide1
+			focus = SAF_Start_Focus
 		}
 		completion_reward = {
-			681 = {
-				add_resource = {
-					type = tungsten
-					amount = 8
-				}
+			add_timed_idea = {
+				idea = SAF_Glory_To_The_People
+				days = 365
 			}
 		}
 	}
+
 	focus = {
-		id = SAF_Liquidate_Declining_Businesses
-		icon = GFX_focus_RAJ_just_good_business
+		id = SAF_Start_Last
+		icon = GFX_focus_FIN_strengthen_military_administration
 		cost = 10
-		relative_position_id = SAF_Infrastructure_Construction
+		relative_position_id = SAF_Start_Focus
 		x = 0
 		y = 2
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		prerequisite = {
-			focus = SAF_Steel_Production
+			focus = SAF_Start_Left
 		}
-			prerequisite = {
-			focus = SAF_Divide1
+		prerequisite = {
+			focus = SAF_Start_Right
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_Inefficient_Economy
-				add_idea = SAF_Inefficient_Economy1
+			add_timed_idea = {
+				idea = SAF_Military_Parades
+				days = 365
 			}
 		}
 	}
+
+	#	Industry
+
 	focus = {
-		id = SAF_Arms_Industries
-		icon = GFX_focus_generic_military_industry
+		id = SAF_Industry_Main
+		icon = GFX_SOV_heavy_industry_ccp_2d_sov_compatibility
 		cost = 10
-		x = 5
-		y = 4
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		relative_position_id = SAF_Start_Last
+		x = -8
+		y = 1
 		prerequisite = {
-			focus = SAF_Liquidate_Declining_Businesses
-		}
-			prerequisite = {
-			focus = SAF_Research_Expertise
-		}
-			prerequisite = {
-			focus = SAF_Tungsten_Production
+			focus = SAF_Start_Last
 		}
 		completion_reward = {
-			add_ideas = SAF_Small_Arms
 			681 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 1
-					instant_build = yes
 				}
 			}
 		}
 	}
+
 	focus = {
-		id = SAF_Research_Expertise
-		icon = GFX_focus_research
-		cost = 10
-		x = 3
-		y = 3
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		id = SAF_Industry1
+		icon = GFX_focus_generic_railroad
+		cost = 5
+		relative_position_id = SAF_Industry_Main
+		x = -1
+		y = 1
 		prerequisite = {
-			focus = SAF_Steel_Production
+			focus = SAF_Industry_Main
 		}
-			prerequisite = {
-			focus = SAF_Divide
+		completion_reward = {
+			275 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Industry2
+		icon = GFX_focus_generic_road_investment
+		cost = 5
+		relative_position_id = SAF_Industry_Main
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SAF_Industry_Main
+		}
+		completion_reward = {
+			719 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Industry3
+		icon = GFX_focus_DEN_national_unity
+		cost = 5
+		relative_position_id = SAF_Industry_Main
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SAF_Industry1
+		}
+		prerequisite = {
+			focus = SAF_Industry2
+		}
+		completion_reward = {
+			681 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Industry_Side1
+		icon = GFX_focus_generic_stockpile_fuel
+		cost = 10
+		relative_position_id = SAF_Industry_Main
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = SAF_Industry1
+		}
+		completion_reward = {
+			custom_effect_tooltip = SAF_Astron_Tooltip
+			681 = {
+				add_resource = {
+					type = oil
+					amount = 18
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Industry_Side2
+		icon = GFX_focus_generic_steel_mill
+		cost = 10
+		relative_position_id = SAF_Industry_Main
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = SAF_Industry2
+		}
+		completion_reward = {
+			custom_effect_tooltip = SAF_USCO_Tooltip
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Industry4
+		icon = GFX_focus_generic_mineral_prospecting
+		cost = 10
+		relative_position_id = SAF_Industry3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Industry3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Resource_Rich_Environment
+				add_idea = SAF_Resource_Rich_Environment1
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Industry_Left
+		icon = GFX_focus_ARG_universidad_de_buenos_aires
+		cost = 10
+		relative_position_id = SAF_Industry4
+		x = -2
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Industry_Middle
+			focus = SAF_Industry_Right
+		}
+		prerequisite = {
+			focus = SAF_Industry4
+		}
+		completion_reward = {
+			remove_ideas = SAF_Resource_Rich_Environment1
+			add_ideas = SAF_Resource_Rich_Environment_Left
+		}
+	}
+
+	focus = {
+		id = SAF_Industry_Middle
+		icon = GFX_focus_generic_industry_investment
+		cost = 10
+		relative_position_id = SAF_Industry4
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Industry_Left
+			focus = SAF_Industry_Right
+		}
+		prerequisite = {
+			focus = SAF_Industry4
+		}
+		completion_reward = {
+			remove_ideas = SAF_Resource_Rich_Environment1
+			add_ideas = SAF_Resource_Rich_Environment_Middle
+		}
+	}
+
+	focus = {
+		id = SAF_Industry_Right
+		icon = GFX_focus_generic_mining_industry
+		cost = 10
+		relative_position_id = SAF_Industry4
+		x = 2
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Industry_Left
+			focus = SAF_Industry_Middle
+		}
+		prerequisite = {
+			focus = SAF_Industry4
+		}
+		completion_reward = {
+			remove_ideas = SAF_Resource_Rich_Environment1
+			add_ideas = SAF_Resource_Rich_Environment_Right
+		}
+	}
+
+	#	Side Lane
+
+	focus = {
+		id = SAF_Paper_Main
+		icon = GFX_focus_generic_currency_reforms
+		cost = 10
+		relative_position_id = SAF_Start_Last
+		x = -4
+		y = 1
+		available = {
+			num_of_factories > 30
+		}
+		prerequisite = {
+			focus = SAF_Start_Last
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Government_Agenda
+				add_idea = SAF_Government_Agenda1
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Paper1
+		icon = GFX_SOV_industrial_modernization_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SAF_Paper_Main
+		x = 0
+		y = 1
+		available = {
+			num_of_factories > 50
+		}
+		prerequisite = {
+			focus = SAF_Paper_Main
+		}
+		completion_reward = {
+			remove_ideas = SAF_Government_Agenda1
+		}
+	}
+
+	focus = {
+		id = SAF_Paper2
+		icon = GFX_focus_generic_industrialists
+		cost = 10
+		relative_position_id = SAF_Paper1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Paper1
+		}
+		completion_reward = {
+			custom_effect_tooltip = SAF_Working_Man_Tooltip
+		}
+	}
+
+	focus = {
+		id = SAF_Paper3
+		icon = GFX_focus_JAP_expand_the_showa_research_association
+		cost = 10
+		relative_position_id = SAF_Paper2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Paper2
 		}
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-	focus = {
-		id = SAF_Cancel_Expensive_Welfare
-		icon = GFX_focus_generic_welfare
-		cost = 10
-		x = 4
-		y = 5
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = SAF_Research_Expertise
-		}
-			prerequisite = {
-			focus = SAF_Arms_Industries
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_Inefficient_Economy1
-				add_idea = SAF_Inefficient_Economy2
-			}
-		}
-	}
-	focus = {
-		id = SAF_Growth_Of_Nation
-		icon = GFX_focus_generic_population_growth
-		cost = 14.3
-		relative_position_id = SAF_Cancel_Expensive_Welfare
-		x = 1
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		prerequisite = {
-			focus = SAF_Cancel_Expensive_Welfare
-		}
-			prerequisite = {
-			focus = SAF_Divide2
-		}
-			prerequisite = {
-			focus = SAF_Arms_Industries
-		}
-		completion_reward = {
-			remove_ideas = SAF_Inefficient_Economy2
-		}
-	}
 
-	#	Division Focus
+	#	Military 1
 
 	focus = {
-		id = SAF_Divide
-		icon = GFX_focus_RAJ_the_sun_sets
-		cost = 10
-		x = 3
-		y = 1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_World_Trade
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_Afrikaner_British_Division
-				add_idea = SAF_Afrikaner_British_Division1
-			}
-		}
-	}
-	focus = {
-		id = SAF_Divide1
-		icon = GFX_focus_RAJ_clamp_down_on_corruption
-		cost = 10
-		x = 6
-		y = 2
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Divide
-		}
-				prerequisite = {
-			focus = SAF_Infrastructure_Construction
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_Afrikaner_British_Division1
-				add_idea = SAF_Afrikaner_British_Division2
-			}
-		}
-	}
-	focus = {
-		id = SAF_Divide2
-		icon = GFX_focus_RAJ_give_me_blood_and_i_will_grant_you_freedom
-		cost = 10
-		x = 6
-		y = 5
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Divide1
-		}
-			prerequisite = {
-			focus = SAF_South_Africa_Act
-		}
-			prerequisite = {
-			focus = SAF_Arms_Industries
-			}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_Afrikaner_British_Division2
-				add_idea = SAF_Afrikaner_British_Division3
-			}
-		}
-	}
-
-	#	Union Focus
-	focus = {
-		id = SAF_South_Africa_Act
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		cost = 10
-		relative_position_id = SAF_Divide2
-		x = 1
-		y = -1
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Tungsten_Production
-		}
-			prerequisite = {
-			focus = SAF_Liquidate_Declining_Businesses
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SAF_Afrikaner_British_Division3
-				}
-				remove_ideas = SAF_Afrikaner_British_Division3
-			}
-			if = {
-				limit = {
-					has_idea = SAF_Afrikaner_British_Union2
-				}
-				remove_ideas = SAF_Afrikaner_British_Union2
-			}
-			add_ideas = SAF_Union_Of_South_Africa
-		}
-	}
-
-	#	Military Focus
-
-	focus = {
-		id = SAF_Military1
-		icon = GFX_focus_PER_march_to_nile
-		cost = 10
-		relative_position_id = SAF_World_Trade
-		x = 11
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = SAF_World_Trade
-		}
-		completion_reward = {
-			275 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = SAF_Military2
-		icon = GFX_focus_generic_advanced_military_studies
-		cost = 10
-		relative_position_id = SAF_Military1
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = SAF_Military1
-		} 
-		available = {
-			has_completed_focus = SAF_Arms_Industries
-   	 	}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_Small_Arms
-				add_idea = SAF_Military_Improvements
-			}
-		}
-	}
-	focus = {
-		id = SAF_Military3
-		icon = GFX_focus_FIN_strengthen_military_administration
-		cost = 10
-		relative_position_id = SAF_Military2
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = SAF_Military2
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_Military_Improvements
-				add_idea = SAF_Military_Improvements1
-			}
-		}
-	}
-	focus = {
-		id = SAF_Fortify_German_Border
-		icon = GFX_focus_generic_africa_defense
-		cost = 10
-		relative_position_id = SAF_Military2
-		x = 0
-		y = 2
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		prerequisite = {
-			focus = SAF_Military3
-		}
-		completion_reward = {
-			681 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = {
-						id = 5203
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = {
-						id = 10442
-					}
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = {
-						id = 4528
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = SAF_Mother_Country
-		icon = GFX_focus_eng_the_sun_never_sets
-		cost = 10
-		relative_position_id = SAF_Fortify_German_Border
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		available = {
-			ENG = {
-				num_of_military_factories > 30
-			}
-		}
-		prerequisite = {
-			focus = SAF_Fortify_German_Border
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_Military_Improvements1
-				add_idea = SAF_Military_Improvements2
-			}
-		}
-	}
-
-	#	Republic Path
-
-	focus = {
-		id = SAF_Cut_Down_On_Nationalism
-		icon = GFX_focus_focus_fra_fascist_threat
-		cost = 10
-		relative_position_id = SAF_World_Trade
-		x = 6
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_World_Trade
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_recource_rich
-				add_idea = SAF_recource_rich_agre
-			}
-		}
-	}
-	focus = {
-		id = SAF_Equal_Rights
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
-		relative_position_id = SAF_Cut_Down_On_Nationalism
+		id = SAF_Army_Main
+		icon = GFX_focus_PER_war_plan_cambyses
+		cost = 5
+		relative_position_id = SAF_Start_Last
 		x = -1
 		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		available = {
+			has_subdoctrine_in_track = infantry
+			has_subdoctrine_in_track = combat_support
+			has_subdoctrine_in_track = operations
+		}
 		prerequisite = {
-			focus = SAF_Cut_Down_On_Nationalism
+			focus = SAF_Start_Last
 		}
 		completion_reward = {
-			country_event = { id = ww1_south_africa.1 }
-		}
-	}
-	focus = {
-		id = SAF_Unity_Is_Power
-		icon = GFX_focus_PER_form_oil_company
-		cost = 10
-		relative_position_id = SAF_Equal_Rights
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Equal_Rights
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_recource_rich_agre
-				add_idea = SAF_recource_rich_agre2
-			}
-		}
-	}
-	focus = {
-		id = SAF_European_Model
-		icon = GFX_focus_GER_european_confederation
-		cost = 10
-		relative_position_id = SAF_Unity_Is_Power
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Unity_Is_Power
-		}
-		completion_reward = {
-		country_event = { id = ww1_south_africa.3 }
-		}
-	}
-	focus = {
-		id = SAF_Just_Like_Britain
-		icon = GFX_goal_tfv_saf_secure_interests_in_africa
-		cost = 10
-		relative_position_id = SAF_European_Model
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_European_Model
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_recource_rich_agre2
-				add_idea = SAF_recource_rich_agre3
-			}
-		}
-	}
-	focus = {
-		id = SAF_Our_Very_Own
-		icon = GFX_focus_generic_africa_liberation
-		cost = 10
-		relative_position_id = SAF_European_Model
-		x = 0
-		y = 2
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Just_Like_Britain
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					owns_state = 896
-					owns_state = 544 
-				}
-				896 = {
-					add_core_of = SAF
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-				544 = {
-					add_core_of = SAF
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						owns_state = 896
-						owns_state = 544 
-					}
-				}
-				719 = {
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-					}
-				}
+			add_mastery = {
+				folder = land
+				amount = 30
 			}
 		}
 	}
 
-	#	Boer Nationalists Path
+	focus = {
+		id = SAF_Army1
+		icon = GFX_focus_PER_war_plan_darius
+		cost = 5
+		relative_position_id = SAF_Army_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Army_Main
+		}
+		completion_reward = {
+			add_mastery = {
+				folder = land
+				amount = 30
+			}
+		}
+	}
 
 	focus = {
-		id = SAF_Maritz_Our_Guy
-		icon = GFX_focus_GER_factories_for_resources
+		id = SAF_Army2
+		icon = GFX_focus_PER_war_plan_xerxes
+		cost = 5
+		relative_position_id = SAF_Army1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Army1
+		}
+		completion_reward = {
+			add_mastery = {
+				folder = land
+				amount = 30
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Army3
+		icon = GFX_focus_CZE_war_college
 		cost = 10
-		relative_position_id = SAF_Cut_Down_On_Nationalism
+		relative_position_id = SAF_Army2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Army2
+		}
+		completion_reward = {
+			add_mastery = {
+				folder = land
+				amount = 30
+			}
+		}
+	}
+
+	#	Military 2
+
+	focus = {
+		id = SAF_Army_Main_O
+		icon = GFX_focus_PER_war_plan_cambyses
+		cost = 5
+		relative_position_id = SAF_Start_Last
 		x = 1
 		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		prerequisite = {
+			focus = SAF_Start_Last
+		}
+		completion_reward = {
+			add_ideas = SAF_Irregular_Arms
+		}
+	}
+
+	focus = {
+		id = SAF_Army1_O
+		icon = GFX_focus_PER_war_plan_darius 
+		cost = 5
+		relative_position_id = SAF_Army_Main_O
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Army_Main_O
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Irregular_Arms
+				add_idea = SAF_Irregular_Arms1
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Army2_O
+		icon = GFX_focus_PER_war_plan_xerxes
+		cost = 5
+		relative_position_id = SAF_Army1_O
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Army1_O
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Irregular_Arms1
+				add_idea = SAF_Irregular_Arms2
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Army3_O
+		icon = GFX_focus_generic_happy_cheer
+		cost = 10
+		relative_position_id = SAF_Army2_O
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Army2_O
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Irregular_Arms2
+				add_idea = SAF_Irregular_Arms3
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Army_Last
+		icon = GFX_focus_POL_sanation_right
+		cost = 10
+		relative_position_id = SAF_Army3
+		x = 1
+		y = 1
 		available = {
+			has_subdoctrine_in_track = armor
 		}
 		prerequisite = {
-			focus = SAF_Cut_Down_On_Nationalism
+			focus = SAF_Army3
+		}
+		prerequisite = {
+			focus = SAF_Army3_O
 		}
 		completion_reward = {
-			add_ideas = SAF_small_but_ours
+			country_event = ww1_north_africa.1
+		}
+	}
+
+	#	Fascist Path
+
+	focus = {
+		id = SAF_African_Gold_State
+		icon = GFX_focus_BEL_order_of_the_golden_lion
+		cost = 10
+		relative_position_id = SAF_Start_Last
+		x = 5
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Loyalty_To_Royalty
+		}
+		prerequisite = {
+			focus = SAF_Start_Last
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Luke_Warm_Government
+				add_idea = SAF_Luke_Warm_Government_Boer
 			}
 		}
+	}
+
 	focus = {
-		id = SAF_Industrialise_The_Nation
-		icon = GFX_focus_generic_modernize_industry
+		id = SAF_Back_Of_The_Bus
+		icon = GFX_focus_SWE_per_albin_bus
 		cost = 10
-		relative_position_id = SAF_Maritz_Our_Guy
+		relative_position_id = SAF_African_Gold_State
 		x = 0
 		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
-			focus = SAF_Maritz_Our_Guy
+			focus = SAF_African_Gold_State
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_African_British_Split
+				add_idea = SAF_African_British_Split_Boer
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_National_Militia_Program
+		icon = GFX_focus_CHI_popular_army
+		cost = 10
+		relative_position_id = SAF_Back_Of_The_Bus
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Back_Of_The_Bus
+		}
+		completion_reward = {
+			add_ideas = SAF_Militancy
+		}
+	}
+
+	focus = {
+		id = SAF_Militant_Advancements
+		icon = GFX_focus_CZE_army_reform
+		cost = 10
+		relative_position_id = SAF_National_Militia_Program
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_National_Militia_Program
+		}
+		completion_reward = {
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Valken Troepen\" division_template = \"Woestijn Divisie\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SAF
+					prioritize_location = 12589
+				}
+				create_unit = {
+					division = "name = \"Valken Troepen\" division_template = \"Woestijn Divisie\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SAF
+					prioritize_location = 12589
+				}
+				create_unit = {
+					division = "name = \"Valken Troepen\" division_template = \"Woestijn Divisie\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SAF
+					prioritize_location = 12589
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Military_State
+		icon = GFX_focus_PHI_usaffe_headquarters
+		cost = 10
+		relative_position_id = SAF_Militant_Advancements
+		x = 0
+		y = 1
+		available = {
+			date > 1913.1.1
+		}
+		prerequisite = {
+			focus = SAF_Militant_Advancements
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_ideas = SAF_On_Guard
+			add_country_leader_trait = SAF_Leader_Of_The_Union
+		}
+	}
+
+	#	Democratic Path
+
+	focus = {
+		id = SAF_Loyalty_To_Royalty
+		icon = GFX_focus_JAP_gather_royal_pacifists_support
+		cost = 10
+		relative_position_id = SAF_Start_Last
+		x = 8
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_African_Gold_State
+		}
+		prerequisite = {
+			focus = SAF_Start_Last
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_Luke_Warm_Government
+				add_idea = SAF_Luke_Warm_Government_Unity
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Black_And_White
+		icon = GFX_focus_ITA_blackshirts
+		cost = 10
+		relative_position_id = SAF_Loyalty_To_Royalty
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Loyalty_To_Royalty
+		}
+		completion_reward = {
+			remove_ideas = SAF_African_British_Split
+		}
+	}
+
+	focus = {
+		id = SAF_Support_Poor_Communities
+		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SAF_Black_And_White
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Black_And_White
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_Social_Aid
+				days = 730
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Assimilation_Programs
+		icon = GFX_focus_FIN_mustapaidat
+		cost = 10
+		relative_position_id = SAF_Support_Poor_Communities
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Support_Poor_Communities
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_One_People
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_United_Nation
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		cost = 10
+		relative_position_id = SAF_Assimilation_Programs
+		x = 0
+		y = 1
+		available = {
+			not = {
+				has_idea = SAF_Social_Aid
+			}
+		}
+		prerequisite = {
+			focus = SAF_Assimilation_Programs
+		}
+		completion_reward = {
+			add_ideas = SAF_Fruits_Of_Our_Labour
+		}
+	}
+
+	#	War Time
+
+	focus = {
+		id = SAF_Territorial_Proclamation
+		icon = GFX_focus_generic_africa_liberation
+		cost = 10
+		x = 25
+		y = 0
+		available = {
+			date > 1915.1.1
+		}
+		completion_reward = {
+			country_event = ww1_north_africa.2
+		}
+	}
+
+	#	Land Path
+
+	focus = {
+		id = SAF_Land_Efforts
+		icon = GFX_focus_CZE_army_reform
+		cost = 10
+		relative_position_id = SAF_Territorial_Proclamation
+		x = -3
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Air_Efforts
+			focus = SAF_Sea_Efforts
+		}
+		prerequisite = {
+			focus = SAF_Territorial_Proclamation
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4000
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Army_Advancements
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		relative_position_id = SAF_Land_Efforts
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Land_Efforts
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Arms_Construction
+		icon = GFX_focus_JAP_implement_army_reforms
+		cost = 10
+		relative_position_id = SAF_Army_Advancements
+		x = 0
+		y = 1
+		bypass = {
 			681 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_resource = {
-					type = tungsten
-					amount = 6
+				not = {
+					is_controlled_by = SAF
 				}
 			}
 		}
-	}
-	focus = {
-		id = SAF_Boers_First
-		icon = GFX_focus_generic_africa_factory
-		cost = 10
-		relative_position_id = SAF_Industrialise_The_Nation
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		prerequisite = {
-			focus = SAF_Industrialise_The_Nation
-		}
-		completion_reward = {
-				swap_ideas = {
-				remove_idea = SAF_small_but_ours
-				add_idea = SAF_small_but_ours1
-			}
-		}
-	}
-	focus = {
-		id = SAF_Mine_Away
-		icon = GFX_focus_generic_mining_industry
-		cost = 10
-		relative_position_id = SAF_Boers_First
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Boers_First
+			focus = SAF_Army_Advancements
 		}
 		completion_reward = {
 			681 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = infrastructure
-					level = 1
+					type = arms_factory
+					level = 2
 				}
-				add_resource = {
-					type = steel
-					amount = 10
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Cheaper_Arms
+		icon = GFX_focus_generic_arms_trade
+		cost = 10
+		relative_position_id = SAF_Arms_Construction
+		x = -1
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Cheaper_Artillery
+		}
+		prerequisite = {
+			focus = SAF_Arms_Construction
+		}
+		completion_reward = {
+			add_ideas = SAF_Cheap_Arms
+		}
+	}
+
+	focus = {
+		id = SAF_Cheaper_Artillery
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
+		cost = 10
+		relative_position_id = SAF_Arms_Construction
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Cheaper_Arms
+		}
+		prerequisite = {
+			focus = SAF_Arms_Construction
+		}
+		completion_reward = {
+			add_ideas = SAF_Cheap_Artillery
+		}
+	}
+
+	focus = {
+		id = SAF_Land_Reforms
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10
+		relative_position_id = SAF_Arms_Construction
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SAF_Cheaper_Arms
+			focus = SAF_Cheaper_Artillery
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_Territorial_Efforts_Land
+				days = 111
+			}
+		}
+	}
+
+	#	Air Path
+
+	focus = {
+		id = SAF_Air_Efforts
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		relative_position_id = SAF_Territorial_Proclamation
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Land_Efforts
+			focus = SAF_Sea_Efforts
+		}
+		prerequisite = {
+			focus = SAF_Territorial_Proclamation
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_plane_testing
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_engine_1
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_machine_guns1
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_plane_airframe_design_1
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_plane_wings_design_1
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_radio_transimtter_1
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_machine_guns2
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				technology = ww1_engine_2
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Ground_To_Air
+		icon = GFX_focus_PRC_anti_air_effort
+		cost = 10
+		relative_position_id = SAF_Air_Efforts
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Air_Efforts
+		}
+		completion_reward = {
+			set_technology = {
+				ww1_antiair_equipment1 = 1
+				ww1_improved_antiair_equipment1 = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Aerial_Take_Down
+		icon = GFX_focus_PER_establish_airforce
+		cost = 10
+		relative_position_id = SAF_Ground_To_Air
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Ground_To_Air
+		}
+		completion_reward = {
+			27 = {
+				if = {
+					limit = {
+						is_controlled_by = FRA
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+					}
+				}
+			}
+			18 = {
+				if = {
+					limit = {
+						is_controlled_by = FRA
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+					}
+				}
+			}
+			17 = {
+				if = {
+					limit = {
+						is_controlled_by = FRA
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+					}
+				}
+			}
+			785 = {
+				if = {
+					limit = {
+						is_controlled_by = FRA
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Air_Ace_Program
+		icon = GFX_focus_PRC_establish_pla_air_force
+		cost = 10
+		relative_position_id = SAF_Aerial_Take_Down
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Aerial_Take_Down
+		}
+		completion_reward = {
+			add_ideas = SAF_Aerial_Ace
+		}
+	}
+
+	focus = {
+		id = SAF_Air_Reforms
+		icon = GFX_focus_PHI_army_air_corps
+		cost = 10
+		relative_position_id = SAF_Air_Ace_Program
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Air_Ace_Program
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_Territorial_Efforts_Air
+				days = 222
+			}
+		}
+	}
+
+	#	Navy Path
+
+	focus = {
+		id = SAF_Sea_Efforts
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 10
+		relative_position_id = SAF_Territorial_Proclamation
+		x = 3
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_Land_Efforts
+			focus = SAF_Air_Efforts
+		}
+		prerequisite = {
+			focus = SAF_Territorial_Proclamation
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 8
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Dockyard_Efforts
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		relative_position_id = SAF_Sea_Efforts
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Sea_Efforts
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_Dockyard_Construction
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Rush_To_The_Sea
+		icon = GFX_focus_FIN_acquire_andros_dockyards
+		cost = 10
+		relative_position_id = SAF_Dockyard_Efforts
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SAF_Dockyard_Efforts
+		}
+		completion_reward = {
+			681 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
 				}
 			}
 			719 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_resource = {
-					type = steel
-					amount = 10
+					type = dockyard
+					level = 3
 				}
 			}
 		}
 	}
+
 	focus = {
-		id = SAF_Boers_And_God
-		icon = GFX_focus_RAJ_tryst_with_destiny_hand
+		id = SAF_General_Effectiveness
+		icon = GFX_focus_PHI_the_concrete_battleship
 		cost = 10
-		relative_position_id = SAF_Mine_Away
-		x = 0
-		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Mine_Away
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_small_but_ours1
-				add_idea = SAF_small_but_ours2
-			}
-		}
-	}
-	focus = {
-		id = SAF_Realm_Expansion
-		icon = GFX_focus_GER_total_control_over_domestic_affairs
-		cost = 10
-		relative_position_id = SAF_Boers_And_God
+		relative_position_id = SAF_Rush_To_The_Sea
 		x = -1
 		y = 1
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
-		prerequisite = {
-			focus = SAF_Our_Very_Own
+		mutually_exclusive = {
+			focus = SAF_Naval_Range
 		}
 		prerequisite = {
-			focus = SAF_Boers_And_God
+			focus = SAF_Rush_To_The_Sea
 		}
 		completion_reward = {
-			546 = {
+			add_ideas = SAF_Effective_Navy
+		}
+	}
+
+	focus = {
+		id = SAF_Naval_Range
+		icon = GFX_focus_generic_battleship_guns
+		cost = 10
+		relative_position_id = SAF_Rush_To_The_Sea
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = SAF_General_Effectiveness
+		}
+		prerequisite = {
+			focus = SAF_Rush_To_The_Sea
+		}
+		completion_reward = {
+			add_ideas = SAF_Reaching_Navy
+		}
+	}
+	
+	focus = {
+		id = SAF_Sea_Reforms
+		icon = GFX_focus_CHI_Republic_of_china_navy
+		cost = 10
+		relative_position_id = SAF_Rush_To_The_Sea
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = SAF_General_Effectiveness
+			focus = SAF_Naval_Range
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_Territorial_Efforts_Navy
+				days = 333
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_Fulfilled_Ambitions
+		icon = GFX_focus_ETH_african_union
+		cost = 10
+		relative_position_id = SAF_Territorial_Proclamation
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = SAF_Land_Reforms
+			focus = SAF_Air_Reforms
+			focus = SAF_Sea_Reforms
+		}
+		completion_reward = {
+			542 = {
+				if = {
+					limit = {
+						is_controlled_by = ENG
+					}
+					transfer_state_to = SAF
+				}
 				add_core_of = SAF
 			}
-			768 = {
+			545 = {
+				if = {
+					limit = {
+						is_controlled_by = ENG
+					}
+					transfer_state_to = SAF
+				}
 				add_core_of = SAF
 			}
-			769 = {
+			771 = {
+				if = {
+					limit = {
+						is_controlled_by = ENG
+					}
+					transfer_state_to = SAF
+				}
 				add_core_of = SAF
 			}
-			773 = {
-				add_core_of = SAF
-			}
-			839 = {
-				add_core_of = SAF
-			}
-			818 = {
-				add_core_of = SAF
-			}
-			777 = {
+			770 = {
+				if = {
+					limit = {
+						is_controlled_by = ENG
+					}
+					transfer_state_to = SAF
+				}
 				add_core_of = SAF
 			}
 		}

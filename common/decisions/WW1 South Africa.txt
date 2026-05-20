@@ -13,3 +13,75 @@
 #     	}
 # 	}
 # }
+
+SAF_British_Aid_Category = {
+	SAF_Infantry_Reroute = {
+		allowed = {
+			tag = SAF
+		}
+		available = {
+			has_war = yes
+			custom_trigger_tooltip = {
+				check_variable = {
+					SAF.Aid_Percentage > 4
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = SAF_Aid_Requirement1
+			add_to_variable = {
+				SAF.Aid_Percentage = -5
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 800
+			}
+		}
+	}
+	SAF_Artillery_Reroute = {
+		allowed = {
+			tag = SAF
+		}
+		available = {
+			has_war = yes
+			custom_trigger_tooltip = {
+				check_variable = {
+					SAF.Aid_Percentage > 9
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = SAF_Aid_Requirement2
+			add_to_variable = {
+				SAF.Aid_Percentage = -10
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+			}
+		}
+	}
+	SAF_Shell_Reroute = {
+		allowed = {
+			tag = SAF
+		}
+		available = {
+			has_war = yes
+			custom_trigger_tooltip = {
+				check_variable = {
+					SAF.Aid_Percentage > 14
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = SAF_Aid_Requirement3
+			add_to_variable = {
+				SAF.Aid_Percentage = -15
+			}
+			add_equipment_to_stockpile = {
+				type = HE_shell
+				amount = 600
+			}
+		}
+	}
+}

@@ -7,3 +7,17 @@ SAF_Maritz_Category = {
 		tag = SAF
 	}
 }
+
+SAF_British_Aid_Category = {
+	icon = military_operation
+
+	scripted_gui = British_Aid_Scripted_Gui
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = SAF
+	}
+}

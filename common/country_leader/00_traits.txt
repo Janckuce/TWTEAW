@@ -3421,19 +3421,17 @@ leader_traits = {
 	SAF_politican = {
 		random = no
 		sprite = 13 
-		democratic_drift = 0.2
 		surrender_limit = 0.2
 		political_power_gain = 0.2
-		political_advisor_cost_factor = -0.2
 	}
 
 	SAF_smuts_army = {
 		random = no
 		sprite = 7
-		army_attack_factor = 0.1
+		army_attack_factor = 0.05
 		army_defence_factor = 0.05
 		experience_gain_army = @chief_experience_gain_medium
-		production_speed_arms_factory_factor = 0.065
+		production_speed_arms_factory_factor = 0.05
 	}
 
 	SAF_man_with_honors = {
@@ -3448,20 +3446,18 @@ leader_traits = {
 
 	SAF_working_man = {
 		random = no
-		sprite = 13 
-		production_lack_of_resource_penalty_factor = -0.1
-		production_speed_industrial_complex_factor = 0.075
-		industrial_capacity_factory = 0.025
-		production_speed_infrastructure_factor = 0.075
-		production_speed_rail_way_factor = 0.05
+		sprite = 13
+		party_popularity_stability_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.1
+		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.1
 	}
 
 	SAF_scientist_of_blacks = {
 		random = no
-		sprite = 13 
-		research_speed_factor = 0.25
-		party_popularity_stability_factor = -0.1
-		stability_factor = -0.3
+		sprite = 13
+		stability_factor = -0.1
+		research_speed_factor = 0.1
 	}
 
 	SWI_social_democrat = { #Unlocks Focus on Swiss Unity
