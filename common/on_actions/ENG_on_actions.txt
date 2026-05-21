@@ -1,11 +1,14 @@
 on_actions = {
-#	on_startup = {
-#		effect = {
-#			PER = {
-#				give_resource_rights = { receiver = ENG state = 411 }
-#				give_resource_rights = { receiver = ENG state = 412 }
-#				give_resource_rights = { receiver = ENG state = 413 }
-#			}
-#		}
-#	}
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ENG = {
+						has_war_with = GER
+					}
+				}
+				complete_national_focus = ENG_ireland_9
+			}
+		}
+	}
 }
