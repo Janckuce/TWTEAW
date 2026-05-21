@@ -282,9 +282,11 @@ focus_tree = {
 			focus = SAF_Arms_Industries
 			}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_Afrikaner_British_Division2
-				add_idea = SAF_Afrikaner_British_Division3
+			if = {
+				limit = {
+					has_idea = SAF_Afrikaner_British_Division3
+				}
+				remove_ideas = SAF_Afrikaner_British_Division3
 			}
 		}
 	}
@@ -306,17 +308,9 @@ focus_tree = {
 			focus = SAF_Liquidate_Declining_Businesses
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SAF_Afrikaner_British_Division3
-				}
-				remove_ideas = SAF_Afrikaner_British_Division3
-			}
-			if = {
-				limit = {
-					has_idea = SAF_Afrikaner_British_Union2
-				}
-				remove_ideas = SAF_Afrikaner_British_Union2
+			swap_ideas = {
+					remove_idea = SAF_Afrikaner_British_Division2
+					add_idea = SAF_Afrikaner_British_Division3
 			}
 			add_ideas = SAF_Union_Of_South_Africa
 		}

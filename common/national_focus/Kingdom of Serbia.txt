@@ -644,7 +644,7 @@ focus_tree = {
 	focus = {
 		id = SER_Form_The_Drina_Divisions
 		icon = GFX_focus_HUN_szent_laszlo_infantry_division
-		cost = 10
+		cost = 7.2
 		x = 17
 		y = 0
 		completion_reward = {
@@ -659,6 +659,7 @@ focus_tree = {
 					militia = { x = 1 y = 0 }
 					militia = { x = 1 y = 1 }
 					militia = { x = 1 y = 2 }
+					militia = { x = 1 y = 3 }
 					militia = { x = 2 y = 0 }
 					militia = { x = 2 y = 1 }
 					militia = { x = 2 y = 2 }
@@ -666,10 +667,58 @@ focus_tree = {
 
 				support = {
 					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
+					machine_gun = { x = 0 y = 1 }
 				}
 			}
 			107 = {
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
 				create_unit = {
 					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
 					owner = SER
@@ -688,7 +737,7 @@ focus_tree = {
 	focus = {
 		id = SER_The_Most_Elite
 		icon = GFX_goal_generic_military_sphere
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_Form_The_Drina_Divisions
 		x = 0
 		y = 1
@@ -702,7 +751,7 @@ focus_tree = {
 	focus = {
 		id = SER_Chetnik_Volunteers
 		icon = GFX_focus_RAJ_a_private_military
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_The_Most_Elite
 		x = -1
 		y = 1
@@ -719,7 +768,7 @@ focus_tree = {
 	focus = {
 		id = SER_Iron_Regiments
 		icon = GFX_focus_SWE_counter_revolution
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_The_Most_Elite
 		x = 1
 		y = 1
@@ -741,6 +790,7 @@ focus_tree = {
 					militia = { x = 1 y = 0 }
 					militia = { x = 1 y = 1 }
 					militia = { x = 1 y = 2 }
+					militia = { x = 1 y = 3 }
 					militia = { x = 2 y = 0 }
 					militia = { x = 2 y = 1 }
 					militia = { x = 2 y = 2 }
@@ -748,7 +798,7 @@ focus_tree = {
 
 				support = {
 					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
+					machine_gun = { x = 0 y = 1 }
 				}
 			}
 
@@ -758,7 +808,7 @@ focus_tree = {
 	focus = {
 		id = SER_Militia_Buff1
 		icon = GFX_focus_generic_military_mission
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_The_Most_Elite
 		x = 0
 		y = 2
@@ -771,26 +821,13 @@ focus_tree = {
 				remove_idea = SER_Drina_Elite_Infantry
 				add_idea = SER_Drina_Elite_Infantry1
 			}
-			107 = {
-				create_unit = {
-					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
-					owner = SER
-					prioritize_location = 11586
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
-					owner = SER
-					prioritize_location = 11586
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
+			add_manpower = 50000
 		}
 	}
 	focus = {
 		id = SER_Militia_Buff2
 		icon = GFX_focus_AFG_royal_guard
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_Militia_Buff1
 		x = 0
 		y = 1
@@ -802,12 +839,13 @@ focus_tree = {
 				remove_idea = SER_Drina_Elite_Infantry1
 				add_idea = SER_Drina_Elite_Infantry2
 			}
+			add_manpower = 50000
 		}
 	}
 	focus = {
 		id = SER_Militia_Buff3
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_Militia_Buff2
 		x = 0
 		y = 1
@@ -819,12 +857,13 @@ focus_tree = {
 				remove_idea = SER_Drina_Elite_Infantry2
 				add_idea = SER_Drina_Elite_Infantry3
 			}
+			add_manpower = 50000
 		}
 	}
 	focus = {
 		id = SER_Militants_Of_Serbia
 		icon = GFX_focus_generic_monarchist_sentiment
-		cost = 10
+		cost = 7.2
 		relative_position_id = SER_Militia_Buff3
 		x = 0
 		y = 1
@@ -836,16 +875,66 @@ focus_tree = {
 				remove_idea = SER_Drina_Elite_Infantry2
 				add_idea = SER_Drina_Elite_Infantry3
 			}
+			division_template = {
+				name = "Potiskivači Divizije"
+				is_locked = no
 
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+				}
+
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+				}
+			}
 			107 = {
 				create_unit = {
-					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Potiskivači Divizije \" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
 					owner = SER
 					prioritize_location = 11586
 					allow_spawning_on_enemy_provs = yes
 				}
 				create_unit = {
-					division = "name = \"Drinska Divizija\" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					division = "name = \"Potiskivači Divizije \" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Potiskivači Divizije \" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Potiskivači Divizije \" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Potiskivači Divizije \" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = SER
+					prioritize_location = 11586
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Potiskivači Divizije \" division_template = \"Drinska Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
 					owner = SER
 					prioritize_location = 11586
 					allow_spawning_on_enemy_provs = yes

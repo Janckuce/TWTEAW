@@ -4,10 +4,10 @@ USA_Gain_Techs_Category = {
 
 		allowed = {
 			tag = USA
-			is_ai = no
 		}
 
 		available = {
+			is_ai = no # not allowed in allowed{} block, moved here
 			date > 1914.7.28
 			NOT = {
 				has_completed_focus = USA_starting_focus
@@ -58,10 +58,10 @@ USA_Gain_Techs_Category = {
 
 		allowed = {
 			tag = USA
-			is_ai = no
 		}
 
 		available = {
+			is_ai = no
 			date > 1915.1.1
 			NOT = {
 				has_completed_focus = USA_starting_focus
@@ -94,10 +94,10 @@ USA_Gain_Techs_Category = {
 
 		allowed = {
 			tag = USA
-			is_ai = no
 		}
 
 		available = {
+			is_ai = no
 			date > 1916.1.1
 			NOT = {
 				has_completed_focus = USA_starting_focus
@@ -137,13 +137,13 @@ USA_Gain_Techs_Category = {
 		icon = GFX_decision_generic_research
 		allowed = {
 			tag = USA
-			is_ai = no
 			NOT = {
 				has_completed_focus = USA_starting_focus
 			}
 		}
 
 		available = {
+			is_ai = no
 			date > 1917.1.1
 			NOT = {
 				has_completed_focus = USA_starting_focus

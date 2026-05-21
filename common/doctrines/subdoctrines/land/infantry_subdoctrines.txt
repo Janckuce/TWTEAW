@@ -66,7 +66,7 @@ great_war_infantry = {
     description = SUBDOCTRINE_GREAT_WAR_INFANTRY_DESC
     icon = GFX_doctrine_great_war_infantry_medium
 
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -111,7 +111,7 @@ large_unit_tactics = {
     description = SUBDOCTRINE_LARGE_UNIT_TACTICS_DESC
     icon = GFX_doctrine_human_infantry_offensive_medium
 
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -186,7 +186,7 @@ assault_infantry = {
     description = SUBDOCTRINE_ASSAULT_INFANTRY_DESC
     icon = GFX_doctrine_grand_assault_medium
 
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -249,7 +249,7 @@ mounted_infantry = {
     description = SUBDOCTRINE_MOUNTED_INFANTRY_DESC
     icon = GFX_doctrine_mounted_infantry_medium
 
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
 
@@ -327,7 +327,7 @@ commandos = {
     description = SUBDOCTRINE_COMMANDOS_DESC
     icon = GFX_doctrine_commandos_medium
 
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -366,7 +366,6 @@ commandos = {
             experience_loss_factor = -0.15
         }
         security_zone_operations = {
-            special_forces_cap = 0.25
             special_forces_min = 32
         }
         rigorous_training_regimen = {
@@ -374,7 +373,7 @@ commandos = {
         }
 
         field_intel_retrieval = {
-            intel_from_combat_factor = 2
+            special_forces_min = 24
         }
 
         integrated_assaults = {
@@ -389,7 +388,7 @@ irregulars = {
     description = SUBDOCTRINE_IRREGULARS_DESC
     icon = GFX_doctrine_irregulars_medium
 
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -450,7 +449,7 @@ irregulars = {
 #     description = SUBDOCTRINE_PEOPLES_WAR_DESC
 #     icon = GFX_doctrine_peoples_war_medium
    
-#     xp_cost = 50
+#     xp_cost = 20
 #     xp_type = army
 
 #     available = {

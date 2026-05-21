@@ -1,5 +1,7 @@
 ﻿capital = 276
 
+set_oob = "CAN_1911"
+
 # Starting tech
 set_technology = {
     #Infantry
@@ -19,12 +21,18 @@ set_technology = {
 	#Industry
 	ww1_fuel_storage = 1
 
-	### Naval Tech ### - ONLY FOR MAJORS
+### Naval Tech ###
+
 	ww1_destroyer_1 = 1
 	ww1_light_cruiser_1 = 1
 	ww1_heavy_cruiser_1 = 1
 	ww1_dreadnought_1 = 1
 	mtg_transport = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	ww1_naval_engines_1 = 1
+	ww1_dreadnought_armor_1 = 1
+
 	
 }
 
@@ -63,13 +71,17 @@ add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
 }
+add_timed_idea = {
+    idea = no_attrition
+    days = 1305
+}
 
 	country_event = { id = ww1_canada.1 days = 242 }
 
 set_convoys = 100
 
 set_research_slots = 3
-set_stability = 0.52
+set_stability = 0.72
 set_war_support = 0.07
 
 # End of Party Popularity, Stability, War Support and other ##

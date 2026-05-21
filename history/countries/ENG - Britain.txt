@@ -25,14 +25,18 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
-### Naval Tech ### - ONLY FOR MAJORS
-	set_technology = {
-		ww1_destroyer_1 = 1
-		ww1_light_cruiser_1 = 1
-		ww1_heavy_cruiser_1 = 1
-		ww1_dreadnought_1 = 1
-		mtg_transport = 1
-	}
+### Naval Tech ###
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	ww1_naval_engines_1 = 1
+	ww1_dreadnought_armor_1 = 1
+}
 
 
 puppet = RAJ
@@ -58,6 +62,10 @@ add_ideas = {
 add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
+}
+add_timed_idea = {
+    idea = no_attrition
+    days = 1305
 }
 
 recruit_character = ENG_george_V
@@ -97,7 +105,7 @@ set_popularities = {
 
 set_convoys = 2000
 
-set_research_slots = 4
+set_research_slots = 5
 set_stability = 0.8
 set_war_support = 0.5
 

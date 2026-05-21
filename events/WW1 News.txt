@@ -321,11 +321,27 @@ news_event = {
 	picture = GFX_news_event_peter_stolypin_assassinated
 	
 	major = yes
-
+	
 	is_triggered_only = yes
 
 	option = {
 		name = ww1_news.18.a
+	}
+}
+
+#Peter Stolypin Survived
+news_event = {
+	id = ww1_news.52
+	title = ww1_news.52.t
+	desc = ww1_news_desc.52
+	picture = GFX_news_event_peter_stolypin_assassinated
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.52.a
 	}
 }
 
@@ -1016,9 +1032,9 @@ news_event = {
 
 #Fortifications Doctrine Unlock
 news_event = {
-	id = ww1_news.52
-	title = ww1_news.52.t
-	desc = ww1_news_desc.52
+	id = ww1_news.53
+	title = ww1_news.53.t
+	desc = ww1_news_desc.53
 	picture = GFX_news_event_001
 	
 	major = yes
@@ -1026,6 +1042,7 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ww1_news.52.a
+		name = ww1_news.53.a
+		set_sub_doctrine = field_engineering
 	}
 }

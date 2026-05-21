@@ -41,7 +41,7 @@ equipments = {
 			}
 			fixed_ship_radar_slot = {
 				required = no
-				allowed_module_categories = { ship_radar ship_sonar }
+				allowed_module_categories = { }
 			}
 			fixed_ship_engine_slot = {
 				required = yes
@@ -128,7 +128,7 @@ equipments = {
 		reliability = 0.80
 		
 		naval_range = 2500
-		naval_dominance_factor = 200
+		naval_dominance_factor = 100
 		max_strength = 100		
 		
 
@@ -141,7 +141,6 @@ equipments = {
 		
 		manpower = 600
 
-		naval_dominance_factor = 100
 
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
 		#MIO stat modifers will factory by the unmodified stat value so here a 0.5 mio stat modifier would make this ships naval_weather_penalty_factor stat 1.5.
@@ -426,17 +425,18 @@ equipments = {
 		
 		anti_air_attack = 0
 		
+		max_strength = 120
 		armor_value = 5
-
+		naval_dominance_factor = 100
 		
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
 		naval_speed = 29
 		reliability = 0.8
+		build_cost_ic = 1550
 		resources = {
-			#oil = 1
-			steel = 2
+			steel = 3
 		}
 	}
 
@@ -448,14 +448,14 @@ equipments = {
 		parent = light_cruiser_1
 		module_slots = inherit
 		default_modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			mid_1_custom_slot = ship_torpedo_2
-			mid_2_custom_slot = ship_anti_air_3
-			rear_1_custom_slot = ship_light_medium_battery_2
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -473,8 +473,8 @@ equipments = {
 		reliability = 0.85
 
 		naval_range = 3000
-		naval_dominance_factor = 200
-		max_strength = 120
+		naval_dominance_factor = 100
+		max_strength = 135
 		
 
 		
@@ -484,7 +484,6 @@ equipments = {
 		}
 		build_cost_ic = 1650
 		resources = {
-			#oil = 1
 			steel = 3
 		}
 		manpower = 800
@@ -498,14 +497,14 @@ equipments = {
 		
 		module_slots = inherit
 		default_modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_3
-			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_3
-			mid_1_custom_slot = ship_torpedo_3
-			mid_2_custom_slot = ship_anti_air_3
-			rear_1_custom_slot = ship_light_medium_battery_3
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -523,8 +522,8 @@ equipments = {
 		reliability = 0.90
 
 		naval_range = 4000
-		naval_dominance_factor = 200
-		max_strength = 140
+		naval_dominance_factor = 100
+		max_strength = 150
 		
 
 		
@@ -534,7 +533,6 @@ equipments = {
 		}
 		build_cost_ic = 1700
 		resources = {
-			#oil = 2
 			steel = 3
 		}
 		manpower = 960
@@ -549,14 +547,14 @@ equipments = {
 		
 		module_slots = inherit
 		default_modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_4
-			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_3
-			mid_1_custom_slot = ship_torpedo_4
-			mid_2_custom_slot = ship_anti_air_4
-			rear_1_custom_slot = ship_light_medium_battery_4
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 		lg_armor_piercing = 0
 		lg_attack = 0
@@ -575,7 +573,7 @@ equipments = {
 
 		naval_range = 4500
 		naval_dominance_factor = 100
-		max_strength = 160
+		max_strength = 170
 		
 
 		
@@ -585,9 +583,7 @@ equipments = {
 		}
 		build_cost_ic = 2000
 		resources = {
-			#oil = 2
-			steel = 4
-			chromium = 1
+			steel = 3
 		}
 		manpower = 1140
 	}
@@ -665,13 +661,13 @@ equipments = {
 		}
 		default_modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = ship_anti_air_3
+			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_medium_battery_1
 		}
 		lg_armor_piercing = 0
@@ -695,15 +691,15 @@ equipments = {
 		
 		naval_range = 3000
 		naval_dominance_factor = 200
-		max_strength = 150
+		max_strength = 160
 		
 
 		fuel_consumption = 1.65
 		
 		build_cost_ic = 2200
 		resources = {
-			#oil = 1
 			steel = 3
+			chromium = 1
 		}
 		
 		manpower = 1500
@@ -717,15 +713,15 @@ equipments = {
 		parent = heavy_cruiser_1
 		module_slots = inherit
 		default_modules = {
-			fixed_ship_battery_slot = ship_medium_battery_2
-			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_secondaries_2
-			mid_2_custom_slot = ship_anti_air_3
-			rear_1_custom_slot = ship_medium_battery_2
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
 		}
 		hg_armor_piercing = 0
 		hg_attack = 0
@@ -746,14 +742,14 @@ equipments = {
 
 		naval_range = 4000
 		naval_dominance_factor = 200
-		max_strength = 175
+		max_strength = 180
 		
 
 
-		build_cost_ic = 2600
+		build_cost_ic = 2400
 		resources = {
-			#oil = 1
-			steel = 4
+			steel = 3
+			chromium = 1
 		}		
 		manpower = 1700
 	}
@@ -766,16 +762,16 @@ equipments = {
 		parent = heavy_cruiser_2
 		module_slots = inherit
 		default_modules = {
-			fixed_ship_battery_slot = ship_medium_battery_3
-			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_secondaries_2
-			mid_2_custom_slot = ship_anti_air_4
-			rear_1_custom_slot = ship_medium_battery_3
-			rear_2_custom_slot = ship_anti_air_4
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+			rear_2_custom_slot = ship_anti_air_1
 		}
 		hg_armor_piercing = 0
 		hg_attack = 0
@@ -796,14 +792,14 @@ equipments = {
 
 		naval_range = 4500
 		naval_dominance_factor = 200
-		max_strength = 200
+		max_strength = 210
 		
 
 
-		build_cost_ic = 3000
+		build_cost_ic = 2600
 		resources = {
-			#oil = 2
-			steel = 4
+			steel = 3
+			chromium = 1
 		}		
 		manpower = 1900
 	}
@@ -816,17 +812,17 @@ equipments = {
 		parent = heavy_cruiser_3
 		module_slots = inherit
 		default_modules = {
-			fixed_ship_battery_slot = ship_medium_battery_4
-			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			front_1_custom_slot = ship_anti_air_4
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			front_1_custom_slot = ship_anti_air_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = dp_ship_secondaries_3
-			mid_2_custom_slot = dp_ship_secondaries_3
-			rear_1_custom_slot = ship_medium_battery_4
-			rear_2_custom_slot = ship_anti_air_4
+			mid_1_custom_slot = dp_ship_secondaries_1
+			mid_2_custom_slot = dp_ship_secondaries_1
+			rear_1_custom_slot = ship_medium_battery_1
+			rear_2_custom_slot = ship_anti_air_1
 		}
 		hg_armor_piercing = 0
 		hg_attack = 0
@@ -847,14 +843,13 @@ equipments = {
 
 		naval_range = 5000
 		naval_dominance_factor = 200
-		max_strength = 225
+		max_strength = 240
 		
 
 
-		build_cost_ic = 3400
+		build_cost_ic = 2800
 		resources = {
-			#oil = 2
-			steel = 5
+			steel = 3
 			chromium = 1
 		}		
 		manpower = 2200
@@ -1218,10 +1213,11 @@ equipments = {
 		sub_attack = 0
 		
 		anti_air_attack = 0
-		naval_dominance_factor = 100
+		naval_dominance_factor = 120
+		max_strength = 120
 		armor_value = 5
 
-		build_cost_ic = 3500
+		build_cost_ic = 3600
 		surface_detection = 15
 		sub_detection = 5
 		surface_visibility = 15
@@ -1229,7 +1225,7 @@ equipments = {
 		reliability = 0.8
 		resources = {
 			#oil = 1
-			steel = 2
+			steel = 3
 		}
 	}
 	
@@ -1254,15 +1250,15 @@ equipments = {
 		naval_speed = 30
 		reliability = 0.85
 
-		naval_range = 3000
+		naval_range = 3800
 		naval_dominance_factor = 100
-		max_strength = 120
+		max_strength = 135
 		
 		type = { 
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 4500
+		build_cost_ic = 3800
 		resources = {
 			#oil = 1
 			steel = 3
@@ -1294,7 +1290,7 @@ equipments = {
 
 		naval_range = 4000
 		naval_dominance_factor = 100
-		max_strength = 140
+		max_strength = 150
 		
 
 		
@@ -1302,7 +1298,7 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 5000
+		build_cost_ic = 4000
 		resources = {
 			#oil = 2
 			steel = 3
@@ -1333,7 +1329,7 @@ equipments = {
 
 		naval_range = 4500
 		naval_dominance_factor = 100
-		max_strength = 160
+		max_strength = 170
 		
 
 		
@@ -1341,11 +1337,10 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 5500
+		build_cost_ic = 4200
 		resources = {
 			#oil = 2
-			steel = 4
-			chromium = 1
+			steel = 3
 		}
 		manpower = 1140
 	}

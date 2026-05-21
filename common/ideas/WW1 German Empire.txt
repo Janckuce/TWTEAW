@@ -244,10 +244,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = RUS
-				attack_bonus_against = -0.15
-			}
-			modifier = {
-				army_strength_factor = 0.40
+				attack_bonus_against = -0.20
 			}
 		}
 		GER_Helmuth_Plan = {
@@ -381,7 +378,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = 0.2 instant = yes
+					build_cost_ic = 0.1 instant = yes
 					soft_attack = 0.10 instant = yes
 					reliability = 0.10 instant = yes
 				}
@@ -404,7 +401,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = 0.05 instant = yes
+					build_cost_ic = 0.02 instant = yes
 					soft_attack = 0.05 instant = yes
 					reliability = 0.05 instant = yes
 				}
@@ -626,7 +623,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.25
+					build_cost_ic = -0.25 instant = yes
 				}
 			}
 		}
@@ -777,11 +774,14 @@ ideas = {
 			
 			research_bonus = {
 				industry = 0.05
-				synth_resources = 0.15
+				synth_resources = 0.25
 			}
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_steel_refinery_factor = 0.15
+				production_speed_coal_refinery_factor = 0.15 
+				production_speed_sulfur_refinery_factor = 0.15 
 				production_speed_fuel_silo_factor = 0.1
 			}
 			
@@ -801,7 +801,7 @@ ideas = {
 			cost = 150
 			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.25
 			}
 
 			traits = { industrial_concern }
@@ -820,7 +820,7 @@ ideas = {
 			cost = 150
 			
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.30
 			}
 			
 			traits = { electronics_concern }
@@ -837,7 +837,7 @@ ideas = {
 			cost = 150
 
 			research_bonus = {
-				excavation_tech = 0.15
+				excavation_tech = 0.35
 			}
 			
 			traits = { mining_company }

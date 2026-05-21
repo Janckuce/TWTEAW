@@ -1,18 +1,18 @@
 
-FRA_France_Guide = {
-	FRA_Country_Guide = {
-		fire_only_once = no
-		allowed = {
-			tag = FRA
-		}
-		available = {
-			tag = FRA
-		}
-		complete_effect = {
-			country_event = france_guide.1
-		}
-	}
-}
+# FRA_France_Guide = {
+# 	FRA_Country_Guide = {
+# 		fire_only_once = no
+# 		allowed = {
+# 			tag = FRA
+# 		}
+# 		available = {
+# 			tag = FRA
+# 		}
+# 		complete_effect = {
+# 			country_event = france_guide.1
+# 		}
+# 	}
+# }
 
 FRA_Political_Stability_Category = {
 	# Mainland France
@@ -346,6 +346,459 @@ FRA_Political_Stability_Category = {
 					days = 30
 				}
 			}
+		}
+	}
+
+
+	FRA_spawn_divisions = {
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			has_war_with = GER
+			OR = {
+				NOT = {
+					controls_state = 18 #Verdun State fell
+				}
+				NOT = {
+					controls_state = 785 #Picardy fell
+				}
+				NOT = {
+					controls_state = 27 #Bourgogne fell
+				}
+				NOT = {
+					controls_state = 933 #Champagne fell
+				}
+			}
+		}
+	
+		complete_effect = {
+			add_stability = -0.3
+			add_timed_idea = {
+				idea = FRA_mobilization_effect
+				days = 120
+			}
+
+			FRA = {
+				division_template = {
+					name = "Infantry Division"
+					division_names_group = FRA_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Paris
+			15 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9434
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9434
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9434
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9578
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9578
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9578
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3549
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3549
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3549
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+			
+			16 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9523
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9523
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9523
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11506
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9725
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9725
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9725
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+			24 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 512
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 512
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 512
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3493
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3493
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3493
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6688
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6688
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6688
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11611
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11611
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11611
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+			27 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9609
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9609
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9609
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+			26 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3594
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3594
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3594
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+			20 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11593
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11593
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11593
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6613
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6613
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6613
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+			32 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3589
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3589
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3589
+					allow_spawning_on_enemy_provs = no
+				}
+
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6784
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6784
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6784
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+			735 = {
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11573
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11573
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11573
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
 		}
 	}
 }

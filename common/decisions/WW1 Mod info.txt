@@ -1,0 +1,67 @@
+Mod_info_category = {
+
+	basic_mod_info_decision = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			country_event = startup_advice.1
+		}
+	}
+
+	mod_info_decision = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			country_event = ww1_mod_info.1
+		}
+	}
+
+	GER_Country_Guide = {
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		available = {
+			tag = GER
+		}
+		complete_effect = {
+			country_event = germany_guide.1
+		}
+	}
+
+	FRA_Country_Guide = {
+		fire_only_once = no
+		allowed = {
+			tag = FRA
+		}
+		available = {
+			tag = FRA
+		}
+		complete_effect = {
+			country_event = france_guide.1
+		}
+	}
+
+	BEL_Country_Guide = {
+		fire_only_once = no
+		allowed = {
+			tag = BEL
+		}
+		available = {
+			tag = BEL
+		}
+		complete_effect = {
+			country_event = belgium_guide.1
+		}
+	}
+}

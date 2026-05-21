@@ -4,7 +4,7 @@ set_oob = "TUR_1911"
 
 set_naval_oob = "TUR_1911_Naval"
 
-starting_train_buffer = 1
+starting_train_buffer = 1.5
 
 add_ideas = {
 	Berlin_Baghdad_railway_initiative
@@ -17,6 +17,10 @@ add_ideas = {
 add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
+}
+add_timed_idea = {
+    idea = no_attrition
+    days = 290
 }
 
 recruit_character = TUR_besinci_mehmet
@@ -60,14 +64,18 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
-### Naval Tech ### - ONLY FOR MAJORS
-	set_technology = {
-		ww1_destroyer_1 = 1
-		ww1_light_cruiser_1 = 1
-		ww1_heavy_cruiser_1 = 1
-		ww1_dreadnought_1 = 1
-		mtg_transport = 1
-	}
+### Naval Tech ###
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	ww1_naval_engines_1 = 1
+	ww1_dreadnought_armor_1 = 1
+}
 
 ##### Party Popularity, Stability, War Support and other #####
 
@@ -87,6 +95,6 @@ set_popularities = {
 
 set_convoys = 300
 
-set_research_slots = 2
+set_research_slots = 3
 set_stability = 0.3
 set_war_support = 0.1

@@ -4,19 +4,18 @@ field_engineering = {
     description = SUBDOCTRINE_FIELD_ENGINEERING_DESC
     icon = GFX_doctrine_field_engineering_medium
 
-    xp_cost = 50
     xp_type = army
 
     available = {
         date > 1914.9.15
     }
 
-    bunker_max_level_terrain_limit = 2
+    bunker_max_level_terrain_limit = 1
 
 	
     rewards = {
         rapid_fire_lane_clearance = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
         }
         sapper_fieldcraft = {
             bunker_max_level_terrain_limit = 2
@@ -25,7 +24,7 @@ field_engineering = {
             bunker_max_level_terrain_limit = 2
         }
         smoke_projector_training = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
         }
         charge_and_flame = {
             bunker_max_level_terrain_limit = 2
@@ -40,7 +39,7 @@ last_stand = {
     description = SUBDOCTRINE_LAST_STAND_DESC
     icon = GFX_doctrine_last_stand_medium
     #TODO: Add trigger tag for surrender progress
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -52,11 +51,12 @@ last_stand = {
 
 
     # PREVIOUS DOCTRINE LEGACY
-    bunker_max_level_terrain_limit = 12 
+    bunker_max_level_terrain_limit = 9 
 
     rewards = {
         werwolf_groups = {
             army_core_defence_factor = 0.15
+            bunker_max_level_terrain_limit = 1
         }
 
         pocket_consolidation = {
@@ -65,7 +65,8 @@ last_stand = {
         }
         digging_in = {
             land_reinforce_rate = 0.05
-            max_dig_in = 5
+            max_dig_in = 3
+            bunker_max_level_terrain_limit = 2
         }
         stocking_up = {
             equipment_capture_factor = 0.1
@@ -84,7 +85,7 @@ guerilla_war = {
     description = SUBDOCTRINE_GUERILLA_WAR_DESC
     icon = GFX_doctrine_guerilla_warfare_medium
     
-    xp_cost = 50
+    xp_cost = 20
     xp_type = army
 
     available = {
@@ -95,7 +96,7 @@ guerilla_war = {
 
 
     # PREVIOUS DOCTRINE LEGACY
-    bunker_max_level_terrain_limit = 12
+    bunker_max_level_terrain_limit = 9
 
     rewards = {
         catch_and_seize = {

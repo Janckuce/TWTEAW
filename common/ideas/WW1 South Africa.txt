@@ -15,7 +15,7 @@ ideas = {
 		SAF_The_Boer_Wars = {
 			picture = air_war_plans_division_focus
 			modifier = {
-				surrender_limit = 0.95
+				surrender_limit = 0.1
 			}
 		}
 		SAF_Afrikaner_British_Division = {
@@ -116,27 +116,7 @@ ideas = {
 				}
 			}
 		}
-		SAF_Afrikaner_British_Union = {
-			modifier = {
-				stability_factor = -0.35
-				war_support_factor = -0.25
-				research_speed_factor = -0.1
-			}
-		}
-		SAF_Afrikaner_British_Union1 = {
-			modifier = {
-				stability_factor = -0.3
-				war_support_factor = -0.2
-				industrial_capacity_factory = 0.1
-			}
-		}
-		SAF_Afrikaner_British_Union2 = {
-			modifier = {
-				stability_factor = -0.20
-				war_support_factor = -0.15
-				industrial_capacity_factory = 0.15
-			}
-		}
+
 		SAF_Union_Of_South_Africa = {
 			picture = saf_decree
 			modifier = {

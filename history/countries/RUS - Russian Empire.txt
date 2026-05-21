@@ -6,7 +6,7 @@ set_naval_oob = "RUS_1911_Naval"
 
 recruit_character = RUS_nicholas_II
 recruit_character = RUS_nicholas_II_fas
-recruit_character = rus_dmitry_shcherbachev
+recruit_character = RUS_Dmitry_Shcherbachev
 recruit_character = RUS_ivan_shcheglovitov
 recruit_character = RUS_mikhail_alekseyev
 recruit_character = RUS_kolach
@@ -17,23 +17,26 @@ recruit_character = RUS_vladimir_lenin
 recruit_character = RUS_various_leaders
 recruit_character = RUS_nikolai_ruzsky
 recruit_character = RUS_nikolai_nikolaevich
-recruit_character = RUS_pavel_milyukov
 recruit_character = RUS_aleksei_brusilov
 recruit_character = RUS_aleksei_kaledin
 recruit_character = RUS_anton_denikin
 recruit_character = RUS_lavr_kornilov
 recruit_character = RUS_nikolai_yudenich
 recruit_character = RUS_pyotr_krasnov
-recruit_character = RUS_sergey_markov
 recruit_character = RUS_vladimir_sakharov
-recruit_character = RUS_boris_savinkov
+recruit_character = RUS_character_Boris_Savinkov
 recruit_character = RUS_aleksei_putilov
 recruit_character = RUS_vladimir_sukhomlinov
 recruit_character = RUS_josif_stalin
 recruit_character = RUS_viktor_chernov
-recruit_character = RUS_irakli_tsereteli
+recruit_character = RUS_character_SR_Viktor_Chernov_leader # distinct from the political advisor to allow a different trait
+recruit_character = RUS_Alexander_Guchkov
+recruit_character = RUS_pavel_milyukov
+recruit_character = RUS_Alexander
+recruit_character = RUS_Mikhail_Rodzianko
+recruit_character = RUS_Pyotr_Struve
 
-starting_train_buffer = 3.0
+starting_train_buffer = 1.5
 
 # Starting tech
 set_technology = {
@@ -54,14 +57,18 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
-### Naval Tech ### - ONLY FOR MAJORS
-	set_technology = {
-		ww1_destroyer_1 = 1
-		ww1_light_cruiser_1 = 1
-		ww1_heavy_cruiser_1 = 1
-		ww1_dreadnought_1 = 1
-		mtg_transport = 1
-	}
+### Naval Tech ###
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	ww1_naval_engines_1 = 1
+	ww1_dreadnought_armor_1 = 1
+}
 
 add_ideas = {
 	RUS_3_Less_Forts
@@ -69,10 +76,15 @@ add_ideas = {
 	RUS_Lack_Of_Scientists
 	RUS_Dated_Warfare
 	RUS_Bolshevik_Sabotage
+	RUS_rasputin_idea
 }
 add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
+}
+add_timed_idea = {
+    idea = no_attrition
+    days = 1305
 }
 
 ##### Party Popularity, Stability, War Support and other #####
@@ -98,3 +110,29 @@ set_stability = 0.3
 set_war_support = 0.15
 
 # End of Party Popularity, Stability, War Support and other ##
+
+# Russian Army variables and dynamic modifier addition
+add_dynamic_modifier = { modifier = RUS_dynamic_modifier_Russian_Army }
+
+set_variable = { RUS_var_army_inf_attack_factor = 0 }
+set_variable = { RUS_var_army_inf_defense_factor = 0 }
+set_variable = { RUS_var_army_supply_consumption_factor = 0 }
+set_variable = { RUS_var_army_out_of_supply = 0 }
+set_variable = { RUS_var_army_org_factor = 0 }
+set_variable = { RUS_var_army_initiative_factor = 0 }
+set_variable = { RUS_var_army_training_time = 0 }
+set_variable = { RUS_var_army_min_training_level = 0 }
+set_variable = { RUS_var_army_xp_loss_factor = 0 }
+set_variable = { RUS_var_army_org_regain = 0 }
+set_variable = { RUS_var_army_breakthrough = 0 }
+set_variable = { RUS_var_army_cas_dmg_reduction = 0 }
+set_variable = { RUS_var_army_cav_attack_factor = 0 }
+set_variable = { RUS_var_army_art_attack_factor = 0 }
+set_variable = { RUS_var_army_art_defense_factor = 0 }
+set_variable = { RUS_var_army_hp = 0 }
+set_variable = { RUS_var_army_morale_factor = 0 }
+set_variable = { RUS_var_army_coordination = 0 }
+set_variable = { RUS_var_army_reinforce_rate = 0 }
+set_variable = { RUS_var_army_org_factor = 0 }
+set_variable = { RUS_var_army_div_attack_factor = 0 }
+set_variable = { RUS_var_army_div_defense_factor = 0 }

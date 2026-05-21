@@ -22,6 +22,19 @@ set_technology = {
 	ww1_fuel_storage = 1
 }
 
+### Naval Tech ###
+set_technology = {
+	ww1_destroyer_1 = 1
+	ww1_light_cruiser_1 = 1
+	ww1_heavy_cruiser_1 = 1
+	ww1_dreadnought_1 = 1
+	mtg_transport = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	ww1_naval_engines_1 = 1
+	ww1_dreadnought_armor_1 = 1
+}
+
 recruit_character = YEM_saud_bin_abdulaziz
 recruit_character = YEM_fahrettin_saviore
 recruit_character = YEM_the_desert_endurs
@@ -58,6 +71,10 @@ add_ideas = {
 add_timed_idea = {
     idea = starting_production_efficiency
     days = 5
+}
+add_timed_idea = {
+    idea = no_attrition
+    days = 1305
 }
 
 set_research_slots = 2
