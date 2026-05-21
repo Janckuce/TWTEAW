@@ -52,7 +52,7 @@ add_ideas = {
 	ENG_trade_with_usa
 	ENG_irish_resistence
 	ENG_volunteer_only_army
-	isolation
+	ENG_outdated_factories
 	free_trade
 	ENG_weak_government
 	ENG_Army1
@@ -66,6 +66,23 @@ add_timed_idea = {
 add_timed_idea = {
     idea = no_attrition
     days = 1305
+}
+
+113 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 70
+}
+134 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 65
+}
+
+135 = {
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 60
 }
 
 recruit_character = ENG_george_V

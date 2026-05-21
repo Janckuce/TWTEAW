@@ -77,8 +77,6 @@ ideas = {
 			modifier = {
 			    political_power_gain = -0.20
 				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.15
-				production_speed_arms_factory_factor = -0.2
 				experience_gain_navy_factor	= 0.05
 				production_speed_dockyard_factor = 0.2
 				experience_gain_navy = 0.1
@@ -455,8 +453,6 @@ ideas = {
 			modifier = {
 			    political_power_gain = -0.3
 				consumer_goods_factor = 0.3
-				industrial_capacity_factory = -0.4
-				production_speed_arms_factory_factor = -0.3
 				experience_gain_navy_factor	= 0.1
 				production_speed_dockyard_factor = 0.3
 				experience_gain_navy = 0.15
@@ -842,6 +838,140 @@ ideas = {
 				political_power_gain = -0.1
 				consumer_goods_expected_value = 0.15
 				production_speed_dockyard_factor = -0.2
+			}
+		}
+		ENG_outdated_factories = {
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_expected_value = 0.4
+				production_speed_buildings_factor = -0.6
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		ENG_outdated_factories_2 = {
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_expected_value = 0.35
+				production_speed_buildings_factor = -0.4
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.5
+			}
+		}
+		ENG_issued_bonds = {
+			picture = RAJ_issue_bonds_on_the_stock_market
+
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+		ENG_outdated_factories_3 = {
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_expected_value = 0.3
+				production_speed_buildings_factor = -0.3
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.5
+			}
+		}
+		ENG_outdated_factories_4 = {
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_expected_value = 0.2
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.025
+				production_factory_efficiency_gain_factor = -0.05
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		ENG_outdated_factories_5 = {
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		ENG_british_dream = {
+			picture = ARG_envoy_to_london
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ENG_improve_wages = {
+			picture = GER_wage_war_on_capitalism
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_weekly_factor = 0.001
+			}
+		}
+		ENG_improve_conditions = {
+			picture = generic_improved_industries
+
+			modifier = {
+				stability_weekly_factor = 0.002
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ENG_irish_question_spirit = {
+			picture = generic_disjointed_gov
+
+			modifier = {
+				stability_weekly_factor = -0.001
+				political_power_cost = 0.05
+			}
+		}
+		ENG_ric_reinforced = {
+			picture = RAJ_private_military_complex
+
+			modifier = {
+				stability_weekly = 0.001
+				political_power_cost = 0.1
+			}
+		}
+		ENG_redmond_cooperation = {
+			picture = RAJ_just_good_business
+
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		ENG_home_rule_momentum = {
+			picture = BRA_dasp
+			modifier = {
+				stability_weekly = 0.001
+				political_power_gain = 0.1
+				mobilisation_speed = 0.05
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		ENG_irish_volunteer_spirit = {
+			picture = PRC_hundred_regiments_offensive
+			modifier = {
+				training_time_army_factor = -0.1
+				war_support_weekly = 0.001
 			}
 		}
 	}
