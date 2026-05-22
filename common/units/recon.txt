@@ -501,6 +501,12 @@ sub_units = {
 		plains = {
 			movement = 0.05
 		}
+
+		battalion_mult = {
+			category = category_line_artillery
+			soft_attack = 0.12
+		}
+		
 		
 		same_support_type = recon # blocks adding other recon types to template
 	}
