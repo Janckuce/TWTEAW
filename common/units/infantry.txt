@@ -291,7 +291,7 @@ sub_units = {
 			movement = 0.1
 		}
 		mountain = {
-			attack = 0.60
+			attack = 0.45
 			defence = 0.1
 			movement = 0.2
 		}
@@ -447,9 +447,9 @@ sub_units = {
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
-		default_morale = 0.4
+		max_strength = 11
+		max_organisation = 45
+		default_morale = 0.25
 		manpower = 1000
 
 		#Misc Abilities
@@ -466,12 +466,12 @@ sub_units = {
 		forest = {
 			attack = 0.1
 			defence = 0.1
-			movement = 0.15
+			movement = 0.1
 		}
 		jungle = {
-			attack = 0.2
+			attack = 0.15
 			defence = 0.1
-			movement = 0.15
+			movement = 0.1
 		}
 	}
 
