@@ -885,6 +885,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_political_power = -20
+			army_experience = 20
         	134 = {
 				add_resistance = -8
         		add_compliance = -5
@@ -901,7 +902,10 @@ focus_tree = {
 				add_resistance = -4
 				add_compliance = 5
 			}
-    	add_ideas = ENG_ric_reinforced
+		swap_ideas = {
+			remove_idea = ENG_irish_question_spirit
+			add_idea = ENG_ric_reinforced
+		}
     	set_country_flag = ENG_firm_hand
 		}
 	}
@@ -963,6 +967,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
+			add_stability = 0.15
 			add_political_power = -30
 			113 = { 
 				add_compliance = -10
@@ -1037,6 +1042,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
+			add_ideas = ENG_n_ireland_volunteer
 			add_political_power = -40
 			add_stability = 0.1
 			119 = {
