@@ -230,7 +230,7 @@ country_event = {
 	desc = ww1_germany_desc.6
 	picture = GFX_report_event_schlieffen_plan
 
-	mean_time_to_happen = { days = 7}
+	#mean_time_to_happen = { days = 7 } # errors out, mutually exclusive w/ is_triggered_only=yes
 	is_triggered_only = yes
 
 	option = {
@@ -240,6 +240,10 @@ country_event = {
 			declare_war_on = { target = BEL type = annex_everything }
 			declare_war_on = { target = LUX type = annex_everything }
 			news_event = { id = ww1_news.11 days = 1 }
+		}
+
+		ai_chance = {
+			factor = 100
 		}
 	}
 }

@@ -56,10 +56,10 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					#has_tech = early_ship_hull_light
-					#has_tech = early_ship_hull_cruiser
-					#has_tech = early_ship_hull_heavy
-					#techs do not exist
+					has_tech = ww1_destroyer_1
+					has_tech = ww1_light_cruiser_1
+					has_tech = ww1_heavy_cruiser_1
+					has_tech = ww1_dreadnought_1
 					OR = {
 						tag = ENG
 						tag = USA
@@ -116,8 +116,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				#has_tech = basic_ship_hull_light
-				#tech does not exist
+				has_tech = ww1_destroyer_1
 				OR = {
 					tag = ENG
 					tag = USA
@@ -258,7 +257,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = improved_ship_hull_light
+				has_tech = ww1_destroyer_2
 				factor = 20
 			}
 			
@@ -397,7 +396,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = advanced_ship_hull_light
+				has_tech = ww1_destroyer_4
 				factor = 20
 			}
 		}
@@ -443,8 +442,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				#has_tech = basic_ship_hull_heavy
-				#tech does not exist
+				has_tech = ww1_dreadnought_1
 				OR = {
 					tag = ENG
 					tag = USA
@@ -499,7 +497,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = improved_ship_hull_heavy
+				has_tech = ww1_dreadnought_2
 				factor = 20
 			}
 			modifier = {
@@ -562,7 +560,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = advanced_ship_hull_heavy
+				has_tech = ww1_dreadnought_4
 				factor = 20
 			}
 			modifier = {
