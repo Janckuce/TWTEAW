@@ -6,7 +6,6 @@ technologies = {
 		doctrine_name = "TITLE_SPECIAL_FORCES"
 		
 		# EFFECT ########
-		mountaineers_special_forces_contribution_factor = -0.1
 		category_mountaineers = {
 			supply_consumption = -0.02
 		}
@@ -40,9 +39,9 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		allow = {
-				can_unlock_new_special_forces_tree = yes
-		}
+		# allow = {
+		# 		can_unlock_new_special_forces_tree = yes
+		# }
 		
 		categories = {
 			special_forces_doctrine
@@ -432,13 +431,13 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		allow = { 
-				can_unlock_new_special_forces_tree = yes
-		}
+		# allow = { 
+		# 		can_unlock_new_special_forces_tree = yes
+		# }
 		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
+		# on_research_complete = {
+		# 	remove_potential_special_forces_tree = yes
+		# }
 		
 		path = {
 			leads_to_tech = marines_jungle_troops 
@@ -450,7 +449,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		marines_special_forces_contribution_factor = -0.1
 		naval_invasion_division_cap = 2
 		category_special_forces = {
 			max_organisation = 3
@@ -1069,17 +1067,21 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		category_mountaineers = {
-			initiative = 0.01
-		}
-
 		category_marines = {
 			initiative = 0.01
 		}
+		category_mountaineers = {
+			initiative = 0.01
+		}
+		mountaineers_special_forces_contribution_factor = -0.15
+
+
+		marines_special_forces_contribution_factor = -0.15
 
 		category_rangers = {
 			initiative = 0.01
 		}
+		rangers_special_forces_contribution_factor = -0.15
 		
 		path = {
 			leads_to_tech = paras_combat_1
@@ -1408,17 +1410,17 @@ technologies = {
 		research_cost = 2.25
 		
 
-		allow = {
-				can_unlock_new_special_forces_tree = yes
-		}
+		# allow = {
+		# 		can_unlock_new_special_forces_tree = yes
+		# }
 		
 		folder = {
 			name = special_forces_doctrine_folder
 			position = { x = 0 y = 0 }
 		}		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}		
+		# on_research_complete = {
+		# 	remove_potential_special_forces_tree = yes
+		# }		
 	}
 
 	rangers_jaegers_training = {

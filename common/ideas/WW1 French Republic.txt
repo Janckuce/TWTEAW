@@ -10,9 +10,11 @@ ideas = {
 		FRA_Carry_On = {
 			picture = FRA_undividable
 			modifier = {
+				conscription = 0.015
+				war_support_factor = 0.05
 				party_popularity_stability_factor = 0.05
-				line_change_production_efficiency_factor = 0.025
-				production_factory_max_efficiency_factor = 0.025
+				line_change_production_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.06
 				democratic_drift = 0.03
 			}
 		}
@@ -45,6 +47,7 @@ ideas = {
 			picture = GER_limited_democratic_principles
 			modifier = {
 				conscription = 0.03
+				war_support_factor = 0.05
 				communism_drift = 0.03
 			}
 		}
@@ -52,6 +55,7 @@ ideas = {
 			picture = FRA_national_resistance_council
 			modifier = {
 				conscription = 0.025
+				war_support_factor = 0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				fascism_drift = 0.03

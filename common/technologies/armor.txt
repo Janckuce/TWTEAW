@@ -1,54 +1,56 @@
 technologies = {
     #WW1 Tanks
-	ww1_tank_engine_1 = {
-		start_year = 1910
+	# ww1_tank_engine_1 = {
+	# 	start_year = 1910
 		
-		path = {
-			leads_to_tech = ww1_tank_armor_1
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = ww1_tank_armor_1
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 1.5
+	# 	research_cost = 1.5
 
-		folder = {
-			name = armour_folder
-			position = { x = 11 y = 2 }
-		}
+	# 	folder = {
+	# 		name = armour_folder
+	# 		position = { x = 11 y = 2 }
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
-		}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		cat_light_armor
+	# 		mio_cat_tech_light_armor_and_modules
+	# 	}
 		
-		ai_will_do = {
-			factor = 2
+	# 	ai_will_do = {
+	# 		factor = 2
 			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
 			
-			modifier = { #Tank Germany
-				factor = 2
-				tag = GER
-			}
+	# 		modifier = { #Tank Germany
+	# 			factor = 2
+	# 			tag = GER
+	# 		}
 			
-			modifier = { #Tank France
-				factor = 2
-				tag = FRA
-			}
-		}
-	}
+	# 		modifier = { #Tank France
+	# 			factor = 2
+	# 			tag = FRA
+	# 		}
+	# 	}
+	# }
 	
-	ww1_tank_armor_1 = {
-		start_year = 1912
+	ww1_tank_engine_1 = {
+		start_year = 1913
 
-		research_cost = 1.5
+		allow = { date > 1913.01.01 }
+
+		research_cost = 2
 		
 		path = {
-			leads_to_tech = ww1_light_tank_prototype
+			leads_to_tech = ww1_light_tank_1
 			research_cost_coeff = 1
 		}
 		path = {
@@ -62,7 +64,7 @@ technologies = {
 
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 4 }
+			position = { x = 11 y = 6 }
 		}
 
 		categories = {
@@ -156,37 +158,37 @@ technologies = {
 	# 	}
 	# }
 	
-	ww1_light_tank_prototype = {
-		start_year = 1913
+	# ww1_light_tank_prototype = {
+	# 	start_year = 1913
 		
-		path = {
-			leads_to_tech = ww1_light_tank_1
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = ww1_light_tank_1
+	# 		research_cost_coeff = 1
+	# 	}
 
-		research_cost = 1.5
+	# 	research_cost = 1.5
 
-		folder = {
-			name = armour_folder
-			position = { x = 7 y = 6 }
-		}
+	# 	folder = {
+	# 		name = armour_folder
+	# 		position = { x = 7 y = 6 }
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
-		}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		cat_light_armor
+	# 		mio_cat_tech_light_armor_and_modules
+	# 	}
 		
-		ai_will_do = {
-			factor = 2
+	# 	ai_will_do = {
+	# 		factor = 2
 			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 	}
+	# }
 	
 	ww1_light_tank_1 = {
 		start_year = 1914
@@ -200,7 +202,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 
 		folder = {
 			name = armour_folder
@@ -236,7 +238,7 @@ technologies = {
 			research_cost_coeff = 2
 		}
 
-		research_cost = 1.75
+		research_cost = 2
 
 		on_research_complete = {          
 			add_tech_bonus = {
@@ -270,18 +272,18 @@ technologies = {
 	}
 	
 	ww1_medium_tank_frame = {
-		start_year = 1913
+		start_year = 1914
 		
 		path = {
-			leads_to_tech = ww1_medium_tank_prototype
+			leads_to_tech = ww1_medium_tank_1
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2
 
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 6 }
+			position = { x = 11 y = 8 }
 		}
 
 		categories = {
@@ -353,47 +355,47 @@ technologies = {
 	# 	}
 	# }
 	
-	ww1_medium_tank_prototype = {
-		start_year = 1914
+	# ww1_medium_tank_prototype = {
+	# 	start_year = 1914
 		
-		path = {
-			leads_to_tech = ww1_medium_tank_1
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = ww1_medium_tank_1
+	# 		research_cost_coeff = 1
+	# 	}
 
-		research_cost = 1.5
+	# 	research_cost = 1.5
 
-		folder = {
-			name = armour_folder
-			position = { x = 11 y = 8 }
-		}
+	# 	folder = {
+	# 		name = armour_folder
+	# 		position = { x = 11 y = 8 }
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
-		}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		cat_light_armor
+	# 		mio_cat_tech_light_armor_and_modules
+	# 	}
 		
-		ai_will_do = {
-			factor = 2
+	# 	ai_will_do = {
+	# 		factor = 2
 			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
 			
-			modifier = { #Tank Germany
-				factor = 2
-				tag = GER
-			}
+	# 		modifier = { #Tank Germany
+	# 			factor = 2
+	# 			tag = GER
+	# 		}
 			
-			modifier = { #Tank France
-				factor = 2
-				tag = FRA
-			}
-		}
-	}
+	# 		modifier = { #Tank France
+	# 			factor = 2
+	# 			tag = FRA
+	# 		}
+	# 	}
+	# }
 	
 	ww1_medium_tank_1 = {
 		start_year = 1915
@@ -407,7 +409,7 @@ technologies = {
 			ww1_medium_tank_equipment_1
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 
 		folder = {
 			name = armour_folder
@@ -453,7 +455,7 @@ technologies = {
 			research_cost_coeff = 2
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 
 		on_research_complete = {          
 			add_tech_bonus = {
@@ -497,46 +499,14 @@ technologies = {
 	}
 	
 	ww1_heavy_tank_frame = {
-		start_year = 1913
+		start_year = 1914
 		
 		path = {
 			leads_to_tech = ww1_heavy_tank_turret
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-
-		folder = {
-			name = armour_folder
-			position = { x = 15 y = 6 }
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_light_armor
-			mio_cat_tech_light_armor_and_modules
-		}
-		
-		ai_will_do = {
-			factor = 2
-			
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-		}
-	}
-	
-	ww1_heavy_tank_turret = {
-		start_year = 1914
-		
-		path = {
-			leads_to_tech = ww1_heavy_tank_prototype
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
+		research_cost = 2
 
 		folder = {
 			name = armour_folder
@@ -560,15 +530,15 @@ technologies = {
 		}
 	}
 	
-	ww1_heavy_tank_prototype = {
+	ww1_heavy_tank_turret = {
 		start_year = 1915
 		
 		path = {
 			leads_to_tech = ww1_heavy_tank_1
 			research_cost_coeff = 1
 		}
-		
-		research_cost = 1.5
+
+		research_cost = 2
 
 		folder = {
 			name = armour_folder
@@ -592,6 +562,38 @@ technologies = {
 		}
 	}
 	
+	# ww1_heavy_tank_prototype = {
+	# 	start_year = 1915
+		
+	# 	path = {
+	# 		leads_to_tech = ww1_heavy_tank_1
+	# 		research_cost_coeff = 1
+	# 	}
+		
+	# 	research_cost = 1.5
+
+	# 	folder = {
+	# 		name = armour_folder
+	# 		position = { x = 15 y = 10 }
+	# 	}
+
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		cat_light_armor
+	# 		mio_cat_tech_light_armor_and_modules
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 2
+			
+	# 		modifier = {
+	# 			factor = 2
+	# 			is_major = yes
+	# 		}
+	# 	}
+	# }
+	
 	ww1_heavy_tank_1 = {
 		start_year = 1916
 		
@@ -604,7 +606,7 @@ technologies = {
 			ww1_heavy_tank_equipment_1
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 
 		folder = {
 			name = armour_folder
@@ -635,7 +637,7 @@ technologies = {
 			ww1_heavy_tank_equipment_2
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 
 		folder = {
 			name = armour_folder

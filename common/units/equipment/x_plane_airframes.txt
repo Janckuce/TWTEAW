@@ -1491,66 +1491,66 @@ equipments = {
 	  # #  # #  # #  #  #      #    #   #  # #  # #   
 	##   ##   ##   ##   #      #    ### #  # #  # ### 
 
-	scout_plane_equipment_1 = {
-		year = 1936
+	# scout_plane_equipment_1 = {
+	# 	year = 1936
 
-		archetype = medium_plane_scout_plane_airframe
-		priority = 100
+	# 	archetype = medium_plane_scout_plane_airframe
+	# 	priority = 100
 
-		allow_mission_type = {
-			recon
-			naval_patrol
-		}
-		forbid_mission_type = training
+	# 	allow_mission_type = {
+	# 		recon
+	# 		naval_patrol
+	# 	}
+	# 	forbid_mission_type = training
 
-		air_range = 1300
-		maximum_speed = 500
-		air_agility = 25
-		air_attack = 0
-		air_defence = 13
+	# 	air_range = 1300
+	# 	maximum_speed = 500
+	# 	air_agility = 25
+	# 	air_attack = 0
+	# 	air_defence = 13
 
-		build_cost_ic = 20
-		naval_strike_attack = 0
-		naval_strike_targetting = 0
-		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
-		sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
-		resources = {
-			aluminium = 2
-			rubber = 1
-		}
-		air_superiority = 0
-		reliability = 0.8
-		manpower = 40
-		fuel_consumption = 0.26
-	}
+	# 	build_cost_ic = 20
+	# 	naval_strike_attack = 0
+	# 	naval_strike_targetting = 0
+	# 	surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+	# 	sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
+	# 	resources = {
+	# 		aluminium = 2
+	# 		rubber = 1
+	# 	}
+	# 	air_superiority = 0
+	# 	reliability = 0.8
+	# 	manpower = 40
+	# 	fuel_consumption = 0.26
+	# }
 
-	scout_plane_equipment_2 = {
-		year = 1940
+	# scout_plane_equipment_2 = {
+	# 	year = 1940
 
-		archetype = medium_plane_scout_plane_airframe
-		parent = scout_plane_equipment_1
-		priority = 100
+	# 	archetype = medium_plane_scout_plane_airframe
+	# 	parent = scout_plane_equipment_1
+	# 	priority = 100
 
-		air_range = 1700
-		maximum_speed = 550
-		air_agility = 30
-		air_attack = 0
-		air_defence = 15
+	# 	air_range = 1700
+	# 	maximum_speed = 550
+	# 	air_agility = 30
+	# 	air_attack = 0
+	# 	air_defence = 15
 
-		build_cost_ic = 20
-		resources = {
-			aluminium = 3
-			rubber = 1
-		}
-		naval_strike_attack = 0
-		naval_strike_targetting = 0
-		surface_detection = 60 # For airwing of 100 planes (Destroyer I: 20 surface detection)
-		sub_detection = 15 # For airwing of 100 planes (Destroyer I: 5 sub detection )
-		air_superiority = 0
-		reliability = 0.8
-		manpower = 40
-		fuel_consumption = 0.26
-	}
+	# 	build_cost_ic = 20
+	# 	resources = {
+	# 		aluminium = 3
+	# 		rubber = 1
+	# 	}
+	# 	naval_strike_attack = 0
+	# 	naval_strike_targetting = 0
+	# 	surface_detection = 60 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+	# 	sub_detection = 15 # For airwing of 100 planes (Destroyer I: 5 sub detection )
+	# 	air_superiority = 0
+	# 	reliability = 0.8
+	# 	manpower = 40
+	# 	fuel_consumption = 0.26
+	# }
 
 	 ## ### ###   ##  ###     ###   ##  #   # ###  ### ###  
 	#    #  #  # #  #  #      #  # #  # ## ## #  # #   #  # 
@@ -1716,6 +1716,71 @@ equipments = {
 	################################################              GREAT WAR ERA                     ################################################
 	################################################################################################################################################
 	
+	#Scout Plane
+
+	scout_plane_equipment_1 = {
+		year = 1911
+
+		archetype = medium_plane_scout_plane_airframe
+		priority = 100
+
+		allow_mission_type = {
+			recon
+			naval_patrol
+		}
+		forbid_mission_type = training
+
+		air_range = 420
+		maximum_speed = 150
+		air_agility = 7
+		air_attack = 0
+		air_defence = 7
+
+		build_cost_ic = 20
+		naval_strike_attack = 0
+		naval_strike_targetting = 0
+		surface_detection = 70 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+		# sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}
+		air_superiority = 0.1
+		reliability = 0.8
+		manpower = 40
+		fuel_consumption = 0.26
+
+	}
+
+	scout_plane_equipment_2 = {
+		year = 1913
+
+		archetype = medium_plane_scout_plane_airframe
+		parent = scout_plane_equipment_1
+		priority = 100
+
+		air_range = 450
+		maximum_speed = 175
+		air_agility = 8
+		air_attack = 0
+		air_defence = 8
+
+		build_cost_ic = 20
+		resources = {
+			aluminium = 2
+			rubber = 1
+		}
+		naval_strike_attack = 0
+		naval_strike_targetting = 0
+		surface_detection = 100 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+		# sub_detection = 15 # For airwing of 100 planes (Destroyer I: 5 sub detection )
+		air_superiority = 0.1
+		reliability = 0.8
+		manpower = 40
+		fuel_consumption = 0.26
+	}
+
+
 	#Fighters
 	ww1_plane_equipment_1 = {
 		year = 1915
@@ -1728,7 +1793,7 @@ equipments = {
 			interception
 		}
 
-		air_range = 600
+		air_range = 520
 		maximum_speed = 200
 		air_agility = 8
 		air_attack = 20
@@ -1739,7 +1804,6 @@ equipments = {
 
 		upgrades = {
 			plane_gun_upgrade
-			plane_range_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade
 		}
@@ -1774,7 +1838,7 @@ equipments = {
 		parent = ww1_plane_equipment_1
 		priority = 10
 
-		air_range = 700
+		air_range = 560
 		maximum_speed = 220
 		air_agility = 10
 		air_attack = 25
@@ -1958,14 +2022,13 @@ equipments = {
 			naval_patrol
 		}
 
-		air_range = 600
+		air_range = 700
 		maximum_speed = 200
 		air_agility = 11
 		air_attack = 5
 		air_defence = 7
 		upgrades = {
 			plane_naval_upgrade
-			plane_range_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade
 		}
@@ -1996,7 +2059,7 @@ equipments = {
 		parent = ww1_naval_bomber_equipment_1
 		priority = 60
 
-		air_range = 700
+		air_range = 800
 		maximum_speed = 220
 		air_agility = 14
 		air_attack = 6
