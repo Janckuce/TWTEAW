@@ -6,7 +6,7 @@ bookmarks = {
 		picture = "GFX_select_date_1911"
 		default_country = "GER"
 		default = yes
-	
+
 		FRA = {
 			history = FRA_balkan_powder_keg_desc
 			ideology = democratic
@@ -21,7 +21,7 @@ bookmarks = {
 				FRA_Halted_Industrial_Power
 			}
 		}
-			SWI = {
+		SWI = {
 			minor = yes
 			history = FRA_balkan_powder_keg_desc
 			ideology = democratic
@@ -39,12 +39,12 @@ bookmarks = {
 		TUR = {
 			history = TUR_balkan_powder_keg_desc
 			ideology = neutrality
-				focuses = {
+			focuses = {
 				TUR_Army_Fit_Sultan
 				TUR_Leadership_Issue
 				TUR_Young_Turk_Parti
 			}
-				ideas = {
+			ideas = {
 				tur_army_of_bygon_era
 				TUR_Extremely_Low_Literacy
 				TUR_Sick_man_europe
@@ -53,17 +53,17 @@ bookmarks = {
 		ENG = {
 			history = ENG_balkan_powder_keg_desc
 			ideology = democratic
-				focuses = {
+			focuses = {
 				ENG_naval_blockade
 				ENG_focus_protect_belgium
 				ENG_end_the_isolation
 			}
-				ideas = {
+			ideas = {
 				ENG_volunteer_only_army
 				ENG_trade_with_usa
 				ENG_naval_arms_race
 			}
-			
+
 		}
 		GER = {
 			history = GER_balkan_powder_keg_desc
@@ -107,11 +107,11 @@ bookmarks = {
 				AUS_Economic_Crisis
 			}
 		}
-			BUL = {
+		BUL = {
 			minor = yes
 			history = BUL_balkan_powder_keg_desc
 			ideology = neutrality
-				focuses = {
+			focuses = {
 				BUL_reform_conscription_system
 				BUL_give_them_the_boot
 				BUL_free_and_fair_bulgarian
@@ -125,13 +125,12 @@ bookmarks = {
 				RUS_bolshevik_sabotage
 				RUS_Dated_Warfare
 			}
-				focuses = {
-				RUS_continue_1905_reformation
-				RUS_The_Tsars_Ideas
-				RUS_close_the_1905_new
+			focuses = {
+				RUS_Assassinate_Stolypin
+				RUS_Socialism_Not_Communism
 			}
 		}
-		
+
 		"---"={
 			history = "OTHER_balkan_powder_keg_desc"
 		}
@@ -145,12 +144,9 @@ bookmarks = {
 				SER_Pan_Slavism
 				SER_In_Habsburgs_We_Trust
 				SER_Form_The_Drina_Divisions
-				SER_serbian_general_staff_focus
-				SER_belgrade_fort_ring
-				SER_king_on_the_political_frontline
 			}
 		}
-			"CAN" = {
+		"CAN" = {
 			minor = yes
 			history = LAT_balkan_powder_keg_desc
 			ideology = democratic
@@ -166,8 +162,7 @@ bookmarks = {
 				BEL_Neutral_State
 				BEL_Divided_Nation
 			}
-				focuses = {
-				BEL_The_King's_Nation
+			focuses = {
 				BEL_Commune
 				BEL_Armoured_Car_Race
 			}
@@ -176,11 +171,11 @@ bookmarks = {
 			minor = yes
 			history = AST_balkan_powder_keg_desc
 			ideology = democratic
-				ideas = {
+			ideas = {
 				AST_white_policy
 				AST_royal_navy
 			}
-				focuses = {
+			focuses = {
 				AST_Royal_Australian_Marines
 				AST_Address_The_White_Policy
 				AST_Status_Of_Nation
@@ -190,12 +185,12 @@ bookmarks = {
 			minor = yes
 			history = YEM_balkan_powder_keg_desc
 			ideology = neutrality
-				ideas = {
+			ideas = {
 				YEM_Relevant_Capital
 				YEM_Ottoman_Dependency
 				YEM_Declining_Power
 			}
-				focuses = {
+			focuses = {
 				YEM_Military_Logistics
 				YEM_Deciding_Our_Fatee
 				YEM_Peace_Keepers
@@ -210,7 +205,7 @@ bookmarks = {
 				POR_Inadequate_African_Territories
 				POR_Declining_Economy
 			}
-				focuses = {
+			focuses = {
 				POR_Constitution_Of_1911
 				POR_Power_To_The_Republic
 				POR_Military_Order_Of_Christ

@@ -145,9 +145,9 @@ faction_goal_secure_north_africa = {
 	}
 	available = {
 		OR = {
-			FROM = { has_completed_focus = ITA_italian_irredentism }
+			FROM = { has_completed_focus = ITA_focus_Irredentism }
 			any_allied_country = {
-				has_completed_focus = ITA_italian_irredentism
+				has_completed_focus = ITA_focus_Irredentism
 			}
 		}
 	}
@@ -621,10 +621,7 @@ faction_goal_the_two_seas = {
 		base = 0
 		modifier = {
 			add = 10
-			OR = {
-				has_completed_focus = POL_the_between_the_seas_concept
-				has_completed_focus = POL_sea_to_sea
-			}
+			always = no
 		}
 	}
 }

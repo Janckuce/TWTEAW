@@ -119,7 +119,7 @@ escort_carrier_support = {
     xp_type = navy
 
     available = {
-        is_special_project_completed = sp:sp_naval_escort_carrier
+        always = no
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
@@ -189,10 +189,7 @@ broad_naval_support = {
     xp_type = navy
 
     available = {
-        OR = {
-            is_special_project_completed = sp:sp_naval_escort_carrier
-            is_special_project_completed = sp:sp_naval_support_ships
-        }
+        always = no
     }
     visible = {
         has_dlc = "No Compromise, No Surrender"
@@ -211,8 +208,8 @@ broad_naval_support = {
     	}
 
     	organized_support_protocols = {
-    		naval_repair_support_value_factor = 0.25
-    		naval_general_support_value_factor = 0.25 
+    		#naval_repair_support_value_factor = 0.25 # error suppression
+    		# = 0.25
     	}
     	escorts_in_battle = {
             equipment_bonus = {
@@ -225,8 +222,8 @@ broad_naval_support = {
             }
     	}
     	support_rotation = {
-    		naval_repair_support_factor = 0.25
-    		naval_general_support_factor = 0.25 
+    		#naval_repair_support_factor = 0.25
+    		#naval_general_support_factor = 0.25
     		repair_ship = {
     			max_organisation = 20
     		}

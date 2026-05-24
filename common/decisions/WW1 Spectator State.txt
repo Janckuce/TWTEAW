@@ -361,15 +361,15 @@ ORO_spectator_state = {
 			GER = {
 				set_variable = {
 					Italy_in_war = 1
-				}				
+				}
 			}
 			ITA = {
-				remove_ideas = ITA_central_powers_2
+				remove_ideas = ITA_idea_central_powers_2
 				declare_war_on = {
 					type = take_claimed_state
 					target = AUS
 				}
-				add_ideas = ITA_entente
+				add_ideas = ITA_idea_entente
 			}
 		}
 		fire_only_once = yes
@@ -2700,6 +2700,7 @@ ORO_end_WW1_german_loss = {
 			factor = 10000
 		}
 	}
+
 	Entente_surrender_event = {
 		allowed = {
 			original_tag = ORO
@@ -2749,74 +2750,7 @@ ORO_end_WW1_german_loss = {
 		}
 	}
 
-
-	ORO_death_news = {
-		ROM_death_of_carol_I = {
-			allowed = {
-				original_tag = ORO
-			}
-			visible = {
-				always = yes
-			}
-
-			available = {
-				date > 1914.10.10
-			}
-
-			complete_effect = {
-				ROM = {
-					retire_country_leader = yes
-
-					add_country_leader_role = {
-						character = ROM_ferdinand_I
-						promote_leader = yes
-						country_leader = {
-							ideology = centrism
-						}
-					}
-					news_event = ww1_news.46
-				}
-			}
-			fire_only_once = yes
-
-			ai_will_do = {
-				factor = 10000
-			}
-		}
-	}
-	AUS_death_of_franz_joseph_I = {
-		allowed = {
-			original_tag = ORO
-		}
-		visible = {
-			always = yes
-		}
-
-		available = {
-			date > 1916.11.21
-		}
-
-		complete_effect = {
-			AUS = {
-				retire_country_leader = yes
-
-				add_country_leader_role = {
-					character = AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria
-					promote_leader = yes
-					country_leader = {
-						ideology = centrism
-					}
-				}
-				news_event = ww1_news.28
-			}
-		}
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 10000
-		}
-	}
-	Bulgaria_Joins_Central = {
+		Bulgaria_Joins_Central = {
 		allowed = {
 			original_tag = ORO
 		}
@@ -2839,6 +2773,7 @@ ORO_end_WW1_german_loss = {
 			}
 		}
 	}
+
 	Turkey_Gets_Destroyed = {
 		allowed = {
 			original_tag = ORO
@@ -2858,8 +2793,78 @@ ORO_end_WW1_german_loss = {
 				set_variable = {
 					ottoman_in_war = 1
 				}
-			} 
+			}
 			country_event = ww1_ottoman.5
 		}
 	}
+
+}
+
+ORO_death_news = {
+
+	ROM_death_of_carol_I = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			date > 1914.10.10
+		}
+
+		complete_effect = {
+			ROM = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+					character = ROM_ferdinand_I
+					promote_leader = yes
+					country_leader = {
+						ideology = centrism
+					}
+				}
+				news_event = ww1_news.46
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+	AUS_death_of_franz_joseph_I = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			date > 1916.11.21
+		}
+
+		complete_effect = {
+			AUS = {
+				retire_country_leader = yes
+
+				add_country_leader_role = {
+					character = AUH_karlii
+					promote_leader = yes
+					country_leader = {
+						ideology = centrism
+					}
+				}
+				news_event = ww1_news.28
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
 }

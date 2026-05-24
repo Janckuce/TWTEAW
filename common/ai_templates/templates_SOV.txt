@@ -334,10 +334,7 @@ breakthrough_armor_SOV = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 				date > 1943.1.1
 			}
 			modifier = {
@@ -373,10 +370,7 @@ breakthrough_armor_SOV = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 				date > 1943.1.1
 			}
 			modifier = {
@@ -632,7 +626,7 @@ marines_SOV = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = marines
+				has_tech = special_forces_marines
 			}
 		}
 	}

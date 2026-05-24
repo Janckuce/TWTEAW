@@ -182,10 +182,7 @@ infantry_GER = {
 		modifier = {
 			factor = 4
 			NOT = {
-				has_tech = basic_medium_tank
-			}
-			NOT = {
-				has_tech = basic_medium_tank_chassis
+				has_tech = ww1_medium_tank_1
 			}
 		}
 	}
@@ -381,7 +378,7 @@ marines_GER = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = marines
+				has_tech = special_forces_marines
 			}
 		}
 	}

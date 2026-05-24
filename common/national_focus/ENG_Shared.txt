@@ -5,7 +5,7 @@
 		icon = GFX_goal_generic_more_territorial_claims
 		cost = 5
 		available = {
-			threat = 0.1
+			threat > 0.09
 		}
 		x = 0
 		y = 0
@@ -614,7 +614,7 @@
 			# }
 			if = {
 				limit = {
-					has_tech = marines
+					has_tech = special_forces_marines
 				}
 		    division_template = {
 				name = "Royal Marines"
@@ -668,7 +668,7 @@
 				}
 			} else = {
 				set_technology = {
-				marines = 1
+				special_forces_marines = 1
 				}
 			}
 		}

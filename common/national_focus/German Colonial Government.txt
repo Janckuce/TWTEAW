@@ -47,6 +47,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GCG_Ties_To_Berlin
 		}
+		mutually_exclusive = {
+			focus = GCG_Political_Right1
+		}
 		completion_reward = {
 			888 = {
 				add_core_of = GCG

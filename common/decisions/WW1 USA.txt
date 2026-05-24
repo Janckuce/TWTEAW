@@ -28,11 +28,8 @@ USA_Gain_Techs_Category = {
 
 				ww1_tank_engine_1 = 1
 				ww1_tank_armor_1 = 1
-				ww1_light_tank_frame = 1
 				ww1_medium_tank_frame = 1
 				ww1_heavy_tank_frame = 1
-				ww1_light_tank_turret = 1
-				ww1_medium_tank_turret = 1
 				ww1_heavy_tank_turret = 1
 
 				ww1_improved_artillery_equipment1 = 1
@@ -128,9 +125,6 @@ USA_Gain_Techs_Category = {
 		icon = GFX_decision_generic_research
 		allowed = {
 			tag = USA
-			NOT = {
-				has_completed_focus = USA_starting_focus
-			}
 		}
 
 		available = {

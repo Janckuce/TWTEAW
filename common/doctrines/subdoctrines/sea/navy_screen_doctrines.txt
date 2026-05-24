@@ -307,9 +307,7 @@ screen_support_focus = {
     xp_type = navy
 
     available = {
-   		always = yes
-   		is_special_project_completed = sp:sp_naval_support_ships
-
+		always = yes
     }
     visible = {
     	has_dlc = "No Compromise, No Surrender"
@@ -319,13 +317,13 @@ screen_support_focus = {
 
     rewards = {
     	close_support_integration = {
-    		naval_general_support_value_factor = 0.1
+    		#naval_general_support_value_factor = 0.1
     		destroyer = {
     			max_organisation = 30
     		}
     	}
     	sustainable_task_forces = {
-    		naval_general_support_factor = 0.1
+    		#naval_general_support_factor = 0.1
     		light_cruiser = {
     			naval_range = 0.1
     		}
