@@ -17,7 +17,7 @@ SER_Technological_Advancements = {
 		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
 		priority = 1
 		fire_only_once = yes
-		cost = 150
+		cost = 100
 		allowed = {
 			tag = SER
 		}
@@ -34,12 +34,12 @@ SER_Technological_Advancements = {
 		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
 		priority = 1
 		fire_only_once = yes
-		cost = 150
+		cost = 100
 		allowed = {
 			tag = SER
 		}
 		available = {
-			date > 1913.1.1
+			can_research = ww1_tank_engine_1
 		}
 		complete_effect = {
 			add_tech_bonus = {

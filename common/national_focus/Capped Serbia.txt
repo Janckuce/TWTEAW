@@ -14,21 +14,142 @@ focus_tree = {
 
 	default = no
 
+	continuous_focus_position = { x = 225 y = 1700}
+
+	#	Afrika
+
+	focus = {
+		id = SER_Foreign_Legion
+		icon = GFX_focus_GER_afrikakorps
+		cost = 5
+		x = 2
+		y = 0
+		available_if_capitulated = yes
+		completion_reward = {
+			division_template = {
+				name = "Afrički Korpus"
+				template_counter = 3
+				is_locked = no
+
+				regiments = {
+					irregular_infantry = { x = 0 y = 0 }
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+					irregular_infantry = { x = 0 y = 3 }
+					irregular_infantry = { x = 0 y = 4 }
+					irregular_infantry = { x = 1 y = 0 }
+					irregular_infantry = { x = 1 y = 1 }
+					irregular_infantry = { x = 1 y = 2 }
+					irregular_infantry = { x = 1 y = 3 }
+					irregular_infantry = { x = 1 y = 4 }
+				}
+
+				support = {
+					machine_gun = { x = 0 y = 0}
+				}
+			}
+			126 = {
+				create_unit = {
+					division = "name = \"Afrički Korpus\" division_template = \"Afrički Korpus\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Afrički Korpus\" division_template = \"Afrički Korpus\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Legion_Coordination
+		icon = GFX_focus_generic_baltic_entente
+		cost = 5
+		relative_position_id = SER_Foreign_Legion
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Foreign_Legion
+		}
+		completion_reward = {
+			add_ideas = SER_Coordinated_Warfare
+			ENG = {
+				add_ideas = SER_Coordinated_Warfare
+			}
+			SAF = {
+				add_ideas = SER_Coordinated_Warfare
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Legion_Expansion
+		icon = GFX_focus_generic_camel_corps
+		cost = 5
+		relative_position_id = SER_Legion_Coordination
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Legion_Coordination
+		}
+		completion_reward = {
+			126 = {
+				create_unit = {
+					division = "name = \"Afrički Korpus\" division_template = \"Afrički Korpus\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Afrički Korpus\" division_template = \"Afrički Korpus\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Distant_Afrika
+		icon = GFX_focus_generic_africa_liberation
+		cost = 5
+		relative_position_id = SER_Legion_Expansion
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Legion_Expansion
+		}
+		completion_reward = {
+			add_ideas = SER_Afrika_Korps_Idea
+		}
+	}
+
+	#	Main
+
 	focus = {
 		id = SER_Scraping_The_Barrel
 		icon = GFX_focus_generic_manpower
-		cost = 10
+		cost = 5
 		x = 5
 		y = 0
 		available_if_capitulated = yes
 		completion_reward = {
-			add_manpower = 50000
+			add_manpower = 100000
 		}
 	}
+
 	focus = {
 		id = SER_First_Wave_Of_Production
 		icon = GFX_focus_generic_tank_production
-		cost = 10
+		cost = 5
 		relative_position_id = SER_Scraping_The_Barrel
 		x = 0
 		y = 1
@@ -39,14 +160,15 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 3
+				level = 6
 			}
 		}
 	}
+
 	focus = {
 		id = SER_Scavenge_For_Supplies
 		icon = GFX_focus_AFG_scavenging
-		cost = 10
+		cost = 5
 		relative_position_id = SER_First_Wave_Of_Production
 		x = 0
 		y = 1
@@ -57,18 +179,19 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 10000
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 300
+				amount = 1000
 			}
 		}
 	}
+
 	focus = {
 		id = SER_Second_Wave_Of_Production
 		icon = GFX_focus_CHL_domestic_production_of_the_willys_mb
-		cost = 10
+		cost = 5
 		relative_position_id = SER_Scavenge_For_Supplies
 		x = 0
 		y = 1
@@ -79,100 +202,18 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 3
+				level = 6
 			}
 		}
 	}
-	focus = {
-		id = SER_Foreign_Legion
-		icon = GFX_focus_FIN_foreign_anti_air
-		cost = 10
-		relative_position_id = SER_Second_Wave_Of_Production
-		x = -2
-		y = 1
-		available_if_capitulated = yes
-		prerequisite = {
-			focus = SER_Second_Wave_Of_Production
-		}
-		completion_reward = {
-			division_template = {
-				name = "Srpska Strana Divizija"
-				template_counter = 3
-				is_locked = no
 
-				regiments = {
-					irregular_infantry = { x = 0 y = 0 }
-					irregular_infantry = { x = 0 y = 1 }
-					irregular_infantry = { x = 0 y = 2 }
-					irregular_infantry = { x = 1 y = 0 }
-					irregular_infantry = { x = 1 y = 1 }
-					irregular_infantry = { x = 1 y = 2 }
-					irregular_infantry = { x = 2 y = 0 }
-					irregular_infantry = { x = 2 y = 1 }
-					irregular_infantry = { x = 2 y = 2 }
-					artillery_brigade = { x = 3 y = 0 }
-					artillery_brigade = { x = 3 y = 1 }
-					artillery_brigade = { x = 3 y = 2 }
-					artillery_brigade = { x = 4 y = 0 }
-					artillery_brigade = { x = 4 y = 1 }
-					artillery_brigade = { x = 4 y = 2 }
-				}
-
-				support = {
-					engineer = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-				}
-			}
-			126 = {
-				create_unit = {
-					division = "name = \"Srpska Strana Divizija\" division_template = \"Srpska Strana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
-					owner = SER
-					prioritize_location = 6103
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"Srpska Strana Divizija\" division_template = \"Srpska Strana Divizija\" start_experience_factor = 0.1 start_equipment_factor = 1"
-					owner = SER
-					prioritize_location = 6103
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = SER_Serb_Workers
-		icon = GFX_focus_CHL_expand_the_forestry
-		cost = 10
-		relative_position_id = SER_Second_Wave_Of_Production
-		x = 2
-		y = 1
-		available_if_capitulated = yes
-		prerequisite = {
-			focus = SER_Second_Wave_Of_Production
-		}
-		completion_reward = {
-			RUS = {
-				capital_scope = {
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = arms_factory
-						level = 3
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-			}
-		}
-	}
 	focus = {
 		id = SER_Serbian_Guerillas
 		icon = GFX_focus_por_portuguese_legion
-		cost = 10
+		cost = 5
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = -1
-		y = 2
+		y = 1
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = SER_Second_Wave_Of_Production
@@ -186,13 +227,14 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = SER_Gradual_Recruitment
 		icon = GFX_focus_CHL_mapuche_reconcilliation_campaigns_export
-		cost = 10
+		cost = 5
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = 1
-		y = 2
+		y = 1
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = SER_Second_Wave_Of_Production
@@ -201,13 +243,14 @@ focus_tree = {
 			add_ideas = SER_Recruitment_Centre
 		}
 	}
+
 	focus = {
 		id = SER_Final_Wave_Of_Production
 		icon = GFX_focus_generic_mass_production
-		cost = 10
+		cost = 5
 		relative_position_id = SER_Second_Wave_Of_Production
 		x = 0
-		y = 3
+		y = 2
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = SER_Second_Wave_Of_Production
@@ -215,7 +258,284 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 3
+				level = 6
+			}
+		}
+	}
+
+	#	Foreign Aid
+
+	focus = {
+		id = SER_Serb_Workers_Rus
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		cost = 5
+		x = 8
+		y = 0
+		available_if_capitulated = yes
+		completion_reward = {
+			RUS = {
+				add_timed_idea = {
+					idea = SER_Serbian_Labour
+					days = 140
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Serb_Workers_Fra
+		icon = GFX_focus_fra_french_union
+		cost = 5
+		relative_position_id = SER_Serb_Workers_Rus
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Serb_Workers_Rus
+		}
+		completion_reward = {
+			FRA = {
+				add_timed_idea = {
+					idea = SER_Serbian_Labour
+					days = 140
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Serb_Workers_Ita
+		icon = GFX_focus_ETH_invite_italian_settlers
+		cost = 5
+		relative_position_id = SER_Serb_Workers_Fra
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Serb_Workers_Fra
+		}
+		completion_reward = {
+			ITA = {
+				add_timed_idea = {
+					idea = SER_Serbian_Labour
+					days = 140
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Serb_Workers_Eng
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 5
+		relative_position_id = SER_Serb_Workers_Ita
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Serb_Workers_Ita
+		}
+		completion_reward = {
+			ENG = {
+				add_timed_idea = {
+					idea = SER_Serbian_Labour
+					days = 140
+				}
+			}
+		}
+	}
+
+	#	Military
+
+	focus = {
+		id = SER_Pesadije
+		icon = GFX_focus_CZE_build_infantry
+		cost = 5
+		x = 5
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			division_template = {
+				name = "Pešadjiski Bataljon"
+				template_counter = 3
+				is_locked = no
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+     				infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+				}
+
+				support = {
+					machine_gun = { x = 0 y = 0 }
+				}
+			}
+			126 = {
+				create_unit = {
+					division = "name = \"Pešadjiski Bataljon\" division_template = \"Pešadjiski Bataljon\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Pešadjiski Bataljon\" division_template = \"Pešadjiski Bataljon\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"Pešadjiski Bataljon\" division_template = \"Pešadjiski Bataljon\" start_experience_factor = 0.1 start_equipment_factor = 0.8"
+					owner = SER
+					prioritize_location = 6103
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+	}
+
+	#	Side Focus Offense
+
+	focus = {
+		id = SER_Offense_Focus
+		icon = GFX_focus_PHI_war_plan_orange
+		cost = 5
+		relative_position_id = SER_Pesadije
+		x = -2
+		y = 1
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = SER_Defense_Focus
+		}
+		prerequisite = {
+			focus = SER_Pesadije
+		}
+		completion_reward = {
+			add_ideas = SER_Offensive_Planning
+		}
+	}
+
+	#	Side Focus Defense
+
+	focus = {
+		id = SER_Defense_Focus
+		icon = GFX_focus_PHI_fortify_corregidor
+		cost = 5
+		relative_position_id = SER_Pesadije
+		x = 2
+		y = 1
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = SER_Offense_Focus
+		}
+		prerequisite = {
+			focus = SER_Pesadije
+		}
+		completion_reward = {
+			add_ideas = SER_Defensive_Planning
+		}
+	}
+
+	#	Centre Focus
+
+	focus = {
+		id = SER_Military_Focus
+		icon = GFX_focus_CHI_popular_army
+		cost = 2
+		relative_position_id = SER_Pesadije
+		x = 0
+		y = 2
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Pesadije
+		}
+		prerequisite = {
+			focus = SER_Offense_Focus
+			focus = SER_Defense_Focus
+		}
+		completion_reward = {
+			add_ideas = SER_Army_Planning
+		}
+	}
+
+	focus = {
+		id = SER_Military_Focus1
+		icon = GFX_focus_CZE_army_reform
+		cost = 2
+		relative_position_id = SER_Military_Focus
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Military_Focus
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Army_Planning
+				add_idea = SER_Army_Planning1
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Military_Focus2
+		icon = GFX_focus_chi_army_reform
+		cost = 2
+		relative_position_id = SER_Military_Focus1
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Military_Focus1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Army_Planning1
+				add_idea = SER_Army_Planning2
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_Military_Focus3
+		icon = GFX_focus_JAP_implement_army_reforms
+		cost = 2
+		relative_position_id = SER_Military_Focus2
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Military_Focus2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Army_Planning2
+				add_idea = SER_Army_Planning3
+			}
+		}
+	}
+
+	focus = {
+		id = SER_Military_Focus4
+		icon = GFX_focus_RAJ_a_private_military
+		cost = 2
+		relative_position_id = SER_Military_Focus3
+		x = 0
+		y = 1
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SER_Military_Focus3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_Army_Planning3
+				add_idea = SER_Army_Planning4
 			}
 		}
 	}

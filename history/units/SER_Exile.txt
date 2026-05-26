@@ -1,5 +1,28 @@
 ﻿division_template = {
-	name = "Srpska Prognana Divizija"
+	name = "Pešadjiski Bataljon"
+	template_counter = 3
+	is_locked = no
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	
+	support = {
+		machine_gun = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Gorska Divizija"
 	template_counter = 3
 	is_locked = no
 
@@ -7,73 +30,61 @@
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
         mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-        mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 4 y = 0 }
-		artillery_brigade = { x = 4 y = 1 }
-		artillery_brigade = { x = 4 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
 	}
 	
 	support = {
-        engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 
 units = {
     division = {
-		name = "Srpska Prognana Divizija"
+		name = "Pešadjiski Bataljon"
 		location = 6103
-		division_template = "Srpska Prognana Divizija"
+		division_template = "Pešadjiski Bataljon"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		name = "Srpska Prognana Divizija"
+		name = "Pešadjiski Bataljon"
 		location = 6103
-		division_template = "Srpska Prognana Divizija"
+		division_template = "Pešadjiski Bataljon"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		name = "Srpska Prognana Divizija"
+		name = "Pešadjiski Bataljon"
 		location = 6103
-		division_template = "Srpska Prognana Divizija"
+		division_template = "Pešadjiski Bataljon"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		name = "Srpska Prognana Divizija"
+		name = "Pešadjiski Bataljon"
 		location = 6103
-		division_template = "Srpska Prognana Divizija"
+		division_template = "Pešadjiski Bataljon"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.8
 	}
 	division = {
-		name = "Srpska Prognana Divizija"
+		name = "Gorska Divizija"
 		location = 6103
-		division_template = "Srpska Prognana Divizija"
+		division_template = "Gorska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.5
 	}
 	division = {
-		name = "Srpska Prognana Divizija"
+		name = "Gorska Divizija"
 		location = 6103
-		division_template = "Srpska Prognana Divizija"
+		division_template = "Gorska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 1
-
+		start_equipment_factor = 0.5
 	}
 }
