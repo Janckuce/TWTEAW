@@ -1860,6 +1860,22 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ITA_tooltip_Hire_Douhet
 			activate_advisor = ITA_Giulio_Douhet
+
+			451 = { #Derna
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+				}
+			}
+
+			448 = { #Tripoli
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1889,6 +1905,22 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ITA_tooltip_Hire_Pellegrini
 			activate_advisor = ITA_aldo_pellegrini
+
+			451 = { #Derna
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+				}
+			}
+
+			448 = { #Tripoli
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+				}
+			}
 		}
 	}
 	
