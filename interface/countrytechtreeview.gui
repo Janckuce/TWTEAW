@@ -4599,6 +4599,34 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "special_project_specialization"
+		position = { x = 0 y = 0 }
+		size = { width = 20 height = 32 }
+		clipping = no
+
+		positionType = {
+			name = "adjustment"
+			position = { x = -2 y = -2 }
+		}
+
+		iconType = {
+			name = "technology_specialization_tag_primary"
+			position = { x=0 y=0 }
+			spriteType = "GFX_technology_specialization_tag_primary"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "technology_specialization_tag_secondary"
+			position = { x=0 y=0 }
+			spriteType = "GFX_technology_specialization_tag_secondary"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
 		name = "techtree_bba_air_techs_folder_small_item"
 		position = { x=0 y=0 }
 		size = { width = 72 height = 72 }
@@ -4823,6 +4851,11 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
+		
+		gridboxtype = {
+			# contains special_project_specialization
+			name = "special_project_specialization_list"
+		}
 
 		instantTextBoxType = {
 			name = "Name"
@@ -4997,6 +5030,11 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
+		
+		gridboxtype = {
+			# contains special_project_specialization
+			name = "special_project_specialization_list"
+		}
 
 		iconType = {
 			name = "Icon"
@@ -5113,6 +5151,11 @@ guiTypes = {
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+		
+		gridboxtype = {
+			# contains special_project_specialization
+			name = "special_project_specialization_list"
 		}
 
 		iconType = {

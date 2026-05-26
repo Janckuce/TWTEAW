@@ -381,9 +381,11 @@ AUH_osterreichische_fleugzeugfabrik_organization = {
 			limit = {
 				FROM = { original_tag = HUN } 
 			}
-			FROM = { has_completed_focus = wuw_HUN_integrate_bohemian_and_austrian_industries }
+			#FROM = { has_completed_focus = wuw_HUN_integrate_bohemian_and_austrian_industries } # doesn't exist
+			always = yes
 		}
 	}
+	#might delete this MIO? we don't get Austria forming A-H because it starts that way and no serious ww1 game is gonna end up with Hungary annexing Austria
 
 	add_trait = { 
 		token = AUS_mio_trait_speed_up_production

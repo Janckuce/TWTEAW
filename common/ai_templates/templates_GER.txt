@@ -11,18 +11,12 @@ armored_GER = {
 
 		modifier = {
 			factor = 4
-			OR = {
-				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
-			}
+			has_tech = ww1_medium_tank_1
 		}
 		
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = ww1_medium_tank_2
 		}
 	}
 
@@ -40,7 +34,7 @@ armored_GER = {
 			
 			support = {
 				engineer = 1
-				mot_recon = 1
+				recon = 1
 				artillery = 1
 			}
 			
@@ -58,10 +52,7 @@ armored_GER = {
 
 			modifier = {
 				factor = 3
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -74,7 +65,7 @@ armored_GER = {
 			
 			support = {
 				engineer = 1
-				mot_recon = 1
+				recon = 1
 				anti_tank = 1
 				artillery = 1
 			}
@@ -94,11 +85,7 @@ armored_GER = {
 			
 			modifier = {
 				factor = 4
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
-				date > 1939.10.1
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
@@ -106,7 +93,7 @@ armored_GER = {
 			
 			support = {
 				engineer = 1
-				mot_recon = 1
+				recon = 1
 				artillery = 1
 				maintenance_company = 1
 				logistics_company = 1
@@ -128,10 +115,7 @@ armored_GER = {
 			
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -139,7 +123,7 @@ armored_GER = {
 			
 			support = {
 				engineer = 1
-				armored_car_recon = 1
+				recon = 1
 				artillery = 1
 				maintenance_company = 1
 				logistics_company = 1
@@ -161,10 +145,7 @@ armored_GER = {
 
 			modifier = {
 				factor = 7
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -172,17 +153,15 @@ armored_GER = {
 			
 			support = {
 				engineer = 1
-				mot_recon = 1
+				recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				artillery = 1
 			}
 			
 			regiments = {
-				modern_armor = 8
-				mechanized = 6
-				medium_sp_artillery_brigade = 1
-				#super_heavy_armor = 1
+				medium_armor = 8
+				motorized = 6
 			}
 		}
 	}
@@ -203,10 +182,7 @@ infantry_GER = {
 		modifier = {
 			factor = 4
 			NOT = {
-				has_tech = basic_medium_tank
-			}
-			NOT = {
-				has_tech = basic_medium_tank_chassis
+				has_tech = ww1_medium_tank_1
 			}
 		}
 	}
@@ -359,7 +335,7 @@ mountaineers_GER = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = tech_mountaineers
+				has_tech = special_forces_mountaineers
 			}
 		}
 	}
@@ -402,7 +378,7 @@ marines_GER = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = marines
+				has_tech = special_forces_marines
 			}
 		}
 	}
@@ -426,194 +402,10 @@ marines_GER = {
 			regiments = {
 				marine = 9
 				artillery_brigade = 2
-				
 			}
 		}
 	}
 }
-
-
-
-
-anti_armor_GER = {
-
-	available_for = {
-		GER
-	}
-	
-	role = anti_armor
-	
-	upgrade_prio = {
-		base = 2
-
-		modifier = {
-			factor = 3
-			# has_war_with = SOV
-			any_enemy_country = {
-				ROOT = {
-					estimated_intel_max_armor = {
-						tag = PREV
-						value > 20
-					}
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			NOT = { has_tech = interwar_antitank }
-		}
-	}
-	
-	infantry_anti_armor_GER = {
-		custom_icon = 28
-		division_names_group = GER_Inf_01
-	
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 2
-				has_tech = interwar_antitank
-
-				#has_war_with = SOV
-				#any_enemy_country = {
-				#	ROOT = {
-				#		estimated_intel_max_armor = {
-				#			tag = PREV
-				#			value > 20
-				#		}
-				#	}
-				#}
-			}
-		}
-		
-		target_template = {
-			
-			support = {
-				engineer = 1
-				recon = 1
-				field_hospital = 1
-				#anti_tank = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				infantry = 6
-				anti_tank_brigade = 1
-				#artillery_brigade = 1
-			}
-		}
-
-		replace_at_match = 1.5  # I.e., no
-		replace_with = light_tank_anti_armor_GER
-		target_min_match = 0.5
-	}
-	
-	light_tank_anti_armor_GER = {
-		custom_icon = 28
-		division_names_group = GER_MOT_02
-	
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 3
-
-				has_tech = antitank1
-				OR = {
-					has_tech = basic_light_td
-					has_design_based_on = light_tank_destroyer_chassis
-				}
-				#if = {
-				#	limit = {
-				#		NOT = { has_dlc = "No Step Back" }
-				#	}
-				#	has_tech = basic_light_td
-				#}
-				#has_war_with = SOV
-				#any_enemy_country = {
-				#	ROOT = {
-				#		estimated_intel_max_armor = {
-				#			tag = PREV
-				#			value > 32
-				#		}
-				#	}
-				#}
-			}
-		}
-		
-		target_template = {
-			
-			support = {
-				engineer = 1
-				mot_recon = 1
-				anti_tank = 1
-			}
-			
-			regiments = {
-				light_tank_destroyer_brigade = 1
-				motorized = 6
-			}
-		}
-		
-		replace_at_match = 1.5  # I.e., no
-		replace_with = medium_tank_anti_armor_GER
-		target_min_match = 0.5
-	}
-	
-	medium_tank_anti_armor_GER = {
-		custom_icon = 28
-		division_names_group = GER_MOT_02
-	
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 4
-
-				has_tech = antitank2
-				OR = {
-					has_tech = basic_medium_td
-					has_design_based_on = medium_tank_destroyer_chassis
-				}
-
-				#if = {
-				#	limit = {
-				#		NOT = { has_dlc = "No Step Back" }
-				#	}
-				#	has_tech = basic_medium_td
-				#}
-				#has_war_with = SOV
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
-			}
-		}
-
-		target_template = {
-			
-			support = {
-				engineer = 1
-				mot_recon = 1
-				maintenance_company = 1
-				logistics_company = 1
-				anti_tank = 1
-			}
-			
-			regiments = {
-				medium_tank_destroyer_brigade = 1
-				motorized = 6
-			}
-		}
-	}
-}
-
 
 motorized_GER = {
 
@@ -625,11 +417,6 @@ motorized_GER = {
 	
 	upgrade_prio = {
 		base = 2
-
-		modifier = {
-			factor = 0
-			NOT = { has_tech = interwar_antitank }
-		}
 	}
 	
 	basic_motorized_infantry_GER = {
@@ -645,7 +432,7 @@ motorized_GER = {
 				engineer = 1
 				mot_recon = 1
 				field_hospital = 1
-				anti_tank = 1
+				#anti_tank = 1
 				artillery = 1
 			}
 			
@@ -661,11 +448,8 @@ motorized_GER = {
 		upgrade_prio = {
 			base = 1
 			modifier = {
-				factor = 2 
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				factor = 2
+				has_tech = ww1_medium_tank_1
 			}
 		}
 		
@@ -675,14 +459,14 @@ motorized_GER = {
 				engineer = 1
 				mot_recon = 1
 				field_hospital = 1
-				anti_tank = 1
+				#anti_tank = 1
 				artillery = 1
 			}
 
 			regiments = {
 				motorized = 9
-				medium_sp_artillery_brigade = 1
-				medium_tank_destroyer_brigade = 1
+				#medium_sp_artillery_brigade = 1
+				#medium_tank_destroyer_brigade = 1
 			}
 		}
 	}
@@ -698,10 +482,7 @@ motorized_GER = {
 			}
 			modifier = {
 				factor = 3 
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 				date > 1941.1.1
 			}
 		}

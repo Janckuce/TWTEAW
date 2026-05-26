@@ -17,123 +17,8 @@ focus_tree = {
 	
 	default = no
 
-	focus = {
-		id = FRA_Industry_First
-		icon = GFX_focus_generic_economic_recovery
-		cost = 10
-		relative_position_id = FRA_War_Preparations
-		x = -3
-		y = 2
-		available = {
-			date > 1916.1.1
-		}
-		mutually_exclusive = {
-			focus = FRA_Industry_Second
-		}
-		prerequisite = {
-			focus = FRA_Instruments_Of_War
-		}
-		completion_reward = {
-			add_ideas = FRA_Increased_Production_Max
-		}
-	}
-	focus = {
-		id = FRA_Industry_Second
-		icon = GFX_focus_generic_modernize_industry
-		cost = 10
-		relative_position_id = FRA_War_Preparations
-		x = -1
-		y = 2
-		available = {
-			date > 1916.1.1
-		}
-		mutually_exclusive = {
-			focus = FRA_Industry_First
-		}
-		prerequisite = {
-			focus = FRA_Instruments_Of_War
-		}
-		completion_reward = {
-			add_ideas = FRA_Increased_Production_Gain
-		}
-	}
-	focus = {
-		id = FRA_Home_Materials
-		icon = GFX_focus_generic_mining_industry
-		cost = 10
-		relative_position_id = FRA_War_Preparations
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = FRA_Morocco_Conundrum
-		}
-		completion_reward = {
-			16 = {
-				add_resource = {
-					type = tungsten
-					amount = 13
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_War_Preparations
-		icon = GFX_focus_RAJ_war_taxes
-		cost = 2
-		x = 0
-		y = 5
-		cancel_if_invalid = no
-		available = {
-			date > 1914.1.1
-		}
-		completion_reward = {
-			add_ideas = FRA_War_Readiness
-		}
-	}
-	focus = {
-		id = FRA_Instruments_Of_War
-		icon = GFX_focus_SWI_issue_war_bonds
-		cost = 2
-		relative_position_id = FRA_War_Preparations
-		x = -2
-		y = 1
-		cancel_if_invalid = no
-		available = {
-			date > 1915.1.1
-		}
-		prerequisite = {
-			focus = FRA_War_Preparations
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_War_Readiness
-				add_idea = FRA_War_Readiness1
-			}
-		}
-	}
-	focus = {
-		id = FRA_War_Is_Our_Profession
-		icon = GFX_focus_GER_german_army_invincible
-		cost = 2
-		relative_position_id = FRA_Instruments_Of_War
-		x = 0
-		y = 2
-		cancel_if_invalid = no
-		available = {
-			date > 1917.1.1
-		}
-		prerequisite = {
-			focus = FRA_Industry_First
-			focus = FRA_Industry_Second
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_War_Readiness1
-				add_idea = FRA_War_Readiness2
-			}
-		}
-	}
-	#	Republic Path
+	# Part 1: politics - republic vs commune vs empire
+	# Part 1-1: Republic
 
 	focus = {
 		id = FRA_Republique
@@ -153,6 +38,7 @@ focus_tree = {
 			custom_effect_tooltip = FRA_Economist_Tooltip
 		}
 	}
+
 	focus = {
 		id = FRA_Democratie
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
@@ -202,6 +88,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Liberte
 		icon = GFX_focus_FIN_social_democratic_womens_association
@@ -234,6 +121,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Parti
 		icon = GFX_focus_AFG_parliamentary_democracy
@@ -257,6 +145,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Towed_Artillery_Primacy
 		icon = GFX_goal_generic_army_artillery2
@@ -277,6 +166,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Heavy_Artillery_Primacy
 		icon = GFX_goal_generic_army_artillery
@@ -298,7 +188,7 @@ focus_tree = {
 		}
 	}
 
-	#	Commune Path
+	# Part 1-2: Commune
 
 	focus = {
 		id = FRA_Commune
@@ -320,6 +210,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_French_Red_Army
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
@@ -334,6 +225,7 @@ focus_tree = {
 			add_ideas = FRA_Red_Army
 		}
 	}
+
 	focus = {
 		id = FRA_Army_Expertise
 		icon = GFX_focus_BEL_the_french_horse_and_the_red_rider
@@ -352,6 +244,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Reserves
 		icon = GFX_focus_AUS_raid_military_storages
@@ -373,6 +266,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Shorten_Training
 		icon = GFX_focus_SOV_builder_of_the_red_army
@@ -394,6 +288,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Lengthen_Training
 		icon = GFX_focus_AFG_defender_of_central_asia
@@ -416,7 +311,7 @@ focus_tree = {
 		}
 	}
 
-	#	Fascist Path
+	# Part 1-3: Empire
 
 	focus = {
 		id = FRA_Nation_Francaise
@@ -439,6 +334,7 @@ focus_tree = {
 			custom_effect_tooltip = FRA_Head_Of_Directorate_Of_New_Buildings_Tooltip
 		}
 	}
+
 	focus = {
 		id = FRA_Naval_Advancements
 		icon = GFX_focus_generic_heavy_tank
@@ -457,13 +353,14 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Naval_Investments
 		icon = GFX_focus_fra_french_union
 		cost = 10
-		relative_position_id = FRA_Naval_Advancements
-		x = 2
-		y = 0
+		relative_position_id = FRA_Nation_Francaise
+		x = 1
+		y = 1
 		prerequisite = {
 			focus = FRA_Nation_Francaise
 		}
@@ -491,32 +388,14 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = FRA_Napoleon_Class_Ship
-		icon = GFX_focus_fra_milice
-		cost = 10
-		relative_position_id = FRA_Naval_Investments
-		x = -1
-		y = 2
-		prerequisite = {
-			focus = FRA_Naval_Advancements
-		}
-		prerequisite = {
-			focus = FRA_Naval_Investments
-		}
-		completion_reward = {
-			add_mastery = {
-				amount = 50
-			}
-		}
-	}
+
 	focus = {
 		id = FRA_Screens_Primacy
 		icon = GFX_focus_generic_advanced_military_studies
 		cost = 10
-		relative_position_id = FRA_Napoleon_Class_Ship
-		x = -1
-		y = -1
+		relative_position_id = FRA_Naval_Advancements
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = FRA_Naval_Advancements
 		}
@@ -544,13 +423,14 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Capital_Ships_Primacy
 		icon = GFX_focus_PER_increase_oil_sales
 		cost = 10
-		relative_position_id = FRA_Napoleon_Class_Ship
-		x = 1
-		y = -1
+		relative_position_id = FRA_Naval_Investments
+		x = 0
+		y = 1
 		prerequisite = {
 			focus = FRA_Naval_Investments
 		}
@@ -570,7 +450,27 @@ focus_tree = {
 		}
 	}
 
-	#	Main Research Focus
+	focus = {
+		id = FRA_Napoleon_Class_Ship
+		icon = GFX_focus_fra_milice
+		cost = 10
+		relative_position_id = FRA_Naval_Investments
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = FRA_Naval_Advancements
+		}
+		prerequisite = {
+			focus = FRA_Naval_Investments
+		}
+		completion_reward = {
+			add_mastery = {
+				amount = 50
+			}
+		}
+	}
+
+	# Part 2: Research
 
 	focus = {
 		id = FRA_Research_Investments1
@@ -585,6 +485,7 @@ focus_tree = {
 			add_ideas = FRA_Research_Funding_Left
 		}
 	}
+
 	focus = {
 		id = FRA_Research_Investments2
 		icon = GFX_focus_research2
@@ -598,6 +499,7 @@ focus_tree = {
 			add_ideas = FRA_Research_Funding_Right
 		}
 	}
+
 	focus = {
 		id = FRA_Extreme_Research
 		icon = GFX_goal_generic_scientific_exchange
@@ -613,6 +515,7 @@ focus_tree = {
 			add_ideas = FRA_Research_Funding
 		}
 	}
+
 	focus = {
 		id = FRA_Organisation_Funding
 		icon = GFX_focus_generic_copy_plane_designs
@@ -630,6 +533,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Paris_Academy
 		icon = GFX_focus_NORDIC_mon_research
@@ -651,13 +555,15 @@ focus_tree = {
 		}
 	}
 
+	# Part 3: Military
+
 	focus = {
 		id = FRA_State_Of_Military
 		icon = GFX_focus_generic_military_academy
 		cost = 10
 		x = 18
 		y = 0
-		completion_reward = { 
+		completion_reward = {
 			FRA = {
 				country_event = {
 					id = ww1_france.21
@@ -666,7 +572,7 @@ focus_tree = {
 		}
 	}
 
-	# Main Military Focus
+	# Part 3-1: Army
 
 	focus = {
 		id = FRA_Superior_Warfare
@@ -681,6 +587,7 @@ focus_tree = {
 			add_ideas = FRA_Superior_Combat
 		}
 	}
+
 	focus = {
 		id = FRA_Expert_Combatants
 		icon = GFX_focus_RAJ_a_private_military
@@ -701,6 +608,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Strength_In_Numbers
 		icon = GFX_focus_ITA_banda_carita
@@ -721,6 +629,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Defensive_Nation
 		icon = GFX_focus_SWE_varnplikt
@@ -736,6 +645,7 @@ focus_tree = {
 			add_ideas = FRA_Defensive_Experts
 		}
 	}
+
 	focus = {
 		id = FRA_Defensive_People
 		icon = GFX_focus_SWE_lottakoren
@@ -754,7 +664,7 @@ focus_tree = {
 		}
 	}
 
-	#	Main Air Focus
+	# Part 3-2: Air force
 
 	focus = {
 		id = FRA_Superior_Air_Force
@@ -774,6 +684,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Expert_Air_Aces
 		icon = GFX_focus_FIN_expand_air_force_academy
@@ -791,6 +702,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Fighter_Primacy
 		icon = GFX_goal_generic_air_fighter
@@ -811,6 +723,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Air_Support_Primacy
 		icon = GFX_focus_generic_cas_aircraft
@@ -831,6 +744,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Air_Exercises
 		icon = GFX_focus_generic_air_partners
@@ -847,7 +761,7 @@ focus_tree = {
 		}
 	}
 
-	#	Main Naval Focus
+	# Part 3-3: Navy
 
 	focus = {
 		id = FRA_Superior_Naval_Power
@@ -867,6 +781,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Faster_Repairing
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -884,6 +799,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Iron_Admirals
 		icon = GFX_focus_generic_naval_invasion_tank
@@ -901,6 +817,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Destroyer_Expertise
 		icon = GFX_focus_generic_naval_invasion
@@ -921,6 +838,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Capital_Ship_Expertise
 		icon = GFX_focus_generic_cruiser_submarines
@@ -942,12 +860,50 @@ focus_tree = {
 		}
 	}
 
-	#	Main War Focus
+	# Part 4: Pre-war preparations and wartime
+
+	focus = {
+		id = FRA_War_Preparations
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 2
+		x = 0
+		y = 5
+		cancel_if_invalid = no
+		available = {
+			date > 1914.1.1
+		}
+		completion_reward = {
+			add_ideas = FRA_War_Readiness
+		}
+	}
+
+	focus = {
+		id = FRA_Home_Materials
+		icon = GFX_focus_generic_mining_industry
+		cost = 10
+		relative_position_id = FRA_War_Preparations
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = FRA_War_Preparations
+		}
+		completion_reward = {
+			16 = {
+				add_resource = {
+					type = tungsten
+					amount = 13
+				}
+			}
+		}
+	}
+
+	# Part 4-1: 1914
+
 	focus = {
 		id = FRA_War_Has_Begun
 		icon = GFX_focus_generic_total_war
 		cost = 1.5
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = FRA_War_Preparations
 		prerequisite = {
@@ -964,6 +920,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Migrate_Industry
 		icon = GFX_focus_SWI_neutrality_on_the_move
@@ -1031,23 +988,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = FRA_Masters_Of_The_Craft
-		icon = GFX_focus_SWE_defense_act
-		cost = 5
-		relative_position_id = FRA_Migrate_Industry
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = FRA_Migrate_Industry
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_French_Warfare1
-				days = 30
-			}
-		}
-	}
+
 	focus = {
 		id = FRA_Sabre_Of_Honour
 		icon = GFX_focus_BEL_consitutional_crisis
@@ -1074,6 +1015,25 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = FRA_Masters_Of_The_Craft
+		icon = GFX_focus_SWE_defense_act
+		cost = 5
+		relative_position_id = FRA_Migrate_Industry
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = FRA_Migrate_Industry
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_French_Warfare1
+				days = 30
+			}
+		}
+	}
+
 	focus = {
 		id = FRA_They_Shall_Not_Pass
 		icon = GFX_focus_fra_milice
@@ -1092,6 +1052,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = FRA_Counter_Attack
 		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
@@ -1111,6 +1072,95 @@ focus_tree = {
 			add_timed_idea = {
 				idea = FRA_Counter_Offensive
 				days = 40
+			}
+		}
+	}
+
+	# Part 4-2: 1915 and beyond
+
+	focus = {
+		id = FRA_Instruments_Of_War
+		icon = GFX_focus_SWI_issue_war_bonds
+		cost = 2
+		relative_position_id = FRA_War_Preparations
+		x = 2
+		y = 1
+		cancel_if_invalid = no
+		available = {
+			date > 1915.1.1
+		}
+		prerequisite = {
+			focus = FRA_War_Preparations
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_War_Readiness
+				add_idea = FRA_War_Readiness1
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_Industry_First
+		icon = GFX_focus_generic_economic_recovery
+		cost = 10
+		relative_position_id = FRA_Instruments_Of_War
+		x = -1
+		y = 1
+		available = {
+			date > 1916.1.1
+		}
+		mutually_exclusive = {
+			focus = FRA_Industry_Second
+		}
+		prerequisite = {
+			focus = FRA_Instruments_Of_War
+		}
+		completion_reward = {
+			add_ideas = FRA_Increased_Production_Max
+		}
+	}
+
+	focus = {
+		id = FRA_Industry_Second
+		icon = GFX_focus_generic_modernize_industry
+		cost = 10
+		relative_position_id = FRA_Instruments_Of_War
+		x = 1
+		y = 1
+		available = {
+			date > 1916.1.1
+		}
+		mutually_exclusive = {
+			focus = FRA_Industry_First
+		}
+		prerequisite = {
+			focus = FRA_Instruments_Of_War
+		}
+		completion_reward = {
+			add_ideas = FRA_Increased_Production_Gain
+		}
+	}
+
+	focus = {
+		id = FRA_War_Is_Our_Profession
+		icon = GFX_focus_GER_german_army_invincible
+		cost = 2
+		relative_position_id = FRA_Industry_First
+		x = 1
+		y = 1
+		cancel_if_invalid = no
+		available = {
+			date > 1917.1.1
+		}
+		prerequisite = {
+			focus = FRA_Industry_First
+			focus = FRA_Industry_Second
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_War_Readiness1
+				add_idea = FRA_War_Readiness2
 			}
 		}
 	}

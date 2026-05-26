@@ -270,68 +270,7 @@ faction_goal_no_japanese_in_china = {
  ##  #  # #    #  # #  # 
 
 
-# Align China
-faction_goal_align_china = {
-	name = align_china_goal_name
-	description = align_china_goal_desc
-	category = long_term
-	group = FOCUS_FILTER_ANNEXATION
-	visible = {
-		FROM = {
-			original_tag = JAP
-		}
-	}
-	completed = {
-		collection_size = {
-			input = {
-				input = collection:countries_china
-				operators = {
-					limit = {
-						exists = yes 
-						has_capitulated = no
-						NOT = { is_subject_of = ROOT }
-					}
-				}
-				name = COLLECTION_UNCAPITULATED_INDEPENDENT_CHINESE_COUNTRIES
-			}
-			value < 3
-		}
-	}
-	complete_effect = {
-		add_faction_power_projection = 300
-		custom_effect_tooltip = generic_skip_one_line_tt
-		custom_effect_tooltip = THE_FACTION_LEADER
-		add_faction_initiative = 1
-		add_popularity = {
-		    ideology = ROOT
-		    popularity = 0.1
-		}
-		custom_effect_tooltip = generic_skip_one_line_tt
-		every_collection_element = {
-			input = {
-				input = game:scope
-				operators =  { 
-					faction_members 
-					limit = {
-						faction_influence_ratio > 0.3
-					}
-				}
-				
-				name = INFLUENCE_ABOVE_30_PERCENT
-			}
-			custom_effect_tooltip = INFLUENCE_ABOVE_30_PERCENT
-			add_faction_initiative = 1
-			add_political_power = 100
-		}
-	}
-	ai_will_do = {
-		base = 1
-		modifier = {
-			add = 9 # Early game prio
-			date < 1941.1.1
-		}
-	}
-}
+# Align China - align China deleted to reduce errors
 
 faction_goal_war_on_communism_in_asia = {
 	name = war_on_communism_in_asia_goal_name
@@ -344,7 +283,6 @@ faction_goal_war_on_communism_in_asia = {
 	visible = {
 		FROM = {
 			original_tag = JAP
-			has_completed_focus = JAP_the_great_spiritual_evil
 		}
 	}
 	completed = {
@@ -385,7 +323,7 @@ faction_goal_war_on_communism_in_asia = {
 		base = 0
 		modifier = {
 			add = 100 # Prio when taken the focus
-			has_completed_focus = JAP_strike_down_the_enemy_of_the_people
+			always = yes
 		}
 	}
 }

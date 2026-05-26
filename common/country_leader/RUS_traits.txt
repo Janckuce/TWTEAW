@@ -25,12 +25,11 @@ leader_traits = {
 		random = no
 		sprite = 5
 		research_speed_factor = 0.05
-		land_doctrine_cost_factor = -0.1
 		experience_gain_army = 0.03
-		army_breakthrough_against_minor_factor = 0.035
-		army_breakthrough_against_major_factor = 0.035
-		army_infantry_defence_factor = -0.025
+		breakthrough_factor = 0.035
 		attrition = 0.1
+		infantry_track_mastery_gain_factor = 0.15
+		operations_track_mastery_gain_factor = 0.15
 	}
 	organiser_in_situations= {
 		random = no
@@ -40,6 +39,7 @@ leader_traits = {
 		army_org_regain = 0.05
 		planning_speed = 0.05
 		max_planning = 0.05
+		combat_support_track_mastery_gain_factor = 0.35
 	}
 	Corruption_Incarnate = {
 		random = no

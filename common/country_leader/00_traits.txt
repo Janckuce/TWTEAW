@@ -6666,7 +6666,7 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				not = { has_completed_focus = USA_suspend_the_presecution }
+				always = yes
 				factor = 0
 			}
 		}
@@ -6693,7 +6693,7 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				tag = USA
-				NOT = { has_completed_focus = USA_america_first }
+				always = yes
 				factor = 0
 			}
 		}
@@ -6708,7 +6708,7 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				tag = HUN
-				NOT = { has_completed_focus = HUN_invite_the_habsburg_prince }
+				always = yes
 				factor = 0
 			}
 		}
@@ -8097,8 +8097,6 @@ leader_traits = {
 	cossack_ataman = {
 		random = no
 		sprite = 13
-		justify_war_goal_time = -0.25
-		generate_wargoal_tension = -0.5
 		cavalry_attack_factor = 0.15
 		cavalry_defence_factor = 0.15
 	}
@@ -12398,7 +12396,7 @@ leader_traits = {
 
 		army_SER_mihailo_zivkovic = {
 		sprite = 5
-		land_doctrine_cost_factor = -0.15
+		infantry_track_mastery_gain_factor = 0.35
 		command_cap_increase = 20
 
 		ai_will_do = {
@@ -14197,7 +14195,7 @@ leader_traits = {
 
 	air_chief_giulio_douhet = {
 		sprite = 2
-		air_strategic_bomber_bombing_factor = 0.1
+		air_strategic_bomber_bombing_factor = 0.3
 		experience_gain_air = @chief_experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase

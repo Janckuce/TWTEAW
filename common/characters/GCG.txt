@@ -126,11 +126,14 @@ characters = {
 				small = "GFX_GCG_Joachim_Von_Heydebreck_Frame"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = high_command
 			idea_token = GCG_Joachim_Von_Heydebreck
 			allowed = {
 				tag = GCG
+			}
+			available = {
+				has_country_flag = GCG_Flag_Joachim_Heydebreck_decision_taken
 			}
 			traits = {
 				Scavenging_Expert

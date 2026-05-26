@@ -22,7 +22,7 @@ RUS_Peasants_Land_Bank_Category = {
 	}
 	
 	visible = {
-		has_completed_focus = RUS_Peasants_Land_Bank
+		always = no # change if/when this needs to be enabled via a focus tree other than S-R
 	}
 }
 
@@ -38,7 +38,7 @@ RUS_Laboratories_Category = {
 	}
 
 	visible = {
-		has_completed_focus = RUS_Establish_Laboratories
+		always = no # the RUS_Establish_Laboratories focus does not exist and it being completed was the only condition
 	}
 }
 
@@ -54,11 +54,10 @@ RUS_Military_Academy_Category = {
 	}
 
 	visible = {
-		or = {
-			has_completed_focus = RUS_Mass_Mobilise
-			has_completed_focus = RUS_Establish_Military_Academy
-			has_completed_focus = RUS_focus_SR_Leadership_Academies
-		}
+		has_completed_focus = RUS_focus_SR_Leadership_Academies
+		# if/when any other tree gets an equivalent, uncomment the OR and put the above plus that into it
+		#or = {
+		#}
 	}
 }
 

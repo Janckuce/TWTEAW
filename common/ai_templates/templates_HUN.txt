@@ -11,18 +11,12 @@ armor_HUN = {
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
-			}
+			has_tech = ww1_medium_tank_1
 		}
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = ww1_medium_tank_2
 		}
 
 		modifier = {
@@ -67,10 +61,7 @@ armor_HUN = {
 			modifier = {
 				factor = 3
 				date < 1941.1.1
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
@@ -98,10 +89,7 @@ armor_HUN = {
 			modifier = {
 				factor = 3
 				date > 1941.1.1
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
@@ -129,10 +117,7 @@ armor_HUN = {
 
 			modifier = {
 				factor = 4
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -161,10 +146,7 @@ armor_HUN = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = advanced_medium_tank
-					has_tech = advanced_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -194,10 +176,7 @@ armor_HUN = {
 
 			modifier = {
 				factor = 6
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 

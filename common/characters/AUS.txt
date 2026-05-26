@@ -15,11 +15,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_ernest_von_koerber
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 				visible = {
 				date < 1919.1.1
 			}
@@ -48,11 +44,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_alexander_von_krobatin
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -75,11 +67,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_samuel_von_hazai
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -101,11 +89,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_rudolf_stoger_steinstatten
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -114,368 +98,204 @@ characters = {
 	}
 
 	AUH_goglia_zlota = {
-		instance = {
+		advisor = {
+			slot = high_command
+			idea_token = AUH_goglia_zlota
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = high_command
-				idea_token = AUH_goglia_zlota
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					army_artillery_1
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				goglia_lipa
 			}
-
-			corps_commander = {
-				traits = { bearer_of_artillery infantry_leader }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 1
-			}
-			name = AUH_goglia_zlota
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_auh_goglia_lipa"
-					small = "GFX_advisor_goglia_lipa"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			advisor = {	
-				slot = high_command
-				idea_token = AUH_goglia_zlota
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					goglia_lipa
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
-			}
 
-			name = AUH_goglia_zlota
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+		corps_commander = {
+			traits = { bearer_of_artillery infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		name = AUH_goglia_zlota
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_auh_goglia_lipa"
+				small = "GFX_advisor_goglia_lipa"
 			}
 		}
 	}
 
 	AUH_eduard_bohm = {
-		instance = {
+		advisor = {
+			slot = high_command
+			idea_token = AUH_eduard_bohm
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = high_command
-				idea_token = AUH_eduard_bohm
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					army_infantry_3
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				army_infantry_3
 			}
-
-			corps_commander = {
-				traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert career_officer }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			name = AUH_eduard_bohm
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_auh_bohm_ermroli"
-					small = "GFX_advisor_bohm_ermroli"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			advisor = {	
-				slot = high_command
-				idea_token = AUH_eduard_bohm
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					army_infantry_2
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
-			}
 
-			name = AUH_eduard_bohm
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+		corps_commander = {
+			traits = { infantry_officer cavalry_officer infantry_leader cavalry_leader cavalry_expert career_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		name = AUH_eduard_bohm
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_auh_bohm_ermroli"
+				small = "GFX_advisor_bohm_ermroli"
 			}
 		}
 	}
 
 	AUH_eugen_habsburg = {
-		instance = {
+		advisor = {
+			slot = high_command
+			idea_token =  AUH_eugen_habsburg
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = high_command
-				idea_token =  AUH_eugen_habsburg
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					eugen_habsburg
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				eugen_habsburg
 			}
- 
-			corps_commander = {
-				traits = { politically_connected }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 1
-			}
-			name =  AUH_eugen_habsburg
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_AUH_eugen_habsburg"
-					small = "GFX_advisor_AUH_eugen_habsburg"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			advisor = {	
-				slot = high_command
-				idea_token =  AUH_eugen_habsburg
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					eugen_habsburg
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
-			}
 
-			name =  AUH_eugen_habsburg
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		name =  AUH_eugen_habsburg
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_AUH_eugen_habsburg"
+				small = "GFX_advisor_AUH_eugen_habsburg"
 			}
 		}
 	}
 
     AUH_otto_ellison_nidlef = {
-		instance = {
+		advisor = {
+			slot = high_command
+			idea_token =  AUH_otto_ellison_nidlef
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = high_command
-				idea_token =  AUH_otto_ellison_nidlef
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					entrenchment_general
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				entrenchment_general
 			}
-
-			corps_commander = {
-				traits = { engineer_officer }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 3
-				logistics_skill = 2
-			}
-			name =  AUH_otto_ellison_nidlef
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_AUH_otto_ellison_nidlef"
-					small = "GFX_advisor_AUH_otto_ellison_nidlef"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			advisor = {	
-				slot = high_command
-				idea_token =  AUH_otto_ellison_nidlef
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					entrenchment_general
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
-			}
 
-			name =  AUH_otto_ellison_nidlef
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+		corps_commander = {
+			traits = { engineer_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		name =  AUH_otto_ellison_nidlef
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_AUH_otto_ellison_nidlef"
+				small = "GFX_advisor_AUH_otto_ellison_nidlef"
 			}
 		}
 	}
 
 	AUH_ignaz_trollmann = {
-		instance = {
+		advisor = {
+			slot = high_command
+			idea_token =  AUH_ignaz_trollmann
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = high_command
-				idea_token =  AUH_ignaz_trollmann
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					ignaz_trollmann
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				ignaz_trollmann
 			}
-
-			corps_commander = {
-				traits = { hill_fighter commando trickster ranger }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 2
-			}
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_AUH_ignaz_trollmann"
-					small = "GFX_advisor_AUH_ignaz_trollmann"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			advisor = {	
-				slot = high_command
-				idea_token =  AUH_ignaz_trollmann
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					army_commando_3
-				}
-				cost = 250
-				ai_will_do = {
-					base = 1
-				}
-			}
 
-			name =  AUH_ignaz_trollmann
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+		corps_commander = {
+			traits = { hill_fighter commando trickster ranger }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_AUH_ignaz_trollmann"
+				small = "GFX_advisor_AUH_ignaz_trollmann"
 			}
 		}
 	}
 
     auh_svetozar_bojna = {
-		instance = {
+		advisor = {
+			slot = army_chief
+			idea_token = auh_svetozar_bojna
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = army_chief
-				idea_token = auh_svetozar_bojna
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					svetozar_bojna
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				svetozar_bojna
 			}
-
-			corps_commander = {
-				traits = { infantry_leader commando ambusher }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 2
-			}
-			name = auh_svetozar_bojna
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_auh_svetozar_bojna"
-					small = "GFX_advisor_auh_svetozar_bojna"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			name = auh_svetozar_bojna
-			portraits = { 
-				army = {
-					large = "GFX_idea_generic_army_europe_1"
-				}
+
+		corps_commander = {
+			traits = { infantry_leader commando ambusher }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		name = auh_svetozar_bojna
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_auh_svetozar_bojna"
+				small = "GFX_advisor_auh_svetozar_bojna"
 			}
 		}
 	}
@@ -534,7 +354,7 @@ characters = {
 		}
 	}
 
-		AUH_erzherzog_franz_habsburg = {
+	AUH_erzherzog_franz_habsburg = {
 		name = AUH_erzherzog_franz_habsburg
 		portraits = {
 			army = {
@@ -595,11 +415,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_friedrich_habsburg
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -681,7 +497,6 @@ characters = {
 					AND = {
 						has_civil_war = yes
 					}
-				
 					has_civil_war = no
 				}
 			}
@@ -708,7 +523,6 @@ characters = {
 					AND = {
 						has_civil_war = yes
 					}
-				
 					has_civil_war = no
 				}
 			}
@@ -735,7 +549,6 @@ characters = {
 					AND = {
 						has_civil_war = yes
 					}
-				
 					has_civil_war = no
 				}
 			}
@@ -798,49 +611,35 @@ characters = {
 	}
 
 	auh_adolf_von_brudermann = {
-		instance = {
+		advisor = {
+			slot = high_command
+			idea_token = auh_adolf_von_brudermann
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = high_command
-				idea_token = auh_adolf_von_brudermann
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					adolf_von_brudermann
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				adolf_von_brudermann
 			}
-
-			corps_commander = {
-				traits = { infantry_officer infantry_leader }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			name = auh_adolf_von_brudermann
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_AUH_adolf_brudermann"
-					small = "GFX_advisor_adolf_brudermann"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			name = adolf_von_brudermann
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+
+		corps_commander = {
+			traits = { infantry_officer infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		name = auh_adolf_von_brudermann
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_AUH_adolf_brudermann"
+				small = "GFX_advisor_adolf_brudermann"
 			}
 		}
 	}
@@ -881,49 +680,35 @@ characters = {
 	}
 
 	auh_conrad_hotzendorff = {
-		instance = {
+		advisor = {
+			slot = army_chief
+			idea_token = auh_conrad_hotzendorff
+			ledger = army
 			allowed = {
+				original_tag = AUS
 			}
-			advisor = {	
-				slot = army_chief
-				idea_token = auh_conrad_hotzendorff
-				ledger = army
-				allowed = {
-					original_tag = AUS
-				}
-				traits = {
-					conrad_hotzendorf
-				}
-				cost = 150
-				ai_will_do = {
-					base = 1
-				}
+			traits = {
+				conrad_hotzendorf
 			}
-
-			field_marshal = {
-				traits = { politically_connected old_guard infantry_leader infantry_officer harsh_leader media_personality war_hero trait_reckless organizer thorough_planner  }
-				skill = 3
-				attack_skill = 4
-				defense_skill = 1
-				planning_skill = 4
-				logistics_skill = 2
-			}
-			name = auh_conrad_hotzendorff
-			portraits = { #add new art here
-				army = {
-					large = "GFX_portrait_auh_conrad_hotzendorff"
-					small = "GFX_AUS_franz_conrad_von_hotzendorf_frame"
-				}
+			cost = 150
+			ai_will_do = {
+				base = 1
 			}
 		}
-		instance = {
-			allowed = {
-			}
-			name = auh_conrad_hotzendorff
-			portraits = { 
-				army = {
-					small = "GFX_idea_generic_army_europe_1"
-				}
+
+		field_marshal = {
+			traits = { politically_connected old_guard infantry_leader infantry_officer harsh_leader media_personality war_hero trait_reckless organizer thorough_planner  }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		name = auh_conrad_hotzendorff
+		portraits = { #add new art here
+			army = {
+				large = "GFX_portrait_auh_conrad_hotzendorff"
+				small = "GFX_AUS_franz_conrad_von_hotzendorf_frame"
 			}
 		}
 	}
@@ -943,11 +728,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_leopold_von_hauer
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -970,11 +751,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_emil_uzelac
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1023,11 +800,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_leopold_von_hauer
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1049,11 +822,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = auh_morritz_auffenberg
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1075,11 +844,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_stefan_burian
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1101,11 +866,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_leon_blinski
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1127,11 +888,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_friedrich_von_georgi
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1153,11 +910,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_alois_lexa_von_aehrenthal
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1179,11 +932,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_leopold_berchtold
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1205,11 +954,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_otto_wagner
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1231,11 +976,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_karl_wittgenstein
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1257,11 +998,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_vaclav_klement
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1282,11 +1019,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_adolf_loos
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1307,11 +1040,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_viktor_adler
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1331,11 +1060,7 @@ characters = {
 			traits = { kuk_austrian_school_of_economics }
 			can_be_fired = yes
 			idea_token = AUH_eugen_von_bohm_bawerk
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1356,11 +1081,7 @@ characters = {
 			can_be_fired = yes
 			idea_token = AUH_viktor_adler
 
-			allowed = {
-				OR = {
-					always = yes
-				}
-			}
+			
 
 			available = {
 				always = yes
@@ -1376,7 +1097,7 @@ characters = {
 			expire = 1910.1.3
 			ideology = centrism
 		}
-			country_leader = {
+		country_leader = {
 			desc = "AUH_franzjosef_desc"
 			traits = { kaiser_franz_josef }
 			expire = 1910.1.3
@@ -1397,7 +1118,7 @@ characters = {
 			expire = "1930.1.1"
 			ideology = centrism
 		}
-			country_leader = {
+		country_leader = {
 			desc = "AUH_Karl I_desc"
 			traits = { kaiser_no_bitches }
 			expire = "1930.1.1"
@@ -1417,7 +1138,7 @@ characters = {
 			expire = "1930.1.1"
 			ideology = centrism
 		}
-			country_leader = {
+		country_leader = {
 			desc = "AUH_Karl I_desc"
 			traits = { kaiser_imperial }
 			expire = "1930.1.1"
@@ -1432,7 +1153,7 @@ characters = {
 
 	AUH_karlii_dual = {
 		name = "Karl I"
-			country_leader = {
+		country_leader = {
 			desc = "AUH_Karl I_desc"
 			traits = { kaiser_dual }
 			expire = "1930.1.1"
@@ -1447,7 +1168,7 @@ characters = {
 
 	AUH_karlii_soc = {
 		name = "Karl I"
-			country_leader = {
+		country_leader = {
 			desc = "AUH_Karl I_desc"
 			traits = { kaiser_socialist }
 			expire = "1930.1.1"

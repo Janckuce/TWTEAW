@@ -247,6 +247,28 @@ joining_rule_has_no_war = {
 	}
 }
 
+joining_rule_has_no_offensive_war = {
+	type = joining_rules
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 2
+			NOT = { tag = ENG }
+			NOT = { tag = USA }
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+	trigger = {
+		has_offensive_war = no
+	}
+	modifier = {
+		defensive_war_stability_factor = 0.15
+	}
+}
+
 ########################################################
 
  ##  ###  ##   ##  ###   ##  ###  #  # ###  ##   ##  #   
@@ -256,6 +278,43 @@ joining_rule_has_no_war = {
  ##  ###  ##   ##  #  # #  # #    #  # ###  ##  #  # ###
 
 ######################################################## 
+
+joining_rule_neighbors_only = {
+	type = joining_rules
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 1
+			has_government = neutrality
+			has_war = no 
+		}
+	}
+	
+	trigger = {
+		any_neighbor_country = {
+			is_in_faction_with = FROM
+		}
+	}
+	modifier = {
+		enemy_justify_war_goal_time = 0.2
+	}
+}
+
+joining_rule_same_continent_only = {
+	type = joining_rules
+	ai_will_do = {
+		base = 0
+	}
+	can_remove = {
+		faction_manifest_fulfillment > 0.75
+	}
+	trigger = {
+		ROOT = { is_on_same_continent_as = FROM }
+	}
+	modifier = {
+		enemy_justify_war_goal_time = 0.1
+	}
+}
 
 joining_rule_africa_only = {
 	type = joining_rules
@@ -584,14 +643,12 @@ joining_rule_islamic_only = {
 			original_tag = YEM
 			original_tag = IRQ
 			original_tag = PER
-			original_tag = FSA
 			original_tag = JOR
 			original_tag = PAL
 			original_tag = SYR
 			original_tag = LEB
 			original_tag = TUR
 			original_tag = QAT
-			original_tag = BHR
 			original_tag = UAE
 			original_tag = EGY
 			original_tag = SUD
@@ -607,7 +664,6 @@ joining_rule_islamic_only = {
 			original_tag = PAK
 			original_tag = WES
 			original_tag = MRT
-			original_tag = SOK
 			original_tag = MLI
 			original_tag = NGR
 			original_tag = NGA
@@ -627,14 +683,8 @@ joining_rule_islamic_only = {
 			original_tag = KYR
 			original_tag = TMS
 			original_tag = KKP
-			original_tag = SIN
-			original_tag = KAS                  
 			original_tag = CRI              
-			original_tag = KOS              
 			original_tag = KUR      
-			original_tag = BLC      
-			original_tag = IMO      
-			original_tag = KLT      
 			original_tag = KBK      
 			original_tag = DJI      
 			original_tag = HAR      
@@ -646,13 +696,6 @@ joining_rule_islamic_only = {
 			original_tag = GNA      
 			original_tag = XSM      
 			original_tag = SIK
-			original_tag = KHM
-			original_tag = GSM
-			original_tag = NXM
-			original_tag = KUM
-			original_tag = SAB
-			original_tag = BRN
-			original_tag = CHM  
 			original_tag = AFG
 		}
 	}
@@ -676,14 +719,12 @@ joining_rule_islamic_only = {
 				original_tag = YEM
 				original_tag = IRQ
 				original_tag = PER
-				original_tag = FSA
 				original_tag = JOR
 				original_tag = PAL
 				original_tag = SYR
 				original_tag = LEB
 				original_tag = TUR
 				original_tag = QAT
-				original_tag = BHR
 				original_tag = UAE
 				original_tag = EGY
 				original_tag = SUD
@@ -699,7 +740,6 @@ joining_rule_islamic_only = {
 				original_tag = PAK
 				original_tag = WES
 				original_tag = MRT
-				original_tag = SOK
 				original_tag = MLI
 				original_tag = NGR
 				original_tag = NGA
@@ -719,14 +759,8 @@ joining_rule_islamic_only = {
 				original_tag = KYR
 				original_tag = TMS
 				original_tag = KKP
-				original_tag = SIN
-				original_tag = KAS                  
 				original_tag = CRI              
-				original_tag = KOS              
 				original_tag = KUR      
-				original_tag = BLC      
-				original_tag = IMO      
-				original_tag = KLT      
 				original_tag = KBK      
 				original_tag = DJI      
 				original_tag = HAR      
@@ -738,13 +772,6 @@ joining_rule_islamic_only = {
 				original_tag = GNA      
 				original_tag = XSM      
 				original_tag = SIK
-				original_tag = KHM
-				original_tag = GSM
-				original_tag = NXM
-				original_tag = KUM
-				original_tag = SAB
-				original_tag = BRN
-				original_tag = CHM  
 				original_tag = AFG
 			}
 		}

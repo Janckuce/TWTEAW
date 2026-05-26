@@ -12,7 +12,7 @@ characters = {
 			expire = "1965.1.1.1"
 		}
 	}
-	RUS_pavel_milyukov = {
+	RUS_pavel_milyukov_dem = {
 		name = "Pavel Milyukov"
 		portraits = {
 			civilian = {
@@ -46,7 +46,8 @@ characters = {
 				Ideological_Crusader
 			}
 			visible = {
-				has_completed_focus = RUS_Abdicate_Nicholas
+				always = no
+				#has_completed_focus = RUS_Abdicate_Nicholas # does not exist
 			}
 			can_be_fired = no
 			ai_will_do = {
@@ -71,7 +72,8 @@ characters = {
 				RUS_Backroom_Backstabber
 			}
 			visible = {
-				has_completed_focus = RUS_Abdicate_Nicholas
+				always = no
+				#has_completed_focus = RUS_Abdicate_Nicholas # does not exist
 			}
 			can_be_fired = no
 			ai_will_do = {
@@ -96,7 +98,8 @@ characters = {
 				RUS_Captain_of_Industry
 			}
 			visible = {
-				has_completed_focus = RUS_Abdicate_Nicholas
+				always = no
+				#has_completed_focus = RUS_Abdicate_Nicholas # does not exist
 			}
 			can_be_fired = no
 			ai_will_do = {

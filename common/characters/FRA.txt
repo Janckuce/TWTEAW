@@ -122,14 +122,6 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				check_variable = {
-					FRA.Annexed_Morocco = 1
-				}
-				custom_trigger_tooltip = {
-					tooltip = FRA_Foch_Trigger
-				}
-			}
 			traits = {
 				army_chief_offensive_2 #Inf Attack +10%
 			}
@@ -333,7 +325,7 @@ characters={
 				original_tag = FRA
 			}
 			traits = {
-				military_theorist #10% Off Doctrine
+				FRA_Oh_My_Oh_My
 			}
 			cost = 150
 			ai_will_do = {
@@ -552,7 +544,7 @@ characters={
 			traits = {
 				FRA_Naval_Reformist
 			}
-			cost = 150
+			cost = 100
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -708,7 +700,7 @@ characters={
 				traits = {
 					FRA_Chief_Of_Air_Staff
 				}
-				cost = 150
+				cost = 100
 			}
 		}
 

@@ -20,28 +20,19 @@ armor_USA = {
 			factor = 0.05
 			NOT = {
 				# Researching basic medium tank gives a free template, we want to start from there
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = ww1_medium_tank_2
 		}
 
 		modifier = {
 			factor = 10
 			NOT = { ai_has_role_template = armor }
-			OR = {
-				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
-			}
+			has_tech = ww1_medium_tank_1
 		}
 	}
 
@@ -57,7 +48,7 @@ armor_USA = {
 
 			support = {
 				artillery = 1
-				mot_recon = 1
+				recon = 1
 			}
 
 			regiments = {
@@ -74,10 +65,7 @@ armor_USA = {
 
 			modifier = {
 				factor = 3
-				OR = {
-					has_tech = improved_light_tank
-					has_tech = improved_light_tank_chassis
-				}
+				has_tech = ww1_light_tank_2
 			}
 		}
 
@@ -86,8 +74,8 @@ armor_USA = {
 		target_template = {
 			support = {
 				engineer = 1
-				light_tank_recon = 1
-				anti_tank = 1
+				recon = 1
+				#anti_tank = 1
 				signal_company = 1
 			}
 
@@ -130,10 +118,7 @@ armor_USA = {
 
 			modifier = {
 				factor = 4
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
@@ -142,16 +127,15 @@ armor_USA = {
 		target_template = {
 			support = {
 				engineer = 1
-				light_tank_recon = 1
-				anti_tank = 1
+				recon = 1
+				#anti_tank = 1
 				signal_company = 1
 			}
 
 			regiments = {
 				light_armor = 4
 				medium_armor = 2
-				motorized = 5
-				mechanized = 1
+				motorized = 6
 			}
 		}
 	}
@@ -163,10 +147,7 @@ armor_USA = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
@@ -184,9 +165,8 @@ armor_USA = {
 			regiments = {
 				light_armor = 2
 				medium_armor = 4
-				medium_sp_artillery_brigade = 1
-				mechanized = 3
-				motorized = 3
+				#medium_sp_artillery_brigade = 1
+				motorized = 6
 			}
 		}
 	}
@@ -198,10 +178,7 @@ armor_USA = {
 
 			modifier = {
 				factor = 6
-				OR = {
-					has_tech = advanced_medium_tank
-					has_tech = advanced_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -210,7 +187,7 @@ armor_USA = {
 		target_template = {
 			support = {
 				engineer = 1
-				light_tank_recon = 1
+				recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				artillery = 1
@@ -218,8 +195,8 @@ armor_USA = {
 
 			regiments = {
 				medium_armor = 6
-				medium_sp_artillery_brigade = 1
-				mechanized = 6
+				#medium_sp_artillery_brigade = 1
+				motorized = 6
 			}
 		}
 	}
@@ -231,10 +208,7 @@ armor_USA = {
 
 			modifier = {
 				factor = 7
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -243,7 +217,7 @@ armor_USA = {
 		target_template = {
 			support = {
 				engineer = 1
-				light_tank_recon = 1
+				recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				signal_company = 1
@@ -251,8 +225,8 @@ armor_USA = {
 
 			regiments = {
 				modern_armor = 6
-				mechanized = 6
-				medium_sp_artillery_brigade = 2
+				motorized = 6
+				#medium_sp_artillery_brigade = 2
 			}
 		}
 	}
@@ -337,7 +311,7 @@ infantry_USA = {
 			regiments = {
 				infantry = 12
 				artillery_brigade = 1
-				anti_tank_brigade = 1
+				#anti_tank_brigade = 1
 			}
 		}
 	}
@@ -367,7 +341,7 @@ infantry_USA = {
 			regiments = {
 				infantry = 12
 				artillery_brigade = 2
-				anti_tank_brigade = 2
+				#anti_tank_brigade = 2
 			}
 		}
 	}
@@ -451,7 +425,7 @@ mobile_USA = {
 		target_template = {
 
 			support = {
-				light_tank_recon = 1
+				recon = 1
 				artillery = 1
 				anti_air = 1
 				engineer = 1
@@ -460,8 +434,8 @@ mobile_USA = {
 
 			regiments = {
 				motorized = 10
-				medium_tank_destroyer_brigade = 1
-				medium_sp_artillery_brigade = 1
+				#medium_tank_destroyer_brigade = 1
+				#medium_sp_artillery_brigade = 1
 			}
 		}
 	}
@@ -482,7 +456,7 @@ mobile_USA = {
 		target_template = {
 
 			support = {
-				light_tank_recon = 1
+				recon = 1
 				artillery = 1
 				anti_air = 1
 				engineer = 1
@@ -490,10 +464,9 @@ mobile_USA = {
 			}
 
 			regiments = {
-				motorized = 7
-				mechanized = 3
-				medium_tank_destroyer_brigade = 1
-				medium_sp_artillery_brigade = 1
+				motorized = 10
+				#medium_tank_destroyer_brigade = 1
+				#medium_sp_artillery_brigade = 1
 			}
 		}
 	}
@@ -514,7 +487,7 @@ mobile_USA = {
 		target_template = {
 
 			support = {
-				mot_recon = 1
+				recon = 1
 				artillery = 1
 				anti_air = 1
 				engineer = 1
@@ -522,10 +495,9 @@ mobile_USA = {
 			}
 
 			regiments = {
-				motorized = 5
-				mechanized = 6
-				medium_tank_destroyer_brigade = 1
-				medium_sp_artillery_brigade = 2
+				motorized = 11
+				#medium_tank_destroyer_brigade = 1
+				#medium_sp_artillery_brigade = 2
 			}
 		}
 	}
@@ -545,7 +517,7 @@ mountaineers_USA = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = tech_mountaineers
+				has_tech = special_forces_mountaineers
 			}
 		}
 	}
@@ -562,7 +534,7 @@ mountaineers_USA = {
 			support = {
 				engineer = 1
 				artillery = 1
-				anti_tank = 1
+				#anti_tank = 1
 				logistics_company = 1
 			}
 
@@ -588,7 +560,7 @@ marines_USA = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = marines
+				has_tech = special_forces_marines
 			}
 		}
 
@@ -643,43 +615,6 @@ marines_USA = {
 
 			regiments = {
 				marine = 9
-				artillery_brigade = 1
-			}
-		}
-	}
-
-	marine_late_USA = {
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 4
-				date > 1943.1.1
-
-				# Only if we have amphibious tanks
-				OR = {
-					has_tech = amphibious_tank
-					has_tech = amphibious_tank_chassis
-				}
-			}
-		}
-
-		division_names_group = USA_MAR_01
-
-		target_template = {
-			support = {
-				recon = 1
-				logistics_company = 1
-				maintenance_company = 1
-				engineer = 1
-				artillery = 1
-			}
-
-			regiments = {
-				marine = 6
-				amphibious_armor = 2
-				amphibious_mechanized = 2
 				artillery_brigade = 1
 			}
 		}

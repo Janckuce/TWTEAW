@@ -356,12 +356,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Russia_democratic_8
 		}
-		mutually_exclusive = {
-			focus = RUS_Constitutional_Monarchy
-		}
-		mutually_exclusive = {
-			focus = RUS_Abdicate_Nicholas
-		}
+		#mutually_exclusive = {
+		#	focus = RUS_Constitutional_Monarchy
+		#}
+		#mutually_exclusive = {
+		#	focus = RUS_Abdicate_Nicholas
+		#}
 		completion_reward = {
 			remove_ideas = {
 				RUS_rasputin_idea # makes no sense he'd be left alone

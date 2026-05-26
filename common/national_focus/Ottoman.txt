@@ -14,336 +14,8 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 	
-	focus = {
-		id = Tur_state_of_army
-		icon = GFX_goal_generic_army_doctrines
-		x = 25
-		y = 0
-		cost = 10
+	# Part 1 - Industry (left side)
 
-		available = {
-			has_completed_focus = TUR_Leadership_Issue
-		}
-
-		bypass = {
-			#
-		}
-		
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Army_Of_Bygon_Era
-				add_idea = TUR_Army_Of_Bygon_Era_2
-			}
-		}
-	}
-	focus = {
-		id = TUR_infantry_Research
-		icon = GFX_focus_generic_military_academy
-		cost = 2.9
-		x = -2
-		y = 1
-		prerequisite = {
-			focus = Tur_state_of_army
-		}
-		relative_position_id = Tur_state_of_army
-		available = {
-			NOT = {
-				has_tech = ww1_infantry_weapons2
-			}
-		}
-		completion_reward = { 
-			add_tech_bonus = {
-				name = TUR_infantry_research_1
-				bonus = 1
-				uses = 1
-				technology = ww1_infantry_weapons2
-			}
-		}
-	}
-	focus = {
-		id = TUR_Support_Equipment
-		icon = GFX_goal_generic_military_deal
-		cost = 2.9
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = Tur_state_of_army
-		}
-		relative_position_id = Tur_state_of_army
-		completion_reward = { 
-			add_tech_bonus = {
-				category = support_tech
-				bonus = 1
-				uses = 1
-			}
-		}
-	}
-	focus = {
-		id = TUR_Never_Again_Behind
-		icon = GFX_goal_generic_military_sphere
-		cost = 5.8
-		x = 3
-		y = 2
-		prerequisite = {
-			focus = TUR_Army_Reform
-			focus = TUR_Air_2
-		}
-		relative_position_id = Tur_state_of_army
-		completion_reward = { 
-			add_tech_bonus = {
-				name = TUR_artillery_research_1
-				bonus = 0.5
-				uses = 1
-				category = artillery
-			}
-			add_tech_bonus = {
-				name = TUR_infantry_research_2
-				bonus = 0.5
-				uses = 1
-				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				name = TUR_Air_Bonus
-				bonus = 0.5
-				uses = 1
-				category = light_air
-			}
-		}
-	}
-	focus = {
-		id = TUR_Army_Reform
-		icon = GFX_focus_focus_fra_maquis
-		cost = 5
-		x = 0
-		y = 1
-		relative_position_id = Tur_state_of_army
-		prerequisite = {
-			focus = Tur_state_of_army
-		}
-		available = {
-			date > 1914.1.1
-		}
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Army_Of_Bygon_Era_2
-				add_idea = TUR_Army_Of_Bygon_Era_3
-			}
-		}
-	}
-	focus = {
-		id = TUR_Reformed_Army
-		icon = GFX_goal_generic_army_artillery2
-		cost = 5
-		prerequisite = {
-			focus = TUR_Army_Reform
-		}
-		available = {
-			date > 1915.1.1
-		}
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		x = 0
-		y = 2
-		relative_position_id = Tur_state_of_army
-		completion_reward = {
-			remove_ideas = TUR_Army_Of_Bygon_Era_3
-		}
-	}
-	focus = {
-		id = TUR_Anti_air
-		icon = GFX_focus_generic_air_defense
-		cost = 5
-		x = 4
-		y = 3
-		prerequisite = {
-			focus = TUR_Reformed_Army
-		}
-		prerequisite = {
-			focus = TUR_Air_3
-		}
-		relative_position_id = Tur_state_of_army
-		completion_reward = { 
-			add_tech_bonus = {
-				name = TUR_anti_air_research_1
-				bonus = 1
-				uses = 1
-				category = cat_anti_air
-			}
-		}
-	}
-	focus = {
-		id = TUR_Military_Research
-		icon = GFX_focus_generic_advanced_military_studies
-		cost = 10
-		x = 1
-		y = 3
-		relative_position_id = Tur_state_of_army
-		prerequisite = {
-			focus = TUR_Reformed_Army
-		}
-		prerequisite = {
-			focus = TUR_Never_Again_Behind
-		}
-		available = {
-			date > 1916.1.1
-		}
-		completion_reward = {
-			add_research_slot = 1
-			add_tech_bonus = {
-				name = TUR_artillery_research_1
-				bonus = 1
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-	focus = {
-		id = TUR_Air_Start
-		icon = GFX_focus_generic_air_bases
-		cost = 5.8
-		x = 31
-		y = 0
-		available = {
-			has_completed_focus = TUR_Leadership_Issue
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_Air
-				add_idea = TUR_Air2
-			}
-		}
-	}
-	focus = {
-		id = TUR_Naval_Bomber
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 2.5
-		x = 0
-		y = 3
-		relative_position_id = TUR_Naval_Reform1
-		prerequisite = {
-			focus = TUR_Air_3
-		}
-		prerequisite = {
-			focus = TUR_Purchase_Ships
-		}
-		completion_reward = { 
-			add_tech_bonus = {
-				name = TUR_naval_bomber_research_1
-				bonus = 1
-				uses = 1
-				category = naval_air
-			}
-		}
-	}
-	focus = {
-		id = TUR_Air_2
-		icon = GFX_goal_generic_air_fighter2
-		cost = 5.8
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = TUR_Air_Start
-		}
-		relative_position_id = TUR_Air_Start
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_Air2
-				add_idea = TUR_Air3
-			}
-		}
-	}
-	focus = {
-		id = TUR_Air_Research
-		icon = GFX_focus_generic_air_research_boost
-		cost = 3.6
-		x = -2
-		y = 1
-		prerequisite = {
-			focus = TUR_Air_Start
-		}
-		relative_position_id = TUR_Air_Start
-		completion_reward = { 
-			add_tech_bonus = {
-				name = TUR_air_research_1
-				bonus = 0.5
-				uses = 2
-				category = light_air
-			}
-		}
-	}
-	focus = {
-		id = TUR_Air_3
-		icon = GFX_goal_generic_air_bomber
-		cost = 5.8
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = TUR_Air_2
-		}
-		relative_position_id = TUR_Air_2
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_Air3
-				add_idea = TUR_Air4
-			}
-		}
-	}
-	focus = {
-		id = TUR_Air_4
-		icon = GFX_focus_generic_tank_air_support
-		cost = 5.8
-		x = 0
-		y = 1
-		relative_position_id = TUR_Air_3
-		prerequisite = {
-			focus = TUR_Air_3
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_Air4
-				add_idea = TUR_Air5
-			}
-		}
-	}
-	focus = {
-		id = TUR_Air_5
-		icon = GFX_goal_generic_air_fighter
-		cost = 5.8
-		x = 0
-		y = 1
-		relative_position_id = TUR_Air_4
-		prerequisite = {
-			focus = TUR_Air_4
-		}
-		completion_reward = { 
-			remove_ideas = TUR_Air5
-		}
-	}
-	focus = {
-		id = TUR_Army_Fit_Sultan
-		icon = GFX_focus_tur_sultan_men
-		cost = 5
-		prerequisite = {
-			focus = TUR_Defend_Against_Colonisers
-		}
-		prerequisite = {
-			focus = TUR_New_Caliph
-		}
-		available = {
-			has_completed_focus = TUR_Military_Research
-		}
-		search_filters = {FOCUS_FILTER_MILITARY_MOD}
-		x = 0
-		y = 6
-		relative_position_id = TUR_Stay_With_Sultan
-		completion_reward = {
-			add_ideas = TUR_Army_Fit_Sultan
-		}
-	}
 	focus = {
 		id = TUR_give_civs_pls
 		icon = GFX_goal_generic_construct_civ_factory
@@ -355,7 +27,7 @@ focus_tree = {
 				has_completed_focus = TUR_Arab
 				has_completed_focus = TUR_Multiculturalism
 			}
-			
+
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		completion_reward = {
@@ -369,6 +41,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Sick_man_europe_2
 		icon = GFX_goal_generic_production
@@ -390,6 +63,29 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = TUR_Sick_man_europe_3
+		icon = GFX_goal_generic_production2
+		cost = 10
+		mutually_exclusive = {
+			focus = TUR_Sick_man_europe_2
+		}
+		prerequisite = {
+			focus = TUR_give_civs_pls
+		}
+		relative_position_id = TUR_give_civs_pls
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		x = 1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Sick_man_europe
+				add_idea = TUR_Sick_man_europe_3
+			}
+		}
+	}
+
 	focus = {
 		id = TUR_Industrialising2
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
@@ -412,49 +108,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = TUR_Sick_man_europe_3
-		icon = GFX_goal_generic_production2
-		cost = 10
-		mutually_exclusive = {
-			focus = TUR_Sick_man_europe_2
-		}
-		prerequisite = {
-			focus = TUR_give_civs_pls
-		}
-		relative_position_id = TUR_give_civs_pls
-		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-		x = 1
-		y = 1
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Sick_man_europe
-				add_idea = TUR_Sick_man_europe_3
-			}
-		}
-	}
-	focus = {
-		id = TUR_Industrialising3
-		icon = GFX_focus_ARG_capitalize_the_beef_industry
-		cost = 10
-		x = 3
-		y = 2
-		relative_position_id = TUR_give_civs_pls
-		prerequisite = {
-			focus = TUR_Sick_man_europe_2
-			focus = TUR_Sick_man_europe_3
-		}
-		completion_reward = {
-			49 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
+
 	focus = {
 		id = TUR_give_mills_pls
 		icon = GFX_goal_generic_construct_mil_factory
@@ -478,6 +132,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Economic_Alliance_Bulgaria
 		icon = GFX_focus_generic_befriend_bulgaria
@@ -495,27 +150,30 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
-		id = TUR_Jew_Nationalisation
-		icon = GFX_focus_RAJ_institutional_money_laundering
+		id = TUR_Industrialising3
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
 		cost = 10
-		x = 0
-		y = 3
-		prerequisite = {
-			focus = TUR_give_mills_pls
-			focus = TUR_Economic_Alliance_Bulgaria
-		}
+		x = 3
+		y = 2
 		relative_position_id = TUR_give_civs_pls
-		completion_reward = { 
-			454 = {
+		prerequisite = {
+			focus = TUR_Sick_man_europe_2
+			focus = TUR_Sick_man_europe_3
+		}
+		completion_reward = {
+			49 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
+					instant_build = yes
 				}
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Forced_Nationalisation
 		icon = GFX_focus_generic_industrialists
@@ -528,7 +186,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = TUR_give_civs_pls
-		completion_reward = { 
+		completion_reward = {
 			798 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -544,6 +202,29 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = TUR_Jew_Nationalisation
+		icon = GFX_focus_RAJ_institutional_money_laundering
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = TUR_give_mills_pls
+			focus = TUR_Economic_Alliance_Bulgaria
+		}
+		relative_position_id = TUR_give_civs_pls
+		completion_reward = {
+			454 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+		}
+	}
+
 	focus = {
 		id = TUR_Improve_Roads
 		icon = GFX_goal_generic_construct_infrastructure
@@ -557,8 +238,8 @@ focus_tree = {
 		y = 3
 		relative_position_id = TUR_give_civs_pls
 
-		completion_reward = { 
-			340 = {	
+		completion_reward = {
+			340 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -590,7 +271,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 	id = TUR_Industrialising
 	icon = GFX_focus_tur_guns_produce
@@ -648,7 +329,7 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 50000
 			if = {
-				limit = { 
+				limit = {
 					has_completed_focus = TUR_Sick_man_europe_2
 				}
 				swap_ideas = {
@@ -657,7 +338,7 @@ focus_tree = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_completed_focus = TUR_Sick_man_europe_3
 				}
 				swap_ideas = {
@@ -672,6 +353,9 @@ focus_tree = {
 			}
 		}
 	}
+
+	# Part 2 - state of the nation (middle left)
+
 	focus = {
 		id = TUR_State_of_nation
 		icon = GFX_focus_AFG_education_reform
@@ -689,6 +373,25 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = TUR_Ecucation_issues
+		icon = GFX_focus_generic_bad_medical
+		cost = 10
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = TUR_State_of_nation
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Extremely_Low_Literacy
+				add_idea = TUR_Low_Literacy
+			}
+		 }
+	}
+
 	focus = {
 		id = TUR_Speak_To_People
 		icon = GFX_focus_ARG_keep_it_in_the_party
@@ -708,6 +411,45 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+
+	focus = {
+		id = TUR_Reform_curriculum
+		icon = GFX_focus_generic_court
+		cost = 10
+		prerequisite = {
+			focus = TUR_Ecucation_issues
+		}
+		relative_position_id = TUR_Ecucation_issues
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		x = -1
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Low_Literacy
+				add_idea = TUR_Average_Literacy
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_question_ethnicity
+		icon = GFX_focus_generic_attack_turkey
+		cost = 4.3
+		x = 0
+		y = 2
+		relative_position_id = TUR_State_of_nation
+		prerequisite = {
+			focus = TUR_Speak_To_People
+			focus = TUR_Ecucation_issues
+		}
+		available = {
+			date > 1912.1.1
+		}
+		completion_reward = {
+			add_ideas = TUR_question_ethnicity
+		}
+	}
+
 	focus = {
 		id = TUR_restore_peoples_trust
 		icon = GFX_focus_TUR_misak_i_milli
@@ -726,7 +468,69 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
+		id = TUR_Build_Universities
+		icon = GFX_focus_research2
+		cost = 10
+		prerequisite = {
+			focus = TUR_Reform_curriculum
+		}
+		relative_position_id = TUR_Ecucation_issues
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		x = -2
+		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Average_Literacy
+				add_idea = TUR_Educated_Population
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Arab
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		cost = 7.2
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = TUR_question_ethnicity
+		}
+		mutually_exclusive = {
+			focus = TUR_Multiculturalism
+		}
+		relative_position_id = TUR_State_of_nation
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_question_ethnicity
+				add_idea = TUR_Arab
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Multiculturalism
+		icon = GFX_focus_ARG_join_the_allies
+		cost = 7.2
+		x = 1
+		y = 3
+		mutually_exclusive = {
+			focus = TUR_Arab
+		}
+		prerequisite = {
+			focus = TUR_question_ethnicity
+		}
+		relative_position_id = TUR_State_of_nation
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_question_ethnicity
+				add_idea = TUR_Multiculturalism
+			}
+		}
+	}
+
+		focus = {
 		id = TUR_Chosing_Our_Destiny
 		icon = GFX_goal_generic_territory_or_war
 		cost = 10
@@ -747,6 +551,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Focus_On_Britain
 		icon = GFX_focus_ARG_cut_ties_with_britain
@@ -765,12 +570,13 @@ focus_tree = {
 			has_completed_focus = TUR_Stay_With_Sultan
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 				idea = TUR_Focus_On_Britain days = 180
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Focus_On_Russia
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
@@ -789,123 +595,15 @@ focus_tree = {
 			has_completed_focus = TUR_Young_Turk_Parti
 		}
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = { 
+		completion_reward = {
 			add_timed_idea = {
 				idea = TUR_Focus_On_Russia days = 180
 			}
 		}
 	}
-	focus = {
-		id = TUR_Ecucation_issues
-		icon = GFX_focus_generic_bad_medical
-		cost = 10
-		x = 5
-		y = 1
-		prerequisite = {
-			focus = TUR_State_of_nation
-		}
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Extremely_Low_Literacy
-				add_idea = TUR_Low_Literacy
-			}
-		 }
-	}
-	focus = {
-		id = TUR_Reform_curriculum
-		icon = GFX_focus_generic_court
-		cost = 10
-		prerequisite = {
-			focus = TUR_Ecucation_issues
-		}
-		relative_position_id = TUR_Ecucation_issues
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		x = -1
-		y = 1
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_Low_Literacy
-				add_idea = TUR_Average_Literacy
-			}
-		}
-	}
-	focus = {
-		id = TUR_question_ethnicity
-		icon = GFX_focus_generic_attack_turkey
-		cost = 4.3
-		x = 0
-		y = 2
-		relative_position_id = TUR_State_of_nation
-		prerequisite = {
-			focus = TUR_Speak_To_People
-			focus = TUR_Ecucation_issues
-		}
-		available = {
-			date > 1912.1.1
-		}
-		completion_reward = { 
-			add_ideas = TUR_question_ethnicity
-		}
-	}
-	focus = {
-		id = TUR_Arab
-		icon = GFX_focus_TUR_treaty_of_saadabad
-		cost = 7.2
-		x = -1
-		y = 3
-		prerequisite = {
-			focus = TUR_question_ethnicity
-		}
-		mutually_exclusive = {
-			focus = TUR_Multiculturalism
-		}
-		relative_position_id = TUR_State_of_nation
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_question_ethnicity
-				add_idea = TUR_Arab
-			}
-		}
-	}
-	focus = {
-		id = TUR_Multiculturalism
-		icon = GFX_focus_ARG_join_the_allies
-		cost = 7.2
-		x = 1
-		y = 3
-		mutually_exclusive = {
-			focus = TUR_Arab
-		}
-		prerequisite = {
-			focus = TUR_question_ethnicity
-		}
-		relative_position_id = TUR_State_of_nation
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = TUR_question_ethnicity
-				add_idea = TUR_Multiculturalism
-			}
-		}
-	}
-	focus = {
-		id = TUR_Build_Universities
-		icon = GFX_focus_research2
-		cost = 10
-		prerequisite = {
-			focus = TUR_Reform_curriculum
-		}
-		relative_position_id = TUR_Ecucation_issues
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		x = -2
-		y = 2
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Average_Literacy
-				add_idea = TUR_Educated_Population
-			}
-		}
-	}
+
+	# Part 3 - sultan vs young turks (middle right)
+
 	focus = {
 		id = TUR_Leadership_Issue
 		icon = GFX_focus_tur_sultan_lead
@@ -917,6 +615,9 @@ focus_tree = {
 
 		}
 	}
+
+	# Part 3-1 : Sultan prevails
+
 	focus = {
 		id = TUR_Stay_With_Sultan
 		icon = GFX_focus_TUR_pivot_to_the_past
@@ -934,273 +635,7 @@ focus_tree = {
 		add_ideas = TUR_Sultan_coup_start
 		}
 	}
-	focus = {
-		#	Remembering The Revolution / Refrences Young Turk Revolution
-		id = TUR_Young_Turk_Parti
-		icon = GFX_focus_tur_enver_pasha
-		cost = 6009.9
-		x = 3
-		y = 1
-		relative_position_id = TUR_Leadership_Issue
-		prerequisite = {
-			focus = TUR_Leadership_Issue
-		}
-		mutually_exclusive = {
-			focus = TUR_Stay_With_Sultan
-		}
-		completion_reward = {
-			add_ideas = TUR_Remember_The_Revolution
-		}
-	}
-	focus = {
-		#	Young Turks Party Was Criticised For Pro-Turkish Ideology
-		id = TUR_Ignore_Criticism
-		icon = GFX_focus_RAJ_just_good_business
-		cost = 10
-		relative_position_id = TUR_Young_Turk_Parti
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = TUR_Young_Turk_Parti
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Remember_The_Revolution
-				add_idea = TUR_Remember_The_Revolution1
-			}
-		}
-	}
-	focus = {
-		#	Simple Build Up As Filler
-		id = TUR_Arms_Factory
-		icon = GFX_goal_generic_small_arms
-		cost = 10
-		relative_position_id = TUR_Young_Turk_Parti
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = TUR_Young_Turk_Parti
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-    			popularity = 0.25
-			}
-				division_template = {
-				name = "Teşkilât-ı Mahsusa"
-				priority = 0
-				division_names_group = TUR_INF_01
-				template_counter = 56
-				is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
-				regiments = {
-				militia = { x = 0 y = 0 }
-				militia = { x = 0 y = 1 }
-				militia = { x = 0 y = 2 }
-				militia = { x = 1 y = 0 }
-				militia = { x = 1 y = 1 }
-				militia = { x = 1 y = 2 }
-				irregular_infantry = { x = 2 y = 0 }
-				irregular_infantry = { x = 2 y = 1 }
-				irregular_infantry = { x = 2 y = 2 }
-				irregular_infantry = { x = 3 y = 0 }
-				irregular_infantry = { x = 3 y = 1 }
-				irregular_infantry = { x = 3 y = 2 }
-			}
-			support = {
-			engineer = { x = 0 y = 0 }
-			}
-		}
 
-				49 = {
-					create_unit = {
-					division = "division_template =\"Teşkilât-ı Mahsusa\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = ROOT
-					count = 5
-				}
-			}
-			add_ideas = TUR_Military_Empowerment
-		}
-	}
-	focus = {
-		#	
-		id = TUR_Final_Preperation
-		icon = GFX_focus_TUR_turanist_ambition
-		cost = 10
-		relative_position_id = TUR_Young_Turk_Parti
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = TUR_Ignore_Criticism
-		}
-		prerequisite = {
-			focus = TUR_Arms_Factory
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUR_Remember_The_Revolution1
-				add_idea = TUR_Remember_The_Revolution2
-			}
-		}
-	}
-	focus = {
-		#	1913 Ottoman coup d'état
-		id = TUR_Coup_D_etat
-		icon = GFX_focus_POL_complete_april_constitution
-		cost = 10
-		relative_position_id = TUR_Final_Preperation
-		x = -1
-		y = 1
-		available = {
-			date > 1913.1.1
-		}
-		prerequisite = {
-			focus = TUR_Final_Preperation
-		}
-		completion_reward = {
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
-			army_experience = 50
-			navy_experience = 50
-			air_experience = 50
-		}
-	}
-	focus = {
-		#	Enver Pasha Consolidates Power / Iron Man Enver Pasha Meme Reference
-		id = TUR_Consolidate_Power
-		icon = GFX_focus_generic_befriend_turkey
-		cost = 10
-		relative_position_id = TUR_Coup_D_etat
-		x = 2
-		y = 0
-		prerequisite = {
-			focus = TUR_Final_Preperation
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-    			popularity = 0.2
-			}
-			remove_ideas = TUR_Remember_The_Revolution2
-			add_ideas = TUR_Iron_Pasha
-					354 = {
-					create_unit = {
-					division = "division_template =\"Teşkilât-ı Mahsusa\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = ROOT
-					count = 5
-				}
-			}
-		}
-	}
-	focus = {
-		id = TUR_Choosing_Our_Leader
-		icon = GFX_focus_generic_befriend_turkey
-		cost = 5
-		prerequisite = {
-			focus = TUR_Coup_D_etat
-		}
-		prerequisite = {
-			focus = TUR_Consolidate_Power
-		}
-			x = -1
-			y = 1
-			relative_position_id = TUR_Consolidate_Power
-			completion_reward = {
-				add_ideas = TUR_Choosing_Leader
-			}
-	}
-	focus = {
-		#	Army Bonus
-		id = TUR_Iron_Marshal
-		icon = GFX_focus_generic_full_social_mobilization
-		cost = 10
-		relative_position_id = TUR_Consolidate_Power
-		x = -3
-		y = 2
-		prerequisite = {
-			focus = TUR_Choosing_Our_Leader
-		}
-		mutually_exclusive = {
-			focus = TUR_Iron_Pilot
-			focus = TUR_Iron_Admiral
-		}
-		completion_reward = {
-			army_experience = 100
-			swap_ideas = {
-				remove_idea = TUR_Iron_Pasha
-				add_idea = TUR_Iron_Marshal
-			}
-			remove_ideas = TUR_Choosing_Leader
-		}
-	}
-	focus = {
-		#	Air Force Bonus
-		id = TUR_Iron_Pilot
-		icon = GFX_focus_FIN_expand_air_force_academy
-		cost = 10
-		relative_position_id = TUR_Consolidate_Power
-		x = 1
-		y = 2
-		prerequisite = {
-			focus = TUR_Choosing_Our_Leader
-		}
-		mutually_exclusive = {
-			focus = TUR_Iron_Marshal
-			focus = TUR_Iron_Admiral
-		}
-		completion_reward = {
-			air_experience = 100
-			swap_ideas = {
-				remove_idea = TUR_Iron_Pasha
-				add_idea = TUR_Iron_Pilot
-			}
-			remove_ideas = TUR_Choosing_Leader
-		}
-	}
-	focus = {
-		#	Navy Bonus / Meme
-		id = TUR_Iron_Admiral
-		icon = GFX_focus_PER_establish_the_navy
-		cost = 10
-		relative_position_id = TUR_Consolidate_Power
-		x = -1
-		y = 2
-		prerequisite = {
-			focus = TUR_Choosing_Our_Leader
-		}
-		mutually_exclusive = {
-			focus = TUR_Iron_Marshal
-			focus = TUR_Iron_Pilot
-		}
-		completion_reward = {
-			navy_experience = 100
-			swap_ideas = {
-				remove_idea = TUR_Iron_Pasha
-				add_idea = TUR_Iron_Admiral
-			}
-			remove_ideas = TUR_Choosing_Leader
-		}
-	}
-	focus = {
-		#	Armenian Genocide
-		id = TUR_Wash_Our_Lands
-		icon = GFX_focus_SWE_neither_death_nor_dishonor
-		cost = 10
-		relative_position_id = TUR_Consolidate_Power
-		x = -1
-		y = 3
-		prerequisite = {
-			focus = TUR_Iron_Marshal
-			focus = TUR_Iron_Admiral
-			focus = TUR_Iron_Pilot
-		}
-		completion_reward = {
-			add_manpower = -100000
-			add_stability = 0.3
-			add_war_support = 0.2
-		}
-	}
 	focus = {
 		id = TUR_Sultan_coup1
 		icon = GFX_goal_generic_attack_allies
@@ -1215,7 +650,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_completed_focus = TUR_Sultan_coup2
-				} 
+				}
 				swap_ideas = {
 					remove_idea = TUR_Sultan_coup2
 					add_idea = TUR_Sultan_coup3
@@ -1229,6 +664,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Sultan_coup2
 		icon = GFX_focus_RAJ_a_policy_of_silence
@@ -1243,7 +679,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_completed_focus = TUR_Sultan_coup1
-				} 
+				}
 				swap_ideas = {
 					remove_idea = TUR_Sultan_coup1
 					add_idea = TUR_Sultan_coup3
@@ -1257,6 +693,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Sultan_coup3
 		icon = GFX_focus_RAJ_the_legacy_of_babur
@@ -1277,6 +714,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Sultan_Coup_Finish
 		icon = GFX_focus_RAJ_seven_shackles
@@ -1295,7 +733,8 @@ focus_tree = {
 			add_ideas = TUR_People_Demand_Reform
 		 }
 	}
-	focus = {
+
+		focus = {
 		id = TUR_Give_People_Want
 		icon = GFX_focus_generic_court
 		cost = 7.2
@@ -1312,6 +751,7 @@ focus_tree = {
 			}
 		 }
 	}
+
 	focus = {
 		id = TUR_Drill_Oil
 		icon = GFX_focus_RAJ_trickle_down_economics
@@ -1321,8 +761,8 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = TUR_Sultan_Coup_Finish
-		}		
-		completion_reward = { 
+		}
+		completion_reward = {
 			add_ideas = TUR_Rich_Sultan
 			add_resource = {
 				type = oil
@@ -1341,6 +781,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Sultan_Liberty
 		icon = GFX_goal_generic_positive_trade_relations
@@ -1355,6 +796,28 @@ focus_tree = {
 			add_ideas = TUR_Give_Liberties
 		}
 	}
+
+	focus = {
+		id = TUR_Defend_Against_Colonisers
+		icon = GFX_focus_generic_islamic_propaganda
+		cost = 5.8
+		relative_position_id = TUR_Stay_With_Sultan
+		x = -1
+		y = 5
+		prerequisite = {
+			focus = TUR_Give_People_Want
+		}
+		prerequisite = {
+			focus = TUR_Drill_Oil
+		}
+		prerequisite = {
+			focus = TUR_Sultan_Liberty
+		}
+		completion_reward = {
+			add_ideas = TUR_Defend_Against_Colonisers
+		 }
+	}
+
 	focus = {
 		id = TUR_New_Caliph
 		icon = GFX_focus_PER_islamic_solidarity
@@ -1459,26 +922,533 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
-		id = TUR_Defend_Against_Colonisers
-		icon = GFX_focus_generic_islamic_propaganda
-		cost = 5.8
+		id = TUR_Army_Fit_Sultan
+		icon = GFX_focus_tur_sultan_men
+		cost = 5
+		prerequisite = {
+			focus = TUR_Defend_Against_Colonisers
+		}
+		prerequisite = {
+			focus = TUR_New_Caliph
+		}
+		available = {
+			has_completed_focus = TUR_Military_Research
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		x = 0
+		y = 6
 		relative_position_id = TUR_Stay_With_Sultan
-		x = -1
-		y = 5
-		prerequisite = {
-			focus = TUR_Give_People_Want
+		completion_reward = {
+			add_ideas = TUR_Army_Fit_Sultan
 		}
+	}
+
+	# Part 3-2: Young Turks win
+
+	focus = {
+		#	Remembering The Revolution / Refrences Young Turk Revolution
+		id = TUR_Young_Turk_Parti
+		icon = GFX_focus_tur_enver_pasha
+		cost = 6009.9
+		x = 3
+		y = 1
+		relative_position_id = TUR_Leadership_Issue
 		prerequisite = {
-			focus = TUR_Drill_Oil
+			focus = TUR_Leadership_Issue
 		}
-		prerequisite = {
-			focus = TUR_Sultan_Liberty
+		mutually_exclusive = {
+			focus = TUR_Stay_With_Sultan
 		}
 		completion_reward = {
-			add_ideas = TUR_Defend_Against_Colonisers
-		 }
+			add_ideas = TUR_Remember_The_Revolution
+		}
 	}
+
+	focus = {
+		#	Simple Build Up As Filler
+		id = TUR_Arms_Factory
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+    			popularity = 0.25
+			}
+				division_template = {
+				name = "Teşkilât-ı Mahsusa"
+				priority = 0
+				division_names_group = TUR_INF_01
+				template_counter = 56
+				is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+				regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 0 y = 2 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+				militia = { x = 1 y = 2 }
+				irregular_infantry = { x = 2 y = 0 }
+				irregular_infantry = { x = 2 y = 1 }
+				irregular_infantry = { x = 2 y = 2 }
+				irregular_infantry = { x = 3 y = 0 }
+				irregular_infantry = { x = 3 y = 1 }
+				irregular_infantry = { x = 3 y = 2 }
+			}
+			support = {
+			engineer = { x = 0 y = 0 }
+			}
+		}
+
+				49 = {
+					create_unit = {
+					division = "division_template =\"Teşkilât-ı Mahsusa\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+					count = 5
+				}
+			}
+			add_ideas = TUR_Military_Empowerment
+		}
+	}
+
+	focus = {
+		#	Young Turks Party Was Criticised For Pro-Turkish Ideology
+		id = TUR_Ignore_Criticism
+		icon = GFX_focus_RAJ_just_good_business
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = TUR_Young_Turk_Parti
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Remember_The_Revolution
+				add_idea = TUR_Remember_The_Revolution1
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Final_Preperation
+		icon = GFX_focus_TUR_turanist_ambition
+		cost = 10
+		relative_position_id = TUR_Young_Turk_Parti
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = TUR_Ignore_Criticism
+		}
+		prerequisite = {
+			focus = TUR_Arms_Factory
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Remember_The_Revolution1
+				add_idea = TUR_Remember_The_Revolution2
+			}
+		}
+	}
+
+	focus = {
+		#	1913 Ottoman coup d'état
+		id = TUR_Coup_D_etat
+		icon = GFX_focus_POL_complete_april_constitution
+		cost = 10
+		relative_position_id = TUR_Final_Preperation
+		x = -1
+		y = 1
+		available = {
+			date > 1913.1.1
+		}
+		prerequisite = {
+			focus = TUR_Final_Preperation
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+		}
+	}
+
+	focus = {
+		#	Enver Pasha Consolidates Power / Iron Man Enver Pasha Meme Reference
+		id = TUR_Consolidate_Power
+		icon = GFX_focus_generic_befriend_turkey
+		cost = 10
+		relative_position_id = TUR_Coup_D_etat
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = TUR_Final_Preperation
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+    			popularity = 0.2
+			}
+			remove_ideas = TUR_Remember_The_Revolution2
+			add_ideas = TUR_Iron_Pasha
+					354 = {
+					create_unit = {
+					division = "division_template =\"Teşkilât-ı Mahsusa\" start_experience_factor = 0.5 start_equipment_factor = 1"
+					owner = ROOT
+					count = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Choosing_Our_Leader
+		icon = GFX_focus_generic_befriend_turkey
+		cost = 5
+		prerequisite = {
+			focus = TUR_Coup_D_etat
+		}
+		prerequisite = {
+			focus = TUR_Consolidate_Power
+		}
+			x = -1
+			y = 1
+			relative_position_id = TUR_Consolidate_Power
+			completion_reward = {
+				add_ideas = TUR_Choosing_Leader
+			}
+	}
+
+	focus = {
+		#	Army Bonus
+		id = TUR_Iron_Marshal
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = TUR_Choosing_Our_Leader
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Pilot
+			focus = TUR_Iron_Admiral
+		}
+		completion_reward = {
+			army_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Marshal
+			}
+			remove_ideas = TUR_Choosing_Leader
+		}
+	}
+
+	focus = {
+		#	Navy Bonus / Meme
+		id = TUR_Iron_Admiral
+		icon = GFX_focus_PER_establish_the_navy
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = TUR_Choosing_Our_Leader
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Pilot
+		}
+		completion_reward = {
+			navy_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Admiral
+			}
+			remove_ideas = TUR_Choosing_Leader
+		}
+	}
+
+	focus = {
+		#	Air Force Bonus
+		id = TUR_Iron_Pilot
+		icon = GFX_focus_FIN_expand_air_force_academy
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = TUR_Choosing_Our_Leader
+		}
+		mutually_exclusive = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Admiral
+		}
+		completion_reward = {
+			air_experience = 100
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Pilot
+			}
+			remove_ideas = TUR_Choosing_Leader
+		}
+	}
+
+	focus = {
+		#	Armenian Genocide
+		id = TUR_Wash_Our_Lands
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		cost = 10
+		relative_position_id = TUR_Consolidate_Power
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = TUR_Iron_Marshal
+			focus = TUR_Iron_Admiral
+			focus = TUR_Iron_Pilot
+		}
+		completion_reward = {
+			add_manpower = -100000
+			add_stability = 0.3
+			add_war_support = 0.2
+		}
+	}
+
+	# Part 4: Military (right)
+
+	# Part 4-1: Army
+
+	focus = {
+		id = Tur_state_of_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 25
+		y = 0
+		cost = 10
+		available = {
+			has_completed_focus = TUR_Leadership_Issue
+		}
+		bypass = {
+			#
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Army_Of_Bygon_Era
+				add_idea = TUR_Army_Of_Bygon_Era_2
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_infantry_Research
+		icon = GFX_focus_generic_military_academy
+		cost = 2.9
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = Tur_state_of_army
+		}
+		relative_position_id = Tur_state_of_army
+		available = {
+			NOT = {
+				has_tech = ww1_infantry_weapons2
+			}
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = TUR_infantry_research_1
+				bonus = 1
+				uses = 1
+				technology = ww1_infantry_weapons2
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Army_Reform
+		icon = GFX_focus_focus_fra_maquis
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = Tur_state_of_army
+		prerequisite = {
+			focus = Tur_state_of_army
+		}
+		available = {
+			date > 1914.1.1
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Army_Of_Bygon_Era_2
+				add_idea = TUR_Army_Of_Bygon_Era_3
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Support_Equipment
+		icon = GFX_goal_generic_military_deal
+		cost = 2.9
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = Tur_state_of_army
+		}
+		relative_position_id = Tur_state_of_army
+		completion_reward = { 
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Reformed_Army
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		prerequisite = {
+			focus = TUR_Army_Reform
+		}
+		available = {
+			date > 1915.1.1
+		}
+		search_filters = {FOCUS_FILTER_MILITARY_MOD}
+		x = 0
+		y = 2
+		relative_position_id = Tur_state_of_army
+		completion_reward = {
+			remove_ideas = TUR_Army_Of_Bygon_Era_3
+		}
+	}
+
+	# Part 4-2: Air force
+
+	focus = {
+		id = TUR_Air_Start
+		icon = GFX_focus_generic_air_bases
+		cost = 5.8
+		x = 31
+		y = 0
+		available = {
+			has_completed_focus = TUR_Leadership_Issue
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Air
+				add_idea = TUR_Air2
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Air_Research
+		icon = GFX_focus_generic_air_research_boost
+		cost = 3.6
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = TUR_Air_Start
+		}
+		relative_position_id = TUR_Air_Start
+		completion_reward = {
+			add_tech_bonus = {
+				name = TUR_air_research_1
+				bonus = 0.5
+				uses = 2
+				category = light_air
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Air_2
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.8
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Air_Start
+		}
+		relative_position_id = TUR_Air_Start
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Air2
+				add_idea = TUR_Air3
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Air_3
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.8
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = TUR_Air_2
+		}
+		relative_position_id = TUR_Air_2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Air3
+				add_idea = TUR_Air4
+			}
+		}
+	}
+
+	# either army or air force must be modernized for this one
+
+	focus = {
+		id = TUR_Never_Again_Behind
+		icon = GFX_goal_generic_military_sphere
+		cost = 5.8
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = TUR_Army_Reform
+			focus = TUR_Air_2
+		}
+		relative_position_id = Tur_state_of_army
+		completion_reward = { 
+			add_tech_bonus = {
+				name = TUR_artillery_research_1
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = TUR_infantry_research_2
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = TUR_Air_Bonus
+				bonus = 0.5
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+
+	# Part 4-3: Navy
+
 	focus = {
 		id = TUR_Naval_Reform1
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1500,6 +1470,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Naval_Reform2
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1522,6 +1493,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = TUR_Overture
 		icon = GFX_goal_continuous_naval_production
@@ -1541,6 +1513,7 @@ focus_tree = {
 			add_ideas = TUR_Naval_Overture
 		}
 	}
+
 	focus = {
 		id = TUR_Purchase_Ships
 		icon = GFX_focus_generic_navy_battleship2
@@ -1559,6 +1532,114 @@ focus_tree = {
 					id = ww1_ottoman.8
 				}
 			}
+		}
+	}
+
+	# Part 4-4: Further military R&D (depends on prior improvements to all 3 branches)
+
+	focus = {
+		id = TUR_Military_Research
+		icon = GFX_focus_generic_advanced_military_studies
+		cost = 10
+		x = 1
+		y = 3
+		relative_position_id = Tur_state_of_army
+		prerequisite = {
+			focus = TUR_Reformed_Army
+		}
+		prerequisite = {
+			focus = TUR_Never_Again_Behind
+		}
+		available = {
+			date > 1916.1.1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = TUR_artillery_research_1
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Anti_air
+		icon = GFX_focus_generic_air_defense
+		cost = 5
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = TUR_Reformed_Army
+		}
+		prerequisite = {
+			focus = TUR_Air_3
+		}
+		relative_position_id = Tur_state_of_army
+		completion_reward = { 
+			add_tech_bonus = {
+				name = TUR_anti_air_research_1
+				bonus = 1
+				uses = 1
+				category = cat_anti_air
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Air_4
+		icon = GFX_focus_generic_tank_air_support
+		cost = 5.8
+		x = 0
+		y = 1
+		relative_position_id = TUR_Air_3
+		prerequisite = {
+			focus = TUR_Air_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Air4
+				add_idea = TUR_Air5
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Naval_Bomber
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 2.5
+		x = 0
+		y = 3
+		relative_position_id = TUR_Naval_Reform1
+		prerequisite = {
+			focus = TUR_Air_3
+		}
+		prerequisite = {
+			focus = TUR_Purchase_Ships
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = TUR_naval_bomber_research_1
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_Air_5
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.8
+		x = 0
+		y = 1
+		relative_position_id = TUR_Air_4
+		prerequisite = {
+			focus = TUR_Air_4
+		}
+		completion_reward = { 
+			remove_ideas = TUR_Air5
 		}
 	}
 }

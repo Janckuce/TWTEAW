@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = RUS
+		add_dynamic_modifier = {
+			modifier = RUS_Major_City_Forts
+		}
 		victory_points = {
 			3686 20
 		}
@@ -19,11 +22,12 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			
-			3686 ={
+			3686 = {
 				naval_base = 10
 				coastal_bunker = 3
-				bunker = 7
+				bunker = {
+					level = 7
+				}
 			}
 			9680 ={
 				naval_base = 1

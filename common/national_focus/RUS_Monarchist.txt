@@ -589,7 +589,6 @@ focus_tree = {
 			focus = MON_RUS_Stolypin2
 			focus = MON_RUS_Stolypin3
 		}
-
 		available = {
 			
 		}
@@ -606,11 +605,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-
 		prerequisite = {
 			focus = MON_RUS_redirect_stolypin_reforms
 		}
-
 		available = {
 			
 		}
@@ -1383,6 +1380,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = MON_RUS_Stolypin3
+		}
+		mutually_exclusive = {
+			focus = MON_RUS_redirect_stolypin_reforms
 		}
 		available = {
 

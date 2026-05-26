@@ -128,7 +128,7 @@ ORO_spectator_state = {
 			448 = {
 				create_unit = {
 					division = "name = \"I/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 1149
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -136,7 +136,7 @@ ORO_spectator_state = {
 			448 = {
 				create_unit = {
 					division = "name = \"II/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 1189
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -144,7 +144,7 @@ ORO_spectator_state = {
 			448 = {
 				create_unit = {
 					division = "name = \"III/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 4194
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -152,7 +152,7 @@ ORO_spectator_state = {
 			448 = {
 				create_unit = {
 					division = "name = \"IV/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 1149
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -160,7 +160,7 @@ ORO_spectator_state = {
 			448 = {
 				create_unit = {
 					division = "name = \"V/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 1189
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -168,7 +168,7 @@ ORO_spectator_state = {
 			448 = {
 				create_unit = {
 					division = "name = \"VI/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 4194
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -178,7 +178,7 @@ ORO_spectator_state = {
 			451 = {
 				create_unit = {
 					division = "name = \"VII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 1130
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -186,7 +186,7 @@ ORO_spectator_state = {
 			451 = {
 				create_unit = {
 					division = "name = \"VIII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 4136
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -194,7 +194,7 @@ ORO_spectator_state = {
 			451 = {
 				create_unit = {
 					division = "name = \"IX/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 9992
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -202,7 +202,7 @@ ORO_spectator_state = {
 			451 = {
 				create_unit = {
 					division = "name = \"X/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 1130
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -210,7 +210,7 @@ ORO_spectator_state = {
 			451 = {
 				create_unit = {
 					division = "name = \"XI/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 4136
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -218,7 +218,7 @@ ORO_spectator_state = {
 			451 = {
 				create_unit = {
 					division = "name = \"XII/Divisione Coloniale\" division_template = \"Divisione Coloniale\" start_experience_factor = 0.2"
-					owner = ROOT
+					owner = ITA
 					prioritize_location = 9992
 					allow_spawning_on_enemy_provs = yes
 				}
@@ -361,15 +361,15 @@ ORO_spectator_state = {
 			GER = {
 				set_variable = {
 					Italy_in_war = 1
-				}				
+				}
 			}
 			ITA = {
-				remove_ideas = ITA_central_powers_2
+				remove_ideas = ITA_idea_central_powers_2
 				declare_war_on = {
 					type = take_claimed_state
 					target = AUS
 				}
-				add_ideas = ITA_entente
+				add_ideas = ITA_idea_entente
 			}
 		}
 		fire_only_once = yes
@@ -399,7 +399,7 @@ ORO_spectator_state = {
 				country_event = ww1_austria.2
 				set_country_flag = AUS_july_crisis
 			}
-			threat = 40
+			add_threat = 40
 		}
 		fire_only_once = yes
 
@@ -485,7 +485,7 @@ ORO_spectator_state = {
 					declare_war_on = { target = MNT type = annex_everything }
 				}
 			}
-			threat = 50
+			add_threat = 50
 		}
 		fire_only_once = yes
 
@@ -2497,7 +2497,7 @@ ORO_balkan_wars = {
 					idea = TUR_Europe_last_stand days = 70
 				}
 			}
-			threat = 20
+			add_threat = 20
 		}
 		fire_only_once = yes
 
@@ -2700,6 +2700,7 @@ ORO_end_WW1_german_loss = {
 			factor = 10000
 		}
 	}
+
 	Entente_surrender_event = {
 		allowed = {
 			original_tag = ORO
@@ -2749,74 +2750,7 @@ ORO_end_WW1_german_loss = {
 		}
 	}
 
-
-	ORO_death_news = {
-		ROM_death_of_carol_I = {
-			allowed = {
-				original_tag = ORO
-			}
-			visible = {
-				always = yes
-			}
-
-			available = {
-				date > 1914.10.10
-			}
-
-			complete_effect = {
-				ROM = {
-					retire_country_leader = yes
-
-					add_country_leader_role = {
-						character = ROM_ferdinand_I
-						promote_leader = yes
-						country_leader = {
-							ideology = centrism
-						}
-					}
-					news_event = ww1_news.46
-				}
-			}
-			fire_only_once = yes
-
-			ai_will_do = {
-				factor = 10000
-			}
-		}
-	}
-	AUS_death_of_franz_joseph_I = {
-		allowed = {
-			original_tag = ORO
-		}
-		visible = {
-			always = yes
-		}
-
-		available = {
-			date > 1916.11.21
-		}
-
-		complete_effect = {
-			AUS = {
-				retire_country_leader = yes
-
-				add_country_leader_role = {
-					character = AUS_karl_franz_josef_ludwig_hubert_georg_otto_maria
-					promote_leader = yes
-					country_leader = {
-						ideology = centrism
-					}
-				}
-				news_event = ww1_news.28
-			}
-		}
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 10000
-		}
-	}
-	Bulgaria_Joins_Central = {
+		Bulgaria_Joins_Central = {
 		allowed = {
 			original_tag = ORO
 		}
@@ -2839,6 +2773,7 @@ ORO_end_WW1_german_loss = {
 			}
 		}
 	}
+
 	Turkey_Gets_Destroyed = {
 		allowed = {
 			original_tag = ORO
@@ -2858,8 +2793,78 @@ ORO_end_WW1_german_loss = {
 				set_variable = {
 					ottoman_in_war = 1
 				}
-			} 
+			}
 			country_event = ww1_ottoman.5
 		}
 	}
+
+}
+
+ORO_death_news = {
+
+	ROM_death_of_carol_I = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			date > 1914.10.10
+		}
+
+		complete_effect = {
+			ROM = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+					character = ROM_ferdinand_I
+					promote_leader = yes
+					country_leader = {
+						ideology = centrism
+					}
+				}
+				news_event = ww1_news.46
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+	AUS_death_of_franz_joseph_I = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			date > 1916.11.21
+		}
+
+		complete_effect = {
+			AUS = {
+				retire_country_leader = yes
+
+				add_country_leader_role = {
+					character = AUH_karlii
+					promote_leader = yes
+					country_leader = {
+						ideology = centrism
+					}
+				}
+				news_event = ww1_news.28
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
 }

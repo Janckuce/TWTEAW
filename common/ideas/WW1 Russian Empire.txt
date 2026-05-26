@@ -786,10 +786,7 @@ ideas = {
 			removal_cost = -1
 			available = {
 				NOT = {
-					OR = {
-						has_government = communism
-						has_war_with = SOR
-					}
+					has_war_with = SOR
 				}
 			}
 			modifier = {

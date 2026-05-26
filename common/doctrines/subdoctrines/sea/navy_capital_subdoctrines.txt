@@ -245,16 +245,7 @@ coastal_defence_fleet = {
 
     # EFFECTS
 	effect = {
-		IF = {
-			limit = {
-				NOT = {
-					has_tech = coastal_defense_ships
-				}
-			}
-			set_technology = { 
-				coastal_defense_ships = 1 
-			}
-		}
+		#used to grant coastal defense ships but for our mod that tech does not exist
 	}
 	naval_supply_consumption_factor = -0.15
 	navy_max_range_factor = -0.10
@@ -339,8 +330,8 @@ naval_gunfire_support = {
 
         joint_operations= {
         	naval_invasion_planning_bonus_speed = 0.20
-        	naval_repair_support_value_factor = 0.10
-    		naval_general_support_value_factor = 0.10
+        	#naval_repair_support_value_factor = 0.10 # error suppression
+    		#naval_general_support_value_factor = 0.10
 
         }
 

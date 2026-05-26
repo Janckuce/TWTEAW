@@ -1285,6 +1285,7 @@ German_Fortifications = {
 	icon = GFX_modifiers_generic_defense
     state_bunker_max_level_terrain_limit = 6
 }
+
 TUR_Air = {
 	icon = GFX_idea_generic_air_research
 	enable = { always = yes }
@@ -1294,5 +1295,14 @@ TUR_Air = {
 	air_range_factor = -0.75
 	air_bombing_targetting = -0.75
 	air_cas_efficiency = -0.75
+}
+
+RUS_Major_City_Forts = {
+	enable = { always = yes }
+	remove_trigger = {
+		#date > 1911.1.1
+	}
+	icon = GFX_modifiers_generic_defense
+    state_bunker_max_level_terrain_limit = 10
 }
 

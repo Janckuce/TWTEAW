@@ -11,18 +11,12 @@ armored_SOV = {
 
 		modifier = {
 			factor = 3
-			OR = {
-				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
-			}
+			has_tech = ww1_medium_tank_1
 		}
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = ww1_medium_tank_2
 		}
 	}
 
@@ -87,10 +81,7 @@ armored_SOV = {
 
 			modifier = {
 				factor = 4
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 			}
 		}
 
@@ -118,10 +109,7 @@ armored_SOV = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_1
 				date > 1940.7.1
 			}
 		}
@@ -150,10 +138,7 @@ armored_SOV = {
 
 			modifier = {
 				factor = 6
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -180,10 +165,7 @@ armored_SOV = {
 
 			modifier = {
 				factor = 7
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 			}
 		}
 
@@ -197,9 +179,9 @@ armored_SOV = {
 			}
 
 			regiments = {
-				modern_armor = 4
-				mechanized = 4
-				medium_sp_artillery_brigade = 2
+				medium_armor = 4
+				motorized = 4
+				#medium_sp_artillery_brigade = 2
 			}
 		}
 	}
@@ -352,10 +334,7 @@ breakthrough_armor_SOV = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 				date > 1943.1.1
 			}
 			modifier = {
@@ -391,10 +370,7 @@ breakthrough_armor_SOV = {
 
 			modifier = {
 				factor = 5
-				OR = {
-					has_tech = improved_medium_tank
-					has_tech = improved_medium_tank_chassis
-				}
+				has_tech = ww1_medium_tank_2
 				date > 1943.1.1
 			}
 			modifier = {
@@ -603,7 +579,7 @@ mountaineers_SOV = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = tech_mountaineers
+				has_tech = special_forces_mountaineers
 			}
 		}
 	}
@@ -650,7 +626,7 @@ marines_SOV = {
 		modifier = {
 			factor = 0
 			NOT = {
-				has_tech = marines
+				has_tech = special_forces_marines
 			}
 		}
 	}
@@ -678,169 +654,6 @@ marines_SOV = {
 		}
 	}
 }
-
-
-anti_armor_SOV = {
-	# This is relatively similar to the anti_armor_GER in Germany's file
-
-	available_for = {
-		SOV
-	}
-
-	role = motorized
-
-	upgrade_prio = {
-		base = 2
-
-		modifier = {
-			factor = 3
-			# has_war_with = GER
-			any_enemy_country = {
-				ROOT = {
-					estimated_intel_max_armor = {
-						tag = PREV
-						value > 20
-					}
-				}
-			}
-		}
-
-		modifier = {
-			factor = 0
-			NOT = { has_tech = interwar_antitank }
-		}
-	}
-
-	infantry_anti_armor_SOV = {
-		custom_icon = 28
-
-		upgrade_prio = {
-			base = 1.1
-
-			modifier = {
-				factor = 2
-				has_tech = interwar_antitank
-
-				# has_war_with = GER
-				#any_enemy_country = {
-				#	ROOT = {
-				#		estimated_intel_max_armor = {
-				#			tag = PREV
-				#			value > 20
-				#		}
-				#	}
-				#}
-			}
-		}
-
-		target_template = {
-
-			support = {
-				engineer = 1
-				mot_recon = 1
-				#field_hospital = 1
-				anti_tank = 1
-			}
-
-			regiments = {
-				motorized = 6
-				mot_anti_tank_brigade = 1
-			}
-		}
-	}
-
-	light_tank_anti_armor_SOV = {
-		custom_icon = 28
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 3
-				OR = {
-					has_tech = basic_light_td
-					has_design_based_on = light_tank_destroyer_chassis
-				}
-				#if = {
-				#	limit = {
-				#		NOT = { has_dlc = "No Step Back" }
-				#	}
-				#	has_tech = basic_light_td
-				#}
-				#has_war_with = GER
-				#any_enemy_country = {
-				#	ROOT = {
-				#		estimated_intel_max_armor = {
-				#			tag = PREV
-				#			value > 27
-				#		}
-				#	}
-				#}
-			}
-		}
-
-		target_template = {
-
-			support = {
-				engineer = 1
-				recon = 1
-				anti_tank = 1
-			}
-
-			regiments = {
-				light_tank_destroyer_brigade = 1
-				motorized = 6
-			}
-		}
-	}
-
-	medium_armor_anti_armor_SOV = {
-		custom_icon = 28
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 4
-				has_tech = antitank2
-
-				#if = {
-				#	limit = {
-				#		NOT = { has_dlc = "No Step Back" }
-				#	}
-				#	has_tech = basic_medium_td
-				#}
-				#has_war_with = GER
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
-			}
-		}
-
-		target_template = {
-
-			support = {
-				engineer = 1
-				recon = 1
-				maintenance_company = 1
-				logistics_company = 1
-				anti_tank = 1
-			}
-
-			regiments = {
-				medium_tank_destroyer_brigade = 1
-				mechanized = 4
-				motorized = 2
-			}
-		}
-	}
-}
-
 
 # Non-complete list of sub-units
 
