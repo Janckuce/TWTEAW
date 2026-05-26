@@ -1,11 +1,12 @@
 ideas = {
 	country = {
 		GCG_Gorilla_Warfare = {
+			picture = generic_guerilla_warfare
 			modifier = {
 				surrender_limit = 0.1
+				supply_combat_penalties_on_core_factor = -1
 			}
 		}
-
 		GCG_Isolated_Government = {
 			picture = AFG_economic_regionalism
 			modifier = {
@@ -49,21 +50,42 @@ ideas = {
 			picture = ARG_rapid_militarization
 			modifier = {
 				local_resources = 0.2
-				industrial_capacity_factory = -0.2
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
-		GCG_Asian_Populus = {
-			picture = prc_low_popular_support3
+		GCG_Industrial_Stronghold = {
+			picture = PRC_china_railway_construction_corporation
 			modifier = {
-				monthly_population = 0.2
-				conscription_factor = 0.2
+				industrial_capacity_factory = 0.1
 			}
 		}
-		GCG_Asian_Resources = {
-			picture = ARG_resource_extration_focus
+		GCG_Industrial_Stronghold1 = {
+			picture = PRC_china_railway_construction_corporation
 			modifier = {
-				local_resources_factor = 0.2
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		GCG_Military_Stronghold = {
+			picture = FRA_fortification_focus
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+		GCG_Military_Stronghold1 = {
+			picture = FRA_fortification_focus
+			modifier = {
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		GCG_Military_Stronghold2 = {
+			picture = FRA_fortification_focus
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_core_defence_factor = 0.05
 			}
 		}
 		GCG_Construction_Society = {
@@ -75,7 +97,7 @@ ideas = {
 		GCG_Food_Industry = {
 			picture = RAJ_state_of_famine_country
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_expected_value = -0.25
 			}
 		}
 		GCG_Production_Expertise = {
@@ -137,9 +159,11 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					defense = 0.05
+					instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.02
+					build_cost_ic = -0.05
+					instant = yes
 				}
 			}
 		}
@@ -148,9 +172,11 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					defense = 0.1
+					instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
+					instant = yes
 				}
 			}
 		}
@@ -159,9 +185,11 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					defense = 0.15
+					instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
+					instant = yes
 				}
 			}
 		}
@@ -170,10 +198,12 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					defense = 0.15
-					soft_attack = 0.05
+					breakthrough = 0.15
+					instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.25
+					instant = yes
 				}
 			}
 		}
@@ -186,52 +216,34 @@ ideas = {
 		}
 		GCG_Convoy_Production = {
 			picture = generic_navy_submarines
-			modifier = {
-				consumer_goods_factor = 0.025
-			}
 			equipment_bonus = {
 				convoy = {
-					surface_visibility = -0.05
+					surface_visibility = -0.3
+					instant = yes
 				}
 			}
 		}
-		GCG_Convoy_Production1 = {
-			picture = generic_navy_submarines
+		GCG_Oil_Exports = {
+			picture = generic_stockpile_fuel
 			modifier = {
-				consumer_goods_factor = 0.05
-			}
-			equipment_bonus = {
-				convoy = {
-					build_cost_ic = -0.025
-					surface_visibility = -0.05
-				}
-			}
-		}
-		GCG_Convoy_Production2 = {
-			picture = generic_navy_submarines
-			modifier = {
-				consumer_goods_factor = 0.075
-			}
-			equipment_bonus = {
-				convoy = {
-					naval_speed = 0.1
-					build_cost_ic = -0.025
-					surface_visibility = -0.05
-				}
+				production_speed_synthetic_refinery_factor = 0.25
 			}
 		}
 		GCG_Colonial_Air_Force = {
 			picture = air_war_plans_division_focus
-			modifier = {
-				air_agility_factor = 0.05
+			equipment_bonus = {
+				scout_plane = {
+					air_range = 0.25
+					instant = yes
+				}
 			}
 		}
 		GCG_Cheap_Planes = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
-				fighter = {
-					air_attack = -0.15
-					build_cost_ic = -0.05
+				scout_plane = {
+					build_cost_ic = -0.5
+					instant = yes
 				}
 			}
 		}

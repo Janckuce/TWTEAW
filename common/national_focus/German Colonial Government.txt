@@ -18,7 +18,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 245 y = 900 }
+	continuous_focus_position = { x = 50 y = 900 }
 	
 	default = no
 	reset_on_civilwar = no
@@ -38,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GCG_Political_Left1
-		icon = GFX_focus_SWE_counter_revolution
+		icon = GFX_focus_CHL_expand_the_forestry
 		cost = 10
 		relative_position_id = GCG_Ties_To_Berlin
 		x = -2
@@ -51,17 +51,12 @@ focus_tree = {
 			focus = GCG_Political_Right1
 		}
 		completion_reward = {
-			888 = {
-				add_core_of = GCG
-			}
-			737 = {
-				add_core_of = GCG
-			}
+			add_ideas = GCG_Industrial_Stronghold
 		}
 	}
 	focus = {
 		id = GCG_Political_Left2
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_ARG_revive_the_colonial_plan
 		cost = 7.2
 		relative_position_id = GCG_Political_Left1
 		x = 0
@@ -70,12 +65,23 @@ focus_tree = {
 			focus = GCG_Political_Left1
 		}
 		completion_reward = {
-			add_ideas = GCG_Asian_Populus
+			895 = {
+				add_core_of = GCG
+			}
+			894 = {
+				add_core_of = GCG
+			}
+			893 = {
+				add_core_of = GCG
+			}
+			541 = {
+				add_core_of = GCG
+			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Left3
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_generic_industry_investment
 		cost = 10
 		relative_position_id = GCG_Political_Left2
 		x = 0
@@ -84,33 +90,39 @@ focus_tree = {
 			focus = GCG_Political_Left2
 		}
 		completion_reward = {
-			888 = {
-				add_extra_state_shared_building_slots = 4
+			895 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 3
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 1
+					type = industrial_complex
+					level = 2
 				}
 			}
-			737 = {
-				add_extra_state_shared_building_slots = 4
+			894 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 3
+					type = industrial_complex
+					level = 2
 				}
+			}
+			893 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = dockyard
-					level = 1
+					type = industrial_complex
+					level = 2
+				}
+			}
+			541 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 				}
 			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Left4
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_BRA_amazon_colonization
 		cost = 5
 		relative_position_id = GCG_Political_Left3
 		x = 0
@@ -119,17 +131,9 @@ focus_tree = {
 			focus = GCG_Political_Left3
 		}
 		completion_reward = {
-			541 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-				}
-			}
-			769 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-				}
+			swap_ideas = {
+				remove_idea = GCG_Industrial_Stronghold
+				add_idea = GCG_Industrial_Stronghold1
 			}
 		}
 	}
@@ -147,26 +151,12 @@ focus_tree = {
 			focus = GCG_Ties_To_Berlin
 		}
 		completion_reward = {
-			684 = {
-				add_core_of = GCG
-			}
-			647 = {
-				add_core_of = GCG
-			}
-			638 = {
-				add_core_of = GCG
-			}
-			646 = {
-				add_core_of = GCG
-			}
-			633 = {
-				add_core_of = GCG
-			}
+			add_ideas = GCG_Military_Stronghold
 		}
 	}
 	focus = {
 		id = GCG_Political_Right2
-		icon = GFX_focus_generic_resource_extraction
+		icon = GFX_focus_CHI_popular_army
 		cost = 7.2
 		relative_position_id = GCG_Political_Right1
 		x = 0
@@ -175,12 +165,15 @@ focus_tree = {
 			focus = GCG_Political_Right1
 		}
 		completion_reward = {
-			add_ideas = GCG_Asian_Resources
+			swap_ideas = {
+				remove_idea = GCG_Military_Stronghold
+				add_idea = GCG_Military_Stronghold1
+			}
 		}
 	}
 	focus = {
 		id = GCG_Political_Right3
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
 		relative_position_id = GCG_Political_Right2
 		x = 0
@@ -189,60 +182,9 @@ focus_tree = {
 			focus = GCG_Political_Right2
 		}
 		completion_reward = {
-			684 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			647 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			638 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			646 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-			}
-			633 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
 			}
 		}
 	}
@@ -257,17 +199,9 @@ focus_tree = {
 			focus = GCG_Political_Right3
 		}
 		completion_reward = {
-			888 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-				}
-			}
-			684 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-				}
+			swap_ideas = {
+				remove_idea = GCG_Military_Stronghold1
+				add_idea = GCG_Military_Stronghold2
 			}
 		}
 	}
@@ -453,18 +387,6 @@ focus_tree = {
 			focus = GCG_Economic_Status
 		}
 		completion_reward = {
-			773 = {
-				add_core_of = GCG
-			}
-			839 = {
-				add_core_of = GCG
-			}
-			818 = {
-				add_core_of = GCG
-			}
-			777 = {
-				add_core_of = GCG
-			}
 			add_ideas = GCG_Askari_People
 		}
 	}
@@ -480,17 +402,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			541 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
-			546 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
 			}
 			swap_ideas = {
 				remove_idea = GCG_Askari_People
@@ -637,11 +555,11 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 4314
+				amount = 5000
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 678
+				amount = 1000
 			}
 		}
 	}
@@ -656,19 +574,9 @@ focus_tree = {
 			focus = GCG_Stock_Surplus
 		}
 		completion_reward = {
-			541 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-			546 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
 			}
 		}
 	}
@@ -720,19 +628,9 @@ focus_tree = {
 			focus = GCG_Trade_Security1
 		}
 		completion_reward = {
-			546 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
-			}
-			894 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-				}
+			add_offsite_building = {
+				type = dockyard
+				level = 4
 			}
 		}
 	}
@@ -747,25 +645,14 @@ focus_tree = {
 			focus = GCG_Trade_Security4
 		}
 		completion_reward = {
-			546 = {
-				add_resource = {
-					type = steel
-					amount = 7
-				}
-				add_resource = {
-					type = chromium
-					amount = 7
-				}
+			add_ideas = GCG_Oil_Exports
+			add_tech_bonus = {
+				category = synth_resources
+				bonus = 1
+				uses = 2
 			}
-			894 = {
-				add_resource = {
-					type = steel
-					amount = 7
-				}
-				add_resource = {
-					type = chromium
-					amount = 7
-				}
+			set_technology = {
+				ww1_synthetic_oil_experiments = 1
 			}
 		}
 	}
@@ -784,10 +671,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = GER_Kaiser_Leader2
+				category = air_equipment
 				bonus = 1
-				uses = 1
-				category = light_fighter
+				uses = 2
 			}
 		}
 	}
@@ -821,13 +707,13 @@ focus_tree = {
 		completion_reward = {
 			546 = {
 				add_building_construction = {
-					type = infrastructure
-					level = 2
-				}
-				add_building_construction = {
 					type = air_base
 					level = 2
 				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
 	}
@@ -845,16 +731,30 @@ focus_tree = {
 			focus = GCG_Air_Power2
 		}
 		completion_reward = {
-			773 = {
+			546 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 				}
-			}
-			777 = {
 				add_building_construction = {
-					type = air_base
-					level = 2
+					type = coastal_bunker
+					level = 1
+					province = 8183
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 2196
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 8182
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 12944
 				}
 			}
 		}
