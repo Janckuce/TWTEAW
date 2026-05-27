@@ -872,3 +872,144 @@ ENG_Annex_Subjects_Descision_Catagory = {
 		}
   	}
 }
+
+ENG_Naval_Blockade = {
+
+	ENG_blockade_info = {
+		priority = 99
+		fire_only_once = no
+		icon = GFX_decision_generic_blockade
+
+		fire_only_once = no
+
+		allowed = {
+			tag = ENG
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = no
+		}
+
+		highlight_states = {
+			highlight_provinces = {
+				7018 5 2752 2729 6816 6624 2506 5989 1227
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	}
+
+	ENG_East_Blockade_Progression_Check = { 
+		priority = 99
+		fire_only_once = no
+		icon = GFX_decision_generic_blockade
+		days_mission_timeout = 200
+
+		fire_only_once = no
+
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		
+		timeout_effect = {
+			activate_mission = ENG_East_Blockade_Progression_Check
+			if = {
+				limit = {
+					GER = {
+						has_naval_control = 173
+					}
+				}
+				add_political_power = -20
+			}
+
+			else = {
+				add_political_power = 50
+			}
+		}
+	}
+
+	ENG_Defending_UK_Cities = { 
+		priority = 99
+		fire_only_once = no
+		icon = GFX_decision_generic_blockade
+		days_mission_timeout = 200
+
+		fire_only_once = no
+
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		
+		timeout_effect = {
+			activate_mission = ENG_Defending_UK_Cities
+			if = {
+				limit = {
+					NOT = {
+						GER = {
+							has_naval_control = 16
+						}
+					}
+				}
+				add_political_power = 25
+			}
+
+			else = {
+				130 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 3
+					}
+				}
+				131 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+					damage_building = {
+						type = dockyard
+						damage = 2
+					}
+				}
+				121 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 3
+					}
+				}
+				120 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 3
+					}
+				}
+			}
+		}
+	}
+
+}
+

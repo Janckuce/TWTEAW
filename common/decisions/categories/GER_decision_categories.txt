@@ -53,6 +53,20 @@ GER_Plunder_Decisions = {
 	}
 }
 
+GER_Naval_Blockade = {
+	icon = GFX_decision_category_SOV_merge_designers
+	visible_when_empty = yes
+
+	priority = 6
+
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		always = yes
+	}
+}
+
 GER_Annex_Subjects_Descision_Catagory = {
 	
 	priority = 100

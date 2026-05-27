@@ -239,7 +239,16 @@ country_event = {
 		GER = {
 			declare_war_on = { target = BEL type = annex_everything }
 			declare_war_on = { target = LUX type = annex_everything }
+			declare_war_on = { target = ENG type = annex_everything }
 			news_event = { id = ww1_news.11 days = 1 }
+
+			activate_mission = GER_Eastern_Blockade_Progression
+			activate_mission = GER_Shelling_UK_Cities
+
+			ENG = {
+				activate_mission = ENG_East_Blockade_Progression_Check
+				activate_mission = ENG_Defending_UK_Cities
+			}
 		}
 
 		ai_chance = {
