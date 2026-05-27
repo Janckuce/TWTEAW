@@ -1605,7 +1605,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = JAP tag = USA tag = HUN tag = FIN tag = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = POL tag = LAT tag = GCG tag = RAJ } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = JAP tag = USA tag = HUN tag = FIN tag = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = POL tag = LAT tag = GCG tag = RAJ tag = FRA } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
@@ -1662,7 +1662,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = JAP tag = USA tag = FIN TAG = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = RUS tag = POL tag = LAT tag = GCG tag = RAJ  } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = JAP tag = USA tag = FIN TAG = AUS tag = BEL tag = AST tag = SAF tag = YEM tag = RUS tag = POL tag = LAT tag = GCG tag = RAJ tag = FRA  } }
 				NOT = {
 					has_allowed_idea_with_traits = { idea = electronics_concern limit = 1 }
 				}

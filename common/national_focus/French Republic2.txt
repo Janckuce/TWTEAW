@@ -100,23 +100,21 @@ focus_tree = {
 			focus = FRA_Republique
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				category = land_doctrine
-				cost_reduction = 0.25
+			add_tech_bonus = {
+				category = artillery
+				bonus = 0.5
 				uses = 2
 			}
 			ENG = {
-				add_doctrine_cost_reduction = {
-					category = land_doctrine
-					cost_reduction = 0.25
-					uses = 2
+				add_offsite_building = {
+					type = dockyard
+					level = 3
 				}
 			}
 			RUS = {
-				add_doctrine_cost_reduction = {
-					category = land_doctrine
-					cost_reduction = 0.25
-					uses = 2
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 6000
 				}
 			}
 		}
@@ -237,11 +235,7 @@ focus_tree = {
 			focus = FRA_French_Red_Army
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				category = land_doctrine
-				cost_reduction = 0.5
-				uses = 2
-			}
+			add_ideas = FRA_Salvation
 		}
 	}
 

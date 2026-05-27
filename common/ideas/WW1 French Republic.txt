@@ -1,4 +1,81 @@
 ideas = {
+	industrial_concern = {
+		FRA_Schneider_Et_Cie = {
+			picture = schneider
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			cost = 150
+
+			research_bonus = {
+				infantry_weapons = 0.2
+			}
+		}
+		FRA_Renault = {
+			picture = renault
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			cost = 150
+
+			research_bonus = {
+				armor = 0.2
+			}
+		}
+		FRA_Bleriot_Aeronautique = {
+			picture = CZE_aero
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			cost = 150
+
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		FRA_Messageries_Maritimes = {
+			picture = BRA_arsenal_de_marinha
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			cost = 150
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		FRA_Banque_De_France = {
+			picture = ARG_banco_central_de_la_republica_argentina
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			cost = 150
+
+			modifier = {
+				consumer_goods_expected_value = -0.1
+			}
+		}
+	}
 	country = {
 		FRA_Sour_Loser = {
 			picture = FRA_political_violence
