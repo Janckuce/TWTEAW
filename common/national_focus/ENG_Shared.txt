@@ -974,34 +974,34 @@
 			}
 		}
 	}
-	shared_focus = {
-		id = ENG_naval_blockade
-		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
-		relative_position_id = ENG_War_With_Germany
-		prerequisite = {
-			focus = ENG_War_With_Germany
-		}
-		x = -2
-		y = 1
-		cost = 10
+	# shared_focus = {
+	# 	id = ENG_naval_blockade
+	# 	icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+	# 	relative_position_id = ENG_War_With_Germany
+	# 	prerequisite = {
+	# 		focus = ENG_War_With_Germany
+	# 	}
+	# 	x = -2
+	# 	y = 1
+	# 	cost = 10
 
-		bypass = {
-			#
-		}
-		available = {
-		    has_war_with = GER
-		}
+	# 	bypass = {
+	# 		#
+	# 	}
+	# 	available = {
+	# 	    has_war_with = GER
+	# 	}
 		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+	# 	search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-			GER = {
-			    add_ideas = ENG_ger_naval_blockade_1
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		GER = {
+	# 		    add_ideas = ENG_ger_naval_blockade_1
+	# 		}
+	# 	}
+	# }
 	shared_focus = {
 		id = ENG_support_france
 		icon = GFX_focus_befriend_france

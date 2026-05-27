@@ -947,7 +947,7 @@ GER_Plunder_Decisions = {
 GER_Naval_Blockade = {
 
 	GER_blockade_info = {
-		priority = 99
+		priority = 100
 		fire_only_once = no
 		icon = GFX_decision_generic_blockade
 
@@ -962,6 +962,7 @@ GER_Naval_Blockade = {
 
 		available = {
 			always = no
+			custom_effect_tooltip = GER_potential_of_naval_blockade_tooltip
 		}
 
 		highlight_states = {
@@ -970,6 +971,11 @@ GER_Naval_Blockade = {
 			}
 			highlight_color_while_active = 2
 			highlight_color_before_active = 3
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_max_impact_of_naval_blockade_tooltip
+			add_ideas = GER_naval_blockaded_5
 		}
 	}
 
@@ -990,192 +996,264 @@ GER_Naval_Blockade = {
 			always = no
 		}
 		activation = {
-			always = no
+			ENG = {
+				has_war_with = GER
+				has_naval_control = 173
+			}
 		}
 		available = {
 			always = no
 		}
+
+		highlight_states = {
+			highlight_provinces = {
+				7018 5 2752 2729 6816 6624 2506 5989 1227
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		
-		timeout_effect = {
-			activate_mission = GER_Eastern_Blockade_Progression
-			if = {
-				limit = {
-					has_naval_control = 173
-				}
-
-				if = {
-					limit = {
-						has_idea = GER_threat_of_naval_blockade
-					}
-					add_political_power = 100
-				}
-
-				if = {
-					limit = {
-						has_idea = GER_naval_blockaded_1
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_1
-						add_idea = GER_threat_of_naval_blockade
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_2
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_2
-						add_idea = GER_naval_blockaded_1
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_3
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_3
-						add_idea = GER_naval_blockaded_2
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_4
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_4
-						add_idea = GER_naval_blockaded_3
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_5
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_5
-						add_idea = GER_naval_blockaded_4
-					}
-				}
+		cancel_trigger = {
+			GER = {
+				has_naval_control = 173
 			}
-			else = {
-
-				if = {
-					limit = {
-						has_idea = GER_threat_of_naval_blockade
-					}
-					swap_ideas = {
-						remove_idea = GER_threat_of_naval_blockade
-						add_idea = GER_naval_blockaded_1
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_1
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_1
-						add_idea = GER_naval_blockaded_2
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_2
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_2
-						add_idea = GER_naval_blockaded_3
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_3
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_3
-						add_idea = GER_naval_blockaded_4
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_4
-					}
-					swap_ideas = {
-						remove_idea = GER_naval_blockaded_4
-						add_idea = GER_naval_blockaded_5
-					}
-				}
-
-				else_if = {
-					limit = {
-						has_idea = GER_naval_blockaded_5
-					}
-					add_stability = -0.10
-					add_war_support = -0.10
-				}
-			}
-			# random_state = { # Use for UK Eastcoast taking random damage to factories
-			# 	limit = {
-			# 		is_core_of = RUS
-			# 		NOT = {
-			# 			is_core_of = UKR
-			# 			is_core_of = BLR
-			# 			is_core_of = POL
-			# 			is_core_of = FIN
-			# 			is_core_of = LIT
-			# 		}
-			# 	}
-			# 	add_extra_state_shared_building_slots = 1
-			# 	add_building_construction = {
-			# 		type = industrial_complex
-			# 		level = 1
-			# 		instant_build = yes
-			# 	}
-			# }
 		}
 
-		# modifier = {
-		# 	civilian_factory_use = 2
-		# }
-		
-	}
+		cancel_effect = {
 
-}
+		}
 
-GER_Shelling_UK_Cities = {
-	priority = 99
-	fire_only_once = no
-	icon = GFX_decision_generic_blockade
-	days_mission_timeout = 200
+		timeout_effect = {
 
-	fire_only_once = no
-
-	allowed = {
-		tag = GER
-	}
-	visible = {
-		always = no
-	}
-	activation = {
-		always = no
-	}
-	available = {
-		always = no
-	}
-	
-	timeout_effect = {
-		activate_mission = GER_Eastern_Blockade_Progression
-		if = {
-			limit = {
-				has_naval_control = 16
+			if = {
+				limit = {
+					has_idea = GER_threat_of_naval_blockade
+				}
+				swap_ideas = {
+					remove_idea = GER_threat_of_naval_blockade
+					add_idea = GER_naval_blockaded_1
+				}
 			}
-			add_political_power = 50
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_1
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_1
+					add_idea = GER_naval_blockaded_2
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_2
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_2
+					add_idea = GER_naval_blockaded_3
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_3
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_3
+					add_idea = GER_naval_blockaded_4
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_4
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_4
+					add_idea = GER_naval_blockaded_5
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_5
+				}
+				add_stability = -0.10
+				add_war_support = -0.10
+			}
+		}
+	}
+
+	GER_Shelling_UK_Cities = {
+		priority = 98
+		fire_only_once = no
+		icon = GFX_decision_generic_blockade
+		days_remove = 120
+
+		fire_only_once = no
+
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			always = yes
+		}
+		# activation = {
+		# 	always = no
+		# }
+		available = {
+			date > 1914.12.1
+			has_war_with = ENG
+			has_naval_control = 16
+		}
+
+		highlight_states = {
+			highlight_provinces = {
+				7695 7468 2966 2918 2942 7923 2993 8142 3400 8262 3195 8612 8288 6434
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_disrupting_naval_blockade_tooltip
+
+			if = {
+				limit = {
+					has_idea = GER_threat_of_naval_blockade
+				}
+				add_political_power = 100
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_1
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_1
+					add_idea = GER_threat_of_naval_blockade
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_2
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_2
+					add_idea = GER_naval_blockaded_1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_3
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_3
+					add_idea = GER_naval_blockaded_2
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_4
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_4
+					add_idea = GER_naval_blockaded_3
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_idea = GER_naval_blockaded_5
+				}
+				swap_ideas = {
+					remove_idea = GER_naval_blockaded_5
+					add_idea = GER_naval_blockaded_4
+				}
+			}
+
+			130 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = dockyard
+					damage = 2
+				}
+			}
+			131 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = dockyard
+					damage = 2
+				}
+			}
+			136 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = dockyard
+					damage = 2
+				}
+			}
+			121 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = dockyard
+					damage = 2
+				}
+			}
+			120 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 2
+				}
+				damage_building = {
+					type = dockyard
+					damage = 2
+				}
+			}
+
+			ENG = {
+				activate_mission = ENG_Defending_UK_Cities
+			}
+		}
+
+		timeout_effect = {
+
 		}
 	}
 }
