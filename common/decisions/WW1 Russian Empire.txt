@@ -475,12 +475,13 @@ RUS_Military_Academy_Category = {
 		custom_cost_text = decision_cost_CP_25
 		available = {
 			has_war = yes
+			date > 1916.6.4
 		}
 
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Brusilov_Offensive
-				days = 123
+				days = 80
 			}
 			add_command_power = -25
 		}

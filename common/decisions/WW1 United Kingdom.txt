@@ -878,7 +878,7 @@ ENG_Naval_Blockade = {
 	ENG_blockade_info = {
 		priority = 100
 		fire_only_once = no
-		icon = GFX_decision_generic_blockade
+		icon = GFX_decision_SWE_set_navy_budget
 
 		fire_only_once = no
 
@@ -912,7 +912,7 @@ ENG_Naval_Blockade = {
 	ENG_East_Blockade_Progression_Check = { 
 		priority = 99
 		fire_only_once = no
-		icon = GFX_decision_generic_blockade
+		icon = GFX_decision_generic_naval
 		days_mission_timeout = 200
 
 		fire_only_once = no
@@ -961,7 +961,7 @@ ENG_Naval_Blockade = {
 	ENG_Defending_UK_Cities_info = { 
 		priority = 98
 		fire_only_once = no
-		icon = GFX_decision_generic_blockade
+		icon = GFX_decision_infiltrate_state
 		# days_mission_timeout = 120
 
 		fire_only_once = no
@@ -1028,7 +1028,7 @@ ENG_Naval_Blockade = {
 	ENG_Defending_UK_Cities = { 
 		priority = 97
 		fire_only_once = no
-		icon = GFX_decision_generic_blockade
+		icon = GFX_decision_infiltrate_state
 		days_mission_timeout = 120
 
 		fire_only_once = no
