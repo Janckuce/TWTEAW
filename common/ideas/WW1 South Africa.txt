@@ -39,12 +39,6 @@ ideas = {
 				industry = 0.1
 			}
 
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-				}
-			}
-
 			on_add = {
 				681 = {
 					add_resource = {
@@ -104,7 +98,7 @@ ideas = {
 		SAF_Resource_Rich_Environment_Right = {
 			picture = PER_metropolitan_iran_idea
 			modifier = {
-				local_resources_factor = 0.6
+				local_resources_factor = 1
 				industrial_capacity_factory = 0.1
 			}
 		}
@@ -133,7 +127,7 @@ ideas = {
 		SAF_Luke_Warm_Government_Boer = {
 			picture = HUN_turul_association_idea
 			modifier = {
-				conscription = 0.025
+				conscription = 0.01
 				economy_cost_factor = 1
 				political_advisor_cost_factor = 1
 				fascism_drift = 0.12
@@ -182,14 +176,13 @@ ideas = {
 		SAF_Irregular_Arms = {
 			picture = raj_rifle_factory_ishapore
 			modifier = {
-				dig_in_speed_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
 			}
 		}
 		SAF_Irregular_Arms1 = {
 			picture = raj_rifle_factory_ishapore
 			modifier = {
-				dig_in_speed_factor = 0.1
+				org_loss_at_low_org_factor = -0.05
 				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
 			}
@@ -197,7 +190,7 @@ ideas = {
 		SAF_Irregular_Arms2 = {
 			picture = raj_rifle_factory_ishapore
 			modifier = {
-				dig_in_speed_factor = 0.15
+				org_loss_at_low_org_factor = -0.1
 				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.05
 				modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
@@ -206,7 +199,7 @@ ideas = {
 		SAF_Irregular_Arms3 = {
 			picture = raj_rifle_factory_ishapore
 			modifier = {
-				dig_in_speed_factor = 0.2
+				org_loss_at_low_org_factor = -0.15
 				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
 				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.1
 				modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.1
@@ -238,14 +231,14 @@ ideas = {
 		SAF_On_Guard = {
 			picture = ARG_establish_the_free_association
 			modifier = {
-				army_speed_factor = 0.15
+				army_speed_factor = 0.1
 				acclimatization_hot_climate_gain_factor = 0.2
 			}
 		}
 		SAF_Social_Aid = {
-			picture = SPR_collectivized_society
+			picture = prc_low_popular_support3
 			modifier = {
-				consumer_goods_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.1
 				production_speed_buildings_factor = 0.1
 			}
 		}
@@ -265,11 +258,6 @@ ideas = {
 		}
 		SAF_Territorial_Efforts = {
 			picture = ETH_joint_african_development_program
-			targeted_modifier = {
-				tag = GCG
-				attack_bonus_against = -0.05
-				defense_bonus_against = 0.05
-			}
 			modifier = {
 				production_speed_buildings_factor = 0.05
 			}
@@ -285,6 +273,7 @@ ideas = {
 			equipment_bonus = {
 				fighter = {
 					build_cost_ic = -0.3
+					instant = yes
 				}
 			}
 		}
@@ -298,7 +287,8 @@ ideas = {
 			picture = FIN_union_of_finnish_borthers_in_arms
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
+					instant = yes
 				}
 			}
 		}
@@ -307,6 +297,7 @@ ideas = {
 			equipment_bonus = {
 				artillery_equipment = {
 					build_cost_ic = -0.1
+					instant = yes
 				}
 			}
 		}

@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = SAF_Start_Left
 		icon = GFX_focus_PHI_rebuild_sakdalistas
-		cost = 5
+		cost = 10
 		relative_position_id = SAF_Start_Focus
 		x = -1
 		y = 1
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = SAF_Start_Right
 		icon = GFX_focus_CZE_coalition_building
-		cost = 5
+		cost = 10
 		relative_position_id = SAF_Start_Focus
 		x = 1
 		y = 1
@@ -107,10 +107,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			681 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 				}
 			}
 		}
@@ -130,7 +130,7 @@ focus_tree = {
 			275 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 				}
 			}
 		}
@@ -159,7 +159,7 @@ focus_tree = {
 	focus = {
 		id = SAF_Industry3
 		icon = GFX_focus_DEN_national_unity
-		cost = 5
+		cost = 10
 		relative_position_id = SAF_Industry_Main
 		x = 0
 		y = 2
@@ -173,12 +173,12 @@ focus_tree = {
 			681 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = infrastructure
-					level = 1
+					type = industrial_complex
+					level = 2
 				}
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = arms_factory
+					level = 2
 				}
 			}
 		}
@@ -199,7 +199,7 @@ focus_tree = {
 			681 = {
 				add_resource = {
 					type = oil
-					amount = 18
+					amount = 12
 				}
 			}
 		}
@@ -313,7 +313,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		available = {
-			num_of_factories > 30
+			num_of_factories > 20
 		}
 		prerequisite = {
 			focus = SAF_Start_Last
@@ -334,7 +334,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			num_of_factories > 50
+			num_of_factories > 30
 		}
 		prerequisite = {
 			focus = SAF_Paper_Main
@@ -523,6 +523,8 @@ focus_tree = {
 			}
 		}
 	}
+
+	#	Final Army
 
 	focus = {
 		id = SAF_Army_Last
@@ -757,7 +759,7 @@ focus_tree = {
 		x = 25
 		y = 0
 		available = {
-			date > 1915.1.1
+			has_war = yes
 		}
 		completion_reward = {
 			country_event = ww1_north_africa.2
@@ -908,44 +910,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_plane_testing
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_engine_1
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_machine_guns1
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_plane_airframe_design_1
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_plane_wings_design_1
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_radio_transimtter_1
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_machine_guns2
-			}
-			add_tech_bonus = {
-				bonus = 2
-				uses = 1
-				technology = ww1_engine_2
+				category = air_equipment
+				bonus = 0.5
+				uses = 2
 			}
 		}
 	}
@@ -963,7 +930,6 @@ focus_tree = {
 		completion_reward = {
 			set_technology = {
 				ww1_antiair_equipment1 = 1
-				ww1_improved_antiair_equipment1 = 1
 			}
 		}
 	}

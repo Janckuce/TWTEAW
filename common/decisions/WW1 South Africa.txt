@@ -20,7 +20,7 @@ SAF_British_Aid_Category = {
 			tag = SAF
 		}
 		available = {
-			has_war = yes
+			date > 1913.10.1
 			custom_trigger_tooltip = {
 				check_variable = {
 					SAF.Aid_Percentage > 4
@@ -43,7 +43,7 @@ SAF_British_Aid_Category = {
 			tag = SAF
 		}
 		available = {
-			has_war = yes
+			date > 1913.10.1
 			custom_trigger_tooltip = {
 				check_variable = {
 					SAF.Aid_Percentage > 9
@@ -66,7 +66,7 @@ SAF_British_Aid_Category = {
 			tag = SAF
 		}
 		available = {
-			has_war = yes
+			date > 1913.10.1
 			custom_trigger_tooltip = {
 				check_variable = {
 					SAF.Aid_Percentage > 14

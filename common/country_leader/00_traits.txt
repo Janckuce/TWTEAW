@@ -3437,20 +3437,17 @@ leader_traits = {
 	SAF_man_with_honors = {
 		random = no
 		sprite = 5
-		army_org_factor = 0.05
 		army_speed_factor = 0.05
-		supply_node_range = 0.15
-		army_morale_factor = 0.075
-		experience_loss_factor = -0.075
+		army_org_factor = 0.05
+		supply_node_range = 0.25
 	}
 
 	SAF_working_man = {
 		random = no
 		sprite = 13
-		party_popularity_stability_factor = 0.2
+		production_speed_buildings_factor = 0.1
 		production_factory_efficiency_gain_factor = 0.1
 		industrial_capacity_factory = 0.1
-		production_speed_buildings_factor = 0.1
 	}
 
 	SAF_scientist_of_blacks = {
