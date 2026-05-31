@@ -35,15 +35,8 @@ ideas = {
 
 			cost = 150
 
-			equipment_bonus = {
-				scout_plane = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
-				fighter = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
+			modifier = {
+				army_bonus_air_superiority_factor = 0.2
 			}
 		}
 		FRA_Messageries_Maritimes = {
@@ -56,12 +49,12 @@ ideas = {
 			cost = 150
 
 			modifier = {
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_dockyard = 0.2
 			}
 
 			equipment_bonus = {
 				convoy = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.2
 					instant = yes
 				}
 			}
@@ -102,9 +95,11 @@ ideas = {
 		FRA_Carry_On_Artillery = {
 			picture = FRA_undividable
 			modifier = {
+				conscription = 0.015
+				war_support_factor = 0.05
 				party_popularity_stability_factor = 0.05
-				line_change_production_efficiency_factor = 0.025
-				production_factory_max_efficiency_factor = 0.025
+				line_change_production_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.06
 				democratic_drift = 0.03
 				army_artillery_attack_factor = 0.1
 				army_artillery_defence_factor = 0.1
@@ -113,16 +108,12 @@ ideas = {
 		FRA_Carry_On_Heavy_Artillery = {
 			picture = FRA_undividable
 			modifier = {
+				conscription = 0.015
+				war_support_factor = 0.05
 				party_popularity_stability_factor = 0.05
-				line_change_production_efficiency_factor = 0.025
-				production_factory_max_efficiency_factor = 0.025
+				line_change_production_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.06
 				democratic_drift = 0.03
-			}
-			equipment_bonus = {
-				heavy_artillery_equipment = {
-					breakthrough = 0.45
-					instant = yes
-				}
 			}
 		}
 		FRA_Commune_Ideals = {
@@ -222,12 +213,11 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.05
 					soft_attack = 0.05
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
-			
 		}
 		FRA_War_Readiness2 = {
 			picture = MEX_politicised_army
@@ -243,8 +233,8 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.05
 					soft_attack = 0.05
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
@@ -378,10 +368,12 @@ ideas = {
 			}
 			equipment_bonus = {
 				fighter = {
+					fuel_consumption_factor = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
 				strategic_bomber = {
+					fuel_consumption_factor = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -394,10 +386,12 @@ ideas = {
 			}
 			equipment_bonus = {
 				cas = {
+					fuel_consumption_factor = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
 				naval_bomber = {
+					fuel_consumption_factor = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -439,6 +433,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				destroyer = {
+					soft_attack = -0.1
 					build_cost_ic = -0.15
 					instant = yes
 				}
@@ -453,6 +448,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				light_cruiser = {
+					soft_attack = -0.1
 					build_cost_ic = -0.15
 					instant = yes
 				}

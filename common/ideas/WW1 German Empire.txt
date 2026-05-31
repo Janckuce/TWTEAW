@@ -1,5 +1,79 @@
 ideas = {
+	industrial_concern = {
+		GER_Krupp = {
+			picture = krupp
 
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+		GER_Rheinmetall = {
+			picture = rheinmetall
+
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+
+			on_add = {
+				56 = {
+					add_resource = {
+						type = sulfur
+						amount = 12
+					}
+				}
+			}
+
+			on_remove = {
+				56 = {
+					add_resource = {
+						type = sulfur
+						amount = -12
+					}
+				}
+			}
+
+			equipment_bonus = {
+				HE_shell = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+		}
+		GER_Siemens_Schuckertwerke = {
+			picture = siemens
+
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+
+			research_bonus = {
+				electronics = 0.3
+			}
+		}
+		GER_Bayer = {
+			picture = siemens
+
+			allowed = {
+				original_tag = GER
+			}
+
+			cost = 150
+
+			modifier = {
+				command_abilities_cost_factor = -0.15
+			}
+		}
+	}
 	country = {
 		GER_training_with_aus = {
 
@@ -625,6 +699,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
+					soft_attack = -0.1
 					build_cost_ic = -0.25
 					instant = yes
 				}
@@ -686,7 +761,8 @@ ideas = {
 			picture = HUN_rapid_army_expansion
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.15
+					soft_attack = 0.1
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
@@ -698,7 +774,8 @@ ideas = {
 			}
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.15
+					soft_attack = 0.1
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
@@ -707,7 +784,8 @@ ideas = {
 			picture = AFG_afghanistan_bank
 			equipment_bonus = {
 				heavy_artillery_equipment = {
-					build_cost_ic = -0.1
+					breakthrough = 0.45
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
@@ -719,7 +797,8 @@ ideas = {
 			}
 			equipment_bonus = {
 				heavy_artillery_equipment = {
-					build_cost_ic = -0.1
+					breakthrough = 0.45
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
@@ -900,129 +979,5 @@ ideas = {
 			}
 		}
 
-	}
-
-
-	
-	industrial_concern = {
-		
-			GER_ig_faben_improved = {
-			name = ig_faben
-			picture = ig_faben
-			allowed = {
-				original_tag = GER
-			}
-
-
-			visible = {
-
-			}
-
-			cost = 150
-			
-			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.25
-			}
-
-			modifier = {
-				production_speed_synthetic_refinery_factor = 0.1
-				production_speed_steel_refinery_factor = 0.15
-				production_speed_coal_refinery_factor = 0.15 
-				production_speed_sulfur_refinery_factor = 0.15 
-				production_speed_fuel_silo_factor = 0.1
-			}
-			
-			traits = { refinery_concern }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		
-		krupp = {
-			
-			allowed = {
-				original_tag = GER
-			}
-
-			cost = 150
-			
-			research_bonus = {
-				industry = 0.25
-			}
-
-			traits = { industrial_concern }
-			
-			ai_will_do = {
-				factor = 2
-			}
-		}
-
-		siemens = {
-			
-			allowed = {
-				original_tag = GER
-			}
-
-			cost = 150
-			
-			research_bonus = {
-				electronics = 0.30
-			}
-			
-			traits = { electronics_concern }
-		}
-
-		GER_vereinigte_stahlwerke = {
-
-			picture = GER_vereinigte_stahlwerke
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 150
-
-			research_bonus = {
-				excavation_tech = 0.35
-			}
-			
-			traits = { mining_company }
-		}
-
-		GER_deutsche_reichsbahn = {
-
-			picture = GER_deutsche_reichsbahn
-			
-			allowed = {
-				original_tag = GER
-			}
-
-			visible = {
-
-			}
-			
-			cost = 150
-
-			research_bonus = {
-				train_tech = 0.15
-			}
-			
-			traits = { railway_company }
-		}
-
-		GER_rwe = {
-
-			picture = generic_energy_concern
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 150
-			
-			traits = { energy_supply_company }
-		}
 	}
 }
