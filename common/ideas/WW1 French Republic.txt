@@ -10,7 +10,7 @@ ideas = {
 			cost = 150
 
 			research_bonus = {
-				infantry_weapons = 0.2
+				artillery = 0.1
 			}
 		}
 		FRA_Renault = {
@@ -36,6 +36,10 @@ ideas = {
 			cost = 150
 
 			equipment_bonus = {
+				scout_plane = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
 				fighter = {
 					build_cost_ic = -0.15
 					instant = yes
@@ -52,7 +56,7 @@ ideas = {
 			cost = 150
 
 			modifier = {
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_dockyard = 0.15
 			}
 
 			equipment_bonus = {
@@ -72,7 +76,7 @@ ideas = {
 			cost = 150
 
 			modifier = {
-				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 	}
