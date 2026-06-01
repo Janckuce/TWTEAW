@@ -102,3 +102,5 @@ NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1
 -- Navy Fuel consumption reduced by 70%
 NDefines.NNavy.FUEL_COST_MULT = 0.03 
 NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.05
+
+NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.00 --each percent of collaboration will lower surrender limit by this percentage
