@@ -1,5 +1,49 @@
 ideas = {
-
+	industrial_concern = {
+		ITA_Fiat = {
+			name = "Fiat"
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.15
+			}
+		}
+		ITA_Ansaldo = {
+			name = "Ansaldo"
+			allowed = {
+				original_tag = ITA
+			}
+			research_bonus = {
+				artillery = 0.05
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		ITA_Ilva = {
+			name = "Ilva"
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				local_resources_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		ITA_Montecatini = {
+			name = "Montecatini"
+			allowed = {
+				original_tag = ITA
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				army_attack_speed_factor = 0.1
+			}
+		}
+	}
 	country = {
 
 	# Begin internal politics/economy ideas
