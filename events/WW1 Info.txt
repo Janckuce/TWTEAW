@@ -1,6 +1,22 @@
+add_namespace = startup_advice
 add_namespace = ww1_mod_info
+add_namespace = mod_sp_testing
+add_namespace = ww1_mod_info_entente
 
-#France annexes Morocco, do we take the north?
+
+country_event = {
+	id = startup_advice.1
+	title = startup_advice.1.t
+	desc = startup_advice_desc.1
+	picture = GFX_report_event_NOR_quisling_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = startup_advice.1.a
+	}
+}
+
 country_event = {
 	id = ww1_mod_info.1
 	title = ww1_mod_info.1.t
@@ -11,7 +27,31 @@ country_event = {
 
 	option = {
 		name = ww1_mod_info.1.a
-		
+	}
+}
 
+country_event = {
+	id = ww1_mod_info_entente.1
+	title = ww1_mod_info_entente.1.t
+	desc = ww1_mod_info_entente_desc.1
+	picture = GFX_report_event_schlieffen_plan
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_mod_info_entente.1.a
+	}
+}
+
+country_event = {
+	id = mod_sp_testing.1
+	title = mod_sp_testing.1.t
+	desc = mod_sp_testing_desc.1
+	picture = GFX_report_event_PLACEHOLDER
+
+	is_triggered_only = yes
+
+	option = {
+		name = mod_sp_testing.1.a
 	}
 }

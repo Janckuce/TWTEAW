@@ -35,7 +35,7 @@ Mod_info_category = {
 			tag = GER
 		}
 		complete_effect = {
-			country_event = germany_guide.1
+			country_event = mod_sp_testing.1
 		}
 	}
 
@@ -62,6 +62,46 @@ Mod_info_category = {
 		}
 		complete_effect = {
 			country_event = belgium_guide.1
+		}
+	}
+
+	Entente_Country_Guide = {
+		fire_only_once = no
+		allowed = {
+			OR = {
+				tag = ENG
+				tag = CAN
+				tag = RAJ
+				tag = AST
+				tag = SAF
+				tag = POR
+			}
+		}
+		available = {
+			OR = {
+				tag = ENG
+				tag = CAN
+				tag = RAJ
+				tag = AST
+				tag = SAF
+				tag = POR
+			}
+		}
+		complete_effect = {
+			country_event = ww1_mod_info_entente.1
+		}
+	}
+
+	mod_sp_testing_info_decision = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			country_event = mod_sp_testing.1
 		}
 	}
 }
