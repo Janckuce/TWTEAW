@@ -1208,6 +1208,14 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_focus_SR_Leadership_Academies
 		}
+		available = {
+			OR = {
+				FRA = {
+					has_capitulated = yes
+				}
+			date > 1917.1.1
+			}
+		}
 		x = 0
 		y = 1
 		search_filters = {FOCUS_FILTER_MILITARY_MOD}
