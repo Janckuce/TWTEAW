@@ -1,0 +1,719 @@
+
+# FRA_France_Guide = {
+# 	FRA_Country_Guide = {
+# 		fire_only_once = no
+# 		allowed = {
+# 			tag = FRA
+# 		}
+# 		available = {
+# 			tag = FRA
+# 		}
+# 		complete_effect = {
+# 			country_event = france_guide.1
+# 		}
+# 	}
+# }
+
+POL_Spawnin_Divs_Category = {
+
+	POL_spawn_divisions_Lodz = {
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				RUS = {
+					has_full_control_of_state = 87 #Lodz
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 87
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = POL_3_spawn_ins_tooltip
+
+			POL = {
+				division_template = {
+					name = "Lodz Rebel Division"
+					division_names_group = POL_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Lodz
+			87 = {
+				create_unit = {
+					division = "name = \"I/Lodz Rebel Division\" division_template = \"Lodz Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 9508
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Lodz Rebel Division\" division_template = \"Lodz Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 9508
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Lodz Rebel Division\" division_template = \"Lodz Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 9508
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+	POL_spawn_divisions_Plock = {
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				RUS = {
+					has_full_control_of_state = 98 #Plock
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 98
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = POL_2_spawn_ins_tooltip
+
+			POL = {
+				division_template = {
+					name = "Plock Rebel Division"
+					division_names_group = POL_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Plock
+			98 = {
+				create_unit = {
+					division = "name = \"I/Plock Rebel Division\" division_template = \"Plock Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3230
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Plock Rebel Division\" division_template = \"Plock Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3230
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+
+	POL_spawn_divisions_Warsaw = {
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				RUS = {
+					has_full_control_of_state = 10 #Warsaw
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = POL_5_spawn_ins_tooltip
+
+			POL = {
+				division_template = {
+					name = "Warsaw Rebel Division"
+					division_names_group = POL_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Warsaw
+			10 = {
+				create_unit = {
+					division = "name = \"I/Warsaw Rebel Division\" division_template = \"Warsaw Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3544
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Warsaw Rebel Division\" division_template = \"Warsaw Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3544
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Warsaw Rebel Division\" division_template = \"Warsaw Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3544
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Warsaw Rebel Division\" division_template = \"Warsaw Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3544
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Warsaw Rebel Division\" division_template = \"Warsaw Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 3544
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+
+	POL_spawn_divisions_Kielce = {
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				RUS = {
+					has_full_control_of_state = 90 #Kielce
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 90
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = POL_2_spawn_ins_tooltip
+
+			POL = {
+				division_template = {
+					name = "Kielce Rebel Division"
+					division_names_group = POL_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Kielce
+			90 = {
+				create_unit = {
+					division = "name = \"I/Kielce Rebel Division\" division_template = \"Kielce Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11430
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Kielce Rebel Division\" division_template = \"Kielce Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11430
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+	POL_spawn_divisions_Lublin = {
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				RUS = {
+					has_full_control_of_state = 90 #Lublin
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 92
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = POL_3_spawn_ins_tooltip
+
+			POL = {
+				division_template = {
+					name = "Lublin Rebel Division"
+					division_names_group = POL_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Lublin
+			92 = {
+				create_unit = {
+					division = "name = \"I/Lublin Rebel Division\" division_template = \"Lublin Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11399
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Lublin Rebel Division\" division_template = \"Lublin Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11399
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Lublin Rebel Division\" division_template = \"Lublin Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11399
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+
+	POL_spawn_divisions_Bialystok = {
+		allowed = {
+			original_tag = POL
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				RUS = {
+					has_full_control_of_state = 97 #Lomza
+					has_full_control_of_state = 96 #Bialystok
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 97
+				state = 96
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.05
+
+			custom_effect_tooltip = POL_2_spawn_ins_tooltip
+
+			POL = {
+				division_template = {
+					name = "Bialystok Rebel Division"
+					division_names_group = POL_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Bialystok
+			97 = {
+				create_unit = {
+					division = "name = \"I/Bialystok Rebel Division\" division_template = \"Bialystok Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11301
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bialystok Rebel Division\" division_template = \"Bialystok Rebel Division\" start_experience_factor = 0.2"
+					owner = POL
+					prioritize_location = 11301
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+}

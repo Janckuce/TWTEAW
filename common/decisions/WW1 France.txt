@@ -365,6 +365,14 @@ FRA_Political_Stability_Category = {
 				}
 			}
 		}
+
+		highlight_states = {
+			highlight_provinces = {
+				9559 11502 3629 1346 549 9503 6529 678
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 	
 		complete_effect = {
 			add_war_support = 0.15
@@ -614,6 +622,18 @@ FRA_Political_Stability_Category = {
 				}
 			}
 		}
+
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+				state = 785
+				state = 24
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+
 	
 		complete_effect = {
 			add_stability = -0.05
@@ -635,6 +655,7 @@ FRA_Political_Stability_Category = {
 			}
 
 			custom_effect_tooltip = FRA_Paris_spawn_ins_tooltip
+
 
 			FRA = {
 				division_template = {
@@ -856,6 +877,16 @@ FRA_Political_Stability_Category = {
 					has_full_control_of_state = 16 #Isle De France
 				}
 			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 18
+				state = 17
+				state = 16
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
 		}
 	
 		complete_effect = {
@@ -1083,9 +1114,18 @@ FRA_Political_Stability_Category = {
 				}
 			}
 		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 20
+				state = 27
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 	
 		complete_effect = {
-			add_stability = -0.05
+			add_stability = -0.10
 
 			if = {
 				limit = {
