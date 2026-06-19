@@ -426,6 +426,26 @@ ideas = {
 				naval_critical_effect_factor = -0.1
 			}
 		}
+		AUS_Croatia1 = {
+			picture = AUS_navy
+			modifier = {
+				production_speed_dockyard_factor = 0.6
+			}
+		}
+		AUS_Bohemia1 = {
+			picture = AUS_navy
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		AUS_Austria1 = {
+			picture = AUS_navy
+			# modifier = {
+				research_bonus = {
+					light_air = 0.25
+				}
+			# }
+		}
 		AUS_Cautious_Air_Force_Command = {
 			picture = AUS_airforce
 			modifier = {
