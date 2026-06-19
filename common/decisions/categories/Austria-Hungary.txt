@@ -29,3 +29,19 @@ AUH_plunder_decisions = {
         always = yes
     }
 }
+
+AUS_core_decisions = {
+    priority = 19
+
+    visible_when_empty = no
+
+    icon = GFX_decision_category_generic
+
+    allowed = {
+        original_tag = AUS
+    }
+
+    visible = {
+        always = yes
+    }
+}
