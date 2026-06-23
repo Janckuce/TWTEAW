@@ -1,4 +1,72 @@
 ideas = {
+	industrial_concern = {
+		AUS_Skoda_Works = {
+			name = "Škoda Works"
+			allowed = {
+				original_tag = AUS
+			}
+			research_bonus = {
+				infantry_weapons = 0.1
+				support_tech = 0.1
+				artillery = 0.1
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		AUS_Osterreichische = {
+			name = "Österreichische Waffenfabriks-Gesellschaft"
+			allowed = {
+				original_tag = AUS
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = -0.1
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		AUS_Manfred_Weiss = {
+			name = "Manfréd Weiss Steel and Metal Works"
+			allowed = {
+				original_tag = AUS
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			modifier = {
+				local_resources_steel_factor = 0.25
+			}
+		}
+		AUS_Stabilimento = {
+			name = "Stabilimento Tecnico Triestino"
+			allowed = {
+				original_tag = AUS
+			}
+			research_bonus = {
+				naval_equipment = 0.2
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		AUS_Tungsram = {
+			name = "Tungsram"
+			allowed = {
+				original_tag = AUS
+			}
+			research_bonus = {
+				electronics = 0.3
+			}
+		}
+	}
 	country = {
 		AUS_Ethnic_Split = {
 			picture = AUS_austrofascissm
@@ -358,6 +426,26 @@ ideas = {
 				naval_critical_effect_factor = -0.1
 			}
 		}
+		AUS_Croatia1 = {
+			picture = AUS_navy
+			modifier = {
+				production_speed_dockyard_factor = 0.6
+			}
+		}
+		AUS_Bohemia1 = {
+			picture = AUS_navy
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+		AUS_Austria1 = {
+			picture = AUS_navy
+			# modifier = {
+				research_bonus = {
+					light_air = 0.25
+				}
+			# }
+		}
 		AUS_Cautious_Air_Force_Command = {
 			picture = AUS_airforce
 			modifier = {
@@ -476,10 +564,12 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_dominant
 			equipment_bonus = {
 				screen_ship = {
+					surface_detection = -0.05
 					build_cost_ic = -0.1
 					instant = yes
 				}
 				capital_ship = {
+					surface_detection = -0.05
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -489,10 +579,12 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_dominant
 			equipment_bonus = {
 				screen_ship = {
+					surface_detection = -0.1
 					build_cost_ic = -0.15
 					instant = yes
 				}
 				capital_ship = {
+					surface_detection = -0.1
 					build_cost_ic = -0.15
 					instant = yes
 				}
@@ -502,10 +594,12 @@ ideas = {
 			picture = jap_interservice_rivalry_navy_dominant
 			equipment_bonus = {
 				screen_ship = {
+					surface_detection = -0.15
 					build_cost_ic = -0.2
 					instant = yes
 				}
 				capital_ship = {
+					surface_detection = -0.15
 					build_cost_ic = -0.2
 					instant = yes
 				}
@@ -515,7 +609,8 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				fighter = {
-					build_cost_ic = -0.05
+					air_agility = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
@@ -524,11 +619,13 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				fighter = {
-					build_cost_ic = -0.05
+					air_agility = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				strategic_bomber = {
-					build_cost_ic = -0.05
+					air_range = -0.1
+					build_cost_ic = -0.2
 					instant = yes
 				}
 			}
@@ -537,32 +634,41 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				fighter = {
-					build_cost_ic = -0.05
+					air_agility = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				strategic_bomber = {
-					build_cost_ic = -0.05
+					air_range = -0.1
+					build_cost_ic = -0.2
 					instant = yes
 				}
 				cas = {
-					build_cost_ic = -0.05
+					air_superiority = -0.1
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
 		}
 		AUS_Funded_Aircraft3 = {
 			picture = man_five_year_plan_air
+			modifier = {
+				production_speed_air_base_factor = 0.25
+			}
 			equipment_bonus = {
 				fighter = {
-					build_cost_ic = -0.075
+					air_agility = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				strategic_bomber = {
-					build_cost_ic = -0.075
+					air_range = -0.1
+					build_cost_ic = -0.2
 					instant = yes
 				}
 				cas = {
-					build_cost_ic = -0.075
+					air_superiority = -0.1
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
@@ -658,18 +764,6 @@ ideas = {
 			modifier = { 
 				army_attack_factor = -0.05
 				army_defence_factor = -0.05
-			}
-		}
-	}
-	industrial_concern = {
-
-		manfred_weiss = {
-			allowed = { original_tag = AUS }
-			research_bonus = {
-				industry = 0.05
-			}
-			traits = {
-				manfred_weiss_comp
 			}
 		}
 	}

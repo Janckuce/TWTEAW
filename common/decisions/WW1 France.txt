@@ -35,7 +35,7 @@ FRA_Political_Stability_Category = {
 		}
 		timeout_effect = {
 			add_to_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 10
 			}
 			if = {
 				limit = {
@@ -52,7 +52,7 @@ FRA_Political_Stability_Category = {
 		}
 		complete_effect = {
 			subtract_from_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 5
 			}
 			custom_effect_tooltip = FRA_Stability_Remove
 			if = {
@@ -90,7 +90,7 @@ FRA_Political_Stability_Category = {
 		}
 		timeout_effect = {
 			add_to_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 10
 			}
 			if = {
 				limit = {
@@ -107,7 +107,7 @@ FRA_Political_Stability_Category = {
 		}
 		complete_effect = {
 			subtract_from_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 5
 			}
 			custom_effect_tooltip = FRA_Stability_Remove
 			if = {
@@ -148,7 +148,7 @@ FRA_Political_Stability_Category = {
 		}
 		timeout_effect = {
 			add_to_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 10
 			}
 			if = {
 				limit = {
@@ -165,7 +165,7 @@ FRA_Political_Stability_Category = {
 		}
 		complete_effect = {
 			subtract_from_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 5
 			}
 			custom_effect_tooltip = FRA_Stability_Remove
 			if = {
@@ -202,7 +202,7 @@ FRA_Political_Stability_Category = {
 		}
 		timeout_effect = {
 			add_to_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 10
 			}
 			if = {
 				limit = {
@@ -219,7 +219,7 @@ FRA_Political_Stability_Category = {
 		}
 		complete_effect = {
 			subtract_from_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 5
 			}
 			custom_effect_tooltip = FRA_Stability_Remove
 			if = {
@@ -257,7 +257,7 @@ FRA_Political_Stability_Category = {
 		}
 		timeout_effect = {
 			add_to_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 10
 			}
 			if = {
 				limit = {
@@ -274,7 +274,7 @@ FRA_Political_Stability_Category = {
 		}
 		complete_effect = {
 			subtract_from_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 5
 			}
 			custom_effect_tooltip = FRA_Stability_Remove
 			if = {
@@ -315,7 +315,7 @@ FRA_Political_Stability_Category = {
 		}
 		timeout_effect = {
 			add_to_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 10
 			}
 			if = {
 				limit = {
@@ -332,7 +332,7 @@ FRA_Political_Stability_Category = {
 		}
 		complete_effect = {
 			subtract_from_variable = {
-				FRA.Political_Stability = 25
+				FRA.Political_Stability = 5
 			}
 			custom_effect_tooltip = FRA_Stability_Remove
 			if = {
@@ -350,7 +350,257 @@ FRA_Political_Stability_Category = {
 	}
 
 
-	FRA_spawn_divisions = {
+	FRA_spawn_divisions_Alsace = {
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			NOT = {
+				GER = {
+					has_full_control_of_state = 28 #Alsace
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_provinces = {
+				9559 11502 3629 1346 549 9503 6529 678
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_war_support = 0.15
+
+			custom_effect_tooltip = FRA_Alsace_spawn_ins_tooltip
+
+			FRA = {
+				division_template = {
+					name = "Infantry Alsace Rebel Division"
+					division_names_group = FRA_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Paris
+			28 = {
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9559
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9559
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9559
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11502
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11502
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 11502
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3629
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3629
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3629
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 1346
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 1346
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 1346
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 1346
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 549
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 549
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 549
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9503
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9503
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9503
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6529
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6529
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 6529
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 678
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 678
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Infantry Alsace Rebel Division\" division_template = \"Infantry Alsace Rebel Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 678
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+
+	FRA_spawn_Paris_divisions = {
 		allowed = {
 			original_tag = FRA
 		}
@@ -362,30 +612,54 @@ FRA_Political_Stability_Category = {
 			has_war_with = GER
 			OR = {
 				NOT = {
-					controls_state = 18 #Verdun State fell
+					has_full_control_of_state = 16 #Ile De France State fell
 				}
 				NOT = {
-					controls_state = 785 #Picardy fell
+					has_full_control_of_state = 785 #Picardy fell
 				}
 				NOT = {
-					controls_state = 27 #Bourgogne fell
-				}
-				NOT = {
-					controls_state = 933 #Champagne fell
+					has_full_control_of_state = 24 #Centre fell
 				}
 			}
 		}
+
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+				state = 785
+				state = 24
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+
 	
 		complete_effect = {
-			add_stability = -0.3
-			add_timed_idea = {
-				idea = FRA_mobilization_effect
-				days = 120
+			add_stability = -0.05
+			
+			if = {
+				limit = {
+					NOT = {
+						check_variable = { FRA_mobilized_check = 1 }
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_mobilization_effect
+					days = 120
+				}
 			}
+
+			set_variable = {
+				FRA_mobilized_check = 1
+			}
+
+			custom_effect_tooltip = FRA_Paris_spawn_ins_tooltip
+
 
 			FRA = {
 				division_template = {
-					name = "Infantry Division"
+					name = "Parisian Infantry Division"
 					division_names_group = FRA_INF_01
 					regiments = {
 						infantry = {
@@ -445,57 +719,57 @@ FRA_Political_Stability_Category = {
 			#Paris
 			15 = {
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9434
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9434
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9434
 					allow_spawning_on_enemy_provs = no
 				}
 
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9578
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9578
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9578
 					allow_spawning_on_enemy_provs = no
 				}
 
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 3549
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 3549
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 3549
 					allow_spawning_on_enemy_provs = no
@@ -504,72 +778,429 @@ FRA_Political_Stability_Category = {
 			
 			16 = {
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9523
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9523
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9523
 					allow_spawning_on_enemy_provs = no
 				}
 
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 11506
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 11506
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 11506
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 11506
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 11506
 					allow_spawning_on_enemy_provs = no
 				}
 
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9725
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9725
 					allow_spawning_on_enemy_provs = no
 				}
 				create_unit = {
-					division = "name = \"I/Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2"
+					division = "name = \"I/Parisian Infantry Division\" division_template = \"Parisian Infantry Division\" start_experience_factor = 0.2"
 					owner = FRA
 					prioritize_location = 9725
 					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+
+	FRA_spawn_Bourgogne_divisions = {
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			has_war_with = GER
+			OR = {
+				NOT = {
+					has_full_control_of_state = 18 #Fortified Champagne
+				}
+				NOT = {
+					has_full_control_of_state = 17 #Franche-Compe
+				}
+				NOT = {
+					has_full_control_of_state = 16 #Isle De France
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 18
+				state = 17
+				state = 16
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_stability = -0.05
+
+			if = {
+				limit = {
+					NOT = {
+						check_variable = { FRA_mobilized_check = 1 }
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_mobilization_effect
+					days = 120
+				}
+			}
+
+			set_variable = {
+				FRA_mobilized_check = 1
+			}
+
+
+			custom_effect_tooltip = FRA_Bourgogne_spawn_ins_tooltip
+
+			FRA = {
+				division_template = {
+					name = "Bourgogne Infantry Division"
+					division_names_group = FRA_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+	
+			#Paris
+			18 = {
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9490
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9490
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 9490
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+			
+			27 = {
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3506
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3669
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3669
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3669
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3652
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3652
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3652
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 817
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 817
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 817
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3646
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3646
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"I/Bourgogne Infantry Division\" division_template = \"Bourgogne Infantry Division\" start_experience_factor = 0.2"
+					owner = FRA
+					prioritize_location = 3646
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+
+
+		}
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+
+
+	FRA_spawn_divisions = {
+		allowed = {
+			original_tag = FRA
+		}
+		visible = {
+			always = yes
+		}
+	
+		available = {
+			has_war_with = GER
+			OR = {
+				NOT = {
+					has_full_control_of_state = 20 #Rhone
+				}
+				NOT = {
+					has_full_control_of_state = 27 #Bourgogne
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 20
+				state = 27
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+	
+		complete_effect = {
+			add_stability = -0.10
+
+			if = {
+				limit = {
+					NOT = {
+						check_variable = { FRA_mobilized_check = 1 }
+					}
+				}
+				add_timed_idea = {
+					idea = FRA_mobilization_effect
+					days = 120
+				}
+			}
+
+			set_variable = {
+				FRA_mobilized_check = 1
+			}
+
+			custom_effect_tooltip = FRA_great_retreat_spawn_ins_tooltip
+
+			FRA = {
+				division_template = {
+					name = "Infantry Division"
+					division_names_group = FRA_INF_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						infantry = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						machine_gun = {
+							x = 0
+							y = 1
+						}
+					}
 				}
 			}
 
@@ -801,4 +1432,6 @@ FRA_Political_Stability_Category = {
 			factor = 10000
 		}
 	}
+
+
 }

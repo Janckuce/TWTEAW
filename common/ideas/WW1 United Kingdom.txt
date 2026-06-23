@@ -1,41 +1,86 @@
 ideas = {
 	
 	industrial_concern = {
-		designer = yes
-		armstrong_whitworth = {
+		ENG_Vickers_Limited = {
+			picture = vickers_armstrong_can
+
 			allowed = {
 				original_tag = ENG
 			}
-			research_bonus = {
-				industry = 0.1
-			}
-			traits = {
-				industrial_concern
+
+			cost = 150
+
+			equipment_bonus = {
+				infantry_equipment = {
+					defense = 0.15
+					build_cost_ic = 0.05
+					instant = yes
+				}
 			}
 		}
-		english_electric = {
+		ENG_Armstrong_Whitworth = {
+			picture = vickers_armstrong_eng
+
 			allowed = {
 				original_tag = ENG
 			}
-			research_bonus = {
-				electronics = 0.1
-			}
-			traits = {
-				electronics_concern
+
+			cost = 150
+
+			equipment_bonus = {
+				artillery_equipment = {
+					breakthrough = -0.15
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
-		marconi = {
+		ENG_William_Beardmore_And_Company = {
+			picture = scraping_the_barrel
+
 			allowed = {
 				original_tag = ENG
 			}
+
+			cost = 150
+
 			research_bonus = {
-				electronics = 0.05
-				industry = 0.05
+				armor = 0.2
 			}
-			traits = {
-				electronics_concern
+
+			equipment_bonus = {
 			}
-			picture = generic_tank_manufacturer_1
+		}
+		ENG_Cammell_Laird = {
+			picture = CHL_asmar
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			cost = 150
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+		ENG_Sopwith_Aviation_Company = {
+			picture = PHI_army_air_corps
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			cost = 150
+
+			modifier = {
+				air_mission_efficiency = 0.1
+				production_speed_air_base_factor = 0.2
+			}
 		}
 	}
 	

@@ -19,10 +19,11 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			# category_divisional_support_battalions
 			category_army
 		}
 
-	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -138,6 +139,7 @@ sub_units = {
 		}
 
 	
+		regimental = no
 		combat_width = 0
 
 		#Size Definitions
@@ -211,7 +213,7 @@ sub_units = {
 		}
 
 		fort = {
-			attack = 0.15
+			attack = 0.05
 			defence = 0.20
 		}
 

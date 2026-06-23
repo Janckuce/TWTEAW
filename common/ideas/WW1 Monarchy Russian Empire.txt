@@ -93,10 +93,10 @@ ideas = {
 
 			modifier = {
 				training_time_army_factor = 0.25
-				army_attack_factor = -0.10
-				army_defence_factor = -0.25
-				army_org_factor = -0.15
-				army_strength_factor = -0.02
+				army_attack_factor = -0.05
+				army_defence_factor = -0.15
+				# army_org_factor = -0.05
+				# army_strength_factor = -0.02
 			}
 		}
 
@@ -126,9 +126,9 @@ ideas = {
 			modifier = {
 				# training_time_army_factor = -0.10
 				# army_attack_factor = -0.15
-				army_defence_factor = -0.2
-				army_org_factor = 0.05
-				army_strength_factor = -0.04
+				army_defence_factor = -0.10
+				army_org_factor = 0.08
+				# army_strength_factor = -0.04
 			}
 		}
 
@@ -158,9 +158,9 @@ ideas = {
 			modifier = {
 				training_time_army_factor = -0.25
 				army_attack_factor = 0.08
-				army_defence_factor = -0.10
-				army_org_factor = 0.10
-				army_strength_factor = -0.06
+				army_defence_factor = -0.05
+				army_org_factor = 0.15
+				# army_strength_factor = -0.06
 			}
 		}
 
@@ -188,7 +188,7 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				army_org_factor = -0.20
+				army_strength_factor = -0.10
 			}
 		}
 
@@ -281,10 +281,11 @@ ideas = {
 
 			modifier = {
 				training_time_army_factor = 0.25
-				army_attack_factor = -0.25
-				army_defence_factor = -0.10
-				army_org_factor = -0.10
-				army_strength_factor = -0.01
+				army_attack_factor = -0.20
+				army_defence_factor = -0.05
+				army_org_factor = -0.05
+				land_reinforce_rate = 0.06
+				# army_strength_factor = -0.01
 			}
 		}
 
@@ -312,11 +313,12 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				# training_time_army_factor = 0.05
+				training_time_army_factor = -0.05
 				army_attack_factor = -0.10
 				army_defence_factor = 0.05
-				# army_org_factor = -0.05
-				army_strength_factor = -0.02
+				land_reinforce_rate = 0.08
+				# army_org_factor = 0.05
+				# army_org_factor = -0.06
 			}
 		}
 
@@ -344,11 +346,13 @@ ideas = {
             picture = RUS_1905_war
 
 			modifier = {
-				training_time_army_factor = -0.25
-				# army_attack_factor = -0.05
+				training_time_army_factor = -0.15
+				army_attack_factor = -0.10
 				army_defence_factor = 0.15
-				army_org_factor = 0.10
-				army_strength_factor = -0.03
+				land_reinforce_rate = 0.10
+				army_org_factor = 0.05
+				max_planning = 0.15
+				planning_speed = -0.85
 			}
 		}
 

@@ -213,7 +213,8 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15
+					defense = 0.1
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
@@ -222,7 +223,8 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15
+					defense = 0.15
+					build_cost_ic = 0.05
 					instant = yes
 				}
 			}
@@ -234,7 +236,8 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.1
+					soft_attack = 0.1
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
@@ -243,7 +246,8 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			equipment_bonus = {
 				artillery_equipment = {
-					build_cost_ic = -0.1
+					soft_attack = 0.15
+					build_cost_ic = 0.1
 					instant = yes
 				}
 			}
@@ -314,8 +318,8 @@ ideas = {
 			picture = BEL_minerva_imperia_motorized_organization
 			equipment_bonus = {
 				armored_car_equipment = {
-					armor_value = 0.05
-					build_cost_ic = -0.15
+					fuel_consumption_factor = 0.1
+					build_cost_ic = -0.2
 					instant = yes
 				}
 			}

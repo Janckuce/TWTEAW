@@ -488,3 +488,299 @@ AUH_plunder_decisions = {
 		}
 	}
 }
+
+AUS_core_decisions = {
+
+	core_dalmatia = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 103 # Dalmatia
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 103 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			103 = { # Dalmatia
+				add_core_of = AUS
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+	core_zadar = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 163 # Zadar
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 163 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			163 = { # Zadar
+				add_core_of = AUS
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+	core_fiume = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 859 # Fiume
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_small_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 859 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			859 = { # Zadar
+				add_core_of = AUS
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+		}
+	}
+
+	core_herzegowina = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 804 # Herzegowina
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_small_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 804 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			804 = { # Herzegowina
+				add_core_of = AUS
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+		}
+	}
+
+	core_bohemia = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 9
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 9 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			9 = {
+				add_core_of = AUS
+			}
+		}
+	}
+
+	core_moravia = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 75
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 75 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			75 = {
+				add_core_of = AUS
+			}
+		}
+	}
+
+	core_south_slovakia = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 664
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 664 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			664 = {
+				add_core_of = AUS
+			}
+		}
+	}
+
+	core_northern_plain = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 154
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 154 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			154 = {
+				add_core_of = AUS
+			}
+		}
+	}
+
+
+
+}

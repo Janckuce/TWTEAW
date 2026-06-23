@@ -179,9 +179,8 @@ focus_tree = {
 			focus = FRA_Parti
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_Carry_On
-				add_idea = FRA_Carry_On_Heavy_Artillery
+			set_technology = {
+				FRA_Heavy_Artillery_Buff = 1
 			}
 		}
 	}
