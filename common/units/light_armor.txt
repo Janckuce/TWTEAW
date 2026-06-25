@@ -22,10 +22,11 @@ sub_units = {
 			category_army
 		}
 
+		regimental = no
 
 
 		need = {
-			light_tank_chassis = 60
+			light_tank_chassis = 50
 		}
 		manpower = 500
 		max_organisation = 10
@@ -43,7 +44,6 @@ sub_units = {
 		suppression = 2.5
 
 		mountain = 	{
-		    attack = -0.05
 			movement = -0.15
 		}
 		jungle = {
@@ -51,21 +51,19 @@ sub_units = {
 			movement = -0.1
 		}
 		marsh = {
-		    attack = -0.05
 			movement = -0.05
 		}
 		urban = {
 			movement = -0.05
 		}
 		river = { 
-			attack = -0.05
 			movement = -0.05
 		}
 		amphibious = { 
 			attack = -0.05
 		}
 		fort = {
-			attack = 0.05
+			attack = 0.10
 		}	
 		
 		same_support_type = armor
