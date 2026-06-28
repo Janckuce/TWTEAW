@@ -37,8 +37,8 @@ focus_tree = {
 		id = GER_Choose_Military_Strategy
 		icon = GFX_focus_GER_party_chancellor_bormann
 		cost = 7.2
-		x = 3
-		y = 4
+		x = 4
+		y = 5
 		prerequisite = {
 			focus = GER_finish_military_reforms
 		}
@@ -215,14 +215,14 @@ focus_tree = {
 		id = GER_Military_academy
 		icon = GFX_focus_chi_army_reform
 		cost = 7.2
-		x = 6
+		x = 1
 		y = 4
 		prerequisite = {
 			focus = GER_finish_military_reforms
 		}
-		prerequisite = {
-			focus = GER_appease_Britain
-		}
+		# prerequisite = {
+		# 	focus = GER_appease_Britain
+		# }
 		completion_reward = {
 			add_ideas = GER_Prussian_Militarism
 			add_trait = {
@@ -243,10 +243,11 @@ focus_tree = {
 		id = GER_Infantry_research
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		cost = 7.2
-		x = 6
-		y = 5
+		relative_position_id = GER_Research_Slot1
+		x = -1
+		y = 1
 		prerequisite = {
-			focus = GER_Military_academy
+			focus = GER_Research_Slot1
 		}
 		completion_reward = { 
 		add_tech_bonus = {
@@ -257,30 +258,30 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = GER_appease_Britain
-		icon = GFX_focus_generic_naval_discipline
-		x = 6
-		y = 2
-		cost = 7.2
-		prerequisite = {
-			focus = GER_address_military_situation
-		}
-		mutually_exclusive = {
-			focus = GER_Commit_To_The_Race
-		}
-		completion_reward = {
-			remove_ideas = GER_naval_arms_race
-		}
-	}
+	# focus = {
+	# 	id = GER_appease_Britain
+	# 	icon = GFX_focus_generic_naval_discipline
+	# 	x = 6
+	# 	y = 2
+	# 	cost = 7.2
+	# 	prerequisite = {
+	# 		focus = GER_address_military_situation
+	# 	}
+	# 	mutually_exclusive = {
+	# 		# focus = GER_Commit_To_The_Race
+	# 	}
+	# 	completion_reward = {
+	# 		remove_ideas = GER_naval_arms_race
+	# 	}
+	# }
 	focus = {
 		id = GER_Naval_Race
 		icon = GFX_goal_generic_navy_battleship
 		cost = 7.2
 		x = 10
-		y = 1
+		y = 2
 		prerequisite = {
-			focus = GER_Our_Kaiser
+			focus = GER_Commit_To_The_Race
 		}
 		completion_reward = {
 			59 = {
@@ -328,10 +329,13 @@ focus_tree = {
 		id = GER_unrestricted_submarine_warfare
 		icon = GFX_focus_german_submarine
 		prerequisite = {
-			focus = GER_No_Slacking_Off
+			focus = GER_Finish_Line
 		}
-		x = 12
-		y = 4
+		prerequisite = {
+			focus = GER_Naval_Academy
+		}
+		x = 10
+		y = 7
 		cost = 7.2
 
 		bypass = {
@@ -380,7 +384,7 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
 		relative_position_id = GER_Shortcut
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = GER_Shortcut
@@ -396,15 +400,15 @@ focus_tree = {
 		id = GER_Commit_To_The_Race
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
-		relative_position_id = GER_Naval_Race
-		x = -2
+		relative_position_id = GER_Our_Kaiser
+		x = -4
 		y = 1
 		prerequisite = {
-			focus = GER_Naval_Race
+			focus = GER_Our_Kaiser
 		}
-		mutually_exclusive = {
-			focus = GER_appease_Britain
-		}
+		# mutually_exclusive = {
+		# 	focus = GER_appease_Britain
+		# }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = GER_naval_arms_race
@@ -416,28 +420,43 @@ focus_tree = {
 		id = GER_Naval_Academy
 		icon = GFX_focus_GER_navy
 		cost = 7.2
-		relative_position_id = GER_Commit_To_The_Race
-		x = 0
-		y = 2
+		relative_position_id = GER_Shortcut
+		x = 1
+		y = 1
+		# prerequisite = {
+		# 	focus = GER_Commit_To_The_Race
+		# }
 		prerequisite = {
-			focus = GER_Commit_To_The_Race
-		}
-		prerequisite = {
-			focus = GER_No_Slacking_Off
+			focus = GER_Shortcut
 		}
 		completion_reward = {
 			add_ideas = GER_Prussian_Naval_Combat
 		}
 	}
 	focus = {
+		id = GER_Research_Slot1
+		icon = GFX_focus_research
+		cost = 10
+		relative_position_id = GER_address_military_situation
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = GER_address_military_situation
+			focus = GER_Commit_To_The_Race
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_Research_Decisions
+		}
+	}
+	focus = {
 		id = GER_Naval_Research
 		icon = GFX_focus_generic_navy_research_bonus
 		cost = 7.2
-		relative_position_id = GER_Naval_Academy
-		x = 0
+		relative_position_id = GER_Research_Slot1
+		x = 1
 		y = 1
 		prerequisite = {
-			focus = GER_Naval_Academy
+			focus = GER_Research_Slot1
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -446,21 +465,6 @@ focus_tree = {
 				uses = 2
 				category = naval_equipment
 			}
-		}
-	}
-	focus = {
-		id = GER_Research_Slot1
-		icon = GFX_focus_research
-		cost = 10
-		relative_position_id = GER_appease_Britain
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = GER_appease_Britain
-			focus = GER_Commit_To_The_Race
-		}
-		completion_reward = {
-			unlock_decision_category_tooltip = GER_Research_Decisions
 		}
 	}
 	focus = {
@@ -654,7 +658,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_chromium_mines
 		}
-		x = -2
+		x = -1
 		y = 2
 		cost = 10
 
@@ -738,7 +742,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_infrastructure_construction
 		}
-		x = 16
+		x = 15
 		y = 3
 		cost = 7.2
 		ai_will_do = {
@@ -794,12 +798,11 @@ focus_tree = {
 		icon = GFX_focus_NORDIC_com_capstone_civilian
 		prerequisite = {
 			focus = GER_chromium_mines
-		}
-		prerequisite = {
 			focus = GER_infrastructure_construction
 		}
+
 		x = 0
-		y = 2
+		y = 3
 		cost = 7.2
 
 		bypass = {
@@ -831,11 +834,12 @@ focus_tree = {
 	focus = {
 		id = GER_research_slot_2
 		icon = GFX_focus_research
-		relative_position_id = GER_railway_innovations
+		relative_position_id = GER_Naval_Research
 		prerequisite = {
-			focus = GER_east_prussia_plan
+			focus = GER_Naval_Research
+			focus = GER_Infantry_research
 		}
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -864,10 +868,10 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = GER_east_prussia_plan
 		prerequisite = {
-			focus = GER_research_slot_2
+			focus = GER_east_prussia_plan
 		}
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
 
 		bypass = {
@@ -1136,10 +1140,10 @@ focus_tree = {
 		id = GER_ludendorff_offensive
 		icon = GFX_focus_germany_prosper
 		x = 1
-		y = 4
+		y = 5
 		cost = 5
 		prerequisite = {
-			focus = GER_finish_military_reforms
+			focus = GER_Military_academy
 		}
 		bypass = {
 			#
