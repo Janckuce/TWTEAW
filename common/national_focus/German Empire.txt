@@ -27,7 +27,7 @@ focus_tree = {
 		id = GER_Our_Kaiser
 		icon = GFX_focus_ger_revive_kaiserreich
 		cost = 5
-		x = 14
+		x = 15
 		y = 0
 		completion_reward = {
 			add_political_power = 120
@@ -251,8 +251,8 @@ focus_tree = {
 		}
 		completion_reward = { 
 		add_tech_bonus = {
-				name = GER_artillery_research_1
-				bonus = 0.5
+				name = GER_infantry_research_1
+				bonus = 0.6
 				uses = 2
 				category = infantry_weapons
 			}
@@ -401,7 +401,7 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 7.2
 		relative_position_id = GER_Our_Kaiser
-		x = -4
+		x = -5
 		y = 1
 		prerequisite = {
 			focus = GER_Our_Kaiser
@@ -471,7 +471,7 @@ focus_tree = {
 		id = GER_Newspaper_Propaganda
 		icon = GFX_focus_ger_propaganda_1
 		cost = 2.9
-		x = 23
+		x = 34
 		y = 1
 		prerequisite = {
 			focus = GER_Our_Kaiser
@@ -569,7 +569,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland_plan
 		icon = GFX_focus_DEN_civilian_preparations
-		x = 14
+		x = 15
 		y = 1
 		cost = 5
 
@@ -658,28 +658,30 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_chromium_mines
 		}
-		x = -1
+		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
 		}
 		available = {
-		    #
+		    date < 1914.4.1
 		}
+		continue_if_invalid = yes
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
 		
 		available_if_capitulated = yes
+
 		
 		completion_reward = {
-		    60 = { #Thuringen
-				add_resource = {
-					type = tungsten
-					amount = 15
-				}
+
+			add_timed_idea = {
+				idea = GER_resource_stocking
+				days = 100
 			}
+			unlock_decision_category_tooltip = GER_resource_reserve
 		}
 	}
 	
@@ -742,7 +744,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_infrastructure_construction
 		}
-		x = 15
+		x = 17
 		y = 3
 		cost = 7.2
 		ai_will_do = {
@@ -792,6 +794,46 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_berlin_ruhr_railway
+
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SOV_finish_the_five_year_plan }
+		x = 1
+		y = 1
+		relative_position_id = GER_railway_innovations
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_tech = wartime_train
+		}
+
+		prerequisite = {
+			focus = GER_railway_innovations
+		}
+		prerequisite = {
+			focus = GER_ruhr_factories
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+
+			build_railway = {
+				level = 5
+				path = { 6521 3499 9456 3522 6487 425 3561 9524 6549 3524 6488 6444 11494 3423 9575 11531 }
+			}
+			build_railway = {
+				level = 5
+				path = { 11494 3547 587 } 
+			}
+		}
+	}
 	
 	focus = {
 		id = GER_east_prussia_plan
@@ -828,6 +870,81 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = GER_berlin_east_prussia_railway
+
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SOV_finish_the_five_year_plan }
+		x = 2
+		y = 1
+		relative_position_id = GER_east_prussia_plan
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = GER_berlin_ruhr_railway
+		}
+		prerequisite = {
+			focus = GER_east_prussia_plan
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			
+			build_railway = {
+				level = 5
+				path = { 6521 11505 9496 537 6236 9387 388 11232 279 3324 389 362 3380 6402 6332 }
+			}
+			# build_railway = {
+			# 	level = 5
+			# 	path = { 11494 3547 587 } 
+			# }
+		}
+	}
+
+	focus = {
+		id = GER_berlin_wilhelmshaven_railway
+
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SOV_finish_the_five_year_plan }
+		x = 4
+		y = 1
+		relative_position_id = GER_east_prussia_plan
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		prerequisite = {
+			focus = GER_berlin_ruhr_railway
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			
+			build_railway = {
+				level = 5
+				path = { 3522 9375 526 6377 3271 3326 241 }
+			}
+			# build_railway = {
+			# 	level = 5
+			# 	path = { 11494 3547 587 } 
+			# }
 		}
 	}
 	
@@ -871,7 +988,7 @@ focus_tree = {
 			focus = GER_east_prussia_plan
 		}
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 
 		bypass = {
@@ -908,7 +1025,7 @@ focus_tree = {
 			focus = GER_reorganize_civilian_industry
 		}
 		x = 0
-		y = 5
+		y = 6
 		cost = 5
 
 		bypass = {
@@ -945,7 +1062,7 @@ focus_tree = {
 	focus = {
 		id = GER_heavy_armament_production
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 19
+		x = 20
 		y = 1
 		cost = 7.2
 
@@ -1066,13 +1183,13 @@ focus_tree = {
 		id = GER_hindenburg_programme
 		icon = GFX_goal_generic_production
 		relative_position_id = GER_heavy_armament_production
-		prerequisite = {
-			focus = GER_ruhr_factories
-		}
+		# prerequisite = {
+		# 	focus = GER_ruhr_factories
+		# }
 		prerequisite = {
 			focus = GER_berlin_small_arms_industry
 		}
-		x = -0
+		x = 1
 		y = 3
 		cost = 7.2
 
@@ -1133,6 +1250,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+				name = GER_infantry_research_1
+				bonus = 0.80
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	
@@ -1172,7 +1295,7 @@ focus_tree = {
 		id = GER_Kaiser_Path1
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
-		x = 29
+		x = 27
 		y = 1
 		prerequisite = {
 			focus = GER_Our_Kaiser

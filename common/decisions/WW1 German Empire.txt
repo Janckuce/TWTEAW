@@ -218,6 +218,66 @@ GER_Catholic_Reforms = {
 }
 
 
+GER_resource_reserve = {
+	
+	GER_tungsten_reserve = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_tungsten
+		allowed = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			56 = {
+				add_resource = {
+					type = tungsten
+					amount = 24
+				}
+			}
+		}
+
+		remove_effect = {
+			56 = {
+				add_resource = {
+					type = tungsten
+					amount = -24
+				}
+			}
+		}
+	}
+
+	GER_sulfer_reserve = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_generic_welfare
+		allowed = {
+			tag = GER
+		}
+		days_remove = 180
+
+		complete_effect = {
+			56 = {
+				add_resource = {
+					type = sulfur
+					amount = 16
+				}
+			}
+		}
+
+		remove_effect = {
+			56 = {
+				add_resource = {
+					type = sulfur
+					amount = -16
+				}
+			}
+		}
+	}
+}
+
+
 GER_Plunder_Decisions = {
 	#in total: 27, 33 or 41? civs, 16 mils possible
 

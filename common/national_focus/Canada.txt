@@ -316,7 +316,7 @@ focus_tree = {
 	focus = {
 		id = CAN_mil_factories1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5
+		cost = 7.2
 		x = 6
 		y = 2
 
@@ -326,10 +326,10 @@ focus_tree = {
 
 		completion_reward = {
 			468 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 		    }
@@ -374,10 +374,10 @@ focus_tree = {
 
 		completion_reward = {
 			473 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = dockyard
-				level = 1
+				level = 2
 				instant_build = yes
 				}
 		    }
@@ -442,7 +442,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_manpower = -10000
+			add_manpower = -5000
 			add_stability = -0.05
 		}
 	}
@@ -459,7 +459,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_manpower = -15000
+			add_manpower = -5000
 			add_stability = -0.10
 		}
 	}
@@ -826,6 +826,7 @@ focus_tree = {
 
 		prerequisite = {
 			focus = CAN_army_left3
+			focus = CAN_native_concessions
 		}
 
 		completion_reward = {
