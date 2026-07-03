@@ -728,7 +728,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army1
 		icon = GFX_focus_generic_bad_medical
-		cost = 10
+		cost = 5
 		x = 16
 		y = 0
 		
@@ -838,7 +838,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army_right1
 		icon = GFX_focus_research
-		cost = 10
+		cost = 5
 		x = 19
 		y = 1
 
@@ -904,17 +904,17 @@ focus_tree = {
 
 		prerequisite = {
 			focus = CAN_army_science
-		}
-
-		prerequisite = {
 			focus = CAN_army_right2
 		}
+
+		# prerequisite = {
+		# }
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_infantry_weapons
-				bonus = 0.5
-				uses = 2
+				bonus = 0.8
+				uses = 3
 				category = infantry_weapons
 			}
 		}
