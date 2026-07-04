@@ -41,5 +41,5 @@ tags={
 }
 name="The Great Curfuffle"
 picture="Thumbnail.png"
-supported_version="1.19.1.0"
+supported_version="1.19.2.0"
 remote_file_id="3517217605"
