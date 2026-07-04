@@ -1,162 +1,162 @@
-armor_generic = {
+# armor_generic = {
 
-	blocked_for = {
-		GER
-		JAP
-		ENG
-		USA
-		ITA
-		SOV
-		HUN
-		SIA
-	}
+# 	blocked_for = {
+# 		GER
+# 		JAP
+# 		ENG
+# 		USA
+# 		ITA
+# 		SOV
+# 		HUN
+# 		SIA
+# 	}
 
-	role = armor
+# 	role = armor
 	
-	upgrade_prio = {
-		base = 2
+# 	upgrade_prio = {
+# 		base = 2
 
-		modifier = {
-			factor = 3
-			has_tech = ww1_medium_tank_1 #approximations due to current mod tech limitations
-		}
+# 		modifier = {
+# 			factor = 3
+# 			has_tech = ww1_medium_tank_1 #approximations due to current mod tech limitations
+# 		}
 		
-		modifier = {
-			factor = 2
-			has_tech = ww1_medium_tank_2
-		}
-	}
+# 		modifier = {
+# 			factor = 2
+# 			has_tech = ww1_medium_tank_2
+# 		}
+# 	}
 
-	light_armor_early = {
-		upgrade_prio = {
-			base = 1
+# 	light_armor_early = {
+# 		upgrade_prio = {
+# 			base = 1
 
-			modifier = {
-				factor = 2
-			}
-		}
+# 			modifier = {
+# 				factor = 2
+# 			}
+# 		}
 		
-		can_upgrade_in_field = {
-			has_equipment = { light_tank_chassis < 500 } 
-		}
+# 		can_upgrade_in_field = {
+# 			has_equipment = { light_tank_chassis < 500 } 
+# 		}
 		
-		target_template = {
+# 		target_template = {
 			
-			support = {
-				engineer = 1
-				mot_recon = 1
-				artillery = 1
-				anti_tank = 1
-			}
+# 			support = {
+# 				engineer = 1
+# 				mot_recon = 1
+# 				artillery = 1
+# 				anti_tank = 1
+# 			}
 			
-			regiments = {
-				light_armor = 5
-				motorized = 4
-			}
-		}
+# 			regiments = {
+# 				light_armor = 5
+# 				motorized = 4
+# 			}
+# 		}
 		
-		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
-		replace_with = medium_armor_early
-		target_min_match = 0.5
-	}
+# 		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+# 		replace_with = medium_armor_early
+# 		target_min_match = 0.5
+# 	}
 
-	medium_armor_early = {
+# 	medium_armor_early = {
 	
-		upgrade_prio = {
-			base = 1
+# 		upgrade_prio = {
+# 			base = 1
 
-			modifier = {
-				factor = 3
-				has_tech = ww1_medium_tank_1
-			}
-		}
+# 			modifier = {
+# 				factor = 3
+# 				has_tech = ww1_medium_tank_1
+# 			}
+# 		}
 
-		target_template = {
+# 		target_template = {
 			
-			support = {
-				engineer = 1
-				mot_recon = 1
-				maintenance_company = 1
-				logistics_company = 1
-			}
+# 			support = {
+# 				engineer = 1
+# 				mot_recon = 1
+# 				maintenance_company = 1
+# 				logistics_company = 1
+# 			}
 			
-			regiments = {
-				medium_armor = 4
-				light_armor = 2
-				motorized = 4
-			}
-		}
+# 			regiments = {
+# 				medium_armor = 4
+# 				light_armor = 2
+# 				motorized = 4
+# 			}
+# 		}
 		
-		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
-		replace_with = medium_armor_mid
-		target_min_match = 0.5
-	}
+# 		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+# 		replace_with = medium_armor_mid
+# 		target_min_match = 0.5
+# 	}
 
-	medium_armor_mid = {
+# 	medium_armor_mid = {
 	
-		upgrade_prio = {
-			base = 1
+# 		upgrade_prio = {
+# 			base = 1
 
-			modifier = {
-				factor = 4
-				has_tech = ww1_medium_tank_1
-			}
+# 			modifier = {
+# 				factor = 4
+# 				has_tech = ww1_medium_tank_1
+# 			}
 
-			modifier = {
-				factor = 0
-				NOT = { has_tech = armored_car1 }
-			}
-		}
+# 			modifier = {
+# 				factor = 0
+# 				NOT = { has_tech = armored_car1 }
+# 			}
+# 		}
 
-		target_template = {
+# 		target_template = {
 			
-			support = {
-				engineer = 1
-				armored_car_recon = 1
-				maintenance_company = 1
-				logistics_company = 1
-			}
+# 			support = {
+# 				engineer = 1
+# 				armored_car_recon = 1
+# 				maintenance_company = 1
+# 				logistics_company = 1
+# 			}
 			
-			regiments = {
-				medium_armor = 6
-				motorized = 4
-			}
-		}
+# 			regiments = {
+# 				medium_armor = 6
+# 				motorized = 4
+# 			}
+# 		}
 		
-		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
-		replace_with = modern_armor_default
-		target_min_match = 0.5
-	}
+# 		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+# 		replace_with = modern_armor_default
+# 		target_min_match = 0.5
+# 	}
 
-	modern_armor_default = {
+# 	modern_armor_default = {
 	
-		upgrade_prio = {
-			base = 1
+# 		upgrade_prio = {
+# 			base = 1
 
-			modifier = {
-				factor = 5
-				has_tech = ww1_medium_tank_2
-			}
-		}
+# 			modifier = {
+# 				factor = 5
+# 				has_tech = ww1_medium_tank_2
+# 			}
+# 		}
 
-		target_template = {
+# 		target_template = {
 			
-			support = {
-				engineer = 1
-				light_tank_recon = 1
-				maintenance_company = 1
-				logistics_company = 1
-				signal_company = 1
-			}
+# 			support = {
+# 				engineer = 1
+# 				light_tank_recon = 1
+# 				maintenance_company = 1
+# 				logistics_company = 1
+# 				signal_company = 1
+# 			}
 			
-			regiments = {
-				medium_armor = 6
-				mechanized = 4
-				modern_sp_artillery_brigade = 1
-			}
-		}
-	}
-}
+# 			regiments = {
+# 				medium_armor = 6
+# 				mechanized = 4
+# 				modern_sp_artillery_brigade = 1
+# 			}
+# 		}
+# 	}
+# }
 
 garrison_generic = {
 
@@ -313,9 +313,9 @@ mountaineers_generic = {
 
 		modifier = {
 			factor = 0
-			NOT = {
-				has_tech = special_forces_mountaineers
-			}
+			# NOT = {
+			# 	has_tech = special_forces_mountaineers
+			# }
 		}
 	}
 
@@ -364,9 +364,9 @@ marines_generic = {
 
 		modifier = {
 			factor = 0
-			NOT = {
-				has_tech = special_forces_marines
-			}
+			# NOT = {
+			# 	has_tech = special_forces_marines
+			# }
 		}
 	}
 
