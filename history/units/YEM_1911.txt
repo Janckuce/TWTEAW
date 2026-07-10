@@ -11,6 +11,20 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "Qism Aljamal"
+
+	regiments = {
+		camelry = { x = 0 y = 0 }
+		camelry = { x = 0 y = 1 }
+		camelry = { x = 0 y = 2 }
+		camelry = { x = 1 y = 0 }
+		camelry = { x = 1 y = 1 }
+		camelry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+}
+
 units = {
     division = {
 		name = "Muqatilu Alsahra'"
@@ -62,7 +76,6 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-
 		division = {
 		name = "Muqatilu Alsahra'"
 		location = 12758
@@ -71,17 +84,22 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-}
 
-division_template = {
-	name = "Qism Aljamal"
+	division = {
+		name = "Qism Aljamal"
+		location = 12758
+		division_template = "Qism Aljamal"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
 
-	regiments = {
-		camelry = { x = 0 y = 0 }
-		camelry = { x = 0 y = 1 }
-		camelry = { x = 0 y = 2 }
-		camelry = { x = 1 y = 0 }
-		camelry = { x = 1 y = 1 }
-		camelry = { x = 1 y = 2 }
+	}
+	division = {
+		name = "Qism Aljamal"
+		location = 12758
+		division_template = "Qism Aljamal"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+
 	}
 }
+
