@@ -17,11 +17,13 @@
 	support = {
         engineer = { x = 0 y = 0 }
         machine_gun = { x = 0 y = 1 }
-		# machine_gun = { x = 1 y = 0 }
 	}
-	# reginental_support = {
-	# 	machine_gun = { x = 0 y = 0 }
-	# }
+
+	regimental_support = { #Various field pieces operated by the division at the regeniment level
+		machine_gun = { x = 0 y = 0 }
+		machine_gun = { x = 1 y = 0 }
+		machine_gun = { x = 2 y = 0 }
+	}
 }
 
 units = {

@@ -644,7 +644,7 @@ RUS_factory_count_sensor = {
 
 	factory_count_russia = {
 		icon = GFX_decision_category_generic_political_actions
-		days_mission_timeout = 2
+		days_mission_timeout = 20
 
 		priority = 101
 
@@ -721,7 +721,7 @@ RUS_factory_count_sensor = {
 		}
 		available = {
 			is_ai = no
-			has_capitulated = yes
+			has_idea = RUS_surrendered
 		}
 
 		allowed = {
