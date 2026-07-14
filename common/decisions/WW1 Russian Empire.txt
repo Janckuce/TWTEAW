@@ -550,7 +550,7 @@ RUS_Murmansk_Category = {
 }
 RUS_Civ_Donation_Mechanic = {
 	RUS_Donation = {
-		icon = GFX_decision_category_generic_political_actions
+		icon = GFX_decision_generic_factory
 		days_mission_timeout = 60
 
 		priority = 100
@@ -596,7 +596,7 @@ RUS_Civ_Donation_Mechanic = {
 	}
 
 	RUS_Donation_2 = {
-		icon = GFX_decision_category_generic_political_actions
+		icon = GFX_decision_generic_factory
 		days_mission_timeout = 60
 
 		priority = 100
@@ -636,6 +636,133 @@ RUS_Civ_Donation_Mechanic = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+}
+
+RUS_factory_count_sensor = {
+
+	factory_count_russia = {
+		icon = GFX_decision_category_generic_political_actions
+		days_mission_timeout = 2
+
+		priority = 101
+
+		fire_only_once = no
+
+		visible = {
+			always = yes
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			tag = RUS
+		}
+		allowed = {
+			always = yes
+		}
+		timeout_effect = {
+			activate_mission = factory_count_russia
+
+			set_variable = {
+				var = russia_current_civ_count
+				value = { value = num_of_owned_factories  subtract = num_of_military_factories  subtract = num_of_naval_factories }
+			}
+			
+			set_variable = {
+				var = russia_current_mil_count
+				value = num_of_military_factories
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						var = russia_current_civ_count
+						value = russia_civ_count
+						compare = greater_than
+					}
+				}
+
+				set_variable = {
+					var = russia_civ_count
+					value = russia_current_civ_count
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						var = russia_current_mil_count
+						value = russia_mil_count
+						compare = greater_than
+					}
+				}
+
+				set_variable = {
+					var = russia_mil_count
+					value = russia_current_mil_count
+				}
+			}
+
+			custom_effect_tooltip = RUS_to_usa_factories_tooltip
+		} 
+	}
+
+	RUS_swap_to_usa = {
+		icon = GFX_decision_generic_USA_flag
+
+		priority = 99
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes
+		}
+		available = {
+			is_ai = no
+			has_capitulated = yes
+		}
+
+		allowed = {
+			tag = RUS
+		}
+
+		complete_effect = {
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						var = russia_civ_count
+						value = 1
+						compare = greater_than_or_equals
+					}
+				}
+				subtract_from_variable = {
+					var = russia_civ_count
+					value = 1
+				}
+				USA = {
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						var = russia_mil_count
+						value = 1
+						compare = greater_than_or_equals
+					}
+				}
+				subtract_from_variable = {
+					var = russia_mil_count
+					value = 1
+				}
+				USA = {
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			}
+
+			USA = { change_tag_from = RUS }
 		}
 	}
 }

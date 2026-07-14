@@ -1432,6 +1432,132 @@ FRA_Political_Stability_Category = {
 			factor = 10000
 		}
 	}
+}
 
+FRA_factory_count_sensor = {
 
+	factory_count_france = {
+		icon = GFX_decision_category_generic_political_actions
+		days_mission_timeout = 20
+
+		priority = 100
+
+		fire_only_once = no
+
+		visible = {
+			always = yes
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			tag = FRA
+		}
+		allowed = {
+			always = yes
+		}
+		timeout_effect = {
+			activate_mission = factory_count_france
+
+			set_variable = {
+				var = france_current_civ_count
+				value = { value = num_of_owned_factories  subtract = num_of_military_factories  subtract = num_of_naval_factories }
+			}
+			
+			set_variable = {
+				var = france_current_mil_count
+				value = num_of_military_factories
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						var = france_current_civ_count
+						value = france_civ_count
+						compare = greater_than
+					}
+				}
+
+				set_variable = {
+					var = france_civ_count
+					value = france_current_civ_count
+				}
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						var = france_current_mil_count
+						value = france_mil_count
+						compare = greater_than
+					}
+				}
+
+				set_variable = {
+					var = france_mil_count
+					value = france_current_mil_count
+				}
+			}
+
+			custom_effect_tooltip = FRA_to_usa_factories_tooltip
+
+		} 
+	}
+
+	FRA_swap_to_usa = {
+		icon = GFX_decision_generic_USA_flag
+
+		priority = 99
+
+		fire_only_once = yes
+
+		visible = {
+			always = yes
+		}
+		available = {
+			is_ai = no
+			has_capitulated = yes
+		}
+
+		allowed = {
+			tag = FRA
+		}
+
+		complete_effect = {
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						var = france_civ_count
+						value = 1
+						compare = greater_than_or_equals
+					}
+				}
+				subtract_from_variable = {
+					var = france_civ_count
+					value = 1
+				}
+				USA = {
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+			}
+			while_loop_effect = {
+				limit = {
+					check_variable = {
+						var = france_mil_count
+						value = 1
+						compare = greater_than_or_equals
+					}
+				}
+				subtract_from_variable = {
+					var = france_mil_count
+					value = 1
+				}
+				USA = {
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			}
+
+			USA = { change_tag_from = FRA }
+		}
+	}
 }
