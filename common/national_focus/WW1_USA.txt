@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = USA_starting_focus
 		icon = GFX_focus_generic_befriend_usa
-		cost = 4
+		cost = 2.9
 		x = 12
 		y = 0
 
@@ -36,11 +36,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 200
+			add_political_power = 1000
+			remove_ideas = USA_Neutrality
 			add_timed_idea = {
 				idea = USA_temporary_base_efficiency
 				days = 5
-			}	
+			}
+			add_offsite_building = { type = industrial_complex level = afrance_civ_count }
+			add_offsite_building = { type = arms_factory level = afrance_mil_count }
 		}
 	}
 

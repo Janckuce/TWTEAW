@@ -29,7 +29,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = transfer_enabled
+			has_global_flag = transfer_enabled
 		}
 		localization_key = transfer_states_off
 	}
@@ -38,11 +38,63 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = Debuffing_tooltip
+ 
+	text = {
+		trigger = {
+			Root={has_global_flag = enabled_debuffing}
+		}
+		localization_key = Debuffing_off
+	}
+	text = {
+		localization_key = Debuffing_on
+	}
+}
+defined_text = { 
+	name = event_translet_horst_tooltip
+ 
+	text = {
+		trigger = {
+			Root={has_global_flag = enabled_event_translet_horst}
+		}
+		localization_key = event_translet_horst_off
+	}
+	text = {
+		localization_key = event_translet_horst_on
+	}
+}
+defined_text = {
+	name = event_translet_horst_TOOLTIP
+
+	text = {
+		trigger = {
+			Root={has_global_flag = enabled_event_translet_horst}
+		}
+		localization_key = event_translet_horst_TOOLTIP_off
+	}
+	text = {
+		localization_key = event_translet_horst_TOOLTIP_on
+	}
+}
+defined_text = {
+	name = Debuffing_TOOLTIP
+
+	text = {
+		trigger = {
+			Root={has_global_flag = enabled_debuffing}
+		}
+		localization_key = Debuffing_TOOLTIP_off
+	}
+	text = {
+		localization_key = Debuffing_TOOLTIP_on
+	}
+}
+defined_text = {
 	name = command_limit_tooltip
 
 	text = {
 		trigger = {
-			has_country_flag = show_admiral_list
+			has_global_flag = show_admiral_list
 		}
 		localization_key = command_limit_off
 	}
@@ -57,7 +109,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = transfer_enabled
+			has_global_flag = transfer_enabled
 		}
 		localization_key = ST_TOOLTIP_off
 	}
@@ -84,14 +136,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=0}
-			NOT={Root={has_country_flag=cheating}}
+			NOT={Root={has_global_flag=cheating}}
 		}
 		localization_key = CHEAT_SELECT
 	}
 	text = {
 		trigger = {
 			OR={check_variable = {Root.selected_cheat=1}
-			Root={has_country_flag=cheating}}
+			Root={has_global_flag=cheating}}
 		}
 		localization_key = CHEAT1
 	}
@@ -160,14 +212,14 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {Root.selected_debuff=0}
-			NOT={Root={has_country_flag=debuffing}}
+			NOT={Root={has_global_flag=debuffing}}
 		}
 		localization_key = DEBUFF_SELECT
 	}
 	text = {
 		trigger = {
 			OR={check_variable = {Root.selected_debuff=1}
-			Root={has_country_flag=debuffing}}
+			Root={has_global_flag=debuffing}}
 		}
 		localization_key = DEBUFF1
 	}
@@ -176,6 +228,48 @@ defined_text = {
 			check_variable = {Root.selected_debuff=2}
 		}
 		localization_key = DEBUFF2
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=3}
+		}
+		localization_key = DEBUFF3
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=4}
+		}
+		localization_key = DEBUFF4
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=5}
+		}
+		localization_key = DEBUFF5
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=6}
+		}
+		localization_key = DEBUFF6
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=7}
+		}
+		localization_key = DEBUFF7
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=8}
+		}
+		localization_key = DEBUFF8
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=9}
+		}
+		localization_key = DEBUFF9
 	}
 }
 

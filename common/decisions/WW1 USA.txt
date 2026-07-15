@@ -156,3 +156,79 @@ USA_Gain_Techs_Category = {
 		}
 	}
 }
+
+# USA_factory_count_sensor = {
+
+# 	USA_factory_count_france = {
+# 		icon = GFX_decision_category_generic_political_actions
+# 		days_mission_timeout = 2
+
+# 		priority = 100
+
+# 		fire_only_once = no
+
+# 		visible = {
+# 			always = yes
+# 		}
+# 		available = {
+# 			always = no
+# 			# is_ai = no
+# 		}
+# 		activation = {
+# 			tag = USA
+# 		}
+# 		allowed = {
+# 			always = yes
+# 			#Date < 1914.6.28 #not supported hered
+# 		}
+# 		timeout_effect = {
+# 			activate_mission = USA_factory_count_france
+
+# 			set_variable = {
+# 				var = france_current_civ_count
+# 				value = { value = num_of_owned_factories  subtract = num_of_military_factories  subtract = num_of_naval_factories }
+# 			}
+			
+# 			set_variable = {
+# 				var = france_current_mil_count
+# 				value =  { value = num_of_military_factories }
+# 			}
+
+# 			if = {
+# 				limit = {
+# 					check_variable = {
+# 						var = france_current_civ_count
+# 						value = france_civ_count
+# 						compare = greater_than
+# 					}
+# 				}
+
+# 				set_variable = {
+# 					var = france_civ_count
+# 					value = france_current_civ_count
+# 				}
+
+# 				add_offsite_building = { type = industrial_complex level = france_civ_count }
+# 			}
+
+# 			if = {
+# 				limit = {
+# 					check_variable = {
+# 						var = france_current_mil_count
+# 						value = france_mil_count
+# 						compare = greater_than
+# 					}
+# 				}
+
+# 				set_variable = {
+# 					var = france_mil_count
+# 					value = france_current_mil_count
+# 				}
+
+# 				add_offsite_building = { type = arms_factory level = france_mil_count }
+# 			}
+
+
+# 		}
+# 	}
+# }

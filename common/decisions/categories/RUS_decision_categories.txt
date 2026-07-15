@@ -103,8 +103,9 @@ MON_RUS_army_collapse_mechanic = {
 		tag = RUS
 	}
 }
+
 RUS_Civ_Donation_Mechanic = {
-	icon = GFX_decision_category_generic_political_actions
+	icon = GFX_RAJ_decision_investment_civs_icon
 
 	priority = 100
 
@@ -113,6 +114,18 @@ RUS_Civ_Donation_Mechanic = {
 	visible = {
 		always = yes
 	}
+	allowed = {
+		tag = RUS
+	}
+}
+
+RUS_factory_count_sensor = {
+	icon = GFX_decision_category_GER_seize_gold_reserves
+
+	visible_when_empty = no
+
+	priority = 100
+
 	allowed = {
 		tag = RUS
 	}

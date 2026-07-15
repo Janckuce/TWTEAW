@@ -1,0 +1,36 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FRA = {
+				set_variable = {
+					var = france_civ_count
+					value = 31
+				}
+				set_variable = {
+					var = france_mil_count
+					value = 24
+				}
+			}
+			RUS = {
+				set_variable = {
+					var = russia_civ_count
+					value = 29
+				}
+				set_variable = {
+					var = russia_mil_count
+					value = 29
+				}
+			}
+			# USA = {
+				# set_variable = {
+				# 	var = afrance_civ_count
+				# 	value = 5
+				# }
+				# set_variable = {
+				# 	var = afrance_mil_count
+				# 	value = 5
+				# }
+			# }
+		}
+	}
+}
