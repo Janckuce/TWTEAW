@@ -42,8 +42,6 @@ focus_tree = {
 				idea = USA_temporary_base_efficiency
 				days = 5
 			}
-			add_offsite_building = { type = industrial_complex level = afrance_civ_count }
-			add_offsite_building = { type = arms_factory level = afrance_mil_count }
 		}
 	}
 
@@ -593,11 +591,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = cat_special_forces_generic
-			}
+			add_ideas = USA_special_forces_research
 		}
 	}
 
@@ -619,7 +613,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = USA_special_forces_division
+			swap_ideas = {
+				remove_idea = USA_special_forces_research
+				add_idea = USA_special_forces_division
+			}
 		}
 	}
 

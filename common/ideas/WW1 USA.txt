@@ -109,8 +109,16 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 		} 
 
+		USA_special_forces_research = {
+			modifier = {
+				special_forces_min = 100
+			}
+			picture = eng_special_air_service
+		}
+
 		USA_special_forces_division = {
 			modifier = {
+				special_forces_min = 100
 				special_forces_attack_factor = 0.12
 				special_forces_defence_factor = 0.12
 			}
