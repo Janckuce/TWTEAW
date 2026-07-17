@@ -158,145 +158,139 @@ focus_tree = {
 					}
 				}
 			}
-			else = {
-				if = {
-					limit = {
+			else_if = {
+				limit = {
+					AND = {
+						is_ally_with = FRA 
 						14 = {
 							is_fully_controlled_by = FRA
 						}
 					}
-					14 = {
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
-						create_unit = {
-							division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-							owner = USA
-							prioritize_location = 3552
-							allow_spawning_on_enemy_provs = no
-						}
+				}
+				14 = {
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3552
+						allow_spawning_on_enemy_provs = no
 					}
 				}
-				else = {
-					if = {
-						limit = {
-							361 = {
-								is_controlled_by_USA_or_ally = yes
-							}
-						}
-						361 = {
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-							create_unit = {
-								division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
-								owner = USA
-								prioritize_location = 3957
-								allow_spawning_on_enemy_provs = no
-							}
-						}
+			}
+			else = {
+				361 = {
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"American Patriots \" division_template = \"American Patriots\" start_experience_factor = 0.1 start_equipment_factor = 1"
+						owner = USA
+						prioritize_location = 3957
+						allow_spawning_on_enemy_provs = no
 					}
 				}
 			}
