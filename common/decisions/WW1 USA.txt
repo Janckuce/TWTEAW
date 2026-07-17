@@ -9,6 +9,7 @@ USA_Gain_Techs_Category = {
 		available = {
 			is_ai = no # not allowed in allowed{} block, moved here
 			date > 1914.7.28
+			has_any_grand_doctrine = land
 			NOT = {
 				has_completed_focus = USA_starting_focus
 			}
@@ -47,6 +48,10 @@ USA_Gain_Techs_Category = {
 				ww1_engine_2 = 1
 				ww1_plane_bomb_1 = 1
 			}
+			add_mastery = {
+				amount = 400
+			}
+			add_ideas = USA_1914_techs_confirmed
 		}
 	}
 
@@ -60,9 +65,11 @@ USA_Gain_Techs_Category = {
 		available = {
 			is_ai = no
 			date > 1915.1.1
+			has_any_grand_doctrine = land
 			NOT = {
 				has_completed_focus = USA_starting_focus
 			}
+			has_decision = USA_1914_techs
 		}
 
 		complete_effect = {
@@ -78,6 +85,9 @@ USA_Gain_Techs_Category = {
 				ww1_nav_bomber_1 = 1
 				ww1_strat_bomber_1 = 1
 			}
+			add_mastery = {
+				amount = 100
+			}
 		}
 	}
 
@@ -91,9 +101,11 @@ USA_Gain_Techs_Category = {
 		available = {
 			is_ai = no
 			date > 1916.1.1
+			has_any_grand_doctrine = land
 			NOT = {
 				has_completed_focus = USA_starting_focus
 			}
+			has_decision = USA_1915_techs
 		}
 
 		complete_effect = {
@@ -118,6 +130,9 @@ USA_Gain_Techs_Category = {
 				ww1_plane_airframe_design_2 = 1
 				ww1_plane_wings_design_2 = 1
 			}
+			add_mastery = {
+				amount = 100
+			}
 		}
 	}
 
@@ -130,9 +145,11 @@ USA_Gain_Techs_Category = {
 		available = {
 			is_ai = no
 			date > 1917.1.1
+			has_any_grand_doctrine = land
 			NOT = {
 				has_completed_focus = USA_starting_focus
 			}
+			has_decision = USA_1916_techs
 		}
 
 		complete_effect = {
@@ -152,6 +169,9 @@ USA_Gain_Techs_Category = {
 				ww1_cas_2 = 1
 				ww1_nav_bomber_2 = 1
 				ww1_strat_bomber_2 = 1
+			}
+			add_mastery = {
+				amount = 100
 			}
 		}
 	}

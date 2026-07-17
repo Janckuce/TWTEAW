@@ -240,9 +240,43 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_Research_Slot1
+		icon = GFX_focus_research
+		cost = 7.2
+		relative_position_id = GER_address_military_situation
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = GER_address_military_situation
+			focus = GER_Commit_To_The_Race
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = GER_Research_Decisions
+		}
+	}
+	focus = {
+		id = GER_Naval_Research
+		icon = GFX_focus_generic_navy_research_bonus
+		cost = 5
+		relative_position_id = GER_Research_Slot1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GER_Research_Slot1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_Naval_Research_1
+				bonus = 1
+				uses = 2
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
 		id = GER_Infantry_research
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		cost = 7.2
+		cost = 5
 		relative_position_id = GER_Research_Slot1
 		x = -1
 		y = 1
@@ -399,7 +433,7 @@ focus_tree = {
 	focus = {
 		id = GER_Commit_To_The_Race
 		icon = GFX_focus_generic_navy_battleship2
-		cost = 7.2
+		cost = 5
 		relative_position_id = GER_Our_Kaiser
 		x = -5
 		y = 1
@@ -433,40 +467,7 @@ focus_tree = {
 			add_ideas = GER_Prussian_Naval_Combat
 		}
 	}
-	focus = {
-		id = GER_Research_Slot1
-		icon = GFX_focus_research
-		cost = 7.2
-		relative_position_id = GER_address_military_situation
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = GER_address_military_situation
-			focus = GER_Commit_To_The_Race
-		}
-		completion_reward = {
-			unlock_decision_category_tooltip = GER_Research_Decisions
-		}
-	}
-	focus = {
-		id = GER_Naval_Research
-		icon = GFX_focus_generic_navy_research_bonus
-		cost = 7.2
-		relative_position_id = GER_Research_Slot1
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = GER_Research_Slot1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_Naval_Research_1
-				bonus = 1
-				uses = 2
-				category = naval_equipment
-			}
-		}
-	}
+
 	focus = {
 		id = GER_Newspaper_Propaganda
 		icon = GFX_focus_ger_propaganda_1
@@ -799,7 +800,6 @@ focus_tree = {
 		id = GER_berlin_ruhr_railway
 
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = 1
 		y = 1
 		relative_position_id = GER_railway_innovations
@@ -877,7 +877,6 @@ focus_tree = {
 		id = GER_berlin_east_prussia_railway
 
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = 2
 		y = 1
 		relative_position_id = GER_east_prussia_plan
@@ -916,7 +915,6 @@ focus_tree = {
 		id = GER_berlin_wilhelmshaven_railway
 
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = 4
 		y = 1
 		relative_position_id = GER_east_prussia_plan
