@@ -1,0 +1,162 @@
+#Important to put HIGHEST first
+commonwealth_debuff_level_up = {
+	
+	if = {
+		limit = { has_idea = commonwealth_debuff10 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff10
+			add_idea = commonwealth_debuff11
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff9 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff9
+			add_idea = commonwealth_debuff10
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff8 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff8
+			add_idea = commonwealth_debuff9
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff7 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff7
+			add_idea = commonwealth_debuff8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff6 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff6
+			add_idea = commonwealth_debuff7
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff5 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff5
+			add_idea = commonwealth_debuff6
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff4 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff4
+			add_idea = commonwealth_debuff5
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff3 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff3
+			add_idea = commonwealth_debuff4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff2 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff2
+			add_idea = commonwealth_debuff3
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff1 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff1
+			add_idea = commonwealth_debuff2
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff0 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff0
+			add_idea = commonwealth_debuff1
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+commonwealth_debuff_level_down = {
+	if = {
+		limit = { has_idea = commonwealth_debuff1 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff1
+			add_idea = commonwealth_debuff0
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff2 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff2
+			add_idea = commonwealth_debuff1
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff2 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff2
+			add_idea = commonwealth_debuff1
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff3 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff3
+			add_idea = commonwealth_debuff2
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff4 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff4
+			add_idea = commonwealth_debuff3
+		}
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff5 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff5
+			add_idea = commonwealth_debuff4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff6 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff6
+			add_idea = commonwealth_debuff5
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff7 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff7
+			add_idea = commonwealth_debuff6
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff8 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff8
+			add_idea = commonwealth_debuff7
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff9 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff9
+			add_idea = commonwealth_debuff8
+		}		
+	}
+	else_if = {
+		limit = { has_idea = commonwealth_debuff10 }
+		swap_ideas = {
+			remove_idea = commonwealth_debuff10
+			add_idea = commonwealth_debuff9
+		}		
+	}
+}
