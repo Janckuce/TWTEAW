@@ -1,14 +1,4 @@
 on_actions = {
-	on_startup = {
-		effect = {
-			ENG = {
-				set_variable = {
-					var = commonwealth_states_lost_count
-					value = 0
-				}
-			}
-		}
-	}
 	
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 
