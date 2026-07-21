@@ -377,12 +377,21 @@ ideas = {
 		TUR_Iron_Pasha = {
 			modifier = {
 				fascism_drift = 0.05
-				command_power_gain = 0.01
-				pocket_penalty = 0.2
+				pocket_penalty = -0.2
 				army_speed_factor = 0.1
-				army_attack_speed_factor = 0.1
-				supply_consumption_factor = -0.05
+				supply_consumption_factor = -0.1
 				war_stability_factor = 0.4
+			}
+			picture = tur_enver_pasha
+		}
+		TUR_Iron_Pasha2 = {
+			modifier = {
+				fascism_drift = 0.05
+				pocket_penalty = -0.2
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.1
+				war_stability_factor = 0.4
+				army_claim_attack_factor = 0.20
 			}
 			picture = tur_enver_pasha
 		}
@@ -390,21 +399,14 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.25
 				fascism_drift = 0.05
-				command_power_gain = 0.01
-				research_speed_factor = 0.1
-				pocket_penalty = 0.2
+				pocket_penalty = -0.2
 				army_speed_factor = 0.15
-				army_attack_speed_factor = 0.15
 				conscription_factor = 0.15
-				acclimatization_cold_climate_gain_factor = -0.1
 				supply_consumption_factor = -0.15
 				war_stability_factor = 0.4
 
-				army_morale_factor = 0.08
-				acclimatization_hot_climate_gain_factor = 0.05
 				equipment_capture_factor = 0.1
-				coordination_bonus = 0.08
-				training_time_army_factor = -0.1
+				army_claim_attack_factor = 0.20
 			}
 			picture = tur_enver_pasha
 		}
@@ -412,13 +414,9 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.25
 				fascism_drift = 0.05
-				command_power_gain = 0.01
-				research_speed_factor = 0.1
-				pocket_penalty = 0.2
+				pocket_penalty = -0.2
 				army_speed_factor = 0.1
-				army_attack_speed_factor = 0.1
 				conscription_factor = 0.15
-				acclimatization_cold_climate_gain_factor = -0.1
 				supply_consumption_factor = -0.15
 				war_stability_factor = 0.4
 
@@ -428,6 +426,7 @@ ideas = {
 				air_attack_factor = 0.08
 				air_agility_factor = 0.1
 				air_range_factor = 0.05
+				army_claim_attack_factor = 0.20
 			}
 			picture = tur_enver_pasha
 		}
@@ -435,13 +434,9 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.25
 				fascism_drift = 0.05
-				command_power_gain = 0.01
-				research_speed_factor = 0.1
-				pocket_penalty = 0.2
+				pocket_penalty = -0.2
 				army_speed_factor = 0.1
-				army_attack_speed_factor = 0.1
 				conscription_factor = 0.15
-				acclimatization_cold_climate_gain_factor = -0.1
 				supply_consumption_factor = -0.15
 				war_stability_factor = 0.4
 
@@ -451,6 +446,7 @@ ideas = {
 				naval_speed_factor = 0.15
 				navy_org_factor = 0.08
 				naval_coordination = 0.08
+				army_claim_attack_factor = 0.20
 			}
 			picture = tur_enver_pasha-
 		}
@@ -662,6 +658,53 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_power_cost = 0.05
+			}
+		}
+
+		ottomans_debuff0 = {
+			picture = tur_kemalist_neutrality
+			modifier = {
+				# experience_gain_army = -0.01
+			}
+		}
+		ottomans_debuff1 = {
+			picture = tur_kemalist_neutrality
+			modifier = {
+				industrial_capacity_factory = -0.05
+				army_attack_factor = -0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+		ottomans_debuff2 = {
+			picture = tur_kemalist_neutrality
+			modifier = {
+				industrial_capacity_factory = -0.10
+				army_attack_factor = -0.10
+				army_core_attack_factor = 0.10
+			}
+		}
+		ottomans_debuff3 = {
+			picture = tur_kemalist_neutrality
+			modifier = {
+				industrial_capacity_factory = -0.15
+				army_attack_factor = -0.15
+				army_core_attack_factor = 0.15
+			}
+		}
+		ottomans_debuff4 = {
+			picture = tur_kemalist_neutrality
+			modifier = {
+				industrial_capacity_factory = -0.20
+				army_attack_factor = -0.20
+				army_core_attack_factor = 0.20
+			}
+		}
+		ottomans_debuff5 = {
+			picture = tur_kemalist_neutrality
+			modifier = {
+				industrial_capacity_factory = -0.25
+				army_attack_factor = -0.25
+				army_core_attack_factor = 0.25
 			}
 		}
 	}

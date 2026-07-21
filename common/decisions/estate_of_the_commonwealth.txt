@@ -1,4 +1,4 @@
-WAR_IN_PACIFIC = {
+state_of_the_commonwealth_category = {
 	# HELP_PACIFIC = {
 
 	# 	allowed = {
@@ -50,7 +50,57 @@ WAR_IN_PACIFIC = {
 		cost = 0
 
 		complete_effect = {
+			country_event = levant_info.1
+		}
+	}
 
+	ENG_debuff_check = {
+		icon = generic_propaganda
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = yes
+			# NOT = { has_country_flag = war_in_the_east_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			ENG = {
+				add_ideas = commonwealth_debuff11
+			}
+		}
+	}
+
+	TUR_debuff_check = {
+		icon = generic_propaganda
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = no
+		}
+
+		visible = {
+			always = yes
+			# NOT = { has_country_flag = war_in_the_east_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			TUR = {
+				add_ideas = ottomans_debuff5
+			}
 		}
 	}
 

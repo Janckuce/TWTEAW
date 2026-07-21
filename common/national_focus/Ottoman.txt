@@ -433,7 +433,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_question_ethnicity
-		icon = GFX_focus_generic_attack_turkey
+		icon = GFX_focus_generic_sympathetic_judges
 		cost = 4.3
 		x = 0
 		y = 2
@@ -511,7 +511,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_Multiculturalism
-		icon = GFX_focus_ARG_join_the_allies
+		icon = GFX_focus_generic_influence_middle_east
 		cost = 7.2
 		x = 1
 		y = 3
@@ -1113,7 +1113,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_Choosing_Our_Leader
-		icon = GFX_focus_generic_befriend_turkey
+		icon = GFX_focus_generic_attack_turkey
 		cost = 5
 		prerequisite = {
 			focus = TUR_Coup_D_etat
@@ -1121,13 +1121,16 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR_Consolidate_Power
 		}
-			x = -1
-			y = 1
-			relative_position_id = TUR_Consolidate_Power
-			completion_reward = {
-				add_ideas = TUR_Choosing_Leader
+		x = -1
+		y = 1
+		relative_position_id = TUR_Consolidate_Power
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_Iron_Pasha
+				add_idea = TUR_Iron_Pasha2
 			}
-	}
+		}
+	} 
 
 	focus = {
 		#	Army Bonus
@@ -1147,10 +1150,35 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 100
 			swap_ideas = {
-				remove_idea = TUR_Iron_Pasha
+				remove_idea = TUR_Iron_Pasha2
 				add_idea = TUR_Iron_Marshal
 			}
-			remove_ideas = TUR_Choosing_Leader
+			# remove_ideas = TUR_Choosing_Leader
+
+			230 = { 
+				add_claim_by = TUR 
+			}
+			231 = { 
+				add_claim_by = TUR 
+			}
+			229 = { 
+				add_claim_by = TUR 
+			}
+			826 = { 
+				add_claim_by = TUR 
+			}
+			233 = { 
+				add_claim_by = TUR 
+			}
+			827 = { 
+				add_claim_by = TUR 
+			}
+			453 = { 
+				add_claim_by = TUR 
+			}
+			656 = { 
+				add_claim_by = TUR 
+			}
 		}
 	}
 
@@ -1172,10 +1200,44 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 100
 			swap_ideas = {
-				remove_idea = TUR_Iron_Pasha
+				remove_idea = TUR_Iron_Pasha2
 				add_idea = TUR_Iron_Admiral
 			}
-			remove_ideas = TUR_Choosing_Leader
+			# remove_ideas = TUR_Choosing_Leader
+
+			137 = { 
+				add_claim_by = TUR 
+			}
+			234 = { 
+				add_claim_by = TUR 
+			}
+			218 = { 
+				add_claim_by = TUR 
+			}
+			192 = { 
+				add_claim_by = TUR 
+			}
+			766 = { 
+				add_claim_by = TUR 
+			}
+			538 = { 
+				add_claim_by = TUR 
+			}
+			183 = { 
+				add_claim_by = TUR 
+			}
+			447 = { 
+				add_claim_by = TUR 
+			}
+			446 = { 
+				add_claim_by = TUR 
+			}
+			116 = { 
+				add_claim_by = TUR 
+			}
+			118 = { 
+				add_claim_by = TUR 
+			}
 		}
 	}
 
@@ -1197,10 +1259,10 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 100
 			swap_ideas = {
-				remove_idea = TUR_Iron_Pasha
+				remove_idea = TUR_Iron_Pasha2
 				add_idea = TUR_Iron_Pilot
 			}
-			remove_ideas = TUR_Choosing_Leader
+			# remove_ideas = TUR_Choosing_Leader
 		}
 	}
 

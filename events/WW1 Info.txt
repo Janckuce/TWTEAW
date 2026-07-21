@@ -1,5 +1,6 @@
 add_namespace = startup_advice
 add_namespace = ww1_mod_info
+add_namespace = levant_info
 add_namespace = mod_sp_testing
 add_namespace = ww1_mod_info_entente
 
@@ -27,6 +28,19 @@ country_event = {
 
 	option = {
 		name = ww1_mod_info.1.a
+	}
+}
+
+country_event = {
+	id = levant_info.1
+	title = levant_info.1.t
+	desc = levant_info_desc.1
+	picture = GFX_report_event_tur_ataturk_death
+
+	is_triggered_only = yes
+
+	option = {
+		name = levant_info.1.a
 	}
 }
 

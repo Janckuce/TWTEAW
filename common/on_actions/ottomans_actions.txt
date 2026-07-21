@@ -1,0 +1,67 @@
+on_actions = {
+	
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+
+	on_state_control_changed = {
+		
+		##UK Reconquering a state lost
+		effect = {
+			if = {
+				limit = {
+					FROM = { 						
+						OR = {
+							tag = TUR
+							is_in_faction_with = TUR
+						}  
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = ENG 
+							tag = ENG
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = TUR_controls_turkey
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = ENG_controls_turkey
+				 	clr_state_flag = TUR_controls_turkey
+				}
+
+				TUR = { 
+					turkey_debuff_level_up = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = TUR
+							is_in_faction_with = TUR
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ENG_controls_turkey
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = TUR_controls_turkey
+				 	clr_state_flag = ENG_controls_turkey
+				}
+
+				TUR = {
+					turkey_debuff_level_down = yes
+				}
+			}
+		}
+	}
+}
