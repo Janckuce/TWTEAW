@@ -962,7 +962,6 @@ ENG_Naval_Blockade = {
 		priority = 98
 		fire_only_once = no
 		icon = GFX_decision_infiltrate_state
-		# days_mission_timeout = 120
 
 		fire_only_once = no
 
@@ -972,9 +971,6 @@ ENG_Naval_Blockade = {
 		visible = {
 			always = yes
 		}
-		# activation = {
-		# 	always = no
-		# }
 		available = {
 			always = no
 		}
@@ -998,30 +994,9 @@ ENG_Naval_Blockade = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 1
 		}
-
-		# on_map_area = {
-		# 	state = 130 
-		# 	name = my_localisation_key
-		# 	# zoom = 850
-		# 	# target_root_trigger = {
-		# 	# 	tag = ENG
-		# 	# }
-		# }
 		
 		complete_effect = {
 			custom_effect_tooltip = ENG_eastern_shore_vulnerable_tooltip
-
-			# activate_mission = ENG_Defending_UK_Cities
-			# if = {
-			# 	limit = {
-			# 		NOT = {
-			# 			GER = {
-			# 				has_naval_control = 16
-			# 			}
-			# 		}
-			# 	}
-			# 	add_political_power = 25
-			# }
 		}
 	}
 
@@ -1065,30 +1040,9 @@ ENG_Naval_Blockade = {
 			highlight_color_while_active = 1
 			highlight_color_before_active = 1
 		}
-
-		on_map_area = {
-			state = 130 
-			name = my_localisation_key
-			# zoom = 850
-			target_root_trigger = {
-				tag = ENG
-			}
-		}
 		
 		timeout_effect = {
 			custom_effect_tooltip = ENG_naval_blockade_disrupted_tooltip
-
-			# activate_mission = ENG_Defending_UK_Cities
-			# if = {
-			# 	limit = {
-			# 		NOT = {
-			# 			GER = {
-			# 				has_naval_control = 16
-			# 			}
-			# 		}
-			# 	}
-			# 	add_political_power = 25
-			# }
 		}
 	}
 

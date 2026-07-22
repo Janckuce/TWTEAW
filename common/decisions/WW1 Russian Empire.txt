@@ -763,6 +763,13 @@ RUS_factory_count_sensor = {
 			}
 
 			USA = { change_tag_from = RUS }
+
+			if = {
+				limit = {
+					has_completed_focus = MON_RUS_first_focus
+				}
+				custom_effect_tooltip = RUS_kerrensky_offensive_warning_tooltip
+			}
 		}
 	}
 }
