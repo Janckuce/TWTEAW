@@ -243,11 +243,35 @@ country_event = {
 			news_event = { id = ww1_news.11 days = 1 }
 
 			activate_mission = GER_Eastern_Blockade_Progression
-			activate_mission = GER_Shelling_UK_Cities
-
-			ENG = {
-				activate_mission = ENG_East_Blockade_Progression_Check
-				activate_mission = ENG_Defending_UK_Cities
+			# activate_mission = GER_Shelling_UK_Cities
+		}
+		ENG = {
+			activate_mission = ENG_East_Blockade_Progression_Check
+			# activate_mission = ENG_Defending_UK_Cities
+			add_to_war = {
+				targeted_alliance = FRA
+				enemy = GER
+				enemy = AUS
+				hostility_reason = asked_to_join
+			}
+		}
+		FRA = {
+			add_to_faction = ENG
+			add_to_faction = BEL
+		}
+		GCG = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+				hostility_reason = asked_to_join
+			}
+		}
+		BEL = {
+			add_to_war = {
+				targeted_alliance = FRA
+				enemy = GER
+				enemy = AUS
+				hostility_reason = asked_to_join
 			}
 		}
 

@@ -50,6 +50,14 @@ country_event = {
 		name = ww1_bulgaria.2.a
 
 		declare_war_on = { target = ROM type = annex_everything }
+		add_to_war = {
+			targeted_alliance = GER
+			enemy = SER
+			hostility_reason = asked_to_join
+		}
+		FRA = {
+			add_to_faction = ROM
+		}
 
 		GER = {
 			set_variable = {

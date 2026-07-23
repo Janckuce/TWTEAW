@@ -358,6 +358,9 @@ ORO_spectator_state = {
 			FRA = { has_war_with = GER }
 		}
 		complete_effect = {
+			FRA = {
+				add_to_faction = ITA
+			}
 			GER = {
 				set_variable = {
 					Italy_in_war = 1
@@ -365,11 +368,12 @@ ORO_spectator_state = {
 			}
 			ITA = {
 				remove_ideas = ITA_idea_central_powers_2
-				declare_war_on = {
-					type = take_claimed_state
-					target = AUS
-				}
 				add_ideas = ITA_idea_entente
+				add_to_war = {
+					targeted_alliance = FRA
+					enemy = GER
+					hostility_reason = asked_to_join
+				}
 			}
 		}
 		fire_only_once = yes
@@ -450,6 +454,9 @@ ORO_spectator_state = {
 			}
 			ITA = {
 				add_ideas = GEN_Can_Send_8_Nolunteers
+			}
+			FRA = {
+				add_to_faction = SER
 			}
 
 			if = {
@@ -2750,7 +2757,7 @@ ORO_end_WW1_german_loss = {
 		}
 	}
 
-		Bulgaria_Joins_Central = {
+	Bulgaria_Joins_Central = {
 		allowed = {
 			original_tag = ORO
 		}
@@ -2766,6 +2773,8 @@ ORO_end_WW1_german_loss = {
 		fire_only_once = yes
 		complete_effect = {
 			GER = {
+				add_to_faction = BUL
+
 				set_variable = {
 					Bulgaria_in_war = 1
 				}
@@ -2790,6 +2799,8 @@ ORO_end_WW1_german_loss = {
 		fire_only_once = yes
 		complete_effect = {
 			GER = {
+				add_to_faction = TUR
+				
 				set_variable = {
 					ottoman_in_war = 1
 				}
