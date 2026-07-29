@@ -823,17 +823,11 @@ technologies = {
 	}
 	
 	ww1_improved_infantry_equipment = {
-	    infantry = {
-			breakthrough = 0.10
+		category_all_infantry = {
+			breakthrough = 0.15
 		}
-		cavalry = {
-			breakthrough = 0.20
-		}
-		marine = {
-			breakthrough = 0.20
-		}
-		mountaineers = {
-		    breakthrough = 0.20
+		category_cavalry = {
+			breakthrough = 0.15
 		}
 		
 		path = {
@@ -870,19 +864,12 @@ technologies = {
 	
 	ww1_hand_grenade1 = {
 	    
-		infantry = {
+		category_all_infantry = {
 			soft_attack = 0.1
 		}
-		cavalry = {
+		category_cavalry = {
 			soft_attack = 0.1
 		}
-		marine = {
-			soft_attack = 0.1
-		}
-		mountaineers = {
-		    soft_attack = 0.1
-		}
-		
 		path = {
 		    leads_to_tech = ww1_hand_grenade2
 			research_cost_coeff = 1
@@ -917,19 +904,12 @@ technologies = {
 	
 	ww1_hand_grenade2 = {
 	    
-		infantry = {
+		category_all_infantry = {
 			soft_attack = 0.15
 		}
-		cavalry = {
+		category_cavalry = {
 			soft_attack = 0.15
 		}
-		marine = {
-			soft_attack = 0.15
-		}
-		mountaineers = {
-		    soft_attack = 0.15
-		}
-		
 		path = {
 			research_cost_coeff = 1
 		}		
@@ -1076,19 +1056,11 @@ technologies = {
 	
 	ww1_machine_guns1 = {
 	    
-		infantry = {
+		category_all_infantry = {
 			soft_attack = 0.1
 			defense = 0.15
 		}
-		marine = {
-			soft_attack = 0.1
-			defense = 0.15
-		}
-		mountaineers = {
-            soft_attack = 0.1
-			defense = 0.15
-		}
-		
+
 		path = {
 		    leads_to_tech = ww1_infantry_weapons3
 			research_cost_coeff = 1
@@ -1161,23 +1133,15 @@ technologies = {
 	
 	ww1_improved_infantry_equipment2 = {
 	    
-		infantry = {
+		category_all_infantry = {
 			soft_attack = 0.05
 			defense = 0.1
 		}
-		cavalry = {
+		category_cavalry = {
 			soft_attack = 0.05
 			defense = 0.1
 		}
-		marine = {
-			soft_attack = 0.05
-			defense = 0.1
-		}
-		mountaineers = {
-            soft_attack = 0.05
-			defense = 0.1
-		}
-		
+
 		path = {
 		    leads_to_tech = ww1_infantry_weapons4
 			research_cost_coeff = 1
@@ -1253,22 +1217,16 @@ technologies = {
 	}
 	
 	ww1_improved_infantry_equipment3 = {
-		infantry = {
+
+		category_all_infantry = {
 			soft_attack = 0.05
 			defense = 0.1
 		}
-		cavalry = {
+		category_cavalry = {
 			soft_attack = 0.05
 			defense = 0.1
 		}
-		marine = {
-			soft_attack = 0.05
-			defense = 0.1
-		}
-		mountaineers = {
-            soft_attack = 0.05
-			defense = 0.1
-		}
+
 		research_cost = 2
 		start_year = 1918
 		folder = {
@@ -1297,27 +1255,18 @@ technologies = {
 	}
 	
 	ww1_machine_guns2 = {
-	    infantry = {
+
+		category_all_infantry = {
 			soft_attack = 0.2
 			defense = 0.1
 			breakthrough = 0.2
 		}
-		cavalry = {
+		category_cavalry = {
 			soft_attack = 0.2
 			defense = 0.1
 			breakthrough = 0.2
 		}
-		marine = {
-			soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
-		}
-		mountaineers = {
-            soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
-		}
-		
+
 		path = {
 		    leads_to_tech = ww1_machine_guns3
 			research_cost_coeff = 1
@@ -1351,23 +1300,13 @@ technologies = {
 	}
 	
 	ww1_machine_guns3 = {
-	    infantry = {
+	    category_all_infantry = {
 			soft_attack = 0.2
 			defense = 0.1
 			breakthrough = 0.2
 		}
 		cavalry = {
 			soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
-		}
-		marine = {
-			soft_attack = 0.2
-			defense = 0.1
-			breakthrough = 0.2
-		}
-		mountaineers = {
-            soft_attack = 0.2
 			defense = 0.1
 			breakthrough = 0.2
 		}
