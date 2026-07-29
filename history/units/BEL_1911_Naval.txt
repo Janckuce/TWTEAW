@@ -1,0 +1,21 @@
+units = {
+	fleet = {
+		name = "Royal Belgian Navy"
+		naval_base = 6560
+		task_force = {
+			name = "Grand Fleet"
+			location = 6560
+			#	Light Cruisers
+			ship = {name = "SMS Gayundah Light" definition = light_cruiser equipment = {light_cruiser_1 = {amount = 1 owner = BEL}}}
+			ship = {name = "SMS Paluma" definition = light_cruiser equipment = {light_cruiser_1 = {amount = 1 owner = BEL}}}
+			#	Destroyers
+			ship = {name = "SMS Childers" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = BEL}}}
+			ship = {name = "SMS Countess Of Hopetoun" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = BEL}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = BEL}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = BEL}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = BEL}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = BEL}}}
+
+		}
+	}
+}

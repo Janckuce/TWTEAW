@@ -1,0 +1,23 @@
+units = {
+	fleet = {
+		name = "Royal Canadian Navy"
+		naval_base = 12149
+		task_force = {
+			name = "Grand Fleet"
+			location = 12149
+			# 	heavy Cruisers
+			ship = { name = "HMS Hogue" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CAN } } }
+			#	Light Cruisers
+			ship = {name = "SMS Gayundah Light" definition = light_cruiser equipment = {light_cruiser_1 = {amount = 1 owner = CAN}}}
+			ship = {name = "SMS Paluma" definition = light_cruiser equipment = {light_cruiser_1 = {amount = 1 owner = CAN}}}
+			#	Destroyers
+			ship = {name = "SMS Childers" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = CAN}}}
+			ship = {name = "SMS Countess Of Hopetoun" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = CAN}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = CAN}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = CAN}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = CAN}}}
+			ship = {name = "SMS Gordon" definition = destroyer equipment = {destroyer_1 = {amount = 1 owner = CAN}}}
+
+		}
+	}
+}
