@@ -177,25 +177,14 @@ TUR_Annex_Subjects_Descision_Catagory = {
 		ai_will_do = {
 			factor = 0
 		}
-		complete_effect = {
-			every_state = {
-				limit = {
-					is_core_of = YEM
-				}
-				add_core_of = TUR
-				set_demilitarized_zone = yes
-			
-
-			}
-			annex_country = { target = YEM transfer_troops = yes}
-			
+		complete_effect = {			
 			add_offsite_building = {
                 type = arms_factory
-                level = 10
+                level = 12
             }
 			add_offsite_building = {
 				type = industrial_complex
-				level = 10
+				level = 12
 			}
 		}
 	}
