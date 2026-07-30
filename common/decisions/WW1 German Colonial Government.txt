@@ -6,8 +6,9 @@ GCG_Budget_Management = {
 			tag = GCG
 		}
 		available = {
-			has_war = yes
+			tag = GCG
 		}
+		cost = 10
 		complete_effect = {
 			set_country_flag = GCG_Flag_Joachim_Heydebreck_decision_taken
 			add_to_variable = {
@@ -23,8 +24,9 @@ GCG_Budget_Management = {
 			tag = GCG
 		}
 		available = {
-			num_of_factories > 30
+			tag = GCG
 		}
+		cost = 10
 		complete_effect = {
 			add_to_variable = {
 				GCG.Current_Budget = 2
