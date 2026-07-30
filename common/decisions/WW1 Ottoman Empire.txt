@@ -171,6 +171,7 @@ TUR_Annex_Subjects_Descision_Catagory = {
 		  	YEM = {is_ai = yes}
 	  	}
 		available = {
+			date > 1912.7.1
 			YEM = {is_ai = yes}
 		}
 		ai_will_do = {
@@ -187,6 +188,15 @@ TUR_Annex_Subjects_Descision_Catagory = {
 
 			}
 			annex_country = { target = YEM transfer_troops = yes}
+			
+			add_offsite_building = {
+                type = arms_factory
+                level = 10
+            }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
 		}
 	}
 }
