@@ -161,3 +161,29 @@ TUR_Lybia_War_Category = {
 				
 	}
 }
+TUR_Annex_Subjects_Descision_Catagory = {
+
+	TUR_Annex_YEM = {
+	  	visible = {
+			YEM = {
+			  owns_state = 679 # Tanganyika
+		  	}
+		  	YEM = {is_ai = yes}
+	  	}
+		available = {
+			YEM = {is_ai = yes}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_controlled_by = YEM
+				}
+				add_core_of = TUR
+			}
+			annex_country = { target = YEM}
+		}
+	}
+}
