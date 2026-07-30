@@ -74,8 +74,8 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 400
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 21
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0
 
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.20      -- 0.25   
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30 
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.14      -- 0.25   
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.30 --o.20
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.10
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.85
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 150
@@ -104,3 +104,10 @@ NDefines.NNavy.FUEL_COST_MULT = 0.03
 NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.05
 
 NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0.00 --each percent of collaboration will lower surrender limit by this percentage
+
+NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0.0000 --0.0005					-- Base amount of daily war support and stability change when an operative is assigned to propaganda
+NDefines.NOperatives.PROPAGANDA_SUB_NETWORK_STRENGTH_FACTOR = 0 --1.0				-- Multiplied to the network strength before being multiplied to the Stability/WarSupport drift caused by an operative
+NDefines.NOperatives.PROPAGANDA_DEFENSE_FACTOR = 0.01 --0.01					-- Multiplied to the target's defense before being subtracted from the Stability/WarSupport drift caused by an operative
+NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0 --0.5				-- Multiplied to the Stability/WarSupport drift values of each operative after the one with the greatest values. The process is done separatly for Stability and WarSupport
+NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0 --0.5				-- Multiplied to the Stability/WarSupport drift values of each country after the one with the greatest values. The process is done separatly for Stability and WarSupport
+NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0 --0.350
