@@ -752,8 +752,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ENG_breakthrough_parliment
-		icon = GFX_focus_ETH_re-convene_the_parliament
+		id = ENG_take_care_of_somalia
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
 		cost = 10
 		x = 0
 		y = 1
@@ -765,6 +765,39 @@ focus_tree = {
 			ENG = {
 				NOT = {
 					has_idea = ENG_modernising
+				}
+			}
+		}
+		completion_reward = { 
+			ENG = {
+				declare_war_on = {
+					target = SOM
+					type = annex_everything
+				}
+				add_timed_idea = {
+					idea = ENG_modernising
+					days = 120
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_breakthrough_parliment
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = ENG_take_care_of_somalia
+		prerequisite = {
+			focus = ENG_take_care_of_somalia
+		}
+		available = {
+			ENG = {
+				NOT = {
+					AND = {
+						has_idea = ENG_modernising
+						has_war_with = SOM
+					}
 				}
 			}
 		}
