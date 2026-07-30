@@ -18,7 +18,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 245 y = 1200 }
+	continuous_focus_position = { x = 445 y = 1400 }
 	
 	default = no
 	reset_on_civilwar = no
@@ -38,7 +38,7 @@ focus_tree = {
 		icon = GFX_focus_GER_party_chancellor_bormann
 		cost = 5
 		x = 4
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = GER_finish_military_reforms
 		}
@@ -57,7 +57,7 @@ focus_tree = {
 			always = no
 		}
 		relative_position_id = GER_Choose_Military_Strategy
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = GER_Choose_Military_Strategy
@@ -73,7 +73,7 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = GER_Choose_Military_Strategy
-		x = -1
+		x = -2
 		y = 2
 
 		available = {
@@ -143,7 +143,7 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = GER_Choose_Military_Strategy
-		x = 1
+		x = 0
 		y = 2
 		prerequisite = {
 			focus = GER_Helmuth_von_Moltke
@@ -162,6 +162,51 @@ focus_tree = {
 				add_building_construction = { type = bunker province = 3629 level = 3 }
 				add_building_construction = { type = bunker province = 6529 level = 3 }
 				add_building_construction = { type = bunker province = 678 level = 3 }
+			}
+		}
+	}
+	focus = {
+		id = GER_forts_ostwall
+		icon = GFX_SOV_fortify_mongolian_border_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = GER_Choose_Military_Strategy
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = GER_Helmuth_von_Moltke
+		}
+		completion_reward = {
+			762 = {
+				add_building_construction = { type = bunker province = 506 level = 3 }
+			}
+			67 = {
+				add_building_construction = { type = bunker province = 479 level = 3 }
+			}
+			86 = {
+				add_building_construction = { type = bunker province = 3381 level = 3 }
+				add_building_construction = { type = bunker province = 17 level = 3 }
+				add_building_construction = { type = bunker province = 9532 level = 3 }
+				add_building_construction = { type = bunker province = 11558 level = 3 }
+			}
+			807 = {
+				add_building_construction = { type = bunker province = 243 level = 3 }
+				add_building_construction = { type = bunker province = 3295 level = 3 }
+				add_building_construction = { type = bunker province = 6347 level = 3 }
+			}
+			5 = {
+				add_building_construction = { type = bunker province = 9346 level = 3 }
+				add_building_construction = { type = bunker province = 6375 level = 3 }
+				add_building_construction = { type = bunker province = 9372 level = 3 }
+				add_building_construction = { type = bunker province = 11386 level = 3 }
+				add_building_construction = { type = bunker province = 9327 level = 3 }
+			}
+			763 = {
+				add_building_construction = { type = bunker province = 3384 level = 3 }
+				add_building_construction = { type = bunker province = 281 level = 3 }
+			}
+			188 = {
+				add_building_construction = { type = bunker province = 3288 level = 3 }
 			}
 		}
 	}
@@ -217,10 +262,11 @@ focus_tree = {
 		id = GER_Military_academy
 		icon = GFX_focus_chi_army_reform
 		cost = 7.2
-		x = 1
-		y = 4
+		x = 3
+		y = 7
 		prerequisite = {
-			focus = GER_finish_military_reforms
+			focus = GER_deploy_early_berthas
+			focus = GER_forts_westwall
 		}
 		# prerequisite = {
 		# 	focus = GER_appease_Britain
@@ -1262,8 +1308,8 @@ focus_tree = {
 	focus = {
 		id = GER_ludendorff_offensive
 		icon = GFX_focus_germany_prosper
-		x = 1
-		y = 5
+		x = 3
+		y = 8
 		cost = 5
 		prerequisite = {
 			focus = GER_Military_academy
