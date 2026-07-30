@@ -132,10 +132,17 @@ technologies = {
 	tech_engineers2 = {
 
 		engineer = {
-			entrenchment  = 2
-			
-			fort = {
-				defence = 0.10
+			entrenchment = 1
+		}
+		pioneer_support = {
+			entrenchment = 1
+		}
+
+		fire_support = {
+			battalion_mult = {
+				category = category_light_infantry
+				entrenchment = 0.2
+				add = yes
 			}
 		}
 
@@ -190,10 +197,16 @@ technologies = {
 	tech_engineers3 = {
 
 		engineer = {
-			entrenchment  = 2
-			river = {
-				attack = 0.1	
-				defence = 0.10
+			entrenchment = 1
+		}
+		pioneer_support = {
+			entrenchment = 1
+		}
+		fire_support = {
+			battalion_mult = {
+				category = category_light_infantry
+				entrenchment = 0.2
+				add = yes
 			}
 		}
 
@@ -261,10 +274,16 @@ technologies = {
 	tech_engineers4 = {
 
 		engineer = {
-			entrenchment  = 2
-			urban = {
-				attack = 0.1	
-				defence = 0.1
+			entrenchment = 1
+		}
+		pioneer_support = {
+			entrenchment = 1
+		}
+		fire_support = {
+			battalion_mult = {
+				category = category_light_infantry
+				entrenchment = 0.2
+				add = yes
 			}
 		}
 		# light_flame_tank = {
@@ -570,6 +589,10 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 		
 		
@@ -604,6 +627,10 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -635,6 +662,10 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
 		research_cost = 1.5
@@ -719,8 +750,11 @@ technologies = {
 	tech_maintenance_company2 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			battalion_mult = {
+				category = category_line_artillery
+				supply_consumption = -0.01
+				add = yes
+			}
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -767,8 +801,11 @@ technologies = {
 	tech_maintenance_company3 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			battalion_mult = {
+				category = category_line_artillery
+				supply_consumption = -0.01
+				add = yes
+			}
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -809,8 +846,11 @@ technologies = {
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
-			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			battalion_mult = {
+				category = category_line_artillery
+				supply_consumption = -0.01
+				add = yes
+			}
 		}
 
 		research_cost = 1.5
@@ -1085,8 +1125,11 @@ technologies = {
 	tech_logistics_company2 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.05
+			battalion_mult = {
+				category = category_front_line
+				supply_consumption = -0.01
+				add = yes
+			}
 		}
 		
 		
@@ -1136,8 +1179,11 @@ technologies = {
 	tech_logistics_company3 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.05
+			battalion_mult = {
+				category = category_front_line
+				supply_consumption = -0.01
+				add = yes
+			}
 		}
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1179,8 +1225,11 @@ technologies = {
 	tech_logistics_company4 = {
 
 		logistics_company = {
-			supply_consumption_factor = -0.1
-			fuel_consumption_factor = -0.05
+			battalion_mult = {
+				category = category_front_line
+				supply_consumption = -0.01
+				add = yes
+			}
 		}
 
 		research_cost = 1.5

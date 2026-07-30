@@ -41,7 +41,6 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
-			entrenchment = 0.20
 			max_organisation = 32
 			default_morale = 0.32
 			max_strength = 12
@@ -100,7 +99,7 @@ sub_units = {
 		}
 
 		fort = {
-			defence = 0.15
+			defence = 0.10
 		}
 
 		river = {
@@ -213,8 +212,8 @@ sub_units = {
 		}
 
 		fort = {
-			attack = 0.05
-			defence = 0.20
+			# attack = 0.05
+			defence = 0.10
 		}
 
 		river = {
@@ -368,7 +367,6 @@ sub_units = {
 		}
 
 		need = {
-			armored_support_vehicle = 20
 			support_equipment = 20
 		}
 

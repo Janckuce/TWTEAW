@@ -5,7 +5,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = no
+		active = yes
 
 		type = {
 			infantry
@@ -22,6 +22,7 @@ sub_units = {
 		}
 
 		regimental = no
+		divisional = yes
 		combat_width = 0
 	
 		#Size Definitions
@@ -101,6 +102,7 @@ sub_units = {
 			support
 		}
 		
+		allowed_battalion_groups = {infantry mobile combat_support }
 		group = support
 		
 		categories = {
@@ -115,7 +117,8 @@ sub_units = {
 			soft_attack = 0.10
 		}
 	
-		regimental = no
+		regimental = yes
+		divisional = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -447,6 +450,7 @@ sub_units = {
 			support
 		}
 		
+		allowed_battalion_groups = {infantry mobile combat_support }
 		group = support
 		
 		categories = {
@@ -538,7 +542,8 @@ sub_units = {
 		}
 
 	
-		regimental = no
+		regimental = yes
+		divisional = no
 		combat_width = 0
 	
 		#Size Definitions
