@@ -851,9 +851,12 @@
 		}
 
 		completion_reward = {
-			give_resource_rights = { receiver = ENG state = 411 }
-			give_resource_rights = { receiver = ENG state = 412 }
-			give_resource_rights = { receiver = ENG state = 413 }
+			PER = {
+				give_resource_rights = { receiver = ENG state = 411 }
+				give_resource_rights = { receiver = ENG state = 412 }
+				give_resource_rights = { receiver = ENG state = 413 }
+			}
+			
 		}
 	}
 	
