@@ -24,9 +24,9 @@ focus_tree = {
 
 	focus = {
 		id = poland_decider_1
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_nationalist_education 
 		cost = 5
-		x = 7
+		x = 5
 		y = 1
 		completion_reward = {
 			country_event = ww1_poland.1
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = poland_german_1
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_ger_revive_kaiserreich
 		cost = 5
 		x = 2
 		y = 2
@@ -51,7 +51,7 @@ focus_tree = {
 	}
 	focus = {
 		id = poland_german_2
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_GER_prussian_legacy
 		cost = 5
 		relative_position_id = poland_german_1
 		prerequisite = {
@@ -63,12 +63,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			add_stability = 0.05
+			army_experience = 60
 		}
 	}
 	focus = {
 		id = poland_german_3
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_mex_restore_the_army_of_christ
 		cost = 5
 		relative_position_id = poland_german_1
 		prerequisite = {
@@ -85,7 +85,7 @@ focus_tree = {
 	}
 	focus = {
 		id = poland_german_5
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_prussia_line
 		cost = 5
 		relative_position_id = poland_german_3
 		prerequisite = {
@@ -99,11 +99,12 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_stability = 0.05
+			add_political_power = -50
 		}
 	}
 	focus = {
 		id = poland_german_4
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_GER_further_demands_for_polish_territory
 		cost = 5
 		relative_position_id = poland_german_2
 		prerequisite = {
@@ -116,12 +117,13 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = -0.05
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = poland_german_6
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 5
 		relative_position_id = poland_german_1
 		prerequisite = {
@@ -131,112 +133,112 @@ focus_tree = {
 		x = 0
 		y = 3
 		completion_reward = {
-			add_stability = 0.05
+			load_focus_tree = POL_saxon_focus
 		}
 	}
-	focus = {
-		id = poland_austrian_1
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 12
-		y = 2
-		prerequisite = {
-			focus = poland_decider_1
-		}
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = poland_austrian_2
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		relative_position_id = poland_austrian_1
-		prerequisite = {
-			focus = poland_austrian_1
-		}
-		mutually_exclusive = {
-			focus = poland_austrian_3
-		}
-		x = -1
-		y = 1
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = poland_austrian_3
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		relative_position_id = poland_austrian_1
-		prerequisite = {
-			focus = poland_austrian_1
-		}
-		mutually_exclusive = {
-			focus = poland_austrian_2
-		}
-		x = 1
-		y = 1
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = poland_austrian_5
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		relative_position_id = poland_austrian_3
-		prerequisite = {
-			focus = poland_austrian_3
-			focus = poland_austrian_2
-		}
-		mutually_exclusive = {
-			focus = poland_austrian_4
-		}
-		x = -2
-		y = 1
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = poland_austrian_4
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		relative_position_id = poland_austrian_2
-		prerequisite = {
-			focus = poland_austrian_2
-			focus = poland_austrian_3
-		}
-		mutually_exclusive = {
-			focus = poland_austrian_5
-		}
-		x = 2
-		y = 1
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = poland_austrian_6
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		relative_position_id = poland_austrian_1
-		prerequisite = {
-			focus = poland_austrian_4
-			focus = poland_austrian_5
-		}
-		x = 0
-		y = 3
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
+	#focus = {
+	#	id = poland_austrian_1
+	#	icon = GFX_focus_POL_habsburg
+	#	cost = 5
+	#	x = 14
+	#	y = 2
+	#	prerequisite = {
+	#		focus = poland_decider_1
+	#	}
+	#	completion_reward = {
+	#		add_stability = 0.05
+	#	}
+#	}
+	#focus = {
+#		id = poland_austrian_2
+#		icon = GFX_focus_ETH_scavenging_tactics
+#		cost = 5
+#		relative_position_id = poland_austrian_1
+#		prerequisite = {
+#			focus = poland_austrian_1
+#		}
+#		mutually_exclusive = {
+#			focus = poland_austrian_3
+#		}
+#		x = -1
+#		y = 1
+#		completion_reward = {
+#			add_stability = 0.05
+#		}
+#	}
+#	focus = {
+#		id = poland_austrian_3
+#		icon = GFX_focus_generic_army_attack
+#		cost = 5
+#		relative_position_id = poland_austrian_1
+#		prerequisite = {
+#			focus = poland_austrian_1
+#		}
+#		mutually_exclusive = {
+#			focus = poland_austrian_2
+#		}
+#		x = 1
+#		y = 1
+#		completion_reward = {
+#			add_stability = 0.05
+#		}
+#	}
+#	focus = {
+#		id = poland_austrian_5
+#		icon = GFX_focus_POL_resistance
+#		cost = 5
+#		relative_position_id = poland_austrian_3
+#		prerequisite = {
+#			focus = poland_austrian_3
+#			focus = poland_austrian_2
+#		}
+#		mutually_exclusive = {
+#			focus = poland_austrian_4
+#		}
+#		x = -2
+#		y = 1
+#		completion_reward = {
+#			add_stability = 0.05
+#		}
+#	}
+#	focus = {
+#		id = poland_austrian_4
+#		icon = GFX_focus_POL_prepare_for_the_inevitable
+#		cost = 5
+#		relative_position_id = poland_austrian_2
+#		prerequisite = {
+#			focus = poland_austrian_2
+#			focus = poland_austrian_3
+#		}
+#		mutually_exclusive = {
+#			focus = poland_austrian_5
+#		}
+#		x = 2
+#		y = 1
+#		completion_reward = {
+#			add_stability = 0.05
+#		}
+#	}
+#	focus = {
+#		id = poland_austrian_6
+#		icon = GFX_focus_POL_cossack_king
+#		cost = 5
+#		relative_position_id = poland_austrian_1
+#		prerequisite = {
+#			focus = poland_austrian_4
+#			focus = poland_austrian_5
+#		}
+#		x = 0
+#		y = 3
+#		completion_reward = {
+#			add_stability = 0.05
+#		}
+#	}
 	focus = {
 		id = poland_independent_1
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_pol_polonism_above
 		cost = 5
-		x = 7
+		x = 8
 		y = 2
 		prerequisite = {
 			focus = poland_decider_1
@@ -246,12 +248,12 @@ focus_tree = {
 			focus = poland_austrian_1
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 	focus = {
 		id = poland_independent_2
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_complete_april_constitution
 		cost = 5
 		relative_position_id = poland_independent_1
 		prerequisite = {
@@ -265,7 +267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = poland_independent_3
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_clamp_down_on_danzig
 		cost = 5
 		relative_position_id = poland_independent_1
 		prerequisite = {
@@ -274,40 +276,40 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = poland_independent_4
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_AUS_lawmaking_leniency
 		cost = 5
 		relative_position_id = poland_independent_2
 		prerequisite = {
 			focus = poland_independent_2
 		}
-		x = -1
+		x = 0
 		y = 1
 		completion_reward = {
-			add_stability = 0.05
+			add_political_power = 75
 		}
 	}
 	focus = {
 		id = poland_independent_5
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_belarus_army
 		cost = 5
 		relative_position_id = poland_independent_3
 		prerequisite = {
 			focus = poland_independent_3
 		}
-		x = 1
+		x = 0
 		y = 1
 		completion_reward = {
-			add_stability = 0.05
+			army_experience = 50
 		}
 	}
 	focus = {
 		id = poland_independent_6
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_POL_expand_polish_intelligence
 		cost = 5
 		relative_position_id = poland_independent_1
 		prerequisite = {
@@ -317,7 +319,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		completion_reward = {
-			add_stability = 0.05
+			load_focus_tree = POL_polish_focus
 		}
 	}
 }
