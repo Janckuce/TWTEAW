@@ -221,7 +221,29 @@ SER_Chetnik_Recruitment = {
 		}
 	}
 }
+SER_annex_greece = {
+	SER_annex_greeks = {
+		allowed = {
+		tag = SER
+	}
+	available = {
+		has_capitulated = yes
+	}
+	complete_effect = {
+		every_state = {
+				limit = {
+					is_controlled_by = GRE
+				}
+				add_core_of = SER
+			}
+		annex_country = {
+			target = GRE
+		}
 
+	}
+	fire_only_once = yes
+	}
+}
 SER_Iron_Army = {
 	SER_Militia1 = {
 		icon = GFX_decision_CHL_carabineros
