@@ -1336,4 +1336,21 @@ GER_Annex_Subjects_Descision_Catagory = {
 			annex_country = { target = GCG}
 		}
 	}
+	GER_annex_POL = {
+		visible = {
+			POL = {
+				owns_state = 85 # Warsaw
+			}
+			POL = {is_ai = yes}
+		}
+		available = {
+			POL = {is_ai = yes}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			annex_country = { target = POL}
+		}
+	}
 } 

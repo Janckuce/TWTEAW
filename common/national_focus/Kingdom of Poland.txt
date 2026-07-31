@@ -43,7 +43,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = poland_austrian_1
-			focus = poland_independant_1
+			focus = poland_independent_1
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -233,7 +233,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = poland_independant_1
+		id = poland_independent_1
 		icon = GFX_goal_generic_major_war
 		cost = 5
 		x = 7
@@ -250,12 +250,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = poland_independant_2
+		id = poland_independent_2
 		icon = GFX_goal_generic_major_war
 		cost = 5
-		relative_position_id = poland_independant_1
+		relative_position_id = poland_independent_1
 		prerequisite = {
-			focus = poland_independant_1
+			focus = poland_independent_1
 		}
 		x = -1
 		y = 1
@@ -264,12 +264,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = poland_independant_3
+		id = poland_independent_3
 		icon = GFX_goal_generic_major_war
 		cost = 5
-		relative_position_id = poland_independant_1
+		relative_position_id = poland_independent_1
 		prerequisite = {
-			focus = poland_independant_1
+			focus = poland_independent_1
 		}
 		x = 1
 		y = 1
@@ -278,12 +278,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = poland_independant_4
+		id = poland_independent_4
 		icon = GFX_goal_generic_major_war
 		cost = 5
-		relative_position_id = poland_independant_2
+		relative_position_id = poland_independent_2
 		prerequisite = {
-			focus = poland_independant_2
+			focus = poland_independent_2
 		}
 		x = -1
 		y = 1
@@ -292,12 +292,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = poland_independant_5
+		id = poland_independent_5
 		icon = GFX_goal_generic_major_war
 		cost = 5
-		relative_position_id = poland_independant_3
+		relative_position_id = poland_independent_3
 		prerequisite = {
-			focus = poland_independant_3
+			focus = poland_independent_3
 		}
 		x = 1
 		y = 1
@@ -306,13 +306,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = poland_independant_6
+		id = poland_independent_6
 		icon = GFX_goal_generic_major_war
 		cost = 5
-		relative_position_id = poland_independant_1
+		relative_position_id = poland_independent_1
 		prerequisite = {
-			focus = poland_independant_2
-			focus = poland_independant_3
+			focus = poland_independent_2
+			focus = poland_independent_3
 		}
 		x = 0
 		y = 3
