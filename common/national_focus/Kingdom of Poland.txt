@@ -1,0 +1,323 @@
+#search_filters = {FOCUS_FILTER_WAR_MOD}
+#search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+#search_filters = {FOCUS_FILTER_MILITARY_MOD}
+#search_filters = {FOCUS_FILTER_NAVY_MOD}
+#search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
+#search_filters = {FOCUS_FILTER_COLONIAL_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+
+focus_tree = {
+	id = poland_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+
+	continuous_focus_position = { x = 245 y = 1500 }
+
+	default = no
+
+	focus = {
+		id = poland_decider_1
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 7
+		y = 1
+		completion_reward = {
+			country_event = ww1_poland.1
+		}
+	}
+	focus = {
+		id = poland_german_1
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = poland_decider_1
+		}
+		mutually_exclusive = {
+			focus = poland_austrian_1
+			focus = poland_independant_1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = poland_german_2
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_german_1
+		prerequisite = {
+			focus = poland_german_1
+		}
+		mutually_exclusive = {
+			focus = poland_german_3
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_german_3
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_german_1
+		prerequisite = {
+			focus = poland_german_1
+		}
+		mutually_exclusive = {
+			focus = poland_german_2
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_german_5
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_german_3
+		prerequisite = {
+			focus = poland_german_3
+			focus = poland_german_2
+		}
+		mutually_exclusive = {
+			focus = poland_german_4
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_german_4
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_german_2
+		prerequisite = {
+			focus = poland_german_2
+			focus = poland_german_3
+		}
+		mutually_exclusive = {
+			focus = poland_german_5
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_german_6
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_german_1
+		prerequisite = {
+			focus = poland_german_4
+			focus = poland_german_5
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_austrian_1
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = poland_decider_1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_austrian_2
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_austrian_1
+		prerequisite = {
+			focus = poland_austrian_1
+		}
+		mutually_exclusive = {
+			focus = poland_austrian_3
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_austrian_3
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_austrian_1
+		prerequisite = {
+			focus = poland_austrian_1
+		}
+		mutually_exclusive = {
+			focus = poland_austrian_2
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_austrian_5
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_austrian_3
+		prerequisite = {
+			focus = poland_austrian_3
+			focus = poland_austrian_2
+		}
+		mutually_exclusive = {
+			focus = poland_austrian_4
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_austrian_4
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_austrian_2
+		prerequisite = {
+			focus = poland_austrian_2
+			focus = poland_austrian_3
+		}
+		mutually_exclusive = {
+			focus = poland_austrian_5
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_austrian_6
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_austrian_1
+		prerequisite = {
+			focus = poland_austrian_4
+			focus = poland_austrian_5
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_independant_1
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = poland_decider_1
+		}
+		mutually_exclusive = {
+			focus = poland_german_1
+			focus = poland_austrian_1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_independant_2
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_independant_1
+		prerequisite = {
+			focus = poland_independant_1
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_independant_3
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_independant_1
+		prerequisite = {
+			focus = poland_independant_1
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_independant_4
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_independant_2
+		prerequisite = {
+			focus = poland_independant_2
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_independant_5
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_independant_3
+		prerequisite = {
+			focus = poland_independant_3
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = poland_independant_6
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		relative_position_id = poland_independant_1
+		prerequisite = {
+			focus = poland_independant_2
+			focus = poland_independant_3
+		}
+		x = 0
+		y = 3
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+}
