@@ -22,12 +22,10 @@ defensive_postures = {
         }
         elastic_operations = {
             enable_tactic = tactic_shock
-            land_reinforce_rate = 0.03
             special_forces_min = 14
         }
         developed_trench_networking = {
             enable_tactic = tactic_ambush
-            max_dig_in = 5
             special_forces_min = 14
         }
         field_emplacements = {
@@ -63,9 +61,7 @@ mission_type_tactics = {
     enable_tactic = tactic_delay
     dig_in_speed_factor = 0.50
     enable_tactic = tactic_shock
-    land_reinforce_rate = 0.03
     enable_tactic = tactic_ambush
-    max_dig_in = 5
     enable_tactic = tactic_breakthrough
     enable_tactic = tactic_blitz
     special_forces_min = 70

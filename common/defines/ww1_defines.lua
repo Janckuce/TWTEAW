@@ -111,3 +111,4 @@ NDefines.NOperatives.PROPAGANDA_DEFENSE_FACTOR = 0.01 --0.01					-- Multiplied t
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0 --0.5				-- Multiplied to the Stability/WarSupport drift values of each operative after the one with the greatest values. The process is done separatly for Stability and WarSupport
 NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0 --0.5				-- Multiplied to the Stability/WarSupport drift values of each country after the one with the greatest values. The process is done separatly for Stability and WarSupport
 NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0 --0.350
+NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.1 --0.25 in Vanilla
