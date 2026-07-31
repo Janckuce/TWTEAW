@@ -134,6 +134,11 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			load_focus_tree = POL_saxon_focus
+			retire_ideology_leader = neutrality
+			promote_character = {
+				character = POL_character_friedrich_christian
+				ideology = despotism
+			}
 		}
 	}
 	#focus = {
@@ -320,6 +325,11 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			load_focus_tree = POL_polish_focus
+			retire_ideology_leader = neutrality
+			promote_character = {
+				character = POL_character_jozef_potocki
+				ideology = oligarchism
+			}
 		}
 	}
 }

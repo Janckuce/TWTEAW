@@ -6,12 +6,20 @@ ideas = {
 			picture = FIN_lone_wolf
 			modifier = {
 				army_core_attack_factor = 0.15
+				training_time_army_factor = 0.15
+				army_core_defence_factor = -0.15
 			}
 		}
 		POL_arms_called = {
 			picture = prc_low_popular_support3
 			modifier = {
 				weekly_manpower = 2000
+			}
+		}
+		POL_german_reliance = {
+			picture = ger_revive_the_kaiserreich
+			modifier = {
+				political_power_factor = -0.20
 			}
 		}
 	}
