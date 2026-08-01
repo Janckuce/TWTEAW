@@ -35,4 +35,51 @@ characters={
 			expire = "1922.6.1.1"
 		}
 	}
+	POL_character_bolesaw_prus = {
+		name = POL_character_bolesaw_prus
+		portraits = {
+			civilian = {
+				small = "GFX_bolesaw_prus_advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = POL_bolesaw_prus_advisor
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				silent_workhorse #15% PP gain
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	POL_character_jozef_pilsudskis = {
+		name = POL_character_jozef_pilsudskis
+		portraits = {
+			civilian = {
+				large = "GFX_jozef_pilsudskis_leader"
+			}
+			army = {
+				small = "GFX_jozef_pilsudskis_advisor"
+			}
+		}		
+		advisor={
+			slot = army_chief
+			idea_token = POL_jozef_pilsudskis_advisor
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_chief_offensive_2 #Inf Attack +10%
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+		}
+		}
+	}
 }
