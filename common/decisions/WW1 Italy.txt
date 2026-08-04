@@ -47,7 +47,7 @@ ITA_Lybia_War_Category = {
 	}
 
 	ITA_lybia_war_monthly_rewards = {
-		days_mission_timeout = 30
+		days_mission_timeout = 20
 		is_good = yes
 		allowed = {
 			tag = ITA
@@ -86,7 +86,7 @@ ITA_Lybia_War_Category = {
 		timeout_effect = {
 			if = {
 				limit = {
-					date < 1912.5.1
+					date < 1912.1.1
 				}
 				activate_mission = ITA_lybia_war_monthly_rewards
 			}
