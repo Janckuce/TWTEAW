@@ -166,7 +166,7 @@ TUR_Annex_Subjects_Descision_Catagory = {
 	TUR_Annex_YEM = {
 	  	visible = {
 			YEM = {
-			  owns_state = 679 # Tanganyika
+			  owns_state = 679
 		  	}
 		  	YEM = {is_ai = yes}
 	  	}
@@ -180,11 +180,11 @@ TUR_Annex_Subjects_Descision_Catagory = {
 		complete_effect = {			
 			add_offsite_building = {
                 type = arms_factory
-                level = 12
+                level = 8
             }
 			add_offsite_building = {
 				type = industrial_complex
-				level = 12
+				level = 8
 			}
 		}
 		fire_only_once = yes
