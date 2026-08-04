@@ -1948,6 +1948,27 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	
+	spriteType = {
+		name = "GFX_unit_special_forces_support_icon_small"
+		texturefile = "gfx/texticons/unit_category_special_forces_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_unit_entrenchment_company_icon_small"
+		texturefile = "gfx/texticons/support_pioneer_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_pioneer_support_icon_small"
+		texturefile = "gfx/texticons/unit_blackshirt_assault_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 
 	#### Tank Designer Niches
 	# Namings are off by one since niches are 0 based in code
@@ -2556,4 +2577,4 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-}
+} 
