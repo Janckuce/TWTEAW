@@ -18,23 +18,23 @@ defensive_postures = {
     rewards = {
         improvised_fighting_position = { 
             dig_in_speed_factor = 0.50
-            special_forces_min = 14
+            special_forces_min = 12
         }
         elastic_operations = {
             enable_tactic = tactic_shock
-            special_forces_min = 14
+            special_forces_min = 12
         }
         developed_trench_networking = {
             enable_tactic = tactic_ambush
-            special_forces_min = 14
+            special_forces_min = 12
         }
         field_emplacements = {
             enable_tactic = tactic_breakthrough
-            special_forces_min = 14
+            special_forces_min = 12
         }
         field_construction_training = {
             enable_tactic = tactic_blitz
-            special_forces_min = 14
+            special_forces_min = 12
         }
 
     }
@@ -64,7 +64,7 @@ mission_type_tactics = {
     enable_tactic = tactic_ambush
     enable_tactic = tactic_breakthrough
     enable_tactic = tactic_blitz
-    special_forces_min = 70
+    special_forces_min = 60
     # PREVIOUS DOCTRINE LEGACY
 
      rewards = {
@@ -116,7 +116,7 @@ infiltration_tactics = {
     max_dig_in = 5
     enable_tactic = tactic_breakthrough
     enable_tactic = tactic_blitz
-    special_forces_min = 70
+    special_forces_min = 60
     # PREVIOUS DOCTRINE LEGACY
 
     rewards = {
@@ -168,7 +168,7 @@ grand_assault = { #NOT gonna use
     max_dig_in = 5
     enable_tactic = tactic_breakthrough
     enable_tactic = tactic_blitz
-    special_forces_min = 70
+    special_forces_min = 60
     # PREVIOUS DOCTRINE LEGACY
 
     ai_will_do = { }

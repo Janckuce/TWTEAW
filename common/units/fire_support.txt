@@ -114,10 +114,16 @@ sub_units = {
 		}
 		battalion_mult = {
 			category = category_special_forces
-			breakthrough = 0.8
+			defense = -0.25
+			breakthrough = 1.2
 			soft_attack = 0.8
 			hardness = 3
 			multiply = yes
+		}
+		battalion_mult = {
+			category = category_special_forces
+			max_organisation = -10
+			add = yes
 		}
 
 

@@ -94,8 +94,8 @@ sub_units = {
 		}
 
 		marsh = {
-			defence = 0.10
-			movement = 0.2
+			# defence = 0.10
+			movement = 0.1
 		}
 
 		fort = {
@@ -103,13 +103,13 @@ sub_units = {
 		}
 
 		river = {
-			defence = 0.25
-			movement = 0.25
+			defence = 0.15
+			movement = 0.15
 		}
 
-		amphibious = {
-			attack = 0.15
-		}
+		# amphibious = {
+		# 	attack = 0.15
+		# }
 
 		same_support_type = engineer
 	}
@@ -156,7 +156,6 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
-			entrenchment = 0.20
 			max_organisation = 32
 			default_morale = 0.32
 			max_strength = 12
@@ -207,7 +206,7 @@ sub_units = {
 
 		marsh = {
 			attack = 0.10
-			defence = 0.15
+			defence = 0.10
 			movement = 0.2
 		}
 
@@ -217,9 +216,13 @@ sub_units = {
 		}
 
 		river = {
-			attack = 0.10
-			defence = 0.20
+			attack = 0.05
+			defence = 0.25
 			movement = 0.25
+		}
+
+		amphibious = {
+			attack = 0.05
 		}
 		
 		same_support_type = engineer
