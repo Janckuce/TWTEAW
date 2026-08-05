@@ -121,13 +121,13 @@ mountaineers_2 = {
 			# acclimatization_cold_climate_gain_factor = 0.10
 			mountaineers = {
 				forest = {
-					movement = 0.15
+					movement = 0.10
 				}
 				hills = {
-					movement = 0.20
+					movement = 0.15
 				}
 				mountain = {
-					movement = 0.35
+					movement = 0.20
 				}
 			}		   
 		}
@@ -140,16 +140,15 @@ mountaineers_2 = {
 		reward_3 = {
 			mastery = 60
 			category_mountaineers = {
-				category = category_mountaineers
-				breakthrough = 0.40
+				# category = category_mountaineers
+				breakthrough = 0.20
 			}		
 		}
 		reward_4 = {
 			mastery = 60
-			mountaineers_special_forces_contribution_factor = -0.25
 			category_mountaineers = {
 				supply_consumption = -0.02
-				max_organisation = 10
+				max_organisation = 5
 			}
 		}
 		reward_5 = {
