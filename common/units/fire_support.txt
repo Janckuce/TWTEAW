@@ -117,9 +117,9 @@ sub_units = {
 		}
 		battalion_mult = {
 			category = category_special_forces
-			defense = -0.25
-			breakthrough = 1.2
-			soft_attack = 0.8
+			defense = -0.33
+			breakthrough = 0.5
+			soft_attack = 0.6
 			hardness = 3
 			multiply = yes
 		}
@@ -133,57 +133,156 @@ sub_units = {
 		can_be_parachuted = no
 	}
 
-	# field_guns = {
-	# 	abbreviation = "IFG"
-	# 	sprite = artillery
-	# 	map_icon_category = infantry
-	# 	priority = 0
-	# 	ai_priority = 0
-	# 	active = yes
-	# 	affects_speed = no
-	# 	is_artillery_brigade = yes
+	mortar_company = {
+		abbreviation = "IFG"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		is_artillery_brigade = yes
 
-	# 	type = {
-	# 		infantry
-	# 		support
-	# 	}
+		type = {
+			infantry
+			support
+		}
 		
-	# 	group = support
-	# 	allowed_battalion_groups = {infantry mobile combat_support }
-	# 	categories = {
-	# 		category_support_battalions
-	# 		category_regimental_support_battalions
-	# 		category_army
-	# 		category_regimental_support_artillery
-	# 	}
+		group = support
+		allowed_battalion_groups = {infantry mobile combat_support }
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_regimental_support_artillery
+		}
 
-	# 	divisional = no
-	# 	combat_width = 0
+		divisional = no
+		combat_width = 0
 
-	# 	need = {
-	# 		artillery_equipment = 4
-	# 	}
-	# 	manpower = 180
-	# 	training_time = 120
-	# 	max_organisation = 0
-	# 	default_morale = 0.1
-	# 	max_strength = 0.1
-	# 	weight = 0.1
+		need = {
+			infantry_equipment = 30
+			support_equipment = 15
+		}
+		manpower = 180
+		training_time = 120
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.1
+		weight = 0.1
 		
-	# 	supply_consumption = 0.1
+		supply_consumption = 0.1
 
-	# 	# Support nerfs to combat abilities
-	# 	defense = -0.8
-	# 	breakthrough = -0.6
-	# 	soft_attack = -0.7
-	# 	hard_attack = -0.6
-
-
-	# 	can_be_parachuted = yes
-	# }
+		# Support nerfs to combat abilities
+		defense = -0.9
+		breakthrough = 1.8
+		soft_attack = 0.5
+		hard_attack = 0.5
 
 
+		can_be_parachuted = yes
+	}
 
+	sniper_company = {
+		abbreviation = "IFG"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		is_artillery_brigade = yes
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		allowed_battalion_groups = {infantry mobile combat_support }
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_regimental_support_artillery
+		}
+
+		divisional = no
+		combat_width = 0
+
+		need = {
+			infantry_equipment = 50
+		}
+		manpower = 180
+		training_time = 120
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.1
+		weight = 0.1
+		
+		supply_consumption = 0.1
+
+		# Support nerfs to combat abilities
+		defense = -0.95
+		breakthrough = -0.9
+		soft_attack = 1
+		hard_attack = 0.1
+
+
+		can_be_parachuted = yes
+	}
+
+	machine_gun = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+			#exclusive1
+		}
+		divisional = yes
+		regimental = yes
+		group = support
+		# allowed_battalion_groups = {infantry mobile combat_support }
+		
+		categories = {
+			category_support_battalions
+			category_army
+			# category_regimental_support_battalions
+		}
+
+		# divisional = no
+		combat_width = 0
+
+
+		need = {
+			infantry_equipment = 50
+			support_equipment = 15
+		}
+		manpower = 300
+		training_time = 120
+		max_organisation = 25
+		default_morale = 0.1
+		max_strength = 3
+		weight = 0.1
+		
+		supply_consumption = 0.05
+
+		# Support nerfs to combat abilities
+		defense = 0.8
+		# breakthrough = -0.4
+		soft_attack = -0.5
+		hard_attack = -0.9
+		breakthrough = -1
+
+		same_support_type = exclusive1
+		can_be_parachuted = yes
+	}
 
 
 	# rocket_battery = {

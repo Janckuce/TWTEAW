@@ -402,6 +402,13 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+		signal_company = {
+			battalion_mult = {
+				category = category_front_line
+				initiative = 0.01
+				add = yes
+			}
+		}
 		
 		path = {
 			leads_to_tech = tech_recon3
@@ -445,6 +452,14 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+		signal_company = {
+			battalion_mult = {
+				category = category_front_line
+				initiative = 0.01
+				add = yes
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_recon4
 			research_cost_coeff = 1
@@ -486,7 +501,14 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
-
+		signal_company = {
+			battalion_mult = {
+				category = category_front_line
+				initiative = 0.01
+				add = yes
+			}
+		}
+		
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
