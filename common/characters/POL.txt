@@ -82,4 +82,21 @@ characters={
 		}
 		}
 	}
+	POL_character_john_sobieski = {
+		name = POL_character_john_sobieski
+		portraits = {
+			army = {
+				large = "GFX_john_sobieski_general"
+				small = "GFX_john_sobieski_general_small"
+			}
+		}
+		field_marshal={
+			traits = { fast_planner expert_delegator }
+			skill=4
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+		}
+	}
 }
