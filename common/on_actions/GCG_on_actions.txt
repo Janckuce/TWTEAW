@@ -9,4 +9,80 @@ on_actions = {
 			}
 		}
 	}
+
+
+	on_state_control_changed = {
+		
+		##UK Reconquering a state lost
+		effect = {
+			if = {
+				limit = {
+					FROM = { 						
+						OR = {
+							tag = GCG
+							is_in_faction_with = GCG
+						}  
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = SAF 
+							tag = SAF
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = GCG_controls_african
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = SAF_controls_african
+				 	clr_state_flag = GCG_controls_african
+				}
+
+				SAF = { 
+					african_debuff_level_down = yes
+				}
+				RAJ = { 
+					african_debuff_level_down = yes
+				}
+				AST = { 
+					african_debuff_level_down = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = SAF 
+							tag = SAF
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = GCG
+							is_in_faction_with = GCG
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = SAF_controls_african
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = GCG_controls_african
+				 	clr_state_flag = SAF_controls_african
+				}
+
+				SAF = {
+					african_debuff_level_up = yes
+				}
+				RAJ = {
+					african_debuff_level_up = yes
+				}
+				AST = {
+					african_debuff_level_up = yes
+				}
+			}
+		}
+	}
 }

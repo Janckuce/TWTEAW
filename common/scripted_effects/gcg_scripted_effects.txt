@@ -1,0 +1,113 @@
+#Important to put HIGHEST first
+african_debuff_level_up = {
+
+	if = {
+		limit = { has_idea = asia_debuff6 }
+		swap_ideas = {
+			remove_idea = asia_debuff6
+			add_idea = asia_debuff7
+		}		
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff5 }
+		swap_ideas = {
+			remove_idea = asia_debuff5
+			add_idea = asia_debuff6
+		}		
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff4 }
+		swap_ideas = {
+			remove_idea = asia_debuff4
+			add_idea = asia_debuff5
+		}		
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff3 }
+		swap_ideas = {
+			remove_idea = asia_debuff3
+			add_idea = asia_debuff4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff2 }
+		swap_ideas = {
+			remove_idea = asia_debuff2
+			add_idea = asia_debuff3
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff1 }
+		swap_ideas = {
+			remove_idea = asia_debuff1
+			add_idea = asia_debuff2
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff0 }
+		swap_ideas = {
+			remove_idea = asia_debuff0
+			add_idea = asia_debuff1
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+african_debuff_level_down = {
+	if = {
+		limit = { has_idea = asia_debuff1 }
+		swap_ideas = {
+			remove_idea = asia_debuff1
+			add_idea = asia_debuff0
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff2 }
+		swap_ideas = {
+			remove_idea = asia_debuff2
+			add_idea = asia_debuff1
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff2 }
+		swap_ideas = {
+			remove_idea = asia_debuff2
+			add_idea = asia_debuff1
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff3 }
+		swap_ideas = {
+			remove_idea = asia_debuff3
+			add_idea = asia_debuff2
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff4 }
+		swap_ideas = {
+			remove_idea = asia_debuff4
+			add_idea = asia_debuff3
+		}
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff5 }
+		swap_ideas = {
+			remove_idea = asia_debuff5
+			add_idea = asia_debuff4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff6 }
+		swap_ideas = {
+			remove_idea = asia_debuff6
+			add_idea = asia_debuff5
+		}		
+	}
+	else_if = {
+		limit = { has_idea = asia_debuff7 }
+		swap_ideas = {
+			remove_idea = asia_debuff7
+			add_idea = asia_debuff6
+		}		
+	}
+}
