@@ -203,12 +203,25 @@ AUH_plunder_decisions = {
 				has_idea = AUH_Plundered_Serbia
 			}
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 107
+				state = 108
+				state = 106
+				state = 802
+				state = 817
+				state = 909
+				state = 803
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
 			NOT = {
 				SER = {
 					controls_state = 107 # Serbia
 				}
-				}
+			}
 			NOT = {
 				SER = {
 					controls_state = 108 # Morava
@@ -217,6 +230,26 @@ AUH_plunder_decisions = {
 			NOT = {
 				SER = {
 					controls_state = 106 # Macedonia
+				}
+			}
+			NOT = {
+				SER = {
+					controls_state = 802 # Kosovo
+				}
+			}
+			NOT = {
+				SER = {
+					controls_state = 817 # South Serbia
+				}
+			}
+			NOT = {
+				SER = {
+					controls_state = 909 # Debar
+				}
+			}
+			NOT = {
+				SER = {
+					controls_state = 803 # Southern Serbia
 				}
 			}
 		}
@@ -318,6 +351,14 @@ AUH_plunder_decisions = {
 				has_idea = AUH_Plundered_Venice
 			}
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 160
+				state = 913
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
 			controls_state = 160 # Veneto
 			controls_state = 913 # Friuli
@@ -411,6 +452,14 @@ AUH_plunder_decisions = {
 			NOT = {
 				has_idea = AUH_Plundered_Romania
 			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 81
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
 		}
 		available = {
 			NOT = {

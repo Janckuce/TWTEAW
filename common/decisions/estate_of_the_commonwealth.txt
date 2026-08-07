@@ -123,15 +123,8 @@ state_of_the_commonwealth_category = {
 		cost = 0
 
 		complete_effect = {
-			SAF = {
-				add_ideas = asia_debuff7
-			}
-			RAJ = {
-				add_ideas = asia_debuff7
-			}
-			AST = {
-				add_ideas = asia_debuff7
-			}
+			custom_effect_tooltip = asia_max_debuff_tooltip
+			add_ideas = asia_debuff7
 		}
 	}
 

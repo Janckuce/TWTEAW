@@ -293,6 +293,18 @@ GER_Plunder_Decisions = {
 				has_idea = GER_Plundered_Poland
 			}
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+				state = 90
+				state = 87
+				state = 98
+				state = 92
+				state = 97
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
 			OR = {
 				controls_state = 10 # Warsaw
@@ -494,6 +506,14 @@ GER_Plunder_Decisions = {
 				has_idea = GER_Plundered_Ardennes
 			}
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 835
+				state = 8
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
 			controls_state = 835 # Ardennes
 			controls_state = 8
@@ -572,6 +592,14 @@ GER_Plunder_Decisions = {
 			NOT = {
 				has_idea = GER_Plundered_Belgium
 			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+				state = 34
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
 		}
 		available = {
 			controls_state = 6 # Vlaanderen
@@ -663,6 +691,14 @@ GER_Plunder_Decisions = {
 				has_idea = GER_Plundered_The_French_Border
 			}
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 918
+				state = 908
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
 			controls_state = 918 # Nancy
 			controls_state = 908 # Briey
@@ -726,6 +762,16 @@ GER_Plunder_Decisions = {
 			NOT = {
 				has_idea = GER_Plundered_Deeper_Into_France
 			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 27
+				state = 18
+				state = 17
+				state = 933
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
 		}
 		available = {
 			controls_state = 27 # Bourgogne
@@ -836,6 +882,13 @@ GER_Plunder_Decisions = {
 				has_idea = GER_Plundered_Callais
 			}
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 29
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
 			controls_state = 29 # Nord-Pas-de-Calais
 		}
@@ -897,6 +950,15 @@ GER_Plunder_Decisions = {
 			NOT = {
 				has_idea = GER_Plundered_Paris
 			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+				state = 15
+				state = 785
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
 		}
 		available = {
 			controls_state = 16 # Ile-de-France
