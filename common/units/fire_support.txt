@@ -16,11 +16,9 @@ sub_units = {
 		}
 		
 		group = support
-		allowed_battalion_groups = { infantry mobile combat_support }
 		
 		categories = {
 			category_support_battalions
-			category_regimental_support_battalions
 			category_army
 		}
 
@@ -74,11 +72,9 @@ sub_units = {
 		}
 		
 		group = support
-		allowed_battalion_groups = { infantry mobile combat_support mobile_combat_support armor armor_combat_support }
 		
 		categories = {
 			category_support_battalions
-			category_regimental_support_battalions
 			category_army
 		}
 
@@ -253,11 +249,12 @@ sub_units = {
 		categories = {
 			category_support_battalions
 			category_army
-			# category_regimental_support_battalions
+			category_regimental_support_battalions
 		}
 
 		# divisional = no
 		combat_width = 0
+		allowed_battalion_groups = { infantry mobile combat_support }
 
 
 		need = {
