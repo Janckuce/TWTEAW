@@ -18,7 +18,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 245 y = 1500 }
+	continuous_focus_position = { x = 445 y = 1900 }
 
 	default = no
 
@@ -108,6 +108,8 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_saxon_5
 			focus = POL_saxon_6
+		}
+		prerequisite = {
 			focus = POL_saxon_9
 			focus = POL_saxon_10
 		}
@@ -164,10 +166,443 @@ focus_tree = {
 		id = POL_saxon_industry_1
 		icon = GFX_focus_POL_saxon_legacy
 		cost = 5
-		x = 14
+		x = 26
 		y = 1
 		prerequisite = {
 
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_2
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 23
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_industry_1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_3
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 29
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_industry_1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_4
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 25
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_industry_1
+		}
+		mutually_exclusive = {
+			focus = POL_saxon_industry_5
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_5
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 27
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_industry_1
+		}
+		mutually_exclusive = {
+			focus = POL_saxon_industry_4
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_6
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 24
+		y = 3
+		prerequisite = {
+			focus = POL_saxon_industry_4
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_7
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 28
+		y = 3
+		prerequisite = {
+			focus = POL_saxon_industry_5
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_8
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 26
+		y = 3
+		prerequisite = {
+			focus = POL_saxon_industry_4
+			focus = POL_saxon_industry_5
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_9
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 27
+		y = 4
+		prerequisite = {
+			focus = POL_saxon_industry_6
+			focus = POL_saxon_industry_7
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_10
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 25
+		y = 4
+		prerequisite = {
+			focus = POL_saxon_industry_6
+			focus = POL_saxon_industry_7
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_11
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 27
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_industry_9
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_12
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 25
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_industry_10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_13
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 29
+		y = 4
+		prerequisite = {
+			focus = POL_saxon_industry_7
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_14
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 23
+		y = 4
+		prerequisite = {
+			focus = POL_saxon_industry_6
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_15
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 23
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_industry_14
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_industry_16
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 29
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_industry_13
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_1
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 16
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_2
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_army_1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_3
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 17
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_army_1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_4
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 13
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_army_1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_5
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 19
+		y = 2
+		prerequisite = {
+			focus = POL_saxon_army_1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = POL_saxon_army_8
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 20
+		y = 3
+		prerequisite = {
+			focus = POL_saxon_army_5
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_9
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 12
+		y = 3
+		prerequisite = {
+			focus = POL_saxon_army_4
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = POL_saxon_army_11
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_army_9
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = POL_saxon_army_13
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 18
+		y = 4
+		prerequisite = {
+			focus = POL_saxon_army_3
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = POL_saxon_army_15
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 17
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_army_13
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_16
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 20
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_army_8
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_17
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 14
+		y = 4
+		prerequisite = {
+			focus = POL_saxon_army_2
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_18
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 15
+		y = 5
+		prerequisite = {
+			focus = POL_saxon_army_17
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_19
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 16
+		y = 6
+		prerequisite = {
+			focus = POL_saxon_army_18
+			focus = POL_saxon_army_15
+		}
+		prerequisite = {
+			focus = POL_saxon_army_20
+		}
+		prerequisite = {
+			focus = POL_saxon_army_16
+			focus = POL_saxon_army_11
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_20
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = POL_saxon_army_1
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_saxon_army_21
+		icon = GFX_focus_POL_saxon_legacy
+		cost = 5
+		x = 11
+		y = 7
+		prerequisite = {
+			focus = POL_saxon_army_19
+		}
+		prerequisite = {
+			focus = POL_saxon_7
 		}
 		completion_reward = {
 
