@@ -26,6 +26,7 @@ focus_tree = {
 # Begin economic tree
 # 4 year plan
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_four_year_plan
 		icon = GFX_focus_befriend_italy_ww1
 		x = 4
@@ -53,6 +54,7 @@ focus_tree = {
 
 # Line 1 - Rome, South investments, North investments, British goods
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_expand_rome_resources
 		icon = GFX_focus_generic_rubber
 		relative_position_id = ITA_focus_four_year_plan
@@ -89,6 +91,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_develop_south_italy
 		icon = GFX_focus_ITA_southern_industry
 		relative_position_id = ITA_focus_four_year_plan
@@ -143,6 +146,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_develop_north_italy
 		icon = GFX_focus_ITA_northern_industry
 		relative_position_id = ITA_focus_four_year_plan
@@ -197,6 +201,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_british_goods
 		icon = GFX_focus_eng_the_sun_never_sets
 		relative_position_id = ITA_focus_four_year_plan
@@ -227,6 +232,7 @@ focus_tree = {
 	
 # Line 2 - Hire Captain of Industry, Research slot, Railway network
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_hire_captain_of_industry
 		icon = GFX_focus_generic_low_cost_housing
 		relative_position_id = ITA_focus_four_year_plan
@@ -260,6 +266,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_research_slot
 		icon = GFX_focus_research
 		relative_position_id = ITA_focus_four_year_plan
@@ -286,6 +293,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_improve_railway_network
 		icon = GFX_goal_generic_production2
 		relative_position_id = ITA_focus_four_year_plan
@@ -355,6 +363,7 @@ focus_tree = {
 
 #Line 3 - Invest in Sardinia, Weak Economy focus, Mil. Factory 1, Steel casting industry
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_invest_in_sardinia
 		icon = GFX_focus_kingdom_of_sardinia
 		relative_position_id = ITA_focus_four_year_plan
@@ -387,6 +396,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_weak_economy_focus
 		icon = GFX_focus_generic_industry_3
 		relative_position_id = ITA_focus_four_year_plan
@@ -413,6 +423,7 @@ focus_tree = {
 	}	
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_mil_factory_1
 		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = ITA_focus_four_year_plan
@@ -462,6 +473,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_steel_casting_industry
 		icon = GFX_focus_generic_steel
 		relative_position_id = ITA_focus_four_year_plan
@@ -504,6 +516,7 @@ focus_tree = {
 # Line 4 - Civilian Economy, Research Slot 2, Mil. factory 2, War Industry
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_a_civilian_economy
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = ITA_focus_four_year_plan
@@ -543,6 +556,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_research_slot_2
 		icon = GFX_focus_research
 		relative_position_id = ITA_focus_four_year_plan
@@ -568,6 +582,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_mil_factory_2
 		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = ITA_focus_four_year_plan
@@ -628,6 +643,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_wartime_industry
 		icon = GFX_focus_generic_modernize_industry
 		relative_position_id = ITA_focus_four_year_plan
@@ -716,6 +732,7 @@ focus_tree = {
 # Begin political tree
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_colonial_ambition
 		icon = GFX_focus_generic_africa_liberation
 		x = 16
@@ -736,6 +753,7 @@ focus_tree = {
 # Branch 1-1-A: South focus
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Localized_Government
 		icon = GFX_goal_generic_national_unity
 		relative_position_id = ITA_focus_colonial_ambition
@@ -762,6 +780,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Promote_Local_Customs
 		icon = GFX_focus_generic_self_management
 		relative_position_id = ITA_focus_Localized_Government
@@ -784,6 +803,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Multiple_Dialects_One_Language
 		icon = GFX_focus_ETH_invite_italian_settlers
 		relative_position_id = ITA_focus_Promote_Local_Customs
@@ -806,6 +826,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Cooperate_with_Cosa_Nostra
 		icon = GFX_goal_generic_dangerous_deal
 		relative_position_id = ITA_focus_Multiple_Dialects_One_Language
@@ -830,6 +851,7 @@ focus_tree = {
 # Branch 1-1-B: North focus
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Centralized_Government
 		icon = GFX_goal_generic_forceful_treaty
 		relative_position_id = ITA_focus_colonial_ambition
@@ -856,6 +878,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Crush_Cosa_Nostra
 		icon = GFX_focus_eng_move_to_secure_the_dominions
 		relative_position_id = ITA_focus_Centralized_Government
@@ -882,6 +905,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Codify_Standard_Italian
 		icon = GFX_focus_generic_treaty
 		relative_position_id = ITA_focus_Crush_Cosa_Nostra
@@ -904,6 +928,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Rally_Around_the_King
 		icon = GFX_focus_ITA_king_vittorio
 		relative_position_id = ITA_focus_Codify_Standard_Italian
@@ -923,6 +948,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Reinvest_the_Dividends
 		icon = GFX_focus_mex_privatisation
 		relative_position_id = ITA_focus_Rally_Around_the_King
@@ -949,6 +975,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_New_Labor_Laws
 		icon = GFX_focus_generic_treaty
 		relative_position_id = ITA_focus_Reinvest_the_Dividends
@@ -970,6 +997,7 @@ focus_tree = {
 # 1-1-C: Merger/continuation of branches 1-1-A and 1-1-B
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Irredentism
 		icon = GFX_focus_ITA_italian_irredentism
 		relative_position_id = ITA_focus_New_Labor_Laws
@@ -1007,6 +1035,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_approach_entente
 		icon = GFX_focus_befriend_france
 		relative_position_id = ITA_focus_Irredentism
@@ -1039,6 +1068,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_prepare_for_the_inevitable
 		icon = GFX_goal_generic_demand_territory
 		relative_position_id = ITA_focus_approach_entente
@@ -1069,6 +1099,7 @@ focus_tree = {
 # Branch 1-2-A: Triumph in Tripoli
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Triumph_in_Tripoli
 		icon = GFX_focus_ITA_strengthen_ascari_corps
 		relative_position_id = ITA_focus_colonial_ambition
@@ -1098,6 +1129,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_invest_in_eritrea
 		icon = GFX_focus_generic_develop_eritrea
 		relative_position_id = ITA_focus_Triumph_in_Tripoli
@@ -1145,6 +1177,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_invest_in_somaliland
 		icon = GFX_focus_generic_develop_somaliland
 		relative_position_id = ITA_focus_invest_in_eritrea
@@ -1192,6 +1225,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_invest_in_libya
 		icon = GFX_focus_generic_develop_libya
 		relative_position_id = ITA_focus_invest_in_somaliland
@@ -1267,6 +1301,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Model_Colonial_Overlord
 		icon = GFX_focus_ITA_ministry_of_italian_africa
 		relative_position_id = ITA_focus_invest_in_libya
@@ -1291,6 +1326,7 @@ focus_tree = {
 # Branch 1-2-B: Catastrophe in Cyrenaica
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Catastrophe_in_Cyrenaica
 		icon = GFX_focus_CZE_german_puppet
 		relative_position_id = ITA_focus_colonial_ambition
@@ -1318,6 +1354,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Compensation_for_Veterans
 		icon = GFX_goal_generic_consumer_goods
 		relative_position_id = ITA_focus_Catastrophe_in_Cyrenaica
@@ -1352,6 +1389,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Inward_Focus
 		icon = GFX_focus_generic_italy_propaganda
 		relative_position_id = ITA_focus_Compensation_for_Veterans
@@ -1386,6 +1424,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Jobs_to_Pacify_the_Populace
 		icon = GFX_goal_generic_construction
 		relative_position_id = ITA_focus_Inward_Focus
@@ -1420,6 +1459,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Healing_the_Scars
 		icon = GFX_focus_generic_population_growth
 		relative_position_id = ITA_focus_Jobs_to_Pacify_the_Populace
@@ -1448,6 +1488,7 @@ focus_tree = {
 # End colonial focuses
 # Branch 2: Military 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_War_in_Tripoli
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = ITA_focus_colonial_ambition
@@ -1470,6 +1511,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_armed_forces_review
 		icon = GFX_goal_generic_army_doctrines
 		relative_position_id = ITA_focus_War_in_Tripoli
@@ -1502,6 +1544,7 @@ focus_tree = {
 
 #Branch 2-1: Army
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Hire_a_Chief_of_Army
 		icon = GFX_focus_generic_military_mission
 		relative_position_id = ITA_focus_War_in_Tripoli
@@ -1526,6 +1569,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Study_Other_Powers_Doctrines
 		icon = GFX_focus_generic_combined_arms
 		relative_position_id = ITA_focus_armed_forces_review
@@ -1563,6 +1607,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Prepare_for_Mountain_Warfare
 		icon = GFX_focus_ITA_bersaglieri
 		relative_position_id = ITA_focus_Study_Other_Powers_Doctrines
@@ -1596,6 +1641,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Army_Training_with_France
 		icon = GFX_focus_fra_milice
 		relative_position_id = ITA_focus_Prepare_for_Mountain_Warfare
@@ -1621,6 +1667,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Army_Training_with_Germany
 		icon = GFX_focus_ger_oppose_hitler
 		relative_position_id = ITA_focus_Prepare_for_Mountain_Warfare
@@ -1648,6 +1695,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Large_Scale_Exercises
 		icon = GFX_focus_generic_little_entente
 		relative_position_id = ITA_focus_Army_Training_with_Germany
@@ -1681,6 +1729,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Infantry_Modernization
 		icon = GFX_focus_focus_fra_maquis
 		relative_position_id = ITA_focus_Large_Scale_Exercises
@@ -1721,6 +1770,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Artillery_Modernization
 		icon = GFX_goal_generic_army_artillery2
 		relative_position_id = ITA_focus_Infantry_Modernization
@@ -1756,6 +1806,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Mobilization_Organization
 		icon = GFX_goal_generic_position_armies
 		relative_position_id = ITA_focus_Artillery_Modernization
@@ -1783,6 +1834,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Modern_Army
 		icon = GFX_focus_ITA_cavalry_charge
 		relative_position_id = ITA_focus_Mobilization_Organization
@@ -1810,6 +1862,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Elevate_the_Alpini
 		icon = GFX_focus_ITA_alpine_division
 		relative_position_id = ITA_focus_Prepare_for_Mountain_Warfare
@@ -1857,6 +1910,7 @@ focus_tree = {
 	
 # Branch 2-2: Air force
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Hire_Douhet
 		icon = GFX_focus_generic_military_mission
 		relative_position_id = ITA_focus_War_in_Tripoli
@@ -1895,6 +1949,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Hire_Pellegrini
 		icon = GFX_focus_generic_military_mission
 		relative_position_id = ITA_focus_War_in_Tripoli
@@ -1940,6 +1995,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Utilize_Libya_Experience
 		icon = GFX_goal_generic_air_doctrine
 		relative_position_id = ITA_focus_armed_forces_review
@@ -2007,6 +2063,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Build_Airfields
 		icon = GFX_focus_generic_air_bases
 		relative_position_id = ITA_focus_Utilize_Libya_Experience
@@ -2054,6 +2111,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_New_Prototypes
 		icon = GFX_goal_generic_air_fighter
 		relative_position_id = ITA_focus_Build_Airfields
@@ -2083,6 +2141,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Fighter_Research
 		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = ITA_focus_New_Prototypes
@@ -2112,6 +2171,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Bomber_Research
 		icon = GFX_goal_generic_air_bomber
 		relative_position_id = ITA_focus_New_Prototypes
@@ -2142,6 +2202,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Modern_Air_Force
 		icon = GFX_goal_generic_CAS
 		relative_position_id = ITA_focus_New_Prototypes
@@ -2167,6 +2228,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Cas_focus
 		icon = GFX_focus_generic_cas_aircraft
 		relative_position_id = ITA_focus_Modern_Air_Force
@@ -2200,6 +2262,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Strat_Bombing_Focus
 		icon = GFX_focus_generic_long_range_aircraft
 		relative_position_id = ITA_focus_Modern_Air_Force
@@ -2233,6 +2296,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Naval_Bomber_focus
 		icon = GFX_focus_generic_multi_role_aircraft
 		relative_position_id = ITA_focus_Modern_Air_Force
@@ -2261,6 +2325,7 @@ focus_tree = {
 	
 #Branch 2-3: Navy
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Appoint_Chief_of_Navy
 		icon = GFX_focus_generic_military_mission
 		relative_position_id = ITA_focus_War_in_Tripoli
@@ -2279,6 +2344,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Expand_Naval_Facilities
 		icon = GFX_goal_generic_construct_naval_dockyard
 		relative_position_id = ITA_focus_armed_forces_review
@@ -2373,6 +2439,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Navy_Research_1
 		icon = GFX_goal_generic_navy_cruiser
 		relative_position_id = ITA_focus_Expand_Naval_Facilities
@@ -2409,6 +2476,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Navy_Research_2
 		icon = GFX_focus_ITA_modernize_ansaldo_facilities
 		relative_position_id = ITA_focus_Navy_Research_1
@@ -2456,6 +2524,7 @@ focus_tree = {
 	
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Stockpile_Fuel
 		icon = GFX_goal_generic_oil_refinery
 		relative_position_id = ITA_focus_Expand_Naval_Facilities
@@ -2545,6 +2614,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Extra_Fuel_Stockpiles
 		icon = GFX_focus_generic_stockpile_fuel
 		relative_position_id = ITA_focus_Stockpile_Fuel
@@ -2634,6 +2704,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Recall_the_Peking_Marines
 		icon = GFX_focus_ITA_decima_flottiglia_mas
 		relative_position_id = ITA_focus_Expand_Naval_Facilities
@@ -2701,6 +2772,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Landing_Craft_Experiments
 		icon = GFX_goal_generic_amphibious_assault
 		relative_position_id = ITA_focus_Recall_the_Peking_Marines
@@ -2739,6 +2811,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Jeune_Ecole
 		icon = GFX_focus_generic_destroyer
 		relative_position_id = ITA_focus_Expand_Naval_Facilities
@@ -2765,6 +2838,7 @@ focus_tree = {
 	}
 
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Mighty_Battlefleet
 		icon = GFX_goal_generic_navy_battleship
 		relative_position_id = ITA_focus_Expand_Naval_Facilities
@@ -2894,6 +2968,7 @@ focus_tree = {
 	}
 	
 	focus = {
+		available_if_capitulated = yes
 		id = ITA_focus_Naval_Reform
 		icon = GFX_focus_ITA_new_horizons
 		relative_position_id = ITA_focus_Mighty_Battlefleet
