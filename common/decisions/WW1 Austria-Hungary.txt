@@ -758,6 +758,55 @@ AUS_core_decisions = {
 		remove_effect = {
 			75 = {
 				add_core_of = AUS
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	core_slovakia = {
+		priority = 100
+		fire_only_once = yes
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			tag = AUS
+		}
+
+		available = {
+			has_full_control_of_state = 70
+			has_full_control_of_state = 71
+			has_completed_focus = AUS_core_minorities1
+		}
+
+		cost = core_large_states_cost
+
+		complete_effect = {
+			add_to_variable = { PREV.core_small_states_cost = 10 }
+			add_to_variable = { PREV.core_large_states_cost = 10 }
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 70 }
+			highlight_state_targets = { state = 71 }
+		}
+
+		days_remove = 60
+
+		remove_effect = {
+			70 = {
+				add_core_of = AUS
+			}
+			71 = {
+				add_core_of = AUS
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
 			}
 		}
 	}
@@ -792,6 +841,11 @@ AUS_core_decisions = {
 		remove_effect = {
 			664 = {
 				add_core_of = AUS
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
 			}
 		}
 	}
@@ -826,6 +880,11 @@ AUS_core_decisions = {
 		remove_effect = {
 			154 = {
 				add_core_of = AUS
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
 			}
 		}
 	}

@@ -17,7 +17,6 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			# category_divisional_support_battalions
 			category_army
@@ -40,7 +39,7 @@ sub_units = {
 		entrenchment = 2
 		
 		battalion_mult = {
-			category = category_light_infantry
+			category = category_all_infantry
 			max_organisation = 32
 			default_morale = 0.32
 			max_strength = 12
@@ -131,7 +130,6 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
 			category_marines

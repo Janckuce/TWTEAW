@@ -52,8 +52,13 @@ missions = {
 			}
 		}
 		available = {
-			10 = {  # Warsaw
-				is_controlled_by = GER
+			or = {
+				10 = { # Warsaw
+					is_controlled_by = AUS
+				}
+				10 = { # Warsaw
+					is_controlled_by = GER
+				}
 			}
 		}
 		complete_effect = {
@@ -765,13 +770,17 @@ missions = {
 			always = no
 		}
 		available = {
-			AUS = {
-				controls_province = 11586
+			NOT = {
+				160 = { # Venice
+					is_controlled_by = ITA
+				}
 			}
 		}
+		complete_effect = {
+			add_war_support = 0.1
+		}
 		timeout_effect = {
-			remove_ideas = AUS_Take_Belgrade
-			add_war_support = -0.2
+			add_war_support = -0.1
 		}
 	}
 
@@ -785,13 +794,17 @@ missions = {
 			always = no
 		}
 		available = {
-			AUS = {
-				controls_province = 11584
+			NOT = {
+				107 = { # Belgrade
+					is_controlled_by = SER
+				}
 			}
 		}
+		complete_effect = {
+			add_war_support = 0.1
+		}
 		timeout_effect = {
-			remove_ideas = AUS_Take_Venice
-			add_war_support = -0.2
+			add_war_support = -0.1
 		}
 	}
 

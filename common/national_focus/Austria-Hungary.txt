@@ -1696,7 +1696,10 @@ focus_tree = {
 			focus = AUS_For_The_Empire
 		}
 		completion_reward = {
-			add_ideas = AUS_Take_Belgrade
+			add_timed_idea = {
+				idea = AUS_Take_Belgrade
+				days = 70
+			}
 			activate_mission = Take_Belgrade_Mission
 		}
 	}
@@ -1738,7 +1741,10 @@ focus_tree = {
 			focus = AUS_For_The_Empire
 		}
 		completion_reward = {
-			add_ideas = AUS_Take_Venice
+			add_timed_idea = {
+				idea = AUS_Take_Venice
+				days = 70
+			}
 			activate_mission = Take_Venice_Mission
 		}
 	}

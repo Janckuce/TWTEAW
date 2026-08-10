@@ -10,7 +10,7 @@ field_engineering = {
         date > 1914.9.15
     }
 
-    bunker_max_level_terrain_limit = 1
+    # bunker_max_level_terrain_limit = 1
 
 	
     rewards = {
@@ -18,18 +18,21 @@ field_engineering = {
             bunker_max_level_terrain_limit = 1
         }
         sapper_fieldcraft = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
         }
         engineerdug_gun_emplacements = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
         }
         smoke_projector_training = {
             bunker_max_level_terrain_limit = 1
         }
         charge_and_flame = {
-            bunker_max_level_terrain_limit = 2
+            bunker_max_level_terrain_limit = 1
+            # enable_building = {
+            #     building = air_base
+            #     level = 3
+            # }
         }
-
     }
 }
 
@@ -51,12 +54,12 @@ last_stand = {
 
 
     # PREVIOUS DOCTRINE LEGACY
-    bunker_max_level_terrain_limit = 9 
+    bunker_max_level_terrain_limit = 5 
 
     rewards = {
         werwolf_groups = {
             army_core_defence_factor = 0.15
-            bunker_max_level_terrain_limit = 1
+            # bunker_max_level_terrain_limit = 1
         }
 
         pocket_consolidation = {
@@ -66,7 +69,7 @@ last_stand = {
         digging_in = {
             land_reinforce_rate = 0.05
             max_dig_in = 3
-            bunker_max_level_terrain_limit = 2
+            # bunker_max_level_terrain_limit = 2
         }
         stocking_up = {
             equipment_capture_factor = 0.1
@@ -96,41 +99,24 @@ guerilla_war = {
 
 
     # PREVIOUS DOCTRINE LEGACY
-    bunker_max_level_terrain_limit = 9
+    bunker_max_level_terrain_limit = 5
 
     rewards = {
         catch_and_seize = {
-            max_planning = 0.06
+            max_planning = 0.05
         }
         galvanize_support = {
-            max_planning = 0.04
-            engineer = {
-                fort = {
-                    attack = 0.06
-                }
-            }
+            max_command_power = 60
+            command_power_gain = 0.5
         }
         scorched_earth = {
-            max_planning = 0.02
-            engineer = {
-                fort = {
-                    attack = 0.08
-                }
-            }
+            breakthrough_factor = 0.25
         }
         urban_assaults = {
-            engineer = {
-                fort = {
-                    attack = 0.10
-                }
-            }
+            command_abilities_cost_factor = -0.25
         }
         defense_of_gained_power = {
-            engineer = {
-                fort = {
-                    attack = 0.12
-                }
-            }
+            max_planning = 0.05
         }
     }
 }

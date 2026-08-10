@@ -14,9 +14,10 @@ heavy_artillery_brigade = {
 	group = combat_support
 		
 	categories = {
-			category_army
-			category_line_artillery
-			category_artillery																	
+		category_front_line
+		category_army
+		category_line_artillery
+		category_artillery																	
 	}
 	
 	combat_width = 3
@@ -82,8 +83,8 @@ heavy_artillery_brigade = {
 		}
 
 		fort = {
-			attack = 1.25
-			defence = 0.1
+			attack = 0.5
+			breakthrough = 0.1
 		}
 
 		river = {
