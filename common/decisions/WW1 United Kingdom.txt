@@ -220,7 +220,7 @@ ENG_Send_Equipment_category = {
 		available = {
 			ORO = { has_country_flag = WW1_started_spectator }
 			ITA = {
-				has_idea = ITA_entente # WW1 entry check
+				# has_idea = ITA_entente # WW1 entry check
 				has_capitulated = no
 				OR = { # check if Italy can take delivery - can add more ports
 					controls_province = 6788	# Genoa
