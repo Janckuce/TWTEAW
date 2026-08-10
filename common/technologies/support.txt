@@ -81,6 +81,7 @@ technologies = {
 
 		enable_subunits = {
 			engineer
+			hq_engineer
 		}
 		
 		path = {
@@ -346,9 +347,7 @@ technologies = {
 
 		enable_subunits = {
 			recon
-			# mot_recon
-			# armored_car_recon
-			# light_tank_recon
+			hq_recon
 		}
 		
 		path = {
@@ -408,6 +407,9 @@ technologies = {
 				initiative = 0.01
 				add = yes
 			}
+		}
+		enable_subunits = {
+			hq_signal
 		}
 		
 		path = {
@@ -545,6 +547,7 @@ technologies = {
 
 		enable_subunits = {
 			military_police
+			hq_military_police
 		}
 		
 		path = {
@@ -730,7 +733,9 @@ technologies = {
 
 		enable_subunits = {
 			maintenance_company
+			hq_maintenance
 		}
+		
 		
 		path = {
 			leads_to_tech = tech_maintenance_company2
@@ -911,6 +916,7 @@ technologies = {
 
 		enable_subunits = {
 			field_hospital
+			hq_field_hospital
 		}
 		
 		path = {
@@ -1096,6 +1102,7 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
+			hq_logistics
 		}
 		
 		path = {
