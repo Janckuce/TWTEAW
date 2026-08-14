@@ -18,8 +18,8 @@ NDefines.NOperatives.NTEL_NETWORK_STATE_MODIFIER_STRENGTH_THRESHOLD = 500
 NDefines.NOperatives.OPERATIVE_BASE_INTEL_NETWORK_GAIN = 0.5
 NDefines.NMilitary.BASE_STRENGTH_LOSS_FACTOR = 0.05		-- Base strength loss factor for attrition
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.12        -- Modifier for land combat strength damage
-NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 5        -- Chance for land combat to damage fortifications
-NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.005        -- Collateral damage to fortifications in land combat
+NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 4        -- Vanilla = 5 , Chance for land combat to damage fortifications
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.003        -- Vanilla = 0.005 , Collateral damage to fortifications in land combat
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.1			-- Base fort penalty for land combat
 NDefines.NMilitary.TRAINING_ATTRITION = 0
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5
@@ -112,4 +112,9 @@ NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0 --0.5				-- Multip
 NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0 --0.5				-- Multiplied to the Stability/WarSupport drift values of each country after the one with the greatest values. The process is done separatly for Stability and WarSupport
 NDefines.NOperatives.PROPAGANDA_DAILY_XP_GAIN = 0 --0.350
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.1 --0.25 in Vanilla 
--- NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6
+-- NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6 (IDEA)
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.1 --0.27 in Vanilla
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.01 --0.04 in Vanilla
+NDefines.NAir.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.20 --0.05 in Vanilla 
+NDefines.NAir.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.10 --0.10 in Vanilla
+NDefines.NAir.LAND_COMBAT_BOMBERS_PER_LAND_FORT_LEVEL = 12 --6 in Vanilla 	

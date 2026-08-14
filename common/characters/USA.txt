@@ -38,11 +38,12 @@ characters={
 			}
 		}
 		
-		field_marshal={
-			skill=2
-			attack_skill=2
+		corps_commander={
+			traits = { bearer_of_artillery infantry_leader engineer_officer }
+			skill=3
+			attack_skill=7
 			defense_skill=4
-			planning_skill=1
+			planning_skill=3
 			logistics_skill=3
 		}
 	}
@@ -73,12 +74,13 @@ characters={
 			}
 		}
 		
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
+		field_marshal={
+			traits = { organizer }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=7
 		}
 	}
 	
