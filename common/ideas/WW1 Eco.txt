@@ -1,0 +1,82 @@
+ideas = {
+    country = {
+ 
+		temp_effc_retention = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				line_change_production_efficiency_factor = 0.35
+			}
+		}
+
+		temp_base_effc = {
+
+			picture = generic_improved_industries
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_start_efficiency_factor = 0.20
+			}
+		} 
+
+		temp_effc_gain = {
+
+			picture = ARG_public_works_investment
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.50
+			}
+		} 
+
+		temp_output = {
+
+			picture = ARG_construction_guilds
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		} 
+
+	}
+}

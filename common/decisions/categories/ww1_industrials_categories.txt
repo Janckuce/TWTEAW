@@ -1,0 +1,42 @@
+industrial_complex_decisions = {
+	icon = GFX_RAJ_decision_investment_mils_icon
+
+	visible_when_empty = no
+
+	visible = {
+		OR = {
+			has_completed_focus = GER_invest_in_military
+			has_completed_focus = AUS_Economic_Plan_Right3
+			has_completed_focus = ITA_focus_mil_factory_2
+			has_completed_focus = ENG_end_the_isolation
+			has_completed_focus = TUR_Industrialising
+			has_completed_focus = RUS_focus_SR_Expand_Tula_Arms_Plant
+			has_completed_focus = MON_RUS_Mills6
+			has_completed_focus = BEL_Belgium_Defense2
+			has_completed_focus = BUL_bulgarian_industrial_works
+			has_completed_focus = FRA_Military_Factories_Continue
+			AND = {
+				tag = FRA
+				NOT = {
+					OR = {
+						has_idea = FRA_Fragmented_Government
+						has_idea = FRA_Fragmented_Government1
+						has_idea = FRA_Fragmented_Government2
+						has_idea = FRA_Fragmented_Government3
+					}
+				}
+			}
+			has_completed_focus = SER_Industrial_Base3
+			AND = {
+				tag = SER
+				has_capitulated = yes
+			}
+		}
+	}
+
+	priority = 100
+
+	allowed = {
+		# always = yes
+	}
+}

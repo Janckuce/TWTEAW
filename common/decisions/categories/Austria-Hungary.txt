@@ -42,6 +42,8 @@ AUS_core_decisions = {
     }
 
     visible = {
-        always = yes
+        NOT = {
+            has_completed_focus = AUS_austria_first1
+        }
     }
 }

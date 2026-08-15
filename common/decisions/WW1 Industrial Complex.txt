@@ -1,0 +1,83 @@
+industrial_complex_decisions = {
+
+	effc_retention_decision = {
+
+		icon = GFX_decision_generic_wreckers
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = temp_effc_retention
+				days = 60
+			}
+		}
+
+		days_remove = 720
+	}
+
+	base_effc_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = temp_base_effc
+				days = 60
+			}
+		}
+
+		days_remove = 720
+	}
+
+	effc_gain_decision = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = temp_effc_gain
+				days = 120
+			}
+		}
+
+		days_remove = 720
+	} 
+
+	factory_output_decision = {
+
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = temp_output
+				days = 120
+			}
+		}
+
+		days_remove = 720
+	} 
+	
+}
