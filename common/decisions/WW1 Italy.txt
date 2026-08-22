@@ -56,6 +56,7 @@ ITA_Lybia_War_Category = {
 		activation = {
 			AND = {
 				has_war_with = TUR
+				date < 1912.1.1
 				has_country_flag = {
 					flag = ITA_attack_turkey
 				}
