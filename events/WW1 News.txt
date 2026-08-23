@@ -1046,3 +1046,19 @@ news_event = {
 		set_sub_doctrine = field_engineering
 	}
 }
+
+#Second Balkan Pact
+news_event = {
+	id = ww1_news.54
+	title = ww1_news.54.t
+	desc = ww1_news_desc.54
+	picture = GFX_news_event_bulgarian_partisans
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_news.54.a
+	}
+}

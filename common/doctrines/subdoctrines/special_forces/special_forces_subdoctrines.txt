@@ -153,7 +153,6 @@ mountaineers_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.1
 		}
     }
 }
@@ -253,7 +252,12 @@ marines_1 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.10
+			special_forces_support = {
+				 battalion_mult = {
+					category = category_marines
+					hardness = 1					
+				}
+			}		
 		}
     }
 }
@@ -717,7 +721,9 @@ rangers_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.1
+			special_forces_training_time_factor = -0.75
+			experience_gain_ranger_battalion_training_factor = 1
+			experience_gain_ranger_battalion_combat_factor = 0.5
 		}
     }
 }

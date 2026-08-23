@@ -769,16 +769,17 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
-			ENG = {
-				declare_war_on = {
-					target = SOM
-					type = annex_everything
-				}
-				add_timed_idea = {
-					idea = ENG_modernising
-					days = 120
-				}
-			}
+			# ENG = {
+			# 	declare_war_on = {
+			# 		target = SOM
+			# 		type = annex_everything
+			# 	}
+			# 	add_timed_idea = {
+			# 		idea = ENG_modernising
+			# 		days = 120
+			# 	}
+			# }
+			annex_country = {target = SOM}
 		}
 	}
 	focus = {

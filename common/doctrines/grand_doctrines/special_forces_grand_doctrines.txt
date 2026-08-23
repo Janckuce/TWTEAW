@@ -94,12 +94,8 @@ special_forces_quality = {
 
     milestones = {
         {
-            category_special_forces = {
-                acclimatization_hot_climate_gain_factor = 0.1
-                acclimatization_cold_climate_gain_factor = 0.1
-                soft_attack = 0.05
-                breakthrough = 0.05
-            }
+            special_forces_attack_factor = 0.1
+
             effect = {
                 if = {
                     limit = {
@@ -115,12 +111,8 @@ special_forces_quality = {
             }            
         }
         {
-            category_special_forces = {
-                acclimatization_hot_climate_gain_factor = 0.1
-                acclimatization_cold_climate_gain_factor = 0.1
-                soft_attack = 0.05
-                defense = 0.05
-            }
+            special_forces_attack_factor = 0.1
+            
             effect = {
                 if = {
                     limit = {
