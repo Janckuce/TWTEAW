@@ -448,31 +448,28 @@ RUS_Military_Academy_Category = {
 
 	RUS_Organised_Offensive = {
 		priority = 1
-		custom_cost_trigger = {
-			command_power > 25
-		}
+		cost = 25
+
 		visible = {
 			NOT = {
 				has_idea = RUS_Mobilise_The_Nation
 			}
 		}
-		custom_cost_text = decision_cost_CP_25
+		# custom_cost_text = decision_cost_CP_25
 		complete_effect = {
 			add_timed_idea = {
 				idea = RUS_Mobilise_The_Nation
 				days = 100
 			}
-			add_command_power = -25
 		}
 	}
 
 	RUS_Mobilisation = {
 		priority = 1
-		custom_cost_trigger = {
-			command_power > 25
-		}
+		cost = 25
+
 		fire_only_once = yes
-		custom_cost_text = decision_cost_CP_25
+		# custom_cost_text = decision_cost_CP_25
 		available = {
 			has_war = yes
 			date > 1916.6.4
@@ -483,7 +480,6 @@ RUS_Military_Academy_Category = {
 				idea = RUS_Brusilov_Offensive
 				days = 80
 			}
-			add_command_power = -25
 		}
 	}
 }

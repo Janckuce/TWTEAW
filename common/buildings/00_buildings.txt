@@ -32,18 +32,19 @@ buildings = {
 	#   repair_speed_factor = 0.5 # Optional. Factor for how fast the building is repaired (default = 1.0)
 
 	infrastructure = {
-		base_cost = 6000
+		base_cost = 3000
 		icon_frame = 3
 		infrastructure = yes
 		value = 1
 		damage_factor = 0.1
 
 		show_modifier = yes
-		allied_build = yes
+		# allied_build = yes
+		per_level_extra_cost = 1000		
 
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 5
+			state_max = 10
 		}
 		country_modifiers = {
 			modifiers = {
@@ -64,7 +65,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 50
 		}
 	}
 
@@ -79,7 +79,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 50
 		}
 	}
 
@@ -93,7 +92,7 @@ buildings = {
 		allied_build = yes
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 2
+			state_max = 8
 		}
 	}
 
@@ -147,6 +146,7 @@ buildings = {
 			group_by = special_project_facility
 		}
 		only_costal = yes
+		is_buildable = no
 	}
 
 	naval_base = {
@@ -240,7 +240,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
 		}
 	}
 
@@ -260,30 +259,48 @@ buildings = {
 		}
 	}
 
-	synthetic_refinery = {
+	radar_station = {
 		show_on_map = 1
-		base_cost = 14500
-		icon_frame = 10
-		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_rubber = 1 # May use local_resources_ + any resource name
-		refinery = yes
-		value = 5
-		damage_factor = 0.1
+		base_cost = 2000
+		icon_frame = 11
+		radar = yes
+		damage_factor = 0.5
+		value = 4
+		centered = yes
+		allied_build = yes
 		infrastructure_construction_effect = yes
-		
-		show_modifier = yes
-
-		country_modifiers = {
-			modifiers = {
-			fuel_gain_from_states = 2.0 #per hour
-			}
-		}
-
+		# hide_if_missing_tech = yes
 		level_cap = {
-			shares_slots = yes
-			state_max = 3
+			state_max = 6 # This is the max unlock level
 		}
 	}
+
+	# chemical_plant = {
+	# 	# show_on_map = 1
+	# 	base_cost = 6400
+	# 	icon_frame = 10
+	# 	# rocket_production = 0
+	# 	# rocket_launch_capacity = 1
+	# 	# value = 1
+	# 	# tags = {}
+	# 	infrastructure_construction_effect = yes
+	# 	disabled_in_dmz = yes
+	# 	# spawn_point = rocket_site_spawn
+	# 	per_level_extra_cost = -100		
+	# 	level_cap = {
+	# 		shares_slots = yes
+	# 		state_max = 25
+	# 	}
+	# 	country_modifiers = {
+	# 		modifiers = {
+	# 			country_resource_cost_coal = 2
+	# 			command_power_gain = 0.1
+	# 			max_command_power = 10
+	# 		}
+	# 	}
+	# }
+
+
 
 	steel_refinery = {
 		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
@@ -293,7 +310,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 25
 		}
 
 		local_resources_steel = 6 # May use local_resources_ + any resource name
@@ -312,7 +328,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 25
 		}
 
 		local_resources_coal = 6 # May use local_resources_ + any resource name
@@ -333,7 +348,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 25
 		}
 
 		local_resources_sulfur = 6 # May use local_resources_ + any resource name
@@ -344,6 +358,32 @@ buildings = {
 		}
 	}
 
+	synthetic_refinery = {
+		show_on_map = 1
+		base_cost = 5000
+		icon_frame = 10
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
+		# local_resources_rubber = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		value = 1
+		damage_factor = 2
+		infrastructure_construction_effect = yes
+		per_level_extra_cost = -100		
+		
+		show_modifier = yes
+
+		country_modifiers = {
+			modifiers = {
+				command_power_gain = 0.1
+				max_command_power = 10
+				country_resource_cost_coal = 2
+			}
+		}
+
+		level_cap = {
+			shares_slots = yes
+		}
+	}
 
 	fuel_silo = {
 		show_on_map = 1
@@ -366,22 +406,6 @@ buildings = {
 		}
 	}
 
-	radar_station = {
-		show_on_map = 1
-		base_cost = 2000
-		icon_frame = 11
-		radar = yes
-		damage_factor = 0.5
-		value = 4
-		centered = yes
-		allied_build = yes
-		infrastructure_construction_effect = yes
-		hide_if_missing_tech = yes
-		level_cap = {
-			state_max = 6 # This is the max unlock level
-		}
-	}
-
 	mega_gun_emplacement = {
 		dlc_allowed = { has_dlc = Gotterdammerung }
 		hide_if_missing_tech = yes
@@ -395,13 +419,13 @@ buildings = {
 		gun_emplacement = yes
 		spawn_point = rocket_site_spawn
 		level_cap = {
-			state_max = 1
+			state_max = 0
 			shares_slots = yes
 			exclusive_with = rocket_site
 		}
 		#Building utilizes equipment "explosive_ammo_equipment" as ammunition for the air mission barrage
+		is_buildable = no
 	}
-
 
 	rocket_site = {
 		show_on_map = 1
@@ -415,11 +439,14 @@ buildings = {
 		disabled_in_dmz = yes
 		spawn_point = rocket_site_spawn
 		level_cap = {
-			state_max = 3
+			state_max = 0
 			shares_slots = yes
 			exclusive_with = mega_gun_emplacement
 		}
+		is_buildable = no
 	}
+
+
 
 	nuclear_facility = {
 		show_on_map = 1
@@ -452,6 +479,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		is_buildable = no
 	}
 
 	air_facility = {
@@ -475,6 +503,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		is_buildable = no
 	}
 
 	land_facility = {
@@ -498,6 +527,7 @@ buildings = {
 			state_max = 1
 			group_by = special_project_facility
 		}
+		is_buildable = no
 	}
 
 	dam = {

@@ -45,8 +45,8 @@ ability = {
 		
 		unit_modifiers = {
 			# add_temporary_buff_to_units = {
-				offence = 0.25
-				breakthrough_factor = 0.25
+				offence = 0.35
+				breakthrough_factor = 0.35
 				# org_damage_multiplier = -0.25
 				
 				# days = 7
@@ -66,11 +66,12 @@ ability = {
 			is_border_war = no
 		}
 		
-		cost = 0.06
+		cost = 0.00
 		duration = 168
 		
 		unit_modifiers = {
-			planning_speed = 3.0
+			planning_speed = 2.0
+			supply_consumption_factor = 0.25
 		}
 		
 		

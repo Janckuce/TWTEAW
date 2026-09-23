@@ -106,14 +106,13 @@ guerilla_war = {
             max_planning = 0.05
         }
         galvanize_support = {
-            max_command_power = 60
-            command_power_gain = 0.5
+            planning_speed = 0.35
         }
         scorched_earth = {
-            breakthrough_factor = 0.25
+            command_abilities_cost_factor = -0.15
         }
         urban_assaults = {
-            command_abilities_cost_factor = -0.25
+            breakthrough_factor = 0.25
         }
         defense_of_gained_power = {
             max_planning = 0.05
