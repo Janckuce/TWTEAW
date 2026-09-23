@@ -10,7 +10,8 @@ NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 60  		-- how many divisions a
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 60		-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which militaryfactories produce equipment
+NDefines.NProduction.BASE_FACTORY_SPEED = 6.6		-- Speed at which civilian factories produce buildings
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which military factories produce equipment
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0		-- Cost of changing a brigade in a division
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0

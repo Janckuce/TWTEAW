@@ -428,7 +428,7 @@ guiTypes = {
 				
 				gridBoxType = {
 					name = "shared_item_grid"
-					position = { x = 46 y = 58 }
+					position = { x = 46 y = 55 }
 					size = { width = 100% height = 100% }
 					slotsize = { width = 60 height = 53 }
 					max_slots_horizontal = 3
@@ -648,7 +648,22 @@ guiTypes = {
 			vertical_alignment = center
 			alwaystransparent = yes
 		}
-
+##
+		instantTextboxType = {
+			name = "locations_infrastructure_level"
+			position = { x = 10 y = 4 }
+			textureFile = ""
+			font = "cg_16b"
+			borderSize = { x = 0 y = 0 }
+			text = "INFRA_VAL_MENU" 
+			maxWidth = 150
+			maxHeight = 40
+			format = right
+			multiline = yes
+			vertical_alignment = center
+			alwaystransparent = yes
+		}
+##
 		iconType = {
 			name = "picture"
 			position = { x = 172 y = 5 }

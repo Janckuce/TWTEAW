@@ -37,14 +37,16 @@ buildings = {
 		infrastructure = yes
 		value = 1
 		damage_factor = 0.1
-
-		show_modifier = yes
+		# show_modifier = yes
 		# allied_build = yes
 		per_level_extra_cost = 1000		
 
 		infrastructure_construction_effect = yes
 		level_cap = {
 			state_max = 10
+		}
+		state_modifiers = {
+			local_building_slots = 1
 		}
 		country_modifiers = {
 			modifiers = {
@@ -62,6 +64,7 @@ buildings = {
 		icon_frame = 2
 		value = 8
 		damage_factor = 0.1
+		per_level_extra_cost = -140
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
@@ -70,12 +73,13 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 10800
+		base_cost = 9500
 		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
 		value = 5
 		damage_factor = 0.1
+		per_level_extra_cost = -200
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
@@ -84,7 +88,8 @@ buildings = {
 
 	air_base = {
 		show_on_map = 1
-		base_cost = 1250
+		base_cost = 1000
+		per_level_extra_cost = 500		
 		icon_frame = 5
 		air_base = yes
 		value = 1
@@ -370,7 +375,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		per_level_extra_cost = -100		
 		
-		show_modifier = yes
+
 
 		country_modifiers = {
 			modifiers = {
@@ -379,7 +384,8 @@ buildings = {
 				country_resource_cost_coal = 2
 			}
 		}
-
+		show_modifier = yes
+		
 		level_cap = {
 			shares_slots = yes
 		}

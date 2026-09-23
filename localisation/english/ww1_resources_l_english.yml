@@ -11,9 +11,20 @@
  modifier_production_speed_coal_refinery_factor:0 "§YCoal Refinery§! construction Speed"
  synthetic_refinery: "Chemical Plant"
  synthetic_refinery_plural: "Chemical Plants"
- synthetic_refinery_desc: "This building produces chemical weapons, handle with care."
- radar_station: "Radar Station"
- radar_station_plural: "Radar Stations"
- radar_station_desc: "Radar allows you to gain intel on enemy troops in nearby states.\nA higher radar level in a state increases the effective range of the radar.\nRadar also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition radar increases the detection of enemy fleets at sea."
+ synthetic_refinery_desc: "This building produces chemical weapons, handle with care.\n\nDaily Poison Gas Production: §G0.10§!\nPoison Gas Storage Increase: §G10§!\nCoal Upkeep: §R2§!"
+ radar_station: "Recon Balloon"
+ radar_station_plural: "Recon Balloons"
+ radar_station_desc: "Recon Balloons allows you to gain intel on enemy troops in nearby states.\nA higher level in a state increases the effective range of the balloons.\Recon Balloons also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition these Recon Balloons increases the detection of enemy fleets at sea."
  country_resource_cost_coal: "Coal Upkeep"
+ modifier_production_cost_infrastructure_factor: "Infrastructure Construction Cost"
+
  command_power_gain_add_factor_tt: " $MODIFIER_COMMAND_POWER_ADD$: $RIGHT|+=%1$"
+
+
+ INFRA_VAL_MENU: "£infrastructure_texticon $[?infrastructure_level|0%+=]$"
+
+#  INFRA_VAL: "£infrastructure_texticon $VAL|0%+=$" x$VAL|2H$
+#  INFRA_VAL_20: "£infrastructure_texticon $VAL|0%R$"
+#  INFRA_VAL_40: "£infrastructure_texticon $VAL|0%O$"
+#  INFRA_VAL_60: "£infrastructure_texticon $VAL|0%Y$"
+#  INFRA_VAL_80: "£infrastructure_texticon $VAL|0%G$"
