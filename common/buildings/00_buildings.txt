@@ -67,6 +67,7 @@ buildings = {
 		per_level_extra_cost = -140
 		infrastructure_construction_effect = yes
 		level_cap = {
+			state_max = 30
 			shares_slots = yes
 		}
 	}
@@ -82,6 +83,7 @@ buildings = {
 		per_level_extra_cost = -200
 		infrastructure_construction_effect = yes
 		level_cap = {
+			state_max = 30
 			shares_slots = yes
 		}
 	}
@@ -236,6 +238,7 @@ buildings = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		base_cost = 6400
+		per_level_extra_cost = -120
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 4
@@ -244,6 +247,7 @@ buildings = {
 		damage_factor = 0.1
 		infrastructure_construction_effect = yes
 		level_cap = {
+			state_max = 30
 			shares_slots = yes
 		}
 	}
@@ -308,7 +312,7 @@ buildings = {
 
 
 	steel_refinery = {
-		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
+		base_cost = 8000	#Was 3000, Reduced by about 20k form 45k In
 		icon_frame = 28
 		refinery = yes
 		value = 1
@@ -316,7 +320,9 @@ buildings = {
 		level_cap = {
 			shares_slots = yes
 		}
+		# show_modifier = yes
 
+		local_resources_tungsten = 1
 		local_resources_steel = 6 # May use local_resources_ + any resource name
 		country_modifiers = {
 			modifiers = {
@@ -326,7 +332,7 @@ buildings = {
 	}
 
 	coal_refinery = {
-		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
+		base_cost = 8000	#Was 3000, Reduced by about 20k form 45k In
 		icon_frame = 29
 		refinery = yes
 		value = 1
@@ -334,7 +340,9 @@ buildings = {
 		level_cap = {
 			shares_slots = yes
 		}
+		# show_modifier = yes
 
+		local_resources_sulfur = 1
 		local_resources_coal = 6 # May use local_resources_ + any resource name
 		# country_modifiers = {
 		# 	modifiers = {
@@ -346,7 +354,7 @@ buildings = {
 	}
 
 	sulfur_refinery = {
-		base_cost = 10000	#Was 3000, Reduced by about 20k form 45k In
+		base_cost = 8000	#Was 3000, Reduced by about 20k form 45k In
 		icon_frame = 30
 		refinery = yes
 		value = 1
@@ -354,6 +362,7 @@ buildings = {
 		level_cap = {
 			shares_slots = yes
 		}
+		# show_modifier = yes
 
 		local_resources_sulfur = 6 # May use local_resources_ + any resource name
 		country_modifiers = {
@@ -368,7 +377,7 @@ buildings = {
 		base_cost = 5000
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		# local_resources_rubber = 1 # May use local_resources_ + any resource name
+		local_resources_rubber = 0 # May use local_resources_ + any resource name
 		refinery = yes
 		value = 1
 		damage_factor = 2
@@ -382,11 +391,13 @@ buildings = {
 				command_power_gain = 0.1
 				max_command_power = 10
 				country_resource_cost_coal = 2
+				fuel_gain_from_states = 1.0 #per hour
 			}
 		}
-		show_modifier = yes
+		# show_modifier = yes
 		
 		level_cap = {
+			state_max = 30
 			shares_slots = yes
 		}
 	}
