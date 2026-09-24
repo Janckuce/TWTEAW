@@ -339,9 +339,9 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "cp"
-			position = { x= 732 y = 5}
+			position = { x= 732 y = 4}
 			clipping = no
-			size = { width=62 height=30 }
+			size = { width=62 height=32 }
 			Orientation = UPPER_LEFT
 
 				background = {
@@ -350,8 +350,8 @@ guiTypes = {
 				}
 			iconType = {
 				name ="command_power_icon"
-				spriteType = "GFX_command_power"
-			position = { x= 5 y = 5 }  
+				spriteType = "GFX_ability_gas_attack"
+			position = { x= -4 y = 0 }  
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
