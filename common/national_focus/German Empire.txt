@@ -1179,6 +1179,89 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		available_if_capitulated = yes
+		id = GER_frankfurt_chemical_industry
+		icon = GFX_focus_SIA_chemical_imports
+		x = 23
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = GER_Our_Kaiser
+		}
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+			ai_will_do = {
+			factor = 6
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		
+		completion_reward = {
+		    843 = { #Ermland-Frankfurt
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = GER_chemical_research1
+				bonus = 1
+				uses = 1
+				technology = ww1_synthetic_oil_experiments
+			}
+		}
+	}
+
+	focus = {
+		available_if_capitulated = yes
+		id = GER_resource_technology
+		icon = GFX_focus_GER_factories_for_resources
+		relative_position_id = GER_frankfurt_chemical_industry
+		x = 0
+		y = 1
+		cost = 5
+
+		prerequisite = {
+			focus = GER_frankfurt_chemical_industry
+		}
+		bypass = {
+			#
+		}
+		available = {
+		    #
+		}
+			ai_will_do = {
+			factor = 6
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_resource_research1
+				bonus = 1
+				uses = 2
+				category = excavation_tech
+			}
+			add_tech_bonus = {
+				name = GER_synth_research1
+				bonus = 1
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
 	
 	focus = {
 		available_if_capitulated = yes
