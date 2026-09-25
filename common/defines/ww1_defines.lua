@@ -99,6 +99,7 @@ NDefines.NSupply.SUPPLY_THRESHOLD_FOR_ARMY_ATTRITION = 0.35  -- 0.35
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1
+NDefines.NMilitary.REGIMENTAL_SUPPORT_SLOT_COST_MULTIPLIER = 0.0 -- (0.5 in vanilla) Regimental support slot costs are scaled by this value compared to normal support slots
 
 -- Navy Fuel consumption reduced by 70%
 NDefines.NNavy.FUEL_COST_MULT = 0.03 
