@@ -144,9 +144,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_category_tooltip = industrial_complex_decisions
-			add_offsite_building = {
-				type = arms_factory
-				level = 6
+			679 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
 			}
 		}
 	}

@@ -2,11 +2,11 @@
  PRODUCTION_MATERIALS_SULFUR:0 "Sulfur"
  sulfur_desc:0 "Toxic element used for creating explosive materials."
  steel_refinery:0 "Steel Mill"
- steel_refinery_desc:0 "Costs §R-2§! Coal and Provides:"
+ steel_refinery_desc:0 "Costs §R-2§! Coal £GFX_resources_strip|7 and Provides:"
  coal_refinery:0 "Coal Refinery"
  coal_refinery_desc:0 "Provides:"
  sulfur_refinery:0 "Sulfur Refinery"
- sulfur_refinery_desc:0 "Costs §R-2§! Coal and Provides:"
+ sulfur_refinery_desc:0 "Costs §R-2§! Coal £GFX_resources_strip|7 and Provides:"
  modifier_production_speed_sulfur_refinery_factor:0 "§YSulfur Refinery§! construction Speed"
  modifier_production_speed_coal_refinery_factor:0 "§YCoal Refinery§! construction Speed"
  synthetic_refinery: "Chemical Plant"
@@ -17,6 +17,7 @@
  radar_station_desc: "Recon Balloons allows you to gain intel on enemy troops in nearby states.\nA higher level in a state increases the effective range of the balloons.\Recon Balloons also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition these Recon Balloons increases the detection of enemy fleets at sea."
  country_resource_cost_coal: "" 
  modifier_production_cost_infrastructure_factor: "Infrastructure Construction Cost"
+ infrastructure_desc: "Per Level:\nBuilding Slots §G+1§!\nConstruction Speed Multiplier §G+10%§!\nResources Multiplier §G+15%§!"
 
  command_power_gain_add_factor_tt: " $MODIFIER_COMMAND_POWER_ADD$: $RIGHT|+=%1$"
 
