@@ -5,6 +5,8 @@ technologies = {
         allow = {
             always = no
         }
+		army_leader_cost_factor = -0.90
+		max_command_power = -1
 		enable_building = {
 			building = infrastructure
 			level = 5
@@ -290,6 +292,7 @@ technologies = {
 	dispersed_industry = {
 
 		global_building_slots = 1
+		global_building_slots_factor = 0.02
 		
 		research_cost = 1
 		
@@ -388,6 +391,7 @@ technologies = {
 	dispersed_industry2 = {
 
 		global_building_slots = 1
+		global_building_slots_factor = 0.02
 		
 		research_cost = 1
 		
@@ -481,6 +485,7 @@ technologies = {
 	dispersed_industry3 = {
 
 		global_building_slots = 1
+		global_building_slots_factor = 0.02
 		
 		research_cost = 1
 		
@@ -574,6 +579,7 @@ technologies = {
 	dispersed_industry4 = {
 
 		global_building_slots = 1
+		global_building_slots_factor = 0.02
 		
 		research_cost = 1
 		
@@ -662,6 +668,7 @@ technologies = {
 	dispersed_industry5 = {
 
 		global_building_slots = 1
+		global_building_slots_factor = 0.02
 		
 		research_cost = 1
 		
