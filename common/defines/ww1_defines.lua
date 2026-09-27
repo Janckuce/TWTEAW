@@ -60,7 +60,7 @@ NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1
 NDefines.NCountry.ATTACHE_XP_SHARE = 0
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 28
 NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0
-NDefines.NBuildings.MAX_SHARED_SLOTS = 30 
+NDefines.NBuildings.MAX_SHARED_SLOTS = 36 
 
 NDefines.NDoctrines.MASTERY_BANK_MAX = 120.0                                            -- The maximum amount of mastery that can be banked
 NDefines.NDoctrines.MIN_MASTERY_GAIN_PER_DAY = 0.334

@@ -16,7 +16,6 @@ technologies = {
 	machine_tools_1 = {
 	
 		production_factory_max_efficiency_factor = 0.06
-		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		
 		path = {
@@ -49,7 +48,6 @@ technologies = {
 	machine_tools_2 = {
 	
 		production_factory_max_efficiency_factor = 0.08
-		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 
 		path = {
@@ -83,7 +81,6 @@ technologies = {
 	machine_tools_3 = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 
 		path = {
@@ -117,7 +114,6 @@ technologies = {
 	machine_tools_4 = {
 	
 		production_factory_max_efficiency_factor = 0.12
-		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 
 		path = {
@@ -151,7 +147,6 @@ technologies = {
 	machine_tools_5 = {
 	
 		production_factory_max_efficiency_factor = 0.14
-		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 
 		path = {
@@ -185,7 +180,6 @@ technologies = {
 	machine_tools_6 = {
 	
 		production_factory_max_efficiency_factor = 0.16
-		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 
 		research_cost = 1.5
@@ -261,7 +255,7 @@ technologies = {
 
 	concentrated_industry = {
 
-		global_building_slots_factor = 0.08
+		global_building_slots_factor = 0.13
 		
 		# path = {
 		# 	leads_to_tech = concentrated_industry2 
@@ -291,8 +285,7 @@ technologies = {
 
 	dispersed_industry = {
 
-		global_building_slots = 1
-		global_building_slots_factor = 0.02
+		global_building_slots = 2
 		
 		research_cost = 1
 		
@@ -360,7 +353,7 @@ technologies = {
 
 	concentrated_industry2 = {
 
-		global_building_slots_factor = 0.08
+		global_building_slots_factor = 0.13
 		
 		# path = {
 		# 	leads_to_tech = concentrated_industry2 
@@ -390,8 +383,7 @@ technologies = {
 
 	dispersed_industry2 = {
 
-		global_building_slots = 1
-		global_building_slots_factor = 0.02
+		global_building_slots = 2
 		
 		research_cost = 1
 		
@@ -459,7 +451,7 @@ technologies = {
 	
 	concentrated_industry3 = {
 
-		global_building_slots_factor = 0.08
+		global_building_slots_factor = 0.13
 		
 		research_cost = 1
 		
@@ -484,8 +476,7 @@ technologies = {
 
 	dispersed_industry3 = {
 
-		global_building_slots = 1
-		global_building_slots_factor = 0.02
+		global_building_slots = 2
 		
 		research_cost = 1
 		
@@ -553,7 +544,7 @@ technologies = {
 
 	concentrated_industry4 = {
 
-		global_building_slots_factor = 0.08
+		global_building_slots_factor = 0.13
 		
 		research_cost = 1
 		
@@ -578,8 +569,7 @@ technologies = {
 
 	dispersed_industry4 = {
 
-		global_building_slots = 1
-		global_building_slots_factor = 0.02
+		global_building_slots = 2
 		
 		research_cost = 1
 		
@@ -642,7 +632,7 @@ technologies = {
 
 	concentrated_industry5 = {
 
-		global_building_slots_factor = 0.08
+		global_building_slots_factor = 0.13
 		
 		research_cost = 1
 		
@@ -667,8 +657,7 @@ technologies = {
 
 	dispersed_industry5 = {
 
-		global_building_slots = 1
-		global_building_slots_factor = 0.02
+		global_building_slots = 2
 		
 		research_cost = 1
 		

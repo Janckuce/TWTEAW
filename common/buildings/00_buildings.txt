@@ -57,33 +57,37 @@ buildings = {
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 7200
+		base_cost = 7000
 		base_cost_conversion = 4000
 		military_production = 1
 		disabled_in_dmz = yes
 		icon_frame = 2
 		value = 8
 		damage_factor = 0.1
-		per_level_extra_cost = -140
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 30
+			state_max = 36
 			shares_slots = yes
 		}
 	}
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 9500
-		base_cost_conversion = 9000
+		base_cost = 7000
+		base_cost_conversion = 8000
 		general_production = 1
 		icon_frame = 1
 		value = 5
 		damage_factor = 0.1
-		per_level_extra_cost = -200
+		per_level_extra_cost = 250
 		infrastructure_construction_effect = yes
+
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.05
+		}
+
 		level_cap = {
-			state_max = 30
+			state_max = 36
 			shares_slots = yes
 		}
 	}
@@ -237,8 +241,7 @@ buildings = {
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
-		base_cost = 6400
-		per_level_extra_cost = -120
+		base_cost = 6000
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 4
@@ -247,7 +250,7 @@ buildings = {
 		damage_factor = 0.1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			state_max = 30
+			state_max = 36
 			shares_slots = yes
 		}
 	}
