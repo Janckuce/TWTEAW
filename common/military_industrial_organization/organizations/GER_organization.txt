@@ -197,9 +197,25 @@ GER_messerschmitt_organization = {
 		OR = {
 			tag = GER
 			tag = GCG
+			tag = TUR
 		}
 	}
-
+	available = {	
+		OR = {
+			FROM = {
+				tag = GER
+			}
+			FROM = {
+				tag = GCG
+			}
+			FROM = {
+				has_completed_focus = TUR_Air_Research
+			}
+		}
+	}
+	equipment_type = {
+        fighter
+    }
 	add_trait = {
 		token = GER_mio_trait_maintenance_first_design
 		name = GER_mio_trait_maintenance_first_design
@@ -244,13 +260,23 @@ GER_junkers_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_junkers
 	
-	allowed = {	 
+	allowed = {	
 		OR = {
-			tag = GER 
+			tag = GER
 			tag = GCG
-			AND = {
-				tag = ETH
-				has_dlc = "By Blood Alone"
+			tag = TUR
+		}
+	}
+	available = {	
+		OR = {
+			FROM = {
+				tag = GER
+			}
+			FROM = {
+				tag = GCG
+			}
+			FROM = {
+				has_completed_focus = TUR_Air_Research
 			}
 		}
 	}
@@ -280,6 +306,20 @@ GER_focke_wulf_organization = {
 		OR = {
 			tag = GER
 			tag = GCG
+			tag = TUR
+		}
+	}
+	available = {	
+		OR = {
+			FROM = {
+				tag = GER
+			}
+			FROM = {
+				tag = GCG
+			}
+			FROM = {
+				has_completed_focus = TUR_Air_Research
+			}
 		}
 	}
 }
@@ -290,29 +330,21 @@ GER_heinkel_organization = {
 	
 	allowed = {	
 		OR = {
-			tag = GER 
+			tag = GER
 			tag = GCG
+			tag = TUR
 		}
 	}
-
-	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = GER } }
+	available = {	
+		OR = {
+			FROM = {
+				tag = GER
 			}
-			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = BUL }
+			FROM = {
+				tag = GCG
 			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_heinkel_mio_flag
-				}
+			FROM = {
+				has_completed_focus = TUR_Air_Research
 			}
 		}
 	}
@@ -326,6 +358,20 @@ GER_dornier_organization = {
 		OR = {
 			tag = GER
 			tag = GCG
+			tag = TUR
+		}
+	}
+	available = {	
+		OR = {
+			FROM = {
+				tag = GER
+			}
+			FROM = {
+				tag = GCG
+			}
+			FROM = {
+				has_completed_focus = TUR_Air_Research
+			}
 		}
 	}
 }

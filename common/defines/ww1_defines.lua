@@ -125,3 +125,7 @@ NDefines.NAir.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.20 --0.05 in Vanilla
 NDefines.NAir.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.10 --0.10 in Vanilla
 NDefines.NAir.LAND_COMBAT_BOMBERS_PER_LAND_FORT_LEVEL = 12 --6 in Vanilla 	
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.0 --15.0 in Vanilla
+NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0				-- CP cost to maintain more ground crews
+NDefines.NAir.AIR_MORE_GROUND_CREWS_BOOST = 0.0					-- Efficienct boost for more ground crews
+
+NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 0	   -- command point cost for changing preferred tactic
