@@ -106,11 +106,11 @@ ideas = {
 			level = 5
 
 			modifier = {
-				consumer_goods_expected_value = 0.34 #0.35
+				consumer_goods_expected_value = 0.40 #0.35
 				production_speed_industrial_complex_factor = 0.2
-				production_speed_arms_factory_factor = -0.3
-				conversion_cost_civ_to_mil_factor= 0.3
-				conversion_cost_mil_to_civ_factor = -0.3
+				production_speed_arms_factory_factor = -0.4
+				conversion_cost_civ_to_mil_factor = 0.3
+				# conversion_cost_mil_to_civ_factor = -0.3
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 				stability_weekly = 0.001
@@ -124,6 +124,7 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
+				date > 1912.1.1
 				has_war_support > 0.15
 			}
 
@@ -132,8 +133,8 @@ ideas = {
 			level = 4
 
 			modifier = {
-				consumer_goods_expected_value = 0.32 #0.30
-				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_expected_value = 0.36 #0.30
+				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.25
 			}
@@ -164,6 +165,7 @@ ideas = {
 		partial_economic_mobilisation = {
 
 			available = {
+				date > 1913.1.1
 				has_war_support > 0.25
             }
 
@@ -172,8 +174,9 @@ ideas = {
 			level = 3
 
 			modifier = {
-				consumer_goods_expected_value = 0.30 #0.25
-				production_speed_arms_factory_factor = 0.15
+				consumer_goods_expected_value = 0.32 #0.25
+				production_speed_arms_factory_factor = 0.10
+				# production_speed_arms_factory_factor = 0.15
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = 0.1
 				fuel_gain_factor = -0.1
@@ -218,14 +221,14 @@ ideas = {
 			level = 2
 
 			modifier = {
-				consumer_goods_expected_value = 0.22 #0.20
+				consumer_goods_expected_value = 0.24 #0.20
 				conscription = -0.005
-				production_speed_arms_factory_factor = 0.30
+				production_speed_arms_factory_factor = 0.20
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = 0.2
 				war_support_weekly = -0.001
 				stability_weekly = -0.001
-				production_cost_bunker_factor = -0.4
+				production_cost_bunker_factor = -0.30
 			}
 
 			cancel_if_invalid = no
@@ -335,14 +338,14 @@ ideas = {
 			level = 1
 
 			modifier = {
-				consumer_goods_expected_value = 0.14 #0.10
+				consumer_goods_expected_value = 0.12 #0.10
 				conscription = -0.015
-				production_speed_arms_factory_factor = 0.45
+				production_speed_arms_factory_factor = 0.30
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 				war_support_weekly = -0.002
 				stability_weekly = -0.002
-				production_cost_bunker_factor = -0.7
+				production_cost_bunker_factor = -0.5
 			}
 
 			cancel_if_invalid = no

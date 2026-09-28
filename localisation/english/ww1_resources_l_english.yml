@@ -20,12 +20,14 @@
  radar_station_desc: "Recon Balloons allows you to gain intel on enemy troops in nearby states.\nA higher level in a state increases the effective range of the balloons.\Recon Balloons also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition these Recon Balloons increases the detection of enemy fleets at sea."
  country_resource_cost_coal: "" 
  modifier_production_cost_infrastructure_factor: "Infrastructure Construction Cost"
- infrastructure_desc: "Per Level:\nBuilding Slots §G+1§!\nConstruction Speed Multiplier §G+10%§!\nResources Multiplier §G+15%§!"
-
+ infrastructure_desc: "Per Level:\nBase State Building Slots §G+1§!\nConstruction Speed Multiplier §G+10%§!\nResources Multiplier §G+15%§!"
+ industrial_complex_desc: "Per Factory in State:\nLocal Construction Speed §G+5%§!"
  command_power_gain_add_factor_tt: " $MODIFIER_COMMAND_POWER_ADD$: $RIGHT|+=%1$"
 
 
- INFRA_VAL_MENU: "£infrastructure_texticon $[?infrastructure_level|0%+=]$"
+#  arms_factory_desc: "Per Factory in State:\nLocal Military Factory Construction Speed §R-5%§!"
+
+#  INFRA_VAL_MENU: "£infrastructure_texticon $[?infrastructure_level|0%+=]$"
 #Coal Upkeep
 #  INFRA_VAL: "£infrastructure_texticon $VAL|0%+=$" x$VAL|2H$ 
 #  INFRA_VAL_20: "£infrastructure_texticon $VAL|0%R$"

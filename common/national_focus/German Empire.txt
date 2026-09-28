@@ -793,26 +793,27 @@ focus_tree = {
 		completion_reward = {
 			51 = { #Rhineland
 				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 2
-					instant_build = yes
+					level = 7
+					# instant_build = yes
+
 				}
 			}
 			42 = { #Moseland
 				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
+					level = 7
+					# instant_build = yes
 				}
 			}
 			843 = { #Frankfurt Am Main
 				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
+				set_building_level = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
+					level = 7
+					# instant_build = yes
 				}
 			}
 		}

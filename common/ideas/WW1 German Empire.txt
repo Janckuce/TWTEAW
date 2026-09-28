@@ -628,6 +628,8 @@ ideas = {
 				stability_factor = 0.2
 				war_support_factor = 0.05
 				political_power_factor = 0.15
+				trade_laws_cost_factor = -0.15
+				offensive_war_stability_factor = 0.15
 			}
 		}
 			GER_Propaganda3 = {
@@ -636,8 +638,10 @@ ideas = {
 				stability_factor = 0.2
 				war_support_factor = 0.05
 				political_power_factor = 0.15
-				offensive_war_stability_factor = 0.1
-				min_export = -0.1
+				offensive_war_stability_factor = 0.15
+				min_export = -0.15
+				trade_laws_cost_factor = -0.15
+				local_resources_factor = 0.10
 			}
 		}
 			GER_Propaganda4 = {
@@ -648,8 +652,9 @@ ideas = {
 				political_power_factor = 0.15
 				offensive_war_stability_factor = 0.15
 				min_export = -0.15
-				trade_laws_cost_factor = -0.1
+				trade_laws_cost_factor = -0.15
 				resource_trade_cost_bonus_per_factory = 1
+				local_resources_factor = 0.10
 			}
 				targeted_modifier = {
 				tag = AUS
@@ -663,7 +668,7 @@ ideas = {
 		GER_Aid_For_Austria = {
 			picture = GER_german_trade
 			modifier = {
-				consumer_goods_factor = 0.075
+				political_power_gain = 0.1
 			}
 		}
 		GER_Prussian_Militarism = {
