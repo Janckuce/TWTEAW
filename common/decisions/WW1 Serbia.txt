@@ -223,11 +223,15 @@ SER_Chetnik_Recruitment = {
 }
 SER_annex_greece = {
 	SER_annex_greeks = {
-		allowed = {
+
+	allowed = {
 		tag = SER
 	}
 	available = {
 		has_capitulated = yes
+		ROM = {
+			has_capitulated = yes
+		}
 	}
 	complete_effect = {
 		every_state = {

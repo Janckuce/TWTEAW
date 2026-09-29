@@ -16,18 +16,28 @@ field_engineering = {
     rewards = {
         rapid_fire_lane_clearance = {
             bunker_max_level_terrain_limit = 1
+			state_production_speed_supply_node_factor = 0.20
+			state_production_speed_rail_way_factor = 0.20
         }
         sapper_fieldcraft = {
             bunker_max_level_terrain_limit = 1
+			state_production_speed_supply_node_factor = 0.20
+			state_production_speed_rail_way_factor = 0.20
         }
         engineerdug_gun_emplacements = {
             bunker_max_level_terrain_limit = 1
+			state_production_speed_supply_node_factor = 0.20
+			state_production_speed_rail_way_factor = 0.20
         }
         smoke_projector_training = {
             bunker_max_level_terrain_limit = 1
+			state_production_speed_supply_node_factor = 0.20
+			state_production_speed_rail_way_factor = 0.20
         }
         charge_and_flame = {
             bunker_max_level_terrain_limit = 1
+			state_production_speed_supply_node_factor = 0.20
+			state_production_speed_rail_way_factor = 0.20
             # enable_building = {
             #     building = air_base
             #     level = 3
@@ -55,7 +65,9 @@ last_stand = {
 
     # PREVIOUS DOCTRINE LEGACY
     bunker_max_level_terrain_limit = 5 
-
+    state_production_speed_supply_node_factor = 1
+    state_production_speed_rail_way_factor = 1
+    
     rewards = {
         werwolf_groups = {
             army_core_defence_factor = 0.15

@@ -1158,7 +1158,7 @@ technologies = {
 				add = yes
 			}
 		}
-		
+		supply_node_range = 0.06
 		
 		path = {
 			leads_to_tech = tech_logistics_company3
@@ -1212,6 +1212,8 @@ technologies = {
 				add = yes
 			}
 		}
+		supply_node_range = 0.06
+
 		path = {
 			leads_to_tech = tech_logistics_company4
 			research_cost_coeff = 1
@@ -1258,7 +1260,8 @@ technologies = {
 				add = yes
 			}
 		}
-
+		supply_node_range = 0.06
+		
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
