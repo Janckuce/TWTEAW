@@ -812,6 +812,11 @@ technologies = {
 		    leads_to_tech = ww1_construction5
 			research_cost_coeff = 1
 		}
+
+		path = {
+		    leads_to_tech = excavation5
+			research_cost_coeff = 1
+		} 
 		
 		research_cost = 2
 		start_year = 1916
@@ -886,6 +891,11 @@ technologies = {
 
 		path = {
 		    leads_to_tech = excavation2
+			research_cost_coeff = 1
+		}
+
+		path = {
+		    leads_to_tech = excavation4
 			research_cost_coeff = 1
 		}
 		
@@ -977,6 +987,37 @@ technologies = {
 		}
 	}
 
+	excavation4 = {
+
+		# XOR = {
+		# 	excavation1
+		# }
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = sulfur_refinery
+				resource = sulfur
+				amount = 2
+			}
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1913
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+	}
 	
 	ww1_excavation2 = {
 		
@@ -1108,6 +1149,38 @@ technologies = {
 					chromium > 8
 				}
 			}
+		}
+	}
+
+	excavation5 = {
+
+		# XOR = {
+		# 	excavation1
+		# }
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = sulfur
+				amount = 2
+			}
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.2
+		start_year = 1917
+		categories = {
+			industry
+			construction_tech
+			excavation_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 10 }
 		}
 	}
 
