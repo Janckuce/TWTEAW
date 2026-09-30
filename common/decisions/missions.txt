@@ -22,14 +22,14 @@ missions = {
 		}
 		complete_effect = {
 			GER = {
-				add_political_power = 100
+				add_political_power = 50
 				add_stability = 0.05
 				add_war_support = 0.05
 			}
 		}
 		timeout_effect = {
 			GER = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -63,26 +63,26 @@ missions = {
 		}
 		complete_effect = {
 			GER = {
-				add_political_power = 100
+				add_political_power = 50
 				add_stability = 0.05
 				add_war_support = 0.05
 			}
 			RUS = {
-				add_political_power = -50
-				add_stability = -0.25
-				add_war_support = -0.25
+				add_political_power = -25
+				add_stability = -0.05
+				add_war_support = -0.05
 			}
 		}
 		timeout_effect = {
 			GER = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
 			RUS = {
 				add_political_power = 50
-				add_stability = 0.1
-				add_war_support = 0.1
+				add_stability = 0.05
+				add_war_support = 0.05
 			}
 		}
 	}
@@ -110,25 +110,25 @@ missions = {
 		complete_effect = {
 			GER = {
 				add_political_power = 100
-				add_stability = 0.25
-				add_war_support = 0.25
+				add_stability = 0.1
+				add_war_support = 0.1
 			}
 			FRA = {
 				add_political_power = -50
-				add_stability = -0.25
-				add_war_support = -0.25
+				add_stability = -0.1
+				add_war_support = -0.1
 			}
 		}
 		timeout_effect = {
 			GER = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
 			FRA = {
 				add_political_power = 50
-				add_stability = 0.5
-				add_war_support = 0.5
+				add_stability = 0.1
+				add_war_support = 0.1
 			}
 		}
 	}
@@ -155,19 +155,19 @@ missions = {
 		}
 		complete_effect = {
 			RUS = {
-				add_political_power = 100
+				add_political_power = 50
 				add_stability = 0.05
 				add_war_support = 0.05
 			}
 			GER = {
-				add_political_power = -50
-				add_stability = -0.25
-				add_war_support = -0.25
+				add_political_power = -25
+				add_stability = -0.05
+				add_war_support = -0.05
 			}
 		}
 		timeout_effect = {
 			RUS = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -201,12 +201,12 @@ missions = {
 		}
 		complete_effect = {
 			RUS = {
-				add_political_power = 100
-				add_stability = 0.15
-				add_war_support = 0.15
+				add_political_power = 50
+				add_stability = 0.1
+				add_war_support = 0.1
 			}
 			AUS = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -247,19 +247,19 @@ missions = {
 		}
 		complete_effect = {
 			RUS = {
-				add_political_power = 100
-				add_stability = 0.15
-				add_war_support = 0.15
+				add_political_power = 50
+				add_stability = 0.1
+				add_war_support = 0.1
 			}
 			AUS = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
 		}
 		timeout_effect = {
 			RUS = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -290,14 +290,14 @@ missions = {
 		}
 		complete_effect = {
 			FRA = {
-				add_political_power = 100
+				add_political_power = 50
 				add_stability = 0.05
 				add_war_support = 0.05
 			}
 			GER = {
-				add_political_power = -50
-				add_stability = -0.15
-				add_war_support = -0.15
+				add_political_power = -25
+				add_stability = -0.05
+				add_war_support = -0.05
 			}
 			RUS = {
 				if = {
@@ -350,7 +350,7 @@ missions = {
 		}
 		timeout_effect = {
 			FRA = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -483,7 +483,7 @@ missions = {
 		}
 		complete_effect = {
 			TUR = {
-				add_political_power = -100
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -516,9 +516,9 @@ missions = {
 			}
 		complete_effect = {
 			TUR = {
-				add_political_power = -75
-				add_stability = -0.025
-				add_war_support = -0.025
+				add_political_power = -25
+				add_stability = -0.03
+				add_war_support = -0.03
 			}
 		}
 		timeout_effect = {
@@ -696,22 +696,22 @@ missions = {
 		}
 		timeout_effect = {
 			SER = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
 			GRE = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
 			MON = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
 			ROM = {
-				add_political_power = -50
+				add_political_power = -25
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
@@ -723,7 +723,7 @@ missions = {
 					}
 				}
 				TUR = {
-					add_political_power = -50
+					add_political_power = -25
 					add_stability = -0.05
 					add_war_support = -0.05
 				}
@@ -832,22 +832,22 @@ missions = {
 		}
 		complete_effect = {
 			AUS = {
-				add_political_power = 100
+				add_political_power = 50
 				add_stability = 0.05
 				add_war_support = 0.05
 				add_manpower = 50000
 			}
 			RUS = {
-				add_political_power = -50
-				add_stability = -0.15
-				add_war_support = -0.15
+				add_political_power = -25
+				add_stability = -0.05
+				add_war_support = -0.05
 			}
 		}
 		timeout_effect = {
 			AUS = {
-				add_political_power = -100
-				add_stability = -0.10
-				add_war_support = -0.10
+				add_political_power = -25
+				add_stability = -0.05
+				add_war_support = -0.05
 				add_timed_idea = {
 					idea = AUS_Failed_Warsaw_Mission
 					days = 90
