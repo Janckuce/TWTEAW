@@ -1119,12 +1119,13 @@ operation_coup_government = { ### 7 1/70
 		targets = { FROM }
 	}
 	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
-			}
-		}
+		always = no
+		# NOT = {
+		# 	has_game_rule = {
+		# 		rule = allow_coups
+		# 		option = BLOCKED
+		# 	}
+		# }
 	}
 
 	available = {
@@ -1715,7 +1716,8 @@ operation_collaboration_government = { ### 10 2/55
 
 
 	allowed = {
-		has_rule = can_create_collaboration_government
+		always = no
+		# has_rule = can_create_collaboration_government
 	}
 
 	available = {
@@ -1923,6 +1925,10 @@ operation_steal_tech_civilian = { ### 12 3/35
 	operatives = 3
 	cost_multiplier = 0.05
 
+	allowed = {
+		always = no
+	}
+
 	visible = {
 		num_of_operatives > 0
 		network_national_coverage = {
@@ -2097,6 +2103,10 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 	network_strength = 35
 	operatives = 3
 
+	allowed = {
+		always = no
+	}
+
 	visible = {
 		num_of_operatives > 1
 		network_national_coverage = {
@@ -2231,6 +2241,10 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 	network_strength = 35
 	operatives = 3
 
+	allowed = {
+		always = no
+	}
+
 	visible = {
 		num_of_operatives > 1
 		network_national_coverage = {
@@ -2362,6 +2376,10 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 	network_strength = 35
 	operatives = 3
 
+	allowed = {
+		always = no
+	}
+
 	visible = {
 		num_of_operatives > 1
 		network_national_coverage = {
@@ -2492,6 +2510,10 @@ operation_steal_tech_army = { ### 16 3/55
 	network_strength = 50
 	operatives = 3
 	cost_multiplier = 0.05
+
+	allowed = {
+		always = no
+	}
 
 	visible = {
 		num_of_operatives > 1
@@ -3007,6 +3029,10 @@ operation_steal_tech_airforce = { ### 18 3/55
 	network_strength = 50
 	operatives = 3
 	cost_multiplier = 0.05
+
+	allowed = {
+		always = no
+	}
 
 	visible = {
 		num_of_operatives > 1
