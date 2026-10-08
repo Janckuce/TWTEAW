@@ -171,7 +171,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.3
 				# production_speed_arms_factory_factor = -0.3
 				# production_speed_industrial_complex_factor = -0.3
-				consumer_goods_factor = 0.4
+				consumer_goods_factor = 0.1
 			}
 		}
 		FRA_Halted_Industrial_Power1 = {
@@ -180,7 +180,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.2
 				# production_speed_arms_factory_factor = -0.2
 				# production_speed_industrial_complex_factor = -0.2
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.05
 			}
 		}
 		FRA_Halted_Industrial_Power2 = {
@@ -189,7 +189,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 				# production_speed_arms_factory_factor = -0.1
 				# production_speed_industrial_complex_factor = -0.1
-				consumer_goods_factor = 0.1
+				# consumer_goods_factor = 0.1
 			}
 		}
 		FRA_Political_Instability = {
@@ -243,27 +243,32 @@ ideas = {
 			}
 		}
 		FRA_Research_Funding_Left = {
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.025
 			}
 		}
 		FRA_Research_Funding_Right = {
+			picture = jap_duplicate_research
 			modifier = {
 				military_industrial_organization_research_bonus = 0.05
 			}
 		}
 		FRA_Research_Funding = {
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.05
 			}
 		}
 		FRA_Research_Funding1 = {
+			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = 0.05
 				military_industrial_organization_research_bonus = 0.05
 			}
 		}
 		FRA_Paris_Scientists = {
+			picture = jap_duplicate_research
 			available = {
 				controls_province = 11506
 			}
@@ -487,56 +492,67 @@ ideas = {
 			}
 		}
 		FRA_Stability_Lower = {
+			picture = POL_disjointed_industry
 			modifier = {
-				production_speed_arms_factory_factor = -0.05
+				production_speed_arms_factory_factor = -0.04
 			}
 		}
 		FRA_Stability_Lower1 = {
+			picture = POL_disjointed_industry
 			modifier = {
-				production_speed_arms_factory_factor = -0.05
+				production_speed_arms_factory_factor = -0.06
 			}
 		}
 		FRA_Stability_Lower2 = {
+			picture = POL_disjointed_industry
 			modifier = {
-				production_speed_arms_factory_factor = -0.05
+				production_speed_arms_factory_factor = -0.08
 			}
 		}
 		FRA_Stability_Lower3 = {
+			picture = POL_disjointed_industry
 			modifier = {
-				production_speed_arms_factory_factor = -0.05
+				production_speed_arms_factory_factor = -0.10
 			}
 		}
 		FRA_Stability_Lower4 = {
+			picture = POL_disjointed_industry
 			modifier = {
-				production_speed_arms_factory_factor = -0.05
+				production_speed_arms_factory_factor = -0.12
 			}
 		}
 		FRA_Stability_Increase = {
+			picture = ARG_rapid_militarization
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.04
 			}
 		}
 		FRA_Stability_Increase1 = {
+			picture = ARG_rapid_militarization
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.06
 			}
 		}
 		FRA_Stability_Increase2 = {
+			picture = ARG_rapid_militarization
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.08
 			}
 		}
 		FRA_Stability_Increase3 = {
+			picture = ARG_rapid_militarization
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 		FRA_Stability_Increase4 = {
+			picture = ARG_rapid_militarization
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.12
 			}
 		}
 		FRA_mobilization_effect = {
+			picture = FRA_national_mobilization_focus
 			modifier = {
 				army_speed_factor = 0.30
 				army_attack_speed_factor = -0.30

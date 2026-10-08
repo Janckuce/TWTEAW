@@ -64,6 +64,24 @@ industrial_complex_decisions = {
 	# 	}
 
 	# }
+	military_research_initative = {
+		icon = GFX_decision_generic_research
+		fire_only_once = yes
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			add_research_slot = 1
+			add_timed_idea = {
+				idea = research_initiative
+				days = 365
+			}
+		}
+	}
 
 	base_effc_decision = {
 

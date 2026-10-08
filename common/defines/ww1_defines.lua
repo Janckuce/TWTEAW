@@ -32,7 +32,10 @@ NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_INFRA_FACTOR = 0.0004 	-- Factor to scale collateral damage to infra with. 0.0022 Vanilla
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0
 NDefines.NPolitics.ARMY_LEADER_COST = 1					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_typeARMY_LEADER_MAX_COST
-NDefines.NPolitics.ARMY_LEADER_MAX_COST = 2000					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
+NDefines.NPolitics.NAVY_LEADER_COST = 0.25					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_typeARMY_LEADER_MAX_COST
+NDefines.NPolitics.ARMY_LEADER_MAX_COST = 2000					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type 
+NDefines.NPolitics.NAVY_LEADER_MAX_COST = 2000					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type 
+NDefines.NCharacter.ADVISOR_PROMOTION_COST = 0					-- 	Cost to promote someone to advisor, base 5
 
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0
