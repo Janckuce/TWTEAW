@@ -130,7 +130,7 @@ NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0				-- CP cost to maintain more gr
 NDefines.NAir.AIR_MORE_GROUND_CREWS_BOOST = 0.0					-- Efficienct boost for more ground crews
 
 NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 0	   -- command point cost for changing preferred tactic 
-NDefines.NGame.ENERGY_RESOURCE = "coal"
+NDefines.NGame.ENERGY_RESOURCE = ""
 NDefines.NProduction.POWER_PLANT_BASE_OUTPUT = 8.0					-- Flat power a Power Plant generates before terrain
 NDefines.NProduction.POWER_PLANT_EXTRA_LEVEL_OUTPUT = 8.0			-- Flat power each Power Plant level beyond the first adds, without terrain/river bonuses
 NDefines.NProduction.POWER_PLANT_DAMAGED_LEVEL_FACTOR = 0.25		-- Share of normal output a damaged Power Plant level still generates
