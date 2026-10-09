@@ -51,6 +51,8 @@ categories =  {
 		supply_flow_penalty_factor = 0.08
 		
 		truck_attrition_factor = 0.2
+
+		power_generation = 0.5
 	}
 
 	hills = {
@@ -77,6 +79,8 @@ categories =  {
 		supply_flow_penalty_factor = 0.1
 		
 		truck_attrition_factor = 0.2
+
+		power_generation = 1
 	}
 	
 	mountain = {
@@ -104,6 +108,9 @@ categories =  {
 		supply_flow_penalty_factor = 0.12
 		
 		truck_attrition_factor = 1.0
+
+		power_generation = 2
+
 	}
 	
 	plains = {
@@ -118,6 +125,9 @@ categories =  {
 		buildings_max_level = {
 			bunker = 3
 			coastal_bunker = 6
+
+			power_generation = 0
+
 		}
 	}
 	
@@ -143,6 +153,9 @@ categories =  {
 		enemy_army_bonus_air_superiority_factor = -0.50
 				
 		supply_flow_penalty_factor = -0.2
+
+		power_generation = 0
+
 	}
 	
 	jungle = {
@@ -173,6 +186,9 @@ categories =  {
 		supply_flow_penalty_factor = 0.16
 		
 		truck_attrition_factor = 3.0
+
+		power_generation = 0.4
+
 	}	
 	
 	marsh = {
@@ -200,6 +216,9 @@ categories =  {
 		supply_flow_penalty_factor = 0.16
 		
 		truck_attrition_factor = 4.0
+
+		power_generation = 0.25
+
 	}
 	
 	desert = {
@@ -221,6 +240,9 @@ categories =  {
 		supply_flow_penalty_factor = 0.14
 		
 		truck_attrition_factor = 0.5
+
+		power_generation = 0
+
 	}
 	
 	water_fjords = {

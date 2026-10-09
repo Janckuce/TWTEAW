@@ -64,6 +64,8 @@ buildings = {
 		icon_frame = 2
 		value = 8
 		damage_factor = 0.1
+		power_output = 1.5
+
 		infrastructure_construction_effect = yes
 
 		level_cap = {
@@ -91,6 +93,8 @@ buildings = {
 			state_max = 36
 			shares_slots = yes
 		}
+		power_output = 0.75
+
 	}
 
 	air_base = {
@@ -159,6 +163,8 @@ buildings = {
 		}
 		only_costal = yes
 		is_buildable = no
+		power_consumption = 10
+
 	}
 
 	naval_base = {
@@ -254,6 +260,7 @@ buildings = {
 			state_max = 36
 			shares_slots = yes
 		}
+		power_output = 1.5
 	}
 
 	
@@ -286,6 +293,7 @@ buildings = {
 		level_cap = {
 			state_max = 6 # This is the max unlock level
 		}
+		power_consumption = 1
 	}
 
 	# chemical_plant = {
@@ -333,6 +341,7 @@ buildings = {
 				country_resource_cost_coal = 2
 			}
 		}
+		power_consumption = 7.5
 	}
 
 	coal_refinery = {
@@ -345,7 +354,7 @@ buildings = {
 			shares_slots = yes
 		}
 		# show_modifier = yes
-
+		power_consumption = 7.5
 		local_resources_sulfur = 1
 		local_resources_coal = 6 # May use local_resources_ + any resource name
 		# country_modifiers = {
@@ -374,6 +383,7 @@ buildings = {
 				country_resource_cost_coal = 2
 			}
 		}
+		power_consumption = 7.5
 	}
 
 	synthetic_refinery = {
@@ -405,6 +415,7 @@ buildings = {
 			state_max = 30
 			shares_slots = yes
 		}
+		power_consumption = 7.5
 	}
 
 	fuel_silo = {
@@ -526,6 +537,7 @@ buildings = {
 			group_by = special_project_facility
 		}
 		is_buildable = no
+		power_consumption = 10
 	}
 
 	land_facility = {
@@ -550,6 +562,7 @@ buildings = {
 			group_by = special_project_facility
 		}
 		is_buildable = no
+		power_consumption = 10
 	}
 
 	dam = {
@@ -577,6 +590,8 @@ buildings = {
 			local_building_slots_factor = 0.15
 			state_resources_factor = 0.1
 		}
+		power_output = 40
+
 	}
 	dam_mountain = {
 		show_on_map = 1
@@ -602,6 +617,8 @@ buildings = {
 			local_building_slots_factor = 0.15
 			state_resources_factor = 0.1
 		}
+		power_output = 40
+
 	}
 
 	canal_kiel = {
