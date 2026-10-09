@@ -129,4 +129,15 @@ NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.0 --15.0 in Vanilla
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0				-- CP cost to maintain more ground crews
 NDefines.NAir.AIR_MORE_GROUND_CREWS_BOOST = 0.0					-- Efficienct boost for more ground crews
 
-NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 0	   -- command point cost for changing preferred tactic
+NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 0	   -- command point cost for changing preferred tactic 
+NDefines.NGame.ENERGY_RESOURCE = "coal"
+NDefines.NProduction.POWER_PLANT_BASE_OUTPUT = 8.0					-- Flat power a Power Plant generates before terrain
+NDefines.NProduction.POWER_PLANT_EXTRA_LEVEL_OUTPUT = 8.0			-- Flat power each Power Plant level beyond the first adds, without terrain/river bonuses
+NDefines.NProduction.POWER_PLANT_DAMAGED_LEVEL_FACTOR = 0.25		-- Share of normal output a damaged Power Plant level still generates
+NDefines.NProduction.RIVER_PROVINCE_POWER_GENERATION = 0.25			-- Extra Power Plant output per river province in the state
+NDefines.NProduction.POWER_PLANT_OUTPUT_PER_OIL = 0.2				-- Extra output per Power Plant level for each unit of the state's own oil (not from buildings)
+NDefines.NProduction.POWER_PLANT_OIL_OUTPUT_CAP = 10.0				-- Max extra output per Power Plant level from the state's oil, before power_from_oil_factor
+NDefines.NProduction.POWER_PLANT_MAX_COAL = 20						-- Max coal each Power Plant burns per day to cover a power deficit
+NDefines.NProduction.POWER_PER_COAL = 1.5							-- Power generated per coal burned
+NDefines.NProduction.POWER_PLANT_MAX_OIL = 4						-- Max oil each Power Plant burns per day to cover a power deficit
+NDefines.NProduction.POWER_PER_OIL = 2.0							-- Power generated per oil burned
