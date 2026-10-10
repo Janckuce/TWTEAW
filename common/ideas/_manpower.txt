@@ -13,6 +13,7 @@ ideas = {
 			}
 			modifier = {
 				conscription = 0.005
+				power_generation_factor = 0.30
 			}
 			cancel_if_invalid = no
 			ai_will_do = {
@@ -32,6 +33,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.015
+				power_generation_factor = 0.25
 			}
 			
 			default = yes
@@ -59,6 +61,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.025
+				power_generation_factor = 0.15
 			}
 			
 			cancel_if_invalid = no
@@ -113,6 +116,7 @@ ideas = {
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				war_support_weekly = -0.001
+				# power_generation_factor = 0.15
 			}
 			ai_will_do = {
 				factor = 400
@@ -182,6 +186,7 @@ ideas = {
 				war_support_weekly = -0.001
 				stability_weekly = -0.001
 				army_strength_factor = -0.10
+				power_generation_factor = -0.10
 			}
 			ai_will_do = {
 				factor = 600
@@ -258,6 +263,7 @@ ideas = {
 				war_support_weekly = -0.002
 				stability_weekly = -0.002
 				army_strength_factor = -0.15
+				power_generation_factor = -0.20
 			}
 			ai_will_do = {
 				factor = 800
@@ -347,6 +353,7 @@ ideas = {
 				war_support_weekly = -0.003
 				stability_weekly = -0.003
 				army_strength_factor = -0.20
+				power_generation_factor = -0.35
 			}
 			ai_will_do = {
 				factor = 1000
