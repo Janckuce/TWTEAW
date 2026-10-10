@@ -10,8 +10,16 @@ NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 60  		-- how many divisions a
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 60		-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.BASE_NIGHT_ATTACK_PENALTY = -0.5
-NDefines.NProduction.BASE_FACTORY_SPEED = 6.6		-- Speed at which civilian factories produce buildings
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which military factories produce equipment
+-- NDefines.NProduction.BASE_FACTORY_SPEED = 6.6		-- Speed at which civilian factories produce buildings
+-- NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Speed at which military factories produce equipment
+NDefines.NProduction.POWER_SURPLUS_PER_FACTORY_FOR_FULL_BONUS = 1.0	-- Spare power capacity per civilian, military and naval factory at which power_surplus applies in full
+NDefines.NProduction.BASE_FACTORY_SPEED = 5 					-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.25 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1.25 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 10	-- Base start efficiency for factories expressed in %.
+NDefines.NProduction.POWERED_FACTORY_SPEED = 5 					--Powered factory speed multiplier.
+NDefines.NProduction.POWERED_FACTORY_SPEED_MIL = 4.5 			--Powered factory speed multiplier.
+NDefines.NProduction.POWERED_FACTORY_SPEED_NAV = 2.5 			--Powered factory speed multiplier.
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0		-- Cost of changing a brigade in a division
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0

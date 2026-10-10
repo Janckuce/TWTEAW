@@ -40,6 +40,7 @@ buildings = {
 		# show_modifier = yes
 		# allied_build = yes
 		per_level_extra_cost = 1000		
+		affects_energy = yes
 
 		infrastructure_construction_effect = yes
 		level_cap = {
@@ -53,6 +54,7 @@ buildings = {
 				max_fuel_building = 1.5 #k
 			}
 		}
+		power_output = 4
 	}
 
 	arms_factory = {
@@ -93,8 +95,7 @@ buildings = {
 			state_max = 36
 			shares_slots = yes
 		}
-		power_output = 2
-
+		power_consumption = 2
 	}
 
 	air_base = {
