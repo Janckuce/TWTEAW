@@ -1977,7 +1977,7 @@ equipments = {
 		build_cost_ic = 12
 		
 		resources = {
-			steel = 1
+			steel = 2
 		}
 	}
 	
@@ -2007,7 +2007,7 @@ equipments = {
 		build_cost_ic = 13
 		
 		resources = {
-			steel = 1
+			steel = 2
 		}
 	}
 	
@@ -2038,8 +2038,9 @@ equipments = {
 		
 		resources = {
 			tungsten = 1
-			steel = 2
+			steel = 3
 		}
+		power_cost_add = -1
 	}
 	
 	ww1_medium_tank_equipment_2 = {
@@ -2069,8 +2070,9 @@ equipments = {
 		
 		resources = {
 			tungsten = 1
-			steel = 2
+			steel = 3
 		}
+		power_cost_add = -1
 	}
 	
 	#Heavy Tanks
@@ -2100,9 +2102,10 @@ equipments = {
 		
 		resources = {
 			tungsten = 1
-			steel = 3
+			steel = 4
 			chromium = 1
 		}
+		power_cost_add = -2
 	}
 	
 	#Heavy Tanks
@@ -2133,8 +2136,9 @@ equipments = {
 		
 		resources = {
 			tungsten = 1
-			steel = 3
+			steel = 4
 			chromium = 1
 		}
+		power_cost_add = -2
 	}
 }

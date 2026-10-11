@@ -1742,7 +1742,7 @@ equipments = {
 		surface_detection = 70 # For airwing of 100 planes (Destroyer I: 20 surface detection)
 		# sub_detection = 10 # For airwing of 100 planes (Destroyer I: 5 sub detection )
 		resources = {
-			aluminium = 2
+			aluminium = 1
 			rubber = 1
 		}
 		air_superiority = 0.1
@@ -1767,7 +1767,7 @@ equipments = {
 
 		build_cost_ic = 20
 		resources = {
-			aluminium = 2
+			aluminium = 1
 			rubber = 1
 		}
 		naval_strike_attack = 0
@@ -1831,6 +1831,7 @@ equipments = {
 
 		manpower = 20
 		fuel_consumption = 0.21
+		power_cost_add = -3
 	}
 	
 	ww1_plane_equipment_2 = {
@@ -1862,6 +1863,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.21
+		power_cost_add = -3
 	}
 	
 	ww1_cas_equipment_1 = {
@@ -1905,6 +1907,7 @@ equipments = {
 		reliability = 0.8
 		manpower = 20
 		fuel_consumption = 0.26
+		power_cost_add = -3
 	}
 	
 	ww1_cas_equipment_2 = {
@@ -1924,7 +1927,7 @@ equipments = {
 		build_cost_ic = 38
 		resources = {
 			#oil = 1
-			aluminium = 3
+			aluminium = 2
 			rubber = 1
 		}
 
@@ -1936,6 +1939,7 @@ equipments = {
 		reliability = 0.8
 		manpower = 20
 		fuel_consumption = 0.26
+		power_cost_add = -3
 	}
 	
 	ww1_strategic_bomber_1 = {
@@ -1970,14 +1974,15 @@ equipments = {
 
 		build_cost_ic = 60
 		resources = {
-			aluminium = 3
-			rubber = 2
+			aluminium = 2
+			rubber = 1
 		}
 
 		air_superiority = 0.01
 		reliability = 0.8
 		manpower = 80
 		fuel_consumption = 0.8
+		power_cost_add = -3
 	}
 	
 	ww1_strategic_bomber_2 = {
@@ -1997,8 +2002,8 @@ equipments = {
 		build_cost_ic = 70
 		resources = {
 			#oil = 1
-			aluminium = 4
-			rubber = 2
+			aluminium = 2
+			rubber = 1
 		}
 		naval_strike_attack = 1.5
 		naval_strike_targetting = 0.6
@@ -2008,6 +2013,7 @@ equipments = {
 		reliability = 0.8
 		manpower = 80
 		fuel_consumption = 0.8
+		power_cost_add = -3
 	}
 	
 	ww1_naval_bomber_equipment_1 = {
@@ -2052,6 +2058,7 @@ equipments = {
 		reliability = 0.8
 		manpower = 20
 		fuel_consumption = 0.28
+		power_cost_add = -3
 	}
 	
 	ww1_naval_bomber_equipment_2 = {
@@ -2074,7 +2081,7 @@ equipments = {
 		build_cost_ic = 38
 		resources = {
 			#oil = 1
-			aluminium = 3
+			aluminium = 2
 			rubber = 1
 		}
 
@@ -2082,5 +2089,6 @@ equipments = {
 		reliability = 0.8
 		manpower = 20
 		fuel_consumption = 0.28
+		power_cost_add = -3
 	}
 }
