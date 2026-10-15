@@ -26,7 +26,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Constitution_Of_1911
 		icon = GFX_focus_por_const
-		cost = 10
+		cost = 7.2
 		x = 10
 		y = 0
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
@@ -38,7 +38,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry_Main
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Constitution_Of_1911
 		x = -8
 		y = 1
@@ -60,7 +60,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry1
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry_Main
 		x = -1
 		y = 1
@@ -105,7 +105,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Open_Trade
 		icon = GFX_focus_GER_factories_for_resources
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry_Main
 		x = 1
 		y = 1
@@ -560,10 +560,14 @@ focus_tree = {
 			focus = POR_Constitution_Of_1911
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				category = artillery
-				bonus = 1
-				uses = 2
+			set_grand_doctrine = special_forces_quality
+			set_sub_doctrine = {
+				sub_doctrine = mountaineers_2
+				track = 0
+			}
+			set_sub_doctrine = {
+				sub_doctrine = rangers_1
+				track = 1
 			}
 		}
 	}
@@ -670,25 +674,33 @@ focus_tree = {
         			irregular_infantry = { x = 1 y = 0 }
 					irregular_infantry = { x = 1 y = 1 }
 					irregular_infantry = { x = 1 y = 2 }
-        			irregular_infantry = { x = 2 y = 0 }
-					irregular_infantry = { x = 2 y = 1 }
-					irregular_infantry = { x = 2 y = 2 }
+					artillery_brigade = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
 					artillery = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+					military_police = { x = 0 y = 3 }
+					field_hospital = { x = 0 y = 4 }
+				}
+				regimental_support = {
+					machine_gun = { x = 0 y = 0 }
+					machine_gun = { x = 1 y = 0 }
+					machine_gun = { x = 2 y = 0 }
+					machine_gun = { x = 3 y = 0 }
 				}
 			}
 			112 = {
 				create_unit = {
-					division = "name = \"Caçadores\" division_template = \"Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 1 location = 11805"
+					division = "name = \"Caçadores\" division_template = \"Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.8 location = 11805"
 					owner = POR
 					count = 3
 				}
-			}
-			set_technology = {
-				tech_recon = 1
-				tech_recon2 = 1
 			}
 		}
 	}
@@ -725,13 +737,6 @@ focus_tree = {
 				remove_idea = POR_Hunters
 				add_idea = POR_Hunters1
 			}
-			add_units_to_division_template = {
-				template_name = "Caçadores"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 3
-				}
-			}
 		}
 	}
 	focus = {
@@ -751,13 +756,6 @@ focus_tree = {
 				remove_idea = POR_Hunters1
 				add_idea = POR_Hunters2
 			}
-			add_units_to_division_template = {
-				template_name = "Caçadores"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 4
-				}
-			}
 		}
 	}
 	focus = {
@@ -776,16 +774,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = POR_Hunters2
 				add_idea = POR_Hunters3
-			}
-			add_units_to_division_template = {
-				template_name = "Caçadores"
-				regiments = {
-					artillery_brigade = 4
-					artillery_brigade = 4
-				}
-				support = {
-					recon = 0
-				}
 			}
 		}
 	}
@@ -1014,9 +1002,42 @@ focus_tree = {
 			focus = POR_Power_To_The_King
 		}
 		completion_reward = {
-			set_technology = {
-				tech_military_police = 1
-				tech_military_police2 = 1
+			if = {
+				limit = {
+					not = {
+						has_tech = tech_military_police4
+					}
+				}
+				custom_effect_tooltip = POR_MP_Tooltip
+			}
+			else = {
+				custom_effect_tooltip = POR_MP_Fail_Tooltip
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = tech_military_police3
+					}
+					set_technology = {
+						tech_military_police4 = 1
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = tech_military_police2
+					}
+					set_technology = {
+						tech_military_police3 = 1
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = tech_military_police
+					}
+					set_technology = {
+						tech_military_police2 = 1
+					}
+				}
 			}
 		}
 	}
@@ -1045,8 +1066,6 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = POR_Police_Training
-		}
-		prerequisite = {
 			focus = POR_Agency_Expertise
 		}
 		completion_reward = {
@@ -1101,6 +1120,7 @@ focus_tree = {
 			focus = POR_King_And_Nation
 		}
 		completion_reward = {
+			custom_effect_tooltip = POR_GDP_Set
 			set_variable = {
 				POR.GDP = 5
 			}
@@ -1131,7 +1151,6 @@ focus_tree = {
 				}
 				add_ideas = POR_Declining_Economy2
 			}
-			custom_effect_tooltip = POR_GDP_Set
 		}
 	}
 	focus = {
