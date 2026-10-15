@@ -9,14 +9,38 @@ characters={
 		country_leader = {
 			ideology = centrism
 			expire = "1965.1.1.1"
+			traits = {
+				ROM_Moderniser
+			}
 		}
 	}
-	
+	ROM_Carol_I_Real = {
+		name = ROM_Character_Carol_I_Real
+		portraits = {
+			civilian = {
+				large = "GFX_ROM_Carol_I_Real"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				ROM_Provisional_Regent
+			}
+		}
+	}
 	ROM_ferdinand_I = {
 		name = ROM_character_ferdinand_I
 		portraits = {
 			civilian = {
 				large = "GFX_ROM_ferdinand_I"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				ROM_Rash
 			}
 		}
 	}

@@ -1,0 +1,362 @@
+ROM_Kill_The_Regent = {
+	ROM_Retire_Regent = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 25
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		complete_effect = {
+			ROM = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+					character = ROM_ferdinand_I
+					promote_leader = yes
+					country_leader = {
+						ideology = centrism
+					}
+				}
+				news_event = ww1_news.46
+			}
+		}
+	}
+}
+
+ROM_Entente_Appeasement = {
+	ROM_Appease_The_Entente = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+	ROM_Appease_The_Entente1 = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs1
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+	ROM_Appease_The_Entente2 = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs2
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+	ROM_Appease_The_Entente3 = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs3
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+}
+
+ROM_Army_Reform_Tab = {
+	ROM_French_Reforms = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = no
+		is_good = yes
+		days_mission_timeout = 1
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_completed_focus = ROM_Reformed_Army_France
+			not = {
+				has_idea = ROM_France_Army4
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					not = {
+						has_idea = ROM_France_Army
+						has_idea = ROM_France_Army1
+						has_idea = ROM_France_Army2
+						has_idea = ROM_France_Army3
+						has_idea = ROM_France_Army4
+					}
+				}
+				add_ideas = ROM_France_Army
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_France_Army
+				}
+				swap_ideas = {
+					remove_idea = ROM_France_Army
+					add_idea = ROM_France_Army1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_France_Army1
+				}
+				swap_ideas = {
+					remove_idea = ROM_France_Army1
+					add_idea = ROM_France_Army2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_France_Army2
+				}
+				swap_ideas = {
+					remove_idea = ROM_France_Army2
+					add_idea = ROM_France_Army3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_France_Army3
+				}
+				swap_ideas = {
+					remove_idea = ROM_France_Army3
+					add_idea = ROM_France_Army4
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						not = {
+							has_idea = ROM_France_Army4
+						}
+					}
+					activate_mission = ROM_French_Reforms
+				}
+			}
+		}
+	}
+	ROM_Britain_Reforms = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = no
+		is_good = yes
+		days_mission_timeout = 1
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_completed_focus = ROM_Reformed_Army_Britain
+			not = {
+				has_idea = ROM_Britain_Army4
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					not = {
+						has_idea = ROM_Britain_Army
+						has_idea = ROM_Britain_Army1
+						has_idea = ROM_Britain_Army2
+						has_idea = ROM_Britain_Army3
+						has_idea = ROM_Britain_Army4
+					}
+				}
+				add_ideas = ROM_Britain_Army
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Britain_Army
+				}
+				swap_ideas = {
+					remove_idea = ROM_Britain_Army
+					add_idea = ROM_Britain_Army1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Britain_Army1
+				}
+				swap_ideas = {
+					remove_idea = ROM_Britain_Army1
+					add_idea = ROM_Britain_Army2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Britain_Army2
+				}
+				swap_ideas = {
+					remove_idea = ROM_Britain_Army2
+					add_idea = ROM_Britain_Army3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Britain_Army3
+				}
+				swap_ideas = {
+					remove_idea = ROM_Britain_Army3
+					add_idea = ROM_Britain_Army4
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						not = {
+							has_idea = ROM_Britain_Army4
+						}
+					}
+					activate_mission = ROM_Britain_Reforms
+				}
+			}
+		}
+	}
+	ROM_Russia_Reforms = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = no
+		is_good = yes
+		days_mission_timeout = 1
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_completed_focus = ROM_Reformed_Army_Russia
+			not = {
+				has_idea = ROM_Russia_Army
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					not = {
+						has_idea = ROM_Russia_Army
+						has_idea = ROM_Russia_Army1
+						has_idea = ROM_Russia_Army2
+						has_idea = ROM_Russia_Army3
+						has_idea = ROM_Russia_Army4
+					}
+				}
+				add_ideas = ROM_Russia_Army
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Russia_Army
+				}
+				swap_ideas = {
+					remove_idea = ROM_Russia_Army
+					add_idea = ROM_Russia_Army1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Russia_Army1
+				}
+				swap_ideas = {
+					remove_idea = ROM_Russia_Army1
+					add_idea = ROM_Russia_Army2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Russia_Army2
+				}
+				swap_ideas = {
+					remove_idea = ROM_Russia_Army2
+					add_idea = ROM_Russia_Army3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ROM_Russia_Army3
+				}
+				swap_ideas = {
+					remove_idea = ROM_Russia_Army3
+					add_idea = ROM_Russia_Army4
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						not = {
+							has_idea = ROM_Russia_Army4
+						}
+					}
+					activate_mission = ROM_Russia_Reforms
+				}
+			}
+		}
+	}
+}

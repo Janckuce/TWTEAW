@@ -1,0 +1,101 @@
+add_namespace = ww1_romania
+
+#WW1 Start
+country_event = {
+	id = ww1_romania.1
+	title = ww1_romania.1.t
+	desc = ww1_romania_desc.1
+	picture = GFX_report_event_germany_form_ukraine
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ww1_romania.1.a
+
+		add_ideas = ROM_Disputed_Neutrality
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Carol I Dies
+country_event = {
+	id = ww1_romania.2
+	title = ww1_romania.2.t
+	desc = ww1_romania_desc.2
+	picture = GFX_report_event_germany_form_ukraine
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ww1_romania.2.a
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Ferdinand I Becomes King
+country_event = {
+	id = ww1_romania.3
+	title = ww1_romania.3.t
+	desc = ww1_romania_desc.3
+	picture = GFX_report_event_germany_form_ukraine
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ww1_romania.3.a
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#Army Type Reform
+country_event = {
+	id = ww1_romania.4
+	title = ww1_romania.4.t
+	desc = ww1_romania_desc.4
+	picture = GFX_report_event_germany_form_ukraine
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ww1_romania.4.a
+
+		complete_national_focus = ROM_Reformed_Army_France
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = ww1_romania.4.b
+
+		complete_national_focus = ROM_Reformed_Army_Britain
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = ww1_romania.4.c
+
+		complete_national_focus = ROM_Reformed_Army_Russia
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

@@ -5,9 +5,16 @@ set_oob = "ROM_1911"
 starting_train_buffer = 1
 
 recruit_character = ROM_carol_I
+recruit_character = ROM_Carol_I_Real
 recruit_character = ROM_ferdinand_I
 
-# Starting tech
+add_ideas = {
+	ROM_Triple_Alliance
+	ROM_Limited_Voting
+	ROM_Economic_Inequality
+	ROM_Unorganised_Army
+}
+
 set_technology = {
     #Infantry
 	ww1_infantry_weapons1 = 1
@@ -23,6 +30,7 @@ set_technology = {
 	basic_train = 1
 	
 	#Industry
+	machine_tools_1 = 1
 	ww1_fuel_storage = 1
 }
 set_technology = {
@@ -33,6 +41,7 @@ set_technology = {
 	tech_logistics_company = 1
 }
 ### Naval Tech ###
+
 set_technology = {
 	ww1_destroyer_1 = 1
 	ww1_light_cruiser_1 = 1
@@ -44,10 +53,6 @@ set_technology = {
 	ww1_naval_engines_1 = 1
 	ww1_dreadnought_armor_1 = 1
 }
-
-##### Party Popularity, Stability, War Support and other #####
-
-starting_train_buffer = 1
 
 set_politics = {
 	ruling_party = neutrality
@@ -66,5 +71,3 @@ set_convoys = 30
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.2
-
-# End of Party Popularity, Stability, War Support and other ##

@@ -1,0 +1,26 @@
+leader_traits = {
+	ROM_Moderniser = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+	}
+	ROM_Provisional_Regent = {
+		random = no
+		political_power_factor = -0.5
+		industrial_capacity_factory = -0.5
+		industrial_capacity_dockyard = -0.5
+	}
+	ROM_Rash = {
+		random = no
+		political_power_factor = -0.15
+	}
+	ROM_Dedicated = {
+		random = no
+	}
+	ROM_Commander = {
+		random = no
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+	}
+}

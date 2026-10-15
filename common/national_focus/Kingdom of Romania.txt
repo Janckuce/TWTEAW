@@ -19,235 +19,1615 @@ focus_tree = {
 	}
 	
 	default = no
-	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 250 y = 3000 }
+
+	#	Triple Alliance Political
+
+	focus = {
+		id = ROM_Ally_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 9
+		y = 0
+		mutually_exclusive = {
+			focus = ROM_Solo_Main
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Triple_Alliance
+				add_idea = ROM_Triple_Alliance_Ally
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Main
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Triple_Alliance_Ally
+				add_idea = ROM_Triple_Alliance_Ally1
+			}
+		}
+	}
+
+	#	Political Path
+
+	focus = {
+		id = ROM_Ally_Political_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally1
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally1
+		}
+		completion_reward = {
+			add_ideas = ROM_Organisation_Efforts
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Main
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Organisation_Efforts
+				add_idea = ROM_Organisation_Efforts1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political1
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political1
+		}
+		completion_reward = {
+			add_ideas = ROM_Foreign_Investments
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political_Left1
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Left1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Foreign_Investments
+				add_idea = ROM_Foreign_Investments1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Left3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political_Left2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Left2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Foreign_Investments1
+				add_idea = ROM_Foreign_Investments2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Organisation_Efforts1
+				add_idea = ROM_Organisation_Efforts2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Organisation_Efforts2
+				add_idea = ROM_Organisation_Efforts3
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Organisation_Efforts3
+				add_idea = ROM_Organisation_Efforts4
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political1
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political1
+		}
+		completion_reward = {
+			add_ideas = ROM_Oil_Industries
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political_Right1
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Right1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Oil_Industries
+				add_idea = ROM_Oil_Industries1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Right3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally_Political_Right2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Right2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Oil_Industries1
+				add_idea = ROM_Oil_Industries2
+			}
+		}
+	}
+
+	#	Final Focuses
+
+	focus = {
+		id = ROM_Ally_Political_Left_Final
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Ally_Political_Left3
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Left3
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political4
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political_Right3
+		}
+		completion_reward = {
+			remove_ideas = ROM_Limited_Voting
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Final
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Ally_Political4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Left3
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political4
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political_Right3
+		}
+		completion_reward = {
+			add_ideas = ROM_Final_Industry_Ally
+		}
+	}
+	focus = {
+		id = ROM_Ally_Political_Right_Final
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Ally_Political_Right3
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally_Political_Left3
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political4
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political_Right3
+		}
+		completion_reward = {
+			remove_ideas = ROM_Economic_Inequality
+		}
+	}
+
+	#	Minor Politics
+
+	focus = {
+		id = ROM_Minor_Main_Left
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Ally1
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally1
+		}
+		completion_reward = {
+			79 = {
+				add_resource = {
+					type = aluminium
+					amount = 9
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Minor_Main_Right
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Ally1
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally1
+		}
+		completion_reward = {
+			81 = {
+				add_resource = {
+					type = sulfur
+					amount = 8
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Minor_Final
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Minor_Main_Left
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ROM_Minor_Main_Left
+		}
+		prerequisite = {
+			focus = ROM_Minor_Main_Right
+		}
+		completion_reward = {
+			46 = {
+				add_resource = {
+					type = steel
+					amount = 14
+				}
+			}
+		}
+	}
+
+	#	Continue Alliance
 	
 	focus = {
-		id = ROM_first_balkan_war
-		icon = GFX_focus_rom_preserve_romania
-		x = 5
-		y = 1
-		cost = 1
-
-		bypass = {
-			#
-		}
-		available = {
-		date > 1912.10.6
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_ideas =	{
-			ROM_army
-		}
-
-		    add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 10000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 7500
-        }
-		    add_equipment_to_stockpile = {
-            type = artillery_equipment
-            amount = 2500
-        }
-	}
-}
-
-	focus = {
-		id = ROM_second_balkan_war
-		icon = GFX_focus_rom_preserve_romania
-		x = 7
-		y = 1
-		cost = 1
-
-		bypass = {
-			#
-		}
-		available = {
-		 date > 1913.6.27
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			swap_ideas = {
-  			remove_idea = ROM_army
-  			add_idea = ROM_army2	
-  		}
-
-		    add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 10000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 8000
-        }
-		    add_equipment_to_stockpile = {
-            type = artillery_equipment
-            amount = 2000
-        }
-	}
-}
-
-	focus = {
-		id = ROM_prepare_for_conflict
-		icon = GFX_focus_rom_preserve_romania
-		x = 9
-		y = 1
-		cost = 1
-
-		bypass = {
-			#
-		}
-		available = {
-		 date > 1914.7.26
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-
-			swap_ideas = {
-  			remove_idea = ROM_army2
-  			add_idea = ROM_army3	
-  		}
-
-		    add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 12000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 9000
-        }
-		    add_equipment_to_stockpile = {
-            type = artillery_equipment
-            amount = 3000
-        }
-	}
-}
-
-	focus = {
-		id = ROM_now_we_can_join 
-		icon = GFX_focus_rom_preserve_romania
-		x = 13
-		y = 1
+		id = ROM_Ally2
+		icon = GFX_unit_guided_missile_icon_small_texticon
 		cost = 5
-
-		bypass = {
-			#
+		relative_position_id = ROM_Ally1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally1
 		}
-		available = {
-		 date > 1916.7.29
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
 		completion_reward = {
-		#     create_wargoal = {
-		# 		type = annex_everything
-		# 		target = BUL
-		# 		expire = 0
-		# 	}
-		# 	GER = {
-		# 	set_variable = {
-		# 	rom_in_war = 1
-		# }
-		# 	}
-
-		# give_military_access = USA
-		# give_military_access = FRA
-		# give_military_access = RUS
-		# give_military_access = ENG
-
-		BUL = {
-			country_event = ww1_bulgaria.2
+			swap_ideas = {
+				remove_idea = ROM_Triple_Alliance_Ally1
+				add_idea = ROM_Triple_Alliance_Ally2
+			}
 		}
 	}
-}
+	focus = {
+		id = ROM_Ally3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally2
+		}
+		completion_reward = {
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally3
+		}
+		completion_reward = {
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally4
+		}
+		completion_reward = {
+			79 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally6
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally5
+		}
+		completion_reward = {
+			81 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Ally7
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Ally6
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Ally6
+		}
+		completion_reward = {
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	#	Triple Alliance Alone
 
 	focus = {
-		id = ROM_war_supplies
-		icon = GFX_focus_rom_preserve_romania
+		id = ROM_Solo_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
 		x = 15
-		y = 1
-		cost = 1
-
-		bypass = {
-			#
+		y = 0
+		mutually_exclusive = {
+			focus = ROM_Ally_Main
 		}
-		available = {
-		 date > 1917.8.1
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
 		completion_reward = {
-		    add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 12000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 9000
-        }
-		    add_equipment_to_stockpile = {
-            type = artillery_equipment
-            amount = 3000
-        }
+			swap_ideas = {
+				remove_idea = ROM_Triple_Alliance
+				add_idea = ROM_Triple_Alliance_Solo
+			}
+		}
 	}
-}
+	focus = {
+		id = ROM_Solo1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Main
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Triple_Alliance_Solo
+				add_idea = ROM_Triple_Alliance_Solo1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Triple_Alliance_Solo1
+				add_idea = ROM_Triple_Alliance_Solo2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo2
+		}
+		completion_reward = {
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo3
+		}
+		completion_reward = {
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo5
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo4
+		}
+		completion_reward = {
+			46 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+
+	#	Remove Debuffs
 
 	focus = {
-		id = ROM_even_more_war_supplies
-		icon = GFX_focus_rom_preserve_romania
-		x = 17
+		id = ROM_Solo_Centre1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Solo_Main
+		x = 2
 		y = 1
-		cost = 1
-
-		bypass = {
-			#
+		prerequisite = {
+			focus = ROM_Solo_Main
 		}
-		available = {
-		 date > 1918.2.11
-		}
-		
-		search_filters = {}
-		
-		available_if_capitulated = yes
-		
 		completion_reward = {
-		    add_equipment_to_stockpile = {
-            type = infantry_equipment
-            amount = 12000
-        }
-        add_equipment_to_stockpile = {
-            type = support_equipment
-            amount = 9000
-        }
-		    add_equipment_to_stockpile = {
-            type = artillery_equipment
-            amount = 3000
-        }
+			remove_ideas = ROM_Limited_Voting
+		}
 	}
-}
 
+	#	Main Centre
 
-continuous_focus_position = { x = 245 y = 999 }
+	focus = {
+		id = ROM_Industrial_Solo_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo_Main
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Main
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+			}
+		}
+	}
+	focus = {
+		id = ROM_Industrial_Solo1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Industrial_Solo_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Industrial_Solo_Main
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+			}
+		}
+	}
+	focus = {
+		id = ROM_Industrial_Solo2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Industrial_Solo1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Industrial_Solo1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+			}
+		}
+	}
 
+	#	Remove Debuffs
+
+	focus = {
+		id = ROM_Solo_Centre2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Solo_Main
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Main
+		}
+		completion_reward = {
+			remove_ideas = ROM_Economic_Inequality
+		}
+	}
+
+	#	Research Path
+
+	focus = {
+		id = ROM_Solo_Research_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo_Main
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Main
+		}
+		completion_reward = {
+			add_ideas = ROM_Research_Funding
+		}
+	}
+	focus = {
+		id = ROM_Solo_Research1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo_Research_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Research_Main
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Research_Funding
+				add_idea = ROM_Research_Funding1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo_Research2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo_Research1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Research1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Research_Funding1
+				add_idea = ROM_Research_Funding2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo_Research3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Solo_Research2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Research2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Research_Funding2
+				add_idea = ROM_Research_Funding3
+			}
+		}
+	}
+	focus = {
+		id = ROM_Solo_Research_Final
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Solo_Research3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Solo_Research3
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#	Military Branch
+
+	focus = {
+		id = ROM_Military_Main
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 5
+		y = 9
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Left
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Main
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Main
+		}
+		completion_reward = {
+			add_ideas = ROM_Infantry
+		}
+	}
+	focus = {
+		id = ROM_Military_Left1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Left
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Left
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Infantry
+				add_idea = ROM_Infantry1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Left2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Left1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Left1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Infantry1
+				add_idea = ROM_Infantry2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Left3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Left2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Left2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Infantry2
+				add_idea = ROM_Infantry3
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Left4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Left3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Left3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Infantry3
+				add_idea = ROM_Infantry4
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Centre
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Main
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Centre1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Centre
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Centre
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Centre2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Centre1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Centre1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Centre3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Centre2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Centre2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Centre4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Centre3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Centre3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Right
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Main
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Main
+		}
+		completion_reward = {
+			add_ideas = ROM_Rangers
+		}
+	}
+	focus = {
+		id = ROM_Military_Right1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Right
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Right
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Rangers
+				add_idea = ROM_Rangers1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Right2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Right1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Right1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Rangers1
+				add_idea = ROM_Rangers2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Right3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Right2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Right2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Rangers2
+				add_idea = ROM_Rangers3
+			}
+		}
+	}
+	focus = {
+		id = ROM_Military_Right4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Military_Right3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Military_Right3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Rangers3
+				add_idea = ROM_Rangers4
+			}
+			set_technology = {
+				ROM_Rangers_Buff = 1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Final_Army
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 10
+		relative_position_id = ROM_Military_Main
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = ROM_Military_Left4
+		}
+		prerequisite = {
+			focus = ROM_Military_Centre4
+		}
+		prerequisite = {
+			focus = ROM_Military_Right4
+		}
+		completion_reward = {
+			remove_ideas = ROM_Unorganised_Army
+		}
+	}
+
+	#	Industrial
+
+	focus = {
+		id = ROM_Industry_Main
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		x = 12
+		y = 1
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROM_Economic_Program
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = ROM_Industry_Main1
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Industry_Main
+		x = 0
+		y = 1
+		available = {
+			not = {
+				has_idea = ROM_Economic_Program
+			}
+		}
+		prerequisite = {
+			focus = ROM_Industry_Main
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROM_Economic_Program1
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = ROM_Industry_Main2
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Industry_Main1
+		x = 0
+		y = 1
+		available = {
+			not = {
+				has_idea = ROM_Economic_Program1
+			}
+		}
+		prerequisite = {
+			focus = ROM_Industry_Main1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROM_Economic_Program2
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = ROM_Industry_Main3
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Industry_Main2
+		x = 0
+		y = 1
+		available = {
+			not = {
+				has_idea = ROM_Economic_Program2
+			}
+		}
+		prerequisite = {
+			focus = ROM_Industry_Main2
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROM_Economic_Program3
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = ROM_Industry_Main4
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Industry_Main3
+		x = 0
+		y = 1
+		available = {
+			not = {
+				has_idea = ROM_Economic_Program3
+			}
+		}
+		prerequisite = {
+			focus = ROM_Industry_Main3
+		}
+		completion_reward = {
+			add_ideas = ROM_Gold_Und_Geld
+		}
+	}
+
+	#	Regency Tree
+
+	focus = {
+		id = ROM_Regency
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		x = 12
+		y = 9
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = ROM_Regent_Reforms
+		}
+	}
+	focus = {
+		id = ROM_Regency1
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Regency
+		x = 0
+		y = 1
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		prerequisite = {
+			focus = ROM_Regency
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Regent_Reforms
+				add_idea = ROM_Regent_Reforms1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Regency2
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Regency1
+		x = 0
+		y = 1
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		prerequisite = {
+			focus = ROM_Regency1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Regent_Reforms1
+				add_idea = ROM_Regent_Reforms2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Regency3
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Regency2
+		x = 0
+		y = 1
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		prerequisite = {
+			focus = ROM_Regency2
+		}
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Regency4
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Regency3
+		x = 0
+		y = 1
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		prerequisite = {
+			focus = ROM_Regency3
+		}
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ROM_Regency_Last
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 5
+		relative_position_id = ROM_Regency4
+		x = 0
+		y = 1
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = no
+			}
+		}
+		prerequisite = {
+			focus = ROM_Regency4
+		}
+		completion_reward = {
+		}
+	}
+
+	#	War Time
+
+	focus = {
+		id = ROM_War_Start
+		icon = GFX_unit_guided_missile_icon_small_texticon
+		cost = 2
+		x = 15
+		y = 9
+		available = {
+			has_idea = ROM_Disputed_Neutrality
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROM_Army_Funding
+				days = 120
+			}
+		}
+	}
+
+	#	Army Reforms
+
+	focus = {
+		id = ROM_Army_Reform_Main
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 10
+		relative_position_id = ROM_War_Start
+		x = 0
+		y = 1
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = ROM_War_Start
+		}
+		completion_reward = {
+			remove_ideas = ROM_Unorganised_Army
+		}
+	}
+	focus = {
+		id = ROM_Army_Reform1
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Army_Reform_Main
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Army_Reform_Main
+		}
+		completion_reward = {
+			add_ideas = ROM_Entente_Army
+		}
+	}
+	focus = {
+		id = ROM_Army_Reform2
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Army_Reform1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Army_Reform1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Entente_Army
+				add_idea = ROM_Entente_Army1
+			}
+		}
+	}
+	focus = {
+		id = ROM_Army_Reform3
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Army_Reform2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Army_Reform2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Entente_Army1
+				add_idea = ROM_Entente_Army2
+			}
+		}
+	}
+	focus = {
+		id = ROM_Army_Reform4
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Army_Reform3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Army_Reform3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Entente_Army2
+				add_idea = ROM_Entente_Army3
+			}
+		}
+	}
+	focus = {
+		id = ROM_Army_Reform5
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Army_Reform4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Army_Reform4
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ROM_Entente_Army3
+				add_idea = ROM_Entente_Army4
+			}
+		}
+	}
+
+	#	War Reformed Army
+
+	focus = {
+		id = ROM_Reformed_Army
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		x = 28
+		y = 9
+		available = {
+			check_variable = {
+				ROM.APP = 4
+			}
+		}
+		completion_reward = {
+			country_event = ww1_romania.4
+		}
+	}
+
+	#	France
+
+	focus = {
+		id = ROM_Reformed_Army_France
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army
+		x = -3
+		y = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = ROM_Reformed_Army
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROM_Reformed_Army_France1
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_France
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_France
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROM_Reformed_Army_France2
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_France1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_France1
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_France3
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_France2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_France2
+		}
+		completion_reward = {}
+	}
+
+	#	Britain
+
+	focus = {
+		id = ROM_Reformed_Army_Britain
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army
+		x = 0
+		y = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = ROM_Reformed_Army
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_Britain1
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_Britain
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_Britain
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_Britain2
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_Britain1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_Britain1
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_Britain3
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_Britain2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_Britain2
+		}
+		completion_reward = {}
+	}
+
+	#	Russia
+
+	focus = {
+		id = ROM_Reformed_Army_Russia
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army
+		x = 3
+		y = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = ROM_Reformed_Army
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_Russia1
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_Russia
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_Russia
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_Russia2
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_Russia1
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_Russia1
+		}
+		completion_reward = {}
+	}
+	focus = {
+		id = ROM_Reformed_Army_Russia3
+		icon = GFX_unit_northern_territory_recon_support_icon_small
+		cost = 5
+		relative_position_id = ROM_Reformed_Army_Russia2
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ROM_Reformed_Army_Russia2
+		}
+		completion_reward = {}
+	}
 }

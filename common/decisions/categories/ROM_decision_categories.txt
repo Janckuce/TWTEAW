@@ -1,0 +1,37 @@
+ROM_Kill_The_Regent = {
+	icon = gre_investment_decisions
+
+	priority = 102
+
+	visible_when_empty = no
+
+	allowed = {
+		tag = ROM
+	}
+}
+
+ROM_Entente_Appeasement = {
+	icon = gre_investment_decisions
+
+	scripted_gui = Appeasement_Scripted_Gui
+
+	priority = 101
+
+	visible_when_empty = no
+
+	allowed = {
+		tag = ROM
+	}
+}
+
+ROM_Army_Reform_Tab = {
+	icon = gre_investment_decisions
+
+	priority = 100
+
+	visible_when_empty = yes
+
+	allowed = {
+		tag = ROM
+	}
+}
