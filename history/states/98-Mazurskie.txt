@@ -8,14 +8,26 @@ state={
 			3230 5 
 		}
 		owner = RUS
+		add_dynamic_modifier = {
+			modifier = Sere_De_Rivieres_System
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
+			3230 = {
+				bunker = {
+					level = 7
+				}
+			}
+			6321 = {
+				bunker = {
+					level = 7
+				}
+			}
 		}
 		add_core_of = POL
 		add_core_of = RUS
-		
+
 		1916.1.1 = {
 			owner = GER
 		}

@@ -9,15 +9,22 @@ state={
 			6296 5
 		}
 		victory_points = {
-			9357 1 #Ukmerge
+			9357 1
+		}
+		add_dynamic_modifier = {
+			modifier = Sere_De_Rivieres_System
 		}
 		buildings = {
 			infrastructure = 3
-
+			6296 = {
+				bunker = {
+					level = 5
+				}
+			}
 		}
 		add_core_of = LIT
 		add_core_of = RUS
-		
+
 		1916.1.1 = {
 			owner = GER
 		}
