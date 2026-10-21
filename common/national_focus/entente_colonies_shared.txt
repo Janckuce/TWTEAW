@@ -128,12 +128,13 @@ joint_focus = {
 		}
 	}
 
-	cost = 2
+	cost = 5
 
 	text_icon = NORDIC_focus_style
 
 	available = {
 		tag = ENG
+		date > 1911.05.23
 	}
 
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -158,7 +159,7 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_northern_command
+	id = first
 	
 	icon = GFX_goal_generic_army_doctrines
 	
@@ -173,8 +174,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_stability > 0.5
-		has_war_support > 0.25
+		has_political_power > 100
 	}
 
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP }
@@ -182,14 +182,12 @@ joint_focus = {
 	joint_trigger = {
   		NORDIC_basic_joint_trigger = yes 
 	}
+	completion_reward_joint_originator = {
+		add_political_power = -100
+	}
 
-
-	completion_reward = {
-		air_experience = 25
-		navy_experience = 25
-		army_experience = 25
-		add_command_power = 25		
-		add_ideas = { NORDIC_command_ns }
+	completion_reward_joint_member = {
+		add_political_power = 25
 	}
 }
 
@@ -728,7 +726,7 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_nordic_army
+	id = right1
 	icon = {
 		GFX_focus_NORDIC_dem_army = {
 			NORDIC_democratic_alliance_viable = yes
@@ -744,11 +742,11 @@ joint_focus = {
 
 	dynamic = yes 
 	
-	prerequisite = { focus = NORDIC_northern_command }
+	prerequisite = { focus = first }
 
-	x = 5
+	x = 6
 	y = 1
-	relative_position_id = NORDIC_northern_command
+	relative_position_id = first
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -784,15 +782,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_joint_military_exercises
+	id = right2
 	
 	icon = GFX_focus_generic_military_mission
 	
-	prerequisite = { focus = NORDIC_nordic_army }
+	prerequisite = { focus = right1 }
 
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_nordic_army
+	relative_position_id = right1
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -816,7 +814,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		army_experience = 50
 		add_doctrine_cost_reduction = {
-			name = NORDIC_joint_military_exercises
+			name = right2
 			cost_reduction = 0.25
 			uses = 2
 			category = land_doctrine 
@@ -826,7 +824,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		army_experience = 40
 		add_doctrine_cost_reduction = {
-			name = NORDIC_joint_military_exercises
+			name = right2
 			cost_reduction = 0.25
 			uses = 1
 			category = land_doctrine 
@@ -835,15 +833,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_unified_recruitment
+	id = right3
 	
 	icon = GFX_focus_chi_army_reform
 	
-	prerequisite = { focus = NORDIC_joint_military_exercises }
+	prerequisite = { focus = right2 }
 
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_joint_military_exercises
+	relative_position_id = right2
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -912,15 +910,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_mechanized_army
+	id = right4
 	
 	icon = GFX_goal_generic_army_tanks
 	
-	prerequisite = { focus = NORDIC_unified_recruitment }
-	mutually_exclusive = { focus = NORDIC_infantry_first }
+	prerequisite = { focus = right3 }
+	mutually_exclusive = { focus = right5 }
 	x = -1
 	y = 1
-	relative_position_id = NORDIC_unified_recruitment
+	relative_position_id = right3
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -949,13 +947,13 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		army_experience = 40
 		add_tech_bonus = {
-			name = NORDIC_mechanized_army
+			name = right4
 			bonus = 0.25
 			uses = 2
 			category = cat_mechanized_equipment
 		}
 		add_tech_bonus = {
-			name = NORDIC_mechanized_army
+			name = right4
 			bonus = 0.20
 			uses = 1
 			category = armor
@@ -965,13 +963,13 @@ joint_focus = {
 	completion_reward_joint_member = {
 		army_experience = 20
 		add_tech_bonus = {
-			name = NORDIC_mechanized_army
+			name = right4
 			bonus = 0.25
 			uses = 1
 			category = cat_mechanized_equipment
 		}
 		add_tech_bonus = {
-			name = NORDIC_mechanized_army
+			name = right4
 			bonus = 0.15
 			uses = 1
 			category = armor
@@ -980,15 +978,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_infantry_first
+	id = right5
 	
 	icon = GFX_goal_generic_allies_build_infantry
 	
-	prerequisite = { focus = NORDIC_unified_recruitment }
-	mutually_exclusive = { focus = NORDIC_mechanized_army }
+	prerequisite = { focus = right3 }
+	mutually_exclusive = { focus = right4 }
 	x = 1
 	y = 1
-	relative_position_id = NORDIC_unified_recruitment
+	relative_position_id = right3
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -1015,7 +1013,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		army_experience = 40
 		add_tech_bonus = {
-			name = NORDIC_infantry_first
+			name = right5
 			bonus = 0.25
 			uses = 2
 			category = infantry_weapons
@@ -1025,7 +1023,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		army_experience = 20
 		add_tech_bonus = {
-			name = NORDIC_infantry_first
+			name = right5
 			bonus = 0.20
 			uses = 1
 			category = infantry_weapons
@@ -1034,7 +1032,7 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_nordic_navy
+	id = middle1
 
 	icon = {
 		GFX_focus_NORDIC_dem_navy = {
@@ -1051,11 +1049,11 @@ joint_focus = {
 
 	dynamic = yes 
 	
-	prerequisite = { focus = NORDIC_northern_command }
+	prerequisite = { focus = first }
 
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_northern_command
+	relative_position_id = first
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -1096,15 +1094,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_naval_exercises
+	id = middle2
 	
 	icon = GFX_focus_generic_naval_discipline
 	
-	prerequisite = { focus = NORDIC_nordic_navy }
+	prerequisite = { focus = middle1 }
 
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_nordic_navy
+	relative_position_id = middle1
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -1147,7 +1145,7 @@ joint_focus = {
 			}
 		}
 		add_doctrine_cost_reduction = {
-			name = NORDIC_naval_exercises
+			name = middle2
 			cost_reduction = 0.2
 			uses = 3
 			category = naval_doctrine 
@@ -1165,7 +1163,7 @@ joint_focus = {
 			}
 		}
 		add_doctrine_cost_reduction = {
-			name = NORDIC_naval_exercises
+			name = middle2
 			cost_reduction = 0.10
 			uses = 2
 			category = naval_doctrine 
@@ -1174,15 +1172,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_naval_officer_academy
+	id = middleRight1
 	
 	icon = GFX_focus_generic_military_academy
 	
-	prerequisite = { focus = NORDIC_nordic_navy }
+	prerequisite = { focus = middle1 }
 
 	x = 3
 	y = 1
-	relative_position_id = NORDIC_nordic_navy
+	relative_position_id = middle1
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -1206,15 +1204,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_defend_the_danish_belt
+	id = middle3
 	
 	icon = GFX_focus_generic_develop_denmark_silhouette
 
-	prerequisite = { focus = NORDIC_naval_exercises }
-	mutually_exclusive = { focus = NORDIC_control_the_northern_sea focus = NORDIC_baltic_sea_dominance }
-	x = -2
+	prerequisite = { focus = middle2 }
+	mutually_exclusive = { focus = middle5 }
+	x = -1
 	y = 1
-	relative_position_id = NORDIC_naval_exercises
+	relative_position_id = middle2
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -1364,174 +1362,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_control_the_northern_sea
-	
-	icon = GFX_focus_generic_north_atlantic_fleet
-	
-	prerequisite = { focus = NORDIC_naval_exercises }
-	mutually_exclusive = { focus = NORDIC_defend_the_danish_belt focus = NORDIC_baltic_sea_dominance }
-	x = 0
-	y = 1
-	relative_position_id = NORDIC_naval_exercises
-	cost = 5
-
-	text_icon = NORDIC_focus_style
-
-	available = {
-		NORDIC_basic_available_trigger = yes
-		any_owned_state = {
-			is_controlled_by = PREV 
-			custom_trigger_tooltip = {
-				tooltip = NORDIC_is_northern_sea_state
-				is_scandinavian_northern_sea_state = yes
-			}
-		}
-		has_navy_size = {
-			size > 29
-		}
-		num_of_naval_factories > 14
-	}
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
-
-
-	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT 
-					is_scandinavian_northern_sea_state = yes 
-				}
-			}
-			random_owned_state = {
-				limit = {	
-					is_controlled_by = ROOT 
-					is_scandinavian_northern_sea_state = yes
-					free_building_slots = {
-					 	building = dockyard
-					 	size > 1 
-					 	include_locked = yes 
-					} 
-				}
-				add_extra_state_shared_building_slots = 2 
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
- 					is_scandinavian_northern_sea_state = yes
-					naval_base > 0
-					naval_base < 8
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 3
-					instant_build = yes
-					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_scandinavian_northern_sea_state = yes 
-				}
-				add_building_construction = {
-					type = coastal_bunker 
-					level = 2
-					province = {
-  						all_provinces = yes
-  						limit_to_victory_point > 0
-  						limit_to_coastal = yes
-  					}
-				}
-			}
-		}
-	}
-
-	completion_reward_joint_member = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT 
-					is_scandinavian_northern_sea_state = yes 
-				}
-			}
-			random_owned_state = {
-				limit = {	
-					is_controlled_by = ROOT 
-					is_scandinavian_northern_sea_state = yes
-					free_building_slots = {
-					 	building = dockyard
-					 	size > 0 
-					 	include_locked = yes 
-					} 
-				}
-				add_extra_state_shared_building_slots = 1 
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
- 					is_scandinavian_northern_sea_state = yes
-					naval_base > 0
-					naval_base < 8
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_scandinavian_northern_sea_state = yes 
-				}
-				add_building_construction = {
-					type = coastal_bunker 
-					level = 1
-					province = {
-  						all_provinces = yes
-  						limit_to_victory_point > 0
-  						limit_to_coastal = yes
-  					}
-				}
-			}
-		}	
-	}
-}
-
-joint_focus = {
-	id = NORDIC_baltic_sea_dominance
+	id = middle5
 	
 	icon = GFX_focus_generic_baltic_sea_fleet
 	
-	prerequisite = { focus = NORDIC_naval_exercises }
-	mutually_exclusive = { focus = NORDIC_defend_the_danish_belt focus = NORDIC_control_the_northern_sea }
-	x = 2
+	prerequisite = { focus = middle2 }
+	mutually_exclusive = { focus = middle3 }
+	x = 1
 	y = 1
-	relative_position_id = NORDIC_naval_exercises
+	relative_position_id = middle2
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -1681,15 +1520,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_naval_research_institute
+	id = middle6
 	
 	icon = GFX_goal_generic_navy_doctrines_tactics
 	
-	prerequisite = { focus = NORDIC_defend_the_danish_belt focus = NORDIC_control_the_northern_sea focus = NORDIC_baltic_sea_dominance }
+	prerequisite = { focus = middle3 focus = middle5 }
 
-	x = 0
+	x = -1
 	y = 1
-	relative_position_id = NORDIC_control_the_northern_sea
+	relative_position_id = middle5
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -1708,7 +1547,7 @@ joint_focus = {
 
 	completion_reward_joint_originator = {
 		add_tech_bonus = {
-			name = NORDIC_naval_research_institute
+			name = middle6
 			bonus = 0.25
 			uses = 3 
 			category = naval_equipment
@@ -1717,7 +1556,7 @@ joint_focus = {
 
 	completion_reward_joint_member = {
 		add_tech_bonus = {
-			name = NORDIC_naval_research_institute
+			name = middle6
 			bonus = 0.2
 			uses = 2 
 			category = naval_equipment
@@ -1726,15 +1565,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_submarine_cooperation
+	id = middle7
 	
 	icon = GFX_goal_generic_navy_submarine
 	
-	prerequisite = { focus = NORDIC_naval_research_institute }
-	mutually_exclusive = { focus = NORDIC_ground_operations focus = NORDIC_carrier_effort focus = NORDIC_amphibious_forces focus = NORDIC_mountaineers }
+	prerequisite = { focus = middle6 }
+	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middleRight2 focus = right6 }
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_naval_research_institute
+	relative_position_id = middle6
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -1757,13 +1596,13 @@ joint_focus = {
 		add_ideas = NORDIC_joint_submarines_effort
 		navy_experience = 50
 		add_tech_bonus = {
-			name = NORDIC_submarine_cooperation
+			name = middle7
 			bonus = 0.3 
 			uses = 1
 			category = ss_tech
 		}
 		add_tech_bonus = {
-			name = NORDIC_submarine_cooperation 
+			name = middle7 
 			ahead_reduction = 1
 			uses = 1
 			category = naval_equipment
@@ -1791,13 +1630,13 @@ joint_focus = {
 		add_ideas = NORDIC_joint_submarines_effort
 		navy_experience = 20
 		add_tech_bonus = {
-			name = NORDIC_submarine_cooperation
+			name = middle7
 			bonus = 0.25 
 			uses = 1 
 			category = ss_tech
 		}
 		add_tech_bonus = {
-			name = NORDIC_submarine_cooperation 
+			name = middle7 
 			ahead_reduction = 1
 			uses = 1
 			category = naval_equipment
@@ -1806,16 +1645,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_mountaineers
+	id = right6
 	
 	icon = GFX_goal_generic_special_forces
 	
-	prerequisite = { focus = NORDIC_mechanized_army focus = NORDIC_infantry_first }
-	mutually_exclusive = { focus = NORDIC_ground_operations focus = NORDIC_carrier_effort focus = NORDIC_submarine_cooperation focus = NORDIC_amphibious_forces }
+	prerequisite = { focus = right4 focus = right5 }
+	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = middleRight2 }
 
 	x = 1
 	y = 1
-	relative_position_id = NORDIC_mechanized_army
+	relative_position_id = right4
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -1851,18 +1690,18 @@ joint_focus = {
 	}
 }
 joint_focus = {
-	id = NORDIC_amphibious_forces
+	id = middleRight2
 	
 	icon = GFX_goal_generic_amphibious_assault
 	
-	prerequisite = { focus = NORDIC_naval_officer_academy }
-	prerequisite = { focus = NORDIC_joint_military_exercises }
-	prerequisite = { focus = NORDIC_naval_research_institute }
-	mutually_exclusive = { focus = NORDIC_ground_operations focus = NORDIC_carrier_effort focus = NORDIC_submarine_cooperation focus = NORDIC_mountaineers }
+	prerequisite = { focus = middleRight1 }
+	prerequisite = { focus = right2 }
+	prerequisite = { focus = middle6 }
+	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = right6 }
 
 	x = 0
 	y = 3
-	relative_position_id = NORDIC_naval_officer_academy
+	relative_position_id = middleRight1
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -1886,19 +1725,19 @@ joint_focus = {
 		army_experience = 25
 		add_ideas = NORDIC_joint_amphibious_effort
 		add_tech_bonus = {
-			name = NORDIC_amphibious_forces 
+			name = middleRight2 
 			bonus = 0.25
 			uses = 1 
 			category = tp_tech
 		}
 		add_tech_bonus = {
-			name = NORDIC_amphibious_forces
+			name = middleRight2
 			bonus = 0.3 
 			uses = 1
 			category = marine_tech
 		}
 		add_tech_bonus = {
-			name = NORDIC_amphibious_forces
+			name = middleRight2
 			bonus = 0.25
 			uses = 1
 			technology = amphibious_mechanized_infantry
@@ -1909,19 +1748,19 @@ joint_focus = {
 	completion_reward_joint_member = {	
 		add_ideas = NORDIC_joint_amphibious_effort
 		add_tech_bonus = {
-			name = NORDIC_amphibious_forces 
+			name = middleRight2 
 			bonus = 0.2
 			uses = 1 
 			category = tp_tech
 		}
 		add_tech_bonus = {
-			name = NORDIC_amphibious_forces
+			name = middleRight2
 			bonus = 0.2 
 			uses = 1 
 			category = marine_tech
 		}
 		add_tech_bonus = {
-			name = NORDIC_amphibious_forces
+			name = middleRight2
 			bonus = 0.25
 			uses = 1
 			technology = amphibious_mechanized_infantry
@@ -1930,7 +1769,7 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_nordic_airforce
+	id = left1
 	
 	icon = {
 		GFX_focus_NORDIC_dem_airforce = {
@@ -1947,11 +1786,11 @@ joint_focus = {
 
 	dynamic = yes 
 	
-	prerequisite = { focus = NORDIC_northern_command }
+	prerequisite = { focus = first }
 
-	x = -5
+	x = -6
 	y = 0
-	relative_position_id = NORDIC_nordic_navy
+	relative_position_id = middle1
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -2000,13 +1839,13 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_air_exercises
+	id = left2
 	icon = GFX_focus_SOV_flying_clubs
-	prerequisite = { focus = NORDIC_nordic_airforce }
+	prerequisite = { focus = left1 }
 
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_nordic_airforce
+	relative_position_id = left1
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -2027,7 +1866,7 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		air_experience = 100
 		add_doctrine_cost_reduction = {
-			name = NORDIC_air_exercises
+			name = left2
 			cost_reduction = 0.25
 			uses = 2
 			category = air_doctrine 
@@ -2037,7 +1876,7 @@ joint_focus = {
 	completion_reward_joint_member = {
 		air_experience = 50
 		add_doctrine_cost_reduction = {
-			name = NORDIC_air_exercises
+			name = left2
 			cost_reduction = 0.15
 			uses = 2
 			category = air_doctrine 
@@ -2046,15 +1885,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_air_production
+	id = left3
 	
 	icon = GFX_focus_generic_aircraft_production
 	
-	prerequisite = { focus = NORDIC_air_exercises }
+	prerequisite = {focus = left2} 
+	prerequisite = {focus = middleLeft1} 
 
 	x = 0
 	y = 1
-	relative_position_id = NORDIC_air_exercises
+	relative_position_id = left2
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -2108,14 +1948,13 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_naval_aircraft
+	id = middleLeft1
 	icon = GFX_goal_generic_air_naval_bomber
-	prerequisite = { focus = NORDIC_nordic_airforce }
-	prerequisite = { focus = NORDIC_nordic_navy }
+	prerequisite = { focus = middle1 }
 
-	x = 2
+	x = 3
 	y = 1
-	relative_position_id = NORDIC_nordic_airforce
+	relative_position_id = left1
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -2152,17 +1991,17 @@ joint_focus = {
 
 
 joint_focus = {
-	id = NORDIC_bomber_command
+	id = left4
 	
 	icon = GFX_goal_generic_air_bomber
 	
-	prerequisite = { focus = NORDIC_air_production }
+	prerequisite = { focus = left3 }
 
-	mutually_exclusive = { focus = NORDIC_fighter_command }
+	mutually_exclusive = { focus = left5 }
 
 	x = -1
 	y = 1
-	relative_position_id = NORDIC_air_production
+	relative_position_id = left3
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -2250,15 +2089,15 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_fighter_command
+	id = left5
 	icon = GFX_goal_generic_air_fighter2
-	prerequisite = { focus = NORDIC_air_production }
+	prerequisite = { focus = left3 }
 
-	mutually_exclusive = { focus = NORDIC_bomber_command }
+	mutually_exclusive = { focus = left4 }
 
 	x = 1
 	y = 1
-	relative_position_id = NORDIC_air_production
+	relative_position_id = left3
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -2340,16 +2179,16 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_ground_operations
+	id = left6
 	
 	icon = GFX_focus_generic_air_bases
 	
-	prerequisite = { focus = NORDIC_fighter_command focus = NORDIC_bomber_command }
-	mutually_exclusive = { focus = NORDIC_carrier_effort focus = NORDIC_submarine_cooperation focus = NORDIC_amphibious_forces focus = NORDIC_mountaineers }
+	prerequisite = { focus = left5 focus = left4 }
+	mutually_exclusive = { focus = middleLeft2 focus = middle7 focus = middleRight2 focus = right6 }
 
 	x = 1
 	y = 1
-	relative_position_id = NORDIC_bomber_command
+	relative_position_id = left4
 	cost = 5
 
 	text_icon = NORDIC_focus_style
@@ -2470,17 +2309,17 @@ joint_focus = {
 }
 
 joint_focus = {
-	id = NORDIC_carrier_effort
+	id = middleLeft2
 	
 	icon = GFX_goal_generic_navy_carrier
 	
-	prerequisite = { focus = NORDIC_naval_aircraft }
-	prerequisite = { focus = NORDIC_naval_research_institute }
-	mutually_exclusive = { focus = NORDIC_ground_operations focus = NORDIC_submarine_cooperation focus = NORDIC_amphibious_forces focus = NORDIC_mountaineers }
+	prerequisite = { focus = middleLeft1 }
+	prerequisite = { focus = middle6 }
+	mutually_exclusive = { focus = left6 focus = middle7 focus = middleRight2 focus = right6 }
 
 	x = 0
 	y = 3
-	relative_position_id = NORDIC_naval_aircraft
+	relative_position_id = middleLeft1
 	cost = 10
 
 	text_icon = NORDIC_focus_style
@@ -2522,7 +2361,7 @@ joint_focus = {
 	 		}
 	 	}
 	 	add_tech_bonus = {
-	 		name = NORDIC_carrier_effort
+	 		name = middleLeft2
 	 		bonus = 0.25
 	 		uses = 1 
 	 		category = cv_tech
@@ -2549,7 +2388,7 @@ joint_focus = {
 	 		}
 	 	}
 	 	add_tech_bonus = {
-	 		name = NORDIC_carrier_effort
+	 		name = middleLeft2
 	 		bonus = 0.25 
 	 		uses = 1 
 	 		category = cv_tech
