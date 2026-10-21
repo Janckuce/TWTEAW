@@ -4,7 +4,7 @@
 #search_filters = {FOCUS_FILTER_NAVY_MOD}
 #search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
 #search_filters = {FOCUS_FILTER_COLONIAL_MOD}
-#search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
+#search_filters = {FOCUS_FILTER_INDUSTRY_MOD} entente_colonies_shared
 
 focus_tree = {
 	id = british_focus
@@ -22,11 +22,72 @@ focus_tree = {
 	shared_focus = ENG_War_With_Germany
 	shared_focus = ENG_Air
 	shared_focus = ENG_Army
+	shared_focus = entente_colonies_shared
 	
 	continuous_focus_position = { x = 245 y = 1200 }
 	
 	default = no
 	reset_on_civilwar = no
+
+	
+	# focus = {
+	# 	id = entente_colonies_shared
+	# 	icon = GFX_focus_befriend_belgium
+	# 	x = 34
+	# 	y = 0
+	# 	cost = 5.8
+
+	# 	bypass = {
+	# 		#
+	# 	}
+	# 	available = {
+	# 		#
+	# 	}
+		
+	# 	search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+	# 	available_if_capitulated = yes
+		
+	# 	completion_reward = {
+	# 		set_variable = {
+	# 			Britain_democracy = 0
+	# 			Britain_monarchy = 0
+	# 		}
+	# 		ENG = {give_guarantee = BEL}
+	# 		add_political_power = 80
+	# 	}
+	# }
+
+	# focus = {
+	# 	id = entente_colonies_shared2
+	# 	icon = GFX_focus_befriend_belgium
+	# 	x = 0
+	# 	y = 1
+	# 	cost = 5.8
+	# 	prerequisite = { focus = entente_colonies_shared }
+
+	# 	bypass = {
+	# 		#
+	# 	}
+	# 	available = {
+	# 		#
+	# 	}
+	# 	relative_position_id = entente_colonies_shared
+		
+	# 	search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+		
+	# 	available_if_capitulated = yes
+		
+	# 	completion_reward = {
+	# 		set_variable = {
+	# 			Britain_democracy = 0
+	# 			Britain_monarchy = 0
+	# 		}
+	# 		ENG = {give_guarantee = BEL}
+	# 		add_political_power = 80
+	# 	}
+	# }
+
 	focus = {
 		id = ENG_focus_protect_belgium
 		icon = GFX_focus_befriend_belgium

@@ -5,7 +5,6 @@
 #search_filters = {FOCUS_FILTER_AIRFORCE_MOD}
 #search_filters = {FOCUS_FILTER_COLONIAL_MOD}
 #search_filters = {FOCUS_FILTER_INDUSTRY_MOD}
-
 focus_tree = {
 	id = australian_focus
 
@@ -19,6 +18,8 @@ focus_tree = {
 	}
 
 	default = no
+	
+	shared_focus = entente_colonies_shared
 
 
 	focus = {
