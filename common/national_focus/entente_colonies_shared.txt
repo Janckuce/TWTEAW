@@ -753,8 +753,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_army_manpower = { size > 84999 } 
-		num_divisions > 15
+		has_manpower > 1000
 	}
 
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
@@ -769,15 +768,13 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		army_experience = 60
-		add_manpower = 8000
-		add_ideas = { NORDIC_joint_army_originator_ns_1 }
+		army_experience = 25
+		add_manpower = -1000
 	}
 
 	completion_reward_joint_member = {
 		army_experience = 40
-		add_manpower = 4000
-		add_ideas = { NORDIC_joint_army_member_ns_1 }
+		add_manpower = 250
 	}
 }
 
@@ -797,8 +794,8 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_army_manpower = { size > 89999 } 
-		num_divisions > 20
+		has_manpower > 400000
+		has_war = yes
 	}
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -812,32 +809,21 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		army_experience = 50
-		add_doctrine_cost_reduction = {
-			name = right2
-			cost_reduction = 0.25
-			uses = 2
-			category = land_doctrine 
-		}
+		add_manpower = -400000
 	}
 
 	completion_reward_joint_member = {
-		army_experience = 40
-		add_doctrine_cost_reduction = {
-			name = right2
-			cost_reduction = 0.25
-			uses = 1
-			category = land_doctrine 
-		}	
+		add_manpower = 100000
 	}
 }
 
 joint_focus = {
 	id = right3
 	
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_focus_generic_public_works
 	
 	prerequisite = { focus = right2 }
+	prerequisite = { focus = middleRight1 }
 
 	x = 0
 	y = 1
@@ -848,8 +834,6 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_army_manpower = { size > 89999 } 
-		num_divisions > 20
 	}
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
@@ -861,58 +845,18 @@ joint_focus = {
 
 
 	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				has_idea = NORDIC_joint_army_originator_ns_1
-			}
-			swap_ideas = {
-				remove_idea = NORDIC_joint_army_originator_ns_1
-				add_idea = NORDIC_joint_army_originator_ns_2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = NORDIC_joint_army_member_ns_1 
-			}
-			swap_ideas = {
-				remove_idea = NORDIC_joint_army_member_ns_1
-				add_idea = NORDIC_joint_army_originator_ns_2
-			}
-		}
-		else = {
-			add_ideas = { NORDIC_joint_army_originator_ns_2 } 
-		}
+		add_manpower = -400000
 	}
 
-	completion_reward_joint_member = {
-		if = {
-			limit = {
-				has_idea = NORDIC_joint_army_originator_ns_1
-			}
-			swap_ideas = {
-				remove_idea = NORDIC_joint_army_originator_ns_1
-				add_idea = NORDIC_joint_army_member_ns_1
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = NORDIC_joint_army_member_ns_1 
-			}
-			swap_ideas = {
-				remove_idea = NORDIC_joint_army_member_ns_1
-				add_idea = NORDIC_joint_army_member_ns_2
-			}
-		}
-		else = {
-			add_ideas = { NORDIC_joint_army_member_ns_2 } 
-		}	
+	completion_reward = {
+		
 	}
 }
 
 joint_focus = {
 	id = right4
 	
-	icon = GFX_goal_generic_army_tanks
+	icon = GFX_focus_generic_asia_liberation
 	
 	prerequisite = { focus = right3 }
 	mutually_exclusive = { focus = right5 }
@@ -1200,6 +1144,10 @@ joint_focus = {
 
 	completion_reward = {
 		navy_experience = 50 
+		add_equipment_to_stockpile = {
+            type = convoy_1
+            amount = 50
+        }
 	}
 }
 
@@ -1695,7 +1643,6 @@ joint_focus = {
 	icon = GFX_goal_generic_amphibious_assault
 	
 	prerequisite = { focus = middleRight1 }
-	prerequisite = { focus = right2 }
 	prerequisite = { focus = middle6 }
 	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = right6 }
 
