@@ -823,6 +823,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
+		has_manpower > 250000
 	}
 
 	search_filters = { FOCUS_FILTER_MANPOWER }
@@ -834,11 +835,11 @@ joint_focus = {
 
 
 	completion_reward_joint_originator = {
-		add_manpower = -400000
+		add_manpower = -250000
 	}
 
 	completion_reward = {
-		
+		add_ideas = commonwealth_import_labor1
 	}
 }
 
@@ -858,12 +859,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_tech = motorised_infantry
-		has_army_size = {
-			size > 7
-			type = motorized
-		}
-
+		has_political_power = 100
 	}
 
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
@@ -874,39 +870,18 @@ joint_focus = {
 
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = commonwealth_import_labor1
+			add_idea = commonwealth_import_labor2
+		}
 	}
 
 	completion_reward_joint_originator = {
-		army_experience = 40
-		add_tech_bonus = {
-			name = right4
-			bonus = 0.25
-			uses = 2
-			category = cat_mechanized_equipment
-		}
-		add_tech_bonus = {
-			name = right4
-			bonus = 0.20
-			uses = 1
-			category = armor
-		}
+		add_political_power = -100
 	}
 
 	completion_reward_joint_member = {
-		army_experience = 20
-		add_tech_bonus = {
-			name = right4
-			bonus = 0.25
-			uses = 1
-			category = cat_mechanized_equipment
-		}
-		add_tech_bonus = {
-			name = right4
-			bonus = 0.15
-			uses = 1
-			category = armor
-		}
+
 	}
 }
 
@@ -1619,10 +1594,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes	
-		has_navy_size = {
-			size > 29
-		}
-		num_of_naval_factories > 17
+
 	}
 
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
@@ -1632,50 +1604,11 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		navy_experience = 25
-		army_experience = 25
-		add_ideas = NORDIC_joint_amphibious_effort
-		add_tech_bonus = {
-			name = middleRight2 
-			bonus = 0.25
-			uses = 1 
-			category = tp_tech
-		}
-		add_tech_bonus = {
-			name = middleRight2
-			bonus = 0.3 
-			uses = 1
-			category = marine_tech
-		}
-		add_tech_bonus = {
-			name = middleRight2
-			bonus = 0.25
-			uses = 1
-			technology = amphibious_mechanized_infantry
-		}
-		
+
 	}
 
 	completion_reward_joint_member = {	
-		add_ideas = NORDIC_joint_amphibious_effort
-		add_tech_bonus = {
-			name = middleRight2 
-			bonus = 0.2
-			uses = 1 
-			category = tp_tech
-		}
-		add_tech_bonus = {
-			name = middleRight2
-			bonus = 0.2 
-			uses = 1 
-			category = marine_tech
-		}
-		add_tech_bonus = {
-			name = middleRight2
-			bonus = 0.25
-			uses = 1
-			technology = amphibious_mechanized_infantry
-		}
+
 	}
 }
 
@@ -1708,9 +1641,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_deployed_air_force_size = {
-			size > 199
-		}
+
 	}
 
 	search_filters = {}
@@ -1720,32 +1651,15 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		hidden_effect = {
-			set_variable = { NORDIC_airforces_originator_dmod_cas_factor = 0 }
-			set_variable = { NORDIC_airforces_originator_dmod_strat_bombing_factor = 0 }
-			set_variable = { NORDIC_airforces_originator_dmod_intercept_efficiency = 0 }
-			set_variable = { NORDIC_airforces_originator_dmod_superiority_efficiency = 0 }
-			set_variable = { NORDIC_airforces_originator_dmod_range_factor = 0 }
-			set_variable = { NORDIC_airforces_originator_dmod_air_base_production = 0 }
-			set_variable = { NORDIC_airforces_member_dmod_cas_factor = 0 }
-			set_variable = { NORDIC_airforces_member_dmod_strat_bombing_factor = 0 }
-			set_variable = { NORDIC_airforces_member_dmod_intercept_efficiency = 0 }
-			set_variable = { NORDIC_airforces_member_dmod_superiority_efficiency = 0 }
-			set_variable = { NORDIC_airforces_member_dmod_range_factor = 0 }
-			set_variable = { NORDIC_airforces_member_dmod_air_base_production = 0 }	
-		}
+
 	}
 
 	completion_reward_joint_originator = {
-		add_dynamic_modifier = {
-			modifier = NORDIC_airforces_originator_dmod
-		}
+
 	}
 
 	completion_reward_joint_member = { 
-		add_dynamic_modifier = {
-			modifier = NORDIC_airforces_member_dmod
-		}
+
 	}
 }
 
@@ -1763,9 +1677,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_deployed_air_force_size = {
-			size > 349
-		}
+
 	}
 
 	search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
@@ -1775,23 +1687,11 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		air_experience = 100
-		add_doctrine_cost_reduction = {
-			name = left2
-			cost_reduction = 0.25
-			uses = 2
-			category = air_doctrine 
-		}	
+
 	}
 
 	completion_reward_joint_member = {
-		air_experience = 50
-		add_doctrine_cost_reduction = {
-			name = left2
-			cost_reduction = 0.15
-			uses = 2
-			category = air_doctrine 
-		}	
+
 	}
 }
 
@@ -1812,9 +1712,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_deployed_air_force_size = {
-			size > 299
-		}
+		tag = ENG
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1824,37 +1722,11 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = NORDIC_airforces_member_dmod }
-			}
-			remove_dynamic_modifier = {
-			 	modifier = NORDIC_airforces_member_dmod
-			}
-			add_dynamic_modifier = {
-				modifier = NORDIC_airforces_originator_dmod
-			}
-		}
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod
-		custom_effect_tooltip = NORDIC_airforces_dmod_production_cost_originator_TT
-		hidden_effect = {
-			add_ideas = {
-				NORDIC_hidden_airforces_originator_dmod
-			}
-		}
+		add_ideas = weapons_of_victory1
 	}
 
 	completion_reward_joint_member = {
-		if = {
-			limit = {
-				has_dynamic_modifier = { modifier = NORDIC_airforces_originator_dmod } 
-			}
-			remove_dynamic_modifier = {	modifier = NORDIC_airforces_originator_dmod	}
-			add_dynamic_modifier = { modifier = NORDIC_airforces_member_dmod }
-		} 
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod
-		custom_effect_tooltip = NORDIC_airforces_dmod_production_cost_member_TT
-		hidden_effect = { add_ideas = NORDIC_hidden_airforces_member_dmod }
+		add_ideas = weapons_of_victory2
 	}
 }
 
@@ -1906,8 +1778,6 @@ joint_focus = {
 	
 	prerequisite = { focus = left3 }
 
-	mutually_exclusive = { focus = left5 }
-
 	x = -1
 	y = 1
 	relative_position_id = left3
@@ -1917,20 +1787,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		OR = {
-			has_deployed_air_force_size = {
-				size > 249
-				type = cas
-			}
-			has_deployed_air_force_size = {
-				size > 249
-				type = tactical_bomber
-			}
-			has_deployed_air_force_size = {
-				size > 249
-				type = strategic_bomber
-			}
-		}
+		has_idea = weapons_of_victory2
 	}
 
 	search_filters = {} 
@@ -1940,60 +1797,20 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		hidden_effect = {
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_cas_factor
-				value = 0.15
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_strat_bombing_factor
-				value = 0.15
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_cas_factor
-				value = 0.10
-				tooltip = air_cas_present_factor_tt
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_strat_bombing_factor
-				value = 0.10
-				tooltip = air_strategic_bomber_bombing_factor_tt
-			}
-		}
+
 	}
 
 	completion_reward_joint_originator = {
 		NORDIC_airforce_member_to_originator = yes 
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod		
-		effect_tooltip = {
-			add_to_variable= {
-				var = NORDIC_airforces_originator_dmod_cas_factor
-				value = 0.15
-				tooltip = air_cas_present_factor_tt
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_strat_bombing_factor
-				value = 0.15
-				tooltip = air_strategic_bomber_bombing_factor_tt
-			}
+		swap_ideas = {
+			remove_idea = weapons_of_victory2
+			add_idea = weapons_of_victory1
 		}
 	}
 
 	completion_reward_joint_member = {  
 		NORDIC_airforce_originator_to_member = yes
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod		
-		effect_tooltip = {
-			set_variable = {
-				var = NORDIC_airforces_member_dmod_cas_factor
-				value = 0.10
-				tooltip = air_cas_present_factor_tt
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_strat_bombing_factor
-				value = 0.10
-				tooltip = air_strategic_bomber_bombing_factor_tt
-			}
-		}
+
 	}
 }
 
@@ -2001,8 +1818,6 @@ joint_focus = {
 	id = left5
 	icon = GFX_goal_generic_air_fighter2
 	prerequisite = { focus = left3 }
-
-	mutually_exclusive = { focus = left4 }
 
 	x = 1
 	y = 1

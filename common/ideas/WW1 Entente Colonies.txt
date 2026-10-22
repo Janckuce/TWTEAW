@@ -93,5 +93,68 @@ ideas = {
 				industrial_capacity_factory = 0.10
 			}
 		}
+
+		commonwealth_import_labor1 = {
+			picture = chi_army_corruption
+
+			modifier =  {
+				power_generation_factor = 0.08
+			}
+		}
+		commonwealth_import_labor2 = {
+			picture = chi_army_corruption
+
+			modifier =  {
+				power_generation_factor = 0.16
+			}
+		}
+
+		weapons_of_victory1 = {
+			picture = chi_army_corruption
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.08
+					instant = yes
+				} 
+				cas = {
+					build_cost_ic = -0.08
+					instant = yes
+				}
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				Large_caliber_shell = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		weapons_of_victory2 = {
+			picture = chi_army_corruption
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.12
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.12
+					instant = yes
+				} 
+				artillery_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				HE_shell = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
 	}
 }
