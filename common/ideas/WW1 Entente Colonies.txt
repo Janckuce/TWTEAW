@@ -1,0 +1,97 @@
+ideas = {
+	country = {
+		commonwealth_trade = {
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.50
+			}
+		}
+
+		commonwealth_trade_british_first = {
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		commonwealth_trade_mercantilism = {
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.50
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.50
+			}
+			modifier=  {
+				cic_to_overlord_factor = 0.15
+			}
+		}
+
+		commonwealth_arms_purchase1 = {
+			picture = CHI_corruption_armed_forces 
+			modifier = {
+				industrial_capacity_factory = 0.25
+			}
+		}
+		commonwealth_arms_purchase2 = {
+			picture = CHI_corruption_armed_forces 
+			modifier = {
+				industrial_capacity_factory = 0.20
+			}
+		}
+		commonwealth_arms_purchase3 = {
+			picture = CHI_corruption_armed_forces 
+			modifier = {
+				industrial_capacity_factory = 0.16
+			}
+		}
+		commonwealth_arms_purchase4 = {
+			picture = CHI_corruption_armed_forces 
+			modifier = {
+				industrial_capacity_factory = 0.12
+			}
+		}
+		commonwealth_arms_purchase5 = {
+			picture = CHI_corruption_armed_forces 
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+	}
+}

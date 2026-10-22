@@ -727,18 +727,7 @@ joint_focus = {
 
 joint_focus = {
 	id = right1
-	icon = {
-		GFX_focus_NORDIC_dem_army = {
-			NORDIC_democratic_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_com_army = {
-			NORDIC_communist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_mon_army = {
-			NORDIC_monarchist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_dem_army = yes
-	}
+	icon = GFX_focus_generic_military_mission
 
 	dynamic = yes 
 	
@@ -781,7 +770,7 @@ joint_focus = {
 joint_focus = {
 	id = right2
 	
-	icon = GFX_focus_generic_military_mission
+	icon = GFX_focus_generic_manpower
 	
 	prerequisite = { focus = right1 }
 
@@ -978,18 +967,7 @@ joint_focus = {
 joint_focus = {
 	id = middle1
 
-	icon = {
-		GFX_focus_NORDIC_dem_navy = {
-			NORDIC_democratic_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_com_navy = {
-			NORDIC_communist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_mon_navy = {
-			NORDIC_monarchist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_dem_navy = yes
-	}
+	icon = GFX_goal_generic_positive_trade_relations
 
 	dynamic = yes 
 	
@@ -1004,9 +982,6 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_navy_size = {
-			size > 24
-		}
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP }
@@ -1016,47 +991,36 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		hidden_effect = {
-			set_variable = { NORDIC_navy_originator_dmod_naval_doctrine_cost_factor = 0 }
-			set_variable = { NORDIC_navy_member_dmod_naval_doctrine_cost_factor = 0 }
-			set_variable = { NORDIC_navy_originator_dmod_naval_repair_speed_factor = 0 }
-			set_variable = { NORDIC_navy_member_dmod_naval_repair_speed_factor = 0 }
-			set_variable = { NORDIC_navy_originator_dmod_navy_leader_cost_factor = 0 }
-			set_variable = { NORDIC_navy_member_dmod_navy_leader_cost_factor = 0 }
-		}
+		add_ideas = commonwealth_trade
 	}
 
-	completion_reward_joint_originator = {
-		add_dynamic_modifier = { modifier = NORDIC_navy_originator_dmod }
-		add_command_power = 60
-	}
+	# completion_reward_joint_originator = {
+	# 	add_dynamic_modifier = { modifier = NORDIC_navy_originator_dmod }
+	# 	add_command_power = 60
+	# }
 
-	completion_reward_joint_member = {
-		add_dynamic_modifier = { modifier = NORDIC_navy_member_dmod }
-		add_command_power = 40
-	}
+	# completion_reward_joint_member = {
+	# 	add_dynamic_modifier = { modifier = NORDIC_navy_member_dmod }
+	# 	add_command_power = 40
+	# }
 }
 
 joint_focus = {
 	id = middle2
 	
-	icon = GFX_focus_generic_naval_discipline
+	icon = GFX_focus_generic_arms_trade
 	
 	prerequisite = { focus = middle1 }
 
 	x = 0
 	y = 1
 	relative_position_id = middle1
-	cost = 10
+	cost = 5
 
 	text_icon = NORDIC_focus_style
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_navy_size = {
-			size > 34
-		}
-		num_of_naval_factories > 17
 	}
 
 	search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
@@ -1066,59 +1030,59 @@ joint_focus = {
 	}
 
 	completion_reward = {
-		hidden_effect = {
-			set_variable = {
-				var = NORDIC_navy_originator_dmod_naval_doctrine_cost_factor
-				value = -0.1
+		if = {
+			limit = {
+				date < 1912.01.01
 			}
-			set_variable = {
-				var = NORDIC_navy_member_dmod_naval_doctrine_cost_factor
-				value = -0.075
+			add_timed_idea = {
+				idea = commonwealth_arms_purchase1
+				days = 365
 			}
 		}
-	}
+		else_if = {
+			limit = {
+				date < 1913.01.01
+			}
+			add_timed_idea = {
+				idea = commonwealth_arms_purchase2
+				days = 365
+			}
+		}
+		else_if = {
+			limit = {
+				date < 1914.01.01
+			}
+			add_timed_idea = {
+				idea = commonwealth_arms_purchase3
+				days = 365
+			}
+		}
+		else_if = {
+			limit = {
+				date < 1915.01.01
+			}
+			add_timed_idea = {
+				idea = commonwealth_arms_purchase4
+				days = 365
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = commonwealth_arms_purchase5
+				days = 365
+			}
+		}
 
-	completion_reward_joint_originator = {
-		NORDIC_navy_member_to_originator = yes
-		custom_effect_tooltip = NORDIC_modify_nordic_navy_dmod
-		effect_tooltip = {
-			set_variable = {
-				var = NORDIC_navy_originator_dmod_naval_doctrine_cost_factor
-				value = -0.1
-				tooltip = naval_doctrine_cost_factor_tt
-			}
-		}
-		add_doctrine_cost_reduction = {
-			name = middle2
-			cost_reduction = 0.2
-			uses = 3
-			category = naval_doctrine 
-		}
-	}
+		completion_reward_joint_originator = {
 
-	completion_reward_joint_member = {
-		NORDIC_navy_originator_to_member = yes
-		custom_effect_tooltip = NORDIC_modify_nordic_navy_dmod
-		effect_tooltip = {
-			set_variable = {
-				var = NORDIC_navy_member_dmod_naval_doctrine_cost_factor
-				value = -0.075
-				tooltip = naval_doctrine_cost_factor_tt
-			}
 		}
-		add_doctrine_cost_reduction = {
-			name = middle2
-			cost_reduction = 0.10
-			uses = 2
-			category = naval_doctrine 
-		}		 
 	}
 }
 
 joint_focus = {
 	id = middleRight1
 	
-	icon = GFX_focus_generic_military_academy
+	icon = GFX_focus_generic_refit_civilian_ships
 	
 	prerequisite = { focus = middle1 }
 
@@ -1896,7 +1860,7 @@ joint_focus = {
 
 joint_focus = {
 	id = middleLeft1
-	icon = GFX_goal_generic_air_naval_bomber
+	icon = GFX_focus_generic_british_trade
 	prerequisite = { focus = middle1 }
 
 	x = 3
@@ -1908,30 +1872,28 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
+		tag = ENG
+		has_war = yes
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	joint_trigger = {
   		NORDIC_basic_joint_trigger = yes 
-	}
+	} 
 
 	completion_reward_joint_originator = {
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod
-		custom_effect_tooltip = NORDIC_airforces_dmod_naval_originator_TT
-		hidden_effect ={
-			add_ideas = {
-				NORDIC_hidden_airforces_naval_originator_dmod
-			}
+		swap_ideas = {
+			remove_idea = commonwealth_trade
+			add_idea = commonwealth_trade_british_first
 		}
 	}
 
 	completion_reward_joint_member = {
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod
-		custom_effect_tooltip = NORDIC_airforces_dmod_naval_member_TT
-		hidden_effect = {
-			add_ideas = { NORDIC_hidden_airforces_naval_member_dmod }
-		} 
+		swap_ideas = {
+			remove_idea = commonwealth_trade
+			add_idea = commonwealth_trade_mercantilism
+		}
 	}
 }
 
