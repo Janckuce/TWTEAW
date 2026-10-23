@@ -60,13 +60,16 @@ focus_tree = {
 			always = no
 		}
 		relative_position_id = GER_Choose_Military_Strategy
-		x = -2
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = GER_Choose_Military_Strategy
 		}
+		mutually_exclusive = {
+			focus = GER_Helmuth_von_Moltke
+		}
 		completion_reward = {
-			add_ideas = GER_offensive_idea
+			# add_ideas = GER_offensive_idea
 			custom_effect_tooltip = GER_schlieffen_plan_tooltip
 		}
 	}
@@ -76,15 +79,15 @@ focus_tree = {
 		icon = GFX_focus_SWE_let_fly_all_guns
 		cost = 5
 
-		relative_position_id = GER_Choose_Military_Strategy
-		x = -2
-		y = 2
+		relative_position_id = GER_Military_academy
+		x = -1
+		y = 1
 
 		available = {
 			has_tech = heavy_artillery_equipment1
 		}
 		prerequisite = {
-			focus = GER_schlieffen_moltke_plan_idea
+			focus = GER_Military_academy
 		}
 		completion_reward = {
 			division_template = {
@@ -140,8 +143,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_Choose_Military_Strategy
 		}
+		mutually_exclusive = {
+			focus = GER_schlieffen_moltke_plan_idea
+		}
 		completion_reward = {
-			add_ideas = GER_Defensive_idea
+			# add_ideas = GER_Defensive_idea
 			custom_effect_tooltip = GER_moltke_plan_tooltip
 		}
 	}
@@ -151,11 +157,11 @@ focus_tree = {
 		icon = GFX_SOV_fortify_mongolian_border_ccp_2d_sov_compatibility
 		cost = 5
 
-		relative_position_id = GER_Choose_Military_Strategy
-		x = 0
+		relative_position_id = GER_reorganize_civilian_industry
+		x = -1
 		y = 2
 		prerequisite = {
-			focus = GER_Helmuth_von_Moltke
+			focus = GER_reorganize_civilian_industry
 		}
 		completion_reward = {
 			916 = {
@@ -180,11 +186,11 @@ focus_tree = {
 		icon = GFX_SOV_fortify_mongolian_border_ccp_2d_sov_compatibility
 		cost = 5
 
-		relative_position_id = GER_Choose_Military_Strategy
-		x = 2
+		relative_position_id = GER_reorganize_civilian_industry
+		x = 1
 		y = 2
 		prerequisite = {
-			focus = GER_Helmuth_von_Moltke
+			focus = GER_reorganize_civilian_industry
 		}
 		completion_reward = {
 			762 = {
@@ -276,15 +282,13 @@ focus_tree = {
 		id = GER_Military_academy
 		icon = GFX_focus_chi_army_reform
 		cost = 7.2
-		x = 3
-		y = 7
+		x = 0
+		y = 2
 		prerequisite = {
-			focus = GER_deploy_early_berthas
-			focus = GER_forts_westwall
+			focus = GER_Choose_Military_Strategy
 		}
-		# prerequisite = {
-		# 	focus = GER_appease_Britain
-		# }
+		relative_position_id = GER_Choose_Military_Strategy
+
 		completion_reward = {
 			add_ideas = GER_Prussian_Militarism
 			add_trait = {
@@ -944,10 +948,10 @@ focus_tree = {
 		
 		completion_reward = {
 		    763 = { #Ostpreußen
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1070,7 +1074,7 @@ focus_tree = {
 			focus = GER_east_prussia_plan
 		}
 		x = 0
-		y = 2
+		y = 1
 		cost = 5
 
 		bypass = {
@@ -1102,12 +1106,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GER_koln_airport
 		icon = GFX_goal_generic_air_fighter
-		relative_position_id = GER_rhineland_plan
+		relative_position_id = GER_reorganize_civilian_industry
 		prerequisite = {
 			focus = GER_reorganize_civilian_industry
 		}
 		x = 0
-		y = 6
+		y = 1
 		cost = 5
 
 		bypass = {
@@ -1373,6 +1377,15 @@ focus_tree = {
 				add_idea = GER_quality_gun_control_2
 			}
 			add_war_support = 0.1
+
+			add_offsite_building = {
+				type = arms_factory     
+				level = 10              
+			}
+			add_offsite_building = {
+				type = industrial_complex     
+				level = 15              
+			}
 		}
 	}
 	
@@ -1423,9 +1436,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GER_ludendorff_offensive
 		icon = GFX_focus_germany_prosper
-		x = 3
-		y = 8
+		x = 1
+		y = 1
 		cost = 5
+		relative_position_id = GER_Military_academy
 		prerequisite = {
 			focus = GER_Military_academy
 		}
