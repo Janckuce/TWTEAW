@@ -85,7 +85,7 @@ joint_focus = {
 
 	#SAF
 	offset = {
-		x = 20
+		x = 16
 		y = 0
 		trigger = {
 			has_focus_tree = south_african_focus
@@ -836,10 +836,20 @@ joint_focus = {
 
 	completion_reward_joint_originator = {
 		add_manpower = -250000
+		add_offsite_building = {
+			type = industrial_complex     
+			level = 6              
+		}
 	}
 
-	completion_reward = {
-		add_ideas = commonwealth_import_labor1
+	# completion_reward = {
+	# 	# add_ideas = commonwealth_import_labor1
+	# }
+	completion_reward_joint_member = {
+		add_offsite_building = {
+			type = industrial_complex     
+			level = 5              
+		}
 	}
 }
 
@@ -849,8 +859,8 @@ joint_focus = {
 	icon = GFX_focus_generic_asia_liberation
 	
 	prerequisite = { focus = right3 }
-	mutually_exclusive = { focus = right5 }
-	x = -1
+	# mutually_exclusive = { focus = right5 }
+	x = 0
 	y = 1
 	relative_position_id = right3
 	cost = 5
@@ -870,74 +880,81 @@ joint_focus = {
 
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = commonwealth_import_labor1
-			add_idea = commonwealth_import_labor2
-		}
+		# swap_ideas = {
+		# 	remove_idea = commonwealth_import_labor1
+		# 	add_idea = commonwealth_import_labor2
+		# }
 	}
 
 	completion_reward_joint_originator = {
 		add_political_power = -100
-	}
-
-	completion_reward_joint_member = {
-
-	}
-}
-
-joint_focus = {
-	id = right5
-	
-	icon = GFX_goal_generic_allies_build_infantry
-	
-	prerequisite = { focus = right3 }
-	mutually_exclusive = { focus = right4 }
-	x = 1
-	y = 1
-	relative_position_id = right3
-	cost = 5
-
-	text_icon = NORDIC_focus_style
-
-	available = {
-		NORDIC_basic_available_trigger = yes
-		has_army_size = {
-			size > 30
-			type = infantry
-		}
-		has_army_manpower = { size > 99999 } 
-	}
-
-	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
-
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
-
-
-	completion_reward = {
-	}
-
-	completion_reward_joint_originator = {
-		army_experience = 40
-		add_tech_bonus = {
-			name = right5
-			bonus = 0.25
-			uses = 2
-			category = infantry_weapons
+		add_offsite_building = {
+			type = industrial_complex     
+			level = 6              
 		}
 	}
 
 	completion_reward_joint_member = {
-		army_experience = 20
-		add_tech_bonus = {
-			name = right5
-			bonus = 0.20
-			uses = 1
-			category = infantry_weapons
+		add_offsite_building = {
+			type = industrial_complex     
+			level = 5              
 		}
 	}
 }
+
+# joint_focus = {
+# 	id = right5
+	
+# 	icon = GFX_goal_generic_allies_build_infantry
+	
+# 	prerequisite = { focus = right3 }
+# 	mutually_exclusive = { focus = right4 }
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = right3
+# 	cost = 5
+
+# 	text_icon = NORDIC_focus_style
+
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		has_army_size = {
+# 			size > 30
+# 			type = infantry
+# 		}
+# 		has_army_manpower = { size > 99999 } 
+# 	}
+
+# 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
+
+
+# 	completion_reward = {
+# 	}
+
+# 	completion_reward_joint_originator = {
+# 		army_experience = 40
+# 		add_tech_bonus = {
+# 			name = right5
+# 			bonus = 0.25
+# 			uses = 2
+# 			category = infantry_weapons
+# 		}
+# 	}
+
+# 	completion_reward_joint_member = {
+# 		army_experience = 20
+# 		add_tech_bonus = {
+# 			name = right5
+# 			bonus = 0.20
+# 			uses = 1
+# 			category = infantry_weapons
+# 		}
+# 	}
+# }
 
 joint_focus = {
 	id = middle1
@@ -1048,9 +1065,7 @@ joint_focus = {
 			}
 		}
 
-		completion_reward_joint_originator = {
-
-		}
+		custom_effect_tooltip = commonwealth_arms_purchase_tooltip
 	}
 }
 
@@ -1093,30 +1108,20 @@ joint_focus = {
 joint_focus = {
 	id = middle3
 	
-	icon = GFX_focus_generic_develop_denmark_silhouette
+	icon = GFX_focus_SOV_women_in_aviation
 
 	prerequisite = { focus = middle2 }
-	mutually_exclusive = { focus = middle5 }
+	# mutually_exclusive = { focus = middle5 }
 	x = -1
 	y = 1
 	relative_position_id = middle2
-	cost = 5
+	cost = 7.2
 
 	text_icon = NORDIC_focus_style
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		any_owned_state = {
-			is_controlled_by = PREV 
-			custom_trigger_tooltip = {
-				tooltip = NORDIC_is_danish_belt_state
-				is_danish_belt_state = yes 
-			}
-		}
-		has_navy_size = {
-			size > 29
-		}
-		num_of_naval_factories > 14		
+
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1126,155 +1131,37 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT 
-					is_danish_belt_state = yes 
-				}
-			}
-			random_owned_state = {
-				limit = {	
-					is_controlled_by = ROOT 
-					is_danish_belt_state = yes
-					free_building_slots = {
-					 	building = dockyard
-					 	size > 1 
-					 	include_locked = yes 
-					} 
-				}
-				add_extra_state_shared_building_slots = 2 
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
- 					is_danish_belt_state = yes
-					naval_base > 0
-					naval_base < 8
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 3
-					instant_build = yes
-					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_danish_belt_state = yes 
-				}
-				add_building_construction = {
-					type = coastal_bunker 
-					level = 3 
-					province = {
-  						all_provinces = yes
-  						limit_to_victory_point > 0
-  						limit_to_coastal = yes
-  					}
-				}
-			}
-		}
+		add_equipment_to_stockpile = {
+            type = scout_plane_equipment_1
+            amount = 60
+        }
 	}
 
 	completion_reward_joint_member = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT 
-					is_danish_belt_state = yes 
-				}
-			}
-			random_owned_state = {
-				limit = {	
-					is_controlled_by = ROOT 
-					is_danish_belt_state = yes
-					free_building_slots = {
-					 	building = dockyard
-					 	size > 0 
-					 	include_locked = yes 
-					} 
-				}
-				add_extra_state_shared_building_slots = 1 
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
- 					is_danish_belt_state = yes
-					naval_base > 0
-					naval_base < 8
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_danish_belt_state = yes 
-				}
-				add_building_construction = {
-					type = coastal_bunker 
-					level = 2 
-					province = {
-  						all_provinces = yes
-  						limit_to_victory_point > 0
-  						limit_to_coastal = yes
-  					}
-				}
-			}
-		}	
+		add_equipment_to_stockpile = {
+            type = scout_plane_equipment_1
+            amount = 40
+        }
 	}
 }
 
 joint_focus = {
 	id = middle5
 	
-	icon = GFX_focus_generic_baltic_sea_fleet
+	icon = GFX_focus_generic_railroad
 	
 	prerequisite = { focus = middle2 }
 	mutually_exclusive = { focus = middle3 }
 	x = 1
 	y = 1
 	relative_position_id = middle2
-	cost = 5
+	cost = 7.2
 
 	text_icon = NORDIC_focus_style
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		any_owned_state = {
-			is_controlled_by = PREV 
-			custom_trigger_tooltip = {
-				tooltip = NORDIC_is_baltic_state
-				state_is_in_the_baltic_sea = yes
-			}
-		}
-		has_navy_size = {
-			size > 29
-		}
-		num_of_naval_factories > 14
+
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1284,125 +1171,17 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT 
-					state_is_in_the_baltic_sea = yes 
-				}
-			}
-			random_owned_state = {
-				limit = {	
-					is_controlled_by = ROOT 
-					state_is_in_the_baltic_sea = yes
-					free_building_slots = {
-					 	building = dockyard
-					 	size > 1 
-					 	include_locked = yes 
-					} 
-				}
-				add_extra_state_shared_building_slots = 2 
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
- 					state_is_in_the_baltic_sea = yes
-					naval_base > 0
-					naval_base < 8
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 4
-					instant_build = yes
-					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					state_is_in_the_baltic_sea = yes 
-				}
-				add_building_construction = {
-					type = coastal_bunker 
-					level = 3 
-					province = {
-  						all_provinces = yes
-  						limit_to_victory_point > 0
-  						limit_to_coastal = yes
-  					}
-				}
-			}
-		}
+		add_equipment_to_stockpile = {
+            type = train_equipment_1
+            amount = 20
+        }
 	}
 
 	completion_reward_joint_member = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT 
-					state_is_in_the_baltic_sea = yes 
-				}
-			}
-			random_owned_state = {
-				limit = {	
-					is_controlled_by = ROOT 
-					state_is_in_the_baltic_sea = yes
-					free_building_slots = {
-					 	building = dockyard
-					 	size > 0 
-					 	include_locked = yes 
-					} 
-				}
-				add_extra_state_shared_building_slots = 1 
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
- 					state_is_in_the_baltic_sea = yes
-					naval_base > 0
-					naval_base < 8
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 3
-					instant_build = yes
-					province = {
-  						all_provinces = yes
-  						limit_to_coastal = yes
-  						limit_to_naval_base = yes 
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					state_is_in_the_baltic_sea = yes 
-				}
-				add_building_construction = {
-					type = coastal_bunker 
-					level = 2 
-					province = {
-  						all_provinces = yes
-  						limit_to_victory_point > 0
-  						limit_to_coastal = yes
-  					}
-				}
-			}
-		}	
+		add_equipment_to_stockpile = {
+            type = train_equipment_1
+            amount = 10
+        }
 	}
 }
 
@@ -1416,14 +1195,13 @@ joint_focus = {
 	x = -1
 	y = 1
 	relative_position_id = middle5
-	cost = 5
+	cost = 14.3
 
 	text_icon = NORDIC_focus_style
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		num_of_naval_factories > 14
-		num_researched_technologies > 25
+		has_war = yes
 	}
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1433,33 +1211,23 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		add_tech_bonus = {
-			name = middle6
-			bonus = 0.25
-			uses = 3 
-			category = naval_equipment
-		}
+		add_war_support = 0.25
 	}
 
 	completion_reward_joint_member = {
-		add_tech_bonus = {
-			name = middle6
-			bonus = 0.2
-			uses = 2 
-			category = naval_equipment
-		}
+		add_war_support = 0.20
 	}
 }
 
 joint_focus = {
 	id = middle7
 	
-	icon = GFX_goal_generic_navy_submarine
+	icon = GFX_focus_TUR_the_montreux_convention
 	
 	prerequisite = { focus = middle6 }
-	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middleRight2 focus = right6 }
+	# mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middleRight2 focus = right6 }
 	x = 0
-	y = 1
+	y = 2
 	relative_position_id = middle6
 	cost = 10
 
@@ -1467,10 +1235,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_navy_size = {
-			size > 39
-		}
-		num_of_naval_factories > 19
+
 	}
 
 	search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY }
@@ -1480,110 +1245,73 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-		add_ideas = NORDIC_joint_submarines_effort
-		navy_experience = 50
-		add_tech_bonus = {
-			name = middle7
-			bonus = 0.3 
-			uses = 1
-			category = ss_tech
-		}
-		add_tech_bonus = {
-			name = middle7 
-			ahead_reduction = 1
-			uses = 1
-			category = naval_equipment
-		}
-		random_owned_controlled_state = {
-			limit = {
-				is_coastal = yes
-				free_building_slots = {
-					building = dockyard
-					size > 0
-					include_locked = yes 
-				}
-			}	
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-			
-		}
+
 	}
 
 	completion_reward_joint_member = {
-		add_ideas = NORDIC_joint_submarines_effort
-		navy_experience = 20
-		add_tech_bonus = {
-			name = middle7
-			bonus = 0.25 
-			uses = 1 
-			category = ss_tech
+	
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = commonwealth_attack_TUR_BUL
+			days = 100
 		}
-		add_tech_bonus = {
-			name = middle7 
-			ahead_reduction = 1
-			uses = 1
-			category = naval_equipment
-		}		
 	}
 }
 
-joint_focus = {
-	id = right6
+# joint_focus = {
+# 	id = right6
 	
-	icon = GFX_goal_generic_special_forces
+# 	icon = GFX_goal_generic_special_forces
 	
-	prerequisite = { focus = right4 focus = right5 }
-	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = middleRight2 }
+# 	prerequisite = { focus = right4 focus = right5 }
+# 	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = middleRight2 }
 
-	x = 1
-	y = 1
-	relative_position_id = right4
-	cost = 10
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = right4
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes	
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes	
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		army_experience = 50
-		add_doctrine_cost_reduction = {
-			cost_reduction = 0.75
-			uses = 1
-			category = special_forces_doctrine
-		}
-		add_ideas = NORDIC_joint_mountaineers_effort
-	}
+# 	completion_reward_joint_originator = {
+# 		army_experience = 50
+# 		add_doctrine_cost_reduction = {
+# 			cost_reduction = 0.75
+# 			uses = 1
+# 			category = special_forces_doctrine
+# 		}
+# 		add_ideas = NORDIC_joint_mountaineers_effort
+# 	}
 
-	completion_reward_joint_member = {
-		navy_experience = 20
-		add_doctrine_cost_reduction = {
-			cost_reduction = 0.5
-			uses = 1
-			category = special_forces_doctrine
-		}
-		add_ideas = NORDIC_joint_mountaineers_effort
-	}
-}
+# 	completion_reward_joint_member = {
+# 		navy_experience = 20
+# 		add_doctrine_cost_reduction = {
+# 			cost_reduction = 0.5
+# 			uses = 1
+# 			category = special_forces_doctrine
+# 		}
+# 		add_ideas = NORDIC_joint_mountaineers_effort
+# 	}
+# }
 joint_focus = {
 	id = middleRight2
 	
-	icon = GFX_goal_generic_amphibious_assault
+	icon = GFX_focus_generic_africa_defense
 	
-	prerequisite = { focus = middleRight1 }
+	# prerequisite = { focus = middleRight1 }
 	prerequisite = { focus = middle6 }
-	mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = right6 }
+	# mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = right6 }
 
 	x = 0
 	y = 3
@@ -1610,23 +1338,18 @@ joint_focus = {
 	completion_reward_joint_member = {	
 
 	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = commonwealth_attack_GCG
+			days = 100
+		}
+	}
 }
 
 joint_focus = {
 	id = left1
 	
-	icon = {
-		GFX_focus_NORDIC_dem_airforce = {
-			NORDIC_democratic_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_com_airforce = {
-			NORDIC_communist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_mon_airforce = {
-			NORDIC_monarchist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_dem_airforce = yes
-	}
+	icon = GFX_goal_tfv_generic_tech_sharing
 
 	dynamic = yes 
 	
@@ -1655,17 +1378,27 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-
+		add_tech_bonus = {
+			name = commonwealth_industry
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
 	}
 
 	completion_reward_joint_member = { 
-
+		add_tech_bonus = {
+			name = commonwealth_industry
+			bonus = 0.5
+			uses = 1
+			category = electronics
+		}
 	}
 }
 
 joint_focus = {
 	id = left2
-	icon = GFX_focus_SOV_flying_clubs
+	icon = GFX_focus_generic_modernize_industry
 	prerequisite = { focus = left1 }
 
 	x = 0
@@ -1687,11 +1420,21 @@ joint_focus = {
 	}
 
 	completion_reward_joint_originator = {
-
+		add_tech_bonus = {
+			name = commonwealth_industry
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
 	}
 
-	completion_reward_joint_member = {
-
+	completion_reward_joint_member = { 
+		add_tech_bonus = {
+			name = commonwealth_industry
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
 	}
 }
 
@@ -1778,7 +1521,7 @@ joint_focus = {
 	
 	prerequisite = { focus = left3 }
 
-	x = -1
+	x = 0
 	y = 1
 	relative_position_id = left3
 	cost = 5
@@ -1814,232 +1557,232 @@ joint_focus = {
 	}
 }
 
-joint_focus = {
-	id = left5
-	icon = GFX_goal_generic_air_fighter2
-	prerequisite = { focus = left3 }
+# joint_focus = {
+# 	id = left5
+# 	icon = GFX_goal_generic_air_fighter2
+# 	prerequisite = { focus = left3 }
 
-	x = 1
-	y = 1
-	relative_position_id = left3
-	cost = 5
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = left3
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		OR = {
-			has_deployed_air_force_size = {
-				size > 349
-				type = heavy_fighter
-			}
-			has_deployed_air_force_size = {
-				size > 349
-				type = fighter
-			}
-		}
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		OR = {
+# 			has_deployed_air_force_size = {
+# 				size > 349
+# 				type = heavy_fighter
+# 			}
+# 			has_deployed_air_force_size = {
+# 				size > 349
+# 				type = fighter
+# 			}
+# 		}
+# 	}
 
-	search_filters = {}
+# 	search_filters = {}
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-		hidden_effect = {
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_intercept_efficiency
-				value = 0.15
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_superiority_efficiency
-				value = 0.15
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_intercept_efficiency
-				value = 0.10
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_superiority_efficiency
-				value = 0.10
-			}
-		}
-	}
-	completion_reward_joint_originator = {
-		NORDIC_airforce_member_to_originator = yes 
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod		
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_intercept_efficiency
-				value = 0.15
-				tooltip = air_intercept_efficiency_tt
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_originator_dmod_superiority_efficiency
-				value = 0.15
-				tooltip = air_superiority_efficiency_tt
-			}
-		}
+# 	completion_reward = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_originator_dmod_intercept_efficiency
+# 				value = 0.15
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_originator_dmod_superiority_efficiency
+# 				value = 0.15
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_member_dmod_intercept_efficiency
+# 				value = 0.10
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_member_dmod_superiority_efficiency
+# 				value = 0.10
+# 			}
+# 		}
+# 	}
+# 	completion_reward_joint_originator = {
+# 		NORDIC_airforce_member_to_originator = yes 
+# 		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod		
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_originator_dmod_intercept_efficiency
+# 				value = 0.15
+# 				tooltip = air_intercept_efficiency_tt
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_originator_dmod_superiority_efficiency
+# 				value = 0.15
+# 				tooltip = air_superiority_efficiency_tt
+# 			}
+# 		}
 
-	}
+# 	}
 
-	completion_reward_joint_member = {  
-		NORDIC_airforce_originator_to_member = yes 
-		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod		
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_intercept_efficiency
-				value = 0.10
-				tooltip = air_intercept_efficiency_tt
-			}
-			add_to_variable = {
-				var = NORDIC_airforces_member_dmod_superiority_efficiency
-				value = 0.10
-				tooltip = air_superiority_efficiency_tt
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {  
+# 		NORDIC_airforce_originator_to_member = yes 
+# 		custom_effect_tooltip = NORDIC_modify_nordic_airforce_dmod		
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_member_dmod_intercept_efficiency
+# 				value = 0.10
+# 				tooltip = air_intercept_efficiency_tt
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_airforces_member_dmod_superiority_efficiency
+# 				value = 0.10
+# 				tooltip = air_superiority_efficiency_tt
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = left6
+# joint_focus = {
+# 	id = left6
 	
-	icon = GFX_focus_generic_air_bases
+# 	icon = GFX_focus_generic_air_bases
 	
-	prerequisite = { focus = left5 focus = left4 }
-	mutually_exclusive = { focus = middleLeft2 focus = middle7 focus = middleRight2 focus = right6 }
+# 	prerequisite = { focus = left5 focus = left4 }
+# 	mutually_exclusive = { focus = middleLeft2 focus = middle7 focus = middleRight2 focus = right6 }
 
-	x = 1
-	y = 1
-	relative_position_id = left4
-	cost = 5
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = left4
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		has_tech = cavity_magnatron
-		has_tech = interwar_antiair
-		air_base > 9
-		any_owned_state = {
-			air_base > 3 
-		}
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		has_tech = cavity_magnatron
+# 		has_tech = interwar_antiair
+# 		air_base > 9
+# 		any_owned_state = {
+# 			air_base > 3 
+# 		}
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-	 	every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			free_building_slots = {
-	 				building = radar_station
-	 				size > 1 
-	 			}
-	 		}
-	 		random_select_amount = 3
-	 		add_building_construction = {
-	 			type = radar_station
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}
-	 	every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			air_base > 3 
-	 			free_building_slots = {
-	 				building = air_base
-	 				size > 2 
-	 			}
-	 		}
-	 		random_select_amount = 3
-	 		add_building_construction = {
-	 			type = air_base
-	 			level = 2
-	 			instant_build = yes
-	 		}
-	 	}
-	 	every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			free_building_slots = {
-	 				building = anti_air_building
-	 				size > 0
-	 			}
-	 		}
-	 		random_select_amount = 3
-	 		add_building_construction = {
-	 			type = anti_air_building
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}
-	}
+# 	completion_reward_joint_originator = {
+# 	 	every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			free_building_slots = {
+# 	 				building = radar_station
+# 	 				size > 1 
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 3
+# 	 		add_building_construction = {
+# 	 			type = radar_station
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}
+# 	 	every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			air_base > 3 
+# 	 			free_building_slots = {
+# 	 				building = air_base
+# 	 				size > 2 
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 3
+# 	 		add_building_construction = {
+# 	 			type = air_base
+# 	 			level = 2
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}
+# 	 	every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			free_building_slots = {
+# 	 				building = anti_air_building
+# 	 				size > 0
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 3
+# 	 		add_building_construction = {
+# 	 			type = anti_air_building
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}
+# 	}
 
-	completion_reward_joint_member = {
-	 	every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			free_building_slots = {
-	 				building = radar_station
-	 				size > 0 
-	 			}
-	 		}
-	 		random_select_amount = 2
-	 		add_building_construction = {
-	 			type = radar_station
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}
-	 	every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			air_base > 2 
-	 			free_building_slots = {
-	 				building = air_base
-	 				size > 1 
-	 			}
-	 		}
-	 		random_select_amount = 2
-	 		add_building_construction = {
-	 			type = air_base
-	 			level = 2
-	 			instant_build = yes
-	 		}
-	 	}
-	 	every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			free_building_slots = {
-	 				building = anti_air_building
-	 				size > 0
-	 			}
-	 		}
-	 		random_select_amount = 3
-	 		add_building_construction = {
-	 			type = anti_air_building
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}	
-	}
-}
+# 	completion_reward_joint_member = {
+# 	 	every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			free_building_slots = {
+# 	 				building = radar_station
+# 	 				size > 0 
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 2
+# 	 		add_building_construction = {
+# 	 			type = radar_station
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}
+# 	 	every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			air_base > 2 
+# 	 			free_building_slots = {
+# 	 				building = air_base
+# 	 				size > 1 
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 2
+# 	 		add_building_construction = {
+# 	 			type = air_base
+# 	 			level = 2
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}
+# 	 	every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			free_building_slots = {
+# 	 				building = anti_air_building
+# 	 				size > 0
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 3
+# 	 		add_building_construction = {
+# 	 			type = anti_air_building
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}	
+# 	}
+# }
 
 joint_focus = {
 	id = middleLeft2
 	
-	icon = GFX_goal_generic_navy_carrier
+	icon = GFX_focus_usa_focus_on_europe
 	
-	prerequisite = { focus = middleLeft1 }
+	# prerequisite = { focus = middleLeft1 }
 	prerequisite = { focus = middle6 }
-	mutually_exclusive = { focus = left6 focus = middle7 focus = middleRight2 focus = right6 }
+	# mutually_exclusive = { focus = left6 focus = middle7 focus = middleRight2 focus = right6 }
 
 	x = 0
 	y = 3
@@ -2050,13 +1793,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_navy_size = {
-			size > 0
-			type = carrier
-		}
-		has_deployed_air_force_size = {
-			size > 399
-		}
+
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -2065,1378 +1802,1337 @@ joint_focus = {
   		NORDIC_basic_joint_trigger = yes 
 	}
 	completion_reward_joint_originator = {
-		navy_experience = 50
-		add_ideas = NORDIC_joint_carrier_effort
-		every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			free_building_slots = {
-	 				building = dockyard
-	 				size > 0
-	 				include_locked = yes 
-	 			}
-	 		}
-	 		random_select_amount = 2
-	 		add_extra_state_shared_building_slots = 1 
-	 		add_building_construction = {
-	 			type = dockyard
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}
-	 	add_tech_bonus = {
-	 		name = middleLeft2
-	 		bonus = 0.25
-	 		uses = 1 
-	 		category = cv_tech
-	 	}
+
 	}
 
 	completion_reward_joint_member = {
-		navy_experience = 40
-		add_ideas = NORDIC_joint_carrier_effort
-		random_owned_controlled_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			free_building_slots = {
-	 				building = dockyard
-	 				size > 0
-	 				include_locked = yes 
-	 			}
-	 		}
-	 		add_extra_state_shared_building_slots = 1  
-	 		add_building_construction = {
-	 			type = dockyard
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}
-	 	add_tech_bonus = {
-	 		name = middleLeft2
-	 		bonus = 0.25 
-	 		uses = 1 
-	 		category = cv_tech
-	 	}
-	}
-}
-
-joint_focus = {
-	id = NORDIC_nordic_research
-
-	icon = {
-		GFX_focus_NORDIC_dem_research = {
-			NORDIC_democratic_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_com_research = {
-			NORDIC_communist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_mon_research = {
-			NORDIC_monarchist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_dem_research = yes
-	}
-
-	dynamic = yes 
-	
-	prerequisite = { focus = NORDIC_form_joint_alliance }
-
-	x = 7
-	y = 1
-	relative_position_id = NORDIC_form_joint_alliance
-	cost = 10
-
-	text_icon = NORDIC_focus_style
-
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_researched_technologies > 25
 
 	}
-
-	search_filters = { FOCUS_FILTER_RESEARCH }
-
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
-
-	completion_reward_joint_originator = { 
-		add_to_tech_sharing_group = NORDIC_research_tech_sharing
-	}
-
-	completion_reward_joint_member = {
-		add_to_tech_sharing_group = NORDIC_research_tech_sharing
-	}
-}
-
-joint_focus = {
-	id = NORDIC_materiel_design
-	
-	icon = GFX_focus_generic_reorient_production
-	
-	prerequisite = { focus = NORDIC_nordic_research }
-
-	x = 1
-	y = 1
-	relative_position_id = NORDIC_nordic_research
-	cost = 5
-
-	text_icon = NORDIC_focus_style
-
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_researched_technologies > 50
-	}
-
-	search_filters = { FOCUS_FILTER_RESEARCH }
-
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
-
-	completion_reward_joint_originator = {
-		add_tech_bonus = {
-			name = NORDIC_materiel_design
-			bonus = 1
-			uses = 2 
-			category = infantry_weapons
-		}
-	}
-
-	completion_reward_joint_member = {	
-		add_tech_bonus = {
-			name = NORDIC_materiel_design
-			bonus = 0.45
-			uses = 2 
-			category = infantry_weapons
-		}
-	}
-}
-
-joint_focus = {
-	id = NORDIC_nordic_construction_developments
-	
-	icon = GFX_goal_generic_construction
-	
-	prerequisite = { focus = NORDIC_nordic_research }
-
-	x = -1
-	y = 1
-	relative_position_id = NORDIC_nordic_research
-	cost = 5
-
-	text_icon = NORDIC_focus_style
-
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_researched_technologies > 30
-	}
-
-	search_filters = { FOCUS_FILTER_RESEARCH }
-
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
-
-	completion_reward_joint_originator = {
-		add_tech_bonus = {
-			name = NORDIC_nordic_construction_developments
-			bonus = 1 
-			uses = 2 
-			category = construction_tech
-		}
-	}
-
-	completion_reward_joint_member = {
-		add_tech_bonus = {
-			name = NORDIC_nordic_construction_developments
-			bonus = 0.75 
-			uses = 1 
-			category = construction_tech
-		}	
-	}
-}
-
-joint_focus = {
-	id = NORDIC_nordic_industry
-
-	icon = {
-		GFX_focus_NORDIC_dem_civilian = {
-			NORDIC_democratic_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_com_civilian = {
-			NORDIC_communist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_mon_civilian = {
-			NORDIC_monarchist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_dem_civilian = yes
-	}
-
-	dynamic = yes 
-	
-	prerequisite = { focus = NORDIC_nordic_construction_developments }
-
-	x = -2
-	y = 1
-	relative_position_id = NORDIC_nordic_construction_developments
-	cost = 10
-
-	text_icon = NORDIC_focus_style
-
-	available = {
-		num_of_civilian_factories > 15	
-		NORDIC_basic_available_trigger = yes
-	}
-
-	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
-
-
 	completion_reward = {
+		add_timed_idea = {
+			idea = commonwealth_attack_GER
+			days = 100
+		}
+	}
+}
+
+# joint_focus = {
+# 	id = NORDIC_nordic_research
+
+# 	icon = {
+# 		GFX_focus_NORDIC_dem_research = {
+# 			NORDIC_democratic_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_com_research = {
+# 			NORDIC_communist_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_mon_research = {
+# 			NORDIC_monarchist_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_dem_research = yes
+# 	}
+
+# 	dynamic = yes 
+	
+# 	prerequisite = { focus = NORDIC_form_joint_alliance }
+
+# 	x = 7
+# 	y = 1
+# 	relative_position_id = NORDIC_form_joint_alliance
+# 	cost = 10
+
+# 	text_icon = NORDIC_focus_style
+
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_researched_technologies > 25
+
+# 	}
+
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
+
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
+
+# 	completion_reward_joint_originator = { 
+# 		add_to_tech_sharing_group = NORDIC_research_tech_sharing
+# 	}
+
+# 	completion_reward_joint_member = {
+# 		add_to_tech_sharing_group = NORDIC_research_tech_sharing
+# 	}
+# }
+
+# joint_focus = {
+# 	id = NORDIC_materiel_design
+	
+# 	icon = GFX_focus_generic_reorient_production
+	
+# 	prerequisite = { focus = NORDIC_nordic_research }
+
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = NORDIC_nordic_research
+# 	cost = 5
+
+# 	text_icon = NORDIC_focus_style
+
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_researched_technologies > 50
+# 	}
+
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
+
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
+
+# 	completion_reward_joint_originator = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_materiel_design
+# 			bonus = 1
+# 			uses = 2 
+# 			category = infantry_weapons
+# 		}
+# 	}
+
+# 	completion_reward_joint_member = {	
+# 		add_tech_bonus = {
+# 			name = NORDIC_materiel_design
+# 			bonus = 0.45
+# 			uses = 2 
+# 			category = infantry_weapons
+# 		}
+# 	}
+# }
+
+# joint_focus = {
+# 	id = NORDIC_nordic_construction_developments
+	
+# 	icon = GFX_goal_generic_construction
+	
+# 	prerequisite = { focus = NORDIC_nordic_research }
+
+# 	x = -1
+# 	y = 1
+# 	relative_position_id = NORDIC_nordic_research
+# 	cost = 5
+
+# 	text_icon = NORDIC_focus_style
+
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_researched_technologies > 30
+# 	}
+
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
+
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
+
+# 	completion_reward_joint_originator = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_nordic_construction_developments
+# 			bonus = 1 
+# 			uses = 2 
+# 			category = construction_tech
+# 		}
+# 	}
+
+# 	completion_reward_joint_member = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_nordic_construction_developments
+# 			bonus = 0.75 
+# 			uses = 1 
+# 			category = construction_tech
+# 		}	
+# 	}
+# }
+
+# joint_focus = {
+# 	id = NORDIC_nordic_industry
+
+# 	icon = {
+# 		GFX_focus_NORDIC_dem_civilian = {
+# 			NORDIC_democratic_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_com_civilian = {
+# 			NORDIC_communist_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_mon_civilian = {
+# 			NORDIC_monarchist_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_dem_civilian = yes
+# 	}
+
+# 	dynamic = yes 
+	
+# 	prerequisite = { focus = NORDIC_nordic_construction_developments }
+
+# 	x = -2
+# 	y = 1
+# 	relative_position_id = NORDIC_nordic_construction_developments
+# 	cost = 10
+
+# 	text_icon = NORDIC_focus_style
+
+# 	available = {
+# 		num_of_civilian_factories > 15	
+# 		NORDIC_basic_available_trigger = yes
+# 	}
+
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
+
+
+# 	completion_reward = {
 		
-	}
+# 	}
 
-	completion_reward_joint_originator = {
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes 
-				}
-				NOT = { state = 914 } # Not even here, Jan Mayen 
-			}
-			add_extra_state_shared_building_slots = 1
-			random_select_amount = 3
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		every_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				free_building_slots = {
+# 					building = industrial_complex
+# 					size > 0
+# 					include_locked = yes 
+# 				}
+# 				NOT = { state = 914 } # Not even here, Jan Mayen 
+# 			}
+# 			add_extra_state_shared_building_slots = 1
+# 			random_select_amount = 3
+# 			add_building_construction = {
+# 				type = industrial_complex
+# 				level = 1
+# 				instant_build = yes
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes 
-				}
-				NOT = { state = 914 } # Not even here, Jan Mayen 
-			}
-			random_select_amount = 2
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		every_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				free_building_slots = {
+# 					building = industrial_complex
+# 					size > 0
+# 					include_locked = yes 
+# 				}
+# 				NOT = { state = 914 } # Not even here, Jan Mayen 
+# 			}
+# 			random_select_amount = 2
+# 			add_extra_state_shared_building_slots = 1
+# 			add_building_construction = {
+# 				type = industrial_complex
+# 				level = 1
+# 				instant_build = yes
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_civilian_contributions
+# joint_focus = {
+# 	id = NORDIC_civilian_contributions
 	
-	icon = GFX_focus_SWI_issue_war_bonds
+# 	icon = GFX_focus_SWI_issue_war_bonds
 	
-	prerequisite = { focus = NORDIC_nordic_industry }
+# 	prerequisite = { focus = NORDIC_nordic_industry }
 
-	x = 0
-	y = 1
+# 	x = 0
+# 	y = 1
 
-	relative_position_id = NORDIC_nordic_industry
+# 	relative_position_id = NORDIC_nordic_industry
 
-	cost = 5
+# 	cost = 5
 
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_civilian_factories > 20
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_civilian_factories > 20
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		add_timed_idea = {
-			idea = NORDIC_development_fund_originator_ns
-			days = 365
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		add_timed_idea = {
+# 			idea = NORDIC_development_fund_originator_ns
+# 			days = 365
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		add_timed_idea = {
-			idea = NORDIC_development_fund_member_ns
-			days = 365
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		add_timed_idea = {
+# 			idea = NORDIC_development_fund_member_ns
+# 			days = 365
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_fill_the_infrastructure_gaps
+# joint_focus = {
+# 	id = NORDIC_fill_the_infrastructure_gaps
 	
-	icon = GFX_goal_generic_construct_infrastructure
+# 	icon = GFX_goal_generic_construct_infrastructure
 	
-	prerequisite = { focus = NORDIC_civilian_contributions }
-	mutually_exclusive = { focus = NORDIC_develop_resources }
+# 	prerequisite = { focus = NORDIC_civilian_contributions }
+# 	mutually_exclusive = { focus = NORDIC_develop_resources }
 
-	x = -1
-	y = 1
-	relative_position_id = NORDIC_civilian_contributions
-	cost = 10
+# 	x = -1
+# 	y = 1
+# 	relative_position_id = NORDIC_civilian_contributions
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_civilian_factories > 20
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_civilian_factories > 20
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				infrastructure < 3 
-				NOT = { state = 914 } # Not Jan Mayen 
-			}
-			random_select_amount = 2
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		every_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				infrastructure < 3 
+# 				NOT = { state = 914 } # Not Jan Mayen 
+# 			}
+# 			random_select_amount = 2
+# 			add_building_construction = {
+# 				type = infrastructure
+# 				level = 2
+# 				instant_build = yes
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				infrastructure < 3 
-				NOT = { state = 914 } # Not Jan Mayen - This joke better be worth it. 
-			}
-			random_select_amount = 2
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		every_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				infrastructure < 3 
+# 				NOT = { state = 914 } # Not Jan Mayen - This joke better be worth it. 
+# 			}
+# 			random_select_amount = 2
+# 			add_building_construction = {
+# 				type = infrastructure
+# 				level = 1
+# 				instant_build = yes
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_develop_resources
+# joint_focus = {
+# 	id = NORDIC_develop_resources
 	
-	icon = GFX_focus_generic_mining_industry
+# 	icon = GFX_focus_generic_mining_industry
 	
-	prerequisite = { focus = NORDIC_civilian_contributions }
-	mutually_exclusive = { focus = NORDIC_fill_the_infrastructure_gaps }
+# 	prerequisite = { focus = NORDIC_civilian_contributions }
+# 	mutually_exclusive = { focus = NORDIC_fill_the_infrastructure_gaps }
 
-	x = 1
-	y = 1
-	relative_position_id = NORDIC_civilian_contributions
-	cost = 10
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = NORDIC_civilian_contributions
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_civilian_factories > 25
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_civilian_factories > 25
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT
-					has_resources_amount = {
-						resource = oil
-						amount > 0  
-					}
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_resources_amount = {
-						resource = oil
-						amount > 0  
-					}
-				}
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-		}
-		else = {
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					state_has_any_resource = no
-				}
-				add_resource = {
-					type = oil
-					amount = 4
-				}
-			}
-		}
-		every_owned_state = {
-			limit = { 
-				is_controlled_by = ROOT 
-				state_has_any_resource = yes 
-			}
-			add_dynamic_modifier = {
-				modifier = NORDIC_efficient_resource_extraction
-			}
-		}
+# 	completion_reward_joint_originator = {
+# 		if = {
+# 			limit = {
+# 				any_owned_state = {
+# 					is_controlled_by = ROOT
+# 					has_resources_amount = {
+# 						resource = oil
+# 						amount > 0  
+# 					}
+# 				}
+# 			}
+# 			random_owned_state = {
+# 				limit = {
+# 					is_controlled_by = ROOT
+# 					has_resources_amount = {
+# 						resource = oil
+# 						amount > 0  
+# 					}
+# 				}
+# 				add_resource = {
+# 					type = oil
+# 					amount = 4
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			random_owned_state = {
+# 				limit = {
+# 					is_controlled_by = ROOT
+# 					state_has_any_resource = no
+# 				}
+# 				add_resource = {
+# 					type = oil
+# 					amount = 4
+# 				}
+# 			}
+# 		}
+# 		every_owned_state = {
+# 			limit = { 
+# 				is_controlled_by = ROOT 
+# 				state_has_any_resource = yes 
+# 			}
+# 			add_dynamic_modifier = {
+# 				modifier = NORDIC_efficient_resource_extraction
+# 			}
+# 		}
 		
-	}
+# 	}
 
-	completion_reward_joint_member = {
-		if = {
-			limit = {
-				any_owned_state = {
-					is_controlled_by = ROOT
-					has_resources_amount = {
-						resource = oil
-						amount > 0  
-					}
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_resources_amount = {
-						resource = oil
-						amount > 0  
-					}
-				}
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-			}
-		}
-		else = {
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					state_has_any_resource = no
-				}
-				add_resource = {
-					type = oil
-					amount = 2
-				}
-			}
-		}
-		every_owned_state = {
-			limit = { 
-				is_controlled_by = ROOT 
-				state_has_any_resource = yes 
-			}
-			add_dynamic_modifier = {
-				modifier = NORDIC_efficient_resource_extraction
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		if = {
+# 			limit = {
+# 				any_owned_state = {
+# 					is_controlled_by = ROOT
+# 					has_resources_amount = {
+# 						resource = oil
+# 						amount > 0  
+# 					}
+# 				}
+# 			}
+# 			random_owned_state = {
+# 				limit = {
+# 					is_controlled_by = ROOT
+# 					has_resources_amount = {
+# 						resource = oil
+# 						amount > 0  
+# 					}
+# 				}
+# 				add_resource = {
+# 					type = oil
+# 					amount = 2
+# 				}
+# 			}
+# 		}
+# 		else = {
+# 			random_owned_state = {
+# 				limit = {
+# 					is_controlled_by = ROOT
+# 					state_has_any_resource = no
+# 				}
+# 				add_resource = {
+# 					type = oil
+# 					amount = 2
+# 				}
+# 			}
+# 		}
+# 		every_owned_state = {
+# 			limit = { 
+# 				is_controlled_by = ROOT 
+# 				state_has_any_resource = yes 
+# 			}
+# 			add_dynamic_modifier = {
+# 				modifier = NORDIC_efficient_resource_extraction
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_naval_construction
+# joint_focus = {
+# 	id = NORDIC_naval_construction
 	
-	icon = GFX_goal_generic_construct_naval_dockyard
+# 	icon = GFX_goal_generic_construct_naval_dockyard
 	
-	prerequisite = { focus = NORDIC_fill_the_infrastructure_gaps focus = NORDIC_develop_resources }
-	mutually_exclusive = { focus = NORDIC_railway_expansion focus = NORDIC_nuclear_production }
-	x = 1
-	y = 1
-	relative_position_id = NORDIC_fill_the_infrastructure_gaps
-	cost = 10
+# 	prerequisite = { focus = NORDIC_fill_the_infrastructure_gaps focus = NORDIC_develop_resources }
+# 	mutually_exclusive = { focus = NORDIC_railway_expansion focus = NORDIC_nuclear_production }
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = NORDIC_fill_the_infrastructure_gaps
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_naval_factories > 15
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_naval_factories > 15
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			is_coastal = yes 
-	 			free_building_slots = {
-	 				building = dockyard
-	 				size > 1
-	 				include_locked = yes 
-	 			}
-	 		}
-	 		random_select_amount = 3
-	 		add_extra_state_shared_building_slots = 1
-	 		add_building_construction = {
-	 			type = dockyard
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}		
-	}
+# 	completion_reward_joint_originator = {
+# 		every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			is_coastal = yes 
+# 	 			free_building_slots = {
+# 	 				building = dockyard
+# 	 				size > 1
+# 	 				include_locked = yes 
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 3
+# 	 		add_extra_state_shared_building_slots = 1
+# 	 		add_building_construction = {
+# 	 			type = dockyard
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}		
+# 	}
 
-	completion_reward_joint_member = {
-		every_owned_state = {
-	 		limit = {
-	 			is_controlled_by = ROOT
-	 			is_coastal = yes 
-	 			free_building_slots = {
-	 				building = dockyard
-	 				size > 0
-	 				include_locked = yes 
-	 			}
-	 		}
-	 		random_select_amount = 2
-	 		add_extra_state_shared_building_slots = 1 
-	 		add_building_construction = {
-	 			type = dockyard
-	 			level = 1
-	 			instant_build = yes
-	 		}
-	 	}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		every_owned_state = {
+# 	 		limit = {
+# 	 			is_controlled_by = ROOT
+# 	 			is_coastal = yes 
+# 	 			free_building_slots = {
+# 	 				building = dockyard
+# 	 				size > 0
+# 	 				include_locked = yes 
+# 	 			}
+# 	 		}
+# 	 		random_select_amount = 2
+# 	 		add_extra_state_shared_building_slots = 1 
+# 	 		add_building_construction = {
+# 	 			type = dockyard
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}
+# 	 	}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_railway_expansion
+# joint_focus = {
+# 	id = NORDIC_railway_expansion
 	
-	icon = GFX_focus_generic_railroad
+# 	icon = GFX_focus_generic_railroad
 	
-	prerequisite = { focus = NORDIC_develop_resources focus = NORDIC_fill_the_infrastructure_gaps }
-	mutually_exclusive = { focus = NORDIC_naval_construction focus = NORDIC_nuclear_production }
-	x = -1
-	y = 1
-	relative_position_id = NORDIC_fill_the_infrastructure_gaps
-	cost = 5
+# 	prerequisite = { focus = NORDIC_develop_resources focus = NORDIC_fill_the_infrastructure_gaps }
+# 	mutually_exclusive = { focus = NORDIC_naval_construction focus = NORDIC_nuclear_production }
+# 	x = -1
+# 	y = 1
+# 	relative_position_id = NORDIC_fill_the_infrastructure_gaps
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_civilian_factories > 25
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_civilian_factories > 25
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		add_timed_idea = {
-			idea = NORDIC_railway_expansion_originator_ns
-			days = 365
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		add_timed_idea = {
+# 			idea = NORDIC_railway_expansion_originator_ns
+# 			days = 365
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		add_timed_idea = {
-			idea = NORDIC_railway_expansion_member_ns
-			days = 365
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		add_timed_idea = {
+# 			idea = NORDIC_railway_expansion_member_ns
+# 			days = 365
+# 		}
+# 	}
+# }
 
 
-joint_focus = {
-	id = NORDIC_nordic_electronics
+# joint_focus = {
+# 	id = NORDIC_nordic_electronics
 	
-	icon = GFX_focus_SWE_radiotjanst
+# 	icon = GFX_focus_SWE_radiotjanst
 	
-	prerequisite = { focus = NORDIC_nordic_construction_developments }
+# 	prerequisite = { focus = NORDIC_nordic_construction_developments }
 
-	x = 0
-	y = 1
-	relative_position_id = NORDIC_nordic_construction_developments
-	cost = 5
+# 	x = 0
+# 	y = 1
+# 	relative_position_id = NORDIC_nordic_construction_developments
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_researched_technologies > 30
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_researched_technologies > 30
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		add_tech_bonus = {
-			name = NORDIC_nordic_electronics
-			bonus = 0.5
-			uses = 1 
-			category = electronics
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_nordic_electronics
+# 			bonus = 0.5
+# 			uses = 1 
+# 			category = electronics
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-			add_tech_bonus = {
-			name = NORDIC_nordic_electronics
-			bonus = 0.25
-			uses = 1 
-			category = electronics
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 			add_tech_bonus = {
+# 			name = NORDIC_nordic_electronics
+# 			bonus = 0.25
+# 			uses = 1 
+# 			category = electronics
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_research_investments 
+# joint_focus = {
+# 	id = NORDIC_research_investments 
 	
-	icon = GFX_focus_research2
+# 	icon = GFX_focus_research2
 	
-	prerequisite = { focus = NORDIC_materiel_design }
+# 	prerequisite = { focus = NORDIC_materiel_design }
 
-	x = 0
-	y = 1
-	relative_position_id = NORDIC_materiel_design
-	cost = 5
+# 	x = 0
+# 	y = 1
+# 	relative_position_id = NORDIC_materiel_design
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-		modify_tech_sharing_bonus = {
-			id = NORDIC_research_tech_sharing
-			bonus = 0.1
-		}
-	}
-}
+# 	completion_reward = {
+# 		modify_tech_sharing_bonus = {
+# 			id = NORDIC_research_tech_sharing
+# 			bonus = 0.1
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_nuclear_research
+# joint_focus = {
+# 	id = NORDIC_nuclear_research
 	
-	icon = GFX_focus_wonderweapons
+# 	icon = GFX_focus_wonderweapons
 	
-	prerequisite = { focus = NORDIC_nordic_electronics }
-	prerequisite = { focus = NORDIC_nordic_industry }
-	mutually_exclusive = { focus = NORDIC_nordic_rocketry }
+# 	prerequisite = { focus = NORDIC_nordic_electronics }
+# 	prerequisite = { focus = NORDIC_nordic_industry }
+# 	mutually_exclusive = { focus = NORDIC_nordic_rocketry }
 
-	x = 0
-	y = 1
-	relative_position_id = NORDIC_nordic_electronics
-	cost = 5
+# 	x = 0
+# 	y = 1
+# 	relative_position_id = NORDIC_nordic_electronics
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_researched_technologies > 50
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_researched_technologies > 50
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
+# 	completion_reward_joint_originator = {
 
-		IF = {
-			limit = {
-				NOT = {
-					has_tech = atomic_research
-				}
-			}
-			add_tech_bonus = {
-				name = NORDIC_nuclear_research
-				bonus = 0.75 # was 1
-				uses = 1
-				category = nuclear
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.5
-			}
-		}
-		ELSE = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.8
-			}
-		}
+# 		IF = {
+# 			limit = {
+# 				NOT = {
+# 					has_tech = atomic_research
+# 				}
+# 			}
+# 			add_tech_bonus = {
+# 				name = NORDIC_nuclear_research
+# 				bonus = 0.75 # was 1
+# 				uses = 1
+# 				category = nuclear
+# 			}
+# 			add_breakthrough_progress = {
+# 				specialization = specialization_nuclear
+# 				value = 0.5
+# 			}
+# 		}
+# 		ELSE = {
+# 			add_breakthrough_progress = {
+# 				specialization = specialization_nuclear
+# 				value = 0.8
+# 			}
+# 		}
 
-	}
+# 	}
 
-	completion_reward_joint_member = {
+# 	completion_reward_joint_member = {
 
-		IF = {
-			limit = {
-				NOT = {
-					has_tech = atomic_research
-				}
-			}
-			add_tech_bonus = {
-				name = NORDIC_nuclear_research
-				bonus = 0.5 
-				uses = 1
-				category = nuclear
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
-		}
-		ELSE = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.5
-			}
-		}
+# 		IF = {
+# 			limit = {
+# 				NOT = {
+# 					has_tech = atomic_research
+# 				}
+# 			}
+# 			add_tech_bonus = {
+# 				name = NORDIC_nuclear_research
+# 				bonus = 0.5 
+# 				uses = 1
+# 				category = nuclear
+# 			}
+# 			add_breakthrough_progress = {
+# 				specialization = specialization_nuclear
+# 				value = 0.25
+# 			}
+# 		}
+# 		ELSE = {
+# 			add_breakthrough_progress = {
+# 				specialization = specialization_nuclear
+# 				value = 0.5
+# 			}
+# 		}
 
-	}
-}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_nuclear_production
+# joint_focus = {
+# 	id = NORDIC_nuclear_production
 	
-	icon = GFX_goal_generic_secret_weapon
+# 	icon = GFX_goal_generic_secret_weapon
 	
-	#prerequisite = { focus = NORDIC_develop_resources }
-	prerequisite = { focus = NORDIC_fill_the_infrastructure_gaps focus = NORDIC_develop_resources }
-	prerequisite = { focus = NORDIC_nuclear_research }
-	mutually_exclusive = { focus = NORDIC_naval_construction focus = NORDIC_railway_expansion }
-	x = 0
-	y = 2
-	relative_position_id = NORDIC_nuclear_research
-	cost = 10
+# 	#prerequisite = { focus = NORDIC_develop_resources }
+# 	prerequisite = { focus = NORDIC_fill_the_infrastructure_gaps focus = NORDIC_develop_resources }
+# 	prerequisite = { focus = NORDIC_nuclear_research }
+# 	mutually_exclusive = { focus = NORDIC_naval_construction focus = NORDIC_railway_expansion }
+# 	x = 0
+# 	y = 2
+# 	relative_position_id = NORDIC_nuclear_research
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		is_special_project_completed = sp:sp_nuclear_reactor
-		num_researched_technologies > 55
-		num_of_civilian_factories > 25
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		is_special_project_completed = sp:sp_nuclear_reactor
+# 		num_researched_technologies > 55
+# 		num_of_civilian_factories > 25
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		every_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				free_building_slots = {
-	 				building = arms_factory
-	 				size > 0
-	 				include_locked = yes 
-	 			}
-			}
-			random_select_amount = 2
-	 		add_extra_state_shared_building_slots = 1 
-	 		add_building_construction = {
-	 			type = nuclear_reactor
-	 			level = 1
-	 			instant_build = yes
-	 		}			
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		every_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				free_building_slots = {
+# 	 				building = arms_factory
+# 	 				size > 0
+# 	 				include_locked = yes 
+# 	 			}
+# 			}
+# 			random_select_amount = 2
+# 	 		add_extra_state_shared_building_slots = 1 
+# 	 		add_building_construction = {
+# 	 			type = nuclear_reactor
+# 	 			level = 1
+# 	 			instant_build = yes
+# 	 		}			
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		IF = {
-			limit = {
-				is_special_project_completed = sp:sp_nuclear_reactor
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT 
-					free_building_slots = { 
-		 				building = nuclear_reactor
-		 				size > 0
-		 				include_locked = yes 
-		 			}
-		 		}
-		 		add_extra_state_shared_building_slots = 1 
-		 		add_building_construction = {
-		 			type = nuclear_reactor
-		 			level = 1
-		 			instant_build = yes
-		 		}	
-			}
+# 	completion_reward_joint_member = {
+# 		IF = {
+# 			limit = {
+# 				is_special_project_completed = sp:sp_nuclear_reactor
+# 			}
+# 			random_owned_state = {
+# 				limit = {
+# 					is_controlled_by = ROOT 
+# 					free_building_slots = { 
+# 		 				building = nuclear_reactor
+# 		 				size > 0
+# 		 				include_locked = yes 
+# 		 			}
+# 		 		}
+# 		 		add_extra_state_shared_building_slots = 1 
+# 		 		add_building_construction = {
+# 		 			type = nuclear_reactor
+# 		 			level = 1
+# 		 			instant_build = yes
+# 		 		}	
+# 			}
 	 				
-		}
-	}
-}
+# 		}
+# 	}
+# }
 
 
 
-joint_focus = {
-	id = NORDIC_nordic_rocketry
+# joint_focus = {
+# 	id = NORDIC_nordic_rocketry
 	
-	icon = GFX_focus_rocketry
+# 	icon = GFX_focus_rocketry
 	
-	prerequisite = { focus = NORDIC_research_investments }
-	prerequisite = { focus = NORDIC_nordic_military_industry }
-	mutually_exclusive = { focus = NORDIC_nuclear_research }
-	x = 0
-	y = 1
-	relative_position_id = NORDIC_research_investments
-	cost = 10
+# 	prerequisite = { focus = NORDIC_research_investments }
+# 	prerequisite = { focus = NORDIC_nordic_military_industry }
+# 	mutually_exclusive = { focus = NORDIC_nuclear_research }
+# 	x = 0
+# 	y = 1
+# 	relative_position_id = NORDIC_research_investments
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_researched_technologies > 55
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_researched_technologies > 55
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		add_tech_bonus = {
-			name = NORDIC_nordic_rocketry
-			bonus = 0.25
-			uses = 2 
-			category = rocketry
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_nordic_rocketry
+# 			bonus = 0.25
+# 			uses = 2 
+# 			category = rocketry
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		add_tech_bonus = {
-			name = NORDIC_nordic_rocketry
-			bonus = 0.25
-			uses = 1 
-			category = rocketry
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_nordic_rocketry
+# 			bonus = 0.25
+# 			uses = 1 
+# 			category = rocketry
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_jet_engines
+# joint_focus = {
+# 	id = NORDIC_jet_engines
 	
-	icon = GFX_focus_generic_jet_planes 
+# 	icon = GFX_focus_generic_jet_planes 
 
-	dynamic = yes 
-	prerequisite = { focus = NORDIC_nordic_rocketry }
-	prerequisite = { focus = NORDIC_military_industry_hub focus = NORDIC_ad_hoc_military_industry }
-	mutually_exclusive = { focus = NORDIC_machine_tools_research focus = NORDIC_equipment_conversion_focus }
-	x = 0
-	y = 2
-	relative_position_id = NORDIC_nordic_rocketry
-	cost = 10
+# 	dynamic = yes 
+# 	prerequisite = { focus = NORDIC_nordic_rocketry }
+# 	prerequisite = { focus = NORDIC_military_industry_hub focus = NORDIC_ad_hoc_military_industry }
+# 	mutually_exclusive = { focus = NORDIC_machine_tools_research focus = NORDIC_equipment_conversion_focus }
+# 	x = 0
+# 	y = 2
+# 	relative_position_id = NORDIC_nordic_rocketry
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		has_deployed_air_force_size = {
-			size > 999
-		}
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		has_deployed_air_force_size = {
+# 			size > 999
+# 		}
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
+# 	completion_reward_joint_originator = {
 
-		add_breakthrough_progress = {
-			specialization = specialization_air
-			value = 0.5
-		}
+# 		add_breakthrough_progress = {
+# 			specialization = specialization_air
+# 			value = 0.5
+# 		}
 
-		add_tech_bonus = {
-			name = NORDIC_jet_engines
-			bonus = 1 # was 2
-			ahead_reduction = 1
-			uses = 2
-			category = jet_technology 
-		}
+# 		add_tech_bonus = {
+# 			name = NORDIC_jet_engines
+# 			bonus = 1 # was 2
+# 			ahead_reduction = 1
+# 			uses = 2
+# 			category = jet_technology 
+# 		}
 
-	}
+# 	}
 
-	completion_reward_joint_member = {
+# 	completion_reward_joint_member = {
 
-		add_breakthrough_progress = {
-			specialization = specialization_air
-			value = 0.25
-		}
+# 		add_breakthrough_progress = {
+# 			specialization = specialization_air
+# 			value = 0.25
+# 		}
 
-		add_tech_bonus = {
-			name = NORDIC_jet_engines
-			bonus = 0.75 # was 1
-			ahead_reduction = 1
-			uses = 1
-			category = jet_technology 
-		}
+# 		add_tech_bonus = {
+# 			name = NORDIC_jet_engines
+# 			bonus = 0.75 # was 1
+# 			ahead_reduction = 1
+# 			uses = 1
+# 			category = jet_technology 
+# 		}
 
-	}
-}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_nordic_military_industry
+# joint_focus = {
+# 	id = NORDIC_nordic_military_industry
 
-	icon = {
-		GFX_focus_NORDIC_dem_materiel = {
-			NORDIC_democratic_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_com_materiel = {
-			NORDIC_communist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_mon_materiel = {
-			NORDIC_monarchist_alliance_viable = yes
-		}
-		GFX_focus_NORDIC_dem_materiel = yes
-	}
+# 	icon = {
+# 		GFX_focus_NORDIC_dem_materiel = {
+# 			NORDIC_democratic_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_com_materiel = {
+# 			NORDIC_communist_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_mon_materiel = {
+# 			NORDIC_monarchist_alliance_viable = yes
+# 		}
+# 		GFX_focus_NORDIC_dem_materiel = yes
+# 	}
 
-	dynamic = yes
+# 	dynamic = yes
 	
-	prerequisite = { focus = NORDIC_materiel_design }
+# 	prerequisite = { focus = NORDIC_materiel_design }
 
-	x = 2
-	y = 1 
-	relative_position_id = NORDIC_materiel_design
-	cost = 10
+# 	x = 2
+# 	y = 1 
+# 	relative_position_id = NORDIC_materiel_design
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_military_factories > 10
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_military_factories > 10
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-		set_variable = { NORDIC_mil_industry_originator_production_speed_arms_factory_factor = 0 }
-		set_variable = { NORDIC_mil_industry_originator_dmod_efficiency_gain_factor = 0 }
-		set_variable = { NORDIC_mil_industry_originator_dmod_equipment_conversion_speed = 0 }
-		set_variable = { NORDIC_mil_industry_originator_dmod_start_efficiency_factor = 0 }
-		set_variable = { NORDIC_mil_industry_member_dmod_start_efficiency_factor = 0 }
-	}
+# 	completion_reward = {
+# 		set_variable = { NORDIC_mil_industry_originator_production_speed_arms_factory_factor = 0 }
+# 		set_variable = { NORDIC_mil_industry_originator_dmod_efficiency_gain_factor = 0 }
+# 		set_variable = { NORDIC_mil_industry_originator_dmod_equipment_conversion_speed = 0 }
+# 		set_variable = { NORDIC_mil_industry_originator_dmod_start_efficiency_factor = 0 }
+# 		set_variable = { NORDIC_mil_industry_member_dmod_start_efficiency_factor = 0 }
+# 	}
 
-	completion_reward_joint_originator = {
-		add_dynamic_modifier = {
-			modifier = NORDIC_mil_industry_originator_dmod
-		}
-		random_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes  
-				}
-			}
-			add_extra_state_shared_building_slots = 2 
-			add_building_construction = {
-				type = arms_factory
-				level = 2 
-				instant_build = yes 
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		add_dynamic_modifier = {
+# 			modifier = NORDIC_mil_industry_originator_dmod
+# 		}
+# 		random_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				free_building_slots = {
+# 					building = arms_factory
+# 					size > 1
+# 					include_locked = yes  
+# 				}
+# 			}
+# 			add_extra_state_shared_building_slots = 2 
+# 			add_building_construction = {
+# 				type = arms_factory
+# 				level = 2 
+# 				instant_build = yes 
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		add_dynamic_modifier = {
-			modifier = NORDIC_mil_industry_member_dmod
-		}
-		random_owned_state = {
-			limit = {
-				is_controlled_by = ROOT 
-				free_building_slots = {
-					building = arms_factory
-					size > 0
-					include_locked = yes  
-				}
-			}
-			add_extra_state_shared_building_slots = 1 
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes 
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		add_dynamic_modifier = {
+# 			modifier = NORDIC_mil_industry_member_dmod
+# 		}
+# 		random_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT 
+# 				free_building_slots = {
+# 					building = arms_factory
+# 					size > 0
+# 					include_locked = yes  
+# 				}
+# 			}
+# 			add_extra_state_shared_building_slots = 1 
+# 			add_building_construction = {
+# 				type = arms_factory
+# 				level = 1
+# 				instant_build = yes 
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_standarized_parts
+# joint_focus = {
+# 	id = NORDIC_standarized_parts
 	
-	icon = GFX_focus_SWE_let_fly_all_guns
+# 	icon = GFX_focus_SWE_let_fly_all_guns
 	
-	prerequisite = { focus = NORDIC_nordic_military_industry }
+# 	prerequisite = { focus = NORDIC_nordic_military_industry }
 
-	x = 0
-	y = 1
-	relative_position_id = NORDIC_nordic_military_industry
-	cost = 5
+# 	x = 0
+# 	y = 1
+# 	relative_position_id = NORDIC_nordic_military_industry
+# 	cost = 5
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_military_factories > 20
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_military_factories > 20
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-		hidden_effect = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_originator_dmod_efficiency_gain_factor
-				value = 0.2
-			}
-			add_to_variable = {
-				var = NORDIC_mil_industry_member_dmod_efficiency_gain_factor
-				value = 0.1
-			}
-		}
-	}
+# 	completion_reward = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_originator_dmod_efficiency_gain_factor
+# 				value = 0.2
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_member_dmod_efficiency_gain_factor
+# 				value = 0.1
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_originator = {
-		NORDIC_mil_industry_member_to_originator = yes 
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_originator_dmod_efficiency_gain_factor
-				value = 0.2
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		NORDIC_mil_industry_member_to_originator = yes 
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_originator_dmod_efficiency_gain_factor
+# 				value = 0.2
+# 				tooltip = production_factory_efficiency_gain_factor_tt
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		NORDIC_mil_industry_originator_to_member = yes 
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_member_dmod_efficiency_gain_factor
-				value = 0.1
-				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		NORDIC_mil_industry_originator_to_member = yes 
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_member_dmod_efficiency_gain_factor
+# 				value = 0.1
+# 				tooltip = production_factory_efficiency_gain_factor_tt
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_military_industry_hub
+# joint_focus = {
+# 	id = NORDIC_military_industry_hub
 	
-	icon = GFX_goal_generic_construct_mil_factory
+# 	icon = GFX_goal_generic_construct_mil_factory
 	
-	prerequisite = { focus = NORDIC_standarized_parts }
-	mutually_exclusive = { focus = NORDIC_ad_hoc_military_industry }
-	x = -1
-	y = 1
-	relative_position_id = NORDIC_standarized_parts
-	cost = 10
+# 	prerequisite = { focus = NORDIC_standarized_parts }
+# 	mutually_exclusive = { focus = NORDIC_ad_hoc_military_industry }
+# 	x = -1
+# 	y = 1
+# 	relative_position_id = NORDIC_standarized_parts
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_military_factories > 15
-		any_owned_state = {
-			arms_factory > 3
-		}
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_military_factories > 15
+# 		any_owned_state = {
+# 			arms_factory > 3
+# 		}
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-	}
+# 	completion_reward = {
+# 	}
 
-	completion_reward_joint_originator = {
-		if = {
-			limit = {
-				NOT = {
-					any_owned_state = {
-						arms_factory > 3
-					}		
-				}
-			}
-			effect_tooltip = {
-				capital_scope = {
-					add_extra_state_shared_building_slots = 3
-					add_dynamic_modifier = {
-						modifier = NORDIC_military_industry_hub_leader_dmod
-						scope = ROOT
-					}
-				}
-			}
-		}
-		random_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-				arms_factory > 3
-			}
-			add_extra_state_shared_building_slots = 3
-			add_dynamic_modifier = {
-				modifier = NORDIC_military_industry_hub_leader_dmod
-				scope = ROOT
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					any_owned_state = {
+# 						arms_factory > 3
+# 					}		
+# 				}
+# 			}
+# 			effect_tooltip = {
+# 				capital_scope = {
+# 					add_extra_state_shared_building_slots = 3
+# 					add_dynamic_modifier = {
+# 						modifier = NORDIC_military_industry_hub_leader_dmod
+# 						scope = ROOT
+# 					}
+# 				}
+# 			}
+# 		}
+# 		random_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT
+# 				arms_factory > 3
+# 			}
+# 			add_extra_state_shared_building_slots = 3
+# 			add_dynamic_modifier = {
+# 				modifier = NORDIC_military_industry_hub_leader_dmod
+# 				scope = ROOT
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		if = {
-			limit = {
-				NOT = {
-					any_owned_state = {
-						arms_factory > 1
-					}		
-				}
-			}
-			custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-			effect_tooltip = {
-				capital_scope = {
-					add_extra_state_shared_building_slots = 2
-					add_dynamic_modifier = {
-						modifier = NORDIC_military_industry_hub_member_dmod
-						scope = ROOT
-					}
-				}
-			}
-		}		
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-		random_owned_state = {
-			limit = {
-				is_controlled_by = ROOT
-				arms_factory > 1
-			}
-			add_extra_state_shared_building_slots = 2
-			add_dynamic_modifier = {
-				modifier = NORDIC_military_industry_hub_member_dmod
-				scope = ROOT
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					any_owned_state = {
+# 						arms_factory > 1
+# 					}		
+# 				}
+# 			}
+# 			custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 			effect_tooltip = {
+# 				capital_scope = {
+# 					add_extra_state_shared_building_slots = 2
+# 					add_dynamic_modifier = {
+# 						modifier = NORDIC_military_industry_hub_member_dmod
+# 						scope = ROOT
+# 					}
+# 				}
+# 			}
+# 		}		
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 		random_owned_state = {
+# 			limit = {
+# 				is_controlled_by = ROOT
+# 				arms_factory > 1
+# 			}
+# 			add_extra_state_shared_building_slots = 2
+# 			add_dynamic_modifier = {
+# 				modifier = NORDIC_military_industry_hub_member_dmod
+# 				scope = ROOT
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_ad_hoc_military_industry
+# joint_focus = {
+# 	id = NORDIC_ad_hoc_military_industry
 	
-	icon = GFX_goal_generic_production
+# 	icon = GFX_goal_generic_production
 	
-	prerequisite = { focus = NORDIC_standarized_parts }
-	mutually_exclusive = { focus = NORDIC_military_industry_hub }
-	x = 1
-	y = 1
-	relative_position_id = NORDIC_standarized_parts
-	cost = 10
+# 	prerequisite = { focus = NORDIC_standarized_parts }
+# 	mutually_exclusive = { focus = NORDIC_military_industry_hub }
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = NORDIC_standarized_parts
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_military_factories > 15
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_military_factories > 15
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-		hidden_effect = {
-			set_variable = { NORDIC_mil_industry_originator_production_speed_arms_factory_factor = 0.10 }
-			set_variable = { NORDIC_mil_industry_member_production_speed_arms_factory_factor = 0.05 }
-		}
-	}
+# 	completion_reward = {
+# 		hidden_effect = {
+# 			set_variable = { NORDIC_mil_industry_originator_production_speed_arms_factory_factor = 0.10 }
+# 			set_variable = { NORDIC_mil_industry_member_production_speed_arms_factory_factor = 0.05 }
+# 		}
+# 	}
 
-	completion_reward_joint_originator = {
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod		
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_originator_production_speed_arms_factory_factor
-				value = 0.10
-				tooltip = production_speed_arms_factory_factor_tt
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod		
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_originator_production_speed_arms_factory_factor
+# 				value = 0.10
+# 				tooltip = production_speed_arms_factory_factor_tt
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_member_production_speed_arms_factory_factor
-				value = 0.05
-				tooltip = production_speed_arms_factory_factor_tt
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_member_production_speed_arms_factory_factor
+# 				value = 0.05
+# 				tooltip = production_speed_arms_factory_factor_tt
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_equipment_conversion_focus
+# joint_focus = {
+# 	id = NORDIC_equipment_conversion_focus
 	
-	icon = GFX_focus_generic_license_production
+# 	icon = GFX_focus_generic_license_production
 	
-	prerequisite = { focus = NORDIC_military_industry_hub focus = NORDIC_ad_hoc_military_industry }
-	mutually_exclusive = { focus = NORDIC_jet_engines focus = NORDIC_machine_tools_research }
-	x = 1
-	y = 1
-	relative_position_id = NORDIC_ad_hoc_military_industry
-	cost = 10
+# 	prerequisite = { focus = NORDIC_military_industry_hub focus = NORDIC_ad_hoc_military_industry }
+# 	mutually_exclusive = { focus = NORDIC_jet_engines focus = NORDIC_machine_tools_research }
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = NORDIC_ad_hoc_military_industry
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_military_factories > 25
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_military_factories > 25
+# 	}
 
-	search_filters = { FOCUS_FILTER_INDUSTRY }
+# 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward = {
-		hidden_effect = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_originator_dmod_equipment_conversion_speed
-				value = 0.15
-			}
-			add_to_variable = {
-				var = NORDIC_mil_industry_member_dmod_equipment_conversion_speed
-				value = 0.15
-			}
-		}
-	}
+# 	completion_reward = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_originator_dmod_equipment_conversion_speed
+# 				value = 0.15
+# 			}
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_member_dmod_equipment_conversion_speed
+# 				value = 0.15
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_originator = {
-		NORDIC_mil_industry_member_to_originator = yes 
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_originator_dmod_equipment_conversion_speed
-				value = 0.15
-				tooltip = equipment_conversion_speed_tt
-			}
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		NORDIC_mil_industry_member_to_originator = yes 
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_originator_dmod_equipment_conversion_speed
+# 				value = 0.15
+# 				tooltip = equipment_conversion_speed_tt
+# 			}
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		NORDIC_mil_industry_originator_to_member = yes
-		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
-		effect_tooltip = {
-			add_to_variable = {
-				var = NORDIC_mil_industry_member_dmod_equipment_conversion_speed
-				value = 0.15
-				tooltip = equipment_conversion_speed_tt
-			}
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		NORDIC_mil_industry_originator_to_member = yes
+# 		custom_effect_tooltip = NORDIC_modify_nordic_military_industry_dmod
+# 		effect_tooltip = {
+# 			add_to_variable = {
+# 				var = NORDIC_mil_industry_member_dmod_equipment_conversion_speed
+# 				value = 0.15
+# 				tooltip = equipment_conversion_speed_tt
+# 			}
+# 		}
+# 	}
+# }
 
-joint_focus = {
-	id = NORDIC_machine_tools_research
+# joint_focus = {
+# 	id = NORDIC_machine_tools_research
 	
-	icon = GFX_focus_generic_modernize_industry
+# 	icon = GFX_focus_generic_modernize_industry
 	
-	prerequisite = { focus = NORDIC_military_industry_hub focus = NORDIC_ad_hoc_military_industry }
-	mutually_exclusive = { focus = NORDIC_jet_engines focus = NORDIC_equipment_conversion_focus }
+# 	prerequisite = { focus = NORDIC_military_industry_hub focus = NORDIC_ad_hoc_military_industry }
+# 	mutually_exclusive = { focus = NORDIC_jet_engines focus = NORDIC_equipment_conversion_focus }
 
-	x = 1
-	y = 1
-	relative_position_id = NORDIC_military_industry_hub
-	cost = 10
+# 	x = 1
+# 	y = 1
+# 	relative_position_id = NORDIC_military_industry_hub
+# 	cost = 10
 
-	text_icon = NORDIC_focus_style
+# 	text_icon = NORDIC_focus_style
 
-	available = {
-		NORDIC_basic_available_trigger = yes
-		num_of_military_factories > 20
-		num_researched_technologies > 45
-	}
+# 	available = {
+# 		NORDIC_basic_available_trigger = yes
+# 		num_of_military_factories > 20
+# 		num_researched_technologies > 45
+# 	}
 
-	search_filters = { FOCUS_FILTER_RESEARCH }
+# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-	joint_trigger = {
-  		NORDIC_basic_joint_trigger = yes 
-	}
+# 	joint_trigger = {
+#   		NORDIC_basic_joint_trigger = yes 
+# 	}
 
-	completion_reward_joint_originator = {
-		add_tech_bonus = {
-			name = NORDIC_machine_tools_research
-			bonus = 0.3 
-			uses = 2 
-			category = cat_production
-		}
-	}
+# 	completion_reward_joint_originator = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_machine_tools_research
+# 			bonus = 0.3 
+# 			uses = 2 
+# 			category = cat_production
+# 		}
+# 	}
 
-	completion_reward_joint_member = {
-		add_tech_bonus = {
-			name = NORDIC_machine_tools_research
-			bonus = 0.25 
-			uses = 1
-			category = cat_production
-		}
-	}
-}
+# 	completion_reward_joint_member = {
+# 		add_tech_bonus = {
+# 			name = NORDIC_machine_tools_research
+# 			bonus = 0.25 
+# 			uses = 1
+# 			category = cat_production
+# 		}
+# 	}
+# }
 
 
