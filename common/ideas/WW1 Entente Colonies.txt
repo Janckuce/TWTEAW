@@ -161,25 +161,31 @@ ideas = {
 			picture = generic_org_of_african_unity
 			targeted_modifier = {
 				tag = GCG
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.10
 			}
 		}
 		commonwealth_attack_GER = {
 			picture = generic_org_of_african_unity
+			modifier = {
+				army_claim_attack_factor = 0.15
+			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.10
 			}
 		}
 		commonwealth_attack_TUR_BUL = {
 			picture = generic_org_of_african_unity
+			modifier = {
+				army_claim_attack_factor = 0.20
+			}
 			targeted_modifier = {
 				tag = TUR
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.10
 			}
 			targeted_modifier = {
 				tag = BUL
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.10
 			}
 		}
 	}

@@ -1225,10 +1225,10 @@ joint_focus = {
 	
 	prerequisite = { focus = middle6 }
 	# mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middleRight2 focus = right6 }
-	x = 0
-	y = 2
+	x = -2
+	y = 1
 	relative_position_id = middle6
-	cost = 10
+	cost = 7.2
 
 	text_icon = NORDIC_focus_style
 
@@ -1253,7 +1253,35 @@ joint_focus = {
 	completion_reward = {
 		add_timed_idea = {
 			idea = commonwealth_attack_TUR_BUL
-			days = 100
+			days = 120
+		}
+		340 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		797 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		184 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		341 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
 		}
 	}
 }
@@ -1312,10 +1340,10 @@ joint_focus = {
 	prerequisite = { focus = middle6 }
 	# mutually_exclusive = { focus = left6 focus = middleLeft2 focus = middle7 focus = right6 }
 
-	x = 0
-	y = 3
-	relative_position_id = middleRight1
-	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = middle6
+	cost = 7.2
 
 	text_icon = NORDIC_focus_style
 
@@ -1780,19 +1808,22 @@ joint_focus = {
 	icon = GFX_focus_usa_focus_on_europe
 	
 	# prerequisite = { focus = middleLeft1 }
-	prerequisite = { focus = middle6 }
+	prerequisite = { focus = middleRight2 }
+	prerequisite = { focus = middle7 }
 	# mutually_exclusive = { focus = left6 focus = middle7 focus = middleRight2 focus = right6 }
 
 	x = 0
-	y = 3
-	relative_position_id = middleLeft1
-	cost = 10
+	y = 2
+	relative_position_id = middle6
+	cost = 7.2
 
 	text_icon = NORDIC_focus_style
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-
+		NOT = {
+			has_idea = commonwealth_attack_TUR_BUL
+		}
 	}
 
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -1808,9 +1839,113 @@ joint_focus = {
 
 	}
 	completion_reward = {
+		hidden_effect = {
+			ENG = {
+				remove_state_claim = 340
+				remove_state_claim = 797
+				remove_state_claim = 184
+				remove_state_claim = 341
+			}
+			RAJ = {
+				remove_state_claim = 340
+				remove_state_claim = 797
+				remove_state_claim = 184
+				remove_state_claim = 341
+			}
+			SAF = {
+				remove_state_claim = 340
+				remove_state_claim = 797
+				remove_state_claim = 184
+				remove_state_claim = 341
+			}
+			CAN = {
+				remove_state_claim = 340
+				remove_state_claim = 797
+				remove_state_claim = 184
+				remove_state_claim = 341
+			}
+			AST = {
+				remove_state_claim = 340
+				remove_state_claim = 797
+				remove_state_claim = 184
+				remove_state_claim = 341
+			}
+		}
+
 		add_timed_idea = {
 			idea = commonwealth_attack_GER
 			days = 100
+		}
+
+		6 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		34 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		934 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		835 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		916 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		29 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		785 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		933 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		18 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
+		}
+		908 = { 
+			add_claim_by = ENG
+			add_claim_by = CAN
+			add_claim_by = SAF
+			add_claim_by = AST
+			add_claim_by = RAJ
 		}
 	}
 }
