@@ -140,21 +140,21 @@ joint_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		if = {
-			limit = {	
-				NORDIC_alliance_created_already = no
-			}
-			hidden_effect = {
-				every_other_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						NORDIC_is_nordic = yes
-					}
-					set_country_flag = NORDIC_already_member_flag
-				}
-			}
-			NORDIC_create_nordic_alliance = yes 
-		}
+		# if = {
+		# 	limit = {	
+		# 		NORDIC_alliance_created_already = no
+		# 	}
+		# 	hidden_effect = {
+		# 		every_other_country = {
+		# 			limit = {
+		# 				is_in_faction_with = ROOT
+		# 				NORDIC_is_nordic = yes
+		# 			}
+		# 			set_country_flag = NORDIC_already_member_flag
+		# 		}
+		# 	}
+		# 	NORDIC_create_nordic_alliance = yes 
+		# }
 	}
 }
 
@@ -1255,34 +1255,10 @@ joint_focus = {
 			idea = commonwealth_attack_TUR_BUL
 			days = 120
 		}
-		340 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		797 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		184 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		341 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
+		add_state_claim = 340
+		add_state_claim = 797
+		add_state_claim = 184
+		add_state_claim = 341
 	}
 }
 
@@ -1876,77 +1852,16 @@ joint_focus = {
 			idea = commonwealth_attack_GER
 			days = 100
 		}
-
-		6 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		34 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		934 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		835 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		916 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		29 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		785 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		933 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		18 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
-		908 = { 
-			add_claim_by = ENG
-			add_claim_by = CAN
-			add_claim_by = SAF
-			add_claim_by = AST
-			add_claim_by = RAJ
-		}
+		add_state_claim = 6
+		add_state_claim = 34
+		add_state_claim = 934
+		add_state_claim = 835
+		add_state_claim = 916
+		add_state_claim = 29
+		add_state_claim = 785
+		add_state_claim = 933
+		add_state_claim = 18
+		add_state_claim = 908
 	}
 }
 

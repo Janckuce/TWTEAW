@@ -333,19 +333,21 @@ ideas = {
 			removal_cost = -1
 
             picture = GER_schlieffen_moltke_plan
-
-			targeted_modifier = {
-				tag = FRA
-				attack_bonus_against = 0.25
+			modifier = {
+				army_claim_attack_factor = 0.30
 			}
-			targeted_modifier = {
-				tag = BEL
-				attack_bonus_against = 0.25
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.25
-			}
+			# targeted_modifier = {
+			# 	tag = FRA
+			# 	attack_bonus_against = 0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = BEL
+			# 	attack_bonus_against = 0.25
+			# }
+			# targeted_modifier = {
+			# 	tag = ENG
+			# 	attack_bonus_against = 0.25
+			# }
 			targeted_modifier = {
 				tag = RUS
 				attack_bonus_against = -0.20
@@ -370,8 +372,8 @@ ideas = {
             picture = GER_schlieffen_moltke_plan
 
 			modifier = {
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
 			}
 		}
 		
