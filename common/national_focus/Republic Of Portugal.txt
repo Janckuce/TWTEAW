@@ -60,7 +60,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry1
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry_Main
 		x = -1
 		y = 1
@@ -124,7 +124,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry2
 		icon = GFX_focus_generic_industry_1
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry1
 		x = -1
 		y = 1
@@ -153,7 +153,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry3
 		icon = GFX_focus_generic_industry_2
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry2
 		x = 0
 		y = 1
@@ -182,7 +182,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry4
 		icon = GFX_focus_generic_industry_3
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry3
 		x = 0
 		y = 1
@@ -211,7 +211,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry_Middle1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry_Main
 		x = 0
 		y = 2
@@ -235,7 +235,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Industry_Middle2
 		icon = GFX_focus_generic_military_industry
-		cost = 10
+		cost = 7.2
 		relative_position_id = POR_Industry_Middle1
 		x = 0
 		y = 1
@@ -293,7 +293,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Tungsten_Mines
 		icon = GFX_focus_generic_tungsten
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Open_Trade
 		x = 1
 		y = 1
@@ -314,7 +314,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Chromium_Mines
 		icon = GFX_focus_generic_chromium
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Tungsten_Mines
 		x = 0
 		y = 1
@@ -335,7 +335,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Iron_Mines
 		icon = GFX_focus_generic_steel
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Chromium_Mines
 		x = 0
 		y = 1
@@ -468,13 +468,18 @@ focus_tree = {
 				type = infantry_equipment
 				amount = 10000
 			}
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 	focus = {
 		available_if_capitulated = yes
 		id = POR_Rapid_Reaction_Training1
 		icon = GFX_focus_generic_urban_training
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Brigadas_De_Reacao_Rapida
 		x = 0
 		y = 1
@@ -490,7 +495,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Rapid_Reaction_Training2
 		icon = GFX_focus_generic_little_entente
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Rapid_Reaction_Training1
 		x = 0
 		y = 1
@@ -509,7 +514,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Rapid_Reaction_Training3
 		icon = GFX_focus_generic_manpower
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Rapid_Reaction_Training2
 		x = 0
 		y = 1
@@ -528,7 +533,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Rapid_Reaction_Training4
 		icon = GFX_focus_generic_military_academy
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Rapid_Reaction_Training3
 		x = 0
 		y = 1
@@ -571,7 +576,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Commandos_Training1
 		icon = GFX_focus_AFG_mountain_training
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Comandos
 		x = 0
 		y = 1
@@ -587,7 +592,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Commandos_Training2
 		icon = GFX_focus_generic_army_doctrines_2
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Commandos_Training1
 		x = 0
 		y = 1
@@ -606,7 +611,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Commandos_Training3
 		icon = GFX_focus_chi_army_reform
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Commandos_Training2
 		x = 0
 		y = 1
@@ -625,7 +630,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Commandos_Training4
 		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Commandos_Training3
 		x = 0
 		y = 1
@@ -659,20 +664,20 @@ focus_tree = {
 		completion_reward = {
 			division_template = {
 				name = "Caçadores"
-				template_counter = 3
-				is_locked = yes
-				division_cap = 6
+				# template_counter = 2
+				# is_locked = yes
+				# division_cap = 6
 				force_allow_recruiting = yes
 				regiments = {
-					irregular_infantry = { x = 0 y = 0 }
-					irregular_infantry = { x = 0 y = 1 }
-					irregular_infantry = { x = 0 y = 2 }
-        			irregular_infantry = { x = 1 y = 0 }
-					irregular_infantry = { x = 1 y = 1 }
-					irregular_infantry = { x = 1 y = 2 }
-        			irregular_infantry = { x = 2 y = 0 }
-					irregular_infantry = { x = 2 y = 1 }
-					irregular_infantry = { x = 2 y = 2 }
+					camelry = { x = 0 y = 0 }
+					camelry = { x = 0 y = 1 }
+					camelry = { x = 0 y = 2 }
+        			camelry = { x = 1 y = 0 }
+					camelry = { x = 1 y = 1 }
+					camelry = { x = 1 y = 2 }
+        			camelry = { x = 2 y = 0 }
+					camelry = { x = 2 y = 1 }
+					camelry = { x = 2 y = 2 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -690,13 +695,18 @@ focus_tree = {
 				tech_recon = 1
 				tech_recon2 = 1
 			}
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 0.8
+				uses = 2
+			}
 		}
 	}
 	focus = {
 		available_if_capitulated = yes
 		id = POR_Hunters_Training1
 		icon = GFX_focus_PER_desert_training
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Cacadores
 		x = 0
 		y = 1
@@ -712,7 +722,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = POR_Hunters_Training2
 		icon = GFX_focus_ETH_keep_the_chitet
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Hunters_Training1
 		x = 0
 		y = 1
@@ -725,20 +735,13 @@ focus_tree = {
 				remove_idea = POR_Hunters
 				add_idea = POR_Hunters1
 			}
-			add_units_to_division_template = {
-				template_name = "Caçadores"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 3
-				}
-			}
 		}
 	}
 	focus = {
 		available_if_capitulated = yes
 		id = POR_Hunters_Training3
 		icon = GFX_focus_HUN_the_turul_association
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Hunters_Training2
 		x = 0
 		y = 1
@@ -751,20 +754,13 @@ focus_tree = {
 				remove_idea = POR_Hunters1
 				add_idea = POR_Hunters2
 			}
-			add_units_to_division_template = {
-				template_name = "Caçadores"
-				regiments = {
-					artillery_brigade = 3
-					artillery_brigade = 4
-				}
-			}
 		}
 	}
 	focus = {
 		available_if_capitulated = yes
 		id = POR_Hunters_Training4
 		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
-		cost = 10
+		cost = 5
 		relative_position_id = POR_Hunters_Training3
 		x = 0
 		y = 1
@@ -776,16 +772,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = POR_Hunters2
 				add_idea = POR_Hunters3
-			}
-			add_units_to_division_template = {
-				template_name = "Caçadores"
-				regiments = {
-					artillery_brigade = 4
-					artillery_brigade = 4
-				}
-				support = {
-					recon = 0
-				}
 			}
 		}
 	}
@@ -807,11 +793,13 @@ focus_tree = {
 			focus = POR_Hunters_Training4
 		}
 		completion_reward = {
+			add_state_core = 171
+			transfer_state = 171
+			171 = {
+				add_extra_state_shared_building_slots = 30
+			}
 			hidden_effect = {
-				add_state_core = 171
-				transfer_state = 171
 				171 = {
-					add_extra_state_shared_building_slots = 30
 					remove_building = {
 						type = arms_factory
 						level = 30
@@ -845,7 +833,6 @@ focus_tree = {
 			focus = POR_Power_To_The_King
 		}
 		available = {
-			democratic > 0.65
 			has_idea = POR_Passed_Constitution
 		}
 		prerequisite = {
@@ -855,6 +842,11 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = POR_Passed_Constitution
 				add_idea = POR_Republic_Of_Portugal
+			}
+			add_tech_bonus = {
+				category = air_equipment
+				bonus = 0.8
+				uses = 3
 			}
 		}
 	}
@@ -958,7 +950,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		available = {
-			democratic > 0.85
 		}
 		prerequisite = {
 			focus = POR_Rebuild_The_Nation2
@@ -983,7 +974,6 @@ focus_tree = {
 		x = 11
 		y = 1
 		available = {
-			democratic < 0.5
 			has_idea = POR_Failed_Constitution
 		}
 		mutually_exclusive = {
@@ -1159,7 +1149,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			neutrality > 0.9
 		}
 		prerequisite = {
 			focus = POR_Addressing_The_Issues

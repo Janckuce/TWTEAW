@@ -869,7 +869,7 @@ joint_focus = {
 
 	available = {
 		NORDIC_basic_available_trigger = yes
-		has_political_power = 100
+		has_political_power > 100
 	}
 
 	search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
@@ -1151,7 +1151,6 @@ joint_focus = {
 	icon = GFX_focus_generic_railroad
 	
 	prerequisite = { focus = middle2 }
-	mutually_exclusive = { focus = middle3 }
 	x = 1
 	y = 1
 	relative_position_id = middle2

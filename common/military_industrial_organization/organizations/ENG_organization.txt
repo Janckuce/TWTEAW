@@ -291,8 +291,10 @@ ENG_supermarine_organization = {
 	icon = GFX_idea_supermarine
 	
 	allowed = {	
-		tag = ENG
-		has_dlc = "Arms Against Tyranny"
+		OR = {
+			tag = ENG
+			tag = POR
+		}
 	}
 
 	equipment_type = {
@@ -384,8 +386,10 @@ ENG_hawker_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_hawker
 	allowed = {	
-		tag = ENG
-		has_dlc = "Arms Against Tyranny"
+		OR = {	
+			tag = ENG
+			tag = POR
+		}
 	}
 }
 
