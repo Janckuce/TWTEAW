@@ -38,6 +38,7 @@ focus_tree = {
 				remove_idea = ROM_Triple_Alliance
 				add_idea = ROM_Triple_Alliance_Ally
 			}
+			custom_effect_tooltip = ROM_Ally_Info
 		}
 	}
 	focus = {
@@ -610,6 +611,7 @@ focus_tree = {
 				remove_idea = ROM_Triple_Alliance
 				add_idea = ROM_Triple_Alliance_Solo
 			}
+			custom_effect_tooltip = ROM_Solo_Info
 		}
 	}
 	focus = {
@@ -794,15 +796,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment
 				amount = 1000
 			}
 			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 100
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
+				type = artillery_equipment
 				amount = 100
 			}
 		}
@@ -819,15 +817,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment
 				amount = 1000
 			}
 			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 100
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
+				type = artillery_equipment
 				amount = 100
 			}
 		}
@@ -844,15 +838,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment
 				amount = 1000
 			}
 			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 100
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
+				type = artillery_equipment
 				amount = 100
 			}
 		}
@@ -1576,11 +1566,6 @@ focus_tree = {
 		relative_position_id = ROM_Reformed_Army
 		x = 0
 		y = 2
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = no
-			}
-		}
 		prerequisite = {
 			focus = ROM_Reformed_Army_France
 			focus = ROM_Reformed_Army_Britain

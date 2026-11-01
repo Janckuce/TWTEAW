@@ -5,7 +5,7 @@ country_event = {
 	id = ww1_romania.1
 	title = ww1_romania.1.t
 	desc = ww1_romania_desc.1
-	picture = GFX_report_event_germany_form_ukraine
+	picture = GFX_report_event_poland_funeral
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -13,7 +13,13 @@ country_event = {
 	option = {
 		name = ww1_romania.1.a
 
+		retire_ideology_leader = neutrality
+		promote_character = {
+			character = ROM_Carol_I_Real
+			ideology = centrism
+		}
 		add_ideas = ROM_Disputed_Neutrality
+		news_event = ww1_news.46
 
 		ai_chance = {
 			factor = 100
@@ -26,7 +32,7 @@ country_event = {
 	id = ww1_romania.2
 	title = ww1_romania.2.t
 	desc = ww1_romania_desc.2
-	picture = GFX_report_event_germany_form_ukraine
+	picture = GFX_report_event_romanian_soldiers
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -67,7 +73,7 @@ country_event = {
 	id = ww1_romania.3
 	title = ww1_romania.3.t
 	desc = ww1_romania_desc.3
-	picture = GFX_report_event_germany_form_ukraine
+	picture = GFX_report_event_romania_parliament
 
 	is_triggered_only = yes
 	fire_only_once = yes

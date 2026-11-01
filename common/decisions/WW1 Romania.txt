@@ -4,7 +4,7 @@ ROM_Army_Reform_Tab = {
 		priority = 1
 		fire_only_once = no
 		is_good = yes
-		days_mission_timeout = 1
+		days_mission_timeout = 70
 		allowed = {
 			tag = ROM
 		}
@@ -85,7 +85,7 @@ ROM_Army_Reform_Tab = {
 		priority = 1
 		fire_only_once = no
 		is_good = yes
-		days_mission_timeout = 1
+		days_mission_timeout = 70
 		allowed = {
 			tag = ROM
 		}
@@ -166,7 +166,7 @@ ROM_Army_Reform_Tab = {
 		priority = 1
 		fire_only_once = no
 		is_good = yes
-		days_mission_timeout = 1
+		days_mission_timeout = 70
 		allowed = {
 			tag = ROM
 		}
@@ -399,41 +399,6 @@ ROM_Prime_Minister_Swap = {
 				}
 			}
 			add_ideas = ROM_Alexandru_Marghiloman
-		}
-	}
-}
-
-ROM_Kill_The_Regent = {
-	ROM_Retire_Regent = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
-		priority = 1
-		fire_only_once = yes
-		cost = 25
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		visible = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		complete_effect = {
-			ROM = {
-				retire_country_leader = yes
-				add_country_leader_role = {
-					character = ROM_ferdinand_I
-					promote_leader = yes
-					country_leader = {
-						ideology = centrism
-					}
-				}
-				news_event = ww1_news.46
-			}
 		}
 	}
 }

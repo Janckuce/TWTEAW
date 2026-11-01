@@ -39,19 +39,21 @@ leader_traits = {
 	}
 	ROM_Chief_Of_General_Staff = {
 		random = no
+		experience_gain_army = 0.02
 		army_org_factor = 0.1
 		army_morale_factor = 0.1
 		army_defence_factor = 0.1
 	}
 	ROM_Ruthless_Chief_Of_Army = {
 		random = no
+		experience_gain_army = 0.02
 		army_attack_factor = 0.05
 		coordination_bonus = 0.1
 		initiative_factor = 0.1
 	}
 	ROM_Hero_Of_The_Army = {
 		random = no
-		army_artillery_attack_factor = 0.1
+		army_artillery_attack_factor = 0.075
 	}
 	ROM_Actual_3_Term_Chief_Of_General_Staff = {
 		random = no
@@ -60,7 +62,7 @@ leader_traits = {
 	ROM_Military_Scholar = {
 		random = no
 		experience_gain_army_unit_factor = 0.1
-		experience_loss_factor = -0.15
+		experience_loss_factor = -0.1
 	}
 	ROM_Survivor_Of_Plevna = {
 		random = no
@@ -69,7 +71,7 @@ leader_traits = {
 	}
 	ROM_Armenian_Descendant = {
 		random = no
-		recruitable_population_factor = 0.1
+		recruitable_population = 0.005
 	}
 	ROM_Bucharest_Graduate = {
 		random = no
@@ -93,23 +95,16 @@ leader_traits = {
 		random = no
 		targeted_modifier = {
 			tag = FRA
-			trade_cost_for_target_factor = -0.1
+			trade_cost_for_target_factor = -0.5
 		}
 		targeted_modifier = {
 			tag = RUS
-			trade_cost_for_target_factor = -0.1
+			trade_cost_for_target_factor = -0.5
 		}
 	}
 	ROM_War_Minister = {
 		random = no
-		equipment_bonus = {
-			infantry_equipment = {
-				build_cost_ic = 0.1
-				soft_attack = 0.1
-				defense = 0.1
-				instant = yes
-			}
-		}
+		production_speed_arms_factory_factor = 0.1
 	}
 	ROM_Industrial_Wizard = {
 		random = no
