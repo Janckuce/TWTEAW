@@ -5,18 +5,14 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
 	}
 	
 	support = {
         engineer = { x = 0 y = 0 }
-        machine_gun = { x = 0 y = 1 }
+        artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -26,7 +22,7 @@ units = {
 		location = 3639
 		division_template = "Divizia De Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -34,7 +30,7 @@ units = {
 		location = 3639
 		division_template = "Divizia De Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -42,7 +38,7 @@ units = {
 		location = 3639
 		division_template = "Divizia De Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -50,7 +46,7 @@ units = {
 		location = 9617
 		division_template = "Divizia De Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -58,7 +54,7 @@ units = {
 		location = 9617
 		division_template = "Divizia De Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -66,7 +62,7 @@ units = {
 		location = 9617
 		division_template = "Divizia De Infanterie"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 
 	}
 }
@@ -82,7 +78,7 @@ instant_effect = {
 			type = ww1_infantry_equipment_2
 			creator = "ROM"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.1
 		efficiency = 50
 	}
@@ -91,9 +87,17 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "ROM" 
 		}
-		requested_factories = 1
-		progress = 0.3
+		requested_factories = 2
+		progress = 0.1
 		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = convoy_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.1
 	}
 }
 

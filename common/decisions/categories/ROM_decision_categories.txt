@@ -1,7 +1,7 @@
-ROM_Kill_The_Regent = {
-	icon = gre_investment_decisions
+ROM_Army_Reform_Tab = {
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
 
-	priority = 102
+	priority = 104
 
 	visible_when_empty = no
 
@@ -11,11 +11,11 @@ ROM_Kill_The_Regent = {
 }
 
 ROM_Entente_Appeasement = {
-	icon = gre_investment_decisions
+	icon = GFX_decision_category_generic_foreign_policy
 
 	scripted_gui = Appeasement_Scripted_Gui
 
-	priority = 101
+	priority = 103
 
 	visible_when_empty = no
 
@@ -24,12 +24,30 @@ ROM_Entente_Appeasement = {
 	}
 }
 
-ROM_Army_Reform_Tab = {
-	icon = gre_investment_decisions
+ROM_Prime_Minister_Swap = {
+	icon = GFX_decision_category_usa_congress
 
-	priority = 100
+	priority = 102
 
-	visible_when_empty = yes
+	visible_when_empty = no
+
+	allowed = {
+		tag = ROM
+	}
+
+	available = {
+		hidden_trigger = {
+			has_completed_focus = ROM_Solo_Main
+		}
+	}
+}
+
+ROM_Kill_The_Regent = {
+	icon = GFX_decision_category_eng_appeal_to_imperial_loyalists
+
+	priority = 101
+
+	visible_when_empty = no
 
 	allowed = {
 		tag = ROM

@@ -1,123 +1,6 @@
-ROM_Kill_The_Regent = {
-	ROM_Retire_Regent = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
-		priority = 1
-		fire_only_once = yes
-		cost = 25
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		complete_effect = {
-			ROM = {
-				retire_country_leader = yes
-				add_country_leader_role = {
-					character = ROM_ferdinand_I
-					promote_leader = yes
-					country_leader = {
-						ideology = centrism
-					}
-				}
-				news_event = ww1_news.46
-			}
-		}
-	}
-}
-
-ROM_Entente_Appeasement = {
-	ROM_Appease_The_Entente = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
-	ROM_Appease_The_Entente1 = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs1
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
-	ROM_Appease_The_Entente2 = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs2
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
-	ROM_Appease_The_Entente3 = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs3
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
-}
-
 ROM_Army_Reform_Tab = {
 	ROM_French_Reforms = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		icon = GFX_decision_SWE_set_army_budget
 		priority = 1
 		fire_only_once = no
 		is_good = yes
@@ -198,7 +81,7 @@ ROM_Army_Reform_Tab = {
 		}
 	}
 	ROM_Britain_Reforms = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		icon = GFX_decision_generic_belgian_colonial_helmet
 		priority = 1
 		fire_only_once = no
 		is_good = yes
@@ -279,7 +162,7 @@ ROM_Army_Reform_Tab = {
 		}
 	}
 	ROM_Russia_Reforms = {
-		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		icon = GFX_decision_generic_army_support
 		priority = 1
 		fire_only_once = no
 		is_good = yes
@@ -356,6 +239,200 @@ ROM_Army_Reform_Tab = {
 					}
 					activate_mission = ROM_Russia_Reforms
 				}
+			}
+		}
+	}
+}
+
+ROM_Entente_Appeasement = {
+	ROM_Appease_The_Entente = {
+		icon = GFX_decision_NOR_prepare_state_mon_0
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+	ROM_Appease_The_Entente1 = {
+		icon = GFX_decision_NOR_prepare_state_mon_1
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs1
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+	ROM_Appease_The_Entente2 = {
+		icon = GFX_decision_NOR_prepare_state_mon_2
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs2
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+	ROM_Appease_The_Entente3 = {
+		icon = GFX_decision_NOR_prepare_state_mon_3
+		priority = 1
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			date > 1914.7.28
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = ROM_Appeasement_Costs3
+				days = 70
+			}
+			add_to_variable = {
+				ROM.APP = 1
+			}
+		}
+	}
+}
+
+ROM_Prime_Minister_Swap = {
+	ROM_Liberal_Swap = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 1
+		fire_only_once = no
+		cost = 25
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			not = {
+				has_idea = ROM_Ion_Bratianu
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = {
+					ROM_Titus_Maiorescu
+					ROM_Alexandru_Marghiloman
+				}
+			}
+			add_ideas = ROM_Ion_Bratianu
+		}
+	}
+	ROM_Neutral_Swap = {
+		icon = GFX_decision_ger_mefo_bills
+		priority = 1
+		fire_only_once = no
+		cost = 25
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			not = {
+				has_idea = ROM_Titus_Maiorescu
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = {
+					ROM_Ion_Bratianu
+					ROM_Alexandru_Marghiloman
+				}
+			}
+			add_ideas = ROM_Titus_Maiorescu
+		}
+	}
+	ROM_Conservative_Swap = {
+		icon = GFX_decision_eng_trade_unions_demand
+		priority = 1
+		fire_only_once = no
+		cost = 25
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			not = {
+				has_idea = ROM_Alexandru_Marghiloman
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_ideas = {
+					ROM_Titus_Maiorescu
+					ROM_Alexandru_Marghiloman
+				}
+			}
+			add_ideas = ROM_Alexandru_Marghiloman
+		}
+	}
+}
+
+ROM_Kill_The_Regent = {
+	ROM_Retire_Regent = {
+		icon = GFX_decision_CHL_mapuche_reorganize_the_american_government
+		priority = 1
+		fire_only_once = yes
+		cost = 25
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		visible = {
+			ROM_Carol_I_Real = {
+				is_country_leader = yes
+			}
+		}
+		complete_effect = {
+			ROM = {
+				retire_country_leader = yes
+				add_country_leader_role = {
+					character = ROM_ferdinand_I
+					promote_leader = yes
+					country_leader = {
+						ideology = centrism
+					}
+				}
+				news_event = ww1_news.46
 			}
 		}
 	}

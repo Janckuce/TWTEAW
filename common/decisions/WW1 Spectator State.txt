@@ -2831,13 +2831,10 @@ ORO_death_news = {
 
 		complete_effect = {
 			ROM = {
-				retire_country_leader = yes
-				add_country_leader_role = {
+				retire_ideology_leader = neutrality
+				promote_character = {
 					character = ROM_Carol_I_Real
-					promote_leader = yes
-					country_leader = {
-						ideology = centrism
-					}
+					ideology = centrism
 				}
 				news_event = ww1_news.46
 			}

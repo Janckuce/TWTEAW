@@ -21,7 +21,7 @@ country_event = {
 	}
 }
 
-#Carol I Dies
+#Army Type Reform
 country_event = {
 	id = ww1_romania.2
 	title = ww1_romania.2.t
@@ -34,13 +34,35 @@ country_event = {
 	option = {
 		name = ww1_romania.2.a
 
+		complete_national_focus = ROM_Reformed_Army_France
+
 		ai_chance = {
 			factor = 100
 		}
 	}
+
+	option = {
+		name = ww1_romania.2.b
+
+		complete_national_focus = ROM_Reformed_Army_Britain
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = ww1_romania.2.c
+
+		complete_national_focus = ROM_Reformed_Army_Russia
+
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
-#Ferdinand I Becomes King
+#King Crowning
 country_event = {
 	id = ww1_romania.3
 	title = ww1_romania.3.t
@@ -53,26 +75,13 @@ country_event = {
 	option = {
 		name = ww1_romania.3.a
 
-		ai_chance = {
-			factor = 100
+		complete_national_focus = ROM_One_True_King
+
+		retire_ideology_leader = neutrality
+		promote_character = {
+			character = ROM_ferdinand_I
+			ideology = centrism
 		}
-	}
-}
-
-#Army Type Reform
-country_event = {
-	id = ww1_romania.4
-	title = ww1_romania.4.t
-	desc = ww1_romania_desc.4
-	picture = GFX_report_event_germany_form_ukraine
-
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = ww1_romania.4.a
-
-		complete_national_focus = ROM_Reformed_Army_France
 
 		ai_chance = {
 			factor = 100
@@ -80,9 +89,15 @@ country_event = {
 	}
 
 	option = {
-		name = ww1_romania.4.b
+		name = ww1_romania.3.b
 
-		complete_national_focus = ROM_Reformed_Army_Britain
+		complete_national_focus = ROM_German_Heir_To_Romania
+
+		retire_ideology_leader = neutrality
+		promote_character = {
+			character = ROM_William
+			ideology = centrism
+		}
 
 		ai_chance = {
 			factor = 0
@@ -90,9 +105,15 @@ country_event = {
 	}
 
 	option = {
-		name = ww1_romania.4.c
+		name = ww1_romania.3.c
 
-		complete_national_focus = ROM_Reformed_Army_Russia
+		complete_national_focus = ROM_Queen_Of_Romania
+
+		retire_ideology_leader = neutrality
+		promote_character = {
+			character = ROM_Maria
+			ideology = centrism
+		}
 
 		ai_chance = {
 			factor = 0

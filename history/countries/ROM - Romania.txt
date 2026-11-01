@@ -2,17 +2,36 @@
 
 set_oob = "ROM_1911"
 
+set_naval_oob = "ROM_1911_Naval"
+
 starting_train_buffer = 1
 
 recruit_character = ROM_carol_I
 recruit_character = ROM_Carol_I_Real
 recruit_character = ROM_ferdinand_I
+recruit_character = ROM_William
+recruit_character = ROM_Maria
+recruit_character = ROM_Constantin_Prezan
+recruit_character = ROM_Alexandru_Averescu
+recruit_character = ROM_Eremia_Grigorescu
+recruit_character = ROM_Constantin_Cristescu
+recruit_character = ROM_Ioan_Dragalina
+recruit_character = ROM_Ioan_Culcer
+recruit_character = ROM_Mihail_Aslan
+recruit_character = ROM_Nicolae_Petala
+recruit_character = ROM_Ion_Bratianu
+recruit_character = ROM_Titus_Maiorescu
+recruit_character = ROM_Alexandru_Marghiloman
+recruit_character = ROM_Take_Ionescu
+recruit_character = ROM_Nicolae_Filipescu
+recruit_character = ROM_Vintila_Bratianu
 
 add_ideas = {
 	ROM_Triple_Alliance
 	ROM_Limited_Voting
 	ROM_Economic_Inequality
 	ROM_Unorganised_Army
+	ROM_Titus_Maiorescu
 }
 
 set_technology = {
@@ -62,12 +81,11 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 90
-	democratic = 10
+	neutrality = 100
 }
 
 set_convoys = 30
 
 set_research_slots = 3
-set_stability = 0.7
-set_war_support = 0.2
+set_stability = 0.4
+set_war_support = 0.1
