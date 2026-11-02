@@ -122,7 +122,7 @@ characters={
 		}
 	}
 
-		YEM_fahrettin_saviore = {
+	YEM_fahrettin_saviore = {
 		name = YEM_fahrettin_saviore
 		portraits = {
 			civilian = {
@@ -132,16 +132,12 @@ characters={
 				small = "GFX_tur_fahrettin_frame"
 			}
 		}
-		
 		advisor={
 			slot = theorist
 			idea_token = YEM_fahrettin_saviore
 			allowed = {
 				original_tag = YEM
 			}
-			available = {
-				#
-			}
 			traits = {
 				YEM_fahrettin_military_mission
 			}
@@ -149,46 +145,14 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-
 		}
-			corps_commander={
+		corps_commander={
 			traits = {media_personality brilliant_strategist desert_fox ranger urban_assault_specialist }
 			skill = 5
 			attack_skill = 5
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 4
-		}
-	}
-
-		YEM_attacker_group = {
-		name = YEM_attacker_group
-		portraits = {
-			civilian = {
-				large = "GFX_TUR_omer_fahrettin_pasha"
-			}
-				army = {
-				small = "GFX_tur_fahrettin_frame"
-			}
-		}
-		
-		advisor={
-			slot = theorist
-			idea_token = YEM_attacker_group
-			allowed = {
-				original_tag = YEM
-			}
-			available = {
-				#
-			}
-			traits = {
-				YEM_fahrettin_military_mission
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-
 		}
 	}
 }
