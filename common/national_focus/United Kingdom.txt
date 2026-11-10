@@ -24,7 +24,7 @@ focus_tree = {
 	shared_focus = ENG_Army
 	shared_focus = entente_colonies_shared
 	
-	continuous_focus_position = { x = 245 y = 1200 }
+	continuous_focus_position = { x = 400 y = 1500 }
 	
 	default = no
 	reset_on_civilwar = no
@@ -731,7 +731,7 @@ focus_tree = {
 	focus = {
 		id = ENG_issue_bonds
 		icon = GFX_focus_RAJ_issue_bonds_on_the_stock_market
-		cost = 10
+		cost = 7.2
 		x = 3
 		y = 1
 		prerequisite = {
@@ -815,7 +815,7 @@ focus_tree = {
 	focus = {
 		id = ENG_take_care_of_somalia
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
-		cost = 10
+		cost = 2.9
 		x = 0
 		y = 1
 		relative_position_id = ENG_learn_from_germany
@@ -917,8 +917,8 @@ focus_tree = {
 		id = ENG_ireland_1
 		icon = GFX_focus_AFG_parliamentary_democracy
 		cost = 0.2
-		x = 15
-		y = 5
+		x = 16
+		y = 6
 		available = {
 			always = no
 		}

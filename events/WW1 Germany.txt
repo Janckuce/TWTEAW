@@ -202,25 +202,25 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = ww1_germany.5.b
+	# option = {
+	# 	name = ww1_germany.5.b
 		
-		AUS = {
-			leave_faction = yes
-		}
+	# 	AUS = {
+	# 		leave_faction = yes
+	# 	}
 		
-		set_country_flag = WW1_without_GER
+	# 	set_country_flag = WW1_without_GER
 		
-		hidden_effect = { 
-		    SER = { 
-			    set_country_flag = WW1_without_GER
-			}
-		}
+	# 	hidden_effect = { 
+	# 	    SER = { 
+	# 		    set_country_flag = WW1_without_GER
+	# 		}
+	# 	}
 		
-		ai_chance = {
-			factor = 0
-		}
-	}
+	# 	ai_chance = {
+	# 		factor = 0
+	# 	}
+	# }
 }
 
 #Schlieffen Plan
@@ -1023,37 +1023,37 @@ country_event = {
 }
 
 #Invite Bulgaria to Central Powers
-country_event = {
-	id = ww1_germany.16
-	title = ww1_germany.16.t
-	desc = ww1_germany_desc.16
-	picture = GFX_report_event_generic_sign_alliance
+# country_event = {
+# 	id = ww1_germany.16
+# 	title = ww1_germany.16.t
+# 	desc = ww1_germany_desc.16
+# 	picture = GFX_report_event_generic_sign_alliance
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = {
-		name = ww1_germany.16.a
+# 	option = {
+# 		name = ww1_germany.16.a
 		
-		GER = {
-		    country_event = { id = ww1_germany.17 days = 1 }
-		}
-		ai_chance = {
-			factor = 100
-		}
-	}
+# 		GER = {
+# 		    country_event = { id = ww1_germany.17 days = 1 }
+# 		}
+# 		ai_chance = {
+# 			factor = 100
+# 		}
+# 	}
 	
-	option = {
-		name = ww1_germany.16.b
+# 	# option = {
+# 	# 	name = ww1_germany.16.b
 		
-		GER = {
-		    country_event = { id = ww1_germany.18 days = 1 }
-		}
+# 	# 	GER = {
+# 	# 	    country_event = { id = ww1_germany.18 days = 1 }
+# 	# 	}
 		
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+# 	# 	ai_chance = {
+# 	# 		factor = 0
+# 	# 	}
+# 	# }
+# }
 
 #They Said Yes
 country_event = {

@@ -120,7 +120,7 @@ ideas = {
             picture = generic_navy_bonus
 
 			modifier = {
-			    political_power_gain = -0.20
+			    # political_power_gain = -0.20
 				consumer_goods_factor = 0.1
 				experience_gain_navy_factor	= 0.05
 				production_speed_dockyard_factor = 0.2
@@ -304,7 +304,7 @@ ideas = {
             picture = generic_disjointed_gov
 
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.35
 
 			}
 		}
@@ -324,7 +324,7 @@ ideas = {
             picture = generic_disjointed_gov
 
 			modifier = {
-				political_power_cost = 0.3
+				political_power_cost = 0.2
 
 			}
 		}
@@ -496,8 +496,8 @@ ideas = {
             picture = NORDIC_navy_monarchist
 
 			modifier = {
-			    political_power_gain = -0.3
-				consumer_goods_factor = 0.3
+			    political_power_gain = -0.1
+				consumer_goods_factor = 0.15
 				experience_gain_navy_factor	= 0.1
 				production_speed_dockyard_factor = 0.3
 				experience_gain_navy = 0.15
@@ -598,7 +598,7 @@ ideas = {
 		}
 		ENG_Peoples_trust = {
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.1
 			}
 		}
 		ENG_Kings_Party = {
@@ -1009,7 +1009,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_expected_value = 0.4
+				consumer_goods_expected_value = 0.25
 				production_speed_buildings_factor = -0.6
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.1
@@ -1020,7 +1020,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_expected_value = 0.35
+				consumer_goods_expected_value = 0.2
 				production_speed_buildings_factor = -0.4
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.1
@@ -1038,7 +1038,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_expected_value = 0.3
+				consumer_goods_expected_value = 0.15
 				production_speed_buildings_factor = -0.3
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.1
@@ -1049,7 +1049,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_expected_value = 0.2
+				consumer_goods_expected_value = 0.1
 				production_speed_buildings_factor = -0.2
 				production_factory_max_efficiency_factor = -0.025
 				production_factory_efficiency_gain_factor = -0.05
@@ -1062,7 +1062,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_expected_value = 0.05
 				production_speed_buildings_factor = -0.1
 			}
 		}
@@ -1070,11 +1070,11 @@ ideas = {
 			picture = ARG_envoy_to_london
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				# production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.35
+				# industrial_capacity_factory = 0.1
 			}
 		}
 		ENG_improve_wages = {
@@ -1142,7 +1142,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_factor= 0.25
+				consumer_goods_factor = 0.1
 			}
 		}
 		ENG_n_ireland_volunteer = {

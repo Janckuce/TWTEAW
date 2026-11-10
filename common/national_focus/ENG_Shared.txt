@@ -27,7 +27,7 @@
 		relative_position_id = ENG_Interfere_In_Agadir
 		x = -1
 		y = 1
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -89,7 +89,7 @@
 		}
 		x = 0
 		y = 2
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			ENG = {
@@ -359,7 +359,7 @@
 		icon = GFX_goal_generic_navy_cruiser
 		x = 16
 		y = 0
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -455,7 +455,7 @@
 		}
 		x = 0
 		y = 1
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -559,7 +559,7 @@
 		}
 		x = -2
 		y = 2
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -657,7 +657,7 @@
 		}
 		x = 0
 		y = 2
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -691,7 +691,7 @@
 		}
 		x = 2
 		y = 2
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -780,7 +780,7 @@
 		}
 		x = 1
 		y = 3
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -822,7 +822,7 @@
 		}
 		x = -1
 		y = 3
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -864,7 +864,7 @@
 		}
 		x = -2
 		y = 1
-		cost = 10
+		cost = 7.2
 
 		bypass = {
 			#
@@ -979,7 +979,7 @@
 		}
 		x = -1
 		y = 2
-		cost = 5.8
+		cost = 5
 
 		bypass = {
 			#
@@ -993,11 +993,8 @@
 		available_if_capitulated = yes
 		
 		completion_reward = {
-		    add_doctrine_cost_reduction = {
-				name = FRA_land_doc_bonus_1
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
+			add_mastery = {
+				amount = 75
 			}
 		}
 	}
@@ -1030,46 +1027,46 @@
 	# 		}
 	# 	}
 	# }
-	shared_focus = {
-		available_if_capitulated = yes
-		id = ENG_support_france
-		icon = GFX_focus_befriend_france
-		relative_position_id = ENG_War_With_Germany 
-		prerequisite = {
-			focus = ENG_War_With_Germany
-		}
-		x = 2
-		y = 1
-		cost = 7.2
+	# shared_focus = {
+	# 	available_if_capitulated = yes
+	# 	id = ENG_support_france
+	# 	icon = GFX_focus_befriend_france
+	# 	relative_position_id = ENG_War_With_Germany 
+	# 	prerequisite = {
+	# 		focus = ENG_War_With_Germany
+	# 	}
+	# 	x = 2
+	# 	y = 1
+	# 	cost = 7.2
 
-		bypass = {
-			#
-		}
-		available = {
-		    FRA = {
-			    has_war = yes
-			}
-		}
+	# 	bypass = {
+	# 		#
+	# 	}
+	# 	available = {
+	# 	    FRA = {
+	# 		    has_war = yes
+	# 		}
+	# 	}
 		
-		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
+	# 	search_filters = {FOCUS_FILTER_POLITICAL_MOD}
 		
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 		
-		completion_reward = {
-		    add_war_support = 0.05
-			FRA = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 5000
-				}
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 	    add_war_support = 0.05
+	# 		FRA = {
+	# 			add_equipment_to_stockpile = {
+	# 				type = infantry_equipment
+	# 				amount = 5000
+	# 			}
+	# 		}
+	# 	}
+	# }
 	shared_focus = {
 		available_if_capitulated = yes
 		id = ENG_Air
 		icon = GFX_focus_generic_air_bases
-		cost = 5.8
+		cost = 5
 		x = 20
 		y = 0
 		available = {
@@ -1097,7 +1094,7 @@
 		}
 		x = -2
 		y = 1
-		cost = 5.8
+		cost = 5
 		prerequisite = {
 			focus = ENG_naval_power_projection
 		}
@@ -1191,7 +1188,7 @@
 		available_if_capitulated = yes
 		id = ENG_air_research_1
 		icon = GFX_focus_generic_air_bases
-		cost = 10
+		cost = 5
 		x = 3
 		y = 1
 		prerequisite = {
@@ -1215,7 +1212,7 @@
 		available_if_capitulated = yes
 		id = ENG_air_research_2
 		icon = GFX_focus_generic_air_bases
-		cost = 10
+		cost = 5
 		x = 4
 		y = 2
 		prerequisite = {
@@ -1243,7 +1240,7 @@
 		available_if_capitulated = yes
 		id = ENG_air_research_3
 		icon = GFX_focus_generic_air_bases
-		cost = 10
+		cost = 5
 		x = 0
 		y = 3
 		prerequisite = {
@@ -1270,7 +1267,7 @@
 		available_if_capitulated = yes
 		id = ENG_Air2
 		icon = GFX_focus_generic_air_bases
-		cost = 5.8
+		cost = 2.9
 		x = 1
 		y = 1
 		relative_position_id = ENG_Air
@@ -1291,7 +1288,7 @@
 		available_if_capitulated = yes
 		id = ENG_Air3
 		icon = GFX_focus_generic_air_bases
-		cost = 5.8
+		cost = 2.9
 		x = 1
 		y = 2
 		relative_position_id = ENG_Air
@@ -1415,7 +1412,7 @@
 		}
 		x = -2
 		y = 2
-		cost = 5.8
+		cost = 2.9
 
 		bypass = {
 			#
@@ -1450,7 +1447,7 @@
 		}
 		x = -2
 		y = 3
-		cost = 10
+		cost = 5
 
 		bypass = {
 			#
@@ -1480,7 +1477,7 @@
 		available_if_capitulated = yes
 		id = ENG_Army2
 		icon = GFX_focus_generic_military_mission
-		cost = 5.8
+		cost = 2.9
 		x = 0
 		y = 1
 		relative_position_id = ENG_Army
@@ -1501,7 +1498,7 @@
 		available_if_capitulated = yes
 		id = ENG_Army3
 		icon = GFX_focus_generic_military_mission
-		cost = 5.8
+		cost = 2.9
 		x = 0
 		y = 2
 		relative_position_id = ENG_Army
@@ -1519,7 +1516,7 @@
 		available_if_capitulated = yes
 		id = ENG_Army_Britain_rules_army
 		icon = GFX_focus_generic_military_mission
-		cost = 10
+		cost = 5
 		x = 0
 		y = 3
 		relative_position_id = ENG_Army

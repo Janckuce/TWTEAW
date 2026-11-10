@@ -1,5 +1,6 @@
 add_namespace = ww1_bulgaria
 add_namespace = ww1_ottoman
+add_namespace = ww1_germany
 
 country_event = {
 	id = ww1_bulgaria.1
@@ -36,6 +37,38 @@ country_event = {
 			bul_victory_of_hscag
 		}
 	}
+}
+
+country_event = {
+	id = ww1_germany.16
+	title = ww1_germany.16.t
+	desc = ww1_germany_desc.16
+	picture = GFX_report_event_generic_sign_alliance
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.16.a
+		
+		GER = {
+		    country_event = { id = ww1_germany.17 days = 1 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	# option = {
+	# 	name = ww1_germany.16.b
+		
+	# 	GER = {
+	# 	    country_event = { id = ww1_germany.18 days = 1 }
+	# 	}
+		
+	# 	ai_chance = {
+	# 		factor = 0
+	# 	}
+	# }
 }
 
 country_event = {
