@@ -1,85 +1,685 @@
 ideas = {
+	industrial_concern = {
+		ROM_Steaua_Romana = {
+			picture = ROM_the_sentinel_of_the_motherland_2
 
+			allowed = {
+				tag = ROM
+			}
+
+			available = {
+				has_completed_focus = ROM_German_Heir_To_Romania
+			}
+
+			cost = 150
+
+			modifier = {
+				fuel_gain_factor = 0.2
+				max_fuel_factor = 0.2
+			}
+		}
+		ROM_Astra_Romana = {
+			picture = ROM_the_sentinel_of_the_motherland
+
+			allowed = {
+				tag = ROM
+			}
+
+			cost = 150
+
+			modifier = {
+				fuel_gain_factor = 0.1
+				max_fuel_factor = 0.1
+			}
+		}
+		ROM_Creditul_Minier = {
+			picture = ROM_leonidas_works
+
+			allowed = {
+				tag = ROM
+			}
+
+			cost = 150
+
+			modifier = {
+				local_resources_steel_factor = 0.1
+				local_resources_aluminium_factor = 0.1
+				local_resources_sulfur_factor = 0.1
+			}
+		}
+		ROM_Societatea_Romana_De_Tramvaie = {
+			picture = AST_new_south_wales_government_railways
+
+			allowed = {
+				tag = ROM
+			}
+
+			cost = 150
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+	}
 	country = {
-		ROM_army = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = ROM_preserve_greater_romania
-
+		ROM_Triple_Alliance = {
+			picture = jap_zaibatsu_ally
 			modifier = {
-			army_org = 2.5
-			army_org_regain = 0.025
-			army_morale = 0.025
-			army_defence_factor = 0.025
-			army_attack_factor = 0.025
-			recruitable_population = 0.005
-			surrender_limit = 0.99
-
 			}
 		}
-
-			ROM_army2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = ROM_preserve_greater_romania
-
+		ROM_Triple_Alliance_Ally = {
+			picture = jap_zaibatsu_ally
 			modifier = {
-			army_org = 5
-			army_org_regain = 0.05
-			army_defence_factor = 0.05
-			army_attack_factor = 0.05
-			army_morale = 0.025
-			recruitable_population = 0.01
-			experience_loss_factor = -0.025
-			terrain_penalty_reduction = 0.025
-			surrender_limit = 0.99
-			
+				political_power_factor = 0.05
 			}
 		}
-
-			ROM_army3 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-            picture = ROM_preserve_greater_romania
-
+		ROM_Triple_Alliance_Ally1 = {
+			picture = jap_zaibatsu_ally
 			modifier = {
-			army_org = 10
-			army_org_factor = 0.065
-			army_org_regain = 0.065
-			army_defence_factor = 0.065
-			army_attack_factor = 0.065
-			recruitable_population = 0.015
-			experience_loss_factor = -0.05
-			terrain_penalty_reduction = 0.05
-			surrender_limit = 0.99
-			
+				political_power_factor = 0.1
+			}
+		}
+		ROM_Triple_Alliance_Ally2 = {
+			picture = jap_zaibatsu_ally
+			modifier = {
+				political_power_factor = 0.15
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		ROM_Triple_Alliance_Solo = {
+			picture = jap_zaibatsu_ally
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ROM_Triple_Alliance_Solo1 = {
+			picture = jap_zaibatsu_ally
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROM_Triple_Alliance_Solo2 = {
+			picture = jap_zaibatsu_ally
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.3
+				industrial_capacity_factory = 0.15
+			}
+		}
+		ROM_Limited_Voting = {
+			picture = AFG_parliament_building_damaged
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = -0.2
+			}
+		}
+		ROM_Economic_Inequality = {
+			picture = RAJ_trickle_down_economy
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_factor = -0.2
+			}
+		}
+		ROM_Unorganised_Army = {
+			picture = SIA_purged_senior_military
+			modifier = {
+				army_speed_factor = -0.1
+				army_morale_factor = -0.1
+				planning_speed = -0.1
+			}
+		}
+		ROM_Construction_Expertise = {
+			picture = NZL_port_chalmers_shipbuilding
+			modifier = {
+				production_speed_buildings_factor = 0.01
+			}
+		}
+		ROM_Construction_Expertise1 = {
+			picture = NZL_port_chalmers_shipbuilding
+			modifier = {
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		ROM_Construction_Expertise2 = {
+			picture = NZL_port_chalmers_shipbuilding
+			modifier = {
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		ROM_Construction_Expertise3 = {
+			picture = NZL_port_chalmers_shipbuilding
+			modifier = {
+				production_speed_buildings_factor = 0.04
+			}
+		}
+		ROM_Construction_Expertise4 = {
+			picture = NZL_port_chalmers_shipbuilding
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ROM_Organisation_Efforts = {
+			picture = CZE_industrialists_veto
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ROM_Organisation_Efforts1 = {
+			picture = CZE_industrialists_veto
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROM_Organisation_Efforts2 = {
+			picture = CZE_industrialists_veto
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = 0.03
+					instant = yes
+				}
+			}
+		}
+		ROM_Organisation_Efforts3 = {
+			picture = CZE_industrialists_veto
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = 0.03
+					instant = yes
+				}
+				artillery_equipment = {
+					breakthrough = 0.1
+					build_cost_ic = 0.03
+					instant = yes
+				}
+			}
+		}
+		ROM_Organisation_Efforts4 = {
+			picture = CZE_industrialists_veto
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = 0.03
+					instant = yes
+				}
+				artillery_equipment = {
+					breakthrough = 0.1
+					build_cost_ic = 0.03
+					instant = yes
+				}
+				HE_shell = {
+					soft_attack = 0.1
+					build_cost_ic = 0.03
+					instant = yes
+				}
+			}
+		}
+		ROM_Foreign_Investments = {
+			picture = RAJ_external_investments
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		ROM_Foreign_Investments1 = {
+			picture = RAJ_external_investments
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+		ROM_Foreign_Investments2 = {
+			picture = RAJ_external_investments
+			modifier = {
+				local_resources_factor = 0.3
+			}
+		}
+		ROM_Oil_Industries = {
+			picture = generic_fuel_reserves
+			modifier = {
+				fuel_gain_factor = 0.1
+				max_fuel_factor = 0.1
+			}
+		}
+		ROM_Oil_Industries1 = {
+			picture = generic_fuel_reserves
+			modifier = {
+				fuel_gain_factor = 0.2
+				max_fuel_factor = 0.2
+			}
+		}
+		ROM_Oil_Industries2 = {
+			picture = generic_fuel_reserves
+			modifier = {
+				fuel_gain_factor = 0.3
+				max_fuel_factor = 0.3
+			}
+		}
+		ROM_Final_Industry_Ally = {
+			picture = RAJ_special_economic_zones
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		ROM_Research_Funding = {
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		ROM_Research_Funding1 = {
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		ROM_Research_Funding2 = {
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		ROM_Research_Funding3 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		ROM_Lessons_Of_Economy = {
+			picture = GER_recovering_economy
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ROM_Lessons_Of_Economy1 = {
+			picture = GER_recovering_economy
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROM_Lessons_Of_War = {
+			picture = BEL_legacy_of_the_great_war
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		ROM_Lessons_Of_War1 = {
+			picture = BEL_legacy_of_the_great_war
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_speed_factor = 0.1
+			}
+		}
+		ROM_Quick_And_Easy = {
+			picture = JAP_press_association_idea
+			modifier = {
+				research_speed_factor = 0.5
+			}
+		}
+		ROM_Infantry = {
+			picture = generic_reserve_divisions
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		ROM_Infantry1 = {
+			picture = generic_reserve_divisions
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		ROM_Infantry2 = {
+			picture = generic_reserve_divisions
+			modifier = {
+				dig_in_speed_factor = 0.2
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		ROM_Infantry3 = {
+			picture = generic_reserve_divisions
+			modifier = {
+				max_dig_in_factor = 0.1
+				dig_in_speed_factor = 0.2
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		ROM_Infantry4 = {
+			picture = generic_reserve_divisions
+			modifier = {
+				max_dig_in_factor = 0.1
+				dig_in_speed_factor = 0.2
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+			}
+		}
+		ROM_Rangers = {
+			picture = SPA_la_division_azul
+			modifier = {
+				rangers_special_forces_contribution_factor = -0.05
+			}
+		}
+		ROM_Rangers1 = {
+			picture = SPA_la_division_azul
+			modifier = {
+				rangers_special_forces_contribution_factor = -0.1
+			}
+		}
+		ROM_Rangers2 = {
+			picture = SPA_la_division_azul
+			modifier = {
+				rangers_special_forces_contribution_factor = -0.15
+			}
+		}
+		ROM_Rangers3 = {
+			picture = SPA_la_division_azul
+			modifier = {
+				rangers_special_forces_contribution_factor = -0.2
+			}
+		}
+		ROM_Rangers4 = {
+			picture = SPA_la_division_azul
+			modifier = {
+				rangers_special_forces_contribution_factor = -0.25
+			}
+		}
+		ROM_Armoury_Management = {
+			picture = generic_acquire_tanks
+			modifier = {
+				production_factory_efficiency_gain_factor = 2
+			}
+		}
+		ROM_Economic_Program = {
+			picture = POL_april_constitution
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ROM_Economic_Program1 = {
+			picture = POL_april_constitution
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ROM_Economic_Program2 = {
+			picture = POL_april_constitution
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		ROM_Economic_Program3 = {
+			picture = POL_april_constitution
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		ROM_Gold_Und_Geld = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		ROM_Disputed_Neutrality = {
+			picture = hol_aloof_neutrality
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				send_volunteer_divisions_required = -1
+			}
+		}
+		ROM_Reaffirmed_Neutrality = {
+			picture = ARG_maintain_neutrality
+			rule = {
+				can_send_volunteers = yes
+			}
+			modifier = {
+				send_volunteer_divisions_required = -1
+			}
+		}
+		ROM_Regent_Reforms = {
+			picture = RAJ_tenancy_reforms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		ROM_Regent_Reforms1 = {
+			picture = RAJ_tenancy_reforms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		ROM_Regent_Reforms2 = {
+			picture = RAJ_tenancy_reforms
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		ROM_Army_Funding = {
+			picture = PER_fund_state_intelligence_idea
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROM_Entente_Army = {
+			picture = FIN_funs_from_kalevala_koru_oy
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		ROM_Entente_Army1 = {
+			picture = FIN_funs_from_kalevala_koru_oy
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		ROM_Entente_Army2 = {
+			picture = FIN_funs_from_kalevala_koru_oy
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				max_planning_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		ROM_Entente_Army3 = {
+			picture = FIN_funs_from_kalevala_koru_oy
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_strength_factor = 0.1
+				max_planning_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		ROM_Appeasement_Costs = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+		ROM_Appeasement_Costs1 = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+		ROM_Appeasement_Costs2 = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+		ROM_Appeasement_Costs3 = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+		ROM_France_Army = {
+			picture = DEN_sovaernet_1
+			modifier = {
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		ROM_France_Army1 = {
+			picture = DEN_sovaernet_1
+			modifier = {
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		ROM_France_Army2 = {
+			picture = DEN_sovaernet_2
+			modifier = {
+				army_infantry_defence_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		ROM_France_Army3 = {
+			picture = DEN_sovaernet_2
+			modifier = {
+				army_infantry_defence_factor = 0.1
+				army_strength_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		ROM_France_Army4 = {
+			picture = DEN_sovaernet_3
+			modifier = {
+				army_infantry_defence_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_strength_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		ROM_Britain_Army = {
+			picture = DEN_haeren_1
+			modifier = {
+				experience_gain_army_unit_factor = 0.15
+			}
+		}
+		ROM_Britain_Army1 = {
+			picture = DEN_haeren_1
+			modifier = {
+				experience_gain_army_unit_factor = 0.15
+				supply_consumption_factor = -0.25
+			}
+		}
+		ROM_Britain_Army2 = {
+			picture = DEN_haeren_2
+			modifier = {
+				experience_gain_army_unit_factor = 0.15
+				supply_consumption_factor = -0.25
+				coordination_bonus = 0.1
+			}
+		}
+		ROM_Britain_Army3 = {
+			picture = DEN_haeren_2
+			modifier = {
+				experience_gain_army_unit_factor = 0.15
+				supply_consumption_factor = -0.25
+				coordination_bonus = 0.1
+				initiative_factor = 0.1
+			}
+		}
+		ROM_Britain_Army4 = {
+			picture = DEN_haeren_3
+			modifier = {
+				experience_gain_army_unit_factor = 0.15
+				supply_consumption_factor = -0.25
+				experience_loss_factor = -0.15
+				coordination_bonus = 0.1
+				initiative_factor = 0.1
+			}
+		}
+		ROM_Russia_Army = {
+			picture = DEN_flyvevabnet_1
+			modifier = {
+				pocket_penalty = -0.15
+			}
+		}
+		ROM_Russia_Army1 = {
+			picture = DEN_flyvevabnet_1
+			modifier = {
+				org_loss_at_low_org_factor = -0.05
+				pocket_penalty = -0.15
+			}
+		}
+		ROM_Russia_Army2 = {
+			picture = DEN_flyvevabnet_2
+			modifier = {
+				org_loss_at_low_org_factor = -0.05
+				pocket_penalty = -0.15
+				planning_speed = 0.1
+			}
+		}
+		ROM_Russia_Army3 = {
+			picture = DEN_flyvevabnet_2
+			modifier = {
+				supply_combat_penalties_on_core_factor = -0.2
+				org_loss_at_low_org_factor = -0.05
+				pocket_penalty = -0.15
+				planning_speed = 0.1
+			}
+		}
+		ROM_Russia_Army4 = {
+			picture = DEN_flyvevabnet_3
+			modifier = {
+				supply_combat_penalties_on_core_factor = -0.2
+				org_loss_at_low_org_factor = -0.075
+				army_morale_factor = 0.1
+				pocket_penalty = -0.15
+				planning_speed = 0.1
+			}
+		}
+		ROM_Monarch_Training = {
+			picture = SIA_cemented_control
+			modifier = {
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		ROM_Prussian_Militarism = {
+			picture = GER_fan_prussian_militarism
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		ROM_Prussian_Militarism1 = {
+			picture = GER_fan_prussian_militarism
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 	}

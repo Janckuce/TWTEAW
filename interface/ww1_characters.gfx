@@ -1538,6 +1538,11 @@ spriteTypes = {
 		name = "GFX_ROM_ferdinand_I"
 		texturefile = "gfx/leaders/ROM/ROM_ferdinand_I.png"
 	}
+
+	spriteType = {
+		name = "GFX_ROM_Carol_I_Real"
+		texturefile = "gfx/leaders/ROM/ROM_Carol_I_Real.png"
+	}
 	
 	##################################
 	########### BULGARIA #############
@@ -2134,5 +2139,18 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_can_george_halsey_perley_frame"
 		texturefile = "gfx/leaders/CAN/can_george_halsey_perley_frame.png"
+	}
+
+	#######################################
+	############ PLACEHOLDERS #############
+	#######################################
+
+	spriteType = {
+		name = "GFX_PLACEHOLDER_PORTRAIT"
+		texturefile = "gfx/leaders/_PLACEHOLDERS/Placeholder_1.png"
+	}
+	spriteType = {
+		name = "GFX_PLACEHOLDER_FRAME"
+		texturefile = "gfx/characters/_PLACEHOLDERS/Placeholder_1_Frame.png"
 	}
 }

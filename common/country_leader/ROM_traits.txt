@@ -1,0 +1,113 @@
+leader_traits = {
+	ROM_Moderniser = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+	}
+	ROM_Provisional_Regent = {
+		random = no
+		political_power_factor = -0.5
+		industrial_capacity_factory = -0.5
+		industrial_capacity_dockyard = -0.5
+	}
+	ROM_Rash = {
+		random = no
+		industrial_capacity_factory = -0.1
+	}
+	ROM_Dedicated = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+	}
+	ROM_German_Prince = {
+		random = no
+		army_speed_factor = 0.1
+		army_attack_factor = 0.075
+		army_defence_factor = 0.075
+	}
+	ROM_Of_Britain_And_Russia = {
+		random = no
+		local_resources_factor = 0.25
+		consumer_goods_factor = -0.1
+	}
+	ROM_Commander = {
+		random = no
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+	}
+	ROM_Chief_Of_General_Staff = {
+		random = no
+		experience_gain_army = 0.2
+		army_org_factor = 0.1
+		army_morale_factor = 0.1
+		army_defence_factor = 0.1
+	}
+	ROM_Ruthless_Chief_Of_Army = {
+		random = no
+		experience_gain_army = 0.2
+		army_attack_factor = 0.05
+		coordination_bonus = 0.1
+		initiative_factor = 0.1
+	}
+	ROM_Hero_Of_The_Army = {
+		random = no
+		army_artillery_attack_factor = 0.075
+	}
+	ROM_Actual_3_Term_Chief_Of_General_Staff = {
+		random = no
+		max_planning = 0.05
+	}
+	ROM_Military_Scholar = {
+		random = no
+		experience_gain_army_unit_factor = 0.1
+		experience_loss_factor = -0.1
+	}
+	ROM_Survivor_Of_Plevna = {
+		random = no
+		army_org_factor = 0.05
+		army_org_regain = 0.1
+	}
+	ROM_Armenian_Descendant = {
+		random = no
+		recruitable_population = 0.005
+	}
+	ROM_Bucharest_Graduate = {
+		random = no
+		land_mastery_gain_factor = 0.15
+	}
+	ROM_Liberal_Prime_Minister = {
+		random = no
+		production_speed_infrastructure_factor = 0.1
+		consumer_goods_factor = -0.1
+	}
+	ROM_Neutral_Prime_Minister = {
+		random = no
+		political_power_factor = 0.25
+	}
+	ROM_Conservative_Prime_Minister = {
+		random = no
+		training_time_army_factor = -0.1
+		army_org_factor = 0.1
+	}
+	ROM_Entente_Diplomat = {
+		random = no
+		targeted_modifier = {
+			tag = FRA
+			trade_cost_for_target_factor = -0.5
+		}
+		targeted_modifier = {
+			tag = RUS
+			trade_cost_for_target_factor = -0.5
+		}
+	}
+	ROM_War_Minister = {
+		random = no
+		production_speed_arms_factory_factor = 0.1
+	}
+	ROM_Industrial_Wizard = {
+		random = no
+		industrial_capacity_factory = 0.1
+	}
+}

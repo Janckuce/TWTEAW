@@ -1,0 +1,66 @@
+﻿units= {
+    ### NAVY ###
+	fleet = {
+	    name = "Marina Regală"
+		naval_base = 687 #Tulcea
+		task_force = {
+		    name = "Marina Regală"
+			location = 687 #Tulcea
+
+			#Heavy Cruisers
+			ship = { name = "NMS Elisabeta" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ROM } } }
+
+			#Light Cruisers
+			ship = { name = "NMS Smeul" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Năluca" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Sborul" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			
+			#Destroyers
+			ship = { name = "NMS Alexandru cel Bun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Grivița" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Mircea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+		}
+	}
+}
+
+units= {
+    ### NAVY ###
+	fleet = {
+	    name = "Forțele Navale Fluviale"
+		naval_base = 657 #Constanta
+		task_force = {
+		    name = "Forțele Navale Fluviale"
+			location = 657 #Constanta
+
+			#Light Cruisers
+			ship = { name = "NMS I. C. Bratianu" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Al. Lahovari" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS L. Catargiu" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS M. Kogalniceanu" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ROM } } }
+			
+			#Destroyers
+			ship = { name = "NMS Oltul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Siretul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Bistrita" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Rahova" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Smârdan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Opanez" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Silistra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Major Ene" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Captain L. Bogdan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Captain Romano" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Major Giurascu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Major Sontu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Major Gr. Ioan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Lt. Calinescu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Captain V Maracineanu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Vedea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Argeșul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Trotușul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Teleorman" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Bujorescu" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Catinca" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Rândunica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+		}
+	}
+}

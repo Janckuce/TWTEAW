@@ -9,15 +9,466 @@ characters={
 		country_leader = {
 			ideology = centrism
 			expire = "1965.1.1.1"
+			traits = {
+				ROM_Moderniser
+			}
 		}
 	}
-	
+	ROM_Carol_I_Real = {
+		name = ROM_Character_Carol_I_Real
+		portraits = {
+			civilian = {
+				large = "GFX_ROM_Carol_I_Real"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				ROM_Provisional_Regent
+			}
+		}
+	}
 	ROM_ferdinand_I = {
 		name = ROM_character_ferdinand_I
 		portraits = {
 			civilian = {
 				large = "GFX_ROM_ferdinand_I"
 			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				ROM_Rash
+			}
+		}
+	}
+	ROM_William = {
+		name = "Wilhelm August Karl Joseph Peter Ferdinand Benedikt Fürst von Hohenzollern"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				ROM_German_Prince
+			}
+		}
+	}
+	ROM_Maria = {
+		name = "Maria, Regină a României"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {
+				ROM_Of_Britain_And_Russia
+			}
+		}
+	}
+	ROM_Constantin_Prezan = {
+		name = "Constantin Prezan"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			traits = {
+				inflexible_strategist
+				infantry_officer
+				organizer
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ROM_Constantin_Prezan
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Chief_Of_General_Staff
+			}
+			cost = 150
+		}
+	}
+	ROM_Alexandru_Averescu = {
+		name = "Alexandru Averescu"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
+				harsh_leader
+				bearer_of_artillery
+				engineer_officer
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ROM_Alexandru_Averescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Ruthless_Chief_Of_Army
+			}
+			cost = 150
+		}
+	}
+	ROM_Eremia_Grigorescu = {
+		name = "Eremia Grigorescu"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			traits = {
+				bearer_of_artillery
+				organizer
+				logistics_wizard
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ROM_Eremia_Grigorescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Hero_Of_The_Army
+			}
+			cost = 150
+		}
+	}
+	ROM_Constantin_Cristescu = {
+		name = "Constantin Cristescu"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			traits = {
+				organizer
+				thorough_planner
+				infantry_leader
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ROM_Constantin_Cristescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Actual_3_Term_Chief_Of_General_Staff
+			}
+			cost = 150
+		}
+	}
+	ROM_Ioan_Dragalina = {
+		name = "Ioan Dragalina"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				brilliant_strategist
+				inflexible_strategist
+				skilled_staffer
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ROM_Ioan_Dragalina
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Military_Scholar
+			}
+			cost = 150
+		}
+	}
+	ROM_Ioan_Culcer = {
+		name = "Ioan Culcer"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				war_hero
+				infantry_officer
+				cavalry_officer
+				armor_officer
+				engineer_officer
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ROM_Ioan_Culcer
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Survivor_Of_Plevna
+			}
+			cost = 150
+		}
+	}
+	ROM_Mihail_Aslan = {
+		name = "Mihail Ceaur-Aslan"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				war_hero
+				commando
+				trait_mountaineer
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ROM_Mihail_Aslan
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Armenian_Descendant
+			}
+			cost = 150
+		}
+	}
+	ROM_Nicolae_Petala = {
+		name = "Nicolae Petala"
+		portraits = {
+			civilian = {
+				large = "GFX_PLACEHOLDER_PORTRAIT"
+			}
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				trickster
+				expert_improviser
+				hill_fighter
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ROM_Nicolae_Petala
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Bucharest_Graduate
+			}
+			cost = 150
+		}
+	}
+	ROM_Ion_Bratianu = {
+		name = "Ion Ion Constantin Brătianu"
+		portraits = {
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Ion_Bratianu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Liberal_Prime_Minister
+			}
+			allowed = {
+				always = no
+			}
+			can_be_fired = no
+		}
+	}
+	ROM_Titus_Maiorescu = {
+		name = "Titus Liviu Maiorescu"
+		portraits = {
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Titus_Maiorescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Neutral_Prime_Minister
+			}
+			allowed = {
+				always = no
+			}
+			can_be_fired = no
+		}
+	}
+	ROM_Alexandru_Marghiloman = {
+		name = "Alexandru Marghiloman"
+		portraits = {
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Alexandru_Marghiloman
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Conservative_Prime_Minister
+			}
+			allowed = {
+				always = no
+			}
+			can_be_fired = no
+		}
+	}
+	ROM_Take_Ionescu = {
+		name = "Take Ionescu"
+		portraits = {
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Take_Ionescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Entente_Diplomat
+			}
+			cost = 150
+		}
+	}
+	ROM_Nicolae_Filipescu = {
+		name = "Nicolae Filipescu"
+		portraits = {
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Nicolae_Filipescu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_War_Minister
+			}
+			cost = 150
+		}
+	}
+	ROM_Vintila_Bratianu = {
+		name = "Vintilă Ion Constantin Brătianu"
+		portraits = {
+			army = {
+				small = "GFX_PLACEHOLDER_FRAME"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_Vintila_Bratianu
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				ROM_Industrial_Wizard
+			}
+			cost = 150
 		}
 	}
 }
