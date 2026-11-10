@@ -80,10 +80,10 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		cost = 5
 		relative_position_id = ROM_Ally2
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = {
-			focus = ROM_Ally2
+			focus = ROM_Industry_Main1
 		}
 		completion_reward = {
 			add_ideas = ROM_Construction_Expertise
@@ -125,7 +125,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
 		relative_position_id = ROM_Ally4
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = ROM_Ally4
@@ -304,7 +304,7 @@ focus_tree = {
 		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 5
 		relative_position_id = ROM_Ally_Political_Left1
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = ROM_Ally_Political_Left1
@@ -337,11 +337,11 @@ focus_tree = {
 		id = ROM_Ally_Political2
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 5
-		relative_position_id = ROM_Ally_Political1
-		x = 0
+		relative_position_id = ROM_Military_Centre
+		x = -1
 		y = 1
 		prerequisite = {
-			focus = ROM_Ally_Political1
+			focus = ROM_Military_Centre
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -403,7 +403,7 @@ focus_tree = {
 		icon = GFX_SOV_oil_production_ccp_2d_sov_compatibility
 		cost = 5
 		relative_position_id = ROM_Ally_Political_Right1
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = ROM_Ally_Political_Right1
@@ -443,9 +443,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ROM_Ally_Political_Left3
 		}
-		prerequisite = {
-			focus = ROM_Ally_Political4
-		}
+		# prerequisite = {
+		# 	focus = ROM_Ally_Political4
+		# }
 		prerequisite = {
 			focus = ROM_Ally_Political_Right3
 		}
@@ -457,15 +457,15 @@ focus_tree = {
 		id = ROM_Ally_Political_Final
 		icon = GFX_SOV_industrial_modernization_ccp_2d_sov_compatibility
 		cost = 10
-		relative_position_id = ROM_Ally_Political4
-		x = 0
+		relative_position_id = ROM_Ally_Political_Left3
+		x = 3
 		y = 1
 		prerequisite = {
 			focus = ROM_Ally_Political_Left3
 		}
-		prerequisite = {
-			focus = ROM_Ally_Political4
-		}
+		# prerequisite = {
+		# 	focus = ROM_Ally_Political4
+		# }
 		prerequisite = {
 			focus = ROM_Ally_Political_Right3
 		}
@@ -477,17 +477,17 @@ focus_tree = {
 		id = ROM_Ally_Political_Right_Final
 		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 10
-		relative_position_id = ROM_Ally_Political_Right3
-		x = -1
+		relative_position_id = ROM_Ally7
+		x = 1
 		y = 1
 		prerequisite = {
-			focus = ROM_Ally_Political_Left3
+			focus = ROM_Ally7
+		}
+		available = {
+			num_of_owned_factories > 26
 		}
 		prerequisite = {
-			focus = ROM_Ally_Political4
-		}
-		prerequisite = {
-			focus = ROM_Ally_Political_Right3
+			focus = ROM_Industry_Main4
 		}
 		completion_reward = {
 			remove_ideas = ROM_Economic_Inequality
@@ -501,7 +501,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		cost = 5
 		x = 12
-		y = 3
+		y = 1
 		completion_reward = {
 			add_timed_idea = {
 				idea = ROM_Economic_Program
@@ -537,7 +537,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = ROM_Industry_Main1
 		x = 0
-		y = 1
+		y = 3
 		available = {
 			not = {
 				has_idea = ROM_Economic_Program1
@@ -545,6 +545,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ROM_Industry_Main1
+
+		}
+		prerequisite = {
+			focus = ROM_Solo4
+			focus = ROM_Ally4
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -653,10 +658,10 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		cost = 5
 		relative_position_id = ROM_Solo2
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {
-			focus = ROM_Solo2
+			focus = ROM_Industry_Main1
 		}
 		completion_reward = {
 			46 = {
@@ -701,7 +706,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
 		relative_position_id = ROM_Solo4
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = {
 			focus = ROM_Solo4
@@ -852,11 +857,17 @@ focus_tree = {
 		id = ROM_Solo_Centre2
 		icon = GFX_focus_RAJ_trickle_down_economics
 		cost = 10
-		relative_position_id = ROM_Solo_Main
-		x = 6
+		relative_position_id = ROM_Solo7
+		x = -1
 		y = 1
 		prerequisite = {
-			focus = ROM_Solo_Main
+			focus = ROM_Solo7
+		}
+		prerequisite = {
+			focus = ROM_Industry_Main4
+		}
+		available = {
+			num_of_military_factories > 12
 		}
 		completion_reward = {
 			remove_ideas = ROM_Economic_Inequality
@@ -1052,7 +1063,7 @@ focus_tree = {
 		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 5
 		relative_position_id = ROM_Military_Main
-		x = -3
+		x = -4
 		y = 1
 		prerequisite = {
 			focus = ROM_Military_Main
@@ -1152,7 +1163,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		cost = 5
 		relative_position_id = ROM_Military_Centre
-		x = 0
+		x = 1
 		y = 1
 		prerequisite = {
 			focus = ROM_Military_Centre
@@ -1206,10 +1217,13 @@ focus_tree = {
 		icon = GFX_focus_research
 		cost = 5
 		relative_position_id = ROM_Military_Centre3
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {
 			focus = ROM_Military_Centre3
+		}
+		prerequisite = {
+			focus = ROM_Ally_Political4
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1224,7 +1238,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_arms_recovery_efforts
 		cost = 5
 		relative_position_id = ROM_Military_Main
-		x = 3
+		x = 4
 		y = 1
 		prerequisite = {
 			focus = ROM_Military_Main
@@ -1343,7 +1357,7 @@ focus_tree = {
 		icon = GFX_focus_POL_end_the_regency
 		cost = 10
 		x = 12
-		y = 9
+		y = 10
 		available = {
 			ROM_Carol_I_Real = {
 				is_country_leader = yes
@@ -1817,7 +1831,7 @@ focus_tree = {
 		icon = GFX_SOV_the_means_to_wage_war_ccp_2d_sov_compatibility
 		cost = 2
 		x = 22
-		y = 9
+		y = 10
 		available = {
 			or = {
 				has_idea = ROM_Disputed_Neutrality
