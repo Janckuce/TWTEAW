@@ -489,6 +489,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ROM_Industry_Main4
 		}
+		mutually_exclusive = {
+			focus = ROM_Solo_Centre2
+		}
 		completion_reward = {
 			remove_ideas = ROM_Economic_Inequality
 		}
@@ -869,6 +872,9 @@ focus_tree = {
 		available = {
 			num_of_military_factories > 12
 		}
+		mutually_exclusive = {
+			focus = ROM_Ally_Political_Right_Final
+		}
 		completion_reward = {
 			remove_ideas = ROM_Economic_Inequality
 		}
@@ -888,66 +894,66 @@ focus_tree = {
 			add_ideas = ROM_Research_Funding
 		}
 	}
+	# focus = {
+	# 	id = ROM_Solo_Research1
+	# 	icon = GFX_focus_ARG_develop_the_electricity_sector
+	# 	cost = 5
+	# 	relative_position_id = ROM_Solo_Research_Main
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Solo_Research_Main
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Research_Funding
+	# 			add_idea = ROM_Research_Funding1
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Solo_Research2
+	# 	icon = GFX_focus_ARG_develop_the_electricity_sector
+	# 	cost = 5
+	# 	relative_position_id = ROM_Solo_Research1
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Solo_Research1
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Research_Funding1
+	# 			add_idea = ROM_Research_Funding2
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Solo_Research3
+	# 	icon = GFX_focus_ARG_develop_the_electricity_sector
+	# 	cost = 5
+	# 	relative_position_id = ROM_Solo_Research2
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Solo_Research2
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Research_Funding2
+	# 			add_idea = ROM_Research_Funding3
+	# 		}
+	# 	}
+	# }
 	focus = {
-		id = ROM_Solo_Research1
-		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 5
+		id = ROM_Solo_Research_Final
+		icon = GFX_SOV_the_ussr_academy_of_sciences_ccp_2d_sov_compatibility
+		cost = 10
 		relative_position_id = ROM_Solo_Research_Main
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = ROM_Solo_Research_Main
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Research_Funding
-				add_idea = ROM_Research_Funding1
-			}
-		}
-	}
-	focus = {
-		id = ROM_Solo_Research2
-		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 5
-		relative_position_id = ROM_Solo_Research1
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Solo_Research1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Research_Funding1
-				add_idea = ROM_Research_Funding2
-			}
-		}
-	}
-	focus = {
-		id = ROM_Solo_Research3
-		icon = GFX_focus_ARG_develop_the_electricity_sector
-		cost = 5
-		relative_position_id = ROM_Solo_Research2
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Solo_Research2
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Research_Funding2
-				add_idea = ROM_Research_Funding3
-			}
-		}
-	}
-	focus = {
-		id = ROM_Solo_Research_Final
-		icon = GFX_SOV_the_ussr_academy_of_sciences_ccp_2d_sov_compatibility
-		cost = 10
-		relative_position_id = ROM_Solo_Research3
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Solo_Research3
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -1069,7 +1075,8 @@ focus_tree = {
 			focus = ROM_Military_Main
 		}
 		completion_reward = {
-			add_ideas = ROM_Infantry
+			# add_ideas = ROM_Infantry
+			add_manpower = 50000
 		}
 	}
 	focus = {
@@ -1083,10 +1090,11 @@ focus_tree = {
 			focus = ROM_Military_Left
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Infantry
-				add_idea = ROM_Infantry1
-			}
+			# swap_ideas = {
+			# 	remove_idea = ROM_Infantry
+			# 	add_idea = ROM_Infantry1
+			# }
+			add_manpower = 50000
 		}
 	}
 	focus = {
@@ -1100,10 +1108,11 @@ focus_tree = {
 			focus = ROM_Military_Left1
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Infantry1
-				add_idea = ROM_Infantry2
-			}
+			# swap_ideas = {
+			# 	remove_idea = ROM_Infantry1
+			# 	add_idea = ROM_Infantry2
+			# }
+			add_manpower = 50000
 		}
 	}
 	focus = {
@@ -1117,10 +1126,11 @@ focus_tree = {
 			focus = ROM_Military_Left2
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Infantry2
-				add_idea = ROM_Infantry3
-			}
+			# swap_ideas = {
+			# 	remove_idea = ROM_Infantry2
+			# 	add_idea = ROM_Infantry3
+			# }
+			add_manpower = 50000
 		}
 	}
 	focus = {
@@ -1134,10 +1144,11 @@ focus_tree = {
 			focus = ROM_Military_Left3
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Infantry3
-				add_idea = ROM_Infantry4
-			}
+			# swap_ideas = {
+			# 	remove_idea = ROM_Infantry3
+			# 	add_idea = ROM_Infantry4
+			# }
+			add_manpower = 50000
 		}
 	}
 	focus = {
@@ -1154,7 +1165,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = infantry_weapons
 				uses = 1
-				bonus = 1
+				bonus = 0.8
 			}
 		}
 	}
@@ -1188,9 +1199,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				category = artillery
+				category = infantry_weapons
 				uses = 1
-				bonus = 1
+				bonus = 0.8
 			}
 		}
 	}
@@ -1208,7 +1219,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = artillery
 				uses = 1
-				bonus = 1
+				bonus = 0.6
 			}
 		}
 	}
@@ -1226,11 +1237,7 @@ focus_tree = {
 			focus = ROM_Ally_Political4
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				category = artillery
-				uses = 1
-				bonus = 1
-			}
+			unlock_decision_category_tooltip = industrial_complex_decisions
 		}
 	}
 	focus = {
