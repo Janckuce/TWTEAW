@@ -129,4 +129,28 @@ RUS_factory_count_sensor = {
 	allowed = {
 		tag = RUS
 	}
+    on_map_area = {
+		name = russian_states_to_hold
+		state = 10 #Warsaw
+		state = 94 #Brest-Litovsk
+		state = 11 #Kaunas
+		state = 808 #Riga
+		state = 206 #Minsk
+
+		state = 193 #Gomel
+		state = 202 #Kiev
+		state = 226 #Dnipropetrovsk
+		state = 192 #Odessa
+		state = 137 #Sevastopol
+
+		state = 198 #Vinnytsia
+		state = 111 #Helsinki
+		state = 195 #Petersburg
+		state = 242 #Smolensk
+		state = 218 #Rostov
+        
+		state = 217 #Tsaritsyn
+
+		zoom = 200
+	}
 }

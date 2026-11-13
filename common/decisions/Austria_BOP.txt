@@ -16,16 +16,12 @@ AUS_balance_of_power_category = {
 	lost_warsaw = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 10
 			}
-        }
+		}
 		available = {
-			controls_state = 10
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -41,16 +37,12 @@ AUS_balance_of_power_category = {
 	lost_brest_litovsk = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 94
 			}
-        }
+		}
 		available = {
-			controls_state = 94
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -66,16 +58,12 @@ AUS_balance_of_power_category = {
 	lost_kaunas = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 11
 			}
-        }
+		}
 		available = {
-			controls_state = 11
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -91,16 +79,12 @@ AUS_balance_of_power_category = {
 	lost_riga = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 808
 			}
-        }
+		}
 		available = {
-			controls_state = 808
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -116,16 +100,12 @@ AUS_balance_of_power_category = {
 	lost_minsk = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 206
 			}
-        }
+		}
 		available = {
-			controls_state = 206
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -141,16 +121,12 @@ AUS_balance_of_power_category = {
 	lost_gomel = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 193
 			}
-        }
+		}
 		available = {
-			controls_state = 193
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -166,16 +142,12 @@ AUS_balance_of_power_category = {
 	lost_kiev = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 202
 			}
-        }
+		}
 		available = {
-			controls_state = 202
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -191,16 +163,12 @@ AUS_balance_of_power_category = {
 	lost_dnipropetrovsk = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 226
 			}
-        }
+		}
 		available = {
-			controls_state = 226
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -216,16 +184,12 @@ AUS_balance_of_power_category = {
 	lost_odessa = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 192
 			}
-        }
+		}
 		available = {
-			controls_state = 192
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -241,16 +205,12 @@ AUS_balance_of_power_category = {
 	lost_sevastopol = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 137
 			}
-        }
+		}
 		available = {
-			controls_state = 137
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -266,20 +226,121 @@ AUS_balance_of_power_category = {
 	lost_vinnytsia = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)
-			always = yes
-		}
-		days_mission_timeout = 9999
-        activation = { 
-            NOT = {
+			NOT = {
 				controls_state = 198
 			}
-        }
+		}
 		available = {
-			controls_state = 198
+			always = no
 		}
 		highlight_states = {
 			highlight_state_targets = {
 				state = 198
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+		remove_effect = {
+
+		}
+	}
+	lost_rostov = {
+		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			NOT = {
+				controls_state = 218
+			}
+		}
+		available = {
+			always = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+		remove_effect = {
+
+		}
+	}
+	lost_tsaritsyn = {
+		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			NOT = {
+				controls_state = 217
+			}
+		}
+		available = {
+			always = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 217
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+		remove_effect = {
+
+		}
+	}
+	lost_smolensk = {
+		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			NOT = {
+				controls_state = 242
+			}
+		}
+		available = {
+			always = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 242
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+		remove_effect = {
+
+		}
+	}
+	lost_petersburg = {
+		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			NOT = {
+				controls_state = 195
+			}
+		}
+		available = {
+			always = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+		remove_effect = {
+
+		}
+	}
+	lost_helsinki = {
+		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			NOT = {
+				controls_state = 111
+			}
+		}
+		available = {
+			always = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 111
 			}
 			highlight_color_while_active = 2
 			highlight_color_before_active = 3

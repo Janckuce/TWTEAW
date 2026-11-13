@@ -1,132 +1,107 @@
 AUS_power_balance = {
 	initial_value = 0.95
-	# left_side = AUS_left_side
-	# right_side = AUS_right_side 
+	left_side = AUS_left_side
+	right_side = AUS_right_side 
 	decision_category = AUS_balance_of_power_category # Category for the power balance decision
 
-	# range = {
-	# 	id = AUS_power_centre_range
-	# 	min = -0.1
-	# 	max = 0.1
-	# 	modifier = {
-	# 		# Adds a modifier when balance of power is in the center
-	# 	}
-	# 	on_activate = {
-	# 		# Whatever is here will execute when the power balance is at the center
-	# 	}
-	# 	on_deactivate = {
-	# 		# Whatever is here will execute when the power balance is not at the center
-	# 	}
-	# }
 
-# side = { # This is the left side of the power balance
-# 	id = AUS_left_side
-# 	icon = GFX_idea_aus_huns_mad
 
-# 	range = { # First range marker
-# 		id = AUS_left_half_side_range
-# 		min = -1
-# 		max = -0.7
-# 				modifier = {
-# 				production_speed_infrastructure_factor = 0.125
-# 				production_speed_rail_way_factor = 0.125
-# 				production_speed_industrial_complex_factor = 0.125
-# 				research_speed_factor = 0.15
-# 				economy_cost_factor = -0.1
-# 				trade_laws_cost_factor = -0.1
+	side = { # This is the left side of the power balance
+		id = AUS_left_side
+		icon = GFX_focus_SOV_patriarch_of_all_russia
 
-# 				mobilization_laws_cost_factor = -0.1
-# 				production_speed_arms_factory_factor = 0.125
-# 				training_time_factor = -0.15
-# 				production_factory_max_efficiency_factor = 0.075
-# 				production_factory_efficiency_gain_factor = 0.075
-# 				production_factory_start_efficiency_factor = 0.075
+		range = { # First range marker
+			id = AUS_support_left_side
+			min = -1
+			max = -0.66
+			modifier = {
+				# army_org_factor = -0.1
+				# army_strength_factor = -0.1
+				# power_balance_weekly = -0.005
+			}
+		}
 
-# 				power_balance_daily = 0.001
-# 			}
-# 	}
+		range = { # Second range marker
+			id = AUS_support_left_side_two
+			min = -0.66
+			max = -0.33
+			modifier = {
+				army_org_factor = -0.05
+				army_strength_factor = -0.05
+				power_balance_weekly = -0.005
+			}
+		}
 
-# 	range = { # Second range marker
-# 	id = AUS_right_side_range
-# 	min = -0.3
-# 	max = 0
-# 			modifier = {
-# 			production_speed_infrastructure_factor = 0.05
-# 			production_speed_rail_way_factor = 0.05
-# 			production_speed_industrial_complex_factor = 0.05
-# 			research_speed_factor = 0.05
-# 			economy_cost_factor = -0.05
-# 			trade_laws_cost_factor = -0.05
+		range = {
+			id = AUS_support_left_side_three
+			min = -0.33
+			max = 0
 
-# 			mobilization_laws_cost_factor = -0.05
-# 			production_speed_arms_factory_factor = 0.05
-# 			training_time_factor = -0.05
-# 			production_factory_max_efficiency_factor = 0.025
-# 			production_factory_efficiency_gain_factor = 0.025
-# 			production_factory_start_efficiency_factor = 0.025
+			modifier = {
+				army_org_factor = -0.1
+				army_strength_factor = -0.1
+				power_balance_weekly = -0.01
+			}
+		}
+	}
+
+	side = { # This is the left side of the power balance
+		id = AUS_right_side
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+
+		range = {
+			id = AUS_right_side_one
+			min = 0
+			max = 0.33
+			modifier = {
+				army_org_factor = -0.15
+				army_strength_factor = -0.15
+				power_balance_weekly = -0.015
+			}
+
+			# on_deactivate = {
+			# 	# Whatever is here will execute when the power balance is not at the center
+		}
+		range = {
+			id = AUS_right_side_two
+			min = 0.33
+			max = 0.66
+
+			modifier = {
+				army_org_factor = -0.20
+				army_strength_factor = -0.20
+				power_balance_weekly = -0.02
+			}
+		}
+
+		range = {
+			id = AUS_right_side_three
+			min = 0.66
+			max = 0.99
 			
-# 		}
-# 	}
-# }
-
-
-# side = {
-# 	id = AUS_right_side
-# 	icon = GFX_idea_aus_huns_stronk
-
-	range = {
-		id = AUS_right_side_range
-		min = -1.0
-		max = 0
-
-		modifier = {
-			# power_balance_weekly = -0.005
+			modifier = {
+				army_org_factor = -0.25
+				army_strength_factor = -0.25
+				power_balance_weekly = -0.025
+			}
 		}
-	}
 
-	range = {
-		id = AUS_power_centre_range
-		min = 0
-		max = 0.6
+		range = {
+			id = AUS_right_side_final
+			min = 0.99
+			max = 1
 
-		modifier = {
-			army_org_factor = -0.1
-			army_strength_factor = -0.1
-			power_balance_weekly = -0.005
+			modifier = {
+				army_org_factor = -0.35
+				army_strength_factor = -0.35
+				power_balance_weekly = -0.03
+			}
+			on_activate = {
+				retire_country_leader = yes
+				country_event = { hours = 6 id = ww1_russia.3 }
+				country_event = { id = ww1_russia.4 days = 20 }
+			}
 		}
-	}
-
-	range = {
-		id = AUS_right_half_side_range
-		min = 0.6
-		max = 0.9
-		
-		modifier = {
-			army_org_factor = -0.2
-			army_strength_factor = -0.2
-			power_balance_weekly = -0.015
-		}
-	}
-
-	range = {
-		id = AUS_right_side_range
-		min = 0.9
-		max = 1
-
-		modifier = {
-			army_org_factor = -0.3
-			army_strength_factor = -0.3
-			power_balance_weekly = -0.025
-		}
-		# modifier = {
-		# 	army_org_factor = -0.5
-		# 	if = {
-		# 		limit = {
-		# 			controls_state = 10
-		# 		}
-		# 		power_balance_weekly = -0.04
-		# 	}
-		# }
 	}
 }
 
