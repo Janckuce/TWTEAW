@@ -1459,8 +1459,12 @@ focus_tree = {
 			#
 		}
 		available = {
-		    has_war_with = FRA
-			date > 1918.2.1
+			OR = {
+				date > 1918.2.1
+				RUS = {
+					has_idea = RUS_surrendered
+				}
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL_MOD}
