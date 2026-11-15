@@ -24,8 +24,17 @@ ORO_spectator_state = {
 			date > 1915.3.9
 		}
 		complete_effect = {
+			FRA = {
+				add_to_faction = POR
+			}
 			POR = {
 				country_event = ww1_portugal.2
+				add_to_war = {
+					targeted_alliance = FRA # The country/alliance side you want to join
+					enemy = GER             # The specific country you want to declare war on
+					hostility_reason = asked_to_join
+					single_target_only = no
+				}
 			}
 		}
 		fire_only_once = yes
@@ -370,9 +379,10 @@ ORO_spectator_state = {
 				remove_ideas = ITA_idea_central_powers_2
 				add_ideas = ITA_idea_entente
 				add_to_war = {
-					targeted_alliance = FRA
-					enemy = GER
+					targeted_alliance = FRA # The country/alliance side you want to join
+					enemy = GER             # The specific country you want to declare war on
 					hostility_reason = asked_to_join
+					single_target_only = no
 				}
 			}
 		}
@@ -450,6 +460,9 @@ ORO_spectator_state = {
 				add_threat = 40
 			}
 			BUL = {
+				add_ideas = GEN_Can_Send_8_Nolunteers
+			}
+			ROM = {
 				add_ideas = GEN_Can_Send_8_Nolunteers
 			}
 			ITA = {
@@ -2785,6 +2798,12 @@ ORO_end_WW1_german_loss = {
 			}
 			BUL = {
 				country_event = ww1_germany.16
+				add_to_war = {
+					targeted_alliance = GER # The country/alliance side you want to join
+					enemy = FRA             # The specific country you want to declare war on
+					hostility_reason = asked_to_join
+					single_target_only = no
+				}
 			}
 		}
 	}
@@ -2812,6 +2831,14 @@ ORO_end_WW1_german_loss = {
 				}
 			}
 			country_event = ww1_ottoman.5
+			TUR = {
+				add_to_war = {
+					targeted_alliance = GER # The country/alliance side you want to join
+					enemy = FRA             # The specific country you want to declare war on
+					hostility_reason = asked_to_join
+					single_target_only = no
+				}
+			}
 		}
 	}
 

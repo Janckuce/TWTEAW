@@ -65,23 +65,27 @@ ideas = {
 		ROM_Triple_Alliance = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 			}
 		}
 		ROM_Triple_Alliance_Ally = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 				political_power_factor = 0.05
 			}
 		}
 		ROM_Triple_Alliance_Ally1 = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 				political_power_factor = 0.1
 			}
 		}
 		ROM_Triple_Alliance_Ally2 = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 				political_power_factor = 0.15
 				political_advisor_cost_factor = -0.15
 			}
@@ -89,6 +93,7 @@ ideas = {
 		ROM_Triple_Alliance_Solo = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 				production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_factory = 0.05
 			}
@@ -96,6 +101,7 @@ ideas = {
 		ROM_Triple_Alliance_Solo1 = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 				production_factory_efficiency_gain_factor = 0.2
 				industrial_capacity_factory = 0.1
 			}
@@ -103,6 +109,7 @@ ideas = {
 		ROM_Triple_Alliance_Solo2 = {
 			picture = jap_zaibatsu_ally
 			modifier = {
+				surrender_limit = 1
 				production_factory_efficiency_gain_factor = 0.3
 				industrial_capacity_factory = 0.15
 			}

@@ -1497,15 +1497,15 @@ focus_tree = {
 		id = ROM_Reformed_Army
 		icon = GFX_SOV_the_glory_of_the_red_army_alt_ccp_2d_sov_compatibility
 		cost = 5
-		x = 17
+		x = 18
 		y = 9
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ROM_APP_Check
-			}
-			check_variable = {
-				ROM.APP = 4
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = ROM_APP_Check
+			# }
+			# check_variable = {
+			# 	ROM.APP = 4
+			# }
 		}
 		completion_reward = {
 			country_event = ww1_romania.2
@@ -1782,54 +1782,54 @@ focus_tree = {
 		}
 	}
 	#	War Declare
-	focus = {
-		id = ROM_Declaration_Of_War
-		icon = GFX_focus_SIA_war_fervor
-		cost = 2
-		relative_position_id = ROM_The_Many_Kings
-		x = 0
-		y = 4
-		prerequisite = {
-			focus = ROM_One_True_King2
-			focus = ROM_Queen_Of_Romania2
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					FRA = {
-						is_faction_leader = yes
-					}
-				}
-				FRA = {
-					add_to_faction = ROM
-				}
-			}
-			else_if = {
-				limit = {
-					RUS = {
-						is_faction_leader = yes
-					}
-				}
-				RUS = {
-					add_to_faction = ROM
-				}
-			}
-			else_if = {
-				limit = {
-					ENG = {
-						is_faction_leader = yes
-					}
-				}
-				ENG = {
-					add_to_faction = ROM
-				}
-			}
-			declare_war_on = {
-				target = GER
-				type = topple_government
-			}
-		}
-	}
+	# focus = {
+	# 	id = ROM_Declaration_Of_War
+	# 	icon = GFX_focus_SIA_war_fervor
+	# 	cost = 2
+	# 	relative_position_id = ROM_The_Many_Kings
+	# 	x = 0
+	# 	y = 4
+	# 	prerequisite = {
+	# 		focus = ROM_One_True_King2
+	# 		focus = ROM_Queen_Of_Romania2
+	# 	}
+	# 	completion_reward = {
+	# 		if = {
+	# 			limit = {
+	# 				FRA = {
+	# 					is_faction_leader = yes
+	# 				}
+	# 			}
+	# 			FRA = {
+	# 				add_to_faction = ROM
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				RUS = {
+	# 					is_faction_leader = yes
+	# 				}
+	# 			}
+	# 			RUS = {
+	# 				add_to_faction = ROM
+	# 			}
+	# 		}
+	# 		else_if = {
+	# 			limit = {
+	# 				ENG = {
+	# 					is_faction_leader = yes
+	# 				}
+	# 			}
+	# 			ENG = {
+	# 				add_to_faction = ROM
+	# 			}
+	# 		}
+	# 		declare_war_on = {
+	# 			target = GER
+	# 			type = topple_government
+	# 		}
+	# 	}
+	# }
 
 	#	War Time
 
@@ -1837,7 +1837,7 @@ focus_tree = {
 		id = ROM_War_Start
 		icon = GFX_SOV_the_means_to_wage_war_ccp_2d_sov_compatibility
 		cost = 2
-		x = 22
+		x = 24
 		y = 10
 		available = {
 			or = {

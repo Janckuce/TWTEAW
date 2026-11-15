@@ -245,88 +245,294 @@ ROM_Army_Reform_Tab = {
 }
 
 ROM_Entente_Appeasement = {
-	ROM_Appease_The_Entente = {
-		icon = GFX_decision_NOR_prepare_state_mon_0
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
-	ROM_Appease_The_Entente1 = {
-		icon = GFX_decision_NOR_prepare_state_mon_1
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs1
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
-	ROM_Appease_The_Entente2 = {
-		icon = GFX_decision_NOR_prepare_state_mon_2
-		priority = 1
-		fire_only_once = yes
-		cost = 100
-		allowed = {
-			tag = ROM
-		}
-		available = {
-			date > 1914.7.28
-		}
-		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs2
-				days = 70
-			}
-			add_to_variable = {
-				ROM.APP = 1
-			}
-		}
-	}
+	# ROM_Appease_The_Entente = {
+	# 	icon = GFX_decision_NOR_prepare_state_mon_0
+	# 	priority = 1
+	# 	fire_only_once = yes
+	# 	cost = 100
+	# 	allowed = {
+	# 		tag = ROM
+	# 	}
+	# 	available = {
+	# 		date > 1914.7.28
+	# 	}
+	# 	complete_effect = {
+	# 		add_timed_idea = {
+	# 			idea = ROM_Appeasement_Costs
+	# 			days = 70
+	# 		}
+	# 		add_to_variable = {
+	# 			ROM.APP = 1
+	# 		}
+	# 	}
+	# }
+	# ROM_Appease_The_Entente1 = {
+	# 	icon = GFX_decision_NOR_prepare_state_mon_1
+	# 	priority = 1
+	# 	fire_only_once = yes
+	# 	cost = 100
+	# 	allowed = {
+	# 		tag = ROM
+	# 	}
+	# 	available = {
+	# 		date > 1914.7.28
+	# 	}
+	# 	complete_effect = {
+	# 		add_timed_idea = {
+	# 			idea = ROM_Appeasement_Costs1
+	# 			days = 70
+	# 		}
+	# 		add_to_variable = {
+	# 			ROM.APP = 1
+	# 		}
+	# 	}
+	# }
+	# ROM_Appease_The_Entente2 = {
+	# 	icon = GFX_decision_NOR_prepare_state_mon_2
+	# 	priority = 1
+	# 	fire_only_once = yes
+	# 	cost = 100
+	# 	allowed = {
+	# 		tag = ROM
+	# 	}
+	# 	available = {
+	# 		date > 1914.7.28
+	# 	}
+	# 	complete_effect = {
+	# 		add_timed_idea = {
+	# 			idea = ROM_Appeasement_Costs2
+	# 			days = 70
+	# 		}
+	# 		add_to_variable = {
+	# 			ROM.APP = 1
+	# 		}
+	# 	}
+	# }
+	# ROM_Appease_The_Entente3 = {
+	# 	icon = GFX_decision_NOR_prepare_state_mon_3
+	# 	priority = 1
+	# 	fire_only_once = yes
+	# 	cost = 100
+	# 	allowed = {
+	# 		tag = ROM
+	# 	}
+	# 	available = {
+	# 		date > 1914.7.28
+	# 	}
+	# 	complete_effect = {
+	# 		add_timed_idea = {
+	# 			idea = ROM_Appeasement_Costs3
+	# 			days = 70
+	# 		}
+	# 		add_to_variable = {
+	# 			ROM.APP = 1
+	# 		}
+	# 	}
+	# }
 	ROM_Appease_The_Entente3 = {
-		icon = GFX_decision_NOR_prepare_state_mon_3
+		icon = GFX_decision_infiltrate_state
 		priority = 1
 		fire_only_once = yes
 		cost = 100
 		allowed = {
 			tag = ROM
 		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 890
+				state = 80
+				state = 89
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
 		available = {
-			date > 1914.7.28
+			OR = {
+				date > 1916.8.28
+				AND = {
+					RUS = {
+						controls_state = 890
+						controls_state = 80
+						controls_state = 89
+					}
+					BUL = {
+						has_war = yes
+					}
+				}
+			}
 		}
 		complete_effect = {
-			add_timed_idea = {
-				idea = ROM_Appeasement_Costs3
-				days = 70
+			if = {
+				limit = {
+					FRA = {
+						is_faction_leader = yes
+					}
+				}
+				FRA = {
+					add_to_faction = ROM
+				}
+				add_to_war = {
+					targeted_alliance = FRA # The country/alliance side you want to join
+					enemy = GER             # The specific country you want to declare war on
+					hostility_reason = asked_to_join
+					single_target_only = no
+				}
 			}
-			add_to_variable = {
-				ROM.APP = 1
+			else_if = {
+				limit = {
+					RUS = {
+						is_faction_leader = yes
+					}
+				}
+				RUS = {
+					add_to_faction = ROM
+				}
 			}
+			else_if = {
+				limit = {
+					ENG = {
+						is_faction_leader = yes
+					}
+				}
+				ENG = {
+					add_to_faction = ROM
+				}
+			}
+
+			if = {
+				limit = {
+					date < 1916.8.28
+				}
+				BUL = {
+					division_template = {
+						name = "Granichna Armiya Cebep"
+						is_locked = no
+			
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+						}
+			
+						support = {
+							engineer = { x = 0 y = 0 }
+							machine_gun = { x = 0 y = 1 }
+						}
+					}
+					211 = {
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9783
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9783
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 649
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 649
+							allow_spawning_on_enemy_provs = no
+						}
+					}
+					801 = {
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9612
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9612
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9610
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9610
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 3796
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 3796
+							allow_spawning_on_enemy_provs = no
+						}
+					}
+					48 = {
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 793
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 793
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 11745
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 11745
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9771
+							allow_spawning_on_enemy_provs = no
+						}
+						create_unit = {
+							division = "name = \"Granichna Armiya Cebep\" division_template = \"Granichna Armiya Cebep\" start_experience_factor = 0.1 start_equipment_factor = 1"
+							owner = BUL
+							prioritize_location = 9771
+							allow_spawning_on_enemy_provs = no
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10000
 		}
 	}
 }
