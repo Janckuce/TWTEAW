@@ -1359,137 +1359,137 @@ focus_tree = {
 
 	#	Regency Tree
 
-	focus = {
-		id = ROM_Regency
-		icon = GFX_focus_POL_end_the_regency
-		cost = 10
-		x = 12
-		y = 10
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		completion_reward = {
-			add_ideas = ROM_Regent_Reforms
-		}
-	}
-	focus = {
-		id = ROM_Regency1
-		icon = GFX_focus_CHI_registry_of_property
-		cost = 5
-		relative_position_id = ROM_Regency
-		x = 0
-		y = 1
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		prerequisite = {
-			focus = ROM_Regency
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Regent_Reforms
-				add_idea = ROM_Regent_Reforms1
-			}
-		}
-	}
-	focus = {
-		id = ROM_Regency2
-		icon = GFX_focus_generic_reorient_production
-		cost = 5
-		relative_position_id = ROM_Regency1
-		x = 0
-		y = 1
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		prerequisite = {
-			focus = ROM_Regency1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Regent_Reforms1
-				add_idea = ROM_Regent_Reforms2
-			}
-		}
-	}
-	focus = {
-		id = ROM_Regency3
-		icon = GFX_focus_CHI_planned_economy
-		cost = 5
-		relative_position_id = ROM_Regency2
-		x = 0
-		y = 1
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		prerequisite = {
-			focus = ROM_Regency2
-		}
-		completion_reward = {
-			capital_scope = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = ROM_Regency4
-		icon = GFX_focus_IRQ_construct_the_kut_barrage
-		cost = 5
-		relative_position_id = ROM_Regency3
-		x = 0
-		y = 1
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = yes
-			}
-		}
-		prerequisite = {
-			focus = ROM_Regency3
-		}
-		completion_reward = {
-			capital_scope = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-		}
-	}
-	focus = {
-		id = ROM_Regency_Last
-		icon = GFX_focus_usa_voter_registration_act
-		cost = 5
-		relative_position_id = ROM_Regency4
-		x = 0
-		y = 1
-		available = {
-			ROM_Carol_I_Real = {
-				is_country_leader = no
-			}
-		}
-		prerequisite = {
-			focus = ROM_Regency4
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Disputed_Neutrality
-				add_idea = ROM_Reaffirmed_Neutrality
-			}
-		}
-	}
+	# focus = {
+	# 	id = ROM_Regency
+	# 	icon = GFX_focus_POL_end_the_regency
+	# 	cost = 10
+	# 	x = 12
+	# 	y = 10
+	# 	available = {
+	# 		ROM_Carol_I_Real = {
+	# 			is_country_leader = yes
+	# 		}
+	# 	}
+	# 	completion_reward = {
+	# 		add_ideas = ROM_Regent_Reforms
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Regency1
+	# 	icon = GFX_focus_CHI_registry_of_property
+	# 	cost = 5
+	# 	relative_position_id = ROM_Regency
+	# 	x = 0
+	# 	y = 1
+	# 	available = {
+	# 		ROM_Carol_I_Real = {
+	# 			is_country_leader = yes
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_Regency
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Regent_Reforms
+	# 			add_idea = ROM_Regent_Reforms1
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Regency2
+	# 	icon = GFX_focus_generic_reorient_production
+	# 	cost = 5
+	# 	relative_position_id = ROM_Regency1
+	# 	x = 0
+	# 	y = 1
+	# 	available = {
+	# 		ROM_Carol_I_Real = {
+	# 			is_country_leader = yes
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_Regency1
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Regent_Reforms1
+	# 			add_idea = ROM_Regent_Reforms2
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Regency3
+	# 	icon = GFX_focus_CHI_planned_economy
+	# 	cost = 5
+	# 	relative_position_id = ROM_Regency2
+	# 	x = 0
+	# 	y = 1
+	# 	available = {
+	# 		ROM_Carol_I_Real = {
+	# 			is_country_leader = yes
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_Regency2
+	# 	}
+	# 	completion_reward = {
+	# 		capital_scope = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = industrial_complex
+	# 				level = 2
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Regency4
+	# 	icon = GFX_focus_IRQ_construct_the_kut_barrage
+	# 	cost = 5
+	# 	relative_position_id = ROM_Regency3
+	# 	x = 0
+	# 	y = 1
+	# 	available = {
+	# 		ROM_Carol_I_Real = {
+	# 			is_country_leader = yes
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_Regency3
+	# 	}
+	# 	completion_reward = {
+	# 		capital_scope = {
+	# 			add_extra_state_shared_building_slots = 2
+	# 			add_building_construction = {
+	# 				type = industrial_complex
+	# 				level = 2
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Regency_Last
+	# 	icon = GFX_focus_usa_voter_registration_act
+	# 	cost = 5
+	# 	relative_position_id = ROM_Regency4
+	# 	x = 0
+	# 	y = 1
+	# 	available = {
+	# 		ROM_Carol_I_Real = {
+	# 			is_country_leader = no
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_Regency4
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Disputed_Neutrality
+	# 			add_idea = ROM_Reaffirmed_Neutrality
+	# 		}
+	# 	}
+	# }
 
 	#	War Reformed Army
 
@@ -1833,105 +1833,105 @@ focus_tree = {
 
 	#	War Time
 
-	focus = {
-		id = ROM_War_Start
-		icon = GFX_SOV_the_means_to_wage_war_ccp_2d_sov_compatibility
-		cost = 2
-		x = 24
-		y = 10
-		available = {
-			or = {
-				has_idea = ROM_Disputed_Neutrality
-				has_idea = ROM_Reaffirmed_Neutrality
-			}
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = ROM_Army_Funding
-				days = 120
-			}
-		}
-	}
-	focus = {
-		id = ROM_Army_Reform_Main
-		icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
-		cost = 10
-		relative_position_id = ROM_War_Start
-		x = 0
-		y = 1
-		available = {
-			has_war = yes
-		}
-		prerequisite = {
-			focus = ROM_War_Start
-		}
-		completion_reward = {
-			remove_ideas = ROM_Unorganised_Army
-		}
-	}
-	focus = {
-		id = ROM_Army_Reform1
-		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
-		cost = 5
-		relative_position_id = ROM_Army_Reform_Main
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Army_Reform_Main
-		}
-		completion_reward = {
-			add_ideas = ROM_Entente_Army
-		}
-	}
-	focus = {
-		id = ROM_Army_Reform2
-		icon = GFX_focus_AFG_royal_guard
-		cost = 5
-		relative_position_id = ROM_Army_Reform1
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Army_Reform1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Entente_Army
-				add_idea = ROM_Entente_Army1
-			}
-		}
-	}
-	focus = {
-		id = ROM_Army_Reform3
-		icon = GFX_focus_PHI_war_plan_orange
-		cost = 5
-		relative_position_id = ROM_Army_Reform2
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Army_Reform2
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Entente_Army1
-				add_idea = ROM_Entente_Army2
-			}
-		}
-	}
-	focus = {
-		id = ROM_Army_Reform4
-		icon = GFX_focus_SWE_rations
-		cost = 5
-		relative_position_id = ROM_Army_Reform3
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Army_Reform3
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Entente_Army2
-				add_idea = ROM_Entente_Army3
-			}
-		}
-	}
+	# focus = {
+	# 	id = ROM_War_Start
+	# 	icon = GFX_SOV_the_means_to_wage_war_ccp_2d_sov_compatibility
+	# 	cost = 2
+	# 	x = 24
+	# 	y = 10
+	# 	available = {
+	# 		or = {
+	# 			has_idea = ROM_Disputed_Neutrality
+	# 			has_idea = ROM_Reaffirmed_Neutrality
+	# 		}
+	# 	}
+	# 	completion_reward = {
+	# 		add_timed_idea = {
+	# 			idea = ROM_Army_Funding
+	# 			days = 120
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Army_Reform_Main
+	# 	icon = GFX_SOV_lessons_of_war_ccp_2d_sov_compatibility
+	# 	cost = 10
+	# 	relative_position_id = ROM_War_Start
+	# 	x = 0
+	# 	y = 1
+	# 	available = {
+	# 		has_war = yes
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_War_Start
+	# 	}
+	# 	completion_reward = {
+	# 		remove_ideas = ROM_Unorganised_Army
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Army_Reform1
+	# 	icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
+	# 	cost = 5
+	# 	relative_position_id = ROM_Army_Reform_Main
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Army_Reform_Main
+	# 	}
+	# 	completion_reward = {
+	# 		add_ideas = ROM_Entente_Army
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Army_Reform2
+	# 	icon = GFX_focus_AFG_royal_guard
+	# 	cost = 5
+	# 	relative_position_id = ROM_Army_Reform1
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Army_Reform1
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Entente_Army
+	# 			add_idea = ROM_Entente_Army1
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Army_Reform3
+	# 	icon = GFX_focus_PHI_war_plan_orange
+	# 	cost = 5
+	# 	relative_position_id = ROM_Army_Reform2
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Army_Reform2
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Entente_Army1
+	# 			add_idea = ROM_Entente_Army2
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Army_Reform4
+	# 	icon = GFX_focus_SWE_rations
+	# 	cost = 5
+	# 	relative_position_id = ROM_Army_Reform3
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Army_Reform3
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Entente_Army2
+	# 			add_idea = ROM_Entente_Army3
+	# 		}
+	# 	}
+	# }
 }
