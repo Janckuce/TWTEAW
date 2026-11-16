@@ -26,9 +26,17 @@ AUS_power_balance = {
 			min = -0.66
 			max = -0.33
 			modifier = {
-				army_org_factor = -0.05
-				army_strength_factor = -0.05
-				power_balance_weekly = -0.005
+				# army_org_factor = -0.05
+				# army_strength_factor = -0.05
+				# power_balance_weekly = -0.005
+			}
+			on_activate = {
+				RUS = {
+					hidden_effect = {
+						remove_ideas = RUS_army_collapse2
+					}
+					add_ideas = RUS_army_collapse1
+				}
 			}
 		}
 
@@ -38,9 +46,19 @@ AUS_power_balance = {
 			max = 0
 
 			modifier = {
-				army_org_factor = -0.1
-				army_strength_factor = -0.1
-				power_balance_weekly = -0.01
+				# army_org_factor = -0.1
+				# army_strength_factor = -0.1
+				# power_balance_weekly = -0.01
+			}
+			on_activate = {
+				RUS = {
+					hidden_effect = {
+						remove_ideas = RUS_army_collapse1
+						remove_ideas = RUS_army_collapse3
+					}
+
+					add_ideas = RUS_army_collapse2
+				}
 			}
 		}
 	}
@@ -54,13 +72,21 @@ AUS_power_balance = {
 			min = 0
 			max = 0.33
 			modifier = {
-				army_org_factor = -0.15
-				army_strength_factor = -0.15
-				power_balance_weekly = -0.015
+				# army_org_factor = -0.15
+				# army_strength_factor = -0.15
+				# power_balance_weekly = -0.015
 			}
+			on_activate = {
+				RUS = {
+					hidden_effect = {
+						remove_ideas = RUS_army_collapse2
+						remove_ideas = RUS_army_collapse4
+					}
 
+					add_ideas = RUS_army_collapse3
+				}
+			}
 			# on_deactivate = {
-			# 	# Whatever is here will execute when the power balance is not at the center
 		}
 		range = {
 			id = AUS_right_side_two
@@ -68,9 +94,19 @@ AUS_power_balance = {
 			max = 0.66
 
 			modifier = {
-				army_org_factor = -0.20
-				army_strength_factor = -0.20
-				power_balance_weekly = -0.02
+				# army_org_factor = -0.20
+				# army_strength_factor = -0.20
+				# power_balance_weekly = -0.02
+			}
+			on_activate = {
+				RUS = {
+					hidden_effect = {
+						remove_ideas = RUS_army_collapse3
+						remove_ideas = RUS_army_collapse5
+					}
+
+					add_ideas = RUS_army_collapse4
+				}
 			}
 		}
 
@@ -80,9 +116,18 @@ AUS_power_balance = {
 			max = 0.99
 			
 			modifier = {
-				army_org_factor = -0.25
-				army_strength_factor = -0.25
-				power_balance_weekly = -0.025
+				# army_org_factor = -0.25
+				# army_strength_factor = -0.25
+				# power_balance_weekly = -0.025
+			}
+			on_activate = {
+				hidden_effect = {
+					remove_ideas = RUS_army_collapse4
+				}
+
+				RUS = {
+					add_ideas = RUS_army_collapse5
+				}
 			}
 		}
 
@@ -92,14 +137,16 @@ AUS_power_balance = {
 			max = 1
 
 			modifier = {
-				army_org_factor = -0.35
-				army_strength_factor = -0.35
-				power_balance_weekly = -0.03
+				# army_org_factor = -0.35
+				# army_strength_factor = -0.35
+				# power_balance_weekly = -0.03
 			}
 			on_activate = {
-				retire_country_leader = yes
-				country_event = { hours = 6 id = ww1_russia.3 }
-				country_event = { id = ww1_russia.4 days = 20 }
+				RUS = {
+					retire_country_leader = yes
+					country_event = { hours = 6 id = ww1_russia.3 }
+					country_event = { id = ww1_russia.4 days = 20 }
+				}
 			}
 		}
 	}
