@@ -9,3 +9,9 @@ ENG_funding_into_Military = {
 	icon = GFX_idea_SOV_third_five_year_plan_military
 	consumer_goods_expected_value = ENG_military_funding_expected_value
 }
+special_forces_cap_d = { 
+	enable = { always = yes }
+	icon = GFX_idea_PER_special_units_division_idea
+	# custom_modifier_tooltip = GER_industrial_consumer_goods_factor_tt
+	special_forces_min = special_forces_cap_investment
+}

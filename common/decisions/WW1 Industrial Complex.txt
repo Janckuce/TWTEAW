@@ -91,16 +91,18 @@ industrial_complex_decisions = {
 		}
 		complete_effect = {
 			army_experience = -50
-			
-			if = {
-				limit = {
-					NOT = {
-						has_variable = special_forces_cap_d
+
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_variable = special_forces_cap_d
+						}
 					}
+					add_dynamic_modifier = { modifier = special_forces_cap_d }
 				}
-				set_variable = { special_forces_cap_d = modifier@special_forces_cap_flat }
+				add_to_variable = { special_forces_cap_investment = 20 }
 			}
-			add_to_variable = { PREV.special_forces_cap_d = 10 }
 		}
 	}
 
