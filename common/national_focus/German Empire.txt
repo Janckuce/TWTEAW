@@ -655,7 +655,10 @@ focus_tree = {
 			focus = GER_Trade_With_Our_Allies
 		}
 		completion_reward = {
-			add_ideas = GER_Aid_For_Austria
+			swap_ideas = {
+				remove_idea = GER_Propaganda4
+				add_idea = GER_Propaganda5
+			}
 			AUS = {
 				add_ideas = AUS_Aid_From_Germany
 			}

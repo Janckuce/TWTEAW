@@ -670,7 +670,7 @@ ideas = {
 				war_support_factor = 0.05
 				political_power_factor = 0.15
 				offensive_war_stability_factor = 0.15
-				min_export = -0.15
+				min_export = -0.05
 				trade_laws_cost_factor = -0.15
 				local_resources_factor = 0.10
 			}
@@ -682,7 +682,7 @@ ideas = {
 				war_support_factor = 0.05
 				political_power_factor = 0.15
 				offensive_war_stability_factor = 0.15
-				min_export = -0.15
+				min_export = -0.1
 				trade_laws_cost_factor = -0.15
 				resource_trade_cost_bonus_per_factory = 2
 				local_resources_factor = 0.10
@@ -696,12 +696,34 @@ ideas = {
 				trade_cost_for_target_factor = -0.25
 			}
 		}
-		GER_Aid_For_Austria = {
-			picture = GER_german_trade
+		GER_Propaganda5 = {
+			picture = ger_kreuzzeitung
 			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.05
+				political_power_factor = 0.15
+				offensive_war_stability_factor = 0.15
+				min_export = -0.15
+				trade_laws_cost_factor = -0.15
+				resource_trade_cost_bonus_per_factory = 2
+				local_resources_factor = 0.10
 				political_power_gain = 0.1
 			}
+			targeted_modifier = {
+				tag = AUS
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = TUR
+				trade_cost_for_target_factor = -0.25
+			}
 		}
+		# GER_Aid_For_Austria = {
+		# 	picture = GER_german_trade
+		# 	modifier = {
+		# 		political_power_gain = 0.1
+		# 	}
+		# }
 		GER_Prussian_Militarism = {
 			picture = ger_prussian_militarism
 			modifier = {
@@ -1055,6 +1077,25 @@ ideas = {
 	
 			modifier = {
 				civilian_factory_use = 5
+			}
+		}
+
+		GER_colony_trade = { 
+			picture = GER_german_trade
+
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+	
+			targeted_modifier = {
+				tag = GCG
+				trade_cost_for_target_factor = -0.60
 			}
 		}
 	}

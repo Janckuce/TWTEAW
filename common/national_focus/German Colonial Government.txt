@@ -27,7 +27,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Ties_To_Berlin
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		cost = 10
+		cost = 7.2
 		x = 2
 		y = 0
 		completion_reward = {
@@ -35,13 +35,16 @@ focus_tree = {
 				remove_idea = GCG_Isolated_Government
 				add_idea = GCG_Isolated_Government1
 			}
+			GER = {
+				add_ideas = GER_colony_trade
+			}
 		}
 	}
 	focus = {
 		available_if_capitulated = yes
 		id = GCG_Political_Left1
 		icon = GFX_focus_CHL_expand_the_forestry
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Ties_To_Berlin
 		x = -2
 		y = 1
@@ -86,7 +89,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Political_Left3
 		icon = GFX_focus_generic_industry_investment
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Political_Left2
 		x = 0
 		y = 1
@@ -94,33 +97,9 @@ focus_tree = {
 			focus = GCG_Political_Left2
 		}
 		completion_reward = {
-			895 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			894 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			893 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			541 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
+			add_offsite_building = {
+				type = industrial_complex     
+				level = 8              
 			}
 		}
 	}
@@ -146,7 +125,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Political_Right1
 		icon = GFX_focus_PER_white_revolution
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Ties_To_Berlin
 		x = 0
 		y = 1
@@ -182,7 +161,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Political_Right3
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Political_Right2
 		x = 0
 		y = 1
@@ -219,7 +198,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Political_Main
 		icon = GFX_focus_ARG_strengthening_the_concordancia
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Political_Left4
 		x = 1
 		y = 1
@@ -317,7 +296,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Economic_Status
 		icon = GFX_focus_CONGO_congo_army
-		cost = 10
+		cost = 7.2
 		x = 7
 		y = 0
 		completion_reward = {
@@ -334,7 +313,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_German_Fighting
 		icon = GFX_focus_GER_glory_to_the_imperial_army
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Economic_Status
 		x = -1
 		y = 1
@@ -397,7 +376,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Askari_Fighting
 		icon = GFX_focus_URG_colorados
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Economic_Status
 		x = 1
 		y = 1
@@ -413,7 +392,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_National_Treasures
 		icon = GFX_focus_CONGO_gold_and_diamonds
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Askari_Fighting
 		x = 0
 		y = 1
@@ -440,7 +419,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Equal_Investments
 		icon = GFX_focus_CHL_invite_french_aristocracy
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_National_Treasures
 		x = 0
 		y = 1
@@ -467,7 +446,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Final_Industry
 		icon = GFX_focus_PER_invite_oil_nations
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Convert_Buildings
 		x = 1
 		y = 1
@@ -487,7 +466,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Colonial_Militia
 		icon = GFX_focus_RAJ_forge_the_kshatriya_army
-		cost = 10
+		cost = 7.2
 		x = 14
 		y = 0
 		completion_reward = {
@@ -504,7 +483,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Support_Equipment1
 		icon = GFX_goal_generic_military_sphere
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Colonial_Militia
 		x = -4
 		y = 1
@@ -519,7 +498,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Support_Equipment2
 		icon = GFX_focus_ITA_bersaglieri
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Support_Equipment1
 		x = 0
 		y = 1
@@ -537,7 +516,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Support_Equipment3
 		icon = GFX_focus_RAJ_military_into_the_workforce
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Support_Equipment2
 		x = 0
 		y = 1
@@ -558,7 +537,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Colonial_Infantry
 		icon = GFX_focus_AUS_frontmiliz_focus
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Colonial_Militia
 		x = -2
 		y = 1
@@ -573,7 +552,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Stock_Surplus
 		icon = GFX_focus_SWE_per_albin_bus
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Colonial_Infantry
 		x = 0
 		y = 1
@@ -595,7 +574,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Military_Expansion
 		icon = GFX_focus_generic_workers
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Stock_Surplus
 		x = 0
 		y = 1
@@ -613,7 +592,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Finalised_Support
 		icon = GFX_focus_IRQ_royal_iraqi_army_alt
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Support_Equipment3
 		x = 1
 		y = 1
@@ -670,7 +649,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Trade_Security5
 		icon = GFX_focus_generic_devaluation
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Trade_Security4
 		x = 0
 		y = 1
@@ -696,7 +675,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Air_Power1
 		icon = GFX_goal_generic_air_fighter
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Colonial_Militia
 		x = 4
 		y = 1
@@ -715,7 +694,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Air_Power2
 		icon = GFX_goal_generic_air_fighter2
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Air_Power1
 		x = 0
 		y = 1
@@ -730,7 +709,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Air_Power3
 		icon = GFX_SOV_increase_aircraft_production_ccp_2d_sov_compatibility
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Air_Power2
 		x = -1
 		y = 1
@@ -749,7 +728,7 @@ focus_tree = {
 			}
 			add_offsite_building = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 		}
 	}
@@ -757,7 +736,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		id = GCG_Air_Power4
 		icon = GFX_focus_generic_aircraft_production
-		cost = 10
+		cost = 7.2
 		relative_position_id = GCG_Air_Power2
 		x = 1
 		y = 1
@@ -775,22 +754,22 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 2
 					province = 8183
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 2
 					province = 2196
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 2
 					province = 8182
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 2
 					province = 12944
 				}
 			}
@@ -810,6 +789,140 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = GCG_Cheap_Planes
+		}
+	}
+
+	focus = {
+		available_if_capitulated = yes
+		id = GCG_mittelafrika
+		icon = GFX_focus_GER_mittelafrika
+		cost = 5
+		# relative_position_id = SAF_Cut_Down_On_Nationalism
+		x = 13
+		y = 6
+		available = {
+		}
+		prerequisite = {
+
+		}
+		mutually_exclusive = {
+			focus = GCG_asian_safari
+		}
+		completion_reward = {
+			546 = {
+				add_extra_state_shared_building_slots = 3
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					# instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			769 = {
+				add_extra_state_shared_building_slots = 3
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					# instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			768 = {
+				add_extra_state_shared_building_slots = 3
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					# instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		available_if_capitulated = yes
+		id = GCG_mittelafrika_railways
+		icon = GFX_focus_generic_africa_infrastructure
+		cost = 5
+		relative_position_id = GCG_mittelafrika
+		x = 0
+		y = 1
+		available = {
+		}
+		prerequisite = {
+			focus = GCG_mittelafrika
+		}
+		mutually_exclusive = {
+
+		}
+		completion_reward = {
+			build_railway = {
+				level = 5
+				path = { 2196 8205 12911 10932 8144 }
+			}
+		}
+	}
+	focus = {
+		available_if_capitulated = yes
+		id = GCG_asian_safari
+		icon = GFX_focus_SIA_asian_democratic_compact
+		cost = 5
+		relative_position_id = GCG_mittelafrika
+		x = 2
+		y = 0
+		available = {
+		}
+		prerequisite = {
+
+		}
+		mutually_exclusive = {
+			focus = GCG_mittelafrika
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = dockyard     
+				level = 10              
+			}
+			743 = {
+				add_extra_state_shared_building_slots = 3
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					# instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		available_if_capitulated = yes
+		id = GCG_asian_safari_convoys
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 5
+		relative_position_id = GCG_asian_safari
+		x = 0
+		y = 1
+		available = {
+		}
+		prerequisite = {
+			focus = GCG_asian_safari
+		}
+		completion_reward = {
+			navy_experience = 50 
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 250
+			}
 		}
 	}
 }

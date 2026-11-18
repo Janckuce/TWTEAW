@@ -79,6 +79,31 @@ industrial_complex_decisions = {
 		days_remove = 720
 	} 
 
+	special_forces_capacity = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_army_experience > 50
+		}
+		complete_effect = {
+			army_experience = -50
+			
+			if = {
+				limit = {
+					NOT = {
+						has_variable = special_forces_cap_d
+					}
+				}
+				set_variable = { special_forces_cap_d = modifier@special_forces_cap_flat }
+			}
+			add_to_variable = { PREV.special_forces_cap_d = 10 }
+		}
+	}
+
 	building_slots1 = {
 
 		icon = GFX_decision_generic_factory
