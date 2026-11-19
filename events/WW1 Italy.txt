@@ -26,13 +26,13 @@ country_event = {
 
 	is_triggered_only = yes
 
-	timeout_days = 4
+	timeout_days = 2
 
 	option = {
 		name = ww1_italy.2.a
 		
 		TUR = {
-			country_event = { id = ww1_ottoman.1 days = 5 }
+			country_event = { id = ww1_ottoman.1 }
 	    }
 		
 		ai_chance = {
