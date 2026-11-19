@@ -947,7 +947,6 @@ news_event = {
 		name = ww1_news.46.a
 	}
 }
-
 #Armistice of Compiegne
 news_event = {
 	id = ww1_news.47
@@ -1060,5 +1059,20 @@ news_event = {
 
 	option = {
 		name = ww1_news.54.a
+	}
+}
+#Romanian War Entry
+news_event = {
+	id = ww1_news.55
+	title = ww1_news.55.t
+	desc = ww1_news_desc.55
+	picture = GFX_news_event_romanian_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww1_news.55.a
 	}
 }
