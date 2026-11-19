@@ -484,7 +484,7 @@ focus_tree = {
 			focus = ROM_Ally7
 		}
 		available = {
-			num_of_owned_factories > 26
+			num_of_owned_factories > 32
 		}
 		prerequisite = {
 			focus = ROM_Industry_Main4
@@ -502,7 +502,7 @@ focus_tree = {
 	focus = {
 		id = ROM_Industry_Main
 		icon = GFX_goal_generic_production2
-		cost = 5
+		cost = 2.9
 		x = 12
 		y = 1
 		completion_reward = {
@@ -537,7 +537,7 @@ focus_tree = {
 	focus = {
 		id = ROM_Industry_Main2
 		icon = GFX_goal_generic_production2
-		cost = 5
+		cost = 7.2
 		relative_position_id = ROM_Industry_Main1
 		x = 0
 		y = 3
@@ -564,7 +564,7 @@ focus_tree = {
 	focus = {
 		id = ROM_Industry_Main3
 		icon = GFX_goal_generic_production2
-		cost = 5
+		cost = 10
 		relative_position_id = ROM_Industry_Main2
 		x = 0
 		y = 1
@@ -586,7 +586,7 @@ focus_tree = {
 	focus = {
 		id = ROM_Industry_Main4
 		icon = GFX_goal_generic_production2
-		cost = 5
+		cost = 14.3
 		relative_position_id = ROM_Industry_Main3
 		x = 0
 		y = 1
@@ -870,7 +870,7 @@ focus_tree = {
 			focus = ROM_Industry_Main4
 		}
 		available = {
-			num_of_military_factories > 12
+			num_of_military_factories > 16
 		}
 		mutually_exclusive = {
 			focus = ROM_Ally_Political_Right_Final
@@ -1580,40 +1580,41 @@ focus_tree = {
 			custom_effect_tooltip = ROM_Rus_Info
 		}
 	}
-	focus = {
-		id = ROM_The_Many_Kings
-		icon = GFX_focus_CZE_bohemia_crown
-		cost = 10
-		relative_position_id = ROM_Reformed_Army
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = ROM_Reformed_Army_France
-			focus = ROM_Reformed_Army_Britain
-			focus = ROM_Reformed_Army_Russia
-		}
-		completion_reward = {
-			country_event = ww1_romania.3
-		}
-	}
+	# focus = {
+	# 	id = ROM_The_Many_Kings
+	# 	icon = GFX_focus_CZE_bohemia_crown
+	# 	cost = 10
+	# 	relative_position_id = ROM_Reformed_Army
+	# 	x = 0
+	# 	y = 3
+	# 	prerequisite = {
+	# 		# focus = ROM_Reformed_Army_France
+	# 		# focus = ROM_Reformed_Army_Britain
+	# 		# focus = ROM_Reformed_Army_Russia
+	# 	}
+	# 	available = {
+	# 		has_idea = ROM_Disputed_Neutrality
+	# 	}
+	# 	completion_reward = {
+	# 		country_event = ww1_romania.3
+	# 	}
+	# }
 
 	#	Ferdinand
 
 	focus = {
 		id = ROM_One_True_King
 		icon = GFX_focus_RAJ_the_crown_and_the_world
-		cost = 10
-		relative_position_id = ROM_The_Many_Kings
-		x = -3
-		y = 1
+		cost = 2.9
+		relative_position_id = ROM_Reformed_Army
+		x = 0
+		y = 3
 		mutually_exclusive = {
 			focus = ROM_German_Heir_To_Romania
 			focus = ROM_Queen_Of_Romania
 		}
 		available = {
-			hidden_trigger = {
-				always = no
-			}
+			has_idea = ROM_Disputed_Neutrality
 		}
 		prerequisite = {
 			focus = ROM_The_Many_Kings
@@ -1625,7 +1626,7 @@ focus_tree = {
 	focus = {
 		id = ROM_One_True_King1
 		icon = GFX_focus_generic_pilot_training
-		cost = 5
+		cost = 7.2
 		relative_position_id = ROM_One_True_King
 		x = 0
 		y = 1
@@ -1642,7 +1643,7 @@ focus_tree = {
 	focus = {
 		id = ROM_One_True_King2
 		icon = GFX_focus_CHI_a_new_middle_kingdom
-		cost = 5
+		cost = 10
 		relative_position_id = ROM_One_True_King1
 		x = 0
 		y = 1
@@ -1657,130 +1658,130 @@ focus_tree = {
 		}
 	}
 	#	William
-	focus = {
-		id = ROM_German_Heir_To_Romania
-		icon = GFX_focus_ger_return_of_the_kaiser
-		cost = 10
-		relative_position_id = ROM_The_Many_Kings
-		x = 0
-		y = 1
-		mutually_exclusive = {
-			focus = ROM_One_True_King
-			focus = ROM_Queen_Of_Romania
-		}
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
-		prerequisite = {
-			focus = ROM_The_Many_Kings
-		}
-		completion_reward = {
-			custom_effect_tooltip = ROM_William_Info
-		}
-	}
-	focus = {
-		id = ROM_German_Heir_To_Romania1
-		icon = GFX_focus_GER_prussian_legacy
-		cost = 5
-		relative_position_id = ROM_German_Heir_To_Romania
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_German_Heir_To_Romania
-		}
-		completion_reward = {
-			add_ideas = ROM_Prussian_Militarism
-		}
-	}
-	focus = {
-		id = ROM_German_Heir_To_Romania2
-		icon = GFX_focus_RAJ_a_private_military
-		cost = 5
-		relative_position_id = ROM_German_Heir_To_Romania1
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_German_Heir_To_Romania1
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = ROM_Prussian_Militarism
-				add_idea = ROM_Prussian_Militarism1
-			}
-		}
-	}
-	#	Maria
-	focus = {
-		id = ROM_Queen_Of_Romania
-		icon = GFX_focus_AUS_bring_back_the_habsburg_rule
-		cost = 10
-		relative_position_id = ROM_The_Many_Kings
-		x = 3
-		y = 1
-		mutually_exclusive = {
-			focus = ROM_One_True_King
-			focus = ROM_German_Heir_To_Romania
-		}
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
-		prerequisite = {
-			focus = ROM_The_Many_Kings
-		}
-		completion_reward = {
-			custom_effect_tooltip = ROM_Maria_Info
-		}
-	}
-	focus = {
-		id = ROM_Queen_Of_Romania1
-		icon = GFX_focus_GER_factories_for_resources
-		cost = 5
-		relative_position_id = ROM_Queen_Of_Romania
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Queen_Of_Romania
-		}
-		completion_reward = {
-			46 = {
-				add_resource = {
-					type = steel
-					amount = 6
-				}
-				add_resource = {
-					type = tungsten
-					amount = 4
-				}
-			}
-		}
-	}
-	focus = {
-		id = ROM_Queen_Of_Romania2
-		icon = GFX_focus_generic_resource_extraction
-		cost = 5
-		relative_position_id = ROM_Queen_Of_Romania1
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = ROM_Queen_Of_Romania1
-		}
-		completion_reward = {
-			46 = {
-				add_resource = {
-					type = coal
-					amount = 8
-				}
-				add_resource = {
-					type = sulfur
-					amount = 6
-				}
-			}
-		}
-	}
+	# focus = {
+	# 	id = ROM_German_Heir_To_Romania
+	# 	icon = GFX_focus_ger_return_of_the_kaiser
+	# 	cost = 10
+	# 	relative_position_id = ROM_The_Many_Kings
+	# 	x = 0
+	# 	y = 1
+	# 	mutually_exclusive = {
+	# 		focus = ROM_One_True_King
+	# 		focus = ROM_Queen_Of_Romania
+	# 	}
+	# 	available = {
+	# 		hidden_trigger = {
+	# 			always = no
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_The_Many_Kings
+	# 	}
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = ROM_William_Info
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_German_Heir_To_Romania1
+	# 	icon = GFX_focus_GER_prussian_legacy
+	# 	cost = 5
+	# 	relative_position_id = ROM_German_Heir_To_Romania
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_German_Heir_To_Romania
+	# 	}
+	# 	completion_reward = {
+	# 		add_ideas = ROM_Prussian_Militarism
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_German_Heir_To_Romania2
+	# 	icon = GFX_focus_RAJ_a_private_military
+	# 	cost = 5
+	# 	relative_position_id = ROM_German_Heir_To_Romania1
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_German_Heir_To_Romania1
+	# 	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = ROM_Prussian_Militarism
+	# 			add_idea = ROM_Prussian_Militarism1
+	# 		}
+	# 	}
+	# }
+	# #	Maria
+	# focus = {
+	# 	id = ROM_Queen_Of_Romania
+	# 	icon = GFX_focus_AUS_bring_back_the_habsburg_rule
+	# 	cost = 10
+	# 	relative_position_id = ROM_The_Many_Kings
+	# 	x = 3
+	# 	y = 1
+	# 	mutually_exclusive = {
+	# 		focus = ROM_One_True_King
+	# 		focus = ROM_German_Heir_To_Romania
+	# 	}
+	# 	available = {
+	# 		hidden_trigger = {
+	# 			always = no
+	# 		}
+	# 	}
+	# 	prerequisite = {
+	# 		focus = ROM_The_Many_Kings
+	# 	}
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = ROM_Maria_Info
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Queen_Of_Romania1
+	# 	icon = GFX_focus_GER_factories_for_resources
+	# 	cost = 5
+	# 	relative_position_id = ROM_Queen_Of_Romania
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Queen_Of_Romania
+	# 	}
+	# 	completion_reward = {
+	# 		46 = {
+	# 			add_resource = {
+	# 				type = steel
+	# 				amount = 6
+	# 			}
+	# 			add_resource = {
+	# 				type = tungsten
+	# 				amount = 4
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = ROM_Queen_Of_Romania2
+	# 	icon = GFX_focus_generic_resource_extraction
+	# 	cost = 5
+	# 	relative_position_id = ROM_Queen_Of_Romania1
+	# 	x = 0
+	# 	y = 1
+	# 	prerequisite = {
+	# 		focus = ROM_Queen_Of_Romania1
+	# 	}
+	# 	completion_reward = {
+	# 		46 = {
+	# 			add_resource = {
+	# 				type = coal
+	# 				amount = 8
+	# 			}
+	# 			add_resource = {
+	# 				type = sulfur
+	# 				amount = 6
+	# 			}
+	# 		}
+	# 	}
+	# }
 	#	War Declare
 	# focus = {
 	# 	id = ROM_Declaration_Of_War

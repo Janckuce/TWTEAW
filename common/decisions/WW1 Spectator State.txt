@@ -505,9 +505,7 @@ ORO_spectator_state = {
 					declare_war_on = { target = MNT type = annex_everything }
 				}
 			}
-			ROM = {
-				country_event = ww1_romania.1
-			}
+
 			add_threat = 50
 		}
 		fire_only_once = yes
@@ -1716,7 +1714,6 @@ ORO_spectator_state = {
 			factor = 10000
 		}
 	}
-
 	us_leaves_veracruz = {
 		allowed = {
 			original_tag = ORO
@@ -1758,6 +1755,29 @@ ORO_spectator_state = {
 				MXF = {
 					transfer_state = 477
 				}
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+	king_carol_I_death = {
+		allowed = {
+			original_tag = ORO
+		}
+		visible = {
+			always = yes
+		}
+
+		available = {
+			date > 1914.10.10
+		}
+
+		complete_effect = {
+			ROM = {
+				country_event = ww1_romania.1
 			}
 		}
 		fire_only_once = yes

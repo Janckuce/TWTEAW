@@ -346,9 +346,20 @@ ROM_Entente_Appeasement = {
 			highlight_color_while_active = 2
 			highlight_color_before_active = 3
 		}
+		# highlight_states = {
+		# 	highlight_state_targets = {
+		# 		state = 81
+		# 		state = 46
+		# 		state = 758
+		# 		state = 79
+		# 	}
+		# 	highlight_color_while_active = 2
+		# 	highlight_color_before_active = 3
+		# }
+
 		available = {
 			OR = {
-				date > 1916.8.28
+				date > 1916.8.24
 				AND = {
 					RUS = {
 						controls_state = 890
@@ -361,7 +372,16 @@ ROM_Entente_Appeasement = {
 				}
 			}
 		}
+		days_remove = 3
 		complete_effect = {
+			set_state_controller = 585
+			set_state_owner = 585
+			585 = {
+				add_core_of = ROM
+			}
+			
+		}
+		remove_effect = {
 			if = {
 				limit = {
 					FRA = {
@@ -370,12 +390,6 @@ ROM_Entente_Appeasement = {
 				}
 				FRA = {
 					add_to_faction = ROM
-				}
-				add_to_war = {
-					targeted_alliance = FRA # The country/alliance side you want to join
-					enemy = GER             # The specific country you want to declare war on
-					hostility_reason = asked_to_join
-					single_target_only = no
 				}
 			}
 			else_if = {
@@ -397,6 +411,12 @@ ROM_Entente_Appeasement = {
 				ENG = {
 					add_to_faction = ROM
 				}
+			}
+			add_to_war = {
+				targeted_alliance = FRA # The country/alliance side you want to join
+				enemy = GER             # The specific country you want to declare war on
+				hostility_reason = asked_to_join
+				single_target_only = no
 			}
 
 			if = {
@@ -533,6 +553,132 @@ ROM_Entente_Appeasement = {
 		}
 		ai_will_do = {
 			factor = 10000
+		}
+	}
+	ROM_factory_relocation = {
+		icon = GFX_decision_generic_factory
+		priority = 1
+		fire_only_once = no
+		allowed = {
+			tag = ROM
+		}
+		activation = {
+			has_war = yes
+			date > 1914.7.28
+			OR = {
+				81 = {
+					arms_factory > 0
+				}
+				46 = {
+					arms_factory > 0
+				}
+				758 = {
+					arms_factory > 0
+				}
+				79 = {
+					arms_factory > 0
+				}
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
+
+		available = {
+			always = no
+		}
+
+		cancel_trigger = {
+			OR = {
+				81 = {
+					arms_factory < 1
+				}
+				NOT = {
+					controls_state = 81
+				}
+			}
+			OR = {
+				46 = {
+					arms_factory < 1
+				}
+				NOT = {
+					controls_state = 46
+				}
+			}
+			OR = {
+				758 = {
+					arms_factory < 1
+				}
+				NOT = {
+					controls_state = 758
+				}
+			}
+			OR = {
+				79 = {
+					arms_factory < 1
+				}
+				NOT = {
+					controls_state = 79
+				}
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					81 = {
+						arms_factory > 0
+					}
+				}
+				81 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					46 = {
+						arms_factory > 0
+					}
+				}
+				46 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					758 = {
+						arms_factory > 0
+					}
+				}
+				758 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					79 = {
+						arms_factory > 0
+					}
+				}
+				79 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
+			activate_mission = ROM_factory_relocation
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
 		}
 	}
 }
