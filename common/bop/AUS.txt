@@ -19,9 +19,17 @@ AUS_power_balance = {
 				# army_strength_factor = -0.1
 				# power_balance_weekly = -0.005
 			}
+			on_activate = {
+				RUS = {
+					hidden_effect = {
+						remove_ideas = RUS_army_collapse1
+					}
+					add_ideas = RUS_army_collapse0
+				}
+			}
 		}
 
-		range = { # Second range marker
+		range = { # Second range marker RUS_army_collapse0
 			id = AUS_support_left_side_two
 			min = -0.66
 			max = -0.33

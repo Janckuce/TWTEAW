@@ -1503,12 +1503,26 @@ ideas = {
 				power_balance_weekly = 0.16
 			}
 		}
+		RUS_bop_count17 = {
+			picture = BEL_the_kings_surrender
+			modifier = {
+				power_balance_weekly = 0.17
+			}
+		}
+		RUS_army_collapse0 = {
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				# army_org_factor = -0.05
+				# army_strength_factor = -0.05
+				power_balance_weekly = -0.01
+			}
+		}
 		RUS_army_collapse1 = {
 			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
 				army_org_factor = -0.05
 				army_strength_factor = -0.05
-				power_balance_weekly = -0.005
+				power_balance_weekly = -0.01
 			}
 		}
 		RUS_army_collapse2 = {
@@ -1516,7 +1530,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.1
 				army_strength_factor = -0.1
-				power_balance_weekly = -0.01
+				power_balance_weekly = -0.02
 			}
 		}
 		RUS_army_collapse3 = {
@@ -1524,7 +1538,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.15
 				army_strength_factor = -0.15
-				power_balance_weekly = -0.015
+				power_balance_weekly = -0.02
 			}
 		}
 		RUS_army_collapse4 = {
@@ -1532,7 +1546,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.2
 				army_strength_factor = -0.2
-				power_balance_weekly = -0.02
+				power_balance_weekly = -0.03
 			}
 		}
 		RUS_army_collapse5 = {

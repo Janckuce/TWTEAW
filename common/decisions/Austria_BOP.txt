@@ -12,7 +12,27 @@ AUS_balance_of_power_category = {
 	# 		remove_power_balance = { id = AUS_power_balance }
 	# 	}
 	# }
+	lost_lodz = {
+		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
+		visible = { # Always visible (might not be needed)
+			NOT = {
+				controls_state = 87
+			}
+		}
+		available = {
+			always = no
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 87
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 3
+		}
+		remove_effect = {
 
+		}
+	}
 	lost_warsaw = {
 		icon = GFX_decision_BOL_reintegrate_acre_state # Icon on the left of the text
 		visible = { # Always visible (might not be needed)

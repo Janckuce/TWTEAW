@@ -1,6 +1,13 @@
 #Important to put HIGHEST first
 RUS_bop_count_level_up = {
 	if = {
+		limit = { has_idea = RUS_bop_count16 }
+		swap_ideas = {
+			remove_idea = RUS_bop_count16
+			add_idea = RUS_bop_count17
+		}		
+	}
+	else_if = {
 		limit = { has_idea = RUS_bop_count15 }
 		swap_ideas = {
 			remove_idea = RUS_bop_count15
@@ -233,6 +240,13 @@ RUS_bop_count_level_down = {
 		swap_ideas = {
 			remove_idea = RUS_bop_count16
 			add_idea = RUS_bop_count15
+		}		
+	}
+	else_if = {
+		limit = { has_idea = RUS_bop_count17 }
+		swap_ideas = {
+			remove_idea = RUS_bop_count17
+			add_idea = RUS_bop_count16
 		}		
 	}
 }
